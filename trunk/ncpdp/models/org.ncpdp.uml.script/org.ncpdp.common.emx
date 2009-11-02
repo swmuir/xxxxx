@@ -1068,12 +1068,6 @@ Given some arbitrary zero-point, one can express any point in time as an elapsed
       </eAnnotations>
       <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
     </profileApplication>
-    <profileApplication xmi:id="_yDSWYMSeEd66N5jPTCzGGg">
-      <eAnnotations xmi:id="_yDSWYcSeEd66N5jPTCzGGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="pathmap://ORG_NCPDP_UML/NCPDP.epx#_RNEEEcSaEd66N5jPTCzGGg?org.ncpdp.uml/orgncpdpuml?"/>
-      </eAnnotations>
-      <appliedProfile href="pathmap://ORG_NCPDP_UML/NCPDP.epx#_MEzg0J46Ed6e6K9VQh2mDA?org.ncpdp.uml?"/>
-    </profileApplication>
     <profileApplication xmi:id="_FqIA0MSkEd6Yqb-E-I8SsQ">
       <eAnnotations xmi:id="_FqIA0cSkEd6Yqb-E-I8SsQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://HL7_PROFILES/HDF.profile.uml#_D_tkoFwxEd63D_E2UJKpvQ"/>
@@ -1085,6 +1079,12 @@ Given some arbitrary zero-point, one can express any point in time as an elapsed
         <references xmi:type="ecore:EPackage" href="pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA"/>
       </eAnnotations>
       <appliedProfile href="pathmap://HL7_PROFILES/RIM.profile.uml#_tkA5gERaEdyoutEhWTC49A"/>
+    </profileApplication>
+    <profileApplication xmi:id="_EDbTcMf_Ed6clt_Jy8jBCw">
+      <eAnnotations xmi:id="_EDbTccf_Ed6clt_Jy8jBCw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ORG_NCPDP_UML/NCPDP.epx#_KMckUcf4Ed6rNPUVhncBdA?org.ncpdp.uml/orgncpdpuml?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ORG_NCPDP_UML/NCPDP.epx#_MEzg0J46Ed6e6K9VQh2mDA?org.ncpdp.uml?"/>
     </profileApplication>
   </uml:Package>
   <Default:Documentation xmi:id="_7d618GwJEd6j0P2vy2tNUw" base_Comment="_7d61QmwJEd6j0P2vy2tNUw"/>
