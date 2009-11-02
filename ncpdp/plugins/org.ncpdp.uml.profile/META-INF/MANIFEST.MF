@@ -2,10 +2,11 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: NCPDP UML Profile
 Bundle-SymbolicName: org.ncpdp.uml.profile; singleton:=true
-Bundle-Version: 0.5.0.qualifier
+Bundle-Version: 0.1.0.qualifier
 Bundle-Activator: org.ncpdp.uml.profile.Activator
 Bundle-Vendor: National Council for Prescription Drug Programs, Inc
-Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.ui;visibility:=reexport,
+ org.eclipse.core.runtime;visibility:=reexport,
+ org.eclipse.uml2.uml;visibility:=reexport,
+ com.ibm.xtools.modeler.ui;resolution:=optional;visibility:=reexport
 Bundle-ActivationPolicy: lazy
