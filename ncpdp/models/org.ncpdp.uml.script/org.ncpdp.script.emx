@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:orgncpdpuml="http:///schemas/orgncpdpuml/_RNEEEMSaEd66N5jPTCzGGg/20" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/orgncpdpuml/_RNEEEMSaEd66N5jPTCzGGg/20 pathmap://ORG_NCPDP_UML/NCPDP.epx#_RNEEEcSaEd66N5jPTCzGGg?org.ncpdp.uml/orgncpdpuml?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:orgncpdpuml="http:///schemas/orgncpdpuml/_KMckUMf4Ed6rNPUVhncBdA/22" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/orgncpdpuml/_KMckUMf4Ed6rNPUVhncBdA/22 pathmap://ORG_NCPDP_UML/NCPDP.epx#_KMckUcf4Ed6rNPUVhncBdA?org.ncpdp.uml/orgncpdpuml?">
   <uml:Package xmi:id="_7d6o22wJEd6j0P2vy2tNUw" name="org.ncpdp.script">
     <eAnnotations xmi:id="_7d6o3GwJEd6j0P2vy2tNUw" source="uml2.diagrams" references="_p75KgG_FEd6vW63K5mFHPQ">
       <contents xmi:type="notation:Diagram" xmi:id="_p75KgG_FEd6vW63K5mFHPQ" type="Class" name="Main">
@@ -6323,12 +6323,6 @@ values are Y, N, P, X and Z</body>
       </eAnnotations>
       <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
     </profileApplication>
-    <profileApplication xmi:id="_CwYtcLB1Ed61uZRxo83bqQ">
-      <eAnnotations xmi:id="_CwYtcbB1Ed61uZRxo83bqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="pathmap://ORG_NCPDP_UML/NCPDP.epx#_RNEEEcSaEd66N5jPTCzGGg?org.ncpdp.uml/orgncpdpuml?"/>
-      </eAnnotations>
-      <appliedProfile href="pathmap://ORG_NCPDP_UML/NCPDP.epx#_MEzg0J46Ed6e6K9VQh2mDA?org.ncpdp.uml?"/>
-    </profileApplication>
     <profileApplication xmi:id="_ryAzUMSjEd6Yqb-E-I8SsQ">
       <eAnnotations xmi:id="_ryAzUcSjEd6Yqb-E-I8SsQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA"/>
@@ -6340,6 +6334,12 @@ values are Y, N, P, X and Z</body>
         <references xmi:type="ecore:EPackage" href="pathmap://HL7_PROFILES/HDF.profile.uml#_D_tkoFwxEd63D_E2UJKpvQ"/>
       </eAnnotations>
       <appliedProfile href="pathmap://HL7_PROFILES/HDF.profile.uml#_XQSZwERPEdyoutEhWTC49A"/>
+    </profileApplication>
+    <profileApplication xmi:id="_hafQ4Mf7Ed6zd_kEPR_lYg">
+      <eAnnotations xmi:id="_hafQ4cf7Ed6zd_kEPR_lYg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ORG_NCPDP_UML/NCPDP.epx#_KMckUcf4Ed6rNPUVhncBdA?org.ncpdp.uml/orgncpdpuml?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ORG_NCPDP_UML/NCPDP.epx#_MEzg0J46Ed6e6K9VQh2mDA?org.ncpdp.uml?"/>
     </profileApplication>
   </uml:Package>
   <Default:Documentation xmi:id="_7d61umwJEd6j0P2vy2tNUw" base_Comment="_7d6yvWwJEd6j0P2vy2tNUw"/>
@@ -6354,43 +6354,43 @@ values are Y, N, P, X and Z</body>
   <Default:Documentation xmi:id="_7d62CmwJEd6j0P2vy2tNUw" base_Comment="_7d6yyGwJEd6j0P2vy2tNUw"/>
   <Default:Documentation xmi:id="_MwNmo518Ed6op-j6hF84wA" base_Comment="_gXuO8Hb_Ed63YrKcs63KXQ"/>
   <Default:Documentation xmi:id="_Q6dFgZ5YEd6Dvv-JmMCi_g" base_Comment="_Q6dFgJ5YEd6Dvv-JmMCi_g"/>
-  <orgncpdpuml:CodedElement xmi:id="_rOQJcMfZEd6yRfjdBKsmcA" base_Property="_7d6yxWwJEd6j0P2vy2tNUw" codingSystemElementId="ProblemCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rO_wUMfZEd6yRfjdBKsmcA" base_Property="_7d6yxmwJEd6j0P2vy2tNUw" codingSystemElementId="ProblemType"/>
-  <orgncpdpuml:CodedElement xmi:id="_rPJhUMfZEd6yRfjdBKsmcA" base_Property="_7d6yx2wJEd6j0P2vy2tNUw" codingSystemElementId="InformationSourceCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rPTSUMfZEd6yRfjdBKsmcA" base_Property="_JSG34Hb3Ed63YrKcs63KXQ" codingSystemElementId="PotencyFilled"/>
-  <orgncpdpuml:CodedElement xmi:id="_rPccQMfZEd6yRfjdBKsmcA" base_Property="_7d6yX2wJEd6j0P2vy2tNUw" codingSystemElementId="RelationshipToPatient"/>
-  <orgncpdpuml:CodedElement xmi:id="_rPmNQMfZEd6yRfjdBKsmcA" base_Property="_s26B0HGAEd6Lt9mEasK-nQ" codingSystemElementId="NeededNoLaterThanReason"/>
-  <orgncpdpuml:CodedElement xmi:id="_rPvXMMfZEd6yRfjdBKsmcA" base_Property="_qFp4oHF0Ed6Lt9mEasK-nQ" codingSystemElementId="ControlledSubstanceSchedule"/>
-  <orgncpdpuml:CodedElement xmi:id="_rP5IMMfZEd6yRfjdBKsmcA" base_Property="_HKN0AHF1Ed6Lt9mEasK-nQ" codingSystemElementId="DrugDbCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rQC5MMfZEd6yRfjdBKsmcA" base_Property="_YID1MHF1Ed6Lt9mEasK-nQ" codingSystemElementId="FormCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rQC5McfZEd6yRfjdBKsmcA" base_Property="_70UycHF3Ed6Lt9mEasK-nQ" codingSystemElementId="ProductCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rQMDIMfZEd6yRfjdBKsmcA" base_Property="_v2MecHF1Ed6Lt9mEasK-nQ" codingSystemElementId="StrengthCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rQV0IMfZEd6yRfjdBKsmcA" base_Property="_7d61XGwJEd6j0P2vy2tNUw" codingSystemElementId="ObservationCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rQovEMfZEd6yRfjdBKsmcA" base_Property="_7d6x1WwJEd6j0P2vy2tNUw" codingSystemElementId="AdministrativeGender"/>
-  <orgncpdpuml:CodedElement xmi:id="_rQ7qAMfZEd6yRfjdBKsmcA" base_Property="_7d6x0mwJEd6j0P2vy2tNUw" codingSystemElementId="Specialty"/>
-  <orgncpdpuml:CodedElement xmi:id="_rRFbAMfZEd6yRfjdBKsmcA" base_Property="_7d61lmwJEd6j0P2vy2tNUw" codingSystemElementId="ChangeType"/>
-  <orgncpdpuml:CodedElement xmi:id="_rRPMAMfZEd6yRfjdBKsmcA" base_Property="_3OAKwHF7Ed6Lt9mEasK-nQ" codingSystemElementId="PotencyPrescribed"/>
-  <orgncpdpuml:CodedElement xmi:id="_rRYV8MfZEd6yRfjdBKsmcA" base_Property="_N2scoHGBEd6Lt9mEasK-nQ" codingSystemElementId="PriorAuthorizationStart"/>
-  <orgncpdpuml:CodedElement xmi:id="_rRiG8MfZEd6yRfjdBKsmcA" base_Property="_R5B08Hb4Ed63YrKcs63KXQ" codingSystemElementId="RefillCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rRr38MfZEd6yRfjdBKsmcA" base_Property="_7d6xmmwJEd6j0P2vy2tNUw" codingSystemElementId="SubstitutionCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rR1B4MfZEd6yRfjdBKsmcA" base_Property="_Ccy3kHx2Ed6JsOqQr7Teaw" codingSystemElementId="FreeTextIndicator"/>
-  <orgncpdpuml:CodedElement xmi:id="_rS4KwMfZEd6yRfjdBKsmcA" base_Property="_AN1T4HF5Ed6Lt9mEasK-nQ" codingSystemElementId="DrugCoverageCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rTBUsMfZEd6yRfjdBKsmcA" base_Property="_YwbGoHF-Ed6Lt9mEasK-nQ" codingSystemElementId="ClinicalSignifanceCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rTLFsMfZEd6yRfjdBKsmcA" base_Property="_67nkoHF-Ed6Lt9mEasK-nQ" codingSystemElementId="CoAgentCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rTUPoMfZEd6yRfjdBKsmcA" base_Property="_-r0f0HF-Ed6Lt9mEasK-nQ" codingSystemElementId="ProfessionalServiceCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rTUPocfZEd6yRfjdBKsmcA" base_Property="_DfYVcHF_Ed6Lt9mEasK-nQ" codingSystemElementId="ServiceReasonCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rTeAoMfZEd6yRfjdBKsmcA" base_Property="_GJ2XoHF_Ed6Lt9mEasK-nQ" codingSystemElementId="ServiceResultCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rTnxoMfZEd6yRfjdBKsmcA" base_Property="_Go9xwHb_Ed63YrKcs63KXQ" codingSystemElementId="DoseCompositeIndicator"/>
-  <orgncpdpuml:CodedElement xmi:id="_rTw7kMfZEd6yRfjdBKsmcA" base_Property="_fEllYHb6Ed63YrKcs63KXQ" codingSystemElementId="DoseDeliveryMethod"/>
-  <orgncpdpuml:CodedElement xmi:id="_rT6skMfZEd6yRfjdBKsmcA" base_Property="_3OngcHb6Ed63YrKcs63KXQ" codingSystemElementId="DoseDeliveryMethodModifier"/>
-  <orgncpdpuml:CodedElement xmi:id="_rT6skcfZEd6yRfjdBKsmcA" base_Property="_IGrpwHb7Ed63YrKcs63KXQ" codingSystemElementId="DoseForm"/>
-  <orgncpdpuml:CodedElement xmi:id="_rUNngMfZEd6yRfjdBKsmcA" base_Property="_ujVLEHx7Ed6JsOqQr7Teaw" codingSystemElementId="IndicationPrecursor"/>
-  <orgncpdpuml:CodedElement xmi:id="_rUXYgMfZEd6yRfjdBKsmcA" base_Property="_Ax070Hx8Ed6JsOqQr7Teaw" codingSystemElementId="IndicationText"/>
-  <orgncpdpuml:CodedElement xmi:id="_rUgicMfZEd6yRfjdBKsmcA" base_Property="_nmhCkHx-Ed6JsOqQr7Teaw" codingSystemElementId="IndicationValueUnit"/>
-  <orgncpdpuml:CodedElement xmi:id="_rUqTcMfZEd6yRfjdBKsmcA" base_Property="_ORyYgJASEd6l4bRRwY7xgg" codingSystemElementId="Route"/>
-  <orgncpdpuml:CodedElement xmi:id="_rU0EcMfZEd6yRfjdBKsmcA" base_Property="_oUQJ8JAUEd6l4bRRwY7xgg" codingSystemElementId="BodySite"/>
-  <orgncpdpuml:CodedElement xmi:id="_rVG_YMfZEd6yRfjdBKsmcA" base_Property="_2qPtsJ1-Ed6op-j6hF84wA" codingSystemElementId="VehicleCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rVs1QMfZEd6yRfjdBKsmcA" base_Property="_ovPV8J1_Ed6op-j6hF84wA" codingSystemElementId="TimingCode"/>
-  <orgncpdpuml:CodedElement xmi:id="_rV2mQMfZEd6yRfjdBKsmcA" base_Property="_fSUTEJ2AEd6op-j6hF84wA" codingSystemElementId="TimePeriod"/>
-  <orgncpdpuml:CodedElement xmi:id="_rWAXQMfZEd6yRfjdBKsmcA" base_Property="_9jL0EZ2BEd6op-j6hF84wA" codingSystemElementId="DurationCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BNFf0Mf8Ed6zd_kEPR_lYg" base_Property="_7d6yxWwJEd6j0P2vy2tNUw" codingSystemElementId="ProblemCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BNiLwMf8Ed6zd_kEPR_lYg" base_Property="_7d6yxmwJEd6j0P2vy2tNUw" codingSystemElementId="ProblemType"/>
+  <orgncpdpuml:CodedElement xmi:id="_BNiLwcf8Ed6zd_kEPR_lYg" base_Property="_7d6yx2wJEd6j0P2vy2tNUw" codingSystemElementId="InformationSourceCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BNr8wMf8Ed6zd_kEPR_lYg" base_Property="_JSG34Hb3Ed63YrKcs63KXQ" codingSystemElementId="PotencyFilled"/>
+  <orgncpdpuml:CodedElement xmi:id="_BN1twMf8Ed6zd_kEPR_lYg" base_Property="_7d6yX2wJEd6j0P2vy2tNUw" codingSystemElementId="RelationshipToPatient"/>
+  <orgncpdpuml:CodedElement xmi:id="_BN-3sMf8Ed6zd_kEPR_lYg" base_Property="_s26B0HGAEd6Lt9mEasK-nQ" codingSystemElementId="NeededNoLaterThanReason"/>
+  <orgncpdpuml:CodedElement xmi:id="_BORyoMf8Ed6zd_kEPR_lYg" base_Property="_qFp4oHF0Ed6Lt9mEasK-nQ" codingSystemElementId="ControlledSubstanceSchedule"/>
+  <orgncpdpuml:CodedElement xmi:id="_BObjoMf8Ed6zd_kEPR_lYg" base_Property="_HKN0AHF1Ed6Lt9mEasK-nQ" codingSystemElementId="DrugDbCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BObjocf8Ed6zd_kEPR_lYg" base_Property="_YID1MHF1Ed6Lt9mEasK-nQ" codingSystemElementId="FormCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BOlUoMf8Ed6zd_kEPR_lYg" base_Property="_70UycHF3Ed6Lt9mEasK-nQ" codingSystemElementId="ProductCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BOuekMf8Ed6zd_kEPR_lYg" base_Property="_v2MecHF1Ed6Lt9mEasK-nQ" codingSystemElementId="StrengthCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BO4PkMf8Ed6zd_kEPR_lYg" base_Property="_7d61XGwJEd6j0P2vy2tNUw" codingSystemElementId="ObservationCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BPCAkMf8Ed6zd_kEPR_lYg" base_Property="_7d6x1WwJEd6j0P2vy2tNUw" codingSystemElementId="AdministrativeGender"/>
+  <orgncpdpuml:CodedElement xmi:id="_BPU7gMf8Ed6zd_kEPR_lYg" base_Property="_7d6x0mwJEd6j0P2vy2tNUw" codingSystemElementId="Specialty"/>
+  <orgncpdpuml:CodedElement xmi:id="_BPeFcMf8Ed6zd_kEPR_lYg" base_Property="_7d61lmwJEd6j0P2vy2tNUw" codingSystemElementId="ChangeType"/>
+  <orgncpdpuml:CodedElement xmi:id="_BPn2cMf8Ed6zd_kEPR_lYg" base_Property="_3OAKwHF7Ed6Lt9mEasK-nQ" codingSystemElementId="PotencyPrescribed"/>
+  <orgncpdpuml:CodedElement xmi:id="_BPxncMf8Ed6zd_kEPR_lYg" base_Property="_N2scoHGBEd6Lt9mEasK-nQ" codingSystemElementId="PriorAuthorizationStart"/>
+  <orgncpdpuml:CodedElement xmi:id="_BPxnccf8Ed6zd_kEPR_lYg" base_Property="_R5B08Hb4Ed63YrKcs63KXQ" codingSystemElementId="RefillCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BP6xYMf8Ed6zd_kEPR_lYg" base_Property="_7d6xmmwJEd6j0P2vy2tNUw" codingSystemElementId="SubstitutionCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BQEiYMf8Ed6zd_kEPR_lYg" base_Property="_Ccy3kHx2Ed6JsOqQr7Teaw" codingSystemElementId="FreeTextIndicator"/>
+  <orgncpdpuml:CodedElement xmi:id="_BRthIMf8Ed6zd_kEPR_lYg" base_Property="_AN1T4HF5Ed6Lt9mEasK-nQ" codingSystemElementId="DrugCoverageCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BR2rEMf8Ed6zd_kEPR_lYg" base_Property="_YwbGoHF-Ed6Lt9mEasK-nQ" codingSystemElementId="ClinicalSignifanceCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BSAcEMf8Ed6zd_kEPR_lYg" base_Property="_67nkoHF-Ed6Lt9mEasK-nQ" codingSystemElementId="CoAgentCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BSAcEcf8Ed6zd_kEPR_lYg" base_Property="_-r0f0HF-Ed6Lt9mEasK-nQ" codingSystemElementId="ProfessionalServiceCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BSKNEMf8Ed6zd_kEPR_lYg" base_Property="_DfYVcHF_Ed6Lt9mEasK-nQ" codingSystemElementId="ServiceReasonCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BSTXAMf8Ed6zd_kEPR_lYg" base_Property="_GJ2XoHF_Ed6Lt9mEasK-nQ" codingSystemElementId="ServiceResultCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BSdIAMf8Ed6zd_kEPR_lYg" base_Property="_Go9xwHb_Ed63YrKcs63KXQ" codingSystemElementId="DoseCompositeIndicator"/>
+  <orgncpdpuml:CodedElement xmi:id="_BSm5AMf8Ed6zd_kEPR_lYg" base_Property="_fEllYHb6Ed63YrKcs63KXQ" codingSystemElementId="DoseDeliveryMethod"/>
+  <orgncpdpuml:CodedElement xmi:id="_BSm5Acf8Ed6zd_kEPR_lYg" base_Property="_3OngcHb6Ed63YrKcs63KXQ" codingSystemElementId="DoseDeliveryMethodModifier"/>
+  <orgncpdpuml:CodedElement xmi:id="_BSwC8Mf8Ed6zd_kEPR_lYg" base_Property="_IGrpwHb7Ed63YrKcs63KXQ" codingSystemElementId="DoseForm"/>
+  <orgncpdpuml:CodedElement xmi:id="_BTC94Mf8Ed6zd_kEPR_lYg" base_Property="_ujVLEHx7Ed6JsOqQr7Teaw" codingSystemElementId="IndicationPrecursor"/>
+  <orgncpdpuml:CodedElement xmi:id="_BTMu4Mf8Ed6zd_kEPR_lYg" base_Property="_Ax070Hx8Ed6JsOqQr7Teaw" codingSystemElementId="IndicationText"/>
+  <orgncpdpuml:CodedElement xmi:id="_BTWf4Mf8Ed6zd_kEPR_lYg" base_Property="_nmhCkHx-Ed6JsOqQr7Teaw" codingSystemElementId="IndicationValueUnit"/>
+  <orgncpdpuml:CodedElement xmi:id="_BTfp0Mf8Ed6zd_kEPR_lYg" base_Property="_ORyYgJASEd6l4bRRwY7xgg" codingSystemElementId="Route"/>
+  <orgncpdpuml:CodedElement xmi:id="_BTpa0Mf8Ed6zd_kEPR_lYg" base_Property="_oUQJ8JAUEd6l4bRRwY7xgg" codingSystemElementId="BodySite"/>
+  <orgncpdpuml:CodedElement xmi:id="_BT8VwMf8Ed6zd_kEPR_lYg" base_Property="_2qPtsJ1-Ed6op-j6hF84wA" codingSystemElementId="VehicleCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BUGGwMf8Ed6zd_kEPR_lYg" base_Property="_ovPV8J1_Ed6op-j6hF84wA" codingSystemElementId="TimingCode"/>
+  <orgncpdpuml:CodedElement xmi:id="_BUPQsMf8Ed6zd_kEPR_lYg" base_Property="_fSUTEJ2AEd6op-j6hF84wA" codingSystemElementId="TimePeriod"/>
+  <orgncpdpuml:CodedElement xmi:id="_BUZBsMf8Ed6zd_kEPR_lYg" base_Property="_9jL0EZ2BEd6op-j6hF84wA" codingSystemElementId="DurationCode"/>
 </xmi:XMI>
