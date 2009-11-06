@@ -3,7 +3,7 @@
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:orgncpdpuml="http:///schemas/orgncpdpuml/_KMckUMf4Ed6rNPUVhncBdA/22" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/orgncpdpuml/_KMckUMf4Ed6rNPUVhncBdA/22 pathmap://ORG_NCPDP_UML/NCPDP.epx#_KMckUcf4Ed6rNPUVhncBdA?org.ncpdp.uml/orgncpdpuml?">
-  <uml:Package xmi:id="_7d6o22wJEd6j0P2vy2tNUw" name="org.ncpdp.script">
+  <uml:Package xmi:id="_7d6o22wJEd6j0P2vy2tNUw" name="org.ncpdp.uml">
     <eAnnotations xmi:id="_7d6o3GwJEd6j0P2vy2tNUw" source="uml2.diagrams" references="_p75KgG_FEd6vW63K5mFHPQ">
       <contents xmi:type="notation:Diagram" xmi:id="_p75KgG_FEd6vW63K5mFHPQ" type="Class" name="Main">
         <children xmi:id="_CERqUG_HEd6vW63K5mFHPQ">
@@ -17,7 +17,7 @@
             <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_CEbbVG_HEd6vW63K5mFHPQ" canonical="false" collapsed="true"/>
           </children>
           <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_CERqUW_HEd6vW63K5mFHPQ" fontName="Arial" fontHeight="10" fillColor="13434879" lineColor="3342489" showStereotype="Label"/>
-          <element xmi:type="uml:Package" href="org.ncpdp.common.emx#_7d6y6WwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes?"/>
+          <element xmi:type="uml:Package" href="org.ncpdp.uml.common.emx#_7d6y6WwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CERqUm_HEd6vW63K5mFHPQ" x="6023" y="8559"/>
         </children>
         <children xmi:id="_C2DFgG_HEd6vW63K5mFHPQ" element="_ZAbH4G_FEd6vW63K5mFHPQ">
@@ -126,7 +126,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d61pmwJEd6j0P2vy2tNUw" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_ZAbH4G_FEd6vW63K5mFHPQ" name="Script">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZAbH4G_FEd6vW63K5mFHPQ" name="Domain">
       <eAnnotations xmi:id="_ZBBk0G_FEd6vW63K5mFHPQ" source="uml2.diagrams" references="_7d6o3WwJEd6j0P2vy2tNUw">
         <contents xmi:type="notation:Diagram" xmi:id="_7d6o3WwJEd6j0P2vy2tNUw" type="Class" name="NCPDP Domain Analysis Model">
           <children xmi:id="_7d6o3mwJEd6j0P2vy2tNUw" element="_7d6xhmwJEd6j0P2vy2tNUw">
@@ -3676,15 +3676,15 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6y02wJEd6j0P2vy2tNUw" name="Cardholder">
         <ownedAttribute xmi:id="_7d6y2mwJEd6j0P2vy2tNUw" name="cardholderId" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6y12wJEd6j0P2vy2tNUw" name="cardholderName" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60NGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PersonName?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60NGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PersonName?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6y2GwJEd6j0P2vy2tNUw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6y2WwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6y22wJEd6j0P2vy2tNUw" name="groupId" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6y3GwJEd6j0P2vy2tNUw" name="groupName" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -3697,16 +3697,16 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6yemwJEd6j0P2vy2tNUw" name="Claim"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6ywmwJEd6j0P2vy2tNUw" name="Diagnosis">
         <ownedAttribute xmi:id="_7d6yw2wJEd6j0P2vy2tNUw" name="dateEffective" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6yxGwJEd6j0P2vy2tNUw" name="dateExpired" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6yxWwJEd6j0P2vy2tNUw" name="problemCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6yxmwJEd6j0P2vy2tNUw" name="problemType" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6yx2wJEd6j0P2vy2tNUw" name="informationSourceCode" visibility="public">
           <ownedComment xmi:id="_7d6yyGwJEd6j0P2vy2tNUw" annotatedElement="_7d6yx2wJEd6j0P2vy2tNUw">
@@ -3725,7 +3725,7 @@
     Clinicial-supplied, Pharmacy Inferred.&#xD;
 &lt;/p></body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6yRmwJEd6j0P2vy2tNUw" name="DispenseEvent">
@@ -3742,7 +3742,7 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6yT2wJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_JSG34Hb3Ed63YrKcs63KXQ" name="potencyFilled" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_JSG34Xb3Ed63YrKcs63KXQ" name="quantityFilled" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
@@ -3766,21 +3766,21 @@
 &lt;/p>&lt;br />&#xD;
 PARKING LOT: Not sure that this goes here</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6yC2wJEd6j0P2vy2tNUw" name="ResidentialCareRx">
         <generalization xmi:id="_7d6yDGwJEd6j0P2vy2tNUw" general="_7d6xhmwJEd6j0P2vy2tNUw"/>
         <ownedAttribute xmi:id="_S0gP4HGAEd6Lt9mEasK-nQ" name="neededNoLaterThanDateTime" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_s26B0HGAEd6Lt9mEasK-nQ" name="neededNoLaterThanReason" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6x5GwJEd6j0P2vy2tNUw" name="Location">
         <ownedAttribute xmi:id="_7d6x5WwJEd6j0P2vy2tNUw" name="address" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6x5mwJEd6j0P2vy2tNUw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6x52wJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
@@ -3790,15 +3790,15 @@ PARKING LOT: Not sure that this goes here</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6yoWwJEd6j0P2vy2tNUw" name="ResidentialFacility">
         <ownedAttribute xmi:id="_HsTSg3cJEd63YrKcs63KXQ" name="address" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HsTShHcJEd63YrKcs63KXQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HsTShXcJEd63YrKcs63KXQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_HsTSi3cJEd63YrKcs63KXQ" name="facilityName" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d609WwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/OrganizationName?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d609WwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/OrganizationName?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_HsTSgHcJEd63YrKcs63KXQ" name="id" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HsTSgXcJEd63YrKcs63KXQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HsTSgncJEd63YrKcs63KXQ" value="1"/>
         </ownedAttribute>
@@ -3846,33 +3846,33 @@ PARKING LOT: Not sure that this goes here</body>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6yE2wJEd6j0P2vy2tNUw" name="Medication">
         <generalization xmi:id="_7d6yFGwJEd6j0P2vy2tNUw" general="_7d6yDWwJEd6j0P2vy2tNUw"/>
         <ownedAttribute xmi:id="_qFp4oHF0Ed6Lt9mEasK-nQ" name="controlledSubstanceSchedule" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_G4As4HF5Ed6Lt9mEasK-nQ" name="description" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_HKN0AHF1Ed6Lt9mEasK-nQ" name="drugDbCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_YID1MHF1Ed6Lt9mEasK-nQ" name="formCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_70UycHF3Ed6Lt9mEasK-nQ" name="productCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_uIqloHF1Ed6Lt9mEasK-nQ" name="strength" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_v2MecHF1Ed6Lt9mEasK-nQ" name="strengthCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d61WmwJEd6j0P2vy2tNUw" name="MedicationHistory">
         <ownedAttribute xmi:id="_64kikHF8Ed6Lt9mEasK-nQ" name="prescriberOrderId" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_9OeqAHF8Ed6Lt9mEasK-nQ" name="sampleId" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6yFWwJEd6j0P2vy2tNUw" name="Non-medication">
@@ -3880,7 +3880,7 @@ PARKING LOT: Not sure that this goes here</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d61W2wJEd6j0P2vy2tNUw" name="Observation">
         <ownedAttribute xmi:id="_7d61XGwJEd6j0P2vy2tNUw" name="observationCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d61XWwJEd6j0P2vy2tNUw" name="observationValue" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -3897,7 +3897,7 @@ PARKING LOT: Not sure that this goes here</body>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d61YGwJEd6j0P2vy2tNUw" name="measurementDate" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d61YWwJEd6j0P2vy2tNUw" name="observationNotes" visibility="public">
           <ownedComment xmi:id="_7d61YmwJEd6j0P2vy2tNUw" annotatedElement="_7d61YWwJEd6j0P2vy2tNUw">
@@ -3966,7 +3966,7 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6xrmwJEd6j0P2vy2tNUw" name="Patient">
         <ownedAttribute xmi:id="_7d6xwmwJEd6j0P2vy2tNUw" name="billToAddress" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6xw2wJEd6j0P2vy2tNUw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6xxGwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
@@ -3974,12 +3974,12 @@ values are Y, N, P, X and Z</body>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xsmwJEd6j0P2vy2tNUw" name="id" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6xs2wJEd6j0P2vy2tNUw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6xtGwJEd6j0P2vy2tNUw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xv2wJEd6j0P2vy2tNUw" name="shipToAddress" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6xwGwJEd6j0P2vy2tNUw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6xwWwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
@@ -4005,32 +4005,32 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6yQ2wJEd6j0P2vy2tNUw" name="Payer">
         <ownedAttribute xmi:id="_7d6yRGwJEd6j0P2vy2tNUw" name="payerId" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6yRWwJEd6j0P2vy2tNUw" name="payerName" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d609WwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/OrganizationName?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d609WwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/OrganizationName?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6x02wJEd6j0P2vy2tNUw" name="Person">
         <ownedAttribute xmi:id="_7d6x1GwJEd6j0P2vy2tNUw" name="name" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60NGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PersonName?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60NGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PersonName?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6x1WwJEd6j0P2vy2tNUw" name="administrativeGender" visibility="public">
           <ownedComment xmi:id="_7d6x1mwJEd6j0P2vy2tNUw" annotatedElement="_7d6x1WwJEd6j0P2vy2tNUw">
             <body>M, F, U</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6x12wJEd6j0P2vy2tNUw" name="dateOfBirth" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6x2GwJEd6j0P2vy2tNUw" name="primaryResidenceAddress" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6x2WwJEd6j0P2vy2tNUw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6x2mwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6x22wJEd6j0P2vy2tNUw" name="workAddress" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d61a2wJEd6j0P2vy2tNUw" name="Phamacist">
@@ -4039,7 +4039,7 @@ values are Y, N, P, X and Z</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d61bmwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d61b2wJEd6j0P2vy2tNUw" name="id" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d61cGwJEd6j0P2vy2tNUw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d61cWwJEd6j0P2vy2tNUw" value="1"/>
         </ownedAttribute>
@@ -4051,12 +4051,12 @@ values are Y, N, P, X and Z</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d61dWwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d61dmwJEd6j0P2vy2tNUw" name="shipToAddress" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d61d2wJEd6j0P2vy2tNUw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d61eGwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d61eWwJEd6j0P2vy2tNUw" name="billToAddress" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d61emwJEd6j0P2vy2tNUw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d61e2wJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
@@ -4066,7 +4066,7 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6x6WwJEd6j0P2vy2tNUw" name="Pharmacy">
         <ownedAttribute xmi:id="_7d6x7mwJEd6j0P2vy2tNUw" name="address" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6x72wJEd6j0P2vy2tNUw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6x8GwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
@@ -4074,7 +4074,7 @@ values are Y, N, P, X and Z</body>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6x8WwJEd6j0P2vy2tNUw" name="id" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6x8mwJEd6j0P2vy2tNUw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6x82wJEd6j0P2vy2tNUw" value="1"/>
         </ownedAttribute>
@@ -4083,7 +4083,7 @@ values are Y, N, P, X and Z</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6x-GwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6x9WwJEd6j0P2vy2tNUw" name="pharmacyName" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d609WwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/OrganizationName?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d609WwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/OrganizationName?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6x9GwJEd6j0P2vy2tNUw" name="telephone" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -4118,14 +4118,14 @@ values are Y, N, P, X and Z</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6xyWwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xymwJEd6j0P2vy2tNUw" name="prescriberId" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xy2wJEd6j0P2vy2tNUw" name="clinic" visibility="private" type="_7d6x5GwJEd6j0P2vy2tNUw" association="_7d6x-WwJEd6j0P2vy2tNUw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6xzGwJEd6j0P2vy2tNUw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6xzWwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xzmwJEd6j0P2vy2tNUw" name="clinicAddress" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Address?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60t2wJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Address?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6xz2wJEd6j0P2vy2tNUw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6x0GwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
@@ -4133,7 +4133,7 @@ values are Y, N, P, X and Z</body>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6x0mwJEd6j0P2vy2tNUw" name="specialty" visibility="private">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6yfGwJEd6j0P2vy2tNUw" name="Prior Authorization"/>
@@ -4146,7 +4146,7 @@ values are Y, N, P, X and Z</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d61lWwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d61lmwJEd6j0P2vy2tNUw" name="changeType" visibility="private">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d61l2wJEd6j0P2vy2tNUw" name="isReceiptAckRequested" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -4154,22 +4154,22 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6xhmwJEd6j0P2vy2tNUw" name="RxOrder">
         <ownedAttribute xmi:id="_7d6xrWwJEd6j0P2vy2tNUw" name="dateDelivered" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_8fofoXF_Ed6Lt9mEasK-nQ" name="dateEffective" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_8fofoHF_Ed6Lt9mEasK-nQ" name="dateExpired" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xnWwJEd6j0P2vy2tNUw" name="dateLastFilled" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xl2wJEd6j0P2vy2tNUw" name="dateOrdered" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xrGwJEd6j0P2vy2tNUw" name="dateValidated" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xm2wJEd6j0P2vy2tNUw" name="daysSupply" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -4191,30 +4191,30 @@ values are Y, N, P, X and Z</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d6yGmwJEd6j0P2vy2tNUw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_WtrrcHGBEd6Lt9mEasK-nQ" name="periodEndDate" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Date?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60eWwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Date?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3OAKwHF7Ed6Lt9mEasK-nQ" name="potencyPrescribed" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xlmwJEd6j0P2vy2tNUw" name="prescriberOrderId" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xjGwJEd6j0P2vy2tNUw" name="prescriptionId" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_63DVEHF7Ed6Lt9mEasK-nQ" name="priorAuthorizationId" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Id?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d605mwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Id?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bd8wkXF8Ed6Lt9mEasK-nQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bd8wkHF8Ed6Lt9mEasK-nQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_N2scoHGBEd6Lt9mEasK-nQ" name="priorAuthorizationStart" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Jvyu4Hb2Ed63YrKcs63KXQ" name="quantityPrescribed" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_R5B08Hb4Ed63YrKcs63KXQ" name="refillCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xnmwJEd6j0P2vy2tNUw" name="refillsAuthorized" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -4223,7 +4223,7 @@ values are Y, N, P, X and Z</body>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xmmwJEd6j0P2vy2tNUw" name="substitutionCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d6xpmwJEd6j0P2vy2tNUw" name="agent" visibility="public" type="_7d61jWwJEd6j0P2vy2tNUw" association="_7d61jmwJEd6j0P2vy2tNUw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d6xp2wJEd6j0P2vy2tNUw" value="*"/>
@@ -4268,13 +4268,13 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7d6yPmwJEd6j0P2vy2tNUw" name="StructuredSig">
         <ownedAttribute xmi:id="_n4Rh8HxzEd6JsOqQr7Teaw" name="duration" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_TVsj0Hx1Ed6JsOqQr7Teaw" name="freeText" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Ccy3kHx2Ed6JsOqQr7Teaw" name="freeTextIndicator" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_XtfJUZ14Ed6op-j6hF84wA" name="structuredSigSegment" visibility="private" type="_SXpGAJ14Ed6op-j6hF84wA" association="_XtfJUJ14Ed6op-j6hF84wA">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XtfJU514Ed6op-j6hF84wA" value="*"/>
@@ -4526,7 +4526,7 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_qQD1AHF4Ed6Lt9mEasK-nQ" name="DrugCoverageStatus">
         <ownedAttribute xmi:id="_AN1T4HF5Ed6Lt9mEasK-nQ" name="drugCoverageCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_ulEtcHF4Ed6Lt9mEasK-nQ" memberEnd="_ulEtcXF4Ed6Lt9mEasK-nQ _ulOecnF4Ed6Lt9mEasK-nQ">
@@ -4540,19 +4540,19 @@ values are Y, N, P, X and Z</body>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_YwbGoHF-Ed6Lt9mEasK-nQ" name="clinicalSignifanceCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_67nkoHF-Ed6Lt9mEasK-nQ" name="coAgentCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_-r0f0HF-Ed6Lt9mEasK-nQ" name="professionalServiceCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_DfYVcHF_Ed6Lt9mEasK-nQ" name="serviceReasonCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_GJ2XoHF_Ed6Lt9mEasK-nQ" name="serviceResultCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_OgD0oHF_Ed6Lt9mEasK-nQ" memberEnd="_OgD0oXF_Ed6Lt9mEasK-nQ _OgNlonF_Ed6Lt9mEasK-nQ">
@@ -4569,16 +4569,16 @@ values are Y, N, P, X and Z</body>
 3=As directed; skip the rest of the dose segment&lt;br />&#xD;
 4=unspecified; see free text</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_fEllYHb6Ed63YrKcs63KXQ" name="doseDeliveryMethod" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3OngcHb6Ed63YrKcs63KXQ" name="doseDeliveryMethodModifier" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_IGrpwHb7Ed63YrKcs63KXQ" name="doseForm" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QR3tEHb8Ed63YrKcs63KXQ" name="doseQuantity" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
@@ -4592,13 +4592,13 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_gmoNoHb_Ed63YrKcs63KXQ" name="DoseCalculation">
         <ownedAttribute xmi:id="_SdLUwHcBEd63YrKcs63KXQ" name="dosingBasis" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_mdtVwHb_Ed63YrKcs63KXQ" name="bodyMetric" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4CflsHcAEd63YrKcs63KXQ" name="calculatedDose" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_iwBjEHb_Ed63YrKcs63KXQ" memberEnd="_iwBjEXb_Ed63YrKcs63KXQ _iwLUEHb_Ed63YrKcs63KXQ">
@@ -4631,10 +4631,10 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_uWrHwHx-Ed6JsOqQr7Teaw" name="Indication">
         <ownedAttribute xmi:id="_ujVLEHx7Ed6JsOqQr7Teaw" name="indicationPrecursor" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Ax070Hx8Ed6JsOqQr7Teaw" name="indicationText" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_H9u28Hx-Ed6JsOqQr7Teaw" name="indicationValueNumeric" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
@@ -4643,7 +4643,7 @@ values are Y, N, P, X and Z</body>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_nmhCkHx-Ed6JsOqQr7Teaw" name="indicationValueUnit" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_zBc00Hx-Ed6JsOqQr7Teaw" memberEnd="_zBc00Xx-Ed6JsOqQr7Teaw _zBc01Hx-Ed6JsOqQr7Teaw">
@@ -4654,10 +4654,10 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ut3DQHx_Ed6JsOqQr7Teaw" name="MaximumDoseRestriction">
         <ownedAttribute xmi:id="_A0NkoHyAEd6JsOqQr7Teaw" name="notToExceed" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_GHHzQHyBEd6JsOqQr7Teaw" name="notToExceedVariableDuration" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_p1oeIHyBEd6JsOqQr7Teaw" memberEnd="_p1oeIXyBEd6JsOqQr7Teaw _p1oeJHyBEd6JsOqQr7Teaw">
@@ -4668,12 +4668,12 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_k8FboJAREd6l4bRRwY7xgg" name="RouteOfAdministration">
         <ownedAttribute xmi:id="_ORyYgJASEd6l4bRRwY7xgg" name="route" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_kmISYJAUEd6l4bRRwY7xgg" name="SiteOfAdministration">
         <ownedAttribute xmi:id="_oUQJ8JAUEd6l4bRRwY7xgg" name="bodySite" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_SXpGAJ14Ed6op-j6hF84wA" name="StructuredSigDetail">
@@ -4760,10 +4760,10 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_eWZIQJ1-Ed6op-j6hF84wA" name="Vehicle">
         <ownedAttribute xmi:id="_2qPtsJ1-Ed6op-j6hF84wA" name="vehicleCode" visibility="private">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_8zKMsJ1-Ed6op-j6hF84wA" name="vehicleQuantity" visibility="private">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_AOymEJ1_Ed6op-j6hF84wA" memberEnd="_AO7wAJ1_Ed6op-j6hF84wA _AO7wA51_Ed6op-j6hF84wA">
@@ -4786,19 +4786,19 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_jepmEJ1_Ed6op-j6hF84wA" name="AdministrationTiming">
         <ownedAttribute xmi:id="_ovPV8J1_Ed6op-j6hF84wA" name="timingCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_AO9IsJ2AEd6op-j6hF84wA" name="rate" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_fSUTEJ2AEd6op-j6hF84wA" name="timePeriod" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_mSgYUJ2AEd6op-j6hF84wA" name="frequency" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_rgtikJ2AEd6op-j6hF84wA" name="interval" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d61CmwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/PhysicalQuantity?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_de278J2BEd6op-j6hF84wA" name="variableFrequencyConjunction" visibility="public"/>
         <ownedAttribute xmi:id="_f63EUJ2BEd6op-j6hF84wA" name="variableIntervalConjunction" visibility="public"/>
@@ -4811,7 +4811,7 @@ values are Y, N, P, X and Z</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_9jL0EJ2BEd6op-j6hF84wA" name="Duration">
         <ownedAttribute xmi:id="_9jL0EZ2BEd6op-j6hF84wA" name="durationCode" visibility="public">
-          <type xmi:type="uml:Class" href="org.ncpdp.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.common/DataTypes/Code?"/>
+          <type xmi:type="uml:Class" href="org.ncpdp.uml.common.emx#_7d60bGwJEd6j0P2vy2tNUw?org.ncpdp.uml.common/DataTypes/Code?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_DrWsMJ2CEd6op-j6hF84wA" memberEnd="_DrWsMZ2CEd6op-j6hF84wA _DrWsNJ2CEd6op-j6hF84wA">
