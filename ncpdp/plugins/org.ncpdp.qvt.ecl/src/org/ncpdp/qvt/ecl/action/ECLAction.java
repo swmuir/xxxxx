@@ -231,9 +231,9 @@ public class ECLAction implements IWorkbenchWindowActionDelegate {
 	public void run(IAction action) {
 		IPreferenceStore store = EclActivator.getDefault().getPreferenceStore();
 
-		final String svnName = "anonymous"; 
+		final String svnName = "seanmuir"; 
 
-		final String svnPassword = "";
+		final String svnPassword = "oht2009";
 		
 		final String svnUrl = store.getString(NCPDPPreferenceConstants.SVNURL);
 
@@ -298,7 +298,7 @@ public class ECLAction implements IWorkbenchWindowActionDelegate {
 						
 						String.format(ncpdpMergeModelNameFormat, ( (eclVersion == -1) ?  "" : ( "."+eclVersion) )); 
 											
-						mergeECL(projectPath + "\\" + ncpdpModelName, projectPath + "\\" + eclModelName, projectPath + "\\" + String.format(ncpdpMergeModelNameFormat, ( (eclVersion == -1) ?  "" : ( "."+eclVersion) )));
+						mergeECL(projectPath + System.getProperty("file.separator") + ncpdpModelName, projectPath + System.getProperty("file.separator") + eclModelName, projectPath + System.getProperty("file.separator") + String.format(ncpdpMergeModelNameFormat, ( (eclVersion == -1) ?  "" : ( "."+eclVersion) )));
 
 						monitor.worked(35);
 
@@ -390,7 +390,7 @@ public class ECLAction implements IWorkbenchWindowActionDelegate {
 
 		Collection<SVNFileRevision> revisions = null;
 
-		SVNRepository repository = SVNUtil.getRepository(svnUrl, "anonymous", "");
+		SVNRepository repository = SVNUtil.getRepository(svnUrl, svnUserName, svnPassword);
 
 		String modelSVNPath = svnModelPath + "/" + modelName;
 
@@ -424,9 +424,9 @@ public class ECLAction implements IWorkbenchWindowActionDelegate {
 
 		FileOutputStream modelOutput = null;
 
-		String modelFilePath = projectPath + "\\" + modelName;
+		String modelFilePath = projectPath + System.getProperty("file.separator") + modelName;
 
-		String modelSVNPath = svnModelPath + "/" + modelName;
+		String modelSVNPath = svnModelPath +System.getProperty("file.separator") + modelName;
 
 		try {
 			modelOutput = new FileOutputStream(modelFilePath);
