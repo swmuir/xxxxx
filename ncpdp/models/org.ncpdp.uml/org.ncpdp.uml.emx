@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:orgncpdpuml="http:///schemas/orgncpdpuml/_KMckUMf4Ed6rNPUVhncBdA/22" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/orgncpdpuml/_KMckUMf4Ed6rNPUVhncBdA/22 pathmap://ORG_NCPDP_UML/NCPDP.epx#_KMckUcf4Ed6rNPUVhncBdA?org.ncpdp.uml/orgncpdpuml?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:orgncpdpuml="http:///schemas/orgncpdpuml/_KMckUMf4Ed6rNPUVhncBdA/22" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA http:///schemas/orgncpdpuml/_KMckUMf4Ed6rNPUVhncBdA/22 pathmap://ORG_NCPDP_UML/NCPDP.epx#_KMckUcf4Ed6rNPUVhncBdA?org.ncpdp.uml/orgncpdpuml?">
   <uml:Package xmi:id="_7d6o22wJEd6j0P2vy2tNUw" name="org.ncpdp.uml">
     <eAnnotations xmi:id="_7d6o3GwJEd6j0P2vy2tNUw" source="uml2.diagrams" references="_p75KgG_FEd6vW63K5mFHPQ">
       <contents xmi:type="notation:Diagram" xmi:id="_p75KgG_FEd6vW63K5mFHPQ" type="Class" name="Main">
@@ -6393,4 +6393,5 @@ values are Y, N, P, X and Z</body>
   <orgncpdpuml:CodedElement xmi:id="_BUGGwMf8Ed6zd_kEPR_lYg" base_Property="_ovPV8J1_Ed6op-j6hF84wA" codingSystemElementId="TimingCode"/>
   <orgncpdpuml:CodedElement xmi:id="_BUPQsMf8Ed6zd_kEPR_lYg" base_Property="_fSUTEJ2AEd6op-j6hF84wA" codingSystemElementId="TimePeriod"/>
   <orgncpdpuml:CodedElement xmi:id="_BUZBsMf8Ed6zd_kEPR_lYg" base_Property="_9jL0EZ2BEd6op-j6hF84wA" codingSystemElementId="DurationCode"/>
+  <RIM:Role xmi:id="_qRX8UMsMEd6J7Zbn8ujtwg" base_Class="_7d6xxmwJEd6j0P2vy2tNUw"/>
 </xmi:XMI>
