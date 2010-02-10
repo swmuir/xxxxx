@@ -21,6 +21,17 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance;
+import org.ncpdp.uml.ECL.BasisOfCalculationCopay;
+import org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee;
+import org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax;
+import org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax;
+import org.ncpdp.uml.ECL.BasisOfReimbursementDetermination;
+import org.ncpdp.uml.ECL.BenefitStageQualifier;
+import org.ncpdp.uml.ECL.OtherAmountPaidQualifier;
+import org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid;
+import org.ncpdp.uml.ECL.TaxExemptIndicator;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.ResponsePricingSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -125,14 +136,14 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	protected EList<Field> dispensingFeePaid;
 
 	/**
-	 * The cached value of the '{@link #getTaxExemptIndicator() <em>Tax Exempt Indicator</em>}' containment reference list.
+	 * The cached value of the '{@link #getTaxExemptIndicator() <em>Tax Exempt Indicator</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getTaxExemptIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> taxExemptIndicator;
+	protected EList<TaxExemptIndicator> taxExemptIndicator;
 
 	/**
 	 * The cached value of the '{@link #getFlatSalesTaxAmountPaid() <em>Flat Sales Tax Amount Paid</em>}' containment reference list.
@@ -165,14 +176,14 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	protected EList<Field> percentageSalesTaxRatePaid;
 
 	/**
-	 * The cached value of the '{@link #getPercentageSalesTaxBasisPaid() <em>Percentage Sales Tax Basis Paid</em>}' containment reference list.
+	 * The cached value of the '{@link #getPercentageSalesTaxBasisPaid() <em>Percentage Sales Tax Basis Paid</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPercentageSalesTaxBasisPaid()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> percentageSalesTaxBasisPaid;
+	protected EList<PercentageSalesTaxBasisPaid> percentageSalesTaxBasisPaid;
 
 	/**
 	 * The cached value of the '{@link #getIncentiveAmountPaid() <em>Incentive Amount Paid</em>}' containment reference list.
@@ -205,14 +216,14 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	protected EList<Field> otherAmountPaidCount;
 
 	/**
-	 * The cached value of the '{@link #getOtherAmountPaidQualifier() <em>Other Amount Paid Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherAmountPaidQualifier() <em>Other Amount Paid Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherAmountPaidQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherAmountPaidQualifier;
+	protected EList<OtherAmountPaidQualifier> otherAmountPaidQualifier;
 
 	/**
 	 * The cached value of the '{@link #getOtherAmountPaid() <em>Other Amount Paid</em>}' containment reference list.
@@ -245,14 +256,14 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	protected EList<Field> totalAmountPaid;
 
 	/**
-	 * The cached value of the '{@link #getBasisOfReimbursementDetermination() <em>Basis Of Reimbursement Determination</em>}' containment reference list.
+	 * The cached value of the '{@link #getBasisOfReimbursementDetermination() <em>Basis Of Reimbursement Determination</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBasisOfReimbursementDetermination()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> basisOfReimbursementDetermination;
+	protected EList<BasisOfReimbursementDetermination> basisOfReimbursementDetermination;
 
 	/**
 	 * The cached value of the '{@link #getAmountAttributedToSalesTax() <em>Amount Attributed To Sales Tax</em>}' containment reference list.
@@ -325,44 +336,44 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	protected EList<Field> amountExceedingPeriodicBenefitMaximum;
 
 	/**
-	 * The cached value of the '{@link #getBasisOfCalculationdispensingFee() <em>Basis Of Calculationdispensing Fee</em>}' containment reference list.
+	 * The cached value of the '{@link #getBasisOfCalculationdispensingFee() <em>Basis Of Calculationdispensing Fee</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBasisOfCalculationdispensingFee()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> basisOfCalculationdispensingFee;
+	protected EList<BasisOfCalculationDispensingFee> basisOfCalculationdispensingFee;
 
 	/**
-	 * The cached value of the '{@link #getBasisOfCalculationcopay() <em>Basis Of Calculationcopay</em>}' containment reference list.
+	 * The cached value of the '{@link #getBasisOfCalculationcopay() <em>Basis Of Calculationcopay</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBasisOfCalculationcopay()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> basisOfCalculationcopay;
+	protected EList<BasisOfCalculationCopay> basisOfCalculationcopay;
 
 	/**
-	 * The cached value of the '{@link #getBasisOfCalculationflatSalesTax() <em>Basis Of Calculationflat Sales Tax</em>}' containment reference list.
+	 * The cached value of the '{@link #getBasisOfCalculationflatSalesTax() <em>Basis Of Calculationflat Sales Tax</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBasisOfCalculationflatSalesTax()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> basisOfCalculationflatSalesTax;
+	protected EList<BasisOfCalculationFlatSalesTax> basisOfCalculationflatSalesTax;
 
 	/**
-	 * The cached value of the '{@link #getBasisOfCalculationpercentageSalesTax() <em>Basis Of Calculationpercentage Sales Tax</em>}' containment reference list.
+	 * The cached value of the '{@link #getBasisOfCalculationpercentageSalesTax() <em>Basis Of Calculationpercentage Sales Tax</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBasisOfCalculationpercentageSalesTax()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> basisOfCalculationpercentageSalesTax;
+	protected EList<BasisOfCalculationPercentageSalesTax> basisOfCalculationpercentageSalesTax;
 
 	/**
 	 * The cached value of the '{@link #getAmountAttributedToProcessorFee() <em>Amount Attributed To Processor Fee</em>}' containment reference list.
@@ -405,14 +416,14 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	protected EList<Field> amountOfCoinsurance;
 
 	/**
-	 * The cached value of the '{@link #getBasisOfCalculationcoinsurance() <em>Basis Of Calculationcoinsurance</em>}' containment reference list.
+	 * The cached value of the '{@link #getBasisOfCalculationcoinsurance() <em>Basis Of Calculationcoinsurance</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBasisOfCalculationcoinsurance()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> basisOfCalculationcoinsurance;
+	protected EList<BasisOfCalculationCoinsurance> basisOfCalculationcoinsurance;
 
 	/**
 	 * The cached value of the '{@link #getBenefitStageCount() <em>Benefit Stage Count</em>}' containment reference list.
@@ -425,14 +436,14 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	protected EList<Field> benefitStageCount;
 
 	/**
-	 * The cached value of the '{@link #getBenefitStageQualifier() <em>Benefit Stage Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getBenefitStageQualifier() <em>Benefit Stage Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBenefitStageQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> benefitStageQualifier;
+	protected EList<BenefitStageQualifier> benefitStageQualifier;
 
 	/**
 	 * The cached value of the '{@link #getBenefitStageAmount() <em>Benefit Stage Amount</em>}' containment reference list.
@@ -616,9 +627,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getTaxExemptIndicator() {
+	public EList<TaxExemptIndicator> getTaxExemptIndicator() {
 		if (taxExemptIndicator == null) {
-			taxExemptIndicator = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__TAX_EXEMPT_INDICATOR);
+			taxExemptIndicator = new EDataTypeUniqueEList<TaxExemptIndicator>(TaxExemptIndicator.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__TAX_EXEMPT_INDICATOR);
 		}
 		return taxExemptIndicator;
 	}
@@ -664,9 +675,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPercentageSalesTaxBasisPaid() {
+	public EList<PercentageSalesTaxBasisPaid> getPercentageSalesTaxBasisPaid() {
 		if (percentageSalesTaxBasisPaid == null) {
-			percentageSalesTaxBasisPaid = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_BASIS_PAID);
+			percentageSalesTaxBasisPaid = new EDataTypeUniqueEList<PercentageSalesTaxBasisPaid>(PercentageSalesTaxBasisPaid.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_BASIS_PAID);
 		}
 		return percentageSalesTaxBasisPaid;
 	}
@@ -712,9 +723,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherAmountPaidQualifier() {
+	public EList<OtherAmountPaidQualifier> getOtherAmountPaidQualifier() {
 		if (otherAmountPaidQualifier == null) {
-			otherAmountPaidQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID_QUALIFIER);
+			otherAmountPaidQualifier = new EDataTypeUniqueEList<OtherAmountPaidQualifier>(OtherAmountPaidQualifier.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID_QUALIFIER);
 		}
 		return otherAmountPaidQualifier;
 	}
@@ -760,9 +771,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBasisOfReimbursementDetermination() {
+	public EList<BasisOfReimbursementDetermination> getBasisOfReimbursementDetermination() {
 		if (basisOfReimbursementDetermination == null) {
-			basisOfReimbursementDetermination = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_REIMBURSEMENT_DETERMINATION);
+			basisOfReimbursementDetermination = new EDataTypeUniqueEList<BasisOfReimbursementDetermination>(BasisOfReimbursementDetermination.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_REIMBURSEMENT_DETERMINATION);
 		}
 		return basisOfReimbursementDetermination;
 	}
@@ -856,9 +867,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBasisOfCalculationdispensingFee() {
+	public EList<BasisOfCalculationDispensingFee> getBasisOfCalculationdispensingFee() {
 		if (basisOfCalculationdispensingFee == null) {
-			basisOfCalculationdispensingFee = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONDISPENSING_FEE);
+			basisOfCalculationdispensingFee = new EDataTypeUniqueEList<BasisOfCalculationDispensingFee>(BasisOfCalculationDispensingFee.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONDISPENSING_FEE);
 		}
 		return basisOfCalculationdispensingFee;
 	}
@@ -868,9 +879,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBasisOfCalculationcopay() {
+	public EList<BasisOfCalculationCopay> getBasisOfCalculationcopay() {
 		if (basisOfCalculationcopay == null) {
-			basisOfCalculationcopay = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOPAY);
+			basisOfCalculationcopay = new EDataTypeUniqueEList<BasisOfCalculationCopay>(BasisOfCalculationCopay.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOPAY);
 		}
 		return basisOfCalculationcopay;
 	}
@@ -880,9 +891,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBasisOfCalculationflatSalesTax() {
+	public EList<BasisOfCalculationFlatSalesTax> getBasisOfCalculationflatSalesTax() {
 		if (basisOfCalculationflatSalesTax == null) {
-			basisOfCalculationflatSalesTax = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONFLAT_SALES_TAX);
+			basisOfCalculationflatSalesTax = new EDataTypeUniqueEList<BasisOfCalculationFlatSalesTax>(BasisOfCalculationFlatSalesTax.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONFLAT_SALES_TAX);
 		}
 		return basisOfCalculationflatSalesTax;
 	}
@@ -892,9 +903,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBasisOfCalculationpercentageSalesTax() {
+	public EList<BasisOfCalculationPercentageSalesTax> getBasisOfCalculationpercentageSalesTax() {
 		if (basisOfCalculationpercentageSalesTax == null) {
-			basisOfCalculationpercentageSalesTax = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONPERCENTAGE_SALES_TAX);
+			basisOfCalculationpercentageSalesTax = new EDataTypeUniqueEList<BasisOfCalculationPercentageSalesTax>(BasisOfCalculationPercentageSalesTax.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONPERCENTAGE_SALES_TAX);
 		}
 		return basisOfCalculationpercentageSalesTax;
 	}
@@ -952,9 +963,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBasisOfCalculationcoinsurance() {
+	public EList<BasisOfCalculationCoinsurance> getBasisOfCalculationcoinsurance() {
 		if (basisOfCalculationcoinsurance == null) {
-			basisOfCalculationcoinsurance = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOINSURANCE);
+			basisOfCalculationcoinsurance = new EDataTypeUniqueEList<BasisOfCalculationCoinsurance>(BasisOfCalculationCoinsurance.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOINSURANCE);
 		}
 		return basisOfCalculationcoinsurance;
 	}
@@ -976,9 +987,9 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBenefitStageQualifier() {
+	public EList<BenefitStageQualifier> getBenefitStageQualifier() {
 		if (benefitStageQualifier == null) {
-			benefitStageQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_QUALIFIER);
+			benefitStageQualifier = new EDataTypeUniqueEList<BenefitStageQualifier>(BenefitStageQualifier.class, this, TelecomPackage.RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_QUALIFIER);
 		}
 		return benefitStageQualifier;
 	}
@@ -1129,32 +1140,24 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return ((InternalEList<?>)getIngredientCostPaid()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__DISPENSING_FEE_PAID:
 				return ((InternalEList<?>)getDispensingFeePaid()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__TAX_EXEMPT_INDICATOR:
-				return ((InternalEList<?>)getTaxExemptIndicator()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__FLAT_SALES_TAX_AMOUNT_PAID:
 				return ((InternalEList<?>)getFlatSalesTaxAmountPaid()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_AMOUNT_PAID:
 				return ((InternalEList<?>)getPercentageSalesTaxAmountPaid()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_RATE_PAID:
 				return ((InternalEList<?>)getPercentageSalesTaxRatePaid()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_BASIS_PAID:
-				return ((InternalEList<?>)getPercentageSalesTaxBasisPaid()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__INCENTIVE_AMOUNT_PAID:
 				return ((InternalEList<?>)getIncentiveAmountPaid()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__PROFESSIONAL_SERVICE_FEE_PAID:
 				return ((InternalEList<?>)getProfessionalServiceFeePaid()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID_COUNT:
 				return ((InternalEList<?>)getOtherAmountPaidCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID_QUALIFIER:
-				return ((InternalEList<?>)getOtherAmountPaidQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID:
 				return ((InternalEList<?>)getOtherAmountPaid()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__OTHER_PAYER_AMOUNT_RECOGNIZED:
 				return ((InternalEList<?>)getOtherPayerAmountRecognized()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__TOTAL_AMOUNT_PAID:
 				return ((InternalEList<?>)getTotalAmountPaid()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_REIMBURSEMENT_DETERMINATION:
-				return ((InternalEList<?>)getBasisOfReimbursementDetermination()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__AMOUNT_ATTRIBUTED_TO_SALES_TAX:
 				return ((InternalEList<?>)getAmountAttributedToSalesTax()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__ACCUMULATED_DEDUCTIBLE_AMOUNT:
@@ -1169,14 +1172,6 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return ((InternalEList<?>)getAmountOfCopay()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__AMOUNT_EXCEEDING_PERIODIC_BENEFIT_MAXIMUM:
 				return ((InternalEList<?>)getAmountExceedingPeriodicBenefitMaximum()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONDISPENSING_FEE:
-				return ((InternalEList<?>)getBasisOfCalculationdispensingFee()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOPAY:
-				return ((InternalEList<?>)getBasisOfCalculationcopay()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONFLAT_SALES_TAX:
-				return ((InternalEList<?>)getBasisOfCalculationflatSalesTax()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONPERCENTAGE_SALES_TAX:
-				return ((InternalEList<?>)getBasisOfCalculationpercentageSalesTax()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__AMOUNT_ATTRIBUTED_TO_PROCESSOR_FEE:
 				return ((InternalEList<?>)getAmountAttributedToProcessorFee()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__PATIENT_SALES_TAX_AMOUNT:
@@ -1185,12 +1180,8 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return ((InternalEList<?>)getPlanSalesTaxAmount()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__AMOUNT_OF_COINSURANCE:
 				return ((InternalEList<?>)getAmountOfCoinsurance()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOINSURANCE:
-				return ((InternalEList<?>)getBasisOfCalculationcoinsurance()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_COUNT:
 				return ((InternalEList<?>)getBenefitStageCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_QUALIFIER:
-				return ((InternalEList<?>)getBenefitStageQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_AMOUNT:
 				return ((InternalEList<?>)getBenefitStageAmount()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__ESTIMATED_GENERIC_SAVINGS:
@@ -1348,7 +1339,7 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__TAX_EXEMPT_INDICATOR:
 				getTaxExemptIndicator().clear();
-				getTaxExemptIndicator().addAll((Collection<? extends Field>)newValue);
+				getTaxExemptIndicator().addAll((Collection<? extends TaxExemptIndicator>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__FLAT_SALES_TAX_AMOUNT_PAID:
 				getFlatSalesTaxAmountPaid().clear();
@@ -1364,7 +1355,7 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_BASIS_PAID:
 				getPercentageSalesTaxBasisPaid().clear();
-				getPercentageSalesTaxBasisPaid().addAll((Collection<? extends Field>)newValue);
+				getPercentageSalesTaxBasisPaid().addAll((Collection<? extends PercentageSalesTaxBasisPaid>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__INCENTIVE_AMOUNT_PAID:
 				getIncentiveAmountPaid().clear();
@@ -1380,7 +1371,7 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID_QUALIFIER:
 				getOtherAmountPaidQualifier().clear();
-				getOtherAmountPaidQualifier().addAll((Collection<? extends Field>)newValue);
+				getOtherAmountPaidQualifier().addAll((Collection<? extends OtherAmountPaidQualifier>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID:
 				getOtherAmountPaid().clear();
@@ -1396,7 +1387,7 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_REIMBURSEMENT_DETERMINATION:
 				getBasisOfReimbursementDetermination().clear();
-				getBasisOfReimbursementDetermination().addAll((Collection<? extends Field>)newValue);
+				getBasisOfReimbursementDetermination().addAll((Collection<? extends BasisOfReimbursementDetermination>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__AMOUNT_ATTRIBUTED_TO_SALES_TAX:
 				getAmountAttributedToSalesTax().clear();
@@ -1428,19 +1419,19 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONDISPENSING_FEE:
 				getBasisOfCalculationdispensingFee().clear();
-				getBasisOfCalculationdispensingFee().addAll((Collection<? extends Field>)newValue);
+				getBasisOfCalculationdispensingFee().addAll((Collection<? extends BasisOfCalculationDispensingFee>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOPAY:
 				getBasisOfCalculationcopay().clear();
-				getBasisOfCalculationcopay().addAll((Collection<? extends Field>)newValue);
+				getBasisOfCalculationcopay().addAll((Collection<? extends BasisOfCalculationCopay>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONFLAT_SALES_TAX:
 				getBasisOfCalculationflatSalesTax().clear();
-				getBasisOfCalculationflatSalesTax().addAll((Collection<? extends Field>)newValue);
+				getBasisOfCalculationflatSalesTax().addAll((Collection<? extends BasisOfCalculationFlatSalesTax>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONPERCENTAGE_SALES_TAX:
 				getBasisOfCalculationpercentageSalesTax().clear();
-				getBasisOfCalculationpercentageSalesTax().addAll((Collection<? extends Field>)newValue);
+				getBasisOfCalculationpercentageSalesTax().addAll((Collection<? extends BasisOfCalculationPercentageSalesTax>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__AMOUNT_ATTRIBUTED_TO_PROCESSOR_FEE:
 				getAmountAttributedToProcessorFee().clear();
@@ -1460,7 +1451,7 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOINSURANCE:
 				getBasisOfCalculationcoinsurance().clear();
-				getBasisOfCalculationcoinsurance().addAll((Collection<? extends Field>)newValue);
+				getBasisOfCalculationcoinsurance().addAll((Collection<? extends BasisOfCalculationCoinsurance>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_COUNT:
 				getBenefitStageCount().clear();
@@ -1468,7 +1459,7 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_QUALIFIER:
 				getBenefitStageQualifier().clear();
-				getBenefitStageQualifier().addAll((Collection<? extends Field>)newValue);
+				getBenefitStageQualifier().addAll((Collection<? extends BenefitStageQualifier>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_AMOUNT:
 				getBenefitStageAmount().clear();
@@ -1784,6 +1775,26 @@ public class ResponsePricingSegmentImpl extends EObjectImpl implements ResponseP
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", taxExemptIndicator: ");
+		result.append(taxExemptIndicator);
+		result.append(", percentageSalesTaxBasisPaid: ");
+		result.append(percentageSalesTaxBasisPaid);
+		result.append(", otherAmountPaidQualifier: ");
+		result.append(otherAmountPaidQualifier);
+		result.append(", basisOfReimbursementDetermination: ");
+		result.append(basisOfReimbursementDetermination);
+		result.append(", basisOfCalculationdispensingFee: ");
+		result.append(basisOfCalculationdispensingFee);
+		result.append(", basisOfCalculationcopay: ");
+		result.append(basisOfCalculationcopay);
+		result.append(", basisOfCalculationflatSalesTax: ");
+		result.append(basisOfCalculationflatSalesTax);
+		result.append(", basisOfCalculationpercentageSalesTax: ");
+		result.append(basisOfCalculationpercentageSalesTax);
+		result.append(", basisOfCalculationcoinsurance: ");
+		result.append(basisOfCalculationcoinsurance);
+		result.append(", benefitStageQualifier: ");
+		result.append(benefitStageQualifier);
 		result.append(')');
 		return result.toString();
 	}

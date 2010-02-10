@@ -21,6 +21,12 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity;
+import org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier;
+import org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier;
+import org.ncpdp.uml.ECL.RejectCode;
+import org.ncpdp.uml.ECL.TransactionResponseStatus;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.ResponseStatusSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -66,14 +72,14 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	protected EList<String> segmentIdentification;
 
 	/**
-	 * The cached value of the '{@link #getTransactionResponseStatus() <em>Transaction Response Status</em>}' containment reference list.
+	 * The cached value of the '{@link #getTransactionResponseStatus() <em>Transaction Response Status</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getTransactionResponseStatus()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> transactionResponseStatus;
+	protected EList<TransactionResponseStatus> transactionResponseStatus;
 
 	/**
 	 * The cached value of the '{@link #getAuthorizationNumber() <em>Authorization Number</em>}' containment reference list.
@@ -96,14 +102,14 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	protected EList<Field> rejectCount;
 
 	/**
-	 * The cached value of the '{@link #getRejectCode() <em>Reject Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getRejectCode() <em>Reject Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRejectCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> rejectCode;
+	protected EList<RejectCode> rejectCode;
 
 	/**
 	 * The cached value of the '{@link #getRejectFieldOccurrenceIndicator() <em>Reject Field Occurrence Indicator</em>}' containment reference list.
@@ -146,14 +152,14 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	protected EList<Field> additionalMessageInformationCount;
 
 	/**
-	 * The cached value of the '{@link #getAdditionalMessageInformationQualifier() <em>Additional Message Information Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getAdditionalMessageInformationQualifier() <em>Additional Message Information Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getAdditionalMessageInformationQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> additionalMessageInformationQualifier;
+	protected EList<AdditionalMessageInformationQualifier> additionalMessageInformationQualifier;
 
 	/**
 	 * The cached value of the '{@link #getAdditionalMessageInformation() <em>Additional Message Information</em>}' containment reference list.
@@ -166,24 +172,24 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	protected EList<Field> additionalMessageInformation;
 
 	/**
-	 * The cached value of the '{@link #getAdditionalMessageInformationContinuity() <em>Additional Message Information Continuity</em>}' containment reference list.
+	 * The cached value of the '{@link #getAdditionalMessageInformationContinuity() <em>Additional Message Information Continuity</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getAdditionalMessageInformationContinuity()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> additionalMessageInformationContinuity;
+	protected EList<AdditionalMessageInformationContinuity> additionalMessageInformationContinuity;
 
 	/**
-	 * The cached value of the '{@link #getHelpDeskPhoneNumberQualifier() <em>Help Desk Phone Number Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getHelpDeskPhoneNumberQualifier() <em>Help Desk Phone Number Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getHelpDeskPhoneNumberQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> helpDeskPhoneNumberQualifier;
+	protected EList<HelpDeskPhoneNumberQualifier> helpDeskPhoneNumberQualifier;
 
 	/**
 	 * The cached value of the '{@link #getHelpDeskPhoneNumber() <em>Help Desk Phone Number</em>}' containment reference list.
@@ -261,9 +267,9 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getTransactionResponseStatus() {
+	public EList<TransactionResponseStatus> getTransactionResponseStatus() {
 		if (transactionResponseStatus == null) {
-			transactionResponseStatus = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__TRANSACTION_RESPONSE_STATUS);
+			transactionResponseStatus = new EDataTypeUniqueEList<TransactionResponseStatus>(TransactionResponseStatus.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__TRANSACTION_RESPONSE_STATUS);
 		}
 		return transactionResponseStatus;
 	}
@@ -297,9 +303,9 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getRejectCode() {
+	public EList<RejectCode> getRejectCode() {
 		if (rejectCode == null) {
-			rejectCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__REJECT_CODE);
+			rejectCode = new EDataTypeUniqueEList<RejectCode>(RejectCode.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__REJECT_CODE);
 		}
 		return rejectCode;
 	}
@@ -357,9 +363,9 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getAdditionalMessageInformationQualifier() {
+	public EList<AdditionalMessageInformationQualifier> getAdditionalMessageInformationQualifier() {
 		if (additionalMessageInformationQualifier == null) {
-			additionalMessageInformationQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_QUALIFIER);
+			additionalMessageInformationQualifier = new EDataTypeUniqueEList<AdditionalMessageInformationQualifier>(AdditionalMessageInformationQualifier.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_QUALIFIER);
 		}
 		return additionalMessageInformationQualifier;
 	}
@@ -381,9 +387,9 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getAdditionalMessageInformationContinuity() {
+	public EList<AdditionalMessageInformationContinuity> getAdditionalMessageInformationContinuity() {
 		if (additionalMessageInformationContinuity == null) {
-			additionalMessageInformationContinuity = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_CONTINUITY);
+			additionalMessageInformationContinuity = new EDataTypeUniqueEList<AdditionalMessageInformationContinuity>(AdditionalMessageInformationContinuity.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_CONTINUITY);
 		}
 		return additionalMessageInformationContinuity;
 	}
@@ -393,9 +399,9 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getHelpDeskPhoneNumberQualifier() {
+	public EList<HelpDeskPhoneNumberQualifier> getHelpDeskPhoneNumberQualifier() {
 		if (helpDeskPhoneNumberQualifier == null) {
-			helpDeskPhoneNumberQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__HELP_DESK_PHONE_NUMBER_QUALIFIER);
+			helpDeskPhoneNumberQualifier = new EDataTypeUniqueEList<HelpDeskPhoneNumberQualifier>(HelpDeskPhoneNumberQualifier.class, this, TelecomPackage.RESPONSE_STATUS_SEGMENT__HELP_DESK_PHONE_NUMBER_QUALIFIER);
 		}
 		return helpDeskPhoneNumberQualifier;
 	}
@@ -456,14 +462,10 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TelecomPackage.RESPONSE_STATUS_SEGMENT__TRANSACTION_RESPONSE_STATUS:
-				return ((InternalEList<?>)getTransactionResponseStatus()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__AUTHORIZATION_NUMBER:
 				return ((InternalEList<?>)getAuthorizationNumber()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__REJECT_COUNT:
 				return ((InternalEList<?>)getRejectCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_STATUS_SEGMENT__REJECT_CODE:
-				return ((InternalEList<?>)getRejectCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__REJECT_FIELD_OCCURRENCE_INDICATOR:
 				return ((InternalEList<?>)getRejectFieldOccurrenceIndicator()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__APPROVED_MESSAGE_CODE_COUNT:
@@ -472,14 +474,8 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 				return ((InternalEList<?>)getApprovedMessageCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_COUNT:
 				return ((InternalEList<?>)getAdditionalMessageInformationCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_QUALIFIER:
-				return ((InternalEList<?>)getAdditionalMessageInformationQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION:
 				return ((InternalEList<?>)getAdditionalMessageInformation()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_CONTINUITY:
-				return ((InternalEList<?>)getAdditionalMessageInformationContinuity()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_STATUS_SEGMENT__HELP_DESK_PHONE_NUMBER_QUALIFIER:
-				return ((InternalEList<?>)getHelpDeskPhoneNumberQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__HELP_DESK_PHONE_NUMBER:
 				return ((InternalEList<?>)getHelpDeskPhoneNumber()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__TRANSACTION_REFERENCE_NUMBER:
@@ -553,7 +549,7 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 				return;
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__TRANSACTION_RESPONSE_STATUS:
 				getTransactionResponseStatus().clear();
-				getTransactionResponseStatus().addAll((Collection<? extends Field>)newValue);
+				getTransactionResponseStatus().addAll((Collection<? extends TransactionResponseStatus>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__AUTHORIZATION_NUMBER:
 				getAuthorizationNumber().clear();
@@ -565,7 +561,7 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 				return;
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__REJECT_CODE:
 				getRejectCode().clear();
-				getRejectCode().addAll((Collection<? extends Field>)newValue);
+				getRejectCode().addAll((Collection<? extends RejectCode>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__REJECT_FIELD_OCCURRENCE_INDICATOR:
 				getRejectFieldOccurrenceIndicator().clear();
@@ -585,7 +581,7 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 				return;
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_QUALIFIER:
 				getAdditionalMessageInformationQualifier().clear();
-				getAdditionalMessageInformationQualifier().addAll((Collection<? extends Field>)newValue);
+				getAdditionalMessageInformationQualifier().addAll((Collection<? extends AdditionalMessageInformationQualifier>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION:
 				getAdditionalMessageInformation().clear();
@@ -593,11 +589,11 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 				return;
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_CONTINUITY:
 				getAdditionalMessageInformationContinuity().clear();
-				getAdditionalMessageInformationContinuity().addAll((Collection<? extends Field>)newValue);
+				getAdditionalMessageInformationContinuity().addAll((Collection<? extends AdditionalMessageInformationContinuity>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__HELP_DESK_PHONE_NUMBER_QUALIFIER:
 				getHelpDeskPhoneNumberQualifier().clear();
-				getHelpDeskPhoneNumberQualifier().addAll((Collection<? extends Field>)newValue);
+				getHelpDeskPhoneNumberQualifier().addAll((Collection<? extends HelpDeskPhoneNumberQualifier>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_STATUS_SEGMENT__HELP_DESK_PHONE_NUMBER:
 				getHelpDeskPhoneNumber().clear();
@@ -740,6 +736,16 @@ public class ResponseStatusSegmentImpl extends EObjectImpl implements ResponseSt
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", transactionResponseStatus: ");
+		result.append(transactionResponseStatus);
+		result.append(", rejectCode: ");
+		result.append(rejectCode);
+		result.append(", additionalMessageInformationQualifier: ");
+		result.append(additionalMessageInformationQualifier);
+		result.append(", additionalMessageInformationContinuity: ");
+		result.append(additionalMessageInformationContinuity);
+		result.append(", helpDeskPhoneNumberQualifier: ");
+		result.append(helpDeskPhoneNumberQualifier);
 		result.append(')');
 		return result.toString();
 	}

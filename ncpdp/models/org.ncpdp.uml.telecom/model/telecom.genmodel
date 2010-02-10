@@ -3,7 +3,7 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="/org.ncpdp.uml.telecom/src"
     modelPluginID="org.ncpdp.uml.telecom" modelName="Telecom" importerID="org.eclipse.uml2.uml.ecore.importer"
-    complianceLevel="6.0" copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="../../org.ncpdp.uml.ecl/model/ecl.genmodel#//ECL platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
     <details key="UNION_PROPERTIES" value="PROCESS"/>
@@ -85,7 +85,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//TransactionHeaderSegment/softwareVendorcertificationId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//TransactionHeaderSegment/transactionCount"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//TransactionHeaderSegment/transactionCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//TransactionHeaderSegment/serviceProviderId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -97,7 +97,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//TransactionHeaderSegment/version"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//TransactionHeaderSegment/transactionCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//TransactionHeaderSegment/transactionCode"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="telecom.ecore#//Field">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute telecom.ecore#//Field/field"/>
@@ -126,9 +126,9 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//WorkersCompensationSegment/claimreferenceId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//WorkersCompensationSegment/billingEntityTypeIndicator"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//WorkersCompensationSegment/billingEntityTypeIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//WorkersCompensationSegment/payToQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//WorkersCompensationSegment/payToQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//WorkersCompensationSegment/payToId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -142,14 +142,14 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//WorkersCompensationSegment/payToZippostalZone"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//WorkersCompensationSegment/genericEquivalentProductIdQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//WorkersCompensationSegment/genericEquivalentProductIdQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//WorkersCompensationSegment/genericEquivalentProductId"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="telecom.ecore#//PriorAuthorizationSegment">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute telecom.ecore#//PriorAuthorizationSegment/segmentIdentification"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PriorAuthorizationSegment/requestType"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//PriorAuthorizationSegment/requestType"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PriorAuthorizationSegment/requestPeriodDatebegin"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -206,7 +206,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PricingSegment/grossAmountDue"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PricingSegment/basisOfCostDetermination"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//PricingSegment/basisOfCostDetermination"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PricingSegment/medicaidPaidAmount"/>
     </genClasses>
@@ -247,13 +247,13 @@
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="telecom.ecore#//PatientSegment">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute telecom.ecore#//PatientSegment/segmentIdentification"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/patientIdQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//PatientSegment/patientIdQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/patientId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/dateOfBirth"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/patientGenderCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//PatientSegment/patientGenderCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/patientFirstName"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -269,17 +269,17 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/patientPhoneNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/placeOfService"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//PatientSegment/placeOfService"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/employerId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/smokerNonsmokerCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/pregnancyIndicator"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//PatientSegment/pregnancyIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/patientEmailAddress"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//PatientSegment/patientResidence"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//PatientSegment/patientResidence"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="telecom.ecore#//NarrativeSegment">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute telecom.ecore#//NarrativeSegment/segmentIdentification"/>
@@ -299,13 +299,13 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/planId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/eligibilityClarificationCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//InsuranceSegment/eligibilityClarificationCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/groupId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/personCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/patientRelationshipCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//InsuranceSegment/patientRelationshipCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/otherPayerBinNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -319,9 +319,9 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/medicaidIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/providerAcceptAssignmentIndicator"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//InsuranceSegment/providerAcceptAssignmentIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/cmsPartDDefinedQualifiedFacility"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//InsuranceSegment/cmsPartDDefinedQualifiedFacility"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//InsuranceSegment/medicaidIdNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -347,22 +347,22 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//DURPPSSegment/durppsCodeCounter"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//DURPPSSegment/reasonForServiceCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//DURPPSSegment/reasonForServiceCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//DURPPSSegment/professionalServiceCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//DURPPSSegment/professionalServiceCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//DURPPSSegment/resultOfServiceCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//DURPPSSegment/resultOfServiceCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//DURPPSSegment/durppsLevelOfEffort"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//DURPPSSegment/durCoagentIdQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//DURPPSSegment/durCoagentIdQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//DURPPSSegment/durCoagentId"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="telecom.ecore#//CouponSegment">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute telecom.ecore#//CouponSegment/segmentIdentification"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CouponSegment/couponType"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//CouponSegment/couponType"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CouponSegment/couponNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -373,9 +373,9 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/coordinationOfBenefitsotherPaymentsCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerCoverageType"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerCoverageType"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerIdQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerIdQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -385,7 +385,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerAmountPaidCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerAmountPaidQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerAmountPaidQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerAmountPaid"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -395,13 +395,13 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerpatientResponsibilityAmountCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerpatientResponsibilityAmountQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerpatientResponsibilityAmountQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/otherPayerpatientResponsibilityAmount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/benefitStageCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/benefitStageQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/benefitStageQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CoordinationofBenefitsOtherPaymentsSegment/benefitStageAmount"/>
     </genClasses>
@@ -420,9 +420,9 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClinicalSegment/measurementTime"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClinicalSegment/measurementDimension"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClinicalSegment/measurementDimension"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClinicalSegment/measurementUnit"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClinicalSegment/measurementUnit"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClinicalSegment/measurementValue"/>
     </genClasses>
@@ -447,7 +447,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/quantityDispensed"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/fillNumber"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/fillNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/daysSupply"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -457,19 +457,19 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/datePrescriptionWritten"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/numberOfRefillsAuthorized"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/numberOfRefillsAuthorized"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/prescriptionOriginCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/prescriptionOriginCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/submissionClarificationCodeCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/submissionClarificationCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/submissionClarificationCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/quantityPrescribed"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/otherCoverageCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/otherCoverageCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/specialPackagingIndicator"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/specialPackagingIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/originallyPrescribedProductserviceIdQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -481,50 +481,50 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/scheduledPrescriptionIdNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/unitOfMeasure"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/unitOfMeasure"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/levelOfService"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/levelOfService"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/priorAuthorizationTypeCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/priorAuthorizationTypeCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/priorAuthorizationNumberSubmitted"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/intermediaryAuthorizationTypeId"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/intermediaryAuthorizationTypeId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/intermediaryAuthorizationId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/dispensingStatus"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/dispensingStatus"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/quantityIntendedToBeDispensed"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/daysSupplyIntendedToBeDispensed"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/delayReasonCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/delayReasonCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/transactionReferenceNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/patientAssignmentIndicatordirectMemberReimbursementIndicator"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/patientAssignmentIndicatordirectMemberReimbursementIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/routeOfAdministration"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/routeOfAdministration"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/compoundType"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/compoundType"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/medicaidSubrogationInternalControlNumbertransactionControlNumbericntcn"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ClaimSegment/pharmacyServiceType"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ClaimSegment/pharmacyServiceType"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="telecom.ecore#//AdditionalDocumentationSegment">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute telecom.ecore#//AdditionalDocumentationSegment/segmentIdentification"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//AdditionalDocumentationSegment/additionalDocumentationTypeId"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//AdditionalDocumentationSegment/additionalDocumentationTypeId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//AdditionalDocumentationSegment/requestPeriodBeginDate"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//AdditionalDocumentationSegment/requestPeriodRecertrevisedDate"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//AdditionalDocumentationSegment/requestStatus"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//AdditionalDocumentationSegment/requestStatus"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//AdditionalDocumentationSegment/lengthOfNeedQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//AdditionalDocumentationSegment/lengthOfNeedQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//AdditionalDocumentationSegment/lengthOfNeed"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -549,13 +549,13 @@
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="telecom.ecore#//CompoundSegment">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute telecom.ecore#//CompoundSegment/segmentIdentification"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CompoundSegment/compoundDosageFormDescriptionCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//CompoundSegment/compoundDosageFormDescriptionCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CompoundSegment/compoundDispensingUnitFormIndicator"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//CompoundSegment/compoundDispensingUnitFormIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CompoundSegment/compoundIngredientComponentCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CompoundSegment/compoundProductIdQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//CompoundSegment/compoundProductIdQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//CompoundSegment/compoundProductId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -593,9 +593,9 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseHeaderSegment/versionreleaseNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseHeaderSegment/transactionCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseHeaderSegment/transactionCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseHeaderSegment/transactionCount"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseHeaderSegment/transactionCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseHeaderSegment/headerResponseStatus"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -631,9 +631,9 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerIdCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerCoverageType"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerCoverageType"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerIdQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerIdQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -647,7 +647,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerHelpDeskPhoneNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerPatientRelationshipCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerPatientRelationshipCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseCoordinationofBenefitsOtherPayersSegment/otherPayerBenefitEffectiveDate"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -658,11 +658,11 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseDURPPSSegment/durppsResponseCodeCounter"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseDURPPSSegment/reasonForServiceCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseDURPPSSegment/reasonForServiceCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseDURPPSSegment/clinicalSignificanceCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseDURPPSSegment/otherPharmacyIndicator"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseDURPPSSegment/otherPharmacyIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseDURPPSSegment/previousDateOfFill"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -670,7 +670,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseDURPPSSegment/databaseIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseDURPPSSegment/otherPrescriberIndicator"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseDURPPSSegment/otherPrescriberIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseDURPPSSegment/durFreeTextMessage"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -685,7 +685,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseInsuranceSegment/networkReimbursementId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseInsuranceSegment/payerIdQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseInsuranceSegment/payerIdQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseInsuranceSegment/payerId"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -718,7 +718,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/dispensingFeePaid"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/taxExemptIndicator"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/taxExemptIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/flatSalesTaxAmountPaid"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -726,7 +726,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/percentageSalesTaxRatePaid"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/percentageSalesTaxBasisPaid"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/percentageSalesTaxBasisPaid"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/incentiveAmountPaid"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -734,7 +734,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/otherAmountPaidCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/otherAmountPaidQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/otherAmountPaidQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/otherAmountPaid"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -742,7 +742,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/totalAmountPaid"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/basisOfReimbursementDetermination"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/basisOfReimbursementDetermination"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/amountAttributedToSalesTax"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -758,13 +758,13 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/amountExceedingPeriodicBenefitMaximum"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/basisOfCalculationdispensingFee"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/basisOfCalculationdispensingFee"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/basisOfCalculationcopay"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/basisOfCalculationcopay"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/basisOfCalculationflatSalesTax"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/basisOfCalculationflatSalesTax"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/basisOfCalculationpercentageSalesTax"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/basisOfCalculationpercentageSalesTax"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/amountAttributedToProcessorFee"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -774,11 +774,11 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/amountOfCoinsurance"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/basisOfCalculationcoinsurance"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/basisOfCalculationcoinsurance"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/benefitStageCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/benefitStageQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponsePricingSegment/benefitStageQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponsePricingSegment/benefitStageAmount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -824,13 +824,13 @@
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="telecom.ecore#//ResponseStatusSegment">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseStatusSegment/segmentIdentification"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/transactionResponseStatus"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseStatusSegment/transactionResponseStatus"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/authorizationNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/rejectCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/rejectCode"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseStatusSegment/rejectCode"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/rejectFieldOccurrenceIndicator"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -840,13 +840,13 @@
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/additionalMessageInformationCount"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/additionalMessageInformationQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseStatusSegment/additionalMessageInformationQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/additionalMessageInformation"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/additionalMessageInformationContinuity"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseStatusSegment/additionalMessageInformationContinuity"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/helpDeskPhoneNumberQualifier"/>
+          createChild="true" ecoreFeature="ecore:EAttribute telecom.ecore#//ResponseStatusSegment/helpDeskPhoneNumberQualifier"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference telecom.ecore#//ResponseStatusSegment/helpDeskPhoneNumber"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"

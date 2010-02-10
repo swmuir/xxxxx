@@ -16,8 +16,8 @@
     <packageImport xmi:id="_0Cx_lg2jEd-RjqmAV7zMCg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packageImport xmi:id="_k_LAkBXDEd-9efMcr1p1KA">
-      <importedPackage xmi:type="uml:Model" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_cU8ZYZ44Ed6wn6lcMWl-9w?ECL?"/>
+    <packageImport xmi:id="_8UX04BZREd-MZ7ASqD-6HQ">
+      <importedPackage xmi:type="uml:Model" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_cU8ZYZ44Ed6wn6lcMWl-9w?ECL?"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_jkh80A6XEd-RjqmAV7zMCg" name="DocumentRoot">
       <ownedComment xmi:id="_dPo7MA_zEd-aZPHchEOQZg" annotatedElement="_jkh80A6XEd-RjqmAV7zMCg">
@@ -57,7 +57,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nx66Ug9HEd-b2MdXdLPaUQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nx66Uw9HEd-b2MdXdLPaUQ" name="transactionCount" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4of59RWqEd-9efMcr1p1KA?ECL/Common/TransactionCount?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4of59RWqEd-9efMcr1p1KA?ECL/TransactionCount?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nx66VA9HEd-b2MdXdLPaUQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nx66VQ9HEd-b2MdXdLPaUQ" value="1"/>
       </ownedAttribute>
@@ -82,7 +82,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nx66ZA9HEd-b2MdXdLPaUQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nx66ZQ9HEd-b2MdXdLPaUQ" name="transactionCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4of58RWqEd-9efMcr1p1KA?ECL/Common/TransactionCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4of58RWqEd-9efMcr1p1KA?ECL/TransactionCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nx66Zg9HEd-b2MdXdLPaUQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nx66Zw9HEd-b2MdXdLPaUQ" value="1"/>
       </ownedAttribute>
@@ -140,7 +140,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMoXg9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMoXw9XEd-b2MdXdLPaUQ" name="fillNumber" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4vWv5hWqEd-9efMcr1p1KA?ECL/Common/FillNumber?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4vWv5hWqEd-9efMcr1p1KA?ECL/FillNumber?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMoYA9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMoYQ9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -148,8 +148,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMoYw9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMoZA9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_oMMoZQ9XEd-b2MdXdLPaUQ" name="compoundCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4vf50hWqEd-9efMcr1p1KA?ECL/Common/CompoundCode?"/>
+      <ownedAttribute xmi:id="_oMMoZQ9XEd-b2MdXdLPaUQ" name="compoundCode" visibility="private" type="_mWXuIA6eEd-RjqmAV7zMCg" aggregation="composite">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMoZg9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMoZw9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -162,12 +161,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMobQ9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMobg9XEd-b2MdXdLPaUQ" name="numberOfRefillsAuthorized" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4tHUMhWqEd-9efMcr1p1KA?ECL/Common/NumberofRefillsAuthorized?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4tHUMhWqEd-9efMcr1p1KA?ECL/NumberofRefillsAuthorized?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMobw9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMocA9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMocQ9XEd-b2MdXdLPaUQ" name="prescriptionOriginCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4tRFMhWqEd-9efMcr1p1KA?ECL/Common/PrescriptionOriginCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4tRFMhWqEd-9efMcr1p1KA?ECL/PrescriptionOriginCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMocg9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMocw9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -176,7 +175,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMModg9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMModw9XEd-b2MdXdLPaUQ" name="submissionClarificationCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4tkAIRWqEd-9efMcr1p1KA?ECL/Common/SubmissionClarificationCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4tkAIRWqEd-9efMcr1p1KA?ECL/SubmissionClarificationCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMoeA9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMoeQ9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -185,12 +184,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMofA9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMofQ9XEd-b2MdXdLPaUQ" name="otherCoverageCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4s-KRRWqEd-9efMcr1p1KA?ECL/Common/OtherCoverageCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4s-KRRWqEd-9efMcr1p1KA?ECL/OtherCoverageCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMofg9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMofw9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMogA9XEd-b2MdXdLPaUQ" name="specialPackagingIndicator" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4ta2NRWqEd-9efMcr1p1KA?ECL/Common/SpecialPackagingIndicator?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4ta2NRWqEd-9efMcr1p1KA?ECL/SpecialPackagingIndicator?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMogQ9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMogg9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -215,17 +214,17 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMokQ9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMokg9XEd-b2MdXdLPaUQ" name="unitOfMeasure" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_40a2FhWqEd-9efMcr1p1KA?ECL/Common/UnitofMeasure?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_40a2FhWqEd-9efMcr1p1KA?ECL/UnitofMeasure?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMokw9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMolA9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMolQ9XEd-b2MdXdLPaUQ" name="levelOfService" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4tHUNhWqEd-9efMcr1p1KA?ECL/Common/LevelofService?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4tHUNhWqEd-9efMcr1p1KA?ECL/LevelofService?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMolg9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMolw9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMomA9XEd-b2MdXdLPaUQ" name="priorAuthorizationTypeCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4uKdFRWqEd-9efMcr1p1KA?ECL/Common/PriorAuthorizationTypeCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4uKdFRWqEd-9efMcr1p1KA?ECL/PriorAuthorizationTypeCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMomQ9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMomg9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -234,7 +233,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMonQ9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMong9XEd-b2MdXdLPaUQ" name="intermediaryAuthorizationTypeId" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4uKdGRWqEd-9efMcr1p1KA?ECL/Common/IntermediaryAuthorizationTypeID?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4uKdGRWqEd-9efMcr1p1KA?ECL/IntermediaryAuthorizationTypeID?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMonw9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMooA9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -243,7 +242,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMoow9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMopA9XEd-b2MdXdLPaUQ" name="dispensingStatus" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4q4fkhWqEd-9efMcr1p1KA?ECL/Common/DispensingStatus?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4q4fkhWqEd-9efMcr1p1KA?ECL/DispensingStatus?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMopQ9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMopg9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -256,7 +255,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMorA9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMorQ9XEd-b2MdXdLPaUQ" name="delayReasonCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4rLahRWqEd-9efMcr1p1KA?ECL/Common/DelayReasonCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4rLahRWqEd-9efMcr1p1KA?ECL/DelayReasonCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMorg9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMorw9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -265,17 +264,17 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMosg9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMosw9XEd-b2MdXdLPaUQ" name="patientAssignmentIndicator(directMemberReimbursementIndicator)" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4sXtVRWqEd-9efMcr1p1KA?ECL/Common/PatientAssignmentIndicator(DirectMemberReimbursementIndicator)?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4sXtVRWqEd-9efMcr1p1KA?ECL/PatientAssignmentIndicator(DirectMemberReimbursementIndicator)?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMotA9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMotQ9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMotg9XEd-b2MdXdLPaUQ" name="routeOfAdministration" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_45MBVhWqEd-9efMcr1p1KA?ECL/Common/RouteOfAdministration?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_45MBVhWqEd-9efMcr1p1KA?ECL/RouteOfAdministration?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMotw9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMouA9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMouQ9XEd-b2MdXdLPaUQ" name="compoundType" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_45VyUhWqEd-9efMcr1p1KA?ECL/Common/CompoundType?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_45VyUhWqEd-9efMcr1p1KA?ECL/CompoundType?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMoug9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMouw9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -284,7 +283,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMovg9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oMMovw9XEd-b2MdXdLPaUQ" name="pharmacyServiceType" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4n5dCRWqEd-9efMcr1p1KA?ECL/Common/PharmacyServiceType?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4n5dCRWqEd-9efMcr1p1KA?ECL/PharmacyServiceType?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMowA9XEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMowQ9XEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -320,12 +319,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ypHmRQ9vEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ypHmRg9vEd-b2MdXdLPaUQ" name="measurementDimension" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4u6D-BWqEd-9efMcr1p1KA?ECL/Common/MeasurementDimension?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4u6D-BWqEd-9efMcr1p1KA?ECL/MeasurementDimension?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ypHmRw9vEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ypHmSA9vEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ypHmSQ9vEd-b2MdXdLPaUQ" name="measurementUnit" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4vDN4hWqEd-9efMcr1p1KA?ECL/Common/MeasurementUnit?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4vDN4hWqEd-9efMcr1p1KA?ECL/MeasurementUnit?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ypHmSg9vEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ypHmSw9vEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -372,7 +371,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQmQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8ykQmg9xEd-b2MdXdLPaUQ" name="payerIdQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4wZRtRWqEd-9efMcr1p1KA?ECL/Common/PayerIDQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4wZRtRWqEd-9efMcr1p1KA?ECL/PayerIDQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ykQmw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQnA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -400,12 +399,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQrA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8ykQrQ9xEd-b2MdXdLPaUQ" name="compoundDosageFormDescriptionCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4uKdERWqEd-9efMcr1p1KA?ECL/Common/CompoundDosageFormDescriptionCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4uKdERWqEd-9efMcr1p1KA?ECL/CompoundDosageFormDescriptionCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ykQrg9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQrw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8ykQsA9xEd-b2MdXdLPaUQ" name="compoundDispensingUnitFormIndicator" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4t27EhWqEd-9efMcr1p1KA?ECL/Common/CompoundDispensingUnitFormIndicator?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4t27EhWqEd-9efMcr1p1KA?ECL/CompoundDispensingUnitFormIndicator?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ykQsQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQsg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -414,7 +413,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQtQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8ykQtg9xEd-b2MdXdLPaUQ" name="compoundProductIdQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4u6D8BWqEd-9efMcr1p1KA?ECL/Common/CompoundProductIDQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4u6D8BWqEd-9efMcr1p1KA?ECL/CompoundProductIDQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ykQtw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQuA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -490,12 +489,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQ7A9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8ykQ7Q9xEd-b2MdXdLPaUQ" name="billingEntityTypeIndicator" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4ndYIBWqEd-9efMcr1p1KA?ECL/Common/BillingEntityTypeIndicator?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4ndYIBWqEd-9efMcr1p1KA?ECL/BillingEntityTypeIndicator?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ykQ7g9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQ7w9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8ykQ8A9xEd-b2MdXdLPaUQ" name="payToQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4ndYJBWqEd-9efMcr1p1KA?ECL/Common/PayToQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4ndYJBWqEd-9efMcr1p1KA?ECL/PayToQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ykQ8Q9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykQ8g9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -524,7 +523,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykRBA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8ykRBQ9xEd-b2MdXdLPaUQ" name="genericEquivalentProductIdQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4nmiEhWqEd-9efMcr1p1KA?ECL/Common/GenericEquivalentProductIDQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4nmiEhWqEd-9efMcr1p1KA?ECL/GenericEquivalentProductIDQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ykRBg9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ykRBw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -560,7 +559,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBkg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuBkw9xEd-b2MdXdLPaUQ" name="eligibilityClarificationCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4s-KSRWqEd-9efMcr1p1KA?ECL/Common/EligibilityClarificationCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4s-KSRWqEd-9efMcr1p1KA?ECL/EligibilityClarificationCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuBlA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBlQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -573,7 +572,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBmw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuBnA9xEd-b2MdXdLPaUQ" name="patientRelationshipCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4s0ZQRWqEd-9efMcr1p1KA?ECL/Common/PatientRelationshipCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4s0ZQRWqEd-9efMcr1p1KA?ECL/PatientRelationshipCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuBnQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBng9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -602,12 +601,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBsA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuBsQ9xEd-b2MdXdLPaUQ" name="providerAcceptAssignmentIndicator" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4rVLgRWqEd-9efMcr1p1KA?ECL/Common/ProviderAcceptAssignmentIndicator?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4rVLgRWqEd-9efMcr1p1KA?ECL/ProviderAcceptAssignmentIndicator?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuBsg9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBsw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuBtA9xEd-b2MdXdLPaUQ" name="cmsPartDDefinedQualifiedFacility" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_45VyVhWqEd-9efMcr1p1KA?ECL/Common/CMSPartDDefinedQualifiedFacility?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_45VyVhWqEd-9efMcr1p1KA?ECL/CMSPartDDefinedQualifiedFacility?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuBtQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBtg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -631,7 +630,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBww9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuBxA9xEd-b2MdXdLPaUQ" name="reasonForServiceCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4tkAKRWqEd-9efMcr1p1KA?ECL/Common/ReasonforServiceCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4tkAKRWqEd-9efMcr1p1KA?ECL/ReasonforServiceCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuBxQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBxg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -640,7 +639,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuByQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuByg9xEd-b2MdXdLPaUQ" name="otherPharmacyIndicator" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4vzb1hWqEd-9efMcr1p1KA?ECL/Common/OtherPharmacyIndicator?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4vzb1hWqEd-9efMcr1p1KA?ECL/OtherPharmacyIndicator?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuByw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuBzA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -657,7 +656,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuB1Q9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuB1g9xEd-b2MdXdLPaUQ" name="otherPrescriberIndicator" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4v8lxRWqEd-9efMcr1p1KA?ECL/Common/OtherPrescriberIndicator?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4v8lxRWqEd-9efMcr1p1KA?ECL/OtherPrescriberIndicator?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuB1w9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuB2A9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -681,12 +680,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuB5Q9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuB5g9xEd-b2MdXdLPaUQ" name="otherPayerCoverageType" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4quukRWqEd-9efMcr1p1KA?ECL/Common/OtherPayerCoverageType?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4quukRWqEd-9efMcr1p1KA?ECL/OtherPayerCoverageType?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuB5w9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuB6A9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuB6Q9xEd-b2MdXdLPaUQ" name="otherPayerIdQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4quulRWqEd-9efMcr1p1KA?ECL/Common/OtherPayerIDQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4quulRWqEd-9efMcr1p1KA?ECL/OtherPayerIDQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuB6g9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuB6w9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -707,7 +706,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuB9w9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuB-A9xEd-b2MdXdLPaUQ" name="otherPayerAmountPaidQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4quumRWqEd-9efMcr1p1KA?ECL/Common/OtherPayerAmountPaidQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4quumRWqEd-9efMcr1p1KA?ECL/OtherPayerAmountPaidQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuB-Q9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuB-g9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -728,7 +727,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCBg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuCBw9xEd-b2MdXdLPaUQ" name="otherPayer-patientResponsibilityAmountQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4rLagRWqEd-9efMcr1p1KA?ECL/Common/OtherPayerPatientResponsibilityAmountQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4rLagRWqEd-9efMcr1p1KA?ECL/OtherPayerPatientResponsibilityAmountQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuCCA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCCQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -741,7 +740,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCDw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuCEA9xEd-b2MdXdLPaUQ" name="benefitStageQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4sXtWRWqEd-9efMcr1p1KA?ECL/Common/BenefitStageQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4sXtWRWqEd-9efMcr1p1KA?ECL/BenefitStageQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuCEQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCEg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -757,7 +756,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCGQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuCGg9xEd-b2MdXdLPaUQ" name="patientIdQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4qbzqRWqEd-9efMcr1p1KA?ECL/Common/PatientIDQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4qbzqRWqEd-9efMcr1p1KA?ECL/PatientIDQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuCGw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCHA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -770,7 +769,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCIg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuCIw9xEd-b2MdXdLPaUQ" name="patientGenderCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4sqoRhWqEd-9efMcr1p1KA?ECL/Common/PatientGenderCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4sqoRhWqEd-9efMcr1p1KA?ECL/PatientGenderCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuCJA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCJQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -803,7 +802,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCOg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuCOw9xEd-b2MdXdLPaUQ" name="placeOfService" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4s0ZRRWqEd-9efMcr1p1KA?ECL/Common/PatientLocation?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4s0ZRRWqEd-9efMcr1p1KA?ECL/PatientLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuCPA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCPQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -816,7 +815,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCQw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuCRA9xEd-b2MdXdLPaUQ" name="pregnancyIndicator" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4qlkphWqEd-9efMcr1p1KA?ECL/Common/PregnancyIndicator?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4qlkphWqEd-9efMcr1p1KA?ECL/PregnancyIndicator?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuCRQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCRg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -825,7 +824,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCSQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuCSg9xEd-b2MdXdLPaUQ" name="patientResidence" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4sOjZRWqEd-9efMcr1p1KA?ECL/Common/PatientResidence?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4sOjZRWqEd-9efMcr1p1KA?ECL/PatientResidence?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuCSw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCTA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -893,7 +892,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCeg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8yuCew9xEd-b2MdXdLPaUQ" name="basisOfCostDetermination" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4tRFNhWqEd-9efMcr1p1KA?ECL/Common/BasisOfCostDetermination?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4tRFNhWqEd-9efMcr1p1KA?ECL/BasisOfCostDetermination?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yuCfA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yuCfQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -909,7 +908,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3ygw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3yhA9xEd-b2MdXdLPaUQ" name="requestType" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4vM-4hWqEd-9efMcr1p1KA?ECL/Common/RequestType?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4vM-4hWqEd-9efMcr1p1KA?ECL/RequestType?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3yhQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3yhg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -969,7 +968,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3yrg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3yrw9xEd-b2MdXdLPaUQ" name="transactionResponseStatus" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4nTnJhWqEd-9efMcr1p1KA?ECL/Common/TransactionResponseStatus?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4nTnJhWqEd-9efMcr1p1KA?ECL/TransactionResponseStatus?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3ysA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3ysQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -982,7 +981,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3ytw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3yuA9xEd-b2MdXdLPaUQ" name="rejectCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4vpq0hWqEd-9efMcr1p1KA?ECL/Common/RejectCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4vpq0hWqEd-9efMcr1p1KA?ECL/RejectCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3yuQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3yug9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1003,7 +1002,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3yxg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3yxw9xEd-b2MdXdLPaUQ" name="additionalMessageInformationQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4nmiGhWqEd-9efMcr1p1KA?ECL/Common/AdditionalMessageInformationQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4nmiGhWqEd-9efMcr1p1KA?ECL/AdditionalMessageInformationQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3yyA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3yyQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1012,12 +1011,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3yzA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3yzQ9xEd-b2MdXdLPaUQ" name="additionalMessageInformationContinuity" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4nmiFhWqEd-9efMcr1p1KA?ECL/Common/AdditionalMessageInformationContinuity?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4nmiFhWqEd-9efMcr1p1KA?ECL/AdditionalMessageInformationContinuity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3yzg9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3yzw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3y0A9xEd-b2MdXdLPaUQ" name="helpDeskPhoneNumberQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4wGWwxWqEd-9efMcr1p1KA?ECL/Common/HelpDeskPhoneNumberQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4wGWwxWqEd-9efMcr1p1KA?ECL/HelpDeskPhoneNumberQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3y0Q9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3y0g9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1045,7 +1044,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3y4g9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3y4w9xEd-b2MdXdLPaUQ" name="additionalDocumentationTypeId" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4reVcRWqEd-9efMcr1p1KA?ECL/Common/AdditionalDocumentationTypeID?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4reVcRWqEd-9efMcr1p1KA?ECL/AdditionalDocumentationTypeID?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3y5A9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3y5Q9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1058,12 +1057,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3y6w9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3y7A9xEd-b2MdXdLPaUQ" name="requestStatus" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4sOjYRWqEd-9efMcr1p1KA?ECL/Common/RequestStatus?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4sOjYRWqEd-9efMcr1p1KA?ECL/RequestStatus?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3y7Q9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3y7g9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3y7w9xEd-b2MdXdLPaUQ" name="lengthOfNeedQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4reVeRWqEd-9efMcr1p1KA?ECL/Common/LengthofNeedQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4reVeRWqEd-9efMcr1p1KA?ECL/LengthofNeedQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3y8A9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3y8Q9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1200,7 +1199,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3zTw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8y3zUA9xEd-b2MdXdLPaUQ" name="couponType" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4uwS9RWqEd-9efMcr1p1KA?ECL/Common/CouponType?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4uwS9RWqEd-9efMcr1p1KA?ECL/CouponType?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y3zUQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8y3zUg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1224,12 +1223,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8dg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA8dw9xEd-b2MdXdLPaUQ" name="otherPayerCoverageType" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4quukRWqEd-9efMcr1p1KA?ECL/Common/OtherPayerCoverageType?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4quukRWqEd-9efMcr1p1KA?ECL/OtherPayerCoverageType?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA8eA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8eQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA8eg9xEd-b2MdXdLPaUQ" name="otherPayerIdQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4quulRWqEd-9efMcr1p1KA?ECL/Common/OtherPayerIDQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4quulRWqEd-9efMcr1p1KA?ECL/OtherPayerIDQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA8ew9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8fA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1258,7 +1257,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8jg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA8jw9xEd-b2MdXdLPaUQ" name="otherPayerPatientRelationshipCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4n5dARWqEd-9efMcr1p1KA?ECL/Common/OtherPayerPatientRelationshipCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4n5dARWqEd-9efMcr1p1KA?ECL/OtherPayerPatientRelationshipCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA8kA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8kQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1282,17 +1281,17 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8ng9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA8nw9xEd-b2MdXdLPaUQ" name="reasonForServiceCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4tkAKRWqEd-9efMcr1p1KA?ECL/Common/ReasonforServiceCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4tkAKRWqEd-9efMcr1p1KA?ECL/ReasonforServiceCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA8oA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8oQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA8og9xEd-b2MdXdLPaUQ" name="professionalServiceCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4ttxJhWqEd-9efMcr1p1KA?ECL/Common/ProfessionalServiceCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4ttxJhWqEd-9efMcr1p1KA?ECL/ProfessionalServiceCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA8ow9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8pA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA8pQ9xEd-b2MdXdLPaUQ" name="resultOfServiceCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4ttxIhWqEd-9efMcr1p1KA?ECL/Common/ResultofServiceCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4ttxIhWqEd-9efMcr1p1KA?ECL/ResultofServiceCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA8pg9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8pw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1301,7 +1300,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8qg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA8qw9xEd-b2MdXdLPaUQ" name="durCo-agentIdQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4unJARWqEd-9efMcr1p1KA?ECL/Common/DURCoAgentIDQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4unJARWqEd-9efMcr1p1KA?ECL/DURCoAgentIDQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA8rA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA8rQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1419,7 +1418,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9AQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9Ag9xEd-b2MdXdLPaUQ" name="taxExemptIndicator" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4wPgshWqEd-9efMcr1p1KA?ECL/Common/TaxExemptIndicator?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4wPgshWqEd-9efMcr1p1KA?ECL/TaxExemptIndicator?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9Aw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9BA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1436,7 +1435,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9DQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9Dg9xEd-b2MdXdLPaUQ" name="percentageSalesTaxBasisPaid" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4wPgthWqEd-9efMcr1p1KA?ECL/Common/PercentageSalesTaxBasisPaid?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4wPgthWqEd-9efMcr1p1KA?ECL/PercentageSalesTaxBasisPaid?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9Dw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9EA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1453,7 +1452,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9GQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9Gg9xEd-b2MdXdLPaUQ" name="otherAmountPaidQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4wZRsRWqEd-9efMcr1p1KA?ECL/Common/OtherAmountPaidQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4wZRsRWqEd-9efMcr1p1KA?ECL/OtherAmountPaidQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9Gw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9HA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1470,7 +1469,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9JQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9Jg9xEd-b2MdXdLPaUQ" name="basisOfReimbursementDetermination" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4vpq1hWqEd-9efMcr1p1KA?ECL/Common/BasisOfReimbursementDetermination?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4vpq1hWqEd-9efMcr1p1KA?ECL/BasisOfReimbursementDetermination?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9Jw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9KA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1503,22 +1502,22 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9PQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9Pg9xEd-b2MdXdLPaUQ" name="basisOfCalculation?dispensingFee" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4q4flhWqEd-9efMcr1p1KA?ECL/Common/BasisOfCalculationDispensingFee?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4q4flhWqEd-9efMcr1p1KA?ECL/BasisOfCalculationDispensingFee?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9Pw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9QA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9QQ9xEd-b2MdXdLPaUQ" name="basisOfCalculation?copay" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4rCQkRWqEd-9efMcr1p1KA?ECL/Common/BasisOfCalculationCopay?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4rCQkRWqEd-9efMcr1p1KA?ECL/BasisOfCalculationCopay?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9Qg9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9Qw9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9RA9xEd-b2MdXdLPaUQ" name="basisOfCalculation?flatSalesTax" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4rCQlRWqEd-9efMcr1p1KA?ECL/Common/BasisOfCalculationFlatSalesTax?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4rCQlRWqEd-9efMcr1p1KA?ECL/BasisOfCalculationFlatSalesTax?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9RQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9Rg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9Rw9xEd-b2MdXdLPaUQ" name="basisOfCalculation?percentageSalesTax" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4rCQmRWqEd-9efMcr1p1KA?ECL/Common/BasisOfCalculationPercentageSalesTax?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4rCQmRWqEd-9efMcr1p1KA?ECL/BasisOfCalculationPercentageSalesTax?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9SA9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9SQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1539,7 +1538,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9VQ9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9Vg9xEd-b2MdXdLPaUQ" name="basisOfCalculation-coinsurance" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4wjCsRWqEd-9efMcr1p1KA?ECL/Common/BasisOfCalculationCoinsurance?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4wjCsRWqEd-9efMcr1p1KA?ECL/BasisOfCalculationCoinsurance?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9Vw9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9WA9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1548,7 +1547,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9Ww9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zA9XA9xEd-b2MdXdLPaUQ" name="benefitStageQualifier" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4sXtWRWqEd-9efMcr1p1KA?ECL/Common/BenefitStageQualifier?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4sXtWRWqEd-9efMcr1p1KA?ECL/BenefitStageQualifier?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zA9XQ9xEd-b2MdXdLPaUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zA9Xg9xEd-b2MdXdLPaUQ"/>
       </ownedAttribute>
@@ -1603,12 +1602,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zKtcw9xEd-b2MdXdLPaUQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zKtdA9xEd-b2MdXdLPaUQ" name="transactionCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4of58RWqEd-9efMcr1p1KA?ECL/Common/TransactionCode?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4of58RWqEd-9efMcr1p1KA?ECL/TransactionCode?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zKtdQ9xEd-b2MdXdLPaUQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zKtdg9xEd-b2MdXdLPaUQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zKtdw9xEd-b2MdXdLPaUQ" name="transactionCount" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/ecl.emx#_4of59RWqEd-9efMcr1p1KA?ECL/Common/TransactionCount?"/>
+        <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_4of59RWqEd-9efMcr1p1KA?ECL/TransactionCount?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zKteA9xEd-b2MdXdLPaUQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zKteQ9xEd-b2MdXdLPaUQ" value="1"/>
       </ownedAttribute>
@@ -2020,84 +2019,32 @@
   <Ecore:EReference xmi:id="_ypQwJQ9vEd-b2MdXdLPaUQ" xmlName="element" xmlNamespace="##targetNamespace" base_Property="_ypHmTA9vEd-b2MdXdLPaUQ"/>
   <Default:Documentation xmi:id="_dPo7MQ_zEd-aZPHchEOQZg" base_Comment="_dPo7MA_zEd-aZPHchEOQZg"/>
   <Ecore:EReference xmi:id="_WjyNkQ_7Ed-aZPHchEOQZg" xmlName="" xmlNamespace="##targetNamespace" base_Property="_WjyNkA_7Ed-aZPHchEOQZg"/>
-  <Ecore:EClass xmi:id="_0QEAgBAMEd-aZPHchEOQZg" base_Class="_oMMoQA9XEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' prescriptionserviceReferenceNumberQualifier.field='455-EM' prescriptionserviceReferenceNumber.field='402-D2' productserviceIdQualifier.field='436-E1 ' productserviceId.field='407-D7' associatedPrescriptionserviceReferenceNumber.field='456-EN' associatedPrescriptionserviceDate.field='457-EP' procedureModifierCodeCount.field='458-SE' procedureModifierCode.field='459-ER' quantityDispensed.field='442-E7' fillNumber.field='403-D3' daysSupply.field='405-D5' compoundCode.field='406-D6' dispenseAsWritten(daw)productSelectionCode.field='408-D8' datePrescriptionWritten.field='414-DE' numberOfRefillsAuthorized.field='415-DF' prescriptionOriginCode.field='419-DJ' submissionClarificationCodeCount.field='354-NX' submissionClarificationCode.field='420-DK' quantityPrescribed.field='46 -ET' otherCoverageCode.field='308-C8' specialPackagingIndicator.field='429-DT' originallyPrescribedProductserviceIdQualifier.field='453-EJ' originallyPrescribedProductserviceCode.field='445-EA' originallyPrescribedQuantity.field='446-EB' alternateId.field='330-CW' scheduledPrescriptionIdNumber.field='454-EK' unitOfMeasure.field='600-28' levelOfService.field='418-DI' priorAuthorizationTypeCode.field='461-EU' priorAuthorizationNumberSubmitted.field='462-EV' intermediaryAuthorizationTypeId.field='463-EW' intermediaryAuthorizationId.field='464-EX' dispensingStatus.field='343-HD' quantityIntendedToBeDispensed.field='344-HF' daysSupplyIntendedToBeDispensed.field='345-HG' delayReasonCode.field='357-NV' transactionReferenceNumber.field='880-K5' patientAssignmentIndicator(directMemberReimbursementIndicator).field='391-MT' routeOfAdministration.field='995-E2' compoundType.field='996-G1' medicaidSubrogationInternalControlNumbertransactionControlNumber(icntcn).field='114-N4' pharmacyServiceType.field='147-U7' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QEAgRAMEd-aZPHchEOQZg" base_Class="_ypHmMA9vEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' diagnosisCodeCount.field='491-VE' diagnosisCodeQualifier.field='492-WE' diagnosisCode.field='424-DO' clinicalInformationCounter.field='493-XE' measurementDate.field='494-ZE' measurementTime.field='495-H1' measurementDimension.field='496-H2' measurementUnit.field='497-H3' measurementValue.field='499-H4' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QNKchAMEd-aZPHchEOQZg" base_Class="_8ykQqQ9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' compoundDosageFormDescriptionCode.field='450-EF' compoundDispensingUnitFormIndicator.field='451-EG' compoundIngredientComponentCount.field='447-EC ' compoundProductIdQualifier.field='488-RE' compoundProductId.field='489-TE' compoundIngredientQuantity.field='448-ED ' compoundIngredientDrugCost.field='449-EE' compoundIngredientBasisOfCostDetermination.field='490-UE' compoundIngredientModifierCodeCount.field='362-2G' compoundIngredientModifierCode.field='363-2H' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QNKcxAMEd-aZPHchEOQZg" base_Class="_8ykQyw9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' dateOfInjury.field='434-DY' employerName.field='315-CF' employerStreetAddress.field='316-CG' employerCityAddress.field='317-CH' employerStateprovinceAddress.field='318-CI' employerZippostalZone.field='319-CJ' employerPhoneNumber.field='320-CK' employerContactName.field='321-CL' carrierId.field='327-CR' claimreferenceId.field='435-DZ' billingEntityTypeIndicator.field='117-TR' payToQualifier.field='118-TS' payToId.field='119-TT' payToName.field='120-TU' payToStreetAddress.field='121-TV' payToCityAddress.field='122-TW' payToStateprovinceAddress.field='123-TX' payToZippostalZone.field='124-TY' genericEquivalentProductIdQualifier.field='125-TZ' genericEquivalentProductId.field='126-UA' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QW7cBAMEd-aZPHchEOQZg" base_Class="_8yuBgA9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' cardholderId.field='302-C2' cardholderFirstName.field='312-CC' cardholderLastName.field='313-CD' homePlan.field='314-CE' planId.field='524-FO' eligibilityClarificationCode.field='309-C9' groupId.field='301-C1' personCode.field='303-C3' patientRelationshipCode.field='306-C6' otherPayerBinNumber.field='990-MG ' otherPayerProcessorControlNumber.field='991-MH ' otherPayerCardholderId.field='356-NU' otherPayerGroupId.field='992-MJ ' medigapId.field='359-2A' medicaidIndicator.field='360-2B' providerAcceptAssignmentIndicator.field='361-2D' cmsPartDDefinedQualifiedFacility.field='997-G2' medicaidIdNumber.field='115-N5' medicaidAgencyNumber.field='116-N6' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QW7chAMEd-aZPHchEOQZg" base_Class="_8yuB3w9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' coordinationOfBenefitsotherPaymentsCount.field='337-4C' otherPayerCoverageType.field='338-5C' otherPayerIdQualifier.field='339-6C' otherPayerId.field='340-7C' otherPayerDate.field='443-E8' internalControlNumber.field='993-A7' otherPayerAmountPaidCount.field='341-HB' otherPayerAmountPaidQualifier.field='342-HC' otherPayerAmountPaid.field='431-DV' otherPayerRejectCount.field='471-5E' otherPayerRejectCode.field='472-6E' otherPayer-patientResponsibilityAmountCount.field='353-NR' otherPayer-patientResponsibilityAmountQualifier.field='351-NP' otherPayer-patientResponsibilityAmount.field='352-NQ' benefitStageCount.field='392-MU' benefitStageQualifier.field='393-MV' benefitStageAmount.field='394-MW' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QW7cxAMEd-aZPHchEOQZg" base_Class="_8yuCFg9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' patientIdQualifier.field='331-CX' patientId.field='332-CY' dateOfBirth.field='304-C4' patientGenderCode.field='305-C5' patientFirstName.field='310-CA' patientLastName.field='311-CB' patientStreetAddress.field='322-CM' patientCityAddress.field='323-CN' patientStateProvinceAddress.field='324-CO' patientZippostalZone.field='325-CP' patientPhoneNumber.field='326-CQ' placeOfService.field='307-C7' employerId.field='333-CZ' smokerNon-smokerCode.field='334-1C' pregnancyIndicator.field='335-2C' patientE-mailAddress.field='350-HN' patientResidence.field='384-4X' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QgscBAMEd-aZPHchEOQZg" base_Class="_8yuCTQ9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' ingredientCostSubmitted.field='409-D9' dispensingFeeSubmitted.field='412-DC' professionalServiceFeeSubmitted.field='477-BE' patientPaidAmountSubmitted.field='433-DX' incentiveAmountSubmitted.field='438-E3' otherAmountClaimedSubmittedCount.field='478-H7' otherAmountClaimedSubmittedQualifier.field='479-H8 ' otherAmountClaimedSubmitted.field='480-H9' flatSalesTaxAmountSubmitted.field='481-HA' percentageSalesTaxAmountSubmitted.field='482-GE' percentageSalesTaxRateSubmitted.field='483-HE' percentageSalesTaxBasisSubmitted.field='484-JE ' usualAndCustomaryCharge.field='426-DQ' grossAmountDue.field='430-DU' basisOfCostDetermination.field='423-DN' medicaidPaidAmount.field='113-N3' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QgscxAMEd-aZPHchEOQZg" base_Class="_8y3y3w9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' additionalDocumentationTypeId.field='369-2Q' requestPeriodBeginDate.field='374-2V' requestPeriodRecertrevisedDate.field='375-2W' requestStatus.field='373-2U' lengthOfNeedQualifier.field='371-2S' lengthOfNeed.field='370-2R' prescribersupplierDateSigned.field='372-2T' supportingDocumentation.field='376-2X' questionNumberletterCount.field='377-2Z' questionNumberletter.field='378-4B' questionPercentResponse.field='379-4D' questionDateResponse.field='380-4G' questionDollarAmountResponse.field='381-4H' questionNumericResponse.field='382-4J' questionAlphanumericResponse.field='383-4K' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0Qp2YhAMEd-aZPHchEOQZg" base_Class="_8y3zNg9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' facilityId.field='336-8C' facilityName.field='385-3Q' facilityStreetAddress.field='386-3U' facilityCityAddress.field='388-5J' facilityStateprovinceAddress.field='387-3V' facilityZippostalZone.field='389-6D' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0Qp2YxAMEd-aZPHchEOQZg" base_Class="_8y3zTA9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' couponType.field='485-KE' couponNumber.field='486-ME' couponValueAmount.field='487-NE' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QznYBAMEd-aZPHchEOQZg" base_Class="_8zA8mA9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' durppsCodeCounter.field='473-7E' reasonForServiceCode.field='439-E4' professionalServiceCode.field='440-E5' resultOfServiceCode.field='441-E6' durppsLevelOfEffort.field='474-8E' durCo-agentIdQualifier.field='475-J9' durCo-agentId.field='476-H6' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0QznYRAMEd-aZPHchEOQZg" base_Class="_8zA8zQ9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' prescriberIdQualifier.field='466-EZ ' prescriberId.field='411-DB' prescriberLastName.field='427-DR' prescriberPhoneNumber.field='498-PM' primaryCareProviderIdQualifier.field='468-2E ' primaryCareProviderId.field='421-DL' primaryCareProviderLastName.field='470-4E' prescriberFirstName.field='364-2J' prescriberStreetAddress.field='365-2K' prescriberCityAddress.field='366-2M' prescriberStateprovinceAddress.field='367-2N' prescriberZippostalZone.field='368-2P' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0Q9YYBAMEd-aZPHchEOQZg" base_Class="_8zKthg9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' providerIdQualifier.field='465-EY ' providerId.field='444-E9' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_0Q9YYRAMEd-aZPHchEOQZg" base_Class="_8zKtkA9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' narrativeMessage.field='390-BM' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_eLM-ABATEd-aZPHchEOQZg" base_Class="_8y3ygA9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' requestType.field='498-PA' requestPeriodDate-begin.field='498-PB' requestPeriodDate-end.field='498-PC' basisOfRequest.field='498-PD' authorizedRepresentativeFirstName.field='498-PE' authorizedRepresentativeLastName.field='498-PF' authorizedRepresentativeStreetAddress.field='498-PG' authorizedRepresentativeCityAddress.field='498-PH' authorizedRepresentativeStateprovinceAddress.field='498-PJ' authorizedRepresentativeZippostalZone.field='498-PK' priorAuthorizationNumber-assigned.field='498-PY' authorizationNumber.field='503-F3' priorAuthorizationSupportingDocumentation.field='498-PP' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMa-0BAUEd-aZPHchEOQZg" base_Class="_8ykQgA9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' patientFirstName.field='310-CA' patientLastName.field='311-CB' dateOfBirth.field='304-C4'</annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMa-0RAUEd-aZPHchEOQZg" base_Class="_8ykQjQ9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' groupID.field='301-C1' planID.field='524-FO' networkReimbursementID.field='545-2F' payerIDQualifier.field='568-J7' payerID.field='569-J8' medicaidIDNumber.field='115-N5' medicaidAgencyNumber.field='116-N6' cardholderID.field='302-C2'</annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMkv0BAUEd-aZPHchEOQZg" base_Class="_8yuBvQ9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' dURPPSResponseCodeCounter.field='567-J6' reasonforServiceCode.field='439-E4' clinicalSignificanceCode.field='528-FS' otherPharmacyIndicator.field='529-FT' quantityofPreviousFill.field='531-FV' previousDateofFill.field='530-FU' databaseIndicator.field='532-FW' otherPrescriberIndicator.field='533-FX' dURFreeTextMessage.field='544-FY' dURAdditionalText.field='570-NS'</annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMkv0RAUEd-aZPHchEOQZg" base_Class="_8y3yqw9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation  segmentIdentification='111-AM' transactionResponseStatus.field='112-AN' authorizationNumber.field='503-F3' rejectCount.field='510-FA' rejectCode.field='511-FB' rejectFieldOccurrenceIndicator.field='546-4F' approvedMessageCodeCount.field='547-5F' approvedMessageCode.field='548-6F' additionalMessageInformationCount.field='130-UF' additionalMessageInformationQualifier.field='132-UH' additionalMessageInformation.field='526-FQ' additionalMessageInformationContinuity.field='131-UG' helpDeskPhoneNumberQualifier.field='549-7F' helpDeskPhoneNumber.field='550-8F' transactionReferenceNumber.field='880-K5' internalControlNumber.field='993-A7' url.field='987-MA' </annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMkv0hAUEd-aZPHchEOQZg" base_Class="_8y3zEA9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' message.field='504-F4'</annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMkv0xAUEd-aZPHchEOQZg" base_Class="_8y3zFw9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' prescriptionserviceReferenceNumberQualifier.field='455-EM' prescriptionserviceReferenceNumber.field='402-D2' preferredProductCount.field='551-9F' preferredProductIDQualifier.field='552-AP' preferredProductID.field='553-AR' preferredProductIncentive.field='554-AS' preferredProductCostShareIncentive.field='555-AT' preferredProductDescription.field='551-9F' medicaidSubrogationInternalControlNumbertransactionControlNumbericntcn.field='114-N4'</annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMt5wBAUEd-aZPHchEOQZg" base_Class="_8zA8cA9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' otherPayerIDCount.field='355-NT' otherPayerCoverageType.field='338-5C' otherPayerIDQualifier.field='339-6C' otherPayerID.field='340-7C' otherPayerProcessorControlNumber.field='991-MH' otherPayerCardholderID.field='356-NU' otherPayerGroupID.field='992-MJ' otherPayerPersonCode.field='142-UV' otherPayerHelpDeskPhoneNumber.field='127-UB' otherPayerPatientRelationshipCode.field='143-UW' otherPayerBenefitEffectiveDate.field='144-UX' otherPayerBenefitTerminationDate.field='145-UY'</annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMt5wRAUEd-aZPHchEOQZg" base_Class="_8zA89Q9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' patientPayAmount.field='505-F5' ingredientCostPaid.field='506-F6' dispensingFeePaid.field='507-F7' taxExemptIndicator.field='557-AV' flatSalesTaxAmountPaid.field='558-AW' percentageSalesTaxAmountPaid.field='559-AX' percentageSalesTaxRatePaid.field='560-AY' percentageSalesTaxBasisPaid.field='561-AZ' incentiveAmountPaid.field='521-FL' professionalServiceFeePaid.field='562-J1' otherAmountPaidCount.field='563-J2' otherAmountPaidQualifier.field='564-J3' otherAmountPaid.field='565-J4' otherPayerAmountRecognized.field='566-J5' totalAmountPaid.field='509-F9' basisofReimbursementDetermination.field='522-FM' amountAttributedtoSalesTax.field='523-FN' accumulatedDeductibleAmount.field='512-FC' remainingDeductibleAmount.field='513-FD' remainingBenefitAmount.field='514-FE' amountAppliedtoPeriodicDeductible.field='517-FH' amountofCopay.field='518-F1' amountExceedingPeriodicBenefitMaximum.field='520-FK' basisofCalculationDispensingFee.field='346-HH' basisofCalculationCopay.field='347-HJ' basisofCalculationFlatSalesTax.field='348-HK' basisofCalculationPercentageSalesTax.field='349-HM' amountAttributedtoProcessorFee.field='571-NZ' patientSalesTaxAmount.field='575-EQ' planSalesTaxAmount.field='574-2Y' amountofCoinsurance.field='572-4U' basisofCalculation-Coinsurance.field='573-4V' benefitStageCount.field='392-MU' benefitStageQualifier.field='393-MV' benefitStageAmount.field='394-MW' estimatedGenericSavings.field='577-G3' spendingAccountAmountRemaining.field='128-UC' healthPlan-FundedAssistanceAmount.field='129-UD' amountAttributedtoProviderNetworkSelection.field='133-UJ' amountAttributedtoProductSelectionBrandDrug.field='134-UK' amountAttributedtoProductSelectionNon-PreferredFormularySelection.field='135-UM' amountAttributedtoProductSelectionBrandNon-PreferredFormularySelection.field='136-UN' amountAttributedtoCoverageGap.field='137-UP' ingredientCostContractedReimbursableAmount.field='148-U8' dispensingFeeContractedReimbursableAmount.field='149-U9'</annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMt5whAUEd-aZPHchEOQZg" base_Class="_8zKtcA9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation versionReleaseNumber.field='102-A2' transactionCode.field='103-A3' transactionCount.field='109-A9' headerResponseStatus.field='501-FI' serviceProviderIDQualifier.field='202-B2' serviceProviderID.field='201-B1' dateofService.field='401-D1'</annotation>
-  </Ecore:EClass>
-  <Ecore:EClass xmi:id="_aMt5wxAUEd-aZPHchEOQZg" base_Class="_8zKtlw9xEd-b2MdXdLPaUQ">
-    <annotation>http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' priorAuthorizationProcessedDate.field='498-PR' priorAuthorizationEffectiveDate.field='498-PS' priorAuthorizationExpirationDate.field='498-PT' priorAuthorizationQuantity.field='498-RA' priorAuthorizationDollarsAuthorized.field='498-RB' priorAuthorizationNumberofRefillsAuthorized.field='498-PW' priorAuthorizationQuantityAccumulated.field='498-PX' priorAuthorizationNumber-Assigned.field='498-PY'</annotation>
-  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_0QEAgBAMEd-aZPHchEOQZg" base_Class="_oMMoQA9XEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QEAgRAMEd-aZPHchEOQZg" base_Class="_ypHmMA9vEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QNKchAMEd-aZPHchEOQZg" base_Class="_8ykQqQ9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QNKcxAMEd-aZPHchEOQZg" base_Class="_8ykQyw9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QW7cBAMEd-aZPHchEOQZg" base_Class="_8yuBgA9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QW7chAMEd-aZPHchEOQZg" base_Class="_8yuB3w9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QW7cxAMEd-aZPHchEOQZg" base_Class="_8yuCFg9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QgscBAMEd-aZPHchEOQZg" base_Class="_8yuCTQ9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QgscxAMEd-aZPHchEOQZg" base_Class="_8y3y3w9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0Qp2YhAMEd-aZPHchEOQZg" base_Class="_8y3zNg9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0Qp2YxAMEd-aZPHchEOQZg" base_Class="_8y3zTA9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QznYBAMEd-aZPHchEOQZg" base_Class="_8zA8mA9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0QznYRAMEd-aZPHchEOQZg" base_Class="_8zA8zQ9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0Q9YYBAMEd-aZPHchEOQZg" base_Class="_8zKthg9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_0Q9YYRAMEd-aZPHchEOQZg" base_Class="_8zKtkA9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_eLM-ABATEd-aZPHchEOQZg" base_Class="_8y3ygA9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMa-0BAUEd-aZPHchEOQZg" base_Class="_8ykQgA9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMa-0RAUEd-aZPHchEOQZg" base_Class="_8ykQjQ9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMkv0BAUEd-aZPHchEOQZg" base_Class="_8yuBvQ9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMkv0RAUEd-aZPHchEOQZg" base_Class="_8y3yqw9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMkv0hAUEd-aZPHchEOQZg" base_Class="_8y3zEA9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMkv0xAUEd-aZPHchEOQZg" base_Class="_8y3zFw9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMt5wBAUEd-aZPHchEOQZg" base_Class="_8zA8cA9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMt5wRAUEd-aZPHchEOQZg" base_Class="_8zA89Q9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMt5whAUEd-aZPHchEOQZg" base_Class="_8zKtcA9xEd-b2MdXdLPaUQ"/>
+  <Ecore:EClass xmi:id="_aMt5wxAUEd-aZPHchEOQZg" base_Class="_8zKtlw9xEd-b2MdXdLPaUQ"/>
   <Ecore:EAttribute xmi:id="_0zqGshAVEd-aZPHchEOQZg" xmlName="Id" base_Property="_oMMoQQ9XEd-b2MdXdLPaUQ"/>
   <Ecore:EAttribute xmi:id="_0zz3sBAVEd-aZPHchEOQZg" xmlName="Id" base_Property="_ypHmMQ9vEd-b2MdXdLPaUQ"/>
   <Ecore:EAttribute xmi:id="_0zz3sRAVEd-aZPHchEOQZg" xmlName="Id" base_Property="_8ykQgQ9xEd-b2MdXdLPaUQ"/>

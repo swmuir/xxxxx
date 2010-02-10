@@ -34,6 +34,33 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Response extends EObject {
 	/**
+	 * Returns the value of the '<em><b>Response Header Segment</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Response Header Segment</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Response Header Segment</em>' containment reference.
+	 * @see #setResponseHeaderSegment(ResponseHeaderSegment)
+	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponse_ResponseHeaderSegment()
+	 * @model containment="true" required="true" ordered="false"
+	 *        extendedMetaData="name='segment' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	ResponseHeaderSegment getResponseHeaderSegment();
+
+	/**
+	 * Sets the value of the '{@link org.ncpdp.uml.telecom.Response#getResponseHeaderSegment <em>Response Header Segment</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Response Header Segment</em>' containment reference.
+	 * @see #getResponseHeaderSegment()
+	 * @generated
+	 */
+	void setResponseHeaderSegment(ResponseHeaderSegment value);
+
+	/**
 	 * Returns the value of the '<em><b>Response Claim Segment</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -113,33 +140,6 @@ public interface Response extends EObject {
 	 * @generated
 	 */
 	void setResponseDURPPSSegment(ResponseDURPPSSegment value);
-
-	/**
-	 * Returns the value of the '<em><b>Response Header Segment</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Response Header Segment</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Response Header Segment</em>' containment reference.
-	 * @see #setResponseHeaderSegment(ResponseHeaderSegment)
-	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponse_ResponseHeaderSegment()
-	 * @model containment="true" required="true" ordered="false"
-	 *        extendedMetaData="name='segment' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	ResponseHeaderSegment getResponseHeaderSegment();
-
-	/**
-	 * Sets the value of the '{@link org.ncpdp.uml.telecom.Response#getResponseHeaderSegment <em>Response Header Segment</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Response Header Segment</em>' containment reference.
-	 * @see #getResponseHeaderSegment()
-	 * @generated
-	 */
-	void setResponseHeaderSegment(ResponseHeaderSegment value);
 
 	/**
 	 * Returns the value of the '<em><b>Response Insurance Segment</b></em>' containment reference.

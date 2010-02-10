@@ -21,6 +21,8 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.CouponType;
+
 import org.ncpdp.uml.telecom.CouponSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -53,14 +55,14 @@ public class CouponSegmentImpl extends EObjectImpl implements CouponSegment {
 	protected EList<String> segmentIdentification;
 
 	/**
-	 * The cached value of the '{@link #getCouponType() <em>Coupon Type</em>}' containment reference list.
+	 * The cached value of the '{@link #getCouponType() <em>Coupon Type</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCouponType()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> couponType;
+	protected EList<CouponType> couponType;
 
 	/**
 	 * The cached value of the '{@link #getCouponNumber() <em>Coupon Number</em>}' containment reference list.
@@ -118,9 +120,9 @@ public class CouponSegmentImpl extends EObjectImpl implements CouponSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getCouponType() {
+	public EList<CouponType> getCouponType() {
 		if (couponType == null) {
-			couponType = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.COUPON_SEGMENT__COUPON_TYPE);
+			couponType = new EDataTypeUniqueEList<CouponType>(CouponType.class, this, TelecomPackage.COUPON_SEGMENT__COUPON_TYPE);
 		}
 		return couponType;
 	}
@@ -157,8 +159,6 @@ public class CouponSegmentImpl extends EObjectImpl implements CouponSegment {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TelecomPackage.COUPON_SEGMENT__COUPON_TYPE:
-				return ((InternalEList<?>)getCouponType()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COUPON_SEGMENT__COUPON_NUMBER:
 				return ((InternalEList<?>)getCouponNumber()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COUPON_SEGMENT__COUPON_VALUE_AMOUNT:
@@ -202,7 +202,7 @@ public class CouponSegmentImpl extends EObjectImpl implements CouponSegment {
 				return;
 			case TelecomPackage.COUPON_SEGMENT__COUPON_TYPE:
 				getCouponType().clear();
-				getCouponType().addAll((Collection<? extends Field>)newValue);
+				getCouponType().addAll((Collection<? extends CouponType>)newValue);
 				return;
 			case TelecomPackage.COUPON_SEGMENT__COUPON_NUMBER:
 				getCouponNumber().clear();
@@ -272,6 +272,8 @@ public class CouponSegmentImpl extends EObjectImpl implements CouponSegment {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", couponType: ");
+		result.append(couponType);
 		result.append(')');
 		return result.toString();
 	}

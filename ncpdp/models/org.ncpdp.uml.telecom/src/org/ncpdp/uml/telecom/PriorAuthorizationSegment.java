@@ -10,6 +10,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.RequestType;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Prior Authorization Segment</b></em>'.
@@ -36,7 +38,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getPriorAuthorizationSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' requestType.field='498-PA' requestPeriodDate-begin.field='498-PB' requestPeriodDate-end.field='498-PC' basisOfRequest.field='498-PD' authorizedRepresentativeFirstName.field='498-PE' authorizedRepresentativeLastName.field='498-PF' authorizedRepresentativeStreetAddress.field='498-PG' authorizedRepresentativeCityAddress.field='498-PH' authorizedRepresentativeStateprovinceAddress.field='498-PJ' authorizedRepresentativeZippostalZone.field='498-PK' priorAuthorizationNumber-assigned.field='498-PY' authorizationNumber.field='503-F3' priorAuthorizationSupportingDocumentation.field='498-PP'"
+ * @model
  * @generated
  */
 public interface PriorAuthorizationSegment extends EObject {
@@ -58,28 +60,29 @@ public interface PriorAuthorizationSegment extends EObject {
 	EList<String> getSegmentIdentification();
 
 	/**
-	 * Returns the value of the '<em><b>Request Type</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Request Type</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.RequestType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.RequestType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Request Type</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Request Type</em>' containment reference list.
+	 * @return the value of the '<em>Request Type</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.RequestType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPriorAuthorizationSegment_RequestType()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getRequestType();
+	EList<RequestType> getRequestType();
 
 	/**
 	 * Returns the value of the '<em><b>Request Period Datebegin</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Request Period Datebegin</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Request Period Datebegin</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -96,7 +99,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Request Period Dateend</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Request Period Dateend</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -113,7 +116,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Basis Of Request</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Basis Of Request</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -130,7 +133,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Authorized Representative First Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Authorized Representative First Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -147,7 +150,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Authorized Representative Last Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Authorized Representative Last Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -164,7 +167,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Authorized Representative Street Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Authorized Representative Street Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -181,7 +184,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Authorized Representative City Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Authorized Representative City Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -198,7 +201,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Authorized Representative Stateprovince Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Authorized Representative Stateprovince Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -215,7 +218,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Authorized Representative Zippostal Zone</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Authorized Representative Zippostal Zone</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -232,7 +235,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Numberassigned</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Numberassigned</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -249,7 +252,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Authorization Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Authorization Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -266,7 +269,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Supporting Documentation</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Supporting Documentation</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

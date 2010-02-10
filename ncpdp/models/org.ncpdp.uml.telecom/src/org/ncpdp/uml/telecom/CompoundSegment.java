@@ -10,6 +10,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.CompoundDispensingUnitFormIndicator;
+import org.ncpdp.uml.ECL.CompoundDosageFormDescriptionCode;
+import org.ncpdp.uml.ECL.CompoundProductIDQualifier;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Compound Segment</b></em>'.
@@ -33,7 +37,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getCompoundSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' compoundDosageFormDescriptionCode.field='450-EF' compoundDispensingUnitFormIndicator.field='451-EG' compoundIngredientComponentCount.field='447-EC ' compoundProductIdQualifier.field='488-RE' compoundProductId.field='489-TE' compoundIngredientQuantity.field='448-ED ' compoundIngredientDrugCost.field='449-EE' compoundIngredientBasisOfCostDetermination.field='490-UE' compoundIngredientModifierCodeCount.field='362-2G' compoundIngredientModifierCode.field='363-2H'"
+ * @model
  * @generated
  */
 public interface CompoundSegment extends EObject {
@@ -55,45 +59,47 @@ public interface CompoundSegment extends EObject {
 	EList<String> getSegmentIdentification();
 
 	/**
-	 * Returns the value of the '<em><b>Compound Dosage Form Description Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Compound Dosage Form Description Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.CompoundDosageFormDescriptionCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CompoundDosageFormDescriptionCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Compound Dosage Form Description Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Compound Dosage Form Description Code</em>' containment reference list.
+	 * @return the value of the '<em>Compound Dosage Form Description Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.CompoundDosageFormDescriptionCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCompoundSegment_CompoundDosageFormDescriptionCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getCompoundDosageFormDescriptionCode();
+	EList<CompoundDosageFormDescriptionCode> getCompoundDosageFormDescriptionCode();
 
 	/**
-	 * Returns the value of the '<em><b>Compound Dispensing Unit Form Indicator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Compound Dispensing Unit Form Indicator</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.CompoundDispensingUnitFormIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CompoundDispensingUnitFormIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Compound Dispensing Unit Form Indicator</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Compound Dispensing Unit Form Indicator</em>' containment reference list.
+	 * @return the value of the '<em>Compound Dispensing Unit Form Indicator</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.CompoundDispensingUnitFormIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCompoundSegment_CompoundDispensingUnitFormIndicator()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getCompoundDispensingUnitFormIndicator();
+	EList<CompoundDispensingUnitFormIndicator> getCompoundDispensingUnitFormIndicator();
 
 	/**
 	 * Returns the value of the '<em><b>Compound Ingredient Component Count</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Compound Ingredient Component Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Compound Ingredient Component Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -106,28 +112,29 @@ public interface CompoundSegment extends EObject {
 	EList<Field> getCompoundIngredientComponentCount();
 
 	/**
-	 * Returns the value of the '<em><b>Compound Product Id Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Compound Product Id Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.CompoundProductIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CompoundProductIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Compound Product Id Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Compound Product Id Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Compound Product Id Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.CompoundProductIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCompoundSegment_CompoundProductIdQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getCompoundProductIdQualifier();
+	EList<CompoundProductIDQualifier> getCompoundProductIdQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Compound Product Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Compound Product Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Compound Product Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -144,7 +151,7 @@ public interface CompoundSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Compound Ingredient Quantity</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Compound Ingredient Quantity</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -161,7 +168,7 @@ public interface CompoundSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Compound Ingredient Drug Cost</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Compound Ingredient Drug Cost</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -178,7 +185,7 @@ public interface CompoundSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Compound Ingredient Basis Of Cost Determination</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Compound Ingredient Basis Of Cost Determination</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -195,7 +202,7 @@ public interface CompoundSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Compound Ingredient Modifier Code Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Compound Ingredient Modifier Code Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -212,7 +219,7 @@ public interface CompoundSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Compound Ingredient Modifier Code</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Compound Ingredient Modifier Code</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

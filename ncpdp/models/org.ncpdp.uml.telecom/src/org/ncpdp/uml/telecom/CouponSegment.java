@@ -10,6 +10,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.CouponType;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Coupon Segment</b></em>'.
@@ -26,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getCouponSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' couponType.field='485-KE' couponNumber.field='486-ME' couponValueAmount.field='487-NE'"
+ * @model
  * @generated
  */
 public interface CouponSegment extends EObject {
@@ -48,28 +50,29 @@ public interface CouponSegment extends EObject {
 	EList<String> getSegmentIdentification();
 
 	/**
-	 * Returns the value of the '<em><b>Coupon Type</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Coupon Type</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.CouponType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CouponType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Coupon Type</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Coupon Type</em>' containment reference list.
+	 * @return the value of the '<em>Coupon Type</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.CouponType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCouponSegment_CouponType()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getCouponType();
+	EList<CouponType> getCouponType();
 
 	/**
 	 * Returns the value of the '<em><b>Coupon Number</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Coupon Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Coupon Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -86,7 +89,7 @@ public interface CouponSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Coupon Value Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Coupon Value Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

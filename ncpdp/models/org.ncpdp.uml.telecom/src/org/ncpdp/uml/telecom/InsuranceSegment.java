@@ -10,6 +10,11 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility;
+import org.ncpdp.uml.ECL.EligibilityClarificationCode;
+import org.ncpdp.uml.ECL.PatientRelationshipCode;
+import org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Insurance Segment</b></em>'.
@@ -42,7 +47,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getInsuranceSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' cardholderId.field='302-C2' cardholderFirstName.field='312-CC' cardholderLastName.field='313-CD' homePlan.field='314-CE' planId.field='524-FO' eligibilityClarificationCode.field='309-C9' groupId.field='301-C1' personCode.field='303-C3' patientRelationshipCode.field='306-C6' otherPayerBinNumber.field='990-MG ' otherPayerProcessorControlNumber.field='991-MH ' otherPayerCardholderId.field='356-NU' otherPayerGroupId.field='992-MJ ' medigapId.field='359-2A' medicaidIndicator.field='360-2B' providerAcceptAssignmentIndicator.field='361-2D' cmsPartDDefinedQualifiedFacility.field='997-G2' medicaidIdNumber.field='115-N5' medicaidAgencyNumber.field='116-N6'"
+ * @model
  * @generated
  */
 public interface InsuranceSegment extends EObject {
@@ -68,7 +73,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Cardholder Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Cardholder Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -85,7 +90,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Cardholder First Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Cardholder First Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -102,7 +107,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Cardholder Last Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Cardholder Last Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -119,7 +124,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Home Plan</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Home Plan</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -136,7 +141,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Plan Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Plan Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -149,28 +154,29 @@ public interface InsuranceSegment extends EObject {
 	EList<Field> getPlanId();
 
 	/**
-	 * Returns the value of the '<em><b>Eligibility Clarification Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Eligibility Clarification Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.EligibilityClarificationCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.EligibilityClarificationCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Eligibility Clarification Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Eligibility Clarification Code</em>' containment reference list.
+	 * @return the value of the '<em>Eligibility Clarification Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.EligibilityClarificationCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getInsuranceSegment_EligibilityClarificationCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getEligibilityClarificationCode();
+	EList<EligibilityClarificationCode> getEligibilityClarificationCode();
 
 	/**
 	 * Returns the value of the '<em><b>Group Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Group Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Group Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -187,7 +193,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Person Code</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Person Code</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -200,28 +206,29 @@ public interface InsuranceSegment extends EObject {
 	EList<Field> getPersonCode();
 
 	/**
-	 * Returns the value of the '<em><b>Patient Relationship Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Patient Relationship Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientRelationshipCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientRelationshipCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Patient Relationship Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Patient Relationship Code</em>' containment reference list.
+	 * @return the value of the '<em>Patient Relationship Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PatientRelationshipCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getInsuranceSegment_PatientRelationshipCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPatientRelationshipCode();
+	EList<PatientRelationshipCode> getPatientRelationshipCode();
 
 	/**
 	 * Returns the value of the '<em><b>Other Payer Bin Number</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Bin Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Bin Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -238,7 +245,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Processor Control Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Processor Control Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -255,7 +262,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Cardholder Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Cardholder Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -272,7 +279,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Group Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Group Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -289,7 +296,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Medigap Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Medigap Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -306,7 +313,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Medicaid Indicator</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Medicaid Indicator</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -319,45 +326,47 @@ public interface InsuranceSegment extends EObject {
 	EList<Field> getMedicaidIndicator();
 
 	/**
-	 * Returns the value of the '<em><b>Provider Accept Assignment Indicator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Provider Accept Assignment Indicator</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Provider Accept Assignment Indicator</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Provider Accept Assignment Indicator</em>' containment reference list.
+	 * @return the value of the '<em>Provider Accept Assignment Indicator</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getInsuranceSegment_ProviderAcceptAssignmentIndicator()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getProviderAcceptAssignmentIndicator();
+	EList<ProviderAcceptAssignmentIndicator> getProviderAcceptAssignmentIndicator();
 
 	/**
-	 * Returns the value of the '<em><b>Cms Part DDefined Qualified Facility</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Cms Part DDefined Qualified Facility</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Cms Part DDefined Qualified Facility</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cms Part DDefined Qualified Facility</em>' containment reference list.
+	 * @return the value of the '<em>Cms Part DDefined Qualified Facility</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getInsuranceSegment_CmsPartDDefinedQualifiedFacility()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getCmsPartDDefinedQualifiedFacility();
+	EList<CMSPartDDefinedQualifiedFacility> getCmsPartDDefinedQualifiedFacility();
 
 	/**
 	 * Returns the value of the '<em><b>Medicaid Id Number</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Medicaid Id Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Medicaid Id Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -374,7 +383,7 @@ public interface InsuranceSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Medicaid Agency Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Medicaid Agency Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

@@ -21,6 +21,10 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.BillingEntityTypeIndicator;
+import org.ncpdp.uml.ECL.GenericEquivalentProductIDQualifier;
+import org.ncpdp.uml.ECL.PayToQualifier;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
 import org.ncpdp.uml.telecom.WorkersCompensationSegment;
@@ -170,24 +174,24 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 	protected EList<Field> claimreferenceId;
 
 	/**
-	 * The cached value of the '{@link #getBillingEntityTypeIndicator() <em>Billing Entity Type Indicator</em>}' containment reference list.
+	 * The cached value of the '{@link #getBillingEntityTypeIndicator() <em>Billing Entity Type Indicator</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBillingEntityTypeIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> billingEntityTypeIndicator;
+	protected EList<BillingEntityTypeIndicator> billingEntityTypeIndicator;
 
 	/**
-	 * The cached value of the '{@link #getPayToQualifier() <em>Pay To Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getPayToQualifier() <em>Pay To Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPayToQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> payToQualifier;
+	protected EList<PayToQualifier> payToQualifier;
 
 	/**
 	 * The cached value of the '{@link #getPayToId() <em>Pay To Id</em>}' containment reference list.
@@ -250,14 +254,14 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 	protected EList<Field> payToZippostalZone;
 
 	/**
-	 * The cached value of the '{@link #getGenericEquivalentProductIdQualifier() <em>Generic Equivalent Product Id Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getGenericEquivalentProductIdQualifier() <em>Generic Equivalent Product Id Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getGenericEquivalentProductIdQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> genericEquivalentProductIdQualifier;
+	protected EList<GenericEquivalentProductIDQualifier> genericEquivalentProductIdQualifier;
 
 	/**
 	 * The cached value of the '{@link #getGenericEquivalentProductId() <em>Generic Equivalent Product Id</em>}' containment reference list.
@@ -425,9 +429,9 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBillingEntityTypeIndicator() {
+	public EList<BillingEntityTypeIndicator> getBillingEntityTypeIndicator() {
 		if (billingEntityTypeIndicator == null) {
-			billingEntityTypeIndicator = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.WORKERS_COMPENSATION_SEGMENT__BILLING_ENTITY_TYPE_INDICATOR);
+			billingEntityTypeIndicator = new EDataTypeUniqueEList<BillingEntityTypeIndicator>(BillingEntityTypeIndicator.class, this, TelecomPackage.WORKERS_COMPENSATION_SEGMENT__BILLING_ENTITY_TYPE_INDICATOR);
 		}
 		return billingEntityTypeIndicator;
 	}
@@ -437,9 +441,9 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPayToQualifier() {
+	public EList<PayToQualifier> getPayToQualifier() {
 		if (payToQualifier == null) {
-			payToQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.WORKERS_COMPENSATION_SEGMENT__PAY_TO_QUALIFIER);
+			payToQualifier = new EDataTypeUniqueEList<PayToQualifier>(PayToQualifier.class, this, TelecomPackage.WORKERS_COMPENSATION_SEGMENT__PAY_TO_QUALIFIER);
 		}
 		return payToQualifier;
 	}
@@ -521,9 +525,9 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getGenericEquivalentProductIdQualifier() {
+	public EList<GenericEquivalentProductIDQualifier> getGenericEquivalentProductIdQualifier() {
 		if (genericEquivalentProductIdQualifier == null) {
-			genericEquivalentProductIdQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.WORKERS_COMPENSATION_SEGMENT__GENERIC_EQUIVALENT_PRODUCT_ID_QUALIFIER);
+			genericEquivalentProductIdQualifier = new EDataTypeUniqueEList<GenericEquivalentProductIDQualifier>(GenericEquivalentProductIDQualifier.class, this, TelecomPackage.WORKERS_COMPENSATION_SEGMENT__GENERIC_EQUIVALENT_PRODUCT_ID_QUALIFIER);
 		}
 		return genericEquivalentProductIdQualifier;
 	}
@@ -568,10 +572,6 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 				return ((InternalEList<?>)getCarrierId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__CLAIMREFERENCE_ID:
 				return ((InternalEList<?>)getClaimreferenceId()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__BILLING_ENTITY_TYPE_INDICATOR:
-				return ((InternalEList<?>)getBillingEntityTypeIndicator()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__PAY_TO_QUALIFIER:
-				return ((InternalEList<?>)getPayToQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__PAY_TO_ID:
 				return ((InternalEList<?>)getPayToId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__PAY_TO_NAME:
@@ -584,8 +584,6 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 				return ((InternalEList<?>)getPayToStateprovinceAddress()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__PAY_TO_ZIPPOSTAL_ZONE:
 				return ((InternalEList<?>)getPayToZippostalZone()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__GENERIC_EQUIVALENT_PRODUCT_ID_QUALIFIER:
-				return ((InternalEList<?>)getGenericEquivalentProductIdQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__GENERIC_EQUIVALENT_PRODUCT_ID:
 				return ((InternalEList<?>)getGenericEquivalentProductId()).basicRemove(otherEnd, msgs);
 		}
@@ -701,11 +699,11 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 				return;
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__BILLING_ENTITY_TYPE_INDICATOR:
 				getBillingEntityTypeIndicator().clear();
-				getBillingEntityTypeIndicator().addAll((Collection<? extends Field>)newValue);
+				getBillingEntityTypeIndicator().addAll((Collection<? extends BillingEntityTypeIndicator>)newValue);
 				return;
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__PAY_TO_QUALIFIER:
 				getPayToQualifier().clear();
-				getPayToQualifier().addAll((Collection<? extends Field>)newValue);
+				getPayToQualifier().addAll((Collection<? extends PayToQualifier>)newValue);
 				return;
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__PAY_TO_ID:
 				getPayToId().clear();
@@ -733,7 +731,7 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 				return;
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__GENERIC_EQUIVALENT_PRODUCT_ID_QUALIFIER:
 				getGenericEquivalentProductIdQualifier().clear();
-				getGenericEquivalentProductIdQualifier().addAll((Collection<? extends Field>)newValue);
+				getGenericEquivalentProductIdQualifier().addAll((Collection<? extends GenericEquivalentProductIDQualifier>)newValue);
 				return;
 			case TelecomPackage.WORKERS_COMPENSATION_SEGMENT__GENERIC_EQUIVALENT_PRODUCT_ID:
 				getGenericEquivalentProductId().clear();
@@ -884,6 +882,12 @@ public class WorkersCompensationSegmentImpl extends EObjectImpl implements Worke
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", billingEntityTypeIndicator: ");
+		result.append(billingEntityTypeIndicator);
+		result.append(", payToQualifier: ");
+		result.append(payToQualifier);
+		result.append(", genericEquivalentProductIdQualifier: ");
+		result.append(genericEquivalentProductIdQualifier);
 		result.append(')');
 		return result.toString();
 	}

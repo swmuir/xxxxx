@@ -6,9 +6,10 @@
  */
 package org.ncpdp.uml.telecom;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
+
+import org.ncpdp.uml.ECL.TransactionCode;
+import org.ncpdp.uml.ECL.TransactionCount;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseHeaderSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation versionReleaseNumber.field='102-A2' transactionCode.field='103-A3' transactionCount.field='109-A9' headerResponseStatus.field='501-FI' serviceProviderIDQualifier.field='202-B2' serviceProviderID.field='201-B1' dateofService.field='401-D1'"
+ * @model
  * @generated
  */
 public interface ResponseHeaderSegment extends EObject {
@@ -37,7 +38,7 @@ public interface ResponseHeaderSegment extends EObject {
 	 * Returns the value of the '<em><b>Versionrelease Number</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Versionrelease Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Versionrelease Number</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -61,64 +62,68 @@ public interface ResponseHeaderSegment extends EObject {
 	void setVersionreleaseNumber(Field value);
 
 	/**
-	 * Returns the value of the '<em><b>Transaction Code</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Transaction Code</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.TransactionCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Transaction Code</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Transaction Code</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Transaction Code</em>' containment reference.
-	 * @see #setTransactionCode(Field)
+	 * @return the value of the '<em>Transaction Code</em>' attribute.
+	 * @see org.ncpdp.uml.ECL.TransactionCode
+	 * @see #setTransactionCode(TransactionCode)
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseHeaderSegment_TransactionCode()
-	 * @model containment="true" required="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model required="true" ordered="false"
 	 * @generated
 	 */
-	Field getTransactionCode();
+	TransactionCode getTransactionCode();
 
 	/**
-	 * Sets the value of the '{@link org.ncpdp.uml.telecom.ResponseHeaderSegment#getTransactionCode <em>Transaction Code</em>}' containment reference.
+	 * Sets the value of the '{@link org.ncpdp.uml.telecom.ResponseHeaderSegment#getTransactionCode <em>Transaction Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Transaction Code</em>' containment reference.
+	 * @param value the new value of the '<em>Transaction Code</em>' attribute.
+	 * @see org.ncpdp.uml.ECL.TransactionCode
 	 * @see #getTransactionCode()
 	 * @generated
 	 */
-	void setTransactionCode(Field value);
+	void setTransactionCode(TransactionCode value);
 
 	/**
-	 * Returns the value of the '<em><b>Transaction Count</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Transaction Count</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.TransactionCount}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Transaction Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Transaction Count</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Transaction Count</em>' containment reference.
-	 * @see #setTransactionCount(Field)
+	 * @return the value of the '<em>Transaction Count</em>' attribute.
+	 * @see org.ncpdp.uml.ECL.TransactionCount
+	 * @see #setTransactionCount(TransactionCount)
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseHeaderSegment_TransactionCount()
-	 * @model containment="true" required="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model required="true" ordered="false"
 	 * @generated
 	 */
-	Field getTransactionCount();
+	TransactionCount getTransactionCount();
 
 	/**
-	 * Sets the value of the '{@link org.ncpdp.uml.telecom.ResponseHeaderSegment#getTransactionCount <em>Transaction Count</em>}' containment reference.
+	 * Sets the value of the '{@link org.ncpdp.uml.telecom.ResponseHeaderSegment#getTransactionCount <em>Transaction Count</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Transaction Count</em>' containment reference.
+	 * @param value the new value of the '<em>Transaction Count</em>' attribute.
+	 * @see org.ncpdp.uml.ECL.TransactionCount
 	 * @see #getTransactionCount()
 	 * @generated
 	 */
-	void setTransactionCount(Field value);
+	void setTransactionCount(TransactionCount value);
 
 	/**
 	 * Returns the value of the '<em><b>Header Response Status</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Header Response Status</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Header Response Status</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -145,7 +150,7 @@ public interface ResponseHeaderSegment extends EObject {
 	 * Returns the value of the '<em><b>Service Provider Id Qualifier</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Service Provider Id Qualifier</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Service Provider Id Qualifier</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -172,7 +177,7 @@ public interface ResponseHeaderSegment extends EObject {
 	 * Returns the value of the '<em><b>Service Provider Id</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Service Provider Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Service Provider Id</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -199,7 +204,7 @@ public interface ResponseHeaderSegment extends EObject {
 	 * Returns the value of the '<em><b>Date Of Service</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Date Of Service</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Date Of Service</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

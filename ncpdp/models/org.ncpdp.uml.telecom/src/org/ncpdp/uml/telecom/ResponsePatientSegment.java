@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePatientSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' patientFirstName.field='310-CA' patientLastName.field='311-CB' dateOfBirth.field='304-C4'"
+ * @model
  * @generated
  */
 public interface ResponsePatientSegment extends EObject {
@@ -52,7 +52,7 @@ public interface ResponsePatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient First Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient First Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -69,7 +69,7 @@ public interface ResponsePatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Last Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient Last Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -86,7 +86,7 @@ public interface ResponsePatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Date Of Birth</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Date Of Birth</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
