@@ -7,9 +7,8 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.TransactionCode;
-import org.ncpdp.uml.ECL.TransactionCount;
+import org.ncpdp.uml.ecl.TransactionCode;
+import org.ncpdp.uml.ecl.TransactionCount;
 
 /**
  * <!-- begin-user-doc -->
@@ -63,7 +62,7 @@ public interface ResponseHeaderSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Transaction Code</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.TransactionCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.TransactionCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Transaction Code</em>' attribute isn't clear,
@@ -71,7 +70,7 @@ public interface ResponseHeaderSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Transaction Code</em>' attribute.
-	 * @see org.ncpdp.uml.ECL.TransactionCode
+	 * @see org.ncpdp.uml.ecl.TransactionCode
 	 * @see #setTransactionCode(TransactionCode)
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseHeaderSegment_TransactionCode()
 	 * @model required="true" ordered="false"
@@ -84,7 +83,7 @@ public interface ResponseHeaderSegment extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Transaction Code</em>' attribute.
-	 * @see org.ncpdp.uml.ECL.TransactionCode
+	 * @see org.ncpdp.uml.ecl.TransactionCode
 	 * @see #getTransactionCode()
 	 * @generated
 	 */
@@ -92,7 +91,7 @@ public interface ResponseHeaderSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Transaction Count</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.TransactionCount}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.TransactionCount}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Transaction Count</em>' attribute isn't clear,
@@ -100,7 +99,7 @@ public interface ResponseHeaderSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Transaction Count</em>' attribute.
-	 * @see org.ncpdp.uml.ECL.TransactionCount
+	 * @see org.ncpdp.uml.ecl.TransactionCount
 	 * @see #setTransactionCount(TransactionCount)
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseHeaderSegment_TransactionCount()
 	 * @model required="true" ordered="false"
@@ -113,7 +112,7 @@ public interface ResponseHeaderSegment extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Transaction Count</em>' attribute.
-	 * @see org.ncpdp.uml.ECL.TransactionCount
+	 * @see org.ncpdp.uml.ecl.TransactionCount
 	 * @see #getTransactionCount()
 	 * @generated
 	 */

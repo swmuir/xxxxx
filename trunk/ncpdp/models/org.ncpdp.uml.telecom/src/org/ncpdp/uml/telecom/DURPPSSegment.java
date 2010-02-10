@@ -7,13 +7,11 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.DURCoAgentIDQualifier;
-import org.ncpdp.uml.ECL.ProfessionalServiceCode;
-import org.ncpdp.uml.ECL.ReasonforServiceCode;
-import org.ncpdp.uml.ECL.ResultofServiceCode;
+import org.ncpdp.uml.ecl.DURCoAgentIDQualifier;
+import org.ncpdp.uml.ecl.ProfessionalServiceCode;
+import org.ncpdp.uml.ecl.ReasonforServiceCode;
+import org.ncpdp.uml.ecl.ResultofServiceCode;
 
 /**
  * <!-- begin-user-doc -->
@@ -75,8 +73,8 @@ public interface DURPPSSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Reason For Service Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.ReasonforServiceCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ReasonforServiceCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.ReasonforServiceCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.ReasonforServiceCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Reason For Service Code</em>' attribute list isn't clear,
@@ -84,7 +82,7 @@ public interface DURPPSSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reason For Service Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.ReasonforServiceCode
+	 * @see org.ncpdp.uml.ecl.ReasonforServiceCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getDURPPSSegment_ReasonForServiceCode()
 	 * @model ordered="false"
 	 * @generated
@@ -93,8 +91,8 @@ public interface DURPPSSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Professional Service Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.ProfessionalServiceCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ProfessionalServiceCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.ProfessionalServiceCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.ProfessionalServiceCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Professional Service Code</em>' attribute list isn't clear,
@@ -102,7 +100,7 @@ public interface DURPPSSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Professional Service Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.ProfessionalServiceCode
+	 * @see org.ncpdp.uml.ecl.ProfessionalServiceCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getDURPPSSegment_ProfessionalServiceCode()
 	 * @model ordered="false"
 	 * @generated
@@ -111,8 +109,8 @@ public interface DURPPSSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Result Of Service Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.ResultofServiceCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ResultofServiceCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.ResultofServiceCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.ResultofServiceCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Result Of Service Code</em>' attribute list isn't clear,
@@ -120,7 +118,7 @@ public interface DURPPSSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Result Of Service Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.ResultofServiceCode
+	 * @see org.ncpdp.uml.ecl.ResultofServiceCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getDURPPSSegment_ResultOfServiceCode()
 	 * @model ordered="false"
 	 * @generated
@@ -146,8 +144,8 @@ public interface DURPPSSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dur Coagent Id Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.DURCoAgentIDQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.DURCoAgentIDQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.DURCoAgentIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.DURCoAgentIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Dur Coagent Id Qualifier</em>' attribute list isn't clear,
@@ -155,7 +153,7 @@ public interface DURPPSSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dur Coagent Id Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.DURCoAgentIDQualifier
+	 * @see org.ncpdp.uml.ecl.DURCoAgentIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getDURPPSSegment_DurCoagentIdQualifier()
 	 * @model ordered="false"
 	 * @generated

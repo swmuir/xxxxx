@@ -9,23 +9,17 @@ package org.ncpdp.uml.telecom.impl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility;
-import org.ncpdp.uml.ECL.EligibilityClarificationCode;
-import org.ncpdp.uml.ECL.PatientRelationshipCode;
-import org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator;
-
+import org.ncpdp.uml.ecl.CMSPartDDefinedQualifiedFacility;
+import org.ncpdp.uml.ecl.EligibilityClarificationCode;
+import org.ncpdp.uml.ecl.PatientRelationshipCode;
+import org.ncpdp.uml.ecl.ProviderAcceptAssignmentIndicator;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.InsuranceSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;

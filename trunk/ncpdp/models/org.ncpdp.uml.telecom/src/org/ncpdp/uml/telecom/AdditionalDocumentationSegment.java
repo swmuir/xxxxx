@@ -7,12 +7,10 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.AdditionalDocumentationTypeID;
-import org.ncpdp.uml.ECL.LengthofNeedQualifier;
-import org.ncpdp.uml.ECL.RequestStatus;
+import org.ncpdp.uml.ecl.AdditionalDocumentationTypeID;
+import org.ncpdp.uml.ecl.LengthofNeedQualifier;
+import org.ncpdp.uml.ecl.RequestStatus;
 
 /**
  * <!-- begin-user-doc -->
@@ -65,8 +63,8 @@ public interface AdditionalDocumentationSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Additional Documentation Type Id</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.AdditionalDocumentationTypeID}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.AdditionalDocumentationTypeID}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.AdditionalDocumentationTypeID}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.AdditionalDocumentationTypeID}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Additional Documentation Type Id</em>' attribute list isn't clear,
@@ -74,7 +72,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Additional Documentation Type Id</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.AdditionalDocumentationTypeID
+	 * @see org.ncpdp.uml.ecl.AdditionalDocumentationTypeID
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getAdditionalDocumentationSegment_AdditionalDocumentationTypeId()
 	 * @model ordered="false"
 	 * @generated
@@ -117,8 +115,8 @@ public interface AdditionalDocumentationSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Request Status</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.RequestStatus}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.RequestStatus}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.RequestStatus}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.RequestStatus}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Request Status</em>' attribute list isn't clear,
@@ -126,7 +124,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Request Status</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.RequestStatus
+	 * @see org.ncpdp.uml.ecl.RequestStatus
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getAdditionalDocumentationSegment_RequestStatus()
 	 * @model ordered="false"
 	 * @generated
@@ -135,8 +133,8 @@ public interface AdditionalDocumentationSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Length Of Need Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.LengthofNeedQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.LengthofNeedQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.LengthofNeedQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.LengthofNeedQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Length Of Need Qualifier</em>' attribute list isn't clear,
@@ -144,7 +142,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Length Of Need Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.LengthofNeedQualifier
+	 * @see org.ncpdp.uml.ecl.LengthofNeedQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getAdditionalDocumentationSegment_LengthOfNeedQualifier()
 	 * @model ordered="false"
 	 * @generated

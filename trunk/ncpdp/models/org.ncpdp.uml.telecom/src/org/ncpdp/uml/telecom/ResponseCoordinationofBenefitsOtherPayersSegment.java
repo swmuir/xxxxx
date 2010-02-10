@@ -7,12 +7,10 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.OtherPayerCoverageType;
-import org.ncpdp.uml.ECL.OtherPayerIDQualifier;
-import org.ncpdp.uml.ECL.OtherPayerPatientRelationshipCode;
+import org.ncpdp.uml.ecl.OtherPayerCoverageType;
+import org.ncpdp.uml.ecl.OtherPayerIDQualifier;
+import org.ncpdp.uml.ecl.OtherPayerPatientRelationshipCode;
 
 /**
  * <!-- begin-user-doc -->
@@ -79,8 +77,8 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 
 	/**
 	 * Returns the value of the '<em><b>Other Payer Coverage Type</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerCoverageType}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerCoverageType}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherPayerCoverageType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherPayerCoverageType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payer Coverage Type</em>' attribute list isn't clear,
@@ -88,7 +86,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Payer Coverage Type</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherPayerCoverageType
+	 * @see org.ncpdp.uml.ecl.OtherPayerCoverageType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerCoverageType()
 	 * @model ordered="false"
 	 * @generated
@@ -97,8 +95,8 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 
 	/**
 	 * Returns the value of the '<em><b>Other Payer Id Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerIDQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerIDQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherPayerIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherPayerIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payer Id Qualifier</em>' attribute list isn't clear,
@@ -106,7 +104,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Payer Id Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherPayerIDQualifier
+	 * @see org.ncpdp.uml.ecl.OtherPayerIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerIdQualifier()
 	 * @model ordered="false"
 	 * @generated
@@ -217,8 +215,8 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 
 	/**
 	 * Returns the value of the '<em><b>Other Payer Patient Relationship Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerPatientRelationshipCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerPatientRelationshipCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherPayerPatientRelationshipCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherPayerPatientRelationshipCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payer Patient Relationship Code</em>' attribute list isn't clear,
@@ -226,7 +224,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Payer Patient Relationship Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherPayerPatientRelationshipCode
+	 * @see org.ncpdp.uml.ecl.OtherPayerPatientRelationshipCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerPatientRelationshipCode()
 	 * @model ordered="false"
 	 * @generated

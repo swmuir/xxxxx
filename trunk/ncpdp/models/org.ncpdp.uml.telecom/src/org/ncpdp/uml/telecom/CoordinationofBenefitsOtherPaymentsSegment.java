@@ -7,14 +7,12 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.BenefitStageQualifier;
-import org.ncpdp.uml.ECL.OtherPayerAmountPaidQualifier;
-import org.ncpdp.uml.ECL.OtherPayerCoverageType;
-import org.ncpdp.uml.ECL.OtherPayerIDQualifier;
-import org.ncpdp.uml.ECL.OtherPayerPatientResponsibilityAmountQualifier;
+import org.ncpdp.uml.ecl.BenefitStageQualifier;
+import org.ncpdp.uml.ecl.OtherPayerAmountPaidQualifier;
+import org.ncpdp.uml.ecl.OtherPayerCoverageType;
+import org.ncpdp.uml.ecl.OtherPayerIDQualifier;
+import org.ncpdp.uml.ecl.OtherPayerPatientResponsibilityAmountQualifier;
 
 /**
  * <!-- begin-user-doc -->
@@ -86,8 +84,8 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Other Payer Coverage Type</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerCoverageType}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerCoverageType}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherPayerCoverageType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherPayerCoverageType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payer Coverage Type</em>' attribute list isn't clear,
@@ -95,7 +93,7 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Payer Coverage Type</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherPayerCoverageType
+	 * @see org.ncpdp.uml.ecl.OtherPayerCoverageType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerCoverageType()
 	 * @model ordered="false"
 	 * @generated
@@ -104,8 +102,8 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Other Payer Id Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerIDQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerIDQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherPayerIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherPayerIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payer Id Qualifier</em>' attribute list isn't clear,
@@ -113,7 +111,7 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Payer Id Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherPayerIDQualifier
+	 * @see org.ncpdp.uml.ecl.OtherPayerIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerIdQualifier()
 	 * @model ordered="false"
 	 * @generated
@@ -190,8 +188,8 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Other Payer Amount Paid Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerAmountPaidQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerAmountPaidQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherPayerAmountPaidQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherPayerAmountPaidQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payer Amount Paid Qualifier</em>' attribute list isn't clear,
@@ -199,7 +197,7 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Payer Amount Paid Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherPayerAmountPaidQualifier
+	 * @see org.ncpdp.uml.ecl.OtherPayerAmountPaidQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerAmountPaidQualifier()
 	 * @model ordered="false"
 	 * @generated
@@ -276,8 +274,8 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Other Payerpatient Responsibility Amount Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerPatientResponsibilityAmountQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerPatientResponsibilityAmountQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherPayerPatientResponsibilityAmountQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherPayerPatientResponsibilityAmountQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payerpatient Responsibility Amount Qualifier</em>' attribute list isn't clear,
@@ -285,7 +283,7 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Payerpatient Responsibility Amount Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherPayerPatientResponsibilityAmountQualifier
+	 * @see org.ncpdp.uml.ecl.OtherPayerPatientResponsibilityAmountQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerpatientResponsibilityAmountQualifier()
 	 * @model ordered="false"
 	 * @generated
@@ -328,8 +326,8 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Benefit Stage Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BenefitStageQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BenefitStageQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BenefitStageQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BenefitStageQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Benefit Stage Qualifier</em>' attribute list isn't clear,
@@ -337,7 +335,7 @@ public interface CoordinationofBenefitsOtherPaymentsSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Benefit Stage Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BenefitStageQualifier
+	 * @see org.ncpdp.uml.ecl.BenefitStageQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCoordinationofBenefitsOtherPaymentsSegment_BenefitStageQualifier()
 	 * @model ordered="false"
 	 * @generated

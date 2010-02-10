@@ -9,22 +9,16 @@ package org.ncpdp.uml.telecom.impl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import org.ncpdp.uml.ECL.AdditionalDocumentationTypeID;
-import org.ncpdp.uml.ECL.LengthofNeedQualifier;
-import org.ncpdp.uml.ECL.RequestStatus;
-
+import org.ncpdp.uml.ecl.AdditionalDocumentationTypeID;
+import org.ncpdp.uml.ecl.LengthofNeedQualifier;
+import org.ncpdp.uml.ecl.RequestStatus;
 import org.ncpdp.uml.telecom.AdditionalDocumentationSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;

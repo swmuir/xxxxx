@@ -7,10 +7,8 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.BasisOfCostDetermination;
+import org.ncpdp.uml.ecl.BasisOfCostDetermination;
 
 /**
  * <!-- begin-user-doc -->
@@ -302,8 +300,8 @@ public interface PricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Basis Of Cost Determination</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCostDetermination}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCostDetermination}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BasisOfCostDetermination}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BasisOfCostDetermination}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Cost Determination</em>' attribute list isn't clear,
@@ -311,7 +309,7 @@ public interface PricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Basis Of Cost Determination</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BasisOfCostDetermination
+	 * @see org.ncpdp.uml.ecl.BasisOfCostDetermination
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPricingSegment_BasisOfCostDetermination()
 	 * @model ordered="false"
 	 * @generated

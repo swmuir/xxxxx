@@ -11,29 +11,21 @@ import java.util.Map;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.eclipse.emf.ecore.util.InternalEList;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.ncpdp.uml.telecom.AdditionalDocumentationSegment;
 import org.ncpdp.uml.telecom.ClaimSegment;
 import org.ncpdp.uml.telecom.ClinicalSegment;
@@ -53,7 +45,6 @@ import org.ncpdp.uml.telecom.TelecomPackage;
 import org.ncpdp.uml.telecom.TransactionHeaderSegment;
 import org.ncpdp.uml.telecom.Transmission;
 import org.ncpdp.uml.telecom.WorkersCompensationSegment;
-
 import org.ncpdp.uml.telecom.util.TelecomValidator;
 
 /**

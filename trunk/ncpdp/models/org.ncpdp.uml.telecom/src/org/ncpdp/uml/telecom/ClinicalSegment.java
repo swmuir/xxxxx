@@ -7,11 +7,9 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.MeasurementDimension;
-import org.ncpdp.uml.ECL.MeasurementUnit;
+import org.ncpdp.uml.ecl.MeasurementDimension;
+import org.ncpdp.uml.ecl.MeasurementUnit;
 
 /**
  * <!-- begin-user-doc -->
@@ -160,8 +158,8 @@ public interface ClinicalSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Measurement Dimension</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.MeasurementDimension}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.MeasurementDimension}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.MeasurementDimension}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.MeasurementDimension}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Measurement Dimension</em>' attribute list isn't clear,
@@ -169,7 +167,7 @@ public interface ClinicalSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Measurement Dimension</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.MeasurementDimension
+	 * @see org.ncpdp.uml.ecl.MeasurementDimension
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClinicalSegment_MeasurementDimension()
 	 * @model ordered="false"
 	 * @generated
@@ -178,8 +176,8 @@ public interface ClinicalSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Measurement Unit</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.MeasurementUnit}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.MeasurementUnit}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.MeasurementUnit}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.MeasurementUnit}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Measurement Unit</em>' attribute list isn't clear,
@@ -187,7 +185,7 @@ public interface ClinicalSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Measurement Unit</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.MeasurementUnit
+	 * @see org.ncpdp.uml.ecl.MeasurementUnit
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClinicalSegment_MeasurementUnit()
 	 * @model ordered="false"
 	 * @generated

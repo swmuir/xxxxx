@@ -7,14 +7,12 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.PatientGenderCode;
-import org.ncpdp.uml.ECL.PatientIDQualifier;
-import org.ncpdp.uml.ECL.PatientLocation;
-import org.ncpdp.uml.ECL.PatientResidence;
-import org.ncpdp.uml.ECL.PregnancyIndicator;
+import org.ncpdp.uml.ecl.PatientGenderCode;
+import org.ncpdp.uml.ecl.PatientIDQualifier;
+import org.ncpdp.uml.ecl.PatientLocation;
+import org.ncpdp.uml.ecl.PatientResidence;
+import org.ncpdp.uml.ecl.PregnancyIndicator;
 
 /**
  * <!-- begin-user-doc -->
@@ -69,8 +67,8 @@ public interface PatientSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Patient Id Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientIDQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientIDQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PatientIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PatientIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Patient Id Qualifier</em>' attribute list isn't clear,
@@ -78,7 +76,7 @@ public interface PatientSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Patient Id Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PatientIDQualifier
+	 * @see org.ncpdp.uml.ecl.PatientIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PatientIdQualifier()
 	 * @model ordered="false"
 	 * @generated
@@ -121,8 +119,8 @@ public interface PatientSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Patient Gender Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientGenderCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientGenderCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PatientGenderCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PatientGenderCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Patient Gender Code</em>' attribute list isn't clear,
@@ -130,7 +128,7 @@ public interface PatientSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Patient Gender Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PatientGenderCode
+	 * @see org.ncpdp.uml.ecl.PatientGenderCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PatientGenderCode()
 	 * @model ordered="false"
 	 * @generated
@@ -258,8 +256,8 @@ public interface PatientSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Place Of Service</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientLocation}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientLocation}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PatientLocation}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PatientLocation}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Place Of Service</em>' attribute list isn't clear,
@@ -267,7 +265,7 @@ public interface PatientSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Place Of Service</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PatientLocation
+	 * @see org.ncpdp.uml.ecl.PatientLocation
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PlaceOfService()
 	 * @model ordered="false"
 	 * @generated
@@ -310,8 +308,8 @@ public interface PatientSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Pregnancy Indicator</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PregnancyIndicator}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PregnancyIndicator}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PregnancyIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PregnancyIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Pregnancy Indicator</em>' attribute list isn't clear,
@@ -319,7 +317,7 @@ public interface PatientSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pregnancy Indicator</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PregnancyIndicator
+	 * @see org.ncpdp.uml.ecl.PregnancyIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PregnancyIndicator()
 	 * @model ordered="false"
 	 * @generated
@@ -345,8 +343,8 @@ public interface PatientSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Patient Residence</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientResidence}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientResidence}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PatientResidence}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PatientResidence}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Patient Residence</em>' attribute list isn't clear,
@@ -354,7 +352,7 @@ public interface PatientSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Patient Residence</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PatientResidence
+	 * @see org.ncpdp.uml.ecl.PatientResidence
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PatientResidence()
 	 * @model ordered="false"
 	 * @generated

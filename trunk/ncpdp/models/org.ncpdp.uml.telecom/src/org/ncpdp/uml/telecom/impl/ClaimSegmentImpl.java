@@ -9,35 +9,29 @@ package org.ncpdp.uml.telecom.impl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import org.ncpdp.uml.ECL.CompoundType;
-import org.ncpdp.uml.ECL.DelayReasonCode;
-import org.ncpdp.uml.ECL.DispensingStatus;
-import org.ncpdp.uml.ECL.FillNumber;
-import org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID;
-import org.ncpdp.uml.ECL.LevelofService;
-import org.ncpdp.uml.ECL.NumberofRefillsAuthorized;
-import org.ncpdp.uml.ECL.OtherCoverageCode;
-import org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator;
-import org.ncpdp.uml.ECL.PharmacyServiceType;
-import org.ncpdp.uml.ECL.PrescriptionOriginCode;
-import org.ncpdp.uml.ECL.PriorAuthorizationTypeCode;
-import org.ncpdp.uml.ECL.RouteOfAdministration;
-import org.ncpdp.uml.ECL.SpecialPackagingIndicator;
-import org.ncpdp.uml.ECL.SubmissionClarificationCode;
-import org.ncpdp.uml.ECL.UnitofMeasure;
-
+import org.ncpdp.uml.ecl.CompoundType;
+import org.ncpdp.uml.ecl.DelayReasonCode;
+import org.ncpdp.uml.ecl.DispensingStatus;
+import org.ncpdp.uml.ecl.FillNumber;
+import org.ncpdp.uml.ecl.IntermediaryAuthorizationTypeID;
+import org.ncpdp.uml.ecl.LevelofService;
+import org.ncpdp.uml.ecl.NumberofRefillsAuthorized;
+import org.ncpdp.uml.ecl.OtherCoverageCode;
+import org.ncpdp.uml.ecl.PatientAssignmentIndicatorDirectMemberReimbursementIndicator;
+import org.ncpdp.uml.ecl.PharmacyServiceType;
+import org.ncpdp.uml.ecl.PrescriptionOriginCode;
+import org.ncpdp.uml.ecl.PriorAuthorizationTypeCode;
+import org.ncpdp.uml.ecl.RouteOfAdministration;
+import org.ncpdp.uml.ecl.SpecialPackagingIndicator;
+import org.ncpdp.uml.ecl.SubmissionClarificationCode;
+import org.ncpdp.uml.ecl.UnitofMeasure;
 import org.ncpdp.uml.telecom.ClaimSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;

@@ -7,10 +7,8 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.CouponType;
+import org.ncpdp.uml.ecl.CouponType;
 
 /**
  * <!-- begin-user-doc -->
@@ -51,8 +49,8 @@ public interface CouponSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Coupon Type</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.CouponType}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CouponType}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.CouponType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.CouponType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Coupon Type</em>' attribute list isn't clear,
@@ -60,7 +58,7 @@ public interface CouponSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Coupon Type</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.CouponType
+	 * @see org.ncpdp.uml.ecl.CouponType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCouponSegment_CouponType()
 	 * @model ordered="false"
 	 * @generated
