@@ -21,6 +21,11 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility;
+import org.ncpdp.uml.ECL.EligibilityClarificationCode;
+import org.ncpdp.uml.ECL.PatientRelationshipCode;
+import org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.InsuranceSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -119,14 +124,14 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 	protected EList<Field> planId;
 
 	/**
-	 * The cached value of the '{@link #getEligibilityClarificationCode() <em>Eligibility Clarification Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getEligibilityClarificationCode() <em>Eligibility Clarification Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getEligibilityClarificationCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> eligibilityClarificationCode;
+	protected EList<EligibilityClarificationCode> eligibilityClarificationCode;
 
 	/**
 	 * The cached value of the '{@link #getGroupId() <em>Group Id</em>}' containment reference list.
@@ -149,14 +154,14 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 	protected EList<Field> personCode;
 
 	/**
-	 * The cached value of the '{@link #getPatientRelationshipCode() <em>Patient Relationship Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getPatientRelationshipCode() <em>Patient Relationship Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPatientRelationshipCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> patientRelationshipCode;
+	protected EList<PatientRelationshipCode> patientRelationshipCode;
 
 	/**
 	 * The cached value of the '{@link #getOtherPayerBinNumber() <em>Other Payer Bin Number</em>}' containment reference list.
@@ -219,24 +224,24 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 	protected EList<Field> medicaidIndicator;
 
 	/**
-	 * The cached value of the '{@link #getProviderAcceptAssignmentIndicator() <em>Provider Accept Assignment Indicator</em>}' containment reference list.
+	 * The cached value of the '{@link #getProviderAcceptAssignmentIndicator() <em>Provider Accept Assignment Indicator</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getProviderAcceptAssignmentIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> providerAcceptAssignmentIndicator;
+	protected EList<ProviderAcceptAssignmentIndicator> providerAcceptAssignmentIndicator;
 
 	/**
-	 * The cached value of the '{@link #getCmsPartDDefinedQualifiedFacility() <em>Cms Part DDefined Qualified Facility</em>}' containment reference list.
+	 * The cached value of the '{@link #getCmsPartDDefinedQualifiedFacility() <em>Cms Part DDefined Qualified Facility</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCmsPartDDefinedQualifiedFacility()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> cmsPartDDefinedQualifiedFacility;
+	protected EList<CMSPartDDefinedQualifiedFacility> cmsPartDDefinedQualifiedFacility;
 
 	/**
 	 * The cached value of the '{@link #getMedicaidIdNumber() <em>Medicaid Id Number</em>}' containment reference list.
@@ -354,9 +359,9 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getEligibilityClarificationCode() {
+	public EList<EligibilityClarificationCode> getEligibilityClarificationCode() {
 		if (eligibilityClarificationCode == null) {
-			eligibilityClarificationCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.INSURANCE_SEGMENT__ELIGIBILITY_CLARIFICATION_CODE);
+			eligibilityClarificationCode = new EDataTypeUniqueEList<EligibilityClarificationCode>(EligibilityClarificationCode.class, this, TelecomPackage.INSURANCE_SEGMENT__ELIGIBILITY_CLARIFICATION_CODE);
 		}
 		return eligibilityClarificationCode;
 	}
@@ -390,9 +395,9 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPatientRelationshipCode() {
+	public EList<PatientRelationshipCode> getPatientRelationshipCode() {
 		if (patientRelationshipCode == null) {
-			patientRelationshipCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.INSURANCE_SEGMENT__PATIENT_RELATIONSHIP_CODE);
+			patientRelationshipCode = new EDataTypeUniqueEList<PatientRelationshipCode>(PatientRelationshipCode.class, this, TelecomPackage.INSURANCE_SEGMENT__PATIENT_RELATIONSHIP_CODE);
 		}
 		return patientRelationshipCode;
 	}
@@ -474,9 +479,9 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getProviderAcceptAssignmentIndicator() {
+	public EList<ProviderAcceptAssignmentIndicator> getProviderAcceptAssignmentIndicator() {
 		if (providerAcceptAssignmentIndicator == null) {
-			providerAcceptAssignmentIndicator = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.INSURANCE_SEGMENT__PROVIDER_ACCEPT_ASSIGNMENT_INDICATOR);
+			providerAcceptAssignmentIndicator = new EDataTypeUniqueEList<ProviderAcceptAssignmentIndicator>(ProviderAcceptAssignmentIndicator.class, this, TelecomPackage.INSURANCE_SEGMENT__PROVIDER_ACCEPT_ASSIGNMENT_INDICATOR);
 		}
 		return providerAcceptAssignmentIndicator;
 	}
@@ -486,9 +491,9 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getCmsPartDDefinedQualifiedFacility() {
+	public EList<CMSPartDDefinedQualifiedFacility> getCmsPartDDefinedQualifiedFacility() {
 		if (cmsPartDDefinedQualifiedFacility == null) {
-			cmsPartDDefinedQualifiedFacility = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.INSURANCE_SEGMENT__CMS_PART_DDEFINED_QUALIFIED_FACILITY);
+			cmsPartDDefinedQualifiedFacility = new EDataTypeUniqueEList<CMSPartDDefinedQualifiedFacility>(CMSPartDDefinedQualifiedFacility.class, this, TelecomPackage.INSURANCE_SEGMENT__CMS_PART_DDEFINED_QUALIFIED_FACILITY);
 		}
 		return cmsPartDDefinedQualifiedFacility;
 	}
@@ -535,14 +540,10 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 				return ((InternalEList<?>)getHomePlan()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.INSURANCE_SEGMENT__PLAN_ID:
 				return ((InternalEList<?>)getPlanId()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.INSURANCE_SEGMENT__ELIGIBILITY_CLARIFICATION_CODE:
-				return ((InternalEList<?>)getEligibilityClarificationCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.INSURANCE_SEGMENT__GROUP_ID:
 				return ((InternalEList<?>)getGroupId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.INSURANCE_SEGMENT__PERSON_CODE:
 				return ((InternalEList<?>)getPersonCode()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.INSURANCE_SEGMENT__PATIENT_RELATIONSHIP_CODE:
-				return ((InternalEList<?>)getPatientRelationshipCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.INSURANCE_SEGMENT__OTHER_PAYER_BIN_NUMBER:
 				return ((InternalEList<?>)getOtherPayerBinNumber()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.INSURANCE_SEGMENT__OTHER_PAYER_PROCESSOR_CONTROL_NUMBER:
@@ -555,10 +556,6 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 				return ((InternalEList<?>)getMedigapId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.INSURANCE_SEGMENT__MEDICAID_INDICATOR:
 				return ((InternalEList<?>)getMedicaidIndicator()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.INSURANCE_SEGMENT__PROVIDER_ACCEPT_ASSIGNMENT_INDICATOR:
-				return ((InternalEList<?>)getProviderAcceptAssignmentIndicator()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.INSURANCE_SEGMENT__CMS_PART_DDEFINED_QUALIFIED_FACILITY:
-				return ((InternalEList<?>)getCmsPartDDefinedQualifiedFacility()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.INSURANCE_SEGMENT__MEDICAID_ID_NUMBER:
 				return ((InternalEList<?>)getMedicaidIdNumber()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.INSURANCE_SEGMENT__MEDICAID_AGENCY_NUMBER:
@@ -654,7 +651,7 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 				return;
 			case TelecomPackage.INSURANCE_SEGMENT__ELIGIBILITY_CLARIFICATION_CODE:
 				getEligibilityClarificationCode().clear();
-				getEligibilityClarificationCode().addAll((Collection<? extends Field>)newValue);
+				getEligibilityClarificationCode().addAll((Collection<? extends EligibilityClarificationCode>)newValue);
 				return;
 			case TelecomPackage.INSURANCE_SEGMENT__GROUP_ID:
 				getGroupId().clear();
@@ -666,7 +663,7 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 				return;
 			case TelecomPackage.INSURANCE_SEGMENT__PATIENT_RELATIONSHIP_CODE:
 				getPatientRelationshipCode().clear();
-				getPatientRelationshipCode().addAll((Collection<? extends Field>)newValue);
+				getPatientRelationshipCode().addAll((Collection<? extends PatientRelationshipCode>)newValue);
 				return;
 			case TelecomPackage.INSURANCE_SEGMENT__OTHER_PAYER_BIN_NUMBER:
 				getOtherPayerBinNumber().clear();
@@ -694,11 +691,11 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 				return;
 			case TelecomPackage.INSURANCE_SEGMENT__PROVIDER_ACCEPT_ASSIGNMENT_INDICATOR:
 				getProviderAcceptAssignmentIndicator().clear();
-				getProviderAcceptAssignmentIndicator().addAll((Collection<? extends Field>)newValue);
+				getProviderAcceptAssignmentIndicator().addAll((Collection<? extends ProviderAcceptAssignmentIndicator>)newValue);
 				return;
 			case TelecomPackage.INSURANCE_SEGMENT__CMS_PART_DDEFINED_QUALIFIED_FACILITY:
 				getCmsPartDDefinedQualifiedFacility().clear();
-				getCmsPartDDefinedQualifiedFacility().addAll((Collection<? extends Field>)newValue);
+				getCmsPartDDefinedQualifiedFacility().addAll((Collection<? extends CMSPartDDefinedQualifiedFacility>)newValue);
 				return;
 			case TelecomPackage.INSURANCE_SEGMENT__MEDICAID_ID_NUMBER:
 				getMedicaidIdNumber().clear();
@@ -848,6 +845,14 @@ public class InsuranceSegmentImpl extends EObjectImpl implements InsuranceSegmen
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", eligibilityClarificationCode: ");
+		result.append(eligibilityClarificationCode);
+		result.append(", patientRelationshipCode: ");
+		result.append(patientRelationshipCode);
+		result.append(", providerAcceptAssignmentIndicator: ");
+		result.append(providerAcceptAssignmentIndicator);
+		result.append(", cmsPartDDefinedQualifiedFacility: ");
+		result.append(cmsPartDDefinedQualifiedFacility);
 		result.append(')');
 		return result.toString();
 	}

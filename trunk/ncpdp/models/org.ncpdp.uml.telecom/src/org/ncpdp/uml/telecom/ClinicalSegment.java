@@ -10,6 +10,9 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.MeasurementDimension;
+import org.ncpdp.uml.ECL.MeasurementUnit;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Clinical Segment</b></em>'.
@@ -32,7 +35,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getClinicalSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' diagnosisCodeCount.field='491-VE' diagnosisCodeQualifier.field='492-WE' diagnosisCode.field='424-DO' clinicalInformationCounter.field='493-XE' measurementDate.field='494-ZE' measurementTime.field='495-H1' measurementDimension.field='496-H2' measurementUnit.field='497-H3' measurementValue.field='499-H4'"
+ * @model
  * @generated
  */
 public interface ClinicalSegment extends EObject {
@@ -41,7 +44,7 @@ public interface ClinicalSegment extends EObject {
 	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Segment Identification</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Segment Identification</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -58,7 +61,7 @@ public interface ClinicalSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Diagnosis Code Count</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Diagnosis Code Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -75,7 +78,7 @@ public interface ClinicalSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Diagnosis Code Qualifier</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Diagnosis Code Qualifier</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -92,7 +95,7 @@ public interface ClinicalSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Diagnosis Code</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Diagnosis Code</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -109,7 +112,7 @@ public interface ClinicalSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Clinical Information Counter</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Clinical Information Counter</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -126,7 +129,7 @@ public interface ClinicalSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Measurement Date</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Measurement Date</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -143,7 +146,7 @@ public interface ClinicalSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Measurement Time</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Measurement Time</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -156,45 +159,47 @@ public interface ClinicalSegment extends EObject {
 	EList<Field> getMeasurementTime();
 
 	/**
-	 * Returns the value of the '<em><b>Measurement Dimension</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Measurement Dimension</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.MeasurementDimension}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.MeasurementDimension}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Measurement Dimension</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Measurement Dimension</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Measurement Dimension</em>' containment reference list.
+	 * @return the value of the '<em>Measurement Dimension</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.MeasurementDimension
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClinicalSegment_MeasurementDimension()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getMeasurementDimension();
+	EList<MeasurementDimension> getMeasurementDimension();
 
 	/**
-	 * Returns the value of the '<em><b>Measurement Unit</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Measurement Unit</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.MeasurementUnit}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.MeasurementUnit}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Measurement Unit</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Measurement Unit</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Measurement Unit</em>' containment reference list.
+	 * @return the value of the '<em>Measurement Unit</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.MeasurementUnit
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClinicalSegment_MeasurementUnit()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getMeasurementUnit();
+	EList<MeasurementUnit> getMeasurementUnit();
 
 	/**
 	 * Returns the value of the '<em><b>Measurement Value</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Measurement Value</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Measurement Value</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

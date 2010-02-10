@@ -10,6 +10,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.OtherPharmacyIndicator;
+import org.ncpdp.uml.ECL.OtherPrescriberIndicator;
+import org.ncpdp.uml.ECL.ReasonforServiceCode;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Response DURPPS Segment</b></em>'.
@@ -33,7 +37,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseDURPPSSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' dURPPSResponseCodeCounter.field='567-J6' reasonforServiceCode.field='439-E4' clinicalSignificanceCode.field='528-FS' otherPharmacyIndicator.field='529-FT' quantityofPreviousFill.field='531-FV' previousDateofFill.field='530-FU' databaseIndicator.field='532-FW' otherPrescriberIndicator.field='533-FX' dURFreeTextMessage.field='544-FY' dURAdditionalText.field='570-NS'"
+ * @model
  * @generated
  */
 public interface ResponseDURPPSSegment extends EObject {
@@ -59,7 +63,7 @@ public interface ResponseDURPPSSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Durpps Response Code Counter</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Durpps Response Code Counter</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -72,28 +76,29 @@ public interface ResponseDURPPSSegment extends EObject {
 	EList<Field> getDurppsResponseCodeCounter();
 
 	/**
-	 * Returns the value of the '<em><b>Reason For Service Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Reason For Service Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.ReasonforServiceCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ReasonforServiceCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Reason For Service Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reason For Service Code</em>' containment reference list.
+	 * @return the value of the '<em>Reason For Service Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.ReasonforServiceCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseDURPPSSegment_ReasonForServiceCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getReasonForServiceCode();
+	EList<ReasonforServiceCode> getReasonForServiceCode();
 
 	/**
 	 * Returns the value of the '<em><b>Clinical Significance Code</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Clinical Significance Code</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Clinical Significance Code</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -106,28 +111,29 @@ public interface ResponseDURPPSSegment extends EObject {
 	EList<Field> getClinicalSignificanceCode();
 
 	/**
-	 * Returns the value of the '<em><b>Other Pharmacy Indicator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Other Pharmacy Indicator</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPharmacyIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPharmacyIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Pharmacy Indicator</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Other Pharmacy Indicator</em>' containment reference list.
+	 * @return the value of the '<em>Other Pharmacy Indicator</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.OtherPharmacyIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseDURPPSSegment_OtherPharmacyIndicator()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getOtherPharmacyIndicator();
+	EList<OtherPharmacyIndicator> getOtherPharmacyIndicator();
 
 	/**
 	 * Returns the value of the '<em><b>Previous Date Of Fill</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Previous Date Of Fill</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Previous Date Of Fill</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -144,7 +150,7 @@ public interface ResponseDURPPSSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Quantity Of Previous Fill</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Quantity Of Previous Fill</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -161,7 +167,7 @@ public interface ResponseDURPPSSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Database Indicator</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Database Indicator</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -174,28 +180,29 @@ public interface ResponseDURPPSSegment extends EObject {
 	EList<Field> getDatabaseIndicator();
 
 	/**
-	 * Returns the value of the '<em><b>Other Prescriber Indicator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Other Prescriber Indicator</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPrescriberIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPrescriberIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Prescriber Indicator</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Other Prescriber Indicator</em>' containment reference list.
+	 * @return the value of the '<em>Other Prescriber Indicator</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.OtherPrescriberIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseDURPPSSegment_OtherPrescriberIndicator()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getOtherPrescriberIndicator();
+	EList<OtherPrescriberIndicator> getOtherPrescriberIndicator();
 
 	/**
 	 * Returns the value of the '<em><b>Dur Free Text Message</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Dur Free Text Message</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Dur Free Text Message</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -212,7 +219,7 @@ public interface ResponseDURPPSSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Dur Additional Text</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Dur Additional Text</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

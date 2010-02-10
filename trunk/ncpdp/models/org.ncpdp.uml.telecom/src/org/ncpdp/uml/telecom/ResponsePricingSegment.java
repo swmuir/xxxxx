@@ -10,6 +10,17 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance;
+import org.ncpdp.uml.ECL.BasisOfCalculationCopay;
+import org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee;
+import org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax;
+import org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax;
+import org.ncpdp.uml.ECL.BasisOfReimbursementDetermination;
+import org.ncpdp.uml.ECL.BenefitStageQualifier;
+import org.ncpdp.uml.ECL.OtherAmountPaidQualifier;
+import org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid;
+import org.ncpdp.uml.ECL.TaxExemptIndicator;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Response Pricing Segment</b></em>'.
@@ -68,7 +79,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' patientPayAmount.field='505-F5' ingredientCostPaid.field='506-F6' dispensingFeePaid.field='507-F7' taxExemptIndicator.field='557-AV' flatSalesTaxAmountPaid.field='558-AW' percentageSalesTaxAmountPaid.field='559-AX' percentageSalesTaxRatePaid.field='560-AY' percentageSalesTaxBasisPaid.field='561-AZ' incentiveAmountPaid.field='521-FL' professionalServiceFeePaid.field='562-J1' otherAmountPaidCount.field='563-J2' otherAmountPaidQualifier.field='564-J3' otherAmountPaid.field='565-J4' otherPayerAmountRecognized.field='566-J5' totalAmountPaid.field='509-F9' basisofReimbursementDetermination.field='522-FM' amountAttributedtoSalesTax.field='523-FN' accumulatedDeductibleAmount.field='512-FC' remainingDeductibleAmount.field='513-FD' remainingBenefitAmount.field='514-FE' amountAppliedtoPeriodicDeductible.field='517-FH' amountofCopay.field='518-F1' amountExceedingPeriodicBenefitMaximum.field='520-FK' basisofCalculationDispensingFee.field='346-HH' basisofCalculationCopay.field='347-HJ' basisofCalculationFlatSalesTax.field='348-HK' basisofCalculationPercentageSalesTax.field='349-HM' amountAttributedtoProcessorFee.field='571-NZ' patientSalesTaxAmount.field='575-EQ' planSalesTaxAmount.field='574-2Y' amountofCoinsurance.field='572-4U' basisofCalculation-Coinsurance.field='573-4V' benefitStageCount.field='392-MU' benefitStageQualifier.field='393-MV' benefitStageAmount.field='394-MW' estimatedGenericSavings.field='577-G3' spendingAccountAmountRemaining.field='128-UC' healthPlan-FundedAssistanceAmount.field='129-UD' amountAttributedtoProviderNetworkSelection.field='133-UJ' amountAttributedtoProductSelectionBrandDrug.field='134-UK' amountAttributedtoProductSelectionNon-PreferredFormularySelection.field='135-UM' amountAttributedtoProductSelectionBrandNon-PreferredFormularySelection.field='136-UN' amountAttributedtoCoverageGap.field='137-UP' ingredientCostContractedReimbursableAmount.field='148-U8' dispensingFeeContractedReimbursableAmount.field='149-U9'"
+ * @model
  * @generated
  */
 public interface ResponsePricingSegment extends EObject {
@@ -94,7 +105,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Pay Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient Pay Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -111,7 +122,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Ingredient Cost Paid</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Ingredient Cost Paid</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -128,7 +139,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Dispensing Fee Paid</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Dispensing Fee Paid</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -141,28 +152,29 @@ public interface ResponsePricingSegment extends EObject {
 	EList<Field> getDispensingFeePaid();
 
 	/**
-	 * Returns the value of the '<em><b>Tax Exempt Indicator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Tax Exempt Indicator</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.TaxExemptIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.TaxExemptIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Tax Exempt Indicator</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Exempt Indicator</em>' containment reference list.
+	 * @return the value of the '<em>Tax Exempt Indicator</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.TaxExemptIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_TaxExemptIndicator()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getTaxExemptIndicator();
+	EList<TaxExemptIndicator> getTaxExemptIndicator();
 
 	/**
 	 * Returns the value of the '<em><b>Flat Sales Tax Amount Paid</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Flat Sales Tax Amount Paid</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Flat Sales Tax Amount Paid</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -179,7 +191,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Percentage Sales Tax Amount Paid</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Percentage Sales Tax Amount Paid</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -196,7 +208,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Percentage Sales Tax Rate Paid</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Percentage Sales Tax Rate Paid</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -209,28 +221,29 @@ public interface ResponsePricingSegment extends EObject {
 	EList<Field> getPercentageSalesTaxRatePaid();
 
 	/**
-	 * Returns the value of the '<em><b>Percentage Sales Tax Basis Paid</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Percentage Sales Tax Basis Paid</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Percentage Sales Tax Basis Paid</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Percentage Sales Tax Basis Paid</em>' containment reference list.
+	 * @return the value of the '<em>Percentage Sales Tax Basis Paid</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_PercentageSalesTaxBasisPaid()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPercentageSalesTaxBasisPaid();
+	EList<PercentageSalesTaxBasisPaid> getPercentageSalesTaxBasisPaid();
 
 	/**
 	 * Returns the value of the '<em><b>Incentive Amount Paid</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Incentive Amount Paid</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Incentive Amount Paid</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -247,7 +260,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Professional Service Fee Paid</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Professional Service Fee Paid</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -264,7 +277,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Amount Paid Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Amount Paid Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -277,28 +290,29 @@ public interface ResponsePricingSegment extends EObject {
 	EList<Field> getOtherAmountPaidCount();
 
 	/**
-	 * Returns the value of the '<em><b>Other Amount Paid Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Other Amount Paid Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherAmountPaidQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherAmountPaidQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Amount Paid Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Other Amount Paid Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Other Amount Paid Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.OtherAmountPaidQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_OtherAmountPaidQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getOtherAmountPaidQualifier();
+	EList<OtherAmountPaidQualifier> getOtherAmountPaidQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Other Amount Paid</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Amount Paid</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Amount Paid</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -315,7 +329,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Amount Recognized</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Amount Recognized</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -332,7 +346,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Total Amount Paid</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Total Amount Paid</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -345,28 +359,29 @@ public interface ResponsePricingSegment extends EObject {
 	EList<Field> getTotalAmountPaid();
 
 	/**
-	 * Returns the value of the '<em><b>Basis Of Reimbursement Determination</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Basis Of Reimbursement Determination</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfReimbursementDetermination}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfReimbursementDetermination}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Reimbursement Determination</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Basis Of Reimbursement Determination</em>' containment reference list.
+	 * @return the value of the '<em>Basis Of Reimbursement Determination</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.BasisOfReimbursementDetermination
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfReimbursementDetermination()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getBasisOfReimbursementDetermination();
+	EList<BasisOfReimbursementDetermination> getBasisOfReimbursementDetermination();
 
 	/**
 	 * Returns the value of the '<em><b>Amount Attributed To Sales Tax</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Attributed To Sales Tax</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Attributed To Sales Tax</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -383,7 +398,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Accumulated Deductible Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Accumulated Deductible Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -400,7 +415,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Remaining Deductible Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Remaining Deductible Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -417,7 +432,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Remaining Benefit Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Remaining Benefit Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -434,7 +449,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Applied To Periodic Deductible</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Applied To Periodic Deductible</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -451,7 +466,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Of Copay</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Of Copay</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -468,7 +483,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Exceeding Periodic Benefit Maximum</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Exceeding Periodic Benefit Maximum</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -481,79 +496,83 @@ public interface ResponsePricingSegment extends EObject {
 	EList<Field> getAmountExceedingPeriodicBenefitMaximum();
 
 	/**
-	 * Returns the value of the '<em><b>Basis Of Calculationdispensing Fee</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Basis Of Calculationdispensing Fee</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationdispensing Fee</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Basis Of Calculationdispensing Fee</em>' containment reference list.
+	 * @return the value of the '<em>Basis Of Calculationdispensing Fee</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationdispensingFee()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getBasisOfCalculationdispensingFee();
+	EList<BasisOfCalculationDispensingFee> getBasisOfCalculationdispensingFee();
 
 	/**
-	 * Returns the value of the '<em><b>Basis Of Calculationcopay</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Basis Of Calculationcopay</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationCopay}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationCopay}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationcopay</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Basis Of Calculationcopay</em>' containment reference list.
+	 * @return the value of the '<em>Basis Of Calculationcopay</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.BasisOfCalculationCopay
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationcopay()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getBasisOfCalculationcopay();
+	EList<BasisOfCalculationCopay> getBasisOfCalculationcopay();
 
 	/**
-	 * Returns the value of the '<em><b>Basis Of Calculationflat Sales Tax</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Basis Of Calculationflat Sales Tax</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationflat Sales Tax</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Basis Of Calculationflat Sales Tax</em>' containment reference list.
+	 * @return the value of the '<em>Basis Of Calculationflat Sales Tax</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationflatSalesTax()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getBasisOfCalculationflatSalesTax();
+	EList<BasisOfCalculationFlatSalesTax> getBasisOfCalculationflatSalesTax();
 
 	/**
-	 * Returns the value of the '<em><b>Basis Of Calculationpercentage Sales Tax</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Basis Of Calculationpercentage Sales Tax</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationpercentage Sales Tax</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Basis Of Calculationpercentage Sales Tax</em>' containment reference list.
+	 * @return the value of the '<em>Basis Of Calculationpercentage Sales Tax</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationpercentageSalesTax()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getBasisOfCalculationpercentageSalesTax();
+	EList<BasisOfCalculationPercentageSalesTax> getBasisOfCalculationpercentageSalesTax();
 
 	/**
 	 * Returns the value of the '<em><b>Amount Attributed To Processor Fee</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Attributed To Processor Fee</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Attributed To Processor Fee</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -570,7 +589,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Sales Tax Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient Sales Tax Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -587,7 +606,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Plan Sales Tax Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Plan Sales Tax Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -604,7 +623,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Of Coinsurance</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Of Coinsurance</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -617,28 +636,29 @@ public interface ResponsePricingSegment extends EObject {
 	EList<Field> getAmountOfCoinsurance();
 
 	/**
-	 * Returns the value of the '<em><b>Basis Of Calculationcoinsurance</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Basis Of Calculationcoinsurance</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationcoinsurance</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Basis Of Calculationcoinsurance</em>' containment reference list.
+	 * @return the value of the '<em>Basis Of Calculationcoinsurance</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationcoinsurance()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getBasisOfCalculationcoinsurance();
+	EList<BasisOfCalculationCoinsurance> getBasisOfCalculationcoinsurance();
 
 	/**
 	 * Returns the value of the '<em><b>Benefit Stage Count</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Benefit Stage Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Benefit Stage Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -651,28 +671,29 @@ public interface ResponsePricingSegment extends EObject {
 	EList<Field> getBenefitStageCount();
 
 	/**
-	 * Returns the value of the '<em><b>Benefit Stage Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Benefit Stage Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.BenefitStageQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BenefitStageQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Benefit Stage Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Benefit Stage Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Benefit Stage Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.BenefitStageQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BenefitStageQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getBenefitStageQualifier();
+	EList<BenefitStageQualifier> getBenefitStageQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Benefit Stage Amount</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Benefit Stage Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Benefit Stage Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -689,7 +710,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Estimated Generic Savings</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Estimated Generic Savings</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -706,7 +727,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Spending Account Amount Remaining</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Spending Account Amount Remaining</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -723,7 +744,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Health Planfunded Assistance Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Health Planfunded Assistance Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -740,7 +761,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Attributed To Provider Network Selection</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Attributed To Provider Network Selection</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -757,7 +778,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Attributed To Product Selectionbrand Drug</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Attributed To Product Selectionbrand Drug</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -774,7 +795,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Attributed To Product Selectionnonpreferred Formulary Selection</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Attributed To Product Selectionnonpreferred Formulary Selection</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -791,7 +812,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Attributed To Product Selectionbrand Nonpreferred Formulary Selection</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Attributed To Product Selectionbrand Nonpreferred Formulary Selection</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -808,7 +829,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Amount Attributed To Coverage Gap</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Amount Attributed To Coverage Gap</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -825,7 +846,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Ingredient Cost Contractedreimbursable Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Ingredient Cost Contractedreimbursable Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -842,7 +863,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Dispensing Fee Contractedreimbursable Amount</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Dispensing Fee Contractedreimbursable Amount</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

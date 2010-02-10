@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseMessageSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' message.field='504-F4'"
+ * @model
  * @generated
  */
 public interface ResponseMessageSegment extends EObject {
@@ -50,7 +50,7 @@ public interface ResponseMessageSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Message</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Message</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

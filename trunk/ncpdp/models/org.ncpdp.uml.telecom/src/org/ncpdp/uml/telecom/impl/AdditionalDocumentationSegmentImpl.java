@@ -21,6 +21,10 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.AdditionalDocumentationTypeID;
+import org.ncpdp.uml.ECL.LengthofNeedQualifier;
+import org.ncpdp.uml.ECL.RequestStatus;
+
 import org.ncpdp.uml.telecom.AdditionalDocumentationSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -65,14 +69,14 @@ public class AdditionalDocumentationSegmentImpl extends EObjectImpl implements A
 	protected EList<String> segmentIdentification;
 
 	/**
-	 * The cached value of the '{@link #getAdditionalDocumentationTypeId() <em>Additional Documentation Type Id</em>}' containment reference list.
+	 * The cached value of the '{@link #getAdditionalDocumentationTypeId() <em>Additional Documentation Type Id</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getAdditionalDocumentationTypeId()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> additionalDocumentationTypeId;
+	protected EList<AdditionalDocumentationTypeID> additionalDocumentationTypeId;
 
 	/**
 	 * The cached value of the '{@link #getRequestPeriodBeginDate() <em>Request Period Begin Date</em>}' containment reference list.
@@ -95,24 +99,24 @@ public class AdditionalDocumentationSegmentImpl extends EObjectImpl implements A
 	protected EList<Field> requestPeriodRecertrevisedDate;
 
 	/**
-	 * The cached value of the '{@link #getRequestStatus() <em>Request Status</em>}' containment reference list.
+	 * The cached value of the '{@link #getRequestStatus() <em>Request Status</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRequestStatus()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> requestStatus;
+	protected EList<RequestStatus> requestStatus;
 
 	/**
-	 * The cached value of the '{@link #getLengthOfNeedQualifier() <em>Length Of Need Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getLengthOfNeedQualifier() <em>Length Of Need Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getLengthOfNeedQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> lengthOfNeedQualifier;
+	protected EList<LengthofNeedQualifier> lengthOfNeedQualifier;
 
 	/**
 	 * The cached value of the '{@link #getLengthOfNeed() <em>Length Of Need</em>}' containment reference list.
@@ -250,9 +254,9 @@ public class AdditionalDocumentationSegmentImpl extends EObjectImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getAdditionalDocumentationTypeId() {
+	public EList<AdditionalDocumentationTypeID> getAdditionalDocumentationTypeId() {
 		if (additionalDocumentationTypeId == null) {
-			additionalDocumentationTypeId = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__ADDITIONAL_DOCUMENTATION_TYPE_ID);
+			additionalDocumentationTypeId = new EDataTypeUniqueEList<AdditionalDocumentationTypeID>(AdditionalDocumentationTypeID.class, this, TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__ADDITIONAL_DOCUMENTATION_TYPE_ID);
 		}
 		return additionalDocumentationTypeId;
 	}
@@ -286,9 +290,9 @@ public class AdditionalDocumentationSegmentImpl extends EObjectImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getRequestStatus() {
+	public EList<RequestStatus> getRequestStatus() {
 		if (requestStatus == null) {
-			requestStatus = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_STATUS);
+			requestStatus = new EDataTypeUniqueEList<RequestStatus>(RequestStatus.class, this, TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_STATUS);
 		}
 		return requestStatus;
 	}
@@ -298,9 +302,9 @@ public class AdditionalDocumentationSegmentImpl extends EObjectImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getLengthOfNeedQualifier() {
+	public EList<LengthofNeedQualifier> getLengthOfNeedQualifier() {
 		if (lengthOfNeedQualifier == null) {
-			lengthOfNeedQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__LENGTH_OF_NEED_QUALIFIER);
+			lengthOfNeedQualifier = new EDataTypeUniqueEList<LengthofNeedQualifier>(LengthofNeedQualifier.class, this, TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__LENGTH_OF_NEED_QUALIFIER);
 		}
 		return lengthOfNeedQualifier;
 	}
@@ -433,16 +437,10 @@ public class AdditionalDocumentationSegmentImpl extends EObjectImpl implements A
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__ADDITIONAL_DOCUMENTATION_TYPE_ID:
-				return ((InternalEList<?>)getAdditionalDocumentationTypeId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_PERIOD_BEGIN_DATE:
 				return ((InternalEList<?>)getRequestPeriodBeginDate()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_PERIOD_RECERTREVISED_DATE:
 				return ((InternalEList<?>)getRequestPeriodRecertrevisedDate()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_STATUS:
-				return ((InternalEList<?>)getRequestStatus()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__LENGTH_OF_NEED_QUALIFIER:
-				return ((InternalEList<?>)getLengthOfNeedQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__LENGTH_OF_NEED:
 				return ((InternalEList<?>)getLengthOfNeed()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__PRESCRIBERSUPPLIER_DATE_SIGNED:
@@ -526,7 +524,7 @@ public class AdditionalDocumentationSegmentImpl extends EObjectImpl implements A
 				return;
 			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__ADDITIONAL_DOCUMENTATION_TYPE_ID:
 				getAdditionalDocumentationTypeId().clear();
-				getAdditionalDocumentationTypeId().addAll((Collection<? extends Field>)newValue);
+				getAdditionalDocumentationTypeId().addAll((Collection<? extends AdditionalDocumentationTypeID>)newValue);
 				return;
 			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_PERIOD_BEGIN_DATE:
 				getRequestPeriodBeginDate().clear();
@@ -538,11 +536,11 @@ public class AdditionalDocumentationSegmentImpl extends EObjectImpl implements A
 				return;
 			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_STATUS:
 				getRequestStatus().clear();
-				getRequestStatus().addAll((Collection<? extends Field>)newValue);
+				getRequestStatus().addAll((Collection<? extends RequestStatus>)newValue);
 				return;
 			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__LENGTH_OF_NEED_QUALIFIER:
 				getLengthOfNeedQualifier().clear();
-				getLengthOfNeedQualifier().addAll((Collection<? extends Field>)newValue);
+				getLengthOfNeedQualifier().addAll((Collection<? extends LengthofNeedQualifier>)newValue);
 				return;
 			case TelecomPackage.ADDITIONAL_DOCUMENTATION_SEGMENT__LENGTH_OF_NEED:
 				getLengthOfNeed().clear();
@@ -704,6 +702,12 @@ public class AdditionalDocumentationSegmentImpl extends EObjectImpl implements A
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", additionalDocumentationTypeId: ");
+		result.append(additionalDocumentationTypeId);
+		result.append(", requestStatus: ");
+		result.append(requestStatus);
+		result.append(", lengthOfNeedQualifier: ");
+		result.append(lengthOfNeedQualifier);
 		result.append(')');
 		return result.toString();
 	}

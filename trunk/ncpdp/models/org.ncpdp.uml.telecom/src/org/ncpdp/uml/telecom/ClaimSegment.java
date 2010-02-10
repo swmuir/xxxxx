@@ -10,6 +10,23 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.CompoundType;
+import org.ncpdp.uml.ECL.DelayReasonCode;
+import org.ncpdp.uml.ECL.DispensingStatus;
+import org.ncpdp.uml.ECL.FillNumber;
+import org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID;
+import org.ncpdp.uml.ECL.LevelofService;
+import org.ncpdp.uml.ECL.NumberofRefillsAuthorized;
+import org.ncpdp.uml.ECL.OtherCoverageCode;
+import org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator;
+import org.ncpdp.uml.ECL.PharmacyServiceType;
+import org.ncpdp.uml.ECL.PrescriptionOriginCode;
+import org.ncpdp.uml.ECL.PriorAuthorizationTypeCode;
+import org.ncpdp.uml.ECL.RouteOfAdministration;
+import org.ncpdp.uml.ECL.SpecialPackagingIndicator;
+import org.ncpdp.uml.ECL.SubmissionClarificationCode;
+import org.ncpdp.uml.ECL.UnitofMeasure;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Claim Segment</b></em>'.
@@ -65,7 +82,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' prescriptionserviceReferenceNumberQualifier.field='455-EM' prescriptionserviceReferenceNumber.field='402-D2' productserviceIdQualifier.field='436-E1 ' productserviceId.field='407-D7' associatedPrescriptionserviceReferenceNumber.field='456-EN' associatedPrescriptionserviceDate.field='457-EP' procedureModifierCodeCount.field='458-SE' procedureModifierCode.field='459-ER' quantityDispensed.field='442-E7' fillNumber.field='403-D3' daysSupply.field='405-D5' compoundCode.field='406-D6' dispenseAsWritten(daw)productSelectionCode.field='408-D8' datePrescriptionWritten.field='414-DE' numberOfRefillsAuthorized.field='415-DF' prescriptionOriginCode.field='419-DJ' submissionClarificationCodeCount.field='354-NX' submissionClarificationCode.field='420-DK' quantityPrescribed.field='46 -ET' otherCoverageCode.field='308-C8' specialPackagingIndicator.field='429-DT' originallyPrescribedProductserviceIdQualifier.field='453-EJ' originallyPrescribedProductserviceCode.field='445-EA' originallyPrescribedQuantity.field='446-EB' alternateId.field='330-CW' scheduledPrescriptionIdNumber.field='454-EK' unitOfMeasure.field='600-28' levelOfService.field='418-DI' priorAuthorizationTypeCode.field='461-EU' priorAuthorizationNumberSubmitted.field='462-EV' intermediaryAuthorizationTypeId.field='463-EW' intermediaryAuthorizationId.field='464-EX' dispensingStatus.field='343-HD' quantityIntendedToBeDispensed.field='344-HF' daysSupplyIntendedToBeDispensed.field='345-HG' delayReasonCode.field='357-NV' transactionReferenceNumber.field='880-K5' patientAssignmentIndicator(directMemberReimbursementIndicator).field='391-MT' routeOfAdministration.field='995-E2' compoundType.field='996-G1' medicaidSubrogationInternalControlNumbertransactionControlNumber(icntcn).field='114-N4' pharmacyServiceType.field='147-U7'"
+ * @model
  * @generated
  */
 public interface ClaimSegment extends EObject {
@@ -240,21 +257,22 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getQuantityDispensed();
 
 	/**
-	 * Returns the value of the '<em><b>Fill Number</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Fill Number</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.FillNumber}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.FillNumber}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Fill Number</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Fill Number</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fill Number</em>' containment reference list.
+	 * @return the value of the '<em>Fill Number</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.FillNumber
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_FillNumber()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getFillNumber();
+	EList<FillNumber> getFillNumber();
 
 	/**
 	 * Returns the value of the '<em><b>Days Supply</b></em>' containment reference list.
@@ -325,38 +343,40 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getDatePrescriptionWritten();
 
 	/**
-	 * Returns the value of the '<em><b>Number Of Refills Authorized</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Number Of Refills Authorized</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.NumberofRefillsAuthorized}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.NumberofRefillsAuthorized}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Number Of Refills Authorized</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Number Of Refills Authorized</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Number Of Refills Authorized</em>' containment reference list.
+	 * @return the value of the '<em>Number Of Refills Authorized</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.NumberofRefillsAuthorized
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_NumberOfRefillsAuthorized()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getNumberOfRefillsAuthorized();
+	EList<NumberofRefillsAuthorized> getNumberOfRefillsAuthorized();
 
 	/**
-	 * Returns the value of the '<em><b>Prescription Origin Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Prescription Origin Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PrescriptionOriginCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PrescriptionOriginCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescription Origin Code</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Prescription Origin Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Prescription Origin Code</em>' containment reference list.
+	 * @return the value of the '<em>Prescription Origin Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PrescriptionOriginCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_PrescriptionOriginCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPrescriptionOriginCode();
+	EList<PrescriptionOriginCode> getPrescriptionOriginCode();
 
 	/**
 	 * Returns the value of the '<em><b>Submission Clarification Code Count</b></em>' containment reference list.
@@ -376,21 +396,22 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getSubmissionClarificationCodeCount();
 
 	/**
-	 * Returns the value of the '<em><b>Submission Clarification Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Submission Clarification Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.SubmissionClarificationCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.SubmissionClarificationCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Submission Clarification Code</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Submission Clarification Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Submission Clarification Code</em>' containment reference list.
+	 * @return the value of the '<em>Submission Clarification Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.SubmissionClarificationCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_SubmissionClarificationCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getSubmissionClarificationCode();
+	EList<SubmissionClarificationCode> getSubmissionClarificationCode();
 
 	/**
 	 * Returns the value of the '<em><b>Quantity Prescribed</b></em>' containment reference list.
@@ -410,38 +431,40 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getQuantityPrescribed();
 
 	/**
-	 * Returns the value of the '<em><b>Other Coverage Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Other Coverage Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherCoverageCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherCoverageCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Coverage Code</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Other Coverage Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Other Coverage Code</em>' containment reference list.
+	 * @return the value of the '<em>Other Coverage Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.OtherCoverageCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_OtherCoverageCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getOtherCoverageCode();
+	EList<OtherCoverageCode> getOtherCoverageCode();
 
 	/**
-	 * Returns the value of the '<em><b>Special Packaging Indicator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Special Packaging Indicator</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.SpecialPackagingIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.SpecialPackagingIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Special Packaging Indicator</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Special Packaging Indicator</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Special Packaging Indicator</em>' containment reference list.
+	 * @return the value of the '<em>Special Packaging Indicator</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.SpecialPackagingIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_SpecialPackagingIndicator()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getSpecialPackagingIndicator();
+	EList<SpecialPackagingIndicator> getSpecialPackagingIndicator();
 
 	/**
 	 * Returns the value of the '<em><b>Originally Prescribed Productservice Id Qualifier</b></em>' containment reference list.
@@ -529,55 +552,58 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getScheduledPrescriptionIdNumber();
 
 	/**
-	 * Returns the value of the '<em><b>Unit Of Measure</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Unit Of Measure</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.UnitofMeasure}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.UnitofMeasure}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Unit Of Measure</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Unit Of Measure</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Unit Of Measure</em>' containment reference list.
+	 * @return the value of the '<em>Unit Of Measure</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.UnitofMeasure
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_UnitOfMeasure()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getUnitOfMeasure();
+	EList<UnitofMeasure> getUnitOfMeasure();
 
 	/**
-	 * Returns the value of the '<em><b>Level Of Service</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Level Of Service</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.LevelofService}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.LevelofService}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Level Of Service</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Level Of Service</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Level Of Service</em>' containment reference list.
+	 * @return the value of the '<em>Level Of Service</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.LevelofService
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_LevelOfService()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getLevelOfService();
+	EList<LevelofService> getLevelOfService();
 
 	/**
-	 * Returns the value of the '<em><b>Prior Authorization Type Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Prior Authorization Type Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PriorAuthorizationTypeCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PriorAuthorizationTypeCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Type Code</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Type Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Prior Authorization Type Code</em>' containment reference list.
+	 * @return the value of the '<em>Prior Authorization Type Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PriorAuthorizationTypeCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_PriorAuthorizationTypeCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPriorAuthorizationTypeCode();
+	EList<PriorAuthorizationTypeCode> getPriorAuthorizationTypeCode();
 
 	/**
 	 * Returns the value of the '<em><b>Prior Authorization Number Submitted</b></em>' containment reference list.
@@ -597,21 +623,22 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getPriorAuthorizationNumberSubmitted();
 
 	/**
-	 * Returns the value of the '<em><b>Intermediary Authorization Type Id</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Intermediary Authorization Type Id</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Intermediary Authorization Type Id</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Intermediary Authorization Type Id</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Intermediary Authorization Type Id</em>' containment reference list.
+	 * @return the value of the '<em>Intermediary Authorization Type Id</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_IntermediaryAuthorizationTypeId()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getIntermediaryAuthorizationTypeId();
+	EList<IntermediaryAuthorizationTypeID> getIntermediaryAuthorizationTypeId();
 
 	/**
 	 * Returns the value of the '<em><b>Intermediary Authorization Id</b></em>' containment reference list.
@@ -631,21 +658,22 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getIntermediaryAuthorizationId();
 
 	/**
-	 * Returns the value of the '<em><b>Dispensing Status</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Dispensing Status</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.DispensingStatus}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.DispensingStatus}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Dispensing Status</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Dispensing Status</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dispensing Status</em>' containment reference list.
+	 * @return the value of the '<em>Dispensing Status</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.DispensingStatus
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_DispensingStatus()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getDispensingStatus();
+	EList<DispensingStatus> getDispensingStatus();
 
 	/**
 	 * Returns the value of the '<em><b>Quantity Intended To Be Dispensed</b></em>' containment reference list.
@@ -682,21 +710,22 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getDaysSupplyIntendedToBeDispensed();
 
 	/**
-	 * Returns the value of the '<em><b>Delay Reason Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Delay Reason Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.DelayReasonCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.DelayReasonCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Delay Reason Code</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Delay Reason Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Delay Reason Code</em>' containment reference list.
+	 * @return the value of the '<em>Delay Reason Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.DelayReasonCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_DelayReasonCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getDelayReasonCode();
+	EList<DelayReasonCode> getDelayReasonCode();
 
 	/**
 	 * Returns the value of the '<em><b>Transaction Reference Number</b></em>' containment reference list.
@@ -716,55 +745,58 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getTransactionReferenceNumber();
 
 	/**
-	 * Returns the value of the '<em><b>Patient Assignment Indicatordirect Member Reimbursement Indicator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Patient Assignment Indicatordirect Member Reimbursement Indicator</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Assignment Indicatordirect Member Reimbursement Indicator</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Patient Assignment Indicatordirect Member Reimbursement Indicator</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Patient Assignment Indicatordirect Member Reimbursement Indicator</em>' containment reference list.
+	 * @return the value of the '<em>Patient Assignment Indicatordirect Member Reimbursement Indicator</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_PatientAssignmentIndicatordirectMemberReimbursementIndicator()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPatientAssignmentIndicatordirectMemberReimbursementIndicator();
+	EList<PatientAssignmentIndicatorDirectMemberReimbursementIndicator> getPatientAssignmentIndicatordirectMemberReimbursementIndicator();
 
 	/**
-	 * Returns the value of the '<em><b>Route Of Administration</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Route Of Administration</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.RouteOfAdministration}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.RouteOfAdministration}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Route Of Administration</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Route Of Administration</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Route Of Administration</em>' containment reference list.
+	 * @return the value of the '<em>Route Of Administration</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.RouteOfAdministration
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_RouteOfAdministration()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getRouteOfAdministration();
+	EList<RouteOfAdministration> getRouteOfAdministration();
 
 	/**
-	 * Returns the value of the '<em><b>Compound Type</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Compound Type</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.CompoundType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CompoundType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Compound Type</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Compound Type</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Compound Type</em>' containment reference list.
+	 * @return the value of the '<em>Compound Type</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.CompoundType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_CompoundType()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getCompoundType();
+	EList<CompoundType> getCompoundType();
 
 	/**
 	 * Returns the value of the '<em><b>Medicaid Subrogation Internal Control Numbertransaction Control Numbericntcn</b></em>' containment reference list.
@@ -784,20 +816,21 @@ public interface ClaimSegment extends EObject {
 	EList<Field> getMedicaidSubrogationInternalControlNumbertransactionControlNumbericntcn();
 
 	/**
-	 * Returns the value of the '<em><b>Pharmacy Service Type</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Pharmacy Service Type</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PharmacyServiceType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PharmacyServiceType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Pharmacy Service Type</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Pharmacy Service Type</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pharmacy Service Type</em>' containment reference list.
+	 * @return the value of the '<em>Pharmacy Service Type</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PharmacyServiceType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_PharmacyServiceType()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element' namespace='##targetNamespace'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPharmacyServiceType();
+	EList<PharmacyServiceType> getPharmacyServiceType();
 
 } // ClaimSegment

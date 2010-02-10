@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePriorAuthorizationSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' priorAuthorizationProcessedDate.field='498-PR' priorAuthorizationEffectiveDate.field='498-PS' priorAuthorizationExpirationDate.field='498-PT' priorAuthorizationQuantity.field='498-RA' priorAuthorizationDollarsAuthorized.field='498-RB' priorAuthorizationNumberofRefillsAuthorized.field='498-PW' priorAuthorizationQuantityAccumulated.field='498-PX' priorAuthorizationNumber-Assigned.field='498-PY'"
+ * @model
  * @generated
  */
 public interface ResponsePriorAuthorizationSegment extends EObject {
@@ -57,7 +57,7 @@ public interface ResponsePriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Processed Date</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Processed Date</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -74,7 +74,7 @@ public interface ResponsePriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Effective Date</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Effective Date</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -91,7 +91,7 @@ public interface ResponsePriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Expiration Date</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Expiration Date</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -108,7 +108,7 @@ public interface ResponsePriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Quantity</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Quantity</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -125,7 +125,7 @@ public interface ResponsePriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Dollars Authorized</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Dollars Authorized</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -142,7 +142,7 @@ public interface ResponsePriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Number Of Refills Authorized</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Number Of Refills Authorized</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -159,7 +159,7 @@ public interface ResponsePriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Quantity Accumulated</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Quantity Accumulated</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -176,7 +176,7 @@ public interface ResponsePriorAuthorizationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prior Authorization Numberassigned</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prior Authorization Numberassigned</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

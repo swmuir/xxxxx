@@ -21,6 +21,23 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.CompoundType;
+import org.ncpdp.uml.ECL.DelayReasonCode;
+import org.ncpdp.uml.ECL.DispensingStatus;
+import org.ncpdp.uml.ECL.FillNumber;
+import org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID;
+import org.ncpdp.uml.ECL.LevelofService;
+import org.ncpdp.uml.ECL.NumberofRefillsAuthorized;
+import org.ncpdp.uml.ECL.OtherCoverageCode;
+import org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator;
+import org.ncpdp.uml.ECL.PharmacyServiceType;
+import org.ncpdp.uml.ECL.PrescriptionOriginCode;
+import org.ncpdp.uml.ECL.PriorAuthorizationTypeCode;
+import org.ncpdp.uml.ECL.RouteOfAdministration;
+import org.ncpdp.uml.ECL.SpecialPackagingIndicator;
+import org.ncpdp.uml.ECL.SubmissionClarificationCode;
+import org.ncpdp.uml.ECL.UnitofMeasure;
+
 import org.ncpdp.uml.telecom.ClaimSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -182,14 +199,14 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> quantityDispensed;
 
 	/**
-	 * The cached value of the '{@link #getFillNumber() <em>Fill Number</em>}' containment reference list.
+	 * The cached value of the '{@link #getFillNumber() <em>Fill Number</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getFillNumber()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> fillNumber;
+	protected EList<FillNumber> fillNumber;
 
 	/**
 	 * The cached value of the '{@link #getDaysSupply() <em>Days Supply</em>}' containment reference list.
@@ -232,24 +249,24 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> datePrescriptionWritten;
 
 	/**
-	 * The cached value of the '{@link #getNumberOfRefillsAuthorized() <em>Number Of Refills Authorized</em>}' containment reference list.
+	 * The cached value of the '{@link #getNumberOfRefillsAuthorized() <em>Number Of Refills Authorized</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getNumberOfRefillsAuthorized()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> numberOfRefillsAuthorized;
+	protected EList<NumberofRefillsAuthorized> numberOfRefillsAuthorized;
 
 	/**
-	 * The cached value of the '{@link #getPrescriptionOriginCode() <em>Prescription Origin Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getPrescriptionOriginCode() <em>Prescription Origin Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPrescriptionOriginCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> prescriptionOriginCode;
+	protected EList<PrescriptionOriginCode> prescriptionOriginCode;
 
 	/**
 	 * The cached value of the '{@link #getSubmissionClarificationCodeCount() <em>Submission Clarification Code Count</em>}' containment reference list.
@@ -262,14 +279,14 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> submissionClarificationCodeCount;
 
 	/**
-	 * The cached value of the '{@link #getSubmissionClarificationCode() <em>Submission Clarification Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getSubmissionClarificationCode() <em>Submission Clarification Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSubmissionClarificationCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> submissionClarificationCode;
+	protected EList<SubmissionClarificationCode> submissionClarificationCode;
 
 	/**
 	 * The cached value of the '{@link #getQuantityPrescribed() <em>Quantity Prescribed</em>}' containment reference list.
@@ -282,24 +299,24 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> quantityPrescribed;
 
 	/**
-	 * The cached value of the '{@link #getOtherCoverageCode() <em>Other Coverage Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherCoverageCode() <em>Other Coverage Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherCoverageCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherCoverageCode;
+	protected EList<OtherCoverageCode> otherCoverageCode;
 
 	/**
-	 * The cached value of the '{@link #getSpecialPackagingIndicator() <em>Special Packaging Indicator</em>}' containment reference list.
+	 * The cached value of the '{@link #getSpecialPackagingIndicator() <em>Special Packaging Indicator</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSpecialPackagingIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> specialPackagingIndicator;
+	protected EList<SpecialPackagingIndicator> specialPackagingIndicator;
 
 	/**
 	 * The cached value of the '{@link #getOriginallyPrescribedProductserviceIdQualifier() <em>Originally Prescribed Productservice Id Qualifier</em>}' containment reference list.
@@ -352,34 +369,34 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> scheduledPrescriptionIdNumber;
 
 	/**
-	 * The cached value of the '{@link #getUnitOfMeasure() <em>Unit Of Measure</em>}' containment reference list.
+	 * The cached value of the '{@link #getUnitOfMeasure() <em>Unit Of Measure</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getUnitOfMeasure()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> unitOfMeasure;
+	protected EList<UnitofMeasure> unitOfMeasure;
 
 	/**
-	 * The cached value of the '{@link #getLevelOfService() <em>Level Of Service</em>}' containment reference list.
+	 * The cached value of the '{@link #getLevelOfService() <em>Level Of Service</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getLevelOfService()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> levelOfService;
+	protected EList<LevelofService> levelOfService;
 
 	/**
-	 * The cached value of the '{@link #getPriorAuthorizationTypeCode() <em>Prior Authorization Type Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getPriorAuthorizationTypeCode() <em>Prior Authorization Type Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPriorAuthorizationTypeCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> priorAuthorizationTypeCode;
+	protected EList<PriorAuthorizationTypeCode> priorAuthorizationTypeCode;
 
 	/**
 	 * The cached value of the '{@link #getPriorAuthorizationNumberSubmitted() <em>Prior Authorization Number Submitted</em>}' containment reference list.
@@ -392,14 +409,14 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> priorAuthorizationNumberSubmitted;
 
 	/**
-	 * The cached value of the '{@link #getIntermediaryAuthorizationTypeId() <em>Intermediary Authorization Type Id</em>}' containment reference list.
+	 * The cached value of the '{@link #getIntermediaryAuthorizationTypeId() <em>Intermediary Authorization Type Id</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getIntermediaryAuthorizationTypeId()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> intermediaryAuthorizationTypeId;
+	protected EList<IntermediaryAuthorizationTypeID> intermediaryAuthorizationTypeId;
 
 	/**
 	 * The cached value of the '{@link #getIntermediaryAuthorizationId() <em>Intermediary Authorization Id</em>}' containment reference list.
@@ -412,14 +429,14 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> intermediaryAuthorizationId;
 
 	/**
-	 * The cached value of the '{@link #getDispensingStatus() <em>Dispensing Status</em>}' containment reference list.
+	 * The cached value of the '{@link #getDispensingStatus() <em>Dispensing Status</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getDispensingStatus()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> dispensingStatus;
+	protected EList<DispensingStatus> dispensingStatus;
 
 	/**
 	 * The cached value of the '{@link #getQuantityIntendedToBeDispensed() <em>Quantity Intended To Be Dispensed</em>}' containment reference list.
@@ -442,14 +459,14 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> daysSupplyIntendedToBeDispensed;
 
 	/**
-	 * The cached value of the '{@link #getDelayReasonCode() <em>Delay Reason Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getDelayReasonCode() <em>Delay Reason Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getDelayReasonCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> delayReasonCode;
+	protected EList<DelayReasonCode> delayReasonCode;
 
 	/**
 	 * The cached value of the '{@link #getTransactionReferenceNumber() <em>Transaction Reference Number</em>}' containment reference list.
@@ -462,34 +479,34 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> transactionReferenceNumber;
 
 	/**
-	 * The cached value of the '{@link #getPatientAssignmentIndicatordirectMemberReimbursementIndicator() <em>Patient Assignment Indicatordirect Member Reimbursement Indicator</em>}' containment reference list.
+	 * The cached value of the '{@link #getPatientAssignmentIndicatordirectMemberReimbursementIndicator() <em>Patient Assignment Indicatordirect Member Reimbursement Indicator</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPatientAssignmentIndicatordirectMemberReimbursementIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> patientAssignmentIndicatordirectMemberReimbursementIndicator;
+	protected EList<PatientAssignmentIndicatorDirectMemberReimbursementIndicator> patientAssignmentIndicatordirectMemberReimbursementIndicator;
 
 	/**
-	 * The cached value of the '{@link #getRouteOfAdministration() <em>Route Of Administration</em>}' containment reference list.
+	 * The cached value of the '{@link #getRouteOfAdministration() <em>Route Of Administration</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRouteOfAdministration()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> routeOfAdministration;
+	protected EList<RouteOfAdministration> routeOfAdministration;
 
 	/**
-	 * The cached value of the '{@link #getCompoundType() <em>Compound Type</em>}' containment reference list.
+	 * The cached value of the '{@link #getCompoundType() <em>Compound Type</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCompoundType()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> compoundType;
+	protected EList<CompoundType> compoundType;
 
 	/**
 	 * The cached value of the '{@link #getMedicaidSubrogationInternalControlNumbertransactionControlNumbericntcn() <em>Medicaid Subrogation Internal Control Numbertransaction Control Numbericntcn</em>}' containment reference list.
@@ -502,14 +519,14 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	protected EList<Field> medicaidSubrogationInternalControlNumbertransactionControlNumbericntcn;
 
 	/**
-	 * The cached value of the '{@link #getPharmacyServiceType() <em>Pharmacy Service Type</em>}' containment reference list.
+	 * The cached value of the '{@link #getPharmacyServiceType() <em>Pharmacy Service Type</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPharmacyServiceType()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> pharmacyServiceType;
+	protected EList<PharmacyServiceType> pharmacyServiceType;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -655,9 +672,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getFillNumber() {
+	public EList<FillNumber> getFillNumber() {
 		if (fillNumber == null) {
-			fillNumber = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__FILL_NUMBER);
+			fillNumber = new EDataTypeUniqueEList<FillNumber>(FillNumber.class, this, TelecomPackage.CLAIM_SEGMENT__FILL_NUMBER);
 		}
 		return fillNumber;
 	}
@@ -715,9 +732,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getNumberOfRefillsAuthorized() {
+	public EList<NumberofRefillsAuthorized> getNumberOfRefillsAuthorized() {
 		if (numberOfRefillsAuthorized == null) {
-			numberOfRefillsAuthorized = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__NUMBER_OF_REFILLS_AUTHORIZED);
+			numberOfRefillsAuthorized = new EDataTypeUniqueEList<NumberofRefillsAuthorized>(NumberofRefillsAuthorized.class, this, TelecomPackage.CLAIM_SEGMENT__NUMBER_OF_REFILLS_AUTHORIZED);
 		}
 		return numberOfRefillsAuthorized;
 	}
@@ -727,9 +744,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPrescriptionOriginCode() {
+	public EList<PrescriptionOriginCode> getPrescriptionOriginCode() {
 		if (prescriptionOriginCode == null) {
-			prescriptionOriginCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__PRESCRIPTION_ORIGIN_CODE);
+			prescriptionOriginCode = new EDataTypeUniqueEList<PrescriptionOriginCode>(PrescriptionOriginCode.class, this, TelecomPackage.CLAIM_SEGMENT__PRESCRIPTION_ORIGIN_CODE);
 		}
 		return prescriptionOriginCode;
 	}
@@ -751,9 +768,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getSubmissionClarificationCode() {
+	public EList<SubmissionClarificationCode> getSubmissionClarificationCode() {
 		if (submissionClarificationCode == null) {
-			submissionClarificationCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__SUBMISSION_CLARIFICATION_CODE);
+			submissionClarificationCode = new EDataTypeUniqueEList<SubmissionClarificationCode>(SubmissionClarificationCode.class, this, TelecomPackage.CLAIM_SEGMENT__SUBMISSION_CLARIFICATION_CODE);
 		}
 		return submissionClarificationCode;
 	}
@@ -775,9 +792,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherCoverageCode() {
+	public EList<OtherCoverageCode> getOtherCoverageCode() {
 		if (otherCoverageCode == null) {
-			otherCoverageCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__OTHER_COVERAGE_CODE);
+			otherCoverageCode = new EDataTypeUniqueEList<OtherCoverageCode>(OtherCoverageCode.class, this, TelecomPackage.CLAIM_SEGMENT__OTHER_COVERAGE_CODE);
 		}
 		return otherCoverageCode;
 	}
@@ -787,9 +804,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getSpecialPackagingIndicator() {
+	public EList<SpecialPackagingIndicator> getSpecialPackagingIndicator() {
 		if (specialPackagingIndicator == null) {
-			specialPackagingIndicator = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__SPECIAL_PACKAGING_INDICATOR);
+			specialPackagingIndicator = new EDataTypeUniqueEList<SpecialPackagingIndicator>(SpecialPackagingIndicator.class, this, TelecomPackage.CLAIM_SEGMENT__SPECIAL_PACKAGING_INDICATOR);
 		}
 		return specialPackagingIndicator;
 	}
@@ -859,9 +876,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getUnitOfMeasure() {
+	public EList<UnitofMeasure> getUnitOfMeasure() {
 		if (unitOfMeasure == null) {
-			unitOfMeasure = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__UNIT_OF_MEASURE);
+			unitOfMeasure = new EDataTypeUniqueEList<UnitofMeasure>(UnitofMeasure.class, this, TelecomPackage.CLAIM_SEGMENT__UNIT_OF_MEASURE);
 		}
 		return unitOfMeasure;
 	}
@@ -871,9 +888,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getLevelOfService() {
+	public EList<LevelofService> getLevelOfService() {
 		if (levelOfService == null) {
-			levelOfService = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__LEVEL_OF_SERVICE);
+			levelOfService = new EDataTypeUniqueEList<LevelofService>(LevelofService.class, this, TelecomPackage.CLAIM_SEGMENT__LEVEL_OF_SERVICE);
 		}
 		return levelOfService;
 	}
@@ -883,9 +900,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPriorAuthorizationTypeCode() {
+	public EList<PriorAuthorizationTypeCode> getPriorAuthorizationTypeCode() {
 		if (priorAuthorizationTypeCode == null) {
-			priorAuthorizationTypeCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__PRIOR_AUTHORIZATION_TYPE_CODE);
+			priorAuthorizationTypeCode = new EDataTypeUniqueEList<PriorAuthorizationTypeCode>(PriorAuthorizationTypeCode.class, this, TelecomPackage.CLAIM_SEGMENT__PRIOR_AUTHORIZATION_TYPE_CODE);
 		}
 		return priorAuthorizationTypeCode;
 	}
@@ -907,9 +924,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getIntermediaryAuthorizationTypeId() {
+	public EList<IntermediaryAuthorizationTypeID> getIntermediaryAuthorizationTypeId() {
 		if (intermediaryAuthorizationTypeId == null) {
-			intermediaryAuthorizationTypeId = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__INTERMEDIARY_AUTHORIZATION_TYPE_ID);
+			intermediaryAuthorizationTypeId = new EDataTypeUniqueEList<IntermediaryAuthorizationTypeID>(IntermediaryAuthorizationTypeID.class, this, TelecomPackage.CLAIM_SEGMENT__INTERMEDIARY_AUTHORIZATION_TYPE_ID);
 		}
 		return intermediaryAuthorizationTypeId;
 	}
@@ -931,9 +948,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getDispensingStatus() {
+	public EList<DispensingStatus> getDispensingStatus() {
 		if (dispensingStatus == null) {
-			dispensingStatus = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__DISPENSING_STATUS);
+			dispensingStatus = new EDataTypeUniqueEList<DispensingStatus>(DispensingStatus.class, this, TelecomPackage.CLAIM_SEGMENT__DISPENSING_STATUS);
 		}
 		return dispensingStatus;
 	}
@@ -967,9 +984,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getDelayReasonCode() {
+	public EList<DelayReasonCode> getDelayReasonCode() {
 		if (delayReasonCode == null) {
-			delayReasonCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__DELAY_REASON_CODE);
+			delayReasonCode = new EDataTypeUniqueEList<DelayReasonCode>(DelayReasonCode.class, this, TelecomPackage.CLAIM_SEGMENT__DELAY_REASON_CODE);
 		}
 		return delayReasonCode;
 	}
@@ -991,9 +1008,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPatientAssignmentIndicatordirectMemberReimbursementIndicator() {
+	public EList<PatientAssignmentIndicatorDirectMemberReimbursementIndicator> getPatientAssignmentIndicatordirectMemberReimbursementIndicator() {
 		if (patientAssignmentIndicatordirectMemberReimbursementIndicator == null) {
-			patientAssignmentIndicatordirectMemberReimbursementIndicator = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__PATIENT_ASSIGNMENT_INDICATORDIRECT_MEMBER_REIMBURSEMENT_INDICATOR);
+			patientAssignmentIndicatordirectMemberReimbursementIndicator = new EDataTypeUniqueEList<PatientAssignmentIndicatorDirectMemberReimbursementIndicator>(PatientAssignmentIndicatorDirectMemberReimbursementIndicator.class, this, TelecomPackage.CLAIM_SEGMENT__PATIENT_ASSIGNMENT_INDICATORDIRECT_MEMBER_REIMBURSEMENT_INDICATOR);
 		}
 		return patientAssignmentIndicatordirectMemberReimbursementIndicator;
 	}
@@ -1003,9 +1020,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getRouteOfAdministration() {
+	public EList<RouteOfAdministration> getRouteOfAdministration() {
 		if (routeOfAdministration == null) {
-			routeOfAdministration = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__ROUTE_OF_ADMINISTRATION);
+			routeOfAdministration = new EDataTypeUniqueEList<RouteOfAdministration>(RouteOfAdministration.class, this, TelecomPackage.CLAIM_SEGMENT__ROUTE_OF_ADMINISTRATION);
 		}
 		return routeOfAdministration;
 	}
@@ -1015,9 +1032,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getCompoundType() {
+	public EList<CompoundType> getCompoundType() {
 		if (compoundType == null) {
-			compoundType = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__COMPOUND_TYPE);
+			compoundType = new EDataTypeUniqueEList<CompoundType>(CompoundType.class, this, TelecomPackage.CLAIM_SEGMENT__COMPOUND_TYPE);
 		}
 		return compoundType;
 	}
@@ -1039,9 +1056,9 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPharmacyServiceType() {
+	public EList<PharmacyServiceType> getPharmacyServiceType() {
 		if (pharmacyServiceType == null) {
-			pharmacyServiceType = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLAIM_SEGMENT__PHARMACY_SERVICE_TYPE);
+			pharmacyServiceType = new EDataTypeUniqueEList<PharmacyServiceType>(PharmacyServiceType.class, this, TelecomPackage.CLAIM_SEGMENT__PHARMACY_SERVICE_TYPE);
 		}
 		return pharmacyServiceType;
 	}
@@ -1072,8 +1089,6 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return ((InternalEList<?>)getProcedureModifierCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__QUANTITY_DISPENSED:
 				return ((InternalEList<?>)getQuantityDispensed()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__FILL_NUMBER:
-				return ((InternalEList<?>)getFillNumber()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__DAYS_SUPPLY:
 				return ((InternalEList<?>)getDaysSupply()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__COMPOUND_CODE:
@@ -1082,20 +1097,10 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return ((InternalEList<?>)getDispenseAsWrittendawproductSelectionCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__DATE_PRESCRIPTION_WRITTEN:
 				return ((InternalEList<?>)getDatePrescriptionWritten()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__NUMBER_OF_REFILLS_AUTHORIZED:
-				return ((InternalEList<?>)getNumberOfRefillsAuthorized()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__PRESCRIPTION_ORIGIN_CODE:
-				return ((InternalEList<?>)getPrescriptionOriginCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__SUBMISSION_CLARIFICATION_CODE_COUNT:
 				return ((InternalEList<?>)getSubmissionClarificationCodeCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__SUBMISSION_CLARIFICATION_CODE:
-				return ((InternalEList<?>)getSubmissionClarificationCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__QUANTITY_PRESCRIBED:
 				return ((InternalEList<?>)getQuantityPrescribed()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__OTHER_COVERAGE_CODE:
-				return ((InternalEList<?>)getOtherCoverageCode()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__SPECIAL_PACKAGING_INDICATOR:
-				return ((InternalEList<?>)getSpecialPackagingIndicator()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__ORIGINALLY_PRESCRIBED_PRODUCTSERVICE_ID_QUALIFIER:
 				return ((InternalEList<?>)getOriginallyPrescribedProductserviceIdQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__ORIGINALLY_PRESCRIBED_PRODUCTSERVICE_CODE:
@@ -1106,38 +1111,18 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return ((InternalEList<?>)getAlternateId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__SCHEDULED_PRESCRIPTION_ID_NUMBER:
 				return ((InternalEList<?>)getScheduledPrescriptionIdNumber()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__UNIT_OF_MEASURE:
-				return ((InternalEList<?>)getUnitOfMeasure()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__LEVEL_OF_SERVICE:
-				return ((InternalEList<?>)getLevelOfService()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__PRIOR_AUTHORIZATION_TYPE_CODE:
-				return ((InternalEList<?>)getPriorAuthorizationTypeCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__PRIOR_AUTHORIZATION_NUMBER_SUBMITTED:
 				return ((InternalEList<?>)getPriorAuthorizationNumberSubmitted()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__INTERMEDIARY_AUTHORIZATION_TYPE_ID:
-				return ((InternalEList<?>)getIntermediaryAuthorizationTypeId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__INTERMEDIARY_AUTHORIZATION_ID:
 				return ((InternalEList<?>)getIntermediaryAuthorizationId()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__DISPENSING_STATUS:
-				return ((InternalEList<?>)getDispensingStatus()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__QUANTITY_INTENDED_TO_BE_DISPENSED:
 				return ((InternalEList<?>)getQuantityIntendedToBeDispensed()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__DAYS_SUPPLY_INTENDED_TO_BE_DISPENSED:
 				return ((InternalEList<?>)getDaysSupplyIntendedToBeDispensed()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__DELAY_REASON_CODE:
-				return ((InternalEList<?>)getDelayReasonCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__TRANSACTION_REFERENCE_NUMBER:
 				return ((InternalEList<?>)getTransactionReferenceNumber()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__PATIENT_ASSIGNMENT_INDICATORDIRECT_MEMBER_REIMBURSEMENT_INDICATOR:
-				return ((InternalEList<?>)getPatientAssignmentIndicatordirectMemberReimbursementIndicator()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__ROUTE_OF_ADMINISTRATION:
-				return ((InternalEList<?>)getRouteOfAdministration()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__COMPOUND_TYPE:
-				return ((InternalEList<?>)getCompoundType()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLAIM_SEGMENT__MEDICAID_SUBROGATION_INTERNAL_CONTROL_NUMBERTRANSACTION_CONTROL_NUMBERICNTCN:
 				return ((InternalEList<?>)getMedicaidSubrogationInternalControlNumbertransactionControlNumbericntcn()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLAIM_SEGMENT__PHARMACY_SERVICE_TYPE:
-				return ((InternalEList<?>)getPharmacyServiceType()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -1291,7 +1276,7 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__FILL_NUMBER:
 				getFillNumber().clear();
-				getFillNumber().addAll((Collection<? extends Field>)newValue);
+				getFillNumber().addAll((Collection<? extends FillNumber>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__DAYS_SUPPLY:
 				getDaysSupply().clear();
@@ -1311,11 +1296,11 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__NUMBER_OF_REFILLS_AUTHORIZED:
 				getNumberOfRefillsAuthorized().clear();
-				getNumberOfRefillsAuthorized().addAll((Collection<? extends Field>)newValue);
+				getNumberOfRefillsAuthorized().addAll((Collection<? extends NumberofRefillsAuthorized>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__PRESCRIPTION_ORIGIN_CODE:
 				getPrescriptionOriginCode().clear();
-				getPrescriptionOriginCode().addAll((Collection<? extends Field>)newValue);
+				getPrescriptionOriginCode().addAll((Collection<? extends PrescriptionOriginCode>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__SUBMISSION_CLARIFICATION_CODE_COUNT:
 				getSubmissionClarificationCodeCount().clear();
@@ -1323,7 +1308,7 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__SUBMISSION_CLARIFICATION_CODE:
 				getSubmissionClarificationCode().clear();
-				getSubmissionClarificationCode().addAll((Collection<? extends Field>)newValue);
+				getSubmissionClarificationCode().addAll((Collection<? extends SubmissionClarificationCode>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__QUANTITY_PRESCRIBED:
 				getQuantityPrescribed().clear();
@@ -1331,11 +1316,11 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__OTHER_COVERAGE_CODE:
 				getOtherCoverageCode().clear();
-				getOtherCoverageCode().addAll((Collection<? extends Field>)newValue);
+				getOtherCoverageCode().addAll((Collection<? extends OtherCoverageCode>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__SPECIAL_PACKAGING_INDICATOR:
 				getSpecialPackagingIndicator().clear();
-				getSpecialPackagingIndicator().addAll((Collection<? extends Field>)newValue);
+				getSpecialPackagingIndicator().addAll((Collection<? extends SpecialPackagingIndicator>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__ORIGINALLY_PRESCRIBED_PRODUCTSERVICE_ID_QUALIFIER:
 				getOriginallyPrescribedProductserviceIdQualifier().clear();
@@ -1359,15 +1344,15 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__UNIT_OF_MEASURE:
 				getUnitOfMeasure().clear();
-				getUnitOfMeasure().addAll((Collection<? extends Field>)newValue);
+				getUnitOfMeasure().addAll((Collection<? extends UnitofMeasure>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__LEVEL_OF_SERVICE:
 				getLevelOfService().clear();
-				getLevelOfService().addAll((Collection<? extends Field>)newValue);
+				getLevelOfService().addAll((Collection<? extends LevelofService>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__PRIOR_AUTHORIZATION_TYPE_CODE:
 				getPriorAuthorizationTypeCode().clear();
-				getPriorAuthorizationTypeCode().addAll((Collection<? extends Field>)newValue);
+				getPriorAuthorizationTypeCode().addAll((Collection<? extends PriorAuthorizationTypeCode>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__PRIOR_AUTHORIZATION_NUMBER_SUBMITTED:
 				getPriorAuthorizationNumberSubmitted().clear();
@@ -1375,7 +1360,7 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__INTERMEDIARY_AUTHORIZATION_TYPE_ID:
 				getIntermediaryAuthorizationTypeId().clear();
-				getIntermediaryAuthorizationTypeId().addAll((Collection<? extends Field>)newValue);
+				getIntermediaryAuthorizationTypeId().addAll((Collection<? extends IntermediaryAuthorizationTypeID>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__INTERMEDIARY_AUTHORIZATION_ID:
 				getIntermediaryAuthorizationId().clear();
@@ -1383,7 +1368,7 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__DISPENSING_STATUS:
 				getDispensingStatus().clear();
-				getDispensingStatus().addAll((Collection<? extends Field>)newValue);
+				getDispensingStatus().addAll((Collection<? extends DispensingStatus>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__QUANTITY_INTENDED_TO_BE_DISPENSED:
 				getQuantityIntendedToBeDispensed().clear();
@@ -1395,7 +1380,7 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__DELAY_REASON_CODE:
 				getDelayReasonCode().clear();
-				getDelayReasonCode().addAll((Collection<? extends Field>)newValue);
+				getDelayReasonCode().addAll((Collection<? extends DelayReasonCode>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__TRANSACTION_REFERENCE_NUMBER:
 				getTransactionReferenceNumber().clear();
@@ -1403,15 +1388,15 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__PATIENT_ASSIGNMENT_INDICATORDIRECT_MEMBER_REIMBURSEMENT_INDICATOR:
 				getPatientAssignmentIndicatordirectMemberReimbursementIndicator().clear();
-				getPatientAssignmentIndicatordirectMemberReimbursementIndicator().addAll((Collection<? extends Field>)newValue);
+				getPatientAssignmentIndicatordirectMemberReimbursementIndicator().addAll((Collection<? extends PatientAssignmentIndicatorDirectMemberReimbursementIndicator>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__ROUTE_OF_ADMINISTRATION:
 				getRouteOfAdministration().clear();
-				getRouteOfAdministration().addAll((Collection<? extends Field>)newValue);
+				getRouteOfAdministration().addAll((Collection<? extends RouteOfAdministration>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__COMPOUND_TYPE:
 				getCompoundType().clear();
-				getCompoundType().addAll((Collection<? extends Field>)newValue);
+				getCompoundType().addAll((Collection<? extends CompoundType>)newValue);
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__MEDICAID_SUBROGATION_INTERNAL_CONTROL_NUMBERTRANSACTION_CONTROL_NUMBERICNTCN:
 				getMedicaidSubrogationInternalControlNumbertransactionControlNumbericntcn().clear();
@@ -1419,7 +1404,7 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 				return;
 			case TelecomPackage.CLAIM_SEGMENT__PHARMACY_SERVICE_TYPE:
 				getPharmacyServiceType().clear();
-				getPharmacyServiceType().addAll((Collection<? extends Field>)newValue);
+				getPharmacyServiceType().addAll((Collection<? extends PharmacyServiceType>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -1676,6 +1661,38 @@ public class ClaimSegmentImpl extends EObjectImpl implements ClaimSegment {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", fillNumber: ");
+		result.append(fillNumber);
+		result.append(", numberOfRefillsAuthorized: ");
+		result.append(numberOfRefillsAuthorized);
+		result.append(", prescriptionOriginCode: ");
+		result.append(prescriptionOriginCode);
+		result.append(", submissionClarificationCode: ");
+		result.append(submissionClarificationCode);
+		result.append(", otherCoverageCode: ");
+		result.append(otherCoverageCode);
+		result.append(", specialPackagingIndicator: ");
+		result.append(specialPackagingIndicator);
+		result.append(", unitOfMeasure: ");
+		result.append(unitOfMeasure);
+		result.append(", levelOfService: ");
+		result.append(levelOfService);
+		result.append(", priorAuthorizationTypeCode: ");
+		result.append(priorAuthorizationTypeCode);
+		result.append(", intermediaryAuthorizationTypeId: ");
+		result.append(intermediaryAuthorizationTypeId);
+		result.append(", dispensingStatus: ");
+		result.append(dispensingStatus);
+		result.append(", delayReasonCode: ");
+		result.append(delayReasonCode);
+		result.append(", patientAssignmentIndicatordirectMemberReimbursementIndicator: ");
+		result.append(patientAssignmentIndicatordirectMemberReimbursementIndicator);
+		result.append(", routeOfAdministration: ");
+		result.append(routeOfAdministration);
+		result.append(", compoundType: ");
+		result.append(compoundType);
+		result.append(", pharmacyServiceType: ");
+		result.append(pharmacyServiceType);
 		result.append(')');
 		return result.toString();
 	}

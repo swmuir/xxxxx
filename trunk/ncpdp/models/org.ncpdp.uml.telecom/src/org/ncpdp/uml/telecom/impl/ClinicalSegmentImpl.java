@@ -21,6 +21,9 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.MeasurementDimension;
+import org.ncpdp.uml.ECL.MeasurementUnit;
+
 import org.ncpdp.uml.telecom.ClinicalSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -119,24 +122,24 @@ public class ClinicalSegmentImpl extends EObjectImpl implements ClinicalSegment 
 	protected EList<Field> measurementTime;
 
 	/**
-	 * The cached value of the '{@link #getMeasurementDimension() <em>Measurement Dimension</em>}' containment reference list.
+	 * The cached value of the '{@link #getMeasurementDimension() <em>Measurement Dimension</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getMeasurementDimension()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> measurementDimension;
+	protected EList<MeasurementDimension> measurementDimension;
 
 	/**
-	 * The cached value of the '{@link #getMeasurementUnit() <em>Measurement Unit</em>}' containment reference list.
+	 * The cached value of the '{@link #getMeasurementUnit() <em>Measurement Unit</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getMeasurementUnit()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> measurementUnit;
+	protected EList<MeasurementUnit> measurementUnit;
 
 	/**
 	 * The cached value of the '{@link #getMeasurementValue() <em>Measurement Value</em>}' containment reference list.
@@ -256,9 +259,9 @@ public class ClinicalSegmentImpl extends EObjectImpl implements ClinicalSegment 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getMeasurementDimension() {
+	public EList<MeasurementDimension> getMeasurementDimension() {
 		if (measurementDimension == null) {
-			measurementDimension = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_DIMENSION);
+			measurementDimension = new EDataTypeUniqueEList<MeasurementDimension>(MeasurementDimension.class, this, TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_DIMENSION);
 		}
 		return measurementDimension;
 	}
@@ -268,9 +271,9 @@ public class ClinicalSegmentImpl extends EObjectImpl implements ClinicalSegment 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getMeasurementUnit() {
+	public EList<MeasurementUnit> getMeasurementUnit() {
 		if (measurementUnit == null) {
-			measurementUnit = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_UNIT);
+			measurementUnit = new EDataTypeUniqueEList<MeasurementUnit>(MeasurementUnit.class, this, TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_UNIT);
 		}
 		return measurementUnit;
 	}
@@ -307,10 +310,6 @@ public class ClinicalSegmentImpl extends EObjectImpl implements ClinicalSegment 
 				return ((InternalEList<?>)getMeasurementDate()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_TIME:
 				return ((InternalEList<?>)getMeasurementTime()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_DIMENSION:
-				return ((InternalEList<?>)getMeasurementDimension()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_UNIT:
-				return ((InternalEList<?>)getMeasurementUnit()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_VALUE:
 				return ((InternalEList<?>)getMeasurementValue()).basicRemove(otherEnd, msgs);
 		}
@@ -388,11 +387,11 @@ public class ClinicalSegmentImpl extends EObjectImpl implements ClinicalSegment 
 				return;
 			case TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_DIMENSION:
 				getMeasurementDimension().clear();
-				getMeasurementDimension().addAll((Collection<? extends Field>)newValue);
+				getMeasurementDimension().addAll((Collection<? extends MeasurementDimension>)newValue);
 				return;
 			case TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_UNIT:
 				getMeasurementUnit().clear();
-				getMeasurementUnit().addAll((Collection<? extends Field>)newValue);
+				getMeasurementUnit().addAll((Collection<? extends MeasurementUnit>)newValue);
 				return;
 			case TelecomPackage.CLINICAL_SEGMENT__MEASUREMENT_VALUE:
 				getMeasurementValue().clear();
@@ -488,6 +487,10 @@ public class ClinicalSegmentImpl extends EObjectImpl implements ClinicalSegment 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", measurementDimension: ");
+		result.append(measurementDimension);
+		result.append(", measurementUnit: ");
+		result.append(measurementUnit);
 		result.append(')');
 		return result.toString();
 	}

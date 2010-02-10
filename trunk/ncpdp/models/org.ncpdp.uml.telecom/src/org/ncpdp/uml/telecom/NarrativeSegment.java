@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getNarrativeSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' narrativeMessage.field='390-BM'"
+ * @model
  * @generated
  */
 public interface NarrativeSegment extends EObject {
@@ -50,7 +50,7 @@ public interface NarrativeSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Narrative Message</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Narrative Message</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

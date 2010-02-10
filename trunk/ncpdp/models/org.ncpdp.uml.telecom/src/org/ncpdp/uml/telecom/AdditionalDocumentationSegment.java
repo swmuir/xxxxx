@@ -10,6 +10,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.AdditionalDocumentationTypeID;
+import org.ncpdp.uml.ECL.LengthofNeedQualifier;
+import org.ncpdp.uml.ECL.RequestStatus;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Additional Documentation Segment</b></em>'.
@@ -38,7 +42,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getAdditionalDocumentationSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' additionalDocumentationTypeId.field='369-2Q' requestPeriodBeginDate.field='374-2V' requestPeriodRecertrevisedDate.field='375-2W' requestStatus.field='373-2U' lengthOfNeedQualifier.field='371-2S' lengthOfNeed.field='370-2R' prescribersupplierDateSigned.field='372-2T' supportingDocumentation.field='376-2X' questionNumberletterCount.field='377-2Z' questionNumberletter.field='378-4B' questionPercentResponse.field='379-4D' questionDateResponse.field='380-4G' questionDollarAmountResponse.field='381-4H' questionNumericResponse.field='382-4J' questionAlphanumericResponse.field='383-4K'"
+ * @model
  * @generated
  */
 public interface AdditionalDocumentationSegment extends EObject {
@@ -60,28 +64,29 @@ public interface AdditionalDocumentationSegment extends EObject {
 	EList<String> getSegmentIdentification();
 
 	/**
-	 * Returns the value of the '<em><b>Additional Documentation Type Id</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Additional Documentation Type Id</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.AdditionalDocumentationTypeID}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.AdditionalDocumentationTypeID}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Additional Documentation Type Id</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Additional Documentation Type Id</em>' containment reference list.
+	 * @return the value of the '<em>Additional Documentation Type Id</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.AdditionalDocumentationTypeID
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getAdditionalDocumentationSegment_AdditionalDocumentationTypeId()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getAdditionalDocumentationTypeId();
+	EList<AdditionalDocumentationTypeID> getAdditionalDocumentationTypeId();
 
 	/**
 	 * Returns the value of the '<em><b>Request Period Begin Date</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Request Period Begin Date</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Request Period Begin Date</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -98,7 +103,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Request Period Recertrevised Date</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Request Period Recertrevised Date</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -111,45 +116,47 @@ public interface AdditionalDocumentationSegment extends EObject {
 	EList<Field> getRequestPeriodRecertrevisedDate();
 
 	/**
-	 * Returns the value of the '<em><b>Request Status</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Request Status</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.RequestStatus}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.RequestStatus}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Request Status</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Request Status</em>' containment reference list.
+	 * @return the value of the '<em>Request Status</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.RequestStatus
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getAdditionalDocumentationSegment_RequestStatus()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getRequestStatus();
+	EList<RequestStatus> getRequestStatus();
 
 	/**
-	 * Returns the value of the '<em><b>Length Of Need Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Length Of Need Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.LengthofNeedQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.LengthofNeedQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Length Of Need Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Length Of Need Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Length Of Need Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.LengthofNeedQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getAdditionalDocumentationSegment_LengthOfNeedQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getLengthOfNeedQualifier();
+	EList<LengthofNeedQualifier> getLengthOfNeedQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Length Of Need</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Length Of Need</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Length Of Need</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -166,7 +173,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescribersupplier Date Signed</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescribersupplier Date Signed</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -183,7 +190,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Supporting Documentation</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Supporting Documentation</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -200,7 +207,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Question Numberletter Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Question Numberletter Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -217,7 +224,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Question Numberletter</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Question Numberletter</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -234,7 +241,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Question Percent Response</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Question Percent Response</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -251,7 +258,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Question Date Response</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Question Date Response</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -268,7 +275,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Question Dollar Amount Response</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Question Dollar Amount Response</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -285,7 +292,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Question Numeric Response</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Question Numeric Response</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -302,7 +309,7 @@ public interface AdditionalDocumentationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Question Alphanumeric Response</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Question Alphanumeric Response</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

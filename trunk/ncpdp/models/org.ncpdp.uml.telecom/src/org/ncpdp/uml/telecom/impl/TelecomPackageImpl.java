@@ -17,6 +17,8 @@ import org.eclipse.emf.ecore.EcorePackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.ncpdp.uml.ECL.ECLPackage;
+
 import org.ncpdp.uml.telecom.AdditionalDocumentationSegment;
 import org.ncpdp.uml.telecom.ClaimSegment;
 import org.ncpdp.uml.telecom.ClinicalSegment;
@@ -304,10 +306,20 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	private static boolean isInited = false;
 
 	/**
-	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
-	 * <p>This method is used to initialize {@link TelecomPackage#eINSTANCE} when that field is accessed.
-	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * Creates, registers, and initializes the <b>Package</b> for this
+	 * model, and for any others upon which it depends.  Simple
+	 * dependencies are satisfied by calling this method on all
+	 * dependent packages before doing anything else.  This method drives
+	 * initialization for interdependent packages directly, in parallel
+	 * with this package, itself.
+	 * <p>Of this package and its interdependencies, all packages which
+	 * have not yet been registered by their URI values are first created
+	 * and registered.  The packages are then initialized in two steps:
+	 * meta-model objects for all of the packages are created before any
+	 * are initialized, since one package's meta-model objects may refer to
+	 * those of another.
+	 * <p>Invocation of this method will not affect any packages that have
+	 * already been initialized.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #eNS_URI
@@ -319,11 +331,12 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		if (isInited) return (TelecomPackage)EPackage.Registry.INSTANCE.getEPackage(TelecomPackage.eNS_URI);
 
 		// Obtain or create and register package
-		TelecomPackageImpl theTelecomPackage = (TelecomPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof TelecomPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new TelecomPackageImpl());
+		TelecomPackageImpl theTelecomPackage = (TelecomPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(eNS_URI) instanceof TelecomPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(eNS_URI) : new TelecomPackageImpl());
 
 		isInited = true;
 
 		// Initialize simple dependencies
+		ECLPackage.eINSTANCE.eClass();
 		EcorePackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
@@ -344,9 +357,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		// Mark meta-data to indicate it can't be changed
 		theTelecomPackage.freeze();
 
-  
-		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(TelecomPackage.eNS_URI, theTelecomPackage);
 		return theTelecomPackage;
 	}
 
@@ -607,8 +617,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getTransactionHeaderSegment_TransactionCount() {
-		return (EReference)transactionHeaderSegmentEClass.getEStructuralFeatures().get(3);
+	public EAttribute getTransactionHeaderSegment_TransactionCount() {
+		return (EAttribute)transactionHeaderSegmentEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -661,8 +671,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getTransactionHeaderSegment_TransactionCode() {
-		return (EReference)transactionHeaderSegmentEClass.getEStructuralFeatures().get(9);
+	public EAttribute getTransactionHeaderSegment_TransactionCode() {
+		return (EAttribute)transactionHeaderSegmentEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -805,8 +815,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getWorkersCompensationSegment_BillingEntityTypeIndicator() {
-		return (EReference)workersCompensationSegmentEClass.getEStructuralFeatures().get(11);
+	public EAttribute getWorkersCompensationSegment_BillingEntityTypeIndicator() {
+		return (EAttribute)workersCompensationSegmentEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -814,8 +824,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getWorkersCompensationSegment_PayToQualifier() {
-		return (EReference)workersCompensationSegmentEClass.getEStructuralFeatures().get(12);
+	public EAttribute getWorkersCompensationSegment_PayToQualifier() {
+		return (EAttribute)workersCompensationSegmentEClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -877,8 +887,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getWorkersCompensationSegment_GenericEquivalentProductIdQualifier() {
-		return (EReference)workersCompensationSegmentEClass.getEStructuralFeatures().get(19);
+	public EAttribute getWorkersCompensationSegment_GenericEquivalentProductIdQualifier() {
+		return (EAttribute)workersCompensationSegmentEClass.getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -913,8 +923,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPriorAuthorizationSegment_RequestType() {
-		return (EReference)priorAuthorizationSegmentEClass.getEStructuralFeatures().get(1);
+	public EAttribute getPriorAuthorizationSegment_RequestType() {
+		return (EAttribute)priorAuthorizationSegmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1174,8 +1184,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPricingSegment_BasisOfCostDetermination() {
-		return (EReference)pricingSegmentEClass.getEStructuralFeatures().get(15);
+	public EAttribute getPricingSegment_BasisOfCostDetermination() {
+		return (EAttribute)pricingSegmentEClass.getEStructuralFeatures().get(15);
 	}
 
 	/**
@@ -1372,8 +1382,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPatientSegment_PatientIdQualifier() {
-		return (EReference)patientSegmentEClass.getEStructuralFeatures().get(1);
+	public EAttribute getPatientSegment_PatientIdQualifier() {
+		return (EAttribute)patientSegmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1399,8 +1409,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPatientSegment_PatientGenderCode() {
-		return (EReference)patientSegmentEClass.getEStructuralFeatures().get(4);
+	public EAttribute getPatientSegment_PatientGenderCode() {
+		return (EAttribute)patientSegmentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1471,8 +1481,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPatientSegment_PlaceOfService() {
-		return (EReference)patientSegmentEClass.getEStructuralFeatures().get(12);
+	public EAttribute getPatientSegment_PlaceOfService() {
+		return (EAttribute)patientSegmentEClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -1498,8 +1508,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPatientSegment_PregnancyIndicator() {
-		return (EReference)patientSegmentEClass.getEStructuralFeatures().get(15);
+	public EAttribute getPatientSegment_PregnancyIndicator() {
+		return (EAttribute)patientSegmentEClass.getEStructuralFeatures().get(15);
 	}
 
 	/**
@@ -1516,8 +1526,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPatientSegment_PatientResidence() {
-		return (EReference)patientSegmentEClass.getEStructuralFeatures().get(17);
+	public EAttribute getPatientSegment_PatientResidence() {
+		return (EAttribute)patientSegmentEClass.getEStructuralFeatures().get(17);
 	}
 
 	/**
@@ -1615,8 +1625,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInsuranceSegment_EligibilityClarificationCode() {
-		return (EReference)insuranceSegmentEClass.getEStructuralFeatures().get(6);
+	public EAttribute getInsuranceSegment_EligibilityClarificationCode() {
+		return (EAttribute)insuranceSegmentEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -1642,8 +1652,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInsuranceSegment_PatientRelationshipCode() {
-		return (EReference)insuranceSegmentEClass.getEStructuralFeatures().get(9);
+	public EAttribute getInsuranceSegment_PatientRelationshipCode() {
+		return (EAttribute)insuranceSegmentEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -1705,8 +1715,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInsuranceSegment_ProviderAcceptAssignmentIndicator() {
-		return (EReference)insuranceSegmentEClass.getEStructuralFeatures().get(16);
+	public EAttribute getInsuranceSegment_ProviderAcceptAssignmentIndicator() {
+		return (EAttribute)insuranceSegmentEClass.getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -1714,8 +1724,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInsuranceSegment_CmsPartDDefinedQualifiedFacility() {
-		return (EReference)insuranceSegmentEClass.getEStructuralFeatures().get(17);
+	public EAttribute getInsuranceSegment_CmsPartDDefinedQualifiedFacility() {
+		return (EAttribute)insuranceSegmentEClass.getEStructuralFeatures().get(17);
 	}
 
 	/**
@@ -1840,8 +1850,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDURPPSSegment_ReasonForServiceCode() {
-		return (EReference)durppsSegmentEClass.getEStructuralFeatures().get(2);
+	public EAttribute getDURPPSSegment_ReasonForServiceCode() {
+		return (EAttribute)durppsSegmentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1849,8 +1859,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDURPPSSegment_ProfessionalServiceCode() {
-		return (EReference)durppsSegmentEClass.getEStructuralFeatures().get(3);
+	public EAttribute getDURPPSSegment_ProfessionalServiceCode() {
+		return (EAttribute)durppsSegmentEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -1858,8 +1868,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDURPPSSegment_ResultOfServiceCode() {
-		return (EReference)durppsSegmentEClass.getEStructuralFeatures().get(4);
+	public EAttribute getDURPPSSegment_ResultOfServiceCode() {
+		return (EAttribute)durppsSegmentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1876,8 +1886,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDURPPSSegment_DurCoagentIdQualifier() {
-		return (EReference)durppsSegmentEClass.getEStructuralFeatures().get(6);
+	public EAttribute getDURPPSSegment_DurCoagentIdQualifier() {
+		return (EAttribute)durppsSegmentEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -1912,8 +1922,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCouponSegment_CouponType() {
-		return (EReference)couponSegmentEClass.getEStructuralFeatures().get(1);
+	public EAttribute getCouponSegment_CouponType() {
+		return (EAttribute)couponSegmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1966,8 +1976,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerCoverageType() {
-		return (EReference)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(2);
+	public EAttribute getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerCoverageType() {
+		return (EAttribute)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1975,8 +1985,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerIdQualifier() {
-		return (EReference)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(3);
+	public EAttribute getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerIdQualifier() {
+		return (EAttribute)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -2020,8 +2030,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerAmountPaidQualifier() {
-		return (EReference)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(8);
+	public EAttribute getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerAmountPaidQualifier() {
+		return (EAttribute)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -2065,8 +2075,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerpatientResponsibilityAmountQualifier() {
-		return (EReference)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(13);
+	public EAttribute getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerpatientResponsibilityAmountQualifier() {
+		return (EAttribute)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(13);
 	}
 
 	/**
@@ -2092,8 +2102,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCoordinationofBenefitsOtherPaymentsSegment_BenefitStageQualifier() {
-		return (EReference)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(16);
+	public EAttribute getCoordinationofBenefitsOtherPaymentsSegment_BenefitStageQualifier() {
+		return (EAttribute)coordinationofBenefitsOtherPaymentsSegmentEClass.getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -2182,8 +2192,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClinicalSegment_MeasurementDimension() {
-		return (EReference)clinicalSegmentEClass.getEStructuralFeatures().get(7);
+	public EAttribute getClinicalSegment_MeasurementDimension() {
+		return (EAttribute)clinicalSegmentEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -2191,8 +2201,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClinicalSegment_MeasurementUnit() {
-		return (EReference)clinicalSegmentEClass.getEStructuralFeatures().get(8);
+	public EAttribute getClinicalSegment_MeasurementUnit() {
+		return (EAttribute)clinicalSegmentEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -2308,8 +2318,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_FillNumber() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(10);
+	public EAttribute getClaimSegment_FillNumber() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -2353,8 +2363,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_NumberOfRefillsAuthorized() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(15);
+	public EAttribute getClaimSegment_NumberOfRefillsAuthorized() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(15);
 	}
 
 	/**
@@ -2362,8 +2372,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_PrescriptionOriginCode() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(16);
+	public EAttribute getClaimSegment_PrescriptionOriginCode() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -2380,8 +2390,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_SubmissionClarificationCode() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(18);
+	public EAttribute getClaimSegment_SubmissionClarificationCode() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(18);
 	}
 
 	/**
@@ -2398,8 +2408,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_OtherCoverageCode() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(20);
+	public EAttribute getClaimSegment_OtherCoverageCode() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(20);
 	}
 
 	/**
@@ -2407,8 +2417,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_SpecialPackagingIndicator() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(21);
+	public EAttribute getClaimSegment_SpecialPackagingIndicator() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(21);
 	}
 
 	/**
@@ -2461,8 +2471,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_UnitOfMeasure() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(27);
+	public EAttribute getClaimSegment_UnitOfMeasure() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -2470,8 +2480,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_LevelOfService() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(28);
+	public EAttribute getClaimSegment_LevelOfService() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(28);
 	}
 
 	/**
@@ -2479,8 +2489,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_PriorAuthorizationTypeCode() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(29);
+	public EAttribute getClaimSegment_PriorAuthorizationTypeCode() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(29);
 	}
 
 	/**
@@ -2497,8 +2507,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_IntermediaryAuthorizationTypeId() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(31);
+	public EAttribute getClaimSegment_IntermediaryAuthorizationTypeId() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(31);
 	}
 
 	/**
@@ -2515,8 +2525,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_DispensingStatus() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(33);
+	public EAttribute getClaimSegment_DispensingStatus() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(33);
 	}
 
 	/**
@@ -2542,8 +2552,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_DelayReasonCode() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(36);
+	public EAttribute getClaimSegment_DelayReasonCode() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(36);
 	}
 
 	/**
@@ -2560,8 +2570,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_PatientAssignmentIndicatordirectMemberReimbursementIndicator() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(38);
+	public EAttribute getClaimSegment_PatientAssignmentIndicatordirectMemberReimbursementIndicator() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(38);
 	}
 
 	/**
@@ -2569,8 +2579,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_RouteOfAdministration() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(39);
+	public EAttribute getClaimSegment_RouteOfAdministration() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(39);
 	}
 
 	/**
@@ -2578,8 +2588,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_CompoundType() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(40);
+	public EAttribute getClaimSegment_CompoundType() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(40);
 	}
 
 	/**
@@ -2596,8 +2606,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClaimSegment_PharmacyServiceType() {
-		return (EReference)claimSegmentEClass.getEStructuralFeatures().get(42);
+	public EAttribute getClaimSegment_PharmacyServiceType() {
+		return (EAttribute)claimSegmentEClass.getEStructuralFeatures().get(42);
 	}
 
 	/**
@@ -2623,8 +2633,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getAdditionalDocumentationSegment_AdditionalDocumentationTypeId() {
-		return (EReference)additionalDocumentationSegmentEClass.getEStructuralFeatures().get(1);
+	public EAttribute getAdditionalDocumentationSegment_AdditionalDocumentationTypeId() {
+		return (EAttribute)additionalDocumentationSegmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2650,8 +2660,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getAdditionalDocumentationSegment_RequestStatus() {
-		return (EReference)additionalDocumentationSegmentEClass.getEStructuralFeatures().get(4);
+	public EAttribute getAdditionalDocumentationSegment_RequestStatus() {
+		return (EAttribute)additionalDocumentationSegmentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -2659,8 +2669,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getAdditionalDocumentationSegment_LengthOfNeedQualifier() {
-		return (EReference)additionalDocumentationSegmentEClass.getEStructuralFeatures().get(5);
+	public EAttribute getAdditionalDocumentationSegment_LengthOfNeedQualifier() {
+		return (EAttribute)additionalDocumentationSegmentEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -2776,8 +2786,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCompoundSegment_CompoundDosageFormDescriptionCode() {
-		return (EReference)compoundSegmentEClass.getEStructuralFeatures().get(1);
+	public EAttribute getCompoundSegment_CompoundDosageFormDescriptionCode() {
+		return (EAttribute)compoundSegmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2785,8 +2795,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCompoundSegment_CompoundDispensingUnitFormIndicator() {
-		return (EReference)compoundSegmentEClass.getEStructuralFeatures().get(2);
+	public EAttribute getCompoundSegment_CompoundDispensingUnitFormIndicator() {
+		return (EAttribute)compoundSegmentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2803,8 +2813,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCompoundSegment_CompoundProductIdQualifier() {
-		return (EReference)compoundSegmentEClass.getEStructuralFeatures().get(4);
+	public EAttribute getCompoundSegment_CompoundProductIdQualifier() {
+		return (EAttribute)compoundSegmentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -2974,8 +2984,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseHeaderSegment_TransactionCode() {
-		return (EReference)responseHeaderSegmentEClass.getEStructuralFeatures().get(1);
+	public EAttribute getResponseHeaderSegment_TransactionCode() {
+		return (EAttribute)responseHeaderSegmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2983,8 +2993,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseHeaderSegment_TransactionCount() {
-		return (EReference)responseHeaderSegmentEClass.getEStructuralFeatures().get(2);
+	public EAttribute getResponseHeaderSegment_TransactionCount() {
+		return (EAttribute)responseHeaderSegmentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -3154,8 +3164,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerCoverageType() {
-		return (EReference)responseCoordinationofBenefitsOtherPayersSegmentEClass.getEStructuralFeatures().get(2);
+	public EAttribute getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerCoverageType() {
+		return (EAttribute)responseCoordinationofBenefitsOtherPayersSegmentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -3163,8 +3173,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerIdQualifier() {
-		return (EReference)responseCoordinationofBenefitsOtherPayersSegmentEClass.getEStructuralFeatures().get(3);
+	public EAttribute getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerIdQualifier() {
+		return (EAttribute)responseCoordinationofBenefitsOtherPayersSegmentEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -3226,8 +3236,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerPatientRelationshipCode() {
-		return (EReference)responseCoordinationofBenefitsOtherPayersSegmentEClass.getEStructuralFeatures().get(10);
+	public EAttribute getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerPatientRelationshipCode() {
+		return (EAttribute)responseCoordinationofBenefitsOtherPayersSegmentEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -3280,8 +3290,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseDURPPSSegment_ReasonForServiceCode() {
-		return (EReference)responseDURPPSSegmentEClass.getEStructuralFeatures().get(2);
+	public EAttribute getResponseDURPPSSegment_ReasonForServiceCode() {
+		return (EAttribute)responseDURPPSSegmentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -3298,8 +3308,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseDURPPSSegment_OtherPharmacyIndicator() {
-		return (EReference)responseDURPPSSegmentEClass.getEStructuralFeatures().get(4);
+	public EAttribute getResponseDURPPSSegment_OtherPharmacyIndicator() {
+		return (EAttribute)responseDURPPSSegmentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -3334,8 +3344,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseDURPPSSegment_OtherPrescriberIndicator() {
-		return (EReference)responseDURPPSSegmentEClass.getEStructuralFeatures().get(8);
+	public EAttribute getResponseDURPPSSegment_OtherPrescriberIndicator() {
+		return (EAttribute)responseDURPPSSegmentEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -3406,8 +3416,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseInsuranceSegment_PayerIdQualifier() {
-		return (EReference)responseInsuranceSegmentEClass.getEStructuralFeatures().get(4);
+	public EAttribute getResponseInsuranceSegment_PayerIdQualifier() {
+		return (EAttribute)responseInsuranceSegmentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -3568,8 +3578,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_TaxExemptIndicator() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(4);
+	public EAttribute getResponsePricingSegment_TaxExemptIndicator() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -3604,8 +3614,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_PercentageSalesTaxBasisPaid() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(8);
+	public EAttribute getResponsePricingSegment_PercentageSalesTaxBasisPaid() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -3640,8 +3650,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_OtherAmountPaidQualifier() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(12);
+	public EAttribute getResponsePricingSegment_OtherAmountPaidQualifier() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -3676,8 +3686,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_BasisOfReimbursementDetermination() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(16);
+	public EAttribute getResponsePricingSegment_BasisOfReimbursementDetermination() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -3748,8 +3758,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_BasisOfCalculationdispensingFee() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(24);
+	public EAttribute getResponsePricingSegment_BasisOfCalculationdispensingFee() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(24);
 	}
 
 	/**
@@ -3757,8 +3767,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_BasisOfCalculationcopay() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(25);
+	public EAttribute getResponsePricingSegment_BasisOfCalculationcopay() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(25);
 	}
 
 	/**
@@ -3766,8 +3776,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_BasisOfCalculationflatSalesTax() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(26);
+	public EAttribute getResponsePricingSegment_BasisOfCalculationflatSalesTax() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(26);
 	}
 
 	/**
@@ -3775,8 +3785,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_BasisOfCalculationpercentageSalesTax() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(27);
+	public EAttribute getResponsePricingSegment_BasisOfCalculationpercentageSalesTax() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -3820,8 +3830,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_BasisOfCalculationcoinsurance() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(32);
+	public EAttribute getResponsePricingSegment_BasisOfCalculationcoinsurance() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(32);
 	}
 
 	/**
@@ -3838,8 +3848,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponsePricingSegment_BenefitStageQualifier() {
-		return (EReference)responsePricingSegmentEClass.getEStructuralFeatures().get(34);
+	public EAttribute getResponsePricingSegment_BenefitStageQualifier() {
+		return (EAttribute)responsePricingSegmentEClass.getEStructuralFeatures().get(34);
 	}
 
 	/**
@@ -4054,8 +4064,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseStatusSegment_TransactionResponseStatus() {
-		return (EReference)responseStatusSegmentEClass.getEStructuralFeatures().get(1);
+	public EAttribute getResponseStatusSegment_TransactionResponseStatus() {
+		return (EAttribute)responseStatusSegmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -4081,8 +4091,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseStatusSegment_RejectCode() {
-		return (EReference)responseStatusSegmentEClass.getEStructuralFeatures().get(4);
+	public EAttribute getResponseStatusSegment_RejectCode() {
+		return (EAttribute)responseStatusSegmentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -4126,8 +4136,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseStatusSegment_AdditionalMessageInformationQualifier() {
-		return (EReference)responseStatusSegmentEClass.getEStructuralFeatures().get(9);
+	public EAttribute getResponseStatusSegment_AdditionalMessageInformationQualifier() {
+		return (EAttribute)responseStatusSegmentEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -4144,8 +4154,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseStatusSegment_AdditionalMessageInformationContinuity() {
-		return (EReference)responseStatusSegmentEClass.getEStructuralFeatures().get(11);
+	public EAttribute getResponseStatusSegment_AdditionalMessageInformationContinuity() {
+		return (EAttribute)responseStatusSegmentEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -4153,8 +4163,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getResponseStatusSegment_HelpDeskPhoneNumberQualifier() {
-		return (EReference)responseStatusSegmentEClass.getEStructuralFeatures().get(12);
+	public EAttribute getResponseStatusSegment_HelpDeskPhoneNumberQualifier() {
+		return (EAttribute)responseStatusSegmentEClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -4251,13 +4261,13 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__ASSIGNED_AUTHOR);
 		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__DATE_OF_SERVICE);
 		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__SOFTWARE_VENDORCERTIFICATION_ID);
-		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT);
+		createEAttribute(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT);
 		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__SERVICE_PROVIDER_ID);
 		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__PROCESSOR_CONTROL_NUMBER);
 		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__SERVICE_PROVIDER_ID_QUALIFIER);
 		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__BIN_NUMBER);
 		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__VERSION);
-		createEReference(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE);
+		createEAttribute(transactionHeaderSegmentEClass, TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE);
 
 		fieldEClass = createEClass(FIELD);
 		createEAttribute(fieldEClass, FIELD__FIELD);
@@ -4275,20 +4285,20 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__EMPLOYER_CONTACT_NAME);
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__CARRIER_ID);
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__CLAIMREFERENCE_ID);
-		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__BILLING_ENTITY_TYPE_INDICATOR);
-		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__PAY_TO_QUALIFIER);
+		createEAttribute(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__BILLING_ENTITY_TYPE_INDICATOR);
+		createEAttribute(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__PAY_TO_QUALIFIER);
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__PAY_TO_ID);
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__PAY_TO_NAME);
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__PAY_TO_STREET_ADDRESS);
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__PAY_TO_CITY_ADDRESS);
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__PAY_TO_STATEPROVINCE_ADDRESS);
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__PAY_TO_ZIPPOSTAL_ZONE);
-		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__GENERIC_EQUIVALENT_PRODUCT_ID_QUALIFIER);
+		createEAttribute(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__GENERIC_EQUIVALENT_PRODUCT_ID_QUALIFIER);
 		createEReference(workersCompensationSegmentEClass, WORKERS_COMPENSATION_SEGMENT__GENERIC_EQUIVALENT_PRODUCT_ID);
 
 		priorAuthorizationSegmentEClass = createEClass(PRIOR_AUTHORIZATION_SEGMENT);
 		createEAttribute(priorAuthorizationSegmentEClass, PRIOR_AUTHORIZATION_SEGMENT__SEGMENT_IDENTIFICATION);
-		createEReference(priorAuthorizationSegmentEClass, PRIOR_AUTHORIZATION_SEGMENT__REQUEST_TYPE);
+		createEAttribute(priorAuthorizationSegmentEClass, PRIOR_AUTHORIZATION_SEGMENT__REQUEST_TYPE);
 		createEReference(priorAuthorizationSegmentEClass, PRIOR_AUTHORIZATION_SEGMENT__REQUEST_PERIOD_DATEBEGIN);
 		createEReference(priorAuthorizationSegmentEClass, PRIOR_AUTHORIZATION_SEGMENT__REQUEST_PERIOD_DATEEND);
 		createEReference(priorAuthorizationSegmentEClass, PRIOR_AUTHORIZATION_SEGMENT__BASIS_OF_REQUEST);
@@ -4318,7 +4328,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(pricingSegmentEClass, PRICING_SEGMENT__PERCENTAGE_SALES_TAX_BASIS_SUBMITTED);
 		createEReference(pricingSegmentEClass, PRICING_SEGMENT__USUAL_AND_CUSTOMARY_CHARGE);
 		createEReference(pricingSegmentEClass, PRICING_SEGMENT__GROSS_AMOUNT_DUE);
-		createEReference(pricingSegmentEClass, PRICING_SEGMENT__BASIS_OF_COST_DETERMINATION);
+		createEAttribute(pricingSegmentEClass, PRICING_SEGMENT__BASIS_OF_COST_DETERMINATION);
 		createEReference(pricingSegmentEClass, PRICING_SEGMENT__MEDICAID_PAID_AMOUNT);
 
 		prescriberSegmentEClass = createEClass(PRESCRIBER_SEGMENT);
@@ -4343,10 +4353,10 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 
 		patientSegmentEClass = createEClass(PATIENT_SEGMENT);
 		createEAttribute(patientSegmentEClass, PATIENT_SEGMENT__SEGMENT_IDENTIFICATION);
-		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_ID_QUALIFIER);
+		createEAttribute(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_ID_QUALIFIER);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_ID);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__DATE_OF_BIRTH);
-		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_GENDER_CODE);
+		createEAttribute(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_GENDER_CODE);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_FIRST_NAME);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_LAST_NAME);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_STREET_ADDRESS);
@@ -4354,12 +4364,12 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_STATE_PROVINCE_ADDRESS);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_ZIPPOSTAL_ZONE);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_PHONE_NUMBER);
-		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PLACE_OF_SERVICE);
+		createEAttribute(patientSegmentEClass, PATIENT_SEGMENT__PLACE_OF_SERVICE);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__EMPLOYER_ID);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__SMOKER_NONSMOKER_CODE);
-		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PREGNANCY_INDICATOR);
+		createEAttribute(patientSegmentEClass, PATIENT_SEGMENT__PREGNANCY_INDICATOR);
 		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_EMAIL_ADDRESS);
-		createEReference(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_RESIDENCE);
+		createEAttribute(patientSegmentEClass, PATIENT_SEGMENT__PATIENT_RESIDENCE);
 
 		narrativeSegmentEClass = createEClass(NARRATIVE_SEGMENT);
 		createEAttribute(narrativeSegmentEClass, NARRATIVE_SEGMENT__SEGMENT_IDENTIFICATION);
@@ -4372,18 +4382,18 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__CARDHOLDER_LAST_NAME);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__HOME_PLAN);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__PLAN_ID);
-		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__ELIGIBILITY_CLARIFICATION_CODE);
+		createEAttribute(insuranceSegmentEClass, INSURANCE_SEGMENT__ELIGIBILITY_CLARIFICATION_CODE);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__GROUP_ID);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__PERSON_CODE);
-		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__PATIENT_RELATIONSHIP_CODE);
+		createEAttribute(insuranceSegmentEClass, INSURANCE_SEGMENT__PATIENT_RELATIONSHIP_CODE);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__OTHER_PAYER_BIN_NUMBER);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__OTHER_PAYER_PROCESSOR_CONTROL_NUMBER);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__OTHER_PAYER_CARDHOLDER_ID);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__OTHER_PAYER_GROUP_ID);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__MEDIGAP_ID);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__MEDICAID_INDICATOR);
-		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__PROVIDER_ACCEPT_ASSIGNMENT_INDICATOR);
-		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__CMS_PART_DDEFINED_QUALIFIED_FACILITY);
+		createEAttribute(insuranceSegmentEClass, INSURANCE_SEGMENT__PROVIDER_ACCEPT_ASSIGNMENT_INDICATOR);
+		createEAttribute(insuranceSegmentEClass, INSURANCE_SEGMENT__CMS_PART_DDEFINED_QUALIFIED_FACILITY);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__MEDICAID_ID_NUMBER);
 		createEReference(insuranceSegmentEClass, INSURANCE_SEGMENT__MEDICAID_AGENCY_NUMBER);
 
@@ -4399,37 +4409,37 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		durppsSegmentEClass = createEClass(DURPPS_SEGMENT);
 		createEAttribute(durppsSegmentEClass, DURPPS_SEGMENT__SEGMENT_IDENTIFICATION);
 		createEReference(durppsSegmentEClass, DURPPS_SEGMENT__DURPPS_CODE_COUNTER);
-		createEReference(durppsSegmentEClass, DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE);
-		createEReference(durppsSegmentEClass, DURPPS_SEGMENT__PROFESSIONAL_SERVICE_CODE);
-		createEReference(durppsSegmentEClass, DURPPS_SEGMENT__RESULT_OF_SERVICE_CODE);
+		createEAttribute(durppsSegmentEClass, DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE);
+		createEAttribute(durppsSegmentEClass, DURPPS_SEGMENT__PROFESSIONAL_SERVICE_CODE);
+		createEAttribute(durppsSegmentEClass, DURPPS_SEGMENT__RESULT_OF_SERVICE_CODE);
 		createEReference(durppsSegmentEClass, DURPPS_SEGMENT__DURPPS_LEVEL_OF_EFFORT);
-		createEReference(durppsSegmentEClass, DURPPS_SEGMENT__DUR_COAGENT_ID_QUALIFIER);
+		createEAttribute(durppsSegmentEClass, DURPPS_SEGMENT__DUR_COAGENT_ID_QUALIFIER);
 		createEReference(durppsSegmentEClass, DURPPS_SEGMENT__DUR_COAGENT_ID);
 
 		couponSegmentEClass = createEClass(COUPON_SEGMENT);
 		createEAttribute(couponSegmentEClass, COUPON_SEGMENT__SEGMENT_IDENTIFICATION);
-		createEReference(couponSegmentEClass, COUPON_SEGMENT__COUPON_TYPE);
+		createEAttribute(couponSegmentEClass, COUPON_SEGMENT__COUPON_TYPE);
 		createEReference(couponSegmentEClass, COUPON_SEGMENT__COUPON_NUMBER);
 		createEReference(couponSegmentEClass, COUPON_SEGMENT__COUPON_VALUE_AMOUNT);
 
 		coordinationofBenefitsOtherPaymentsSegmentEClass = createEClass(COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT);
 		createEAttribute(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__SEGMENT_IDENTIFICATION);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__COORDINATION_OF_BENEFITSOTHER_PAYMENTS_COUNT);
-		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE);
-		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_ID_QUALIFIER);
+		createEAttribute(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE);
+		createEAttribute(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_ID_QUALIFIER);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_ID);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_DATE);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__INTERNAL_CONTROL_NUMBER);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID_COUNT);
-		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID_QUALIFIER);
+		createEAttribute(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID_QUALIFIER);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_REJECT_COUNT);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_REJECT_CODE);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT_COUNT);
-		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT_QUALIFIER);
+		createEAttribute(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT_QUALIFIER);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_COUNT);
-		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_QUALIFIER);
+		createEAttribute(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_QUALIFIER);
 		createEReference(coordinationofBenefitsOtherPaymentsSegmentEClass, COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_AMOUNT);
 
 		clinicalSegmentEClass = createEClass(CLINICAL_SEGMENT);
@@ -4440,8 +4450,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(clinicalSegmentEClass, CLINICAL_SEGMENT__CLINICAL_INFORMATION_COUNTER);
 		createEReference(clinicalSegmentEClass, CLINICAL_SEGMENT__MEASUREMENT_DATE);
 		createEReference(clinicalSegmentEClass, CLINICAL_SEGMENT__MEASUREMENT_TIME);
-		createEReference(clinicalSegmentEClass, CLINICAL_SEGMENT__MEASUREMENT_DIMENSION);
-		createEReference(clinicalSegmentEClass, CLINICAL_SEGMENT__MEASUREMENT_UNIT);
+		createEAttribute(clinicalSegmentEClass, CLINICAL_SEGMENT__MEASUREMENT_DIMENSION);
+		createEAttribute(clinicalSegmentEClass, CLINICAL_SEGMENT__MEASUREMENT_UNIT);
 		createEReference(clinicalSegmentEClass, CLINICAL_SEGMENT__MEASUREMENT_VALUE);
 
 		claimSegmentEClass = createEClass(CLAIM_SEGMENT);
@@ -4455,47 +4465,47 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__PROCEDURE_MODIFIER_CODE_COUNT);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__PROCEDURE_MODIFIER_CODE);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__QUANTITY_DISPENSED);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__FILL_NUMBER);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__FILL_NUMBER);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__DAYS_SUPPLY);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__COMPOUND_CODE);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__DISPENSE_AS_WRITTENDAWPRODUCT_SELECTION_CODE);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__DATE_PRESCRIPTION_WRITTEN);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__NUMBER_OF_REFILLS_AUTHORIZED);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__PRESCRIPTION_ORIGIN_CODE);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__NUMBER_OF_REFILLS_AUTHORIZED);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__PRESCRIPTION_ORIGIN_CODE);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__SUBMISSION_CLARIFICATION_CODE_COUNT);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__SUBMISSION_CLARIFICATION_CODE);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__SUBMISSION_CLARIFICATION_CODE);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__QUANTITY_PRESCRIBED);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__OTHER_COVERAGE_CODE);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__SPECIAL_PACKAGING_INDICATOR);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__OTHER_COVERAGE_CODE);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__SPECIAL_PACKAGING_INDICATOR);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__ORIGINALLY_PRESCRIBED_PRODUCTSERVICE_ID_QUALIFIER);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__ORIGINALLY_PRESCRIBED_PRODUCTSERVICE_CODE);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__ORIGINALLY_PRESCRIBED_QUANTITY);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__ALTERNATE_ID);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__SCHEDULED_PRESCRIPTION_ID_NUMBER);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__UNIT_OF_MEASURE);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__LEVEL_OF_SERVICE);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__PRIOR_AUTHORIZATION_TYPE_CODE);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__UNIT_OF_MEASURE);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__LEVEL_OF_SERVICE);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__PRIOR_AUTHORIZATION_TYPE_CODE);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__PRIOR_AUTHORIZATION_NUMBER_SUBMITTED);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__INTERMEDIARY_AUTHORIZATION_TYPE_ID);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__INTERMEDIARY_AUTHORIZATION_TYPE_ID);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__INTERMEDIARY_AUTHORIZATION_ID);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__DISPENSING_STATUS);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__DISPENSING_STATUS);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__QUANTITY_INTENDED_TO_BE_DISPENSED);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__DAYS_SUPPLY_INTENDED_TO_BE_DISPENSED);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__DELAY_REASON_CODE);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__DELAY_REASON_CODE);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__TRANSACTION_REFERENCE_NUMBER);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__PATIENT_ASSIGNMENT_INDICATORDIRECT_MEMBER_REIMBURSEMENT_INDICATOR);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__ROUTE_OF_ADMINISTRATION);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__COMPOUND_TYPE);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__PATIENT_ASSIGNMENT_INDICATORDIRECT_MEMBER_REIMBURSEMENT_INDICATOR);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__ROUTE_OF_ADMINISTRATION);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__COMPOUND_TYPE);
 		createEReference(claimSegmentEClass, CLAIM_SEGMENT__MEDICAID_SUBROGATION_INTERNAL_CONTROL_NUMBERTRANSACTION_CONTROL_NUMBERICNTCN);
-		createEReference(claimSegmentEClass, CLAIM_SEGMENT__PHARMACY_SERVICE_TYPE);
+		createEAttribute(claimSegmentEClass, CLAIM_SEGMENT__PHARMACY_SERVICE_TYPE);
 
 		additionalDocumentationSegmentEClass = createEClass(ADDITIONAL_DOCUMENTATION_SEGMENT);
 		createEAttribute(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__SEGMENT_IDENTIFICATION);
-		createEReference(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__ADDITIONAL_DOCUMENTATION_TYPE_ID);
+		createEAttribute(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__ADDITIONAL_DOCUMENTATION_TYPE_ID);
 		createEReference(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_PERIOD_BEGIN_DATE);
 		createEReference(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_PERIOD_RECERTREVISED_DATE);
-		createEReference(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_STATUS);
-		createEReference(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__LENGTH_OF_NEED_QUALIFIER);
+		createEAttribute(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__REQUEST_STATUS);
+		createEAttribute(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__LENGTH_OF_NEED_QUALIFIER);
 		createEReference(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__LENGTH_OF_NEED);
 		createEReference(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__PRESCRIBERSUPPLIER_DATE_SIGNED);
 		createEReference(additionalDocumentationSegmentEClass, ADDITIONAL_DOCUMENTATION_SEGMENT__SUPPORTING_DOCUMENTATION);
@@ -4509,10 +4519,10 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 
 		compoundSegmentEClass = createEClass(COMPOUND_SEGMENT);
 		createEAttribute(compoundSegmentEClass, COMPOUND_SEGMENT__SEGMENT_IDENTIFICATION);
-		createEReference(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_DOSAGE_FORM_DESCRIPTION_CODE);
-		createEReference(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_DISPENSING_UNIT_FORM_INDICATOR);
+		createEAttribute(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_DOSAGE_FORM_DESCRIPTION_CODE);
+		createEAttribute(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_DISPENSING_UNIT_FORM_INDICATOR);
 		createEReference(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_INGREDIENT_COMPONENT_COUNT);
-		createEReference(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_PRODUCT_ID_QUALIFIER);
+		createEAttribute(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_PRODUCT_ID_QUALIFIER);
 		createEReference(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_PRODUCT_ID);
 		createEReference(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_INGREDIENT_QUANTITY);
 		createEReference(compoundSegmentEClass, COMPOUND_SEGMENT__COMPOUND_INGREDIENT_DRUG_COST);
@@ -4533,8 +4543,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 
 		responseHeaderSegmentEClass = createEClass(RESPONSE_HEADER_SEGMENT);
 		createEReference(responseHeaderSegmentEClass, RESPONSE_HEADER_SEGMENT__VERSIONRELEASE_NUMBER);
-		createEReference(responseHeaderSegmentEClass, RESPONSE_HEADER_SEGMENT__TRANSACTION_CODE);
-		createEReference(responseHeaderSegmentEClass, RESPONSE_HEADER_SEGMENT__TRANSACTION_COUNT);
+		createEAttribute(responseHeaderSegmentEClass, RESPONSE_HEADER_SEGMENT__TRANSACTION_CODE);
+		createEAttribute(responseHeaderSegmentEClass, RESPONSE_HEADER_SEGMENT__TRANSACTION_COUNT);
 		createEReference(responseHeaderSegmentEClass, RESPONSE_HEADER_SEGMENT__HEADER_RESPONSE_STATUS);
 		createEReference(responseHeaderSegmentEClass, RESPONSE_HEADER_SEGMENT__SERVICE_PROVIDER_ID_QUALIFIER);
 		createEReference(responseHeaderSegmentEClass, RESPONSE_HEADER_SEGMENT__SERVICE_PROVIDER_ID);
@@ -4555,28 +4565,28 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		responseCoordinationofBenefitsOtherPayersSegmentEClass = createEClass(RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT);
 		createEAttribute(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__SEGMENT_IDENTIFICATION);
 		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID_COUNT);
-		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE);
-		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID_QUALIFIER);
+		createEAttribute(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE);
+		createEAttribute(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID_QUALIFIER);
 		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID);
 		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_PROCESSOR_CONTROL_NUMBER);
 		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_CARDHOLDER_ID);
 		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_GROUP_ID);
 		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_PERSON_CODE);
 		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_HELP_DESK_PHONE_NUMBER);
-		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_PATIENT_RELATIONSHIP_CODE);
+		createEAttribute(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_PATIENT_RELATIONSHIP_CODE);
 		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_BENEFIT_EFFECTIVE_DATE);
 		createEReference(responseCoordinationofBenefitsOtherPayersSegmentEClass, RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_BENEFIT_TERMINATION_DATE);
 
 		responseDURPPSSegmentEClass = createEClass(RESPONSE_DURPPS_SEGMENT);
 		createEAttribute(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__SEGMENT_IDENTIFICATION);
 		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__DURPPS_RESPONSE_CODE_COUNTER);
-		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE);
+		createEAttribute(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE);
 		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__CLINICAL_SIGNIFICANCE_CODE);
-		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__OTHER_PHARMACY_INDICATOR);
+		createEAttribute(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__OTHER_PHARMACY_INDICATOR);
 		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__PREVIOUS_DATE_OF_FILL);
 		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__QUANTITY_OF_PREVIOUS_FILL);
 		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__DATABASE_INDICATOR);
-		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__OTHER_PRESCRIBER_INDICATOR);
+		createEAttribute(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__OTHER_PRESCRIBER_INDICATOR);
 		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__DUR_FREE_TEXT_MESSAGE);
 		createEReference(responseDURPPSSegmentEClass, RESPONSE_DURPPS_SEGMENT__DUR_ADDITIONAL_TEXT);
 
@@ -4585,7 +4595,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(responseInsuranceSegmentEClass, RESPONSE_INSURANCE_SEGMENT__GROUP_ID);
 		createEReference(responseInsuranceSegmentEClass, RESPONSE_INSURANCE_SEGMENT__PLAN_ID);
 		createEReference(responseInsuranceSegmentEClass, RESPONSE_INSURANCE_SEGMENT__NETWORK_REIMBURSEMENT_ID);
-		createEReference(responseInsuranceSegmentEClass, RESPONSE_INSURANCE_SEGMENT__PAYER_ID_QUALIFIER);
+		createEAttribute(responseInsuranceSegmentEClass, RESPONSE_INSURANCE_SEGMENT__PAYER_ID_QUALIFIER);
 		createEReference(responseInsuranceSegmentEClass, RESPONSE_INSURANCE_SEGMENT__PAYER_ID);
 		createEReference(responseInsuranceSegmentEClass, RESPONSE_INSURANCE_SEGMENT__MEDICAID_ID_NUMBER);
 		createEReference(responseInsuranceSegmentEClass, RESPONSE_INSURANCE_SEGMENT__MEDICAID_AGENCY_NUMBER);
@@ -4606,19 +4616,19 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__PATIENT_PAY_AMOUNT);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__INGREDIENT_COST_PAID);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__DISPENSING_FEE_PAID);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__TAX_EXEMPT_INDICATOR);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__TAX_EXEMPT_INDICATOR);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__FLAT_SALES_TAX_AMOUNT_PAID);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_AMOUNT_PAID);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_RATE_PAID);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_BASIS_PAID);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__PERCENTAGE_SALES_TAX_BASIS_PAID);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__INCENTIVE_AMOUNT_PAID);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__PROFESSIONAL_SERVICE_FEE_PAID);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID_COUNT);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID_QUALIFIER);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID_QUALIFIER);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__OTHER_AMOUNT_PAID);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__OTHER_PAYER_AMOUNT_RECOGNIZED);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__TOTAL_AMOUNT_PAID);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_REIMBURSEMENT_DETERMINATION);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_REIMBURSEMENT_DETERMINATION);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__AMOUNT_ATTRIBUTED_TO_SALES_TAX);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__ACCUMULATED_DEDUCTIBLE_AMOUNT);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__REMAINING_DEDUCTIBLE_AMOUNT);
@@ -4626,17 +4636,17 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__AMOUNT_APPLIED_TO_PERIODIC_DEDUCTIBLE);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__AMOUNT_OF_COPAY);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__AMOUNT_EXCEEDING_PERIODIC_BENEFIT_MAXIMUM);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONDISPENSING_FEE);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOPAY);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONFLAT_SALES_TAX);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONPERCENTAGE_SALES_TAX);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONDISPENSING_FEE);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOPAY);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONFLAT_SALES_TAX);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONPERCENTAGE_SALES_TAX);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__AMOUNT_ATTRIBUTED_TO_PROCESSOR_FEE);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__PATIENT_SALES_TAX_AMOUNT);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__PLAN_SALES_TAX_AMOUNT);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__AMOUNT_OF_COINSURANCE);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOINSURANCE);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BASIS_OF_CALCULATIONCOINSURANCE);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_COUNT);
-		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_QUALIFIER);
+		createEAttribute(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_QUALIFIER);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__BENEFIT_STAGE_AMOUNT);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__ESTIMATED_GENERIC_SAVINGS);
 		createEReference(responsePricingSegmentEClass, RESPONSE_PRICING_SEGMENT__SPENDING_ACCOUNT_AMOUNT_REMAINING);
@@ -4662,18 +4672,18 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 
 		responseStatusSegmentEClass = createEClass(RESPONSE_STATUS_SEGMENT);
 		createEAttribute(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__SEGMENT_IDENTIFICATION);
-		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__TRANSACTION_RESPONSE_STATUS);
+		createEAttribute(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__TRANSACTION_RESPONSE_STATUS);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__AUTHORIZATION_NUMBER);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__REJECT_COUNT);
-		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__REJECT_CODE);
+		createEAttribute(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__REJECT_CODE);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__REJECT_FIELD_OCCURRENCE_INDICATOR);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__APPROVED_MESSAGE_CODE_COUNT);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__APPROVED_MESSAGE_CODE);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_COUNT);
-		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_QUALIFIER);
+		createEAttribute(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_QUALIFIER);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION);
-		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_CONTINUITY);
-		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__HELP_DESK_PHONE_NUMBER_QUALIFIER);
+		createEAttribute(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__ADDITIONAL_MESSAGE_INFORMATION_CONTINUITY);
+		createEAttribute(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__HELP_DESK_PHONE_NUMBER_QUALIFIER);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__HELP_DESK_PHONE_NUMBER);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__TRANSACTION_REFERENCE_NUMBER);
 		createEReference(responseStatusSegmentEClass, RESPONSE_STATUS_SEGMENT__INTERNAL_CONTROL_NUMBER);
@@ -4705,6 +4715,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 
 		// Obtain other dependent packages
 		EcorePackage theEcorePackage = (EcorePackage)EPackage.Registry.INSTANCE.getEPackage(EcorePackage.eNS_URI);
+		ECLPackage theECLPackage = (ECLPackage)EPackage.Registry.INSTANCE.getEPackage(ECLPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -4752,13 +4763,13 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getTransactionHeaderSegment_AssignedAuthor(), this.getField(), null, "assignedAuthor", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getTransactionHeaderSegment_DateOfService(), this.getField(), null, "dateOfService", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getTransactionHeaderSegment_SoftwareVendorcertificationId(), this.getField(), null, "softwareVendorcertificationId", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getTransactionHeaderSegment_TransactionCount(), this.getField(), null, "transactionCount", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getTransactionHeaderSegment_TransactionCount(), theECLPackage.getTransactionCount(), "transactionCount", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getTransactionHeaderSegment_ServiceProviderId(), this.getField(), null, "serviceProviderId", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getTransactionHeaderSegment_ProcessorControlNumber(), this.getField(), null, "processorControlNumber", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getTransactionHeaderSegment_ServiceProviderIdQualifier(), this.getField(), null, "serviceProviderIdQualifier", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getTransactionHeaderSegment_BinNumber(), this.getField(), null, "binNumber", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getTransactionHeaderSegment_Version(), this.getField(), null, "version", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getTransactionHeaderSegment_TransactionCode(), this.getField(), null, "transactionCode", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getTransactionHeaderSegment_TransactionCode(), theECLPackage.getTransactionCode(), "transactionCode", null, 1, 1, TransactionHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(fieldEClass, Field.class, "Field", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getField_Field(), ecorePackage.getEString(), "field", null, 1, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -4776,20 +4787,20 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getWorkersCompensationSegment_EmployerContactName(), this.getField(), null, "employerContactName", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getWorkersCompensationSegment_CarrierId(), this.getField(), null, "carrierId", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getWorkersCompensationSegment_ClaimreferenceId(), this.getField(), null, "claimreferenceId", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getWorkersCompensationSegment_BillingEntityTypeIndicator(), this.getField(), null, "billingEntityTypeIndicator", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getWorkersCompensationSegment_PayToQualifier(), this.getField(), null, "payToQualifier", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getWorkersCompensationSegment_BillingEntityTypeIndicator(), theECLPackage.getBillingEntityTypeIndicator(), "billingEntityTypeIndicator", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getWorkersCompensationSegment_PayToQualifier(), theECLPackage.getPayToQualifier(), "payToQualifier", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getWorkersCompensationSegment_PayToId(), this.getField(), null, "payToId", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getWorkersCompensationSegment_PayToName(), this.getField(), null, "payToName", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getWorkersCompensationSegment_PayToStreetAddress(), this.getField(), null, "payToStreetAddress", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getWorkersCompensationSegment_PayToCityAddress(), this.getField(), null, "payToCityAddress", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getWorkersCompensationSegment_PayToStateprovinceAddress(), this.getField(), null, "payToStateprovinceAddress", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getWorkersCompensationSegment_PayToZippostalZone(), this.getField(), null, "payToZippostalZone", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getWorkersCompensationSegment_GenericEquivalentProductIdQualifier(), this.getField(), null, "genericEquivalentProductIdQualifier", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getWorkersCompensationSegment_GenericEquivalentProductIdQualifier(), theECLPackage.getGenericEquivalentProductIDQualifier(), "genericEquivalentProductIdQualifier", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getWorkersCompensationSegment_GenericEquivalentProductId(), this.getField(), null, "genericEquivalentProductId", null, 0, -1, WorkersCompensationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(priorAuthorizationSegmentEClass, PriorAuthorizationSegment.class, "PriorAuthorizationSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPriorAuthorizationSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, PriorAuthorizationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getPriorAuthorizationSegment_RequestType(), this.getField(), null, "requestType", null, 0, -1, PriorAuthorizationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getPriorAuthorizationSegment_RequestType(), theECLPackage.getRequestType(), "requestType", null, 0, -1, PriorAuthorizationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPriorAuthorizationSegment_RequestPeriodDatebegin(), this.getField(), null, "requestPeriodDatebegin", null, 0, -1, PriorAuthorizationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPriorAuthorizationSegment_RequestPeriodDateend(), this.getField(), null, "requestPeriodDateend", null, 0, -1, PriorAuthorizationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPriorAuthorizationSegment_BasisOfRequest(), this.getField(), null, "basisOfRequest", null, 0, -1, PriorAuthorizationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -4819,7 +4830,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getPricingSegment_PercentageSalesTaxBasisSubmitted(), this.getField(), null, "percentageSalesTaxBasisSubmitted", null, 0, -1, PricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPricingSegment_UsualAndCustomaryCharge(), this.getField(), null, "usualAndCustomaryCharge", null, 0, -1, PricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPricingSegment_GrossAmountDue(), this.getField(), null, "grossAmountDue", null, 0, -1, PricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getPricingSegment_BasisOfCostDetermination(), this.getField(), null, "basisOfCostDetermination", null, 0, -1, PricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getPricingSegment_BasisOfCostDetermination(), theECLPackage.getBasisOfCostDetermination(), "basisOfCostDetermination", null, 0, -1, PricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPricingSegment_MedicaidPaidAmount(), this.getField(), null, "medicaidPaidAmount", null, 0, -1, PricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(prescriberSegmentEClass, PrescriberSegment.class, "PrescriberSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -4844,10 +4855,10 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 
 		initEClass(patientSegmentEClass, PatientSegment.class, "PatientSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPatientSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getPatientSegment_PatientIdQualifier(), this.getField(), null, "patientIdQualifier", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getPatientSegment_PatientIdQualifier(), theECLPackage.getPatientIDQualifier(), "patientIdQualifier", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_PatientId(), this.getField(), null, "patientId", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_DateOfBirth(), this.getField(), null, "dateOfBirth", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getPatientSegment_PatientGenderCode(), this.getField(), null, "patientGenderCode", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getPatientSegment_PatientGenderCode(), theECLPackage.getPatientGenderCode(), "patientGenderCode", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_PatientFirstName(), this.getField(), null, "patientFirstName", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_PatientLastName(), this.getField(), null, "patientLastName", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_PatientStreetAddress(), this.getField(), null, "patientStreetAddress", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -4855,12 +4866,12 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getPatientSegment_PatientStateProvinceAddress(), this.getField(), null, "patientStateProvinceAddress", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_PatientZippostalZone(), this.getField(), null, "patientZippostalZone", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_PatientPhoneNumber(), this.getField(), null, "patientPhoneNumber", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getPatientSegment_PlaceOfService(), this.getField(), null, "placeOfService", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getPatientSegment_PlaceOfService(), theECLPackage.getPatientLocation(), "placeOfService", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_EmployerId(), this.getField(), null, "employerId", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_SmokerNonsmokerCode(), this.getField(), null, "smokerNonsmokerCode", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getPatientSegment_PregnancyIndicator(), this.getField(), null, "pregnancyIndicator", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getPatientSegment_PregnancyIndicator(), theECLPackage.getPregnancyIndicator(), "pregnancyIndicator", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getPatientSegment_PatientEmailAddress(), this.getField(), null, "patientEmailAddress", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getPatientSegment_PatientResidence(), this.getField(), null, "patientResidence", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getPatientSegment_PatientResidence(), theECLPackage.getPatientResidence(), "patientResidence", null, 0, -1, PatientSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(narrativeSegmentEClass, NarrativeSegment.class, "NarrativeSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getNarrativeSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, NarrativeSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -4873,18 +4884,18 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getInsuranceSegment_CardholderLastName(), this.getField(), null, "cardholderLastName", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_HomePlan(), this.getField(), null, "homePlan", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_PlanId(), this.getField(), null, "planId", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getInsuranceSegment_EligibilityClarificationCode(), this.getField(), null, "eligibilityClarificationCode", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getInsuranceSegment_EligibilityClarificationCode(), theECLPackage.getEligibilityClarificationCode(), "eligibilityClarificationCode", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_GroupId(), this.getField(), null, "groupId", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_PersonCode(), this.getField(), null, "personCode", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getInsuranceSegment_PatientRelationshipCode(), this.getField(), null, "patientRelationshipCode", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getInsuranceSegment_PatientRelationshipCode(), theECLPackage.getPatientRelationshipCode(), "patientRelationshipCode", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_OtherPayerBinNumber(), this.getField(), null, "otherPayerBinNumber", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_OtherPayerProcessorControlNumber(), this.getField(), null, "otherPayerProcessorControlNumber", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_OtherPayerCardholderId(), this.getField(), null, "otherPayerCardholderId", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_OtherPayerGroupId(), this.getField(), null, "otherPayerGroupId", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_MedigapId(), this.getField(), null, "medigapId", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_MedicaidIndicator(), this.getField(), null, "medicaidIndicator", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getInsuranceSegment_ProviderAcceptAssignmentIndicator(), this.getField(), null, "providerAcceptAssignmentIndicator", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getInsuranceSegment_CmsPartDDefinedQualifiedFacility(), this.getField(), null, "cmsPartDDefinedQualifiedFacility", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getInsuranceSegment_ProviderAcceptAssignmentIndicator(), theECLPackage.getProviderAcceptAssignmentIndicator(), "providerAcceptAssignmentIndicator", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getInsuranceSegment_CmsPartDDefinedQualifiedFacility(), theECLPackage.getCMSPartDDefinedQualifiedFacility(), "cmsPartDDefinedQualifiedFacility", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_MedicaidIdNumber(), this.getField(), null, "medicaidIdNumber", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInsuranceSegment_MedicaidAgencyNumber(), this.getField(), null, "medicaidAgencyNumber", null, 0, -1, InsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
@@ -4900,37 +4911,37 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEClass(durppsSegmentEClass, DURPPSSegment.class, "DURPPSSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDURPPSSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDURPPSSegment_DurppsCodeCounter(), this.getField(), null, "durppsCodeCounter", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getDURPPSSegment_ReasonForServiceCode(), this.getField(), null, "reasonForServiceCode", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getDURPPSSegment_ProfessionalServiceCode(), this.getField(), null, "professionalServiceCode", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getDURPPSSegment_ResultOfServiceCode(), this.getField(), null, "resultOfServiceCode", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDURPPSSegment_ReasonForServiceCode(), theECLPackage.getReasonforServiceCode(), "reasonForServiceCode", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDURPPSSegment_ProfessionalServiceCode(), theECLPackage.getProfessionalServiceCode(), "professionalServiceCode", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDURPPSSegment_ResultOfServiceCode(), theECLPackage.getResultofServiceCode(), "resultOfServiceCode", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDURPPSSegment_DurppsLevelOfEffort(), this.getField(), null, "durppsLevelOfEffort", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getDURPPSSegment_DurCoagentIdQualifier(), this.getField(), null, "durCoagentIdQualifier", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDURPPSSegment_DurCoagentIdQualifier(), theECLPackage.getDURCoAgentIDQualifier(), "durCoagentIdQualifier", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDURPPSSegment_DurCoagentId(), this.getField(), null, "durCoagentId", null, 0, -1, DURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(couponSegmentEClass, CouponSegment.class, "CouponSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCouponSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, CouponSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getCouponSegment_CouponType(), this.getField(), null, "couponType", null, 0, -1, CouponSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCouponSegment_CouponType(), theECLPackage.getCouponType(), "couponType", null, 0, -1, CouponSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCouponSegment_CouponNumber(), this.getField(), null, "couponNumber", null, 0, -1, CouponSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCouponSegment_CouponValueAmount(), this.getField(), null, "couponValueAmount", null, 0, -1, CouponSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(coordinationofBenefitsOtherPaymentsSegmentEClass, CoordinationofBenefitsOtherPaymentsSegment.class, "CoordinationofBenefitsOtherPaymentsSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCoordinationofBenefitsOtherPaymentsSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_CoordinationOfBenefitsotherPaymentsCount(), this.getField(), null, "coordinationOfBenefitsotherPaymentsCount", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerCoverageType(), this.getField(), null, "otherPayerCoverageType", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerIdQualifier(), this.getField(), null, "otherPayerIdQualifier", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerCoverageType(), theECLPackage.getOtherPayerCoverageType(), "otherPayerCoverageType", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerIdQualifier(), theECLPackage.getOtherPayerIDQualifier(), "otherPayerIdQualifier", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerId(), this.getField(), null, "otherPayerId", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerDate(), this.getField(), null, "otherPayerDate", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_InternalControlNumber(), this.getField(), null, "internalControlNumber", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerAmountPaidCount(), this.getField(), null, "otherPayerAmountPaidCount", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerAmountPaidQualifier(), this.getField(), null, "otherPayerAmountPaidQualifier", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerAmountPaidQualifier(), theECLPackage.getOtherPayerAmountPaidQualifier(), "otherPayerAmountPaidQualifier", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerAmountPaid(), this.getField(), null, "otherPayerAmountPaid", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerRejectCount(), this.getField(), null, "otherPayerRejectCount", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerRejectCode(), this.getField(), null, "otherPayerRejectCode", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerpatientResponsibilityAmountCount(), this.getField(), null, "otherPayerpatientResponsibilityAmountCount", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerpatientResponsibilityAmountQualifier(), this.getField(), null, "otherPayerpatientResponsibilityAmountQualifier", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerpatientResponsibilityAmountQualifier(), theECLPackage.getOtherPayerPatientResponsibilityAmountQualifier(), "otherPayerpatientResponsibilityAmountQualifier", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerpatientResponsibilityAmount(), this.getField(), null, "otherPayerpatientResponsibilityAmount", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_BenefitStageCount(), this.getField(), null, "benefitStageCount", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_BenefitStageQualifier(), this.getField(), null, "benefitStageQualifier", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCoordinationofBenefitsOtherPaymentsSegment_BenefitStageQualifier(), theECLPackage.getBenefitStageQualifier(), "benefitStageQualifier", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoordinationofBenefitsOtherPaymentsSegment_BenefitStageAmount(), this.getField(), null, "benefitStageAmount", null, 0, -1, CoordinationofBenefitsOtherPaymentsSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(clinicalSegmentEClass, ClinicalSegment.class, "ClinicalSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -4941,8 +4952,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getClinicalSegment_ClinicalInformationCounter(), this.getField(), null, "clinicalInformationCounter", null, 0, -1, ClinicalSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClinicalSegment_MeasurementDate(), this.getField(), null, "measurementDate", null, 0, -1, ClinicalSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClinicalSegment_MeasurementTime(), this.getField(), null, "measurementTime", null, 0, -1, ClinicalSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClinicalSegment_MeasurementDimension(), this.getField(), null, "measurementDimension", null, 0, -1, ClinicalSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClinicalSegment_MeasurementUnit(), this.getField(), null, "measurementUnit", null, 0, -1, ClinicalSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClinicalSegment_MeasurementDimension(), theECLPackage.getMeasurementDimension(), "measurementDimension", null, 0, -1, ClinicalSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClinicalSegment_MeasurementUnit(), theECLPackage.getMeasurementUnit(), "measurementUnit", null, 0, -1, ClinicalSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClinicalSegment_MeasurementValue(), this.getField(), null, "measurementValue", null, 0, -1, ClinicalSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(claimSegmentEClass, ClaimSegment.class, "ClaimSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -4956,47 +4967,47 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getClaimSegment_ProcedureModifierCodeCount(), this.getField(), null, "procedureModifierCodeCount", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_ProcedureModifierCode(), this.getField(), null, "procedureModifierCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_QuantityDispensed(), this.getField(), null, "quantityDispensed", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_FillNumber(), this.getField(), null, "fillNumber", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_FillNumber(), theECLPackage.getFillNumber(), "fillNumber", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_DaysSupply(), this.getField(), null, "daysSupply", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_CompoundCode(), this.getField(), null, "compoundCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_DispenseAsWrittendawproductSelectionCode(), this.getField(), null, "dispenseAsWrittendawproductSelectionCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_DatePrescriptionWritten(), this.getField(), null, "datePrescriptionWritten", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_NumberOfRefillsAuthorized(), this.getField(), null, "numberOfRefillsAuthorized", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_PrescriptionOriginCode(), this.getField(), null, "prescriptionOriginCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_NumberOfRefillsAuthorized(), theECLPackage.getNumberofRefillsAuthorized(), "numberOfRefillsAuthorized", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_PrescriptionOriginCode(), theECLPackage.getPrescriptionOriginCode(), "prescriptionOriginCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_SubmissionClarificationCodeCount(), this.getField(), null, "submissionClarificationCodeCount", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_SubmissionClarificationCode(), this.getField(), null, "submissionClarificationCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_SubmissionClarificationCode(), theECLPackage.getSubmissionClarificationCode(), "submissionClarificationCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_QuantityPrescribed(), this.getField(), null, "quantityPrescribed", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_OtherCoverageCode(), this.getField(), null, "otherCoverageCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_SpecialPackagingIndicator(), this.getField(), null, "specialPackagingIndicator", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_OtherCoverageCode(), theECLPackage.getOtherCoverageCode(), "otherCoverageCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_SpecialPackagingIndicator(), theECLPackage.getSpecialPackagingIndicator(), "specialPackagingIndicator", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_OriginallyPrescribedProductserviceIdQualifier(), this.getField(), null, "originallyPrescribedProductserviceIdQualifier", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_OriginallyPrescribedProductserviceCode(), this.getField(), null, "originallyPrescribedProductserviceCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_OriginallyPrescribedQuantity(), this.getField(), null, "originallyPrescribedQuantity", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_AlternateId(), this.getField(), null, "alternateId", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_ScheduledPrescriptionIdNumber(), this.getField(), null, "scheduledPrescriptionIdNumber", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_UnitOfMeasure(), this.getField(), null, "unitOfMeasure", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_LevelOfService(), this.getField(), null, "levelOfService", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_PriorAuthorizationTypeCode(), this.getField(), null, "priorAuthorizationTypeCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_UnitOfMeasure(), theECLPackage.getUnitofMeasure(), "unitOfMeasure", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_LevelOfService(), theECLPackage.getLevelofService(), "levelOfService", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_PriorAuthorizationTypeCode(), theECLPackage.getPriorAuthorizationTypeCode(), "priorAuthorizationTypeCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_PriorAuthorizationNumberSubmitted(), this.getField(), null, "priorAuthorizationNumberSubmitted", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_IntermediaryAuthorizationTypeId(), this.getField(), null, "intermediaryAuthorizationTypeId", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_IntermediaryAuthorizationTypeId(), theECLPackage.getIntermediaryAuthorizationTypeID(), "intermediaryAuthorizationTypeId", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_IntermediaryAuthorizationId(), this.getField(), null, "intermediaryAuthorizationId", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_DispensingStatus(), this.getField(), null, "dispensingStatus", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_DispensingStatus(), theECLPackage.getDispensingStatus(), "dispensingStatus", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_QuantityIntendedToBeDispensed(), this.getField(), null, "quantityIntendedToBeDispensed", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_DaysSupplyIntendedToBeDispensed(), this.getField(), null, "daysSupplyIntendedToBeDispensed", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_DelayReasonCode(), this.getField(), null, "delayReasonCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_DelayReasonCode(), theECLPackage.getDelayReasonCode(), "delayReasonCode", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_TransactionReferenceNumber(), this.getField(), null, "transactionReferenceNumber", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_PatientAssignmentIndicatordirectMemberReimbursementIndicator(), this.getField(), null, "patientAssignmentIndicatordirectMemberReimbursementIndicator", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_RouteOfAdministration(), this.getField(), null, "routeOfAdministration", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_CompoundType(), this.getField(), null, "compoundType", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_PatientAssignmentIndicatordirectMemberReimbursementIndicator(), theECLPackage.getPatientAssignmentIndicatorDirectMemberReimbursementIndicator(), "patientAssignmentIndicatordirectMemberReimbursementIndicator", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_RouteOfAdministration(), theECLPackage.getRouteOfAdministration(), "routeOfAdministration", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_CompoundType(), theECLPackage.getCompoundType(), "compoundType", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClaimSegment_MedicaidSubrogationInternalControlNumbertransactionControlNumbericntcn(), this.getField(), null, "medicaidSubrogationInternalControlNumbertransactionControlNumbericntcn", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClaimSegment_PharmacyServiceType(), this.getField(), null, "pharmacyServiceType", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getClaimSegment_PharmacyServiceType(), theECLPackage.getPharmacyServiceType(), "pharmacyServiceType", null, 0, -1, ClaimSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(additionalDocumentationSegmentEClass, AdditionalDocumentationSegment.class, "AdditionalDocumentationSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAdditionalDocumentationSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getAdditionalDocumentationSegment_AdditionalDocumentationTypeId(), this.getField(), null, "additionalDocumentationTypeId", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAdditionalDocumentationSegment_AdditionalDocumentationTypeId(), theECLPackage.getAdditionalDocumentationTypeID(), "additionalDocumentationTypeId", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAdditionalDocumentationSegment_RequestPeriodBeginDate(), this.getField(), null, "requestPeriodBeginDate", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAdditionalDocumentationSegment_RequestPeriodRecertrevisedDate(), this.getField(), null, "requestPeriodRecertrevisedDate", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getAdditionalDocumentationSegment_RequestStatus(), this.getField(), null, "requestStatus", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getAdditionalDocumentationSegment_LengthOfNeedQualifier(), this.getField(), null, "lengthOfNeedQualifier", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAdditionalDocumentationSegment_RequestStatus(), theECLPackage.getRequestStatus(), "requestStatus", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAdditionalDocumentationSegment_LengthOfNeedQualifier(), theECLPackage.getLengthofNeedQualifier(), "lengthOfNeedQualifier", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAdditionalDocumentationSegment_LengthOfNeed(), this.getField(), null, "lengthOfNeed", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAdditionalDocumentationSegment_PrescribersupplierDateSigned(), this.getField(), null, "prescribersupplierDateSigned", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAdditionalDocumentationSegment_SupportingDocumentation(), this.getField(), null, "supportingDocumentation", null, 0, -1, AdditionalDocumentationSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -5010,10 +5021,10 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 
 		initEClass(compoundSegmentEClass, CompoundSegment.class, "CompoundSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCompoundSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getCompoundSegment_CompoundDosageFormDescriptionCode(), this.getField(), null, "compoundDosageFormDescriptionCode", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getCompoundSegment_CompoundDispensingUnitFormIndicator(), this.getField(), null, "compoundDispensingUnitFormIndicator", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCompoundSegment_CompoundDosageFormDescriptionCode(), theECLPackage.getCompoundDosageFormDescriptionCode(), "compoundDosageFormDescriptionCode", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCompoundSegment_CompoundDispensingUnitFormIndicator(), theECLPackage.getCompoundDispensingUnitFormIndicator(), "compoundDispensingUnitFormIndicator", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCompoundSegment_CompoundIngredientComponentCount(), this.getField(), null, "compoundIngredientComponentCount", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getCompoundSegment_CompoundProductIdQualifier(), this.getField(), null, "compoundProductIdQualifier", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getCompoundSegment_CompoundProductIdQualifier(), theECLPackage.getCompoundProductIDQualifier(), "compoundProductIdQualifier", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCompoundSegment_CompoundProductId(), this.getField(), null, "compoundProductId", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCompoundSegment_CompoundIngredientQuantity(), this.getField(), null, "compoundIngredientQuantity", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCompoundSegment_CompoundIngredientDrugCost(), this.getField(), null, "compoundIngredientDrugCost", null, 0, -1, CompoundSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -5034,8 +5045,8 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 
 		initEClass(responseHeaderSegmentEClass, ResponseHeaderSegment.class, "ResponseHeaderSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getResponseHeaderSegment_VersionreleaseNumber(), this.getField(), null, "versionreleaseNumber", null, 1, 1, ResponseHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseHeaderSegment_TransactionCode(), this.getField(), null, "transactionCode", null, 1, 1, ResponseHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseHeaderSegment_TransactionCount(), this.getField(), null, "transactionCount", null, 1, 1, ResponseHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseHeaderSegment_TransactionCode(), theECLPackage.getTransactionCode(), "transactionCode", null, 1, 1, ResponseHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseHeaderSegment_TransactionCount(), theECLPackage.getTransactionCount(), "transactionCount", null, 1, 1, ResponseHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseHeaderSegment_HeaderResponseStatus(), this.getField(), null, "headerResponseStatus", null, 1, 1, ResponseHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseHeaderSegment_ServiceProviderIdQualifier(), this.getField(), null, "serviceProviderIdQualifier", null, 1, 1, ResponseHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseHeaderSegment_ServiceProviderId(), this.getField(), null, "serviceProviderId", null, 1, 1, ResponseHeaderSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -5056,28 +5067,28 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEClass(responseCoordinationofBenefitsOtherPayersSegmentEClass, ResponseCoordinationofBenefitsOtherPayersSegment.class, "ResponseCoordinationofBenefitsOtherPayersSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getResponseCoordinationofBenefitsOtherPayersSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerIdCount(), this.getField(), null, "otherPayerIdCount", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerCoverageType(), this.getField(), null, "otherPayerCoverageType", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerIdQualifier(), this.getField(), null, "otherPayerIdQualifier", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerCoverageType(), theECLPackage.getOtherPayerCoverageType(), "otherPayerCoverageType", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerIdQualifier(), theECLPackage.getOtherPayerIDQualifier(), "otherPayerIdQualifier", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerId(), this.getField(), null, "otherPayerId", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerProcessorControlNumber(), this.getField(), null, "otherPayerProcessorControlNumber", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerCardholderId(), this.getField(), null, "otherPayerCardholderId", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerGroupId(), this.getField(), null, "otherPayerGroupId", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerPersonCode(), this.getField(), null, "otherPayerPersonCode", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerHelpDeskPhoneNumber(), this.getField(), null, "otherPayerHelpDeskPhoneNumber", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerPatientRelationshipCode(), this.getField(), null, "otherPayerPatientRelationshipCode", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerPatientRelationshipCode(), theECLPackage.getOtherPayerPatientRelationshipCode(), "otherPayerPatientRelationshipCode", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerBenefitEffectiveDate(), this.getField(), null, "otherPayerBenefitEffectiveDate", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerBenefitTerminationDate(), this.getField(), null, "otherPayerBenefitTerminationDate", null, 0, -1, ResponseCoordinationofBenefitsOtherPayersSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(responseDURPPSSegmentEClass, ResponseDURPPSSegment.class, "ResponseDURPPSSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getResponseDURPPSSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseDURPPSSegment_DurppsResponseCodeCounter(), this.getField(), null, "durppsResponseCodeCounter", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseDURPPSSegment_ReasonForServiceCode(), this.getField(), null, "reasonForServiceCode", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseDURPPSSegment_ReasonForServiceCode(), theECLPackage.getReasonforServiceCode(), "reasonForServiceCode", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseDURPPSSegment_ClinicalSignificanceCode(), this.getField(), null, "clinicalSignificanceCode", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseDURPPSSegment_OtherPharmacyIndicator(), this.getField(), null, "otherPharmacyIndicator", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseDURPPSSegment_OtherPharmacyIndicator(), theECLPackage.getOtherPharmacyIndicator(), "otherPharmacyIndicator", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseDURPPSSegment_PreviousDateOfFill(), this.getField(), null, "previousDateOfFill", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseDURPPSSegment_QuantityOfPreviousFill(), this.getField(), null, "quantityOfPreviousFill", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseDURPPSSegment_DatabaseIndicator(), this.getField(), null, "databaseIndicator", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseDURPPSSegment_OtherPrescriberIndicator(), this.getField(), null, "otherPrescriberIndicator", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseDURPPSSegment_OtherPrescriberIndicator(), theECLPackage.getOtherPrescriberIndicator(), "otherPrescriberIndicator", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseDURPPSSegment_DurFreeTextMessage(), this.getField(), null, "durFreeTextMessage", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseDURPPSSegment_DurAdditionalText(), this.getField(), null, "durAdditionalText", null, 0, -1, ResponseDURPPSSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
@@ -5086,7 +5097,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getResponseInsuranceSegment_GroupId(), this.getField(), null, "groupId", null, 0, -1, ResponseInsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseInsuranceSegment_PlanId(), this.getField(), null, "planId", null, 0, -1, ResponseInsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseInsuranceSegment_NetworkReimbursementId(), this.getField(), null, "networkReimbursementId", null, 0, -1, ResponseInsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseInsuranceSegment_PayerIdQualifier(), this.getField(), null, "payerIdQualifier", null, 0, -1, ResponseInsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseInsuranceSegment_PayerIdQualifier(), theECLPackage.getPayerIDQualifier(), "payerIdQualifier", null, 0, -1, ResponseInsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseInsuranceSegment_PayerId(), this.getField(), null, "payerId", null, 0, -1, ResponseInsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseInsuranceSegment_MedicaidIdNumber(), this.getField(), null, "medicaidIdNumber", null, 0, -1, ResponseInsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseInsuranceSegment_MedicaidAgencyNumber(), this.getField(), null, "medicaidAgencyNumber", null, 0, -1, ResponseInsuranceSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -5107,19 +5118,19 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getResponsePricingSegment_PatientPayAmount(), this.getField(), null, "patientPayAmount", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_IngredientCostPaid(), this.getField(), null, "ingredientCostPaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_DispensingFeePaid(), this.getField(), null, "dispensingFeePaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_TaxExemptIndicator(), this.getField(), null, "taxExemptIndicator", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_TaxExemptIndicator(), theECLPackage.getTaxExemptIndicator(), "taxExemptIndicator", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_FlatSalesTaxAmountPaid(), this.getField(), null, "flatSalesTaxAmountPaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_PercentageSalesTaxAmountPaid(), this.getField(), null, "percentageSalesTaxAmountPaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_PercentageSalesTaxRatePaid(), this.getField(), null, "percentageSalesTaxRatePaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_PercentageSalesTaxBasisPaid(), this.getField(), null, "percentageSalesTaxBasisPaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_PercentageSalesTaxBasisPaid(), theECLPackage.getPercentageSalesTaxBasisPaid(), "percentageSalesTaxBasisPaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_IncentiveAmountPaid(), this.getField(), null, "incentiveAmountPaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_ProfessionalServiceFeePaid(), this.getField(), null, "professionalServiceFeePaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_OtherAmountPaidCount(), this.getField(), null, "otherAmountPaidCount", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_OtherAmountPaidQualifier(), this.getField(), null, "otherAmountPaidQualifier", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_OtherAmountPaidQualifier(), theECLPackage.getOtherAmountPaidQualifier(), "otherAmountPaidQualifier", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_OtherAmountPaid(), this.getField(), null, "otherAmountPaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_OtherPayerAmountRecognized(), this.getField(), null, "otherPayerAmountRecognized", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_TotalAmountPaid(), this.getField(), null, "totalAmountPaid", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_BasisOfReimbursementDetermination(), this.getField(), null, "basisOfReimbursementDetermination", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_BasisOfReimbursementDetermination(), theECLPackage.getBasisOfReimbursementDetermination(), "basisOfReimbursementDetermination", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_AmountAttributedToSalesTax(), this.getField(), null, "amountAttributedToSalesTax", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_AccumulatedDeductibleAmount(), this.getField(), null, "accumulatedDeductibleAmount", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_RemainingDeductibleAmount(), this.getField(), null, "remainingDeductibleAmount", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -5127,17 +5138,17 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		initEReference(getResponsePricingSegment_AmountAppliedToPeriodicDeductible(), this.getField(), null, "amountAppliedToPeriodicDeductible", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_AmountOfCopay(), this.getField(), null, "amountOfCopay", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_AmountExceedingPeriodicBenefitMaximum(), this.getField(), null, "amountExceedingPeriodicBenefitMaximum", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_BasisOfCalculationdispensingFee(), this.getField(), null, "basisOfCalculationdispensingFee", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_BasisOfCalculationcopay(), this.getField(), null, "basisOfCalculationcopay", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_BasisOfCalculationflatSalesTax(), this.getField(), null, "basisOfCalculationflatSalesTax", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_BasisOfCalculationpercentageSalesTax(), this.getField(), null, "basisOfCalculationpercentageSalesTax", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_BasisOfCalculationdispensingFee(), theECLPackage.getBasisOfCalculationDispensingFee(), "basisOfCalculationdispensingFee", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_BasisOfCalculationcopay(), theECLPackage.getBasisOfCalculationCopay(), "basisOfCalculationcopay", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_BasisOfCalculationflatSalesTax(), theECLPackage.getBasisOfCalculationFlatSalesTax(), "basisOfCalculationflatSalesTax", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_BasisOfCalculationpercentageSalesTax(), theECLPackage.getBasisOfCalculationPercentageSalesTax(), "basisOfCalculationpercentageSalesTax", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_AmountAttributedToProcessorFee(), this.getField(), null, "amountAttributedToProcessorFee", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_PatientSalesTaxAmount(), this.getField(), null, "patientSalesTaxAmount", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_PlanSalesTaxAmount(), this.getField(), null, "planSalesTaxAmount", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_AmountOfCoinsurance(), this.getField(), null, "amountOfCoinsurance", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_BasisOfCalculationcoinsurance(), this.getField(), null, "basisOfCalculationcoinsurance", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_BasisOfCalculationcoinsurance(), theECLPackage.getBasisOfCalculationCoinsurance(), "basisOfCalculationcoinsurance", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_BenefitStageCount(), this.getField(), null, "benefitStageCount", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponsePricingSegment_BenefitStageQualifier(), this.getField(), null, "benefitStageQualifier", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponsePricingSegment_BenefitStageQualifier(), theECLPackage.getBenefitStageQualifier(), "benefitStageQualifier", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_BenefitStageAmount(), this.getField(), null, "benefitStageAmount", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_EstimatedGenericSavings(), this.getField(), null, "estimatedGenericSavings", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponsePricingSegment_SpendingAccountAmountRemaining(), this.getField(), null, "spendingAccountAmountRemaining", null, 0, -1, ResponsePricingSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -5163,18 +5174,18 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 
 		initEClass(responseStatusSegmentEClass, ResponseStatusSegment.class, "ResponseStatusSegment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getResponseStatusSegment_SegmentIdentification(), ecorePackage.getEString(), "segmentIdentification", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseStatusSegment_TransactionResponseStatus(), this.getField(), null, "transactionResponseStatus", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseStatusSegment_TransactionResponseStatus(), theECLPackage.getTransactionResponseStatus(), "transactionResponseStatus", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_AuthorizationNumber(), this.getField(), null, "authorizationNumber", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_RejectCount(), this.getField(), null, "rejectCount", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseStatusSegment_RejectCode(), this.getField(), null, "rejectCode", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseStatusSegment_RejectCode(), theECLPackage.getRejectCode(), "rejectCode", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_RejectFieldOccurrenceIndicator(), this.getField(), null, "rejectFieldOccurrenceIndicator", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_ApprovedMessageCodeCount(), this.getField(), null, "approvedMessageCodeCount", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_ApprovedMessageCode(), this.getField(), null, "approvedMessageCode", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_AdditionalMessageInformationCount(), this.getField(), null, "additionalMessageInformationCount", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseStatusSegment_AdditionalMessageInformationQualifier(), this.getField(), null, "additionalMessageInformationQualifier", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseStatusSegment_AdditionalMessageInformationQualifier(), theECLPackage.getAdditionalMessageInformationQualifier(), "additionalMessageInformationQualifier", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_AdditionalMessageInformation(), this.getField(), null, "additionalMessageInformation", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseStatusSegment_AdditionalMessageInformationContinuity(), this.getField(), null, "additionalMessageInformationContinuity", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getResponseStatusSegment_HelpDeskPhoneNumberQualifier(), this.getField(), null, "helpDeskPhoneNumberQualifier", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseStatusSegment_AdditionalMessageInformationContinuity(), theECLPackage.getAdditionalMessageInformationContinuity(), "additionalMessageInformationContinuity", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getResponseStatusSegment_HelpDeskPhoneNumberQualifier(), theECLPackage.getHelpDeskPhoneNumberQualifier(), "helpDeskPhoneNumberQualifier", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_HelpDeskPhoneNumber(), this.getField(), null, "helpDeskPhoneNumber", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_TransactionReferenceNumber(), this.getField(), null, "transactionReferenceNumber", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getResponseStatusSegment_InternalControlNumber(), this.getField(), null, "internalControlNumber", null, 0, -1, ResponseStatusSegment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -5186,8 +5197,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		// Create annotations
 		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
 		createExtendedMetaDataAnnotations();
-		// http://www.ncpdp.org/uml/telecom/annotation
-		createAnnotationAnnotations();
 	}
 
 	/**
@@ -5381,13 +5390,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation
-		  (getTransactionHeaderSegment_TransactionCount(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
 		  (getTransactionHeaderSegment_ServiceProviderId(), 
 		   source, 
 		   new String[] {
@@ -5422,13 +5424,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element",
 			 "namespace", "##targetNamespace"
 		   });		
-		addAnnotation
-		  (getTransactionHeaderSegment_TransactionCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });			
 		addAnnotation
 		  (getWorkersCompensationSegment_SegmentIdentification(), 
 		   source, 
@@ -5496,18 +5491,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getWorkersCompensationSegment_BillingEntityTypeIndicator(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getWorkersCompensationSegment_PayToQualifier(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getWorkersCompensationSegment_PayToId(), 
 		   source, 
 		   new String[] {
@@ -5544,28 +5527,16 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getWorkersCompensationSegment_GenericEquivalentProductIdQualifier(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getWorkersCompensationSegment_GenericEquivalentProductId(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getPriorAuthorizationSegment_SegmentIdentification(), 
 		   source, 
 		   new String[] {
 			 "name", "Id"
-		   });		
-		addAnnotation
-		  (getPriorAuthorizationSegment_RequestType(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
 		   });		
 		addAnnotation
 		  (getPriorAuthorizationSegment_RequestPeriodDatebegin(), 
@@ -5638,7 +5609,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getPricingSegment_SegmentIdentification(), 
 		   source, 
@@ -5730,17 +5701,11 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getPricingSegment_BasisOfCostDetermination(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getPricingSegment_MedicaidPaidAmount(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getPrescriberSegment_SegmentIdentification(), 
 		   source, 
@@ -5818,7 +5783,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getPharmacyProviderSegment_SegmentIdentification(), 
 		   source, 
@@ -5836,18 +5801,12 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getPatientSegment_SegmentIdentification(), 
 		   source, 
 		   new String[] {
 			 "name", "Id"
-		   });		
-		addAnnotation
-		  (getPatientSegment_PatientIdQualifier(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
 		   });		
 		addAnnotation
 		  (getPatientSegment_PatientId(), 
@@ -5857,12 +5816,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   });		
 		addAnnotation
 		  (getPatientSegment_DateOfBirth(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getPatientSegment_PatientGenderCode(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -5910,12 +5863,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getPatientSegment_PlaceOfService(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getPatientSegment_EmployerId(), 
 		   source, 
 		   new String[] {
@@ -5928,23 +5875,11 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getPatientSegment_PregnancyIndicator(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getPatientSegment_PatientEmailAddress(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
 		   });		
-		addAnnotation
-		  (getPatientSegment_PatientResidence(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });			
 		addAnnotation
 		  (getNarrativeSegment_SegmentIdentification(), 
 		   source, 
@@ -5956,7 +5891,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getInsuranceSegment_SegmentIdentification(), 
 		   source, 
@@ -5994,12 +5929,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getInsuranceSegment_EligibilityClarificationCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getInsuranceSegment_GroupId(), 
 		   source, 
 		   new String[] {
@@ -6007,12 +5936,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   });		
 		addAnnotation
 		  (getInsuranceSegment_PersonCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getInsuranceSegment_PatientRelationshipCode(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -6054,18 +5977,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getInsuranceSegment_ProviderAcceptAssignmentIndicator(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getInsuranceSegment_CmsPartDDefinedQualifiedFacility(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getInsuranceSegment_MedicaidIdNumber(), 
 		   source, 
 		   new String[] {
@@ -6076,7 +5987,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getFacilitySegment_SegmentIdentification(), 
 		   source, 
@@ -6118,7 +6029,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getDURPPSSegment_SegmentIdentification(), 
 		   source, 
@@ -6132,31 +6043,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getDURPPSSegment_ReasonForServiceCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getDURPPSSegment_ProfessionalServiceCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getDURPPSSegment_ResultOfServiceCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getDURPPSSegment_DurppsLevelOfEffort(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getDURPPSSegment_DurCoagentIdQualifier(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -6166,18 +6053,12 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getCouponSegment_SegmentIdentification(), 
 		   source, 
 		   new String[] {
 			 "name", "Id"
-		   });		
-		addAnnotation
-		  (getCouponSegment_CouponType(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
 		   });		
 		addAnnotation
 		  (getCouponSegment_CouponNumber(), 
@@ -6190,7 +6071,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getCoordinationofBenefitsOtherPaymentsSegment_SegmentIdentification(), 
 		   source, 
@@ -6199,18 +6080,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   });		
 		addAnnotation
 		  (getCoordinationofBenefitsOtherPaymentsSegment_CoordinationOfBenefitsotherPaymentsCount(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerCoverageType(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerIdQualifier(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -6240,12 +6109,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerAmountPaidQualifier(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerAmountPaid(), 
 		   source, 
 		   new String[] {
@@ -6270,12 +6133,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerpatientResponsibilityAmountQualifier(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getCoordinationofBenefitsOtherPaymentsSegment_OtherPayerpatientResponsibilityAmount(), 
 		   source, 
 		   new String[] {
@@ -6288,17 +6145,11 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getCoordinationofBenefitsOtherPaymentsSegment_BenefitStageQualifier(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getCoordinationofBenefitsOtherPaymentsSegment_BenefitStageAmount(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getClinicalSegment_SegmentIdentification(), 
 		   source, 
@@ -6348,26 +6199,12 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation
-		  (getClinicalSegment_MeasurementDimension(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClinicalSegment_MeasurementUnit(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
 		  (getClinicalSegment_MeasurementValue(), 
 		   source, 
 		   new String[] {
 			 "name", "element",
 			 "namespace", "##targetNamespace"
-		   });			
+		   });		
 		addAnnotation
 		  (getClaimSegment_SegmentIdentification(), 
 		   source, 
@@ -6438,13 +6275,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation
-		  (getClaimSegment_FillNumber(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
 		  (getClaimSegment_DaysSupply(), 
 		   source, 
 		   new String[] {
@@ -6473,20 +6303,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation
-		  (getClaimSegment_NumberOfRefillsAuthorized(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClaimSegment_PrescriptionOriginCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
 		  (getClaimSegment_SubmissionClarificationCodeCount(), 
 		   source, 
 		   new String[] {
@@ -6494,28 +6310,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation
-		  (getClaimSegment_SubmissionClarificationCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
 		  (getClaimSegment_QuantityPrescribed(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClaimSegment_OtherCoverageCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClaimSegment_SpecialPackagingIndicator(), 
 		   source, 
 		   new String[] {
 			 "name", "element",
@@ -6557,27 +6352,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation
-		  (getClaimSegment_UnitOfMeasure(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClaimSegment_LevelOfService(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClaimSegment_PriorAuthorizationTypeCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
 		  (getClaimSegment_PriorAuthorizationNumberSubmitted(), 
 		   source, 
 		   new String[] {
@@ -6585,21 +6359,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation
-		  (getClaimSegment_IntermediaryAuthorizationTypeId(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
 		  (getClaimSegment_IntermediaryAuthorizationId(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClaimSegment_DispensingStatus(), 
 		   source, 
 		   new String[] {
 			 "name", "element",
@@ -6620,35 +6380,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation
-		  (getClaimSegment_DelayReasonCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
 		  (getClaimSegment_TransactionReferenceNumber(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClaimSegment_PatientAssignmentIndicatordirectMemberReimbursementIndicator(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClaimSegment_RouteOfAdministration(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });		
-		addAnnotation
-		  (getClaimSegment_CompoundType(), 
 		   source, 
 		   new String[] {
 			 "name", "element",
@@ -6662,23 +6394,10 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "namespace", "##targetNamespace"
 		   });		
 		addAnnotation
-		  (getClaimSegment_PharmacyServiceType(), 
-		   source, 
-		   new String[] {
-			 "name", "element",
-			 "namespace", "##targetNamespace"
-		   });			
-		addAnnotation
 		  (getAdditionalDocumentationSegment_SegmentIdentification(), 
 		   source, 
 		   new String[] {
 			 "name", "Id"
-		   });		
-		addAnnotation
-		  (getAdditionalDocumentationSegment_AdditionalDocumentationTypeId(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
 		   });		
 		addAnnotation
 		  (getAdditionalDocumentationSegment_RequestPeriodBeginDate(), 
@@ -6688,18 +6407,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   });		
 		addAnnotation
 		  (getAdditionalDocumentationSegment_RequestPeriodRecertrevisedDate(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getAdditionalDocumentationSegment_RequestStatus(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getAdditionalDocumentationSegment_LengthOfNeedQualifier(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -6763,7 +6470,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getCompoundSegment_SegmentIdentification(), 
 		   source, 
@@ -6771,25 +6478,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "Id"
 		   });		
 		addAnnotation
-		  (getCompoundSegment_CompoundDosageFormDescriptionCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getCompoundSegment_CompoundDispensingUnitFormIndicator(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getCompoundSegment_CompoundIngredientComponentCount(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getCompoundSegment_CompoundProductIdQualifier(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -6892,21 +6581,9 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   new String[] {
 			 "name", "segment",
 			 "namespace", "##targetNamespace"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponseHeaderSegment_VersionreleaseNumber(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponseHeaderSegment_TransactionCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponseHeaderSegment_TransactionCount(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -6934,7 +6611,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponseClaimSegment_SegmentIdentification(), 
 		   source, 
@@ -6994,7 +6671,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponseCoordinationofBenefitsOtherPayersSegment_SegmentIdentification(), 
 		   source, 
@@ -7003,18 +6680,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   });		
 		addAnnotation
 		  (getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerIdCount(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerCoverageType(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerIdQualifier(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -7056,12 +6721,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerPatientRelationshipCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerBenefitEffectiveDate(), 
 		   source, 
 		   new String[] {
@@ -7072,7 +6731,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponseDURPPSSegment_SegmentIdentification(), 
 		   source, 
@@ -7086,19 +6745,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getResponseDURPPSSegment_ReasonForServiceCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getResponseDURPPSSegment_ClinicalSignificanceCode(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponseDURPPSSegment_OtherPharmacyIndicator(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -7122,12 +6769,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getResponseDURPPSSegment_OtherPrescriberIndicator(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getResponseDURPPSSegment_DurFreeTextMessage(), 
 		   source, 
 		   new String[] {
@@ -7138,7 +6779,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponseInsuranceSegment_SegmentIdentification(), 
 		   source, 
@@ -7159,12 +6800,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   });		
 		addAnnotation
 		  (getResponseInsuranceSegment_NetworkReimbursementId(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponseInsuranceSegment_PayerIdQualifier(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -7192,7 +6827,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponseMessageSegment_SegmentIdentification(), 
 		   source, 
@@ -7204,7 +6839,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponsePatientSegment_SegmentIdentification(), 
 		   source, 
@@ -7228,7 +6863,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponsePricingSegment_SegmentIdentification(), 
 		   source, 
@@ -7254,12 +6889,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getResponsePricingSegment_TaxExemptIndicator(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getResponsePricingSegment_FlatSalesTaxAmountPaid(), 
 		   source, 
 		   new String[] {
@@ -7273,12 +6902,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   });		
 		addAnnotation
 		  (getResponsePricingSegment_PercentageSalesTaxRatePaid(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponsePricingSegment_PercentageSalesTaxBasisPaid(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -7302,12 +6925,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getResponsePricingSegment_OtherAmountPaidQualifier(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getResponsePricingSegment_OtherAmountPaid(), 
 		   source, 
 		   new String[] {
@@ -7321,12 +6938,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   });		
 		addAnnotation
 		  (getResponsePricingSegment_TotalAmountPaid(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponsePricingSegment_BasisOfReimbursementDetermination(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -7374,30 +6985,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getResponsePricingSegment_BasisOfCalculationdispensingFee(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponsePricingSegment_BasisOfCalculationcopay(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponsePricingSegment_BasisOfCalculationflatSalesTax(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponsePricingSegment_BasisOfCalculationpercentageSalesTax(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getResponsePricingSegment_AmountAttributedToProcessorFee(), 
 		   source, 
 		   new String[] {
@@ -7422,19 +7009,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getResponsePricingSegment_BasisOfCalculationcoinsurance(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getResponsePricingSegment_BenefitStageCount(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponsePricingSegment_BenefitStageQualifier(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -7504,7 +7079,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponsePriorAuthorizationSegment_SegmentIdentification(), 
 		   source, 
@@ -7558,18 +7133,12 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   source, 
 		   new String[] {
 			 "name", "element"
-		   });			
+		   });		
 		addAnnotation
 		  (getResponseStatusSegment_SegmentIdentification(), 
 		   source, 
 		   new String[] {
 			 "name", "Id"
-		   });		
-		addAnnotation
-		  (getResponseStatusSegment_TransactionResponseStatus(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
 		   });		
 		addAnnotation
 		  (getResponseStatusSegment_AuthorizationNumber(), 
@@ -7579,12 +7148,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   });		
 		addAnnotation
 		  (getResponseStatusSegment_RejectCount(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponseStatusSegment_RejectCode(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -7614,25 +7177,7 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 			 "name", "element"
 		   });		
 		addAnnotation
-		  (getResponseStatusSegment_AdditionalMessageInformationQualifier(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
 		  (getResponseStatusSegment_AdditionalMessageInformation(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponseStatusSegment_AdditionalMessageInformationContinuity(), 
-		   source, 
-		   new String[] {
-			 "name", "element"
-		   });		
-		addAnnotation
-		  (getResponseStatusSegment_HelpDeskPhoneNumberQualifier(), 
 		   source, 
 		   new String[] {
 			 "name", "element"
@@ -7661,499 +7206,6 @@ public class TelecomPackageImpl extends EPackageImpl implements TelecomPackage {
 		   new String[] {
 			 "name", "element"
 		   });
-	}
-
-	/**
-	 * Initializes the annotations for <b>http://www.ncpdp.org/uml/telecom/annotation</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createAnnotationAnnotations() {
-		String source = "http://www.ncpdp.org/uml/telecom/annotation";																																									
-		addAnnotation
-		  (workersCompensationSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "dateOfInjury.field", "434-DY",
-			 "employerName.field", "315-CF",
-			 "employerStreetAddress.field", "316-CG",
-			 "employerCityAddress.field", "317-CH",
-			 "employerStateprovinceAddress.field", "318-CI",
-			 "employerZippostalZone.field", "319-CJ",
-			 "employerPhoneNumber.field", "320-CK",
-			 "employerContactName.field", "321-CL",
-			 "carrierId.field", "327-CR",
-			 "claimreferenceId.field", "435-DZ",
-			 "billingEntityTypeIndicator.field", "117-TR",
-			 "payToQualifier.field", "118-TS",
-			 "payToId.field", "119-TT",
-			 "payToName.field", "120-TU",
-			 "payToStreetAddress.field", "121-TV",
-			 "payToCityAddress.field", "122-TW",
-			 "payToStateprovinceAddress.field", "123-TX",
-			 "payToZippostalZone.field", "124-TY",
-			 "genericEquivalentProductIdQualifier.field", "125-TZ",
-			 "genericEquivalentProductId.field", "126-UA"
-		   });																							
-		addAnnotation
-		  (priorAuthorizationSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "requestType.field", "498-PA",
-			 "requestPeriodDate-begin.field", "498-PB",
-			 "requestPeriodDate-end.field", "498-PC",
-			 "basisOfRequest.field", "498-PD",
-			 "authorizedRepresentativeFirstName.field", "498-PE",
-			 "authorizedRepresentativeLastName.field", "498-PF",
-			 "authorizedRepresentativeStreetAddress.field", "498-PG",
-			 "authorizedRepresentativeCityAddress.field", "498-PH",
-			 "authorizedRepresentativeStateprovinceAddress.field", "498-PJ",
-			 "authorizedRepresentativeZippostalZone.field", "498-PK",
-			 "priorAuthorizationNumber-assigned.field", "498-PY",
-			 "authorizationNumber.field", "503-F3",
-			 "priorAuthorizationSupportingDocumentation.field", "498-PP"
-		   });																
-		addAnnotation
-		  (pricingSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "ingredientCostSubmitted.field", "409-D9",
-			 "dispensingFeeSubmitted.field", "412-DC",
-			 "professionalServiceFeeSubmitted.field", "477-BE",
-			 "patientPaidAmountSubmitted.field", "433-DX",
-			 "incentiveAmountSubmitted.field", "438-E3",
-			 "otherAmountClaimedSubmittedCount.field", "478-H7",
-			 "otherAmountClaimedSubmittedQualifier.field", "479-H8 ",
-			 "otherAmountClaimedSubmitted.field", "480-H9",
-			 "flatSalesTaxAmountSubmitted.field", "481-HA",
-			 "percentageSalesTaxAmountSubmitted.field", "482-GE",
-			 "percentageSalesTaxRateSubmitted.field", "483-HE",
-			 "percentageSalesTaxBasisSubmitted.field", "484-JE ",
-			 "usualAndCustomaryCharge.field", "426-DQ",
-			 "grossAmountDue.field", "430-DU",
-			 "basisOfCostDetermination.field", "423-DN",
-			 "medicaidPaidAmount.field", "113-N3"
-		   });																			
-		addAnnotation
-		  (prescriberSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "prescriberIdQualifier.field", "466-EZ ",
-			 "prescriberId.field", "411-DB",
-			 "prescriberLastName.field", "427-DR",
-			 "prescriberPhoneNumber.field", "498-PM",
-			 "primaryCareProviderIdQualifier.field", "468-2E ",
-			 "primaryCareProviderId.field", "421-DL",
-			 "primaryCareProviderLastName.field", "470-4E",
-			 "prescriberFirstName.field", "364-2J",
-			 "prescriberStreetAddress.field", "365-2K",
-			 "prescriberCityAddress.field", "366-2M",
-			 "prescriberStateprovinceAddress.field", "367-2N",
-			 "prescriberZippostalZone.field", "368-2P"
-		   });															
-		addAnnotation
-		  (pharmacyProviderSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "providerIdQualifier.field", "465-EY ",
-			 "providerId.field", "444-E9"
-		   });					
-		addAnnotation
-		  (patientSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "patientIdQualifier.field", "331-CX",
-			 "patientId.field", "332-CY",
-			 "dateOfBirth.field", "304-C4",
-			 "patientGenderCode.field", "305-C5",
-			 "patientFirstName.field", "310-CA",
-			 "patientLastName.field", "311-CB",
-			 "patientStreetAddress.field", "322-CM",
-			 "patientCityAddress.field", "323-CN",
-			 "patientStateProvinceAddress.field", "324-CO",
-			 "patientZippostalZone.field", "325-CP",
-			 "patientPhoneNumber.field", "326-CQ",
-			 "placeOfService.field", "307-C7",
-			 "employerId.field", "333-CZ",
-			 "smokerNon-smokerCode.field", "334-1C",
-			 "pregnancyIndicator.field", "335-2C",
-			 "patientE-mailAddress.field", "350-HN",
-			 "patientResidence.field", "384-4X"
-		   });																				
-		addAnnotation
-		  (narrativeSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "narrativeMessage.field", "390-BM"
-		   });				
-		addAnnotation
-		  (insuranceSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "cardholderId.field", "302-C2",
-			 "cardholderFirstName.field", "312-CC",
-			 "cardholderLastName.field", "313-CD",
-			 "homePlan.field", "314-CE",
-			 "planId.field", "524-FO",
-			 "eligibilityClarificationCode.field", "309-C9",
-			 "groupId.field", "301-C1",
-			 "personCode.field", "303-C3",
-			 "patientRelationshipCode.field", "306-C6",
-			 "otherPayerBinNumber.field", "990-MG ",
-			 "otherPayerProcessorControlNumber.field", "991-MH ",
-			 "otherPayerCardholderId.field", "356-NU",
-			 "otherPayerGroupId.field", "992-MJ ",
-			 "medigapId.field", "359-2A",
-			 "medicaidIndicator.field", "360-2B",
-			 "providerAcceptAssignmentIndicator.field", "361-2D",
-			 "cmsPartDDefinedQualifiedFacility.field", "997-G2",
-			 "medicaidIdNumber.field", "115-N5",
-			 "medicaidAgencyNumber.field", "116-N6"
-		   });																						
-		addAnnotation
-		  (facilitySegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "facilityId.field", "336-8C",
-			 "facilityName.field", "385-3Q",
-			 "facilityStreetAddress.field", "386-3U",
-			 "facilityCityAddress.field", "388-5J",
-			 "facilityStateprovinceAddress.field", "387-3V",
-			 "facilityZippostalZone.field", "389-6D"
-		   });									
-		addAnnotation
-		  (durppsSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "durppsCodeCounter.field", "473-7E",
-			 "reasonForServiceCode.field", "439-E4",
-			 "professionalServiceCode.field", "440-E5",
-			 "resultOfServiceCode.field", "441-E6",
-			 "durppsLevelOfEffort.field", "474-8E",
-			 "durCo-agentIdQualifier.field", "475-J9",
-			 "durCo-agentId.field", "476-H6"
-		   });										
-		addAnnotation
-		  (couponSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "couponType.field", "485-KE",
-			 "couponNumber.field", "486-ME",
-			 "couponValueAmount.field", "487-NE"
-		   });						
-		addAnnotation
-		  (coordinationofBenefitsOtherPaymentsSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "coordinationOfBenefitsotherPaymentsCount.field", "337-4C",
-			 "otherPayerCoverageType.field", "338-5C",
-			 "otherPayerIdQualifier.field", "339-6C",
-			 "otherPayerId.field", "340-7C",
-			 "otherPayerDate.field", "443-E8",
-			 "internalControlNumber.field", "993-A7",
-			 "otherPayerAmountPaidCount.field", "341-HB",
-			 "otherPayerAmountPaidQualifier.field", "342-HC",
-			 "otherPayerAmountPaid.field", "431-DV",
-			 "otherPayerRejectCount.field", "471-5E",
-			 "otherPayerRejectCode.field", "472-6E",
-			 "otherPayer-patientResponsibilityAmountCount.field", "353-NR",
-			 "otherPayer-patientResponsibilityAmountQualifier.field", "351-NP",
-			 "otherPayer-patientResponsibilityAmount.field", "352-NQ",
-			 "benefitStageCount.field", "392-MU",
-			 "benefitStageQualifier.field", "393-MV",
-			 "benefitStageAmount.field", "394-MW"
-		   });																				
-		addAnnotation
-		  (clinicalSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "diagnosisCodeCount.field", "491-VE",
-			 "diagnosisCodeQualifier.field", "492-WE",
-			 "diagnosisCode.field", "424-DO",
-			 "clinicalInformationCounter.field", "493-XE",
-			 "measurementDate.field", "494-ZE",
-			 "measurementTime.field", "495-H1",
-			 "measurementDimension.field", "496-H2",
-			 "measurementUnit.field", "497-H3",
-			 "measurementValue.field", "499-H4"
-		   });												
-		addAnnotation
-		  (claimSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "prescriptionserviceReferenceNumberQualifier.field", "455-EM",
-			 "prescriptionserviceReferenceNumber.field", "402-D2",
-			 "productserviceIdQualifier.field", "436-E1 ",
-			 "productserviceId.field", "407-D7",
-			 "associatedPrescriptionserviceReferenceNumber.field", "456-EN",
-			 "associatedPrescriptionserviceDate.field", "457-EP",
-			 "procedureModifierCodeCount.field", "458-SE",
-			 "procedureModifierCode.field", "459-ER",
-			 "quantityDispensed.field", "442-E7",
-			 "fillNumber.field", "403-D3",
-			 "daysSupply.field", "405-D5",
-			 "compoundCode.field", "406-D6",
-			 "dispenseAsWritten(daw)productSelectionCode.field", "408-D8",
-			 "datePrescriptionWritten.field", "414-DE",
-			 "numberOfRefillsAuthorized.field", "415-DF",
-			 "prescriptionOriginCode.field", "419-DJ",
-			 "submissionClarificationCodeCount.field", "354-NX",
-			 "submissionClarificationCode.field", "420-DK",
-			 "quantityPrescribed.field", "46 -ET",
-			 "otherCoverageCode.field", "308-C8",
-			 "specialPackagingIndicator.field", "429-DT",
-			 "originallyPrescribedProductserviceIdQualifier.field", "453-EJ",
-			 "originallyPrescribedProductserviceCode.field", "445-EA",
-			 "originallyPrescribedQuantity.field", "446-EB",
-			 "alternateId.field", "330-CW",
-			 "scheduledPrescriptionIdNumber.field", "454-EK",
-			 "unitOfMeasure.field", "600-28",
-			 "levelOfService.field", "418-DI",
-			 "priorAuthorizationTypeCode.field", "461-EU",
-			 "priorAuthorizationNumberSubmitted.field", "462-EV",
-			 "intermediaryAuthorizationTypeId.field", "463-EW",
-			 "intermediaryAuthorizationId.field", "464-EX",
-			 "dispensingStatus.field", "343-HD",
-			 "quantityIntendedToBeDispensed.field", "344-HF",
-			 "daysSupplyIntendedToBeDispensed.field", "345-HG",
-			 "delayReasonCode.field", "357-NV",
-			 "transactionReferenceNumber.field", "880-K5",
-			 "patientAssignmentIndicator(directMemberReimbursementIndicator).field", "391-MT",
-			 "routeOfAdministration.field", "995-E2",
-			 "compoundType.field", "996-G1",
-			 "medicaidSubrogationInternalControlNumbertransactionControlNumber(icntcn).field", "114-N4",
-			 "pharmacyServiceType.field", "147-U7"
-		   });																																													
-		addAnnotation
-		  (additionalDocumentationSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "additionalDocumentationTypeId.field", "369-2Q",
-			 "requestPeriodBeginDate.field", "374-2V",
-			 "requestPeriodRecertrevisedDate.field", "375-2W",
-			 "requestStatus.field", "373-2U",
-			 "lengthOfNeedQualifier.field", "371-2S",
-			 "lengthOfNeed.field", "370-2R",
-			 "prescribersupplierDateSigned.field", "372-2T",
-			 "supportingDocumentation.field", "376-2X",
-			 "questionNumberletterCount.field", "377-2Z",
-			 "questionNumberletter.field", "378-4B",
-			 "questionPercentResponse.field", "379-4D",
-			 "questionDateResponse.field", "380-4G",
-			 "questionDollarAmountResponse.field", "381-4H",
-			 "questionNumericResponse.field", "382-4J",
-			 "questionAlphanumericResponse.field", "383-4K"
-		   });																		
-		addAnnotation
-		  (compoundSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "compoundDosageFormDescriptionCode.field", "450-EF",
-			 "compoundDispensingUnitFormIndicator.field", "451-EG",
-			 "compoundIngredientComponentCount.field", "447-EC ",
-			 "compoundProductIdQualifier.field", "488-RE",
-			 "compoundProductId.field", "489-TE",
-			 "compoundIngredientQuantity.field", "448-ED ",
-			 "compoundIngredientDrugCost.field", "449-EE",
-			 "compoundIngredientBasisOfCostDetermination.field", "490-UE",
-			 "compoundIngredientModifierCodeCount.field", "362-2G",
-			 "compoundIngredientModifierCode.field", "363-2H"
-		   });																						
-		addAnnotation
-		  (responseHeaderSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "versionReleaseNumber.field", "102-A2",
-			 "transactionCode.field", "103-A3",
-			 "transactionCount.field", "109-A9",
-			 "headerResponseStatus.field", "501-FI",
-			 "serviceProviderIDQualifier.field", "202-B2",
-			 "serviceProviderID.field", "201-B1",
-			 "dateofService.field", "401-D1"
-		   });									
-		addAnnotation
-		  (responseClaimSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "prescriptionserviceReferenceNumberQualifier.field", "455-EM",
-			 "prescriptionserviceReferenceNumber.field", "402-D2",
-			 "preferredProductCount.field", "551-9F",
-			 "preferredProductIDQualifier.field", "552-AP",
-			 "preferredProductID.field", "553-AR",
-			 "preferredProductIncentive.field", "554-AS",
-			 "preferredProductCostShareIncentive.field", "555-AT",
-			 "preferredProductDescription.field", "551-9F",
-			 "medicaidSubrogationInternalControlNumbertransactionControlNumbericntcn.field", "114-N4"
-		   });												
-		addAnnotation
-		  (responseCoordinationofBenefitsOtherPayersSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "otherPayerIDCount.field", "355-NT",
-			 "otherPayerCoverageType.field", "338-5C",
-			 "otherPayerIDQualifier.field", "339-6C",
-			 "otherPayerID.field", "340-7C",
-			 "otherPayerProcessorControlNumber.field", "991-MH",
-			 "otherPayerCardholderID.field", "356-NU",
-			 "otherPayerGroupID.field", "992-MJ",
-			 "otherPayerPersonCode.field", "142-UV",
-			 "otherPayerHelpDeskPhoneNumber.field", "127-UB",
-			 "otherPayerPatientRelationshipCode.field", "143-UW",
-			 "otherPayerBenefitEffectiveDate.field", "144-UX",
-			 "otherPayerBenefitTerminationDate.field", "145-UY"
-		   });															
-		addAnnotation
-		  (responseDURPPSSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "dURPPSResponseCodeCounter.field", "567-J6",
-			 "reasonforServiceCode.field", "439-E4",
-			 "clinicalSignificanceCode.field", "528-FS",
-			 "otherPharmacyIndicator.field", "529-FT",
-			 "quantityofPreviousFill.field", "531-FV",
-			 "previousDateofFill.field", "530-FU",
-			 "databaseIndicator.field", "532-FW",
-			 "otherPrescriberIndicator.field", "533-FX",
-			 "dURFreeTextMessage.field", "544-FY",
-			 "dURAdditionalText.field", "570-NS"
-		   });													
-		addAnnotation
-		  (responseInsuranceSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "groupID.field", "301-C1",
-			 "planID.field", "524-FO",
-			 "networkReimbursementID.field", "545-2F",
-			 "payerIDQualifier.field", "568-J7",
-			 "payerID.field", "569-J8",
-			 "medicaidIDNumber.field", "115-N5",
-			 "medicaidAgencyNumber.field", "116-N6",
-			 "cardholderID.field", "302-C2"
-		   });											
-		addAnnotation
-		  (responseMessageSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "message.field", "504-F4"
-		   });				
-		addAnnotation
-		  (responsePatientSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "patientFirstName.field", "310-CA",
-			 "patientLastName.field", "311-CB",
-			 "dateOfBirth.field", "304-C4"
-		   });						
-		addAnnotation
-		  (responsePricingSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "patientPayAmount.field", "505-F5",
-			 "ingredientCostPaid.field", "506-F6",
-			 "dispensingFeePaid.field", "507-F7",
-			 "taxExemptIndicator.field", "557-AV",
-			 "flatSalesTaxAmountPaid.field", "558-AW",
-			 "percentageSalesTaxAmountPaid.field", "559-AX",
-			 "percentageSalesTaxRatePaid.field", "560-AY",
-			 "percentageSalesTaxBasisPaid.field", "561-AZ",
-			 "incentiveAmountPaid.field", "521-FL",
-			 "professionalServiceFeePaid.field", "562-J1",
-			 "otherAmountPaidCount.field", "563-J2",
-			 "otherAmountPaidQualifier.field", "564-J3",
-			 "otherAmountPaid.field", "565-J4",
-			 "otherPayerAmountRecognized.field", "566-J5",
-			 "totalAmountPaid.field", "509-F9",
-			 "basisofReimbursementDetermination.field", "522-FM",
-			 "amountAttributedtoSalesTax.field", "523-FN",
-			 "accumulatedDeductibleAmount.field", "512-FC",
-			 "remainingDeductibleAmount.field", "513-FD",
-			 "remainingBenefitAmount.field", "514-FE",
-			 "amountAppliedtoPeriodicDeductible.field", "517-FH",
-			 "amountofCopay.field", "518-F1",
-			 "amountExceedingPeriodicBenefitMaximum.field", "520-FK",
-			 "basisofCalculationDispensingFee.field", "346-HH",
-			 "basisofCalculationCopay.field", "347-HJ",
-			 "basisofCalculationFlatSalesTax.field", "348-HK",
-			 "basisofCalculationPercentageSalesTax.field", "349-HM",
-			 "amountAttributedtoProcessorFee.field", "571-NZ",
-			 "patientSalesTaxAmount.field", "575-EQ",
-			 "planSalesTaxAmount.field", "574-2Y",
-			 "amountofCoinsurance.field", "572-4U",
-			 "basisofCalculation-Coinsurance.field", "573-4V",
-			 "benefitStageCount.field", "392-MU",
-			 "benefitStageQualifier.field", "393-MV",
-			 "benefitStageAmount.field", "394-MW",
-			 "estimatedGenericSavings.field", "577-G3",
-			 "spendingAccountAmountRemaining.field", "128-UC",
-			 "healthPlan-FundedAssistanceAmount.field", "129-UD",
-			 "amountAttributedtoProviderNetworkSelection.field", "133-UJ",
-			 "amountAttributedtoProductSelectionBrandDrug.field", "134-UK",
-			 "amountAttributedtoProductSelectionNon-PreferredFormularySelection.field", "135-UM",
-			 "amountAttributedtoProductSelectionBrandNon-PreferredFormularySelection.field", "136-UN",
-			 "amountAttributedtoCoverageGap.field", "137-UP",
-			 "ingredientCostContractedReimbursableAmount.field", "148-U8",
-			 "dispensingFeeContractedReimbursableAmount.field", "149-U9"
-		   });																																																
-		addAnnotation
-		  (responsePriorAuthorizationSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "priorAuthorizationProcessedDate.field", "498-PR",
-			 "priorAuthorizationEffectiveDate.field", "498-PS",
-			 "priorAuthorizationExpirationDate.field", "498-PT",
-			 "priorAuthorizationQuantity.field", "498-RA",
-			 "priorAuthorizationDollarsAuthorized.field", "498-RB",
-			 "priorAuthorizationNumberofRefillsAuthorized.field", "498-PW",
-			 "priorAuthorizationQuantityAccumulated.field", "498-PX",
-			 "priorAuthorizationNumber-Assigned.field", "498-PY"
-		   });											
-		addAnnotation
-		  (responseStatusSegmentEClass, 
-		   source, 
-		   new String[] {
-			 "segmentIdentification", "111-AM",
-			 "transactionResponseStatus.field", "112-AN",
-			 "authorizationNumber.field", "503-F3",
-			 "rejectCount.field", "510-FA",
-			 "rejectCode.field", "511-FB",
-			 "rejectFieldOccurrenceIndicator.field", "546-4F",
-			 "approvedMessageCodeCount.field", "547-5F",
-			 "approvedMessageCode.field", "548-6F",
-			 "additionalMessageInformationCount.field", "130-UF",
-			 "additionalMessageInformationQualifier.field", "132-UH",
-			 "additionalMessageInformation.field", "526-FQ",
-			 "additionalMessageInformationContinuity.field", "131-UG",
-			 "helpDeskPhoneNumberQualifier.field", "549-7F",
-			 "helpDeskPhoneNumber.field", "550-8F",
-			 "transactionReferenceNumber.field", "880-K5",
-			 "internalControlNumber.field", "993-A7",
-			 "url.field", "987-MA"
-		   });																	
 	}
 
 } //TelecomPackageImpl

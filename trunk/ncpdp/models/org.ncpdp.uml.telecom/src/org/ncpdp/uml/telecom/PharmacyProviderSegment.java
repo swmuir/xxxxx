@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getPharmacyProviderSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' providerIdQualifier.field='465-EY ' providerId.field='444-E9'"
+ * @model
  * @generated
  */
 public interface PharmacyProviderSegment extends EObject {
@@ -51,7 +51,7 @@ public interface PharmacyProviderSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Provider Id Qualifier</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Provider Id Qualifier</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -68,7 +68,7 @@ public interface PharmacyProviderSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Provider Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Provider Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

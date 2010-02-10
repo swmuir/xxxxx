@@ -21,6 +21,10 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.OtherPharmacyIndicator;
+import org.ncpdp.uml.ECL.OtherPrescriberIndicator;
+import org.ncpdp.uml.ECL.ReasonforServiceCode;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.ResponseDURPPSSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -70,14 +74,14 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 	protected EList<Field> durppsResponseCodeCounter;
 
 	/**
-	 * The cached value of the '{@link #getReasonForServiceCode() <em>Reason For Service Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getReasonForServiceCode() <em>Reason For Service Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getReasonForServiceCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> reasonForServiceCode;
+	protected EList<ReasonforServiceCode> reasonForServiceCode;
 
 	/**
 	 * The cached value of the '{@link #getClinicalSignificanceCode() <em>Clinical Significance Code</em>}' containment reference list.
@@ -90,14 +94,14 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 	protected EList<Field> clinicalSignificanceCode;
 
 	/**
-	 * The cached value of the '{@link #getOtherPharmacyIndicator() <em>Other Pharmacy Indicator</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherPharmacyIndicator() <em>Other Pharmacy Indicator</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherPharmacyIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherPharmacyIndicator;
+	protected EList<OtherPharmacyIndicator> otherPharmacyIndicator;
 
 	/**
 	 * The cached value of the '{@link #getPreviousDateOfFill() <em>Previous Date Of Fill</em>}' containment reference list.
@@ -130,14 +134,14 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 	protected EList<Field> databaseIndicator;
 
 	/**
-	 * The cached value of the '{@link #getOtherPrescriberIndicator() <em>Other Prescriber Indicator</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherPrescriberIndicator() <em>Other Prescriber Indicator</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherPrescriberIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherPrescriberIndicator;
+	protected EList<OtherPrescriberIndicator> otherPrescriberIndicator;
 
 	/**
 	 * The cached value of the '{@link #getDurFreeTextMessage() <em>Dur Free Text Message</em>}' containment reference list.
@@ -207,9 +211,9 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getReasonForServiceCode() {
+	public EList<ReasonforServiceCode> getReasonForServiceCode() {
 		if (reasonForServiceCode == null) {
-			reasonForServiceCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE);
+			reasonForServiceCode = new EDataTypeUniqueEList<ReasonforServiceCode>(ReasonforServiceCode.class, this, TelecomPackage.RESPONSE_DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE);
 		}
 		return reasonForServiceCode;
 	}
@@ -231,9 +235,9 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherPharmacyIndicator() {
+	public EList<OtherPharmacyIndicator> getOtherPharmacyIndicator() {
 		if (otherPharmacyIndicator == null) {
-			otherPharmacyIndicator = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_DURPPS_SEGMENT__OTHER_PHARMACY_INDICATOR);
+			otherPharmacyIndicator = new EDataTypeUniqueEList<OtherPharmacyIndicator>(OtherPharmacyIndicator.class, this, TelecomPackage.RESPONSE_DURPPS_SEGMENT__OTHER_PHARMACY_INDICATOR);
 		}
 		return otherPharmacyIndicator;
 	}
@@ -279,9 +283,9 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherPrescriberIndicator() {
+	public EList<OtherPrescriberIndicator> getOtherPrescriberIndicator() {
 		if (otherPrescriberIndicator == null) {
-			otherPrescriberIndicator = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_DURPPS_SEGMENT__OTHER_PRESCRIBER_INDICATOR);
+			otherPrescriberIndicator = new EDataTypeUniqueEList<OtherPrescriberIndicator>(OtherPrescriberIndicator.class, this, TelecomPackage.RESPONSE_DURPPS_SEGMENT__OTHER_PRESCRIBER_INDICATOR);
 		}
 		return otherPrescriberIndicator;
 	}
@@ -320,20 +324,14 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 		switch (featureID) {
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__DURPPS_RESPONSE_CODE_COUNTER:
 				return ((InternalEList<?>)getDurppsResponseCodeCounter()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE:
-				return ((InternalEList<?>)getReasonForServiceCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__CLINICAL_SIGNIFICANCE_CODE:
 				return ((InternalEList<?>)getClinicalSignificanceCode()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__OTHER_PHARMACY_INDICATOR:
-				return ((InternalEList<?>)getOtherPharmacyIndicator()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__PREVIOUS_DATE_OF_FILL:
 				return ((InternalEList<?>)getPreviousDateOfFill()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__QUANTITY_OF_PREVIOUS_FILL:
 				return ((InternalEList<?>)getQuantityOfPreviousFill()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__DATABASE_INDICATOR:
 				return ((InternalEList<?>)getDatabaseIndicator()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__OTHER_PRESCRIBER_INDICATOR:
-				return ((InternalEList<?>)getOtherPrescriberIndicator()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__DUR_FREE_TEXT_MESSAGE:
 				return ((InternalEList<?>)getDurFreeTextMessage()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__DUR_ADDITIONAL_TEXT:
@@ -395,7 +393,7 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 				return;
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE:
 				getReasonForServiceCode().clear();
-				getReasonForServiceCode().addAll((Collection<? extends Field>)newValue);
+				getReasonForServiceCode().addAll((Collection<? extends ReasonforServiceCode>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__CLINICAL_SIGNIFICANCE_CODE:
 				getClinicalSignificanceCode().clear();
@@ -403,7 +401,7 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 				return;
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__OTHER_PHARMACY_INDICATOR:
 				getOtherPharmacyIndicator().clear();
-				getOtherPharmacyIndicator().addAll((Collection<? extends Field>)newValue);
+				getOtherPharmacyIndicator().addAll((Collection<? extends OtherPharmacyIndicator>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__PREVIOUS_DATE_OF_FILL:
 				getPreviousDateOfFill().clear();
@@ -419,7 +417,7 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 				return;
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__OTHER_PRESCRIBER_INDICATOR:
 				getOtherPrescriberIndicator().clear();
-				getOtherPrescriberIndicator().addAll((Collection<? extends Field>)newValue);
+				getOtherPrescriberIndicator().addAll((Collection<? extends OtherPrescriberIndicator>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_DURPPS_SEGMENT__DUR_FREE_TEXT_MESSAGE:
 				getDurFreeTextMessage().clear();
@@ -524,6 +522,12 @@ public class ResponseDURPPSSegmentImpl extends EObjectImpl implements ResponseDU
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", reasonForServiceCode: ");
+		result.append(reasonForServiceCode);
+		result.append(", otherPharmacyIndicator: ");
+		result.append(otherPharmacyIndicator);
+		result.append(", otherPrescriberIndicator: ");
+		result.append(otherPrescriberIndicator);
 		result.append(')');
 		return result.toString();
 	}

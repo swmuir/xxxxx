@@ -21,6 +21,8 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.RequestType;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.PriorAuthorizationSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -63,14 +65,14 @@ public class PriorAuthorizationSegmentImpl extends EObjectImpl implements PriorA
 	protected EList<String> segmentIdentification;
 
 	/**
-	 * The cached value of the '{@link #getRequestType() <em>Request Type</em>}' containment reference list.
+	 * The cached value of the '{@link #getRequestType() <em>Request Type</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRequestType()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> requestType;
+	protected EList<RequestType> requestType;
 
 	/**
 	 * The cached value of the '{@link #getRequestPeriodDatebegin() <em>Request Period Datebegin</em>}' containment reference list.
@@ -228,9 +230,9 @@ public class PriorAuthorizationSegmentImpl extends EObjectImpl implements PriorA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getRequestType() {
+	public EList<RequestType> getRequestType() {
 		if (requestType == null) {
-			requestType = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.PRIOR_AUTHORIZATION_SEGMENT__REQUEST_TYPE);
+			requestType = new EDataTypeUniqueEList<RequestType>(RequestType.class, this, TelecomPackage.PRIOR_AUTHORIZATION_SEGMENT__REQUEST_TYPE);
 		}
 		return requestType;
 	}
@@ -387,8 +389,6 @@ public class PriorAuthorizationSegmentImpl extends EObjectImpl implements PriorA
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TelecomPackage.PRIOR_AUTHORIZATION_SEGMENT__REQUEST_TYPE:
-				return ((InternalEList<?>)getRequestType()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PRIOR_AUTHORIZATION_SEGMENT__REQUEST_PERIOD_DATEBEGIN:
 				return ((InternalEList<?>)getRequestPeriodDatebegin()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PRIOR_AUTHORIZATION_SEGMENT__REQUEST_PERIOD_DATEEND:
@@ -472,7 +472,7 @@ public class PriorAuthorizationSegmentImpl extends EObjectImpl implements PriorA
 				return;
 			case TelecomPackage.PRIOR_AUTHORIZATION_SEGMENT__REQUEST_TYPE:
 				getRequestType().clear();
-				getRequestType().addAll((Collection<? extends Field>)newValue);
+				getRequestType().addAll((Collection<? extends RequestType>)newValue);
 				return;
 			case TelecomPackage.PRIOR_AUTHORIZATION_SEGMENT__REQUEST_PERIOD_DATEBEGIN:
 				getRequestPeriodDatebegin().clear();
@@ -632,6 +632,8 @@ public class PriorAuthorizationSegmentImpl extends EObjectImpl implements PriorA
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", requestType: ");
+		result.append(requestType);
 		result.append(')');
 		return result.toString();
 	}

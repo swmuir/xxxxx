@@ -21,6 +21,8 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.PayerIDQualifier;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.ResponseInsuranceSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -88,14 +90,14 @@ public class ResponseInsuranceSegmentImpl extends EObjectImpl implements Respons
 	protected EList<Field> networkReimbursementId;
 
 	/**
-	 * The cached value of the '{@link #getPayerIdQualifier() <em>Payer Id Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getPayerIdQualifier() <em>Payer Id Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPayerIdQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> payerIdQualifier;
+	protected EList<PayerIDQualifier> payerIdQualifier;
 
 	/**
 	 * The cached value of the '{@link #getPayerId() <em>Payer Id</em>}' containment reference list.
@@ -209,9 +211,9 @@ public class ResponseInsuranceSegmentImpl extends EObjectImpl implements Respons
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPayerIdQualifier() {
+	public EList<PayerIDQualifier> getPayerIdQualifier() {
 		if (payerIdQualifier == null) {
-			payerIdQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_INSURANCE_SEGMENT__PAYER_ID_QUALIFIER);
+			payerIdQualifier = new EDataTypeUniqueEList<PayerIDQualifier>(PayerIDQualifier.class, this, TelecomPackage.RESPONSE_INSURANCE_SEGMENT__PAYER_ID_QUALIFIER);
 		}
 		return payerIdQualifier;
 	}
@@ -278,8 +280,6 @@ public class ResponseInsuranceSegmentImpl extends EObjectImpl implements Respons
 				return ((InternalEList<?>)getPlanId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_INSURANCE_SEGMENT__NETWORK_REIMBURSEMENT_ID:
 				return ((InternalEList<?>)getNetworkReimbursementId()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_INSURANCE_SEGMENT__PAYER_ID_QUALIFIER:
-				return ((InternalEList<?>)getPayerIdQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_INSURANCE_SEGMENT__PAYER_ID:
 				return ((InternalEList<?>)getPayerId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_INSURANCE_SEGMENT__MEDICAID_ID_NUMBER:
@@ -349,7 +349,7 @@ public class ResponseInsuranceSegmentImpl extends EObjectImpl implements Respons
 				return;
 			case TelecomPackage.RESPONSE_INSURANCE_SEGMENT__PAYER_ID_QUALIFIER:
 				getPayerIdQualifier().clear();
-				getPayerIdQualifier().addAll((Collection<? extends Field>)newValue);
+				getPayerIdQualifier().addAll((Collection<? extends PayerIDQualifier>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_INSURANCE_SEGMENT__PAYER_ID:
 				getPayerId().clear();
@@ -452,6 +452,8 @@ public class ResponseInsuranceSegmentImpl extends EObjectImpl implements Respons
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", payerIdQualifier: ");
+		result.append(payerIdQualifier);
 		result.append(')');
 		return result.toString();
 	}

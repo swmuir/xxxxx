@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseClaimSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' prescriptionserviceReferenceNumberQualifier.field='455-EM' prescriptionserviceReferenceNumber.field='402-D2' preferredProductCount.field='551-9F' preferredProductIDQualifier.field='552-AP' preferredProductID.field='553-AR' preferredProductIncentive.field='554-AS' preferredProductCostShareIncentive.field='555-AT' preferredProductDescription.field='551-9F' medicaidSubrogationInternalControlNumbertransactionControlNumbericntcn.field='114-N4'"
+ * @model
  * @generated
  */
 public interface ResponseClaimSegment extends EObject {
@@ -58,7 +58,7 @@ public interface ResponseClaimSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriptionservice Reference Number Qualifier</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriptionservice Reference Number Qualifier</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -75,7 +75,7 @@ public interface ResponseClaimSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriptionservice Reference Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriptionservice Reference Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -92,7 +92,7 @@ public interface ResponseClaimSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Preferred Product Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Preferred Product Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -109,7 +109,7 @@ public interface ResponseClaimSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Preferred Product Id Qualifier</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Preferred Product Id Qualifier</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -126,7 +126,7 @@ public interface ResponseClaimSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Preferred Product Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Preferred Product Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -143,7 +143,7 @@ public interface ResponseClaimSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Preferred Product Incentive</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Preferred Product Incentive</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -160,7 +160,7 @@ public interface ResponseClaimSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Preferred Product Cost Share Incentive</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Preferred Product Cost Share Incentive</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -177,7 +177,7 @@ public interface ResponseClaimSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Preferred Product Description</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Preferred Product Description</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -194,7 +194,7 @@ public interface ResponseClaimSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Medicaid Subrogation Internal Control Numbertransaction Control Numbericntcn</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Medicaid Subrogation Internal Control Numbertransaction Control Numbericntcn</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

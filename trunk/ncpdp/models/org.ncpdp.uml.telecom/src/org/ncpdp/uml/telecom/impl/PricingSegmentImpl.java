@@ -21,6 +21,8 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.BasisOfCostDetermination;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.PricingSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -206,14 +208,14 @@ public class PricingSegmentImpl extends EObjectImpl implements PricingSegment {
 	protected EList<Field> grossAmountDue;
 
 	/**
-	 * The cached value of the '{@link #getBasisOfCostDetermination() <em>Basis Of Cost Determination</em>}' containment reference list.
+	 * The cached value of the '{@link #getBasisOfCostDetermination() <em>Basis Of Cost Determination</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBasisOfCostDetermination()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> basisOfCostDetermination;
+	protected EList<BasisOfCostDetermination> basisOfCostDetermination;
 
 	/**
 	 * The cached value of the '{@link #getMedicaidPaidAmount() <em>Medicaid Paid Amount</em>}' containment reference list.
@@ -429,9 +431,9 @@ public class PricingSegmentImpl extends EObjectImpl implements PricingSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBasisOfCostDetermination() {
+	public EList<BasisOfCostDetermination> getBasisOfCostDetermination() {
 		if (basisOfCostDetermination == null) {
-			basisOfCostDetermination = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.PRICING_SEGMENT__BASIS_OF_COST_DETERMINATION);
+			basisOfCostDetermination = new EDataTypeUniqueEList<BasisOfCostDetermination>(BasisOfCostDetermination.class, this, TelecomPackage.PRICING_SEGMENT__BASIS_OF_COST_DETERMINATION);
 		}
 		return basisOfCostDetermination;
 	}
@@ -484,8 +486,6 @@ public class PricingSegmentImpl extends EObjectImpl implements PricingSegment {
 				return ((InternalEList<?>)getUsualAndCustomaryCharge()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PRICING_SEGMENT__GROSS_AMOUNT_DUE:
 				return ((InternalEList<?>)getGrossAmountDue()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.PRICING_SEGMENT__BASIS_OF_COST_DETERMINATION:
-				return ((InternalEList<?>)getBasisOfCostDetermination()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PRICING_SEGMENT__MEDICAID_PAID_AMOUNT:
 				return ((InternalEList<?>)getMedicaidPaidAmount()).basicRemove(otherEnd, msgs);
 		}
@@ -609,7 +609,7 @@ public class PricingSegmentImpl extends EObjectImpl implements PricingSegment {
 				return;
 			case TelecomPackage.PRICING_SEGMENT__BASIS_OF_COST_DETERMINATION:
 				getBasisOfCostDetermination().clear();
-				getBasisOfCostDetermination().addAll((Collection<? extends Field>)newValue);
+				getBasisOfCostDetermination().addAll((Collection<? extends BasisOfCostDetermination>)newValue);
 				return;
 			case TelecomPackage.PRICING_SEGMENT__MEDICAID_PAID_AMOUNT:
 				getMedicaidPaidAmount().clear();
@@ -740,6 +740,8 @@ public class PricingSegmentImpl extends EObjectImpl implements PricingSegment {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", basisOfCostDetermination: ");
+		result.append(basisOfCostDetermination);
 		result.append(')');
 		return result.toString();
 	}

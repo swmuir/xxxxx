@@ -15,6 +15,9 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
+import org.ncpdp.uml.ECL.TransactionCode;
+import org.ncpdp.uml.ECL.TransactionCount;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
 import org.ncpdp.uml.telecom.TransactionHeaderSegment;
@@ -73,14 +76,24 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 	protected Field softwareVendorcertificationId;
 
 	/**
-	 * The cached value of the '{@link #getTransactionCount() <em>Transaction Count</em>}' containment reference.
+	 * The default value of the '{@link #getTransactionCount() <em>Transaction Count</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getTransactionCount()
 	 * @generated
 	 * @ordered
 	 */
-	protected Field transactionCount;
+	protected static final TransactionCount TRANSACTION_COUNT_EDEFAULT = TransactionCount.TRANSACTION_COUNT_BLANK;
+
+	/**
+	 * The cached value of the '{@link #getTransactionCount() <em>Transaction Count</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTransactionCount()
+	 * @generated
+	 * @ordered
+	 */
+	protected TransactionCount transactionCount = TRANSACTION_COUNT_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getServiceProviderId() <em>Service Provider Id</em>}' containment reference.
@@ -133,14 +146,24 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 	protected Field version;
 
 	/**
-	 * The cached value of the '{@link #getTransactionCode() <em>Transaction Code</em>}' containment reference.
+	 * The default value of the '{@link #getTransactionCode() <em>Transaction Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getTransactionCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected Field transactionCode;
+	protected static final TransactionCode TRANSACTION_CODE_EDEFAULT = TransactionCode.TRANSACTION_CODE_B1;
+
+	/**
+	 * The cached value of the '{@link #getTransactionCode() <em>Transaction Code</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTransactionCode()
+	 * @generated
+	 * @ordered
+	 */
+	protected TransactionCode transactionCode = TRANSACTION_CODE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -295,7 +318,7 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Field getTransactionCount() {
+	public TransactionCount getTransactionCount() {
 		return transactionCount;
 	}
 
@@ -304,33 +327,11 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTransactionCount(Field newTransactionCount, NotificationChain msgs) {
-		Field oldTransactionCount = transactionCount;
-		transactionCount = newTransactionCount;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT, oldTransactionCount, newTransactionCount);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTransactionCount(Field newTransactionCount) {
-		if (newTransactionCount != transactionCount) {
-			NotificationChain msgs = null;
-			if (transactionCount != null)
-				msgs = ((InternalEObject)transactionCount).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT, null, msgs);
-			if (newTransactionCount != null)
-				msgs = ((InternalEObject)newTransactionCount).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT, null, msgs);
-			msgs = basicSetTransactionCount(newTransactionCount, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT, newTransactionCount, newTransactionCount));
+	public void setTransactionCount(TransactionCount newTransactionCount) {
+		TransactionCount oldTransactionCount = transactionCount;
+		transactionCount = newTransactionCount == null ? TRANSACTION_COUNT_EDEFAULT : newTransactionCount;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT, oldTransactionCount, transactionCount));
 	}
 
 	/**
@@ -553,7 +554,7 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Field getTransactionCode() {
+	public TransactionCode getTransactionCode() {
 		return transactionCode;
 	}
 
@@ -562,33 +563,11 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTransactionCode(Field newTransactionCode, NotificationChain msgs) {
-		Field oldTransactionCode = transactionCode;
-		transactionCode = newTransactionCode;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE, oldTransactionCode, newTransactionCode);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTransactionCode(Field newTransactionCode) {
-		if (newTransactionCode != transactionCode) {
-			NotificationChain msgs = null;
-			if (transactionCode != null)
-				msgs = ((InternalEObject)transactionCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE, null, msgs);
-			if (newTransactionCode != null)
-				msgs = ((InternalEObject)newTransactionCode).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE, null, msgs);
-			msgs = basicSetTransactionCode(newTransactionCode, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE, newTransactionCode, newTransactionCode));
+	public void setTransactionCode(TransactionCode newTransactionCode) {
+		TransactionCode oldTransactionCode = transactionCode;
+		transactionCode = newTransactionCode == null ? TRANSACTION_CODE_EDEFAULT : newTransactionCode;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE, oldTransactionCode, transactionCode));
 	}
 
 	/**
@@ -605,8 +584,6 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 				return basicSetDateOfService(null, msgs);
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__SOFTWARE_VENDORCERTIFICATION_ID:
 				return basicSetSoftwareVendorcertificationId(null, msgs);
-			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT:
-				return basicSetTransactionCount(null, msgs);
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__SERVICE_PROVIDER_ID:
 				return basicSetServiceProviderId(null, msgs);
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__PROCESSOR_CONTROL_NUMBER:
@@ -617,8 +594,6 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 				return basicSetBinNumber(null, msgs);
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__VERSION:
 				return basicSetVersion(null, msgs);
-			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE:
-				return basicSetTransactionCode(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -673,7 +648,7 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 				setSoftwareVendorcertificationId((Field)newValue);
 				return;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT:
-				setTransactionCount((Field)newValue);
+				setTransactionCount((TransactionCount)newValue);
 				return;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__SERVICE_PROVIDER_ID:
 				setServiceProviderId((Field)newValue);
@@ -691,7 +666,7 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 				setVersion((Field)newValue);
 				return;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE:
-				setTransactionCode((Field)newValue);
+				setTransactionCode((TransactionCode)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -715,7 +690,7 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 				setSoftwareVendorcertificationId((Field)null);
 				return;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT:
-				setTransactionCount((Field)null);
+				setTransactionCount(TRANSACTION_COUNT_EDEFAULT);
 				return;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__SERVICE_PROVIDER_ID:
 				setServiceProviderId((Field)null);
@@ -733,7 +708,7 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 				setVersion((Field)null);
 				return;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE:
-				setTransactionCode((Field)null);
+				setTransactionCode(TRANSACTION_CODE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -754,7 +729,7 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__SOFTWARE_VENDORCERTIFICATION_ID:
 				return softwareVendorcertificationId != null;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_COUNT:
-				return transactionCount != null;
+				return transactionCount != TRANSACTION_COUNT_EDEFAULT;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__SERVICE_PROVIDER_ID:
 				return serviceProviderId != null;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__PROCESSOR_CONTROL_NUMBER:
@@ -766,9 +741,27 @@ public class TransactionHeaderSegmentImpl extends EObjectImpl implements Transac
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__VERSION:
 				return version != null;
 			case TelecomPackage.TRANSACTION_HEADER_SEGMENT__TRANSACTION_CODE:
-				return transactionCode != null;
+				return transactionCode != TRANSACTION_CODE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (transactionCount: ");
+		result.append(transactionCount);
+		result.append(", transactionCode: ");
+		result.append(transactionCode);
+		result.append(')');
+		return result.toString();
 	}
 
 } //TransactionHeaderSegmentImpl

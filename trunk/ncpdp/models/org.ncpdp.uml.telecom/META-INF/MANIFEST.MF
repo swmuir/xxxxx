@@ -12,7 +12,8 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore.xmi,
  org.eclipse.ocl,
  org.eclipse.ocl.ecore,
- org.junit4
+ org.junit4,
+ org.ncpdp.uml.ecl;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Export-Package: org.ncpdp.uml.telecom,
  org.ncpdp.uml.telecom.impl,

@@ -10,6 +10,12 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity;
+import org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier;
+import org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier;
+import org.ncpdp.uml.ECL.RejectCode;
+import org.ncpdp.uml.ECL.TransactionResponseStatus;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Response Status Segment</b></em>'.
@@ -39,7 +45,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' transactionResponseStatus.field='112-AN' authorizationNumber.field='503-F3' rejectCount.field='510-FA' rejectCode.field='511-FB' rejectFieldOccurrenceIndicator.field='546-4F' approvedMessageCodeCount.field='547-5F' approvedMessageCode.field='548-6F' additionalMessageInformationCount.field='130-UF' additionalMessageInformationQualifier.field='132-UH' additionalMessageInformation.field='526-FQ' additionalMessageInformationContinuity.field='131-UG' helpDeskPhoneNumberQualifier.field='549-7F' helpDeskPhoneNumber.field='550-8F' transactionReferenceNumber.field='880-K5' internalControlNumber.field='993-A7' url.field='987-MA'"
+ * @model
  * @generated
  */
 public interface ResponseStatusSegment extends EObject {
@@ -61,28 +67,29 @@ public interface ResponseStatusSegment extends EObject {
 	EList<String> getSegmentIdentification();
 
 	/**
-	 * Returns the value of the '<em><b>Transaction Response Status</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Transaction Response Status</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.TransactionResponseStatus}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.TransactionResponseStatus}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Transaction Response Status</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Transaction Response Status</em>' containment reference list.
+	 * @return the value of the '<em>Transaction Response Status</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.TransactionResponseStatus
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_TransactionResponseStatus()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getTransactionResponseStatus();
+	EList<TransactionResponseStatus> getTransactionResponseStatus();
 
 	/**
 	 * Returns the value of the '<em><b>Authorization Number</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Authorization Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Authorization Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -99,7 +106,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Reject Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Reject Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -112,28 +119,29 @@ public interface ResponseStatusSegment extends EObject {
 	EList<Field> getRejectCount();
 
 	/**
-	 * Returns the value of the '<em><b>Reject Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Reject Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.RejectCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.RejectCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Reject Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reject Code</em>' containment reference list.
+	 * @return the value of the '<em>Reject Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.RejectCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_RejectCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getRejectCode();
+	EList<RejectCode> getRejectCode();
 
 	/**
 	 * Returns the value of the '<em><b>Reject Field Occurrence Indicator</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Reject Field Occurrence Indicator</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Reject Field Occurrence Indicator</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -150,7 +158,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Approved Message Code Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Approved Message Code Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -167,7 +175,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Approved Message Code</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Approved Message Code</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -184,7 +192,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Additional Message Information Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Additional Message Information Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -197,28 +205,29 @@ public interface ResponseStatusSegment extends EObject {
 	EList<Field> getAdditionalMessageInformationCount();
 
 	/**
-	 * Returns the value of the '<em><b>Additional Message Information Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Additional Message Information Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Additional Message Information Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Additional Message Information Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Additional Message Information Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_AdditionalMessageInformationQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getAdditionalMessageInformationQualifier();
+	EList<AdditionalMessageInformationQualifier> getAdditionalMessageInformationQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Additional Message Information</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Additional Message Information</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Additional Message Information</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -231,45 +240,47 @@ public interface ResponseStatusSegment extends EObject {
 	EList<Field> getAdditionalMessageInformation();
 
 	/**
-	 * Returns the value of the '<em><b>Additional Message Information Continuity</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Additional Message Information Continuity</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Additional Message Information Continuity</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Additional Message Information Continuity</em>' containment reference list.
+	 * @return the value of the '<em>Additional Message Information Continuity</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_AdditionalMessageInformationContinuity()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getAdditionalMessageInformationContinuity();
+	EList<AdditionalMessageInformationContinuity> getAdditionalMessageInformationContinuity();
 
 	/**
-	 * Returns the value of the '<em><b>Help Desk Phone Number Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Help Desk Phone Number Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Help Desk Phone Number Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Help Desk Phone Number Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Help Desk Phone Number Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_HelpDeskPhoneNumberQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getHelpDeskPhoneNumberQualifier();
+	EList<HelpDeskPhoneNumberQualifier> getHelpDeskPhoneNumberQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Help Desk Phone Number</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Help Desk Phone Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Help Desk Phone Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -286,7 +297,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Transaction Reference Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Transaction Reference Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -303,7 +314,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Internal Control Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Internal Control Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -320,7 +331,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Url</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Url</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

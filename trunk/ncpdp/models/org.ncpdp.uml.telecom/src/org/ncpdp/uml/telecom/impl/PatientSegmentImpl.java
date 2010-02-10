@@ -21,6 +21,12 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.PatientGenderCode;
+import org.ncpdp.uml.ECL.PatientIDQualifier;
+import org.ncpdp.uml.ECL.PatientLocation;
+import org.ncpdp.uml.ECL.PatientResidence;
+import org.ncpdp.uml.ECL.PregnancyIndicator;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.PatientSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -67,14 +73,14 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	protected EList<String> segmentIdentification;
 
 	/**
-	 * The cached value of the '{@link #getPatientIdQualifier() <em>Patient Id Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getPatientIdQualifier() <em>Patient Id Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPatientIdQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> patientIdQualifier;
+	protected EList<PatientIDQualifier> patientIdQualifier;
 
 	/**
 	 * The cached value of the '{@link #getPatientId() <em>Patient Id</em>}' containment reference list.
@@ -97,14 +103,14 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	protected EList<Field> dateOfBirth;
 
 	/**
-	 * The cached value of the '{@link #getPatientGenderCode() <em>Patient Gender Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getPatientGenderCode() <em>Patient Gender Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPatientGenderCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> patientGenderCode;
+	protected EList<PatientGenderCode> patientGenderCode;
 
 	/**
 	 * The cached value of the '{@link #getPatientFirstName() <em>Patient First Name</em>}' containment reference list.
@@ -177,14 +183,14 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	protected EList<Field> patientPhoneNumber;
 
 	/**
-	 * The cached value of the '{@link #getPlaceOfService() <em>Place Of Service</em>}' containment reference list.
+	 * The cached value of the '{@link #getPlaceOfService() <em>Place Of Service</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPlaceOfService()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> placeOfService;
+	protected EList<PatientLocation> placeOfService;
 
 	/**
 	 * The cached value of the '{@link #getEmployerId() <em>Employer Id</em>}' containment reference list.
@@ -207,14 +213,14 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	protected EList<Field> smokerNonsmokerCode;
 
 	/**
-	 * The cached value of the '{@link #getPregnancyIndicator() <em>Pregnancy Indicator</em>}' containment reference list.
+	 * The cached value of the '{@link #getPregnancyIndicator() <em>Pregnancy Indicator</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPregnancyIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> pregnancyIndicator;
+	protected EList<PregnancyIndicator> pregnancyIndicator;
 
 	/**
 	 * The cached value of the '{@link #getPatientEmailAddress() <em>Patient Email Address</em>}' containment reference list.
@@ -227,14 +233,14 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	protected EList<Field> patientEmailAddress;
 
 	/**
-	 * The cached value of the '{@link #getPatientResidence() <em>Patient Residence</em>}' containment reference list.
+	 * The cached value of the '{@link #getPatientResidence() <em>Patient Residence</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPatientResidence()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> patientResidence;
+	protected EList<PatientResidence> patientResidence;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -272,9 +278,9 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPatientIdQualifier() {
+	public EList<PatientIDQualifier> getPatientIdQualifier() {
 		if (patientIdQualifier == null) {
-			patientIdQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.PATIENT_SEGMENT__PATIENT_ID_QUALIFIER);
+			patientIdQualifier = new EDataTypeUniqueEList<PatientIDQualifier>(PatientIDQualifier.class, this, TelecomPackage.PATIENT_SEGMENT__PATIENT_ID_QUALIFIER);
 		}
 		return patientIdQualifier;
 	}
@@ -308,9 +314,9 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPatientGenderCode() {
+	public EList<PatientGenderCode> getPatientGenderCode() {
 		if (patientGenderCode == null) {
-			patientGenderCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.PATIENT_SEGMENT__PATIENT_GENDER_CODE);
+			patientGenderCode = new EDataTypeUniqueEList<PatientGenderCode>(PatientGenderCode.class, this, TelecomPackage.PATIENT_SEGMENT__PATIENT_GENDER_CODE);
 		}
 		return patientGenderCode;
 	}
@@ -404,9 +410,9 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPlaceOfService() {
+	public EList<PatientLocation> getPlaceOfService() {
 		if (placeOfService == null) {
-			placeOfService = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.PATIENT_SEGMENT__PLACE_OF_SERVICE);
+			placeOfService = new EDataTypeUniqueEList<PatientLocation>(PatientLocation.class, this, TelecomPackage.PATIENT_SEGMENT__PLACE_OF_SERVICE);
 		}
 		return placeOfService;
 	}
@@ -440,9 +446,9 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPregnancyIndicator() {
+	public EList<PregnancyIndicator> getPregnancyIndicator() {
 		if (pregnancyIndicator == null) {
-			pregnancyIndicator = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.PATIENT_SEGMENT__PREGNANCY_INDICATOR);
+			pregnancyIndicator = new EDataTypeUniqueEList<PregnancyIndicator>(PregnancyIndicator.class, this, TelecomPackage.PATIENT_SEGMENT__PREGNANCY_INDICATOR);
 		}
 		return pregnancyIndicator;
 	}
@@ -464,9 +470,9 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getPatientResidence() {
+	public EList<PatientResidence> getPatientResidence() {
 		if (patientResidence == null) {
-			patientResidence = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.PATIENT_SEGMENT__PATIENT_RESIDENCE);
+			patientResidence = new EDataTypeUniqueEList<PatientResidence>(PatientResidence.class, this, TelecomPackage.PATIENT_SEGMENT__PATIENT_RESIDENCE);
 		}
 		return patientResidence;
 	}
@@ -479,14 +485,10 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TelecomPackage.PATIENT_SEGMENT__PATIENT_ID_QUALIFIER:
-				return ((InternalEList<?>)getPatientIdQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_ID:
 				return ((InternalEList<?>)getPatientId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PATIENT_SEGMENT__DATE_OF_BIRTH:
 				return ((InternalEList<?>)getDateOfBirth()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.PATIENT_SEGMENT__PATIENT_GENDER_CODE:
-				return ((InternalEList<?>)getPatientGenderCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_FIRST_NAME:
 				return ((InternalEList<?>)getPatientFirstName()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_LAST_NAME:
@@ -501,18 +503,12 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 				return ((InternalEList<?>)getPatientZippostalZone()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_PHONE_NUMBER:
 				return ((InternalEList<?>)getPatientPhoneNumber()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.PATIENT_SEGMENT__PLACE_OF_SERVICE:
-				return ((InternalEList<?>)getPlaceOfService()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PATIENT_SEGMENT__EMPLOYER_ID:
 				return ((InternalEList<?>)getEmployerId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PATIENT_SEGMENT__SMOKER_NONSMOKER_CODE:
 				return ((InternalEList<?>)getSmokerNonsmokerCode()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.PATIENT_SEGMENT__PREGNANCY_INDICATOR:
-				return ((InternalEList<?>)getPregnancyIndicator()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_EMAIL_ADDRESS:
 				return ((InternalEList<?>)getPatientEmailAddress()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.PATIENT_SEGMENT__PATIENT_RESIDENCE:
-				return ((InternalEList<?>)getPatientResidence()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -580,7 +576,7 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 				return;
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_ID_QUALIFIER:
 				getPatientIdQualifier().clear();
-				getPatientIdQualifier().addAll((Collection<? extends Field>)newValue);
+				getPatientIdQualifier().addAll((Collection<? extends PatientIDQualifier>)newValue);
 				return;
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_ID:
 				getPatientId().clear();
@@ -592,7 +588,7 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 				return;
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_GENDER_CODE:
 				getPatientGenderCode().clear();
-				getPatientGenderCode().addAll((Collection<? extends Field>)newValue);
+				getPatientGenderCode().addAll((Collection<? extends PatientGenderCode>)newValue);
 				return;
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_FIRST_NAME:
 				getPatientFirstName().clear();
@@ -624,7 +620,7 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 				return;
 			case TelecomPackage.PATIENT_SEGMENT__PLACE_OF_SERVICE:
 				getPlaceOfService().clear();
-				getPlaceOfService().addAll((Collection<? extends Field>)newValue);
+				getPlaceOfService().addAll((Collection<? extends PatientLocation>)newValue);
 				return;
 			case TelecomPackage.PATIENT_SEGMENT__EMPLOYER_ID:
 				getEmployerId().clear();
@@ -636,7 +632,7 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 				return;
 			case TelecomPackage.PATIENT_SEGMENT__PREGNANCY_INDICATOR:
 				getPregnancyIndicator().clear();
-				getPregnancyIndicator().addAll((Collection<? extends Field>)newValue);
+				getPregnancyIndicator().addAll((Collection<? extends PregnancyIndicator>)newValue);
 				return;
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_EMAIL_ADDRESS:
 				getPatientEmailAddress().clear();
@@ -644,7 +640,7 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 				return;
 			case TelecomPackage.PATIENT_SEGMENT__PATIENT_RESIDENCE:
 				getPatientResidence().clear();
-				getPatientResidence().addAll((Collection<? extends Field>)newValue);
+				getPatientResidence().addAll((Collection<? extends PatientResidence>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -776,6 +772,16 @@ public class PatientSegmentImpl extends EObjectImpl implements PatientSegment {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", patientIdQualifier: ");
+		result.append(patientIdQualifier);
+		result.append(", patientGenderCode: ");
+		result.append(patientGenderCode);
+		result.append(", placeOfService: ");
+		result.append(placeOfService);
+		result.append(", pregnancyIndicator: ");
+		result.append(pregnancyIndicator);
+		result.append(", patientResidence: ");
+		result.append(patientResidence);
 		result.append(')');
 		return result.toString();
 	}

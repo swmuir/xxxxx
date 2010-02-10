@@ -21,6 +21,11 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.DURCoAgentIDQualifier;
+import org.ncpdp.uml.ECL.ProfessionalServiceCode;
+import org.ncpdp.uml.ECL.ReasonforServiceCode;
+import org.ncpdp.uml.ECL.ResultofServiceCode;
+
 import org.ncpdp.uml.telecom.DURPPSSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -67,34 +72,34 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 	protected EList<Field> durppsCodeCounter;
 
 	/**
-	 * The cached value of the '{@link #getReasonForServiceCode() <em>Reason For Service Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getReasonForServiceCode() <em>Reason For Service Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getReasonForServiceCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> reasonForServiceCode;
+	protected EList<ReasonforServiceCode> reasonForServiceCode;
 
 	/**
-	 * The cached value of the '{@link #getProfessionalServiceCode() <em>Professional Service Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getProfessionalServiceCode() <em>Professional Service Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getProfessionalServiceCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> professionalServiceCode;
+	protected EList<ProfessionalServiceCode> professionalServiceCode;
 
 	/**
-	 * The cached value of the '{@link #getResultOfServiceCode() <em>Result Of Service Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getResultOfServiceCode() <em>Result Of Service Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getResultOfServiceCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> resultOfServiceCode;
+	protected EList<ResultofServiceCode> resultOfServiceCode;
 
 	/**
 	 * The cached value of the '{@link #getDurppsLevelOfEffort() <em>Durpps Level Of Effort</em>}' containment reference list.
@@ -107,14 +112,14 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 	protected EList<Field> durppsLevelOfEffort;
 
 	/**
-	 * The cached value of the '{@link #getDurCoagentIdQualifier() <em>Dur Coagent Id Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getDurCoagentIdQualifier() <em>Dur Coagent Id Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getDurCoagentIdQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> durCoagentIdQualifier;
+	protected EList<DURCoAgentIDQualifier> durCoagentIdQualifier;
 
 	/**
 	 * The cached value of the '{@link #getDurCoagentId() <em>Dur Coagent Id</em>}' containment reference list.
@@ -174,9 +179,9 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getReasonForServiceCode() {
+	public EList<ReasonforServiceCode> getReasonForServiceCode() {
 		if (reasonForServiceCode == null) {
-			reasonForServiceCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE);
+			reasonForServiceCode = new EDataTypeUniqueEList<ReasonforServiceCode>(ReasonforServiceCode.class, this, TelecomPackage.DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE);
 		}
 		return reasonForServiceCode;
 	}
@@ -186,9 +191,9 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getProfessionalServiceCode() {
+	public EList<ProfessionalServiceCode> getProfessionalServiceCode() {
 		if (professionalServiceCode == null) {
-			professionalServiceCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.DURPPS_SEGMENT__PROFESSIONAL_SERVICE_CODE);
+			professionalServiceCode = new EDataTypeUniqueEList<ProfessionalServiceCode>(ProfessionalServiceCode.class, this, TelecomPackage.DURPPS_SEGMENT__PROFESSIONAL_SERVICE_CODE);
 		}
 		return professionalServiceCode;
 	}
@@ -198,9 +203,9 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getResultOfServiceCode() {
+	public EList<ResultofServiceCode> getResultOfServiceCode() {
 		if (resultOfServiceCode == null) {
-			resultOfServiceCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.DURPPS_SEGMENT__RESULT_OF_SERVICE_CODE);
+			resultOfServiceCode = new EDataTypeUniqueEList<ResultofServiceCode>(ResultofServiceCode.class, this, TelecomPackage.DURPPS_SEGMENT__RESULT_OF_SERVICE_CODE);
 		}
 		return resultOfServiceCode;
 	}
@@ -222,9 +227,9 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getDurCoagentIdQualifier() {
+	public EList<DURCoAgentIDQualifier> getDurCoagentIdQualifier() {
 		if (durCoagentIdQualifier == null) {
-			durCoagentIdQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.DURPPS_SEGMENT__DUR_COAGENT_ID_QUALIFIER);
+			durCoagentIdQualifier = new EDataTypeUniqueEList<DURCoAgentIDQualifier>(DURCoAgentIDQualifier.class, this, TelecomPackage.DURPPS_SEGMENT__DUR_COAGENT_ID_QUALIFIER);
 		}
 		return durCoagentIdQualifier;
 	}
@@ -251,16 +256,8 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 		switch (featureID) {
 			case TelecomPackage.DURPPS_SEGMENT__DURPPS_CODE_COUNTER:
 				return ((InternalEList<?>)getDurppsCodeCounter()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE:
-				return ((InternalEList<?>)getReasonForServiceCode()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.DURPPS_SEGMENT__PROFESSIONAL_SERVICE_CODE:
-				return ((InternalEList<?>)getProfessionalServiceCode()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.DURPPS_SEGMENT__RESULT_OF_SERVICE_CODE:
-				return ((InternalEList<?>)getResultOfServiceCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.DURPPS_SEGMENT__DURPPS_LEVEL_OF_EFFORT:
 				return ((InternalEList<?>)getDurppsLevelOfEffort()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.DURPPS_SEGMENT__DUR_COAGENT_ID_QUALIFIER:
-				return ((InternalEList<?>)getDurCoagentIdQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.DURPPS_SEGMENT__DUR_COAGENT_ID:
 				return ((InternalEList<?>)getDurCoagentId()).basicRemove(otherEnd, msgs);
 		}
@@ -314,15 +311,15 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 				return;
 			case TelecomPackage.DURPPS_SEGMENT__REASON_FOR_SERVICE_CODE:
 				getReasonForServiceCode().clear();
-				getReasonForServiceCode().addAll((Collection<? extends Field>)newValue);
+				getReasonForServiceCode().addAll((Collection<? extends ReasonforServiceCode>)newValue);
 				return;
 			case TelecomPackage.DURPPS_SEGMENT__PROFESSIONAL_SERVICE_CODE:
 				getProfessionalServiceCode().clear();
-				getProfessionalServiceCode().addAll((Collection<? extends Field>)newValue);
+				getProfessionalServiceCode().addAll((Collection<? extends ProfessionalServiceCode>)newValue);
 				return;
 			case TelecomPackage.DURPPS_SEGMENT__RESULT_OF_SERVICE_CODE:
 				getResultOfServiceCode().clear();
-				getResultOfServiceCode().addAll((Collection<? extends Field>)newValue);
+				getResultOfServiceCode().addAll((Collection<? extends ResultofServiceCode>)newValue);
 				return;
 			case TelecomPackage.DURPPS_SEGMENT__DURPPS_LEVEL_OF_EFFORT:
 				getDurppsLevelOfEffort().clear();
@@ -330,7 +327,7 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 				return;
 			case TelecomPackage.DURPPS_SEGMENT__DUR_COAGENT_ID_QUALIFIER:
 				getDurCoagentIdQualifier().clear();
-				getDurCoagentIdQualifier().addAll((Collection<? extends Field>)newValue);
+				getDurCoagentIdQualifier().addAll((Collection<? extends DURCoAgentIDQualifier>)newValue);
 				return;
 			case TelecomPackage.DURPPS_SEGMENT__DUR_COAGENT_ID:
 				getDurCoagentId().clear();
@@ -416,6 +413,14 @@ public class DURPPSSegmentImpl extends EObjectImpl implements DURPPSSegment {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", reasonForServiceCode: ");
+		result.append(reasonForServiceCode);
+		result.append(", professionalServiceCode: ");
+		result.append(professionalServiceCode);
+		result.append(", resultOfServiceCode: ");
+		result.append(resultOfServiceCode);
+		result.append(", durCoagentIdQualifier: ");
+		result.append(durCoagentIdQualifier);
 		result.append(')');
 		return result.toString();
 	}

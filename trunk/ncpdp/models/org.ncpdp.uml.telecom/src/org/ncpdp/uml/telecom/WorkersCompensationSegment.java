@@ -10,6 +10,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.BillingEntityTypeIndicator;
+import org.ncpdp.uml.ECL.GenericEquivalentProductIDQualifier;
+import org.ncpdp.uml.ECL.PayToQualifier;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Workers Compensation Segment</b></em>'.
@@ -43,7 +47,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getWorkersCompensationSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' dateOfInjury.field='434-DY' employerName.field='315-CF' employerStreetAddress.field='316-CG' employerCityAddress.field='317-CH' employerStateprovinceAddress.field='318-CI' employerZippostalZone.field='319-CJ' employerPhoneNumber.field='320-CK' employerContactName.field='321-CL' carrierId.field='327-CR' claimreferenceId.field='435-DZ' billingEntityTypeIndicator.field='117-TR' payToQualifier.field='118-TS' payToId.field='119-TT' payToName.field='120-TU' payToStreetAddress.field='121-TV' payToCityAddress.field='122-TW' payToStateprovinceAddress.field='123-TX' payToZippostalZone.field='124-TY' genericEquivalentProductIdQualifier.field='125-TZ' genericEquivalentProductId.field='126-UA'"
+ * @model
  * @generated
  */
 public interface WorkersCompensationSegment extends EObject {
@@ -69,7 +73,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Date Of Injury</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Date Of Injury</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -86,7 +90,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Employer Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Employer Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -103,7 +107,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Employer Street Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Employer Street Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -120,7 +124,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Employer City Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Employer City Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -137,7 +141,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Employer Stateprovince Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Employer Stateprovince Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -154,7 +158,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Employer Zippostal Zone</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Employer Zippostal Zone</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -171,7 +175,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Employer Phone Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Employer Phone Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -188,7 +192,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Employer Contact Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Employer Contact Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -205,7 +209,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Carrier Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Carrier Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -222,7 +226,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Claimreference Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Claimreference Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -235,45 +239,47 @@ public interface WorkersCompensationSegment extends EObject {
 	EList<Field> getClaimreferenceId();
 
 	/**
-	 * Returns the value of the '<em><b>Billing Entity Type Indicator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Billing Entity Type Indicator</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.BillingEntityTypeIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BillingEntityTypeIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Billing Entity Type Indicator</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Billing Entity Type Indicator</em>' containment reference list.
+	 * @return the value of the '<em>Billing Entity Type Indicator</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.BillingEntityTypeIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getWorkersCompensationSegment_BillingEntityTypeIndicator()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getBillingEntityTypeIndicator();
+	EList<BillingEntityTypeIndicator> getBillingEntityTypeIndicator();
 
 	/**
-	 * Returns the value of the '<em><b>Pay To Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Pay To Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PayToQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PayToQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Pay To Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pay To Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Pay To Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PayToQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getWorkersCompensationSegment_PayToQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPayToQualifier();
+	EList<PayToQualifier> getPayToQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Pay To Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Pay To Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Pay To Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -290,7 +296,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Pay To Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Pay To Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -307,7 +313,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Pay To Street Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Pay To Street Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -324,7 +330,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Pay To City Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Pay To City Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -341,7 +347,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Pay To Stateprovince Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Pay To Stateprovince Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -358,7 +364,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Pay To Zippostal Zone</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Pay To Zippostal Zone</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -371,28 +377,29 @@ public interface WorkersCompensationSegment extends EObject {
 	EList<Field> getPayToZippostalZone();
 
 	/**
-	 * Returns the value of the '<em><b>Generic Equivalent Product Id Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Generic Equivalent Product Id Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.GenericEquivalentProductIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.GenericEquivalentProductIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Generic Equivalent Product Id Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Generic Equivalent Product Id Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Generic Equivalent Product Id Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.GenericEquivalentProductIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getWorkersCompensationSegment_GenericEquivalentProductIdQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getGenericEquivalentProductIdQualifier();
+	EList<GenericEquivalentProductIDQualifier> getGenericEquivalentProductIdQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Generic Equivalent Product Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Generic Equivalent Product Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Generic Equivalent Product Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

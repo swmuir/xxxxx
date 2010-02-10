@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getPrescriberSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' prescriberIdQualifier.field='466-EZ ' prescriberId.field='411-DB' prescriberLastName.field='427-DR' prescriberPhoneNumber.field='498-PM' primaryCareProviderIdQualifier.field='468-2E ' primaryCareProviderId.field='421-DL' primaryCareProviderLastName.field='470-4E' prescriberFirstName.field='364-2J' prescriberStreetAddress.field='365-2K' prescriberCityAddress.field='366-2M' prescriberStateprovinceAddress.field='367-2N' prescriberZippostalZone.field='368-2P'"
+ * @model
  * @generated
  */
 public interface PrescriberSegment extends EObject {
@@ -61,7 +61,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriber Id Qualifier</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriber Id Qualifier</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -78,7 +78,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriber Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriber Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -95,7 +95,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriber Last Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriber Last Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -112,7 +112,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriber Phone Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriber Phone Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -129,7 +129,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Primary Care Provider Id Qualifier</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Primary Care Provider Id Qualifier</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -146,7 +146,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Primary Care Provider Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Primary Care Provider Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -163,7 +163,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Primary Care Provider Last Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Primary Care Provider Last Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -180,7 +180,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriber First Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriber First Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -197,7 +197,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriber Street Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriber Street Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -214,7 +214,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriber City Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriber City Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -231,7 +231,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriber Stateprovince Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriber Stateprovince Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -248,7 +248,7 @@ public interface PrescriberSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prescriber Zippostal Zone</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Prescriber Zippostal Zone</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

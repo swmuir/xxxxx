@@ -10,6 +10,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.OtherPayerCoverageType;
+import org.ncpdp.uml.ECL.OtherPayerIDQualifier;
+import org.ncpdp.uml.ECL.OtherPayerPatientRelationshipCode;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Response Coordinationof Benefits Other Payers Segment</b></em>'.
@@ -35,7 +39,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseCoordinationofBenefitsOtherPayersSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' otherPayerIDCount.field='355-NT' otherPayerCoverageType.field='338-5C' otherPayerIDQualifier.field='339-6C' otherPayerID.field='340-7C' otherPayerProcessorControlNumber.field='991-MH' otherPayerCardholderID.field='356-NU' otherPayerGroupID.field='992-MJ' otherPayerPersonCode.field='142-UV' otherPayerHelpDeskPhoneNumber.field='127-UB' otherPayerPatientRelationshipCode.field='143-UW' otherPayerBenefitEffectiveDate.field='144-UX' otherPayerBenefitTerminationDate.field='145-UY'"
+ * @model
  * @generated
  */
 public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObject {
@@ -61,7 +65,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Id Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Id Count</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -74,45 +78,47 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	EList<Field> getOtherPayerIdCount();
 
 	/**
-	 * Returns the value of the '<em><b>Other Payer Coverage Type</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Other Payer Coverage Type</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerCoverageType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerCoverageType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payer Coverage Type</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Other Payer Coverage Type</em>' containment reference list.
+	 * @return the value of the '<em>Other Payer Coverage Type</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.OtherPayerCoverageType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerCoverageType()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getOtherPayerCoverageType();
+	EList<OtherPayerCoverageType> getOtherPayerCoverageType();
 
 	/**
-	 * Returns the value of the '<em><b>Other Payer Id Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Other Payer Id Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payer Id Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Other Payer Id Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Other Payer Id Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.OtherPayerIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerIdQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getOtherPayerIdQualifier();
+	EList<OtherPayerIDQualifier> getOtherPayerIdQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Other Payer Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -129,7 +135,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Processor Control Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Processor Control Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -146,7 +152,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Cardholder Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Cardholder Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -163,7 +169,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Group Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Group Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -180,7 +186,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Person Code</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Person Code</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -197,7 +203,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Help Desk Phone Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Help Desk Phone Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -210,28 +216,29 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	EList<Field> getOtherPayerHelpDeskPhoneNumber();
 
 	/**
-	 * Returns the value of the '<em><b>Other Payer Patient Relationship Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Other Payer Patient Relationship Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPayerPatientRelationshipCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPayerPatientRelationshipCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Payer Patient Relationship Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Other Payer Patient Relationship Code</em>' containment reference list.
+	 * @return the value of the '<em>Other Payer Patient Relationship Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.OtherPayerPatientRelationshipCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseCoordinationofBenefitsOtherPayersSegment_OtherPayerPatientRelationshipCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getOtherPayerPatientRelationshipCode();
+	EList<OtherPayerPatientRelationshipCode> getOtherPayerPatientRelationshipCode();
 
 	/**
 	 * Returns the value of the '<em><b>Other Payer Benefit Effective Date</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Benefit Effective Date</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Benefit Effective Date</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -248,7 +255,7 @@ public interface ResponseCoordinationofBenefitsOtherPayersSegment extends EObjec
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Other Payer Benefit Termination Date</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Other Payer Benefit Termination Date</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

@@ -21,6 +21,12 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.BenefitStageQualifier;
+import org.ncpdp.uml.ECL.OtherPayerAmountPaidQualifier;
+import org.ncpdp.uml.ECL.OtherPayerCoverageType;
+import org.ncpdp.uml.ECL.OtherPayerIDQualifier;
+import org.ncpdp.uml.ECL.OtherPayerPatientResponsibilityAmountQualifier;
+
 import org.ncpdp.uml.telecom.CoordinationofBenefitsOtherPaymentsSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -77,24 +83,24 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 	protected EList<Field> coordinationOfBenefitsotherPaymentsCount;
 
 	/**
-	 * The cached value of the '{@link #getOtherPayerCoverageType() <em>Other Payer Coverage Type</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherPayerCoverageType() <em>Other Payer Coverage Type</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherPayerCoverageType()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherPayerCoverageType;
+	protected EList<OtherPayerCoverageType> otherPayerCoverageType;
 
 	/**
-	 * The cached value of the '{@link #getOtherPayerIdQualifier() <em>Other Payer Id Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherPayerIdQualifier() <em>Other Payer Id Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherPayerIdQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherPayerIdQualifier;
+	protected EList<OtherPayerIDQualifier> otherPayerIdQualifier;
 
 	/**
 	 * The cached value of the '{@link #getOtherPayerId() <em>Other Payer Id</em>}' containment reference list.
@@ -137,14 +143,14 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 	protected EList<Field> otherPayerAmountPaidCount;
 
 	/**
-	 * The cached value of the '{@link #getOtherPayerAmountPaidQualifier() <em>Other Payer Amount Paid Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherPayerAmountPaidQualifier() <em>Other Payer Amount Paid Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherPayerAmountPaidQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherPayerAmountPaidQualifier;
+	protected EList<OtherPayerAmountPaidQualifier> otherPayerAmountPaidQualifier;
 
 	/**
 	 * The cached value of the '{@link #getOtherPayerAmountPaid() <em>Other Payer Amount Paid</em>}' containment reference list.
@@ -187,14 +193,14 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 	protected EList<Field> otherPayerpatientResponsibilityAmountCount;
 
 	/**
-	 * The cached value of the '{@link #getOtherPayerpatientResponsibilityAmountQualifier() <em>Other Payerpatient Responsibility Amount Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherPayerpatientResponsibilityAmountQualifier() <em>Other Payerpatient Responsibility Amount Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherPayerpatientResponsibilityAmountQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherPayerpatientResponsibilityAmountQualifier;
+	protected EList<OtherPayerPatientResponsibilityAmountQualifier> otherPayerpatientResponsibilityAmountQualifier;
 
 	/**
 	 * The cached value of the '{@link #getOtherPayerpatientResponsibilityAmount() <em>Other Payerpatient Responsibility Amount</em>}' containment reference list.
@@ -217,14 +223,14 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 	protected EList<Field> benefitStageCount;
 
 	/**
-	 * The cached value of the '{@link #getBenefitStageQualifier() <em>Benefit Stage Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getBenefitStageQualifier() <em>Benefit Stage Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getBenefitStageQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> benefitStageQualifier;
+	protected EList<BenefitStageQualifier> benefitStageQualifier;
 
 	/**
 	 * The cached value of the '{@link #getBenefitStageAmount() <em>Benefit Stage Amount</em>}' containment reference list.
@@ -284,9 +290,9 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherPayerCoverageType() {
+	public EList<OtherPayerCoverageType> getOtherPayerCoverageType() {
 		if (otherPayerCoverageType == null) {
-			otherPayerCoverageType = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE);
+			otherPayerCoverageType = new EDataTypeUniqueEList<OtherPayerCoverageType>(OtherPayerCoverageType.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE);
 		}
 		return otherPayerCoverageType;
 	}
@@ -296,9 +302,9 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherPayerIdQualifier() {
+	public EList<OtherPayerIDQualifier> getOtherPayerIdQualifier() {
 		if (otherPayerIdQualifier == null) {
-			otherPayerIdQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_ID_QUALIFIER);
+			otherPayerIdQualifier = new EDataTypeUniqueEList<OtherPayerIDQualifier>(OtherPayerIDQualifier.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_ID_QUALIFIER);
 		}
 		return otherPayerIdQualifier;
 	}
@@ -356,9 +362,9 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherPayerAmountPaidQualifier() {
+	public EList<OtherPayerAmountPaidQualifier> getOtherPayerAmountPaidQualifier() {
 		if (otherPayerAmountPaidQualifier == null) {
-			otherPayerAmountPaidQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID_QUALIFIER);
+			otherPayerAmountPaidQualifier = new EDataTypeUniqueEList<OtherPayerAmountPaidQualifier>(OtherPayerAmountPaidQualifier.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID_QUALIFIER);
 		}
 		return otherPayerAmountPaidQualifier;
 	}
@@ -416,9 +422,9 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherPayerpatientResponsibilityAmountQualifier() {
+	public EList<OtherPayerPatientResponsibilityAmountQualifier> getOtherPayerpatientResponsibilityAmountQualifier() {
 		if (otherPayerpatientResponsibilityAmountQualifier == null) {
-			otherPayerpatientResponsibilityAmountQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT_QUALIFIER);
+			otherPayerpatientResponsibilityAmountQualifier = new EDataTypeUniqueEList<OtherPayerPatientResponsibilityAmountQualifier>(OtherPayerPatientResponsibilityAmountQualifier.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT_QUALIFIER);
 		}
 		return otherPayerpatientResponsibilityAmountQualifier;
 	}
@@ -452,9 +458,9 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getBenefitStageQualifier() {
+	public EList<BenefitStageQualifier> getBenefitStageQualifier() {
 		if (benefitStageQualifier == null) {
-			benefitStageQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_QUALIFIER);
+			benefitStageQualifier = new EDataTypeUniqueEList<BenefitStageQualifier>(BenefitStageQualifier.class, this, TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_QUALIFIER);
 		}
 		return benefitStageQualifier;
 	}
@@ -481,10 +487,6 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 		switch (featureID) {
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__COORDINATION_OF_BENEFITSOTHER_PAYMENTS_COUNT:
 				return ((InternalEList<?>)getCoordinationOfBenefitsotherPaymentsCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE:
-				return ((InternalEList<?>)getOtherPayerCoverageType()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_ID_QUALIFIER:
-				return ((InternalEList<?>)getOtherPayerIdQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_ID:
 				return ((InternalEList<?>)getOtherPayerId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_DATE:
@@ -493,8 +495,6 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 				return ((InternalEList<?>)getInternalControlNumber()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID_COUNT:
 				return ((InternalEList<?>)getOtherPayerAmountPaidCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID_QUALIFIER:
-				return ((InternalEList<?>)getOtherPayerAmountPaidQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID:
 				return ((InternalEList<?>)getOtherPayerAmountPaid()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_REJECT_COUNT:
@@ -503,14 +503,10 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 				return ((InternalEList<?>)getOtherPayerRejectCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT_COUNT:
 				return ((InternalEList<?>)getOtherPayerpatientResponsibilityAmountCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT_QUALIFIER:
-				return ((InternalEList<?>)getOtherPayerpatientResponsibilityAmountQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT:
 				return ((InternalEList<?>)getOtherPayerpatientResponsibilityAmount()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_COUNT:
 				return ((InternalEList<?>)getBenefitStageCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_QUALIFIER:
-				return ((InternalEList<?>)getBenefitStageQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_AMOUNT:
 				return ((InternalEList<?>)getBenefitStageAmount()).basicRemove(otherEnd, msgs);
 		}
@@ -584,11 +580,11 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 				return;
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE:
 				getOtherPayerCoverageType().clear();
-				getOtherPayerCoverageType().addAll((Collection<? extends Field>)newValue);
+				getOtherPayerCoverageType().addAll((Collection<? extends OtherPayerCoverageType>)newValue);
 				return;
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_ID_QUALIFIER:
 				getOtherPayerIdQualifier().clear();
-				getOtherPayerIdQualifier().addAll((Collection<? extends Field>)newValue);
+				getOtherPayerIdQualifier().addAll((Collection<? extends OtherPayerIDQualifier>)newValue);
 				return;
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_ID:
 				getOtherPayerId().clear();
@@ -608,7 +604,7 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 				return;
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID_QUALIFIER:
 				getOtherPayerAmountPaidQualifier().clear();
-				getOtherPayerAmountPaidQualifier().addAll((Collection<? extends Field>)newValue);
+				getOtherPayerAmountPaidQualifier().addAll((Collection<? extends OtherPayerAmountPaidQualifier>)newValue);
 				return;
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYER_AMOUNT_PAID:
 				getOtherPayerAmountPaid().clear();
@@ -628,7 +624,7 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 				return;
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT_QUALIFIER:
 				getOtherPayerpatientResponsibilityAmountQualifier().clear();
-				getOtherPayerpatientResponsibilityAmountQualifier().addAll((Collection<? extends Field>)newValue);
+				getOtherPayerpatientResponsibilityAmountQualifier().addAll((Collection<? extends OtherPayerPatientResponsibilityAmountQualifier>)newValue);
 				return;
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__OTHER_PAYERPATIENT_RESPONSIBILITY_AMOUNT:
 				getOtherPayerpatientResponsibilityAmount().clear();
@@ -640,7 +636,7 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 				return;
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_QUALIFIER:
 				getBenefitStageQualifier().clear();
-				getBenefitStageQualifier().addAll((Collection<? extends Field>)newValue);
+				getBenefitStageQualifier().addAll((Collection<? extends BenefitStageQualifier>)newValue);
 				return;
 			case TelecomPackage.COORDINATIONOF_BENEFITS_OTHER_PAYMENTS_SEGMENT__BENEFIT_STAGE_AMOUNT:
 				getBenefitStageAmount().clear();
@@ -776,6 +772,16 @@ public class CoordinationofBenefitsOtherPaymentsSegmentImpl extends EObjectImpl 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", otherPayerCoverageType: ");
+		result.append(otherPayerCoverageType);
+		result.append(", otherPayerIdQualifier: ");
+		result.append(otherPayerIdQualifier);
+		result.append(", otherPayerAmountPaidQualifier: ");
+		result.append(otherPayerAmountPaidQualifier);
+		result.append(", otherPayerpatientResponsibilityAmountQualifier: ");
+		result.append(otherPayerpatientResponsibilityAmountQualifier);
+		result.append(", benefitStageQualifier: ");
+		result.append(benefitStageQualifier);
 		result.append(')');
 		return result.toString();
 	}

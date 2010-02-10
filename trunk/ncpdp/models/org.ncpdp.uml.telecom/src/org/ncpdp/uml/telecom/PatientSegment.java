@@ -10,6 +10,12 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.PatientGenderCode;
+import org.ncpdp.uml.ECL.PatientIDQualifier;
+import org.ncpdp.uml.ECL.PatientLocation;
+import org.ncpdp.uml.ECL.PatientResidence;
+import org.ncpdp.uml.ECL.PregnancyIndicator;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Patient Segment</b></em>'.
@@ -40,7 +46,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' patientIdQualifier.field='331-CX' patientId.field='332-CY' dateOfBirth.field='304-C4' patientGenderCode.field='305-C5' patientFirstName.field='310-CA' patientLastName.field='311-CB' patientStreetAddress.field='322-CM' patientCityAddress.field='323-CN' patientStateProvinceAddress.field='324-CO' patientZippostalZone.field='325-CP' patientPhoneNumber.field='326-CQ' placeOfService.field='307-C7' employerId.field='333-CZ' smokerNon-smokerCode.field='334-1C' pregnancyIndicator.field='335-2C' patientE-mailAddress.field='350-HN' patientResidence.field='384-4X'"
+ * @model
  * @generated
  */
 public interface PatientSegment extends EObject {
@@ -62,28 +68,29 @@ public interface PatientSegment extends EObject {
 	EList<String> getSegmentIdentification();
 
 	/**
-	 * Returns the value of the '<em><b>Patient Id Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Patient Id Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Patient Id Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Patient Id Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Patient Id Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PatientIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PatientIdQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPatientIdQualifier();
+	EList<PatientIDQualifier> getPatientIdQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Patient Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -100,7 +107,7 @@ public interface PatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Date Of Birth</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Date Of Birth</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -113,28 +120,29 @@ public interface PatientSegment extends EObject {
 	EList<Field> getDateOfBirth();
 
 	/**
-	 * Returns the value of the '<em><b>Patient Gender Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Patient Gender Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientGenderCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientGenderCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Patient Gender Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Patient Gender Code</em>' containment reference list.
+	 * @return the value of the '<em>Patient Gender Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PatientGenderCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PatientGenderCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPatientGenderCode();
+	EList<PatientGenderCode> getPatientGenderCode();
 
 	/**
 	 * Returns the value of the '<em><b>Patient First Name</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient First Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient First Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -151,7 +159,7 @@ public interface PatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Last Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient Last Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -168,7 +176,7 @@ public interface PatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Street Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient Street Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -185,7 +193,7 @@ public interface PatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient City Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient City Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -202,7 +210,7 @@ public interface PatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient State Province Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient State Province Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -219,7 +227,7 @@ public interface PatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Zippostal Zone</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient Zippostal Zone</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -236,7 +244,7 @@ public interface PatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Phone Number</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient Phone Number</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -249,28 +257,29 @@ public interface PatientSegment extends EObject {
 	EList<Field> getPatientPhoneNumber();
 
 	/**
-	 * Returns the value of the '<em><b>Place Of Service</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Place Of Service</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientLocation}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientLocation}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Place Of Service</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Place Of Service</em>' containment reference list.
+	 * @return the value of the '<em>Place Of Service</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PatientLocation
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PlaceOfService()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPlaceOfService();
+	EList<PatientLocation> getPlaceOfService();
 
 	/**
 	 * Returns the value of the '<em><b>Employer Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Employer Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Employer Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -287,7 +296,7 @@ public interface PatientSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Smoker Nonsmoker Code</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Smoker Nonsmoker Code</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -300,28 +309,29 @@ public interface PatientSegment extends EObject {
 	EList<Field> getSmokerNonsmokerCode();
 
 	/**
-	 * Returns the value of the '<em><b>Pregnancy Indicator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Pregnancy Indicator</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PregnancyIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PregnancyIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Pregnancy Indicator</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pregnancy Indicator</em>' containment reference list.
+	 * @return the value of the '<em>Pregnancy Indicator</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PregnancyIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PregnancyIndicator()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPregnancyIndicator();
+	EList<PregnancyIndicator> getPregnancyIndicator();
 
 	/**
 	 * Returns the value of the '<em><b>Patient Email Address</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Patient Email Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Patient Email Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -334,20 +344,21 @@ public interface PatientSegment extends EObject {
 	EList<Field> getPatientEmailAddress();
 
 	/**
-	 * Returns the value of the '<em><b>Patient Residence</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Patient Residence</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientResidence}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientResidence}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Patient Residence</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Patient Residence</em>' containment reference list.
+	 * @return the value of the '<em>Patient Residence</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.PatientResidence
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPatientSegment_PatientResidence()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getPatientResidence();
+	EList<PatientResidence> getPatientResidence();
 
 } // PatientSegment

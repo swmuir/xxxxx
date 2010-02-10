@@ -21,6 +21,10 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.OtherPayerCoverageType;
+import org.ncpdp.uml.ECL.OtherPayerIDQualifier;
+import org.ncpdp.uml.ECL.OtherPayerPatientRelationshipCode;
+
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.ResponseCoordinationofBenefitsOtherPayersSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -72,24 +76,24 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 	protected EList<Field> otherPayerIdCount;
 
 	/**
-	 * The cached value of the '{@link #getOtherPayerCoverageType() <em>Other Payer Coverage Type</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherPayerCoverageType() <em>Other Payer Coverage Type</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherPayerCoverageType()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherPayerCoverageType;
+	protected EList<OtherPayerCoverageType> otherPayerCoverageType;
 
 	/**
-	 * The cached value of the '{@link #getOtherPayerIdQualifier() <em>Other Payer Id Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherPayerIdQualifier() <em>Other Payer Id Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherPayerIdQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherPayerIdQualifier;
+	protected EList<OtherPayerIDQualifier> otherPayerIdQualifier;
 
 	/**
 	 * The cached value of the '{@link #getOtherPayerId() <em>Other Payer Id</em>}' containment reference list.
@@ -152,14 +156,14 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 	protected EList<Field> otherPayerHelpDeskPhoneNumber;
 
 	/**
-	 * The cached value of the '{@link #getOtherPayerPatientRelationshipCode() <em>Other Payer Patient Relationship Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getOtherPayerPatientRelationshipCode() <em>Other Payer Patient Relationship Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOtherPayerPatientRelationshipCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> otherPayerPatientRelationshipCode;
+	protected EList<OtherPayerPatientRelationshipCode> otherPayerPatientRelationshipCode;
 
 	/**
 	 * The cached value of the '{@link #getOtherPayerBenefitEffectiveDate() <em>Other Payer Benefit Effective Date</em>}' containment reference list.
@@ -229,9 +233,9 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherPayerCoverageType() {
+	public EList<OtherPayerCoverageType> getOtherPayerCoverageType() {
 		if (otherPayerCoverageType == null) {
-			otherPayerCoverageType = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE);
+			otherPayerCoverageType = new EDataTypeUniqueEList<OtherPayerCoverageType>(OtherPayerCoverageType.class, this, TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE);
 		}
 		return otherPayerCoverageType;
 	}
@@ -241,9 +245,9 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherPayerIdQualifier() {
+	public EList<OtherPayerIDQualifier> getOtherPayerIdQualifier() {
 		if (otherPayerIdQualifier == null) {
-			otherPayerIdQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID_QUALIFIER);
+			otherPayerIdQualifier = new EDataTypeUniqueEList<OtherPayerIDQualifier>(OtherPayerIDQualifier.class, this, TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID_QUALIFIER);
 		}
 		return otherPayerIdQualifier;
 	}
@@ -325,9 +329,9 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getOtherPayerPatientRelationshipCode() {
+	public EList<OtherPayerPatientRelationshipCode> getOtherPayerPatientRelationshipCode() {
 		if (otherPayerPatientRelationshipCode == null) {
-			otherPayerPatientRelationshipCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_PATIENT_RELATIONSHIP_CODE);
+			otherPayerPatientRelationshipCode = new EDataTypeUniqueEList<OtherPayerPatientRelationshipCode>(OtherPayerPatientRelationshipCode.class, this, TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_PATIENT_RELATIONSHIP_CODE);
 		}
 		return otherPayerPatientRelationshipCode;
 	}
@@ -366,10 +370,6 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 		switch (featureID) {
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID_COUNT:
 				return ((InternalEList<?>)getOtherPayerIdCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE:
-				return ((InternalEList<?>)getOtherPayerCoverageType()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID_QUALIFIER:
-				return ((InternalEList<?>)getOtherPayerIdQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID:
 				return ((InternalEList<?>)getOtherPayerId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_PROCESSOR_CONTROL_NUMBER:
@@ -382,8 +382,6 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 				return ((InternalEList<?>)getOtherPayerPersonCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_HELP_DESK_PHONE_NUMBER:
 				return ((InternalEList<?>)getOtherPayerHelpDeskPhoneNumber()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_PATIENT_RELATIONSHIP_CODE:
-				return ((InternalEList<?>)getOtherPayerPatientRelationshipCode()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_BENEFIT_EFFECTIVE_DATE:
 				return ((InternalEList<?>)getOtherPayerBenefitEffectiveDate()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_BENEFIT_TERMINATION_DATE:
@@ -449,11 +447,11 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 				return;
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_COVERAGE_TYPE:
 				getOtherPayerCoverageType().clear();
-				getOtherPayerCoverageType().addAll((Collection<? extends Field>)newValue);
+				getOtherPayerCoverageType().addAll((Collection<? extends OtherPayerCoverageType>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID_QUALIFIER:
 				getOtherPayerIdQualifier().clear();
-				getOtherPayerIdQualifier().addAll((Collection<? extends Field>)newValue);
+				getOtherPayerIdQualifier().addAll((Collection<? extends OtherPayerIDQualifier>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_ID:
 				getOtherPayerId().clear();
@@ -481,7 +479,7 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 				return;
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_PATIENT_RELATIONSHIP_CODE:
 				getOtherPayerPatientRelationshipCode().clear();
-				getOtherPayerPatientRelationshipCode().addAll((Collection<? extends Field>)newValue);
+				getOtherPayerPatientRelationshipCode().addAll((Collection<? extends OtherPayerPatientRelationshipCode>)newValue);
 				return;
 			case TelecomPackage.RESPONSE_COORDINATIONOF_BENEFITS_OTHER_PAYERS_SEGMENT__OTHER_PAYER_BENEFIT_EFFECTIVE_DATE:
 				getOtherPayerBenefitEffectiveDate().clear();
@@ -596,6 +594,12 @@ public class ResponseCoordinationofBenefitsOtherPayersSegmentImpl extends EObjec
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", otherPayerCoverageType: ");
+		result.append(otherPayerCoverageType);
+		result.append(", otherPayerIdQualifier: ");
+		result.append(otherPayerIdQualifier);
+		result.append(", otherPayerPatientRelationshipCode: ");
+		result.append(otherPayerPatientRelationshipCode);
 		result.append(')');
 		return result.toString();
 	}

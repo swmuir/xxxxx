@@ -21,6 +21,10 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.ncpdp.uml.ECL.CompoundDispensingUnitFormIndicator;
+import org.ncpdp.uml.ECL.CompoundDosageFormDescriptionCode;
+import org.ncpdp.uml.ECL.CompoundProductIDQualifier;
+
 import org.ncpdp.uml.telecom.CompoundSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
@@ -60,24 +64,24 @@ public class CompoundSegmentImpl extends EObjectImpl implements CompoundSegment 
 	protected EList<String> segmentIdentification;
 
 	/**
-	 * The cached value of the '{@link #getCompoundDosageFormDescriptionCode() <em>Compound Dosage Form Description Code</em>}' containment reference list.
+	 * The cached value of the '{@link #getCompoundDosageFormDescriptionCode() <em>Compound Dosage Form Description Code</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCompoundDosageFormDescriptionCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> compoundDosageFormDescriptionCode;
+	protected EList<CompoundDosageFormDescriptionCode> compoundDosageFormDescriptionCode;
 
 	/**
-	 * The cached value of the '{@link #getCompoundDispensingUnitFormIndicator() <em>Compound Dispensing Unit Form Indicator</em>}' containment reference list.
+	 * The cached value of the '{@link #getCompoundDispensingUnitFormIndicator() <em>Compound Dispensing Unit Form Indicator</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCompoundDispensingUnitFormIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> compoundDispensingUnitFormIndicator;
+	protected EList<CompoundDispensingUnitFormIndicator> compoundDispensingUnitFormIndicator;
 
 	/**
 	 * The cached value of the '{@link #getCompoundIngredientComponentCount() <em>Compound Ingredient Component Count</em>}' containment reference list.
@@ -90,14 +94,14 @@ public class CompoundSegmentImpl extends EObjectImpl implements CompoundSegment 
 	protected EList<Field> compoundIngredientComponentCount;
 
 	/**
-	 * The cached value of the '{@link #getCompoundProductIdQualifier() <em>Compound Product Id Qualifier</em>}' containment reference list.
+	 * The cached value of the '{@link #getCompoundProductIdQualifier() <em>Compound Product Id Qualifier</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCompoundProductIdQualifier()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Field> compoundProductIdQualifier;
+	protected EList<CompoundProductIDQualifier> compoundProductIdQualifier;
 
 	/**
 	 * The cached value of the '{@link #getCompoundProductId() <em>Compound Product Id</em>}' containment reference list.
@@ -195,9 +199,9 @@ public class CompoundSegmentImpl extends EObjectImpl implements CompoundSegment 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getCompoundDosageFormDescriptionCode() {
+	public EList<CompoundDosageFormDescriptionCode> getCompoundDosageFormDescriptionCode() {
 		if (compoundDosageFormDescriptionCode == null) {
-			compoundDosageFormDescriptionCode = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.COMPOUND_SEGMENT__COMPOUND_DOSAGE_FORM_DESCRIPTION_CODE);
+			compoundDosageFormDescriptionCode = new EDataTypeUniqueEList<CompoundDosageFormDescriptionCode>(CompoundDosageFormDescriptionCode.class, this, TelecomPackage.COMPOUND_SEGMENT__COMPOUND_DOSAGE_FORM_DESCRIPTION_CODE);
 		}
 		return compoundDosageFormDescriptionCode;
 	}
@@ -207,9 +211,9 @@ public class CompoundSegmentImpl extends EObjectImpl implements CompoundSegment 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getCompoundDispensingUnitFormIndicator() {
+	public EList<CompoundDispensingUnitFormIndicator> getCompoundDispensingUnitFormIndicator() {
 		if (compoundDispensingUnitFormIndicator == null) {
-			compoundDispensingUnitFormIndicator = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.COMPOUND_SEGMENT__COMPOUND_DISPENSING_UNIT_FORM_INDICATOR);
+			compoundDispensingUnitFormIndicator = new EDataTypeUniqueEList<CompoundDispensingUnitFormIndicator>(CompoundDispensingUnitFormIndicator.class, this, TelecomPackage.COMPOUND_SEGMENT__COMPOUND_DISPENSING_UNIT_FORM_INDICATOR);
 		}
 		return compoundDispensingUnitFormIndicator;
 	}
@@ -231,9 +235,9 @@ public class CompoundSegmentImpl extends EObjectImpl implements CompoundSegment 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Field> getCompoundProductIdQualifier() {
+	public EList<CompoundProductIDQualifier> getCompoundProductIdQualifier() {
 		if (compoundProductIdQualifier == null) {
-			compoundProductIdQualifier = new EObjectContainmentEList<Field>(Field.class, this, TelecomPackage.COMPOUND_SEGMENT__COMPOUND_PRODUCT_ID_QUALIFIER);
+			compoundProductIdQualifier = new EDataTypeUniqueEList<CompoundProductIDQualifier>(CompoundProductIDQualifier.class, this, TelecomPackage.COMPOUND_SEGMENT__COMPOUND_PRODUCT_ID_QUALIFIER);
 		}
 		return compoundProductIdQualifier;
 	}
@@ -318,14 +322,8 @@ public class CompoundSegmentImpl extends EObjectImpl implements CompoundSegment 
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_DOSAGE_FORM_DESCRIPTION_CODE:
-				return ((InternalEList<?>)getCompoundDosageFormDescriptionCode()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_DISPENSING_UNIT_FORM_INDICATOR:
-				return ((InternalEList<?>)getCompoundDispensingUnitFormIndicator()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_INGREDIENT_COMPONENT_COUNT:
 				return ((InternalEList<?>)getCompoundIngredientComponentCount()).basicRemove(otherEnd, msgs);
-			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_PRODUCT_ID_QUALIFIER:
-				return ((InternalEList<?>)getCompoundProductIdQualifier()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_PRODUCT_ID:
 				return ((InternalEList<?>)getCompoundProductId()).basicRemove(otherEnd, msgs);
 			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_INGREDIENT_QUANTITY:
@@ -391,11 +389,11 @@ public class CompoundSegmentImpl extends EObjectImpl implements CompoundSegment 
 				return;
 			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_DOSAGE_FORM_DESCRIPTION_CODE:
 				getCompoundDosageFormDescriptionCode().clear();
-				getCompoundDosageFormDescriptionCode().addAll((Collection<? extends Field>)newValue);
+				getCompoundDosageFormDescriptionCode().addAll((Collection<? extends CompoundDosageFormDescriptionCode>)newValue);
 				return;
 			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_DISPENSING_UNIT_FORM_INDICATOR:
 				getCompoundDispensingUnitFormIndicator().clear();
-				getCompoundDispensingUnitFormIndicator().addAll((Collection<? extends Field>)newValue);
+				getCompoundDispensingUnitFormIndicator().addAll((Collection<? extends CompoundDispensingUnitFormIndicator>)newValue);
 				return;
 			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_INGREDIENT_COMPONENT_COUNT:
 				getCompoundIngredientComponentCount().clear();
@@ -403,7 +401,7 @@ public class CompoundSegmentImpl extends EObjectImpl implements CompoundSegment 
 				return;
 			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_PRODUCT_ID_QUALIFIER:
 				getCompoundProductIdQualifier().clear();
-				getCompoundProductIdQualifier().addAll((Collection<? extends Field>)newValue);
+				getCompoundProductIdQualifier().addAll((Collection<? extends CompoundProductIDQualifier>)newValue);
 				return;
 			case TelecomPackage.COMPOUND_SEGMENT__COMPOUND_PRODUCT_ID:
 				getCompoundProductId().clear();
@@ -524,6 +522,12 @@ public class CompoundSegmentImpl extends EObjectImpl implements CompoundSegment 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (segmentIdentification: ");
 		result.append(segmentIdentification);
+		result.append(", compoundDosageFormDescriptionCode: ");
+		result.append(compoundDosageFormDescriptionCode);
+		result.append(", compoundDispensingUnitFormIndicator: ");
+		result.append(compoundDispensingUnitFormIndicator);
+		result.append(", compoundProductIdQualifier: ");
+		result.append(compoundProductIdQualifier);
 		result.append(')');
 		return result.toString();
 	}

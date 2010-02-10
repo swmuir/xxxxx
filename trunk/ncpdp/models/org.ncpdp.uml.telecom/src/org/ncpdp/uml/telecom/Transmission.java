@@ -7,8 +7,10 @@
 package org.ncpdp.uml.telecom;
 
 import java.util.Map;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -44,24 +46,6 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Transmission extends EObject {
-
-	/**
-	 * Returns the value of the '<em><b>Workers Compensation Segment</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.WorkersCompensationSegment}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Workers Compensation Segment</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Workers Compensation Segment</em>' containment reference list.
-	 * @see org.ncpdp.uml.telecom.TelecomPackage#getTransmission_WorkersCompensationSegment()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='segment' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	EList<WorkersCompensationSegment> getWorkersCompensationSegment();
-
 	/**
 	 * Returns the value of the '<em><b>Transaction Header Segment</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -88,6 +72,23 @@ public interface Transmission extends EObject {
 	 * @generated
 	 */
 	void setTransactionHeaderSegment(TransactionHeaderSegment value);
+
+	/**
+	 * Returns the value of the '<em><b>Workers Compensation Segment</b></em>' containment reference list.
+	 * The list contents are of type {@link org.ncpdp.uml.telecom.WorkersCompensationSegment}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Workers Compensation Segment</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Workers Compensation Segment</em>' containment reference list.
+	 * @see org.ncpdp.uml.telecom.TelecomPackage#getTransmission_WorkersCompensationSegment()
+	 * @model containment="true" ordered="false"
+	 *        extendedMetaData="name='segment' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	EList<WorkersCompensationSegment> getWorkersCompensationSegment();
 
 	/**
 	 * Returns the value of the '<em><b>Prior Authorization Segment</b></em>' containment reference.
@@ -309,7 +310,7 @@ public interface Transmission extends EObject {
 	 * Returns the value of the '<em><b>DURPPS Segment</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>DURPPS Segment</em>' reference isn't clear,
+	 * If the meaning of the '<em>DURPPS Segment</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -387,31 +388,31 @@ public interface Transmission extends EObject {
 	void setCoordinationofBenefitsOtherPaymentsSegment(CoordinationofBenefitsOtherPaymentsSegment value);
 
 	/**
-	 * Returns the value of the '<em><b>Compound Segment</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Clinical Segment</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Compound Segment</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Clinical Segment</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Compound Segment</em>' containment reference.
-	 * @see #setCompoundSegment(CompoundSegment)
-	 * @see org.ncpdp.uml.telecom.TelecomPackage#getTransmission_CompoundSegment()
+	 * @return the value of the '<em>Clinical Segment</em>' containment reference.
+	 * @see #setClinicalSegment(ClinicalSegment)
+	 * @see org.ncpdp.uml.telecom.TelecomPackage#getTransmission_ClinicalSegment()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="name='segment' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CompoundSegment getCompoundSegment();
+	ClinicalSegment getClinicalSegment();
 
 	/**
-	 * Sets the value of the '{@link org.ncpdp.uml.telecom.Transmission#getCompoundSegment <em>Compound Segment</em>}' containment reference.
+	 * Sets the value of the '{@link org.ncpdp.uml.telecom.Transmission#getClinicalSegment <em>Clinical Segment</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Compound Segment</em>' containment reference.
-	 * @see #getCompoundSegment()
+	 * @param value the new value of the '<em>Clinical Segment</em>' containment reference.
+	 * @see #getClinicalSegment()
 	 * @generated
 	 */
-	void setCompoundSegment(CompoundSegment value);
+	void setClinicalSegment(ClinicalSegment value);
 
 	/**
 	 * Returns the value of the '<em><b>Claim Segment</b></em>' containment reference.
@@ -468,6 +469,33 @@ public interface Transmission extends EObject {
 	void setAdditionalDocumentationSegment(AdditionalDocumentationSegment value);
 
 	/**
+	 * Returns the value of the '<em><b>Compound Segment</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Compound Segment</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Compound Segment</em>' containment reference.
+	 * @see #setCompoundSegment(CompoundSegment)
+	 * @see org.ncpdp.uml.telecom.TelecomPackage#getTransmission_CompoundSegment()
+	 * @model containment="true" ordered="false"
+	 *        extendedMetaData="name='segment' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	CompoundSegment getCompoundSegment();
+
+	/**
+	 * Sets the value of the '{@link org.ncpdp.uml.telecom.Transmission#getCompoundSegment <em>Compound Segment</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Compound Segment</em>' containment reference.
+	 * @see #getCompoundSegment()
+	 * @generated
+	 */
+	void setCompoundSegment(CompoundSegment value);
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -480,30 +508,4 @@ public interface Transmission extends EObject {
 	 */
 	boolean TransmissionTransactionHeaderSegment(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
-	 * Returns the value of the '<em><b>Clinical Segment</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Clinical Segment</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Clinical Segment</em>' containment reference.
-	 * @see #setClinicalSegment(ClinicalSegment)
-	 * @see org.ncpdp.uml.telecom.TelecomPackage#getTransmission_ClinicalSegment()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='segment' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	ClinicalSegment getClinicalSegment();
-
-	/**
-	 * Sets the value of the '{@link org.ncpdp.uml.telecom.Transmission#getClinicalSegment <em>Clinical Segment</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Clinical Segment</em>' containment reference.
-	 * @see #getClinicalSegment()
-	 * @generated
-	 */
-	void setClinicalSegment(ClinicalSegment value);
 } // Transmission

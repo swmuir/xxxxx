@@ -217,13 +217,8 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="transactionCount" ordered="false"
-        lowerBound="1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transactionCount" ordered="false"
+        lowerBound="1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//TransactionCount"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="serviceProviderId" ordered="false"
         lowerBound="1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -259,13 +254,8 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="transactionCode" ordered="false"
-        lowerBound="1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transactionCode" ordered="false"
+        lowerBound="1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//TransactionCode"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Field">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="field" ordered="false"
@@ -274,29 +264,6 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="WorkersCompensationSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="dateOfInjury.field" value="434-DY"/>
-      <details key="employerName.field" value="315-CF"/>
-      <details key="employerStreetAddress.field" value="316-CG"/>
-      <details key="employerCityAddress.field" value="317-CH"/>
-      <details key="employerStateprovinceAddress.field" value="318-CI"/>
-      <details key="employerZippostalZone.field" value="319-CJ"/>
-      <details key="employerPhoneNumber.field" value="320-CK"/>
-      <details key="employerContactName.field" value="321-CL"/>
-      <details key="carrierId.field" value="327-CR"/>
-      <details key="claimreferenceId.field" value="435-DZ"/>
-      <details key="billingEntityTypeIndicator.field" value="117-TR"/>
-      <details key="payToQualifier.field" value="118-TS"/>
-      <details key="payToId.field" value="119-TT"/>
-      <details key="payToName.field" value="120-TU"/>
-      <details key="payToStreetAddress.field" value="121-TV"/>
-      <details key="payToCityAddress.field" value="122-TW"/>
-      <details key="payToStateprovinceAddress.field" value="123-TX"/>
-      <details key="payToZippostalZone.field" value="124-TY"/>
-      <details key="genericEquivalentProductIdQualifier.field" value="125-TZ"/>
-      <details key="genericEquivalentProductId.field" value="126-UA"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -363,18 +330,10 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="billingEntityTypeIndicator"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="payToQualifier" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="billingEntityTypeIndicator"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BillingEntityTypeIndicator"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="payToQualifier" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PayToQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="payToId" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -411,12 +370,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="genericEquivalentProductIdQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericEquivalentProductIdQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//GenericEquivalentProductIDQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="genericEquivalentProductId"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -425,34 +380,14 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PriorAuthorizationSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="requestType.field" value="498-PA"/>
-      <details key="requestPeriodDate-begin.field" value="498-PB"/>
-      <details key="requestPeriodDate-end.field" value="498-PC"/>
-      <details key="basisOfRequest.field" value="498-PD"/>
-      <details key="authorizedRepresentativeFirstName.field" value="498-PE"/>
-      <details key="authorizedRepresentativeLastName.field" value="498-PF"/>
-      <details key="authorizedRepresentativeStreetAddress.field" value="498-PG"/>
-      <details key="authorizedRepresentativeCityAddress.field" value="498-PH"/>
-      <details key="authorizedRepresentativeStateprovinceAddress.field" value="498-PJ"/>
-      <details key="authorizedRepresentativeZippostalZone.field" value="498-PK"/>
-      <details key="priorAuthorizationNumber-assigned.field" value="498-PY"/>
-      <details key="authorizationNumber.field" value="503-F3"/>
-      <details key="priorAuthorizationSupportingDocumentation.field" value="498-PP"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="Id"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requestType" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requestType" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//RequestType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="requestPeriodDatebegin"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -527,25 +462,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PricingSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="ingredientCostSubmitted.field" value="409-D9"/>
-      <details key="dispensingFeeSubmitted.field" value="412-DC"/>
-      <details key="professionalServiceFeeSubmitted.field" value="477-BE"/>
-      <details key="patientPaidAmountSubmitted.field" value="433-DX"/>
-      <details key="incentiveAmountSubmitted.field" value="438-E3"/>
-      <details key="otherAmountClaimedSubmittedCount.field" value="478-H7"/>
-      <details key="otherAmountClaimedSubmittedQualifier.field" value="479-H8 "/>
-      <details key="otherAmountClaimedSubmitted.field" value="480-H9"/>
-      <details key="flatSalesTaxAmountSubmitted.field" value="481-HA"/>
-      <details key="percentageSalesTaxAmountSubmitted.field" value="482-GE"/>
-      <details key="percentageSalesTaxRateSubmitted.field" value="483-HE"/>
-      <details key="percentageSalesTaxBasisSubmitted.field" value="484-JE "/>
-      <details key="usualAndCustomaryCharge.field" value="426-DQ"/>
-      <details key="grossAmountDue.field" value="430-DU"/>
-      <details key="basisOfCostDetermination.field" value="423-DN"/>
-      <details key="medicaidPaidAmount.field" value="113-N3"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -636,12 +552,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="basisOfCostDetermination"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="basisOfCostDetermination"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BasisOfCostDetermination"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="medicaidPaidAmount" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -650,21 +562,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PrescriberSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="prescriberIdQualifier.field" value="466-EZ "/>
-      <details key="prescriberId.field" value="411-DB"/>
-      <details key="prescriberLastName.field" value="427-DR"/>
-      <details key="prescriberPhoneNumber.field" value="498-PM"/>
-      <details key="primaryCareProviderIdQualifier.field" value="468-2E "/>
-      <details key="primaryCareProviderId.field" value="421-DL"/>
-      <details key="primaryCareProviderLastName.field" value="470-4E"/>
-      <details key="prescriberFirstName.field" value="364-2J"/>
-      <details key="prescriberStreetAddress.field" value="365-2K"/>
-      <details key="prescriberCityAddress.field" value="366-2M"/>
-      <details key="prescriberStateprovinceAddress.field" value="367-2N"/>
-      <details key="prescriberZippostalZone.field" value="368-2P"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -745,11 +642,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PharmacyProviderSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="providerIdQualifier.field" value="465-EY "/>
-      <details key="providerId.field" value="444-E9"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -770,38 +662,14 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PatientSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="patientIdQualifier.field" value="331-CX"/>
-      <details key="patientId.field" value="332-CY"/>
-      <details key="dateOfBirth.field" value="304-C4"/>
-      <details key="patientGenderCode.field" value="305-C5"/>
-      <details key="patientFirstName.field" value="310-CA"/>
-      <details key="patientLastName.field" value="311-CB"/>
-      <details key="patientStreetAddress.field" value="322-CM"/>
-      <details key="patientCityAddress.field" value="323-CN"/>
-      <details key="patientStateProvinceAddress.field" value="324-CO"/>
-      <details key="patientZippostalZone.field" value="325-CP"/>
-      <details key="patientPhoneNumber.field" value="326-CQ"/>
-      <details key="placeOfService.field" value="307-C7"/>
-      <details key="employerId.field" value="333-CZ"/>
-      <details key="smokerNon-smokerCode.field" value="334-1C"/>
-      <details key="pregnancyIndicator.field" value="335-2C"/>
-      <details key="patientE-mailAddress.field" value="350-HN"/>
-      <details key="patientResidence.field" value="384-4X"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="Id"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="patientIdQualifier" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="patientIdQualifier" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PatientIDQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="patientId" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -814,12 +682,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="patientGenderCode" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="patientGenderCode" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PatientGenderCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="patientFirstName" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -862,12 +726,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="placeOfService" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="placeOfService" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PatientLocation"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="employerId" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -880,30 +740,18 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pregnancyIndicator" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pregnancyIndicator" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PregnancyIndicator"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="patientEmailAddress" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="patientResidence" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="patientResidence" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PatientResidence"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NarrativeSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="narrativeMessage.field" value="390-BM"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -918,28 +766,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InsuranceSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="cardholderId.field" value="302-C2"/>
-      <details key="cardholderFirstName.field" value="312-CC"/>
-      <details key="cardholderLastName.field" value="313-CD"/>
-      <details key="homePlan.field" value="314-CE"/>
-      <details key="planId.field" value="524-FO"/>
-      <details key="eligibilityClarificationCode.field" value="309-C9"/>
-      <details key="groupId.field" value="301-C1"/>
-      <details key="personCode.field" value="303-C3"/>
-      <details key="patientRelationshipCode.field" value="306-C6"/>
-      <details key="otherPayerBinNumber.field" value="990-MG "/>
-      <details key="otherPayerProcessorControlNumber.field" value="991-MH "/>
-      <details key="otherPayerCardholderId.field" value="356-NU"/>
-      <details key="otherPayerGroupId.field" value="992-MJ "/>
-      <details key="medigapId.field" value="359-2A"/>
-      <details key="medicaidIndicator.field" value="360-2B"/>
-      <details key="providerAcceptAssignmentIndicator.field" value="361-2D"/>
-      <details key="cmsPartDDefinedQualifiedFacility.field" value="997-G2"/>
-      <details key="medicaidIdNumber.field" value="115-N5"/>
-      <details key="medicaidAgencyNumber.field" value="116-N6"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -976,12 +802,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="eligibilityClarificationCode"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eligibilityClarificationCode"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//EligibilityClarificationCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="groupId" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -994,12 +816,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="patientRelationshipCode"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="patientRelationshipCode"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PatientRelationshipCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerBinNumber" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1036,18 +854,10 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="providerAcceptAssignmentIndicator"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cmsPartDDefinedQualifiedFacility"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="providerAcceptAssignmentIndicator"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//ProviderAcceptAssignmentIndicator"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cmsPartDDefinedQualifiedFacility"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//CMSPartDDefinedQualifiedFacility"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="medicaidIdNumber" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1062,15 +872,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FacilitySegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="facilityId.field" value="336-8C"/>
-      <details key="facilityName.field" value="385-3Q"/>
-      <details key="facilityStreetAddress.field" value="386-3U"/>
-      <details key="facilityCityAddress.field" value="388-5J"/>
-      <details key="facilityStateprovinceAddress.field" value="387-3V"/>
-      <details key="facilityZippostalZone.field" value="389-6D"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1115,16 +916,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DURPPSSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="durppsCodeCounter.field" value="473-7E"/>
-      <details key="reasonForServiceCode.field" value="439-E4"/>
-      <details key="professionalServiceCode.field" value="440-E5"/>
-      <details key="resultOfServiceCode.field" value="441-E6"/>
-      <details key="durppsLevelOfEffort.field" value="474-8E"/>
-      <details key="durCo-agentIdQualifier.field" value="475-J9"/>
-      <details key="durCo-agentId.field" value="476-H6"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1137,36 +928,20 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="reasonForServiceCode" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="professionalServiceCode"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="resultOfServiceCode" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="reasonForServiceCode" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//ReasonforServiceCode"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="professionalServiceCode"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//ProfessionalServiceCode"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="resultOfServiceCode" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//ResultofServiceCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="durppsLevelOfEffort" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="durCoagentIdQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="durCoagentIdQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//DURCoAgentIDQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="durCoagentId" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1175,24 +950,14 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CouponSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="couponType.field" value="485-KE"/>
-      <details key="couponNumber.field" value="486-ME"/>
-      <details key="couponValueAmount.field" value="487-NE"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="Id"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="couponType" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="couponType" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//CouponType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="couponNumber" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1207,26 +972,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CoordinationofBenefitsOtherPaymentsSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="coordinationOfBenefitsotherPaymentsCount.field" value="337-4C"/>
-      <details key="otherPayerCoverageType.field" value="338-5C"/>
-      <details key="otherPayerIdQualifier.field" value="339-6C"/>
-      <details key="otherPayerId.field" value="340-7C"/>
-      <details key="otherPayerDate.field" value="443-E8"/>
-      <details key="internalControlNumber.field" value="993-A7"/>
-      <details key="otherPayerAmountPaidCount.field" value="341-HB"/>
-      <details key="otherPayerAmountPaidQualifier.field" value="342-HC"/>
-      <details key="otherPayerAmountPaid.field" value="431-DV"/>
-      <details key="otherPayerRejectCount.field" value="471-5E"/>
-      <details key="otherPayerRejectCode.field" value="472-6E"/>
-      <details key="otherPayer-patientResponsibilityAmountCount.field" value="353-NR"/>
-      <details key="otherPayer-patientResponsibilityAmountQualifier.field" value="351-NP"/>
-      <details key="otherPayer-patientResponsibilityAmount.field" value="352-NQ"/>
-      <details key="benefitStageCount.field" value="392-MU"/>
-      <details key="benefitStageQualifier.field" value="393-MV"/>
-      <details key="benefitStageAmount.field" value="394-MW"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1239,18 +984,10 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerCoverageType"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerIdQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherPayerCoverageType"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherPayerCoverageType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherPayerIdQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherPayerIDQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerId" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1275,12 +1012,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerAmountPaidQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherPayerAmountPaidQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherPayerAmountPaidQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerAmountPaid" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1305,12 +1038,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerpatientResponsibilityAmountQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherPayerpatientResponsibilityAmountQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherPayerPatientResponsibilityAmountQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerpatientResponsibilityAmount"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1323,12 +1052,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="benefitStageQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="benefitStageQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BenefitStageQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="benefitStageAmount" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1337,18 +1062,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ClinicalSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="diagnosisCodeCount.field" value="491-VE"/>
-      <details key="diagnosisCodeQualifier.field" value="492-WE"/>
-      <details key="diagnosisCode.field" value="424-DO"/>
-      <details key="clinicalInformationCounter.field" value="493-XE"/>
-      <details key="measurementDate.field" value="494-ZE"/>
-      <details key="measurementTime.field" value="495-H1"/>
-      <details key="measurementDimension.field" value="496-H2"/>
-      <details key="measurementUnit.field" value="497-H3"/>
-      <details key="measurementValue.field" value="499-H4"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1397,20 +1110,10 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="measurementDimension" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="measurementUnit" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="measurementDimension" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//MeasurementDimension"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="measurementUnit" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//MeasurementUnit"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="measurementValue" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1420,53 +1123,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ClaimSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="prescriptionserviceReferenceNumberQualifier.field" value="455-EM"/>
-      <details key="prescriptionserviceReferenceNumber.field" value="402-D2"/>
-      <details key="productserviceIdQualifier.field" value="436-E1 "/>
-      <details key="productserviceId.field" value="407-D7"/>
-      <details key="associatedPrescriptionserviceReferenceNumber.field" value="456-EN"/>
-      <details key="associatedPrescriptionserviceDate.field" value="457-EP"/>
-      <details key="procedureModifierCodeCount.field" value="458-SE"/>
-      <details key="procedureModifierCode.field" value="459-ER"/>
-      <details key="quantityDispensed.field" value="442-E7"/>
-      <details key="fillNumber.field" value="403-D3"/>
-      <details key="daysSupply.field" value="405-D5"/>
-      <details key="compoundCode.field" value="406-D6"/>
-      <details key="dispenseAsWritten(daw)productSelectionCode.field" value="408-D8"/>
-      <details key="datePrescriptionWritten.field" value="414-DE"/>
-      <details key="numberOfRefillsAuthorized.field" value="415-DF"/>
-      <details key="prescriptionOriginCode.field" value="419-DJ"/>
-      <details key="submissionClarificationCodeCount.field" value="354-NX"/>
-      <details key="submissionClarificationCode.field" value="420-DK"/>
-      <details key="quantityPrescribed.field" value="46 -ET"/>
-      <details key="otherCoverageCode.field" value="308-C8"/>
-      <details key="specialPackagingIndicator.field" value="429-DT"/>
-      <details key="originallyPrescribedProductserviceIdQualifier.field" value="453-EJ"/>
-      <details key="originallyPrescribedProductserviceCode.field" value="445-EA"/>
-      <details key="originallyPrescribedQuantity.field" value="446-EB"/>
-      <details key="alternateId.field" value="330-CW"/>
-      <details key="scheduledPrescriptionIdNumber.field" value="454-EK"/>
-      <details key="unitOfMeasure.field" value="600-28"/>
-      <details key="levelOfService.field" value="418-DI"/>
-      <details key="priorAuthorizationTypeCode.field" value="461-EU"/>
-      <details key="priorAuthorizationNumberSubmitted.field" value="462-EV"/>
-      <details key="intermediaryAuthorizationTypeId.field" value="463-EW"/>
-      <details key="intermediaryAuthorizationId.field" value="464-EX"/>
-      <details key="dispensingStatus.field" value="343-HD"/>
-      <details key="quantityIntendedToBeDispensed.field" value="344-HF"/>
-      <details key="daysSupplyIntendedToBeDispensed.field" value="345-HG"/>
-      <details key="delayReasonCode.field" value="357-NV"/>
-      <details key="transactionReferenceNumber.field" value="880-K5"/>
-      <details key="patientAssignmentIndicator(directMemberReimbursementIndicator).field"
-          value="391-MT"/>
-      <details key="routeOfAdministration.field" value="995-E2"/>
-      <details key="compoundType.field" value="996-G1"/>
-      <details key="medicaidSubrogationInternalControlNumbertransactionControlNumber(icntcn).field"
-          value="114-N4"/>
-      <details key="pharmacyServiceType.field" value="147-U7"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1536,13 +1192,8 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="fillNumber" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillNumber" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//FillNumber"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="daysSupply" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1571,20 +1222,10 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="numberOfRefillsAuthorized"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="prescriptionOriginCode"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberOfRefillsAuthorized"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//NumberofRefillsAuthorized"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prescriptionOriginCode"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PrescriptionOriginCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="submissionClarificationCodeCount"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1592,13 +1233,8 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="submissionClarificationCode"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="submissionClarificationCode"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//SubmissionClarificationCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="quantityPrescribed" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1606,20 +1242,10 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherCoverageCode" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="specialPackagingIndicator"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherCoverageCode" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherCoverageCode"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="specialPackagingIndicator"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//SpecialPackagingIndicator"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="originallyPrescribedProductserviceIdQualifier"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1655,27 +1281,12 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="unitOfMeasure" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="levelOfService" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="priorAuthorizationTypeCode"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unitOfMeasure" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//UnitofMeasure"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="levelOfService" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//LevelofService"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="priorAuthorizationTypeCode"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PriorAuthorizationTypeCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="priorAuthorizationNumberSubmitted"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1683,13 +1294,8 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="intermediaryAuthorizationTypeId"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="intermediaryAuthorizationTypeId"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//IntermediaryAuthorizationTypeID"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="intermediaryAuthorizationId"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1697,13 +1303,8 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="dispensingStatus" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dispensingStatus" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//DispensingStatus"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="quantityIntendedToBeDispensed"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1718,13 +1319,8 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="delayReasonCode" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="delayReasonCode" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//DelayReasonCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="transactionReferenceNumber"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1732,27 +1328,12 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="patientAssignmentIndicatordirectMemberReimbursementIndicator"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="routeOfAdministration"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="compoundType" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="patientAssignmentIndicatordirectMemberReimbursementIndicator"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PatientAssignmentIndicatorDirectMemberReimbursementIndicator"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="routeOfAdministration"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//RouteOfAdministration"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="compoundType" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//CompoundType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="medicaidSubrogationInternalControlNumbertransactionControlNumbericntcn"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1760,45 +1341,18 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pharmacyServiceType" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pharmacyServiceType" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PharmacyServiceType"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdditionalDocumentationSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="additionalDocumentationTypeId.field" value="369-2Q"/>
-      <details key="requestPeriodBeginDate.field" value="374-2V"/>
-      <details key="requestPeriodRecertrevisedDate.field" value="375-2W"/>
-      <details key="requestStatus.field" value="373-2U"/>
-      <details key="lengthOfNeedQualifier.field" value="371-2S"/>
-      <details key="lengthOfNeed.field" value="370-2R"/>
-      <details key="prescribersupplierDateSigned.field" value="372-2T"/>
-      <details key="supportingDocumentation.field" value="376-2X"/>
-      <details key="questionNumberletterCount.field" value="377-2Z"/>
-      <details key="questionNumberletter.field" value="378-4B"/>
-      <details key="questionPercentResponse.field" value="379-4D"/>
-      <details key="questionDateResponse.field" value="380-4G"/>
-      <details key="questionDollarAmountResponse.field" value="381-4H"/>
-      <details key="questionNumericResponse.field" value="382-4J"/>
-      <details key="questionAlphanumericResponse.field" value="383-4K"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="Id"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="additionalDocumentationTypeId"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalDocumentationTypeId"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//AdditionalDocumentationTypeID"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="requestPeriodBeginDate"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1811,18 +1365,10 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requestStatus" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="lengthOfNeedQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requestStatus" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//RequestStatus"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lengthOfNeedQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//LengthofNeedQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lengthOfNeed" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1885,49 +1431,24 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CompoundSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="compoundDosageFormDescriptionCode.field" value="450-EF"/>
-      <details key="compoundDispensingUnitFormIndicator.field" value="451-EG"/>
-      <details key="compoundIngredientComponentCount.field" value="447-EC "/>
-      <details key="compoundProductIdQualifier.field" value="488-RE"/>
-      <details key="compoundProductId.field" value="489-TE"/>
-      <details key="compoundIngredientQuantity.field" value="448-ED "/>
-      <details key="compoundIngredientDrugCost.field" value="449-EE"/>
-      <details key="compoundIngredientBasisOfCostDetermination.field" value="490-UE"/>
-      <details key="compoundIngredientModifierCodeCount.field" value="362-2G"/>
-      <details key="compoundIngredientModifierCode.field" value="363-2H"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="Id"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="compoundDosageFormDescriptionCode"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="compoundDispensingUnitFormIndicator"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="compoundDosageFormDescriptionCode"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//CompoundDosageFormDescriptionCode"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="compoundDispensingUnitFormIndicator"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//CompoundDispensingUnitFormIndicator"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="compoundIngredientComponentCount"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="compoundProductIdQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="compoundProductIdQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//CompoundProductIDQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="compoundProductId" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2032,33 +1553,16 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponseHeaderSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="versionReleaseNumber.field" value="102-A2"/>
-      <details key="transactionCode.field" value="103-A3"/>
-      <details key="transactionCount.field" value="109-A9"/>
-      <details key="headerResponseStatus.field" value="501-FI"/>
-      <details key="serviceProviderIDQualifier.field" value="202-B2"/>
-      <details key="serviceProviderID.field" value="201-B1"/>
-      <details key="dateofService.field" value="401-D1"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="versionreleaseNumber" ordered="false"
         lowerBound="1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="transactionCode" ordered="false"
-        lowerBound="1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="transactionCount" ordered="false"
-        lowerBound="1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transactionCode" ordered="false"
+        lowerBound="1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//TransactionCode"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transactionCount" ordered="false"
+        lowerBound="1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//TransactionCount"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="headerResponseStatus" ordered="false"
         lowerBound="1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2085,19 +1589,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponseClaimSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="prescriptionserviceReferenceNumberQualifier.field" value="455-EM"/>
-      <details key="prescriptionserviceReferenceNumber.field" value="402-D2"/>
-      <details key="preferredProductCount.field" value="551-9F"/>
-      <details key="preferredProductIDQualifier.field" value="552-AP"/>
-      <details key="preferredProductID.field" value="553-AR"/>
-      <details key="preferredProductIncentive.field" value="554-AS"/>
-      <details key="preferredProductCostShareIncentive.field" value="555-AT"/>
-      <details key="preferredProductDescription.field" value="551-9F"/>
-      <details key="medicaidSubrogationInternalControlNumbertransactionControlNumbericntcn.field"
-          value="114-N4"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2160,21 +1651,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponseCoordinationofBenefitsOtherPayersSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="otherPayerIDCount.field" value="355-NT"/>
-      <details key="otherPayerCoverageType.field" value="338-5C"/>
-      <details key="otherPayerIDQualifier.field" value="339-6C"/>
-      <details key="otherPayerID.field" value="340-7C"/>
-      <details key="otherPayerProcessorControlNumber.field" value="991-MH"/>
-      <details key="otherPayerCardholderID.field" value="356-NU"/>
-      <details key="otherPayerGroupID.field" value="992-MJ"/>
-      <details key="otherPayerPersonCode.field" value="142-UV"/>
-      <details key="otherPayerHelpDeskPhoneNumber.field" value="127-UB"/>
-      <details key="otherPayerPatientRelationshipCode.field" value="143-UW"/>
-      <details key="otherPayerBenefitEffectiveDate.field" value="144-UX"/>
-      <details key="otherPayerBenefitTerminationDate.field" value="145-UY"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2187,18 +1663,10 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerCoverageType"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerIdQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherPayerCoverageType"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherPayerCoverageType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherPayerIdQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherPayerIDQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerId" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2235,12 +1703,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerPatientRelationshipCode"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherPayerPatientRelationshipCode"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherPayerPatientRelationshipCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="otherPayerBenefitEffectiveDate"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2255,19 +1719,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponseDURPPSSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="dURPPSResponseCodeCounter.field" value="567-J6"/>
-      <details key="reasonforServiceCode.field" value="439-E4"/>
-      <details key="clinicalSignificanceCode.field" value="528-FS"/>
-      <details key="otherPharmacyIndicator.field" value="529-FT"/>
-      <details key="quantityofPreviousFill.field" value="531-FV"/>
-      <details key="previousDateofFill.field" value="530-FU"/>
-      <details key="databaseIndicator.field" value="532-FW"/>
-      <details key="otherPrescriberIndicator.field" value="533-FX"/>
-      <details key="dURFreeTextMessage.field" value="544-FY"/>
-      <details key="dURAdditionalText.field" value="570-NS"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2280,24 +1731,16 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="reasonForServiceCode" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="reasonForServiceCode" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//ReasonforServiceCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="clinicalSignificanceCode"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherPharmacyIndicator"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherPharmacyIndicator"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherPharmacyIndicator"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="previousDateOfFill" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2316,12 +1759,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherPrescriberIndicator"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherPrescriberIndicator"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherPrescriberIndicator"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="durFreeTextMessage" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2336,17 +1775,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponseInsuranceSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="groupID.field" value="301-C1"/>
-      <details key="planID.field" value="524-FO"/>
-      <details key="networkReimbursementID.field" value="545-2F"/>
-      <details key="payerIDQualifier.field" value="568-J7"/>
-      <details key="payerID.field" value="569-J8"/>
-      <details key="medicaidIDNumber.field" value="115-N5"/>
-      <details key="medicaidAgencyNumber.field" value="116-N6"/>
-      <details key="cardholderID.field" value="302-C2"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2371,12 +1799,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="payerIdQualifier" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="payerIdQualifier" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PayerIDQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="payerId" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2403,10 +1827,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponseMessageSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="message.field" value="504-F4"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2421,12 +1841,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponsePatientSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="patientFirstName.field" value="310-CA"/>
-      <details key="patientLastName.field" value="311-CB"/>
-      <details key="dateOfBirth.field" value="304-C4"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2453,56 +1867,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponsePricingSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="patientPayAmount.field" value="505-F5"/>
-      <details key="ingredientCostPaid.field" value="506-F6"/>
-      <details key="dispensingFeePaid.field" value="507-F7"/>
-      <details key="taxExemptIndicator.field" value="557-AV"/>
-      <details key="flatSalesTaxAmountPaid.field" value="558-AW"/>
-      <details key="percentageSalesTaxAmountPaid.field" value="559-AX"/>
-      <details key="percentageSalesTaxRatePaid.field" value="560-AY"/>
-      <details key="percentageSalesTaxBasisPaid.field" value="561-AZ"/>
-      <details key="incentiveAmountPaid.field" value="521-FL"/>
-      <details key="professionalServiceFeePaid.field" value="562-J1"/>
-      <details key="otherAmountPaidCount.field" value="563-J2"/>
-      <details key="otherAmountPaidQualifier.field" value="564-J3"/>
-      <details key="otherAmountPaid.field" value="565-J4"/>
-      <details key="otherPayerAmountRecognized.field" value="566-J5"/>
-      <details key="totalAmountPaid.field" value="509-F9"/>
-      <details key="basisofReimbursementDetermination.field" value="522-FM"/>
-      <details key="amountAttributedtoSalesTax.field" value="523-FN"/>
-      <details key="accumulatedDeductibleAmount.field" value="512-FC"/>
-      <details key="remainingDeductibleAmount.field" value="513-FD"/>
-      <details key="remainingBenefitAmount.field" value="514-FE"/>
-      <details key="amountAppliedtoPeriodicDeductible.field" value="517-FH"/>
-      <details key="amountofCopay.field" value="518-F1"/>
-      <details key="amountExceedingPeriodicBenefitMaximum.field" value="520-FK"/>
-      <details key="basisofCalculationDispensingFee.field" value="346-HH"/>
-      <details key="basisofCalculationCopay.field" value="347-HJ"/>
-      <details key="basisofCalculationFlatSalesTax.field" value="348-HK"/>
-      <details key="basisofCalculationPercentageSalesTax.field" value="349-HM"/>
-      <details key="amountAttributedtoProcessorFee.field" value="571-NZ"/>
-      <details key="patientSalesTaxAmount.field" value="575-EQ"/>
-      <details key="planSalesTaxAmount.field" value="574-2Y"/>
-      <details key="amountofCoinsurance.field" value="572-4U"/>
-      <details key="basisofCalculation-Coinsurance.field" value="573-4V"/>
-      <details key="benefitStageCount.field" value="392-MU"/>
-      <details key="benefitStageQualifier.field" value="393-MV"/>
-      <details key="benefitStageAmount.field" value="394-MW"/>
-      <details key="estimatedGenericSavings.field" value="577-G3"/>
-      <details key="spendingAccountAmountRemaining.field" value="128-UC"/>
-      <details key="healthPlan-FundedAssistanceAmount.field" value="129-UD"/>
-      <details key="amountAttributedtoProviderNetworkSelection.field" value="133-UJ"/>
-      <details key="amountAttributedtoProductSelectionBrandDrug.field" value="134-UK"/>
-      <details key="amountAttributedtoProductSelectionNon-PreferredFormularySelection.field"
-          value="135-UM"/>
-      <details key="amountAttributedtoProductSelectionBrandNon-PreferredFormularySelection.field"
-          value="136-UN"/>
-      <details key="amountAttributedtoCoverageGap.field" value="137-UP"/>
-      <details key="ingredientCostContractedReimbursableAmount.field" value="148-U8"/>
-      <details key="dispensingFeeContractedReimbursableAmount.field" value="149-U9"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2527,12 +1891,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="taxExemptIndicator" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="taxExemptIndicator" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//TaxExemptIndicator"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="flatSalesTaxAmountPaid"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2551,12 +1911,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="percentageSalesTaxBasisPaid"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="percentageSalesTaxBasisPaid"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//PercentageSalesTaxBasisPaid"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="incentiveAmountPaid" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2575,12 +1931,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="otherAmountPaidQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherAmountPaidQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//OtherAmountPaidQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="otherAmountPaid" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2599,12 +1951,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="basisOfReimbursementDetermination"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="basisOfReimbursementDetermination"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BasisOfReimbursementDetermination"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="amountAttributedToSalesTax"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2647,30 +1995,14 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="basisOfCalculationdispensingFee"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="basisOfCalculationcopay"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="basisOfCalculationflatSalesTax"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="basisOfCalculationpercentageSalesTax"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="basisOfCalculationdispensingFee"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BasisOfCalculationDispensingFee"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="basisOfCalculationcopay"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BasisOfCalculationCopay"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="basisOfCalculationflatSalesTax"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BasisOfCalculationFlatSalesTax"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="basisOfCalculationpercentageSalesTax"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BasisOfCalculationPercentageSalesTax"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="amountAttributedToProcessorFee"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2695,24 +2027,16 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="basisOfCalculationcoinsurance"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="basisOfCalculationcoinsurance"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BasisOfCalculationCoinsurance"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="benefitStageCount" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="benefitStageQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="benefitStageQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//BenefitStageQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="benefitStageAmount" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2781,17 +2105,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponsePriorAuthorizationSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="priorAuthorizationProcessedDate.field" value="498-PR"/>
-      <details key="priorAuthorizationEffectiveDate.field" value="498-PS"/>
-      <details key="priorAuthorizationExpirationDate.field" value="498-PT"/>
-      <details key="priorAuthorizationQuantity.field" value="498-RA"/>
-      <details key="priorAuthorizationDollarsAuthorized.field" value="498-RB"/>
-      <details key="priorAuthorizationNumberofRefillsAuthorized.field" value="498-PW"/>
-      <details key="priorAuthorizationQuantityAccumulated.field" value="498-PX"/>
-      <details key="priorAuthorizationNumber-Assigned.field" value="498-PY"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2848,37 +2161,14 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponseStatusSegment">
-    <eAnnotations source="http://www.ncpdp.org/uml/telecom/annotation">
-      <details key="segmentIdentification" value="111-AM"/>
-      <details key="transactionResponseStatus.field" value="112-AN"/>
-      <details key="authorizationNumber.field" value="503-F3"/>
-      <details key="rejectCount.field" value="510-FA"/>
-      <details key="rejectCode.field" value="511-FB"/>
-      <details key="rejectFieldOccurrenceIndicator.field" value="546-4F"/>
-      <details key="approvedMessageCodeCount.field" value="547-5F"/>
-      <details key="approvedMessageCode.field" value="548-6F"/>
-      <details key="additionalMessageInformationCount.field" value="130-UF"/>
-      <details key="additionalMessageInformationQualifier.field" value="132-UH"/>
-      <details key="additionalMessageInformation.field" value="526-FQ"/>
-      <details key="additionalMessageInformationContinuity.field" value="131-UG"/>
-      <details key="helpDeskPhoneNumberQualifier.field" value="549-7F"/>
-      <details key="helpDeskPhoneNumber.field" value="550-8F"/>
-      <details key="transactionReferenceNumber.field" value="880-K5"/>
-      <details key="internalControlNumber.field" value="993-A7"/>
-      <details key="url.field" value="987-MA"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentIdentification"
         ordered="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="Id"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="transactionResponseStatus"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transactionResponseStatus"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//TransactionResponseStatus"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="authorizationNumber" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2891,12 +2181,8 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rejectCode" ordered="false"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rejectCode" ordered="false"
+        upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//RejectCode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rejectFieldOccurrenceIndicator"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2921,30 +2207,18 @@
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="additionalMessageInformationQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalMessageInformationQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//AdditionalMessageInformationQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="additionalMessageInformation"
         ordered="false" upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="name" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="additionalMessageInformationContinuity"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="helpDeskPhoneNumberQualifier"
-        ordered="false" upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="name" value="element"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalMessageInformationContinuity"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//AdditionalMessageInformationContinuity"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="helpDeskPhoneNumberQualifier"
+        ordered="false" upperBound="-1" eType="ecore:EEnum ../../org.ncpdp.uml.ecl/model/ECL.ecore#//HelpDeskPhoneNumberQualifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="helpDeskPhoneNumber" ordered="false"
         upperBound="-1" eType="#//Field" containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">

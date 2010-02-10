@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getFacilitySegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' facilityId.field='336-8C' facilityName.field='385-3Q' facilityStreetAddress.field='386-3U' facilityCityAddress.field='388-5J' facilityStateprovinceAddress.field='387-3V' facilityZippostalZone.field='389-6D'"
+ * @model
  * @generated
  */
 public interface FacilitySegment extends EObject {
@@ -55,7 +55,7 @@ public interface FacilitySegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Facility Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -72,7 +72,7 @@ public interface FacilitySegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Facility Name</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Facility Name</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -89,7 +89,7 @@ public interface FacilitySegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Facility Street Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Facility Street Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -106,7 +106,7 @@ public interface FacilitySegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Facility City Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Facility City Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -123,7 +123,7 @@ public interface FacilitySegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Facility Stateprovince Address</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Facility Stateprovince Address</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -140,7 +140,7 @@ public interface FacilitySegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Facility Zippostal Zone</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Facility Zippostal Zone</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

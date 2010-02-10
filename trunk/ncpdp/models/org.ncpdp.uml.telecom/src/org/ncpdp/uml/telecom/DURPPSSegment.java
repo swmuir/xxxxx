@@ -10,6 +10,11 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.ncpdp.uml.ECL.DURCoAgentIDQualifier;
+import org.ncpdp.uml.ECL.ProfessionalServiceCode;
+import org.ncpdp.uml.ECL.ReasonforServiceCode;
+import org.ncpdp.uml.ECL.ResultofServiceCode;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>DURPPS Segment</b></em>'.
@@ -30,7 +35,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see org.ncpdp.uml.telecom.TelecomPackage#getDURPPSSegment()
- * @model annotation="http://www.ncpdp.org/uml/telecom/annotation segmentIdentification='111-AM' durppsCodeCounter.field='473-7E' reasonForServiceCode.field='439-E4' professionalServiceCode.field='440-E5' resultOfServiceCode.field='441-E6' durppsLevelOfEffort.field='474-8E' durCo-agentIdQualifier.field='475-J9' durCo-agentId.field='476-H6'"
+ * @model
  * @generated
  */
 public interface DURPPSSegment extends EObject {
@@ -56,7 +61,7 @@ public interface DURPPSSegment extends EObject {
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Durpps Code Counter</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Durpps Code Counter</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -69,62 +74,65 @@ public interface DURPPSSegment extends EObject {
 	EList<Field> getDurppsCodeCounter();
 
 	/**
-	 * Returns the value of the '<em><b>Reason For Service Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Reason For Service Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.ReasonforServiceCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ReasonforServiceCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Reason For Service Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reason For Service Code</em>' containment reference list.
+	 * @return the value of the '<em>Reason For Service Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.ReasonforServiceCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getDURPPSSegment_ReasonForServiceCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getReasonForServiceCode();
+	EList<ReasonforServiceCode> getReasonForServiceCode();
 
 	/**
-	 * Returns the value of the '<em><b>Professional Service Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Professional Service Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.ProfessionalServiceCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ProfessionalServiceCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Professional Service Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Professional Service Code</em>' containment reference list.
+	 * @return the value of the '<em>Professional Service Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.ProfessionalServiceCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getDURPPSSegment_ProfessionalServiceCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getProfessionalServiceCode();
+	EList<ProfessionalServiceCode> getProfessionalServiceCode();
 
 	/**
-	 * Returns the value of the '<em><b>Result Of Service Code</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Result Of Service Code</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.ResultofServiceCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ResultofServiceCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Result Of Service Code</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Result Of Service Code</em>' containment reference list.
+	 * @return the value of the '<em>Result Of Service Code</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.ResultofServiceCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getDURPPSSegment_ResultOfServiceCode()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getResultOfServiceCode();
+	EList<ResultofServiceCode> getResultOfServiceCode();
 
 	/**
 	 * Returns the value of the '<em><b>Durpps Level Of Effort</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Durpps Level Of Effort</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Durpps Level Of Effort</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -137,28 +145,29 @@ public interface DURPPSSegment extends EObject {
 	EList<Field> getDurppsLevelOfEffort();
 
 	/**
-	 * Returns the value of the '<em><b>Dur Coagent Id Qualifier</b></em>' containment reference list.
-	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
+	 * Returns the value of the '<em><b>Dur Coagent Id Qualifier</b></em>' attribute list.
+	 * The list contents are of type {@link org.ncpdp.uml.ECL.DURCoAgentIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.DURCoAgentIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Dur Coagent Id Qualifier</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dur Coagent Id Qualifier</em>' containment reference list.
+	 * @return the value of the '<em>Dur Coagent Id Qualifier</em>' attribute list.
+	 * @see org.ncpdp.uml.ECL.DURCoAgentIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getDURPPSSegment_DurCoagentIdQualifier()
-	 * @model containment="true" ordered="false"
-	 *        extendedMetaData="name='element'"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<Field> getDurCoagentIdQualifier();
+	EList<DURCoAgentIDQualifier> getDurCoagentIdQualifier();
 
 	/**
 	 * Returns the value of the '<em><b>Dur Coagent Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.ncpdp.uml.telecom.Field}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Dur Coagent Id</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Dur Coagent Id</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
