@@ -9,24 +9,18 @@ package org.ncpdp.uml.telecom.impl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity;
-import org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier;
-import org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier;
-import org.ncpdp.uml.ECL.RejectCode;
-import org.ncpdp.uml.ECL.TransactionResponseStatus;
-
+import org.ncpdp.uml.ecl.AdditionalMessageInformationContinuity;
+import org.ncpdp.uml.ecl.AdditionalMessageInformationQualifier;
+import org.ncpdp.uml.ecl.HelpDeskPhoneNumberQualifier;
+import org.ncpdp.uml.ecl.RejectCode;
+import org.ncpdp.uml.ecl.TransactionResponseStatus;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.ResponseStatusSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;

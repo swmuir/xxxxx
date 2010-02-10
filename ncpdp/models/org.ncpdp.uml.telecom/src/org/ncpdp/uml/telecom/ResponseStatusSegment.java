@@ -7,14 +7,12 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity;
-import org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier;
-import org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier;
-import org.ncpdp.uml.ECL.RejectCode;
-import org.ncpdp.uml.ECL.TransactionResponseStatus;
+import org.ncpdp.uml.ecl.AdditionalMessageInformationContinuity;
+import org.ncpdp.uml.ecl.AdditionalMessageInformationQualifier;
+import org.ncpdp.uml.ecl.HelpDeskPhoneNumberQualifier;
+import org.ncpdp.uml.ecl.RejectCode;
+import org.ncpdp.uml.ecl.TransactionResponseStatus;
 
 /**
  * <!-- begin-user-doc -->
@@ -68,8 +66,8 @@ public interface ResponseStatusSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Transaction Response Status</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.TransactionResponseStatus}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.TransactionResponseStatus}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.TransactionResponseStatus}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.TransactionResponseStatus}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Transaction Response Status</em>' attribute list isn't clear,
@@ -77,7 +75,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Transaction Response Status</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.TransactionResponseStatus
+	 * @see org.ncpdp.uml.ecl.TransactionResponseStatus
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_TransactionResponseStatus()
 	 * @model ordered="false"
 	 * @generated
@@ -120,8 +118,8 @@ public interface ResponseStatusSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Reject Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.RejectCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.RejectCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.RejectCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.RejectCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Reject Code</em>' attribute list isn't clear,
@@ -129,7 +127,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reject Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.RejectCode
+	 * @see org.ncpdp.uml.ecl.RejectCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_RejectCode()
 	 * @model ordered="false"
 	 * @generated
@@ -206,8 +204,8 @@ public interface ResponseStatusSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Additional Message Information Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.AdditionalMessageInformationQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.AdditionalMessageInformationQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Additional Message Information Qualifier</em>' attribute list isn't clear,
@@ -215,7 +213,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Additional Message Information Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.AdditionalMessageInformationQualifier
+	 * @see org.ncpdp.uml.ecl.AdditionalMessageInformationQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_AdditionalMessageInformationQualifier()
 	 * @model ordered="false"
 	 * @generated
@@ -241,8 +239,8 @@ public interface ResponseStatusSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Additional Message Information Continuity</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.AdditionalMessageInformationContinuity}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.AdditionalMessageInformationContinuity}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Additional Message Information Continuity</em>' attribute list isn't clear,
@@ -250,7 +248,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Additional Message Information Continuity</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.AdditionalMessageInformationContinuity
+	 * @see org.ncpdp.uml.ecl.AdditionalMessageInformationContinuity
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_AdditionalMessageInformationContinuity()
 	 * @model ordered="false"
 	 * @generated
@@ -259,8 +257,8 @@ public interface ResponseStatusSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Help Desk Phone Number Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.HelpDeskPhoneNumberQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.HelpDeskPhoneNumberQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Help Desk Phone Number Qualifier</em>' attribute list isn't clear,
@@ -268,7 +266,7 @@ public interface ResponseStatusSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Help Desk Phone Number Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.HelpDeskPhoneNumberQualifier
+	 * @see org.ncpdp.uml.ecl.HelpDeskPhoneNumberQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseStatusSegment_HelpDeskPhoneNumberQualifier()
 	 * @model ordered="false"
 	 * @generated

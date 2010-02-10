@@ -7,10 +7,8 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.PayerIDQualifier;
+import org.ncpdp.uml.ecl.PayerIDQualifier;
 
 /**
  * <!-- begin-user-doc -->
@@ -107,8 +105,8 @@ public interface ResponseInsuranceSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Payer Id Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PayerIDQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PayerIDQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PayerIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PayerIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Payer Id Qualifier</em>' attribute list isn't clear,
@@ -116,7 +114,7 @@ public interface ResponseInsuranceSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Payer Id Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PayerIDQualifier
+	 * @see org.ncpdp.uml.ecl.PayerIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseInsuranceSegment_PayerIdQualifier()
 	 * @model ordered="false"
 	 * @generated

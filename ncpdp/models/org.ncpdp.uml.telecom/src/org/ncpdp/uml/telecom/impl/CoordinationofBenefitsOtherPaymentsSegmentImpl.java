@@ -9,24 +9,18 @@ package org.ncpdp.uml.telecom.impl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import org.ncpdp.uml.ECL.BenefitStageQualifier;
-import org.ncpdp.uml.ECL.OtherPayerAmountPaidQualifier;
-import org.ncpdp.uml.ECL.OtherPayerCoverageType;
-import org.ncpdp.uml.ECL.OtherPayerIDQualifier;
-import org.ncpdp.uml.ECL.OtherPayerPatientResponsibilityAmountQualifier;
-
+import org.ncpdp.uml.ecl.BenefitStageQualifier;
+import org.ncpdp.uml.ecl.OtherPayerAmountPaidQualifier;
+import org.ncpdp.uml.ecl.OtherPayerCoverageType;
+import org.ncpdp.uml.ecl.OtherPayerIDQualifier;
+import org.ncpdp.uml.ecl.OtherPayerPatientResponsibilityAmountQualifier;
 import org.ncpdp.uml.telecom.CoordinationofBenefitsOtherPaymentsSegment;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;

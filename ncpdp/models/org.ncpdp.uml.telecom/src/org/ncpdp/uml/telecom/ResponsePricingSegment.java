@@ -7,19 +7,17 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance;
-import org.ncpdp.uml.ECL.BasisOfCalculationCopay;
-import org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee;
-import org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax;
-import org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax;
-import org.ncpdp.uml.ECL.BasisOfReimbursementDetermination;
-import org.ncpdp.uml.ECL.BenefitStageQualifier;
-import org.ncpdp.uml.ECL.OtherAmountPaidQualifier;
-import org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid;
-import org.ncpdp.uml.ECL.TaxExemptIndicator;
+import org.ncpdp.uml.ecl.BasisOfCalculationCoinsurance;
+import org.ncpdp.uml.ecl.BasisOfCalculationCopay;
+import org.ncpdp.uml.ecl.BasisOfCalculationDispensingFee;
+import org.ncpdp.uml.ecl.BasisOfCalculationFlatSalesTax;
+import org.ncpdp.uml.ecl.BasisOfCalculationPercentageSalesTax;
+import org.ncpdp.uml.ecl.BasisOfReimbursementDetermination;
+import org.ncpdp.uml.ecl.BenefitStageQualifier;
+import org.ncpdp.uml.ecl.OtherAmountPaidQualifier;
+import org.ncpdp.uml.ecl.PercentageSalesTaxBasisPaid;
+import org.ncpdp.uml.ecl.TaxExemptIndicator;
 
 /**
  * <!-- begin-user-doc -->
@@ -153,8 +151,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Tax Exempt Indicator</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.TaxExemptIndicator}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.TaxExemptIndicator}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.TaxExemptIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.TaxExemptIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Tax Exempt Indicator</em>' attribute list isn't clear,
@@ -162,7 +160,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tax Exempt Indicator</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.TaxExemptIndicator
+	 * @see org.ncpdp.uml.ecl.TaxExemptIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_TaxExemptIndicator()
 	 * @model ordered="false"
 	 * @generated
@@ -222,8 +220,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Percentage Sales Tax Basis Paid</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PercentageSalesTaxBasisPaid}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PercentageSalesTaxBasisPaid}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Percentage Sales Tax Basis Paid</em>' attribute list isn't clear,
@@ -231,7 +229,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Percentage Sales Tax Basis Paid</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid
+	 * @see org.ncpdp.uml.ecl.PercentageSalesTaxBasisPaid
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_PercentageSalesTaxBasisPaid()
 	 * @model ordered="false"
 	 * @generated
@@ -291,8 +289,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Other Amount Paid Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherAmountPaidQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherAmountPaidQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherAmountPaidQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherAmountPaidQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Amount Paid Qualifier</em>' attribute list isn't clear,
@@ -300,7 +298,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Amount Paid Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherAmountPaidQualifier
+	 * @see org.ncpdp.uml.ecl.OtherAmountPaidQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_OtherAmountPaidQualifier()
 	 * @model ordered="false"
 	 * @generated
@@ -360,8 +358,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Basis Of Reimbursement Determination</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfReimbursementDetermination}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfReimbursementDetermination}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BasisOfReimbursementDetermination}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BasisOfReimbursementDetermination}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Reimbursement Determination</em>' attribute list isn't clear,
@@ -369,7 +367,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Basis Of Reimbursement Determination</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BasisOfReimbursementDetermination
+	 * @see org.ncpdp.uml.ecl.BasisOfReimbursementDetermination
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfReimbursementDetermination()
 	 * @model ordered="false"
 	 * @generated
@@ -497,8 +495,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Basis Of Calculationdispensing Fee</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BasisOfCalculationDispensingFee}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BasisOfCalculationDispensingFee}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationdispensing Fee</em>' attribute list isn't clear,
@@ -506,7 +504,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Basis Of Calculationdispensing Fee</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee
+	 * @see org.ncpdp.uml.ecl.BasisOfCalculationDispensingFee
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationdispensingFee()
 	 * @model ordered="false"
 	 * @generated
@@ -515,8 +513,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Basis Of Calculationcopay</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationCopay}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationCopay}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BasisOfCalculationCopay}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BasisOfCalculationCopay}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationcopay</em>' attribute list isn't clear,
@@ -524,7 +522,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Basis Of Calculationcopay</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BasisOfCalculationCopay
+	 * @see org.ncpdp.uml.ecl.BasisOfCalculationCopay
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationcopay()
 	 * @model ordered="false"
 	 * @generated
@@ -533,8 +531,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Basis Of Calculationflat Sales Tax</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BasisOfCalculationFlatSalesTax}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BasisOfCalculationFlatSalesTax}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationflat Sales Tax</em>' attribute list isn't clear,
@@ -542,7 +540,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Basis Of Calculationflat Sales Tax</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax
+	 * @see org.ncpdp.uml.ecl.BasisOfCalculationFlatSalesTax
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationflatSalesTax()
 	 * @model ordered="false"
 	 * @generated
@@ -551,8 +549,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Basis Of Calculationpercentage Sales Tax</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BasisOfCalculationPercentageSalesTax}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BasisOfCalculationPercentageSalesTax}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationpercentage Sales Tax</em>' attribute list isn't clear,
@@ -560,7 +558,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Basis Of Calculationpercentage Sales Tax</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax
+	 * @see org.ncpdp.uml.ecl.BasisOfCalculationPercentageSalesTax
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationpercentageSalesTax()
 	 * @model ordered="false"
 	 * @generated
@@ -637,8 +635,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Basis Of Calculationcoinsurance</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BasisOfCalculationCoinsurance}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BasisOfCalculationCoinsurance}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis Of Calculationcoinsurance</em>' attribute list isn't clear,
@@ -646,7 +644,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Basis Of Calculationcoinsurance</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance
+	 * @see org.ncpdp.uml.ecl.BasisOfCalculationCoinsurance
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BasisOfCalculationcoinsurance()
 	 * @model ordered="false"
 	 * @generated
@@ -672,8 +670,8 @@ public interface ResponsePricingSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Benefit Stage Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BenefitStageQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BenefitStageQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BenefitStageQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BenefitStageQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Benefit Stage Qualifier</em>' attribute list isn't clear,
@@ -681,7 +679,7 @@ public interface ResponsePricingSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Benefit Stage Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BenefitStageQualifier
+	 * @see org.ncpdp.uml.ecl.BenefitStageQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponsePricingSegment_BenefitStageQualifier()
 	 * @model ordered="false"
 	 * @generated

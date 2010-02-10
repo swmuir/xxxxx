@@ -9,24 +9,18 @@ package org.ncpdp.uml.telecom.impl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import org.ncpdp.uml.ECL.PatientGenderCode;
-import org.ncpdp.uml.ECL.PatientIDQualifier;
-import org.ncpdp.uml.ECL.PatientLocation;
-import org.ncpdp.uml.ECL.PatientResidence;
-import org.ncpdp.uml.ECL.PregnancyIndicator;
-
+import org.ncpdp.uml.ecl.PatientGenderCode;
+import org.ncpdp.uml.ecl.PatientIDQualifier;
+import org.ncpdp.uml.ecl.PatientLocation;
+import org.ncpdp.uml.ecl.PatientResidence;
+import org.ncpdp.uml.ecl.PregnancyIndicator;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.PatientSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;

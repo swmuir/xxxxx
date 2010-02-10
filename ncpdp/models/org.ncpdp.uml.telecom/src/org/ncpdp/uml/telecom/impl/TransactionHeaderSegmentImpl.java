@@ -8,16 +8,12 @@ package org.ncpdp.uml.telecom.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
-import org.ncpdp.uml.ECL.TransactionCode;
-import org.ncpdp.uml.ECL.TransactionCount;
-
+import org.ncpdp.uml.ecl.TransactionCode;
+import org.ncpdp.uml.ecl.TransactionCount;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.TelecomPackage;
 import org.ncpdp.uml.telecom.TransactionHeaderSegment;

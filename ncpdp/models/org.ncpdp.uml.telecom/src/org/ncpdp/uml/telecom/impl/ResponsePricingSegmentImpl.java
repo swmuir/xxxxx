@@ -9,29 +9,23 @@ package org.ncpdp.uml.telecom.impl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import org.ncpdp.uml.ECL.BasisOfCalculationCoinsurance;
-import org.ncpdp.uml.ECL.BasisOfCalculationCopay;
-import org.ncpdp.uml.ECL.BasisOfCalculationDispensingFee;
-import org.ncpdp.uml.ECL.BasisOfCalculationFlatSalesTax;
-import org.ncpdp.uml.ECL.BasisOfCalculationPercentageSalesTax;
-import org.ncpdp.uml.ECL.BasisOfReimbursementDetermination;
-import org.ncpdp.uml.ECL.BenefitStageQualifier;
-import org.ncpdp.uml.ECL.OtherAmountPaidQualifier;
-import org.ncpdp.uml.ECL.PercentageSalesTaxBasisPaid;
-import org.ncpdp.uml.ECL.TaxExemptIndicator;
-
+import org.ncpdp.uml.ecl.BasisOfCalculationCoinsurance;
+import org.ncpdp.uml.ecl.BasisOfCalculationCopay;
+import org.ncpdp.uml.ecl.BasisOfCalculationDispensingFee;
+import org.ncpdp.uml.ecl.BasisOfCalculationFlatSalesTax;
+import org.ncpdp.uml.ecl.BasisOfCalculationPercentageSalesTax;
+import org.ncpdp.uml.ecl.BasisOfReimbursementDetermination;
+import org.ncpdp.uml.ecl.BenefitStageQualifier;
+import org.ncpdp.uml.ecl.OtherAmountPaidQualifier;
+import org.ncpdp.uml.ecl.PercentageSalesTaxBasisPaid;
+import org.ncpdp.uml.ecl.TaxExemptIndicator;
 import org.ncpdp.uml.telecom.Field;
 import org.ncpdp.uml.telecom.ResponsePricingSegment;
 import org.ncpdp.uml.telecom.TelecomPackage;

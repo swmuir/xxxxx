@@ -7,12 +7,10 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.OtherPharmacyIndicator;
-import org.ncpdp.uml.ECL.OtherPrescriberIndicator;
-import org.ncpdp.uml.ECL.ReasonforServiceCode;
+import org.ncpdp.uml.ecl.OtherPharmacyIndicator;
+import org.ncpdp.uml.ecl.OtherPrescriberIndicator;
+import org.ncpdp.uml.ecl.ReasonforServiceCode;
 
 /**
  * <!-- begin-user-doc -->
@@ -77,8 +75,8 @@ public interface ResponseDURPPSSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Reason For Service Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.ReasonforServiceCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ReasonforServiceCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.ReasonforServiceCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.ReasonforServiceCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Reason For Service Code</em>' attribute list isn't clear,
@@ -86,7 +84,7 @@ public interface ResponseDURPPSSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reason For Service Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.ReasonforServiceCode
+	 * @see org.ncpdp.uml.ecl.ReasonforServiceCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseDURPPSSegment_ReasonForServiceCode()
 	 * @model ordered="false"
 	 * @generated
@@ -112,8 +110,8 @@ public interface ResponseDURPPSSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Other Pharmacy Indicator</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPharmacyIndicator}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPharmacyIndicator}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherPharmacyIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherPharmacyIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Pharmacy Indicator</em>' attribute list isn't clear,
@@ -121,7 +119,7 @@ public interface ResponseDURPPSSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Pharmacy Indicator</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherPharmacyIndicator
+	 * @see org.ncpdp.uml.ecl.OtherPharmacyIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseDURPPSSegment_OtherPharmacyIndicator()
 	 * @model ordered="false"
 	 * @generated
@@ -181,8 +179,8 @@ public interface ResponseDURPPSSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Other Prescriber Indicator</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherPrescriberIndicator}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherPrescriberIndicator}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherPrescriberIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherPrescriberIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Prescriber Indicator</em>' attribute list isn't clear,
@@ -190,7 +188,7 @@ public interface ResponseDURPPSSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Prescriber Indicator</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherPrescriberIndicator
+	 * @see org.ncpdp.uml.ecl.OtherPrescriberIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getResponseDURPPSSegment_OtherPrescriberIndicator()
 	 * @model ordered="false"
 	 * @generated

@@ -7,13 +7,11 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility;
-import org.ncpdp.uml.ECL.EligibilityClarificationCode;
-import org.ncpdp.uml.ECL.PatientRelationshipCode;
-import org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator;
+import org.ncpdp.uml.ecl.CMSPartDDefinedQualifiedFacility;
+import org.ncpdp.uml.ecl.EligibilityClarificationCode;
+import org.ncpdp.uml.ecl.PatientRelationshipCode;
+import org.ncpdp.uml.ecl.ProviderAcceptAssignmentIndicator;
 
 /**
  * <!-- begin-user-doc -->
@@ -155,8 +153,8 @@ public interface InsuranceSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Eligibility Clarification Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.EligibilityClarificationCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.EligibilityClarificationCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.EligibilityClarificationCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.EligibilityClarificationCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Eligibility Clarification Code</em>' attribute list isn't clear,
@@ -164,7 +162,7 @@ public interface InsuranceSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Eligibility Clarification Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.EligibilityClarificationCode
+	 * @see org.ncpdp.uml.ecl.EligibilityClarificationCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getInsuranceSegment_EligibilityClarificationCode()
 	 * @model ordered="false"
 	 * @generated
@@ -207,8 +205,8 @@ public interface InsuranceSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Patient Relationship Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientRelationshipCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientRelationshipCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PatientRelationshipCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PatientRelationshipCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Patient Relationship Code</em>' attribute list isn't clear,
@@ -216,7 +214,7 @@ public interface InsuranceSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Patient Relationship Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PatientRelationshipCode
+	 * @see org.ncpdp.uml.ecl.PatientRelationshipCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getInsuranceSegment_PatientRelationshipCode()
 	 * @model ordered="false"
 	 * @generated
@@ -327,8 +325,8 @@ public interface InsuranceSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Provider Accept Assignment Indicator</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.ProviderAcceptAssignmentIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.ProviderAcceptAssignmentIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Provider Accept Assignment Indicator</em>' attribute list isn't clear,
@@ -336,7 +334,7 @@ public interface InsuranceSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Provider Accept Assignment Indicator</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.ProviderAcceptAssignmentIndicator
+	 * @see org.ncpdp.uml.ecl.ProviderAcceptAssignmentIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getInsuranceSegment_ProviderAcceptAssignmentIndicator()
 	 * @model ordered="false"
 	 * @generated
@@ -345,8 +343,8 @@ public interface InsuranceSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Cms Part DDefined Qualified Facility</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.CMSPartDDefinedQualifiedFacility}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.CMSPartDDefinedQualifiedFacility}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Cms Part DDefined Qualified Facility</em>' attribute list isn't clear,
@@ -354,7 +352,7 @@ public interface InsuranceSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cms Part DDefined Qualified Facility</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.CMSPartDDefinedQualifiedFacility
+	 * @see org.ncpdp.uml.ecl.CMSPartDDefinedQualifiedFacility
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getInsuranceSegment_CmsPartDDefinedQualifiedFacility()
 	 * @model ordered="false"
 	 * @generated

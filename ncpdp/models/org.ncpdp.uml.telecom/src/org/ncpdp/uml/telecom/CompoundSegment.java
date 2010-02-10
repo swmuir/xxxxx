@@ -7,12 +7,10 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.CompoundDispensingUnitFormIndicator;
-import org.ncpdp.uml.ECL.CompoundDosageFormDescriptionCode;
-import org.ncpdp.uml.ECL.CompoundProductIDQualifier;
+import org.ncpdp.uml.ecl.CompoundDispensingUnitFormIndicator;
+import org.ncpdp.uml.ecl.CompoundDosageFormDescriptionCode;
+import org.ncpdp.uml.ecl.CompoundProductIDQualifier;
 
 /**
  * <!-- begin-user-doc -->
@@ -60,8 +58,8 @@ public interface CompoundSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Compound Dosage Form Description Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.CompoundDosageFormDescriptionCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CompoundDosageFormDescriptionCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.CompoundDosageFormDescriptionCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.CompoundDosageFormDescriptionCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Compound Dosage Form Description Code</em>' attribute list isn't clear,
@@ -69,7 +67,7 @@ public interface CompoundSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compound Dosage Form Description Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.CompoundDosageFormDescriptionCode
+	 * @see org.ncpdp.uml.ecl.CompoundDosageFormDescriptionCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCompoundSegment_CompoundDosageFormDescriptionCode()
 	 * @model ordered="false"
 	 * @generated
@@ -78,8 +76,8 @@ public interface CompoundSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Compound Dispensing Unit Form Indicator</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.CompoundDispensingUnitFormIndicator}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CompoundDispensingUnitFormIndicator}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.CompoundDispensingUnitFormIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.CompoundDispensingUnitFormIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Compound Dispensing Unit Form Indicator</em>' attribute list isn't clear,
@@ -87,7 +85,7 @@ public interface CompoundSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compound Dispensing Unit Form Indicator</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.CompoundDispensingUnitFormIndicator
+	 * @see org.ncpdp.uml.ecl.CompoundDispensingUnitFormIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCompoundSegment_CompoundDispensingUnitFormIndicator()
 	 * @model ordered="false"
 	 * @generated
@@ -113,8 +111,8 @@ public interface CompoundSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Compound Product Id Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.CompoundProductIDQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CompoundProductIDQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.CompoundProductIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.CompoundProductIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Compound Product Id Qualifier</em>' attribute list isn't clear,
@@ -122,7 +120,7 @@ public interface CompoundSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compound Product Id Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.CompoundProductIDQualifier
+	 * @see org.ncpdp.uml.ecl.CompoundProductIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getCompoundSegment_CompoundProductIdQualifier()
 	 * @model ordered="false"
 	 * @generated

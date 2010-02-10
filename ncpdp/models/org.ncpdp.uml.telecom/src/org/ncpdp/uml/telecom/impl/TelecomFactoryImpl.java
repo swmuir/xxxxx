@@ -9,12 +9,41 @@ package org.ncpdp.uml.telecom.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
-import org.ncpdp.uml.telecom.*;
+import org.ncpdp.uml.telecom.AdditionalDocumentationSegment;
+import org.ncpdp.uml.telecom.ClaimSegment;
+import org.ncpdp.uml.telecom.ClinicalSegment;
+import org.ncpdp.uml.telecom.CompoundSegment;
+import org.ncpdp.uml.telecom.CoordinationofBenefitsOtherPaymentsSegment;
+import org.ncpdp.uml.telecom.CouponSegment;
+import org.ncpdp.uml.telecom.DURPPSSegment;
+import org.ncpdp.uml.telecom.DocumentRoot;
+import org.ncpdp.uml.telecom.FacilitySegment;
+import org.ncpdp.uml.telecom.Field;
+import org.ncpdp.uml.telecom.InsuranceSegment;
+import org.ncpdp.uml.telecom.NarrativeSegment;
+import org.ncpdp.uml.telecom.PatientSegment;
+import org.ncpdp.uml.telecom.PharmacyProviderSegment;
+import org.ncpdp.uml.telecom.PrescriberSegment;
+import org.ncpdp.uml.telecom.PricingSegment;
+import org.ncpdp.uml.telecom.PriorAuthorizationSegment;
+import org.ncpdp.uml.telecom.Response;
+import org.ncpdp.uml.telecom.ResponseClaimSegment;
+import org.ncpdp.uml.telecom.ResponseCoordinationofBenefitsOtherPayersSegment;
+import org.ncpdp.uml.telecom.ResponseDURPPSSegment;
+import org.ncpdp.uml.telecom.ResponseHeaderSegment;
+import org.ncpdp.uml.telecom.ResponseInsuranceSegment;
+import org.ncpdp.uml.telecom.ResponseMessageSegment;
+import org.ncpdp.uml.telecom.ResponsePatientSegment;
+import org.ncpdp.uml.telecom.ResponsePricingSegment;
+import org.ncpdp.uml.telecom.ResponsePriorAuthorizationSegment;
+import org.ncpdp.uml.telecom.ResponseStatusSegment;
+import org.ncpdp.uml.telecom.TelecomFactory;
+import org.ncpdp.uml.telecom.TelecomPackage;
+import org.ncpdp.uml.telecom.TransactionHeaderSegment;
+import org.ncpdp.uml.telecom.Transmission;
+import org.ncpdp.uml.telecom.WorkersCompensationSegment;
 
 /**
  * <!-- begin-user-doc -->

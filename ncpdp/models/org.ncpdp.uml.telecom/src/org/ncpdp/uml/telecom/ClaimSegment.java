@@ -7,25 +7,23 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.CompoundType;
-import org.ncpdp.uml.ECL.DelayReasonCode;
-import org.ncpdp.uml.ECL.DispensingStatus;
-import org.ncpdp.uml.ECL.FillNumber;
-import org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID;
-import org.ncpdp.uml.ECL.LevelofService;
-import org.ncpdp.uml.ECL.NumberofRefillsAuthorized;
-import org.ncpdp.uml.ECL.OtherCoverageCode;
-import org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator;
-import org.ncpdp.uml.ECL.PharmacyServiceType;
-import org.ncpdp.uml.ECL.PrescriptionOriginCode;
-import org.ncpdp.uml.ECL.PriorAuthorizationTypeCode;
-import org.ncpdp.uml.ECL.RouteOfAdministration;
-import org.ncpdp.uml.ECL.SpecialPackagingIndicator;
-import org.ncpdp.uml.ECL.SubmissionClarificationCode;
-import org.ncpdp.uml.ECL.UnitofMeasure;
+import org.ncpdp.uml.ecl.CompoundType;
+import org.ncpdp.uml.ecl.DelayReasonCode;
+import org.ncpdp.uml.ecl.DispensingStatus;
+import org.ncpdp.uml.ecl.FillNumber;
+import org.ncpdp.uml.ecl.IntermediaryAuthorizationTypeID;
+import org.ncpdp.uml.ecl.LevelofService;
+import org.ncpdp.uml.ecl.NumberofRefillsAuthorized;
+import org.ncpdp.uml.ecl.OtherCoverageCode;
+import org.ncpdp.uml.ecl.PatientAssignmentIndicatorDirectMemberReimbursementIndicator;
+import org.ncpdp.uml.ecl.PharmacyServiceType;
+import org.ncpdp.uml.ecl.PrescriptionOriginCode;
+import org.ncpdp.uml.ecl.PriorAuthorizationTypeCode;
+import org.ncpdp.uml.ecl.RouteOfAdministration;
+import org.ncpdp.uml.ecl.SpecialPackagingIndicator;
+import org.ncpdp.uml.ecl.SubmissionClarificationCode;
+import org.ncpdp.uml.ecl.UnitofMeasure;
 
 /**
  * <!-- begin-user-doc -->
@@ -258,8 +256,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Fill Number</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.FillNumber}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.FillNumber}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.FillNumber}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.FillNumber}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Fill Number</em>' attribute list isn't clear,
@@ -267,7 +265,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fill Number</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.FillNumber
+	 * @see org.ncpdp.uml.ecl.FillNumber
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_FillNumber()
 	 * @model ordered="false"
 	 * @generated
@@ -344,8 +342,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Number Of Refills Authorized</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.NumberofRefillsAuthorized}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.NumberofRefillsAuthorized}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.NumberofRefillsAuthorized}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.NumberofRefillsAuthorized}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Number Of Refills Authorized</em>' attribute list isn't clear,
@@ -353,7 +351,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Number Of Refills Authorized</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.NumberofRefillsAuthorized
+	 * @see org.ncpdp.uml.ecl.NumberofRefillsAuthorized
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_NumberOfRefillsAuthorized()
 	 * @model ordered="false"
 	 * @generated
@@ -362,8 +360,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Prescription Origin Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PrescriptionOriginCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PrescriptionOriginCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PrescriptionOriginCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PrescriptionOriginCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Prescription Origin Code</em>' attribute list isn't clear,
@@ -371,7 +369,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Prescription Origin Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PrescriptionOriginCode
+	 * @see org.ncpdp.uml.ecl.PrescriptionOriginCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_PrescriptionOriginCode()
 	 * @model ordered="false"
 	 * @generated
@@ -397,8 +395,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Submission Clarification Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.SubmissionClarificationCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.SubmissionClarificationCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.SubmissionClarificationCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.SubmissionClarificationCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Submission Clarification Code</em>' attribute list isn't clear,
@@ -406,7 +404,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Submission Clarification Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.SubmissionClarificationCode
+	 * @see org.ncpdp.uml.ecl.SubmissionClarificationCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_SubmissionClarificationCode()
 	 * @model ordered="false"
 	 * @generated
@@ -432,8 +430,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Other Coverage Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.OtherCoverageCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.OtherCoverageCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.OtherCoverageCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.OtherCoverageCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Other Coverage Code</em>' attribute list isn't clear,
@@ -441,7 +439,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Other Coverage Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.OtherCoverageCode
+	 * @see org.ncpdp.uml.ecl.OtherCoverageCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_OtherCoverageCode()
 	 * @model ordered="false"
 	 * @generated
@@ -450,8 +448,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Special Packaging Indicator</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.SpecialPackagingIndicator}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.SpecialPackagingIndicator}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.SpecialPackagingIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.SpecialPackagingIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Special Packaging Indicator</em>' attribute list isn't clear,
@@ -459,7 +457,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Special Packaging Indicator</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.SpecialPackagingIndicator
+	 * @see org.ncpdp.uml.ecl.SpecialPackagingIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_SpecialPackagingIndicator()
 	 * @model ordered="false"
 	 * @generated
@@ -553,8 +551,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Unit Of Measure</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.UnitofMeasure}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.UnitofMeasure}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.UnitofMeasure}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.UnitofMeasure}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Unit Of Measure</em>' attribute list isn't clear,
@@ -562,7 +560,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Unit Of Measure</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.UnitofMeasure
+	 * @see org.ncpdp.uml.ecl.UnitofMeasure
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_UnitOfMeasure()
 	 * @model ordered="false"
 	 * @generated
@@ -571,8 +569,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Level Of Service</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.LevelofService}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.LevelofService}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.LevelofService}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.LevelofService}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Level Of Service</em>' attribute list isn't clear,
@@ -580,7 +578,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Level Of Service</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.LevelofService
+	 * @see org.ncpdp.uml.ecl.LevelofService
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_LevelOfService()
 	 * @model ordered="false"
 	 * @generated
@@ -589,8 +587,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Prior Authorization Type Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PriorAuthorizationTypeCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PriorAuthorizationTypeCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PriorAuthorizationTypeCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PriorAuthorizationTypeCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Prior Authorization Type Code</em>' attribute list isn't clear,
@@ -598,7 +596,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Prior Authorization Type Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PriorAuthorizationTypeCode
+	 * @see org.ncpdp.uml.ecl.PriorAuthorizationTypeCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_PriorAuthorizationTypeCode()
 	 * @model ordered="false"
 	 * @generated
@@ -624,8 +622,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Intermediary Authorization Type Id</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.IntermediaryAuthorizationTypeID}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.IntermediaryAuthorizationTypeID}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Intermediary Authorization Type Id</em>' attribute list isn't clear,
@@ -633,7 +631,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Intermediary Authorization Type Id</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.IntermediaryAuthorizationTypeID
+	 * @see org.ncpdp.uml.ecl.IntermediaryAuthorizationTypeID
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_IntermediaryAuthorizationTypeId()
 	 * @model ordered="false"
 	 * @generated
@@ -659,8 +657,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dispensing Status</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.DispensingStatus}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.DispensingStatus}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.DispensingStatus}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.DispensingStatus}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Dispensing Status</em>' attribute list isn't clear,
@@ -668,7 +666,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dispensing Status</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.DispensingStatus
+	 * @see org.ncpdp.uml.ecl.DispensingStatus
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_DispensingStatus()
 	 * @model ordered="false"
 	 * @generated
@@ -711,8 +709,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Delay Reason Code</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.DelayReasonCode}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.DelayReasonCode}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.DelayReasonCode}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.DelayReasonCode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Delay Reason Code</em>' attribute list isn't clear,
@@ -720,7 +718,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Delay Reason Code</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.DelayReasonCode
+	 * @see org.ncpdp.uml.ecl.DelayReasonCode
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_DelayReasonCode()
 	 * @model ordered="false"
 	 * @generated
@@ -746,8 +744,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Patient Assignment Indicatordirect Member Reimbursement Indicator</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PatientAssignmentIndicatorDirectMemberReimbursementIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PatientAssignmentIndicatorDirectMemberReimbursementIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Patient Assignment Indicatordirect Member Reimbursement Indicator</em>' attribute list isn't clear,
@@ -755,7 +753,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Patient Assignment Indicatordirect Member Reimbursement Indicator</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PatientAssignmentIndicatorDirectMemberReimbursementIndicator
+	 * @see org.ncpdp.uml.ecl.PatientAssignmentIndicatorDirectMemberReimbursementIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_PatientAssignmentIndicatordirectMemberReimbursementIndicator()
 	 * @model ordered="false"
 	 * @generated
@@ -764,8 +762,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Route Of Administration</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.RouteOfAdministration}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.RouteOfAdministration}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.RouteOfAdministration}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.RouteOfAdministration}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Route Of Administration</em>' attribute list isn't clear,
@@ -773,7 +771,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Route Of Administration</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.RouteOfAdministration
+	 * @see org.ncpdp.uml.ecl.RouteOfAdministration
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_RouteOfAdministration()
 	 * @model ordered="false"
 	 * @generated
@@ -782,8 +780,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Compound Type</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.CompoundType}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.CompoundType}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.CompoundType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.CompoundType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Compound Type</em>' attribute list isn't clear,
@@ -791,7 +789,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compound Type</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.CompoundType
+	 * @see org.ncpdp.uml.ecl.CompoundType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_CompoundType()
 	 * @model ordered="false"
 	 * @generated
@@ -817,8 +815,8 @@ public interface ClaimSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Pharmacy Service Type</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PharmacyServiceType}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PharmacyServiceType}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PharmacyServiceType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PharmacyServiceType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Pharmacy Service Type</em>' attribute list isn't clear,
@@ -826,7 +824,7 @@ public interface ClaimSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pharmacy Service Type</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PharmacyServiceType
+	 * @see org.ncpdp.uml.ecl.PharmacyServiceType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getClaimSegment_PharmacyServiceType()
 	 * @model ordered="false"
 	 * @generated

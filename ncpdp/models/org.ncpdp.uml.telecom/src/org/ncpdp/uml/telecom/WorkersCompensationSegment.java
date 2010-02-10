@@ -7,12 +7,10 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.BillingEntityTypeIndicator;
-import org.ncpdp.uml.ECL.GenericEquivalentProductIDQualifier;
-import org.ncpdp.uml.ECL.PayToQualifier;
+import org.ncpdp.uml.ecl.BillingEntityTypeIndicator;
+import org.ncpdp.uml.ecl.GenericEquivalentProductIDQualifier;
+import org.ncpdp.uml.ecl.PayToQualifier;
 
 /**
  * <!-- begin-user-doc -->
@@ -240,8 +238,8 @@ public interface WorkersCompensationSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Billing Entity Type Indicator</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.BillingEntityTypeIndicator}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.BillingEntityTypeIndicator}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.BillingEntityTypeIndicator}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.BillingEntityTypeIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Billing Entity Type Indicator</em>' attribute list isn't clear,
@@ -249,7 +247,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Billing Entity Type Indicator</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.BillingEntityTypeIndicator
+	 * @see org.ncpdp.uml.ecl.BillingEntityTypeIndicator
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getWorkersCompensationSegment_BillingEntityTypeIndicator()
 	 * @model ordered="false"
 	 * @generated
@@ -258,8 +256,8 @@ public interface WorkersCompensationSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Pay To Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.PayToQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.PayToQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.PayToQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.PayToQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Pay To Qualifier</em>' attribute list isn't clear,
@@ -267,7 +265,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pay To Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.PayToQualifier
+	 * @see org.ncpdp.uml.ecl.PayToQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getWorkersCompensationSegment_PayToQualifier()
 	 * @model ordered="false"
 	 * @generated
@@ -378,8 +376,8 @@ public interface WorkersCompensationSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Generic Equivalent Product Id Qualifier</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.GenericEquivalentProductIDQualifier}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.GenericEquivalentProductIDQualifier}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.GenericEquivalentProductIDQualifier}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.GenericEquivalentProductIDQualifier}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Generic Equivalent Product Id Qualifier</em>' attribute list isn't clear,
@@ -387,7 +385,7 @@ public interface WorkersCompensationSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generic Equivalent Product Id Qualifier</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.GenericEquivalentProductIDQualifier
+	 * @see org.ncpdp.uml.ecl.GenericEquivalentProductIDQualifier
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getWorkersCompensationSegment_GenericEquivalentProductIdQualifier()
 	 * @model ordered="false"
 	 * @generated

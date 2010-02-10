@@ -7,10 +7,8 @@
 package org.ncpdp.uml.telecom;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.ncpdp.uml.ECL.RequestType;
+import org.ncpdp.uml.ecl.RequestType;
 
 /**
  * <!-- begin-user-doc -->
@@ -61,8 +59,8 @@ public interface PriorAuthorizationSegment extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Request Type</b></em>' attribute list.
-	 * The list contents are of type {@link org.ncpdp.uml.ECL.RequestType}.
-	 * The literals are from the enumeration {@link org.ncpdp.uml.ECL.RequestType}.
+	 * The list contents are of type {@link org.ncpdp.uml.ecl.RequestType}.
+	 * The literals are from the enumeration {@link org.ncpdp.uml.ecl.RequestType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Request Type</em>' attribute list isn't clear,
@@ -70,7 +68,7 @@ public interface PriorAuthorizationSegment extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Request Type</em>' attribute list.
-	 * @see org.ncpdp.uml.ECL.RequestType
+	 * @see org.ncpdp.uml.ecl.RequestType
 	 * @see org.ncpdp.uml.telecom.TelecomPackage#getPriorAuthorizationSegment_RequestType()
 	 * @model ordered="false"
 	 * @generated
