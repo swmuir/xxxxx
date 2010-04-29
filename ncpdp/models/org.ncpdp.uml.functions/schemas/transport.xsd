@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/Transport" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ECL" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:transport="http://www.ncpdp.org/schema/Transport" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:import namespace="http://www.ncpdp.org/schema/ECL" schemaLocation="ecl.xsd"/>
+  <xsd:import namespace="http://www.ncpdp.org/schema/functions" schemaLocation="functions.xsd"/>
+  <xsd:element name="Message" type="transport:MessageType"/>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  BodyType  <<choice>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="BodyType">
+    <xsd:choice>
+      <xsd:element name="Status" type="transport:Status"/>
+      <xsd:element name="Error" type="transport:Error"/>
+      <xsd:element name="Verify" type="transport:Verify"/>
+      <xsd:element name="GetMessage" type="transport:GetMessage"/>
+      <xsd:element name="PasswordChange" type="transport:PasswordChange"/>
+      <xsd:element name="MTMServiceRequest" type="functions:MTMServIceRequest"/>
+      <xsd:element name="MTMServiceResponse" type="functions:MTMServiceResponse"/>
+      <xsd:element name="Census" type="functions:Census"/>
+    </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Error  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Error">
+    <xsd:sequence>
+      <xsd:element name="Code" type="ecl:StatusTypecoded"/>
+      <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:CodeListQualifierRejectCodeSTSSegment"/>
+      <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  GetMessage  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="GetMessage">
+    <xsd:sequence>
+      <xsd:element name="GetMessage" type="datatypes:an"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  HeaderType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="HeaderType">
+    <xsd:sequence>
+      <xsd:element name="To">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:extension base="datatypes:MailAddressType">
+              <xsd:attribute name="Qualifier">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="P|C|M|D|ZZZ"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:attribute>
+            </xsd:extension>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="From">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:extension base="datatypes:MailAddressType">
+              <xsd:attribute name="Qualifier">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="P|C|M|D|ZZZ"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:attribute>
+            </xsd:extension>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="MessageID" type="datatypes:an..35M"/>
+      <xsd:element minOccurs="0" name="RelatesToMessageID" type="datatypes:an..35"/>
+      <xsd:element name="SentTime" type="datatypes:UtcDateType"/>
+      <xsd:element minOccurs="0" name="Security" type="transport:SecurityType"/>
+      <xsd:element name="SenderSoftware" type="transport:SenderSoftwareType"/>
+      <xsd:element minOccurs="0" name="Mailbox" type="transport:MailboxType"/>
+      <xsd:element minOccurs="0" name="TestMessage">
+        <xsd:simpleType>
+          <xsd:restriction base="datatypes:n">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="RxReferenceNumber" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="TertiaryIdentifier" type="datatypes:an..3"/>
+      <xsd:element minOccurs="0" name="PrescriberOrderNumber" type="datatypes:an..35"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MailboxType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MailboxType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="MailboxID" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="DeliveredID" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="AdditionalTraceNumber" type="datatypes:an..3"/>
+      <xsd:element minOccurs="0" name="AcknowledgementID" type="datatypes:an..35"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MessageType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MessageType">
+    <xsd:sequence>
+      <xsd:element name="Header" type="transport:HeaderType"/>
+      <xsd:element name="Body" type="transport:BodyType"/>
+    </xsd:sequence>
+    <xsd:attribute name="version" use="required">
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:pattern value="010"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name="release" use="required">
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:pattern value="011"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name="HighestVersionSupported">
+      <xsd:simpleType>
+        <xsd:restriction base="datatypes:an">
+          <xsd:maxLength value="6"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PasswordChange  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PasswordChange">
+    <xsd:sequence>
+      <xsd:element name="Request" type="transport:PasswordRequestType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PasswordRequestType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PasswordRequestType">
+    <xsd:sequence>
+      <xsd:element name="OldPassword" type="datatypes:anM"/>
+      <xsd:element name="NewPassword" type="datatypes:anM"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SecurityIdentificationType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SecurityIdentificationType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="SecondaryIdentification" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="TertiaryIdentification" type="datatypes:an..35"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SecurityType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SecurityType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="UsernameToken" type="transport:UsernameTokenType"/>
+      <xsd:element name="Sender" type="transport:SecurityIdentificationType"/>
+      <xsd:element name="Receiver" type="transport:SecurityIdentificationType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SenderSoftwareType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SenderSoftwareType">
+    <xsd:sequence>
+      <xsd:element name="SenderSoftwareDeveloper" type="datatypes:an..35"/>
+      <xsd:element name="SenderSoftwareProduct" type="datatypes:an..35"/>
+      <xsd:element name="SenderSoftwareVersionRelease">
+        <xsd:simpleType>
+          <xsd:restriction base="datatypes:an">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Status  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Status">
+    <xsd:sequence>
+      <xsd:element name="Code">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="000|001|002|003|005|010"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:Reject"/>
+      <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
+      <xsd:element minOccurs="0" name="PrescriptionDeliveryMethod">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="1|2"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  UsernameTokenType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="UsernameTokenType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Username" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Password" type="datatypes:PasswordType"/>
+      <xsd:element minOccurs="0" name="Nonce" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Created" type="datatypes:UtcDateType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Verify  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Verify">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="VerifyStatus">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Code">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:pattern value="010"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
+            <xsd:element minOccurs="0" name="PrescriptionDeliveryMethod">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:pattern value="1|2"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
