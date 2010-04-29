@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/dictionary" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:dictionary="http://www.ncpdp.org/schema/dictionary" xmlns:ecl="http://www.ncpdp.org/schema/ECL" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:import namespace="http://www.ncpdp.org/schema/ECL" schemaLocation="ecl.xsd"/>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Allergy  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Allergy">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="NoKnownAllergies" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="SourceOfInformation" type="ecl:SourceofInformation"/>
+      <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="AdverseEvent" type="ecl:SNOMEDCTPreferredTermsforAdverseEvents"/>
+      <xsd:element minOccurs="0" name="DrugProductCoded" type="datatypes:TerminologyQualifiedCode"/>
+      <xsd:element minOccurs="0" name="ReactionCoded" type="datatypes:SNOMEDQualifiedCode"/>
+      <xsd:element minOccurs="0" name="SeverityCoded" type="datatypes:SNOMEDQualifiedCode"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Attachment  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Attachment">
+    <xsd:sequence>
+      <xsd:element name="AttachmentType" type="datatypes:an..80M"/>
+      <xsd:element name="AttachmentData" type="xsd:base64Binary"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Attachments  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Attachments">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="Attachment" type="dictionary:Attachment"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  BasicPatient  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="BasicPatient">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Patient">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Identification" type="dictionary:PatientID"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element name="Gender" type="ecl:GenderCode"/>
+          <xsd:element name="DateOfBirth" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element minOccurs="0" name="PatientLocation" type="dictionary:PatientLocation"/>
+          <xsd:element minOccurs="0" name="LanguageNameCode" type="datatypes:an..3"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ResidenceCode" type="ecl:ResidenceCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PregnancyIndicator" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Smoker" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Race" type="xsd:string"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Ethnicity" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  BenefitsCoordination  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="BenefitsCoordination">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
+      <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+      <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
+      <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
+      <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+      <xsd:element minOccurs="0" name="Consent" type="ecl:ConsentType"/>
+      <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
+      <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  BenefitsCoordinationCensus  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="BenefitsCoordinationCensus">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:BenefitsCoordination">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
+          <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+          <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
+          <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
+          <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Consent" type="ecl:ConsentType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  BenefitsCoordinationMTM  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="BenefitsCoordinationMTM">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:BenefitsCoordination">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
+          <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+          <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
+          <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="GroupName" type="datatypes:an..35"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Consent" type="ecl:ConsentType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CoAgent  <<complexType>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CoAgent">
+    <xsd:sequence maxOccurs="1" minOccurs="0">
+      <xsd:element minOccurs="0" name="CoAgentID" type="datatypes:an..19"/>
+      <xsd:element minOccurs="0" name="CoAgentQualifier" type="ecl:DUECoAgentIDQualifier"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CompoundIngredient  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CompoundIngredient">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="CompoundIngredient">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CompoundIngredientItemDescription" type="datatypes:an..105M"/>
+            <xsd:element minOccurs="0" name="ItemNumber" type="datatypes:an..35"/>
+            <xsd:element minOccurs="0" name="CompoundProductCodeQualifier" type="ecl:ProductCodeQualifier"/>
+            <xsd:element minOccurs="0" name="Strength" type="datatypes:an..70"/>
+            <xsd:element minOccurs="0" name="FormSourceCode" type="ecl:SourceCodeList"/>
+            <xsd:element minOccurs="0" name="FormCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="StrengthSourceCode" type="ecl:SourceCodeList"/>
+            <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:an..15"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Quantity" type="dictionary:Quantity"/>
+      <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Diagnosis  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Diagnosis">
+    <xsd:sequence>
+      <xsd:element name="ClinicalInformationQualifier" type="ecl:MyClinicalInformationQualifier"/>
+      <xsd:element name="Primary" type="dictionary:PrimaryDiagnosis"/>
+      <xsd:element minOccurs="0" name="Secondary" type="dictionary:SecondaryDiagnosis"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DiagnosisGeneral  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DiagnosisGeneral">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="SourceOfInformation" type="ecl:SourceofInformation"/>
+      <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="ProblemType" type="datatypes:SNOMEDQualifiedCode"/>
+      <xsd:element name="ProblemNameCoded" type="datatypes:TerminologyQualifiedCode"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DrugCoded  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DrugCoded">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="ProductCode" type="datatypes:TerminologyQualifiedCode"/>
+      <xsd:element minOccurs="0" name="Strength" type="datatypes:an..70"/>
+      <xsd:element minOccurs="0" name="DrugDBCode" type="datatypes:ReferenceQualifier1153CodedType"/>
+      <xsd:element minOccurs="0" name="FormCode" type="datatypes:SourceQualifiedCode"/>
+      <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:SourceQualifiedCode"/>
+      <xsd:element minOccurs="0" name="DEASchedule" type="ecl:DEASchedule"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DrugUseEvaluation  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DrugUseEvaluation">
+    <xsd:sequence>
+      <xsd:element name="ServiceReasonCode" type="ecl:DUEReasonForServiceCode"/>
+      <xsd:element minOccurs="0" name="ProfessionalServiceCode" type="ecl:DUEProfessionalServiceCode"/>
+      <xsd:element minOccurs="0" name="ServiceResultCode" type="ecl:DUEResultOfServiceCode"/>
+      <xsd:element minOccurs="0" name="CoAgent" type="dictionary:CoAgent"/>
+      <xsd:element minOccurs="0" name="ClinicalSignificanceCode" type="ecl:DUEClinicalSignificanceCode"/>
+      <xsd:element minOccurs="0" name="AcknowledgementReason" type="datatypes:an..100"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Facilty  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Facilty">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element minOccurs="0" name="FacilityName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  FillStatus  <<choice>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="FillStatus">
+    <xsd:choice>
+      <xsd:element name="Filled" type="datatypes:NoteType"/>
+      <xsd:element name="PartialFill" type="datatypes:NoteType"/>
+      <xsd:element name="NotFilled" type="datatypes:NoteType"/>
+    </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MandatoryFacilty  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MandatoryFacilty">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Facilty">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="FacilityName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MandatoryPharmacy  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MandatoryPharmacy">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Pharmacy">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element minOccurs="0" name="Pharmacist" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="BusinessName" type="datatypes:an..35M"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Observation  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Observation">
+    <xsd:sequence>
+      <xsd:element maxOccurs="10" minOccurs="0" name="Measurement" type="datatypes:MeasurementType"/>
+      <xsd:element minOccurs="0" name="ObservationNotes" type="datatypes:an..140"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  OtherCompoundInformationType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="OtherCompoundInformationType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="CompoundCoded" type="ecl:CompoundCode"/>
+      <xsd:element minOccurs="0" name="FormSourceCode" type="ecl:SourceCodeList"/>
+      <xsd:element minOccurs="0" name="FinalCompoundPharmaceuticalDosageForm" type="datatypes:an..70"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Patient  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Patient">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Identification" type="dictionary:PatientID"/>
+      <xsd:element name="Name" type="datatypes:NameType"/>
+      <xsd:element name="Gender" type="ecl:GenderCode"/>
+      <xsd:element name="DateOfBirth" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+      <xsd:element minOccurs="0" name="PatientLocation" type="dictionary:PatientLocation"/>
+      <xsd:element minOccurs="0" name="LanguageNameCode" type="datatypes:an..3"/>
+      <xsd:element minOccurs="0" name="ResidenceCode" type="ecl:ResidenceCode"/>
+      <xsd:element minOccurs="0" name="PregnancyIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="Smoker" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="Race" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="Ethnicity" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PatientID  <<complexType, choice>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PatientID">
+    <xsd:choice maxOccurs="2" minOccurs="0">
+      <xsd:element name="NCPDPID" type="datatypes:an..35M"/>
+      <xsd:element name="FileID" type="datatypes:an..35M"/>
+      <xsd:element name="StateLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicareNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicaidNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DentistLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="UPIN" type="datatypes:an..35M"/>
+      <xsd:element name="FacilityID" type="datatypes:an..35M"/>
+      <xsd:element name="PPONumber" type="datatypes:an..35M"/>
+      <xsd:element name="PayerID" type="datatypes:an..35M"/>
+      <xsd:element name="ProcessorIdentificationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="BINLocationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="Commercial" type="datatypes:an..35M"/>
+      <xsd:element name="MedicalRecordIdentificationNumberEHR" type="datatypes:an..35M"/>
+      <xsd:element name="PatientAccountNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DEANumber" type="datatypes:an..35M"/>
+      <xsd:element name="HIN" type="datatypes:an..35M"/>
+      <xsd:element name="IndividualPolicyNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SecondaryCoverage" type="datatypes:an..35M"/>
+      <xsd:element name="NAICCode" type="datatypes:an..35M"/>
+      <xsd:element name="PromotionNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SocialSecurity" type="datatypes:an..35M"/>
+      <xsd:element name="NPI" type="datatypes:an..35M"/>
+      <xsd:element name="PriorAuthorization" type="datatypes:an..35M"/>
+      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35M"/>
+      <xsd:element name="MutuallyDefined" type="datatypes:an..35M"/>
+    </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PatientLocation  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PatientLocation">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="FacilityUnit" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Bed" type="datatypes:an..10"/>
+      <xsd:element minOccurs="0" name="Room" type="datatypes:an..10"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PayerID  <<complexType, choice>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PayerID">
+    <xsd:choice maxOccurs="1" minOccurs="0">
+      <xsd:element name="NCPDPID" type="datatypes:an..35M"/>
+      <xsd:element name="FileID" type="datatypes:an..35M"/>
+      <xsd:element name="StateLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicareNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicaidNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DentistLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="UPIN" type="datatypes:an..35M"/>
+      <xsd:element name="FacilityID" type="datatypes:an..35M"/>
+      <xsd:element name="PPONumber" type="datatypes:an..35M"/>
+      <xsd:element name="PayerID" type="datatypes:an..35M"/>
+      <xsd:element name="ProcessorIdentificationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="BINLocationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="Commercial" type="datatypes:an..35M"/>
+      <xsd:element name="MedicalRecordIdentificationNumberEHR" type="datatypes:an..35M"/>
+      <xsd:element name="PatientAccountNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DEANumber" type="datatypes:an..35M"/>
+      <xsd:element name="HIN" type="datatypes:an..35M"/>
+      <xsd:element name="IndividualPolicyNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SecondaryCoverage" type="datatypes:an..35M"/>
+      <xsd:element name="NAICCode" type="datatypes:an..35M"/>
+      <xsd:element name="PromotionNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SocialSecurity" type="datatypes:an..35M"/>
+      <xsd:element name="NPI" type="datatypes:an..35M"/>
+      <xsd:element name="PriorAuthorization" type="datatypes:an..35M"/>
+      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35M"/>
+      <xsd:element name="MutuallyDefined" type="datatypes:an..35M"/>
+    </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Pharmacist  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Pharmacist">
+    <xsd:sequence>
+      <xsd:element name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element minOccurs="0" name="Name" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="BusinessName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Pharmacy  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Pharmacy">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+      <xsd:element minOccurs="0" name="Pharmacist" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="BusinessName" type="datatypes:an..35M"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Prescriber  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Prescriber">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+      <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+      <xsd:element name="Name" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType"/>
+      <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PrimaryDiagnosis  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PrimaryDiagnosis">
+    <xsd:sequence>
+      <xsd:element name="Qualifier" type="ecl:DiagnosisCodeQualifier"/>
+      <xsd:element name="Value" type="ecl:Code"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Provider  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Provider">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Identification" type="datatypes:ProviderID"/>
+      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+      <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+      <xsd:element name="Name" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ProviderID  <<choice, complexType>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="ProviderID">
+    <xsd:choice maxOccurs="10" minOccurs="1">
+      <xsd:element name="NCPDPID" type="datatypes:an..35M"/>
+      <xsd:element name="FileID" type="datatypes:an..35M"/>
+      <xsd:element name="StateLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicareNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicaidNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DentistLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="UPIN" type="datatypes:an..35M"/>
+      <xsd:element name="FacilityID" type="datatypes:an..35M"/>
+      <xsd:element name="PPONumber" type="datatypes:an..35M"/>
+      <xsd:element name="PayerID" type="datatypes:an..35M"/>
+      <xsd:element name="ProcessorIdentificationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="BINLocationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="Commercial" type="datatypes:an..35M"/>
+      <xsd:element name="MedicalRecordIdentificationNumberEHR" type="datatypes:an..35M"/>
+      <xsd:element name="PatientAccountNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DEANumber" type="datatypes:an..35M"/>
+      <xsd:element name="HIN" type="datatypes:an..35M"/>
+      <xsd:element name="IndividualPolicyNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SecondaryCoverage" type="datatypes:an..35M"/>
+      <xsd:element name="NAICCode" type="datatypes:an..35M"/>
+      <xsd:element name="PromotionNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SocialSecurity" type="datatypes:an..35M"/>
+      <xsd:element name="NPI" type="datatypes:an..35M"/>
+      <xsd:element name="PriorAuthorization" type="datatypes:an..35M"/>
+      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35M"/>
+      <xsd:element name="Data2000WaiverID" type="datatypes:an..35M"/>
+      <xsd:element name="MutuallyDefined" type="datatypes:an..35M"/>
+    </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Quantity  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Quantity">
+    <xsd:sequence>
+      <xsd:element name="Value" type="datatypes:n..11M"/>
+      <xsd:element name="CodeListQualifier" type="ecl:CodeListQualifierQuantityQualifierDRUSegmentX12DE673"/>
+      <xsd:element name="UnitSourceCode" type="ecl:SourceCodeList"/>
+      <xsd:element name="PotencyUnitCode" type="ecl:PotencyUnitCode"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SecondaryDiagnosis  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SecondaryDiagnosis">
+    <xsd:sequence>
+      <xsd:element name="Qualifier" type="ecl:DiagnosisCodeQualifier2"/>
+      <xsd:element name="Value" type="ecl:Code"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Supervisor  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Supervisor">
+    <xsd:sequence>
+      <xsd:element name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+      <xsd:element name="Name" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

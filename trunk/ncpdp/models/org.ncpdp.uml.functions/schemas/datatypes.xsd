@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/datatypes" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ECL" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="http://www.ncpdp.org/schema/ECL" schemaLocation="ecl.xsd"/>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ANDOR  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ANDOR">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="AND|OR"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ANDORNOT  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ANDORNOT">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="AND|OR|NOT"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ANDORTHEN  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ANDORTHEN">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="AND|OR|THEN"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ANDORTO  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ANDORTO">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="AND|OR|TO"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MailAddressType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="MailAddressType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="(mailto:)?[^\.]{1,35}(\.[^@]{1,3})?(@[A-Za-z0-9]+\.[A-Za-z]{2,4})?"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ReasonCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ReasonCode">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="AA|AB|AC|AD|AE|AF|AG|AH|AJ|AK|AL|AM|AN|AO|AP|AQ"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SimpleDateType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="SimpleDateType">
+    <xsd:restriction base="xsd:date"/>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  TOOR  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="TOOR">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="TO|OR"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  TerminologyType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="TerminologyType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="1|2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  UtcDateType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="UtcDateType">
+    <xsd:restriction base="xsd:dateTime"/>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ZipCodeType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ZipCodeType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="(\d{5})|(\d{9})"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[ !-~]*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..10  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..10">
+    <xsd:restriction base="datatypes:an">
+      <xsd:maxLength value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..100  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..100">
+    <xsd:restriction base="datatypes:an">
+      <xsd:maxLength value="100"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..105M  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..105M">
+    <xsd:restriction base="datatypes:anM">
+      <xsd:maxLength value="105"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..140  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..140">
+    <xsd:restriction base="datatypes:an">
+      <xsd:maxLength value="140"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..15  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..15">
+    <xsd:restriction base="datatypes:an">
+      <xsd:maxLength value="15"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..19  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..19">
+    <xsd:restriction base="datatypes:an">
+      <xsd:maxLength value="19"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..3  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..3">
+    <xsd:restriction base="datatypes:an">
+      <xsd:maxLength value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..35  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..35">
+    <xsd:restriction base="datatypes:an">
+      <xsd:maxLength value="35"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..35M  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..35M">
+    <xsd:restriction base="datatypes:anM">
+      <xsd:maxLength value="35"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..70  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..70">
+    <xsd:restriction base="datatypes:an">
+      <xsd:maxLength value="70"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..80  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..80">
+    <xsd:restriction base="datatypes:an">
+      <xsd:maxLength value="80"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  an..80M  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="an..80M">
+    <xsd:restriction base="datatypes:anM">
+      <xsd:maxLength value="80"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  anM  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="anM">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="([!-~]|[ ])*[!-~]([!-~]|[ ])*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  n  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="n">
+    <xsd:restriction base="datatypes:an">
+      <xsd:pattern value="[0-9]*(\.[0-9]+)?"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  n..11M  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="n..11M">
+    <xsd:restriction base="datatypes:nM">
+      <xsd:maxLength value="11"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  n..3  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="n..3">
+    <xsd:restriction base="datatypes:n">
+      <xsd:maxLength value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  nM  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="nM">
+    <xsd:restriction base="datatypes:anM">
+      <xsd:pattern value="[0-9]+(\.[0-9]+)?"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  AddressType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="AddressType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="AddressLine1" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="AddressLine2" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="City" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="State" type="ecl:State"/>
+      <xsd:element minOccurs="0" name="ZipCode" type="datatypes:ZipCodeType"/>
+      <xsd:element minOccurs="0" name="PlaceLocationQualifier" type="datatypes:an..3"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CommunicationNumbersType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CommunicationNumbersType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="Communication" type="datatypes:CommunicationType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CommunicationType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CommunicationType">
+    <xsd:sequence>
+      <xsd:element name="Number" type="datatypes:an..80M"/>
+      <xsd:element name="Qualifier" type="ecl:ValuesforCommunicationCodes"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DateType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DateType">
+    <xsd:sequence>
+      <xsd:element name="Date" type="datatypes:SimpleDateType"/>
+      <xsd:element name="DateTime" type="datatypes:UtcDateType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MeasurementType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MeasurementType">
+    <xsd:sequence>
+      <xsd:element name="Dimension" type="ecl:MeasurementDimensioncodedValueswhenreferencingX12DE738"/>
+      <xsd:element name="Value"/>
+      <xsd:element minOccurs="0" name="ObservationDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="MeasurementDataQualifier" type="ecl:MeasurementDataQualifier"/>
+      <xsd:element minOccurs="0" name="MeasurementSourceCode" type="ecl:SourceCodeList"/>
+      <xsd:element name="MeasurementUnitCode" type="datatypes:an..15"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  NameType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="NameType">
+    <xsd:sequence>
+      <xsd:element name="LastName" type="datatypes:an..35"/>
+      <xsd:element name="FirstName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="MiddleName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Suffix" type="datatypes:an..10"/>
+      <xsd:element minOccurs="0" name="Prefix" type="datatypes:an..10"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  NoteType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="NoteType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PasswordType  <<complexType>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PasswordType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute fixed="PasswordDigest" name="Type" type="xsd:anySimpleType" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ProviderID  <<complexType, choice>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="ProviderID">
+    <xsd:choice maxOccurs="10" minOccurs="0">
+      <xsd:element name="NCPDPID" type="datatypes:an..35"/>
+      <xsd:element name="FileID" type="datatypes:an..35"/>
+      <xsd:element name="StateLicenseNumber" type="datatypes:an..35"/>
+      <xsd:element name="MedicareNumber" type="datatypes:an..35"/>
+      <xsd:element name="MedicaidNumber" type="datatypes:an..35"/>
+      <xsd:element name="DentistLicenseNumber" type="datatypes:an..35"/>
+      <xsd:element name="UPIN" type="datatypes:an..35"/>
+      <xsd:element name="FacilityID" type="datatypes:an..35"/>
+      <xsd:element name="PPONumber" type="datatypes:an..35"/>
+      <xsd:element name="PayerID" type="datatypes:an..35"/>
+      <xsd:element name="ProcessorIdentificationNumber" type="datatypes:an..35"/>
+      <xsd:element name="BINLocationNumber" type="datatypes:an..35"/>
+      <xsd:element name="Commercial" type="datatypes:an..35"/>
+      <xsd:element name="MedicalRecordIdentificationNumberEHR" type="datatypes:an..35"/>
+      <xsd:element name="PatientAccountNumber" type="datatypes:an..35"/>
+      <xsd:element name="DEANumber" type="datatypes:an..35"/>
+      <xsd:element name="HIN" type="datatypes:an..35"/>
+      <xsd:element name="IndividualPolicyNumber" type="datatypes:an..35"/>
+      <xsd:element name="SecondaryCoverage" type="datatypes:an..35"/>
+      <xsd:element name="NAICCode" type="datatypes:an..35"/>
+      <xsd:element name="PromotionNumber" type="datatypes:an..35"/>
+      <xsd:element name="SocialSecurity" type="datatypes:an..35"/>
+      <xsd:element name="NPI" type="datatypes:an..35"/>
+      <xsd:element name="PriorAuthorization" type="datatypes:an..35"/>
+      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35"/>
+      <xsd:element name="Data2000WaiverID" type="datatypes:an..35"/>
+      <xsd:element name="MutuallyDefined" type="datatypes:an..35"/>
+    </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  QualifiedCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="QualifiedCode">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+      <xsd:element name="Qualifier" type="ecl:Code"/>
+      <xsd:element name="Code" type="ecl:Code"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ReferenceQualifier1153CodedType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="ReferenceQualifier1153CodedType">
+    <xsd:sequence>
+      <xsd:element name="ItemDescriptionLong" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ItemNumber" type="ecl:Code"/>
+      <xsd:element minOccurs="0" name="CodeListQualifier" type="ecl:ReferenceQualifierGenericDatabasePriorAuthorizationDRUSegment"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SNOMEDQualifiedCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SNOMEDQualifiedCode">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:TerminologyQualifiedCode">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+          <xsd:element fixed="LD" name="Qualifier" type="ecl:Terminologies"/>
+          <xsd:element name="Code" type="ecl:Code"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SourceQualifiedCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SourceQualifiedCode">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:QualifiedCode">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+          <xsd:element name="Qualifier" type="ecl:SourceCodeList"/>
+          <xsd:element name="Code" type="ecl:Code"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  TerminologyQualifiedCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="TerminologyQualifiedCode">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:QualifiedCode">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+          <xsd:element name="Qualifier" type="ecl:Terminologies"/>
+          <xsd:element name="Code" type="ecl:Code"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  TimeZone  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="TimeZone">
+    <xsd:sequence>
+      <xsd:element name="TimeZoneIdentifier" type="ecl:TimeZoneIdentifier"/>
+      <xsd:element minOccurs="0" name="TimeZoneDifferenceQuantity">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[\+\-]?[0-9][0-9]?[0-9]?[0-9]?"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
