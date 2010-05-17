@@ -77,13 +77,7 @@
       <xsd:element minOccurs="0" name="Security" type="transport:SecurityType"/>
       <xsd:element name="SenderSoftware" type="transport:SenderSoftwareType"/>
       <xsd:element minOccurs="0" name="Mailbox" type="transport:MailboxType"/>
-      <xsd:element minOccurs="0" name="TestMessage">
-        <xsd:simpleType>
-          <xsd:restriction base="datatypes:n">
-            <xsd:maxLength value="1"/>
-          </xsd:restriction>
-        </xsd:simpleType>
-      </xsd:element>
+      <xsd:element minOccurs="0" name="TestMessage" type="datatypes:n1"/>
       <xsd:element minOccurs="0" name="RxReferenceNumber" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="TertiaryIdentifier" type="datatypes:an..3"/>
       <xsd:element minOccurs="0" name="PrescriberOrderNumber" type="datatypes:an..35"/>

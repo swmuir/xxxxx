@@ -234,19 +234,22 @@
     </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  MandatoryFacilty  -->
+  <!--  HistorySource  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="MandatoryFacilty">
-    <xsd:complexContent>
-      <xsd:restriction base="dictionary:Facilty">
-        <xsd:sequence>
-          <xsd:element name="Identification" type="dictionary:ProviderID"/>
-          <xsd:element minOccurs="0" name="FacilityName" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
-          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-        </xsd:sequence>
-      </xsd:restriction>
-    </xsd:complexContent>
+  <xsd:complexType name="HistorySource">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Source">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Reference" type="ecl:Code"/>
+            <xsd:element minOccurs="0" name="SourceDescription" type="datatypes:an..35"/>
+            <xsd:element fixed="RX" minOccurs="0" name="SourceQualifier" type="datatypes:an"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="SourceReference" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="FillNumber"/>
+    </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  MandatoryPharmacy  -->
@@ -264,6 +267,88 @@
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Medication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Medication">
+    <xsd:sequence>
+      <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+      <xsd:element name="Directions">
+        <xsd:simpleType>
+          <xsd:restriction base="datatypes:anM">
+            <xsd:maxLength value="140"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+      <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+      <xsd:element minOccurs="0" name="NumberOfRefills"/>
+      <xsd:element minOccurs="0" name="Note">
+        <xsd:simpleType>
+          <xsd:restriction base="datatypes:an">
+            <xsd:maxLength value="210"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+      <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+      <xsd:element minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+      <xsd:element minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+      <xsd:element minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+      <xsd:element minOccurs="0" name="PharmacyRequestedRefills"/>
+      <xsd:element minOccurs="0" name="AdditionalRefillsAuthorized"/>
+      <xsd:element minOccurs="0" name="RefillsRemaining">
+        <xsd:simpleType>
+          <xsd:restriction base="datatypes:n">
+            <xsd:maxLength value="2"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+      <xsd:element name="Quantity" type="dictionary:Quantity"/>
+      <xsd:element name="WrittenDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+      <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+      <xsd:element minOccurs="0" name="PriorAuthorization">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="Qualifier" type="datatypes:ReferenceQualifier1153CodedType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+      <xsd:element minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+      <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+      <xsd:element minOccurs="0" name="RouteofAdministration">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="RouteofAdministrationCode">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="ItemDescriptionLong" type="xsd:string"/>
+                  <xsd:element minOccurs="0" name="ItemNumber" type="ecl:Code"/>
+                  <xsd:element minOccurs="0" name="CodeListQualifier" type="ecl:RouteOfAdministration"/>
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MultipleRouteofAdministrationModifier" type="datatypes:ANDOR"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+      <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+      <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+      <xsd:element minOccurs="0" name="Prescriber" type="dictionary:Prescriber"/>
+      <xsd:element minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+    </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  Observation  -->
@@ -433,7 +518,7 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Provider">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="Identification" type="datatypes:ProviderID"/>
+      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
       <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
       <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
       <xsd:element name="Name" type="datatypes:NameType"/>
@@ -484,6 +569,240 @@
       <xsd:element name="CodeListQualifier" type="ecl:CodeListQualifierQuantityQualifierDRUSegmentX12DE673"/>
       <xsd:element name="UnitSourceCode" type="ecl:SourceCodeList"/>
       <xsd:element name="PotencyUnitCode" type="ecl:PotencyUnitCode"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SIGType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SIGType">
+    <xsd:sequence>
+      <xsd:element name="RepeatingSIG">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="SigSequencePositionNumber"/>
+            <xsd:element minOccurs="0" name="MultipleSigModifier" type="datatypes:ANDORTHEN"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CodeSystem">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="SNOMEDVersion"/>
+            <xsd:element minOccurs="0" name="FMTVersion">
+              <xsd:simpleType>
+                <xsd:restriction base="datatypes:an">
+                  <xsd:maxLength value="14"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="FreeText">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="SigFreeTextStringIndicator">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:pattern value="1|2|3"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="SigFreeText"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Dose">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="DoseCompositeIndicator">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:pattern value="1|2|3|4"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="DoseDeliveryMethodText"/>
+            <xsd:element minOccurs="0" name="DoseDeliveryMethodCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="DoseDeliveryMethodCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="DoseDeliveryMethodModifierText"/>
+            <xsd:element minOccurs="0" name="DoseDeliveryMethodModifierCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="DoseDeliveryMethodModifierCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="DoseQuantity"/>
+            <xsd:element minOccurs="0" name="DoseFormText"/>
+            <xsd:element minOccurs="0" name="DoseFormCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="DoseFormCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="DoseRangeModifier" type="datatypes:TOOR"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DoseCalculation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="DosingBasisNumericValue"/>
+            <xsd:element minOccurs="0" name="DosingBasisUnitofMeasureText"/>
+            <xsd:element minOccurs="0" name="DosingBasisUnitofMeasureCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="DosingBasisUnitofMeasureCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="BodyMetricQualifier">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:pattern value="1|2"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BodyMetricValue"/>
+            <xsd:element minOccurs="0" name="CalculatedDoseNumeric"/>
+            <xsd:element minOccurs="0" name="CalculatedDoseUnitofMeasureText"/>
+            <xsd:element minOccurs="0" name="CalculatedDoseUnitofMeasureCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="CalculatedDoseUnitofMeasureCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="DosingBasisRangeModifier" type="datatypes:TOOR"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Vehicle">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="VehicleName"/>
+            <xsd:element minOccurs="0" name="VehicleNameCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="VehicleNameCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="VehicleQuantity"/>
+            <xsd:element minOccurs="0" name="VehicleUnitOfMeasureText"/>
+            <xsd:element minOccurs="0" name="VehicleUnitOfMeasureCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="VehicleUnitOfMeasureCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="MultipleVehicleModifier" type="datatypes:ANDOR"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="RouteofAdministration"/>
+      <xsd:element minOccurs="0" name="SiteofAdministration">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="SiteofAdministrationText"/>
+            <xsd:element minOccurs="0" name="SiteofAdministrationCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="SiteofAdministrationCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="MultipleAdministrationTimingModifier" type="datatypes:ANDORNOT"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Timing">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="AdministrationTimingText"/>
+            <xsd:element minOccurs="0" name="AdministrationTimingCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="AdministrationTimingCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="MultipleAdministrationTimingModifier" type="datatypes:ANDOR"/>
+            <xsd:element minOccurs="0" name="RateofAdministration"/>
+            <xsd:element minOccurs="0" name="RateUnitofMeasureText"/>
+            <xsd:element minOccurs="0" name="RateUnitofMeasureCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="RateUnitofMeasureCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="TimePeriodBasisText"/>
+            <xsd:element minOccurs="0" name="TimePeriodBasisCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="TimePeriodBasisCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="FrequencyNumericValue">
+              <xsd:simpleType>
+                <xsd:restriction base="datatypes:an">
+                  <xsd:maxLength value="11"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FrequencyUnitsText"/>
+            <xsd:element minOccurs="0" name="FrequencyUnitsCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="FrequencyUnitsCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="VariableFrequencyModifier" type="datatypes:ANDORTO"/>
+            <xsd:element minOccurs="0" name="IntervalNumericValue"/>
+            <xsd:element minOccurs="0" name="IntervalUnitsText"/>
+            <xsd:element minOccurs="0" name="IntervalUnitsCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="IntervalUnitsCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="VariableIntervalModifier" type="datatypes:ANDORTO"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Duration">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="DurationNumericValue">
+              <xsd:simpleType>
+                <xsd:restriction base="datatypes:anM">
+                  <xsd:maxLength value="11"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="DurationText"/>
+            <xsd:element name="DurationTextCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element name="DurationTextCode"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="MaximumDoseRestriction">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="MaximumDoseRestrictionNumericValue">
+              <xsd:simpleType>
+                <xsd:restriction base="datatypes:nM">
+                  <xsd:maxLength value="18"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="MaximumDoseRestrictionUnitsText">
+              <xsd:simpleType>
+                <xsd:restriction base="datatypes:anM">
+                  <xsd:maxLength value="50"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="MaximumDoseRestrictionCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element name="MaximumDoseRestrictionUnitsCode"/>
+            <xsd:element minOccurs="0" name="MaximumDoseRestrictionVariableNumericValue"/>
+            <xsd:element minOccurs="0" name="MaximumDoseRestrictionVariableUnitsText"/>
+            <xsd:element minOccurs="0" name="MaximumDoseRestrictionVariableUnitsCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="MaximumDoseRestrictionVariableUnitsCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="MaximumDoseRestrictionVariableDurationModifier" type="datatypes:ANDOR"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Indication">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="IndicationPrecursorText"/>
+            <xsd:element minOccurs="0" name="IndicationPrecursorCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element name="IndicationPrecursorCode"/>
+            <xsd:element minOccurs="0" name="IndicationText"/>
+            <xsd:element minOccurs="0" name="IndicationTextCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="IndicationTextCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="IndicationValueText"/>
+            <xsd:element minOccurs="0" name="IndicationValueUnit">
+              <xsd:simpleType>
+                <xsd:restriction base="datatypes:n">
+                  <xsd:maxLength value="18"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="IndicationValueUnitofMeasureText"/>
+            <xsd:element minOccurs="0" name="IndicationValueUnitofMeasureCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element name="IndicationValueUnitofMeasureCode">
+              <xsd:simpleType>
+                <xsd:restriction base="datatypes:anM">
+                  <xsd:maxLength value="15"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="IndicationVariableModifier" type="datatypes:ANDORTO"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Stop">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="StopIndicator">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:pattern value="Y|N"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

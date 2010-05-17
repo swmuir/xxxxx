@@ -221,6 +221,14 @@
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  n1  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="n1">
+    <xsd:restriction base="datatypes:n">
+      <xsd:maxLength value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  nM  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="nM">
@@ -310,40 +318,6 @@
         <xsd:attribute fixed="PasswordDigest" name="Type" type="xsd:anySimpleType" use="required"/>
       </xsd:extension>
     </xsd:simpleContent>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  ProviderID  <<complexType, choice>>  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="ProviderID">
-    <xsd:choice maxOccurs="10" minOccurs="0">
-      <xsd:element name="NCPDPID" type="datatypes:an..35"/>
-      <xsd:element name="FileID" type="datatypes:an..35"/>
-      <xsd:element name="StateLicenseNumber" type="datatypes:an..35"/>
-      <xsd:element name="MedicareNumber" type="datatypes:an..35"/>
-      <xsd:element name="MedicaidNumber" type="datatypes:an..35"/>
-      <xsd:element name="DentistLicenseNumber" type="datatypes:an..35"/>
-      <xsd:element name="UPIN" type="datatypes:an..35"/>
-      <xsd:element name="FacilityID" type="datatypes:an..35"/>
-      <xsd:element name="PPONumber" type="datatypes:an..35"/>
-      <xsd:element name="PayerID" type="datatypes:an..35"/>
-      <xsd:element name="ProcessorIdentificationNumber" type="datatypes:an..35"/>
-      <xsd:element name="BINLocationNumber" type="datatypes:an..35"/>
-      <xsd:element name="Commercial" type="datatypes:an..35"/>
-      <xsd:element name="MedicalRecordIdentificationNumberEHR" type="datatypes:an..35"/>
-      <xsd:element name="PatientAccountNumber" type="datatypes:an..35"/>
-      <xsd:element name="DEANumber" type="datatypes:an..35"/>
-      <xsd:element name="HIN" type="datatypes:an..35"/>
-      <xsd:element name="IndividualPolicyNumber" type="datatypes:an..35"/>
-      <xsd:element name="SecondaryCoverage" type="datatypes:an..35"/>
-      <xsd:element name="NAICCode" type="datatypes:an..35"/>
-      <xsd:element name="PromotionNumber" type="datatypes:an..35"/>
-      <xsd:element name="SocialSecurity" type="datatypes:an..35"/>
-      <xsd:element name="NPI" type="datatypes:an..35"/>
-      <xsd:element name="PriorAuthorization" type="datatypes:an..35"/>
-      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35"/>
-      <xsd:element name="Data2000WaiverID" type="datatypes:an..35"/>
-      <xsd:element name="MutuallyDefined" type="datatypes:an..35"/>
-    </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  QualifiedCode  -->
