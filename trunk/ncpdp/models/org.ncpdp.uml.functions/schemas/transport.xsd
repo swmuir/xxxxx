@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/Transport" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ECL" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:transport="http://www.ncpdp.org/schema/Transport" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/Transport" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ECL" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:transport="http://www.ncpdp.org/schema/Transport" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/ECL" schemaLocation="ecl.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/functions" schemaLocation="functions.xsd"/>
+  <xsd:import namespace="http://www.ncpdp.org/schema/SCRIPT" schemaLocation="script.xsd"/>
   <xsd:element name="Message" type="transport:MessageType"/>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  BodyType  <<choice>>  -->
@@ -16,6 +17,14 @@
       <xsd:element name="MTMServiceRequest" type="functions:MTMServIceRequest"/>
       <xsd:element name="MTMServiceResponse" type="functions:MTMServiceResponse"/>
       <xsd:element name="Census" type="functions:Census"/>
+      <xsd:element name="CancelRx" type="SCRIPT:CancelRx"/>
+      <xsd:element name="DrugAdministration" type="SCRIPT:DrugAdministration"/>
+      <xsd:element name="NewRx" type="SCRIPT:NewRx"/>
+      <xsd:element name="RefillRequest" type="SCRIPT:RefillRequest"/>
+      <xsd:element name="Resupply" type="SCRIPT:Resupply"/>
+      <xsd:element name="RxChangeRequest" type="SCRIPT:RxChangeRequest"/>
+      <xsd:element name="RxFill" type="SCRIPT:RxFill"/>
+      <xsd:element name="RxHistoryRequest" type="SCRIPT:RxHistoryRequest"/>
     </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
