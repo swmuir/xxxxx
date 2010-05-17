@@ -35,7 +35,7 @@
           <xsd:element name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="FollowUpRequest"/>
+          <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Attachments" type="dictionary:Attachment"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
           <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordinationCensus"/>
@@ -73,7 +73,7 @@
       <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Attachments" type="dictionary:Attachment"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
@@ -99,7 +99,7 @@
       <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:Code"/>
       <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="FollowUpRequest"/>
+      <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:Patient"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
@@ -119,7 +119,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="Attachments" type="dictionary:Attachment"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
           <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:BenefitsCoordinationMTM"/>
@@ -149,7 +149,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:Code"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="FollowUpRequest"/>
+          <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
           <xsd:element name="Patient" type="dictionary:Patient"/>
           <xsd:element minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>

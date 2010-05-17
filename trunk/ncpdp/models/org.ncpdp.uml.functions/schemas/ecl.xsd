@@ -9,9 +9,6 @@
   <!--  CodeListQualifierDrugFormDRUSegmentX12DE1330  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="CodeListQualifierDrugFormDRUSegmentX12DE1330">
-    <xsd:annotation>
-      <xsd:documentation>Drug form, in a code. Dosage form code.</xsd:documentation>
-    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="01">
         <xsd:annotation>
@@ -843,11 +840,7 @@
           <xsd:documentation>Unsupported version in message.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="022">
-        <xsd:annotation>
-          <xsd:documentation>Unsupported release in message.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="022"/>
       <xsd:enumeration value="023">
         <xsd:annotation>
           <xsd:documentation>Error found in an unused field.</xsd:documentation>
@@ -1983,11 +1976,7 @@
           <xsd:documentation>SIG Dose Delivery Method Modifier Code is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="250">
-        <xsd:annotation>
-          <xsd:documentation>SIG Dose Quantity is invalid</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="250"/>
       <xsd:enumeration value="251">
         <xsd:annotation>
           <xsd:documentation>SIG Dose Form Text is invalid</xsd:documentation>
@@ -2688,11 +2677,7 @@
           <xsd:documentation>COO Responsible Party City Name is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="391">
-        <xsd:annotation>
-          <xsd:documentation>COO Responsible Party State is Invalid</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="391"/>
       <xsd:enumeration value="392">
         <xsd:annotation>
           <xsd:documentation>COO Responsible Party Zip Code is Invalid</xsd:documentation>
@@ -2750,7 +2735,7 @@
       </xsd:enumeration>
       <xsd:enumeration value="403">
         <xsd:annotation>
-          <xsd:documentation>DRU Final Compound Pharmaceutical Dosage Form  is Invalid</xsd:documentation>
+          <xsd:documentation>DRU Final Compound Pharmaceutical Dosage Form is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="404">
@@ -2930,7 +2915,7 @@
       </xsd:enumeration>
       <xsd:enumeration value="439">
         <xsd:annotation>
-          <xsd:documentation>ALG Reaction Item Description  is Invalid</xsd:documentation>
+          <xsd:documentation>ALG Reaction Item Description is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="450">
@@ -2945,7 +2930,7 @@
       </xsd:enumeration>
       <xsd:enumeration value="452">
         <xsd:annotation>
-          <xsd:documentation>ALG Severity Item Description  is Invalid</xsd:documentation>
+          <xsd:documentation>ALG Severity Item Description is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="453">
@@ -3065,25 +3050,12 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="CompoundCode">
     <xsd:annotation>
-      <xsd:documentation>&lt;p&gt;&#13;
-    Code&amp;nbsp;indicating&amp;nbsp;whether&amp;nbsp;or&amp;nbsp;not&amp;nbsp;the&amp;nbsp;prescription&amp;nbsp;is&amp;nbsp;a&amp;nbsp;compound.&#13;
-&lt;/p&gt;&lt;br /&gt;&#13;
-&lt;p&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &amp;nbsp;&#13;
-&lt;/p&gt;</xsd:documentation>
+      <xsd:documentation>Code indicating whether or not the prescription is a compound.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="0">
         <xsd:annotation>
-          <xsd:documentation>Not Specified This value is not allowed for the Telecommunication Standard&lt;br /&gt;</xsd:documentation>
+          <xsd:documentation>Not Specified This value is not allowed for the Telecommunication Standard</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1">
@@ -3093,8 +3065,7 @@
       </xsd:enumeration>
       <xsd:enumeration value="2">
         <xsd:annotation>
-          <xsd:documentation>Compound – Customized medication prepared in a pharmacy by combining, mixing, or altering of ingredients (but not&#13;
-reconstituting) for an individual patient in response to a licensed practitioner’s prescription</xsd:documentation>
+          <xsd:documentation>Compound – Customized medication prepared in a pharmacy by combining, mixing, or altering of ingredients (but not reconstituting) for an individual patient in response to a licensed practitioner’s prescription</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -3116,37 +3087,32 @@ reconstituting) for an individual patient in response to a licensed practitioner
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="DEASchedule">
     <xsd:annotation>
-      <xsd:documentation>&lt;p&gt;&#13;
-    Value&amp;nbsp;defining&amp;nbsp;the&amp;nbsp;DEA&amp;nbsp;schedule&amp;nbsp;of&amp;nbsp;the&amp;nbsp;medication.&#13;
-&lt;/p&gt;&lt;br /&gt;&#13;
-&lt;br /&gt;</xsd:documentation>
+      <xsd:documentation>Value defining ;the DEA schedule of the medication.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="1">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    Schedule I Substance (no known use)&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>Schedule I Substance (no known use)</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="2">
         <xsd:annotation>
-          <xsd:documentation>Schedule&amp;nbsp;II&amp;nbsp;Narcotic&amp;nbsp;Substances</xsd:documentation>
+          <xsd:documentation>Schedule II Narcotic Substances</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3">
         <xsd:annotation>
-          <xsd:documentation>Schedule&amp;nbsp;III&amp;nbsp;Narcotic&amp;nbsp;Substances</xsd:documentation>
+          <xsd:documentation>Schedule III Narcotic Substances</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="4">
         <xsd:annotation>
-          <xsd:documentation>Schedule&amp;nbsp;IV&amp;nbsp;Substances</xsd:documentation>
+          <xsd:documentation>Schedule IV Substances</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="5">
         <xsd:annotation>
-          <xsd:documentation>Schedule V Substances&lt;br /&gt;</xsd:documentation>
+          <xsd:documentation>Schedule V Substances</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -3161,33 +3127,22 @@ reconstituting) for an individual patient in response to a licensed practitioner
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="2">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    Moderate – Code indicating that an event, transaction, etc. is of mid-level significance; requires thoughtful review&#13;
-    before prescribing/dispensing the medication. Risk vs. benefit should be evaluated. 2 X X&lt;br /&gt;&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>Moderate – Code indicating that an event, transaction, etc. is of mid-level significance; requires thoughtful review before prescribing/dispensing the medication. Risk vs. benefit should be evaluated. 2 X X</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent&#13;
-    adverse drug event. 1 X X&lt;br /&gt;&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent adverse drug event. 1 X X</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    Minor – Code indicating a non-life threatening, annoying, or now-well-documented effect which may or may not require a&#13;
-    change in drug therapy. 3 X X&lt;br /&gt;&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>Minor – Code indicating a non-life threatening, annoying, or now-well-documented effect which may or may not require a change in drug therapy. 3 X X</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="9">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    Undetermined - value to describe a professional service with variable or unknown severity. 9 X X&lt;br /&gt;&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>Undetermined - value to describe a professional service with variable or unknown severity. 9 X X</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -3367,7 +3322,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="SC">
         <xsd:annotation>
-          <xsd:documentation>Self-care consultation   Code indicating activities performed by a pharmacist on behalf of a patient intended to allow the patient to function more effectively on his or her own behalf in health promotion and disease prevention, detection, or treatment.</xsd:documentation>
+          <xsd:documentation>Self-care consultation Code indicating activities performed by a pharmacist on behalf of a patient intended to allow the patient to function more effectively on his or her own behalf in health promotion and disease prevention, detection, or treatment.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ZZ">
@@ -3382,7 +3337,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="TC">
         <xsd:annotation>
-          <xsd:documentation>Payer/processor consulted   Code indicating communication by a pharmacist to a processor or payer related to the care of the patient.</xsd:documentation>
+          <xsd:documentation>Payer/processor consulted Code indicating communication by a pharmacist to a processor or payer related to the care of the patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="MR">
@@ -3397,27 +3352,27 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="CC">
         <xsd:annotation>
-          <xsd:documentation>Coordination of care   Case management activities of a pharmacist related to the care being delivered by multiple providers.</xsd:documentation>
+          <xsd:documentation>Coordination of care Case management activities of a pharmacist related to the care being delivered by multiple providers.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="PM">
         <xsd:annotation>
-          <xsd:documentation>Patient monitoring   Code indicating the evaluation of established therapy for the purpose of determining whether an existing therapeutic plan should be altered.</xsd:documentation>
+          <xsd:documentation>Patient monitoring Code indicating the evaluation of established therapy for the purpose of determining whether an existing therapeutic plan should be altered.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="PE">
         <xsd:annotation>
-          <xsd:documentation>Patient education/instruction   Code indicating verbal and/or written communication by a pharmacist to enhance the patient’s knowledge about the condition under treatment or to develop skills and competencies related to its management.</xsd:documentation>
+          <xsd:documentation>Patient education/instruction Code indicating verbal and/or written communication by a pharmacist to enhance the patient’s knowledge about the condition under treatment or to develop skills and competencies related to its management.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="M0">
         <xsd:annotation>
-          <xsd:documentation>Prescriber consulted   Code indicating prescriber communication related to collection of information or clarification of a specific limited problem.</xsd:documentation>
+          <xsd:documentation>Prescriber consulted Code indicating prescriber communication related to collection of information or clarification of a specific limited problem.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="TH">
         <xsd:annotation>
-          <xsd:documentation>Therapeutic product interchange   Code indicating that the selection of a therapeutically equivalent product to that specified by the prescriber for the purpose of achieving cost savings for the payer.</xsd:documentation>
+          <xsd:documentation>Therapeutic product interchange Code indicating that the selection of a therapeutically equivalent product to that specified by the prescriber for the purpose of achieving cost savings for the payer.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="PA">
@@ -3427,32 +3382,32 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="RT">
         <xsd:annotation>
-          <xsd:documentation>Recommend laboratory test  Code indicating that the pharmacist recommends the performance of a clinical laboratory test on a patient.</xsd:documentation>
+          <xsd:documentation>Recommend laboratory test Code indicating that the pharmacist recommends the performance of a clinical laboratory test on a patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="AS">
         <xsd:annotation>
-          <xsd:documentation>Patient assessment   Code indicating that an initial evaluation of a patient or complaint/symptom for the purpose of developing a therapeutic plan.</xsd:documentation>
+          <xsd:documentation>Patient assessment Code indicating that an initial evaluation of a patient or complaint/symptom for the purpose of developing a therapeutic plan.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="DE">
         <xsd:annotation>
-          <xsd:documentation>Dosing evaluation/determination  Cognitive service whereby the pharmacist reviews and evaluates the appropriateness of a prescribed medication’s dose, interval, frequency and/or formulation.</xsd:documentation>
+          <xsd:documentation>Dosing evaluation/determination Cognitive service whereby the pharmacist reviews and evaluates the appropriateness of a prescribed medication’s dose, interval, frequency and/or formulation.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="P0">
         <xsd:annotation>
-          <xsd:documentation>Patient consulted   Code indicating patient communication related to collection of information or clarification of a specific limited problem.</xsd:documentation>
+          <xsd:documentation>Patient consulted Code indicating patient communication related to collection of information or clarification of a specific limited problem.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="MA">
         <xsd:annotation>
-          <xsd:documentation>Medication administration   Code indicating an action of supplying a medication to a patient through any of several routes—oral, topical, intravenous, intramuscular, intranasal, etc.</xsd:documentation>
+          <xsd:documentation>Medication administration Code indicating an action of supplying a medication to a patient through any of several routes—oral, topical, intravenous, intramuscular, intranasal, etc.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="SW">
         <xsd:annotation>
-          <xsd:documentation>Literature search/review   Code indicating that the pharmacist searches or reviews the pharmaceutical and/or medical literature for information related to the care of a patient.</xsd:documentation>
+          <xsd:documentation>Literature search/review Code indicating that the pharmacist searches or reviews the pharmaceutical and/or medical literature for information related to the care of a patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="MB">
@@ -3467,7 +3422,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="PT">
         <xsd:annotation>
-          <xsd:documentation>Perform laboratory test   Code indicating that the pharmacist performed a clinical laboratory test on a patient.</xsd:documentation>
+          <xsd:documentation>Perform laboratory test Code indicating that the pharmacist performed a clinical laboratory test on a patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="GP">
@@ -3477,12 +3432,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="PH">
         <xsd:annotation>
-          <xsd:documentation>Patient medication history   Code indicating the establishment of a medication history database on a patient to serve as the foundation for the ongoing maintenance of a medication profile.</xsd:documentation>
+          <xsd:documentation>Patient medication history Code indicating the establishment of a medication history database on a patient to serve as the foundation for the ongoing maintenance of a medication profile.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="DP">
         <xsd:annotation>
-          <xsd:documentation>Dosage evaluated   Code indicating that dosage has been evaluated with respect to risk for the patient.</xsd:documentation>
+          <xsd:documentation>Dosage evaluated Code indicating that dosage has been evaluated with respect to risk for the patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="MP">
@@ -3502,12 +3457,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="PC">
         <xsd:annotation>
-          <xsd:documentation>Patient Question/Concern  Code indicating that a request for information/concern was expressed by the patient, with respect to patient care.</xsd:documentation>
+          <xsd:documentation>Patient Question/Concern Code indicating that a request for information/concern was expressed by the patient, with respect to patient care.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="PP">
         <xsd:annotation>
-          <xsd:documentation>Plan Protocol   Code indicating that a cognitive service whereby a pharmacist, in consultation with the prescriber or using professional judgment, recommends a course of therapy as outlined in the patient’s plan and submits a claim for the professional service provided.</xsd:documentation>
+          <xsd:documentation>Plan Protocol Code indicating that a cognitive service whereby a pharmacist, in consultation with the prescriber or using professional judgment, recommends a course of therapy as outlined in the patient’s plan and submits a claim for the professional service provided.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="EX">
@@ -3532,7 +3487,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="AN">
         <xsd:annotation>
-          <xsd:documentation>Prescription Authentication  Code indicating that circumstances required the pharmacist to verify the validity and/or authenticity of the prescription.</xsd:documentation>
+          <xsd:documentation>Prescription Authentication Code indicating that circumstances required the pharmacist to verify the validity and/or authenticity of the prescription.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="HD">
@@ -3542,7 +3497,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="SC">
         <xsd:annotation>
-          <xsd:documentation>Suboptimal Compliance   Code indicating that professional service was provided to counsel the patient regarding the importance of adherence to the provided instructions and of consistent use of the prescribed product including any ill effects anticipated as a result of non-compliance.</xsd:documentation>
+          <xsd:documentation>Suboptimal Compliance Code indicating that professional service was provided to counsel the patient regarding the importance of adherence to the provided instructions and of consistent use of the prescribed product including any ill effects anticipated as a result of non-compliance.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="PA">
@@ -3557,7 +3512,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="DA">
         <xsd:annotation>
-          <xsd:documentation>Drug-Allergy   Indicates that an adverse immune event may occur due to the patient’s previously demonstrated heightened allergic response to the drug product in question.</xsd:documentation>
+          <xsd:documentation>Drug-Allergy Indicates that an adverse immune event may occur due to the patient’s previously demonstrated heightened allergic response to the drug product in question.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="IC">
@@ -3567,7 +3522,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="MN">
         <xsd:annotation>
-          <xsd:documentation>Insufficient Duration   Code indicating that regimens shorter than the minimal limit of therapy for the drug product, based on the product’s common uses, has been detected.</xsd:documentation>
+          <xsd:documentation>Insufficient Duration Code indicating that regimens shorter than the minimal limit of therapy for the drug product, based on the product’s common uses, has been detected.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="DI">
@@ -3577,12 +3532,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="DL">
         <xsd:annotation>
-          <xsd:documentation>Drug-Lab Conflict  Indicates that laboratory values may be altered due to the use of the drug, or that the patient’s response to the drug may be altered due to a condition that is identified by a certain laboratory value.</xsd:documentation>
+          <xsd:documentation>Drug-Lab Conflict Indicates that laboratory values may be altered due to the use of the drug, or that the patient’s response to the drug may be altered due to a condition that is identified by a certain laboratory value.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="AR">
         <xsd:annotation>
-          <xsd:documentation>Adverse Drug Reaction   Code indicating an adverse reaction by a patient to a drug.</xsd:documentation>
+          <xsd:documentation>Adverse Drug Reaction Code indicating an adverse reaction by a patient to a drug.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="SX">
@@ -3592,12 +3547,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="AT">
         <xsd:annotation>
-          <xsd:documentation>Additive Toxicity   Code indicating a detection of drugs with similar side effects when used in combination could exhibit a toxic potential greater than either agent by itself.</xsd:documentation>
+          <xsd:documentation>Additive Toxicity Code indicating a detection of drugs with similar side effects when used in combination could exhibit a toxic potential greater than either agent by itself.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="PR">
         <xsd:annotation>
-          <xsd:documentation>Prior Adverse Reaction   Code identifying the patient has had a previous atypical reaction to drugs.</xsd:documentation>
+          <xsd:documentation>Prior Adverse Reaction Code identifying the patient has had a previous atypical reaction to drugs.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="DC">
@@ -3612,7 +3567,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="TD">
         <xsd:annotation>
-          <xsd:documentation>Therapeutic   Code indicating that a simultaneous use of different primary generic chemical entities that have the same therapeutic effect was detected.</xsd:documentation>
+          <xsd:documentation>Therapeutic Code indicating that a simultaneous use of different primary generic chemical entities that have the same therapeutic effect was detected.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ID">
@@ -3622,7 +3577,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="PS">
         <xsd:annotation>
-          <xsd:documentation>Product Selection Opportunity   Code indicating that an acceptable generic substitute or a therapeutic equivalent exists for the drug. This code is intended to support discretionary drug product selection activities by pharmacists.</xsd:documentation>
+          <xsd:documentation>Product Selection Opportunity Code indicating that an acceptable generic substitute or a therapeutic equivalent exists for the drug. This code is intended to support discretionary drug product selection activities by pharmacists.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="MX">
@@ -3632,27 +3587,27 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="LD">
         <xsd:annotation>
-          <xsd:documentation>Low Dose  Code indicating that the submitted drug doses fall below the standard dosing range.</xsd:documentation>
+          <xsd:documentation>Low Dose Code indicating that the submitted drug doses fall below the standard dosing range.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="LK">
         <xsd:annotation>
-          <xsd:documentation>Lock In Recipient   Code indicating that the professional service was related to a plan/payer constraint on the member whereby the member is required to obtain services from only one specified pharmacy or other provider type, hence the member is “locked in” to using only those providers or pharmacies.</xsd:documentation>
+          <xsd:documentation>Lock In Recipient Code indicating that the professional service was related to a plan/payer constraint on the member whereby the member is required to obtain services from only one specified pharmacy or other provider type, hence the member is “locked in” to using only those providers or pharmacies.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ED">
         <xsd:annotation>
-          <xsd:documentation>Patient Education/Instruction  Code indicating that a cognitive service whereby the pharmacist performed a patient care activity by providing additional instructions or education to the patient beyond the simple task of explaining the prescriber’s instructions on the prescription.</xsd:documentation>
+          <xsd:documentation>Patient Education/Instruction Code indicating that a cognitive service whereby the pharmacist performed a patient care activity by providing additional instructions or education to the patient beyond the simple task of explaining the prescriber’s instructions on the prescription.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="PH">
         <xsd:annotation>
-          <xsd:documentation>Preventive Health Care   Code indicating that the provided professional service was to educate the patient regarding measures mitigating possible adverse effects or maximizing the benefits of the product(s) dispensed; or measures to optimize health status, prevent recurrence or exacerbation of problems.</xsd:documentation>
+          <xsd:documentation>Preventive Health Care Code indicating that the provided professional service was to educate the patient regarding measures mitigating possible adverse effects or maximizing the benefits of the product(s) dispensed; or measures to optimize health status, prevent recurrence or exacerbation of problems.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="CD">
         <xsd:annotation>
-          <xsd:documentation>Chronic Disease Management   The patient is participating in a coordinated health care intervention program.</xsd:documentation>
+          <xsd:documentation>Chronic Disease Management The patient is participating in a coordinated health care intervention program.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="NF">
@@ -3672,12 +3627,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="DM">
         <xsd:annotation>
-          <xsd:documentation>Apparent Drug Misuse   Code indicating a pattern of drug use by a patient in a manner that is significantly different than that prescribed by the prescriber.</xsd:documentation>
+          <xsd:documentation>Apparent Drug Misuse Code indicating a pattern of drug use by a patient in a manner that is significantly different than that prescribed by the prescriber.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="CH">
         <xsd:annotation>
-          <xsd:documentation>Call Help Desk   Processor message to recommend the receiver contact the processor/plan</xsd:documentation>
+          <xsd:documentation>Call Help Desk Processor message to recommend the receiver contact the processor/plan</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="CS">
@@ -3702,22 +3657,22 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="TN">
         <xsd:annotation>
-          <xsd:documentation>Laboratory Test Needed  Code indicating that an assessment of the patient suggests that a laboratory test is needed to optimally manage a therapy.</xsd:documentation>
+          <xsd:documentation>Laboratory Test Needed Code indicating that an assessment of the patient suggests that a laboratory test is needed to optimally manage a therapy.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="DR">
         <xsd:annotation>
-          <xsd:documentation>Dose Range Conflict   Code indicating that the prescription does not follow recommended medication dosage.</xsd:documentation>
+          <xsd:documentation>Dose Range Conflict Code indicating that the prescription does not follow recommended medication dosage.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ER">
         <xsd:annotation>
-          <xsd:documentation>Overuse   Code indicating that the current prescription refill is occurring before the days supply of the previous filling should have been exhausted.</xsd:documentation>
+          <xsd:documentation>Overuse Code indicating that the current prescription refill is occurring before the days supply of the previous filling should have been exhausted.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="SE">
         <xsd:annotation>
-          <xsd:documentation>Side Effect   Code reporting possible major side effects of the prescribed drug.</xsd:documentation>
+          <xsd:documentation>Side Effect Code reporting possible major side effects of the prescribed drug.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="AD">
@@ -3737,7 +3692,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="LR">
         <xsd:annotation>
-          <xsd:documentation>Underuse   Code indicating that a prescription refill that occurred after the days supply of the previous filling should have been exhausted.</xsd:documentation>
+          <xsd:documentation>Underuse Code indicating that a prescription refill that occurred after the days supply of the previous filling should have been exhausted.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ND">
@@ -3747,27 +3702,27 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="SF">
         <xsd:annotation>
-          <xsd:documentation>Suboptimal Dosage Form   Code indicating incorrect, inappropriate, or less than optimal dosage form for the drug.</xsd:documentation>
+          <xsd:documentation>Suboptimal Dosage Form Code indicating incorrect, inappropriate, or less than optimal dosage form for the drug.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="NN">
         <xsd:annotation>
-          <xsd:documentation>Unnecessary Drug   Code indicating that the drug is no longer needed by the patient.</xsd:documentation>
+          <xsd:documentation>Unnecessary Drug Code indicating that the drug is no longer needed by the patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="UD">
         <xsd:annotation>
-          <xsd:documentation>Duplicate Drug   Code indicating that multiple prescriptions of the same drug formulation are present in the patient’s current medication profile.</xsd:documentation>
+          <xsd:documentation>Duplicate Drug Code indicating that multiple prescriptions of the same drug formulation are present in the patient’s current medication profile.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="PN">
         <xsd:annotation>
-          <xsd:documentation>Prescriber Consultation  Code indicating that a prescriber has requested information or a recommendation related to the care of a patient.</xsd:documentation>
+          <xsd:documentation>Prescriber Consultation Code indicating that a prescriber has requested information or a recommendation related to the care of a patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="DS">
         <xsd:annotation>
-          <xsd:documentation>Tobacco Use   Code indicating that a conflict was detected when a prescribed drug is contraindicated or might conflict with the use of tobacco products.</xsd:documentation>
+          <xsd:documentation>Tobacco Use Code indicating that a conflict was detected when a prescribed drug is contraindicated or might conflict with the use of tobacco products.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="MC">
@@ -3782,7 +3737,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="SR">
         <xsd:annotation>
-          <xsd:documentation>Suboptimal Regimen   Code indicating incorrect, inappropriate, or less than optimal dosage regimen specified for the drug in question.</xsd:documentation>
+          <xsd:documentation>Suboptimal Regimen Code indicating incorrect, inappropriate, or less than optimal dosage regimen specified for the drug in question.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="NR">
@@ -3817,12 +3772,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="3E">
         <xsd:annotation>
-          <xsd:documentation>Therapy Changed   Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber.</xsd:documentation>
+          <xsd:documentation>Therapy Changed Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3M">
         <xsd:annotation>
-          <xsd:documentation>Compliance Aid Provided   Cognitive service whereby the pharmacist supplies a product that assists the patient in complying with instructions for taking medications.</xsd:documentation>
+          <xsd:documentation>Compliance Aid Provided Cognitive service whereby the pharmacist supplies a product that assists the patient in complying with instructions for taking medications.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1E">
@@ -3842,7 +3797,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="3A">
         <xsd:annotation>
-          <xsd:documentation>Recommendation Accepted   Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber.</xsd:documentation>
+          <xsd:documentation>Recommendation Accepted Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3D">
@@ -3852,7 +3807,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="1H">
         <xsd:annotation>
-          <xsd:documentation>Brand-to-Generic Change   Action whereby a pharmacist dispenses the generic formulation of an originally prescribed branded product.  Allowed, often mandated, unless the prescriber indicates “Do Not Substitute” on the prescription</xsd:documentation>
+          <xsd:documentation>Brand-to-Generic Change Action whereby a pharmacist dispenses the generic formulation of an originally prescribed branded product.  Allowed, often mandated, unless the prescriber indicates “Do Not Substitute” on the prescription</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3B">
@@ -3862,12 +3817,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="3J">
         <xsd:annotation>
-          <xsd:documentation>Patient Referral   Code indicating the referral of a patient to another health care provider following evaluation by the pharmacist.</xsd:documentation>
+          <xsd:documentation>Patient Referral Code indicating the referral of a patient to another health care provider following evaluation by the pharmacist.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1F">
         <xsd:annotation>
-          <xsd:documentation>Filled, With Different Quantity   Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with a different quantity than was originally prescribed.</xsd:documentation>
+          <xsd:documentation>Filled, With Different Quantity Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with a different quantity than was originally prescribed.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1K">
@@ -3877,12 +3832,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="3H">
         <xsd:annotation>
-          <xsd:documentation>Follow-Up/Report   Code indicating that additional follow through by the pharmacist is required</xsd:documentation>
+          <xsd:documentation>Follow-Up/Report Code indicating that additional follow through by the pharmacist is required</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1D">
         <xsd:annotation>
-          <xsd:documentation>Filled, With Different Directions   Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with different directions than were  originally prescribed.</xsd:documentation>
+          <xsd:documentation>Filled, With Different Directions Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with different directions than were originally prescribed.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="2B">
@@ -3917,12 +3872,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="3K">
         <xsd:annotation>
-          <xsd:documentation>Instructions Understood   Indicator used to convey that the patient affirmed understanding of the instructions provided by the pharmacist regarding the use and handling of the medication dispensed.</xsd:documentation>
+          <xsd:documentation>Instructions Understood Indicator used to convey that the patient affirmed understanding of the instructions provided by the pharmacist regarding the use and handling of the medication dispensed.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1J">
         <xsd:annotation>
-          <xsd:documentation>Rx-to-OTC Change   Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert) fills the prescription with an over-the-counter product in lieu of the originally prescribed prescription-only product.</xsd:documentation>
+          <xsd:documentation>Rx-to-OTC Change Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert) fills the prescription with an over-the-counter product in lieu of the originally prescribed prescription-only product.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1G">
@@ -4017,6 +3972,66 @@ reconstituting) for an individual patient in response to a licensed practitioner
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DispenseAsWrittenDAWProductSelectionCode  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="DispenseAsWrittenDAWProductSelectionCode">
+    <xsd:annotation>
+      <xsd:documentation>Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="0">
+        <xsd:annotation>
+          <xsd:documentation>No Product Selection Indicated - This is the field default value that is appropriately used for prescriptions for single source brand, co-branded/co-licensed, or generic products. For a multi-source branded product with available generic(s), DAW 0 is not appropriate, and may result in a reject.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation>Substitution Not Allowed by Prescriber - This value is used when the prescriber indicates, in a manner specified by prevailing law, that the product is Medically Necessary to be Dispensed As Written. DAW 1 is based on prescriber instruction and not product classification. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation>Substitution Allowed-Patient Requested Product Dispensed-This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the patient requests the brand product. This situation can occur when the prescriber writes the prescription using either the brand or generic name and the product is available from multiple sources.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="3">
+        <xsd:annotation>
+          <xsd:documentation>Substitution Allowed-Pharmacist Selected Product Dispensed-This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the pharmacist determines that the brand product should be dispensed. This can occur when the prescriber writes the prescription using either the brand or generic name and the product is available from multiple sources.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="4">
+        <xsd:annotation>
+          <xsd:documentation>Substitution Allowed-Generic Drug Not in Stock-This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the brand product is dispensed since a currently marketed generic is not stocked in the pharmacy. This situation exists due to the buying habits of the pharmacist, not because of the unavailability of the generic product in the marketplace.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="5">
+        <xsd:annotation>
+          <xsd:documentation>Substitution Allowed-Brand Drug Dispensed as a Generic-This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the pharmacist is utilizing the brand product as the generic entity.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="6">
+        <xsd:annotation>
+          <xsd:documentation>Override-This value is used by various claims processors in very specific instances as defined by that claims processor and/or its client(s).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="7">
+        <xsd:annotation>
+          <xsd:documentation>Substitution Not Allowed-Brand Drug Mandated by Law-This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted but prevailing law or regulation prohibits the substitution of a brand product even though generic versions of the product may be available in the marketplace.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="8">
+        <xsd:annotation>
+          <xsd:documentation>Substitution Allowed-Generic Drug Not Available in Marketplace-This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the brand product is dispensed since the generic is not currently manufactured, distributed, or is temporarily unavailable.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="9">
+        <xsd:annotation>
+          <xsd:documentation>Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requested Brand Product To Be Dispensed - This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted, but the plan's formulary requests the brand product. This situation can occur when the prescriber writes the prescription using either the brand or generic name and the product is available from multiple sources.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  DispensingRequestCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="DispensingRequestCode">
@@ -4029,43 +4044,76 @@ reconstituting) for an individual patient in response to a licensed practitioner
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DrugCoverageStatusCode  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="DrugCoverageStatusCode">
+    <xsd:annotation>
+      <xsd:documentation>Code identifying the coverage status of the prescribed drug.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="PR">
+        <xsd:annotation>
+          <xsd:documentation>Preferred - Preferred means available on a pharmaceutical formulary in a manner such that the product is given preference in dispensing decisions over competing products in a therapeutic class or therapeutic use.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AP">
+        <xsd:annotation>
+          <xsd:documentation>Approved - The product is included in the plan formulary.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PA">
+        <xsd:annotation>
+          <xsd:documentation>Prior Authorization Required - A prior authorization is required before the prescription can be dispensed.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NF">
+        <xsd:annotation>
+          <xsd:documentation>Non Formulary - The product is not included in the plan formulary.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NR">
+        <xsd:annotation>
+          <xsd:documentation>Not Reimbursed - The product is not reimbursable in the plan formulary.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DC">
+        <xsd:annotation>
+          <xsd:documentation>Differential Co-Pay - The product may be subject to potentially higher copay.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UN">
+        <xsd:annotation>
+          <xsd:documentation>Unknown - The coverage status code is not discernible.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ST">
+        <xsd:annotation>
+          <xsd:documentation>Step Therapy Required - The plan formulary requires that medication in a specific drug class be tried prior to the requested medication.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  GenderCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="GenderCode">
     <xsd:annotation>
-      <xsd:documentation>&lt;p&gt;&#13;
-    Code&amp;nbsp;identifying&amp;nbsp;the&amp;nbsp;gender&amp;nbsp;of&amp;nbsp;the&amp;nbsp;individual.&#13;
-&lt;/p&gt;&#13;
-&lt;p&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &lt;br /&gt;&#13;
-    &amp;nbsp;&#13;
-&lt;/p&gt;&lt;br /&gt;</xsd:documentation>
+      <xsd:documentation>Code identifying the gender of the individual.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="1">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    Male&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>Male</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="2">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    Female&lt;br /&gt;&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>Female</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="0">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    Not Specified or Unknown&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>Not Specified or Unknown</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -4113,11 +4161,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       <xsd:documentation>Identifies code set of clinical physical findings.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="1">
-        <xsd:annotation>
-          <xsd:documentation>X-12 Data Element Measurement Dimension, coded (DE 738)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="1"/>
       <xsd:enumeration value="2">
         <xsd:annotation>
           <xsd:documentation>SNOMED Systematized Nomenclature of Medicine--Clinical Terms (SNOMED) is available at http://www.ihtsdo.org/snomed-ct/</xsd:documentation>
@@ -4408,11 +4452,19 @@ reconstituting) for an individual patient in response to a licensed practitioner
           <xsd:documentation>Prescriber/Prescriber Supplied - The diagnosis was given or supplied by the prescriber.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="2">
-        <xsd:annotation>
-          <xsd:documentation>Pharmacy Inferred - The pharmacy inferred the diagnosis using his/her professional judgment.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  OrderCaptureMethod  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="OrderCaptureMethod">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="EP"/>
+      <xsd:enumeration value="|VT"/>
+      <xsd:enumeration value="|VI"/>
+      <xsd:enumeration value="TV"/>
+      <xsd:enumeration value="OM"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -4445,7 +4497,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="4">
         <xsd:annotation>
-          <xsd:documentation>Other - Relationship to cardholder is not  precise</xsd:documentation>
+          <xsd:documentation>Other - Relationship to cardholder is not precise</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -4462,6 +4514,41 @@ reconstituting) for an individual patient in response to a licensed practitioner
         <xsd:annotation>
           <xsd:documentation>NCI values of Property or Attribute - Unit of Measure - Unit of Category - Potency Unit (http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml
 - NCI Thesaurus)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PriorAuthorizationStatus  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="PriorAuthorizationStatus">
+    <xsd:annotation>
+      <xsd:documentation>The status of the prescription’s prior authorization as known by the sender.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="A">
+        <xsd:annotation>
+          <xsd:documentation>Approved - The medication was approved by the payer</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="D">
+        <xsd:annotation>
+          <xsd:documentation>Denied - The medication was not approved by the payer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="F">
+        <xsd:annotation>
+          <xsd:documentation>Deferred - The medication request being reviewed by the payer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="N">
+        <xsd:annotation>
+          <xsd:documentation>Not Required - A prior authorization is not required for this medication.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="R">
+        <xsd:annotation>
+          <xsd:documentation>Requested - The action of obtaining a prior authorization approval is being sought.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -5220,38 +5307,35 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </xsd:enumeration>
       <xsd:enumeration value="LD">
         <xsd:annotation>
-          <xsd:documentation>&lt;P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"&gt;&lt;SPAN style="FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial"&gt;SNOMED - &lt;U&gt;S&lt;/U&gt;ystematized Nomenclature of Medicine Clinical Terms&lt;SPAN style="POSITION: relative; TOP: -3pt; mso-text-raise: 3.0pt; mso-bidi-font-weight: bold"&gt;®&lt;/SPAN&gt;&lt;SPAN style="mso-spacerun: yes"&gt;&amp;nbsp;&lt;/SPAN&gt;(SNOMED CT)&lt;?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;SPAN style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;SNOMED CT® terminology which is available from the &lt;/SPAN&gt;&lt;SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;Health Terminology Standards Development Organisation (IHTSDO)&lt;/SPAN&gt;&lt;SPAN style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt; &lt;/SPAN&gt;&lt;SPAN style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;&lt;A href="http://www.ihtsdo.org/snomed-ct/"&gt;&lt;U&gt;&lt;FONT color=#0000ff&gt;http://www.ihtsdo.org/snomed-ct/&lt;/FONT&gt;&lt;/U&gt;&lt;/A&gt;&lt;/SPAN&gt;</xsd:documentation>
+          <xsd:documentation>&lt;P class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none"&gt;&lt;SPAN style="FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial"&gt;SNOMED - &lt;U&gt;S&lt;/U&gt;ystematized Nomenclature of Medicine Clinical Terms&lt;SPAN style="POSITION: relative; TOP: -3pt; mso-text-raise: 3.0pt; mso-bidi-font-weight: bold"&gt;®&lt;/SPAN&gt;&lt;SPAN style="mso-spacerun: yes"&gt; &lt;/SPAN&gt;(SNOMED CT)&lt;?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;SPAN style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;SNOMED CT® terminology which is available from the &lt;/SPAN&gt;&lt;SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;Health Terminology Standards Development Organisation (IHTSDO)&lt;/SPAN&gt;&lt;SPAN style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt; &lt;/SPAN&gt;&lt;SPAN style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;&lt;A href="http://www.ihtsdo.org/snomed-ct/"&gt;&lt;U&gt;&lt;FONT color=#0000ff&gt;http://www.ihtsdo.org/snomed-ct/&lt;/FONT&gt;&lt;/U&gt;&lt;/A&gt;&lt;/SPAN&gt;</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="DX">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    &lt;span&#13;
-    style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;International&#13;
-    Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is&#13;
-    defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a&#13;
-    statistical classification system that arranges diseases and injuries into groups according to established criteria.&#13;
-    Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World&#13;
-    Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;span&#13;
-    style="mso-spacerun: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>&lt;span style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria.&#13;
+    Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;&lt;/span&gt;</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ABF">
         <xsd:annotation>
-          <xsd:documentation>&lt;p&gt;&#13;
-    &lt;span&#13;
-    style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;International&#13;
-    Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a&#13;
-    diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from&#13;
-    death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#13;
-    (ICD-9-CM)&lt;/span&gt;&lt;span&#13;
-    style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;is&#13;
-    a statistical classification system that arranges diseases and injuries into groups according to established criteria.&#13;
-    The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes&#13;
-    are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid&#13;
-    Services.&lt;b&gt;&lt;span style="mso-spacerun: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&#13;
-&lt;/p&gt;</xsd:documentation>
+          <xsd:documentation>&lt;span style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#13;
+    (ICD-9-CM)&lt;/span&gt;&lt;span style="FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"&gt;is a statistical classification system that arranges diseases and injuries into groups according to established criteria.&#13;
+    The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;b&gt;&lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;&lt;/b&gt;&lt;/span&gt;</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  RouteOfAdministration  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="RouteOfAdministration">
+    <xsd:annotation>
+      <xsd:documentation>This is an override to the 'default' route referenced for the product. For a multi-ingredient compound, it is the route of the complete compound mixture.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT)&#10;SNOMED CT® terminology which is available from the International Health Terminology Standards Development Organisation (IHTSDO)  http://www.ihtsdo.org/snomed-ct/">
+        <xsd:annotation>
+          <xsd:documentation>Step Therapy - Indicator used to convey that step therapy constraints apply to the coverage of the specified product or list of products. The step medications are not listed.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -5280,8 +5364,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ServiceTypeCoded">
     <xsd:annotation>
-      <xsd:documentation>Medication list contains all current medication orders as of the current date and time of the response, for the patient indicated. Current status is determined by the point of care responder. 'Current' is medication orders which have not been discontinued.
-</xsd:documentation>
+      <xsd:documentation>Medication list contains all current medication orders as of the current date and time of the response, for the patient indicated. Current status is determined by the point of care responder. 'Current' is medication orders which have not been discontinued.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="C">
@@ -5486,8 +5569,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="Terminologies">
     <xsd:annotation>
-      <xsd:documentation>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with&#13;
-the NCPDP standard</xsd:documentation>
+      <xsd:documentation>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="ND">
@@ -5532,21 +5614,14 @@ the NCPDP standard</xsd:documentation>
       </xsd:enumeration>
       <xsd:enumeration value="DX">
         <xsd:annotation>
-          <xsd:documentation>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the&#13;
-diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification&#13;
-(ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established&#13;
-criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World&#13;
-Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
+          <xsd:documentation>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification&#13;
+(ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ABF">
         <xsd:annotation>
-          <xsd:documentation>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following&#13;
-information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify&#13;
-mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#13;
-(ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established&#13;
-criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The&#13;
-codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
+          <xsd:documentation>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#13;
+(ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -5555,6 +5630,9 @@ codes are maintained by the World Health Organization and published by the Cente
   <!--  TimeZoneIdentifier  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="TimeZoneIdentifier">
+    <xsd:annotation>
+      <xsd:documentation>Defines the time zone used by the sender.</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="UT">
         <xsd:annotation>
