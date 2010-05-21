@@ -38,13 +38,13 @@
           <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Attachments" type="dictionary:Attachment"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordinationCensus"/>
+          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:CensusBenefitsCoordination"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
           <xsd:element name="Facility" type="dictionary:Facilty"/>
-          <xsd:element name="Patient" type="dictionary:BasicPatient"/>
+          <xsd:element name="Patient" type="dictionary:Patient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:Prescriber"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Provider" type="dictionary:Provider"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Service" type="functions:ServiceType"/>
           <xsd:element minOccurs="0" name="AnticipatedReturnDate" type="datatypes:SimpleDateType"/>
@@ -76,13 +76,13 @@
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Attachments" type="dictionary:Attachment"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="dictionary:OptionalBenefitsCoordination"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:Patient"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:PatientFulll"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:Prescriber"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Provider" type="dictionary:Provider"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Service" type="functions:ServiceType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="AnticipatedReturnDate" type="datatypes:SimpleDateType"/>
@@ -101,10 +101,10 @@
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:Patient"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:PatientFulll"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:Prescriber"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Provider" type="dictionary:Provider"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Service" type="functions:ServiceType"/>
     </xsd:sequence>
@@ -122,13 +122,13 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="Attachments" type="dictionary:Attachment"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:BenefitsCoordinationMTM"/>
+          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
+          <xsd:element name="Patient" type="dictionary:PatientFulll"/>
           <xsd:element minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
           <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:MandatoryPharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:Prescriber"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
           <xsd:element minOccurs="0" name="Provider" type="dictionary:Provider"/>
           <xsd:element name="Service" type="functions:ServiceType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="AnticipatedReturnDate" type="datatypes:SimpleDateType"/>
@@ -151,10 +151,10 @@
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
+          <xsd:element name="Patient" type="dictionary:PatientFulll"/>
           <xsd:element minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
           <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:Prescriber"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
           <xsd:element minOccurs="0" name="Provider" type="dictionary:Provider"/>
           <xsd:element name="Service" type="functions:ServiceType"/>
         </xsd:sequence>

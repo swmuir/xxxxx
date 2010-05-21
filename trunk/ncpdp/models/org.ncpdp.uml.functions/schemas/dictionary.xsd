@@ -12,8 +12,8 @@
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="AdverseEvent" type="ecl:SNOMEDCTPreferredTermsforAdverseEvents"/>
       <xsd:element minOccurs="0" name="DrugProductCoded" type="datatypes:TerminologyQualifiedCode"/>
-      <xsd:element minOccurs="0" name="ReactionCoded" type="datatypes:SNOMEDQualifiedCode"/>
-      <xsd:element minOccurs="0" name="SeverityCoded" type="datatypes:SNOMEDQualifiedCode"/>
+      <xsd:element minOccurs="0" name="ReactionCoded" type="datatypes:SNOMEDCode"/>
+      <xsd:element minOccurs="0" name="SeverityCoded" type="datatypes:SNOMEDCode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -34,85 +34,15 @@
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  BasicPatient  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="BasicPatient">
-    <xsd:complexContent>
-      <xsd:restriction base="dictionary:Patient">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Identification" type="dictionary:PatientID"/>
-          <xsd:element name="Name" type="datatypes:NameType"/>
-          <xsd:element name="Gender" type="ecl:GenderCode"/>
-          <xsd:element name="DateOfBirth" type="datatypes:DateType"/>
-          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
-          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-          <xsd:element minOccurs="0" name="PatientLocation" type="dictionary:PatientLocation"/>
-          <xsd:element minOccurs="0" name="LanguageNameCode" type="datatypes:an..3"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ResidenceCode" type="ecl:ResidenceCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="PregnancyIndicator" type="xsd:boolean"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Smoker" type="xsd:boolean"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Race" type="xsd:string"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Ethnicity" type="xsd:string"/>
-        </xsd:sequence>
-      </xsd:restriction>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  BenefitsCoordination  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="BenefitsCoordination">
-    <xsd:sequence>
-      <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
-      <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
-      <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
-      <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
-      <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
-      <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
-      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-      <xsd:element minOccurs="0" name="Consent" type="ecl:ConsentType"/>
-      <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
-      <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
-      <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
-    </xsd:sequence>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  BenefitsCoordinationCensus  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="BenefitsCoordinationCensus">
     <xsd:complexContent>
-      <xsd:restriction base="dictionary:BenefitsCoordination">
+      <xsd:restriction base="dictionary:OptionalBenefitsCoordination">
         <xsd:sequence>
           <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
-          <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
-          <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
-          <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
-          <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
-          <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
-          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Consent" type="ecl:ConsentType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
-        </xsd:sequence>
-      </xsd:restriction>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  BenefitsCoordinationMTM  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="BenefitsCoordinationMTM">
-    <xsd:complexContent>
-      <xsd:restriction base="dictionary:BenefitsCoordination">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
@@ -123,6 +53,90 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="GroupName" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Address" type="datatypes:AddressType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Consent" type="ecl:ConsentType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  BenefitsCoordinationRequest  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="BenefitsCoordinationRequest">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:OptionalBenefitsCoordination">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
+          <xsd:element name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+          <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
+          <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
+          <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element name="Consent" type="ecl:ConsentType"/>
+          <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
+          <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  BenefitsCoordinationResponse  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="BenefitsCoordinationResponse">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:OptionalBenefitsCoordination">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
+          <xsd:element name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+          <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
+          <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
+          <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element minOccurs="0" name="Consent" type="ecl:ConsentType"/>
+          <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
+          <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CensusBenefitsCoordination  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CensusBenefitsCoordination">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:OptionalBenefitsCoordination">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+          <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
+          <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
+          <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Consent" type="ecl:ConsentType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
@@ -182,9 +196,57 @@
       <xsd:element minOccurs="0" name="SourceOfInformation" type="ecl:SourceofInformation"/>
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="ProblemType" type="datatypes:SNOMEDQualifiedCode"/>
+      <xsd:element minOccurs="0" name="ProblemType" type="datatypes:SNOMEDCode"/>
       <xsd:element name="ProblemNameCoded" type="datatypes:TerminologyQualifiedCode"/>
     </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DrugAdministrationMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DrugAdministrationMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Medication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element name="Directions"/>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="AdditionalRefillsAuthorized"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  DrugCoded  -->
@@ -217,7 +279,7 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Facilty">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element name="Identification" type="dictionary:ProviderID"/>
       <xsd:element minOccurs="0" name="FacilityName" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
       <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
@@ -232,6 +294,116 @@
       <xsd:element name="PartialFill" type="datatypes:NoteType"/>
       <xsd:element name="NotFilled" type="datatypes:NoteType"/>
     </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  HistoryDispensedMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="HistoryDispensedMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Medication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element minOccurs="0" name="Directions"/>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element name="AdditionalRefillsAuthorized"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element name="RefillsRemaining"/>
+          <xsd:element minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  HistoryPrescibedMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="HistoryPrescibedMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Medication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element minOccurs="0" name="Directions"/>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="AdditionalRefillsAuthorized"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  HistoryPrescriber  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="HistoryPrescriber">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+      <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Name" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  HistorySource  -->
@@ -252,6 +424,23 @@
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MandatoryAddressPharmacy  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MandatoryAddressPharmacy">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:MandatoryPharmacy">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element minOccurs="0" name="Pharmacist" type="datatypes:NameType"/>
+          <xsd:element name="BusinessName" type="datatypes:an..35M"/>
+          <xsd:element name="Address" type="datatypes:AddressType"/>
+          <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  MandatoryPharmacy  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MandatoryPharmacy">
@@ -261,9 +450,44 @@
           <xsd:element name="Identification" type="dictionary:ProviderID"/>
           <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
           <xsd:element minOccurs="0" name="Pharmacist" type="datatypes:NameType"/>
-          <xsd:element minOccurs="0" name="BusinessName" type="datatypes:an..35M"/>
+          <xsd:element name="BusinessName" type="datatypes:an..35M"/>
           <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
-          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MandatoryPresciber  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MandatoryPresciber">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Prescriber">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType"/>
+          <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MandatorySupervisor  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MandatorySupervisor">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Supervisor">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+          <xsd:element name="Address" type="datatypes:AddressType"/>
+          <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -274,81 +498,91 @@
   <xsd:complexType name="Medication">
     <xsd:sequence>
       <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
-      <xsd:element name="Directions">
-        <xsd:simpleType>
-          <xsd:restriction base="datatypes:anM">
-            <xsd:maxLength value="140"/>
-          </xsd:restriction>
-        </xsd:simpleType>
-      </xsd:element>
-      <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
-      <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
-      <xsd:element minOccurs="0" name="NumberOfRefills"/>
-      <xsd:element minOccurs="0" name="Note">
-        <xsd:simpleType>
-          <xsd:restriction base="datatypes:an">
-            <xsd:maxLength value="210"/>
-          </xsd:restriction>
-        </xsd:simpleType>
-      </xsd:element>
-      <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-      <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
-      <xsd:element minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
-      <xsd:element minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
-      <xsd:element minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
-      <xsd:element minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
-      <xsd:element minOccurs="0" name="PharmacyRequestedRefills"/>
-      <xsd:element minOccurs="0" name="AdditionalRefillsAuthorized"/>
-      <xsd:element minOccurs="0" name="RefillsRemaining">
-        <xsd:simpleType>
-          <xsd:restriction base="datatypes:n">
-            <xsd:maxLength value="2"/>
-          </xsd:restriction>
-        </xsd:simpleType>
-      </xsd:element>
-      <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
       <xsd:element name="Quantity" type="dictionary:Quantity"/>
-      <xsd:element name="WrittenDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-      <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-      <xsd:element minOccurs="0" name="PriorAuthorization">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="Qualifier" type="datatypes:ReferenceQualifier1153CodedType"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
-      <xsd:element minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
-      <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-      <xsd:element minOccurs="0" name="RouteofAdministration">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="RouteofAdministrationCode">
-              <xsd:complexType>
-                <xsd:sequence>
-                  <xsd:element name="ItemDescriptionLong" type="xsd:string"/>
-                  <xsd:element minOccurs="0" name="ItemNumber" type="ecl:Code"/>
-                  <xsd:element minOccurs="0" name="CodeListQualifier" type="ecl:RouteOfAdministration"/>
-                </xsd:sequence>
-              </xsd:complexType>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="MultipleRouteofAdministrationModifier" type="datatypes:ANDOR"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Directions"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="WrittenDate" type="datatypes:DateType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+      <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="NumberOfRefills"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorization"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Note"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RouteofAdministration"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
-      <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
-      <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-      <xsd:element minOccurs="0" name="Prescriber" type="dictionary:Prescriber"/>
-      <xsd:element minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="AdditionalRefillsAuthorized"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PharmacyRequestedRefills"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RefillsRemaining"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
     </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  NewRxPrescibedMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="NewRxPrescibedMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Medication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element name="Directions"/>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="AdditionalRefillsAuthorized"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  Observation  -->
@@ -358,6 +592,61 @@
       <xsd:element maxOccurs="10" minOccurs="0" name="Measurement" type="datatypes:MeasurementType"/>
       <xsd:element minOccurs="0" name="ObservationNotes" type="datatypes:an..140"/>
     </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  OptionalBenefitsCoordination  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="OptionalBenefitsCoordination">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
+      <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+      <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+      <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
+      <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
+      <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+      <xsd:element minOccurs="0" name="Consent" type="ecl:ConsentType"/>
+      <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
+      <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  OptionalPharmacy  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="OptionalPharmacy">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+      <xsd:element minOccurs="0" name="Pharmacist" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="BusinessName" type="datatypes:an..35M"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  OptionalPresciber  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="OptionalPresciber">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:HistoryPrescriber">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  OtherCompoundInformationType  -->
@@ -373,6 +662,30 @@
   <!--  Patient  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Patient">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:PatientFulll">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Identification" type="dictionary:PatientID"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element name="Gender" type="ecl:GenderCode"/>
+          <xsd:element name="DateOfBirth" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element minOccurs="0" name="PatientLocation" type="dictionary:PatientLocation"/>
+          <xsd:element minOccurs="0" name="LanguageNameCode" type="datatypes:an..3"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ResidenceCode" type="ecl:ResidenceCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PregnancyIndicator" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Smoker" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Race" type="xsd:string"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Ethnicity" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PatientFulll  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PatientFulll">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Identification" type="dictionary:PatientID"/>
       <xsd:element name="Name" type="datatypes:NameType"/>
@@ -385,8 +698,8 @@
       <xsd:element minOccurs="0" name="ResidenceCode" type="ecl:ResidenceCode"/>
       <xsd:element minOccurs="0" name="PregnancyIndicator" type="xsd:boolean"/>
       <xsd:element minOccurs="0" name="Smoker" type="xsd:boolean"/>
-      <xsd:element minOccurs="0" name="Race" type="xsd:string"/>
-      <xsd:element minOccurs="0" name="Ethnicity" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="Race" type="datatypes:CDCCode"/>
+      <xsd:element minOccurs="0" name="Ethnicity" type="datatypes:CDCCode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -431,6 +744,30 @@
       <xsd:element minOccurs="0" name="Bed" type="datatypes:an..10"/>
       <xsd:element minOccurs="0" name="Room" type="datatypes:an..10"/>
     </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PatientMandatoryAddress  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PatientMandatoryAddress">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Patient">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Identification" type="dictionary:PatientID"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element name="Gender" type="ecl:GenderCode"/>
+          <xsd:element name="DateOfBirth" type="datatypes:DateType"/>
+          <xsd:element name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element minOccurs="0" name="PatientLocation" type="dictionary:PatientLocation"/>
+          <xsd:element minOccurs="0" name="LanguageNameCode" type="datatypes:an..3"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ResidenceCode" type="ecl:ResidenceCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PregnancyIndicator" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Smoker" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Race" type="xsd:string"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Ethnicity" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  PayerID  <<complexType, choice>>  -->
@@ -481,28 +818,102 @@
   <!--  Pharmacy  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Pharmacy">
-    <xsd:sequence>
-      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
-      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
-      <xsd:element minOccurs="0" name="Pharmacist" type="datatypes:NameType"/>
-      <xsd:element minOccurs="0" name="BusinessName" type="datatypes:an..35M"/>
-      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
-      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-    </xsd:sequence>
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:OptionalPharmacy">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element minOccurs="0" name="Pharmacist" type="datatypes:NameType"/>
+          <xsd:element name="BusinessName" type="datatypes:an..35M"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PrescibedMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PrescibedMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:RequestedMedication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element name="Directions"/>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="AdditionalRefillsAuthorized"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  Prescriber  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Prescriber">
-    <xsd:sequence>
-      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
-      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
-      <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
-      <xsd:element name="Name" type="datatypes:NameType"/>
-      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
-      <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType"/>
-      <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-    </xsd:sequence>
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:OptionalPresciber">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType"/>
+          <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PrescriberGeneral  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PrescriberGeneral">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:HistoryPrescriber">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType"/>
+          <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  PrimaryDiagnosis  -->
@@ -570,6 +981,285 @@
       <xsd:element name="UnitSourceCode" type="ecl:SourceCodeList"/>
       <xsd:element name="PotencyUnitCode" type="ecl:PotencyUnitCode"/>
     </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  RefillRequestDispensedMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="RefillRequestDispensedMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Medication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element name="Directions">
+            <xsd:simpleType>
+              <xsd:restriction base="datatypes:anM">
+                <xsd:maxLength value="140"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note">
+            <xsd:simpleType>
+              <xsd:restriction base="datatypes:an">
+                <xsd:maxLength value="210"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="RouteofAdministrationCode">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="ItemDescriptionLong" type="xsd:string"/>
+                      <xsd:element minOccurs="0" name="ItemNumber" type="ecl:Code"/>
+                      <xsd:element minOccurs="0" name="CodeListQualifier" type="ecl:RouteOfAdministration"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="MultipleRouteofAdministrationModifier" type="datatypes:ANDOR"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element name="AdditionalRefillsAuthorized"/>
+          <xsd:element minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining">
+            <xsd:simpleType>
+              <xsd:restriction base="datatypes:n">
+                <xsd:maxLength value="2"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="Qualifier" type="datatypes:ReferenceQualifier1153CodedType"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  RefillResponseDispensedMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="RefillResponseDispensedMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Medication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element name="Directions"/>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element name="AdditionalRefillsAuthorized"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  RequestedMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="RequestedMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Medication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element name="Directions"/>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element minOccurs="0" name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="AdditionalRefillsAuthorized"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ResupplyMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="ResupplyMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Medication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element name="Directions"/>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="AdditionalRefillsAuthorized"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  RxFillDispensedMedication  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="RxFillDispensedMedication">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Medication">
+        <xsd:sequence>
+          <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+          <xsd:element minOccurs="0" name="DrugCoded" type="dictionary:DrugCoded"/>
+          <xsd:element name="Quantity" type="dictionary:Quantity"/>
+          <xsd:element name="Directions"/>
+          <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
+          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="NumberOfRefills"/>
+          <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="Note"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
+          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
+          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
+          <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
+          <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="AdditionalRefillsAuthorized"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PharmacyRequestedRefills"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThan" type="datatypes:UtcDateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  SIGType  -->
@@ -818,8 +1508,25 @@
   <!--  Supervisor  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Supervisor">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:SupervisorOptional">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SupervisorOptional  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SupervisorOptional">
     <xsd:sequence>
-      <xsd:element name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
       <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
       <xsd:element name="Name" type="datatypes:NameType"/>
       <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
