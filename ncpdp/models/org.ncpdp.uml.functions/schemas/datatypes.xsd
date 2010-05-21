@@ -250,6 +250,15 @@
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CDCCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CDCCode">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+      <xsd:element name="Code" type="ecl:Code"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  CommunicationNumbersType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CommunicationNumbersType">
@@ -340,18 +349,13 @@
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  SNOMEDQualifiedCode  -->
+  <!--  SNOMEDCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="SNOMEDQualifiedCode">
-    <xsd:complexContent>
-      <xsd:restriction base="datatypes:TerminologyQualifiedCode">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
-          <xsd:element fixed="LD" name="Qualifier" type="ecl:Terminologies"/>
-          <xsd:element name="Code" type="ecl:Code"/>
-        </xsd:sequence>
-      </xsd:restriction>
-    </xsd:complexContent>
+  <xsd:complexType name="SNOMEDCode">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+      <xsd:element name="Code" type="ecl:Code"/>
+    </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  SourceQualifiedCode  -->
