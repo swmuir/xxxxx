@@ -7626,6 +7626,166 @@
           <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_grR94VOaEd-wEdo_Dk3J9g" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_grR94lOaEd-wEdo_Dk3J9g" x="5371" y="21616"/>
         </children>
+        <children xmi:id="_fKrT8GHWEd-Xe4OIcNINMg" element="_erpBBCxAEd-8mcmtGejV_Q">
+          <children xmi:id="_fKrT82HWEd-Xe4OIcNINMg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_fKrT9GHWEd-Xe4OIcNINMg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_fKrT9WHWEd-Xe4OIcNINMg" type="Stereotype"/>
+          <children xmi:id="_fKrT9mHWEd-Xe4OIcNINMg" type="Kind"/>
+          <children xmi:id="_fKrT92HWEd-Xe4OIcNINMg" type="Name"/>
+          <children xmi:id="_fKrT-GHWEd-Xe4OIcNINMg" type="Parent"/>
+          <children xmi:id="_fKrT-WHWEd-Xe4OIcNINMg" type="EnumerationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fKrT-mHWEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_fKrT-2HWEd-Xe4OIcNINMg" visible="false" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fKrT_GHWEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_fKrT_WHWEd-Xe4OIcNINMg" visible="false" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fKrT_mHWEd-Xe4OIcNINMg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fKrT8WHWEd-Xe4OIcNINMg" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fKrT8mHWEd-Xe4OIcNINMg" x="8242" y="27579"/>
+        </children>
+        <children xmi:id="_fKrT_2HWEd-Xe4OIcNINMg" element="_esFs8SxAEd-8mcmtGejV_Q">
+          <children xmi:id="_fK1E8GHWEd-Xe4OIcNINMg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_fK1E8WHWEd-Xe4OIcNINMg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_fK1E8mHWEd-Xe4OIcNINMg" type="Stereotype"/>
+          <children xmi:id="_fK1E82HWEd-Xe4OIcNINMg" type="Kind"/>
+          <children xmi:id="_fK1E9GHWEd-Xe4OIcNINMg" type="Name"/>
+          <children xmi:id="_fK1E9WHWEd-Xe4OIcNINMg" type="Parent"/>
+          <children xmi:id="_fK1E9mHWEd-Xe4OIcNINMg" type="EnumerationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fK1E92HWEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_fK1E-GHWEd-Xe4OIcNINMg" visible="false" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fK1E-WHWEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_fK1E-mHWEd-Xe4OIcNINMg" visible="false" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fK1E-2HWEd-Xe4OIcNINMg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fKrUAGHWEd-Xe4OIcNINMg" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fKrUAWHWEd-Xe4OIcNINMg" x="18069" y="27579"/>
+        </children>
+        <children xmi:id="_z4b8cGHWEd-Xe4OIcNINMg" element="_hsnetCxAEd-8mcmtGejV_Q">
+          <children xmi:id="_z4b8c2HWEd-Xe4OIcNINMg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_z4b8dGHWEd-Xe4OIcNINMg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_z4b8dWHWEd-Xe4OIcNINMg" type="Stereotype"/>
+          <children xmi:id="_z4b8dmHWEd-Xe4OIcNINMg" type="Kind"/>
+          <children xmi:id="_z4b8d2HWEd-Xe4OIcNINMg" type="Name"/>
+          <children xmi:id="_z4b8eGHWEd-Xe4OIcNINMg" type="Parent"/>
+          <children xmi:id="_z4b8eWHWEd-Xe4OIcNINMg" type="EnumerationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_z4b8emHWEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_z4b8e2HWEd-Xe4OIcNINMg" visible="false" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_z4b8fGHWEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_z4b8fWHWEd-Xe4OIcNINMg" visible="false" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_z4b8fmHWEd-Xe4OIcNINMg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_z4b8cWHWEd-Xe4OIcNINMg" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z4b8cmHWEd-Xe4OIcNINMg" x="4947" y="27807"/>
+        </children>
+        <children xmi:id="_-M2ykGHWEd-Xe4OIcNINMg" element="_h3MXASxAEd-8mcmtGejV_Q">
+          <children xmi:id="_-M2yk2HWEd-Xe4OIcNINMg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_-M2ylGHWEd-Xe4OIcNINMg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_-M2ylWHWEd-Xe4OIcNINMg" type="Stereotype"/>
+          <children xmi:id="_-M2ylmHWEd-Xe4OIcNINMg" type="Kind"/>
+          <children xmi:id="_-M2yl2HWEd-Xe4OIcNINMg" type="Name"/>
+          <children xmi:id="_-M2ymGHWEd-Xe4OIcNINMg" type="Parent"/>
+          <children xmi:id="_-M2ymWHWEd-Xe4OIcNINMg" type="EnumerationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-M2ymmHWEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_-M2ym2HWEd-Xe4OIcNINMg" visible="false" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-M2ynGHWEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_-M2ynWHWEd-Xe4OIcNINMg" visible="false" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-M2ynmHWEd-Xe4OIcNINMg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_-M2ykWHWEd-Xe4OIcNINMg" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-M2ykmHWEd-Xe4OIcNINMg" x="4497" y="26299"/>
+        </children>
+        <children xmi:id="_CMjiUGHXEd-Xe4OIcNINMg" element="_k3rbkDEZEd-8rpqfOAePKg">
+          <children xmi:id="_CMjiU2HXEd-Xe4OIcNINMg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_CMjiVGHXEd-Xe4OIcNINMg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_CMjiVWHXEd-Xe4OIcNINMg" type="Stereotype"/>
+          <children xmi:id="_CMjiVmHXEd-Xe4OIcNINMg" type="Kind"/>
+          <children xmi:id="_CMjiV2HXEd-Xe4OIcNINMg" type="Name"/>
+          <children xmi:id="_CMjiWGHXEd-Xe4OIcNINMg" type="Parent"/>
+          <children xmi:id="_CMjiWWHXEd-Xe4OIcNINMg" type="EnumerationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CMjiWmHXEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_CMjiW2HXEd-Xe4OIcNINMg" visible="false" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CMjiXGHXEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_CMjiXWHXEd-Xe4OIcNINMg" visible="false" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CMjiXmHXEd-Xe4OIcNINMg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_CMjiUWHXEd-Xe4OIcNINMg" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CMjiUmHXEd-Xe4OIcNINMg" x="2566" y="25135"/>
+        </children>
+        <children xmi:id="_NId2QGHXEd-Xe4OIcNINMg" element="_gky7ACxAEd-8mcmtGejV_Q">
+          <children xmi:id="_NId2Q2HXEd-Xe4OIcNINMg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_NId2RGHXEd-Xe4OIcNINMg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_NId2RWHXEd-Xe4OIcNINMg" type="Stereotype"/>
+          <children xmi:id="_NId2RmHXEd-Xe4OIcNINMg" type="Kind"/>
+          <children xmi:id="_NId2R2HXEd-Xe4OIcNINMg" type="Name"/>
+          <children xmi:id="_NId2SGHXEd-Xe4OIcNINMg" type="Parent"/>
+          <children xmi:id="_NId2SWHXEd-Xe4OIcNINMg" type="EnumerationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NId2SmHXEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_NId2S2HXEd-Xe4OIcNINMg" visible="false" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NId2TGHXEd-Xe4OIcNINMg"/>
+          </children>
+          <children xmi:id="_NId2TWHXEd-Xe4OIcNINMg" visible="false" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_NId2TmHXEd-Xe4OIcNINMg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_NId2QWHXEd-Xe4OIcNINMg" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NId2QmHXEd-Xe4OIcNINMg" x="4550" y="20558"/>
+        </children>
+        <children xmi:id="_onvZMGQkEd-ODMSOo4sPFQ" element="_g9hkECxAEd-8mcmtGejV_Q">
+          <children xmi:id="_onvZM2QkEd-ODMSOo4sPFQ" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_onvZNGQkEd-ODMSOo4sPFQ" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_onvZNWQkEd-ODMSOo4sPFQ" type="Stereotype"/>
+          <children xmi:id="_onvZNmQkEd-ODMSOo4sPFQ" type="Kind"/>
+          <children xmi:id="_onvZN2QkEd-ODMSOo4sPFQ" type="Name"/>
+          <children xmi:id="_onvZOGQkEd-ODMSOo4sPFQ" type="Parent"/>
+          <children xmi:id="_onvZOWQkEd-ODMSOo4sPFQ" type="EnumerationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_onvZOmQkEd-ODMSOo4sPFQ"/>
+          </children>
+          <children xmi:id="_onvZO2QkEd-ODMSOo4sPFQ" visible="false" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_onvZPGQkEd-ODMSOo4sPFQ"/>
+          </children>
+          <children xmi:id="_onvZPWQkEd-ODMSOo4sPFQ" visible="false" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_onvZPmQkEd-ODMSOo4sPFQ"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_onvZMWQkEd-ODMSOo4sPFQ" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_onvZMmQkEd-ODMSOo4sPFQ" x="5265" y="22357"/>
+        </children>
+        <children xmi:id="_tPGwcGQlEd-ODMSOo4sPFQ" element="_dx0jEGQlEd-ODMSOo4sPFQ">
+          <children xmi:id="_tPGwc2QlEd-ODMSOo4sPFQ" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_tPGwdGQlEd-ODMSOo4sPFQ" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_tPGwdWQlEd-ODMSOo4sPFQ" type="Stereotype"/>
+          <children xmi:id="_tPGwdmQlEd-ODMSOo4sPFQ" type="Kind"/>
+          <children xmi:id="_tPGwd2QlEd-ODMSOo4sPFQ" type="Name"/>
+          <children xmi:id="_tPGweGQlEd-ODMSOo4sPFQ" type="Parent"/>
+          <children xmi:id="_tPGweWQlEd-ODMSOo4sPFQ" type="EnumerationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_tPGwemQlEd-ODMSOo4sPFQ"/>
+          </children>
+          <children xmi:id="_tPGwe2QlEd-ODMSOo4sPFQ" visible="false" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_tPGwfGQlEd-ODMSOo4sPFQ"/>
+          </children>
+          <children xmi:id="_tPGwfWQlEd-ODMSOo4sPFQ" visible="false" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_tPGwfmQlEd-ODMSOo4sPFQ"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_tPGwcWQlEd-ODMSOo4sPFQ" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPGwcmQlEd-ODMSOo4sPFQ" x="2487" y="22727"/>
+        </children>
         <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_KJ4FMVLkEd-wEdo_Dk3J9g"/>
         <element xsi:nil="true"/>
         <edges xmi:id="_Gtg8sFOMEd-wEdo_Dk3J9g" element="_3-4BwEyrEd-G-pSkcIGh3w" source="_Gsnk2FOMEd-wEdo_Dk3J9g" target="_GrbSTVOMEd-wEdo_Dk3J9g">
@@ -8632,7 +8792,7 @@
       </ownedLiteral>
       <ownedLiteral xmi:id="_eWyLUCxAEd-8mcmtGejV_Q" name="2" classifier="_eWoaUCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_eWyLUSxAEd-8mcmtGejV_Q">
-          <body>Plan Year =  Plan Year  benefit accrual period as determined by the plan</body>
+          <body>Plan Year =  Plan Year benefit accrual period as determined by the plan</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_eWyLUyxAEd-8mcmtGejV_Q" name="3" classifier="_eWoaUCxAEd-8mcmtGejV_Q">
@@ -8673,8 +8833,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_eXYBNCxAEd-8mcmtGejV_Q" name="BenefitStageQualifier" visibility="private">
       <ownedComment xmi:id="_eXYBNSxAEd-8mcmtGejV_Q">
-        <body>Code qualifying the ’Benefit Stage Amount’ (394-MW).
-</body>
+        <body>Code qualifying the ’Benefit Stage Amount’ (394-MW).</body>
       </ownedComment>
       <ownedLiteral xmi:id="_eXhyMixAEd-8mcmtGejV_Q" name="Blank" classifier="_eXYBNCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_eXhyMyxAEd-8mcmtGejV_Q">
@@ -8867,7 +9026,7 @@
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g9hkECxAEd-8mcmtGejV_Q" name="ChangeofPrescriptionStatusFlag" visibility="private">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g9hkECxAEd-8mcmtGejV_Q" name="ChangeofPrescriptionStatusFlag">
       <ownedComment xmi:id="_g9hkESxAEd-8mcmtGejV_Q">
         <body>Used in the CANRX message when the prescriber wishes to notify the pharmacy to no longer continue dispensing any open refills on an active prescription or to cancel a prescription that has not yet been dispensed.</body>
       </ownedComment>
@@ -11881,7 +12040,7 @@
       </ownedLiteral>
       <ownedLiteral xmi:id="_hkak8SxAEd-8mcmtGejV_Q" name="403" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_hkak8ixAEd-8mcmtGejV_Q">
-          <body>DRU Final Compound Pharmaceutical Dosage Form  is Invalid</body>
+          <body>DRU Final Compound Pharmaceutical Dosage Form is Invalid</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_hkkV8CxAEd-8mcmtGejV_Q" name="404" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
@@ -12061,7 +12220,7 @@
       </ownedLiteral>
       <ownedLiteral xmi:id="_hnZnhCxAEd-8mcmtGejV_Q" name="439" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_hnZnhSxAEd-8mcmtGejV_Q">
-          <body>ALG Reaction Item Description  is Invalid</body>
+          <body>ALG Reaction Item Description is Invalid</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_hnjYgSxAEd-8mcmtGejV_Q" name="450" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
@@ -12076,7 +12235,7 @@
       </ownedLiteral>
       <ownedLiteral xmi:id="_hnsicyxAEd-8mcmtGejV_Q" name="452" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_hnsidCxAEd-8mcmtGejV_Q">
-          <body>ALG Severity Item Description  is Invalid</body>
+          <body>ALG Severity Item Description is Invalid</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_hn2TcCxAEd-8mcmtGejV_Q" name="453" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
@@ -13397,38 +13556,20 @@
       </ownedLiteral>
       <ownedLiteral xmi:id="_t_nHECxQEd-8mcmtGejV_Q" name="LD" classifier="_idVxASxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_yUeOgCxQEd-8mcmtGejV_Q" annotatedElement="_t_nHECxQEd-8mcmtGejV_Q">
-          <body>&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 0pt; mso-layout-grid-align: none&quot;>&lt;SPAN style=&quot;FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial&quot;>SNOMED - &lt;U>S&lt;/U>ystematized Nomenclature of Medicine Clinical Terms&lt;SPAN style=&quot;POSITION: relative; TOP: -3pt; mso-text-raise: 3.0pt; mso-bidi-font-weight: bold&quot;>®&lt;/SPAN>&lt;SPAN style=&quot;mso-spacerun: yes&quot;>&amp;nbsp;&lt;/SPAN>(SNOMED CT)&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; />&lt;o:p>&lt;/o:p>&lt;/SPAN>&lt;/P>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>SNOMED CT® terminology which is available from the &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>Health Terminology Standards Development Organisation (IHTSDO)&lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;> &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>&lt;A href=&quot;http://www.ihtsdo.org/snomed-ct/&quot;>&lt;U>&lt;FONT color=#0000ff>http://www.ihtsdo.org/snomed-ct/&lt;/FONT>&lt;/U>&lt;/A>&lt;/SPAN></body>
+          <body>&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 0pt; mso-layout-grid-align: none&quot;>&lt;SPAN style=&quot;FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial&quot;>SNOMED - &lt;U>S&lt;/U>ystematized Nomenclature of Medicine Clinical Terms&lt;SPAN style=&quot;POSITION: relative; TOP: -3pt; mso-text-raise: 3.0pt; mso-bidi-font-weight: bold&quot;>®&lt;/SPAN>&lt;SPAN style=&quot;mso-spacerun: yes&quot;> &lt;/SPAN>(SNOMED CT)&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; />&lt;o:p>&lt;/o:p>&lt;/SPAN>&lt;/P>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>SNOMED CT® terminology which is available from the &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>Health Terminology Standards Development Organisation (IHTSDO)&lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;> &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>&lt;A href=&quot;http://www.ihtsdo.org/snomed-ct/&quot;>&lt;U>&lt;FONT color=#0000ff>http://www.ihtsdo.org/snomed-ct/&lt;/FONT>&lt;/U>&lt;/A>&lt;/SPAN></body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_bBE48DEQEd-8rpqfOAePKg" name="DX" classifier="_idVxASxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_bBE48TEQEd-8rpqfOAePKg" annotatedElement="_bBE48DEQEd-8rpqfOAePKg">
-          <body>&lt;p>&#xD;
-    &lt;span&#xD;
-    style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International&#xD;
-    Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is&#xD;
-    defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a&#xD;
-    statistical classification system that arranges diseases and injuries into groups according to established criteria.&#xD;
-    Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World&#xD;
-    Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;span&#xD;
-    style=&quot;mso-spacerun: yes&quot;>&amp;nbsp;&lt;/span>&lt;/span>&#xD;
-&lt;/p></body>
+          <body>&lt;span style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria.&#xD;
+    Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;span style=&quot;mso-spacerun: yes&quot;> &lt;/span>&lt;/span></body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_bmodEDEQEd-8rpqfOAePKg" name="ABF" classifier="_idVxASxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_bmodETEQEd-8rpqfOAePKg" annotatedElement="_bmodEDEQEd-8rpqfOAePKg">
-          <body>&lt;p>&#xD;
-    &lt;span&#xD;
-    style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International&#xD;
-    Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a&#xD;
-    diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from&#xD;
-    death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#xD;
-    (ICD-9-CM)&lt;/span>&lt;span&#xD;
-    style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>is&#xD;
-    a statistical classification system that arranges diseases and injuries into groups according to established criteria.&#xD;
-    The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes&#xD;
-    are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid&#xD;
-    Services.&lt;b>&lt;span style=&quot;mso-spacerun: yes&quot;>&amp;nbsp;&lt;/span>&lt;/b>&lt;/span>&#xD;
-&lt;/p></body>
+          <body>&lt;span style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#xD;
+    (ICD-9-CM)&lt;/span>&lt;span style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>is a statistical classification system that arranges diseases and injuries into groups according to established criteria.&#xD;
+    The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;b>&lt;span style=&quot;mso-spacerun: yes&quot;> &lt;/span>&lt;/b>&lt;/span></body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
@@ -13479,24 +13620,11 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_eehyEyxAEd-8mcmtGejV_Q" name="CompoundCode">
       <ownedComment xmi:id="_eehyFCxAEd-8mcmtGejV_Q" annotatedElement="_eehyEyxAEd-8mcmtGejV_Q">
-        <body>&lt;p>&#xD;
-    Code&amp;nbsp;indicating&amp;nbsp;whether&amp;nbsp;or&amp;nbsp;not&amp;nbsp;the&amp;nbsp;prescription&amp;nbsp;is&amp;nbsp;a&amp;nbsp;compound.&#xD;
-&lt;/p>&lt;br />&#xD;
-&lt;p>&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &amp;nbsp;&#xD;
-&lt;/p></body>
+        <body>Code indicating whether or not the prescription is a compound.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_m0UfEFOiEd-wEdo_Dk3J9g" name="0" classifier="_eehyEyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_v_4PsFOiEd-wEdo_Dk3J9g" annotatedElement="_m0UfEFOiEd-wEdo_Dk3J9g">
-          <body>Not Specified This value is not allowed for the Telecommunication Standard&lt;br /></body>
+          <body>Not Specified This value is not allowed for the Telecommunication Standard</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_oM1xMFOiEd-wEdo_Dk3J9g" name="1" classifier="_eehyEyxAEd-8mcmtGejV_Q">
@@ -13506,8 +13634,7 @@
       </ownedLiteral>
       <ownedLiteral xmi:id="_o_y4IFOiEd-wEdo_Dk3J9g" name="2" classifier="_eehyEyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_zCCZIFOiEd-wEdo_Dk3J9g" annotatedElement="_o_y4IFOiEd-wEdo_Dk3J9g">
-          <body>Compound – Customized medication prepared in a pharmacy by combining, mixing, or altering of ingredients (but not&#xD;
-reconstituting) for an individual patient in response to a licensed practitioner’s prescription</body>
+          <body>Compound – Customized medication prepared in a pharmacy by combining, mixing, or altering of ingredients (but not reconstituting) for an individual patient in response to a licensed practitioner’s prescription</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
@@ -14178,36 +14305,31 @@ reconstituting) for an individual patient in response to a licensed practitioner
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_hqrlACxAEd-8mcmtGejV_Q" name="DEASchedule">
       <ownedComment xmi:id="_hqrlASxAEd-8mcmtGejV_Q" annotatedElement="_hqrlACxAEd-8mcmtGejV_Q">
-        <body>&lt;p>&#xD;
-    Value&amp;nbsp;defining&amp;nbsp;the&amp;nbsp;DEA&amp;nbsp;schedule&amp;nbsp;of&amp;nbsp;the&amp;nbsp;medication.&#xD;
-&lt;/p>&lt;br />&#xD;
-&lt;br /></body>
+        <body>Value defining ;the DEA schedule of the medication.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_HAHRIFOjEd-wEdo_Dk3J9g" name="1" classifier="_hqrlACxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_SVpmAFOjEd-wEdo_Dk3J9g" annotatedElement="_HAHRIFOjEd-wEdo_Dk3J9g">
-          <body>&lt;p>&#xD;
-    Schedule I Substance (no known use)&#xD;
-&lt;/p></body>
+          <body>Schedule I Substance (no known use)</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_IGJsIFOjEd-wEdo_Dk3J9g" name="2" classifier="_hqrlACxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_Ti-70FOjEd-wEdo_Dk3J9g" annotatedElement="_IGJsIFOjEd-wEdo_Dk3J9g">
-          <body>Schedule&amp;nbsp;II&amp;nbsp;Narcotic&amp;nbsp;Substances</body>
+          <body>Schedule II Narcotic Substances</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_It7d0FOjEd-wEdo_Dk3J9g" name="3" classifier="_hqrlACxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_Ufx7QFOjEd-wEdo_Dk3J9g" annotatedElement="_It7d0FOjEd-wEdo_Dk3J9g">
-          <body>Schedule&amp;nbsp;III&amp;nbsp;Narcotic&amp;nbsp;Substances</body>
+          <body>Schedule III Narcotic Substances</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_Jir7kFOjEd-wEdo_Dk3J9g" name="4" classifier="_hqrlACxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_VWUhsFOjEd-wEdo_Dk3J9g" annotatedElement="_Jir7kFOjEd-wEdo_Dk3J9g">
-          <body>Schedule&amp;nbsp;IV&amp;nbsp;Substances</body>
+          <body>Schedule IV Substances</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_KWsLYFOjEd-wEdo_Dk3J9g" name="5" classifier="_hqrlACxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_WjNyoFOjEd-wEdo_Dk3J9g" annotatedElement="_KWsLYFOjEd-wEdo_Dk3J9g">
-          <body>Schedule V Substances&lt;br /></body>
+          <body>Schedule V Substances</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
@@ -14371,7 +14493,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_esFs8SxAEd-8mcmtGejV_Q" name="DispenseAsWrittenDAWProductSelectionCode" visibility="private">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_esFs8SxAEd-8mcmtGejV_Q" name="DispenseAsWrittenDAWProductSelectionCode">
       <ownedComment xmi:id="_esFs8ixAEd-8mcmtGejV_Q">
         <body>Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed.</body>
       </ownedComment>
@@ -14607,7 +14729,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hsnetCxAEd-8mcmtGejV_Q" name="DrugCoverageStatusCode" visibility="private">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hsnetCxAEd-8mcmtGejV_Q" name="DrugCoverageStatusCode">
       <ownedComment xmi:id="_hsnetSxAEd-8mcmtGejV_Q">
         <body>Code identifying the coverage status of the prescribed drug.</body>
       </ownedComment>
@@ -14748,33 +14870,22 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedComment>
       <ownedLiteral xmi:id="_Bwx-IFOmEd-wEdo_Dk3J9g" name="2" classifier="_eueSkixAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_Bwx-IVOmEd-wEdo_Dk3J9g" annotatedElement="_Bwx-IFOmEd-wEdo_Dk3J9g">
-          <body>&lt;p>&#xD;
-    Moderate – Code indicating that an event, transaction, etc. is of mid-level significance; requires thoughtful review&#xD;
-    before prescribing/dispensing the medication. Risk vs. benefit should be evaluated. 2 X X&lt;br />&#xD;
-&lt;/p></body>
+          <body>Moderate – Code indicating that an event, transaction, etc. is of mid-level significance; requires thoughtful review before prescribing/dispensing the medication. Risk vs. benefit should be evaluated. 2 X X</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_Bwx-IlOmEd-wEdo_Dk3J9g" name="1" classifier="_eueSkixAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_Bwx-I1OmEd-wEdo_Dk3J9g" annotatedElement="_Bwx-IlOmEd-wEdo_Dk3J9g">
-          <body>&lt;p>&#xD;
-    Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent&#xD;
-    adverse drug event. 1 X X&lt;br />&#xD;
-&lt;/p></body>
+          <body>Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent adverse drug event. 1 X X</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_Bwx-JFOmEd-wEdo_Dk3J9g" name="3" classifier="_eueSkixAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_Bwx-JVOmEd-wEdo_Dk3J9g" annotatedElement="_Bwx-JFOmEd-wEdo_Dk3J9g">
-          <body>&lt;p>&#xD;
-    Minor – Code indicating a non-life threatening, annoying, or now-well-documented effect which may or may not require a&#xD;
-    change in drug therapy. 3 X X&lt;br />&#xD;
-&lt;/p></body>
+          <body>Minor – Code indicating a non-life threatening, annoying, or now-well-documented effect which may or may not require a change in drug therapy. 3 X X</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_Bwx-JlOmEd-wEdo_Dk3J9g" name="9" classifier="_eueSkixAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_Bwx-J1OmEd-wEdo_Dk3J9g" annotatedElement="_Bwx-JlOmEd-wEdo_Dk3J9g">
-          <body>&lt;p>&#xD;
-    Undetermined - value to describe a professional service with variable or unknown severity. 9 X X&lt;br />&#xD;
-&lt;/p></body>
+          <body>Undetermined - value to describe a professional service with variable or unknown severity. 9 X X</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
@@ -14944,7 +15055,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedComment>
       <ownedLiteral xmi:id="_izOg0FOlEd-wEdo_Dk3J9g" name="SC">
         <ownedComment xmi:id="_izOg0VOlEd-wEdo_Dk3J9g">
-          <body>Self-care consultation   Code indicating activities performed by a pharmacist on behalf of a patient intended to allow the patient to function more effectively on his or her own behalf in health promotion and disease prevention, detection, or treatment.</body>
+          <body>Self-care consultation Code indicating activities performed by a pharmacist on behalf of a patient intended to allow the patient to function more effectively on his or her own behalf in health promotion and disease prevention, detection, or treatment.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izOg0lOlEd-wEdo_Dk3J9g" name="ZZ">
@@ -14959,7 +15070,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXqwlOlEd-wEdo_Dk3J9g" name="TC">
         <ownedComment xmi:id="_izXqw1OlEd-wEdo_Dk3J9g">
-          <body>Payer/processor consulted   Code indicating communication by a pharmacist to a processor or payer related to the care of the patient.</body>
+          <body>Payer/processor consulted Code indicating communication by a pharmacist to a processor or payer related to the care of the patient.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXqxFOlEd-wEdo_Dk3J9g" name="MR">
@@ -14974,27 +15085,27 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXqyFOlEd-wEdo_Dk3J9g" name="CC">
         <ownedComment xmi:id="_izXqyVOlEd-wEdo_Dk3J9g">
-          <body>Coordination of care   Case management activities of a pharmacist related to the care being delivered by multiple providers.</body>
+          <body>Coordination of care Case management activities of a pharmacist related to the care being delivered by multiple providers.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXqylOlEd-wEdo_Dk3J9g" name="PM">
         <ownedComment xmi:id="_izXqy1OlEd-wEdo_Dk3J9g">
-          <body>Patient monitoring   Code indicating the evaluation of established therapy for the purpose of determining whether an existing therapeutic plan should be altered.</body>
+          <body>Patient monitoring Code indicating the evaluation of established therapy for the purpose of determining whether an existing therapeutic plan should be altered.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXqzFOlEd-wEdo_Dk3J9g" name="PE">
         <ownedComment xmi:id="_izXqzVOlEd-wEdo_Dk3J9g">
-          <body>Patient education/instruction   Code indicating verbal and/or written communication by a pharmacist to enhance the patient’s knowledge about the condition under treatment or to develop skills and competencies related to its management.</body>
+          <body>Patient education/instruction Code indicating verbal and/or written communication by a pharmacist to enhance the patient’s knowledge about the condition under treatment or to develop skills and competencies related to its management.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXqzlOlEd-wEdo_Dk3J9g" name="M0">
         <ownedComment xmi:id="_izXqz1OlEd-wEdo_Dk3J9g">
-          <body>Prescriber consulted   Code indicating prescriber communication related to collection of information or clarification of a specific limited problem.</body>
+          <body>Prescriber consulted Code indicating prescriber communication related to collection of information or clarification of a specific limited problem.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq0FOlEd-wEdo_Dk3J9g" name="TH">
         <ownedComment xmi:id="_izXq0VOlEd-wEdo_Dk3J9g">
-          <body>Therapeutic product interchange   Code indicating that the selection of a therapeutically equivalent product to that specified by the prescriber for the purpose of achieving cost savings for the payer.</body>
+          <body>Therapeutic product interchange Code indicating that the selection of a therapeutically equivalent product to that specified by the prescriber for the purpose of achieving cost savings for the payer.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq0lOlEd-wEdo_Dk3J9g" name="PA">
@@ -15004,32 +15115,32 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq1FOlEd-wEdo_Dk3J9g" name="RT">
         <ownedComment xmi:id="_izXq1VOlEd-wEdo_Dk3J9g">
-          <body>Recommend laboratory test  Code indicating that the pharmacist recommends the performance of a clinical laboratory test on a patient.</body>
+          <body>Recommend laboratory test Code indicating that the pharmacist recommends the performance of a clinical laboratory test on a patient.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq1lOlEd-wEdo_Dk3J9g" name="AS">
         <ownedComment xmi:id="_izXq11OlEd-wEdo_Dk3J9g">
-          <body>Patient assessment   Code indicating that an initial evaluation of a patient or complaint/symptom for the purpose of developing a therapeutic plan.</body>
+          <body>Patient assessment Code indicating that an initial evaluation of a patient or complaint/symptom for the purpose of developing a therapeutic plan.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq2FOlEd-wEdo_Dk3J9g" name="DE">
         <ownedComment xmi:id="_izXq2VOlEd-wEdo_Dk3J9g">
-          <body>Dosing evaluation/determination  Cognitive service whereby the pharmacist reviews and evaluates the appropriateness of a prescribed medication’s dose, interval, frequency and/or formulation.</body>
+          <body>Dosing evaluation/determination Cognitive service whereby the pharmacist reviews and evaluates the appropriateness of a prescribed medication’s dose, interval, frequency and/or formulation.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq2lOlEd-wEdo_Dk3J9g" name="P0">
         <ownedComment xmi:id="_izXq21OlEd-wEdo_Dk3J9g">
-          <body>Patient consulted   Code indicating patient communication related to collection of information or clarification of a specific limited problem.</body>
+          <body>Patient consulted Code indicating patient communication related to collection of information or clarification of a specific limited problem.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq3FOlEd-wEdo_Dk3J9g" name="MA">
         <ownedComment xmi:id="_izXq3VOlEd-wEdo_Dk3J9g">
-          <body>Medication administration   Code indicating an action of supplying a medication to a patient through any of several routes—oral, topical, intravenous, intramuscular, intranasal, etc.</body>
+          <body>Medication administration Code indicating an action of supplying a medication to a patient through any of several routes—oral, topical, intravenous, intramuscular, intranasal, etc.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq3lOlEd-wEdo_Dk3J9g" name="SW">
         <ownedComment xmi:id="_izXq31OlEd-wEdo_Dk3J9g">
-          <body>Literature search/review   Code indicating that the pharmacist searches or reviews the pharmaceutical and/or medical literature for information related to the care of a patient.</body>
+          <body>Literature search/review Code indicating that the pharmacist searches or reviews the pharmaceutical and/or medical literature for information related to the care of a patient.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq4FOlEd-wEdo_Dk3J9g" name="MB">
@@ -15044,7 +15155,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq5FOlEd-wEdo_Dk3J9g" name="PT">
         <ownedComment xmi:id="_izXq5VOlEd-wEdo_Dk3J9g">
-          <body>Perform laboratory test   Code indicating that the pharmacist performed a clinical laboratory test on a patient.</body>
+          <body>Perform laboratory test Code indicating that the pharmacist performed a clinical laboratory test on a patient.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq5lOlEd-wEdo_Dk3J9g" name="GP">
@@ -15054,12 +15165,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq6FOlEd-wEdo_Dk3J9g" name="PH">
         <ownedComment xmi:id="_izXq6VOlEd-wEdo_Dk3J9g">
-          <body>Patient medication history   Code indicating the establishment of a medication history database on a patient to serve as the foundation for the ongoing maintenance of a medication profile.</body>
+          <body>Patient medication history Code indicating the establishment of a medication history database on a patient to serve as the foundation for the ongoing maintenance of a medication profile.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq6lOlEd-wEdo_Dk3J9g" name="DP">
         <ownedComment xmi:id="_izXq61OlEd-wEdo_Dk3J9g">
-          <body>Dosage evaluated   Code indicating that dosage has been evaluated with respect to risk for the patient.</body>
+          <body>Dosage evaluated Code indicating that dosage has been evaluated with respect to risk for the patient.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_izXq7FOlEd-wEdo_Dk3J9g" name="MP">
@@ -15074,12 +15185,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedComment>
       <ownedLiteral xmi:id="_nI1PIFOlEd-wEdo_Dk3J9g" name="PC">
         <ownedComment xmi:id="_nI1PIVOlEd-wEdo_Dk3J9g">
-          <body>Patient Question/Concern  Code indicating that a request for information/concern was expressed by the patient, with respect to patient care.</body>
+          <body>Patient Question/Concern Code indicating that a request for information/concern was expressed by the patient, with respect to patient care.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PIlOlEd-wEdo_Dk3J9g" name="PP">
         <ownedComment xmi:id="_nI1PI1OlEd-wEdo_Dk3J9g">
-          <body>Plan Protocol   Code indicating that a cognitive service whereby a pharmacist, in consultation with the prescriber or using professional judgment, recommends a course of therapy as outlined in the patient’s plan and submits a claim for the professional service provided.</body>
+          <body>Plan Protocol Code indicating that a cognitive service whereby a pharmacist, in consultation with the prescriber or using professional judgment, recommends a course of therapy as outlined in the patient’s plan and submits a claim for the professional service provided.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PJFOlEd-wEdo_Dk3J9g" name="EX">
@@ -15104,7 +15215,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PLFOlEd-wEdo_Dk3J9g" name="AN">
         <ownedComment xmi:id="_nI1PLVOlEd-wEdo_Dk3J9g">
-          <body>Prescription Authentication  Code indicating that circumstances required the pharmacist to verify the validity and/or authenticity of the prescription.</body>
+          <body>Prescription Authentication Code indicating that circumstances required the pharmacist to verify the validity and/or authenticity of the prescription.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PLlOlEd-wEdo_Dk3J9g" name="HD">
@@ -15114,7 +15225,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PMFOlEd-wEdo_Dk3J9g" name="SC">
         <ownedComment xmi:id="_nI1PMVOlEd-wEdo_Dk3J9g">
-          <body>Suboptimal Compliance   Code indicating that professional service was provided to counsel the patient regarding the importance of adherence to the provided instructions and of consistent use of the prescribed product including any ill effects anticipated as a result of non-compliance.</body>
+          <body>Suboptimal Compliance Code indicating that professional service was provided to counsel the patient regarding the importance of adherence to the provided instructions and of consistent use of the prescribed product including any ill effects anticipated as a result of non-compliance.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PMlOlEd-wEdo_Dk3J9g" name="PA">
@@ -15129,7 +15240,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PNlOlEd-wEdo_Dk3J9g" name="DA">
         <ownedComment xmi:id="_nI1PN1OlEd-wEdo_Dk3J9g">
-          <body>Drug-Allergy   Indicates that an adverse immune event may occur due to the patient’s previously demonstrated heightened allergic response to the drug product in question.</body>
+          <body>Drug-Allergy Indicates that an adverse immune event may occur due to the patient’s previously demonstrated heightened allergic response to the drug product in question.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1POFOlEd-wEdo_Dk3J9g" name="IC">
@@ -15139,7 +15250,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1POlOlEd-wEdo_Dk3J9g" name="MN">
         <ownedComment xmi:id="_nI1PO1OlEd-wEdo_Dk3J9g">
-          <body>Insufficient Duration   Code indicating that regimens shorter than the minimal limit of therapy for the drug product, based on the product’s common uses, has been detected.</body>
+          <body>Insufficient Duration Code indicating that regimens shorter than the minimal limit of therapy for the drug product, based on the product’s common uses, has been detected.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PPFOlEd-wEdo_Dk3J9g" name="DI">
@@ -15149,12 +15260,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PPlOlEd-wEdo_Dk3J9g" name="DL">
         <ownedComment xmi:id="_nI1PP1OlEd-wEdo_Dk3J9g">
-          <body>Drug-Lab Conflict  Indicates that laboratory values may be altered due to the use of the drug, or that the patient’s response to the drug may be altered due to a condition that is identified by a certain laboratory value.</body>
+          <body>Drug-Lab Conflict Indicates that laboratory values may be altered due to the use of the drug, or that the patient’s response to the drug may be altered due to a condition that is identified by a certain laboratory value.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PQFOlEd-wEdo_Dk3J9g" name="AR">
         <ownedComment xmi:id="_nI1PQVOlEd-wEdo_Dk3J9g">
-          <body>Adverse Drug Reaction   Code indicating an adverse reaction by a patient to a drug.</body>
+          <body>Adverse Drug Reaction Code indicating an adverse reaction by a patient to a drug.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PQlOlEd-wEdo_Dk3J9g" name="SX">
@@ -15164,12 +15275,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PRFOlEd-wEdo_Dk3J9g" name="AT">
         <ownedComment xmi:id="_nI1PRVOlEd-wEdo_Dk3J9g">
-          <body>Additive Toxicity   Code indicating a detection of drugs with similar side effects when used in combination could exhibit a toxic potential greater than either agent by itself.</body>
+          <body>Additive Toxicity Code indicating a detection of drugs with similar side effects when used in combination could exhibit a toxic potential greater than either agent by itself.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PRlOlEd-wEdo_Dk3J9g" name="PR">
         <ownedComment xmi:id="_nI1PR1OlEd-wEdo_Dk3J9g">
-          <body>Prior Adverse Reaction   Code identifying the patient has had a previous atypical reaction to drugs.</body>
+          <body>Prior Adverse Reaction Code identifying the patient has had a previous atypical reaction to drugs.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI1PSFOlEd-wEdo_Dk3J9g" name="DC">
@@ -15184,7 +15295,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AIFOlEd-wEdo_Dk3J9g" name="TD">
         <ownedComment xmi:id="_nI_AIVOlEd-wEdo_Dk3J9g">
-          <body>Therapeutic   Code indicating that a simultaneous use of different primary generic chemical entities that have the same therapeutic effect was detected.</body>
+          <body>Therapeutic Code indicating that a simultaneous use of different primary generic chemical entities that have the same therapeutic effect was detected.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AIlOlEd-wEdo_Dk3J9g" name="ID">
@@ -15194,7 +15305,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AJFOlEd-wEdo_Dk3J9g" name="PS">
         <ownedComment xmi:id="_nI_AJVOlEd-wEdo_Dk3J9g">
-          <body>Product Selection Opportunity   Code indicating that an acceptable generic substitute or a therapeutic equivalent exists for the drug. This code is intended to support discretionary drug product selection activities by pharmacists.</body>
+          <body>Product Selection Opportunity Code indicating that an acceptable generic substitute or a therapeutic equivalent exists for the drug. This code is intended to support discretionary drug product selection activities by pharmacists.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AJlOlEd-wEdo_Dk3J9g" name="MX">
@@ -15204,27 +15315,27 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AKFOlEd-wEdo_Dk3J9g" name="LD">
         <ownedComment xmi:id="_nI_AKVOlEd-wEdo_Dk3J9g">
-          <body>Low Dose  Code indicating that the submitted drug doses fall below the standard dosing range.</body>
+          <body>Low Dose Code indicating that the submitted drug doses fall below the standard dosing range.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AKlOlEd-wEdo_Dk3J9g" name="LK">
         <ownedComment xmi:id="_nI_AK1OlEd-wEdo_Dk3J9g">
-          <body>Lock In Recipient   Code indicating that the professional service was related to a plan/payer constraint on the member whereby the member is required to obtain services from only one specified pharmacy or other provider type, hence the member is “locked in” to using only those providers or pharmacies.</body>
+          <body>Lock In Recipient Code indicating that the professional service was related to a plan/payer constraint on the member whereby the member is required to obtain services from only one specified pharmacy or other provider type, hence the member is “locked in” to using only those providers or pharmacies.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_ALFOlEd-wEdo_Dk3J9g" name="ED">
         <ownedComment xmi:id="_nI_ALVOlEd-wEdo_Dk3J9g">
-          <body>Patient Education/Instruction  Code indicating that a cognitive service whereby the pharmacist performed a patient care activity by providing additional instructions or education to the patient beyond the simple task of explaining the prescriber’s instructions on the prescription.</body>
+          <body>Patient Education/Instruction Code indicating that a cognitive service whereby the pharmacist performed a patient care activity by providing additional instructions or education to the patient beyond the simple task of explaining the prescriber’s instructions on the prescription.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_ALlOlEd-wEdo_Dk3J9g" name="PH">
         <ownedComment xmi:id="_nI_AL1OlEd-wEdo_Dk3J9g">
-          <body>Preventive Health Care   Code indicating that the provided professional service was to educate the patient regarding measures mitigating possible adverse effects or maximizing the benefits of the product(s) dispensed; or measures to optimize health status, prevent recurrence or exacerbation of problems.</body>
+          <body>Preventive Health Care Code indicating that the provided professional service was to educate the patient regarding measures mitigating possible adverse effects or maximizing the benefits of the product(s) dispensed; or measures to optimize health status, prevent recurrence or exacerbation of problems.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AMFOlEd-wEdo_Dk3J9g" name="CD">
         <ownedComment xmi:id="_nI_AMVOlEd-wEdo_Dk3J9g">
-          <body>Chronic Disease Management   The patient is participating in a coordinated health care intervention program.</body>
+          <body>Chronic Disease Management The patient is participating in a coordinated health care intervention program.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AMlOlEd-wEdo_Dk3J9g" name="NF">
@@ -15244,12 +15355,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AOFOlEd-wEdo_Dk3J9g" name="DM">
         <ownedComment xmi:id="_nI_AOVOlEd-wEdo_Dk3J9g">
-          <body>Apparent Drug Misuse   Code indicating a pattern of drug use by a patient in a manner that is significantly different than that prescribed by the prescriber.</body>
+          <body>Apparent Drug Misuse Code indicating a pattern of drug use by a patient in a manner that is significantly different than that prescribed by the prescriber.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AOlOlEd-wEdo_Dk3J9g" name="CH">
         <ownedComment xmi:id="_nI_AO1OlEd-wEdo_Dk3J9g">
-          <body>Call Help Desk   Processor message to recommend the receiver contact the processor/plan</body>
+          <body>Call Help Desk Processor message to recommend the receiver contact the processor/plan</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_APFOlEd-wEdo_Dk3J9g" name="CS">
@@ -15274,22 +15385,22 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_ARFOlEd-wEdo_Dk3J9g" name="TN">
         <ownedComment xmi:id="_nI_ARVOlEd-wEdo_Dk3J9g">
-          <body>Laboratory Test Needed  Code indicating that an assessment of the patient suggests that a laboratory test is needed to optimally manage a therapy.</body>
+          <body>Laboratory Test Needed Code indicating that an assessment of the patient suggests that a laboratory test is needed to optimally manage a therapy.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_ARlOlEd-wEdo_Dk3J9g" name="DR">
         <ownedComment xmi:id="_nI_AR1OlEd-wEdo_Dk3J9g">
-          <body>Dose Range Conflict   Code indicating that the prescription does not follow recommended medication dosage.</body>
+          <body>Dose Range Conflict Code indicating that the prescription does not follow recommended medication dosage.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_ASFOlEd-wEdo_Dk3J9g" name="ER">
         <ownedComment xmi:id="_nI_ASVOlEd-wEdo_Dk3J9g">
-          <body>Overuse   Code indicating that the current prescription refill is occurring before the days supply of the previous filling should have been exhausted.</body>
+          <body>Overuse Code indicating that the current prescription refill is occurring before the days supply of the previous filling should have been exhausted.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_ASlOlEd-wEdo_Dk3J9g" name="SE">
         <ownedComment xmi:id="_nI_AS1OlEd-wEdo_Dk3J9g">
-          <body>Side Effect   Code reporting possible major side effects of the prescribed drug.</body>
+          <body>Side Effect Code reporting possible major side effects of the prescribed drug.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_ATFOlEd-wEdo_Dk3J9g" name="AD">
@@ -15309,7 +15420,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AUlOlEd-wEdo_Dk3J9g" name="LR">
         <ownedComment xmi:id="_nI_AU1OlEd-wEdo_Dk3J9g">
-          <body>Underuse   Code indicating that a prescription refill that occurred after the days supply of the previous filling should have been exhausted.</body>
+          <body>Underuse Code indicating that a prescription refill that occurred after the days supply of the previous filling should have been exhausted.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AVFOlEd-wEdo_Dk3J9g" name="ND">
@@ -15319,27 +15430,27 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AVlOlEd-wEdo_Dk3J9g" name="SF">
         <ownedComment xmi:id="_nI_AV1OlEd-wEdo_Dk3J9g">
-          <body>Suboptimal Dosage Form   Code indicating incorrect, inappropriate, or less than optimal dosage form for the drug.</body>
+          <body>Suboptimal Dosage Form Code indicating incorrect, inappropriate, or less than optimal dosage form for the drug.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AWFOlEd-wEdo_Dk3J9g" name="NN">
         <ownedComment xmi:id="_nI_AWVOlEd-wEdo_Dk3J9g">
-          <body>Unnecessary Drug   Code indicating that the drug is no longer needed by the patient.</body>
+          <body>Unnecessary Drug Code indicating that the drug is no longer needed by the patient.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AWlOlEd-wEdo_Dk3J9g" name="UD">
         <ownedComment xmi:id="_nI_AW1OlEd-wEdo_Dk3J9g">
-          <body>Duplicate Drug   Code indicating that multiple prescriptions of the same drug formulation are present in the patient’s current medication profile.</body>
+          <body>Duplicate Drug Code indicating that multiple prescriptions of the same drug formulation are present in the patient’s current medication profile.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AXFOlEd-wEdo_Dk3J9g" name="PN">
         <ownedComment xmi:id="_nI_AXVOlEd-wEdo_Dk3J9g">
-          <body>Prescriber Consultation  Code indicating that a prescriber has requested information or a recommendation related to the care of a patient.</body>
+          <body>Prescriber Consultation Code indicating that a prescriber has requested information or a recommendation related to the care of a patient.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AXlOlEd-wEdo_Dk3J9g" name="DS">
         <ownedComment xmi:id="_nI_AX1OlEd-wEdo_Dk3J9g">
-          <body>Tobacco Use   Code indicating that a conflict was detected when a prescribed drug is contraindicated or might conflict with the use of tobacco products.</body>
+          <body>Tobacco Use Code indicating that a conflict was detected when a prescribed drug is contraindicated or might conflict with the use of tobacco products.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AYFOlEd-wEdo_Dk3J9g" name="MC">
@@ -15354,7 +15465,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AZFOlEd-wEdo_Dk3J9g" name="SR">
         <ownedComment xmi:id="_nI_AZVOlEd-wEdo_Dk3J9g">
-          <body>Suboptimal Regimen   Code indicating incorrect, inappropriate, or less than optimal dosage regimen specified for the drug in question.</body>
+          <body>Suboptimal Regimen Code indicating incorrect, inappropriate, or less than optimal dosage regimen specified for the drug in question.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_nI_AZlOlEd-wEdo_Dk3J9g" name="NR">
@@ -15384,12 +15495,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_xlOrEd-wEdo_Dk3J9g" name="3E">
         <ownedComment xmi:id="_2By_x1OrEd-wEdo_Dk3J9g">
-          <body>Therapy Changed   Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber.</body>
+          <body>Therapy Changed Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_yFOrEd-wEdo_Dk3J9g" name="3M">
         <ownedComment xmi:id="_2By_yVOrEd-wEdo_Dk3J9g">
-          <body>Compliance Aid Provided   Cognitive service whereby the pharmacist supplies a product that assists the patient in complying with instructions for taking medications.</body>
+          <body>Compliance Aid Provided Cognitive service whereby the pharmacist supplies a product that assists the patient in complying with instructions for taking medications.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_ylOrEd-wEdo_Dk3J9g" name="1E">
@@ -15409,7 +15520,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_0FOrEd-wEdo_Dk3J9g" name="3A">
         <ownedComment xmi:id="_2By_0VOrEd-wEdo_Dk3J9g">
-          <body>Recommendation Accepted   Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber.</body>
+          <body>Recommendation Accepted Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_0lOrEd-wEdo_Dk3J9g" name="3D">
@@ -15419,7 +15530,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_1FOrEd-wEdo_Dk3J9g" name="1H">
         <ownedComment xmi:id="_2By_1VOrEd-wEdo_Dk3J9g">
-          <body>Brand-to-Generic Change   Action whereby a pharmacist dispenses the generic formulation of an originally prescribed branded product.  Allowed, often mandated, unless the prescriber indicates “Do Not Substitute” on the prescription</body>
+          <body>Brand-to-Generic Change Action whereby a pharmacist dispenses the generic formulation of an originally prescribed branded product.  Allowed, often mandated, unless the prescriber indicates “Do Not Substitute” on the prescription</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_1lOrEd-wEdo_Dk3J9g" name="3B">
@@ -15429,12 +15540,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_2FOrEd-wEdo_Dk3J9g" name="3J">
         <ownedComment xmi:id="_2By_2VOrEd-wEdo_Dk3J9g">
-          <body>Patient Referral   Code indicating the referral of a patient to another health care provider following evaluation by the pharmacist.</body>
+          <body>Patient Referral Code indicating the referral of a patient to another health care provider following evaluation by the pharmacist.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_2lOrEd-wEdo_Dk3J9g" name="1F">
         <ownedComment xmi:id="_2By_21OrEd-wEdo_Dk3J9g">
-          <body>Filled, With Different Quantity   Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with a different quantity than was originally prescribed.</body>
+          <body>Filled, With Different Quantity Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with a different quantity than was originally prescribed.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_3FOrEd-wEdo_Dk3J9g" name="1K">
@@ -15444,12 +15555,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_3lOrEd-wEdo_Dk3J9g" name="3H">
         <ownedComment xmi:id="_2By_31OrEd-wEdo_Dk3J9g">
-          <body>Follow-Up/Report   Code indicating that additional follow through by the pharmacist is required</body>
+          <body>Follow-Up/Report Code indicating that additional follow through by the pharmacist is required</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_4FOrEd-wEdo_Dk3J9g" name="1D">
         <ownedComment xmi:id="_2By_4VOrEd-wEdo_Dk3J9g">
-          <body>Filled, With Different Directions   Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with different directions than were  originally prescribed.</body>
+          <body>Filled, With Different Directions Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with different directions than were originally prescribed.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_4lOrEd-wEdo_Dk3J9g" name="2B">
@@ -15484,12 +15595,12 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_7lOrEd-wEdo_Dk3J9g" name="3K">
         <ownedComment xmi:id="_2By_71OrEd-wEdo_Dk3J9g">
-          <body>Instructions Understood   Indicator used to convey that the patient affirmed understanding of the instructions provided by the pharmacist regarding the use and handling of the medication dispensed.</body>
+          <body>Instructions Understood Indicator used to convey that the patient affirmed understanding of the instructions provided by the pharmacist regarding the use and handling of the medication dispensed.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_8FOrEd-wEdo_Dk3J9g" name="1J">
         <ownedComment xmi:id="_2By_8VOrEd-wEdo_Dk3J9g">
-          <body>Rx-to-OTC Change   Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert) fills the prescription with an over-the-counter product in lieu of the originally prescribed prescription-only product.</body>
+          <body>Rx-to-OTC Change Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert) fills the prescription with an over-the-counter product in lieu of the originally prescribed prescription-only product.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_2By_8lOrEd-wEdo_Dk3J9g" name="1G">
@@ -16105,7 +16216,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_e58iwyxAEd-8mcmtGejV_Q" name="FillNumberCalculated" visibility="private">
       <ownedComment xmi:id="_e58ixCxAEd-8mcmtGejV_Q">
-        <body>Code identifying whether the prescription is an original (00) or by refill number (01-99)  as calculated by  system based on historical claims data.  This field represents the Fill Number as calculated (not submitted by pharmacy)</body>
+        <body>Code identifying whether the prescription is an original (00) or by refill number (01-99)  as calculated by system based on historical claims data.  This field represents the Fill Number as calculated (not submitted by pharmacy)</body>
       </ownedComment>
       <ownedLiteral xmi:id="_e6GTwixAEd-8mcmtGejV_Q" name="00" classifier="_e58iwyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_e6GTwyxAEd-8mcmtGejV_Q">
@@ -16295,8 +16406,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_e9FWUyxAEd-8mcmtGejV_Q" name="FormularyStatus" visibility="private">
       <ownedComment xmi:id="_e9FWVCxAEd-8mcmtGejV_Q">
-        <body>Status of the drug within the formulary.
-</body>
+        <body>Status of the drug within the formulary.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_e9OgQixAEd-8mcmtGejV_Q" name="A" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_e9OgQyxAEd-8mcmtGejV_Q">
@@ -16355,7 +16465,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_e-3fACxAEd-8mcmtGejV_Q" name="I" classifier="_e-kkFCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_e-3fASxAEd-8mcmtGejV_Q">
-          <body>Drug on Formulary; Non-Preferred - The medication submitted on the claim is included in the list of products in that patient’s plan formulary but there is a   preferable product in the therapeutic category.</body>
+          <body>Drug on Formulary; Non-Preferred - The medication submitted on the claim is included in the list of products in that patient’s plan formulary but there is a preferable product in the therapeutic category.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_e-3fAyxAEd-8mcmtGejV_Q" name="J" classifier="_e-kkFCxAEd-8mcmtGejV_Q">
@@ -16406,38 +16516,21 @@ reconstituting) for an individual patient in response to a licensed practitioner
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_e_d78yxAEd-8mcmtGejV_Q" name="GenderCode">
       <ownedComment xmi:id="_e_d79CxAEd-8mcmtGejV_Q" annotatedElement="_e_d78yxAEd-8mcmtGejV_Q">
-        <body>&lt;p>&#xD;
-    Code&amp;nbsp;identifying&amp;nbsp;the&amp;nbsp;gender&amp;nbsp;of&amp;nbsp;the&amp;nbsp;individual.&#xD;
-&lt;/p>&#xD;
-&lt;p>&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &lt;br />&#xD;
-    &amp;nbsp;&#xD;
-&lt;/p>&lt;br /></body>
+        <body>Code identifying the gender of the individual.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_x_4mUFOnEd-wEdo_Dk3J9g" name="1" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_x_4mUVOnEd-wEdo_Dk3J9g" annotatedElement="_x_4mUFOnEd-wEdo_Dk3J9g">
-          <body>&lt;p>&#xD;
-    Male&#xD;
-&lt;/p></body>
+          <body>Male</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_x_4mUlOnEd-wEdo_Dk3J9g" name="2" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_x_4mU1OnEd-wEdo_Dk3J9g" annotatedElement="_x_4mUlOnEd-wEdo_Dk3J9g">
-          <body>&lt;p>&#xD;
-    Female&lt;br />&#xD;
-&lt;/p></body>
+          <body>Female</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_x_4mVFOnEd-wEdo_Dk3J9g" name="0" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_x_4mVVOnEd-wEdo_Dk3J9g" annotatedElement="_x_4mVFOnEd-wEdo_Dk3J9g">
-          <body>&lt;p>&#xD;
-    Not Specified or Unknown&#xD;
-&lt;/p></body>
+          <body>Not Specified or Unknown</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
@@ -16512,7 +16605,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_fA9JsCxAEd-8mcmtGejV_Q" name="99" classifier="_fAgdwCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fA9JsSxAEd-8mcmtGejV_Q">
-          <body>Other -Different from  those implied or specified</body>
+          <body>Other -Different from those implied or specified</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
@@ -16718,19 +16811,17 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_fCmIcyxAEd-8mcmtGejV_Q" name="007" classifier="_fB_rgyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fCmIdCxAEd-8mcmtGejV_Q">
-          <body>Dollar Volume-The total dollar amount paid for a given drug or drug class in a given period of time, calculated as agreed to between parties or further defined via the  contract document between trading partners.</body>
+          <body>Dollar Volume-The total dollar amount paid for a given drug or drug class in a given period of time, calculated as agreed to between parties or further defined via the contract document between trading partners.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_fCvSYSxAEd-8mcmtGejV_Q" name="008" classifier="_fB_rgyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fCvSYixAEd-8mcmtGejV_Q">
-          <body>Dosage Guarantee-The type of rebate
- payment requested by the PMO of the PICO where the rebate amount is calculated based upon the number of units dispensed or market share percentage of a certain product’s dosage. The rebate amount to be paid for the number of units dispensed at a certain dose or the market share to be achieved at a certain dosage calculated as agreed to between parties or further defined via the contract document between trading partners.</body>
+          <body>Dosage Guarantee-The type of rebate payment requested by the PMO of the PICO where the rebate amount is calculated based upon the number of units dispensed or market share percentage of a certain product’s dosage. The rebate amount to be paid for the number of units dispensed at a certain dose or the market share to be achieved at a certain dosage calculated as agreed to between parties or further defined via the contract document between trading partners.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_fCvSZCxAEd-8mcmtGejV_Q" name="009" classifier="_fB_rgyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fCvSZSxAEd-8mcmtGejV_Q">
-          <body>Fixed Discount- Term used to identify the type of rebate (discount) negotiated between trading partners. The fixed discount is a predetermined or set amount that is
- independent of volume or market share (also knows as flat rebate), calculated as agreed to between parties or further defined via the contract document between trading partners.</body>
+          <body>Fixed Discount- Term used to identify the type of rebate (discount) negotiated between trading partners. The fixed discount is a predetermined or set amount that is independent of volume or market share (also knows as flat rebate), calculated as agreed to between parties or further defined via the contract document between trading partners.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_fC5DYSxAEd-8mcmtGejV_Q" name="010" classifier="_fB_rgyxAEd-8mcmtGejV_Q">
@@ -16770,7 +16861,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_fDe5QCxAEd-8mcmtGejV_Q" name="017" classifier="_fB_rgyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fDe5QSxAEd-8mcmtGejV_Q">
-          <body>Performance-Based - Rebates are determined  based on performance indicators such as sales growth, compliance, or market share, etc., calculated as agreed to between parties  or further defined via the contract document between trading partners.</body>
+          <body>Performance-Based - Rebates are determined based on performance indicators such as sales growth, compliance, or market share, etc., calculated as agreed to between parties or further defined via the contract document between trading partners.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_fDe5QyxAEd-8mcmtGejV_Q" name="018" classifier="_fB_rgyxAEd-8mcmtGejV_Q">
@@ -17305,7 +17396,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_fLY4ESxAEd-8mcmtGejV_Q" name="13" classifier="_fKMlQyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fLY4EixAEd-8mcmtGejV_Q">
-          <body>Digoxin—laboratory  test measuring the amount of this drug in blood</body>
+          <body>Digoxin—laboratory test measuring the amount of this drug in blood</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_fLY4FCxAEd-8mcmtGejV_Q" name="14" classifier="_fKMlQyxAEd-8mcmtGejV_Q">
@@ -17370,7 +17461,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_fMbZ5CxAEd-8mcmtGejV_Q" name="26" classifier="_fKMlQyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fMbZ5SxAEd-8mcmtGejV_Q">
-          <body>White Blood Cell Count (WBC)—laboratory test measuring  the number of leucocytes in whole blood</body>
+          <body>White Blood Cell Count (WBC)—laboratory test measuring the number of leucocytes in whole blood</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_fMlK4SxAEd-8mcmtGejV_Q" name="27" classifier="_fKMlQyxAEd-8mcmtGejV_Q">
@@ -17405,7 +17496,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_fNnstCxAEd-8mcmtGejV_Q" name="33" classifier="_fKMlQyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fNnstSxAEd-8mcmtGejV_Q">
-          <body>T-Cell Count—laboratory test measuring the number of  white blood cells that are T-cells</body>
+          <body>T-Cell Count—laboratory test measuring the number of white blood cells that are T-cells</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_fNxdsSxAEd-8mcmtGejV_Q" name="34" classifier="_fKMlQyxAEd-8mcmtGejV_Q">
@@ -18168,7 +18259,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_h2AEMCxAEd-8mcmtGejV_Q" name="MultipleSiteofAdministrationTimingModifierSIGSegment" visibility="private">
       <ownedComment xmi:id="_h2AEMSxAEd-8mcmtGejV_Q">
-        <body>Used  to express when there is more than one site as to whether the sites are all required (AND) for use or excluded from use (NOT) or if any of the sites can be used (OR).</body>
+        <body>Used to express when there is more than one site as to whether the sites are all required (AND) for use or excluded from use (NOT) or if any of the sites can be used (OR).</body>
       </ownedComment>
       <ownedLiteral xmi:id="_h2AENCxAEd-8mcmtGejV_Q" name="AND" classifier="_h2AEMCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_h2AENSxAEd-8mcmtGejV_Q">
@@ -18342,7 +18433,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_66tNMC1QEd-8mcmtGejV_Q" name="H" classifier="_66HXUC1QEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_66tNMS1QEd-8mcmtGejV_Q">
-          <body>HIBCC HIN- A 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities.  The number is assigned by HIBCC. </body>
+          <body>HIBCC HIN- A 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities.  The number is assigned by HIBCC.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_66tNMy1QEd-8mcmtGejV_Q" name="M" classifier="_66HXUC1QEd-8mcmtGejV_Q">
@@ -18387,7 +18478,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_6i1jwy0kEd-8mcmtGejV_Q" name="H" classifier="_6iio0C0kEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_6i1jxC0kEd-8mcmtGejV_Q">
-          <body>HIBCC HIN- A 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities.  The number is assigned by HIBCC. </body>
+          <body>HIBCC HIN- A 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities.  The number is assigned by HIBCC.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_6i-tsS0kEd-8mcmtGejV_Q" name="M" classifier="_6iio0C0kEd-8mcmtGejV_Q">
@@ -18547,7 +18638,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_fZ1jwyxAEd-8mcmtGejV_Q" name="8" classifier="_fZF84SxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fZ1jxCxAEd-8mcmtGejV_Q">
-          <body>Claim is billing for patient financial responsibility only - Copay  is a form of cost sharing that holds the patient responsible for a fixed dollar amount for each product/service received and regardless of the patient’s current benefit status, product selection or network selection.</body>
+          <body>Claim is billing for patient financial responsibility only - Copay is a form of cost sharing that holds the patient responsible for a fixed dollar amount for each product/service received and regardless of the patient’s current benefit status, product selection or network selection.</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
@@ -18602,8 +18693,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_fau7oyxAEd-8mcmtGejV_Q" name="09" classifier="_fZ_UwCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fau7pCxAEd-8mcmtGejV_Q">
-          <body>Compound Preparation Cost - the amount paid
- for the preparation of the compound</body>
+          <body>Compound Preparation Cost - the amount paid for the preparation of the compound</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_fa4soSxAEd-8mcmtGejV_Q" name="98" classifier="_fZ_UwCxAEd-8mcmtGejV_Q">
@@ -18793,7 +18883,7 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_femvAyxAEd-8mcmtGejV_Q" name="04" classifier="_feT0ECxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_femvBCxAEd-8mcmtGejV_Q">
-          <body>Amount Exceeding Periodic Benefit Maximum (520-FK) as reported by previous payer. A dollar value of the portion of the copay which the member is required to pay due to a benefit cap/maximum being met or  exceeded.</body>
+          <body>Amount Exceeding Periodic Benefit Maximum (520-FK) as reported by previous payer. A dollar value of the portion of the copay which the member is required to pay due to a benefit cap/maximum being met or exceeded.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_fewgASxAEd-8mcmtGejV_Q" name="05" classifier="_feT0ECxAEd-8mcmtGejV_Q">
@@ -19098,11 +19188,11 @@ reconstituting) for an individual patient in response to a licensed practitioner
       </ownedLiteral>
       <ownedLiteral xmi:id="_fkRSICxAEd-8mcmtGejV_Q" name="4" classifier="_fj0mMCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_fkRSISxAEd-8mcmtGejV_Q">
-          <body>Other - Relationship to cardholder is not  precise</body>
+          <body>Other - Relationship to cardholder is not precise</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fkRSIyxAEd-8mcmtGejV_Q" name="PatientResidence" visibility="private">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fkRSIyxAEd-8mcmtGejV_Q" name="PatientResidenceCode" visibility="private">
       <ownedComment xmi:id="_fkRSJCxAEd-8mcmtGejV_Q">
         <body>Code identifying the patient’s place of residence.</body>
       </ownedComment>
@@ -20350,8 +20440,7 @@ A health insurance plan in which the insured person receives discounted prescrip
       </ownedLiteral>
       <ownedLiteral xmi:id="_f6xGkyxAEd-8mcmtGejV_Q" name="05" classifier="_f6UapCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_f6xGlCxAEd-8mcmtGejV_Q">
-          <body>Medicaid = a number assigned to a provider by a state Medicaid agency.  Each state has a unique identifier. Medicaid is a program established pursuant to Title XIX of the Social Security Act to provide medical benefits for certain categories of low-income individuals. The program provides benefits to indigent and disabled individuals and members of families 
-receiving Aid to Families with Dependent Children. States have the option to provide benefits to a broader range of individuals. The program is a cooperative arrangement between the federal government and the states, under which both the federal government and a participating state contribute financial support. The state, however, retains a considerable amount of discretion over the operation and administration of the program, and has the right to determine the benefits to be provided, rules for eligibility, rates of payment for  services and other matters, as long as broad regulatory guidelines established by the federal government are followed.</body>
+          <body>Medicaid = a number assigned to a provider by a state Medicaid agency.  Each state has a unique identifier. Medicaid is a program established pursuant to Title XIX of the Social Security Act to provide medical benefits for certain categories of low-income individuals. The program provides benefits to indigent and disabled individuals and members of families receiving Aid to Families with Dependent Children. States have the option to provide benefits to a broader range of individuals. The program is a cooperative arrangement between the federal government and the states, under which both the federal government and a participating state contribute financial support. The state, however, retains a considerable amount of discretion over the operation and administration of the program, and has the right to determine the benefits to be provided, rules for eligibility, rates of payment for services and other matters, as long as broad regulatory guidelines established by the federal government are followed.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_f663kCxAEd-8mcmtGejV_Q" name="06" classifier="_f6UapCxAEd-8mcmtGejV_Q">
@@ -20381,7 +20470,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_f7NyhCxAEd-8mcmtGejV_Q" name="11" classifier="_f6UapCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_f7NyhSxAEd-8mcmtGejV_Q">
-          <body>Federal Tax ID = a 9-digit number assigned by  the Internal Revenue Service to sole proprietors, corporations, partnerships, estates, trusts, and other entities for the purpose of tax filing and reporting.</body>
+          <body>Federal Tax ID = a 9-digit number assigned by the Internal Revenue Service to sole proprietors, corporations, partnerships, estates, trusts, and other entities for the purpose of tax filing and reporting.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_f7XjgSxAEd-8mcmtGejV_Q" name="12" classifier="_f6UapCxAEd-8mcmtGejV_Q">
@@ -20396,7 +20485,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_f7gtcyxAEd-8mcmtGejV_Q" name="14" classifier="_f6UapCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_f7gtdCxAEd-8mcmtGejV_Q">
-          <body>Plan Specific = a unique proprietary number assigned by a commercial health care plan to a provider of  service.</body>
+          <body>Plan Specific = a unique proprietary number assigned by a commercial health care plan to a provider of service.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_f7qecCxAEd-8mcmtGejV_Q" name="15" classifier="_f6UapCxAEd-8mcmtGejV_Q">
@@ -21710,7 +21799,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_h3MXASxAEd-8mcmtGejV_Q" name="PriorAuthorizationStatus" visibility="private">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_h3MXASxAEd-8mcmtGejV_Q" name="PriorAuthorizationStatus">
       <ownedComment xmi:id="_h3MXAixAEd-8mcmtGejV_Q">
         <body>The status of the prescription’s prior authorization as known by the sender.</body>
       </ownedComment>
@@ -22091,7 +22180,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_67TqIC1QEd-8mcmtGejV_Q" name="01" classifier="_67AIJC1QEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_67TqIS1QEd-8mcmtGejV_Q">
-          <body>National Provider Identifier (NPI) = a standard unique health identifier for health care providers. The NPI is a 10 position numeric identifier with a check digit in the 10th position and is assigned by the National Provider System (NPS).  </body>
+          <body>National Provider Identifier (NPI) = a standard unique health identifier for health care providers. The NPI is a 10 position numeric identifier with a check digit in the 10th position and is assigned by the National Provider System (NPS).</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_67TqIy1QEd-8mcmtGejV_Q" name="02" classifier="_67AIJC1QEd-8mcmtGejV_Q">
@@ -22136,7 +22225,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_68DRAC1QEd-8mcmtGejV_Q" name="10" classifier="_67AIJC1QEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_68DRAS1QEd-8mcmtGejV_Q">
-          <body>Health Industry Number (HIN) = a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC.  </body>
+          <body>Health Industry Number (HIN) = a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_68DRAy1QEd-8mcmtGejV_Q" name="11" classifier="_67AIJC1QEd-8mcmtGejV_Q">
@@ -22151,7 +22240,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_68Ma9C1QEd-8mcmtGejV_Q" name="13" classifier="_67AIJC1QEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_68Ma9S1QEd-8mcmtGejV_Q">
-          <body>State Issued = a unique number issued by a state program or organization other than Medicaid, to a provider of service. </body>
+          <body>State Issued = a unique number issued by a state program or organization other than Medicaid, to a provider of service.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_68WL8S1QEd-8mcmtGejV_Q" name="14" classifier="_67AIJC1QEd-8mcmtGejV_Q">
@@ -22186,7 +22275,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_6jbZpC0kEd-8mcmtGejV_Q" name="01" classifier="_6jSPsS0kEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_6jbZpS0kEd-8mcmtGejV_Q">
-          <body>National Provider Identifier (NPI) = a standard unique health identifier for health care providers. The NPI is a 10 position numeric identifier with a check digit in the 10th position and is assigned by the National Provider System (NPS).  </body>
+          <body>National Provider Identifier (NPI) = a standard unique health identifier for health care providers. The NPI is a 10 position numeric identifier with a check digit in the 10th position and is assigned by the National Provider System (NPS).</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_6jlKoS0kEd-8mcmtGejV_Q" name="02" classifier="_6jSPsS0kEd-8mcmtGejV_Q">
@@ -22231,7 +22320,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_6kLAhC0kEd-8mcmtGejV_Q" name="10" classifier="_6jSPsS0kEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_6kLAhS0kEd-8mcmtGejV_Q">
-          <body>Health Industry Number (HIN) = a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC.  </body>
+          <body>Health Industry Number (HIN) = a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_6kUxgS0kEd-8mcmtGejV_Q" name="11" classifier="_6jSPsS0kEd-8mcmtGejV_Q">
@@ -22246,7 +22335,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_6keigy0kEd-8mcmtGejV_Q" name="13" classifier="_6jSPsS0kEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_6keihC0kEd-8mcmtGejV_Q">
-          <body>State Issued = a unique number issued by a state program or organization other than Medicaid, to a provider of service. </body>
+          <body>State Issued = a unique number issued by a state program or organization other than Medicaid, to a provider of service.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_6knscC0kEd-8mcmtGejV_Q" name="14" classifier="_6jSPsS0kEd-8mcmtGejV_Q">
@@ -23955,12 +24044,10 @@ receiving Aid to Families with Dependent Children. States have the option to pro
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_giGzYSxAEd-8mcmtGejV_Q" name="RejectCode" visibility="private">
       <ownedComment xmi:id="_giGzYixAEd-8mcmtGejV_Q" annotatedElement="_giGzYSxAEd-8mcmtGejV_Q">
-        <body>&lt;p>&#xD;
-    Code&amp;nbsp;indicating&amp;nbsp;the&amp;nbsp;error&amp;nbsp;encountered.&#xD;
-&lt;/p>&lt;br />&#xD;
-&lt;p>&#xD;
-    001|002|003|004|005|006|007|008|009|010|011|012|013|014|015|016|017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034|035|036|037|038|039|040|041|042|043|044|045|046|047|048|049|050|051|052|053|054|055|056|057|058|059|060|061|062|063|064|065|066|067|068|069|070|071|072|073|074|075|076|077|078|079|080|081|082|083|084|085|086|087|088|089|090|091|092|093|094|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119|120|121|122|123|124|125|126|127|128|129|130|131|132|133|134|135|136|137|138|139|140|141|142|143|144|145|146|147|148|149|150|151|152|153|154|155|156|157|158|159|160|161|162|163|164|165|166|167|168|169|170|171|172|173|174|175|176|177|178|179|180|181|182|183|184|185|186|187|188|189|190|191|192|193|194|195|196|197|198|199|200|201|202|203|204|205|206|207|208|209|210|211|212|213|214|215|216|217|218|219|220|221|222|223|224|225|226|227|228|229|230|231|232|233|234|235|236|237|238|239|240|241|242|243|244|245|246|247|248|249|250|251|252|253|254|255|256|257|257|258|259|260|261|262|263|264|265|266|267|268|269|270|271|272|273|274|275|276|277|278|279|280|281|282|283|284|285|286|287|288|289|290|291|292|293|294|295|296|297|298|299|300|301|302|303|304|305|306|307|308|309|310|311|312|313|314|315|316|317|318|319|320|321|322|323|324|325|326|327|328|329|330|331|332|333|334|335|336|337|338|339|340|341|342|343|344|345|346|347|348|349|350|351|352|353|354|355|356|357|358|359|360|361|362|363|364|365|366|367|368|369|370|371|372|373|374|375|376|377|378|379|380|381|382|383|384|385|386|387|388|389|390|391|392|393|394|395|396|397|398|399|400|401|402|403|404|405|406|407|408|409|410|411|412|413|414|415|416|417|418|419|420|421|422|423|424|425|426|427|428|429|430|431|432|433|434|435|436|437|438|439|440|441|442|443|444|445|446|447|448|449|450|451|452|453|454|455|456|457|458|459|460|461|462|463|464|465|466|467|468|469|470|471|472|473|474|475|476|477|478|479|480&#xD;
-&lt;/p></body>
+        <body>Code indicating the error encountered.&#xD;
+&#xD;
+&#xD;
+    001|002|003|004|005|006|007|008|009|010|011|012|013|014|015|016|017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032|033|034|035|036|037|038|039|040|041|042|043|044|045|046|047|048|049|050|051|052|053|054|055|056|057|058|059|060|061|062|063|064|065|066|067|068|069|070|071|072|073|074|075|076|077|078|079|080|081|082|083|084|085|086|087|088|089|090|091|092|093|094|095|096|097|098|099|100|101|102|103|104|105|106|107|108|109|110|111|112|113|114|115|116|117|118|119|120|121|122|123|124|125|126|127|128|129|130|131|132|133|134|135|136|137|138|139|140|141|142|143|144|145|146|147|148|149|150|151|152|153|154|155|156|157|158|159|160|161|162|163|164|165|166|167|168|169|170|171|172|173|174|175|176|177|178|179|180|181|182|183|184|185|186|187|188|189|190|191|192|193|194|195|196|197|198|199|200|201|202|203|204|205|206|207|208|209|210|211|212|213|214|215|216|217|218|219|220|221|222|223|224|225|226|227|228|229|230|231|232|233|234|235|236|237|238|239|240|241|242|243|244|245|246|247|248|249|250|251|252|253|254|255|256|257|257|258|259|260|261|262|263|264|265|266|267|268|269|270|271|272|273|274|275|276|277|278|279|280|281|282|283|284|285|286|287|288|289|290|291|292|293|294|295|296|297|298|299|300|301|302|303|304|305|306|307|308|309|310|311|312|313|314|315|316|317|318|319|320|321|322|323|324|325|326|327|328|329|330|331|332|333|334|335|336|337|338|339|340|341|342|343|344|345|346|347|348|349|350|351|352|353|354|355|356|357|358|359|360|361|362|363|364|365|366|367|368|369|370|371|372|373|374|375|376|377|378|379|380|381|382|383|384|385|386|387|388|389|390|391|392|393|394|395|396|397|398|399|400|401|402|403|404|405|406|407|408|409|410|411|412|413|414|415|416|417|418|419|420|421|422|423|424|425|426|427|428|429|430|431|432|433|434|435|436|437|438|439|440|441|442|443|444|445|446|447|448|449|450|451|452|453|454|455|456|457|458|459|460|461|462|463|464|465|466|467|468|469|470|471|472|473|474|475|476|477|478|479|480</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_giQkZCxAEd-8mcmtGejV_Q" name="RejectOverrideCode" visibility="private">
@@ -24044,8 +24131,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedComment>
       <ownedLiteral xmi:id="_gjvyISxAEd-8mcmtGejV_Q" name="AL" classifier="_gjmoMSxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_gjvyIixAEd-8mcmtGejV_Q">
-          <body>Age Limits - Indicator used to convey that age constraints apply to the coverage of the specified product or list of products, to limit use to certain populations based on cost and availability of appropriate alternative therapies.
-</body>
+          <body>Age Limits - Indicator used to convey that age constraints apply to the coverage of the specified product or list of products, to limit use to certain populations based on cost and availability of appropriate alternative therapies.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_gjvyJCxAEd-8mcmtGejV_Q" name="CP" classifier="_gjmoMSxAEd-8mcmtGejV_Q">
@@ -24104,7 +24190,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gky7ACxAEd-8mcmtGejV_Q" name="RouteOfAdministration" visibility="private">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gky7ACxAEd-8mcmtGejV_Q" name="RouteOfAdministration">
       <ownedComment xmi:id="_gky7ASxAEd-8mcmtGejV_Q">
         <body>This is an override to the 'default' route referenced for the product. For a multi-ingredient compound, it is the route of the complete compound mixture.</body>
       </ownedComment>
@@ -24450,8 +24536,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedComment>
       <ownedLiteral xmi:id="_grf_8SxAEd-8mcmtGejV_Q" name="1" classifier="_grWO8SxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_grf_8ixAEd-8mcmtGejV_Q">
-          <body>Employee ID as determined by the employer
-</body>
+          <body>Employee ID as determined by the employer</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
@@ -24461,8 +24546,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedComment>
       <ownedLiteral xmi:id="_grpJ4ixAEd-8mcmtGejV_Q" name="See Section II - Appendix L - PROVIDER IDENTIFICATION CODE VALUES" classifier="_grf_9CxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_grpJ4yxAEd-8mcmtGejV_Q">
-          <body>Employee ID as determined by the employer
-</body>
+          <body>Employee ID as determined by the employer</body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
@@ -24498,8 +24582,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_iw3J8SxAEd-8mcmtGejV_Q" name="ServiceTypeCoded">
       <ownedComment xmi:id="_iw3J8ixAEd-8mcmtGejV_Q">
-        <body>Medication list contains all current medication orders as of the current date and time of the response, for the patient indicated. Current status is determined by the point of care responder. 'Current' is medication orders which have not been discontinued.
-</body>
+        <body>Medication list contains all current medication orders as of the current date and time of the response, for the patient indicated. Current status is determined by the point of care responder. 'Current' is medication orders which have not been discontinued.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_ixA68SxAEd-8mcmtGejV_Q" name="C" classifier="_iw3J8SxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_ixA68ixAEd-8mcmtGejV_Q">
@@ -25269,7 +25352,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_g1LgYyxAEd-8mcmtGejV_Q" name="F" classifier="_g0u0cyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_g1LgZCxAEd-8mcmtGejV_Q">
-          <body>PA Deferred - Code indicating that the prior authorization transaction  cannot be processed until additional information is obtained</body>
+          <body>PA Deferred - Code indicating that the prior authorization transaction cannot be processed until additional information is obtained</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_g1VRYSxAEd-8mcmtGejV_Q" name="P" classifier="_g0u0cyxAEd-8mcmtGejV_Q">
@@ -25359,12 +25442,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_g20fISxAEd-8mcmtGejV_Q" name="D" classifier="_g2rVMCxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_g20fIixAEd-8mcmtGejV_Q" annotatedElement="_g20fISxAEd-8mcmtGejV_Q">
-          <body>&lt;p>&#xD;
-    Delete&amp;nbsp;-&amp;nbsp;Remove&amp;nbsp;the&amp;nbsp;existing&amp;nbsp;file&#xD;
-&lt;/p>&#xD;
-&lt;p>&#xD;
-    Deletion&amp;nbsp;of&amp;nbsp;a&amp;nbsp;previous&amp;nbsp;batch&amp;nbsp;-&amp;nbsp;Removal&amp;nbsp;of&amp;nbsp;a&amp;nbsp;previously&amp;nbsp;submitted&amp;nbsp;batch&#xD;
-&lt;/p></body>
+          <body>Delete - Remove the existing file Deletion of a previous batch - Removal of a previously submitted batch</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_g20fJCxAEd-8mcmtGejV_Q" name="U" classifier="_g2rVMCxAEd-8mcmtGejV_Q">
@@ -25434,7 +25512,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_g4Ki8CxAEd-8mcmtGejV_Q" name="MR" classifier="_g33oAyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_g4Ki8SxAEd-8mcmtGejV_Q">
-          <body>Medication - Identifies the drugs that are  present in the Fill Records (FR))</body>
+          <body>Medication - Identifies the drugs that are present in the Fill Records (FR))</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_g4Ki8yxAEd-8mcmtGejV_Q" name="ZX" classifier="_g33oAyxAEd-8mcmtGejV_Q">
@@ -25449,7 +25527,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       </ownedLiteral>
       <ownedLiteral xmi:id="_g4Ts4yxAEd-8mcmtGejV_Q" name="RX" classifier="_g33oAyxAEd-8mcmtGejV_Q">
         <ownedComment xmi:id="_g4Ts5CxAEd-8mcmtGejV_Q">
-          <body>Prescription - Records that contain mandatory information used to identify information  such as prescribed and dispensed information, compound code, etc.</body>
+          <body>Prescription - Records that contain mandatory information used to identify information such as prescribed and dispensed information, compound code, etc.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_g4dd4SxAEd-8mcmtGejV_Q" name="FR" classifier="_g33oAyxAEd-8mcmtGejV_Q">
@@ -25795,42 +25873,24 @@ receiving Aid to Families with Dependent Children. States have the option to pro
       <generalization xmi:id="_zWlOwDEREd-8rpqfOAePKg" general="_idVxASxAEd-8mcmtGejV_Q"/>
       <ownedLiteral xmi:id="_rq1rIDEREd-8rpqfOAePKg" name="LD" classifier="_rq1rEDEREd-8rpqfOAePKg">
         <ownedComment xmi:id="_rq1rITEREd-8rpqfOAePKg" annotatedElement="_rq1rIDEREd-8rpqfOAePKg">
-          <body>&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 0pt; mso-layout-grid-align: none&quot;>&lt;SPAN style=&quot;FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial&quot;>SNOMED - &lt;U>S&lt;/U>ystematized Nomenclature of Medicine Clinical Terms&lt;SPAN style=&quot;POSITION: relative; TOP: -3pt; mso-text-raise: 3.0pt; mso-bidi-font-weight: bold&quot;>®&lt;/SPAN>&lt;SPAN style=&quot;mso-spacerun: yes&quot;>&amp;nbsp;&lt;/SPAN>(SNOMED CT)&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; />&lt;o:p>&lt;/o:p>&lt;/SPAN>&lt;/P>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>SNOMED CT® terminology which is available from the &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>Health Terminology Standards Development Organisation (IHTSDO)&lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;> &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>&lt;A href=&quot;http://www.ihtsdo.org/snomed-ct/&quot;>&lt;U>&lt;FONT color=#0000ff>http://www.ihtsdo.org/snomed-ct/&lt;/FONT>&lt;/U>&lt;/A>&lt;/SPAN></body>
+          <body>&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 0pt; mso-layout-grid-align: none&quot;>&lt;SPAN style=&quot;FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial&quot;>SNOMED - &lt;U>S&lt;/U>ystematized Nomenclature of Medicine Clinical Terms&lt;SPAN style=&quot;POSITION: relative; TOP: -3pt; mso-text-raise: 3.0pt; mso-bidi-font-weight: bold&quot;>®&lt;/SPAN>&lt;SPAN style=&quot;mso-spacerun: yes&quot;> &lt;/SPAN>(SNOMED CT)&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; />&lt;o:p>&lt;/o:p>&lt;/SPAN>&lt;/P>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>SNOMED CT® terminology which is available from the &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>Health Terminology Standards Development Organisation (IHTSDO)&lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;> &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>&lt;A href=&quot;http://www.ihtsdo.org/snomed-ct/&quot;>&lt;U>&lt;FONT color=#0000ff>http://www.ihtsdo.org/snomed-ct/&lt;/FONT>&lt;/U>&lt;/A>&lt;/SPAN></body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_rq1rIjEREd-8rpqfOAePKg" name="DX" classifier="_rq1rEDEREd-8rpqfOAePKg">
         <ownedComment xmi:id="_rq1rIzEREd-8rpqfOAePKg" annotatedElement="_rq1rIjEREd-8rpqfOAePKg">
-          <body>&lt;p>&#xD;
-    &lt;span&#xD;
-    style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International&#xD;
-    Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is&#xD;
-    defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a&#xD;
-    statistical classification system that arranges diseases and injuries into groups according to established criteria.&#xD;
-    Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World&#xD;
-    Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;span&#xD;
-    style=&quot;mso-spacerun: yes&quot;>&amp;nbsp;&lt;/span>&lt;/span>&#xD;
-&lt;/p></body>
+          <body>&lt;span style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria.&#xD;
+    Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;span style=&quot;mso-spacerun: yes&quot;> &lt;/span>&lt;/span></body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_rq1rJDEREd-8rpqfOAePKg" name="ABF" classifier="_rq1rEDEREd-8rpqfOAePKg">
         <ownedComment xmi:id="_rq1rJTEREd-8rpqfOAePKg" annotatedElement="_rq1rJDEREd-8rpqfOAePKg">
-          <body>&lt;p>&#xD;
-    &lt;span&#xD;
-    style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International&#xD;
-    Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a&#xD;
-    diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from&#xD;
-    death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#xD;
-    (ICD-9-CM)&lt;/span>&lt;span&#xD;
-    style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>is&#xD;
-    a statistical classification system that arranges diseases and injuries into groups according to established criteria.&#xD;
-    The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes&#xD;
-    are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid&#xD;
-    Services.&lt;b>&lt;span style=&quot;mso-spacerun: yes&quot;>&amp;nbsp;&lt;/span>&lt;/b>&lt;/span>&#xD;
-&lt;/p></body>
+          <body>&lt;span style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#xD;
+    (ICD-9-CM)&lt;/span>&lt;span style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>is a statistical classification system that arranges diseases and injuries into groups according to established criteria.&#xD;
+    The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;b>&lt;span style=&quot;mso-spacerun: yes&quot;> &lt;/span>&lt;/b>&lt;/span></body>
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_k3rbkDEZEd-8rpqfOAePKg" name="OrderCaptureMethod" visibility="private">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_k3rbkDEZEd-8rpqfOAePKg" name="OrderCaptureMethod">
       <ownedLiteral xmi:id="_3kijUDEZEd-8rpqfOAePKg" name="EP" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
       <ownedLiteral xmi:id="_6qlHMDEZEd-8rpqfOAePKg" name="|VT" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
       <ownedLiteral xmi:id="_8nmNgDEZEd-8rpqfOAePKg" name="|VI" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
@@ -26391,8 +26451,7 @@ receiving Aid to Families with Dependent Children. States have the option to pro
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_h9dN4FOOEd-wEdo_Dk3J9g" name="Terminologies">
       <ownedComment xmi:id="_ppIjgFO3Ed-wEdo_Dk3J9g" annotatedElement="_h9dN4FOOEd-wEdo_Dk3J9g">
-        <body>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with&#xD;
-the NCPDP standard</body>
+        <body>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</body>
       </ownedComment>
       <generalization xmi:id="_h9dN4lOOEd-wEdo_Dk3J9g" general="_USTewCx5Ed-8mcmtGejV_Q"/>
       <ownedLiteral xmi:id="_h9dN41OOEd-wEdo_Dk3J9g" name="ND" classifier="_h9dN4FOOEd-wEdo_Dk3J9g">
@@ -26437,23 +26496,23 @@ the NCPDP standard</body>
       </ownedLiteral>
       <ownedLiteral xmi:id="_h9dN81OOEd-wEdo_Dk3J9g" name="DX" classifier="_h9dN4FOOEd-wEdo_Dk3J9g">
         <ownedComment xmi:id="_ASIJoFO4Ed-wEdo_Dk3J9g" annotatedElement="_h9dN81OOEd-wEdo_Dk3J9g">
-          <body>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the&#xD;
-diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification&#xD;
-(ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established&#xD;
-criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World&#xD;
-Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
+          <body>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification&#xD;
+(ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_h9dN9VOOEd-wEdo_Dk3J9g" name="ABF" classifier="_h9dN4FOOEd-wEdo_Dk3J9g">
         <ownedComment xmi:id="_9HKpgFO3Ed-wEdo_Dk3J9g" annotatedElement="_h9dN9VOOEd-wEdo_Dk3J9g">
-          <body>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following&#xD;
-information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify&#xD;
-mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#xD;
-(ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established&#xD;
-criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The&#xD;
-codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
+          <body>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#xD;
+(ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
         </ownedComment>
       </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dx0jEGQlEd-ODMSOo4sPFQ" name="DrugAdminReasonCode">
+      <ownedLiteral xmi:id="_kT8zUGQlEd-ODMSOo4sPFQ" name="01" classifier="_dx0jEGQlEd-ODMSOo4sPFQ"/>
+      <ownedLiteral xmi:id="_mMDkcGQlEd-ODMSOo4sPFQ" name="02" classifier="_dx0jEGQlEd-ODMSOo4sPFQ"/>
+      <ownedLiteral xmi:id="_n9JuoGQlEd-ODMSOo4sPFQ" name="03" classifier="_dx0jEGQlEd-ODMSOo4sPFQ"/>
+      <ownedLiteral xmi:id="_pQTYkGQlEd-ODMSOo4sPFQ" name="04" classifier="_dx0jEGQlEd-ODMSOo4sPFQ"/>
+      <ownedLiteral xmi:id="_qv90gGQlEd-ODMSOo4sPFQ" name="05" classifier="_dx0jEGQlEd-ODMSOo4sPFQ"/>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
