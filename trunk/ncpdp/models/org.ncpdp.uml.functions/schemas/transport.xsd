@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/Transport" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ECL" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:transport="http://www.ncpdp.org/schema/Transport" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/Transport" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:transport="http://www.ncpdp.org/schema/Transport" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
-  <xsd:import namespace="http://www.ncpdp.org/schema/ECL" schemaLocation="ecl.xsd"/>
+  <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/SCRIPT" schemaLocation="script.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/functions" schemaLocation="functions.xsd"/>
   <xsd:element name="Message" type="transport:MessageType"/>
@@ -19,7 +19,7 @@
       <xsd:element name="Census" type="functions:Census"/>
       <xsd:element name="DrugAdminstration" type="SCRIPT:DrugAdminstration"/>
       <xsd:element name="NewRx" type="SCRIPT:NewRx"/>
-      <xsd:element name="MTMServIceRequest" type="functions:MTMServIceRequest"/>
+      <xsd:element name="MTMServIceRequest" type="functions:MTMServiceRequest"/>
       <xsd:element name="MTMServiceResponse" type="functions:MTMServiceResponse"/>
       <xsd:element name="RefillRequest" type="SCRIPT:RefillRequest"/>
       <xsd:element name="RefillResponse" type="SCRIPT:RefillResponse"/>
@@ -36,7 +36,7 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Error">
     <xsd:sequence>
-      <xsd:element name="Code" type="ecl:StatusTypecoded"/>
+      <xsd:element name="Code" type="ecl:ErrorCode"/>
       <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:CodeListQualifierRejectCodeSTSSegment"/>
       <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
     </xsd:sequence>
@@ -46,6 +46,8 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="GetMessage">
     <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element name="GetMessage" type="datatypes:an"/>
     </xsd:sequence>
   </xsd:complexType>

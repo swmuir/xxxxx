@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/functions" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:dictionary="http://www.ncpdp.org/schema/dictionary" xmlns:ecl="http://www.ncpdp.org/schema/ECL" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/functions" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:dictionary="http://www.ncpdp.org/schema/dictionary" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
-  <xsd:import namespace="http://www.ncpdp.org/schema/ECL" schemaLocation="ecl.xsd"/>
+  <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/dictionary" schemaLocation="dictionary.xsd"/>
   <xsd:element name="CensusMessage" type="functions:Census"/>
-  <xsd:element name="MTMServiceRequest" type="functions:MTMServIceRequest"/>
+  <xsd:element name="MTMServiceRequest" type="functions:MTMServiceRequest"/>
   <xsd:element name="MTMServiceResponse" type="functions:MTMServiceResponse"/>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  ApprovedType  -->
@@ -36,7 +36,7 @@
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Attachments" type="dictionary:Attachment"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
           <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:CensusBenefitsCoordination"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
@@ -62,7 +62,7 @@
     <xsd:sequence>
       <xsd:element maxOccurs="10" name="ReasonCode" type="datatypes:ReasonCode"/>
       <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="DenialReason" type="datatypes:an..70"/>
+      <xsd:element minOccurs="0" name="DenialReason" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -74,7 +74,7 @@
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Attachments" type="dictionary:Attachment"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="dictionary:OptionalBenefitsCoordination"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
@@ -107,12 +107,27 @@
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Provider" type="dictionary:Provider"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Service" type="functions:ServiceType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Response" type="functions:ResponseType"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  MTMServ iceRequest  -->
+  <!--  MTMResponseType  <<choice>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="MTMServIceRequest">
+  <xsd:complexType name="MTMResponseType">
+    <xsd:complexContent>
+      <xsd:restriction base="functions:ResponseType">
+        <xsd:choice>
+          <xsd:element minOccurs="0" name="Denied" type="functions:DeniedType"/>
+          <xsd:element minOccurs="0" name="Approved" type="functions:ApprovedType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ApprovedWithChanges" type="functions:ApprovedWithChangesType"/>
+        </xsd:choice>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MTMServiceRequest  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MTMServiceRequest">
     <xsd:complexContent>
       <xsd:restriction base="functions:FunctionRequest">
         <xsd:sequence>
@@ -120,14 +135,14 @@
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Attachments" type="dictionary:Attachment"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
+          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:CensusBenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
           <xsd:element name="Patient" type="dictionary:PatientFulll"/>
           <xsd:element minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:MandatoryPharmacy"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
           <xsd:element minOccurs="0" name="Provider" type="dictionary:Provider"/>
           <xsd:element name="Service" type="functions:ServiceType"/>
@@ -149,7 +164,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:Code"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
           <xsd:element name="Patient" type="dictionary:PatientFulll"/>
           <xsd:element minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
@@ -157,19 +172,20 @@
           <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
           <xsd:element minOccurs="0" name="Provider" type="dictionary:Provider"/>
           <xsd:element name="Service" type="functions:ServiceType"/>
+          <xsd:element name="Response" type="functions:MTMResponseType"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  ResponseStatus  -->
+  <!--  ResponseType  <<choice>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="ResponseStatus">
-    <xsd:sequence>
+  <xsd:complexType name="ResponseType">
+    <xsd:choice>
       <xsd:element minOccurs="0" name="Denied" type="functions:DeniedType"/>
       <xsd:element minOccurs="0" name="Approved" type="functions:ApprovedType"/>
       <xsd:element minOccurs="0" name="ApprovedWithChanges" type="functions:ApprovedWithChangesType"/>
-    </xsd:sequence>
+    </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  ServiceType  -->

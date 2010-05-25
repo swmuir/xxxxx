@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/dictionary" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:dictionary="http://www.ncpdp.org/schema/dictionary" xmlns:ecl="http://www.ncpdp.org/schema/ECL" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/dictionary" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:dictionary="http://www.ncpdp.org/schema/dictionary" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
-  <xsd:import namespace="http://www.ncpdp.org/schema/ECL" schemaLocation="ecl.xsd"/>
+  <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  Allergy  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -21,8 +21,9 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Attachment">
     <xsd:sequence>
-      <xsd:element name="AttachmentType" type="datatypes:an..80M"/>
+      <xsd:element name="AttachmentSource" type="xsd:string"/>
       <xsd:element name="AttachmentData" type="xsd:base64Binary"/>
+      <xsd:element name="MIMEType" type="ecl:MTMMIMETypes"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -139,7 +140,7 @@
           <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Consent" type="ecl:ConsentType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -228,7 +229,7 @@
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -323,7 +324,7 @@
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
           <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -371,7 +372,7 @@
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -476,23 +477,6 @@
     </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  MandatorySupervisor  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="MandatorySupervisor">
-    <xsd:complexContent>
-      <xsd:restriction base="dictionary:Supervisor">
-        <xsd:sequence>
-          <xsd:element name="Identification" type="dictionary:ProviderID"/>
-          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
-          <xsd:element name="Name" type="datatypes:NameType"/>
-          <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
-          <xsd:element name="Address" type="datatypes:AddressType"/>
-          <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-        </xsd:sequence>
-      </xsd:restriction>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  Medication  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Medication">
@@ -518,7 +502,7 @@
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RouteofAdministration"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RouteOfAdministration"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -564,7 +548,7 @@
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -625,7 +609,7 @@
       <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
       <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
       <xsd:element minOccurs="0" name="Pharmacist" type="datatypes:NameType"/>
-      <xsd:element minOccurs="0" name="BusinessName" type="datatypes:an..35M"/>
+      <xsd:element name="BusinessName" type="datatypes:an..35M"/>
       <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
       <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
     </xsd:sequence>
@@ -859,7 +843,7 @@
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -1022,10 +1006,10 @@
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration">
+          <xsd:element minOccurs="0" name="RouteOfAdministration">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element minOccurs="0" name="RouteofAdministrationCode">
+                <xsd:element minOccurs="0" name="RouteOfAdministrationCode">
                   <xsd:complexType>
                     <xsd:sequence>
                       <xsd:element name="ItemDescriptionLong" type="xsd:string"/>
@@ -1034,7 +1018,7 @@
                     </xsd:sequence>
                   </xsd:complexType>
                 </xsd:element>
-                <xsd:element minOccurs="0" name="MultipleRouteofAdministrationModifier" type="datatypes:ANDOR"/>
+                <xsd:element minOccurs="0" name="MultipleRouteOfAdministrationModifier" type="datatypes:ANDOR"/>
               </xsd:sequence>
             </xsd:complexType>
           </xsd:element>
@@ -1097,7 +1081,7 @@
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
           <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -1145,7 +1129,7 @@
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -1193,7 +1177,7 @@
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -1238,10 +1222,10 @@
           <xsd:element minOccurs="0" name="PriorAuthorization"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
-          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteofAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
           <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -1363,13 +1347,13 @@
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
-      <xsd:element minOccurs="0" name="RouteofAdministration"/>
-      <xsd:element minOccurs="0" name="SiteofAdministration">
+      <xsd:element minOccurs="0" name="RouteOfAdministration"/>
+      <xsd:element minOccurs="0" name="SiteOfAdministration">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element minOccurs="0" name="SiteofAdministrationText"/>
-            <xsd:element minOccurs="0" name="SiteofAdministrationCodeQualifier" type="datatypes:TerminologyType"/>
-            <xsd:element minOccurs="0" name="SiteofAdministrationCode" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="SiteOfAdministrationText"/>
+            <xsd:element minOccurs="0" name="SiteOfAdministrationCodeQualifier" type="datatypes:TerminologyType"/>
+            <xsd:element minOccurs="0" name="SiteOfAdministrationCode" type="datatypes:an..15"/>
             <xsd:element minOccurs="0" name="MultipleAdministrationTimingModifier" type="datatypes:ANDORNOT"/>
           </xsd:sequence>
         </xsd:complexType>
@@ -1516,6 +1500,23 @@
           <xsd:element name="Name" type="datatypes:NameType"/>
           <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SupervisorMandatoryAddress  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SupervisorMandatoryAddress">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:Supervisor">
+        <xsd:sequence>
+          <xsd:element name="Identification" type="dictionary:ProviderID"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element name="Name" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
+          <xsd:element name="Address" type="datatypes:AddressType"/>
           <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
         </xsd:sequence>
       </xsd:restriction>
