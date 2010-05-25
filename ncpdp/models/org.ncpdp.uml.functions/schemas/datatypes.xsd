@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/datatypes" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ECL" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <xsd:import namespace="http://www.ncpdp.org/schema/ECL" schemaLocation="ecl.xsd"/>
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/datatypes" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  ANDOR  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
