@@ -41,14 +41,6 @@
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  ReasonCode  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:simpleType name="ReasonCode">
-    <xsd:restriction base="xsd:string">
-      <xsd:pattern value="AA|AB|AC|AD|AE|AF|AG|AH|AJ|AK|AL|AM|AN|AO|AP|AQ"/>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  SimpleDateType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="SimpleDateType">
@@ -259,6 +251,19 @@
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CoAgentCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CoAgentCode">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:QualifiedCode">
+        <xsd:sequence>
+          <xsd:element name="Code" type="ecl:Code"/>
+          <xsd:element name="Qualifier" type="ecl:DUECoAgentIDQualifier"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  CommunicationNumbersType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CommunicationNumbersType">
@@ -285,6 +290,29 @@
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DrugDBCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DrugDBCode">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:QualifiedCode">
+        <xsd:sequence>
+          <xsd:element name="Code" type="ecl:Code"/>
+          <xsd:element name="Qualifier" type="ecl:DrugDBQualifiers"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DrugDBCodeWithText  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DrugDBCodeWithText">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
+      <xsd:element minOccurs="0" name="Qualifier" type="ecl:DrugDBQualifiers"/>
+      <xsd:element name="Text" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  MeasurementType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MeasurementType">
@@ -295,6 +323,14 @@
       <xsd:element minOccurs="0" name="MeasurementDataQualifier" type="ecl:MeasurementDataQualifier"/>
       <xsd:element minOccurs="0" name="MeasurementSourceCode" type="ecl:SourceCodeList"/>
       <xsd:element name="MeasurementUnitCode" type="datatypes:an..15"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  NCICode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="NCICode">
+    <xsd:sequence>
+      <xsd:element name="Code" type="ecl:Code"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -329,9 +365,87 @@
     </xsd:simpleContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PriorAuthorizationCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PriorAuthorizationCode">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:QualifiedCode">
+        <xsd:sequence>
+          <xsd:element name="Code" type="ecl:Code"/>
+          <xsd:element name="Qualifier">
+            <xsd:simpleType>
+              <xsd:annotation>
+                <xsd:documentation>Code clarifying the 'Prior Authorization Number Submitted' (462-EV) or benefit/plan exemption.</xsd:documentation>
+              </xsd:annotation>
+              <xsd:restriction base="ecl:Code">
+                <xsd:enumeration value="G1"/>
+                <xsd:enumeration value="PD"/>
+                <xsd:enumeration value="D3"/>
+                <xsd:enumeration value="94"/>
+                <xsd:enumeration value="0B"/>
+                <xsd:enumeration value="1C"/>
+                <xsd:enumeration value="1D"/>
+                <xsd:enumeration value="1E"/>
+                <xsd:enumeration value="1G"/>
+                <xsd:enumeration value="1M"/>
+                <xsd:enumeration value="2U"/>
+                <xsd:enumeration value="BO"/>
+                <xsd:enumeration value="DH"/>
+                <xsd:enumeration value="HI"/>
+                <xsd:enumeration value="NC"/>
+                <xsd:enumeration value="NF"/>
+                <xsd:enumeration value="PF"/>
+                <xsd:enumeration value="SY"/>
+                <xsd:enumeration value="HP"/>
+                <xsd:enumeration value="G1"/>
+                <xsd:enumeration value="ZZ"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ProblemNameCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="ProblemNameCode">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:QualifiedCodeWithText">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+          <xsd:element name="Qualifier" type="ecl:ProblemNameQualifier"/>
+          <xsd:element name="Code" type="ecl:Code"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ProductCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="ProductCode">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:QualifiedCode">
+        <xsd:sequence>
+          <xsd:element name="Code" type="ecl:Code"/>
+          <xsd:element name="Qualifier" type="ecl:ProductCodeQualifiers"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  QualifiedCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="QualifiedCode">
+    <xsd:sequence>
+      <xsd:element name="Code" type="ecl:Code"/>
+      <xsd:element name="Qualifier" type="ecl:Code"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  QualifiedCodeWithText  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="QualifiedCodeWithText">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
       <xsd:element name="Qualifier" type="ecl:Code"/>
@@ -339,14 +453,18 @@
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  ReferenceQualifier1153CodedType  -->
+  <!--  RouteOfAdministrationCodeWithText  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="ReferenceQualifier1153CodedType">
-    <xsd:sequence>
-      <xsd:element name="ItemDescriptionLong" type="xsd:string"/>
-      <xsd:element minOccurs="0" name="ItemNumber" type="ecl:Code"/>
-      <xsd:element minOccurs="0" name="CodeListQualifier" type="ecl:ReferenceQualifierGenericDatabasePriorAuthorizationDRUSegment"/>
-    </xsd:sequence>
+  <xsd:complexType name="RouteOfAdministrationCodeWithText">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:QualifiedCodeWithText">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+          <xsd:element name="Qualifier" type="ecl:TerminologyQualifier"/>
+          <xsd:element name="Code" type="ecl:Code"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  SNOMEDCode  -->
@@ -362,7 +480,7 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SourceQualifiedCode">
     <xsd:complexContent>
-      <xsd:restriction base="datatypes:QualifiedCode">
+      <xsd:restriction base="datatypes:QualifiedCodeWithText">
         <xsd:sequence>
           <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
           <xsd:element name="Qualifier" type="ecl:SourceCodeList"/>
@@ -376,7 +494,7 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="TerminologyQualifiedCode">
     <xsd:complexContent>
-      <xsd:restriction base="datatypes:QualifiedCode">
+      <xsd:restriction base="datatypes:QualifiedCodeWithText">
         <xsd:sequence>
           <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
           <xsd:element name="Qualifier" type="ecl:Terminologies"/>
