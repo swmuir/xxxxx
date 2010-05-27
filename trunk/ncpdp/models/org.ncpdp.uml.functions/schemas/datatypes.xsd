@@ -372,7 +372,36 @@
       <xsd:restriction base="datatypes:QualifiedCode">
         <xsd:sequence>
           <xsd:element name="Code" type="ecl:Code"/>
-          <xsd:element name="Qualifier" type="ecl:PriorAuthorizationTypeCode"/>
+          <xsd:element name="Qualifier">
+            <xsd:simpleType>
+              <xsd:annotation>
+                <xsd:documentation>Code clarifying the 'Prior Authorization Number Submitted' (462-EV) or benefit/plan exemption.</xsd:documentation>
+              </xsd:annotation>
+              <xsd:restriction base="ecl:Code">
+                <xsd:enumeration value="G1"/>
+                <xsd:enumeration value="PD"/>
+                <xsd:enumeration value="D3"/>
+                <xsd:enumeration value="94"/>
+                <xsd:enumeration value="0B"/>
+                <xsd:enumeration value="1C"/>
+                <xsd:enumeration value="1D"/>
+                <xsd:enumeration value="1E"/>
+                <xsd:enumeration value="1G"/>
+                <xsd:enumeration value="1M"/>
+                <xsd:enumeration value="2U"/>
+                <xsd:enumeration value="BO"/>
+                <xsd:enumeration value="DH"/>
+                <xsd:enumeration value="HI"/>
+                <xsd:enumeration value="NC"/>
+                <xsd:enumeration value="NF"/>
+                <xsd:enumeration value="PF"/>
+                <xsd:enumeration value="SY"/>
+                <xsd:enumeration value="HP"/>
+                <xsd:enumeration value="G1"/>
+                <xsd:enumeration value="ZZ"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
