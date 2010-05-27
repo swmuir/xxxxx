@@ -170,7 +170,11 @@
           <xsd:documentation>RES-030</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="DenialReason" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="DenialReason" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>RES-040</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
