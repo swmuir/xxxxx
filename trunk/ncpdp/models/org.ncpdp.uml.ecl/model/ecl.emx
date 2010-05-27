@@ -13923,11 +13923,28 @@ A health insurance plan in which the insured person receives discounted prescrip
         <ownedComment xmi:id="_gSUD5CxAEd-8mcmtGejV_Q">
           <body>Code clarifying the 'Prior Authorization Number Submitted' (462-EV) or benefit/plan exemption.</body>
         </ownedComment>
-        <ownedLiteral xmi:id="_gSd04ixAEd-8mcmtGejV_Q" name="See Section II - Appendix N - PRIOR AUTHORIZATION CODE VALUES" classifier="_gSUD4yxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_gSd04yxAEd-8mcmtGejV_Q">
-            <body>Indicates the answer should be one or more values from Prior Authorization Answer List Detail.</body>
-          </ownedComment>
-        </ownedLiteral>
+        <generalization xmi:id="_rsIygGmvEd-pG95HwNNanw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aDXJgGmlEd-rC41nbGoKjA" name="G1" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aHYt4GmlEd-rC41nbGoKjA" name="PD" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aJUnkGmlEd-rC41nbGoKjA" name="D3" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aLQhQGmlEd-rC41nbGoKjA" name="94" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aMvvAGmlEd-rC41nbGoKjA" name="0B" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aN8B0GmlEd-rC41nbGoKjA" name="1C" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aPuxkGmlEd-rC41nbGoKjA" name="1D" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aREOUGmlEd-rC41nbGoKjA" name="1E" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aSjcEGmlEd-rC41nbGoKjA" name="1G" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aUDQ4GmlEd-rC41nbGoKjA" name="1M" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aVieoGmlEd-rC41nbGoKjA" name="2U" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aXBsYGmlEd-rC41nbGoKjA" name="BO" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aYg6IGmlEd-rC41nbGoKjA" name="DH" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aaJ44GmlEd-rC41nbGoKjA" name="HI" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_abWLsGmlEd-rC41nbGoKjA" name="NC" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_ac2AgGmlEd-rC41nbGoKjA" name="NF" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_aeeYMGmlEd-rC41nbGoKjA" name="PF" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_agHW8GmlEd-rC41nbGoKjA" name="SY" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_sDXyUGmlEd-rC41nbGoKjA" name="HP" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_sEkFIGmlEd-rC41nbGoKjA" name="G1" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_sGDS4GmlEd-rC41nbGoKjA" name="ZZ" classifier="_gSUD4yxAEd-8mcmtGejV_Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_gSd05SxAEd-8mcmtGejV_Q" name="ProcessorDefinedPriorAuthorizationReasonCode" visibility="private">
         <ownedComment xmi:id="_gSd05ixAEd-8mcmtGejV_Q">
@@ -15907,23 +15924,14 @@ A health insurance plan in which the insured person receives discounted prescrip
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h4rkwCxAEd-8mcmtGejV_Q" name="ReferenceQualifierGenericDatabasePriorAuthorizationDRUSegment">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h4rkwCxAEd-8mcmtGejV_Q" name="DrugDBQualifiers">
         <ownedComment xmi:id="_h4rkwSxAEd-8mcmtGejV_Q">
           <body>Code value to define the reference number GPI, GCN Seq #, GFC, DDID, SmartKey, GM, Multum MMDC, Multum Drug ID, etc</body>
         </ownedComment>
-        <ownedLiteral xmi:id="_ahOmsFOrEd-wEdo_Dk3J9g" name="MG">
-          <ownedComment xmi:id="_ahOmsVOrEd-wEdo_Dk3J9g">
-            <body>Medi-Span Generic Product Identifier (GPI)</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmslOrEd-wEdo_Dk3J9g" name="FG">
-          <ownedComment xmi:id="_ahOms1OrEd-wEdo_Dk3J9g">
-            <body>First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmtFOrEd-wEdo_Dk3J9g" name="FM">
-          <ownedComment xmi:id="_ahOmtVOrEd-wEdo_Dk3J9g">
-            <body>First DataBank Medication ID (FDB MedID)</body>
+        <generalization xmi:id="_ajPo4Gj0Ed-Pd7zqA0IwbQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_ahOmuFOrEd-wEdo_Dk3J9g" name="E">
+          <ownedComment xmi:id="_ahOmuVOrEd-wEdo_Dk3J9g">
+            <body>Medical Economics Generic Formulation Code (GFC)</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_ahOmtlOrEd-wEdo_Dk3J9g" name="G">
@@ -15931,44 +15939,14 @@ A health insurance plan in which the insured person receives discounted prescrip
             <body>Medical Economics Generic Master (GM)</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmuFOrEd-wEdo_Dk3J9g" name="E">
-          <ownedComment xmi:id="_ahOmuVOrEd-wEdo_Dk3J9g">
-            <body>Medical Economics Generic Formulation Code (GFC)</body>
+        <ownedLiteral xmi:id="_ahOmylOrEd-wEdo_Dk3J9g" name="AF">
+          <ownedComment xmi:id="_ahOmy1OrEd-wEdo_Dk3J9g">
+            <body>American Hospital Formulary Service (AHFS)</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmulOrEd-wEdo_Dk3J9g" name="FL">
-          <ownedComment xmi:id="_ahOmu1OrEd-wEdo_Dk3J9g">
-            <body>First DataBank Ingredient List ID (HICL_SEQ_NO)</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmvFOrEd-wEdo_Dk3J9g" name="MD">
-          <ownedComment xmi:id="_ahOmvVOrEd-wEdo_Dk3J9g">
-            <body>Medi-Span Product Line (DDID)</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmvlOrEd-wEdo_Dk3J9g" name="FD">
-          <ownedComment xmi:id="_ahOmv1OrEd-wEdo_Dk3J9g">
-            <body>First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmwFOrEd-wEdo_Dk3J9g" name="FN">
-          <ownedComment xmi:id="_ahOmwVOrEd-wEdo_Dk3J9g">
-            <body>First DataBank Medication Name ID (FDB Med Name ID)</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmwlOrEd-wEdo_Dk3J9g" name="MC">
-          <ownedComment xmi:id="_ahOmw1OrEd-wEdo_Dk3J9g">
-            <body>Multum Drug ID</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmxFOrEd-wEdo_Dk3J9g" name="FI">
-          <ownedComment xmi:id="_ahOmxVOrEd-wEdo_Dk3J9g">
-            <body>First DataBank Medication ID (FDB MedID)</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmxlOrEd-wEdo_Dk3J9g" name="MM">
-          <ownedComment xmi:id="_ahOmx1OrEd-wEdo_Dk3J9g">
-            <body>Multum MMDC</body>
+        <ownedLiteral xmi:id="_ahOmslOrEd-wEdo_Dk3J9g" name="FG">
+          <ownedComment xmi:id="_ahOms1OrEd-wEdo_Dk3J9g">
+            <body>First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_ahOmyFOrEd-wEdo_Dk3J9g" name="FS">
@@ -15976,11 +15954,34 @@ A health insurance plan in which the insured person receives discounted prescrip
             <body>First Databank Smartkey</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_ahOmylOrEd-wEdo_Dk3J9g" name="AF">
-          <ownedComment xmi:id="_ahOmy1OrEd-wEdo_Dk3J9g">
-            <body>American Hospital Formulary Service (AHFS)</body>
+        <ownedLiteral xmi:id="_ahOmwlOrEd-wEdo_Dk3J9g" name="MC">
+          <ownedComment xmi:id="_ahOmw1OrEd-wEdo_Dk3J9g">
+            <body>Multum Drug ID</body>
           </ownedComment>
         </ownedLiteral>
+        <ownedLiteral xmi:id="_ahOmvFOrEd-wEdo_Dk3J9g" name="MD">
+          <ownedComment xmi:id="_ahOmvVOrEd-wEdo_Dk3J9g">
+            <body>Medi-Span Product Line (DDID)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_ahOmsFOrEd-wEdo_Dk3J9g" name="MG">
+          <ownedComment xmi:id="_ahOmsVOrEd-wEdo_Dk3J9g">
+            <body>Medi-Span Generic Product Identifier (GPI)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_ahOmxlOrEd-wEdo_Dk3J9g" name="MM">
+          <ownedComment xmi:id="_ahOmx1OrEd-wEdo_Dk3J9g">
+            <body>Multum MMDC</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_21l0GWi7Ed-Pd7zqA0IwbQ" name="SCD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_21l0Gmi7Ed-Pd7zqA0IwbQ">
+            <body>RXNORM - Maintained and distributed by National Library of Medicine (NLM)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_V6TCQGi8Ed-Pd7zqA0IwbQ" name="SBD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_XwnqsGi8Ed-Pd7zqA0IwbQ" name="GPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_ZidbwGi8Ed-Pd7zqA0IwbQ" name="BPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_iuUzUCxAEd-8mcmtGejV_Q" name="ReferenceQualifierX12DE128" visibility="private">
         <ownedComment xmi:id="_iuUzUSxAEd-8mcmtGejV_Q">
@@ -24567,6 +24568,7 @@ A health insurance plan in which the insured person receives discounted prescrip
         <ownedComment xmi:id="_htqAgixAEd-8mcmtGejV_Q">
           <body>Code qualifying the value in DUE Co-Agent ID.</body>
         </ownedComment>
+        <generalization xmi:id="_wwJ8cGmjEd-rC41nbGoKjA" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_iYKqkFOnEd-wEdo_Dk3J9g" name="15">
           <ownedComment xmi:id="_iYKqkVOnEd-wEdo_Dk3J9g">
             <body>First DataBank Formulation ID (GCN)</body>
@@ -26917,6 +26919,82 @@ A health insurance plan in which the insured person receives discounted prescrip
         <ownedLiteral xmi:id="_9tNpEGhAEd-Pd7zqA0IwbQ" name="application/hl7-sda+xml" classifier="_5qYs0GhAEd-Pd7zqA0IwbQ"/>
         <ownedLiteral xmi:id="_CH5EoGhBEd-Pd7zqA0IwbQ" name="application/x-ccr" classifier="_5qYs0GhAEd-Pd7zqA0IwbQ"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_21l0EGi7Ed-Pd7zqA0IwbQ" name="ProductCodeQualifiers">
+        <ownedComment xmi:id="_21l0EWi7Ed-Pd7zqA0IwbQ" annotatedElement="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <body>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</body>
+        </ownedComment>
+        <generalization xmi:id="_21l0Emi7Ed-Pd7zqA0IwbQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_21l0E2i7Ed-Pd7zqA0IwbQ" name="ND" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_21l0FGi7Ed-Pd7zqA0IwbQ">
+            <body>NDC</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_21l0F2i7Ed-Pd7zqA0IwbQ" name="MF" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_21l0GGi7Ed-Pd7zqA0IwbQ">
+            <body>MFG</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_21l0G2i7Ed-Pd7zqA0IwbQ" name="RT" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_21l0HGi7Ed-Pd7zqA0IwbQ">
+            <body>NDF-RT - National Drug File Reference Terminology  - Maintained by VA, distributed by NCI -  for classes of medications</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_QIc_cGi8Ed-Pd7zqA0IwbQ" name="UN" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_21l0FWi7Ed-Pd7zqA0IwbQ" name="UP" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_21l0Fmi7Ed-Pd7zqA0IwbQ">
+            <body>UPC</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_AfO38Gj1Ed-Pd7zqA0IwbQ" name="ReasonCode">
+        <ownedLiteral xmi:id="_Ct1dgGj1Ed-Pd7zqA0IwbQ" name="AA" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_D64fcGj1Ed-Pd7zqA0IwbQ" name="AB" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_E43xsGj1Ed-Pd7zqA0IwbQ" name="AC" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_E9MRAGj1Ed-Pd7zqA0IwbQ" name="AD" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_E-rewGj1Ed-Pd7zqA0IwbQ" name="AE" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_FAdncGj1Ed-Pd7zqA0IwbQ" name="AF" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_FBzrQGj1Ed-Pd7zqA0IwbQ" name="AG" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_FDS5AGj1Ed-Pd7zqA0IwbQ" name="AH" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_FEyt0Gj1Ed-Pd7zqA0IwbQ" name="AJ" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_FHUdYGj1Ed-Pd7zqA0IwbQ" name="AK" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_Jt61EGj1Ed-Pd7zqA0IwbQ" name="AL" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_Jvjz0Gj1Ed-Pd7zqA0IwbQ" name="AM" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_JxDBkGj1Ed-Pd7zqA0IwbQ" name="AN" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_JysAUGj1Ed-Pd7zqA0IwbQ" name="AO" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_J0LOEGj1Ed-Pd7zqA0IwbQ" name="AP" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_J1qb0Gj1Ed-Pd7zqA0IwbQ" name="AQ" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_goFcAGj7Ed-Pd7zqA0IwbQ" name="TerminologyQualifier">
+        <ownedComment xmi:id="_goFcAWj7Ed-Pd7zqA0IwbQ" annotatedElement="_goFcAGj7Ed-Pd7zqA0IwbQ">
+          <body>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</body>
+        </ownedComment>
+        <generalization xmi:id="_goFcAmj7Ed-Pd7zqA0IwbQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_mDk0UGj7Ed-Pd7zqA0IwbQ" name="1" classifier="_goFcAGj7Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_mHTdwGj7Ed-Pd7zqA0IwbQ" name="2" classifier="_goFcAGj7Ed-Pd7zqA0IwbQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Qv02sGmnEd-rC41nbGoKjA" name="ProblemNameQualifier">
+        <ownedComment xmi:id="_Qv02sWmnEd-rC41nbGoKjA" annotatedElement="_Qv02sGmnEd-rC41nbGoKjA">
+          <body>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</body>
+        </ownedComment>
+        <generalization xmi:id="_Qv02smmnEd-rC41nbGoKjA" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_Qv02wWmnEd-rC41nbGoKjA" name="LD" classifier="_Qv02sGmnEd-rC41nbGoKjA">
+          <ownedComment xmi:id="_Qv02wmmnEd-rC41nbGoKjA" annotatedElement="_Qv02wWmnEd-rC41nbGoKjA">
+            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Qv02w2mnEd-rC41nbGoKjA" name="DX" classifier="_Qv02sGmnEd-rC41nbGoKjA">
+          <ownedComment xmi:id="_Qv02xGmnEd-rC41nbGoKjA" annotatedElement="_Qv02w2mnEd-rC41nbGoKjA">
+            <body>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification&#xD;
+(ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Qv02xWmnEd-rC41nbGoKjA" name="ABF" classifier="_Qv02sGmnEd-rC41nbGoKjA">
+          <ownedComment xmi:id="_Qv02xmmnEd-rC41nbGoKjA" annotatedElement="_Qv02xWmnEd-rC41nbGoKjA">
+            <body>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#xD;
+(ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -28958,7 +29036,6 @@ A health insurance plan in which the insured person receives discounted prescrip
   <Default:Documentation xmi:id="_gSm-1CxAEd-8mcmtGejV_Q" base_Comment="_gSm-0yxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_gSm-0SxAEd-8mcmtGejV_Q" valueSetId="299" fieldFormat="9(2)" standardsUsing="A" valueSetLimitations="" base_Enumeration="_gSd05SxAEd-8mcmtGejV_Q" displayName="299 - Processor Defined Prior Authorization Reason Code"/>
   <Default:Documentation xmi:id="_gSm-0CxAEd-8mcmtGejV_Q" base_Comment="_gSd05ixAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_gSd05CxAEd-8mcmtGejV_Q" base_Comment="_gSd04yxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_gSd04SxAEd-8mcmtGejV_Q" valueSetId="461-EU" fieldFormat="9(2)" standardsUsing="T,A,Z,W" valueSetLimitations="" base_Enumeration="_gSUD4yxAEd-8mcmtGejV_Q" displayName="461-EU - Prior Authorization Type Code"/>
   <Default:Documentation xmi:id="_gSd04CxAEd-8mcmtGejV_Q" base_Comment="_gSUD5CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gSUD4ixAEd-8mcmtGejV_Q" base_Comment="_gSUD4SxAEd-8mcmtGejV_Q"/>
@@ -30903,15 +30980,10 @@ A health insurance plan in which the insured person receives discounted prescrip
   <Default:Documentation xmi:id="_xeuIRlOpEd-wEdo_Dk3J9g" base_Comment="_xeuIMVOpEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ahYXsFOrEd-wEdo_Dk3J9g" base_Comment="_ahOmsVOrEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ahYXsVOrEd-wEdo_Dk3J9g" base_Comment="_ahOms1OrEd-wEdo_Dk3J9g"/>
-  <Default:Documentation xmi:id="_ahYXslOrEd-wEdo_Dk3J9g" base_Comment="_ahOmtVOrEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ahYXs1OrEd-wEdo_Dk3J9g" base_Comment="_ahOmt1OrEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ahYXtFOrEd-wEdo_Dk3J9g" base_Comment="_ahOmuVOrEd-wEdo_Dk3J9g"/>
-  <Default:Documentation xmi:id="_ahYXtVOrEd-wEdo_Dk3J9g" base_Comment="_ahOmu1OrEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ahYXtlOrEd-wEdo_Dk3J9g" base_Comment="_ahOmvVOrEd-wEdo_Dk3J9g"/>
-  <Default:Documentation xmi:id="_ahYXt1OrEd-wEdo_Dk3J9g" base_Comment="_ahOmv1OrEd-wEdo_Dk3J9g"/>
-  <Default:Documentation xmi:id="_ahYXuFOrEd-wEdo_Dk3J9g" base_Comment="_ahOmwVOrEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ahYXuVOrEd-wEdo_Dk3J9g" base_Comment="_ahOmw1OrEd-wEdo_Dk3J9g"/>
-  <Default:Documentation xmi:id="_ahYXulOrEd-wEdo_Dk3J9g" base_Comment="_ahOmxVOrEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ahYXu1OrEd-wEdo_Dk3J9g" base_Comment="_ahOmx1OrEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ahYXvFOrEd-wEdo_Dk3J9g" base_Comment="_ahOmyVOrEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ahYXvVOrEd-wEdo_Dk3J9g" base_Comment="_ahOmy1OrEd-wEdo_Dk3J9g"/>
@@ -31001,4 +31073,24 @@ A health insurance plan in which the insured person receives discounted prescrip
   <Default:Documentation xmi:id="_eu1nK2dpEd-EzKeHnOFaKw" base_Comment="_eu1nGWdpEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_eu1nLGdpEd-EzKeHnOFaKw" base_Comment="_eu1nG2dpEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_eu1nLWdpEd-EzKeHnOFaKw" base_Comment="_eu1nHWdpEd-EzKeHnOFaKw"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_21l0J2i7Ed-Pd7zqA0IwbQ" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_21l0EGi7Ed-Pd7zqA0IwbQ" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
+  <Default:Documentation xmi:id="_21l0KGi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0EWi7Ed-Pd7zqA0IwbQ"/>
+  <xsd:Restriction xmi:id="_21l0KWi7Ed-Pd7zqA0IwbQ" base_Generalization="_21l0Emi7Ed-Pd7zqA0IwbQ"/>
+  <Default:Documentation xmi:id="_21l0Kmi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0FGi7Ed-Pd7zqA0IwbQ"/>
+  <Default:Documentation xmi:id="_21l0K2i7Ed-Pd7zqA0IwbQ" base_Comment="_21l0Fmi7Ed-Pd7zqA0IwbQ"/>
+  <Default:Documentation xmi:id="_21l0LGi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0GGi7Ed-Pd7zqA0IwbQ"/>
+  <Default:Documentation xmi:id="_21l0Lmi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0HGi7Ed-Pd7zqA0IwbQ"/>
+  <xsd:Restriction xmi:id="_ajPo4Wj0Ed-Pd7zqA0IwbQ" base_Generalization="_ajPo4Gj0Ed-Pd7zqA0IwbQ"/>
+  <Default:Documentation xmi:id="_YvrHlWj2Ed-Pd7zqA0IwbQ" base_Comment="_21l0Gmi7Ed-Pd7zqA0IwbQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_goFcF2j7Ed-Pd7zqA0IwbQ" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_goFcAGj7Ed-Pd7zqA0IwbQ" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
+  <Default:Documentation xmi:id="_goFcGGj7Ed-Pd7zqA0IwbQ" base_Comment="_goFcAWj7Ed-Pd7zqA0IwbQ"/>
+  <xsd:Restriction xmi:id="_goFcGWj7Ed-Pd7zqA0IwbQ" base_Generalization="_goFcAmj7Ed-Pd7zqA0IwbQ"/>
+  <xsd:Restriction xmi:id="_wwJ8cWmjEd-rC41nbGoKjA" base_Generalization="_wwJ8cGmjEd-rC41nbGoKjA"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_Qv02x2mnEd-rC41nbGoKjA" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_Qv02sGmnEd-rC41nbGoKjA" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
+  <Default:Documentation xmi:id="_Qv02yGmnEd-rC41nbGoKjA" base_Comment="_Qv02sWmnEd-rC41nbGoKjA"/>
+  <xsd:Restriction xmi:id="_Qv02yWmnEd-rC41nbGoKjA" base_Generalization="_Qv02smmnEd-rC41nbGoKjA"/>
+  <Default:Documentation xmi:id="_Qv020WmnEd-rC41nbGoKjA" base_Comment="_Qv02wmmnEd-rC41nbGoKjA"/>
+  <Default:Documentation xmi:id="_Qv020mmnEd-rC41nbGoKjA" base_Comment="_Qv02xGmnEd-rC41nbGoKjA"/>
+  <Default:Documentation xmi:id="_Qv0202mnEd-rC41nbGoKjA" base_Comment="_Qv02xmmnEd-rC41nbGoKjA"/>
+  <xsd:Restriction xmi:id="_rsR8cGmvEd-pG95HwNNanw" base_Generalization="_rsIygGmvEd-pG95HwNNanw"/>
 </xmi:XMI>
