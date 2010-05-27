@@ -10,7 +10,7 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ApprovedType">
     <xsd:sequence>
-      <xsd:element maxOccurs="10" name="ReasonCode" type="datatypes:ReasonCode"/>
+      <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ReasonCode"/>
       <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
     </xsd:sequence>
@@ -20,7 +20,7 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ApprovedWithChangesType">
     <xsd:sequence>
-      <xsd:element maxOccurs="10" name="ReasonCode" type="datatypes:ReasonCode"/>
+      <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ReasonCode"/>
       <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
     </xsd:sequence>
@@ -60,7 +60,7 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DeniedType">
     <xsd:sequence>
-      <xsd:element maxOccurs="10" name="ReasonCode" type="datatypes:ReasonCode"/>
+      <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ReasonCode"/>
       <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="DenialReason" type="xsd:string"/>
     </xsd:sequence>
@@ -195,11 +195,11 @@
       <xsd:element minOccurs="0" name="MTMPayerCaseIdentifier" type="xsd:string"/>
       <xsd:choice>
         <xsd:element name="TypeofServiceFreeText" type="xsd:string"/>
-        <xsd:element minOccurs="0" name="TypeofService" type="datatypes:QualifiedCode"/>
+        <xsd:element minOccurs="0" name="TypeofService" type="datatypes:QualifiedCodeWithText"/>
       </xsd:choice>
       <xsd:choice>
         <xsd:element name="TargetedTypeofServiceFreeText" type="xsd:string"/>
-        <xsd:element minOccurs="0" name="TargetedTypeofService" type="datatypes:QualifiedCode"/>
+        <xsd:element minOccurs="0" name="TargetedTypeofService" type="datatypes:QualifiedCodeWithText"/>
       </xsd:choice>
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
@@ -210,7 +210,7 @@
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
-      <xsd:element minOccurs="0" name="FrequencyofEncountersApproved" type="datatypes:QualifiedCode"/>
+      <xsd:element minOccurs="0" name="FrequencyofEncountersApproved" type="datatypes:QualifiedCodeWithText"/>
     </xsd:sequence>
   </xsd:complexType>
 </xsd:schema>

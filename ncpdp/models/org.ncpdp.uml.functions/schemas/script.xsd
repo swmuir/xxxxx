@@ -24,8 +24,16 @@
           <xsd:documentation>RES-020</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
+      <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>RES-030</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Note" type="datatypes:an..70">
+        <xsd:annotation>
+          <xsd:documentation>RES-040</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -89,9 +97,9 @@
           <xsd:element name="Prescriber" type="dictionary:Prescriber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescibedMedication"/>
-          <xsd:element name="MedicationPrescribed" type="dictionary:PrescibedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescibedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
+          <xsd:element name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
           <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -162,11 +170,7 @@
           <xsd:documentation>RES-030</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="DenialReason" type="xsd:string">
-        <xsd:annotation>
-          <xsd:documentation>RES-040</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
+      <xsd:element minOccurs="0" name="DenialReason" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -232,9 +236,9 @@
           <xsd:element name="Prescriber" type="dictionary:PrescriberGeneral"/>
           <xsd:element name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescibedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
           <xsd:element name="MedicationPrescribed" type="dictionary:DrugAdministrationMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescibedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
           <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -281,9 +285,9 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="DispensingRequestCode" type="ecl:DispensingRequestCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescibedMedication"/>
-          <xsd:element name="MedicationPrescribed" type="dictionary:PrescibedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescibedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
+          <xsd:element name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
           <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -312,8 +316,8 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
           <xsd:element name="MedicationDispensed" type="dictionary:RefillRequestDispensedMedication"/>
-          <xsd:element minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescibedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescibedMedication"/>
+          <xsd:element minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
           <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -330,7 +334,7 @@
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-          <xsd:element name="Response" type="SCRIPT:ResponseType"/>
+          <xsd:element name="Response" type="SCRIPT:RefillResponseType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="dictionary:OptionalBenefitsCoordination"/>
           <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
           <xsd:element name="Patient" type="dictionary:Patient"/>
@@ -339,9 +343,9 @@
           <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
           <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
           <xsd:choice maxOccurs="0" minOccurs="0">
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="dictionary:Medication"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="dictionary:RefillResponseDispensedMedication"/>
             <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensedAdministered" type="dictionary:Medication"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="dictionary:Medication"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
           </xsd:choice>
         </xsd:sequence>
       </xsd:restriction>
@@ -378,8 +382,16 @@
           <xsd:documentation>RES-010</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="Denied" type="SCRIPT:DeniedType"/>
-      <xsd:element minOccurs="0" name="DeniedNewPrescriptionToFollow" type="SCRIPT:DeniedNewRxToFollowType"/>
+      <xsd:element minOccurs="0" name="Denied" type="SCRIPT:DeniedType">
+        <xsd:annotation>
+          <xsd:documentation>RES-010</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DeniedNewPrescriptionToFollow" type="SCRIPT:DeniedNewRxToFollowType">
+        <xsd:annotation>
+          <xsd:documentation>RES-010</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="ApprovedWithChanges" type="SCRIPT:ApprovedWithChangesType">
         <xsd:annotation>
           <xsd:documentation>RES-010</xsd:documentation>
@@ -447,8 +459,8 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="DispensingRequestCode" type="ecl:DispensingRequestCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescibedMedication"/>
-          <xsd:element name="MedicationPrescribed" type="dictionary:PrescibedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
+          <xsd:element name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
           <xsd:element maxOccurs="9" minOccurs="0" name="MedicationRequested" type="dictionary:RequestedMedication"/>
           <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
         </xsd:sequence>
@@ -524,8 +536,8 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
           <xsd:element minOccurs="0" name="MedicationDispensed" type="dictionary:RxFillDispensedMedication"/>
-          <xsd:element minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescibedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescibedMedication"/>
+          <xsd:element minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
           <xsd:element minOccurs="0" name="Supervisor" type="dictionary:SupervisorOptional"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -552,9 +564,9 @@
           <xsd:element name="Prescriber" type="dictionary:OptionalPresciber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescibedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescibedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescibedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
         </xsd:sequence>
       </xsd:restriction>

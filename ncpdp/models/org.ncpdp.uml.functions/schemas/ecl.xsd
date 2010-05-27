@@ -47,7 +47,11 @@
           <xsd:documentation>Filled During Transition Benefit/Other Rejection - The drug was paid because the Medicare Part D patient is in a transitional drug benefit period. After the transition drug benefit period, this drug will reject for plan limitations or other reason(s).</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="AH"/>
+      <xsd:enumeration value="AH">
+        <xsd:annotation>
+          <xsd:documentation>Emergency Fill Situation - This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="AJ">
         <xsd:annotation>
           <xsd:documentation>Emergency Fill Situation/Prior Authorization Required -This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period but would have rejected due to the need for a prior authorization.</xsd:documentation>
@@ -184,7 +188,11 @@
           <xsd:documentation>Soluble Tablet</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="16"/>
+      <xsd:enumeration value="16">
+        <xsd:annotation>
+          <xsd:documentation>Tablet Unspecified</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="20">
         <xsd:annotation>
           <xsd:documentation>Capsule</xsd:documentation>
@@ -325,7 +333,11 @@
           <xsd:documentation>Rectal Cream or Ointment</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="70"/>
+      <xsd:enumeration value="70">
+        <xsd:annotation>
+          <xsd:documentation>Rectal Suppository</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="71">
         <xsd:annotation>
           <xsd:documentation>Vaginal Suppository</xsd:documentation>
@@ -466,7 +478,11 @@
           <xsd:documentation>Dressing or Bandage</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="99"/>
+      <xsd:enumeration value="99">
+        <xsd:annotation>
+          <xsd:documentation>Miscellaneous Unspecified</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="100">
         <xsd:annotation>
           <xsd:documentation>Aerosol</xsd:documentation>
@@ -672,11 +688,7 @@
           <xsd:documentation>Spirit</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="142">
-        <xsd:annotation>
-          <xsd:documentation>Sponge</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="142"/>
       <xsd:enumeration value="143">
         <xsd:annotation>
           <xsd:documentation>Spray</xsd:documentation>
@@ -747,7 +759,11 @@
           <xsd:documentation>Tincture</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="157"/>
+      <xsd:enumeration value="157">
+        <xsd:annotation>
+          <xsd:documentation>Wafer</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="158">
         <xsd:annotation>
           <xsd:documentation>Wax</xsd:documentation>
@@ -958,11 +974,7 @@
           <xsd:documentation>UIB initiator reference is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="027">
-        <xsd:annotation>
-          <xsd:documentation>UIB control agency is invalid.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="027"/>
       <xsd:enumeration value="028">
         <xsd:annotation>
           <xsd:documentation>UIB sender identification level one is invalid.</xsd:documentation>
@@ -1013,7 +1025,11 @@
           <xsd:documentation>UIH prescription number is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="038"/>
+      <xsd:enumeration value="038">
+        <xsd:annotation>
+          <xsd:documentation>UIH initiator reference is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="039">
         <xsd:annotation>
           <xsd:documentation>UIH initiator reference identifier is invalid.</xsd:documentation>
@@ -1149,7 +1165,11 @@
           <xsd:documentation>PVD clinic name is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="066"/>
+      <xsd:enumeration value="066">
+        <xsd:annotation>
+          <xsd:documentation>PVD clinic street is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="067">
         <xsd:annotation>
           <xsd:documentation>PVD clinic city is invalid.</xsd:documentation>
@@ -1285,7 +1305,11 @@
           <xsd:documentation>PTT patient place qualifier is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="094"/>
+      <xsd:enumeration value="094">
+        <xsd:annotation>
+          <xsd:documentation>PTT patient place name is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="095">
         <xsd:annotation>
           <xsd:documentation>PTT communication reference is invalid.</xsd:documentation>
@@ -1561,7 +1585,11 @@
           <xsd:documentation>DRU clinical info level2 qualifier is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="150"/>
+      <xsd:enumeration value="150">
+        <xsd:annotation>
+          <xsd:documentation>DRU prior authorization reference is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="151">
         <xsd:annotation>
           <xsd:documentation>DRU prior authorization qualifier is invalid.</xsd:documentation>
@@ -1757,7 +1785,11 @@
           <xsd:documentation>Too many OBS element repetitions.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="190"/>
+      <xsd:enumeration value="190">
+        <xsd:annotation>
+          <xsd:documentation>Too many PTT element repetitions.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="191">
         <xsd:annotation>
           <xsd:documentation>Too many PVD element repetitions.</xsd:documentation>
@@ -2033,7 +2065,11 @@
           <xsd:documentation>SIG Dose Delivery Method Code Qualifier is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="246"/>
+      <xsd:enumeration value="246">
+        <xsd:annotation>
+          <xsd:documentation>SIG Dose Delivery Method Code is invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="247">
         <xsd:annotation>
           <xsd:documentation>SIG Dose Delivery Method Modifier Text is invalid</xsd:documentation>
@@ -2169,7 +2205,11 @@
           <xsd:documentation>SIG Multiple Vehicle Modifier is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="274"/>
+      <xsd:enumeration value="274">
+        <xsd:annotation>
+          <xsd:documentation>SIG Route of Administration Text is invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="275">
         <xsd:annotation>
           <xsd:documentation>SIG Route of Administration Code Qualifier is invalid</xsd:documentation>
@@ -2300,7 +2340,11 @@
           <xsd:documentation>SIG Interval Units Code Qualifier is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="301"/>
+      <xsd:enumeration value="301">
+        <xsd:annotation>
+          <xsd:documentation>SIG Interval Units Code is invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="302">
         <xsd:annotation>
           <xsd:documentation>SIG Variable Interval Modifier is invalid</xsd:documentation>
@@ -2436,7 +2480,11 @@
           <xsd:documentation>SIG Stop Indicator is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="329"/>
+      <xsd:enumeration value="329">
+        <xsd:annotation>
+          <xsd:documentation>Message missing required SIG Segment</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="330">
         <xsd:annotation>
           <xsd:documentation>Too many SIG Segments</xsd:documentation>
@@ -2572,7 +2620,11 @@
           <xsd:documentation>If Compound Code = 2 (Compound), DRU Item Description (drug name ext 1) field must not be sent.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="357"/>
+      <xsd:enumeration value="357">
+        <xsd:annotation>
+          <xsd:documentation>If Compound Code = 2 (Compound), DRU Item Description (drug name ext 2) field must not be sent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="358">
         <xsd:annotation>
           <xsd:documentation>If Compound Code = 2 (Compound), DRU Item Description (drug name ext 3) field must not be sent.</xsd:documentation>
@@ -2593,11 +2645,7 @@
           <xsd:documentation>If Compound Code = 2 (Compound), DRU Source Code List (units of presentation) field must not be sent.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="362">
-        <xsd:annotation>
-          <xsd:documentation>If Compound Code = 2 (Compound), DRU Item Strength code field must not be sent.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="362"/>
       <xsd:enumeration value="363">
         <xsd:annotation>
           <xsd:documentation>If Compound Code = 2 (Compound), DRU DEA Schedule field must not be sent.</xsd:documentation>
@@ -2708,7 +2756,11 @@
           <xsd:documentation>COO Responsible Party Last Name is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="385"/>
+      <xsd:enumeration value="385">
+        <xsd:annotation>
+          <xsd:documentation>COO Responsible Party First Name is Invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="386">
         <xsd:annotation>
           <xsd:documentation>COO Responsible Party Middle Name is Invalid</xsd:documentation>
@@ -2844,7 +2896,11 @@
           <xsd:documentation>CPD Ingredient Item Form Code is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="413"/>
+      <xsd:enumeration value="413">
+        <xsd:annotation>
+          <xsd:documentation>CPD Ingredient Item Strength Source Code is Invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="414">
         <xsd:annotation>
           <xsd:documentation>CPD Ingredient Item Strength Code is Invalid</xsd:documentation>
@@ -3211,7 +3267,7 @@
     <xsd:annotation>
       <xsd:documentation>Code qualifying the value in DUE Co-Agent ID.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="15">
         <xsd:annotation>
           <xsd:documentation>First DataBank Formulation ID (GCN)</xsd:documentation>
@@ -3442,7 +3498,11 @@
           <xsd:documentation>Recommend laboratory test Code indicating that the pharmacist recommends the performance of a clinical laboratory test on a patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="AS"/>
+      <xsd:enumeration value="AS">
+        <xsd:annotation>
+          <xsd:documentation>Patient assessment Code indicating that an initial evaluation of a patient or complaint/symptom for the purpose of developing a therapeutic plan.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="DE">
         <xsd:annotation>
           <xsd:documentation>Dosing evaluation/determination Cognitive service whereby the pharmacist reviews and evaluates the appropriateness of a prescribed medication’s dose, interval, frequency and/or formulation.</xsd:documentation>
@@ -3893,7 +3953,11 @@
           <xsd:documentation>Filled, With Different Directions Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with different directions than were originally prescribed.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="2B"/>
+      <xsd:enumeration value="2B">
+        <xsd:annotation>
+          <xsd:documentation>Not Filled, Directions Clarified-Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert), consults with the prescriber or using professional judgment, does not fill the prescription and counsels the patient as to the prescriber’s instructions.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="3G">
         <xsd:annotation>
           <xsd:documentation>Drug Therapy Unchanged-Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert), consults with the prescriber or uses professional judgment and subsequently fills the prescription as originally written.</xsd:documentation>
@@ -4049,7 +4113,11 @@
           <xsd:documentation>International Classification of Diseases-10-Clinical Modifications (ICD-10-CM) - Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="03"/>
+      <xsd:enumeration value="03">
+        <xsd:annotation>
+          <xsd:documentation>National Criteria Care Institute (NCCI) - The CMS-developed Correct Coding Initiative (CCI) to promote national correct coding methodologies and to control improper coding leading to inappropriate payment in Part B claims. The CMS developed its coding policies based on coding conventions defined in the American Medical Association’s CPT manual, national and local policies and edits, coding guidelines developed by national societies, analysis of standard medical and surgical practices, and a review of current coding practices.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="04">
         <xsd:annotation>
           <xsd:documentation>The Systematized Nomenclature of Medicine Clinical Terms® (SNOMED) - A clinical health care terminology and infrastructure that provides a common language that enables a consistent way of capturing, sharing and aggregating health data across specialties and sites of care.</xsd:documentation>
@@ -4236,6 +4304,69 @@
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DrugDBQualifiers  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="DrugDBQualifiers">
+    <xsd:annotation>
+      <xsd:documentation>Code value to define the reference number GPI, GCN Seq #, GFC, DDID, SmartKey, GM, Multum MMDC, Multum Drug ID, etc</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="E">
+        <xsd:annotation>
+          <xsd:documentation>Medical Economics Generic Formulation Code (GFC)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="G">
+        <xsd:annotation>
+          <xsd:documentation>Medical Economics Generic Master (GM)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AF">
+        <xsd:annotation>
+          <xsd:documentation>American Hospital Formulary Service (AHFS)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FG">
+        <xsd:annotation>
+          <xsd:documentation>First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FS">
+        <xsd:annotation>
+          <xsd:documentation>First Databank Smartkey</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MC">
+        <xsd:annotation>
+          <xsd:documentation>Multum Drug ID</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MD">
+        <xsd:annotation>
+          <xsd:documentation>Medi-Span Product Line (DDID)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MG">
+        <xsd:annotation>
+          <xsd:documentation>Medi-Span Generic Product Identifier (GPI)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MM">
+        <xsd:annotation>
+          <xsd:documentation>Multum MMDC</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SCD">
+        <xsd:annotation>
+          <xsd:documentation>RXNORM - Maintained and distributed by National Library of Medicine (NLM)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SBD"/>
+      <xsd:enumeration value="GPK"/>
+      <xsd:enumeration value="BPK"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  ErrorCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ErrorCode">
@@ -4397,11 +4528,7 @@
       <xsd:documentation>Identifies code set of clinical physical findings.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="1">
-        <xsd:annotation>
-          <xsd:documentation>X-12 Data Element Measurement Dimension, coded (DE 738)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="1"/>
       <xsd:enumeration value="2">
         <xsd:annotation>
           <xsd:documentation>SNOMED Systematized Nomenclature of Medicine--Clinical Terms (SNOMED) is available at http://www.ihtsdo.org/snomed-ct/</xsd:documentation>
@@ -4582,11 +4709,7 @@
           <xsd:documentation>PreAdmit Cancel - A previously communicated pre-admission is canceled, either because of an erroneous entry or because of a revised decision to not pre-admit the patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="RA">
-        <xsd:annotation>
-          <xsd:documentation>Resume Administration - Administration of the specified medication has been resumed or the resume date/time resumption has been set or changed.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="RA"/>
       <xsd:enumeration value="RC">
         <xsd:annotation>
           <xsd:documentation>Return from Leave Cancel - A previously communicated patient return from a leave of absence (hospital or therapeutic) is canceled, either because of an erroneous entry or because of a revised decision.</xsd:documentation>
@@ -4798,6 +4921,33 @@
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ProblemNameQualifier  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ProblemNameQualifier">
+    <xsd:annotation>
+      <xsd:documentation>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="LD">
+        <xsd:annotation>
+          <xsd:documentation>SNOMED - Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DX">
+        <xsd:annotation>
+          <xsd:documentation>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification&#13;
+(ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ABF">
+        <xsd:annotation>
+          <xsd:documentation>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#13;
+(ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  ProductCodeQualifier  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ProductCodeQualifier">
@@ -4845,7 +4995,11 @@
           <xsd:documentation>Universal System of Classification Code (USC) - A standard classification used to differentiate drug products by the markets in which they are traditionally sold.  The USC is maintained by its copyright owner, IMS Health Incorporated.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="5"/>
+      <xsd:enumeration value="5">
+        <xsd:annotation>
+          <xsd:documentation>First DataBank Medication Name Identifier (FDB Med Name ID)- A permanent numeric identifier that represents a unique product or generic name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="8">
         <xsd:annotation>
           <xsd:documentation>First DataBank Medication Identifier (FDB MedID)-A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure.</xsd:documentation>
@@ -4909,83 +5063,57 @@
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  ReferenceQualifierGenericDatabasePriorAuthorizationDRUSegment  <<ncpdpecl>>  -->
+  <!--  ProductCodeQualifiers  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:simpleType name="ReferenceQualifierGenericDatabasePriorAuthorizationDRUSegment">
+  <xsd:simpleType name="ProductCodeQualifiers">
     <xsd:annotation>
-      <xsd:documentation>Code value to define the reference number GPI, GCN Seq #, GFC, DDID, SmartKey, GM, Multum MMDC, Multum Drug ID, etc</xsd:documentation>
+      <xsd:documentation>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</xsd:documentation>
     </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="ND">
+        <xsd:annotation>
+          <xsd:documentation>NDC</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MF">
+        <xsd:annotation>
+          <xsd:documentation>MFG</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RT">
+        <xsd:annotation>
+          <xsd:documentation>NDF-RT - National Drug File Reference Terminology  - Maintained by VA, distributed by NCI -  for classes of medications</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UN"/>
+      <xsd:enumeration value="UP">
+        <xsd:annotation>
+          <xsd:documentation>UPC</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ReasonCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ReasonCode">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="MG">
-        <xsd:annotation>
-          <xsd:documentation>Medi-Span Generic Product Identifier (GPI)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="FG">
-        <xsd:annotation>
-          <xsd:documentation>First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="FM">
-        <xsd:annotation>
-          <xsd:documentation>First DataBank Medication ID (FDB MedID)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="G">
-        <xsd:annotation>
-          <xsd:documentation>Medical Economics Generic Master (GM)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="E">
-        <xsd:annotation>
-          <xsd:documentation>Medical Economics Generic Formulation Code (GFC)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="FL">
-        <xsd:annotation>
-          <xsd:documentation>First DataBank Ingredient List ID (HICL_SEQ_NO)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="MD">
-        <xsd:annotation>
-          <xsd:documentation>Medi-Span Product Line (DDID)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="FD">
-        <xsd:annotation>
-          <xsd:documentation>First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="FN">
-        <xsd:annotation>
-          <xsd:documentation>First DataBank Medication Name ID (FDB Med Name ID)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="MC">
-        <xsd:annotation>
-          <xsd:documentation>Multum Drug ID</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="FI">
-        <xsd:annotation>
-          <xsd:documentation>First DataBank Medication ID (FDB MedID)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="MM">
-        <xsd:annotation>
-          <xsd:documentation>Multum MMDC</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="FS">
-        <xsd:annotation>
-          <xsd:documentation>First Databank Smartkey</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AF">
-        <xsd:annotation>
-          <xsd:documentation>American Hospital Formulary Service (AHFS)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="AA"/>
+      <xsd:enumeration value="AB"/>
+      <xsd:enumeration value="AC"/>
+      <xsd:enumeration value="AD"/>
+      <xsd:enumeration value="AE"/>
+      <xsd:enumeration value="AF"/>
+      <xsd:enumeration value="AG"/>
+      <xsd:enumeration value="AH"/>
+      <xsd:enumeration value="AJ"/>
+      <xsd:enumeration value="AK"/>
+      <xsd:enumeration value="AL"/>
+      <xsd:enumeration value="AM"/>
+      <xsd:enumeration value="AN"/>
+      <xsd:enumeration value="AO"/>
+      <xsd:enumeration value="AP"/>
+      <xsd:enumeration value="AQ"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -5643,6 +5771,9 @@
   <!--  SourceCodeList  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="SourceCodeList">
+    <xsd:annotation>
+      <xsd:documentation>Code identifying the source organization.</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="AA">
         <xsd:annotation>
@@ -5774,7 +5905,11 @@
       <xsd:documentation>Codes used to relay successful or rejected communications.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="000"/>
+      <xsd:enumeration value="000">
+        <xsd:annotation>
+          <xsd:documentation>Transaction successful</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="001">
         <xsd:annotation>
           <xsd:documentation>Transaction successful, message(s) waiting to be retrieved</xsd:documentation>
@@ -5862,6 +5997,18 @@
 (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  TerminologyQualifier  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="TerminologyQualifier">
+    <xsd:annotation>
+      <xsd:documentation>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="1"/>
+      <xsd:enumeration value="2"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

@@ -11,7 +11,7 @@
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="AdverseEvent" type="ecl:SNOMEDCTPreferredTermsforAdverseEvents"/>
-      <xsd:element minOccurs="0" name="DrugProductCoded" type="datatypes:TerminologyQualifiedCode"/>
+      <xsd:element minOccurs="0" name="DrugProductCoded" type="datatypes:DrugDBCodeWithText"/>
       <xsd:element minOccurs="0" name="ReactionCoded" type="datatypes:SNOMEDCode"/>
       <xsd:element minOccurs="0" name="SeverityCoded" type="datatypes:SNOMEDCode"/>
     </xsd:sequence>
@@ -147,15 +147,6 @@
     </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  CoAgent  <<complexType>>  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="CoAgent">
-    <xsd:sequence maxOccurs="1" minOccurs="0">
-      <xsd:element minOccurs="0" name="CoAgentID" type="datatypes:an..19"/>
-      <xsd:element minOccurs="0" name="CoAgentQualifier" type="ecl:DUECoAgentIDQualifier"/>
-    </xsd:sequence>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  CompoundIngredient  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CompoundIngredient">
@@ -164,14 +155,11 @@
         <xsd:complexType>
           <xsd:sequence>
             <xsd:element name="CompoundIngredientItemDescription" type="datatypes:an..105M"/>
-            <xsd:element minOccurs="0" name="ItemNumber" type="datatypes:an..35"/>
-            <xsd:element minOccurs="0" name="CompoundProductCodeQualifier" type="ecl:ProductCodeQualifier"/>
+            <xsd:element minOccurs="0" name="ItemNumber" type="datatypes:ProductCode"/>
             <xsd:element minOccurs="0" name="Strength" type="datatypes:an..70"/>
-            <xsd:element minOccurs="0" name="FormSourceCode" type="ecl:SourceCodeList"/>
-            <xsd:element minOccurs="0" name="FormCode" type="datatypes:an..15"/>
-            <xsd:element minOccurs="0" name="StrengthSourceCode" type="ecl:SourceCodeList"/>
-            <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:an..15"/>
-            <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:an..15"/>
+            <xsd:element minOccurs="0" name="FormCode" type="datatypes:NCICode"/>
+            <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:NCICode"/>
+            <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -198,7 +186,7 @@
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ProblemType" type="datatypes:SNOMEDCode"/>
-      <xsd:element name="ProblemNameCoded" type="datatypes:TerminologyQualifiedCode"/>
+      <xsd:element name="ProblemNameCoded" type="datatypes:ProblemNameCode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -223,7 +211,7 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
@@ -240,7 +228,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -254,12 +242,41 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DrugCoded">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="ProductCode" type="datatypes:TerminologyQualifiedCode"/>
-      <xsd:element minOccurs="0" name="Strength" type="datatypes:an..70"/>
-      <xsd:element minOccurs="0" name="DrugDBCode" type="datatypes:ReferenceQualifier1153CodedType"/>
-      <xsd:element minOccurs="0" name="FormCode" type="datatypes:SourceQualifiedCode"/>
-      <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:SourceQualifiedCode"/>
-      <xsd:element minOccurs="0" name="DEASchedule" type="ecl:DEASchedule"/>
+      <xsd:element minOccurs="0" name="ProductCode" type="datatypes:ProductCode">
+        <xsd:annotation>
+          <xsd:documentation>RefillRequest and RxChangeRequest – whenever possible, send the drug number. If CompoundCoded = 2 (Compound), this field must not be sent. &#13;
+				</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DrugDBCode" type="datatypes:DrugDBCode">
+        <xsd:annotation>
+          <xsd:documentation>If CompoundCoded = 2 (Compound), this field must not be sent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="FormCode" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCI values of Diagnostic, Therapeutic, and Research Equipment - Pharmaceutical Dosage Form  See (http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml- NCI Thesaurus)  If CompoundCoded = 2 (Compound), this field must not be sent.&#13;
+&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCI values of Units of Presentation  See (http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml - NCI Thesaurus) If CompoundCoded = 2 (Compound), this field must not be sent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. &#13;
+&#13;
+If CompoundCoded = 2 (Compound), this field must not be sent.&#13;
+            &#13;
+NCI Administrative Concept - Research Resource - Information Resource - Terminology Subset - Structured Product Labeling Terminology - Structured Product Labeling DEA Schedule Terminology - Schedule of Controlled Substances &#13;
+&#13;
+(http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml - NCI Thesaurus)&#13;
+            </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -270,7 +287,7 @@
       <xsd:element name="ServiceReasonCode" type="ecl:DUEReasonForServiceCode"/>
       <xsd:element minOccurs="0" name="ProfessionalServiceCode" type="ecl:DUEProfessionalServiceCode"/>
       <xsd:element minOccurs="0" name="ServiceResultCode" type="ecl:DUEResultOfServiceCode"/>
-      <xsd:element minOccurs="0" name="CoAgent" type="dictionary:CoAgent"/>
+      <xsd:element minOccurs="0" name="CoAgent" type="datatypes:CoAgentCode"/>
       <xsd:element minOccurs="0" name="ClinicalSignificanceCode" type="ecl:DUEClinicalSignificanceCode"/>
       <xsd:element minOccurs="0" name="AcknowledgementReason" type="datatypes:an..100"/>
     </xsd:sequence>
@@ -318,7 +335,7 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
@@ -335,7 +352,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element name="RefillsRemaining"/>
-          <xsd:element minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -366,7 +383,7 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
@@ -383,7 +400,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -496,7 +513,7 @@
       <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="NumberOfRefills"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorization"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Note"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
@@ -513,7 +530,7 @@
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RefillsRemaining"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -542,7 +559,7 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
@@ -559,7 +576,7 @@
           <xsd:element minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
           <xsd:element minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -816,9 +833,9 @@
     </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  PrescibedMedication  -->
+  <!--  PrescribedMedication  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="PrescibedMedication">
+  <xsd:complexType name="PrescribedMedication">
     <xsd:complexContent>
       <xsd:restriction base="dictionary:RequestedMedication">
         <xsd:sequence>
@@ -827,7 +844,11 @@
           <xsd:element name="Quantity" type="dictionary:Quantity"/>
           <xsd:element name="Directions"/>
           <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
-          <xsd:element name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element name="WrittenDate" type="datatypes:DateType">
+            <xsd:annotation>
+              <xsd:documentation>"Value 85. See Imp Guide for more information."</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
@@ -837,7 +858,7 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
@@ -854,7 +875,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -994,7 +1015,7 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note">
             <xsd:simpleType>
               <xsd:restriction base="datatypes:an">
@@ -1009,15 +1030,7 @@
           <xsd:element minOccurs="0" name="RouteOfAdministration">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element minOccurs="0" name="RouteOfAdministrationCode">
-                  <xsd:complexType>
-                    <xsd:sequence>
-                      <xsd:element name="ItemDescriptionLong" type="xsd:string"/>
-                      <xsd:element minOccurs="0" name="ItemNumber" type="ecl:Code"/>
-                      <xsd:element minOccurs="0" name="CodeListQualifier" type="ecl:RouteOfAdministration"/>
-                    </xsd:sequence>
-                  </xsd:complexType>
-                </xsd:element>
+                <xsd:element minOccurs="0" name="RouteOfAdministrationCode" type="datatypes:RouteOfAdministrationCodeWithText"/>
                 <xsd:element minOccurs="0" name="MultipleRouteOfAdministrationModifier" type="datatypes:ANDOR"/>
               </xsd:sequence>
             </xsd:complexType>
@@ -1038,13 +1051,7 @@
               </xsd:restriction>
             </xsd:simpleType>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element minOccurs="0" name="Qualifier" type="datatypes:ReferenceQualifier1153CodedType"/>
-              </xsd:sequence>
-            </xsd:complexType>
-          </xsd:element>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -1065,7 +1072,12 @@
           <xsd:element name="Quantity" type="dictionary:Quantity"/>
           <xsd:element name="Directions"/>
           <xsd:element minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="WrittenDate" type="datatypes:DateType"/>
+          <xsd:element name="WrittenDate" type="datatypes:DateType">
+            <xsd:annotation>
+              <xsd:documentation>"Value 85. See Imp Guide for more information."&#13;
+</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="LastFillDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
@@ -1075,7 +1087,7 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
@@ -1092,7 +1104,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -1123,7 +1135,7 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element minOccurs="0" name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
@@ -1140,7 +1152,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -1171,10 +1183,10 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
-          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
           <xsd:element minOccurs="0" name="RouteOfAdministration"/>
@@ -1188,7 +1200,7 @@
           <xsd:element minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
           <xsd:element minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
@@ -1219,7 +1231,7 @@
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
           <xsd:element name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
-          <xsd:element minOccurs="0" name="PriorAuthorization"/>
+          <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
@@ -1236,7 +1248,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
