@@ -13919,7 +13919,7 @@ A health insurance plan in which the insured person receives discounted prescrip
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gSUD4yxAEd-8mcmtGejV_Q" name="PriorAuthorizationTypeCode" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gSUD4yxAEd-8mcmtGejV_Q" name="PriorAuthorizationTypeCode">
         <ownedComment xmi:id="_gSUD5CxAEd-8mcmtGejV_Q">
           <body>Code clarifying the 'Prior Authorization Number Submitted' (462-EV) or benefit/plan exemption.</body>
         </ownedComment>
