@@ -265,18 +265,7 @@
           <xsd:documentation>NCI values of Units of Presentation  See (http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml - NCI Thesaurus) If CompoundCoded = 2 (Compound), this field must not be sent.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
-        <xsd:annotation>
-          <xsd:documentation>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. &#13;
-&#13;
-If CompoundCoded = 2 (Compound), this field must not be sent.&#13;
-            &#13;
-NCI Administrative Concept - Research Resource - Information Resource - Terminology Subset - Structured Product Labeling Terminology - Structured Product Labeling DEA Schedule Terminology - Schedule of Controlled Substances &#13;
-&#13;
-(http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml - NCI Thesaurus)&#13;
-            </xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
+      <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

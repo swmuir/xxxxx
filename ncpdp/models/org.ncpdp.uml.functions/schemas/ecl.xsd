@@ -233,7 +233,11 @@
           <xsd:documentation>Internal Powder</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="32"/>
+      <xsd:enumeration value="32">
+        <xsd:annotation>
+          <xsd:documentation>Chewing Gum</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="33">
         <xsd:annotation>
           <xsd:documentation>Granules</xsd:documentation>
@@ -519,7 +523,11 @@
           <xsd:documentation>Cream with applicator</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="108"/>
+      <xsd:enumeration value="108">
+        <xsd:annotation>
+          <xsd:documentation>Crystal</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="109">
         <xsd:annotation>
           <xsd:documentation>Not used</xsd:documentation>
@@ -575,11 +583,7 @@
           <xsd:documentation>Granule, effervescent</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="121">
-        <xsd:annotation>
-          <xsd:documentation>Granule, extended release</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="121"/>
       <xsd:enumeration value="122">
         <xsd:annotation>
           <xsd:documentation>Gum</xsd:documentation>
@@ -805,7 +809,11 @@
       <xsd:documentation>Quantity qualifier. X12 DE 673</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="38"/>
+      <xsd:enumeration value="38">
+        <xsd:annotation>
+          <xsd:documentation>Original Quantity</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="40">
         <xsd:annotation>
           <xsd:documentation>Remaining Quantity</xsd:documentation>
@@ -866,11 +874,7 @@
           <xsd:documentation>No password on file for receiver.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="007">
-        <xsd:annotation>
-          <xsd:documentation>Internal processing error has occurred.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="007"/>
       <xsd:enumeration value="008">
         <xsd:annotation>
           <xsd:documentation>Request timed out before response could be received.</xsd:documentation>
@@ -1086,7 +1090,11 @@
           <xsd:documentation>RES free text is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="051"/>
+      <xsd:enumeration value="051">
+        <xsd:annotation>
+          <xsd:documentation>STS status code is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="052">
         <xsd:annotation>
           <xsd:documentation>STS reject code is invalid.</xsd:documentation>
@@ -1367,7 +1375,11 @@
           <xsd:documentation>COO group city is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="108"/>
+      <xsd:enumeration value="108">
+        <xsd:annotation>
+          <xsd:documentation>COO group country is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="109">
         <xsd:annotation>
           <xsd:documentation>COO group postal code is invalid.</xsd:documentation>
@@ -1643,7 +1655,11 @@
           <xsd:documentation>UIZ control agency is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="164"/>
+      <xsd:enumeration value="164">
+        <xsd:annotation>
+          <xsd:documentation>UIZ responder control ref is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="165">
         <xsd:annotation>
           <xsd:documentation>UIZ message count is invalid.</xsd:documentation>
@@ -2199,7 +2215,11 @@
           <xsd:documentation>SIG Route of Administration Code Qualifier is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="276"/>
+      <xsd:enumeration value="276">
+        <xsd:annotation>
+          <xsd:documentation>SIG Route of Administration Code is invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="277">
         <xsd:annotation>
           <xsd:documentation>SIG Multiple Route of Administration Modifier is invalid</xsd:documentation>
@@ -2470,7 +2490,11 @@
           <xsd:documentation>Too many SIG Segments</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="331"/>
+      <xsd:enumeration value="331">
+        <xsd:annotation>
+          <xsd:documentation>Too many SIG element repetitions</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="332">
         <xsd:annotation>
           <xsd:documentation>Too many elements in SIG Segment</xsd:documentation>
@@ -2746,7 +2770,11 @@
           <xsd:documentation>COO Responsible Party Middle Name is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="387"/>
+      <xsd:enumeration value="387">
+        <xsd:annotation>
+          <xsd:documentation>COO Responsible Party Name Sufix is Invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="388">
         <xsd:annotation>
           <xsd:documentation>COO Responsible Party Name Prefix is Invalid</xsd:documentation>
@@ -3022,7 +3050,11 @@
           <xsd:documentation>ALG Severity Item Description is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="453"/>
+      <xsd:enumeration value="453">
+        <xsd:annotation>
+          <xsd:documentation>ALG Severity Item Number is Invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="454">
         <xsd:annotation>
           <xsd:documentation>ALG Severity Item Number Agency is Invalid</xsd:documentation>
@@ -3225,7 +3257,11 @@
           <xsd:documentation>Minor – Code indicating a non-life threatening, annoying, or now-well-documented effect which may or may not require a change in drug therapy. 3 X X</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="9"/>
+      <xsd:enumeration value="9">
+        <xsd:annotation>
+          <xsd:documentation>Undetermined - value to describe a professional service with variable or unknown severity. 9 X X</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -3686,7 +3722,11 @@
           <xsd:documentation>Preventive Health Care Code indicating that the provided professional service was to educate the patient regarding measures mitigating possible adverse effects or maximizing the benefits of the product(s) dispensed; or measures to optimize health status, prevent recurrence or exacerbation of problems.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="CD"/>
+      <xsd:enumeration value="CD">
+        <xsd:annotation>
+          <xsd:documentation>Chronic Disease Management The patient is participating in a coordinated health care intervention program.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="NF">
         <xsd:annotation>
           <xsd:documentation>Non-Formulary Drug-Code indicating that mandatory formulary enforcement activities have been performed by the pharmacist when the drug is not included on the formulary of the patient’s pharmacy benefit plan.</xsd:documentation>
@@ -4062,7 +4102,11 @@
           <xsd:documentation>Not Specified</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="00"/>
+      <xsd:enumeration value="00">
+        <xsd:annotation>
+          <xsd:documentation>Not Specified</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="01">
         <xsd:annotation>
           <xsd:documentation>International Classification of Diseases (ICD9) - Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
@@ -4379,7 +4423,11 @@
           <xsd:documentation>Receiver System Error</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="900"/>
+      <xsd:enumeration value="900">
+        <xsd:annotation>
+          <xsd:documentation>Transaction rejected</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -4882,6 +4930,37 @@
           <xsd:documentation>Requested - The action of obtaining a prior authorization approval is being sought.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PriorAuthorizationTypeCode  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="PriorAuthorizationTypeCode">
+    <xsd:annotation>
+      <xsd:documentation>Code clarifying the 'Prior Authorization Number Submitted' (462-EV) or benefit/plan exemption.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="G1"/>
+      <xsd:enumeration value="PD"/>
+      <xsd:enumeration value="D3"/>
+      <xsd:enumeration value="94"/>
+      <xsd:enumeration value="0B"/>
+      <xsd:enumeration value="1C"/>
+      <xsd:enumeration value="1D"/>
+      <xsd:enumeration value="1E"/>
+      <xsd:enumeration value="1G"/>
+      <xsd:enumeration value="1M"/>
+      <xsd:enumeration value="2U"/>
+      <xsd:enumeration value="BO"/>
+      <xsd:enumeration value="DH"/>
+      <xsd:enumeration value="HI"/>
+      <xsd:enumeration value="NC"/>
+      <xsd:enumeration value="NF"/>
+      <xsd:enumeration value="PF"/>
+      <xsd:enumeration value="SY"/>
+      <xsd:enumeration value="HP"/>
+      <xsd:enumeration value="G1"/>
+      <xsd:enumeration value="ZZ"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -5598,9 +5677,6 @@
   <!--  ResponsibilityAgencies  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ResponsibilityAgencies">
-    <xsd:annotation>
-      <xsd:documentation>The code list defining the Item Number.</xsd:documentation>
-    </xsd:annotation>
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="ND">
         <xsd:annotation>
