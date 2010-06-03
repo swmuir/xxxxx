@@ -3,9 +3,6 @@
   <!--  ApprovedCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ApprovedCode">
-    <xsd:annotation>
-      <xsd:documentation>Message code, on an approved claim/service, communicating the need for an additional follow-up.</xsd:documentation>
-    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="AQ">
         <xsd:annotation>
@@ -583,7 +580,11 @@
           <xsd:documentation>Granule, effervescent</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="121"/>
+      <xsd:enumeration value="121">
+        <xsd:annotation>
+          <xsd:documentation>Granule, extended release</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="122">
         <xsd:annotation>
           <xsd:documentation>Gum</xsd:documentation>
@@ -874,7 +875,11 @@
           <xsd:documentation>No password on file for receiver.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="007"/>
+      <xsd:enumeration value="007">
+        <xsd:annotation>
+          <xsd:documentation>Internal processing error has occurred.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="008">
         <xsd:annotation>
           <xsd:documentation>Request timed out before response could be received.</xsd:documentation>
@@ -1560,11 +1565,7 @@
           <xsd:documentation>DRU refill quantity is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="145">
-        <xsd:annotation>
-          <xsd:documentation>DRU clinical info qualifier is invalid.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="145"/>
       <xsd:enumeration value="146">
         <xsd:annotation>
           <xsd:documentation>DRU clinical info level1 reference is invalid</xsd:documentation>
@@ -3472,11 +3473,7 @@
           <xsd:documentation>Coordination of care Case management activities of a pharmacist related to the care being delivered by multiple providers.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="PM">
-        <xsd:annotation>
-          <xsd:documentation>Patient monitoring Code indicating the evaluation of established therapy for the purpose of determining whether an existing therapeutic plan should be altered.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="PM"/>
       <xsd:enumeration value="PE">
         <xsd:annotation>
           <xsd:documentation>Patient education/instruction Code indicating verbal and/or written communication by a pharmacist to enhance the patient’s knowledge about the condition under treatment or to develop skills and competencies related to its management.</xsd:documentation>
@@ -4047,11 +4044,7 @@
           <xsd:documentation>Filled During Transition Benefit/Other Rejection - The drug was paid because the Medicare Part D patient is in a transitional drug benefit period. After the transition drug benefit period, this drug will reject for plan limitations or other reason(s).</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="AH">
-        <xsd:annotation>
-          <xsd:documentation>Emergency Fill Situation - This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="AH"/>
       <xsd:enumeration value="AJ">
         <xsd:annotation>
           <xsd:documentation>Emergency Fill Situation/Prior Authorization Required -This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period but would have rejected due to the need for a prior authorization.</xsd:documentation>
@@ -4226,11 +4219,7 @@
           <xsd:documentation>Substitution Allowed-Generic Drug Not Available in Marketplace-This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the brand product is dispensed since the generic is not currently manufactured, distributed, or is temporarily unavailable.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="9">
-        <xsd:annotation>
-          <xsd:documentation>Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requested Brand Product To Be Dispensed - This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted, but the plan's formulary requests the brand product. This situation can occur when the prescriber writes the prescription using either the brand or generic name and the product is available from multiple sources.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="9"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -4453,6 +4442,39 @@
           <xsd:documentation>Not Specified or Unknown</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  IDQualifier  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="IDQualifier">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="OB"/>
+      <xsd:enumeration value="1C"/>
+      <xsd:enumeration value="1D"/>
+      <xsd:enumeration value="1E"/>
+      <xsd:enumeration value="1G"/>
+      <xsd:enumeration value="1M"/>
+      <xsd:enumeration value="1J"/>
+      <xsd:enumeration value="2U"/>
+      <xsd:enumeration value="94"/>
+      <xsd:enumeration value="BO"/>
+      <xsd:enumeration value="AD"/>
+      <xsd:enumeration value="C1"/>
+      <xsd:enumeration value="D3"/>
+      <xsd:enumeration value="DH"/>
+      <xsd:enumeration value="EA"/>
+      <xsd:enumeration value="EJ"/>
+      <xsd:enumeration value="G1"/>
+      <xsd:enumeration value="GI"/>
+      <xsd:enumeration value="HI"/>
+      <xsd:enumeration value="HP"/>
+      <xsd:enumeration value="IP"/>
+      <xsd:enumeration value="NC"/>
+      <xsd:enumeration value="NF"/>
+      <xsd:enumeration value="PD"/>
+      <xsd:enumeration value="SY"/>
+      <xsd:enumeration value="ZZ"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -5677,6 +5699,9 @@
   <!--  ResponsibilityAgencies  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ResponsibilityAgencies">
+    <xsd:annotation>
+      <xsd:documentation>The code list defining the Item Number.</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="ND">
         <xsd:annotation>
@@ -6031,12 +6056,7 @@
 (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="ABF">
-        <xsd:annotation>
-          <xsd:documentation>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#13;
-(ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="ABF"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

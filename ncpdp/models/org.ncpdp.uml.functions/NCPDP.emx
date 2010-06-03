@@ -510,15 +510,6 @@
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_4CkGeTD1Ed-8rpqfOAePKg" value="([!-~]|[ ])*[!-~]([!-~]|[ ])*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_4gNryDD1Ed-8rpqfOAePKg" name="IDQualifier" visibility="private">
-        <generalization xmi:id="_4gNrzDD1Ed-8rpqfOAePKg">
-          <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-        </generalization>
-        <ownedAttribute xmi:id="_4gNryTD1Ed-8rpqfOAePKg" name="pattern">
-          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4gNryjD1Ed-8rpqfOAePKg" value="0B|1C|1D|1E|1G|1M|1J|2U|94|ADI|BO|C1|D3|DH|EA|EJ|G1|GI|HI|HPI|IP|NC|NF|PD|SY|ZZ"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_4CRLiDD1Ed-8rpqfOAePKg" name="MailAddressType">
         <generalization xmi:id="_4CRLjDD1Ed-8rpqfOAePKg">
           <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
@@ -718,30 +709,6 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cerm_DEyEd-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_SHJ9ADEzEd-8rpqfOAePKg" name="SourceQualifiedCode">
-        <generalization xmi:id="_pHXjAFLiEd-wEdo_Dk3J9g" general="_5lUzQEyMEd-G-pSkcIGh3w"/>
-        <ownedAttribute xmi:id="_v0hXiFLiEd-wEdo_Dk3J9g" name="Text">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v0hXiVLiEd-wEdo_Dk3J9g" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v0hXilLiEd-wEdo_Dk3J9g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_v0hXgFLiEd-wEdo_Dk3J9g" name="Qualifier">
-          <ownedComment xmi:id="_v0hXgVLiEd-wEdo_Dk3J9g" annotatedElement="_v0hXgFLiEd-wEdo_Dk3J9g">
-            <body></body>
-          </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h5k8oSxAEd-8mcmtGejV_Q?ecl/ecl/SourceCodeList?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v0hXglLiEd-wEdo_Dk3J9g" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v0hXg1LiEd-wEdo_Dk3J9g" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_v0hXhFLiEd-wEdo_Dk3J9g" name="Code">
-          <ownedComment xmi:id="_v0hXhVLiEd-wEdo_Dk3J9g" annotatedElement="_v0hXhFLiEd-wEdo_Dk3J9g">
-            <body></body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v0hXhlLiEd-wEdo_Dk3J9g" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v0hXh1LiEd-wEdo_Dk3J9g" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4PE4hjD1Ed-8rpqfOAePKg" memberEnd="_4PE4hzD1Ed-8rpqfOAePKg _4PE4gTD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4PE4hzD1Ed-8rpqfOAePKg" type="_4PE4cTD1Ed-8rpqfOAePKg" association="_4PE4hjD1Ed-8rpqfOAePKg"/>
       </packagedElement>
@@ -771,12 +738,14 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03lbN2j7Ed-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_28aBID2iEd-xgfp6zNZIHA" name="SourceQualifierCode" visibility="private">
-        <ownedAttribute xmi:id="_28aBIT2iEd-xgfp6zNZIHA" name="Reference">
+      <packagedElement xmi:type="uml:Class" xmi:id="_28aBID2iEd-xgfp6zNZIHA" name="SourceQualifier" visibility="private">
+        <ownedComment xmi:id="_46Ur0G8lEd-E06vcpeQalQ" annotatedElement="_28aBID2iEd-xgfp6zNZIHA">
+          <body>Qualifies the Source Description.  Similar in structure to a qualified code but instead of a code we have reference which is a id</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_28aBIT2iEd-xgfp6zNZIHA" name="Reference" type="_4gNrwDD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_28aBIj2iEd-xgfp6zNZIHA">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_28aBIz2iEd-xgfp6zNZIHA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_28aBJD2iEd-xgfp6zNZIHA" value="1"/>
         </ownedAttribute>
@@ -785,17 +754,15 @@
             <body></body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_28aBJz2iEd-xgfp6zNZIHA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_28aBKD2iEd-xgfp6zNZIHA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_28aBKD2iEd-xgfp6zNZIHA" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_28aBKT2iEd-xgfp6zNZIHA" name="SourceQualifier" type="_4CkGhjD1Ed-8rpqfOAePKg" isReadOnly="true">
+        <ownedAttribute xmi:id="_28aBKT2iEd-xgfp6zNZIHA" name="SourceQualifier" isReadOnly="true">
           <ownedComment xmi:id="_28aBKj2iEd-xgfp6zNZIHA">
             <body></body>
           </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h5k8oSxAEd-8mcmtGejV_Q?ecl/ecl/SourceCodeList?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_28aBKz2iEd-xgfp6zNZIHA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_28aBLD2iEd-xgfp6zNZIHA"/>
-          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_28aBLT2iEd-xgfp6zNZIHA" type="_4CkGhjD1Ed-8rpqfOAePKg">
-            <body>RX</body>
-          </defaultValue>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_5lUzQEyMEd-G-pSkcIGh3w" name="QualifiedCodeWithText">
@@ -1045,6 +1012,72 @@
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_dXB1gWmsEd-pG95HwNNanw" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dXB1gmmsEd-pG95HwNNanw" x="634" y="634"/>
           </children>
+          <children xmi:id="_TSHJ0G8kEd-E06vcpeQalQ" element="_4gEh0DD1Ed-8rpqfOAePKg">
+            <children xmi:id="_TSaEwG8kEd-E06vcpeQalQ" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_TSaEwW8kEd-E06vcpeQalQ" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_TSaEwm8kEd-E06vcpeQalQ" type="Stereotype"/>
+            <children xmi:id="_TSaEw28kEd-E06vcpeQalQ" type="Name"/>
+            <children xmi:id="_TSaExG8kEd-E06vcpeQalQ" type="Parent"/>
+            <children xmi:id="_TSaExW8kEd-E06vcpeQalQ" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TSaExm8kEd-E06vcpeQalQ"/>
+            </children>
+            <children xmi:id="_TSaEx28kEd-E06vcpeQalQ" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TSaEyG8kEd-E06vcpeQalQ"/>
+            </children>
+            <children xmi:id="_TSaEyW8kEd-E06vcpeQalQ" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_TSaEym8kEd-E06vcpeQalQ"/>
+            </children>
+            <children xmi:id="_TSaEy28kEd-E06vcpeQalQ" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_TSaEzG8kEd-E06vcpeQalQ"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_TSHJ0W8kEd-E06vcpeQalQ" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TSHJ0m8kEd-E06vcpeQalQ" x="3122" y="8837"/>
+          </children>
+          <children xmi:id="_VAYpgG8kEd-E06vcpeQalQ" element="_28aBID2iEd-xgfp6zNZIHA">
+            <children xmi:id="_VAYpg28kEd-E06vcpeQalQ" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_VAYphG8kEd-E06vcpeQalQ" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_VAYphW8kEd-E06vcpeQalQ" type="Stereotype"/>
+            <children xmi:id="_VAYphm8kEd-E06vcpeQalQ" type="Name"/>
+            <children xmi:id="_VAYph28kEd-E06vcpeQalQ" type="Parent"/>
+            <children xmi:id="_VAYpiG8kEd-E06vcpeQalQ" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VAYpiW8kEd-E06vcpeQalQ"/>
+            </children>
+            <children xmi:id="_VAYpim8kEd-E06vcpeQalQ" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VAYpi28kEd-E06vcpeQalQ"/>
+            </children>
+            <children xmi:id="_VAYpjG8kEd-E06vcpeQalQ" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VAYpjW8kEd-E06vcpeQalQ"/>
+            </children>
+            <children xmi:id="_VAYpjm8kEd-E06vcpeQalQ" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_VAYpj28kEd-E06vcpeQalQ"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_VAYpgW8kEd-E06vcpeQalQ" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VAYpgm8kEd-E06vcpeQalQ" x="2857" y="4921"/>
+          </children>
+          <children xmi:id="_kvffUG8nEd-E06vcpeQalQ" element="_4gNrwDD1Ed-8rpqfOAePKg">
+            <children xmi:id="_kvffU28nEd-E06vcpeQalQ" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_kvffVG8nEd-E06vcpeQalQ" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_kvffVW8nEd-E06vcpeQalQ" type="Stereotype"/>
+            <children xmi:id="_kvffVm8nEd-E06vcpeQalQ" type="Name"/>
+            <children xmi:id="_kvffV28nEd-E06vcpeQalQ" type="Parent"/>
+            <children xmi:id="_kvffWG8nEd-E06vcpeQalQ" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kvffWW8nEd-E06vcpeQalQ"/>
+            </children>
+            <children xmi:id="_kvffWm8nEd-E06vcpeQalQ" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kvffW28nEd-E06vcpeQalQ"/>
+            </children>
+            <children xmi:id="_kvffXG8nEd-E06vcpeQalQ" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kvffXW8nEd-E06vcpeQalQ"/>
+            </children>
+            <children xmi:id="_kvffXm8nEd-E06vcpeQalQ" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_kvffX28nEd-E06vcpeQalQ"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_kvffUW8nEd-E06vcpeQalQ" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kvffUm8nEd-E06vcpeQalQ" x="10778" y="8876"/>
+          </children>
           <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_e4HfsWmqEd-pG95HwNNanw"/>
           <element xsi:nil="true"/>
           <edges xmi:id="_cxUgYGmsEd-pG95HwNNanw" element="_4jMuXjD1Ed-8rpqfOAePKg" source="_dXB1gGmsEd-pG95HwNNanw" target="_mrmqIGmqEd-pG95HwNNanw">
@@ -1096,6 +1129,56 @@
             <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_cxUgYWmsEd-pG95HwNNanw" fontName="MS Mincho" fontHeight="12" lineWidth="1" showStereotype="Text"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cxUgYmmsEd-pG95HwNNanw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_e9_MQGmsEd-pG95HwNNanw" id="(0.5962186,0.9061805)"/>
+          </edges>
+          <edges xmi:id="_VArkcG8kEd-E06vcpeQalQ" element="_4gNr2DD1Ed-8rpqfOAePKg" source="_VAYpgG8kEd-E06vcpeQalQ" target="_TSHJ0G8kEd-E06vcpeQalQ">
+            <children xmi:id="_VArkc28kEd-E06vcpeQalQ" type="NameLabel">
+              <children xmi:id="_VArkdW8kEd-E06vcpeQalQ" type="Stereotype"/>
+              <children xmi:id="_VArkdm8kEd-E06vcpeQalQ" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VArkdG8kEd-E06vcpeQalQ" y="-186"/>
+            </children>
+            <children xmi:id="_VArkd28kEd-E06vcpeQalQ" type="ToMultiplicityLabel" element="_4gEh0TD1Ed-8rpqfOAePKg">
+              <children xmi:id="_VArkeW8kEd-E06vcpeQalQ" type="ToMultiplicity"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VArkeG8kEd-E06vcpeQalQ" y="396"/>
+            </children>
+            <children xmi:id="_VArkem8kEd-E06vcpeQalQ" type="ToRoleLabel" element="_4gEh0TD1Ed-8rpqfOAePKg">
+              <children xmi:id="_VArkfG8kEd-E06vcpeQalQ" type="ToRole"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VArke28kEd-E06vcpeQalQ" y="-397"/>
+            </children>
+            <children xmi:id="_VArkfW8kEd-E06vcpeQalQ" type="FromMultiplicityLabel" element="_4gNr2TD1Ed-8rpqfOAePKg">
+              <children xmi:id="_VA1VcG8kEd-E06vcpeQalQ" type="FromMultiplicity"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VArkfm8kEd-E06vcpeQalQ" y="396"/>
+            </children>
+            <children xmi:id="_VA1VcW8kEd-E06vcpeQalQ" type="FromRoleLabel" element="_4gNr2TD1Ed-8rpqfOAePKg">
+              <children xmi:id="_VA1Vc28kEd-E06vcpeQalQ" type="FromRole"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VA1Vcm8kEd-E06vcpeQalQ" y="-397"/>
+            </children>
+            <children xmi:id="_VA1VdG8kEd-E06vcpeQalQ" type="ToQualifierLabel" element="_4gEh0TD1Ed-8rpqfOAePKg">
+              <children xmi:id="_VA1Vdm8kEd-E06vcpeQalQ" type="QualifierCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VA1Vd28kEd-E06vcpeQalQ"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VA1VdW8kEd-E06vcpeQalQ" y="-186"/>
+            </children>
+            <children xmi:id="_VA1VeG8kEd-E06vcpeQalQ" type="FromQualifierLabel" element="_4gNr2TD1Ed-8rpqfOAePKg">
+              <children xmi:id="_VA1Vem8kEd-E06vcpeQalQ" type="QualifierCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VA1Ve28kEd-E06vcpeQalQ"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VA1VeW8kEd-E06vcpeQalQ" y="-186"/>
+            </children>
+            <children xmi:id="_VA1VfG8kEd-E06vcpeQalQ" type="ToConstraintLabel" element="_4gEh0TD1Ed-8rpqfOAePKg">
+              <children xmi:id="_VA1Vfm8kEd-E06vcpeQalQ" type="ToConstraintCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VA1Vf28kEd-E06vcpeQalQ"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VA1VfW8kEd-E06vcpeQalQ" y="1058"/>
+            </children>
+            <children xmi:id="_VA1VgG8kEd-E06vcpeQalQ" type="FromConstraintLabel" element="_4gNr2TD1Ed-8rpqfOAePKg">
+              <children xmi:id="_VA1Vgm8kEd-E06vcpeQalQ" type="FromConstraintCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_VA1Vg28kEd-E06vcpeQalQ"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VA1VgW8kEd-E06vcpeQalQ" y="1058"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_VArkcW8kEd-E06vcpeQalQ" fontName="MS Mincho" fontHeight="12" lineWidth="1" showStereotype="Text"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VArkcm8kEd-E06vcpeQalQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WfcogG8kEd-E06vcpeQalQ" id="(0.4077959,0.8941752)"/>
           </edges>
         </contents>
       </eAnnotations>
@@ -1396,12 +1479,13 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d_6x1TZ4Ed-o64UeGGH_dQ"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4gNrwDD1Ed-8rpqfOAePKg" name="IDType" visibility="private">
+      <packagedElement xmi:type="uml:Class" xmi:id="_4gNrwDD1Ed-8rpqfOAePKg" name="IDType">
         <ownedAttribute xmi:id="_4gNrwTD1Ed-8rpqfOAePKg" name="IDValue" type="_4CkGgjD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4gNrxTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gNrxjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4gNrxzD1Ed-8rpqfOAePKg" name="IDQualifier" type="_4gNryDD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4gNrxzD1Ed-8rpqfOAePKg" name="IDQualifier">
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_-xQ0kG8mEd-E06vcpeQalQ?ecl/ecl/IDQualifier?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4gNr0DD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gNr0TD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -1415,8 +1499,11 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gNr1zD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4gNr2jD1Ed-8rpqfOAePKg" name="SourceReference" type="_4CkGgjD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_4gNr2zD1Ed-8rpqfOAePKg">
-            <body></body>
+          <ownedComment xmi:id="_4gNr2zD1Ed-8rpqfOAePKg" annotatedElement="_4gNr2jD1Ed-8rpqfOAePKg">
+            <body>Prescription Number associated to medication history record.&#xD;
+If SourceQualifier value is “P2” (Pharmacy), if sent, this field must contain the pharmacy’s prescription number. &#xD;
+If SourceQualifier value is “PC” (Prescriber), this field is not sent. The Prescriber Order Number is found in Drug section.&#xD;
+If SourceQualifier value is “PY” (Payer), if sent, this field must contain the pharmacy’s prescription number from the payer system from claims processing.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4gNr3TD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gNr3jD1Ed-8rpqfOAePKg"/>
@@ -12656,7 +12743,6 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
   <xsd:Facet xmi:id="_4as5uTD1Ed-8rpqfOAePKg" base_Property="_4as5tzD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4dr8SDD1Ed-8rpqfOAePKg" base_Property="_4dr8RjD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4gEh0zD1Ed-8rpqfOAePKg" base_Comment="_4gEh0jD1Ed-8rpqfOAePKg"/>
-  <xsd:Facet xmi:id="_4gNryzD1Ed-8rpqfOAePKg" base_Property="_4gNryTD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4gNr3DD1Ed-8rpqfOAePKg" base_Comment="_4gNr2zD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4gXcwDD1Ed-8rpqfOAePKg" base_Comment="_4gNr4DD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4iAblzD1Ed-8rpqfOAePKg" base_Comment="_4iAbljD1Ed-8rpqfOAePKg"/>
@@ -12792,9 +12878,6 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
   <xsd:Choice xmi:id="_BPgmgFLJEd-wEdo_Dk3J9g" base_Class="_BPXckVLJEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_RLwisFLbEd-wEdo_Dk3J9g" base_Comment="_RLwipVLbEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_RLwisVLbEd-wEdo_Dk3J9g" base_Comment="_RLwiqlLbEd-wEdo_Dk3J9g"/>
-  <Default:Documentation xmi:id="_v0hXi1LiEd-wEdo_Dk3J9g" base_Comment="_v0hXgVLiEd-wEdo_Dk3J9g"/>
-  <Default:Documentation xmi:id="_v0hXjFLiEd-wEdo_Dk3J9g" base_Comment="_v0hXhVLiEd-wEdo_Dk3J9g"/>
-  <xsd:Restriction xmi:id="_BuIrIFLoEd-wEdo_Dk3J9g" base_Generalization="_pHXjAFLiEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_kWxfkVOXEd-wEdo_Dk3J9g" base_Comment="_kWxfkFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_pWQRUFOXEd-wEdo_Dk3J9g" base_Comment="_pWGgUFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
@@ -13028,4 +13111,5 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
   <Default:Documentation xmi:id="_DT4O8WmnEd-rC41nbGoKjA" base_Comment="_DTud_GmnEd-rC41nbGoKjA"/>
   <Default:Documentation xmi:id="_cRLmwGm3Ed-pG95HwNNanw" base_Comment="_cRCc0Gm3Ed-pG95HwNNanw"/>
   <Default:Documentation xmi:id="_uMRTUWm3Ed-pG95HwNNanw" base_Comment="_uMRTUGm3Ed-pG95HwNNanw"/>
+  <Default:Documentation xmi:id="_46Ur0W8lEd-E06vcpeQalQ" base_Comment="_46Ur0G8lEd-E06vcpeQalQ"/>
 </xmi:XMI>
