@@ -26995,6 +26995,34 @@ A health insurance plan in which the insured person receives discounted prescrip
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_-xQ0kG8mEd-E06vcpeQalQ" name="IDQualifier">
+        <ownedLiteral xmi:id="_Db4woG8nEd-E06vcpeQalQ" name="OB" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_DhjTwG8nEd-E06vcpeQalQ" name="1C" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_DkX-QG8nEd-E06vcpeQalQ" name="1D" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_Dl3zEG8nEd-E06vcpeQalQ" name="1E" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_DnXA0G8nEd-E06vcpeQalQ" name="1G" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_Do2OkG8nEd-E06vcpeQalQ" name="1M" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_DqVcUG8nEd-E06vcpeQalQ" name="1J" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_Dr1RIG8nEd-E06vcpeQalQ" name="2U" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_DteP4G8nEd-E06vcpeQalQ" name="94" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_DuzsoG8nEd-E06vcpeQalQ" name="BO" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_DwS6YG8nEd-E06vcpeQalQ" name="AD" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_Dxo-MG8nEd-E06vcpeQalQ" name="C1" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_DzIL8G8nEd-E06vcpeQalQ" name="D3" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_D0xKsG8nEd-E06vcpeQalQ" name="DH" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_D3JwUG8nEd-E06vcpeQalQ" name="EA" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_D4o-EG8nEd-E06vcpeQalQ" name="EJ" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_D6Iy4G8nEd-E06vcpeQalQ" name="G1" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_D7ePoG8nEd-E06vcpeQalQ" name="GI" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_D8-EcG8nEd-E06vcpeQalQ" name="HI" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_D-dSMG8nEd-E06vcpeQalQ" name="HP" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_ZxDb0G8nEd-E06vcpeQalQ" name="IP" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_bO7vEG8nEd-E06vcpeQalQ" name="NC" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_cWwSwG8nEd-E06vcpeQalQ" name="NF" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_da20EG8nEd-E06vcpeQalQ" name="PD" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_eMxZMG8nEd-E06vcpeQalQ" name="SY" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_e2froG8nEd-E06vcpeQalQ" name="ZZ" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
