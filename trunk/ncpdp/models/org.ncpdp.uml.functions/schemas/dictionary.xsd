@@ -42,8 +42,6 @@
       <xsd:restriction base="dictionary:OptionalBenefitsCoordination">
         <xsd:sequence>
           <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
@@ -58,6 +56,10 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+          <xsd:choice maxOccurs="0" minOccurs="0">
+            <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+            <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          </xsd:choice>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -70,8 +72,6 @@
       <xsd:restriction base="dictionary:OptionalBenefitsCoordination">
         <xsd:sequence>
           <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
-          <xsd:element name="EffectiveDate" type="datatypes:DateType"/>
-          <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
@@ -86,6 +86,10 @@
           <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
           <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
           <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+          <xsd:choice>
+            <xsd:element name="EffectiveDate" type="datatypes:DateType"/>
+            <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
+          </xsd:choice>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -98,8 +102,6 @@
       <xsd:restriction base="dictionary:OptionalBenefitsCoordination">
         <xsd:sequence>
           <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
-          <xsd:element name="EffectiveDate" type="datatypes:DateType"/>
-          <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
@@ -114,6 +116,10 @@
           <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
           <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
           <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+          <xsd:choice minOccurs="0">
+            <xsd:element name="EffectiveDate" type="datatypes:DateType"/>
+            <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
+          </xsd:choice>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -126,8 +132,6 @@
       <xsd:restriction base="dictionary:OptionalBenefitsCoordination">
         <xsd:sequence>
           <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
@@ -142,6 +146,10 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
           <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+          <xsd:choice maxOccurs="0" minOccurs="0">
+            <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+            <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          </xsd:choice>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -248,6 +256,15 @@
 				</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element minOccurs="0" name="Strength" type="datatypes:an..70">
+        <xsd:annotation>
+          <xsd:documentation>Need to add annotation to strength code&#13;
+&#13;
+Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv&#13;
+&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="DrugDBCode" type="datatypes:DrugDBCode">
         <xsd:annotation>
           <xsd:documentation>If CompoundCoded = 2 (Compound), this field must not be sent.</xsd:documentation>
@@ -262,7 +279,9 @@
       </xsd:element>
       <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:NCICode">
         <xsd:annotation>
-          <xsd:documentation>NCI values of Units of Presentation  See (http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml - NCI Thesaurus) If CompoundCoded = 2 (Compound), this field must not be sent.</xsd:documentation>
+          <xsd:documentation>NCI values of Units of Presentation  See (http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml - NCI Thesaurus) If CompoundCoded = 2 (Compound), this field must not be sent.&#13;
+&#13;
+Need to add annotation for strength code</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
@@ -333,12 +352,12 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills"/>
+          <xsd:element minOccurs="0" name="NumberOfRefills"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="dictionary:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
-          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
           <xsd:element minOccurs="0" name="RouteOfAdministration"/>
@@ -354,8 +373,8 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
           <xsd:element name="RefillsRemaining"/>
           <xsd:element minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:OptionalPharmacy"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:HistoryPrescriber"/>
           <xsd:element minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -402,8 +421,8 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:OptionalPharmacy"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:HistoryPrescriber"/>
           <xsd:element minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -551,8 +570,8 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RefillsRemaining"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:OptionalPharmacy"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:HistoryPrescriber"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -619,8 +638,6 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
   <xsd:complexType name="OptionalBenefitsCoordination">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
-      <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
@@ -635,6 +652,10 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
       <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
       <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
       <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+      <xsd:choice minOccurs="0">
+        <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+        <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+      </xsd:choice>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -674,8 +695,7 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
   <xsd:complexType name="OtherCompoundInformationType">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="CompoundCoded" type="ecl:CompoundCode"/>
-      <xsd:element minOccurs="0" name="FormSourceCode" type="ecl:SourceCodeList"/>
-      <xsd:element minOccurs="0" name="FinalCompoundPharmaceuticalDosageForm" type="datatypes:an..70"/>
+      <xsd:element minOccurs="0" name="FinalCompoundPharmaceuticalDosageForm" type="datatypes:NCICode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -696,8 +716,8 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
           <xsd:element maxOccurs="0" minOccurs="0" name="ResidenceCode" type="ecl:ResidenceCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="PregnancyIndicator" type="xsd:boolean"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Smoker" type="xsd:boolean"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Race" type="xsd:string"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Ethnicity" type="xsd:string"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Race" type="datatypes:CDCCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Ethnicity" type="datatypes:CDCCode"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -827,8 +847,8 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Pharmacist">
     <xsd:sequence>
-      <xsd:element name="Identification" type="dictionary:ProviderID"/>
-      <xsd:element minOccurs="0" name="Name" type="datatypes:NameType"/>
+      <xsd:element minOccurs="0" name="Identification" type="dictionary:ProviderID"/>
+      <xsd:element name="Name" type="datatypes:NameType"/>
       <xsd:element minOccurs="0" name="BusinessName" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
       <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
@@ -1002,9 +1022,38 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
     <xsd:sequence>
       <xsd:element name="Value" type="datatypes:n..11M"/>
       <xsd:element name="CodeListQualifier" type="ecl:CodeListQualifierQuantityQualifierDRUSegmentX12DE673"/>
-      <xsd:element name="UnitSourceCode" type="ecl:SourceCodeList"/>
       <xsd:element name="PotencyUnitCode" type="ecl:PotencyUnitCode"/>
     </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  RefillBenefitsCoordination  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="RefillBenefitsCoordination">
+    <xsd:complexContent>
+      <xsd:restriction base="dictionary:OptionalBenefitsCoordination">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PayerIdentification" type="dictionary:PayerID"/>
+          <xsd:element minOccurs="0" name="PayerName" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
+          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+          <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
+          <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="GroupName" type="datatypes:an..35"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Address" type="datatypes:AddressType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Consent" type="ecl:ConsentType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+          <xsd:choice maxOccurs="0" minOccurs="0">
+            <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
+            <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          </xsd:choice>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  RefillRequestDispensedMedication  -->
@@ -1056,7 +1105,7 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
           </xsd:element>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="dictionary:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="dictionary:CompoundIngredient"/>
-          <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
           <xsd:element name="AdditionalRefillsAuthorized"/>
           <xsd:element minOccurs="0" name="PharmacyRequestedRefills"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DoNotFill" type="xsd:boolean"/>
@@ -1072,9 +1121,9 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
           </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
-          <xsd:element minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="dictionary:HistorySource"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -1109,7 +1158,7 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="dictionary:DrugUseEvaluation"/>
-          <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
           <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="dictionary:OtherCompoundInformationType"/>
           <xsd:element minOccurs="0" name="RouteOfAdministration"/>
