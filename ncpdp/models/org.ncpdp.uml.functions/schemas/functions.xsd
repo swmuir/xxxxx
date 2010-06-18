@@ -35,7 +35,7 @@
           <xsd:element name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
           <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:CensusBenefitsCoordination"/>

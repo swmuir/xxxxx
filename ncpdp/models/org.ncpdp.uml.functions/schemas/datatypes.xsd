@@ -247,7 +247,6 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CDCCode">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
       <xsd:element name="Code" type="ecl:Code"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -369,14 +368,10 @@
   <!--  PriorAuthorizationCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PriorAuthorizationCode">
-    <xsd:complexContent>
-      <xsd:restriction base="datatypes:QualifiedCode">
-        <xsd:sequence>
-          <xsd:element name="Code" type="ecl:Code"/>
-          <xsd:element name="Qualifier" type="ecl:PriorAuthorizationTypeCode"/>
-        </xsd:sequence>
-      </xsd:restriction>
-    </xsd:complexContent>
+    <xsd:sequence>
+      <xsd:element name="Value" type="datatypes:an..35M"/>
+      <xsd:element name="Qualifier" type="ecl:PriorAuthorizationTypeCode"/>
+    </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  ProblemNameCode  -->
@@ -443,8 +438,8 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SNOMEDCode">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
-      <xsd:element name="Code" type="ecl:Code"/>
+      <xsd:element name="Text" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
