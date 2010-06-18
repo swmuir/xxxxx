@@ -27023,6 +27023,71 @@ A health insurance plan in which the insured person receives discounted prescrip
         <ownedLiteral xmi:id="_eMxZMG8nEd-E06vcpeQalQ" name="SY" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
         <ownedLiteral xmi:id="_e2froG8nEd-E06vcpeQalQ" name="ZZ" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_WLqQoHrnEd-so7mbE4Frzg" name="RxChangeRequestFunction">
+        <ownedComment xmi:id="_WLqQoXrnEd-so7mbE4Frzg">
+          <body>Used in Prescription Change Request transactions, to request a change to the original new prescription.</body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_WLqQonrnEd-so7mbE4Frzg" name="G" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQo3rnEd-so7mbE4Frzg">
+            <body>Generic Substitution</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQpHrnEd-so7mbE4Frzg" name="T" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQpXrnEd-so7mbE4Frzg">
+            <body>Therapeutic Interchange/Substitution</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQpnrnEd-so7mbE4Frzg" name="P" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQp3rnEd-so7mbE4Frzg">
+            <body>Prior Authorization Required</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQqHrnEd-so7mbE4Frzg" name="A" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQqXrnEd-so7mbE4Frzg">
+            <body>Admit</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQqnrnEd-so7mbE4Frzg" name="C" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQq3rnEd-so7mbE4Frzg">
+            <body>Change</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQrHrnEd-so7mbE4Frzg" name="C1" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQrXrnEd-so7mbE4Frzg">
+            <body>Significant change (Any changes to the Drug, form, strength, dosage, or route)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQrnrnEd-so7mbE4Frzg" name="C2" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQr3rnEd-so7mbE4Frzg">
+            <body>Frequency Change (Any change to the frequency or hours of administration for the drug)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQsHrnEd-so7mbE4Frzg" name="C3" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQsXrnEd-so7mbE4Frzg">
+            <body>Insignificant Change (All other changes)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQsnrnEd-so7mbE4Frzg" name="D1" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQs3rnEd-so7mbE4Frzg">
+            <body>Discharge - Expired</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQtHrnEd-so7mbE4Frzg" name="D2" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQtXrnEd-so7mbE4Frzg">
+            <body>Discharge - Return Not Anticipated</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQtnrnEd-so7mbE4Frzg" name="D3" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQt3rnEd-so7mbE4Frzg">
+            <body>Discharge - Return Anticipated</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WLqQuHrnEd-so7mbE4Frzg" name="D4" classifier="_WLqQoHrnEd-so7mbE4Frzg">
+          <ownedComment xmi:id="_WLqQuXrnEd-so7mbE4Frzg">
+            <body>Discharge Other</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -31121,4 +31186,18 @@ A health insurance plan in which the insured person receives discounted prescrip
   <Default:Documentation xmi:id="_Qv020mmnEd-rC41nbGoKjA" base_Comment="_Qv02xGmnEd-rC41nbGoKjA"/>
   <Default:Documentation xmi:id="_Qv0202mnEd-rC41nbGoKjA" base_Comment="_Qv02xmmnEd-rC41nbGoKjA"/>
   <xsd:Restriction xmi:id="_rsR8cGmvEd-pG95HwNNanw" base_Generalization="_rsIygGmvEd-pG95HwNNanw"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_WLzakHrnEd-so7mbE4Frzg" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_WLqQoHrnEd-so7mbE4Frzg" displayName="4343 - Message Function, coded"/>
+  <Default:Documentation xmi:id="_WMG8kHrnEd-so7mbE4Frzg" base_Comment="_WLqQoXrnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8kXrnEd-so7mbE4Frzg" base_Comment="_WLqQo3rnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8knrnEd-so7mbE4Frzg" base_Comment="_WLqQpXrnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8k3rnEd-so7mbE4Frzg" base_Comment="_WLqQp3rnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8lHrnEd-so7mbE4Frzg" base_Comment="_WLqQqXrnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8lXrnEd-so7mbE4Frzg" base_Comment="_WLqQq3rnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8lnrnEd-so7mbE4Frzg" base_Comment="_WLqQrXrnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8l3rnEd-so7mbE4Frzg" base_Comment="_WLqQr3rnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8mHrnEd-so7mbE4Frzg" base_Comment="_WLqQsXrnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8mXrnEd-so7mbE4Frzg" base_Comment="_WLqQs3rnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8mnrnEd-so7mbE4Frzg" base_Comment="_WLqQtXrnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8m3rnEd-so7mbE4Frzg" base_Comment="_WLqQt3rnEd-so7mbE4Frzg"/>
+  <Default:Documentation xmi:id="_WMG8nHrnEd-so7mbE4Frzg" base_Comment="_WLqQuXrnEd-so7mbE4Frzg"/>
 </xmi:XMI>
