@@ -116,27 +116,14 @@
       <xsd:element name="Header" type="transport:HeaderType"/>
       <xsd:element name="Body" type="transport:BodyType"/>
     </xsd:sequence>
-    <xsd:attribute name="version" use="required">
-      <xsd:simpleType>
-        <xsd:restriction base="xsd:string">
-          <xsd:pattern value="010"/>
-        </xsd:restriction>
-      </xsd:simpleType>
-    </xsd:attribute>
-    <xsd:attribute name="release" use="required">
-      <xsd:simpleType>
-        <xsd:restriction base="xsd:string">
-          <xsd:pattern value="011"/>
-        </xsd:restriction>
-      </xsd:simpleType>
-    </xsd:attribute>
-    <xsd:attribute name="HighestVersionSupported">
-      <xsd:simpleType>
-        <xsd:restriction base="datatypes:an">
-          <xsd:maxLength value="6"/>
-        </xsd:restriction>
-      </xsd:simpleType>
-    </xsd:attribute>
+    <xsd:attribute name="version" type="xsd:string" use="required"/>
+    <xsd:attribute name="release" type="xsd:string" use="required"/>
+    <xsd:attribute name="HighestVersionSupported" type="xsd:string"/>
+    <xsd:attribute fixed="201008" name="datatypes" type="xsd:string" use="required"/>
+    <xsd:attribute fixed="201008" name="transport" type="xsd:string" use="required"/>
+    <xsd:attribute fixed="201008" name="script" type="xsd:string" use="required"/>
+    <xsd:attribute fixed="201008" name="functions" type="xsd:string" use="required"/>
+    <xsd:attribute fixed="201008" name="dictionary" type="xsd:string" use="required"/>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  PasswordChange  -->

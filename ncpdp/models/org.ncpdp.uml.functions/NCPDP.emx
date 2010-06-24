@@ -9185,45 +9185,85 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4llT-jD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4llT-zD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4llT_jD1Ed-8rpqfOAePKg" name="version" type="_4llUAjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4llT_jD1Ed-8rpqfOAePKg" name="version">
           <ownedComment xmi:id="_4llT_zD1Ed-8rpqfOAePKg" annotatedElement="_4llT_jD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4llUCDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4llUBzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4llUCTD1Ed-8rpqfOAePKg" name="release" type="_4llUDTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4llUCTD1Ed-8rpqfOAePKg" name="release">
           <ownedComment xmi:id="_4llUCjD1Ed-8rpqfOAePKg" annotatedElement="_4llUCTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4llUEzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4llUEjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4llUFDD1Ed-8rpqfOAePKg" name="HighestVersionSupported" type="_4lud4jD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4llUFDD1Ed-8rpqfOAePKg" name="HighestVersionSupported">
           <ownedComment xmi:id="_4llUFTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4lud6DD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4lud5zD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:DataType" xmi:id="_4llUAjD1Ed-8rpqfOAePKg" name="anonymous_82" visibility="private">
-          <generalization xmi:id="_4llUBjD1Ed-8rpqfOAePKg">
-            <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-          </generalization>
-          <ownedAttribute xmi:id="_4llUAzD1Ed-8rpqfOAePKg" name="pattern">
-            <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_4llUBDD1Ed-8rpqfOAePKg" value="010"/>
-          </ownedAttribute>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:DataType" xmi:id="_4llUDTD1Ed-8rpqfOAePKg" name="anonymous_83" visibility="private">
-          <generalization xmi:id="_4llUETD1Ed-8rpqfOAePKg">
-            <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-          </generalization>
-          <ownedAttribute xmi:id="_4llUDjD1Ed-8rpqfOAePKg" name="pattern">
-            <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_4llUDzD1Ed-8rpqfOAePKg" value="011"/>
-          </ownedAttribute>
-        </nestedClassifier>
+        <ownedAttribute xmi:id="_kfDwgH-XEd-eN4XJATQmiQ" name="datatypes" isReadOnly="true">
+          <ownedComment xmi:id="_kfDwgX-XEd-eN4XJATQmiQ" annotatedElement="_kfDwgH-XEd-eN4XJATQmiQ">
+            <body></body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kfDwgn-XEd-eN4XJATQmiQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kfDwg3-XEd-eN4XJATQmiQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_xwRu8H-XEd-eN4XJATQmiQ" value="201008">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_2xPucH-XEd-eN4XJATQmiQ" name="transport" isReadOnly="true">
+          <ownedComment xmi:id="_2xPucX-XEd-eN4XJATQmiQ" annotatedElement="_2xPucH-XEd-eN4XJATQmiQ">
+            <body></body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2xPucn-XEd-eN4XJATQmiQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2xPuc3-XEd-eN4XJATQmiQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_2xPudH-XEd-eN4XJATQmiQ" value="201008">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_27-XwH-XEd-eN4XJATQmiQ" name="script" isReadOnly="true">
+          <ownedComment xmi:id="_27-XwX-XEd-eN4XJATQmiQ" annotatedElement="_27-XwH-XEd-eN4XJATQmiQ">
+            <body></body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_27-Xwn-XEd-eN4XJATQmiQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_27-Xw3-XEd-eN4XJATQmiQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_27-XxH-XEd-eN4XJATQmiQ" value="201008">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3C1NsH-XEd-eN4XJATQmiQ" name="functions" isReadOnly="true">
+          <ownedComment xmi:id="_3C1NsX-XEd-eN4XJATQmiQ" annotatedElement="_3C1NsH-XEd-eN4XJATQmiQ">
+            <body></body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3C1Nsn-XEd-eN4XJATQmiQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3C1Ns3-XEd-eN4XJATQmiQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_3C1NtH-XEd-eN4XJATQmiQ" value="201008">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3HdPAH-XEd-eN4XJATQmiQ" name="dictionary" isReadOnly="true">
+          <ownedComment xmi:id="_3HdPAX-XEd-eN4XJATQmiQ" annotatedElement="_3HdPAH-XEd-eN4XJATQmiQ">
+            <body></body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3HdPAn-XEd-eN4XJATQmiQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3HdPA3-XEd-eN4XJATQmiQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_3HdPBH-XEd-eN4XJATQmiQ" value="201008">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </defaultValue>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4llT_DD1Ed-8rpqfOAePKg" memberEnd="_4llT_TD1Ed-8rpqfOAePKg _4DTtXDD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4llT_TD1Ed-8rpqfOAePKg" type="_4CRLgjD1Ed-8rpqfOAePKg" association="_4llT_DD1Ed-8rpqfOAePKg"/>
@@ -14202,10 +14242,8 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
   <Default:Documentation xmi:id="_4jC9XzD1Ed-8rpqfOAePKg" base_Comment="_4jC9XjD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4llUADD1Ed-8rpqfOAePKg" base_Comment="_4llT_zD1Ed-8rpqfOAePKg"/>
   <xsd:Attribute xmi:id="_4llUATD1Ed-8rpqfOAePKg" base_Property="_4llT_jD1Ed-8rpqfOAePKg"/>
-  <xsd:Facet xmi:id="_4llUBTD1Ed-8rpqfOAePKg" base_Property="_4llUAzD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4llUCzD1Ed-8rpqfOAePKg" base_Comment="_4llUCjD1Ed-8rpqfOAePKg"/>
   <xsd:Attribute xmi:id="_4llUDDD1Ed-8rpqfOAePKg" base_Property="_4llUCTD1Ed-8rpqfOAePKg"/>
-  <xsd:Facet xmi:id="_4llUEDD1Ed-8rpqfOAePKg" base_Property="_4llUDjD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4lud4DD1Ed-8rpqfOAePKg" base_Comment="_4llUFTD1Ed-8rpqfOAePKg"/>
   <xsd:Attribute xmi:id="_4lud4TD1Ed-8rpqfOAePKg" base_Property="_4llUFDD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4lud5TD1Ed-8rpqfOAePKg" base_Property="_4lud4zD1Ed-8rpqfOAePKg"/>
@@ -14533,4 +14571,14 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
   <Default:Documentation xmi:id="_zmmf2H7FEd-qFLXIW1YLFA" base_Comment="_zmmf0X7FEd-qFLXIW1YLFA"/>
   <xsd:Restriction xmi:id="_-A-0AH7FEd-qFLXIW1YLFA" base_Generalization="_9NHuIH7FEd-qFLXIW1YLFA"/>
   <xsd:Restriction xmi:id="_Pb0I0X7qEd-qFLXIW1YLFA" base_Generalization="_Pb0I0H7qEd-qFLXIW1YLFA"/>
+  <xsd:Attribute xmi:id="_kfDwhH-XEd-eN4XJATQmiQ" base_Property="_kfDwgH-XEd-eN4XJATQmiQ"/>
+  <Default:Documentation xmi:id="_kfDwhX-XEd-eN4XJATQmiQ" base_Comment="_kfDwgX-XEd-eN4XJATQmiQ"/>
+  <xsd:Attribute xmi:id="_2xPudX-XEd-eN4XJATQmiQ" base_Property="_2xPucH-XEd-eN4XJATQmiQ"/>
+  <Default:Documentation xmi:id="_2xPudn-XEd-eN4XJATQmiQ" base_Comment="_2xPucX-XEd-eN4XJATQmiQ"/>
+  <xsd:Attribute xmi:id="_27-XxX-XEd-eN4XJATQmiQ" base_Property="_27-XwH-XEd-eN4XJATQmiQ"/>
+  <Default:Documentation xmi:id="_27-Xxn-XEd-eN4XJATQmiQ" base_Comment="_27-XwX-XEd-eN4XJATQmiQ"/>
+  <xsd:Attribute xmi:id="_3C1NtX-XEd-eN4XJATQmiQ" base_Property="_3C1NsH-XEd-eN4XJATQmiQ"/>
+  <Default:Documentation xmi:id="_3C1Ntn-XEd-eN4XJATQmiQ" base_Comment="_3C1NsX-XEd-eN4XJATQmiQ"/>
+  <xsd:Attribute xmi:id="_3HdPBX-XEd-eN4XJATQmiQ" base_Property="_3HdPAH-XEd-eN4XJATQmiQ"/>
+  <Default:Documentation xmi:id="_3HdPBn-XEd-eN4XJATQmiQ" base_Comment="_3HdPAX-XEd-eN4XJATQmiQ"/>
 </xmi:XMI>
