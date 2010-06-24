@@ -9277,10 +9277,11 @@
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ixA69CxAEd-8mcmtGejV_Q" name="SourceQualifier" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ixA69CxAEd-8mcmtGejV_Q" name="SourceQualifier">
         <ownedComment xmi:id="_ixA69SxAEd-8mcmtGejV_Q">
           <body>Qualifies the Source Description.</body>
         </ownedComment>
+        <generalization xmi:id="_YP6GkH7oEd-qFLXIW1YLFA" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_ixKE4ixAEd-8mcmtGejV_Q" name="P2" classifier="_ixA69CxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_ixKE4yxAEd-8mcmtGejV_Q">
             <body>Pharmacy - A facility or location where drugs and other medically related items and services are sold, dispensed, or otherwise provided directly to patients.</body>
@@ -17461,8 +17462,9 @@ A health insurance plan in which the insured person receives discounted prescrip
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_k3rbkDEZEd-8rpqfOAePKg" name="OrderCaptureMethod">
         <ownedLiteral xmi:id="_3kijUDEZEd-8rpqfOAePKg" name="EP" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
-        <ownedLiteral xmi:id="_6qlHMDEZEd-8rpqfOAePKg" name="|VT" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
-        <ownedLiteral xmi:id="_8nmNgDEZEd-8rpqfOAePKg" name="|VI" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
+        <ownedLiteral xmi:id="_6qlHMDEZEd-8rpqfOAePKg" name="VT" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
+        <ownedLiteral xmi:id="_8nmNgDEZEd-8rpqfOAePKg" name="VI" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
+        <ownedLiteral xmi:id="_e2YHQH7HEd-qFLXIW1YLFA" name="WR" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
         <ownedLiteral xmi:id="_AeN5wDEaEd-8rpqfOAePKg" name="TV" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
         <ownedLiteral xmi:id="_CQgWwDEaEd-8rpqfOAePKg" name="OM" classifier="_k3rbkDEZEd-8rpqfOAePKg"/>
       </packagedElement>
@@ -24256,7 +24258,7 @@ A health insurance plan in which the insured person receives discounted prescrip
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_hq0u8SxAEd-8mcmtGejV_Q" name="DoNotFillProfileFlag" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_hq0u8SxAEd-8mcmtGejV_Q" name="DoNotFillCode">
         <ownedComment xmi:id="_hq0u8ixAEd-8mcmtGejV_Q">
           <body>Used for medications ordered by a prescriber but not requiring dispensing at this time, but required for administration and available for drug-to-drug interactions.</body>
         </ownedComment>
@@ -24265,6 +24267,7 @@ A health insurance plan in which the insured person receives discounted prescrip
             <body>Yes</body>
           </ownedComment>
         </ownedLiteral>
+        <ownedLiteral xmi:id="_vHK7gH-TEd-eN4XJATQmiQ" name="H" classifier="_hq0u8SxAEd-8mcmtGejV_Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_etbwwCxAEd-8mcmtGejV_Q" name="DosageFormIDCode" visibility="private">
         <ownedComment xmi:id="_etbwwSxAEd-8mcmtGejV_Q">
@@ -26945,6 +26948,10 @@ A health insurance plan in which the insured person receives discounted prescrip
             <body>UPC</body>
           </ownedComment>
         </ownedLiteral>
+        <ownedLiteral xmi:id="_I4EYsH7OEd-qFLXIW1YLFA" name="SCD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_JMCdkH7OEd-qFLXIW1YLFA" name="SBD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_JRGjwH7OEd-qFLXIW1YLFA" name="GPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_KPsS8H7OEd-qFLXIW1YLFA" name="BPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_AfO38Gj1Ed-Pd7zqA0IwbQ" name="ReasonCode">
         <ownedLiteral xmi:id="_Ct1dgGj1Ed-Pd7zqA0IwbQ" name="AA" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
@@ -27087,6 +27094,10 @@ A health insurance plan in which the insured person receives discounted prescrip
             <body>Discharge Other</body>
           </ownedComment>
         </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_rM8-IH-SEd-eN4XJATQmiQ" name="YNBoolean">
+        <ownedLiteral xmi:id="_5gU9IH-SEd-eN4XJATQmiQ" name="Y" classifier="_rM8-IH-SEd-eN4XJATQmiQ"/>
+        <ownedLiteral xmi:id="_61uCwH-SEd-eN4XJATQmiQ" name="N" classifier="_rM8-IH-SEd-eN4XJATQmiQ"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
@@ -31200,4 +31211,5 @@ A health insurance plan in which the insured person receives discounted prescrip
   <Default:Documentation xmi:id="_WMG8mnrnEd-so7mbE4Frzg" base_Comment="_WLqQtXrnEd-so7mbE4Frzg"/>
   <Default:Documentation xmi:id="_WMG8m3rnEd-so7mbE4Frzg" base_Comment="_WLqQt3rnEd-so7mbE4Frzg"/>
   <Default:Documentation xmi:id="_WMG8nHrnEd-so7mbE4Frzg" base_Comment="_WLqQuXrnEd-so7mbE4Frzg"/>
+  <xsd:Restriction xmi:id="_YP6GkX7oEd-qFLXIW1YLFA" base_Generalization="_YP6GkH7oEd-qFLXIW1YLFA"/>
 </xmi:XMI>
