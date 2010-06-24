@@ -38,7 +38,7 @@
     <xsd:sequence>
       <xsd:element name="Code" type="ecl:ErrorCode"/>
       <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:CodeListQualifierRejectCodeSTSSegment"/>
-      <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
+      <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

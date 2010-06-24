@@ -377,15 +377,11 @@
   <!--  ProblemNameCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ProblemNameCode">
-    <xsd:complexContent>
-      <xsd:restriction base="datatypes:QualifiedCodeWithText">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
-          <xsd:element name="Qualifier" type="ecl:ProblemNameQualifier"/>
-          <xsd:element name="Code" type="ecl:Code"/>
-        </xsd:sequence>
-      </xsd:restriction>
-    </xsd:complexContent>
+    <xsd:sequence>
+      <xsd:element name="Text" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="Qualifier" type="ecl:ProblemNameQualifier"/>
+      <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
+    </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  ProductCode  -->
@@ -429,6 +425,19 @@
           <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
           <xsd:element name="Qualifier" type="ecl:TerminologyQualifier"/>
           <xsd:element name="Code" type="ecl:Code"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SNOMEDAdverseEventCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="SNOMEDAdverseEventCode">
+    <xsd:complexContent>
+      <xsd:restriction base="datatypes:SNOMEDCode">
+        <xsd:sequence>
+          <xsd:element name="Text" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Code" type="ecl:SNOMEDCTPreferredTermsforAdverseEvents"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
