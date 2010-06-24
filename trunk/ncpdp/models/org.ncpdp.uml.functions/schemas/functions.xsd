@@ -38,7 +38,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:CensusBenefitsCoordination"/>
+          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
           <xsd:element name="Facility" type="dictionary:Facilty"/>
           <xsd:element name="Patient" type="dictionary:Patient"/>
@@ -76,7 +76,7 @@
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="dictionary:OptionalBenefitsCoordination"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:PatientFulll"/>
@@ -117,8 +117,8 @@
     <xsd:complexContent>
       <xsd:restriction base="functions:ResponseType">
         <xsd:choice>
-          <xsd:element minOccurs="0" name="Denied" type="functions:DeniedType"/>
-          <xsd:element minOccurs="0" name="Approved" type="functions:ApprovedType"/>
+          <xsd:element name="Denied" type="functions:DeniedType"/>
+          <xsd:element name="Approved" type="functions:ApprovedType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ApprovedWithChanges" type="functions:ApprovedWithChangesType"/>
         </xsd:choice>
       </xsd:restriction>
@@ -137,7 +137,7 @@
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:CensusBenefitsCoordination"/>
+          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
           <xsd:element name="Patient" type="dictionary:PatientFulll"/>
