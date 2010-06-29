@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/ecl" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?><!--
+
+Copyright (c) 2007, 2008, 2009, 2010 NCPDP. All rights reserved. This work is owned by National Council for Prescription Drug Programs, Inc., 924Ø E. Raintree Drive, Scottsdale, AZ 8526Ø, (48Ø) 477-1ØØØ, ncpdp@ncpdp.org, and protected by the copyright laws of the United States. 17 U.S.C. §1Ø1, et. seq. Permission is given to Council members to copy and use the work or any part thereof in connection with the business purposes of the Council members.   
+
+The work may not be changed or altered. The work may not be sold, used or exploited for commercial purposes. This permission may be revoked by National Council for Prescription Drug Programs, Inc., at any time. The National Council for Prescription Drugs Programs, Inc. is not responsible for any errors or damage as a result of the use of the work.
+NCPDP recognizes the confidentiality of certain information exchanged electronically through the use of its standards. Users should be familiar with the federal, state, and local laws, regulations and codes requiring confidentiality of this information and should utilize the standards accordingly.
+
+NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
+
+
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/ecl" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- ================================================== -->
+  <!-- =====  Simple Type Definitions  -->
+  <!-- ================================================== -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  ApprovedCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -503,7 +516,11 @@
           <xsd:documentation>Capsule, sprinkle</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="104"/>
+      <xsd:enumeration value="104">
+        <xsd:annotation>
+          <xsd:documentation>Capsule, extended release</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="105">
         <xsd:annotation>
           <xsd:documentation>Concentrate</xsd:documentation>
@@ -644,7 +661,11 @@
           <xsd:documentation>Pad</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="134"/>
+      <xsd:enumeration value="134">
+        <xsd:annotation>
+          <xsd:documentation>Paste</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="135">
         <xsd:annotation>
           <xsd:documentation>Pellet</xsd:documentation>
@@ -930,7 +951,11 @@
           <xsd:documentation>Password is blank.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="019"/>
+      <xsd:enumeration value="019">
+        <xsd:annotation>
+          <xsd:documentation>Too many segments.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="020">
         <xsd:annotation>
           <xsd:documentation>Unknown data element encountered.</xsd:documentation>
@@ -1066,7 +1091,11 @@
           <xsd:documentation>REQ new password is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="047"/>
+      <xsd:enumeration value="047">
+        <xsd:annotation>
+          <xsd:documentation>RES response type is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="048">
         <xsd:annotation>
           <xsd:documentation>RES response code is invalid.</xsd:documentation>
@@ -1347,7 +1376,11 @@
           <xsd:documentation>COO cardholder last name is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="104"/>
+      <xsd:enumeration value="104">
+        <xsd:annotation>
+          <xsd:documentation>COO group reference is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="105">
         <xsd:annotation>
           <xsd:documentation>COO group name is invalid.</xsd:documentation>
@@ -1623,7 +1656,11 @@
           <xsd:documentation>UIT reference number is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="160"/>
+      <xsd:enumeration value="160">
+        <xsd:annotation>
+          <xsd:documentation>UIT segment count is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="161">
         <xsd:annotation>
           <xsd:documentation>UIZ dial reference is invalid.</xsd:documentation>
@@ -1759,7 +1796,11 @@
           <xsd:documentation>Too many COO element repetitions.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="188"/>
+      <xsd:enumeration value="188">
+        <xsd:annotation>
+          <xsd:documentation>Too many DRU element repetitions.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="189">
         <xsd:annotation>
           <xsd:documentation>Too many OBS element repetitions.</xsd:documentation>
@@ -1895,7 +1936,11 @@
           <xsd:documentation>DRU DUE Co-Agent ID Qualifier is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="216"/>
+      <xsd:enumeration value="216">
+        <xsd:annotation>
+          <xsd:documentation>DRU Drug Coverage Status Code is invalid.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="217">
         <xsd:annotation>
           <xsd:documentation>COO Date/Time/Period Expiration date - of needed history is less than Effective Date (Begin) of needed history</xsd:documentation>
@@ -2031,7 +2076,11 @@
           <xsd:documentation>SIG Dose Composite Indicator is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="244"/>
+      <xsd:enumeration value="244">
+        <xsd:annotation>
+          <xsd:documentation>SIG Dose Delivery Method Text is invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="245">
         <xsd:annotation>
           <xsd:documentation>SIG Dose Delivery Method Code Qualifier is invalid</xsd:documentation>
@@ -2167,7 +2216,11 @@
           <xsd:documentation>SIG Vehicle Unit Of Measure Code Qualifier is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="272"/>
+      <xsd:enumeration value="272">
+        <xsd:annotation>
+          <xsd:documentation>SIG Vehicle Unit Of Measure Code is invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="273">
         <xsd:annotation>
           <xsd:documentation>SIG Multiple Vehicle Modifier is invalid</xsd:documentation>
@@ -2298,7 +2351,11 @@
           <xsd:documentation>SIG Interval Numeric Value is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="299"/>
+      <xsd:enumeration value="299">
+        <xsd:annotation>
+          <xsd:documentation>SIG Interval Units Text is invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="300">
         <xsd:annotation>
           <xsd:documentation>SIG Interval Units Code Qualifier is invalid</xsd:documentation>
@@ -2434,7 +2491,11 @@
           <xsd:documentation>SIG Indication Value Unit of Measure Code is invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="327"/>
+      <xsd:enumeration value="327">
+        <xsd:annotation>
+          <xsd:documentation>SIG Indication Variable Modifier is invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="328">
         <xsd:annotation>
           <xsd:documentation>SIG Stop Indicator is invalid</xsd:documentation>
@@ -2570,7 +2631,11 @@
           <xsd:documentation>If Compound Code = 2 (Compound), DRU reference number (alternate drug number) field must not be sent.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="355"/>
+      <xsd:enumeration value="355">
+        <xsd:annotation>
+          <xsd:documentation>If Compound Code = 2 (Compound), DRU reference qualifier (alternate drug number qualifier) field must not be sent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="356">
         <xsd:annotation>
           <xsd:documentation>If Compound Code = 2 (Compound), DRU Item Description (drug name ext 1) field must not be sent.</xsd:documentation>
@@ -2706,7 +2771,11 @@
           <xsd:documentation>COO Cardholder Name Suffix is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="383"/>
+      <xsd:enumeration value="383">
+        <xsd:annotation>
+          <xsd:documentation>COO Cardholder Name Prefix is Invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="384">
         <xsd:annotation>
           <xsd:documentation>COO Responsible Party Last Name is Invalid</xsd:documentation>
@@ -2842,7 +2911,11 @@
           <xsd:documentation>CPD Ingredient Agency is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="411"/>
+      <xsd:enumeration value="411">
+        <xsd:annotation>
+          <xsd:documentation>CPD Ingredient Item Form Source Code is Invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="412">
         <xsd:annotation>
           <xsd:documentation>CPD Ingredient Item Form Code is Invalid</xsd:documentation>
@@ -2978,7 +3051,11 @@
           <xsd:documentation>ALG Drug Item Number Agency is Invalid</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="439"/>
+      <xsd:enumeration value="439">
+        <xsd:annotation>
+          <xsd:documentation>ALG Reaction Item Description is Invalid</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="450">
         <xsd:annotation>
           <xsd:documentation>ALG Reaction Item Number is Invalid</xsd:documentation>
@@ -3114,7 +3191,11 @@
       <xsd:documentation>Code indicating whether or not the prescription is a compound.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="0"/>
+      <xsd:enumeration value="0">
+        <xsd:annotation>
+          <xsd:documentation>Not Specified This value is not allowed for the Telecommunication Standard</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="1">
         <xsd:annotation>
           <xsd:documentation>Not a Compound—Medication that is available commercially as a dispensable product</xsd:documentation>
@@ -3182,7 +3263,11 @@
       <xsd:documentation>Code identifying the significance or severity level of a clinical event as contained in the originating database.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="2"/>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation>Moderate – Code indicating that an event, transaction, etc. is of mid-level significance; requires thoughtful review before prescribing/dispensing the medication. Risk vs. benefit should be evaluated. 2 X X</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="1">
         <xsd:annotation>
           <xsd:documentation>Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent adverse drug event. 1 X X</xsd:documentation>
@@ -3328,7 +3413,11 @@
           <xsd:documentation>American Hospital Formulary Service (AHFS)</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="07"/>
+      <xsd:enumeration value="07">
+        <xsd:annotation>
+          <xsd:documentation>Common Procedure Terminology (CPT4)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="04">
         <xsd:annotation>
           <xsd:documentation>Health Industry Business Communications Council (HIBCC)</xsd:documentation>
@@ -3609,7 +3698,11 @@
           <xsd:documentation>Drug-Disease (Inferred)-Indicates that the use of the drug may be inappropriate in light of a specific medical condition that the patient has.  The existence of the specific medical condition is inferred from drugs in the patient’s medication history.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="MS"/>
+      <xsd:enumeration value="MS">
+        <xsd:annotation>
+          <xsd:documentation>Missing Information/Clarification-Code indicating that the prescription order is unclear, incomplete, or illegible with respect to essential information.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="TD">
         <xsd:annotation>
           <xsd:documentation>Therapeutic Code indicating that a simultaneous use of different primary generic chemical entities that have the same therapeutic effect was detected.</xsd:documentation>
@@ -3755,7 +3848,11 @@
           <xsd:documentation>Unnecessary Drug Code indicating that the drug is no longer needed by the patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="UD"/>
+      <xsd:enumeration value="UD">
+        <xsd:annotation>
+          <xsd:documentation>Duplicate Drug Code indicating that multiple prescriptions of the same drug formulation are present in the patient’s current medication profile.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="PN">
         <xsd:annotation>
           <xsd:documentation>Prescriber Consultation Code indicating that a prescriber has requested information or a recommendation related to the care of a patient.</xsd:documentation>
@@ -3896,7 +3993,11 @@
           <xsd:documentation>Medication Administered-Cognitive service whereby the pharmacist performs a patient care activity by personally administering the medication.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="1A"/>
+      <xsd:enumeration value="1A">
+        <xsd:annotation>
+          <xsd:documentation>Filled As Is, False Positive-Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and determines the alert is incorrect for that prescription for that patient and fills the prescription as originally written.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="00">
         <xsd:annotation>
           <xsd:documentation>Not Specified</xsd:documentation>
@@ -4384,7 +4485,11 @@
           <xsd:documentation>Female</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="0"/>
+      <xsd:enumeration value="0">
+        <xsd:annotation>
+          <xsd:documentation>Not Specified or Unknown</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -4657,7 +4762,11 @@
           <xsd:documentation>Return from Leave of Absence - An inpatient returns to the care setting from a hospital leave of absence or therapeutic leave of absence.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="LT"/>
+      <xsd:enumeration value="LT">
+        <xsd:annotation>
+          <xsd:documentation>Therapeutic Leave of Absence - An inpatient leaves the care setting for an overnight absence to visit friends or relatives or to participate in a therapeutic or rehabilitative plan of care.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="OI">
         <xsd:annotation>
           <xsd:documentation>Change outpatient to inpatient - An outpatient or ER patient is being admitted as an inpatient.</xsd:documentation>
@@ -5025,7 +5134,11 @@
           <xsd:documentation>Contracting Organization (PMO) Assigned Code - Internal alphanumeric code used by a PMO to describe a Product Code or Therapeutic Class in a NCPDP manufacturer rebate flat file standard layout. This code is an internal number assigned by the PMO.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="V"/>
+      <xsd:enumeration value="V">
+        <xsd:annotation>
+          <xsd:documentation>All products used = Represents all valid products regardless of type</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="7">
         <xsd:annotation>
           <xsd:documentation>First Databank Routed Dosage Form Medication Identifier (FDB Routed Dosage Form Med ID)-Represents the product or generic name, route of administration, and dosage form.</xsd:documentation>
@@ -5761,7 +5874,11 @@
           <xsd:documentation>Prior Authorization Required</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="A"/>
+      <xsd:enumeration value="A">
+        <xsd:annotation>
+          <xsd:documentation>Admit</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="C">
         <xsd:annotation>
           <xsd:documentation>Change</xsd:documentation>
@@ -5895,6 +6012,9 @@
   <!--  SourceofInformation  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="SourceofInformation">
+    <xsd:annotation>
+      <xsd:documentation>Sender indicates where the sender received the allergy information if known.</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="P">
         <xsd:annotation>
@@ -6115,6 +6235,28 @@
       <xsd:enumeration value="UT">
         <xsd:annotation>
           <xsd:documentation>Universal Time Coordinate</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  TransactionDomainQualifier  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="TransactionDomainQualifier">
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="SCRIPT">
+        <xsd:annotation>
+          <xsd:documentation>Medical Economics Generic Formulation Code (GFC)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="Functions">
+        <xsd:annotation>
+          <xsd:documentation>Medical Economics Generic Master (GM)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="Telecom">
+        <xsd:annotation>
+          <xsd:documentation>American Hospital Formulary Service (AHFS)</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
