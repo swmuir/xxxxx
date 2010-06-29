@@ -1,9 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/Transport" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:transport="http://www.ncpdp.org/schema/Transport" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?><!--
+
+Copyright (c) 2007, 2008, 2009, 2010 NCPDP. All rights reserved. This work is owned by National Council for Prescription Drug Programs, Inc., 924Ø E. Raintree Drive, Scottsdale, AZ 8526Ø, (48Ø) 477-1ØØØ, ncpdp@ncpdp.org, and protected by the copyright laws of the United States. 17 U.S.C. §1Ø1, et. seq. Permission is given to Council members to copy and use the work or any part thereof in connection with the business purposes of the Council members.   
+
+The work may not be changed or altered. The work may not be sold, used or exploited for commercial purposes. This permission may be revoked by National Council for Prescription Drug Programs, Inc., at any time. The National Council for Prescription Drugs Programs, Inc. is not responsible for any errors or damage as a result of the use of the work.
+NCPDP recognizes the confidentiality of certain information exchanged electronically through the use of its standards. Users should be familiar with the federal, state, and local laws, regulations and codes requiring confidentiality of this information and should utilize the standards accordingly.
+
+NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
+
+
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/Transport" version="201008" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:transport="http://www.ncpdp.org/schema/Transport" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/SCRIPT" schemaLocation="script.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/functions" schemaLocation="functions.xsd"/>
+  <!-- ================================================== -->
+  <!-- =====  Element Declarations  -->
+  <!-- ================================================== -->
   <xsd:element name="Message" type="transport:MessageType"/>
+  <!-- ================================================== -->
+  <!-- =====  Complex Type Definitions  -->
+  <!-- ================================================== -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  BodyType  <<choice>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -56,6 +72,9 @@
   <xsd:complexType name="HeaderType">
     <xsd:sequence>
       <xsd:element name="To">
+        <xsd:annotation>
+          <xsd:documentation>This field contains the identification number of the receiver. </xsd:documentation>
+        </xsd:annotation>
         <xsd:complexType>
           <xsd:simpleContent>
             <xsd:extension base="datatypes:MailAddressType">
@@ -85,11 +104,33 @@
           </xsd:simpleContent>
         </xsd:complexType>
       </xsd:element>
-      <xsd:element name="MessageID" type="datatypes:an..35M"/>
-      <xsd:element minOccurs="0" name="RelatesToMessageID" type="datatypes:an..35"/>
-      <xsd:element name="SentTime" type="datatypes:UtcDateType"/>
+      <xsd:element name="MessageID" type="datatypes:an..35M">
+        <xsd:annotation>
+          <xsd:documentation>Trace number. A unique reference identifier for the transmission, generated from the sender of the request and the sender of the response. When generated from the sender, it is then echoed back in the response message in the field RelatesToMessageID. The value in this field must be present in RelatesToMessageID on subsequent transactions (such as RefillRequest, CancelRx, etc) to tie back to an original transmission. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="RelatesToMessageID" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>See Imp Guide for more info. On a direct response transaction (such as Error, Status, RxHistoryResponse) or a subsequent follow up response (such as RxChangeResponse, RefillResponse, CancelRxResponse, MTMServiceResponse) or a subsequent follow up transaction (such as RxFill, Verify), this field is mandatory and is used to link the original message (MessageID) from request to the response or to the subsequent follow up transaction. &#13;
+On the CancelRx and NewRx messages used in the long term care order change process, this field is mandatory and contains the prescribing system’s order ID associated with the original prescription.&#13;
+On requests (such as RefillRequest, CancelRx, RxChangeRequest), this field can only be sent if the message it relates to was electronic. For example, if the prescription was via paper or telephone, a subsequent refill request message would not have a relates to identifier. &#13;
+On other transactions that do not have a paired follow up message (such as NewRx, PasswordChange, GetMessage, Census), this field is an optional secondary identifier based on trading partner agreements or need of the originating system.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="SentTime" type="datatypes:UtcDateType">
+        <xsd:annotation>
+          <xsd:documentation>The date of the transmission.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="Security" type="transport:SecurityType"/>
-      <xsd:element name="SenderSoftware" type="transport:SenderSoftwareType"/>
+      <xsd:element name="SenderSoftware" type="transport:SenderSoftwareType">
+        <xsd:annotation>
+          <xsd:documentation>Identifies the entity responsible that generated the transaction.&#13;
+Note: For Status, Error, Verify transactions – contains software identification of the entity creating the response.&lt;/xs:documentation&gt;&#13;
+				</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="Mailbox" type="transport:MailboxType"/>
       <xsd:element minOccurs="0" name="TestMessage" type="datatypes:n1"/>
       <xsd:element minOccurs="0" name="RxReferenceNumber" type="datatypes:an..35"/>
@@ -116,14 +157,12 @@
       <xsd:element name="Header" type="transport:HeaderType"/>
       <xsd:element name="Body" type="transport:BodyType"/>
     </xsd:sequence>
-    <xsd:attribute name="version" type="xsd:string" use="required"/>
-    <xsd:attribute name="release" type="xsd:string" use="required"/>
-    <xsd:attribute name="HighestVersionSupported" type="xsd:string"/>
-    <xsd:attribute fixed="201008" name="datatypes" type="xsd:string" use="required"/>
-    <xsd:attribute fixed="201008" name="transport" type="xsd:string" use="required"/>
-    <xsd:attribute fixed="201008" name="script" type="xsd:string" use="required"/>
-    <xsd:attribute fixed="201008" name="functions" type="xsd:string" use="required"/>
-    <xsd:attribute fixed="201008" name="dictionary" type="xsd:string" use="required"/>
+    <xsd:attribute name="DatatypesVersion" type="xsd:string" use="required"/>
+    <xsd:attribute name="TransportVersion" type="xsd:string" use="required"/>
+    <xsd:attribute name="TransactionDomain" type="ecl:TransactionDomainQualifier" use="required"/>
+    <xsd:attribute name="TransactionVersion" type="xsd:string" use="required"/>
+    <xsd:attribute name="DictionaryVersion" type="xsd:string" use="required"/>
+    <xsd:attribute name="ECLVersion" type="xsd:string" use="required"/>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  PasswordChange  -->
@@ -166,15 +205,17 @@
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SenderSoftwareType">
     <xsd:sequence>
-      <xsd:element name="SenderSoftwareDeveloper" type="datatypes:an..35"/>
-      <xsd:element name="SenderSoftwareProduct" type="datatypes:an..35"/>
-      <xsd:element name="SenderSoftwareVersionRelease">
-        <xsd:simpleType>
-          <xsd:restriction base="datatypes:an">
-            <xsd:maxLength value="50"/>
-          </xsd:restriction>
-        </xsd:simpleType>
+      <xsd:element name="SenderSoftwareDeveloper" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>The text field that identifies the entity responsible for the software that generated the transaction.  The developer may be a software vendor or, if the software was developed “in-house”, the developer is the entity actually sending the transaction (e.g., a chain).  The value transmitted is determined by the Sender Software Developer.</xsd:documentation>
+        </xsd:annotation>
       </xsd:element>
+      <xsd:element name="SenderSoftwareProduct" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>The text field that identifies the software developer’s product, as determined by the software developer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="SenderSoftwareVersionRelease" type="datatypes:an..50"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
