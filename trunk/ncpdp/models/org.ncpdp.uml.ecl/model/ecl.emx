@@ -27099,6 +27099,27 @@ A health insurance plan in which the insured person receives discounted prescrip
         <ownedLiteral xmi:id="_5gU9IH-SEd-eN4XJATQmiQ" name="Y" classifier="_rM8-IH-SEd-eN4XJATQmiQ"/>
         <ownedLiteral xmi:id="_61uCwH-SEd-eN4XJATQmiQ" name="N" classifier="_rM8-IH-SEd-eN4XJATQmiQ"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_cQxVAIL7Ed-qIZqYwtZPyA" name="TransactionDomainQualifier">
+        <ownedComment xmi:id="_cQxVAYL7Ed-qIZqYwtZPyA">
+          <body></body>
+        </ownedComment>
+        <generalization xmi:id="_cQxVAoL7Ed-qIZqYwtZPyA" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_cQxVA4L7Ed-qIZqYwtZPyA" name="SCRIPT">
+          <ownedComment xmi:id="_cQxVBIL7Ed-qIZqYwtZPyA">
+            <body>Medical Economics Generic Formulation Code (GFC)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_cQxVBYL7Ed-qIZqYwtZPyA" name="Functions">
+          <ownedComment xmi:id="_cQxVBoL7Ed-qIZqYwtZPyA">
+            <body>Medical Economics Generic Master (GM)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_cQxVB4L7Ed-qIZqYwtZPyA" name="Telecom">
+          <ownedComment xmi:id="_cQxVCIL7Ed-qIZqYwtZPyA">
+            <body>American Hospital Formulary Service (AHFS)</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -31212,4 +31233,10 @@ A health insurance plan in which the insured person receives discounted prescrip
   <Default:Documentation xmi:id="_WMG8m3rnEd-so7mbE4Frzg" base_Comment="_WLqQt3rnEd-so7mbE4Frzg"/>
   <Default:Documentation xmi:id="_WMG8nHrnEd-so7mbE4Frzg" base_Comment="_WLqQuXrnEd-so7mbE4Frzg"/>
   <xsd:Restriction xmi:id="_YP6GkX7oEd-qFLXIW1YLFA" base_Generalization="_YP6GkH7oEd-qFLXIW1YLFA"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_cQxVGoL7Ed-qIZqYwtZPyA" valueSetId="1153" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_cQxVAIL7Ed-qIZqYwtZPyA" displayName="1153 - Reference Qualifier- Generic Database, Prior Authorization - DRU Segment"/>
+  <Default:Documentation xmi:id="_cQxVG4L7Ed-qIZqYwtZPyA" base_Comment="_cQxVAYL7Ed-qIZqYwtZPyA"/>
+  <xsd:Restriction xmi:id="_cQxVHIL7Ed-qIZqYwtZPyA" base_Generalization="_cQxVAoL7Ed-qIZqYwtZPyA"/>
+  <Default:Documentation xmi:id="_cQxVHYL7Ed-qIZqYwtZPyA" base_Comment="_cQxVBIL7Ed-qIZqYwtZPyA"/>
+  <Default:Documentation xmi:id="_cQxVHoL7Ed-qIZqYwtZPyA" base_Comment="_cQxVBoL7Ed-qIZqYwtZPyA"/>
+  <Default:Documentation xmi:id="_cQxVH4L7Ed-qIZqYwtZPyA" base_Comment="_cQxVCIL7Ed-qIZqYwtZPyA"/>
 </xmi:XMI>
