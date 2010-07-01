@@ -8,10 +8,10 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:dictionary="http://www.ncpdp.org/schema/dictionary" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
-  <xsd:import namespace="http://www.ncpdp.org/schema/dictionary" schemaLocation="dictionary.xsd"/>
+  <xsd:import namespace="http://www.ncpdp.org/schema/structures" schemaLocation="structures.xsd"/>
   <!-- ================================================== -->
   <!-- =====  Element Declarations  -->
   <!-- ================================================== -->
@@ -104,21 +104,20 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="dictionary:FillStatus"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:MandatoryPharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:Prescriber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:MandatoryPharmacy"/>
+          <xsd:element name="Prescriber" type="structures:Prescriber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
-          <xsd:element name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
-          <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="structures:PrescribedMedication"/>
+          <xsd:element name="MedicationPrescribed" type="structures:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="structures:PrescribedMedication"/>
+          <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -135,16 +134,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
           <xsd:element name="Response" type="SCRIPT:CancellRxResponseType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Patient" type="dictionary:PatientFull"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="dictionary:Medication"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensedAdministered" type="dictionary:Medication"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="dictionary:Medication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Patient" type="structures:PatientFull"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="structures:Medication"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensedAdministered" type="structures:Medication"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="structures:Medication"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -209,7 +208,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>RES-040</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:MandatoryPharmacy"/>
+      <xsd:element minOccurs="0" name="Pharmacy" type="structures:MandatoryPharmacy"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -234,7 +233,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>RES-040</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:MandatoryPharmacy"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:MandatoryPharmacy"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -293,21 +292,20 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="dictionary:FillStatus"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:MandatoryPharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:Prescriber"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:MandatoryPharmacy"/>
+          <xsd:element name="Prescriber" type="structures:Prescriber"/>
           <xsd:element name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
-          <xsd:element name="MedicationPrescribed" type="dictionary:DrugAdministrationMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
-          <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="structures:PrescribedMedication"/>
+          <xsd:element name="MedicationPrescribed" type="structures:DrugAdministrationMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="structures:PrescribedMedication"/>
+          <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -343,22 +341,21 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="dictionary:FillStatus"/>
-          <xsd:element name="Patient" type="dictionary:PatientMandatoryAddress"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:MandatoryPharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:MandatoryPresciber"/>
+          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
+          <xsd:element name="Patient" type="structures:PatientMandatoryAddress"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:MandatoryPharmacy"/>
+          <xsd:element name="Prescriber" type="structures:MandatoryPresciber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DispensingRequestCode" type="ecl:DispensingRequestCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
-          <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
-          <xsd:element name="MedicationPrescribed" type="dictionary:NewRxPrescibedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
-          <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="structures:PrescribedMedication"/>
+          <xsd:element name="MedicationPrescribed" type="structures:NewRxPrescibedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="structures:PrescribedMedication"/>
+          <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -375,22 +372,21 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="dictionary:FillStatus"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element name="Pharmacy" type="dictionary:MandatoryAddressPharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:Prescriber"/>
+          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element name="Pharmacy" type="structures:MandatoryAddressPharmacy"/>
+          <xsd:element name="Prescriber" type="structures:Prescriber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DispensingRequestCode" type="ecl:DispensingRequestCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
-          <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element name="MedicationDispensed" type="dictionary:RefillRequestDispensedMedication"/>
-          <xsd:element minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
-          <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element name="MedicationDispensed" type="structures:RefillRequestDispensedMedication"/>
+          <xsd:element minOccurs="0" name="MedicationPrescribed" type="structures:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="structures:PrescribedMedication"/>
+          <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -407,16 +403,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
           <xsd:element name="Response" type="SCRIPT:RefillResponseType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:Prescriber"/>
-          <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element name="MedicationDispensed" type="dictionary:RefillResponseDispensedMedication"/>
-          <xsd:element minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensedAdministered" type="dictionary:Medication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element name="Pharmacy" type="structures:Pharmacy"/>
+          <xsd:element name="Prescriber" type="structures:Prescriber"/>
+          <xsd:element minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element name="MedicationDispensed" type="structures:RefillResponseDispensedMedication"/>
+          <xsd:element minOccurs="0" name="MedicationPrescribed" type="structures:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensedAdministered" type="structures:Medication"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -490,21 +486,20 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="dictionary:FillStatus"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element name="Pharmacy" type="dictionary:MandatoryAddressPharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:Prescriber"/>
+          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element name="Pharmacy" type="structures:MandatoryAddressPharmacy"/>
+          <xsd:element name="Prescriber" type="structures:Prescriber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
-          <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element minOccurs="0" name="MedicationDispensed" type="dictionary:ResupplyMedication"/>
-          <xsd:element name="MedicationPrescribed" type="dictionary:ResupplyMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:ResupplyMedication"/>
-          <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element minOccurs="0" name="MedicationDispensed" type="structures:ResupplyMedication"/>
+          <xsd:element name="MedicationPrescribed" type="structures:ResupplyMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="structures:ResupplyMedication"/>
+          <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -521,22 +516,21 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="dictionary:FillStatus"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element name="Pharmacy" type="dictionary:MandatoryPharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:Prescriber"/>
+          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element name="Pharmacy" type="structures:MandatoryPharmacy"/>
+          <xsd:element name="Prescriber" type="structures:Prescriber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DispensingRequestCode" type="ecl:DispensingRequestCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
-          <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
-          <xsd:element name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
-          <xsd:element maxOccurs="9" minOccurs="0" name="MedicationRequested" type="dictionary:RequestedMedication"/>
-          <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="structures:PrescribedMedication"/>
+          <xsd:element name="MedicationPrescribed" type="structures:PrescribedMedication"/>
+          <xsd:element maxOccurs="9" minOccurs="0" name="MedicationRequested" type="structures:RequestedMedication"/>
+          <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -553,16 +547,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
           <xsd:element name="Response" type="SCRIPT:RxChangeResponseType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element name="Pharmacy" type="dictionary:MandatoryPharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:Prescriber"/>
-          <xsd:element minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensedAdministered" type="dictionary:Medication"/>
-          <xsd:element minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:Medication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element name="Pharmacy" type="structures:MandatoryPharmacy"/>
+          <xsd:element name="Prescriber" type="structures:Prescriber"/>
+          <xsd:element minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensedAdministered" type="structures:Medication"/>
+          <xsd:element minOccurs="0" name="MedicationPrescribed" type="structures:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="structures:Medication"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -597,20 +591,21 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element name="FillStatus" type="dictionary:FillStatus"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element name="Pharmacy" type="dictionary:MandatoryAddressPharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element name="FillStatus" type="structures:FillStatus"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element name="Pharmacy" type="structures:MandatoryAddressPharmacy"/>
+          <xsd:element name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DispensingRequestCode" type="ecl:DispensingRequestCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element minOccurs="0" name="MedicationDispensed" type="dictionary:RxFillDispensedMedication"/>
-          <xsd:element minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
-          <xsd:element minOccurs="0" name="Supervisor" type="dictionary:SupervisorOptional"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element minOccurs="0" name="MedicationDispensed" type="structures:RxFillDispensedMedication"/>
+          <xsd:element minOccurs="0" name="MedicationPrescribed" type="structures:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="structures:PrescribedMedication"/>
+          <xsd:element minOccurs="0" name="Supervisor" type="structures:SupervisorOptional"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -627,21 +622,20 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:RxHistoryBenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="dictionary:FillStatus"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:OptionalPharmacy"/>
-          <xsd:element name="Prescriber" type="dictionary:OptionalPresciber"/>
+          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:RxHistoryBenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
+          <xsd:element name="Prescriber" type="structures:OptionalPresciber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="dictionary:PrescribedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationPrescribed" type="dictionary:PrescribedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="dictionary:PrescribedMedication"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-          <xsd:element name="EffectiveDate" type="datatypes:DateType"/>
-          <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="structures:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationPrescribed" type="structures:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="structures:PrescribedMedication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+          <xsd:element name="RequestedDates" type="datatypes:DateRange"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -656,17 +650,17 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="0" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
       <xsd:element minOccurs="0" name="Response" type="SCRIPT:BasicResponseType"/>
-      <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:RxHistoryBenefitsCoordination"/>
-      <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-      <xsd:element name="Patient" type="dictionary:Patient"/>
-      <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:OptionalPharmacy"/>
-      <xsd:element name="Prescriber" type="dictionary:HistoryPrescriber"/>
-      <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-      <xsd:element maxOccurs="0" minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
+      <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:RxHistoryBenefitsCoordination"/>
+      <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+      <xsd:element name="Patient" type="structures:Patient"/>
+      <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
+      <xsd:element name="Prescriber" type="structures:HistoryPrescriber"/>
+      <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
+      <xsd:element maxOccurs="0" minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
       <xsd:choice>
-        <xsd:element maxOccurs="300" name="MedicationDispensed" type="dictionary:HistoryDispensedMedication"/>
-        <xsd:element maxOccurs="300" name="MedicationDispensedAdministered" type="dictionary:HistoryDispensedMedication"/>
-        <xsd:element maxOccurs="300" name="MedicationPrescribed" type="dictionary:HistoryPrescibedMedication"/>
+        <xsd:element maxOccurs="300" name="MedicationDispensed" type="structures:HistoryDispensedMedication"/>
+        <xsd:element maxOccurs="300" name="MedicationDispensedAdministered" type="structures:HistoryDispensedMedication"/>
+        <xsd:element maxOccurs="300" name="MedicationPrescribed" type="structures:HistoryPrescibedMedication"/>
       </xsd:choice>
       <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
       <xsd:element name="EffectiveDate" type="datatypes:DateType"/>
@@ -682,21 +676,20 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="FillStatus" type="dictionary:FillStatus"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:PatientFull"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:OptionalPharmacy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:HistoryPrescriber"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="structures:PatientFull"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="structures:HistoryPrescriber"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="dictionary:Medication"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="dictionary:Medication"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationRequested" type="dictionary:Medication"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Supervisor" type="dictionary:SupervisorOptional"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Observation" type="structures:Observation"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="structures:Medication"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="structures:Medication"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationRequested" type="structures:Medication"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Supervisor" type="structures:SupervisorOptional"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -709,16 +702,19 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
       <xsd:element minOccurs="0" name="Response" type="SCRIPT:ResponseType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:PatientFull"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:HistoryPrescriber"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Observation" type="dictionary:Observation"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Supervisor" type="dictionary:Supervisor"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="dictionary:Medication"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensedAdministered" type="dictionary:Medication"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="dictionary:Medication"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="structures:PatientFull"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="structures:HistoryPrescriber"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Observation" type="structures:Observation"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="structures:Medication"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensedAdministered" type="structures:Medication"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="structures:Medication"/>
     </xsd:sequence>
   </xsd:complexType>
+  <xsd:annotation>
+    <xsd:documentation>The NCPDP script.xsd defines SCRIPT domain transactions</xsd:documentation>
+  </xsd:annotation>
 </xsd:schema>

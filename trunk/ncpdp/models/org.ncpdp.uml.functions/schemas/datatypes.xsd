@@ -8,9 +8,8 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/datatypes" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:dictionary="http://www.ncpdp.org/schema/dictionary" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/datatypes" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
-  <xsd:import namespace="http://www.ncpdp.org/schema/dictionary" schemaLocation="dictionary.xsd"/>
   <!-- ================================================== -->
   <!-- =====  Simple Type Definitions  -->
   <!-- ================================================== -->
@@ -470,6 +469,19 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- =====  Complex Type Definitions  -->
   <!-- ================================================== -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  AddressType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="AddressType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="AddressLine1" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="AddressLine2" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="City" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="State" type="ecl:State"/>
+      <xsd:element minOccurs="0" name="ZipCode" type="datatypes:ZipCodeType"/>
+      <xsd:element minOccurs="0" name="PlaceLocationQualifier" type="datatypes:an..3"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  CDCCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CDCCode">
@@ -508,12 +520,103 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CompoundIngredient  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CompoundIngredient">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="CompoundIngredient">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CompoundIngredientItemDescription" type="datatypes:an..105M"/>
+            <xsd:element minOccurs="0" name="ItemNumber" type="datatypes:ProductCode"/>
+            <xsd:element minOccurs="0" name="Strength" type="datatypes:an..70"/>
+            <xsd:element minOccurs="0" name="StrengthForm" type="datatypes:NCICode">
+              <xsd:annotation>
+                <xsd:documentation>NCPDP Drug StrengthForm Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.
+
+</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:NCICode"/>
+            <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Quantity" type="datatypes:Quantity"/>
+      <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DateRange  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DateRange">
+    <xsd:sequence>
+      <xsd:element name="StartDate" type="datatypes:DateType"/>
+      <xsd:element name="EndDate" type="datatypes:DateType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  DateType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DateType">
     <xsd:sequence>
       <xsd:element name="Date" type="datatypes:SimpleDateType"/>
       <xsd:element name="DateTime" type="datatypes:UtcDateType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DrugCoded  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DrugCoded">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="ProductCode" type="datatypes:ProductCode">
+        <xsd:annotation>
+          <xsd:documentation>RefillRequest and RxChangeRequest – whenever possible, send the drug number. If CompoundCoded = 2 (Compound), this field must not be sent. 
+				</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Strength" type="datatypes:an..70">
+        <xsd:annotation>
+          <xsd:documentation>Need to add annotation to strength code 
+Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
+
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DrugDBCode" type="datatypes:DrugDBCode">
+        <xsd:annotation>
+          <xsd:documentation>If CompoundCoded = 2 (Compound), this field must not be sent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="StrengthForm" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP Drug StrengthForm Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="StrengthUnitOfMeasure" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP Drug StrengthUnitOfMeasure Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. 
+
+If CompoundCoded = 2 (Compound), this field must not be sent.
+            
+NCI Administrative Concept - Research Resource - Information Resource - Terminology Subset - Structured Product Labeling Terminology - Structured Product Labeling DEA Schedule Terminology - Schedule of Controlled Substances 
+
+(http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml - NCI Thesaurus)
+            </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -540,6 +643,56 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  DrugUseEvaluation  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="DrugUseEvaluation">
+    <xsd:sequence>
+      <xsd:element name="ServiceReasonCode" type="ecl:DUEReasonForServiceCode"/>
+      <xsd:element minOccurs="0" name="ProfessionalServiceCode" type="ecl:DUEProfessionalServiceCode"/>
+      <xsd:element minOccurs="0" name="ServiceResultCode" type="ecl:DUEResultOfServiceCode"/>
+      <xsd:element minOccurs="0" name="CoAgent" type="datatypes:CoAgentCode"/>
+      <xsd:element minOccurs="0" name="ClinicalSignificanceCode" type="ecl:DUEClinicalSignificanceCode"/>
+      <xsd:element minOccurs="0" name="AcknowledgementReason" type="datatypes:an..100"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Facilty  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Facilty">
+    <xsd:sequence>
+      <xsd:element name="Identification" type="datatypes:ProviderID"/>
+      <xsd:element minOccurs="0" name="FacilityName" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  HistorySource  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="HistorySource">
+    <xsd:sequence>
+      <xsd:element name="Source" type="datatypes:SourceQualifier"/>
+      <xsd:element minOccurs="0" name="SourceReference" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>Prescription Number associated to medication history record.
+If SourceQualifier value is “P2” (Pharmacy), if sent, this field must contain the pharmacy’s prescription number. 
+If SourceQualifier value is “PC” (Prescriber), this field is not sent. The Prescriber Order Number is found in Drug section.
+If SourceQualifier value is “PY” (Payer), if sent, this field must contain the pharmacy’s prescription number from the payer system from claims processing.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="FillNumber" type="datatypes:n..2"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  IDType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="IDType">
+    <xsd:sequence>
+      <xsd:element name="IDValue" type="datatypes:an..35"/>
+      <xsd:element name="IDQualifier" type="ecl:IDQualifier"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  MeasurementType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MeasurementType">
@@ -548,8 +701,14 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element name="Value" type="datatypes:n..18M"/>
       <xsd:element minOccurs="0" name="ObservationDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="MeasurementDataQualifier" type="ecl:MeasurementDataQualifier"/>
-      <xsd:element minOccurs="0" name="MeasurementSourceCode" type="ecl:SourceCodeList"/>
-      <xsd:element name="MeasurementUnitCode" type="datatypes:an..15"/>
+      <xsd:element minOccurs="0" name="MeasurementSourceCode" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP Vital Sign Data Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="MeasurementUnitCode" type="ecl:Code"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -592,6 +751,72 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:simpleContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PatientID  <<complexType, choice>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PatientID">
+    <xsd:choice maxOccurs="2" minOccurs="0">
+      <xsd:element name="NCPDPID" type="datatypes:an..35M"/>
+      <xsd:element name="FileID" type="datatypes:an..35M"/>
+      <xsd:element name="StateLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicareNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicaidNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DentistLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="UPIN" type="datatypes:an..35M"/>
+      <xsd:element name="FacilityID" type="datatypes:an..35M"/>
+      <xsd:element name="PPONumber" type="datatypes:an..35M"/>
+      <xsd:element name="PayerID" type="datatypes:an..35M"/>
+      <xsd:element name="ProcessorIdentificationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="BINLocationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="Commercial" type="datatypes:an..35M"/>
+      <xsd:element name="MedicalRecordIdentificationNumberEHR" type="datatypes:an..35M"/>
+      <xsd:element name="PatientAccountNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DEANumber" type="datatypes:an..35M"/>
+      <xsd:element name="HIN" type="datatypes:an..35M"/>
+      <xsd:element name="IndividualPolicyNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SecondaryCoverage" type="datatypes:an..35M"/>
+      <xsd:element name="NAICCode" type="datatypes:an..35M"/>
+      <xsd:element name="PromotionNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SocialSecurity" type="datatypes:an..35M"/>
+      <xsd:element name="NPI" type="datatypes:an..35M"/>
+      <xsd:element name="PriorAuthorization" type="datatypes:an..35M"/>
+      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35M"/>
+      <xsd:element name="MutuallyDefined" type="datatypes:an..35M"/>
+    </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PayerID  <<complexType, choice>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PayerID">
+    <xsd:choice maxOccurs="1" minOccurs="0">
+      <xsd:element name="NCPDPID" type="datatypes:an..35M"/>
+      <xsd:element name="FileID" type="datatypes:an..35M"/>
+      <xsd:element name="StateLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicareNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicaidNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DentistLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="UPIN" type="datatypes:an..35M"/>
+      <xsd:element name="FacilityID" type="datatypes:an..35M"/>
+      <xsd:element name="PPONumber" type="datatypes:an..35M"/>
+      <xsd:element name="PayerID" type="datatypes:an..35M"/>
+      <xsd:element name="ProcessorIdentificationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="BINLocationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="Commercial" type="datatypes:an..35M"/>
+      <xsd:element name="MedicalRecordIdentificationNumberEHR" type="datatypes:an..35M"/>
+      <xsd:element name="PatientAccountNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DEANumber" type="datatypes:an..35M"/>
+      <xsd:element name="HIN" type="datatypes:an..35M"/>
+      <xsd:element name="IndividualPolicyNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SecondaryCoverage" type="datatypes:an..35M"/>
+      <xsd:element name="NAICCode" type="datatypes:an..35M"/>
+      <xsd:element name="PromotionNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SocialSecurity" type="datatypes:an..35M"/>
+      <xsd:element name="NPI" type="datatypes:an..35M"/>
+      <xsd:element name="PriorAuthorization" type="datatypes:an..35M"/>
+      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35M"/>
+      <xsd:element name="MutuallyDefined" type="datatypes:an..35M"/>
+    </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  PriorAuthorizationCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PriorAuthorizationCode">
@@ -624,6 +849,40 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ProviderID  <<choice, complexType>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="ProviderID">
+    <xsd:choice maxOccurs="10" minOccurs="1">
+      <xsd:element name="NCPDPID" type="datatypes:an..35M"/>
+      <xsd:element name="FileID" type="datatypes:an..35M"/>
+      <xsd:element name="StateLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicareNumber" type="datatypes:an..35M"/>
+      <xsd:element name="MedicaidNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DentistLicenseNumber" type="datatypes:an..35M"/>
+      <xsd:element name="UPIN" type="datatypes:an..35M"/>
+      <xsd:element name="FacilityID" type="datatypes:an..35M"/>
+      <xsd:element name="PPONumber" type="datatypes:an..35M"/>
+      <xsd:element name="PayerID" type="datatypes:an..35M"/>
+      <xsd:element name="ProcessorIdentificationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="BINLocationNumber" type="datatypes:an..35M"/>
+      <xsd:element name="Commercial" type="datatypes:an..35M"/>
+      <xsd:element name="MedicalRecordIdentificationNumberEHR" type="datatypes:an..35M"/>
+      <xsd:element name="PatientAccountNumber" type="datatypes:an..35M"/>
+      <xsd:element name="DEANumber" type="datatypes:an..35M"/>
+      <xsd:element name="HIN" type="datatypes:an..35M"/>
+      <xsd:element name="IndividualPolicyNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SecondaryCoverage" type="datatypes:an..35M"/>
+      <xsd:element name="NAICCode" type="datatypes:an..35M"/>
+      <xsd:element name="PromotionNumber" type="datatypes:an..35M"/>
+      <xsd:element name="SocialSecurity" type="datatypes:an..35M"/>
+      <xsd:element name="NPI" type="datatypes:an..35M"/>
+      <xsd:element name="PriorAuthorization" type="datatypes:an..35M"/>
+      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35M"/>
+      <xsd:element name="Data2000WaiverID" type="datatypes:an..35M"/>
+      <xsd:element name="MutuallyDefined" type="datatypes:an..35M"/>
+    </xsd:choice>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  QualifiedCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="QualifiedCode">
@@ -640,6 +899,22 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
       <xsd:element name="Qualifier" type="ecl:Code"/>
       <xsd:element name="Code" type="ecl:Code"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Quantity  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Quantity">
+    <xsd:sequence>
+      <xsd:element name="Value" type="datatypes:n..11M"/>
+      <xsd:element name="CodeListQualifier" type="ecl:CodeListQualifierQuantityQualifierDRUSegmentX12DE673"/>
+      <xsd:element name="QuanityUnitOfMeasure" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP Drug QuantityUnitOfMeasure Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -696,7 +971,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:documentation>Qualifies the Source Description.  Similar in structure to a qualified code but instead of a code we have reference which is a id</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="Reference" type="dictionary:IDType"/>
+      <xsd:element minOccurs="0" name="Reference" type="datatypes:IDType"/>
       <xsd:element minOccurs="0" name="SourceDescription" type="datatypes:an..35"/>
       <xsd:element name="SourceQualifier" type="ecl:SourceQualifier"/>
     </xsd:sequence>
@@ -731,12 +1006,8 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:sequence>
   </xsd:complexType>
   <xsd:annotation>
-    <xsd:documentation>Copyright (c) 2007, 2008, 2009, 2010 NCPDP. All rights reserved. This work is owned by National Council for Prescription Drug Programs, Inc., 924Ø E. Raintree Drive, Scottsdale, AZ 8526Ø, (48Ø) 477-1ØØØ, ncpdp@ncpdp.org, and protected by the copyright laws of the United States. 17 U.S.C. §1Ø1, et. seq. Permission is given to Council members to copy and use the work or any part thereof in connection with the business purposes of the Council members.   &#13;
-&#13;
-The work may not be changed or altered. The work may not be sold, used or exploited for commercial purposes. This permission may be revoked by National Council for Prescription Drug Programs, Inc., at any time. The National Council for Prescription Drugs Programs, Inc. is not responsible for any errors or damage as a result of the use of the work.&#13;
-NCPDP recognizes the confidentiality of certain information exchanged electronically through the use of its standards. Users should be familiar with the federal, state, and local laws, regulations and codes requiring confidentiality of this information and should utilize the standards accordingly.&#13;
-&#13;
-NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.&#13;
-</xsd:documentation>
+    <xsd:documentation>The NCPDP datatypes.xsd defines small, static, reusable structures (structural components) whose usage and validation is not typically impacted by the context of it use. 
+
+For instance, ZipCode structure and validation is not impacted if it used as part of a pharmacy address or a patient's address</xsd:documentation>
   </xsd:annotation>
 </xsd:schema>
