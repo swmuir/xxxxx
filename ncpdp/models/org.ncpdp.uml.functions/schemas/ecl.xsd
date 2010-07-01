@@ -4953,22 +4953,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  PotencyUnitCode  <<ncpdpecl>>  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:simpleType name="PotencyUnitCode">
-    <xsd:annotation>
-      <xsd:documentation>Unit of measure. Potency Unit. Qualified by Source Code List (7991).</xsd:documentation>
-    </xsd:annotation>
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="text is null">
-        <xsd:annotation>
-          <xsd:documentation>NCI values of Property or Attribute - Unit of Measure - Unit of Category - Potency Unit (http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml
-- NCI Thesaurus)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  PriorAuthorizationStatus  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="PriorAuthorizationStatus">
@@ -5209,6 +5193,24 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:enumeration value="SBD"/>
       <xsd:enumeration value="GPK"/>
       <xsd:enumeration value="BPK"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  QuanityUnitOfMeasureCode  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="QuanityUnitOfMeasureCode">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Drug QuantityUnitOfMeasure Terminology - available at &#13;
+http://www.cancer.gov/cancertopics/terminologyresources/page7&#13;
+See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="text is null">
+        <xsd:annotation>
+          <xsd:documentation>NCI values of Property or Attribute - Unit of Measure - Unit of Category - Potency Unit (http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml
+- NCI Thesaurus)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -6249,14 +6251,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Medical Economics Generic Formulation Code (GFC)</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="Functions">
+      <xsd:enumeration value="Specialized">
         <xsd:annotation>
           <xsd:documentation>Medical Economics Generic Master (GM)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="Telecom">
-        <xsd:annotation>
-          <xsd:documentation>American Hospital Formulary Service (AHFS)</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>

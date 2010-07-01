@@ -8,16 +8,16 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/functions" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:dictionary="http://www.ncpdp.org/schema/dictionary" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:functions="http://www.ncpdp.org/schema/functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/specialized" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:specialized="http://www.ncpdp.org/schema/specialized" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
-  <xsd:import namespace="http://www.ncpdp.org/schema/dictionary" schemaLocation="dictionary.xsd"/>
+  <xsd:import namespace="http://www.ncpdp.org/schema/structures" schemaLocation="structures.xsd"/>
   <!-- ================================================== -->
   <!-- =====  Element Declarations  -->
   <!-- ================================================== -->
-  <xsd:element name="CensusMessage" type="functions:Census"/>
-  <xsd:element name="MTMServiceRequest" type="functions:MTMServiceRequest"/>
-  <xsd:element name="MTMServiceResponse" type="functions:MTMServiceResponse"/>
+  <xsd:element name="CensusMessage" type="specialized:Census"/>
+  <xsd:element name="MTMServiceRequest" type="specialized:MTMServiceRequest"/>
+  <xsd:element name="MTMServiceResponse" type="specialized:MTMServiceResponse"/>
   <!-- ================================================== -->
   <!-- =====  Complex Type Definitions  -->
   <!-- ================================================== -->
@@ -46,23 +46,23 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Census">
     <xsd:complexContent>
-      <xsd:restriction base="functions:FunctionRequest">
+      <xsd:restriction base="specialized:FunctionRequest">
         <xsd:sequence>
           <xsd:element name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element name="Facility" type="dictionary:Facilty"/>
-          <xsd:element name="Patient" type="dictionary:Patient"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Provider" type="dictionary:Provider"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Service" type="functions:ServiceType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ClinicalInfoAttachment" type="structures:Attachment"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="structures:Allergy"/>
+          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element name="Facility" type="datatypes:Facilty"/>
+          <xsd:element name="Patient" type="structures:Patient"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacist" type="structures:Pharmacist"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Provider" type="structures:Provider"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Service" type="specialized:ServiceType"/>
           <xsd:element minOccurs="0" name="AnticipatedReturnDate" type="datatypes:SimpleDateType"/>
           <xsd:element minOccurs="0" name="CensusEffectiveDate" type="datatypes:SimpleDateType"/>
           <xsd:element minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
@@ -90,17 +90,17 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="dictionary:BaseBenefitsCoordination"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:PatientFull"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Provider" type="dictionary:Provider"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Service" type="functions:ServiceType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="structures:Attachment"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="structures:Allergy"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="structures:PatientFull"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacist" type="structures:Pharmacist"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Provider" type="structures:Provider"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Service" type="specialized:ServiceType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="AnticipatedReturnDate" type="datatypes:SimpleDateType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="CensusEffectiveDate" type="datatypes:SimpleDateType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
@@ -116,14 +116,14 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="dictionary:PatientFull"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Provider" type="dictionary:Provider"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Service" type="functions:ServiceType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Response" type="functions:ResponseType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Patient" type="structures:PatientFull"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacist" type="structures:Pharmacist"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Provider" type="structures:Provider"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Service" type="specialized:ServiceType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Response" type="specialized:ResponseType"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -131,11 +131,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MTMResponseType">
     <xsd:complexContent>
-      <xsd:restriction base="functions:ResponseType">
+      <xsd:restriction base="specialized:ResponseType">
         <xsd:choice>
-          <xsd:element name="Denied" type="functions:DeniedType"/>
-          <xsd:element name="Approved" type="functions:ApprovedType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ApprovedWithChanges" type="functions:ApprovedWithChangesType"/>
+          <xsd:element name="Denied" type="specialized:DeniedType"/>
+          <xsd:element name="Approved" type="specialized:ApprovedType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ApprovedWithChanges" type="specialized:ApprovedWithChangesType"/>
         </xsd:choice>
       </xsd:restriction>
     </xsd:complexContent>
@@ -145,23 +145,23 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MTMServiceRequest">
     <xsd:complexContent>
-      <xsd:restriction base="functions:FunctionRequest">
+      <xsd:restriction base="specialized:FunctionRequest">
         <xsd:sequence>
           <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="dictionary:Attachment"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Allergy" type="dictionary:Allergy"/>
-          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="dictionary:BenefitsCoordination"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="dictionary:DiagnosisGeneral"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element name="Patient" type="dictionary:PatientFull"/>
-          <xsd:element minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
-          <xsd:element minOccurs="0" name="Provider" type="dictionary:Provider"/>
-          <xsd:element name="Service" type="functions:ServiceType"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="structures:Attachment"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Allergy" type="structures:Allergy"/>
+          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element name="Patient" type="structures:PatientFull"/>
+          <xsd:element minOccurs="0" name="Pharmacist" type="structures:Pharmacist"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
+          <xsd:element minOccurs="0" name="Provider" type="structures:Provider"/>
+          <xsd:element name="Service" type="specialized:ServiceType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="AnticipatedReturnDate" type="datatypes:SimpleDateType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="CensusEffectiveDate" type="datatypes:SimpleDateType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
@@ -175,20 +175,20 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MTMServiceResponse">
     <xsd:complexContent>
-      <xsd:restriction base="functions:FunctionResponse">
+      <xsd:restriction base="specialized:FunctionResponse">
         <xsd:sequence>
           <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:Code"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element minOccurs="0" name="Facility" type="dictionary:Facilty"/>
-          <xsd:element name="Patient" type="dictionary:PatientFull"/>
-          <xsd:element minOccurs="0" name="Pharmacist" type="dictionary:Pharmacist"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="dictionary:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="dictionary:PrescriberGeneral"/>
-          <xsd:element minOccurs="0" name="Provider" type="dictionary:Provider"/>
-          <xsd:element name="Service" type="functions:ServiceType"/>
-          <xsd:element name="Response" type="functions:MTMResponseType"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element name="Patient" type="structures:PatientFull"/>
+          <xsd:element minOccurs="0" name="Pharmacist" type="structures:Pharmacist"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
+          <xsd:element minOccurs="0" name="Provider" type="structures:Provider"/>
+          <xsd:element name="Service" type="specialized:ServiceType"/>
+          <xsd:element name="Response" type="specialized:MTMResponseType"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -198,9 +198,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ResponseType">
     <xsd:choice>
-      <xsd:element minOccurs="0" name="Denied" type="functions:DeniedType"/>
-      <xsd:element minOccurs="0" name="Approved" type="functions:ApprovedType"/>
-      <xsd:element minOccurs="0" name="ApprovedWithChanges" type="functions:ApprovedWithChangesType"/>
+      <xsd:element minOccurs="0" name="Denied" type="specialized:DeniedType"/>
+      <xsd:element minOccurs="0" name="Approved" type="specialized:ApprovedType"/>
+      <xsd:element minOccurs="0" name="ApprovedWithChanges" type="specialized:ApprovedWithChangesType"/>
     </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -223,4 +223,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="FrequencyofEncountersApproved" type="datatypes:QualifiedCodeWithText"/>
     </xsd:sequence>
   </xsd:complexType>
+  <xsd:annotation>
+    <xsd:documentation>The NCPDP specialized.xsd defines Business Domain Transactions.</xsd:documentation>
+  </xsd:annotation>
 </xsd:schema>
