@@ -212,17 +212,17 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SenderSoftwareType">
     <xsd:sequence>
-      <xsd:element name="SenderSoftwareDeveloper" type="datatypes:an..35">
+      <xsd:element name="SenderSoftwareDeveloper" type="datatypes:an..35M">
         <xsd:annotation>
           <xsd:documentation>The text field that identifies the entity responsible for the software that generated the transaction.  The developer may be a software vendor or, if the software was developed “in-house”, the developer is the entity actually sending the transaction (e.g., a chain).  The value transmitted is determined by the Sender Software Developer.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="SenderSoftwareProduct" type="datatypes:an..35">
+      <xsd:element name="SenderSoftwareProduct" type="datatypes:an..35M">
         <xsd:annotation>
           <xsd:documentation>The text field that identifies the software developer’s product, as determined by the software developer.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="SenderSoftwareVersionRelease" type="datatypes:an..50"/>
+      <xsd:element name="SenderSoftwareVersionRelease" type="datatypes:an..50M"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

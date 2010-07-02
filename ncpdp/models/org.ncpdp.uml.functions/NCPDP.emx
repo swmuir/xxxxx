@@ -45,7 +45,7 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4gNrwDD1Ed-8rpqfOAePKg" name="IDType">
-        <ownedAttribute xmi:id="_4gNrwTD1Ed-8rpqfOAePKg" name="IDValue" type="_4CkGgjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4gNrwTD1Ed-8rpqfOAePKg" name="IDValue" type="_4CkGczD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4gNrxTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gNrxjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1029,11 +1029,11 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4E8sKjD1Ed-8rpqfOAePKg" name="NameType">
-        <ownedAttribute xmi:id="_4E8sKzD1Ed-8rpqfOAePKg" name="LastName" type="_4CkGgjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4E8sKzD1Ed-8rpqfOAePKg" name="LastName" type="_4CkGczD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4E8sLDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4E8sLTD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4E8sLjD1Ed-8rpqfOAePKg" name="FirstName" type="_4CkGgjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4E8sLjD1Ed-8rpqfOAePKg" name="FirstName" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4E8sLzD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
@@ -2799,6 +2799,9 @@ potentially other structures.</body>
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_MXJAoDD7Ed-8rpqfOAePKg" name="PrescribedMedication">
+        <eAnnotations xmi:id="_ULtFkIYgEd-Vw-EcYlO-zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_U2eg4IYgEd-Vw-EcYlO-zw" key="Medication"/>
+        </eAnnotations>
         <generalization xmi:id="_Pb0I0H7qEd-qFLXIW1YLFA" general="_40Xd8GTWEd-M5IWg2-DxLQ"/>
         <ownedAttribute xmi:id="_MXJAoTD7Ed-8rpqfOAePKg" name="DrugDescription" type="_4HoMozD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAojD7Ed-8rpqfOAePKg" value="1"/>
@@ -2856,7 +2859,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAqzD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJArDD7Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_MXJArTD7Ed-8rpqfOAePKg" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_MXJArTD7Ed-8rpqfOAePKg" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJArjD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJArzD7Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -4414,6 +4417,9 @@ potentially other structures.</body>
         <ownedEnd xmi:id="_O0vFWGTUEd-M5IWg2-DxLQ" type="_O0lUMGTUEd-M5IWg2-DxLQ" association="_O0vFV2TUEd-M5IWg2-DxLQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_40Xd8GTWEd-M5IWg2-DxLQ" name="Medication">
+        <eAnnotations xmi:id="_VfdMcIYgEd-Vw-EcYlO-zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_VfdMcYYgEd-Vw-EcYlO-zw" key="Medication"/>
+        </eAnnotations>
         <ownedAttribute xmi:id="_40Xd8WTWEd-M5IWg2-DxLQ" name="DrugDescription" type="_4HoMozD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40Xd8mTWEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40Xd82TWEd-M5IWg2-DxLQ" value="1"/>
@@ -4467,7 +4473,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeFmTWEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeF2TWEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_40XeGGTWEd-M5IWg2-DxLQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_40XeGGTWEd-M5IWg2-DxLQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeGWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeGmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4695,7 +4701,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCV2TXEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCWGTXEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_r9HCWWTXEd-M5IWg2-DxLQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_r9HCWWTXEd-M5IWg2-DxLQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCWmTXEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCW2TXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4923,7 +4929,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2V2TcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2WGTcEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_G-g2WWTcEd-M5IWg2-DxLQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_G-g2WWTcEd-M5IWg2-DxLQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2WmTcEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2W2TcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5151,7 +5157,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgR2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgSGTnEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QQEgSWTnEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_QQEgSWTnEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgSmTnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgS2TnEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -5325,6 +5331,9 @@ potentially other structures.</body>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_YxfSIGToEd-Y0upv2_lheQ" name="NewRxPrescibedMedication">
+        <eAnnotations xmi:id="_WKXxsIYgEd-Vw-EcYlO-zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_WKXxsYYgEd-Vw-EcYlO-zw" key="Medication"/>
+        </eAnnotations>
         <generalization xmi:id="_YxfSIWToEd-Y0upv2_lheQ" general="_40Xd8GTWEd-M5IWg2-DxLQ"/>
         <ownedAttribute xmi:id="_YxfSImToEd-Y0upv2_lheQ" name="DrugDescription" type="_4HoMozD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSI2ToEd-Y0upv2_lheQ" value="1"/>
@@ -5379,7 +5388,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSR2ToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSSGToEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_YxfSSWToEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_YxfSSWToEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSSmToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSS2ToEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -5607,7 +5616,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiB2TpEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiCGTpEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QuYiCWTpEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_QuYiCWTpEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiCmTpEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiC2TpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5839,7 +5848,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYJ2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYKGTqEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_P_eYKWTqEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_P_eYKWTqEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYKmTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYK2TqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6067,7 +6076,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoR2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoSGTqEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_wROoSWTqEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_wROoSWTqEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoSmTqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoS2TqEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -6295,7 +6304,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSd2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSeGTrEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_MqbSeWTrEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_MqbSeWTrEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSemTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSe2TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6523,7 +6532,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyp2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyqGTrEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_krxyqWTrEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_krxyqWTrEd-Y0upv2_lheQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyqmTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyq2TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7524,21 +7533,21 @@ elements for each transaction.</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4C3BYzD1Ed-8rpqfOAePKg" name="SenderSoftwareType">
-        <ownedAttribute xmi:id="_4C3BZDD1Ed-8rpqfOAePKg" name="SenderSoftwareDeveloper" type="_4CkGgjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4C3BZDD1Ed-8rpqfOAePKg" name="SenderSoftwareDeveloper" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4C3BZTD1Ed-8rpqfOAePKg" annotatedElement="_4C3BZDD1Ed-8rpqfOAePKg">
             <body>The text field that identifies the entity responsible for the software that generated the transaction.  The developer may be a software vendor or, if the software was developed “in-house”, the developer is the entity actually sending the transaction (e.g., a chain).  The value transmitted is determined by the Sender Software Developer.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4C3BZzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4C3BaDD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4C3BaTD1Ed-8rpqfOAePKg" name="SenderSoftwareProduct" type="_4CkGgjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4C3BaTD1Ed-8rpqfOAePKg" name="SenderSoftwareProduct" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4C3BajD1Ed-8rpqfOAePKg" annotatedElement="_4C3BaTD1Ed-8rpqfOAePKg">
             <body>The text field that identifies the software developer’s product, as determined by the software developer.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4C3BbDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4C3BbTD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4C3BbjD1Ed-8rpqfOAePKg" name="SenderSoftwareVersionRelease" type="_4C3BcTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4C3BbjD1Ed-8rpqfOAePKg" name="SenderSoftwareVersionRelease" type="_4Nb5uzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4C3BbzD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
