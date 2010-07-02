@@ -540,7 +540,13 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
               </xsd:annotation>
             </xsd:element>
             <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:NCICode"/>
-            <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode"/>
+            <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
+              <xsd:annotation>
+                <xsd:documentation>NCPDP DEASchedule Terminology – available at&#13;
+http://www.cancer.gov/cancertopics/terminologyresources/page7&#13;
+</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -607,14 +613,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </xsd:element>
       <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
         <xsd:annotation>
-          <xsd:documentation>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. 
-
-If CompoundCoded = 2 (Compound), this field must not be sent.
-            
-NCI Administrative Concept - Research Resource - Information Resource - Terminology Subset - Structured Product Labeling Terminology - Structured Product Labeling DEA Schedule Terminology - Schedule of Controlled Substances 
-
-(http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml - NCI Thesaurus)
-            </xsd:documentation>
+          <xsd:documentation>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. &#13;
+&#13;
+If CompoundCoded = 2 (Compound), this field must not be sent.&#13;
+            &#13;
+NCPDP DEASchedule Terminology – available at&#13;
+http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
     </xsd:sequence>
@@ -718,7 +722,12 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7
 See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="MeasurementUnitCode" type="ecl:Code"/>
+      <xsd:element name="MeasurementUnitCode" type="ecl:Code">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP MeasurementUnitCode Terminology - available at &#13;
+http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
