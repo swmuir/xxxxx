@@ -99,11 +99,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
-          <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:LTCLevelOfChange"/>
+          <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:LTCLevelOfChangeCode"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -129,10 +129,10 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTResponse">
         <xsd:sequence>
-          <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:LTCLevelOfChange"/>
+          <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:LTCLevelOfChangeCode"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element name="Response" type="SCRIPT:CancellRxResponseType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -141,9 +141,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="structures:Medication"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensedAdministered" type="structures:Medication"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="structures:Medication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="structures:Medication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensedAdministered" type="structures:Medication"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MedicationPrescribed" type="structures:Medication"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -287,11 +287,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -336,11 +336,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
-          <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:LTCLevelOfChange"/>
+          <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:LTCLevelOfChangeCode"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -367,11 +367,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -398,10 +398,10 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTResponse">
         <xsd:sequence>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element name="Response" type="SCRIPT:RefillResponseType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -481,11 +481,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -515,7 +515,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -545,7 +545,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:RxChangeCode"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element name="Response" type="SCRIPT:RxChangeResponseType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -586,11 +586,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -617,11 +617,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
           <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:RxHistoryBenefitsCoordination"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -645,10 +645,10 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RxHistoryResponse">
     <xsd:sequence>
-      <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctioncodeda"/>
+      <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+      <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
       <xsd:element minOccurs="0" name="Response" type="SCRIPT:BasicResponseType"/>
       <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:RxHistoryBenefitsCoordination"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -675,7 +675,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -700,7 +700,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:Code"/>
       <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusFlag"/>
+      <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
       <xsd:element minOccurs="0" name="Response" type="SCRIPT:ResponseType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facilty"/>

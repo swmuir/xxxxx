@@ -50,7 +50,7 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gNrxjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4gNrxzD1Ed-8rpqfOAePKg" name="IDQualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_-xQ0kG8mEd-E06vcpeQalQ?ecl/ecl/IDQualifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_-xQ0kG8mEd-E06vcpeQalQ?ecl/ecl/IDQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4gNr0DD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gNr0TD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -661,14 +661,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedAttribute>
         <ownedAttribute xmi:id="_4H7HrDD1Ed-8rpqfOAePKg" name="DEASchedule" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_40vnYGjGEd-Pd7zqA0IwbQ" annotatedElement="_4H7HrDD1Ed-8rpqfOAePKg">
-            <body>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. 
-
-If CompoundCoded = 2 (Compound), this field must not be sent.
-            
-NCI Administrative Concept - Research Resource - Information Resource - Terminology Subset - Structured Product Labeling Terminology - Structured Product Labeling DEA Schedule Terminology - Schedule of Controlled Substances 
-
-(http://bioportal.nci.nih.gov/ncbo/faces/index.xhtml - NCI Thesaurus)
-            </body>
+            <body>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. &#xD;
+&#xD;
+If CompoundCoded = 2 (Compound), this field must not be sent.&#xD;
+            &#xD;
+NCPDP DEASchedule Terminology – available at&#xD;
+http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4IE4kTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4IE4kjD1Ed-8rpqfOAePKg"/>
@@ -807,8 +805,10 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Ox9jDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4Ox9jTD1Ed-8rpqfOAePKg" name="DEASchedule" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_4Ox9jjD1Ed-8rpqfOAePKg">
-            <body></body>
+          <ownedComment xmi:id="_4Ox9jjD1Ed-8rpqfOAePKg" annotatedElement="_4Ox9jTD1Ed-8rpqfOAePKg">
+            <body>NCPDP DEASchedule Terminology – available at&#xD;
+http://www.cancer.gov/cancertopics/terminologyresources/page7&#xD;
+</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Ox9kDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Ox9kTD1Ed-8rpqfOAePKg"/>
@@ -826,7 +826,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_4IE4rjD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_icJeNCxAEd-8mcmtGejV_Q?ecl/ecl/CodeListQualifierQuantityQualifierDRUSegmentX12DE673?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_icJeNCxAEd-8mcmtGejV_Q?ecl/ecl/QuantityCodeListQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4IOplDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4IOplTD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -854,7 +854,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FF2KTD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4FF2KjD1Ed-8rpqfOAePKg" name="State">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_gtSIoCxAEd-8mcmtGejV_Q?ecl/ecl/State?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_gtSIoCxAEd-8mcmtGejV_Q?ecl/ecl/StateCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FPnAjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnAzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -898,7 +898,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_4Jt3XjD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_htqAgSxAEd-8mcmtGejV_Q?ecl/ecl/DUECoAgentIDQualifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_htqAgSxAEd-8mcmtGejV_Q?ecl/ecl/DUECoAgentIDQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Jt3ZTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Jt3ZjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -933,7 +933,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_4PE4czD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifuWoCxAEd-8mcmtGejV_Q?ecl/ecl/MeasurementDimensioncodedValueswhenreferencingX12DE738?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifuWoCxAEd-8mcmtGejV_Q?ecl/ecl/MeasurementDimensionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4PE4ejD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4PE4ezD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -955,7 +955,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_4PE4iTD1Ed-8rpqfOAePKg" annotatedElement="_4PE4iDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hx-f0CxAEd-8mcmtGejV_Q?ecl/ecl/MeasurementDataQualifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hx-f0CxAEd-8mcmtGejV_Q?ecl/ecl/MeasurementDataQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4PYadTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4PYadjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -969,8 +969,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4PYaezD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4PYafDD1Ed-8rpqfOAePKg" name="MeasurementUnitCode">
-          <ownedComment xmi:id="_4PYafTD1Ed-8rpqfOAePKg">
-            <body></body>
+          <ownedComment xmi:id="_4PYafTD1Ed-8rpqfOAePKg" annotatedElement="_4PYafDD1Ed-8rpqfOAePKg">
+            <body>NCPDP MeasurementUnitCode Terminology - available at &#xD;
+http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           </ownedComment>
           <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4PYafzD1Ed-8rpqfOAePKg" value="1"/>
@@ -989,7 +990,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4KKjRjD1Ed-8rpqfOAePKg" name="TimeZone">
         <ownedAttribute xmi:id="_4KKjSDD1Ed-8rpqfOAePKg" name="TimeZoneIdentifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ixwh0CxAEd-8mcmtGejV_Q?ecl/ecl/TimeZoneIdentifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ixwh0CxAEd-8mcmtGejV_Q?ecl/ecl/TimeZoneIdentifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4KKjTjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4KKjTzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1022,7 +1023,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnIzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4FPnJDD1Ed-8rpqfOAePKg" name="Qualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_68pG4y1QEd-8mcmtGejV_Q?ecl/ecl/ValuesforCommunicationCodes?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_68pG4y1QEd-8mcmtGejV_Q?ecl/ecl/CommunicationTypeQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FPnKjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnKzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1490,27 +1491,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       <packagedElement xmi:type="uml:Association" xmi:id="_4FPnLjD1Ed-8rpqfOAePKg" memberEnd="_4FPnLzD1Ed-8rpqfOAePKg _4FPnGDD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4FPnLzD1Ed-8rpqfOAePKg" type="_4FPnFzD1Ed-8rpqfOAePKg" association="_4FPnLjD1Ed-8rpqfOAePKg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wzyrcDEdEd-8rpqfOAePKg" name="TerminologyQualifiedCode">
-        <ownedComment xmi:id="_OS6xYFOYEd-wEdo_Dk3J9g" annotatedElement="_wzyrcDEdEd-8rpqfOAePKg">
-          <body></body>
-        </ownedComment>
-        <generalization xmi:id="_qcPPIE5LEd-lRt4mSex0Qg" general="_5lUzQEyMEd-G-pSkcIGh3w"/>
-        <ownedAttribute xmi:id="_7iRjBE5LEd-lRt4mSex0Qg" name="Text">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iRjBU5LEd-lRt4mSex0Qg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iRjBk5LEd-lRt4mSex0Qg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7iRjB05LEd-lRt4mSex0Qg" name="Qualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h9dN4FOOEd-wEdo_Dk3J9g?ecl/ecl/Terminologies?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iRjCU5LEd-lRt4mSex0Qg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iRjCk5LEd-lRt4mSex0Qg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7iRjAE5LEd-lRt4mSex0Qg" name="Code">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iRjAk5LEd-lRt4mSex0Qg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iRjA05LEd-lRt4mSex0Qg" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_cerm8DEyEd-8rpqfOAePKg" name="DrugDBCode">
         <generalization xmi:id="_3MN6oGjXEd-Pd7zqA0IwbQ" general="_jd8ZMGjXEd-Pd7zqA0IwbQ"/>
         <ownedAttribute xmi:id="_cerm9TEyEd-8rpqfOAePKg" name="Code">
@@ -1525,7 +1505,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_cerm-jEyEd-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h4rkwCxAEd-8mcmtGejV_Q?ecl/ecl/DrugDBQualifiers?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h4rkwCxAEd-8mcmtGejV_Q?ecl/ecl/DrugDBQualifiersCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cerm-zEyEd-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cerm_DEyEd-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1533,7 +1513,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       <packagedElement xmi:type="uml:Association" xmi:id="_4PE4hjD1Ed-8rpqfOAePKg" memberEnd="_4PE4hzD1Ed-8rpqfOAePKg _4PE4gTD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4PE4hzD1Ed-8rpqfOAePKg" type="_4PE4cTD1Ed-8rpqfOAePKg" association="_4PE4hjD1Ed-8rpqfOAePKg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_zeNPADE4Ed-8rpqfOAePKg" name="RouteOfAdministrationCode">
+      <packagedElement xmi:type="uml:Class" xmi:id="_zeNPADE4Ed-8rpqfOAePKg" name="FinalRouteOfAdministrationCode">
         <ownedAttribute xmi:id="_03lbOGj7Ed-Pd7zqA0IwbQ" name="Text">
           <ownedComment xmi:id="_03lbOWj7Ed-Pd7zqA0IwbQ" annotatedElement="_03lbOGj7Ed-Pd7zqA0IwbQ">
             <body></body>
@@ -1546,9 +1526,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_03lbMWj7Ed-Pd7zqA0IwbQ" annotatedElement="_03lbMGj7Ed-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_goFcAGj7Ed-Pd7zqA0IwbQ?ecl/ecl/TerminologyQualifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_goFcAGj7Ed-Pd7zqA0IwbQ?ecl/ecl/TerminologyQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_03lbMmj7Ed-Pd7zqA0IwbQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03lbM2j7Ed-Pd7zqA0IwbQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03lbM2j7Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_03lbNGj7Ed-Pd7zqA0IwbQ" name="Code">
           <ownedComment xmi:id="_03lbNWj7Ed-Pd7zqA0IwbQ" annotatedElement="_03lbNGj7Ed-Pd7zqA0IwbQ">
@@ -1556,7 +1536,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
           <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_03lbNmj7Ed-Pd7zqA0IwbQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03lbN2j7Ed-Pd7zqA0IwbQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03lbN2j7Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_28aBID2iEd-xgfp6zNZIHA" name="SourceQualifier">
@@ -1581,7 +1561,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_28aBKj2iEd-xgfp6zNZIHA">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ixA69CxAEd-8mcmtGejV_Q?ecl/ecl/SourceQualifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ixA69CxAEd-8mcmtGejV_Q?ecl/ecl/SourceQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_28aBKz2iEd-xgfp6zNZIHA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_28aBLD2iEd-xgfp6zNZIHA" value="1"/>
         </ownedAttribute>
@@ -1636,7 +1616,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_slfdS2i7Ed-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_slfdRmi7Ed-Pd7zqA0IwbQ" name="Qualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_21l0EGi7Ed-Pd7zqA0IwbQ?ecl/ecl/ProductCodeQualifiers?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_21l0EGi7Ed-Pd7zqA0IwbQ?ecl/ecl/ProductQualifiersCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_slfdR2i7Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_slfdSGi7Ed-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
@@ -1685,7 +1665,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_8fJbx2j2Ed-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h4rkwCxAEd-8mcmtGejV_Q?ecl/ecl/DrugDBQualifiers?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h4rkwCxAEd-8mcmtGejV_Q?ecl/ecl/DrugDBQualifiersCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8fJbyGj2Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8fJbyWj2Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
@@ -1696,36 +1676,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KINScmj3Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KINSc2j3Ed-Pd7zqA0IwbQ" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_TeWJ4GmQEd-rC41nbGoKjA" name="RouteOfAdministrationCodeWithText">
-        <ownedComment xmi:id="_TeWJ4WmQEd-rC41nbGoKjA" annotatedElement="_TeWJ4GmQEd-rC41nbGoKjA">
-          <body></body>
-        </ownedComment>
-        <generalization xmi:id="_tjAJIGmREd-rC41nbGoKjA" general="_5lUzQEyMEd-G-pSkcIGh3w"/>
-        <ownedAttribute xmi:id="_TeWJ4mmQEd-rC41nbGoKjA" name="Text">
-          <ownedComment xmi:id="_TeWJ42mQEd-rC41nbGoKjA" annotatedElement="_TeWJ4mmQEd-rC41nbGoKjA">
-            <body></body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TeWJ5GmQEd-rC41nbGoKjA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeWJ5WmQEd-rC41nbGoKjA"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_TeWJ5mmQEd-rC41nbGoKjA" name="Qualifier">
-          <ownedComment xmi:id="_TeWJ52mQEd-rC41nbGoKjA" annotatedElement="_TeWJ5mmQEd-rC41nbGoKjA">
-            <body></body>
-          </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_goFcAGj7Ed-Pd7zqA0IwbQ?ecl/ecl/TerminologyQualifier?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TeWJ6GmQEd-rC41nbGoKjA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeWJ6WmQEd-rC41nbGoKjA" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_TeWJ6mmQEd-rC41nbGoKjA" name="Code">
-          <ownedComment xmi:id="_TeWJ62mQEd-rC41nbGoKjA" annotatedElement="_TeWJ6mmQEd-rC41nbGoKjA">
-            <body></body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TeWJ7GmQEd-rC41nbGoKjA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeWJ7WmQEd-rC41nbGoKjA" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_DTud8GmnEd-rC41nbGoKjA" name="ProblemNameCode">
@@ -1744,7 +1694,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_DTud-GmnEd-rC41nbGoKjA" annotatedElement="_DTud92mnEd-rC41nbGoKjA">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_Qv02sGmnEd-rC41nbGoKjA?ecl/ecl/ProblemNameQualifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_Qv02sGmnEd-rC41nbGoKjA?ecl/ecl/ProblemNameQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DTud-WmnEd-rC41nbGoKjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DTud-mmnEd-rC41nbGoKjA"/>
         </ownedAttribute>
@@ -1768,7 +1718,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zmmf1H7FEd-qFLXIW1YLFA" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_zmmf1X7FEd-qFLXIW1YLFA" name="Code">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_kCnAsCx3Ed-8mcmtGejV_Q?ecl/ecl/SNOMEDCTPreferredTermsforAdverseEvents?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_kCnAsCx3Ed-8mcmtGejV_Q?ecl/ecl/SNOMEDCTAdverseEventCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zmmf1n7FEd-qFLXIW1YLFA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zmmf137FEd-qFLXIW1YLFA"/>
         </ownedAttribute>
@@ -1855,7 +1805,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_RdeAN1JLEd-gUbUlN-XGdw">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q?ecl/ecl/InsuranceTypecodedX12DE1138?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q?ecl/ecl/PayerResponsibilityCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeAOFJLEd-gUbUlN-XGdw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeAOVJLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -1890,7 +1840,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeAS1JLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_RdeATFJLEd-gUbUlN-XGdw" name="Consent">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentType?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeATVJLEd-gUbUlN-XGdw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeATlJLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -1903,7 +1853,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeAVFJLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_RdeAVVJLEd-gUbUlN-XGdw" name="ServiceTypeCoded" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCoded?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeAVlJLEd-gUbUlN-XGdw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeAV1JLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -1926,7 +1876,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y2QB7DZ7Ed-o64UeGGH_dQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_KTOHUGhBEd-Pd7zqA0IwbQ" name="MIMEType" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_5qYs0GhAEd-Pd7zqA0IwbQ?ecl/ecl/MTMMIMETypes?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_5qYs0GhAEd-Pd7zqA0IwbQ?ecl/ecl/MIMETypeCode?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_d_xAwjZ4Ed-o64UeGGH_dQ" name="Pharmacist">
@@ -1962,7 +1912,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_4I-QdjD1Ed-8rpqfOAePKg" annotatedElement="_4I-QdTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_eqJzQyxAEd-8mcmtGejV_Q?ecl/ecl/DiagnosisCodeQualifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_eqJzQyxAEd-8mcmtGejV_Q?ecl/ecl/PrimaryDiagnosisCodeQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4I-QfTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4I-QfjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1980,7 +1930,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_4I-QkTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_7aQ6UFLcEd-wEdo_Dk3J9g?ecl/ecl/DiagnosisCodeQualifier2?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_7aQ6UFLcEd-wEdo_Dk3J9g?ecl/ecl/SecondaryDiagnosisCodeQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4JHaZjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4JHaZzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -2050,7 +2000,7 @@ potentially other structures.</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4I0fgjD1Ed-8rpqfOAePKg" name="Diagnosis">
         <ownedAttribute xmi:id="_4I0fgzD1Ed-8rpqfOAePKg" name="ClinicalInformationQualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g91GECxAEd-8mcmtGejV_Q?ecl/ecl/MyClinicalInformationQualifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g91GECxAEd-8mcmtGejV_Q?ecl/ecl/DiagnosisClinicalInformationQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4I-QcTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4I-QcjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -2064,7 +2014,7 @@ potentially other structures.</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4KdeOjD1Ed-8rpqfOAePKg" name="RouteOfAdministration ">
-        <ownedAttribute xmi:id="_4KnPODD1Ed-8rpqfOAePKg" name="RouteOfAdministration Code" type="_TeWJ4GmQEd-rC41nbGoKjA">
+        <ownedAttribute xmi:id="_4KnPODD1Ed-8rpqfOAePKg" name="RouteOfAdministration Code">
           <ownedComment xmi:id="_4KnPOTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
@@ -2902,7 +2852,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXb7oDD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_MXJAqjD7Ed-8rpqfOAePKg" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAqzD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJArDD7Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -2932,7 +2882,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJAtTD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_MXJAtjD7Ed-8rpqfOAePKg" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAtzD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJAuDD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -2940,7 +2890,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXlsozD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXlsojD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_MXlsqDD7Ed-8rpqfOAePKg" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_MXlspzD7Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_MXlsqDD7Ed-8rpqfOAePKg" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_MXlspzD7Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXlsqjD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXlsqTD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -2990,7 +2940,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eSPDEGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_MXJAwjD7Ed-8rpqfOAePKg" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAwzD7Ed-8rpqfOAePKg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJAxDD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3032,7 +2982,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_4iAbljD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/YNBoolean?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4iAbnTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4iAbnjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3040,7 +2990,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_4iAboDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h533kyxAEd-8mcmtGejV_Q?ecl/ecl/SourceofInformation?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h533kyxAEd-8mcmtGejV_Q?ecl/ecl/SourceofInformationCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4iJlezD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4iJlfDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3127,7 +3077,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_4QktVTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q?ecl/ecl/InsuranceTypecodedX12DE1138?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q?ecl/ecl/PayerResponsibilityCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Qt3NjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Qt3NzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3162,7 +3112,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hzYXZTEJEd-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_sXyTdk4XEd-G-pSkcIGh3w" name="Consent">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentType?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sXyTd04XEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sXyTeE4XEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -3175,7 +3125,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PZGEok4ZEd-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_gUQlQE4ZEd-G-pSkcIGh3w" name="ServiceTypeCoded" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCoded?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mWELIU4jEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mWELIE4jEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -3185,7 +3135,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_4iwCfDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h533kyxAEd-8mcmtGejV_Q?ecl/ecl/SourceofInformation?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h533kyxAEd-8mcmtGejV_Q?ecl/ecl/SourceofInformationCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4iwCfzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4iwCgDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3394,12 +3344,12 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CNIv1TdTEd-wQf5UFCJMDw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_CNIv0DdTEd-wQf5UFCJMDw" name="PregnancyIndicator">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/YNBoolean?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CNIv0TdTEd-wQf5UFCJMDw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CNIv0jdTEd-wQf5UFCJMDw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_CNIv1jdTEd-wQf5UFCJMDw" name="Smoker">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/YNBoolean?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CNIv1zdTEd-wQf5UFCJMDw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CNIv2DdTEd-wQf5UFCJMDw"/>
         </ownedAttribute>
@@ -3821,12 +3771,12 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mF1h04LEd-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3mF1gk4LEd-G-pSkcIGh3w" name="PregnancyIndicator">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/YNBoolean?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mF1g04LEd-G-pSkcIGh3w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mF1hE4LEd-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3mF1iE4LEd-G-pSkcIGh3w" name="Smoker">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/YNBoolean?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mF1iU4LEd-G-pSkcIGh3w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mF1ik4LEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -4407,7 +4357,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_O0vFMGTUEd-M5IWg2-DxLQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q?ecl/ecl/InsuranceTypecodedX12DE1138?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q?ecl/ecl/PayerResponsibilityCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0vFMWTUEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFMmTUEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4442,7 +4392,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFRGTUEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_O0vFRWTUEd-M5IWg2-DxLQ" name="Consent">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentType?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0vFRmTUEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFR2TUEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -4455,7 +4405,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFTWTUEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_O0vFTmTUEd-M5IWg2-DxLQ" name="ServiceTypeCoded" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCoded?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0vFT2TUEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFUGTUEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4513,7 +4463,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeFGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeFWTWEd-M5IWg2-DxLQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeFmTWEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeF2TWEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -4543,7 +4493,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeKWTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeKmTWEd-M5IWg2-DxLQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeK2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeLGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4551,7 +4501,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeLmTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeL2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_40XeMGTWEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hPIGTWEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_40XeMGTWEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_40hPIGTWEd-M5IWg2-DxLQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeMWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeMmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4601,7 +4551,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeU2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeVGTWEd-M5IWg2-DxLQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeVWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeVmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4741,7 +4691,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCVWTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_r9HCVmTXEd-M5IWg2-DxLQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCV2TXEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCWGTXEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -4771,7 +4721,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCamTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_r9HCa2TXEd-M5IWg2-DxLQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCbGTXEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCbWTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4779,7 +4729,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCb2TXEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCcGTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_r9HCcWTXEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_r9QzYGTXEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_r9HCcWTXEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_r9QzYGTXEd-M5IWg2-DxLQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCcmTXEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCc2TXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4829,7 +4779,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HClGTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_r9HClWTXEd-M5IWg2-DxLQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HClmTXEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCl2TXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4969,7 +4919,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2VWTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_G-g2VmTcEd-M5IWg2-DxLQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2V2TcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2WGTcEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -4999,7 +4949,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2amTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_G-g2a2TcEd-M5IWg2-DxLQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2bGTcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2bWTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5007,7 +4957,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2b2TcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2cGTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_G-g2cWTcEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_G-qnQGTcEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_G-g2cWTcEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_G-qnQGTcEd-M5IWg2-DxLQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2cmTcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2c2TcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5057,7 +5007,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2lGTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_G-g2lWTcEd-M5IWg2-DxLQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2lmTcEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2l2TcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5197,7 +5147,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgRWTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QQEgRmTnEd-Y0upv2_lheQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgR2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgSGTnEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -5227,7 +5177,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgWmTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QQEgW2TnEd-Y0upv2_lheQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgXGTnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgXWTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5235,7 +5185,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgX2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgYGTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QQEgYWTnEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_QQORMGTnEd-Y0upv2_lheQ">
+        <ownedAttribute xmi:id="_QQEgYWTnEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_QQORMGTnEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgYmTnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgY2TnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5285,7 +5235,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEghGTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QQEghWTnEd-Y0upv2_lheQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEghmTnEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgh2TnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5425,7 +5375,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSRWToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_YxfSRmToEd-Y0upv2_lheQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSR2ToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSSGToEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -5455,7 +5405,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSWmToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_YxfSW2ToEd-Y0upv2_lheQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSXGToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSXWToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5463,7 +5413,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSX2ToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSYGToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_YxfSYWToEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_YxpDMGToEd-Y0upv2_lheQ">
+        <ownedAttribute xmi:id="_YxfSYWToEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_YxpDMGToEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSYmToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSY2ToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5513,7 +5463,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfShGToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_YxfShWToEd-Y0upv2_lheQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfShmToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSh2ToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5653,7 +5603,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiBWTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QuYiBmTpEd-Y0upv2_lheQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiB2TpEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiCGTpEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -5683,7 +5633,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiGmTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QuYiG2TpEd-Y0upv2_lheQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiHGTpEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiHWTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5691,7 +5641,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiH2TpEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiIGTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QuYiIWTpEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_QuiTHGTpEd-Y0upv2_lheQ">
+        <ownedAttribute xmi:id="_QuYiIWTpEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_QuiTHGTpEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiImTpEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiI2TpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5741,7 +5691,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiRGTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QuYiRWTpEd-Y0upv2_lheQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiRmTpEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiR2TpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5885,7 +5835,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYJWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_P_eYJmTqEd-Y0upv2_lheQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYJ2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYKGTqEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -5915,7 +5865,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYOmTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_P_eYO2TqEd-Y0upv2_lheQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYPGTqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYPWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5923,7 +5873,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYP2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYQGTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_P_eYQWTqEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_P_x6AGTqEd-Y0upv2_lheQ">
+        <ownedAttribute xmi:id="_P_eYQWTqEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_P_x6AGTqEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYQmTqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYQ2TqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -5973,7 +5923,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYZGTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_P_eYZWTqEd-Y0upv2_lheQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYZmTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYZ2TqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6113,7 +6063,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoRWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_wROoRmTqEd-Y0upv2_lheQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoR2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoSGTqEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -6143,7 +6093,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoWmTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_wROoW2TqEd-Y0upv2_lheQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoXGTqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoXWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6151,7 +6101,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoX2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoYGTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_wROoYWTqEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_wRXyQGTqEd-Y0upv2_lheQ">
+        <ownedAttribute xmi:id="_wROoYWTqEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_wRXyQGTqEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoYmTqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoY2TqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6201,7 +6151,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROohGTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_wROohWTqEd-Y0upv2_lheQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROohmTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoh2TqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6341,7 +6291,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSdWTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_MqbSdmTrEd-Y0upv2_lheQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSd2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSeGTrEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -6371,7 +6321,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSimTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_MqbSi2TrEd-Y0upv2_lheQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSjGTrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSjWTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6379,7 +6329,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSj2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSkGTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_MqbSkWTrEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_MqkcVGTrEd-Y0upv2_lheQ">
+        <ownedAttribute xmi:id="_MqbSkWTrEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_MqkcVGTrEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSkmTrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSk2TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6429,7 +6379,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbStGTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_MqbStWTrEd-Y0upv2_lheQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbStmTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSt2TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6569,7 +6519,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxypWTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_krxypmTrEd-Y0upv2_lheQ" name="Substitutions">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/DispenseAsWrittenDAWProductSelectionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyp2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyqGTrEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -6599,7 +6549,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyumTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_krxyu2TrEd-Y0upv2_lheQ" name="PriorAuthorizationStatus">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatus?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyvGTrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyvWTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6607,7 +6557,7 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyv2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxywGTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_krxywWTrEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_4KdeOjD1Ed-8rpqfOAePKg" aggregation="composite" association="_kr68nGTrEd-Y0upv2_lheQ">
+        <ownedAttribute xmi:id="_krxywWTrEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_kr68nGTrEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxywmTrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyw2TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6657,7 +6607,7 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxy5GTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_krxy5WTrEd-Y0upv2_lheQ" name="OrderCaptureMethod">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethod?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxy5mTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxy52TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6867,7 +6817,7 @@ potentially other structures.</body>
           <details xmi:id="_-MDMwX-PEd-eN4XJATQmiQ" key="abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_JTt-0E46Ed-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JTt-0U46Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JTt-0k46Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -7149,7 +7099,7 @@ potentially other structures.</body>
       <packagedElement xmi:type="uml:Class" xmi:id="_fxed8E49Ed-G-pSkcIGh3w" name="Census">
         <generalization xmi:id="_kbf9EE49Ed-G-pSkcIGh3w" general="_e1AxgDD4Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_fxed8U49Ed-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fxed8k49Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxed8049Ed-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
@@ -7254,7 +7204,7 @@ potentially other structures.</body>
         </eAnnotations>
         <generalization xmi:id="_SeDDkE4-Ed-G-pSkcIGh3w" general="_e1AxgDD4Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_NjMTIU4-Ed-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTIk4-Ed-G-pSkcIGh3w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTI04-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -7528,12 +7478,12 @@ elements for each transaction.</body>
           <ownedComment xmi:id="_4ajItjD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h6LZkyxAEd-8mcmtGejV_Q?ecl/ecl/ErrorCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_tDy00IVBEd-PfKcU8Giing?ecl/ecl/TransactionErrorCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIvTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIvjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4ajIvzD1Ed-8rpqfOAePKg" name="DescriptionCode">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hAD6sCxAEd-8mcmtGejV_Q?ecl/ecl/CodeListQualifierRejectCodeSTSSegment?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hAD6sCxAEd-8mcmtGejV_Q?ecl/ecl/DescriptionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIwTD1Ed-8rpqfOAePKg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIwjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -7605,7 +7555,7 @@ elements for each transaction.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4aZ-tzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4aZ-uDD1Ed-8rpqfOAePKg" name="DescriptionCode">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_EFjfwE5ZEd-lRt4mSex0Qg?ecl/ecl/Reject?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hAD6sCxAEd-8mcmtGejV_Q?ecl/ecl/DescriptionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4aZ-wzD1Ed-8rpqfOAePKg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4aZ-xDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -7903,7 +7853,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <ownedComment xmi:id="_27-XwX-XEd-eN4XJATQmiQ" annotatedElement="_27-XwH-XEd-eN4XJATQmiQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_cQxVAIL7Ed-qIZqYwtZPyA?ecl/ecl/TransactionDomainQualifier?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_cQxVAIL7Ed-qIZqYwtZPyA?ecl/ecl/TransactionDomainVersionQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_27-Xwn-XEd-eN4XJATQmiQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_27-Xw3-XEd-eN4XJATQmiQ" value="1"/>
         </ownedAttribute>
@@ -8454,7 +8404,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustH2HEEd-Xe4OIcNINMg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_37eNkGNWEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vJu1sWNXEd-ODMSOo4sPFQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vJu1sGNXEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -8569,7 +8519,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EnFA02REEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_6Wj90GREEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Wj90WREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Wj90mREEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -8703,7 +8653,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </eAnnotations>
         <generalization xmi:id="_KAn-kGQnEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_AteYMWQnEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChange?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AteYMmQnEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AteYM2QnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -8729,7 +8679,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AteYP2QnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_AteYQGQnEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AteYQWQnEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AteYQmQnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -8796,7 +8746,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </eAnnotations>
         <generalization xmi:id="_qy3FkWQnEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_qy3FkmQnEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChange?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qy3Fk2QnEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qy3FlGQnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -8822,7 +8772,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qy3FoGQnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_qy3FoWQnEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qy3FomQnEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qy3Fo2QnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -8894,7 +8844,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </eAnnotations>
         <generalization xmi:id="_AdHLgWQoEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_AdHLgmQoEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AdHLg2QoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AdHLhGQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -8920,7 +8870,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AdHLkGQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_AdHLkWQoEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AdHLkmQoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AdHLk2QoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9018,7 +8968,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeiOEGQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_TeiOEWQoEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TeiOEmQoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeiOE2QoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9090,7 +9040,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </eAnnotations>
         <generalization xmi:id="_nufgMWQoEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_nufgMmQoEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DzcqYWc3Ed-EzKeHnOFaKw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DzcqYGc3Ed-EzKeHnOFaKw"/>
         </ownedAttribute>
@@ -9116,7 +9066,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nufgQGQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_nufgQWQoEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nufgQmQoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nufgQ2QoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9188,7 +9138,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </eAnnotations>
         <generalization xmi:id="_mSBeAWQvEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_mSBeAmQvEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSBeA2QvEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeBGQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9214,7 +9164,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeEGQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_mSBeEWQvEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSBeEmQvEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeE2QvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9281,7 +9231,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </eAnnotations>
         <generalization xmi:id="_7NMQYWQvEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_7NMQYmQvEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NMQY2QvEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NMQZGQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9307,7 +9257,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NMQcGQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7NMQcWQvEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NMQcmQvEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NMQc2QvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9374,7 +9324,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </eAnnotations>
         <generalization xmi:id="_Z0C9kWQzEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_Z0C9kmQzEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z0C9k2QzEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z0C9lGQzEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9400,7 +9350,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z0C9oGQzEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Z0C9oWQzEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z0C9omQzEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z0C9o2QzEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9534,7 +9484,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </eAnnotations>
         <generalization xmi:id="_RpGFoWREEd-ODMSOo4sPFQ" general="_KIEXUGNLEd-ODMSOo4sPFQ"/>
         <ownedAttribute xmi:id="_r3LRMGRGEd-M5IWg2-DxLQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r3LRMWRGEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r3LRMmRGEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -9553,7 +9503,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RpGFqWREEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_r3CHQGRGEd-M5IWg2-DxLQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r3CHQWRGEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r3CHQmRGEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -9627,7 +9577,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kz6UuWREEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_yJEGAGRGEd-M5IWg2-DxLQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJEGAWRGEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJEGAmRGEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -9682,7 +9632,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </eAnnotations>
         <generalization xmi:id="_Bp3MUGRFEd-ODMSOo4sPFQ" general="_KIEXUGNLEd-ODMSOo4sPFQ"/>
         <ownedAttribute xmi:id="_-8j4kWREEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChange?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-8j4kmREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-8j4k2REEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9701,7 +9651,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-8j4m2REEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_-8j4nGREEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-8j4nWREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-8j4nmREEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9738,15 +9688,15 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-8j4v2REEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_dVQJZn7gEd-qFLXIW1YLFA" name="MedicationDispensed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVQJZ37gEd-qFLXIW1YLFA" value="*"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVQJZ37gEd-qFLXIW1YLFA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dVQJaH7gEd-qFLXIW1YLFA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_dVQJYH7gEd-qFLXIW1YLFA" name="MedicationDispensedAdministered" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVQJYX7gEd-qFLXIW1YLFA" value="*"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVQJYX7gEd-qFLXIW1YLFA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dVQJYn7gEd-qFLXIW1YLFA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_dVQJY37gEd-qFLXIW1YLFA" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVQJZH7gEd-qFLXIW1YLFA" value="*"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVQJZH7gEd-qFLXIW1YLFA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dVQJZX7gEd-qFLXIW1YLFA"/>
         </ownedAttribute>
       </packagedElement>
@@ -9777,7 +9727,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <details xmi:id="_46aQ0X-LEd-eN4XJATQmiQ" key="Response"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_bFIa4WRHEd-M5IWg2-DxLQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctioncodeda?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa4mRHEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIa42RHEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -9796,7 +9746,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIa62RHEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_bFIa7GRHEd-M5IWg2-DxLQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusFlag?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeofPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa7WRHEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIa7mRHEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -11846,7 +11796,6 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <xsd:GlobalElement xmi:id="_sizpIU5CEd-G-pSkcIGh3w" base_Property="_sizpIE5CEd-G-pSkcIGh3w"/>
   <xsd:GlobalElement xmi:id="_tI9DIU5CEd-G-pSkcIGh3w" base_Property="_tI9DIE5CEd-G-pSkcIGh3w"/>
   <Default:Documentation xmi:id="_eaOS9E5EEd-G-pSkcIGh3w" base_Comment="_eaOS8U5EEd-G-pSkcIGh3w"/>
-  <xsd:Restriction xmi:id="_12PNQE5LEd-lRt4mSex0Qg" base_Generalization="_qcPPIE5LEd-lRt4mSex0Qg"/>
   <xsd:Restriction xmi:id="_RdnxLFJLEd-gUbUlN-XGdw" base_Generalization="_RdeAIVJLEd-gUbUlN-XGdw"/>
   <Default:Documentation xmi:id="_RdnxLVJLEd-gUbUlN-XGdw" base_Comment="_RdeAI1JLEd-gUbUlN-XGdw"/>
   <Default:Documentation xmi:id="_RdnxLlJLEd-gUbUlN-XGdw" base_Comment="_RdeAJ1JLEd-gUbUlN-XGdw"/>
@@ -11871,7 +11820,6 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <Default:Documentation xmi:id="_pWQRUFOXEd-wEdo_Dk3J9g" base_Comment="_pWGgUFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
-  <Default:Documentation xmi:id="_OS6xYVOYEd-wEdo_Dk3J9g" base_Comment="_OS6xYFOYEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
   <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
@@ -12063,11 +12011,6 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <Default:Documentation xmi:id="_03lbPGj7Ed-Pd7zqA0IwbQ" base_Comment="_03lbMWj7Ed-Pd7zqA0IwbQ"/>
   <Default:Documentation xmi:id="_03lbPWj7Ed-Pd7zqA0IwbQ" base_Comment="_03lbNWj7Ed-Pd7zqA0IwbQ"/>
   <Default:Documentation xmi:id="_03lbPmj7Ed-Pd7zqA0IwbQ" base_Comment="_03lbOWj7Ed-Pd7zqA0IwbQ"/>
-  <Default:Documentation xmi:id="_TefT0GmQEd-rC41nbGoKjA" base_Comment="_TeWJ4WmQEd-rC41nbGoKjA"/>
-  <Default:Documentation xmi:id="_TepE0GmQEd-rC41nbGoKjA" base_Comment="_TeWJ42mQEd-rC41nbGoKjA"/>
-  <Default:Documentation xmi:id="_TepE0WmQEd-rC41nbGoKjA" base_Comment="_TeWJ52mQEd-rC41nbGoKjA"/>
-  <Default:Documentation xmi:id="_TepE0mmQEd-rC41nbGoKjA" base_Comment="_TeWJ62mQEd-rC41nbGoKjA"/>
-  <xsd:Restriction xmi:id="_uocuQGmREd-rC41nbGoKjA" base_Generalization="_tjAJIGmREd-rC41nbGoKjA"/>
   <xsd:Restriction xmi:id="_QPqFsWmjEd-rC41nbGoKjA" base_Generalization="_QPqFsGmjEd-rC41nbGoKjA"/>
   <Default:Documentation xmi:id="_LzQg9GmlEd-rC41nbGoKjA" base_Comment="_LzQg8WmlEd-rC41nbGoKjA"/>
   <Default:Documentation xmi:id="_DTud_2mnEd-rC41nbGoKjA" base_Comment="_DTud8WmnEd-rC41nbGoKjA"/>
