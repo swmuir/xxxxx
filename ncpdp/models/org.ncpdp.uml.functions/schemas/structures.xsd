@@ -19,8 +19,8 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Allergy">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="NoKnownAllergies" type="ecl:YNBoolean"/>
-      <xsd:element minOccurs="0" name="SourceOfInformation" type="ecl:SourceofInformation"/>
+      <xsd:element minOccurs="0" name="NoKnownAllergies" type="ecl:BooleanCode"/>
+      <xsd:element minOccurs="0" name="SourceOfInformation" type="ecl:SourceofInformationCode"/>
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="AdverseEvent" type="datatypes:SNOMEDAdverseEventCode"/>
@@ -36,7 +36,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:sequence>
       <xsd:element name="AttachmentSource" type="xsd:string"/>
       <xsd:element name="AttachmentData" type="xsd:base64Binary"/>
-      <xsd:element name="MIMEType" type="ecl:MTMMIMETypes"/>
+      <xsd:element name="MIMEType" type="ecl:MIMETypeCode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -57,16 +57,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
       <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+      <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:PayerResponsibilityCode"/>
       <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
       <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
       <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
       <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-      <xsd:element minOccurs="0" name="Consent" type="ecl:ConsentType"/>
+      <xsd:element minOccurs="0" name="Consent" type="ecl:ConsentCode"/>
       <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
       <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
-      <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+      <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -81,16 +81,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
           <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:PayerResponsibilityCode"/>
           <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
           <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
           <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
           <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Consent" type="ecl:ConsentType"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Consent" type="ecl:ConsentCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
           <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCode"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -100,7 +100,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Diagnosis">
     <xsd:sequence>
-      <xsd:element name="ClinicalInformationQualifier" type="ecl:MyClinicalInformationQualifier"/>
+      <xsd:element name="ClinicalInformationQualifier" type="ecl:DiagnosisClinicalInformationQualifierCode"/>
       <xsd:element name="Primary" type="structures:PrimaryDiagnosis"/>
       <xsd:element minOccurs="0" name="Secondary" type="structures:SecondaryDiagnosis"/>
     </xsd:sequence>
@@ -110,7 +110,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DiagnosisGeneral">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="SourceOfInformation" type="ecl:SourceofInformation"/>
+      <xsd:element minOccurs="0" name="SourceOfInformation" type="ecl:SourceofInformationCode"/>
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ProblemType" type="datatypes:SNOMEDCode"/>
@@ -136,16 +136,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -157,7 +157,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -194,16 +194,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -215,7 +215,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
           <xsd:element minOccurs="0" name="Prescriber" type="structures:HistoryPrescriber"/>
           <xsd:element minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -242,16 +242,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -263,7 +263,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
           <xsd:element minOccurs="0" name="Prescriber" type="structures:HistoryPrescriber"/>
           <xsd:element minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -354,16 +354,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-      <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+      <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Note" type="datatypes:an..210"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -375,7 +375,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="structures:HistoryPrescriber"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -400,16 +400,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -421,7 +421,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -494,8 +494,8 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PatientLocation" type="structures:PatientLocation"/>
           <xsd:element minOccurs="0" name="LanguageNameCode" type="datatypes:an..3"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ResidenceCode" type="ecl:ResidenceCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="PregnancyIndicator" type="ecl:YNBoolean"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Smoker" type="ecl:YNBoolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="PregnancyIndicator" type="ecl:BooleanCode"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="Smoker" type="ecl:BooleanCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Race" type="datatypes:CDCCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Ethnicity" type="datatypes:CDCCode"/>
         </xsd:sequence>
@@ -516,8 +516,8 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="PatientLocation" type="structures:PatientLocation"/>
       <xsd:element minOccurs="0" name="LanguageNameCode" type="datatypes:an..3"/>
       <xsd:element minOccurs="0" name="ResidenceCode" type="ecl:ResidenceCode"/>
-      <xsd:element minOccurs="0" name="PregnancyIndicator" type="ecl:YNBoolean"/>
-      <xsd:element minOccurs="0" name="Smoker" type="ecl:YNBoolean"/>
+      <xsd:element minOccurs="0" name="PregnancyIndicator" type="ecl:BooleanCode"/>
+      <xsd:element minOccurs="0" name="Smoker" type="ecl:BooleanCode"/>
       <xsd:element minOccurs="0" name="Race" type="datatypes:CDCCode"/>
       <xsd:element minOccurs="0" name="Ethnicity" type="datatypes:CDCCode"/>
     </xsd:sequence>
@@ -608,16 +608,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -629,7 +629,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -678,7 +678,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PrimaryDiagnosis">
     <xsd:sequence>
-      <xsd:element name="Qualifier" type="ecl:DiagnosisCodeQualifier"/>
+      <xsd:element name="Qualifier" type="ecl:PrimaryDiagnosisCodeQualifierCode"/>
       <xsd:element name="Value" type="ecl:Code"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -714,16 +714,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -735,7 +735,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -767,16 +767,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -788,7 +788,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -815,16 +815,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -836,7 +836,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -863,16 +863,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -884,7 +884,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -897,7 +897,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RouteOfAdministration">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="RouteOfAdministrationCode" type="datatypes:RouteOfAdministrationCodeWithText"/>
+      <xsd:element minOccurs="0" name="RouteOfAdministrationCode"/>
       <xsd:element minOccurs="0" name="MultipleRouteOfAdministrationModifier" type="datatypes:ANDOR"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -920,16 +920,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-          <xsd:element name="Substitutions" type="ecl:DispenseAsWrittenDAWProductSelectionCode"/>
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
           <xsd:element name="NumberOfRefills" type="datatypes:n..2"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
           <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
-          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatus"/>
+          <xsd:element minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
           <xsd:element minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-          <xsd:element minOccurs="0" name="RouteOfAdministration" type="structures:RouteOfAdministration"/>
+          <xsd:element minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
           <xsd:element maxOccurs="25" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
           <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
@@ -941,7 +941,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethod"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -961,16 +961,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="CardholderID" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="CardHolderName" type="datatypes:NameType"/>
           <xsd:element minOccurs="0" name="GroupID" type="datatypes:an..35"/>
-          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:InsuranceTypecodedX12DE1138"/>
+          <xsd:element minOccurs="0" name="PayerResponsibilityCode" type="ecl:PayerResponsibilityCode"/>
           <xsd:element minOccurs="0" name="PatientRelationship" type="ecl:PatientRelationshipCode"/>
           <xsd:element minOccurs="0" name="PersonCode" type="datatypes:n..3"/>
           <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
           <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-          <xsd:element name="Consent" type="ecl:ConsentType"/>
+          <xsd:element name="Consent" type="ecl:ConsentCode"/>
           <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
           <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
-          <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCoded"/>
+          <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCode"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -1172,7 +1172,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SecondaryDiagnosis">
     <xsd:sequence>
-      <xsd:element name="Qualifier" type="ecl:DiagnosisCodeQualifier2"/>
+      <xsd:element name="Qualifier" type="ecl:SecondaryDiagnosisCodeQualifierCode"/>
       <xsd:element name="Value" type="ecl:Code"/>
     </xsd:sequence>
   </xsd:complexType>

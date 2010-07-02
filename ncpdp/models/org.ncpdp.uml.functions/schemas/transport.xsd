@@ -52,8 +52,8 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Error">
     <xsd:sequence>
-      <xsd:element name="Code" type="ecl:ErrorCode"/>
-      <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:CodeListQualifierRejectCodeSTSSegment"/>
+      <xsd:element name="Code" type="ecl:TransactionErrorCode"/>
+      <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:DescriptionCode"/>
       <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -159,7 +159,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
     </xsd:sequence>
     <xsd:attribute name="DatatypesVersion" type="xsd:string" use="required"/>
     <xsd:attribute name="TransportVersion" type="xsd:string" use="required"/>
-    <xsd:attribute name="TransactionDomain" type="ecl:TransactionDomainQualifier" use="required"/>
+    <xsd:attribute name="TransactionDomain" type="ecl:TransactionDomainVersionQualifierCode" use="required"/>
     <xsd:attribute name="TransactionVersion" type="xsd:string" use="required"/>
     <xsd:attribute name="StructuresVersion" type="xsd:string" use="required"/>
     <xsd:attribute name="ECLVersion" type="xsd:string" use="required"/>
@@ -237,7 +237,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
-      <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:Reject"/>
+      <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:DescriptionCode"/>
       <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
       <xsd:element minOccurs="0" name="PrescriptionDeliveryMethod">
         <xsd:simpleType>

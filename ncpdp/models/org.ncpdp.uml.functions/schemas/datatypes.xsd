@@ -476,7 +476,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="AddressLine1" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="AddressLine2" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="City" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="State" type="ecl:State"/>
+      <xsd:element minOccurs="0" name="State" type="ecl:StateCode"/>
       <xsd:element minOccurs="0" name="ZipCode" type="datatypes:ZipCodeType"/>
       <xsd:element minOccurs="0" name="PlaceLocationQualifier" type="datatypes:an..3"/>
     </xsd:sequence>
@@ -497,7 +497,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:restriction base="datatypes:QualifiedCode">
         <xsd:sequence>
           <xsd:element name="Code" type="ecl:Code"/>
-          <xsd:element name="Qualifier" type="ecl:DUECoAgentIDQualifier"/>
+          <xsd:element name="Qualifier" type="ecl:DUECoAgentIDQualifierCode"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -516,7 +516,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <xsd:complexType name="CommunicationType">
     <xsd:sequence>
       <xsd:element name="Number" type="datatypes:an..80M"/>
-      <xsd:element name="Qualifier" type="ecl:ValuesforCommunicationCodes"/>
+      <xsd:element name="Qualifier" type="ecl:CommunicationTypeQualifierCode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -627,7 +627,7 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
       <xsd:restriction base="datatypes:QualifiedCode">
         <xsd:sequence>
           <xsd:element name="Code" type="ecl:Code"/>
-          <xsd:element name="Qualifier" type="ecl:DrugDBQualifiers"/>
+          <xsd:element name="Qualifier" type="ecl:DrugDBQualifiersCode"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -638,7 +638,7 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
   <xsd:complexType name="DrugDBCodeWithText">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
-      <xsd:element minOccurs="0" name="Qualifier" type="ecl:DrugDBQualifiers"/>
+      <xsd:element minOccurs="0" name="Qualifier" type="ecl:DrugDBQualifiersCode"/>
       <xsd:element name="Text" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -667,6 +667,16 @@ NCI Administrative Concept - Research Resource - Information Resource - Terminol
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  FinalRouteOfAdministrationCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="FinalRouteOfAdministrationCode">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="Qualifier" type="ecl:TerminologyQualifierCode"/>
+      <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  HistorySource  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="HistorySource">
@@ -689,7 +699,7 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
   <xsd:complexType name="IDType">
     <xsd:sequence>
       <xsd:element name="IDValue" type="datatypes:an..35"/>
-      <xsd:element name="IDQualifier" type="ecl:IDQualifier"/>
+      <xsd:element name="IDQualifier" type="ecl:IDQualifierCode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -697,10 +707,10 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MeasurementType">
     <xsd:sequence>
-      <xsd:element name="Dimension" type="ecl:MeasurementDimensioncodedValueswhenreferencingX12DE738"/>
+      <xsd:element name="Dimension" type="ecl:MeasurementDimensionCode"/>
       <xsd:element name="Value" type="datatypes:n..18M"/>
       <xsd:element minOccurs="0" name="ObservationDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="MeasurementDataQualifier" type="ecl:MeasurementDataQualifier"/>
+      <xsd:element minOccurs="0" name="MeasurementDataQualifier" type="ecl:MeasurementDataQualifierCode"/>
       <xsd:element minOccurs="0" name="MeasurementSourceCode" type="datatypes:NCICode">
         <xsd:annotation>
           <xsd:documentation>NCPDP Vital Sign Data Terminology - available at 
@@ -831,7 +841,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <xsd:complexType name="ProblemNameCode">
     <xsd:sequence>
       <xsd:element name="Text" type="xsd:string"/>
-      <xsd:element minOccurs="0" name="Qualifier" type="ecl:ProblemNameQualifier"/>
+      <xsd:element minOccurs="0" name="Qualifier" type="ecl:ProblemNameQualifierCode"/>
       <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -843,7 +853,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       <xsd:restriction base="datatypes:QualifiedCode">
         <xsd:sequence>
           <xsd:element name="Code" type="ecl:Code"/>
-          <xsd:element name="Qualifier" type="ecl:ProductCodeQualifiers"/>
+          <xsd:element name="Qualifier" type="ecl:ProductQualifiersCode"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -907,7 +917,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <xsd:complexType name="Quantity">
     <xsd:sequence>
       <xsd:element name="Value" type="datatypes:n..11M"/>
-      <xsd:element name="CodeListQualifier" type="ecl:CodeListQualifierQuantityQualifierDRUSegmentX12DE673"/>
+      <xsd:element name="CodeListQualifier" type="ecl:QuantityCodeListQualifierCode"/>
       <xsd:element name="QuanityUnitOfMeasure" type="datatypes:NCICode">
         <xsd:annotation>
           <xsd:documentation>NCPDP Drug QuantityUnitOfMeasure Terminology - available at 
@@ -918,30 +928,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  RouteOfAdministrationCode  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="RouteOfAdministrationCode">
-    <xsd:sequence>
-      <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
-      <xsd:element name="Qualifier" type="ecl:TerminologyQualifier"/>
-      <xsd:element name="Code" type="ecl:Code"/>
-    </xsd:sequence>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  RouteOfAdministrationCodeWithText  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="RouteOfAdministrationCodeWithText">
-    <xsd:complexContent>
-      <xsd:restriction base="datatypes:QualifiedCodeWithText">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
-          <xsd:element name="Qualifier" type="ecl:TerminologyQualifier"/>
-          <xsd:element name="Code" type="ecl:Code"/>
-        </xsd:sequence>
-      </xsd:restriction>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  SNOMEDAdverseEventCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SNOMEDAdverseEventCode">
@@ -949,7 +935,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       <xsd:restriction base="datatypes:SNOMEDCode">
         <xsd:sequence>
           <xsd:element name="Text" type="xsd:string"/>
-          <xsd:element minOccurs="0" name="Code" type="ecl:SNOMEDCTPreferredTermsforAdverseEvents"/>
+          <xsd:element minOccurs="0" name="Code" type="ecl:SNOMEDCTAdverseEventCode"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -973,29 +959,15 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Reference" type="datatypes:IDType"/>
       <xsd:element minOccurs="0" name="SourceDescription" type="datatypes:an..35"/>
-      <xsd:element name="SourceQualifier" type="ecl:SourceQualifier"/>
+      <xsd:element name="SourceQualifier" type="ecl:SourceQualifierCode"/>
     </xsd:sequence>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  TerminologyQualifiedCode  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="TerminologyQualifiedCode">
-    <xsd:complexContent>
-      <xsd:restriction base="datatypes:QualifiedCodeWithText">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
-          <xsd:element name="Qualifier" type="ecl:Terminologies"/>
-          <xsd:element name="Code" type="ecl:Code"/>
-        </xsd:sequence>
-      </xsd:restriction>
-    </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  TimeZone  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="TimeZone">
     <xsd:sequence>
-      <xsd:element name="TimeZoneIdentifier" type="ecl:TimeZoneIdentifier"/>
+      <xsd:element name="TimeZoneIdentifier" type="ecl:TimeZoneIdentifierCode"/>
       <xsd:element minOccurs="0" name="TimeZoneDifferenceQuantity">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
