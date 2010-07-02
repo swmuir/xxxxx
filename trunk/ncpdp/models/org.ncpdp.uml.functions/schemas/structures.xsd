@@ -137,7 +137,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -195,7 +195,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -243,7 +243,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -355,7 +355,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
       <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2M"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -401,7 +401,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -609,7 +609,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -715,7 +715,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -768,7 +768,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -816,7 +816,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element minOccurs="0" name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -864,7 +864,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>
@@ -921,7 +921,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
           <xsd:element minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
           <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-          <xsd:element name="NumberOfRefills" type="datatypes:n..2"/>
+          <xsd:element name="NumberOfRefills" type="datatypes:n..2M"/>
           <xsd:element maxOccurs="2" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
           <xsd:element minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..210"/>

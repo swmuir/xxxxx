@@ -702,7 +702,7 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="IDType">
     <xsd:sequence>
-      <xsd:element name="IDValue" type="datatypes:an..35"/>
+      <xsd:element name="IDValue" type="datatypes:an..35M"/>
       <xsd:element name="IDQualifier" type="ecl:IDQualifierCode"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -743,8 +743,8 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="NameType">
     <xsd:sequence>
-      <xsd:element name="LastName" type="datatypes:an..35"/>
-      <xsd:element name="FirstName" type="datatypes:an..35"/>
+      <xsd:element name="LastName" type="datatypes:an..35M"/>
+      <xsd:element name="FirstName" type="datatypes:an..35M"/>
       <xsd:element minOccurs="0" name="MiddleName" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Suffix" type="datatypes:an..10"/>
       <xsd:element minOccurs="0" name="Prefix" type="datatypes:an..10"/>
