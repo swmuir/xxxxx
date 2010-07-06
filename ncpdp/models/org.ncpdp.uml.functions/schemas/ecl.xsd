@@ -1029,7 +1029,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="134">
         <xsd:annotation>
-          <xsd:documentation>DRU dosage quantity qualifier is invalid.</xsd:documentation>
+          <xsd:documentation>Sending a Quantity Sufficient with Quantity of 0 is invalid for this pharmacy.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="210">
@@ -1039,7 +1039,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="220">
         <xsd:annotation>
-          <xsd:documentation>Message is a duplicate</xsd:documentation>
+          <xsd:documentation>Transaction is a duplicate</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="500">
@@ -1091,7 +1091,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="LOA">
         <xsd:annotation>
-          <xsd:documentation>Not Specified</xsd:documentation>
+          <xsd:documentation>LOA value is Request for the pharmacy to dispense a supply of medications in user packaging for use during a Leave of Absence</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -1101,21 +1101,28 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="DoNotFillCode">
     <xsd:annotation>
-      <xsd:documentation>Used for medications ordered by a prescriber but not requiring dispensing at this time, but required for administration and available for drug-to-drug interactions.</xsd:documentation>
+      <xsd:documentation>Used for medications ordered by a prescriber but not requiring dispensing at this time, but may be required for administration and may be available for drug-to-drug interactions.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="Y">
         <xsd:annotation>
-          <xsd:documentation>Yes</xsd:documentation>
+          <xsd:documentation>Yes - Used for medications ordered by a prescriber not requiring dispensing, but available for reference and drug-to-drug interaction checking.  </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="H"/>
+      <xsd:enumeration value="H">
+        <xsd:annotation>
+          <xsd:documentation>H =  Hold - Indicates the prescriber’s authorization for the pharmacy to fill a prescription, but the prescriber recommends that the pharmacy wait for the patient to request it before filling it.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  DrugAdminReasonCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="DrugAdminReasonCode">
+    <xsd:annotation>
+      <xsd:documentation>Reference 8011 - Reason Code (REQ Segment)</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="01"/>
       <xsd:enumeration value="02"/>
@@ -1227,26 +1234,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Multum MMDC</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="SCD">
-        <xsd:annotation>
-          <xsd:documentation>RXNORM - Maintained and distributed by National Library of Medicine (NLM)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="SBD">
-        <xsd:annotation>
-          <xsd:documentation>RxNorm Semantic Branded Drug (SBD) – A Code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, form and dose strength plus the branded name. </xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="GPK">
-        <xsd:annotation>
-          <xsd:documentation>RxNorm Generic Package (GPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the generic drug delivery device.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="BPK">
-        <xsd:annotation>
-          <xsd:documentation>RxNorm Branded Package (BPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the branded drug delivery device.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1317,17 +1304,17 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:documentation>Code identifying the gender of the individual.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="1">
+      <xsd:enumeration value="M">
         <xsd:annotation>
           <xsd:documentation>Male</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="2">
+      <xsd:enumeration value="F">
         <xsd:annotation>
           <xsd:documentation>Female</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="0">
+      <xsd:enumeration value="U">
         <xsd:annotation>
           <xsd:documentation>Not Specified or Unknown</xsd:documentation>
         </xsd:annotation>
@@ -1339,32 +1326,141 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="IDQualifierCode">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="OB"/>
-      <xsd:enumeration value="1C"/>
-      <xsd:enumeration value="1D"/>
-      <xsd:enumeration value="1E"/>
-      <xsd:enumeration value="1G"/>
-      <xsd:enumeration value="1M"/>
-      <xsd:enumeration value="1J"/>
-      <xsd:enumeration value="2U"/>
-      <xsd:enumeration value="94"/>
-      <xsd:enumeration value="BO"/>
-      <xsd:enumeration value="AD"/>
-      <xsd:enumeration value="C1"/>
-      <xsd:enumeration value="D3"/>
-      <xsd:enumeration value="DH"/>
-      <xsd:enumeration value="EA"/>
-      <xsd:enumeration value="EJ"/>
-      <xsd:enumeration value="G1"/>
-      <xsd:enumeration value="GI"/>
-      <xsd:enumeration value="HI"/>
-      <xsd:enumeration value="HP"/>
-      <xsd:enumeration value="IP"/>
-      <xsd:enumeration value="NC"/>
-      <xsd:enumeration value="NF"/>
-      <xsd:enumeration value="PD"/>
-      <xsd:enumeration value="SY"/>
-      <xsd:enumeration value="ZZ"/>
+      <xsd:enumeration value="0B">
+        <xsd:annotation>
+          <xsd:documentation>State License Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1C">
+        <xsd:annotation>
+          <xsd:documentation>Medicare Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1D">
+        <xsd:annotation>
+          <xsd:documentation>Medicaid Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1E">
+        <xsd:annotation>
+          <xsd:documentation>Dentist License Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1G">
+        <xsd:annotation>
+          <xsd:documentation>UPIN</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1M">
+        <xsd:annotation>
+          <xsd:documentation>PPO Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1J">
+        <xsd:annotation>
+          <xsd:documentation>Facility ID Number = ID number assigned by the LTC Facility to the patient</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2U">
+        <xsd:annotation>
+          <xsd:documentation>Payer Identification Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="94">
+        <xsd:annotation>
+          <xsd:documentation>Pharmacy or Prescriber File ID</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BO">
+        <xsd:annotation>
+          <xsd:documentation>BIN Location Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADI">
+        <xsd:annotation>
+          <xsd:documentation>Processor Identification Number – Processor Control Number assigned by the processor.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="C1">
+        <xsd:annotation>
+          <xsd:documentation>Commercial</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="D3">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP Provider ID Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DH">
+        <xsd:annotation>
+          <xsd:documentation>DEA Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="EA">
+        <xsd:annotation>
+          <xsd:documentation>Medical Record Identification Number (EHR) = A unique number assigned to each patient by the provider of service (hospital) to assist in retrieval of medical records</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="EJ">
+        <xsd:annotation>
+          <xsd:documentation>Patient Account Number (ID assigned by the CPOE system) = A unique number assigned to each patient by the provider of service to facilitate retrieval of individual case records tracking of claims submitted to a payer and posting of payment</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="G1">
+        <xsd:annotation>
+          <xsd:documentation>Prior Authorization</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GI">
+        <xsd:annotation>
+          <xsd:documentation>Secondary Provider Number- To contain the Certificate to Prescribe (CTP) number. The CTP is an additional number to the state license number that a board of pharmacy assigns to prescribing individuals after completion of specific requirements.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HI">
+        <xsd:annotation>
+          <xsd:documentation>HIN</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HPI">
+        <xsd:annotation>
+          <xsd:documentation>National Provider ID</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IP">
+        <xsd:annotation>
+          <xsd:documentation>Individual Policy Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NC">
+        <xsd:annotation>
+          <xsd:documentation>Secondary Coverage Company Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NF">
+        <xsd:annotation>
+          <xsd:documentation>National Association of Insurance Commissioner’s Code </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PD">
+        <xsd:annotation>
+          <xsd:documentation>Promotion Number (Sample RX)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SY">
+        <xsd:annotation>
+          <xsd:documentation>Social Security Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ZZ">
+        <xsd:annotation>
+          <xsd:documentation>Mutually Defined</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WI">
+        <xsd:annotation>
+          <xsd:documentation>Waiver - DATA 2000 Waiver ID. Used for prescriptions for opioid addiction treatment medications.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1377,17 +1473,19 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="C1">
         <xsd:annotation>
-          <xsd:documentation>Significant change (Any changes to the Drug, form, strength, dosage, or route)</xsd:documentation>
+          <xsd:documentation>Label change (Any changes to the Drug, form, strength, dosage, or route) – Change to an active order to the drug, form, strength, dosage, or route (long term care settings).</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="C2">
         <xsd:annotation>
-          <xsd:documentation>Frequency Change (Any change to the frequency or hours of administration for the drug)</xsd:documentation>
+          <xsd:documentation>Frequency Change (Any change to the frequency or hours of administration for the drug) - Change to the frequency or hours of administration for the medication (long term care settings).&#13;
+</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="C3">
         <xsd:annotation>
-          <xsd:documentation>Insignificant Change (All other changes)</xsd:documentation>
+          <xsd:documentation>Other Change (All other changes) – A change to the medication not covered by other values listed (long term care settings).&#13;
+</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -1397,7 +1495,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="MIMETypeCode">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="application/hl7-sda+xml"/>
+      <xsd:enumeration value="application/hl7-cda+xml"/>
       <xsd:enumeration value="application/x-ccr"/>
     </xsd:restriction>
   </xsd:simpleType>
@@ -1736,66 +1834,21 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:documentation>Code qualifying the ‘Diagnosis Code’ (424-DO).</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="Blank">
+      <xsd:enumeration value="E"/>
+      <xsd:enumeration value="F"/>
+      <xsd:enumeration value="M"/>
+      <xsd:enumeration value="ABF">
         <xsd:annotation>
-          <xsd:documentation>Not Specified</xsd:documentation>
+          <xsd:documentation>International Classification of Diseases-10- Clinical Modifications (ICD-10-CM) Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.  </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="00">
+      <xsd:enumeration value="DX">
         <xsd:annotation>
-          <xsd:documentation>Not Specified</xsd:documentation>
+          <xsd:documentation>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="01">
-        <xsd:annotation>
-          <xsd:documentation>International Classification of Diseases (ICD9) - Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="02">
-        <xsd:annotation>
-          <xsd:documentation>International Classification of Diseases-10-Clinical Modifications (ICD-10-CM) - Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="03">
-        <xsd:annotation>
-          <xsd:documentation>National Criteria Care Institute (NCCI) - The CMS-developed Correct Coding Initiative (CCI) to promote national correct coding methodologies and to control improper coding leading to inappropriate payment in Part B claims. The CMS developed its coding policies based on coding conventions defined in the American Medical Association’s CPT manual, national and local policies and edits, coding guidelines developed by national societies, analysis of standard medical and surgical practices, and a review of current coding practices.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="04">
-        <xsd:annotation>
-          <xsd:documentation>The Systematized Nomenclature of Medicine Clinical Terms® (SNOMED) - A clinical health care terminology and infrastructure that provides a common language that enables a consistent way of capturing, sharing and aggregating health data across specialties and sites of care.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="05">
-        <xsd:annotation>
-          <xsd:documentation>Common Dental Terminology (CDT) - Current Dental Terminology (CDT) is the published Code on Dental Procedures and Nomenclature (the Code) providing descriptive terms, codes and guidance for the accurate reporting of dental procedures. The Code is maintained by the Code Revision Committee and published by the American Dental Association. The procedure codes and descriptions are also published as part of the Healthcare Common Procedure System (HCPCS) Level II through agreement with Centers for Medicare and Medicaid Services.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="06">
-        <xsd:annotation>
-          <xsd:documentation>Medi-Span Product Line Diagnosis Code - Proprietary code used by Medi-Span product line to specify diagnosis</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="07">
-        <xsd:annotation>
-          <xsd:documentation>American Psychiatric Association Diagnostic Statistical Manual of Mental Disorders (DSM IV) - Diagnostic criteria for the most common mental disorders including: description, diagnosis, treatment, and research findings.  Comments: The Diagnostic and Statistical Manual of Mental Disorders - Fourth Edition (DSM-IV) is published by the American Psychiatric Association, Washington D.C.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="08">
-        <xsd:annotation>
-          <xsd:documentation>First DataBank Disease Code (FDBDX) Proprietary code used by First DataBank product line to specify diagnosis</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="09">
-        <xsd:annotation>
-          <xsd:documentation>First DataBank FML Disease Identifier (FDB DxID) - Proprietary code used by First DataBank product line to specify diagnosis</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="99">
-        <xsd:annotation>
-          <xsd:documentation>Other - Different from those implied or specified</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
+      <xsd:enumeration value="ICD9"/>
+      <xsd:enumeration value="ICD10"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -2024,7 +2077,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>NDF-RT - National Drug File Reference Terminology  - Maintained by VA, distributed by NCI -  for classes of medications</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="UN"/>
+      <xsd:enumeration value="UN">
+        <xsd:annotation>
+          <xsd:documentation>UNII - Unique Ingredient Identifier - Maintained by FDA and EPA, distributed by FDA Substance Registration System (SRS)			</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="UP">
         <xsd:annotation>
           <xsd:documentation>UPC</xsd:documentation>
@@ -2184,7 +2241,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ResidenceCode">
     <xsd:annotation>
-      <xsd:documentation>Identifies the accumulator month based on date of service of claims activity.</xsd:documentation>
+      <xsd:documentation>Code identifying the patient’s place of residence.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="1">
@@ -2279,12 +2336,13 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="G">
         <xsd:annotation>
-          <xsd:documentation>Significant change (Any changes to the Drug, form, strength, dosage, or route)</xsd:documentation>
+          <xsd:documentation>Generic Substitution - A modification of the product prescribed to a generic equivalent.			&#13;
+</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="P">
         <xsd:annotation>
-          <xsd:documentation>Frequency Change (Any change to the frequency or hours of administration for the drug)</xsd:documentation>
+          <xsd:documentation>Prior Authorization Required - A request to obtain prior authorization before dispensing.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="T">
@@ -2367,8 +2425,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="ICD9"/>
-      <xsd:enumeration value="ICD10"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -2469,7 +2525,12 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Missouri</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="NU"/>
+      <xsd:enumeration value="NU">
+        <xsd:annotation>
+          <xsd:documentation>Nunavut			&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="VI">
         <xsd:annotation>
           <xsd:documentation>Virgin Islands</xsd:documentation>
@@ -2563,7 +2624,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Florida</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="NF"/>
+      <xsd:enumeration value="NL">
+        <xsd:annotation>
+          <xsd:documentation>Newfoundland and Labrador</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="DC">
         <xsd:annotation>
           <xsd:documentation>District Of Columbia</xsd:documentation>
@@ -2598,7 +2663,8 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="DE">
         <xsd:annotation>
-          <xsd:documentation>Deleware</xsd:documentation>
+          <xsd:documentation>Delaware			&#13;
+</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="MB">
@@ -2757,7 +2823,12 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Illinois</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="QC"/>
+      <xsd:enumeration value="QC">
+        <xsd:annotation>
+          <xsd:documentation>Quebec			&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="VT">
         <xsd:annotation>
           <xsd:documentation>Vermont&#13;
@@ -2856,18 +2927,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requested Brand Product To Be Dispensed - This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted, but the plan's formulary requests the brand product. This situation can occur when the prescriber writes the prescription using either the brand or generic name and the product is available from multiple sources.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  TerminologyQualifierCode  <<ncpdpecl>>  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:simpleType name="TerminologyQualifierCode">
-    <xsd:annotation>
-      <xsd:documentation>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</xsd:documentation>
-    </xsd:annotation>
-    <xsd:restriction base="ecl:Code">
-      <xsd:enumeration value="1"/>
-      <xsd:enumeration value="2"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

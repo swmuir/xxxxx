@@ -24,7 +24,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="AdverseEvent" type="datatypes:SNOMEDAdverseEventCode"/>
-      <xsd:element minOccurs="0" name="DrugProductCoded" type="datatypes:DrugDBCodeWithText"/>
+      <xsd:element minOccurs="0" name="DrugProductCoded" type="datatypes:DrugProductCodeWithText"/>
       <xsd:element minOccurs="0" name="ReactionCoded" type="datatypes:SNOMEDCode"/>
       <xsd:element minOccurs="0" name="SeverityCoded" type="datatypes:SNOMEDCode"/>
     </xsd:sequence>
@@ -63,10 +63,28 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="GroupName" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
       <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
-      <xsd:element minOccurs="0" name="Consent" type="ecl:ConsentCode"/>
-      <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80"/>
+      <xsd:element minOccurs="0" name="Consent" type="ecl:ConsentCode">
+        <xsd:annotation>
+          <xsd:documentation>Note: If Patient Consent = N, it is expected the RxHistory transactions would not be sent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="PBMMemberID" type="datatypes:an..80">
+        <xsd:annotation>
+          <xsd:documentation>Payer assigned Unique Member ID.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="ResponsibleParty" type="datatypes:NameType"/>
-      <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCode"/>
+      <xsd:element minOccurs="0" name="ServiceTypeCoded" type="ecl:ServiceTypeCode">
+        <xsd:annotation>
+          <xsd:documentation>Medication list contains all current medication orders as of the current date and time of the response, for the patient indicated. Current status is determined by the point of care responder. “Current” is medication orders which have not been discontinued.&#13;
+&#13;
+Value “C” is “Not used” to request medication history from pharmacy or payer/processor. &#13;
+&#13;
+RxHistoryRequest:  When this field contains a value of “C” in the Medication History request message, Date is not sent. &#13;
+&#13;
+RxHistoryResponse: The response echoes back the “C” value in this field.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -101,7 +119,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <xsd:complexType name="Diagnosis">
     <xsd:sequence>
       <xsd:element name="ClinicalInformationQualifier" type="ecl:DiagnosisClinicalInformationQualifierCode"/>
-      <xsd:element name="Primary" type="structures:PrimaryDiagnosis"/>
+      <xsd:element name="Primary" type="structures:PrimaryDiagnosis">
+        <xsd:annotation>
+          <xsd:documentation>The prescriber supplied or pharmacy inferred code for the diagnosis.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="Secondary" type="structures:SecondaryDiagnosis"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -277,7 +299,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <xsd:complexType name="HistoryPrescriber">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Identification" type="datatypes:ProviderID"/>
-      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+      <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10">
+        <xsd:annotation>
+          <xsd:documentation>Value A for the NUCC taxonomy list.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Name" type="datatypes:NameType"/>
       <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
@@ -306,6 +332,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  MandatoryPharmacy  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MandatoryPharmacy">
+    <xsd:annotation>
+      <xsd:documentation>Value P2</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="structures:Pharmacy">
         <xsd:sequence>
@@ -323,6 +352,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  MandatoryPresciber  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MandatoryPresciber">
+    <xsd:annotation>
+      <xsd:documentation>Value PC</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="structures:Prescriber">
         <xsd:sequence>
@@ -341,41 +373,160 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  Medication  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Medication">
+    <xsd:annotation>
+      <xsd:documentation>Prescribed or Dispensed may only occur once, according to appropriate need in a transaction. A transaction may contain a loop of Prescribed and Dispensed for example, in the RxChangeRequest, where the prescriber prescribed x and the pharmacy filled y. But a transaction may not contain multiple Prescribed and Dispensed.&#13;
+&#13;
+</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="DrugDescription" type="datatypes:an..105M"/>
+      <xsd:element name="DrugDescription" type="datatypes:an..105M">
+        <xsd:annotation>
+          <xsd:documentation>Is the self-contained full drug name, strength, and form. If CompoundCoded = 2 (Compound), this field must contain “0” (zero means zero).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugCoded" type="datatypes:DrugCoded"/>
-      <xsd:element name="Quantity" type="datatypes:Quantity"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Directions" type="datatypes:an..140M"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DaysSupply" type="datatypes:an..35"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="WrittenDate" type="datatypes:DateType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="LastFillDate" type="datatypes:DateType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PeriodEnd" type="datatypes:DateType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType"/>
+      <xsd:element name="Quantity" type="datatypes:Quantity">
+        <xsd:annotation>
+          <xsd:documentation>For multi-ingredient compounds will contain final quantity.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Directions" type="datatypes:an..140M">
+        <xsd:annotation>
+          <xsd:documentation>SIG instructions. Dosage free text.&#13;
+Note: If Structured Sig element is used, see information on Structured Sig element - SigFreeTextStringIndicator.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DaysSupply" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>Note: It is strongly recommended that DaysSupply (value “ZDS”) be supported.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="WrittenDate" type="datatypes:DateType">
+        <xsd:annotation>
+          <xsd:documentation>Value 85.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="LastFillDate" type="datatypes:DateType">
+        <xsd:annotation>
+          <xsd:documentation>Value LD.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ExpirationDate" type="datatypes:DateType">
+        <xsd:annotation>
+          <xsd:documentation>Value 36.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="EffectiveDate" type="datatypes:DateType">
+        <xsd:annotation>
+          <xsd:documentation>Value 07.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PeriodEnd" type="datatypes:DateType">
+        <xsd:annotation>
+          <xsd:documentation>Value  PE.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DeliveredOnDate" type="datatypes:DateType">
+        <xsd:annotation>
+          <xsd:documentation>Value BE.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DateValidated" type="datatypes:DateType"/>
-      <xsd:element name="Substitutions" type="ecl:SubstitutionCode"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2M"/>
+      <xsd:element name="Substitutions" type="ecl:SubstitutionCode">
+        <xsd:annotation>
+          <xsd:documentation>Note: Value 0 = No Product Selection Indicated. This value should be used to designate that substitutions are allowed.  When a prescriber wishes to allow substitutes for a NewRx, this field should be 0 to reflect that substitutions can be allowed.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="NumberOfRefills" type="datatypes:n..2M">
+        <xsd:annotation>
+          <xsd:documentation>Value R. See Imp Guide for more information.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Diagnosis" type="structures:Diagnosis"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Note" type="datatypes:an..210"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorization" type="datatypes:PriorAuthorizationCode">
+        <xsd:annotation>
+          <xsd:documentation>The status of the prescription’s prior authorization as known by the sender.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Note" type="datatypes:an..210">
+        <xsd:annotation>
+          <xsd:documentation>If CompoundCoded = 2 (Compound), this field is to be used when special instructions are needed.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation">
+        <xsd:annotation>
+          <xsd:documentation>For further explanation, conflict, or clarification of services related to drug use evaluation.           &#13;
+When this composite is used, ServiceReasonCode is mandatory. &#13;
+When the ServiceReasonCode is sent from the prescriber to the pharmacist, the ServiceResultCode is mandatory.&#13;
+When the ServiceReasonCode is sent from the pharmacist to the prescriber, the ServiceResultCode is conditional.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugCoverageStatusCode" type="ecl:DrugCoverageStatusCode">
+        <xsd:annotation>
+          <xsd:documentation>See Imp Guide for more information.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="PriorAuthorizationStatus" type="ecl:PriorAuthorizationStatusCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="OtherCompoundInformation" type="structures:OtherCompoundInformationType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RouteOfAdministration" type="datatypes:FinalRouteOfAdministrationCode">
+        <xsd:annotation>
+          <xsd:documentation>Defines the route of administration.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="StructuredSIG" type="structures:SIGType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="SoldDate" type="datatypes:DateType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="AdditionalRefillsAuthorized" type="datatypes:n..2"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PharmacyRequestedRefills" type="datatypes:n..2"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DoNotFill" type="ecl:DoNotFillCode"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="NeededNoLaterThanDate" type="datatypes:UtcDateType"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Compound" type="datatypes:CompoundIngredient">
+        <xsd:annotation>
+          <xsd:documentation>For ingredient information. Sub elements loop for each ingredient.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="SoldDate" type="datatypes:DateType">
+        <xsd:annotation>
+          <xsd:documentation>Value “06” (Sold Date) is only allowed to be used in RxHistoryResponse, RxFill, and Refill transactions.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="AdditionalRefillsAuthorized" type="datatypes:n..2">
+        <xsd:annotation>
+          <xsd:documentation>Value A. See Imp Guide for more information.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PharmacyRequestedRefills" type="datatypes:n..2">
+        <xsd:annotation>
+          <xsd:documentation>Value P. See Imp Guide for more information.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DoNotFill" type="ecl:DoNotFillCode">
+        <xsd:annotation>
+          <xsd:documentation>Used for medications ordered by a prescriber but not requiring dispensing at this time, but may be required for administration and may be available for drug-to-drug interactions.&#13;
+If the prescriber knows the patient does not need the prescription filled right away, then they should send the pharmacy this indicator</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="NeededNoLaterThanDate" type="datatypes:UtcDateType">
+        <xsd:annotation>
+          <xsd:documentation>For the facility to relay to the long term care pharmacy the timeframe when medication is needed for delivery.&#13;
+When a facility transmits either a new medication order (NEWRX) or request for the re-supply of a medication (RESUPPLY) to a pharmacy, it would optionally indicate the time by which the medication is needed. The facility could also provide a textual reason why the medication is needed by the time specified.&#13;
+&#13;
+The long term care pharmacy would then use this information to determine whether a special delivery is required, or whether the order could go out with the next scheduled delivery.&#13;
+For NewRx or Resupply in long term care setting, only value supported - 203 = CCYYMMDDHHMM; C=Century; Y=Year; M=Month; D=Day; H=Hour; M=Minutes.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="TimeZone" type="datatypes:TimeZone">
+        <xsd:annotation>
+          <xsd:documentation>Defines the time zone used by the sender. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="NeededNoLaterThanReason" type="datatypes:an..70"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RefillsRemaining" type="datatypes:n..2">
+        <xsd:annotation>
+          <xsd:documentation>Value REM. See Imp Guide for more information.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistoryPresciberOrderNumber" type="datatypes:PriorAuthorizationCode"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="OrderCaptureMethod" type="ecl:OrderCaptureMethodCode">
+        <xsd:annotation>
+          <xsd:documentation>Code conveying the method by which the order was defined by the prescriber and captured in the prescribing system.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="structures:HistoryPrescriber"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
@@ -442,6 +593,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  OptionalPharmacy  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="OptionalPharmacy">
+    <xsd:annotation>
+      <xsd:documentation>Value P2</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Identification" type="datatypes:ProviderID"/>
       <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
@@ -455,6 +609,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  OptionalPresciber  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="OptionalPresciber">
+    <xsd:annotation>
+      <xsd:documentation>Value PC</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="structures:HistoryPrescriber">
         <xsd:sequence>
@@ -526,6 +683,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  PatientLocation  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PatientLocation">
+    <xsd:annotation>
+      <xsd:documentation>A patient’s location within a facility.</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="FacilityUnit" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Bed" type="datatypes:an..10"/>
@@ -560,6 +720,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  Pharmacist  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Pharmacist">
+    <xsd:annotation>
+      <xsd:documentation>Used when information about a specific individual – the pharmacist – is exchanged.</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Identification" type="datatypes:ProviderID"/>
       <xsd:element name="Name" type="datatypes:NameType"/>
@@ -572,6 +735,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  Pharmacy  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Pharmacy">
+    <xsd:annotation>
+      <xsd:documentation>Value P2</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="structures:OptionalPharmacy">
         <xsd:sequence>
@@ -641,6 +807,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  Prescriber  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Prescriber">
+    <xsd:annotation>
+      <xsd:documentation>Value PC</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="structures:OptionalPresciber">
         <xsd:sequence>
@@ -649,7 +818,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
           <xsd:element name="Name" type="datatypes:NameType"/>
           <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
-          <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType"/>
+          <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType">
+            <xsd:annotation>
+              <xsd:documentation>To identify the Designated Agent - use for transmitter/submitter name.  If a supervising prescriber name or id is required, use the supervisor element. This composite is to be used for the “PC” prescriber only.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -686,6 +859,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  Provider  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Provider">
+    <xsd:annotation>
+      <xsd:documentation>Used when medical provider is needed, not the prescriber. Designated Provider - The patient’s provider for which this service applies, if applicable. The designated provider may be the primary care provider, the medical home provider, the facility provider or other provider. This information is provided as reference.</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Identification" type="datatypes:ProviderID"/>
       <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
@@ -979,6 +1155,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  SIGType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SIGType">
+    <xsd:annotation>
+      <xsd:documentation>The Structured SIG element is used to codify the SIG information. See Imp Guide for more information.</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="RepeatingSIG">
         <xsd:complexType>
@@ -1180,11 +1359,20 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  Supervisor  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Supervisor">
+    <xsd:annotation>
+      <xsd:documentation>To describe the supervisor. Supervisor information may be needed based upon state law. A supervisor is the supervising physician under whose authority the prescription is being prescribed by the prescriber. &#13;
+&#13;
+Value SU</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="structures:SupervisorOptional">
         <xsd:sequence>
           <xsd:element name="Identification" type="datatypes:ProviderID"/>
-          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
+          <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10">
+            <xsd:annotation>
+              <xsd:documentation>Value A for the NUCC taxonomy list.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="Name" type="datatypes:NameType"/>
           <xsd:element minOccurs="0" name="ClinicName" type="datatypes:an..35"/>
           <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
@@ -1197,6 +1385,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  SupervisorMandatoryAddress  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SupervisorMandatoryAddress">
+    <xsd:annotation>
+      <xsd:documentation>Value SU</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="structures:Supervisor">
         <xsd:sequence>
@@ -1214,6 +1405,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  SupervisorOptional  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SupervisorOptional">
+    <xsd:annotation>
+      <xsd:documentation>Value SU</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Identification" type="datatypes:ProviderID"/>
       <xsd:element minOccurs="0" name="Specialty" type="datatypes:an..10"/>
