@@ -13,7 +13,7 @@ var packageNames = new Array(max);]]></method>
     <text-property name="displayName">NCPDP ECL</text-property>
     <data-sources>
         <oda-data-source extensionID="com.ibm.ccl.oda.uml" name="Main package" id="4">
-            <property name="instancemodels">platform:/resource/org.ncpdp.uml.ecl/ExternalCodeList.emx</property>
+            <property name="instancemodels">platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx</property>
             <property name="metamodels">http://www.eclipse.org/uml2/2.1.0/UML</property>
         </oda-data-source>
     </data-sources>
@@ -125,6 +125,23 @@ var packageNames = new Array(max);]]></method>
                     <property name="columnName">limitation</property>
                     <property name="displayName">limitation</property>
                 </structure>
+                <structure>
+                    <property name="columnName">visibility</property>
+                    <property name="displayName">visibility</property>
+                </structure>
+                <structure>
+                    <property name="columnName">enumerationname</property>
+                    <property name="displayName">enumerationname</property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr">row["visibility"]</expression>
+                    <simple-property-list name="value1">
+                        <value>"public"</value>
+                    </simple-property-list>
+                </structure>
             </list-property>
             <structure name="cachedMetaData">
                 <list-property name="resultSet">
@@ -166,6 +183,16 @@ var packageNames = new Array(max);]]></method>
                     <structure>
                         <property name="position">8</property>
                         <property name="name">limitation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">visibility</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">enumerationname</property>
                         <property name="dataType">string</property>
                     </structure>
                 </list-property>
@@ -228,6 +255,20 @@ var packageNames = new Array(max);]]></method>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">7</property>
                 </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">visibility</property>
+                    <property name="nativeName">visibility</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">enumerationname</property>
+                    <property name="nativeName">enumerationname</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
             </list-property>
             <property name="queryText"></property>
             <list-property name="privateDriverProperties">
@@ -237,7 +278,7 @@ var packageNames = new Array(max);]]></method>
                 </ex-property>
             </list-property>
             <property name="rowQuery">instanceOf(//*,"uml:Enumeration")[oclEvaluate(., "not getAppliedStereotype('org.ncpdp.ecl::ncpdpecl')->isEmpty()")]</property>
-            <property name="columnQueries">name;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'displayName')");String#-#uri;getURI(.);String#-#path;../@qualifiedName;String#-#id;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'valueSetId')");String#-#definition;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String#-#format;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'fieldFormat')");String#-#standard;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'standardsUsing')");String#-#limitation;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'valueSetLimitations')");String</property>
+            <property name="columnQueries">name;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'displayName')");String#-#uri;getURI(.);String#-#path;../@qualifiedName;String#-#id;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'valueSetId')");String#-#definition;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String#-#format;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'fieldFormat')");String#-#standard;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'standardsUsing')");String#-#limitation;oclEvaluate(., "getValue(getAppliedStereotype('org.ncpdp.ecl::ncpdpecl'),'valueSetLimitations')");String#-#visibility;@visibility;String#-#enumerationname;@name;String</property>
             <property name="rowType">uml:Enumeration</property>
             <property name="evaluateOnInstances">true</property>
         </oda-data-set>
@@ -766,7 +807,7 @@ var packageNames = new Array(max);]]></method>
                 <structure>
                     <property name="name">new</property>
                     <property name="displayName">name</property>
-                    <expression name="expression">dataSetRow["id"] +" - " + dataSetRow["name"]</expression>
+                    <expression name="expression">dataSetRow["name"]</expression>
                     <property name="dataType">string</property>
                 </structure>
                 <structure>
@@ -817,6 +858,12 @@ var packageNames = new Array(max);]]></method>
                     <expression name="expression">dataSetRow["limitation"]</expression>
                     <property name="dataType">string</property>
                 </structure>
+                <structure>
+                    <property name="name">ename</property>
+                    <property name="displayName">Name</property>
+                    <expression name="expression">dataSetRow["enumerationname"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
             </list-property>
             <expression name="bookmark">row["name"]</expression>
             <structure name="toc">
@@ -825,11 +872,7 @@ var packageNames = new Array(max);]]></method>
             <property name="pageBreakInterval">2</property>
             <list-property name="sort">
                 <structure>
-                    <expression name="key">row["name"]</expression>
-                    <property name="direction">asc</property>
-                </structure>
-                <structure>
-                    <expression name="key">row["id"]</expression>
+                    <expression name="key">row["ename"]</expression>
                     <property name="direction">asc</property>
                 </structure>
             </list-property>
@@ -851,10 +894,10 @@ var packageNames = new Array(max);]]></method>
                 <property name="groupName">NewTableGroup1</property>
                 <property name="interval">none</property>
                 <property name="sortDirection">asc</property>
-                <expression name="keyExpr">row["name"]</expression>
+                <expression name="keyExpr">row["ename"]</expression>
                 <expression name="bookmark">row["name"]</expression>
                 <structure name="toc">
-                    <expression name="expressionValue">row["name"]</expression>
+                    <expression name="expressionValue">row["ename"]</expression>
                 </structure>
                 <property name="repeatHeader">true</property>
                 <property name="hideDetail">false</property>
@@ -868,6 +911,17 @@ var packageNames = new Array(max);]]></method>
                         <property name="textUnderline">none</property>
                         <property name="textAlign">left</property>
                         <cell id="1115">
+                            <data id="1322">
+                                <property name="resultSetColumn">ename</property>
+                            </data>
+                        </cell>
+                    </row>
+                    <row id="1323">
+                        <property name="fontSize">medium</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="textUnderline">none</property>
+                        <property name="textAlign">left</property>
+                        <cell id="1324">
                             <data id="1118">
                                 <property name="fontSize">medium</property>
                                 <property name="fontStyle">italic</property>
