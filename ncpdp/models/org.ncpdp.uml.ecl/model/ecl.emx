@@ -575,8 +575,8 @@
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_95QxADa8Ed-wQf5UFCJMDw" name="ResidenceCode">
-        <ownedComment xmi:id="_95QxATa8Ed-wQf5UFCJMDw">
-          <body>Identifies the accumulator month based on date of service of claims activity.</body>
+        <ownedComment xmi:id="_95QxATa8Ed-wQf5UFCJMDw" annotatedElement="_95QxADa8Ed-wQf5UFCJMDw">
+          <body>Code identifying the patient’s place of residence.</body>
         </ownedComment>
         <ownedLiteral xmi:id="_95QxAja8Ed-wQf5UFCJMDw" name="1" classifier="_95QxADa8Ed-wQf5UFCJMDw">
           <ownedComment xmi:id="_-zaWgIYYEd-Vw-EcYlO-zw" annotatedElement="_95QxAja8Ed-wQf5UFCJMDw">
@@ -809,13 +809,14 @@
         </ownedComment>
         <generalization xmi:id="__sJPQGdhEd-EzKeHnOFaKw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_oCxxQ2dhEd-EzKeHnOFaKw" name="G" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
-          <ownedComment xmi:id="_oCxxRGdhEd-EzKeHnOFaKw">
-            <body>Significant change (Any changes to the Drug, form, strength, dosage, or route)</body>
+          <ownedComment xmi:id="_oCxxRGdhEd-EzKeHnOFaKw" annotatedElement="_oCxxQ2dhEd-EzKeHnOFaKw">
+            <body>Generic Substitution - A modification of the product prescribed to a generic equivalent.			&#xD;
+</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_oCxxRWdhEd-EzKeHnOFaKw" name="P" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
-          <ownedComment xmi:id="_oCxxRmdhEd-EzKeHnOFaKw">
-            <body>Frequency Change (Any change to the frequency or hours of administration for the drug)</body>
+          <ownedComment xmi:id="_oCxxRmdhEd-EzKeHnOFaKw" annotatedElement="_oCxxRWdhEd-EzKeHnOFaKw">
+            <body>Prior Authorization Required - A request to obtain prior authorization before dispensing.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_oCxxR2dhEd-EzKeHnOFaKw" name="T" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
@@ -1434,7 +1435,12 @@
             <body>Missouri</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_4Mmg5lOfEd-wEdo_Dk3J9g" name="NU"/>
+        <ownedLiteral xmi:id="_4Mmg5lOfEd-wEdo_Dk3J9g" name="NU">
+          <ownedComment xmi:id="_QIfwkIkaEd-pZLs28ekBmw" annotatedElement="_4Mmg5lOfEd-wEdo_Dk3J9g">
+            <body>Nunavut			&#xD;
+</body>
+          </ownedComment>
+        </ownedLiteral>
         <ownedLiteral xmi:id="_4Mmg51OfEd-wEdo_Dk3J9g" name="VI">
           <ownedComment xmi:id="_B5CI0IYHEd-Vw-EcYlO-zw" annotatedElement="_4Mmg51OfEd-wEdo_Dk3J9g">
             <body>Virgin Islands</body>
@@ -1528,7 +1534,11 @@
             <body>Florida</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_4Mmg-VOfEd-wEdo_Dk3J9g" name="NF"/>
+        <ownedLiteral xmi:id="_4Mmg-VOfEd-wEdo_Dk3J9g" name="NL">
+          <ownedComment xmi:id="_MsQ6QIkaEd-pZLs28ekBmw" annotatedElement="_4Mmg-VOfEd-wEdo_Dk3J9g">
+            <body>Newfoundland and Labrador</body>
+          </ownedComment>
+        </ownedLiteral>
         <ownedLiteral xmi:id="_4Mmg-lOfEd-wEdo_Dk3J9g" name="DC">
           <ownedComment xmi:id="_nDOWQIYBEd-Vw-EcYlO-zw" annotatedElement="_4Mmg-lOfEd-wEdo_Dk3J9g">
             <body>District Of Columbia</body>
@@ -1563,7 +1573,8 @@
         </ownedLiteral>
         <ownedLiteral xmi:id="_4MmhAFOfEd-wEdo_Dk3J9g" name="DE">
           <ownedComment xmi:id="_n2x6IIYBEd-Vw-EcYlO-zw" annotatedElement="_4MmhAFOfEd-wEdo_Dk3J9g">
-            <body>Deleware</body>
+            <body>Delaware			&#xD;
+</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_4MmhAVOfEd-wEdo_Dk3J9g" name="MB">
@@ -1722,7 +1733,12 @@
             <body>Illinois</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_4MwR9FOfEd-wEdo_Dk3J9g" name="QC"/>
+        <ownedLiteral xmi:id="_4MwR9FOfEd-wEdo_Dk3J9g" name="QC">
+          <ownedComment xmi:id="_RYXdAIkaEd-pZLs28ekBmw" annotatedElement="_4MwR9FOfEd-wEdo_Dk3J9g">
+            <body>Quebec			&#xD;
+</body>
+          </ownedComment>
+        </ownedLiteral>
         <ownedLiteral xmi:id="_4MwR9VOfEd-wEdo_Dk3J9g" name="VT">
           <ownedComment xmi:id="_DA3TkIYHEd-Vw-EcYlO-zw" annotatedElement="_4MwR9VOfEd-wEdo_Dk3J9g">
             <body>Vermont&#xD;
@@ -8441,26 +8457,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>Multum MMDC</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_21l0GWi7Ed-Pd7zqA0IwbQ" name="SCD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_21l0Gmi7Ed-Pd7zqA0IwbQ">
-            <body>RXNORM - Maintained and distributed by National Library of Medicine (NLM)</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_V6TCQGi8Ed-Pd7zqA0IwbQ" name="SBD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_LB-TAIX2Ed-Vw-EcYlO-zw" annotatedElement="_V6TCQGi8Ed-Pd7zqA0IwbQ">
-            <body>RxNorm Semantic Branded Drug (SBD) – A Code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, form and dose strength plus the branded name. </body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_XwnqsGi8Ed-Pd7zqA0IwbQ" name="GPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_JoafEIX2Ed-Vw-EcYlO-zw" annotatedElement="_XwnqsGi8Ed-Pd7zqA0IwbQ">
-            <body>RxNorm Generic Package (GPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the generic drug delivery device.</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_ZidbwGi8Ed-Pd7zqA0IwbQ" name="BPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_Mumz8IX2Ed-Vw-EcYlO-zw" annotatedElement="_ZidbwGi8Ed-Pd7zqA0IwbQ">
-            <body>RxNorm Branded Package (BPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the branded drug delivery device.</body>
-          </ownedComment>
-        </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_iuUzUCxAEd-8mcmtGejV_Q" name="ReferenceQualifierX12DE128" visibility="private">
         <ownedComment xmi:id="_iuUzUSxAEd-8mcmtGejV_Q">
@@ -10805,17 +10801,17 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_e_d79CxAEd-8mcmtGejV_Q" annotatedElement="_e_d78yxAEd-8mcmtGejV_Q">
           <body>Code identifying the gender of the individual.</body>
         </ownedComment>
-        <ownedLiteral xmi:id="_x_4mUFOnEd-wEdo_Dk3J9g" name="1" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
+        <ownedLiteral xmi:id="_x_4mUFOnEd-wEdo_Dk3J9g" name="M" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_x_4mUVOnEd-wEdo_Dk3J9g" annotatedElement="_x_4mUFOnEd-wEdo_Dk3J9g">
             <body>Male</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_x_4mUlOnEd-wEdo_Dk3J9g" name="2" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
+        <ownedLiteral xmi:id="_x_4mUlOnEd-wEdo_Dk3J9g" name="F" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_x_4mU1OnEd-wEdo_Dk3J9g" annotatedElement="_x_4mUlOnEd-wEdo_Dk3J9g">
             <body>Female</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_x_4mVFOnEd-wEdo_Dk3J9g" name="0" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
+        <ownedLiteral xmi:id="_x_4mVFOnEd-wEdo_Dk3J9g" name="U" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_x_4mVVOnEd-wEdo_Dk3J9g" annotatedElement="_x_4mVFOnEd-wEdo_Dk3J9g">
             <body>Not Specified or Unknown</body>
           </ownedComment>
@@ -11385,18 +11381,20 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedComment>
         <generalization xmi:id="__Ja8sGdhEd-EzKeHnOFaKw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_hLAxk2dIEd-EzKeHnOFaKw" name="C1" classifier="_hLAxkGdIEd-EzKeHnOFaKw">
-          <ownedComment xmi:id="_hLAxlGdIEd-EzKeHnOFaKw">
-            <body>Significant change (Any changes to the Drug, form, strength, dosage, or route)</body>
+          <ownedComment xmi:id="_hLAxlGdIEd-EzKeHnOFaKw" annotatedElement="_hLAxk2dIEd-EzKeHnOFaKw">
+            <body>Label change (Any changes to the Drug, form, strength, dosage, or route) – Change to an active order to the drug, form, strength, dosage, or route (long term care settings).</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_hLAxlWdIEd-EzKeHnOFaKw" name="C2" classifier="_hLAxkGdIEd-EzKeHnOFaKw">
-          <ownedComment xmi:id="_hLAxlmdIEd-EzKeHnOFaKw">
-            <body>Frequency Change (Any change to the frequency or hours of administration for the drug)</body>
+          <ownedComment xmi:id="_hLAxlmdIEd-EzKeHnOFaKw" annotatedElement="_hLAxlWdIEd-EzKeHnOFaKw">
+            <body>Frequency Change (Any change to the frequency or hours of administration for the drug) - Change to the frequency or hours of administration for the medication (long term care settings).&#xD;
+</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_hLAxl2dIEd-EzKeHnOFaKw" name="C3" classifier="_hLAxkGdIEd-EzKeHnOFaKw">
-          <ownedComment xmi:id="_hLAxmGdIEd-EzKeHnOFaKw">
-            <body>Insignificant Change (All other changes)</body>
+          <ownedComment xmi:id="_hLAxmGdIEd-EzKeHnOFaKw" annotatedElement="_hLAxl2dIEd-EzKeHnOFaKw">
+            <body>Other Change (All other changes) – A change to the medication not covered by other values listed (long term care settings).&#xD;
+</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -12218,8 +12216,8 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_hL-20ixAEd-8mcmtGejV_Q" name="134" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_hL-20yxAEd-8mcmtGejV_Q">
-            <body>DRU dosage quantity qualifier is invalid.</body>
+          <ownedComment xmi:id="_hL-20yxAEd-8mcmtGejV_Q" annotatedElement="_hL-20ixAEd-8mcmtGejV_Q">
+            <body>Sending a Quantity Sufficient with Quantity of 0 is invalid for this pharmacy.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_hTInsCxAEd-8mcmtGejV_Q" name="210" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
@@ -12228,8 +12226,8 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_hT4OlCxAEd-8mcmtGejV_Q" name="220" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_hT4OlSxAEd-8mcmtGejV_Q">
-            <body>Message is a duplicate</body>
+          <ownedComment xmi:id="_hT4OlSxAEd-8mcmtGejV_Q" annotatedElement="_hT4OlCxAEd-8mcmtGejV_Q">
+            <body>Transaction is a duplicate</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_BaQVkIYcEd-Vw-EcYlO-zw" name="500" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
@@ -14308,66 +14306,21 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_eqJzRCxAEd-8mcmtGejV_Q">
           <body>Code qualifying the ‘Diagnosis Code’ (424-DO).</body>
         </ownedComment>
-        <ownedLiteral xmi:id="_eqTkQixAEd-8mcmtGejV_Q" name="Blank" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_eqTkQyxAEd-8mcmtGejV_Q">
-            <body>Not Specified</body>
+        <ownedLiteral xmi:id="__NIBIIkEEd-pZLs28ekBmw" name="E" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="__S8VQIkEEd-pZLs28ekBmw" name="F" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="__YwCUIkEEd-pZLs28ekBmw" name="M" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="__d95gIkEEd-pZLs28ekBmw" name="ABF" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_d4W_YIkFEd-pZLs28ekBmw" annotatedElement="__d95gIkEEd-pZLs28ekBmw">
+            <body>International Classification of Diseases-10- Clinical Modifications (ICD-10-CM) Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.  </body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_eqcuMCxAEd-8mcmtGejV_Q" name="00" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_eqcuMSxAEd-8mcmtGejV_Q">
-            <body>Not Specified</body>
+        <ownedLiteral xmi:id="__jB_sIkEEd-pZLs28ekBmw" name="DX" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_aiX7AIkFEd-pZLs28ekBmw" annotatedElement="__jB_sIkEEd-pZLs28ekBmw">
+            <body>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_eqcuMyxAEd-8mcmtGejV_Q" name="01" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_eqcuNCxAEd-8mcmtGejV_Q">
-            <body>International Classification of Diseases (ICD9) - Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_eqmfMCxAEd-8mcmtGejV_Q" name="02" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_eqmfMSxAEd-8mcmtGejV_Q">
-            <body>International Classification of Diseases-10-Clinical Modifications (ICD-10-CM) - Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_eqmfMyxAEd-8mcmtGejV_Q" name="03" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_eqmfNCxAEd-8mcmtGejV_Q">
-            <body>National Criteria Care Institute (NCCI) - The CMS-developed Correct Coding Initiative (CCI) to promote national correct coding methodologies and to control improper coding leading to inappropriate payment in Part B claims. The CMS developed its coding policies based on coding conventions defined in the American Medical Association’s CPT manual, national and local policies and edits, coding guidelines developed by national societies, analysis of standard medical and surgical practices, and a review of current coding practices.</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_eqwQMSxAEd-8mcmtGejV_Q" name="04" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_eqwQMixAEd-8mcmtGejV_Q">
-            <body>The Systematized Nomenclature of Medicine Clinical Terms® (SNOMED) - A clinical health care terminology and infrastructure that provides a common language that enables a consistent way of capturing, sharing and aggregating health data across specialties and sites of care.</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_eq5aICxAEd-8mcmtGejV_Q" name="05" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_eq5aISxAEd-8mcmtGejV_Q">
-            <body>Common Dental Terminology (CDT) - Current Dental Terminology (CDT) is the published Code on Dental Procedures and Nomenclature (the Code) providing descriptive terms, codes and guidance for the accurate reporting of dental procedures. The Code is maintained by the Code Revision Committee and published by the American Dental Association. The procedure codes and descriptions are also published as part of the Healthcare Common Procedure System (HCPCS) Level II through agreement with Centers for Medicare and Medicaid Services.</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_eq5aIyxAEd-8mcmtGejV_Q" name="06" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_eq5aJCxAEd-8mcmtGejV_Q">
-            <body>Medi-Span Product Line Diagnosis Code - Proprietary code used by Medi-Span product line to specify diagnosis</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_erDLICxAEd-8mcmtGejV_Q" name="07" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_erDLISxAEd-8mcmtGejV_Q">
-            <body>American Psychiatric Association Diagnostic Statistical Manual of Mental Disorders (DSM IV) - Diagnostic criteria for the most common mental disorders including: description, diagnosis, treatment, and research findings.  Comments: The Diagnostic and Statistical Manual of Mental Disorders - Fourth Edition (DSM-IV) is published by the American Psychiatric Association, Washington D.C.</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_erDLIyxAEd-8mcmtGejV_Q" name="08" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_erDLJCxAEd-8mcmtGejV_Q">
-            <body>First DataBank Disease Code (FDBDX) Proprietary code used by First DataBank product line to specify diagnosis</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_erM8ISxAEd-8mcmtGejV_Q" name="09" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_erM8IixAEd-8mcmtGejV_Q">
-            <body>First DataBank FML Disease Identifier (FDB DxID) - Proprietary code used by First DataBank product line to specify diagnosis</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_erM8JCxAEd-8mcmtGejV_Q" name="99" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_erM8JSxAEd-8mcmtGejV_Q">
-            <body>Other - Different from those implied or specified</body>
-          </ownedComment>
-        </ownedLiteral>
+        <ownedLiteral xmi:id="__s3RIIkEEd-pZLs28ekBmw" name="ICD9" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="__yh0QIkEEd-pZLs28ekBmw" name="ICD10" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_7aQ6UFLcEd-wEdo_Dk3J9g" name="SecondaryDiagnosisCodeQualifierCode">
         <ownedComment xmi:id="_7aQ6UVLcEd-wEdo_Dk3J9g">
@@ -14383,8 +14336,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_TtDIwFLdEd-wEdo_Dk3J9g" name="ICD9" classifier="_7aQ6UFLcEd-wEdo_Dk3J9g"/>
-        <ownedLiteral xmi:id="_Vlml0FLdEd-wEdo_Dk3J9g" name="ICD10" classifier="_7aQ6UFLcEd-wEdo_Dk3J9g"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_erWGESxAEd-8mcmtGejV_Q" name="DiscontinueDateQualifier" visibility="private">
         <ownedComment xmi:id="_erWGEixAEd-8mcmtGejV_Q">
@@ -14484,8 +14435,8 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_w4iRMEyrEd-G-pSkcIGh3w" name="DispensingRequestCode">
         <generalization xmi:id="_3-4BwEyrEd-G-pSkcIGh3w" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_7a9uIEyrEd-G-pSkcIGh3w" name="LOA" classifier="_es_E0yxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_7a9uIUyrEd-G-pSkcIGh3w">
-            <body>Not Specified</body>
+          <ownedComment xmi:id="_7a9uIUyrEd-G-pSkcIGh3w" annotatedElement="_7a9uIEyrEd-G-pSkcIGh3w">
+            <body>LOA value is Request for the pharmacy to dispense a supply of medications in user packaging for use during a Leave of Absence</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -14510,15 +14461,19 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_hq0u8SxAEd-8mcmtGejV_Q" name="DoNotFillCode">
-        <ownedComment xmi:id="_hq0u8ixAEd-8mcmtGejV_Q">
-          <body>Used for medications ordered by a prescriber but not requiring dispensing at this time, but required for administration and available for drug-to-drug interactions.</body>
+        <ownedComment xmi:id="_hq0u8ixAEd-8mcmtGejV_Q" annotatedElement="_hq0u8SxAEd-8mcmtGejV_Q">
+          <body>Used for medications ordered by a prescriber but not requiring dispensing at this time, but may be required for administration and may be available for drug-to-drug interactions.</body>
         </ownedComment>
         <ownedLiteral xmi:id="_hq-f8SxAEd-8mcmtGejV_Q" name="Y" classifier="_hq0u8SxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_hq-f8ixAEd-8mcmtGejV_Q">
-            <body>Yes</body>
+          <ownedComment xmi:id="_hq-f8ixAEd-8mcmtGejV_Q" annotatedElement="_hq-f8SxAEd-8mcmtGejV_Q">
+            <body>Yes - Used for medications ordered by a prescriber not requiring dispensing, but available for reference and drug-to-drug interaction checking.  </body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_vHK7gH-TEd-eN4XJATQmiQ" name="H" classifier="_hq0u8SxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_vHK7gH-TEd-eN4XJATQmiQ" name="H" classifier="_hq0u8SxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_T69rsIkREd-pZLs28ekBmw" annotatedElement="_vHK7gH-TEd-eN4XJATQmiQ">
+            <body>H =  Hold - Indicates the prescriber’s authorization for the pharmacy to fill a prescription, but the prescriber recommends that the pharmacy wait for the patient to request it before filling it.</body>
+          </ownedComment>
+        </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_etbwwCxAEd-8mcmtGejV_Q" name="DosageFormIDCode" visibility="private">
         <ownedComment xmi:id="_etbwwSxAEd-8mcmtGejV_Q">
@@ -14611,6 +14566,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_dx0jEGQlEd-ODMSOo4sPFQ" name="DrugAdminReasonCode">
+        <ownedComment xmi:id="_e2RisIkREd-pZLs28ekBmw" annotatedElement="_dx0jEGQlEd-ODMSOo4sPFQ">
+          <body>Reference 8011 - Reason Code (REQ Segment)</body>
+        </ownedComment>
         <ownedLiteral xmi:id="_kT8zUGQlEd-ODMSOo4sPFQ" name="01" classifier="_dx0jEGQlEd-ODMSOo4sPFQ"/>
         <ownedLiteral xmi:id="_mMDkcGQlEd-ODMSOo4sPFQ" name="02" classifier="_dx0jEGQlEd-ODMSOo4sPFQ"/>
         <ownedLiteral xmi:id="_n9JuoGQlEd-ODMSOo4sPFQ" name="03" classifier="_dx0jEGQlEd-ODMSOo4sPFQ"/>
@@ -17170,7 +17128,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_5qYs0GhAEd-Pd7zqA0IwbQ" name="MIMETypeCode">
-        <ownedLiteral xmi:id="_9tNpEGhAEd-Pd7zqA0IwbQ" name="application/hl7-sda+xml" classifier="_5qYs0GhAEd-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_9tNpEGhAEd-Pd7zqA0IwbQ" name="application/hl7-cda+xml" classifier="_5qYs0GhAEd-Pd7zqA0IwbQ"/>
         <ownedLiteral xmi:id="_CH5EoGhBEd-Pd7zqA0IwbQ" name="application/x-ccr" classifier="_5qYs0GhAEd-Pd7zqA0IwbQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_21l0EGi7Ed-Pd7zqA0IwbQ" name="ProductQualifiersCode">
@@ -17193,7 +17151,11 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>NDF-RT - National Drug File Reference Terminology  - Maintained by VA, distributed by NCI -  for classes of medications</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_QIc_cGi8Ed-Pd7zqA0IwbQ" name="UN" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ"/>
+        <ownedLiteral xmi:id="_QIc_cGi8Ed-Pd7zqA0IwbQ" name="UN" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_-M7YUIkYEd-pZLs28ekBmw" annotatedElement="_QIc_cGi8Ed-Pd7zqA0IwbQ">
+            <body>UNII - Unique Ingredient Identifier - Maintained by FDA and EPA, distributed by FDA Substance Registration System (SRS)			</body>
+          </ownedComment>
+        </ownedLiteral>
         <ownedLiteral xmi:id="_21l0FWi7Ed-Pd7zqA0IwbQ" name="UP" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_21l0Fmi7Ed-Pd7zqA0IwbQ">
             <body>UPC</body>
@@ -17307,7 +17269,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_goFcAGj7Ed-Pd7zqA0IwbQ" name="TerminologyQualifierCode">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_goFcAGj7Ed-Pd7zqA0IwbQ" name="TerminologyQualifierCode" visibility="private">
         <ownedComment xmi:id="_goFcAWj7Ed-Pd7zqA0IwbQ" annotatedElement="_goFcAGj7Ed-Pd7zqA0IwbQ">
           <body>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</body>
         </ownedComment>
@@ -17339,32 +17301,141 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_-xQ0kG8mEd-E06vcpeQalQ" name="IDQualifierCode">
-        <ownedLiteral xmi:id="_Db4woG8nEd-E06vcpeQalQ" name="OB" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_DhjTwG8nEd-E06vcpeQalQ" name="1C" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_DkX-QG8nEd-E06vcpeQalQ" name="1D" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_Dl3zEG8nEd-E06vcpeQalQ" name="1E" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_DnXA0G8nEd-E06vcpeQalQ" name="1G" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_Do2OkG8nEd-E06vcpeQalQ" name="1M" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_DqVcUG8nEd-E06vcpeQalQ" name="1J" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_Dr1RIG8nEd-E06vcpeQalQ" name="2U" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_DteP4G8nEd-E06vcpeQalQ" name="94" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_DuzsoG8nEd-E06vcpeQalQ" name="BO" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_DwS6YG8nEd-E06vcpeQalQ" name="AD" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_Dxo-MG8nEd-E06vcpeQalQ" name="C1" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_DzIL8G8nEd-E06vcpeQalQ" name="D3" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_D0xKsG8nEd-E06vcpeQalQ" name="DH" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_D3JwUG8nEd-E06vcpeQalQ" name="EA" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_D4o-EG8nEd-E06vcpeQalQ" name="EJ" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_D6Iy4G8nEd-E06vcpeQalQ" name="G1" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_D7ePoG8nEd-E06vcpeQalQ" name="GI" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_D8-EcG8nEd-E06vcpeQalQ" name="HI" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_D-dSMG8nEd-E06vcpeQalQ" name="HP" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_ZxDb0G8nEd-E06vcpeQalQ" name="IP" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_bO7vEG8nEd-E06vcpeQalQ" name="NC" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_cWwSwG8nEd-E06vcpeQalQ" name="NF" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_da20EG8nEd-E06vcpeQalQ" name="PD" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_eMxZMG8nEd-E06vcpeQalQ" name="SY" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
-        <ownedLiteral xmi:id="_e2froG8nEd-E06vcpeQalQ" name="ZZ" classifier="_-xQ0kG8mEd-E06vcpeQalQ"/>
+        <ownedLiteral xmi:id="_Db4woG8nEd-E06vcpeQalQ" name="0B" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_CQHoUIkWEd-pZLs28ekBmw" annotatedElement="_Db4woG8nEd-E06vcpeQalQ">
+            <body>State License Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_DhjTwG8nEd-E06vcpeQalQ" name="1C" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="__02fwIkVEd-pZLs28ekBmw" annotatedElement="_DhjTwG8nEd-E06vcpeQalQ">
+            <body>Medicare Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_DkX-QG8nEd-E06vcpeQalQ" name="1D" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_94HtUIkVEd-pZLs28ekBmw" annotatedElement="_DkX-QG8nEd-E06vcpeQalQ">
+            <body>Medicaid Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Dl3zEG8nEd-E06vcpeQalQ" name="1E" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_5vx-8IkVEd-pZLs28ekBmw" annotatedElement="_Dl3zEG8nEd-E06vcpeQalQ">
+            <body>Dentist License Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_DnXA0G8nEd-E06vcpeQalQ" name="1G" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_4C_tAIkVEd-pZLs28ekBmw" annotatedElement="_DnXA0G8nEd-E06vcpeQalQ">
+            <body>UPIN</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Do2OkG8nEd-E06vcpeQalQ" name="1M" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_rYX0gIkVEd-pZLs28ekBmw" annotatedElement="_Do2OkG8nEd-E06vcpeQalQ">
+            <body>PPO Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_DqVcUG8nEd-E06vcpeQalQ" name="1J" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_2gDTkIkVEd-pZLs28ekBmw" annotatedElement="_DqVcUG8nEd-E06vcpeQalQ">
+            <body>Facility ID Number = ID number assigned by the LTC Facility to the patient</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Dr1RIG8nEd-E06vcpeQalQ" name="2U" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_pJUjAIkVEd-pZLs28ekBmw" annotatedElement="_Dr1RIG8nEd-E06vcpeQalQ">
+            <body>Payer Identification Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_DteP4G8nEd-E06vcpeQalQ" name="94" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_ncZuMIkVEd-pZLs28ekBmw" annotatedElement="_DteP4G8nEd-E06vcpeQalQ">
+            <body>Pharmacy or Prescriber File ID</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_DuzsoG8nEd-E06vcpeQalQ" name="BO" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_jDz9UIkVEd-pZLs28ekBmw" annotatedElement="_DuzsoG8nEd-E06vcpeQalQ">
+            <body>BIN Location Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_DwS6YG8nEd-E06vcpeQalQ" name="ADI" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_k6RvsIkVEd-pZLs28ekBmw" annotatedElement="_DwS6YG8nEd-E06vcpeQalQ">
+            <body>Processor Identification Number – Processor Control Number assigned by the processor.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Dxo-MG8nEd-E06vcpeQalQ" name="C1" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_gxU9UIkVEd-pZLs28ekBmw" annotatedElement="_Dxo-MG8nEd-E06vcpeQalQ">
+            <body>Commercial</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_DzIL8G8nEd-E06vcpeQalQ" name="D3" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_doT98IkVEd-pZLs28ekBmw" annotatedElement="_DzIL8G8nEd-E06vcpeQalQ">
+            <body>NCPDP Provider ID Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_D0xKsG8nEd-E06vcpeQalQ" name="DH" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_b5JtcIkVEd-pZLs28ekBmw" annotatedElement="_D0xKsG8nEd-E06vcpeQalQ">
+            <body>DEA Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_D3JwUG8nEd-E06vcpeQalQ" name="EA" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_DwOwMIkWEd-pZLs28ekBmw" annotatedElement="_D3JwUG8nEd-E06vcpeQalQ">
+            <body>Medical Record Identification Number (EHR) = A unique number assigned to each patient by the provider of service (hospital) to assist in retrieval of medical records</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_D4o-EG8nEd-E06vcpeQalQ" name="EJ" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_Fbq-UIkWEd-pZLs28ekBmw" annotatedElement="_D4o-EG8nEd-E06vcpeQalQ">
+            <body>Patient Account Number (ID assigned by the CPOE system) = A unique number assigned to each patient by the provider of service to facilitate retrieval of individual case records tracking of claims submitted to a payer and posting of payment</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_D6Iy4G8nEd-E06vcpeQalQ" name="G1" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_HefxsIkWEd-pZLs28ekBmw" annotatedElement="_D6Iy4G8nEd-E06vcpeQalQ">
+            <body>Prior Authorization</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_D7ePoG8nEd-E06vcpeQalQ" name="GI" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_Y5OYoIkVEd-pZLs28ekBmw" annotatedElement="_D7ePoG8nEd-E06vcpeQalQ">
+            <body>Secondary Provider Number- To contain the Certificate to Prescribe (CTP) number. The CTP is an additional number to the state license number that a board of pharmacy assigns to prescribing individuals after completion of specific requirements.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_D8-EcG8nEd-E06vcpeQalQ" name="HI" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_W9P0IIkVEd-pZLs28ekBmw" annotatedElement="_D8-EcG8nEd-E06vcpeQalQ">
+            <body>HIN</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_D-dSMG8nEd-E06vcpeQalQ" name="HPI" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_Vqi2IIkVEd-pZLs28ekBmw" annotatedElement="_D-dSMG8nEd-E06vcpeQalQ">
+            <body>National Provider ID</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_ZxDb0G8nEd-E06vcpeQalQ" name="IP" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_UUQ_sIkVEd-pZLs28ekBmw" annotatedElement="_ZxDb0G8nEd-E06vcpeQalQ">
+            <body>Individual Policy Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_bO7vEG8nEd-E06vcpeQalQ" name="NC" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_RMvOEIkVEd-pZLs28ekBmw" annotatedElement="_bO7vEG8nEd-E06vcpeQalQ">
+            <body>Secondary Coverage Company Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_cWwSwG8nEd-E06vcpeQalQ" name="NF" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_PtrPEIkVEd-pZLs28ekBmw" annotatedElement="_cWwSwG8nEd-E06vcpeQalQ">
+            <body>National Association of Insurance Commissioner’s Code </body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_da20EG8nEd-E06vcpeQalQ" name="PD" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_OFg-cIkVEd-pZLs28ekBmw" annotatedElement="_da20EG8nEd-E06vcpeQalQ">
+            <body>Promotion Number (Sample RX)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_eMxZMG8nEd-E06vcpeQalQ" name="SY" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_MN25QIkVEd-pZLs28ekBmw" annotatedElement="_eMxZMG8nEd-E06vcpeQalQ">
+            <body>Social Security Number</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_e2froG8nEd-E06vcpeQalQ" name="ZZ" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_IThKoIkVEd-pZLs28ekBmw" annotatedElement="_e2froG8nEd-E06vcpeQalQ">
+            <body>Mutually Defined</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_7NUwcIkUEd-pZLs28ekBmw" name="WI" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
+          <ownedComment xmi:id="_Ks2ZgIkVEd-pZLs28ekBmw" annotatedElement="_7NUwcIkUEd-pZLs28ekBmw">
+            <body>Waiver - DATA 2000 Waiver ID. Used for prescriptions for opioid addiction treatment medications.</body>
+          </ownedComment>
+        </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_WLqQoHrnEd-so7mbE4Frzg" name="RxChangeRequestFunction" visibility="private">
         <ownedComment xmi:id="_WLqQoXrnEd-so7mbE4Frzg">
@@ -20343,18 +20414,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_erf3EyxAEd-8mcmtGejV_Q" base_Comment="_erf3EixAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_erf3ECxAEd-8mcmtGejV_Q" valueSetId="606-NC" fieldFormat="x(1)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_erWGESxAEd-8mcmtGejV_Q" displayName="606-NC - Discontinue Date Qualifier"/>
   <Default:Documentation xmi:id="_erWGEyxAEd-8mcmtGejV_Q" base_Comment="_erWGEixAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_erWGECxAEd-8mcmtGejV_Q" base_Comment="_erM8JSxAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_erM8IyxAEd-8mcmtGejV_Q" base_Comment="_erM8IixAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_erM8ICxAEd-8mcmtGejV_Q" base_Comment="_erDLJCxAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_erDLIixAEd-8mcmtGejV_Q" base_Comment="_erDLISxAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_eq5aJSxAEd-8mcmtGejV_Q" base_Comment="_eq5aJCxAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_eq5aIixAEd-8mcmtGejV_Q" base_Comment="_eq5aISxAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_eqwQMyxAEd-8mcmtGejV_Q" base_Comment="_eqwQMixAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_eqwQMCxAEd-8mcmtGejV_Q" base_Comment="_eqmfNCxAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_eqmfMixAEd-8mcmtGejV_Q" base_Comment="_eqmfMSxAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_eqcuNSxAEd-8mcmtGejV_Q" base_Comment="_eqcuNCxAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_eqcuMixAEd-8mcmtGejV_Q" base_Comment="_eqcuMSxAEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_eqTkRCxAEd-8mcmtGejV_Q" base_Comment="_eqTkQyxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_eqTkQSxAEd-8mcmtGejV_Q" valueSetId="492-WE" fieldFormat="x(2)" standardsUsing="T, M, F,A,Z" valueSetLimitations="" base_Enumeration="_eqJzQyxAEd-8mcmtGejV_Q" displayName="492-WE - Diagnosis Code Qualifier"/>
   <Default:Documentation xmi:id="_eqTkQCxAEd-8mcmtGejV_Q" base_Comment="_eqJzRCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eqJzQixAEd-8mcmtGejV_Q" base_Comment="_eqJzQSxAEd-8mcmtGejV_Q"/>
@@ -21101,7 +21160,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_21l0LGi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0GGi7Ed-Pd7zqA0IwbQ"/>
   <Default:Documentation xmi:id="_21l0Lmi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0HGi7Ed-Pd7zqA0IwbQ"/>
   <xsd:Restriction xmi:id="_ajPo4Wj0Ed-Pd7zqA0IwbQ" base_Generalization="_ajPo4Gj0Ed-Pd7zqA0IwbQ"/>
-  <Default:Documentation xmi:id="_YvrHlWj2Ed-Pd7zqA0IwbQ" base_Comment="_21l0Gmi7Ed-Pd7zqA0IwbQ"/>
   <orgncpdpecl:ncpdpecl xmi:id="_goFcF2j7Ed-Pd7zqA0IwbQ" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_goFcAGj7Ed-Pd7zqA0IwbQ" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
   <Default:Documentation xmi:id="_goFcGGj7Ed-Pd7zqA0IwbQ" base_Comment="_goFcAWj7Ed-Pd7zqA0IwbQ"/>
   <xsd:Restriction xmi:id="_goFcGWj7Ed-Pd7zqA0IwbQ" base_Generalization="_goFcAmj7Ed-Pd7zqA0IwbQ"/>
@@ -21128,7 +21186,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_WMG8m3rnEd-so7mbE4Frzg" base_Comment="_WLqQt3rnEd-so7mbE4Frzg"/>
   <Default:Documentation xmi:id="_WMG8nHrnEd-so7mbE4Frzg" base_Comment="_WLqQuXrnEd-so7mbE4Frzg"/>
   <xsd:Restriction xmi:id="_YP6GkX7oEd-qFLXIW1YLFA" base_Generalization="_YP6GkH7oEd-qFLXIW1YLFA"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_cQxVGoL7Ed-qIZqYwtZPyA" valueSetId="1153" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_cQxVAIL7Ed-qIZqYwtZPyA" displayName="1153 - Reference Qualifier- Generic Database, Prior Authorization - DRU Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_cQxVGoL7Ed-qIZqYwtZPyA" valueSetId="" fieldFormat="" standardsUsing="S" valueSetLimitations="" base_Enumeration="_cQxVAIL7Ed-qIZqYwtZPyA" displayName=""/>
   <Default:Documentation xmi:id="_cQxVG4L7Ed-qIZqYwtZPyA" base_Comment="_cQxVAYL7Ed-qIZqYwtZPyA"/>
   <xsd:Restriction xmi:id="_cQxVHIL7Ed-qIZqYwtZPyA" base_Generalization="_cQxVAoL7Ed-qIZqYwtZPyA"/>
   <Default:Documentation xmi:id="_cQxVHYL7Ed-qIZqYwtZPyA" base_Comment="_cQxVBIL7Ed-qIZqYwtZPyA"/>
@@ -21145,17 +21203,14 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <orgncpdpecl:ncpdpecl xmi:id="_j3B6UIXxEd-Vw-EcYlO-zw" base_Enumeration="_w4iRMEyrEd-G-pSkcIGh3w" displayName="Dispensing Request Code"/>
   <orgncpdpecl:ncpdpecl xmi:id="_nEqT8IXxEd-Vw-EcYlO-zw" base_Enumeration="_dx0jEGQlEd-ODMSOo4sPFQ" displayName="DrugAdminReasonCode"/>
   <orgncpdpecl:ncpdpecl xmi:id="_qpsg8IXxEd-Vw-EcYlO-zw" base_Enumeration="_3FUxkCxUEd-8mcmtGejV_Q" displayName="DrugCodeListResponsibilityAgencyX12DE235"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_toks4IXxEd-Vw-EcYlO-zw" base_Enumeration="_-xQ0kG8mEd-E06vcpeQalQ" displayName="IDQualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_toks4IXxEd-Vw-EcYlO-zw" valueSetId="1153" fieldFormat="an..3" standardsUsing="S" base_Enumeration="_-xQ0kG8mEd-E06vcpeQalQ" displayName="Defines the Reference number, field 1154. Used to define different qualifiers for numbers, values as appropriate for usage."/>
   <orgncpdpecl:ncpdpecl xmi:id="_xDCBkIXxEd-Vw-EcYlO-zw" base_Enumeration="_5qYs0GhAEd-Pd7zqA0IwbQ" displayName="MTMMIMETypes"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_z8GgcIXxEd-Vw-EcYlO-zw" base_Enumeration="_k3rbkDEZEd-8rpqfOAePKg" displayName="OrderCaptureMethod"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_z8GgcIXxEd-Vw-EcYlO-zw" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="Field and values may be used in SCRIPT Standard Version 10.11 or greater but not in lower versions.&#x9;" base_Enumeration="_k3rbkDEZEd-8rpqfOAePKg" displayName="Code conveying the method by which the order was defined by the prescriber and captured in the prescribing system.&#x9;"/>
   <orgncpdpecl:ncpdpecl xmi:id="_iwIHMIXyEd-Vw-EcYlO-zw" base_Enumeration="_Vbhk0C0iEd-8mcmtGejV_Q" displayName="ProviderIdQualifiera"/>
   <orgncpdpecl:ncpdpecl xmi:id="_oAJ2YIXyEd-Vw-EcYlO-zw" base_Enumeration="_AfO38Gj1Ed-Pd7zqA0IwbQ" displayName="ReasonCode"/>
   <orgncpdpecl:ncpdpecl xmi:id="_rt0a8IXyEd-Vw-EcYlO-zw" base_Enumeration="_EFjfwE5ZEd-lRt4mSex0Qg" displayName="Reject"/>
   <orgncpdpecl:ncpdpecl xmi:id="_u6a50IXyEd-Vw-EcYlO-zw" base_Enumeration="_kCnAsCx3Ed-8mcmtGejV_Q" displayName="SNOMEDCTPreferredTermsforAdverseEvents"/>
   <orgncpdpecl:ncpdpecl xmi:id="_yIf_YIXyEd-Vw-EcYlO-zw" base_Enumeration="_rM8-IH-SEd-eN4XJATQmiQ" displayName="Boolean Codes"/>
-  <Default:Documentation xmi:id="_JoafEYX2Ed-Vw-EcYlO-zw" base_Comment="_JoafEIX2Ed-Vw-EcYlO-zw"/>
-  <Default:Documentation xmi:id="_LB-TAYX2Ed-Vw-EcYlO-zw" base_Comment="_LB-TAIX2Ed-Vw-EcYlO-zw"/>
-  <Default:Documentation xmi:id="_Muv94IX2Ed-Vw-EcYlO-zw" base_Comment="_Mumz8IX2Ed-Vw-EcYlO-zw"/>
   <Default:Documentation xmi:id="_aBV_4YX3Ed-Vw-EcYlO-zw" base_Comment="_aBV_4IX3Ed-Vw-EcYlO-zw"/>
   <Default:Documentation xmi:id="_b0h0wYX3Ed-Vw-EcYlO-zw" base_Comment="_b0h0wIX3Ed-Vw-EcYlO-zw"/>
   <Default:Documentation xmi:id="_d6MgwYX3Ed-Vw-EcYlO-zw" base_Comment="_d6MgwIX3Ed-Vw-EcYlO-zw"/>
@@ -21313,4 +21368,39 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_ISR9UYYcEd-Vw-EcYlO-zw" base_Comment="_ISR9UIYcEd-Vw-EcYlO-zw"/>
   <Default:Documentation xmi:id="_JUck8YYcEd-Vw-EcYlO-zw" base_Comment="_JUck8IYcEd-Vw-EcYlO-zw"/>
   <Default:Documentation xmi:id="_K56t8YYcEd-Vw-EcYlO-zw" base_Comment="_K56t8IYcEd-Vw-EcYlO-zw"/>
+  <Default:Documentation xmi:id="_aiX7AYkFEd-pZLs28ekBmw" base_Comment="_aiX7AIkFEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_d4W_YYkFEd-pZLs28ekBmw" base_Comment="_d4W_YIkFEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_T7G1oIkREd-pZLs28ekBmw" base_Comment="_T69rsIkREd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_e2RisYkREd-pZLs28ekBmw" base_Comment="_e2RisIkREd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_ITqUkIkVEd-pZLs28ekBmw" base_Comment="_IThKoIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_Ks2ZgYkVEd-pZLs28ekBmw" base_Comment="_Ks2ZgIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_MN25QYkVEd-pZLs28ekBmw" base_Comment="_MN25QIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_OFqIYIkVEd-pZLs28ekBmw" base_Comment="_OFg-cIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_Pt0ZAIkVEd-pZLs28ekBmw" base_Comment="_PtrPEIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_RM4_EIkVEd-pZLs28ekBmw" base_Comment="_RMvOEIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_UUQ_sYkVEd-pZLs28ekBmw" base_Comment="_UUQ_sIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_Vqi2IYkVEd-pZLs28ekBmw" base_Comment="_Vqi2IIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_W9P0IYkVEd-pZLs28ekBmw" base_Comment="_W9P0IIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_Y5OYoYkVEd-pZLs28ekBmw" base_Comment="_Y5OYoIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_b5TecIkVEd-pZLs28ekBmw" base_Comment="_b5JtcIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_dodu8IkVEd-pZLs28ekBmw" base_Comment="_doT98IkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_gxeuUIkVEd-pZLs28ekBmw" base_Comment="_gxU9UIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_jDz9UYkVEd-pZLs28ekBmw" base_Comment="_jDz9UIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_k6a5oIkVEd-pZLs28ekBmw" base_Comment="_k6RvsIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_nci4IIkVEd-pZLs28ekBmw" base_Comment="_ncZuMIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_pJeUAIkVEd-pZLs28ekBmw" base_Comment="_pJUjAIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_rYX0gYkVEd-pZLs28ekBmw" base_Comment="_rYX0gIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_2gNEkIkVEd-pZLs28ekBmw" base_Comment="_2gDTkIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_4DJeAIkVEd-pZLs28ekBmw" base_Comment="_4C_tAIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_5v7I4IkVEd-pZLs28ekBmw" base_Comment="_5vx-8IkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_94HtUYkVEd-pZLs28ekBmw" base_Comment="_94HtUIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="__02fwYkVEd-pZLs28ekBmw" base_Comment="__02fwIkVEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_CQHoUYkWEd-pZLs28ekBmw" base_Comment="_CQHoUIkWEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_DwYhMIkWEd-pZLs28ekBmw" base_Comment="_DwOwMIkWEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_Fb0IQIkWEd-pZLs28ekBmw" base_Comment="_Fbq-UIkWEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_HefxsYkWEd-pZLs28ekBmw" base_Comment="_HefxsIkWEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_-M7YUYkYEd-pZLs28ekBmw" base_Comment="_-M7YUIkYEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_MsQ6QYkaEd-pZLs28ekBmw" base_Comment="_MsQ6QIkaEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_QIphkIkaEd-pZLs28ekBmw" base_Comment="_QIfwkIkaEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_RYXdAYkaEd-pZLs28ekBmw" base_Comment="_RYXdAIkaEd-pZLs28ekBmw"/>
 </xmi:XMI>
