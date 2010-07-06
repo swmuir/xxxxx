@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:XSDGeneration="http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:xsd="http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4 pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3 pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:XSDGeneration="http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmlns:xsd="http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4 pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3 pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw">
   <uml:Model xmi:id="_3oeygDD1Ed-8rpqfOAePKg" name="org.ncpdp.uml.functions">
     <eAnnotations xmi:id="_JiTyQGGzEd-Xe4OIcNINMg" source="uml2.diagrams"/>
     <packageImport xmi:id="_4BE4sDD1Ed-8rpqfOAePKg">
@@ -623,7 +623,7 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4HoMtDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4HoMtTD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_l_2icHmEEd-yr6jN5JsVgg" name="Strength" visibility="public" type="_4Hx9oTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_l_2icHmEEd-yr6jN5JsVgg" name="Strength" visibility="public" type="_vMj-MIkdEd-pZLs28ekBmw">
           <ownedComment xmi:id="_XdZo0HmIEd-yr6jN5JsVgg" annotatedElement="_l_2icHmEEd-yr6jN5JsVgg">
             <body>Need to add annotation to strength code 
 Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
@@ -640,25 +640,6 @@ Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Hx9qzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Hx9rDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4H7HmDD1Ed-8rpqfOAePKg" name="StrengthForm" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_4H7HmTD1Ed-8rpqfOAePKg" annotatedElement="_4H7HmDD1Ed-8rpqfOAePKg">
-            <body>NCPDP Drug StrengthForm Terminology - available at 
-http://www.cancer.gov/cancertopics/terminologyresources/page7
-See External Code List Introduction for information on NCI Thesaurus Code Lists.
-</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4H7HoDD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4H7HoTD1Ed-8rpqfOAePKg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_4H7HpzD1Ed-8rpqfOAePKg" name="StrengthUnitOfMeasure" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_4H7HqDD1Ed-8rpqfOAePKg" annotatedElement="_4H7HpzD1Ed-8rpqfOAePKg">
-            <body>NCPDP Drug StrengthUnitOfMeasure Terminology - available at 
-http://www.cancer.gov/cancertopics/terminologyresources/page7
-See External Code List Introduction for information on NCI Thesaurus Code Lists.</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4H7HqjD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4H7HqzD1Ed-8rpqfOAePKg"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_4H7HrDD1Ed-8rpqfOAePKg" name="DEASchedule" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_40vnYGjGEd-Pd7zqA0IwbQ" annotatedElement="_4H7HrDD1Ed-8rpqfOAePKg">
             <body>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. &#xD;
@@ -673,8 +654,8 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4ZNr4TD1Ed-8rpqfOAePKg" name="Facilty">
-        <ownedComment xmi:id="_4ZNr4jD1Ed-8rpqfOAePKg">
-          <body></body>
+        <ownedComment xmi:id="_4ZNr4jD1Ed-8rpqfOAePKg" annotatedElement="_4ZNr4TD1Ed-8rpqfOAePKg">
+          <body>Value SK</body>
         </ownedComment>
         <ownedAttribute xmi:id="_4ZNr5DD1Ed-8rpqfOAePKg" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_4ZNr6TD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4ZNr5TD1Ed-8rpqfOAePKg">
@@ -779,30 +760,12 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4OoMgzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OoMhDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4OoMjzD1Ed-8rpqfOAePKg" name="Strength" type="_4Hx9oTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4OoMjzD1Ed-8rpqfOAePKg" name="Strength" type="_vMj-MIkdEd-pZLs28ekBmw">
           <ownedComment xmi:id="_4OoMkDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4OoMkjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OoMkzD1Ed-8rpqfOAePKg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_4OoMmTD1Ed-8rpqfOAePKg" name="StrengthForm" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_4OoMmjD1Ed-8rpqfOAePKg" annotatedElement="_4OoMmTD1Ed-8rpqfOAePKg">
-            <body>NCPDP Drug StrengthForm Terminology - available at 
-http://www.cancer.gov/cancertopics/terminologyresources/page7
-See External Code List Introduction for information on NCI Thesaurus Code Lists.
-
-</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Ox9gTD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Ox9gjD1Ed-8rpqfOAePKg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_4Ox9iDD1Ed-8rpqfOAePKg" name="StrengthCode" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_4Ox9iTD1Ed-8rpqfOAePKg" annotatedElement="_4Ox9iDD1Ed-8rpqfOAePKg">
-            <body></body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Ox9izD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Ox9jDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4Ox9jTD1Ed-8rpqfOAePKg" name="DEASchedule" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_4Ox9jjD1Ed-8rpqfOAePKg" annotatedElement="_4Ox9jTD1Ed-8rpqfOAePKg">
@@ -968,12 +931,11 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4PYaejD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4PYaezD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4PYafDD1Ed-8rpqfOAePKg" name="MeasurementUnitCode">
+        <ownedAttribute xmi:id="_4PYafDD1Ed-8rpqfOAePKg" name="MeasurementUnitCode" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_4PYafTD1Ed-8rpqfOAePKg" annotatedElement="_4PYafDD1Ed-8rpqfOAePKg">
             <body>NCPDP MeasurementUnitCode Terminology - available at &#xD;
 http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4PYafzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4PYagDD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1522,19 +1484,10 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_03lbOmj7Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03lbO2j7Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_03lbMGj7Ed-Pd7zqA0IwbQ" name="Qualifier">
-          <ownedComment xmi:id="_03lbMWj7Ed-Pd7zqA0IwbQ" annotatedElement="_03lbMGj7Ed-Pd7zqA0IwbQ">
-            <body></body>
-          </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_goFcAGj7Ed-Pd7zqA0IwbQ?ecl/ecl/TerminologyQualifierCode?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_03lbMmj7Ed-Pd7zqA0IwbQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03lbM2j7Ed-Pd7zqA0IwbQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_03lbNGj7Ed-Pd7zqA0IwbQ" name="Code">
+        <ownedAttribute xmi:id="_03lbNGj7Ed-Pd7zqA0IwbQ" name="Code" type="_4ciEoDEAEd-8rpqfOAePKg">
           <ownedComment xmi:id="_03lbNWj7Ed-Pd7zqA0IwbQ" annotatedElement="_03lbNGj7Ed-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_03lbNmj7Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03lbN2j7Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
@@ -1652,7 +1605,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jd8ZOWjXEd-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8fJbwGj2Ed-Pd7zqA0IwbQ" name="DrugDBCodeWithText">
+      <packagedElement xmi:type="uml:Class" xmi:id="_8fJbwGj2Ed-Pd7zqA0IwbQ" name="DrugProductCodeWithText">
         <ownedAttribute xmi:id="_8fJbwmj2Ed-Pd7zqA0IwbQ" name="Code">
           <ownedComment xmi:id="_8fJbw2j2Ed-Pd7zqA0IwbQ">
             <body></body>
@@ -1665,7 +1618,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <ownedComment xmi:id="_8fJbx2j2Ed-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h4rkwCxAEd-8mcmtGejV_Q?ecl/ecl/DrugDBQualifiersCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_21l0EGi7Ed-Pd7zqA0IwbQ?ecl/ecl/ProductQualifiersCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8fJbyGj2Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8fJbyWj2Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
@@ -1750,6 +1703,37 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4gNr2DD1Ed-8rpqfOAePKg" memberEnd="_4gNr2TD1Ed-8rpqfOAePKg _4gEh0TD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4gNr2TD1Ed-8rpqfOAePKg" type="_4gEh0DD1Ed-8rpqfOAePKg" association="_4gNr2DD1Ed-8rpqfOAePKg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vMj-MIkdEd-pZLs28ekBmw" name="Strength">
+        <ownedAttribute xmi:id="_vMj-NYkdEd-pZLs28ekBmw" name="StrengthValue" visibility="public" type="_4Hx9oTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_vMj-NokdEd-pZLs28ekBmw" annotatedElement="_vMj-NYkdEd-pZLs28ekBmw">
+            <body>Need to add annotation to strength code 
+Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
+
+</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vMj-N4kdEd-pZLs28ekBmw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vMj-OIkdEd-pZLs28ekBmw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_vMj-PYkdEd-pZLs28ekBmw" name="StrengthForm" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_vMj-PokdEd-pZLs28ekBmw" annotatedElement="_vMj-PYkdEd-pZLs28ekBmw">
+            <body>NCPDP Drug StrengthForm Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.
+</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vMj-P4kdEd-pZLs28ekBmw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vMj-QIkdEd-pZLs28ekBmw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_vMj-QYkdEd-pZLs28ekBmw" name="StrengthUnitOfMeasure" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_vMj-QokdEd-pZLs28ekBmw" annotatedElement="_vMj-QYkdEd-pZLs28ekBmw">
+            <body>NCPDP Drug StrengthUnitOfMeasure Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vMj-Q4kdEd-pZLs28ekBmw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vMj-RIkdEd-pZLs28ekBmw"/>
+        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_MbThMDD2Ed-8rpqfOAePKg" name="structures">
@@ -1880,8 +1864,8 @@ potentially other structures.</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_d_xAwjZ4Ed-o64UeGGH_dQ" name="Pharmacist">
-        <ownedComment xmi:id="_d_xAwzZ4Ed-o64UeGGH_dQ">
-          <body></body>
+        <ownedComment xmi:id="_d_xAwzZ4Ed-o64UeGGH_dQ" annotatedElement="_d_xAwjZ4Ed-o64UeGGH_dQ">
+          <body>Used when information about a specific individual – the pharmacist – is exchanged.</body>
         </ownedComment>
         <ownedAttribute xmi:id="_d_xAxTZ4Ed-o64UeGGH_dQ" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_d_6xwDZ4Ed-o64UeGGH_dQ">
           <ownedComment xmi:id="_d_xAxjZ4Ed-o64UeGGH_dQ">
@@ -1967,6 +1951,9 @@ potentially other structures.</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4HebpjD1Ed-8rpqfOAePKg" name="PatientLocation">
+        <ownedComment xmi:id="_HhoRUIkuEd-pZLs28ekBmw" annotatedElement="_4HebpjD1Ed-8rpqfOAePKg">
+          <body>A patient’s location within a facility.</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_4HebqDD1Ed-8rpqfOAePKg" name="FacilityUnit" type="_4CkGgjD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4HebqTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4HebqjD1Ed-8rpqfOAePKg"/>
@@ -2005,6 +1992,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4I-QcjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4I-QczD1Ed-8rpqfOAePKg" name="Primary" type="_4I-QdDD1Ed-8rpqfOAePKg" aggregation="composite" association="_4I-QizD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_qoGvAIkyEd-pZLs28ekBmw" annotatedElement="_4I-QczD1Ed-8rpqfOAePKg">
+            <body>The prescriber supplied or pharmacy inferred code for the diagnosis.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4I-QiTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4I-QijD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -2031,7 +2021,7 @@ potentially other structures.</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4KnPUTD1Ed-8rpqfOAePKg" name="SIGType">
         <ownedComment xmi:id="_5bOCwEogEd-G-pSkcIGh3w" annotatedElement="_4KnPUTD1Ed-8rpqfOAePKg">
-          <body></body>
+          <body>The Structured SIG element is used to codify the SIG information. See Imp Guide for more information.</body>
         </ownedComment>
         <ownedAttribute xmi:id="_4KnPUjD1Ed-8rpqfOAePKg" name="RepeatingSIG" type="_4KwZITD1Ed-8rpqfOAePKg" aggregation="composite" association="_4KwZMzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4KnPUzD1Ed-8rpqfOAePKg">
@@ -3115,11 +3105,17 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hzYXZTEJEd-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_sXyTdk4XEd-G-pSkcIGh3w" name="Consent">
+          <ownedComment xmi:id="_VK0HAIkyEd-pZLs28ekBmw" annotatedElement="_sXyTdk4XEd-G-pSkcIGh3w">
+            <body>Note: If Patient Consent = N, it is expected the RxHistory transactions would not be sent.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sXyTd04XEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sXyTeE4XEd-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_uARewE4YEd-G-pSkcIGh3w" name="PBMMemberID" visibility="public" type="_4dr8RTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_29CLsIkvEd-pZLs28ekBmw" annotatedElement="_uARewE4YEd-G-pSkcIGh3w">
+            <body>Payer assigned Unique Member ID.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lkcg8U4jEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lkcg8E4jEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -3128,6 +3124,15 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PZGEok4ZEd-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_gUQlQE4ZEd-G-pSkcIGh3w" name="ServiceTypeCoded" visibility="public">
+          <ownedComment xmi:id="_IhVkYIk6Ed-pZLs28ekBmw" annotatedElement="_gUQlQE4ZEd-G-pSkcIGh3w">
+            <body>Medication list contains all current medication orders as of the current date and time of the response, for the patient indicated. Current status is determined by the point of care responder. “Current” is medication orders which have not been discontinued.&#xD;
+&#xD;
+Value “C” is “Not used” to request medication history from pharmacy or payer/processor. &#xD;
+&#xD;
+RxHistoryRequest:  When this field contains a value of “C” in the Medication History request message, Date is not sent. &#xD;
+&#xD;
+RxHistoryResponse: The response echoes back the “C” value in this field.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mWELIU4jEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mWELIE4jEd-G-pSkcIGh3w"/>
@@ -3221,8 +3226,10 @@ potentially other structures.</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4T2DyTD1Ed-8rpqfOAePKg" name="Supervisor">
-        <ownedComment xmi:id="_4T2DyjD1Ed-8rpqfOAePKg">
-          <body></body>
+        <ownedComment xmi:id="_4T2DyjD1Ed-8rpqfOAePKg" annotatedElement="_4T2DyTD1Ed-8rpqfOAePKg">
+          <body>To describe the supervisor. Supervisor information may be needed based upon state law. A supervisor is the supervising physician under whose authority the prescription is being prescribed by the prescriber. &#xD;
+&#xD;
+Value SU</body>
         </ownedComment>
         <generalization xmi:id="_lMDM0GTREd-M5IWg2-DxLQ" general="_XNYSgGTREd-M5IWg2-DxLQ"/>
         <ownedAttribute xmi:id="_4T_0sTD1Ed-8rpqfOAePKg" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_4T_0tjD1Ed-8rpqfOAePKg">
@@ -3233,6 +3240,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4T_0tTD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4T_0uDD1Ed-8rpqfOAePKg" name="Specialty" type="_4E8sGzD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_RMZ3EIk6Ed-pZLs28ekBmw" annotatedElement="_4T_0uDD1Ed-8rpqfOAePKg">
+            <body>Value A for the NUCC taxonomy list.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4T_0ujD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4T_0uzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3263,6 +3273,9 @@ potentially other structures.</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4TZX1DD1Ed-8rpqfOAePKg" name="Pharmacy">
+        <ownedComment xmi:id="_sK3dEIlEEd-pZLs28ekBmw" annotatedElement="_4TZX1DD1Ed-8rpqfOAePKg">
+          <body>Value P2</body>
+        </ownedComment>
         <generalization xmi:id="_KogHkGTPEd-M5IWg2-DxLQ" general="_FG5gMGTPEd-M5IWg2-DxLQ"/>
         <ownedAttribute xmi:id="_4TZX1TD1Ed-8rpqfOAePKg" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_4TjIwDD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4TZX1jD1Ed-8rpqfOAePKg">
@@ -3675,6 +3688,9 @@ potentially other structures.</body>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_2pq7cEyBEd-G-pSkcIGh3w" name="Provider">
+        <ownedComment xmi:id="_0fKtAIktEd-pZLs28ekBmw" annotatedElement="_2pq7cEyBEd-G-pSkcIGh3w">
+          <body>Used when medical provider is needed, not the prescriber. Designated Provider - The patient’s provider for which this service applies, if applicable. The designated provider may be the primary care provider, the medical home provider, the facility provider or other provider. This information is provided as reference.</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_cEIx0UyCEd-G-pSkcIGh3w" name="Identification" visibility="public" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_cEIx0EyCEd-G-pSkcIGh3w">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cEIx00yCEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cEIx0kyCEd-G-pSkcIGh3w"/>
@@ -3817,6 +3833,9 @@ potentially other structures.</body>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_FWHFYFJOEd-gUbUlN-XGdw" name="MandatoryPharmacy">
+        <ownedComment xmi:id="_7GoRwIlEEd-pZLs28ekBmw" annotatedElement="_FWHFYFJOEd-gUbUlN-XGdw">
+          <body>Value P2</body>
+        </ownedComment>
         <generalization xmi:id="_Yqo0oFJPEd-gUbUlN-XGdw" general="_4TZX1DD1Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_FWHFYVJOEd-gUbUlN-XGdw" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_FWHFdlJOEd-gUbUlN-XGdw">
           <ownedComment xmi:id="_FWHFYlJOEd-gUbUlN-XGdw">
@@ -3859,6 +3878,9 @@ potentially other structures.</body>
         <ownedEnd xmi:id="_RdnxKVJLEd-gUbUlN-XGdw" type="_RdeAIFJLEd-gUbUlN-XGdw" association="_RdnxKFJLEd-gUbUlN-XGdw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_FG5gMGTPEd-M5IWg2-DxLQ" name="OptionalPharmacy">
+        <ownedComment xmi:id="_tmEPwIlEEd-pZLs28ekBmw" annotatedElement="_FG5gMGTPEd-M5IWg2-DxLQ">
+          <body>Value P2</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_FG5gMWTPEd-M5IWg2-DxLQ" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_FG5gRmTPEd-M5IWg2-DxLQ">
           <ownedComment xmi:id="_FG5gMmTPEd-M5IWg2-DxLQ">
             <body></body>
@@ -3947,6 +3969,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7GxppWTPEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7GxppmTPEd-M5IWg2-DxLQ" name="Specialty" type="_4E8sGzD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_Oq4VgIk6Ed-pZLs28ekBmw" annotatedElement="_7GxppmTPEd-M5IWg2-DxLQ">
+            <body>Value A for the NUCC taxonomy list.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Gxpp2TPEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7GxpqGTPEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -3987,8 +4012,8 @@ potentially other structures.</body>
         <ownedEnd xmi:id="_7GxpwWTPEd-M5IWg2-DxLQ" type="_7GxpoGTPEd-M5IWg2-DxLQ" association="_7GxpwGTPEd-M5IWg2-DxLQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_8KlQAGTPEd-M5IWg2-DxLQ" name="Prescriber">
-        <ownedComment xmi:id="_8KlQAWTPEd-M5IWg2-DxLQ">
-          <body></body>
+        <ownedComment xmi:id="_8KlQAWTPEd-M5IWg2-DxLQ" annotatedElement="_8KlQAGTPEd-M5IWg2-DxLQ">
+          <body>Value PC</body>
         </ownedComment>
         <generalization xmi:id="_9WZJwGT5Ed-Y0upv2_lheQ" general="_93D_8GTPEd-M5IWg2-DxLQ"/>
         <ownedAttribute xmi:id="_8KlQAmTPEd-M5IWg2-DxLQ" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_8KlQIGTPEd-M5IWg2-DxLQ">
@@ -4025,7 +4050,7 @@ potentially other structures.</body>
         </ownedAttribute>
         <ownedAttribute xmi:id="_8KlQFWTPEd-M5IWg2-DxLQ" name="PrescriberAgent" type="_4E8sKjD1Ed-8rpqfOAePKg" aggregation="composite" association="_8KlQJGTPEd-M5IWg2-DxLQ">
           <ownedComment xmi:id="_8KlQFmTPEd-M5IWg2-DxLQ" annotatedElement="_8KlQFWTPEd-M5IWg2-DxLQ">
-            <body></body>
+            <body>To identify the Designated Agent - use for transmitter/submitter name.  If a supervising prescriber name or id is required, use the supervisor element. This composite is to be used for the “PC” prescriber only.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8KlQF2TPEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8KlQGGTPEd-M5IWg2-DxLQ"/>
@@ -4039,8 +4064,8 @@ potentially other structures.</body>
         <ownedEnd xmi:id="_8KlQIWTPEd-M5IWg2-DxLQ" type="_8KlQAGTPEd-M5IWg2-DxLQ" association="_8KlQIGTPEd-M5IWg2-DxLQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_9eK-0GTPEd-M5IWg2-DxLQ" name="MandatoryPresciber">
-        <ownedComment xmi:id="_9eK-0WTPEd-M5IWg2-DxLQ">
-          <body></body>
+        <ownedComment xmi:id="_9eK-0WTPEd-M5IWg2-DxLQ" annotatedElement="_9eK-0GTPEd-M5IWg2-DxLQ">
+          <body>Value PC</body>
         </ownedComment>
         <generalization xmi:id="_joxRoGTQEd-M5IWg2-DxLQ" general="_8KlQAGTPEd-M5IWg2-DxLQ"/>
         <ownedAttribute xmi:id="_9eK-0mTPEd-M5IWg2-DxLQ" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_9eUv0GTPEd-M5IWg2-DxLQ">
@@ -4091,8 +4116,8 @@ potentially other structures.</body>
         <ownedEnd xmi:id="_9eUv0WTPEd-M5IWg2-DxLQ" type="_9eK-0GTPEd-M5IWg2-DxLQ" association="_9eUv0GTPEd-M5IWg2-DxLQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_93D_8GTPEd-M5IWg2-DxLQ" name="OptionalPresciber">
-        <ownedComment xmi:id="_93D_8WTPEd-M5IWg2-DxLQ">
-          <body></body>
+        <ownedComment xmi:id="_93D_8WTPEd-M5IWg2-DxLQ" annotatedElement="_93D_8GTPEd-M5IWg2-DxLQ">
+          <body>Value PC</body>
         </ownedComment>
         <generalization xmi:id="_vjQtsGTQEd-M5IWg2-DxLQ" general="_7GxpoGTPEd-M5IWg2-DxLQ"/>
         <ownedAttribute xmi:id="_93D_8mTPEd-M5IWg2-DxLQ" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_93NJ4GTPEd-M5IWg2-DxLQ">
@@ -4143,8 +4168,8 @@ potentially other structures.</body>
         <ownedEnd xmi:id="_93NJ4WTPEd-M5IWg2-DxLQ" type="_93D_8GTPEd-M5IWg2-DxLQ" association="_93NJ4GTPEd-M5IWg2-DxLQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_XNYSgGTREd-M5IWg2-DxLQ" name="SupervisorOptional">
-        <ownedComment xmi:id="_XNYSgWTREd-M5IWg2-DxLQ">
-          <body></body>
+        <ownedComment xmi:id="_XNYSgWTREd-M5IWg2-DxLQ" annotatedElement="_XNYSgGTREd-M5IWg2-DxLQ">
+          <body>Value SU</body>
         </ownedComment>
         <ownedAttribute xmi:id="_XNYSgmTREd-M5IWg2-DxLQ" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_XNiDhGTREd-M5IWg2-DxLQ">
           <ownedComment xmi:id="_XNYSg2TREd-M5IWg2-DxLQ" annotatedElement="_XNYSgmTREd-M5IWg2-DxLQ">
@@ -4187,8 +4212,8 @@ potentially other structures.</body>
         <ownedEnd xmi:id="_XNiDhWTREd-M5IWg2-DxLQ" type="_XNYSgGTREd-M5IWg2-DxLQ" association="_XNiDhGTREd-M5IWg2-DxLQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_XpsbEGTREd-M5IWg2-DxLQ" name="SupervisorMandatoryAddress">
-        <ownedComment xmi:id="_XpsbEWTREd-M5IWg2-DxLQ">
-          <body></body>
+        <ownedComment xmi:id="_XpsbEWTREd-M5IWg2-DxLQ" annotatedElement="_XpsbEGTREd-M5IWg2-DxLQ">
+          <body>Value SU</body>
         </ownedComment>
         <generalization xmi:id="_pCghAGTREd-M5IWg2-DxLQ" general="_4T2DyTD1Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_XpsbEmTREd-M5IWg2-DxLQ" name="Identification" type="_4XueJjD1Ed-8rpqfOAePKg" aggregation="composite" association="_XpsbLmTREd-M5IWg2-DxLQ">
@@ -4420,7 +4445,15 @@ potentially other structures.</body>
         <eAnnotations xmi:id="_VfdMcIYgEd-Vw-EcYlO-zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_VfdMcYYgEd-Vw-EcYlO-zw" key="Medication"/>
         </eAnnotations>
+        <ownedComment xmi:id="_AEM2cIkuEd-pZLs28ekBmw" annotatedElement="_40Xd8GTWEd-M5IWg2-DxLQ">
+          <body>Prescribed or Dispensed may only occur once, according to appropriate need in a transaction. A transaction may contain a loop of Prescribed and Dispensed for example, in the RxChangeRequest, where the prescriber prescribed x and the pharmacy filled y. But a transaction may not contain multiple Prescribed and Dispensed.&#xD;
+&#xD;
+</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_40Xd8WTWEd-M5IWg2-DxLQ" name="DrugDescription" type="_4HoMozD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_jFgnoIkvEd-pZLs28ekBmw" annotatedElement="_40Xd8WTWEd-M5IWg2-DxLQ">
+            <body>Is the self-contained full drug name, strength, and form. If CompoundCoded = 2 (Compound), this field must contain “0” (zero means zero).</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40Xd8mTWEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40Xd82TWEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -4429,38 +4462,67 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40Xd9mTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40Xd92TWEd-M5IWg2-DxLQ" name="Quantity" type="_4IE4nTD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hPAGTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_k8R8AIkvEd-pZLs28ekBmw" annotatedElement="_40Xd92TWEd-M5IWg2-DxLQ">
+            <body>For multi-ingredient compounds will contain final quantity.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40Xd-GTWEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40Xd-WTWEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40Xd-mTWEd-M5IWg2-DxLQ" name="Directions" type="_4IXzgTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_lM6RoIkyEd-pZLs28ekBmw" annotatedElement="_40Xd-mTWEd-M5IWg2-DxLQ">
+            <body>SIG instructions. Dosage free text.&#xD;
+Note: If Structured Sig element is used, see information on Structured Sig element - SigFreeTextStringIndicator.&#xD;
+</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40Xd-2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40Xd_GTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40Xd_WTWEd-M5IWg2-DxLQ" name="DaysSupply" type="_4CkGgjD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_XgrRgIk6Ed-pZLs28ekBmw" annotatedElement="_40Xd_WTWEd-M5IWg2-DxLQ">
+            <body>Note: It is strongly recommended that DaysSupply (value “ZDS”) be supported.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40Xd_mTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40Xd_2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeAGTWEd-M5IWg2-DxLQ" name="WrittenDate" type="_4HVRtjD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hO_GTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_6UKMoIk8Ed-pZLs28ekBmw" annotatedElement="_40XeAGTWEd-M5IWg2-DxLQ">
+            <body>Value 85.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeAWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeAmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeA2TWEd-M5IWg2-DxLQ" name="LastFillDate" type="_4HVRtjD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hO8GTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_9Aa-kIk8Ed-pZLs28ekBmw" annotatedElement="_40XeA2TWEd-M5IWg2-DxLQ">
+            <body>Value LD.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeBGTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeBWTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeBmTWEd-M5IWg2-DxLQ" name="ExpirationDate" type="_4HVRtjD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hPJGTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="__XXn0Ik8Ed-pZLs28ekBmw" annotatedElement="_40XeBmTWEd-M5IWg2-DxLQ">
+            <body>Value 36.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeB2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeCGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeCWTWEd-M5IWg2-DxLQ" name="EffectiveDate" type="_4HVRtjD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hPLGTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_BisP4Ik9Ed-pZLs28ekBmw" annotatedElement="_40XeCWTWEd-M5IWg2-DxLQ">
+            <body>Value 07.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeCmTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeC2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeDGTWEd-M5IWg2-DxLQ" name="PeriodEnd" type="_4HVRtjD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hPBGTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_rxUY0Ik9Ed-pZLs28ekBmw" annotatedElement="_40XeDGTWEd-M5IWg2-DxLQ">
+            <body>Value  PE.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeDWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeDmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeD2TWEd-M5IWg2-DxLQ" name="DeliveredOnDate" type="_4HVRtjD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hO9GTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_u4iocIk9Ed-pZLs28ekBmw" annotatedElement="_40XeD2TWEd-M5IWg2-DxLQ">
+            <body>Value BE.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeEGTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeEWTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4469,11 +4531,17 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeFGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeFWTWEd-M5IWg2-DxLQ" name="Substitutions">
+          <ownedComment xmi:id="_eexGAIkvEd-pZLs28ekBmw" annotatedElement="_40XeFWTWEd-M5IWg2-DxLQ">
+            <body>Note: Value 0 = No Product Selection Indicated. This value should be used to designate that substitutions are allowed.  When a prescriber wishes to allow substitutes for a NewRx, this field should be 0 to reflect that substitutions can be allowed.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeFmTWEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeF2TWEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeGGTWEd-M5IWg2-DxLQ" name="NumberOfRefills" type="_4l4O8DD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_I-pMcIkvEd-pZLs28ekBmw" annotatedElement="_40XeGGTWEd-M5IWg2-DxLQ">
+            <body>Value R. See Imp Guide for more information.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeGWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeGmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4482,18 +4550,33 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeHWTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeHmTWEd-M5IWg2-DxLQ" name="PriorAuthorization" type="_4JRLYTD1Ed-8rpqfOAePKg" aggregation="composite" association="_40q_-GTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_9pQokIkuEd-pZLs28ekBmw" annotatedElement="_40XeHmTWEd-M5IWg2-DxLQ">
+            <body>The status of the prescription’s prior authorization as known by the sender.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeH2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeIGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeIWTWEd-M5IWg2-DxLQ" name="Note" type="_4JRLdjD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_sNff0IkvEd-pZLs28ekBmw" annotatedElement="_40XeIWTWEd-M5IWg2-DxLQ">
+            <body>If CompoundCoded = 2 (Compound), this field is to be used when special instructions are needed.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ay5Y8WTXEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ay5Y8GTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeJGTWEd-M5IWg2-DxLQ" name="DrugUseEvaluation" type="_4Ja8ZDD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hPDGTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_nVwU0IkvEd-pZLs28ekBmw" annotatedElement="_40XeJGTWEd-M5IWg2-DxLQ">
+            <body>For further explanation, conflict, or clarification of services related to drug use evaluation.           &#xD;
+When this composite is used, ServiceReasonCode is mandatory. &#xD;
+When the ServiceReasonCode is sent from the prescriber to the pharmacist, the ServiceResultCode is mandatory.&#xD;
+When the ServiceReasonCode is sent from the pharmacist to the prescriber, the ServiceResultCode is conditional.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeJWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeJmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeJ2TWEd-M5IWg2-DxLQ" name="DrugCoverageStatusCode">
+          <ownedComment xmi:id="_bCOtsIkvEd-pZLs28ekBmw" annotatedElement="_40XeJ2TWEd-M5IWg2-DxLQ">
+            <body>See Imp Guide for more information.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeKGTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeKWTWEd-M5IWg2-DxLQ"/>
@@ -4508,6 +4591,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeL2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeMGTWEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_40hPIGTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_7Sr8UIk6Ed-pZLs28ekBmw" annotatedElement="_40XeMGTWEd-M5IWg2-DxLQ">
+            <body>Defines the route of administration.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeMWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeMmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4516,31 +4602,57 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeNWTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeNmTWEd-M5IWg2-DxLQ" name="Compound" type="_4OfClzD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hO-GTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_mBw8YIk6Ed-pZLs28ekBmw" annotatedElement="_40XeNmTWEd-M5IWg2-DxLQ">
+            <body>For ingredient information. Sub elements loop for each ingredient.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeN2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeOGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeOWTWEd-M5IWg2-DxLQ" name="SoldDate" type="_4HVRtjD1Ed-8rpqfOAePKg" aggregation="composite" association="_40q_8GTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_xpH5sIk9Ed-pZLs28ekBmw" annotatedElement="_40XeOWTWEd-M5IWg2-DxLQ">
+            <body>Value “06” (Sold Date) is only allowed to be used in RxHistoryResponse, RxFill, and Refill transactions.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeOmTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeO2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XePGTWEd-M5IWg2-DxLQ" name="AdditionalRefillsAuthorized" type="_4I0fdTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_LbaJ0IkvEd-pZLs28ekBmw" annotatedElement="_40XePGTWEd-M5IWg2-DxLQ">
+            <body>Value A. See Imp Guide for more information.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XePWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XePmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeP2TWEd-M5IWg2-DxLQ" name="PharmacyRequestedRefills" type="_4I0fdTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_GujZIIkvEd-pZLs28ekBmw" annotatedElement="_40XeP2TWEd-M5IWg2-DxLQ">
+            <body>Value P. See Imp Guide for more information.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeQGTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeQWTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeQmTWEd-M5IWg2-DxLQ" name="DoNotFill">
+          <ownedComment xmi:id="__2OPYIkuEd-pZLs28ekBmw" annotatedElement="_40XeQmTWEd-M5IWg2-DxLQ">
+            <body>Used for medications ordered by a prescriber but not requiring dispensing at this time, but may be required for administration and may be available for drug-to-drug interactions.&#xD;
+If the prescriber knows the patient does not need the prescription filled right away, then they should send the pharmacy this indicator</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeQ2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeRGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeRWTWEd-M5IWg2-DxLQ" name="NeededNoLaterThanDate" type="_4CtQYTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_bobKAIk6Ed-pZLs28ekBmw" annotatedElement="_40XeRWTWEd-M5IWg2-DxLQ">
+            <body>For the facility to relay to the long term care pharmacy the timeframe when medication is needed for delivery.&#xD;
+When a facility transmits either a new medication order (NEWRX) or request for the re-supply of a medication (RESUPPLY) to a pharmacy, it would optionally indicate the time by which the medication is needed. The facility could also provide a textual reason why the medication is needed by the time specified.&#xD;
+&#xD;
+The long term care pharmacy would then use this information to determine whether a special delivery is required, or whether the order could go out with the next scheduled delivery.&#xD;
+For NewRx or Resupply in long term care setting, only value supported - 203 = CCYYMMDDHHMM; C=Century; Y=Year; M=Month; D=Day; H=Hour; M=Minutes.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeRmTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeR2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeSGTWEd-M5IWg2-DxLQ" name="TimeZone" type="_4KKjRjD1Ed-8rpqfOAePKg" aggregation="composite" association="_40hPMGTWEd-M5IWg2-DxLQ">
+          <ownedComment xmi:id="_CyH_0IkvEd-pZLs28ekBmw" annotatedElement="_40XeSGTWEd-M5IWg2-DxLQ">
+            <body>Defines the time zone used by the sender. </body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeSWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeSmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4549,6 +4661,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeTWTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeTmTWEd-M5IWg2-DxLQ" name="RefillsRemaining" type="_4I0fdTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_N5Wy8IkvEd-pZLs28ekBmw" annotatedElement="_40XeTmTWEd-M5IWg2-DxLQ">
+            <body>Value REM. See Imp Guide for more information.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeT2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeUGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -4557,6 +4672,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeU2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40XeVGTWEd-M5IWg2-DxLQ" name="OrderCaptureMethod">
+          <ownedComment xmi:id="_zHA8YIkvEd-pZLs28ekBmw" annotatedElement="_40XeVGTWEd-M5IWg2-DxLQ">
+            <body>Code conveying the method by which the order was defined by the prescriber and captured in the prescribing system.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeVWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeVmTWEd-M5IWg2-DxLQ"/>
@@ -6713,7 +6831,7 @@ potentially other structures.</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_d-3o6TZ4Ed-o64UeGGH_dQ" name="ServiceType">
         <ownedComment xmi:id="_d-3o6jZ4Ed-o64UeGGH_dQ" annotatedElement="_d-3o6TZ4Ed-o64UeGGH_dQ">
-          <body></body>
+          <body>Used in MTMServiceRequest, MTMServiceResponse</body>
         </ownedComment>
         <ownedAttribute xmi:id="_Dj-CME5EEd-G-pSkcIGh3w" name="MTMPayerCaseIdentifier" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -6756,6 +6874,9 @@ potentially other structures.</body>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_yyJlEFLIEd-wEdo_Dk3J9g" name="TypeOfServiceChoice">
           <ownedAttribute xmi:id="_7LVdkFLIEd-wEdo_Dk3J9g" name="TypeofServiceFreeText" visibility="public">
+            <ownedComment xmi:id="_m9lh4IkuEd-pZLs28ekBmw" annotatedElement="_7LVdkFLIEd-wEdo_Dk3J9g">
+              <body>Use this if you can’t use the three TypeOfService fields which are part of a codification.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_d_BZ4zZ4Ed-o64UeGGH_dQ" name="TypeofService" type="_5lUzQEyMEd-G-pSkcIGh3w" aggregation="composite" association="_d_LK4DZ4Ed-o64UeGGH_dQ">
@@ -6768,6 +6889,9 @@ potentially other structures.</body>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_BPXckVLJEd-wEdo_Dk3J9g" name="TargetedTypeOfServiceChoice">
           <ownedAttribute xmi:id="_BPXcllLJEd-wEdo_Dk3J9g" name="TargetedTypeofServiceFreeText" visibility="public">
+            <ownedComment xmi:id="_inFbsIkuEd-pZLs28ekBmw" annotatedElement="_BPXcllLJEd-wEdo_Dk3J9g">
+              <body>Use this if you can’t use the three TargetedTypeOfService fields which are part of a codification.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_eaOS8E5EEd-G-pSkcIGh3w" name="TargetedTypeofService" type="_5lUzQEyMEd-G-pSkcIGh3w" aggregation="composite">
@@ -6831,8 +6955,10 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JTt-0k46Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_FDOJAEyEEd-G-pSkcIGh3w" name="ReturnReceipt" type="_4DAyeTD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_FDOJAUyEEd-G-pSkcIGh3w">
-            <body></body>
+          <ownedComment xmi:id="_FDOJAUyEEd-G-pSkcIGh3w" annotatedElement="_FDOJAEyEEd-G-pSkcIGh3w">
+            <body>If this field is submitted with 1 in the request, a Verify transaction is to be sent from the recipient at some time.&#xD;
+1 = Return Receipt Requested&#xD;
+all other values = no return receipt requested.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FDOJAkyEEd-G-pSkcIGh3w" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FDOJA0yEEd-G-pSkcIGh3w"/>
@@ -7106,6 +7232,11 @@ potentially other structures.</body>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_fxed8E49Ed-G-pSkcIGh3w" name="Census">
+        <ownedComment xmi:id="_6Ew5AIksEd-pZLs28ekBmw" annotatedElement="_fxed8E49Ed-G-pSkcIGh3w">
+          <body>This transaction is sent from the resident source system to parties that need to be aware of these census changes.  &#xD;
+&#xD;
+Designates type and description of census message – Admit, Discharge, Change. Used when a ReturnReceipt is requested.</body>
+        </ownedComment>
         <generalization xmi:id="_kbf9EE49Ed-G-pSkcIGh3w" general="_e1AxgDD4Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_fxed8U49Ed-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
@@ -7138,18 +7269,34 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxeeAk49Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_fxeeA049Ed-G-pSkcIGh3w" name="Allergy" type="_4iAblDD1Ed-8rpqfOAePKg" aggregation="composite" association="_fxeeT049Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_CwWKQIlHEd-pZLs28ekBmw" annotatedElement="_fxeeA049Ed-G-pSkcIGh3w">
+            <body>The Allergy element enables the sender to inform the recipient of all known patient allergies. The element is intended to provide this patient allergy profile information to the recipient. If the Allergy element is sent, it must include all known patient allergies. Responder can send back an Allergy element, but should not echo back the Allergy element received on the request. &#xD;
+Note: The Allergy element is not to be used to replace or add to the transfer of drug use evaluation information, which is instead communicated using the existing DUE composite in the medication information. This is a comprehensive list of allergies that the sender is aware of at the time the transaction is sent.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fxeeBE49Ed-G-pSkcIGh3w" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxeeBU49Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_fxeeBk49Ed-G-pSkcIGh3w" name="BenefitsCoordination" type="_RdeAIFJLEd-gUbUlN-XGdw" aggregation="composite" association="_fxeeS049Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_AifLkIlHEd-pZLs28ekBmw" annotatedElement="_fxeeBk49Ed-G-pSkcIGh3w">
+            <body>Multiple loops available to indicate coverage’s known to the sending system.&#xD;
+Note:  This element is conditional.  If the information is known, it should be sent on all Census transactions.&#xD;
+				</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fxeeB049Ed-G-pSkcIGh3w" value="3"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxeeCE49Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_fxeeCU49Ed-G-pSkcIGh3w" name="DiagnosisGeneral" type="_4iwCejD1Ed-8rpqfOAePKg" aggregation="composite" association="_fxeeU049Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_EzxakIlHEd-pZLs28ekBmw" annotatedElement="_fxeeCU49Ed-G-pSkcIGh3w">
+            <body>Element may be used only in the long-term care setting, where there are established processes supporting the sharing of diagnosis information between a resident’s facility and pharmacy. Note: The medication information enables communication of prescription-specific diagnosis information only—appropriate for use in new prescription messaging, but insufficient to support management of a resident’s full drug regimen. The intent is to convey the diagnosis that the prescribed medication is for.  There is also a need to convey diagnosis information in the Census event.  The difference here is that there is no related drug.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fxeeCk49Ed-G-pSkcIGh3w" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxeeC049Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_fxeeDE49Ed-G-pSkcIGh3w" name="Facility" type="_4ZNr4TD1Ed-8rpqfOAePKg" aggregation="composite" association="_fxeeV049Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_-FkdMIlGEd-pZLs28ekBmw" annotatedElement="_fxeeDE49Ed-G-pSkcIGh3w">
+            <body>One loop mandatory for the skilled nursing facility.&#xD;
+Given that a new long term care resident may not yet have an assigned physician, it is more appropriate to require the facility information, and physician if that information is available.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fxeeDU49Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxeeDk49Ed-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
@@ -7166,6 +7313,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxeeF049Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_fxeeGE49Ed-G-pSkcIGh3w" name="Prescriber" type="_4TjI5jD1Ed-8rpqfOAePKg" aggregation="composite" association="_fxeeP049Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_7-RZgIlGEd-pZLs28ekBmw" annotatedElement="_fxeeGE49Ed-G-pSkcIGh3w">
+            <body>One loop available for the Attending Physician</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fxeeGU49Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxeeGk49Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -7211,6 +7361,9 @@ potentially other structures.</body>
         <eAnnotations xmi:id="_6MpX8H-PEd-eN4XJATQmiQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_6MpX8X-PEd-eN4XJATQmiQ" key="Request"/>
         </eAnnotations>
+        <ownedComment xmi:id="_p_F18IksEd-pZLs28ekBmw" annotatedElement="_NjMTIE4-Ed-G-pSkcIGh3w">
+          <body>This message is sent by the Payer to the Pharmacy or the Prescriber. The Payer is requesting the Pharmacy or Prescriber accept the patient and perform the service.</body>
+        </ownedComment>
         <generalization xmi:id="_SeDDkE4-Ed-G-pSkcIGh3w" general="_e1AxgDD4Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_NjMTIU4-Ed-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
@@ -7239,6 +7392,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTL04-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NjMTME4-Ed-G-pSkcIGh3w" name="ClinicalInfoAttachment" visibility="public" type="_Y2QB5DZ7Ed-o64UeGGH_dQ" aggregation="composite" association="_NjMTa04-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_6XLqcIlHEd-pZLs28ekBmw" annotatedElement="_NjMTME4-Ed-G-pSkcIGh3w">
+            <body>Provides patient summary information when applicable</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTMU4-Ed-G-pSkcIGh3w" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTMk4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -7247,6 +7403,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTNU4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NjMTNk4-Ed-G-pSkcIGh3w" name="BenefitsCoordination" type="_RdeAIFJLEd-gUbUlN-XGdw" aggregation="composite" association="_NjMTe04-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_3xL4kIlHEd-pZLs28ekBmw" annotatedElement="_NjMTNk4-Ed-G-pSkcIGh3w">
+            <body>Benefit information used to determine plan and help identify the patient.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTN04-Ed-G-pSkcIGh3w" value="3"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTOE4-Ed-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
@@ -7255,6 +7414,9 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTO04-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NjMTPE4-Ed-G-pSkcIGh3w" name="Facility" type="_4ZNr4TD1Ed-8rpqfOAePKg" aggregation="composite" association="_NjVdFE4-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_0Q7d4IlHEd-pZLs28ekBmw" annotatedElement="_NjMTPE4-Ed-G-pSkcIGh3w">
+            <body> In long-term care settings, if the recipient is a facility, Facility is required.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTPU4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTPk4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -7263,22 +7425,37 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTQU4-Ed-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NjMTQk4-Ed-G-pSkcIGh3w" name="Pharmacist" visibility="public" type="_d_xAwjZ4Ed-o64UeGGH_dQ" aggregation="composite" association="_NjMTX04-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_x8WzMIlHEd-pZLs28ekBmw" annotatedElement="_NjMTQk4-Ed-G-pSkcIGh3w">
+            <body>If specific pharmacist information is exchanged, one loop may be the pharmacist. Pharmacist not connected to a pharmacy.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTQ04-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTRE4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NjMTRU4-Ed-G-pSkcIGh3w" name="Pharmacy" type="_4TZX1DD1Ed-8rpqfOAePKg" aggregation="composite" association="_NjMTd04-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_rhFY4IlHEd-pZLs28ekBmw" annotatedElement="_NjMTRU4-Ed-G-pSkcIGh3w">
+            <body>If recipient is a pharmacy, Pharmacy is required.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTRk4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTR04-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NjMTSE4-Ed-G-pSkcIGh3w" name="Prescriber" type="_4TjI5jD1Ed-8rpqfOAePKg" aggregation="composite" association="_NjMTb04-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_t5rA4IlHEd-pZLs28ekBmw" annotatedElement="_NjMTSE4-Ed-G-pSkcIGh3w">
+            <body>If recipient is a prescriber (or other medical provider for the MTMService), Prescriber is required.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTSU4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTSk4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NjMTS04-Ed-G-pSkcIGh3w" name="Provider" visibility="public" type="_2pq7cEyBEd-G-pSkcIGh3w" aggregation="composite" association="_NjMTY04-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_wFmF4IlHEd-pZLs28ekBmw" annotatedElement="_NjMTS04-Ed-G-pSkcIGh3w">
+            <body>The patient’s provider for which this service applies, if applicable. The designated provider may be the primary care provider, the medical home provider, the facility provider or other provider. This information is provided as reference.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTTE4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTTU4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NjMTTk4-Ed-G-pSkcIGh3w" name="Service" visibility="public" type="_d-3o6TZ4Ed-o64UeGGH_dQ" aggregation="composite" association="_NjMTZ04-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_2MTlcIlHEd-pZLs28ekBmw" annotatedElement="_NjMTTk4-Ed-G-pSkcIGh3w">
+            <body>Designates the service information to be exchanged.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTT04-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTUE4-Ed-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
@@ -7316,6 +7493,9 @@ potentially other structures.</body>
         <eAnnotations xmi:id="_7IswgH-PEd-eN4XJATQmiQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_7lKDAH-PEd-eN4XJATQmiQ" key="Response"/>
         </eAnnotations>
+        <ownedComment xmi:id="_r-Mm8IksEd-pZLs28ekBmw" annotatedElement="_vUdOME4-Ed-G-pSkcIGh3w">
+          <body>This message is sent by the Pharmacy or Prescriber to the Payer. It is the response to an MTMServiceRequest. The Pharmacy or Prescriber either accepts the patient and service, or rejects the patient and service.</body>
+        </ownedComment>
         <generalization xmi:id="_0D1ucE4-Ed-G-pSkcIGh3w" general="_giGC4DH_Ed-Q-_A4nnWLwg"/>
         <ownedAttribute xmi:id="_vUdOMU4-Ed-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
@@ -7344,26 +7524,45 @@ potentially other structures.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOPU4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vUdOQU4-Ed-G-pSkcIGh3w" name="Facility" type="_4ZNr4TD1Ed-8rpqfOAePKg" aggregation="composite" association="_vUdOYk4-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_V5_fMIlIEd-pZLs28ekBmw" annotatedElement="_vUdOQU4-Ed-G-pSkcIGh3w">
+            <body>In long-term care settings, if the sender is a facility, Facility is required.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vUdOQk4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOQ04-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vUdORE4-Ed-G-pSkcIGh3w" name="Patient" type="_4RxAEjD1Ed-8rpqfOAePKg" aggregation="composite" association="_vUdOck4-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_dD8VsIlOEd-pZLs28ekBmw" annotatedElement="_vUdORE4-Ed-G-pSkcIGh3w">
+            <body>Designates the service information to be exchanged, which is the echo of what was sent on the request for clarity.&lt;/xs:documentation></body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vUdORU4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdORk4-Ed-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vUdOR04-Ed-G-pSkcIGh3w" name="Pharmacist" visibility="public" type="_d_xAwjZ4Ed-o64UeGGH_dQ" aggregation="composite" association="_vUdOZk4-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_TUljMIlIEd-pZLs28ekBmw" annotatedElement="_vUdOR04-Ed-G-pSkcIGh3w">
+            <body> If specific pharmacist information is exchanged, one loop may be the pharmacist which is the echo of what was sent on the request for clarity.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vUdOSE4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOSU4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vUdOSk4-Ed-G-pSkcIGh3w" name="Pharmacy" type="_4TZX1DD1Ed-8rpqfOAePKg" aggregation="composite" association="_vUdOWk4-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_N9aqMIlIEd-pZLs28ekBmw" annotatedElement="_vUdOSk4-Ed-G-pSkcIGh3w">
+            <body>If sender is a pharmacy, Pharmacy is required.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vUdOS04-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOTE4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vUdOTU4-Ed-G-pSkcIGh3w" name="Prescriber" type="_4TjI5jD1Ed-8rpqfOAePKg" aggregation="composite" association="_vUdOXk4-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_PNIloIlIEd-pZLs28ekBmw" annotatedElement="_vUdOTU4-Ed-G-pSkcIGh3w">
+            <body> If sender is a prescriber (or other medical provider for the MTMService), Prescriber is required.&#xD;
+</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vUdOTk4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOT04-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vUdOUE4-Ed-G-pSkcIGh3w" name="Provider" visibility="public" type="_2pq7cEyBEd-G-pSkcIGh3w" aggregation="composite" association="_vUdOak4-Ed-G-pSkcIGh3w">
+          <ownedComment xmi:id="_RRBI8IlIEd-pZLs28ekBmw" annotatedElement="_vUdOUE4-Ed-G-pSkcIGh3w">
+            <body>The patient’s provider for which this service applies, if applicable. The designated provider may be the primary care provider, the medical home provider, the facility provider or other provider. This information is provided as reference which is the echo of what was sent on the request for clarity.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vUdOUU4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOUk4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -7371,7 +7570,10 @@ potentially other structures.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vUdOVE4-Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOVU4-Ed-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_ukzGMWhFEd-Pd7zqA0IwbQ" name="Response" visibility="private" type="_2u72EGhFEd-Pd7zqA0IwbQ" aggregation="composite" association="_ukzGMGhFEd-Pd7zqA0IwbQ">
+        <ownedAttribute xmi:id="_ukzGMWhFEd-Pd7zqA0IwbQ" name="Response" visibility="public" type="_2u72EGhFEd-Pd7zqA0IwbQ" aggregation="composite" association="_ukzGMGhFEd-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_MuSkoIlIEd-pZLs28ekBmw" annotatedElement="_ukzGMWhFEd-Pd7zqA0IwbQ">
+            <body>Designates whether the service was accepted or denied.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ukzGM2hFEd-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ukzGMmhFEd-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
@@ -7467,6 +7669,9 @@ potentially other structures.</body>
 elements for each transaction.</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_lwiHMDG-Ed-8rpqfOAePKg" name="PasswordChange">
+        <ownedComment xmi:id="_VDBrsIksEd-pZLs28ekBmw" annotatedElement="_lwiHMDG-Ed-8rpqfOAePKg">
+          <body>This transaction is used to establish and initial password between systems, or to change an existing password to a new password.</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_lwiHMTG-Ed-8rpqfOAePKg" name="Request" type="_4a_0kDD1Ed-8rpqfOAePKg" aggregation="composite" association="_lwiHczG-Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lwiHMjG-Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lwiHMzG-Ed-8rpqfOAePKg" value="1"/>
@@ -7483,15 +7688,24 @@ elements for each transaction.</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4ajItDD1Ed-8rpqfOAePKg" name="Error">
+        <ownedComment xmi:id="_0SSZgIkrEd-pZLs28ekBmw" annotatedElement="_4ajItDD1Ed-8rpqfOAePKg">
+          <body>This transaction response indicates an error has occurred indicating the request was terminated. An Error can be generated when there is a communication problem or when the transaction actually had an error.</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_4ajItTD1Ed-8rpqfOAePKg" name="Code">
-          <ownedComment xmi:id="_4ajItjD1Ed-8rpqfOAePKg">
-            <body></body>
+          <ownedComment xmi:id="_4ajItjD1Ed-8rpqfOAePKg" annotatedElement="_4ajItTD1Ed-8rpqfOAePKg">
+            <body>Codes used to relay successful or rejected communications. &#xD;
+&#xD;
+Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.</body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_tDy00IVBEd-PfKcU8Giing?ecl/ecl/TransactionErrorCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIvTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIvjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4ajIvzD1Ed-8rpqfOAePKg" name="DescriptionCode">
+          <ownedComment xmi:id="_Tu7fMIkvEd-pZLs28ekBmw" annotatedElement="_4ajIvzD1Ed-8rpqfOAePKg">
+            <body>Reject codes used by responder who takes responsibility for transaction.  &#xD;
+Is not required in a Verify transaction. If used, Code must be 010 and DescriptionCode may not be used. Note field may be used.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hAD6sCxAEd-8mcmtGejV_Q?ecl/ecl/DescriptionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIwTD1Ed-8rpqfOAePKg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIwjD1Ed-8rpqfOAePKg"/>
@@ -7556,14 +7770,27 @@ elements for each transaction.</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4aQN1TD1Ed-8rpqfOAePKg" name="Status">
+        <ownedComment xmi:id="_OcbyMIksEd-pZLs28ekBmw" annotatedElement="_4aQN1TD1Ed-8rpqfOAePKg">
+          <body>This response is used to relay acceptance of a transaction back to the sender. A Status in response indicates acceptance and responsibility. A Status in response to a GetMessage indicates that no mail is waiting for pickup. A Status cannot be mailboxed and may not contain an error.</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_4aQN1jD1Ed-8rpqfOAePKg" name="Code" type="_4aZ-sTD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_4aQN1zD1Ed-8rpqfOAePKg">
-            <body></body>
+          <ownedComment xmi:id="_4aQN1zD1Ed-8rpqfOAePKg" annotatedElement="_4aQN1jD1Ed-8rpqfOAePKg">
+            <body>Codes used to relay successful or rejected communications. &#xD;
+&#xD;
+Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. &#xD;
+Description may be used.                                                                                                   &#xD;
+&#xD;
+Value 010 (Successful – accepted by ultimate receiver) is to let the sender know that the message has been received by organization guaranteeing delivery. This value may only be used in a direct connect. It is not to be used in a mailbox environment.&#xD;
+					</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4aZ-tjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4aZ-tzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4aZ-uDD1Ed-8rpqfOAePKg" name="DescriptionCode">
+          <ownedComment xmi:id="_U5lUcIkvEd-pZLs28ekBmw" annotatedElement="_4aZ-uDD1Ed-8rpqfOAePKg">
+            <body>Reject codes used by responder who takes responsibility for transaction.  &#xD;
+Is not required in a Verify transaction. If used, Code must be 010 and DescriptionCode may not be used. Note field may be used.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hAD6sCxAEd-8mcmtGejV_Q?ecl/ecl/DescriptionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4aZ-wzD1Ed-8rpqfOAePKg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4aZ-xDD1Ed-8rpqfOAePKg"/>
@@ -7573,8 +7800,8 @@ elements for each transaction.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIoTD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4ajIojD1Ed-8rpqfOAePKg" name="PrescriptionDeliveryMethod" type="_4ajIpTD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_4ajIozD1Ed-8rpqfOAePKg">
-            <body></body>
+          <ownedComment xmi:id="_4ajIozD1Ed-8rpqfOAePKg" annotatedElement="_4ajIojD1Ed-8rpqfOAePKg">
+            <body>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIqjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIqzD1Ed-8rpqfOAePKg"/>
@@ -7621,11 +7848,11 @@ elements for each transaction.</body>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4CtQgTD1Ed-8rpqfOAePKg" name="Sender" type="_4CtQgjD1Ed-8rpqfOAePKg" aggregation="composite" association="_4CtQjzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4CtQjTD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4CtQjjD1Ed-8rpqfOAePKg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4CtQjjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4CtQkTD1Ed-8rpqfOAePKg" name="Receiver" type="_4CtQgjD1Ed-8rpqfOAePKg" aggregation="composite" association="_4CtQlDD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4CtQkjD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4CtQkzD1Ed-8rpqfOAePKg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4CtQkzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4CtQaDD1Ed-8rpqfOAePKg" name="UsernameTokenType">
@@ -7647,9 +7874,15 @@ elements for each transaction.</body>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4as5oDD1Ed-8rpqfOAePKg" name="Verify">
+        <ownedComment xmi:id="_RRessIksEd-pZLs28ekBmw" annotatedElement="_4as5oDD1Ed-8rpqfOAePKg">
+          <body>This transaction is generated when the request transaction asks for return receipt.</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_4as5oTD1Ed-8rpqfOAePKg" name="VerifyStatus" type="_4as5pDD1Ed-8rpqfOAePKg" aggregation="composite" association="_4as5vzD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_4as5ojD1Ed-8rpqfOAePKg">
-            <body></body>
+          <ownedComment xmi:id="_4as5ojD1Ed-8rpqfOAePKg" annotatedElement="_4as5oTD1Ed-8rpqfOAePKg">
+            <body>Codes used to relay successful or rejected communications. &#xD;
+&#xD;
+Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.&lt;/xs:documentation>&#xD;
+								</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4as5vTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4as5vjD1Ed-8rpqfOAePKg"/>
@@ -7667,8 +7900,14 @@ elements for each transaction.</body>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4as5sjD1Ed-8rpqfOAePKg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_4as5szD1Ed-8rpqfOAePKg" name="PrescriptionDeliveryMethod" type="_4as5tjD1Ed-8rpqfOAePKg">
-            <ownedComment xmi:id="_4as5tDD1Ed-8rpqfOAePKg">
-              <body></body>
+            <ownedComment xmi:id="_4as5tDD1Ed-8rpqfOAePKg" annotatedElement="_4as5szD1Ed-8rpqfOAePKg">
+              <body>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.&#xD;
+&#xD;
+Note: &#xD;
+If Code 000 is sent, PrescriptionDeliveryMethod is not sent.&#xD;
+If Code 010 is sent, PrescriptionDeliveryMethod may be included.&#xD;
+When sending a NewRx to mailbox, the Code is 000 (no delivery). When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 010 will include the delivery method. If NewRx does not have ReturnReceipt set, a 010 will NOT be returned.&lt;/xs:documentation>&#xD;
+								</body>
             </ownedComment>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4as5uzD1Ed-8rpqfOAePKg" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4as5vDD1Ed-8rpqfOAePKg"/>
@@ -7694,6 +7933,9 @@ elements for each transaction.</body>
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4a2qpTD1Ed-8rpqfOAePKg" name="GetMessage">
+        <ownedComment xmi:id="_wR1b0IkrEd-pZLs28ekBmw" annotatedElement="_4a2qpTD1Ed-8rpqfOAePKg">
+          <body>This transaction is used by the pharmacy or prescriber system to request mail from the Mailbox. It is used repeatedly until the response no more mail is returned from the Mailbox.</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_zQlrI2ctEd-EzKeHnOFaKw" name="ReturnReceipt" type="_4DAyeTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_zQlrJGctEd-EzKeHnOFaKw">
             <body></body>
@@ -7972,7 +8214,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMQJI2RIEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMQJImRIEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_iXm4EGRJEd-M5IWg2-DxLQ" name="MTMServ iceRequest" visibility="public" type="_NjMTIE4-Ed-G-pSkcIGh3w" aggregation="composite" association="_iXdHEGRJEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_iXm4EGRJEd-M5IWg2-DxLQ" name="MTMServiceRequest" visibility="public" type="_NjMTIE4-Ed-G-pSkcIGh3w" aggregation="composite" association="_iXdHEGRJEd-M5IWg2-DxLQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iXm4EmRJEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iXm4EWRJEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -8344,7 +8586,78 @@ Note: For Status, Error, Verify transactions – contains software identificatio
       <ownedEnd xmi:id="_FWQPUVJOEd-gUbUlN-XGdw" type="_FWHFYFJOEd-gUbUlN-XGdw" association="_FWQPUFJOEd-gUbUlN-XGdw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_PP3VgGG0Ed-Xe4OIcNINMg" name="script">
-      <eAnnotations xmi:id="_PP3VgWG0Ed-Xe4OIcNINMg" source="uml2.diagrams"/>
+      <eAnnotations xmi:id="_PP3VgWG0Ed-Xe4OIcNINMg" source="uml2.diagrams">
+        <contents xmi:type="notation:Diagram" xmi:id="_8a-lcIkLEd-pZLs28ekBmw" type="Class" name="ClassDiagram1">
+          <children xmi:id="_9VPOQIkLEd-pZLs28ekBmw" element="_f9yNw2WUEd-bmP0HuKmipA">
+            <children xmi:id="_9ViwQIkLEd-pZLs28ekBmw" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_9ViwQYkLEd-pZLs28ekBmw" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_9ViwQokLEd-pZLs28ekBmw" type="Stereotype"/>
+            <children xmi:id="_9ViwQ4kLEd-pZLs28ekBmw" type="Name"/>
+            <children xmi:id="_9ViwRIkLEd-pZLs28ekBmw" type="Parent"/>
+            <children xmi:id="_9ViwRYkLEd-pZLs28ekBmw" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9ViwRokLEd-pZLs28ekBmw"/>
+            </children>
+            <children xmi:id="_9ViwR4kLEd-pZLs28ekBmw" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9ViwSIkLEd-pZLs28ekBmw"/>
+            </children>
+            <children xmi:id="_9ViwSYkLEd-pZLs28ekBmw" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9ViwSokLEd-pZLs28ekBmw"/>
+            </children>
+            <children xmi:id="_9ViwS4kLEd-pZLs28ekBmw" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_9ViwTIkLEd-pZLs28ekBmw"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_9VPOQYkLEd-pZLs28ekBmw" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9VPOQokLEd-pZLs28ekBmw" x="10461" y="1268"/>
+          </children>
+          <children xmi:id="__m-nYIkLEd-pZLs28ekBmw" element="_f9yNkGWUEd-bmP0HuKmipA">
+            <children xmi:id="__m-nY4kLEd-pZLs28ekBmw" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="__m-nZIkLEd-pZLs28ekBmw" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="__m-nZYkLEd-pZLs28ekBmw" type="Stereotype"/>
+            <children xmi:id="__m-nZokLEd-pZLs28ekBmw" type="Name"/>
+            <children xmi:id="__m-nZ4kLEd-pZLs28ekBmw" type="Parent"/>
+            <children xmi:id="__m-naIkLEd-pZLs28ekBmw" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__m-naYkLEd-pZLs28ekBmw"/>
+            </children>
+            <children xmi:id="__m-naokLEd-pZLs28ekBmw" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__m-na4kLEd-pZLs28ekBmw"/>
+            </children>
+            <children xmi:id="__m-nbIkLEd-pZLs28ekBmw" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__m-nbYkLEd-pZLs28ekBmw"/>
+            </children>
+            <children xmi:id="__m-nbokLEd-pZLs28ekBmw" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="__m-nb4kLEd-pZLs28ekBmw"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="__m-nYYkLEd-pZLs28ekBmw" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__m-nYokLEd-pZLs28ekBmw" x="3810" y="1481"/>
+          </children>
+          <children xmi:id="_AGHacIkMEd-pZLs28ekBmw" element="_f9yNsmWUEd-bmP0HuKmipA">
+            <children xmi:id="_AGHac4kMEd-pZLs28ekBmw" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_AGHadIkMEd-pZLs28ekBmw" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_AGHadYkMEd-pZLs28ekBmw" type="Stereotype"/>
+            <children xmi:id="_AGHadokMEd-pZLs28ekBmw" type="Name"/>
+            <children xmi:id="_AGHad4kMEd-pZLs28ekBmw" type="Parent"/>
+            <children xmi:id="_AGHaeIkMEd-pZLs28ekBmw" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_AGHaeYkMEd-pZLs28ekBmw"/>
+            </children>
+            <children xmi:id="_AGHaeokMEd-pZLs28ekBmw" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_AGHae4kMEd-pZLs28ekBmw"/>
+            </children>
+            <children xmi:id="_AGHafIkMEd-pZLs28ekBmw" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_AGHafYkMEd-pZLs28ekBmw"/>
+            </children>
+            <children xmi:id="_AGHafokMEd-pZLs28ekBmw" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_AGHaf4kMEd-pZLs28ekBmw"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_AGHacYkMEd-pZLs28ekBmw" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AGHacokMEd-pZLs28ekBmw" x="6974" y="4438"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_8a-lcYkLEd-pZLs28ekBmw"/>
+          <element xsi:nil="true"/>
+        </contents>
+      </eAnnotations>
       <ownedComment xmi:id="_MttWwIUfEd-PfKcU8Giing">
         <body>The NCPDP script.xsd defines SCRIPT domain transactions</body>
       </ownedComment>
@@ -8360,6 +8673,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_gCsphi4QEd-8mcmtGejV_Q" name="IndefiniteSuspension">
         <ownedAttribute xmi:id="_gCsphy4QEd-8mcmtGejV_Q" name="SuspendDateTime" type="_4CtQYTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_f_FBMIk6Ed-pZLs28ekBmw" annotatedElement="_gCsphy4QEd-8mcmtGejV_Q">
+            <body>Value SD.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gCspiC4QEd-8mcmtGejV_Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gCspiS4QEd-8mcmtGejV_Q" value="1"/>
         </ownedAttribute>
@@ -8370,10 +8686,16 @@ Note: For Status, Error, Verify transactions – contains software identificatio
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_gCspkS4QEd-8mcmtGejV_Q" name="FixedLengthSuspension">
         <ownedAttribute xmi:id="_gCspki4QEd-8mcmtGejV_Q" name="SuspendDateTime" type="_4CtQYTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_e_l6IIk6Ed-pZLs28ekBmw" annotatedElement="_gCspki4QEd-8mcmtGejV_Q">
+            <body>Value SD.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gCspky4QEd-8mcmtGejV_Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gCsplC4QEd-8mcmtGejV_Q" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_gCsplS4QEd-8mcmtGejV_Q" name="ResumeDateTime" type="_4CtQYTD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_iKZpQIk6Ed-pZLs28ekBmw" annotatedElement="_gCsplS4QEd-8mcmtGejV_Q">
+            <body>Value RD.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gCspli4QEd-8mcmtGejV_Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gCsply4QEd-8mcmtGejV_Q" value="1"/>
         </ownedAttribute>
@@ -8392,22 +8714,24 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustE2HEEd-Xe4OIcNINMg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_oustFGHEEd-Xe4OIcNINMg" name="ReturnReceipt" type="_4DAyeTD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_oustFWHEEd-Xe4OIcNINMg">
-            <body></body>
+          <ownedComment xmi:id="_oustFWHEEd-Xe4OIcNINMg" annotatedElement="_oustFGHEEd-Xe4OIcNINMg">
+            <body>If this field is submitted with 1 in the request, a Verify transaction is to be sent from the recipient at some time.&#xD;
+1 = Return Receipt Requested&#xD;
+all other values = no return receipt requested.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oustFmHEEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustF2HEEd-Xe4OIcNINMg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_oustGGHEEd-Xe4OIcNINMg" name="RequestReferenceNumber" type="_4CkGgjD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_oustGWHEEd-Xe4OIcNINMg">
-            <body></body>
+          <ownedComment xmi:id="_oustGWHEEd-Xe4OIcNINMg" annotatedElement="_oustGGHEEd-Xe4OIcNINMg">
+            <body>Transaction key. In some trading partner agreements utilizing a mailbox functionality, this field may contain the receiver's identification number for the transaction being returned. On the response to each GetMessage request, the response may contain the mailbox's key to the response. The requester can then, in subsequent GetMessage requests, put the key in this field. This may help the Mailbox retain the position within their files of which mail entry to return to the requester.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oustGmHEEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustG2HEEd-Xe4OIcNINMg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_oustHGHEEd-Xe4OIcNINMg" name="FollowUpRequest" type="_4DJ8YDD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_oustHWHEEd-Xe4OIcNINMg">
-            <body></body>
+          <ownedComment xmi:id="_oustHWHEEd-Xe4OIcNINMg" annotatedElement="_oustHGHEEd-Xe4OIcNINMg">
+            <body>Indicator to allow pharmacies to tell prescribers that this is a follow-up RefillRequest or RxChangeRequest transaction. The field is not sent on an original request.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oustHmHEEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustH2HEEd-Xe4OIcNINMg"/>
@@ -8454,14 +8778,31 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ki2FwWHGEd-Xe4OIcNINMg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QDt5sWHHEd-Xe4OIcNINMg" name="MedicationDispensed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite" association="_QDt5sGHHEd-Xe4OIcNINMg">
+          <ownedComment xmi:id="_r0ZoYIlFEd-pZLs28ekBmw" annotatedElement="_QDt5sWHHEd-Xe4OIcNINMg">
+            <body>Value D&#xD;
+			</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QDt5s2HHEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QDt5smHHEd-Xe4OIcNINMg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QoFLAWHHEd-Xe4OIcNINMg" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite" association="_QoFLAGHHEd-Xe4OIcNINMg">
+          <ownedComment xmi:id="_X1bYgIlFEd-pZLs28ekBmw" annotatedElement="_QoFLAWHHEd-Xe4OIcNINMg">
+            <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
+	If NotFilled, the medicaiton (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
+	</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QoFLA2HHEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QoFLAmHHEd-Xe4OIcNINMg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_RGLcQWHHEd-Xe4OIcNINMg" name="MedicationRequested" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite" association="_RGLcQGHHEd-Xe4OIcNINMg">
+          <ownedComment xmi:id="_eRJewIlFEd-pZLs28ekBmw" annotatedElement="_RGLcQWHHEd-Xe4OIcNINMg">
+            <body>Value R&#xD;
+&#xD;
+Value R.	If one drug is being requested for the change, one loop for the drug being requested should be sent.&#xD;
+	OR&#xD;
+If the pharmacy wishes to send the prescriber a choice of alternative drugs, additional loops may be sent as alternatives. The first alternative sent in the loop is the preferred.&#xD;
+</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RGLcQ2HHEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RGLcQmHHEd-Xe4OIcNINMg"/>
         </ownedAttribute>
@@ -8660,6 +9001,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_IvIt8GWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_VUGDUGWaEd-bmP0HuKmipA" key="Request"/>
         </eAnnotations>
+        <ownedComment xmi:id="_XpLOkIksEd-pZLs28ekBmw" annotatedElement="_AteYMGQnEd-ODMSOo4sPFQ">
+          <body>This transaction is used to notify the pharmacy that a previously sent prescription should be canceled and not filled.  </body>
+        </ownedComment>
         <generalization xmi:id="_KAn-kGQnEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_AteYMWQnEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChangeCode?"/>
@@ -8753,6 +9097,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_VUGDUmWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_VUGDU2WaEd-bmP0HuKmipA" key="Request"/>
         </eAnnotations>
+        <ownedComment xmi:id="_-GQYgIksEd-pZLs28ekBmw" annotatedElement="_qy3FkGQnEd-ODMSOo4sPFQ">
+          <body>This transaction is a request for a new prescription and is sent from the prescriber to the pharmacy.</body>
+        </ownedComment>
         <generalization xmi:id="_qy3FkWQnEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_qy3FkmQnEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChangeCode?"/>
@@ -8851,6 +9198,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_VUGDVGWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_VUGDVWWaEd-bmP0HuKmipA" key="Request"/>
         </eAnnotations>
+        <ownedComment xmi:id="_BYgzcIktEd-pZLs28ekBmw" annotatedElement="_AdHLgGQoEd-ODMSOo4sPFQ">
+          <body>This transaction is used by a pharmacy to request a refill of a prescriber (Refill Request). </body>
+        </ownedComment>
         <generalization xmi:id="_AdHLgWQoEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_AdHLgmQoEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
@@ -8949,6 +9299,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_VUY-QGWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_VUY-QWWaEd-bmP0HuKmipA" key="Request"/>
         </eAnnotations>
+        <ownedComment xmi:id="_HJ4KkIksEd-pZLs28ekBmw" annotatedElement="_TeiOAGQoEd-ODMSOo4sPFQ">
+          <body>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a &quot;fillable&quot; prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</body>
+        </ownedComment>
         <generalization xmi:id="_TeiOAWQoEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_TeiOAmQoEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_oCxxQGdhEd-EzKeHnOFaKw?ecl/ecl/RxChangeCode?"/>
@@ -9047,6 +9400,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_naacQIRWEd-PfKcU8Giing" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_naacQYRWEd-PfKcU8Giing" key="Request"/>
         </eAnnotations>
+        <ownedComment xmi:id="_LUdUoIksEd-pZLs28ekBmw" annotatedElement="_nufgMGQoEd-ODMSOo4sPFQ">
+          <body>This transaction is sent from the pharmacy to the prescriber to notify the prescriber of the dispensing status of a prescription.</body>
+        </ownedComment>
         <generalization xmi:id="_nufgMWQoEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_nufgMmQoEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
@@ -9121,6 +9477,14 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nufgXmQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_nufgX2QoEd-ODMSOo4sPFQ" name="MedicationDispensed" visibility="public" type="_wROoIGTqEd-Y0upv2_lheQ" aggregation="composite" association="_nufgb2QoEd-ODMSOo4sPFQ">
+          <ownedComment xmi:id="_0pv4cIlFEd-pZLs28ekBmw" annotatedElement="_nufgX2QoEd-ODMSOo4sPFQ">
+            <body>For RxFill - PartialFill, the quantity received is required by the prescriber. &#xD;
+&#xD;
+If Filled or PartialFill, the medication dispensed is required.&#xD;
+&#xD;
+If  NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
+</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nufgYGQoEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nufgYWQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9145,6 +9509,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_VUY-QmWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_VUY-Q2WaEd-bmP0HuKmipA" key="Request"/>
         </eAnnotations>
+        <ownedComment xmi:id="_baRhoIksEd-pZLs28ekBmw" annotatedElement="_mSBeAGQvEd-ODMSOo4sPFQ">
+          <body>This transaction is sent from an entity to an entity to request the medication history of a patient.  </body>
+        </ownedComment>
         <generalization xmi:id="_mSBeAWQvEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_mSBeAmQvEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
@@ -9198,6 +9565,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeImQvEd-ODMSOo4sPFQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_mSBeI2QvEd-ODMSOo4sPFQ" name="Pharmacy" type="_FG5gMGTPEd-M5IWg2-DxLQ" aggregation="composite" association="_mSLPGGQvEd-ODMSOo4sPFQ">
+          <ownedComment xmi:id="_iuYpoIlGEd-pZLs28ekBmw" annotatedElement="_mSBeI2QvEd-ODMSOo4sPFQ">
+            <body>Required if requestor or recipient is a pharmacy or prescriber.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSBeJGQvEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeJWQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9238,6 +9608,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_IvIt8mWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_VUGDUWWaEd-bmP0HuKmipA" key="Request"/>
         </eAnnotations>
+        <ownedComment xmi:id="_nXTUUIksEd-pZLs28ekBmw" annotatedElement="_7NMQYGQvEd-ODMSOo4sPFQ">
+          <body>This transaction is used by prescribers/care facilities to communicate drug administration events to the patient’s pharmacy or other entity</body>
+        </ownedComment>
         <generalization xmi:id="_7NMQYWQvEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_7NMQYmQvEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
@@ -9291,6 +9664,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NMQgmQvEd-ODMSOo4sPFQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7NMQg2QvEd-ODMSOo4sPFQ" name="Pharmacy" type="_FWHFYFJOEd-gUbUlN-XGdw" aggregation="composite" association="_7NWBhGQvEd-ODMSOo4sPFQ">
+          <ownedComment xmi:id="_lUHgUIlHEd-pZLs28ekBmw" annotatedElement="_7NMQg2QvEd-ODMSOo4sPFQ">
+            <body>When the recipient is a pharmacy, one loop is required for the pharmacy.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NMQhGQvEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NMQhWQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9331,6 +9707,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_VUP0UGWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_VUP0UWWaEd-bmP0HuKmipA" key="Request"/>
         </eAnnotations>
+        <ownedComment xmi:id="_M0dSUIktEd-pZLs28ekBmw" annotatedElement="_Z0C9kGQzEd-ODMSOo4sPFQ">
+          <body>This transaction is used to send a refill request from a facility to a pharmacy.</body>
+        </ownedComment>
         <generalization xmi:id="_Z0C9kWQzEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_Z0C9kmQzEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
@@ -9400,6 +9779,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z0C9vmQzEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Z0C9v2QzEd-ODMSOo4sPFQ" name="MedicationDispensed" visibility="public" type="_G-g2MGTcEd-M5IWg2-DxLQ" aggregation="composite" association="_Z0C9z2QzEd-ODMSOo4sPFQ">
+          <ownedComment xmi:id="_hVKXcIlHEd-pZLs28ekBmw" annotatedElement="_Z0C9v2QzEd-ODMSOo4sPFQ">
+            <body> One loop for the drug dispensed. Is not mandatory, but can be used for clarification.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z0C9wGQzEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z0C9wWQzEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -9491,6 +9873,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_ye4lsmWeEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_ye4ls2WeEd-bmP0HuKmipA" key="Response"/>
         </eAnnotations>
+        <ownedComment xmi:id="_ECzE4IksEd-pZLs28ekBmw" annotatedElement="_RpGFoGREEd-ODMSOo4sPFQ">
+          <body>This transaction is sent from the prescriber to the pharmacy and indicates whether the refill request has been accepted or denied.</body>
+        </ownedComment>
         <generalization xmi:id="_RpGFoWREEd-ODMSOo4sPFQ" general="_KIEXUGNLEd-ODMSOo4sPFQ"/>
         <ownedAttribute xmi:id="_r3LRMGRGEd-M5IWg2-DxLQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
@@ -9565,6 +9950,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_ye4ltGWeEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_ye4ltWWeEd-bmP0HuKmipA" key="Response"/>
         </eAnnotations>
+        <ownedComment xmi:id="_I1dioIksEd-pZLs28ekBmw" annotatedElement="_kz6UsGREEd-ODMSOo4sPFQ">
+          <body>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a &quot;fillable&quot; prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</body>
+        </ownedComment>
         <generalization xmi:id="_kz6UsWREEd-ODMSOo4sPFQ" general="_KIEXUGNLEd-ODMSOo4sPFQ"/>
         <ownedAttribute xmi:id="_yJEGA2RGEd-M5IWg2-DxLQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_oCxxQGdhEd-EzKeHnOFaKw?ecl/ecl/RxChangeCode?"/>
@@ -9627,6 +10015,16 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U0d0En7gEd-qFLXIW1YLFA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_U0d0E37gEd-qFLXIW1YLFA" name="MedicationPrescribed" visibility="public" type="_MXJAoDD7Ed-8rpqfOAePKg" aggregation="composite">
+          <ownedComment xmi:id="_99MZwIlFEd-pZLs28ekBmw" annotatedElement="_U0d0E37gEd-qFLXIW1YLFA">
+            <body>Value P. 	&#xD;
+At least one loop must contain 85 = Date Issued (Written Date)                            &#xD;
+&#xD;
+If ChangeResponseType/Approved (value A) or C (Approved with changes)), one loop required for the drug prescribed.&#xD;
+&#xD;
+If ChangeResponseType/Denied (value D), the medication information does not need to be sent, or if the medication &#xD;
+&#xD;
+information is sent it must contain the prescribed loop from the RxChangeRequest that is being denied.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U0d0FH7gEd-qFLXIW1YLFA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U0d0FX7gEd-qFLXIW1YLFA"/>
         </ownedAttribute>
@@ -9639,6 +10037,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_ye4lsGWeEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_ye4lsWWeEd-bmP0HuKmipA" key="Response"/>
         </eAnnotations>
+        <ownedComment xmi:id="_Y2hLcIksEd-pZLs28ekBmw" annotatedElement="_-8j4kGREEd-ODMSOo4sPFQ">
+          <body>This transaction is used to notify the pharmacy that a previously sent prescription should be canceled and not filled.  </body>
+        </ownedComment>
         <generalization xmi:id="_Bp3MUGRFEd-ODMSOo4sPFQ" general="_KIEXUGNLEd-ODMSOo4sPFQ"/>
         <ownedAttribute xmi:id="_-8j4kWREEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChangeCode?"/>
@@ -9735,6 +10136,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         <eAnnotations xmi:id="_46aQ0H-LEd-eN4XJATQmiQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_46aQ0X-LEd-eN4XJATQmiQ" key="Response"/>
         </eAnnotations>
+        <ownedComment xmi:id="_c-HS8IksEd-pZLs28ekBmw" annotatedElement="_bFIa4GRHEd-M5IWg2-DxLQ">
+          <body>This response is sent from an entity to an entity to describe the patient’s medication history.</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_bFIa4WRHEd-M5IWg2-DxLQ" name="MessageRequestCode" visibility="public">
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa4mRHEd-M5IWg2-DxLQ"/>
@@ -9776,10 +10180,16 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIbA2RHEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_bFIbBGRHEd-M5IWg2-DxLQ" name="Pharmacy" type="_FG5gMGTPEd-M5IWg2-DxLQ" aggregation="composite">
+          <ownedComment xmi:id="_nWxxEIlGEd-pZLs28ekBmw" annotatedElement="_bFIbBGRHEd-M5IWg2-DxLQ">
+            <body>Required if requestor or recipient is a pharmacy or prescriber.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIbBWRHEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIbBmRHEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_bFIbB2RHEd-M5IWg2-DxLQ" name="Prescriber" type="_7GxpoGTPEd-M5IWg2-DxLQ" aggregation="composite">
+          <ownedComment xmi:id="_qHpWMIlGEd-pZLs28ekBmw" annotatedElement="_bFIbB2RHEd-M5IWg2-DxLQ">
+            <body>Required if requestor or recipient is a pharmacy or prescriber.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIbCGRHEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIbCWRHEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -9806,6 +10216,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIa_WRHEd-M5IWg2-DxLQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_bFIa-GRHEd-M5IWg2-DxLQ" name="MedicationDispensedAdministered" visibility="public" type="_MqbSUGTrEd-Y0upv2_lheQ" aggregation="composite">
+            <ownedComment xmi:id="_uFtuQIlGEd-pZLs28ekBmw" annotatedElement="_bFIa-GRHEd-M5IWg2-DxLQ">
+              <body>Value A.  Only used in RxHistoryResponse</body>
+            </ownedComment>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa-WRHEd-M5IWg2-DxLQ" value="300"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIa-mRHEd-M5IWg2-DxLQ" value="1"/>
           </ownedAttribute>
@@ -9834,9 +10247,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <ownedComment xmi:id="_f9yNkmWUEd-bmP0HuKmipA">
             <body>RES-020</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_J51OcGdmEd-EzKeHnOFaKw?ecl/ecl/ApprovedCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9yNk2WUEd-bmP0HuKmipA" value="10"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9yNlGWUEd-bmP0HuKmipA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9yNlGWUEd-bmP0HuKmipA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_f9yNlWWUEd-bmP0HuKmipA" name="ReferenceNumber" type="_4CkGgjD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_f9yNlmWUEd-bmP0HuKmipA">
@@ -9860,7 +10273,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9yNtWWUEd-bmP0HuKmipA" value="10"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9yNtmWUEd-bmP0HuKmipA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9yNtmWUEd-bmP0HuKmipA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_f9yNt2WUEd-bmP0HuKmipA" name="ReferenceNumber" type="_4CkGgjD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_f9yNuGWUEd-bmP0HuKmipA">
@@ -10028,6 +10441,9 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JThskHpjEd-WhYpqDne-kg" name="DeniedTransferredType">
+        <ownedComment xmi:id="_MSe0YIkyEd-pZLs28ekBmw" annotatedElement="_JThskHpjEd-WhYpqDne-kg">
+          <body>This element is only used in a denied CancelRxResponse where the prescription cannot be cancelled by the receiving pharmacy because the prescription has been transferred to another organization’s pharmacy. </body>
+        </ownedComment>
         <ownedAttribute xmi:id="_JThskXpjEd-WhYpqDne-kg" name="ReasonCode">
           <ownedComment xmi:id="_JThsknpjEd-WhYpqDne-kg">
             <body>RES-020</body>
@@ -11438,9 +11854,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <Default:Documentation xmi:id="_4HoMszD1Ed-8rpqfOAePKg" base_Comment="_4HoMsjD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4Hx9pDD1Ed-8rpqfOAePKg" base_Property="_4Hx9ojD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4Hx9qjD1Ed-8rpqfOAePKg" base_Comment="_4Hx9qTD1Ed-8rpqfOAePKg"/>
-  <Default:Documentation xmi:id="_4H7HmjD1Ed-8rpqfOAePKg" base_Comment="_4H7HmTD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4H7HnjD1Ed-8rpqfOAePKg" base_Property="_4H7HnDD1Ed-8rpqfOAePKg"/>
-  <Default:Documentation xmi:id="_4H7HqTD1Ed-8rpqfOAePKg" base_Comment="_4H7HqDD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4IE4oDD1Ed-8rpqfOAePKg" base_Comment="_4IE4nzD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4IE4pDD1Ed-8rpqfOAePKg" base_Property="_4IE4ojD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4IE4qDD1Ed-8rpqfOAePKg" base_Property="_4IE4pjD1Ed-8rpqfOAePKg"/>
@@ -11592,8 +12006,6 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <Default:Documentation xmi:id="_4OfCnjD1Ed-8rpqfOAePKg" base_Comment="_4OfCnTD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4OfCpTD1Ed-8rpqfOAePKg" base_Comment="_4OfCpDD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4OoMkTD1Ed-8rpqfOAePKg" base_Comment="_4OoMkDD1Ed-8rpqfOAePKg"/>
-  <Default:Documentation xmi:id="_4Ox9gDD1Ed-8rpqfOAePKg" base_Comment="_4OoMmjD1Ed-8rpqfOAePKg"/>
-  <Default:Documentation xmi:id="_4Ox9ijD1Ed-8rpqfOAePKg" base_Comment="_4Ox9iTD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4Ox9jzD1Ed-8rpqfOAePKg" base_Comment="_4Ox9jjD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4O7ugDD1Ed-8rpqfOAePKg" base_Comment="_4Ox9lzD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4PE4cDD1Ed-8rpqfOAePKg" base_Comment="_4O7uqTD1Ed-8rpqfOAePKg"/>
@@ -12017,7 +12429,6 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <Default:Documentation xmi:id="_8fJby2j2Ed-Pd7zqA0IwbQ" base_Comment="_8fJbw2j2Ed-Pd7zqA0IwbQ"/>
   <Default:Documentation xmi:id="_8fJbzGj2Ed-Pd7zqA0IwbQ" base_Comment="_8fJbx2j2Ed-Pd7zqA0IwbQ"/>
   <Default:Documentation xmi:id="_KINSdGj3Ed-Pd7zqA0IwbQ" base_Comment="_KINScWj3Ed-Pd7zqA0IwbQ"/>
-  <Default:Documentation xmi:id="_03lbPGj7Ed-Pd7zqA0IwbQ" base_Comment="_03lbMWj7Ed-Pd7zqA0IwbQ"/>
   <Default:Documentation xmi:id="_03lbPWj7Ed-Pd7zqA0IwbQ" base_Comment="_03lbNWj7Ed-Pd7zqA0IwbQ"/>
   <Default:Documentation xmi:id="_03lbPmj7Ed-Pd7zqA0IwbQ" base_Comment="_03lbOWj7Ed-Pd7zqA0IwbQ"/>
   <xsd:Restriction xmi:id="_QPqFsWmjEd-rC41nbGoKjA" base_Generalization="_QPqFsGmjEd-rC41nbGoKjA"/>
@@ -12062,4 +12473,105 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <xsd:Documentation xmi:id="_EaCQYYUfEd-PfKcU8Giing" base_Comment="_EaCQYIUfEd-PfKcU8Giing"/>
   <xsd:Documentation xmi:id="_MttWwYUfEd-PfKcU8Giing" base_Comment="_MttWwIUfEd-PfKcU8Giing"/>
   <xsd:Documentation xmi:id="_Xn-r8YUfEd-PfKcU8Giing" base_Comment="_Xn-r8IUfEd-PfKcU8Giing"/>
+  <xsd:Choice xmi:id="_z9FhMIkNEd-pZLs28ekBmw" base_Class="_4HVRtjD1Ed-8rpqfOAePKg"/>
+  <Default:Documentation xmi:id="_vMtIIYkdEd-pZLs28ekBmw" base_Comment="_vMj-NokdEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_vMtII4kdEd-pZLs28ekBmw" base_Comment="_vMj-PokdEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_vMtIJIkdEd-pZLs28ekBmw" base_Comment="_vMj-QokdEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_wR1b0YkrEd-pZLs28ekBmw" base_Comment="_wR1b0IkrEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_0SSZgYkrEd-pZLs28ekBmw" base_Comment="_0SSZgIkrEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_ECzE4YksEd-pZLs28ekBmw" base_Comment="_ECzE4IksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_HJ4KkYksEd-pZLs28ekBmw" base_Comment="_HJ4KkIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_I1dioYksEd-pZLs28ekBmw" base_Comment="_I1dioIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_LUnFoIksEd-pZLs28ekBmw" base_Comment="_LUdUoIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_OcbyMYksEd-pZLs28ekBmw" base_Comment="_OcbyMIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_RRessYksEd-pZLs28ekBmw" base_Comment="_RRessIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_VDBrsYksEd-pZLs28ekBmw" base_Comment="_VDBrsIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_XpLOkYksEd-pZLs28ekBmw" base_Comment="_XpLOkIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_Y2hLcYksEd-pZLs28ekBmw" base_Comment="_Y2hLcIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_baRhoYksEd-pZLs28ekBmw" base_Comment="_baRhoIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_c-RD8IksEd-pZLs28ekBmw" base_Comment="_c-HS8IksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_nXdFUIksEd-pZLs28ekBmw" base_Comment="_nXTUUIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_p_F18YksEd-pZLs28ekBmw" base_Comment="_p_F18IksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_r-WX8IksEd-pZLs28ekBmw" base_Comment="_r-Mm8IksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_6Ew5AYksEd-pZLs28ekBmw" base_Comment="_6Ew5AIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_-GQYgYksEd-pZLs28ekBmw" base_Comment="_-GQYgIksEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_BYgzcYktEd-pZLs28ekBmw" base_Comment="_BYgzcIktEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_M0dSUYktEd-pZLs28ekBmw" base_Comment="_M0dSUIktEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_0fKtAYktEd-pZLs28ekBmw" base_Comment="_0fKtAIktEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_AEWAYIkuEd-pZLs28ekBmw" base_Comment="_AEM2cIkuEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_HhoRUYkuEd-pZLs28ekBmw" base_Comment="_HhoRUIkuEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_inFbsYkuEd-pZLs28ekBmw" base_Comment="_inFbsIkuEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_m9vS4IkuEd-pZLs28ekBmw" base_Comment="_m9lh4IkuEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_9pQokYkuEd-pZLs28ekBmw" base_Comment="_9pQokIkuEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="__2OPYYkuEd-pZLs28ekBmw" base_Comment="__2OPYIkuEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_CyRw0IkvEd-pZLs28ekBmw" base_Comment="_CyH_0IkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_GujZIYkvEd-pZLs28ekBmw" base_Comment="_GujZIIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_I-pMcYkvEd-pZLs28ekBmw" base_Comment="_I-pMcIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_LbaJ0YkvEd-pZLs28ekBmw" base_Comment="_LbaJ0IkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_N5Wy8YkvEd-pZLs28ekBmw" base_Comment="_N5Wy8IkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_Tu7fMYkvEd-pZLs28ekBmw" base_Comment="_Tu7fMIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_U5vFcIkvEd-pZLs28ekBmw" base_Comment="_U5lUcIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_bCOtsYkvEd-pZLs28ekBmw" base_Comment="_bCOtsIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_eexGAYkvEd-pZLs28ekBmw" base_Comment="_eexGAIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_jFgnoYkvEd-pZLs28ekBmw" base_Comment="_jFgnoIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_k8R8AYkvEd-pZLs28ekBmw" base_Comment="_k8R8AIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_nVwU0YkvEd-pZLs28ekBmw" base_Comment="_nVwU0IkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_sNff0YkvEd-pZLs28ekBmw" base_Comment="_sNff0IkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_zHA8YYkvEd-pZLs28ekBmw" base_Comment="_zHA8YIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_29LVoIkvEd-pZLs28ekBmw" base_Comment="_29CLsIkvEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_MSe0YYkyEd-pZLs28ekBmw" base_Comment="_MSe0YIkyEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_VK0HAYkyEd-pZLs28ekBmw" base_Comment="_VK0HAIkyEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_lM6RoYkyEd-pZLs28ekBmw" base_Comment="_lM6RoIkyEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_qoGvAYkyEd-pZLs28ekBmw" base_Comment="_qoGvAIkyEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_IhVkYYk6Ed-pZLs28ekBmw" base_Comment="_IhVkYIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_OrBfcIk6Ed-pZLs28ekBmw" base_Comment="_Oq4VgIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_RMZ3EYk6Ed-pZLs28ekBmw" base_Comment="_RMZ3EIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_XgrRgYk6Ed-pZLs28ekBmw" base_Comment="_XgrRgIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_bobKAYk6Ed-pZLs28ekBmw" base_Comment="_bobKAIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_e_l6IYk6Ed-pZLs28ekBmw" base_Comment="_e_l6IIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_f_FBMYk6Ed-pZLs28ekBmw" base_Comment="_f_FBMIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_iKjaQIk6Ed-pZLs28ekBmw" base_Comment="_iKZpQIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_mBw8YYk6Ed-pZLs28ekBmw" base_Comment="_mBw8YIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_7Sr8UYk6Ed-pZLs28ekBmw" base_Comment="_7Sr8UIk6Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_6UT9oIk8Ed-pZLs28ekBmw" base_Comment="_6UKMoIk8Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_9Aa-kYk8Ed-pZLs28ekBmw" base_Comment="_9Aa-kIk8Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="__XXn0Yk8Ed-pZLs28ekBmw" base_Comment="__XXn0Ik8Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_BisP4Yk9Ed-pZLs28ekBmw" base_Comment="_BisP4Ik9Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_rxUY0Yk9Ed-pZLs28ekBmw" base_Comment="_rxUY0Ik9Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_u4iocYk9Ed-pZLs28ekBmw" base_Comment="_u4iocIk9Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_xpH5sYk9Ed-pZLs28ekBmw" base_Comment="_xpH5sIk9Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_sK3dEYlEEd-pZLs28ekBmw" base_Comment="_sK3dEIlEEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_tmEPwYlEEd-pZLs28ekBmw" base_Comment="_tmEPwIlEEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_7GoRwYlEEd-pZLs28ekBmw" base_Comment="_7GoRwIlEEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_X1bYgYlFEd-pZLs28ekBmw" base_Comment="_X1bYgIlFEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_eRJewYlFEd-pZLs28ekBmw" base_Comment="_eRJewIlFEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_r0iyUIlFEd-pZLs28ekBmw" base_Comment="_r0ZoYIlFEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_0p5pcIlFEd-pZLs28ekBmw" base_Comment="_0pv4cIlFEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_99MZwYlFEd-pZLs28ekBmw" base_Comment="_99MZwIlFEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_iuYpoYlGEd-pZLs28ekBmw" base_Comment="_iuYpoIlGEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_nWxxEYlGEd-pZLs28ekBmw" base_Comment="_nWxxEIlGEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_qHpWMYlGEd-pZLs28ekBmw" base_Comment="_qHpWMIlGEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_uFtuQYlGEd-pZLs28ekBmw" base_Comment="_uFtuQIlGEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_7-RZgYlGEd-pZLs28ekBmw" base_Comment="_7-RZgIlGEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_-FkdMYlGEd-pZLs28ekBmw" base_Comment="_-FkdMIlGEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_AifLkYlHEd-pZLs28ekBmw" base_Comment="_AifLkIlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_CwWKQYlHEd-pZLs28ekBmw" base_Comment="_CwWKQIlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_EzxakYlHEd-pZLs28ekBmw" base_Comment="_EzxakIlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_hVKXcYlHEd-pZLs28ekBmw" base_Comment="_hVKXcIlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_lUHgUYlHEd-pZLs28ekBmw" base_Comment="_lUHgUIlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_rhFY4YlHEd-pZLs28ekBmw" base_Comment="_rhFY4IlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_t5rA4YlHEd-pZLs28ekBmw" base_Comment="_t5rA4IlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_wFmF4YlHEd-pZLs28ekBmw" base_Comment="_wFmF4IlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_x8WzMYlHEd-pZLs28ekBmw" base_Comment="_x8WzMIlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_0REn0IlHEd-pZLs28ekBmw" base_Comment="_0Q7d4IlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_2MTlcYlHEd-pZLs28ekBmw" base_Comment="_2MTlcIlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_3xVpkIlHEd-pZLs28ekBmw" base_Comment="_3xL4kIlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_6XLqcYlHEd-pZLs28ekBmw" base_Comment="_6XLqcIlHEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_MuSkoYlIEd-pZLs28ekBmw" base_Comment="_MuSkoIlIEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_N9aqMYlIEd-pZLs28ekBmw" base_Comment="_N9aqMIlIEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_PNSWoIlIEd-pZLs28ekBmw" base_Comment="_PNIloIlIEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_RRBI8YlIEd-pZLs28ekBmw" base_Comment="_RRBI8IlIEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_TUljMYlIEd-pZLs28ekBmw" base_Comment="_TUljMIlIEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_V5_fMYlIEd-pZLs28ekBmw" base_Comment="_V5_fMIlIEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_dEGGsIlOEd-pZLs28ekBmw" base_Comment="_dD8VsIlOEd-pZLs28ekBmw"/>
 </xmi:XMI>

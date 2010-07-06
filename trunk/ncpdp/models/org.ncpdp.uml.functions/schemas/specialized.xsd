@@ -45,6 +45,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  Census  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Census">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is sent from the resident source system to parties that need to be aware of these census changes.  &#13;
+&#13;
+Designates type and description of census message – Admit, Discharge, Change. Used when a ReturnReceipt is requested.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="specialized:FunctionRequest">
         <xsd:sequence>
@@ -53,14 +58,38 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="ClinicalInfoAttachment" type="structures:Attachment"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="structures:Allergy"/>
-          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
-          <xsd:element name="Facility" type="datatypes:Facilty"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Allergy" type="structures:Allergy">
+            <xsd:annotation>
+              <xsd:documentation>The Allergy element enables the sender to inform the recipient of all known patient allergies. The element is intended to provide this patient allergy profile information to the recipient. If the Allergy element is sent, it must include all known patient allergies. Responder can send back an Allergy element, but should not echo back the Allergy element received on the request. &#13;
+Note: The Allergy element is not to be used to replace or add to the transfer of drug use evaluation information, which is instead communicated using the existing DUE composite in the medication information. This is a comprehensive list of allergies that the sender is aware of at the time the transaction is sent.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:BenefitsCoordination">
+            <xsd:annotation>
+              <xsd:documentation>Multiple loops available to indicate coverage’s known to the sending system.&#13;
+Note:  This element is conditional.  If the information is known, it should be sent on all Census transactions.&#13;
+				</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral">
+            <xsd:annotation>
+              <xsd:documentation>Element may be used only in the long-term care setting, where there are established processes supporting the sharing of diagnosis information between a resident’s facility and pharmacy. Note: The medication information enables communication of prescription-specific diagnosis information only—appropriate for use in new prescription messaging, but insufficient to support management of a resident’s full drug regimen. The intent is to convey the diagnosis that the prescribed medication is for.  There is also a need to convey diagnosis information in the Census event.  The difference here is that there is no related drug.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="Facility" type="datatypes:Facilty">
+            <xsd:annotation>
+              <xsd:documentation>One loop mandatory for the skilled nursing facility.&#13;
+Given that a new long term care resident may not yet have an assigned physician, it is more appropriate to require the facility information, and physician if that information is available.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="Patient" type="structures:Patient"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacist" type="structures:Pharmacist"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
+          <xsd:element minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral">
+            <xsd:annotation>
+              <xsd:documentation>One loop available for the Attending Physician</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="Provider" type="structures:Provider"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Service" type="specialized:ServiceType"/>
           <xsd:element minOccurs="0" name="AnticipatedReturnDate" type="datatypes:SimpleDateType"/>
@@ -87,7 +116,13 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <xsd:complexType abstract="true" name="FunctionRequest">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3">
+        <xsd:annotation>
+          <xsd:documentation>If this field is submitted with 1 in the request, a Verify transaction is to be sent from the recipient at some time.&#13;
+1 = Return Receipt Requested&#13;
+all other values = no return receipt requested.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="structures:Attachment"/>
@@ -144,6 +179,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  MTMServiceRequest  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MTMServiceRequest">
+    <xsd:annotation>
+      <xsd:documentation>This message is sent by the Payer to the Pharmacy or the Prescriber. The Payer is requesting the Pharmacy or Prescriber accept the patient and perform the service.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="specialized:FunctionRequest">
         <xsd:sequence>
@@ -151,17 +189,49 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="structures:Attachment"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClinicalInfoAttachment" type="structures:Attachment">
+            <xsd:annotation>
+              <xsd:documentation>Provides patient summary information when applicable</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="Allergy" type="structures:Allergy"/>
-          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:BenefitsCoordination"/>
+          <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:BenefitsCoordination">
+            <xsd:annotation>
+              <xsd:documentation>Benefit information used to determine plan and help identify the patient.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty">
+            <xsd:annotation>
+              <xsd:documentation> In long-term care settings, if the recipient is a facility, Facility is required.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="Patient" type="structures:PatientFull"/>
-          <xsd:element minOccurs="0" name="Pharmacist" type="structures:Pharmacist"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
-          <xsd:element minOccurs="0" name="Provider" type="structures:Provider"/>
-          <xsd:element name="Service" type="specialized:ServiceType"/>
+          <xsd:element minOccurs="0" name="Pharmacist" type="structures:Pharmacist">
+            <xsd:annotation>
+              <xsd:documentation>If specific pharmacist information is exchanged, one loop may be the pharmacist. Pharmacist not connected to a pharmacy.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:Pharmacy">
+            <xsd:annotation>
+              <xsd:documentation>If recipient is a pharmacy, Pharmacy is required.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral">
+            <xsd:annotation>
+              <xsd:documentation>If recipient is a prescriber (or other medical provider for the MTMService), Prescriber is required.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Provider" type="structures:Provider">
+            <xsd:annotation>
+              <xsd:documentation>The patient’s provider for which this service applies, if applicable. The designated provider may be the primary care provider, the medical home provider, the facility provider or other provider. This information is provided as reference.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="Service" type="specialized:ServiceType">
+            <xsd:annotation>
+              <xsd:documentation>Designates the service information to be exchanged.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="AnticipatedReturnDate" type="datatypes:SimpleDateType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="CensusEffectiveDate" type="datatypes:SimpleDateType"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
@@ -174,6 +244,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  MTMServiceResponse  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MTMServiceResponse">
+    <xsd:annotation>
+      <xsd:documentation>This message is sent by the Pharmacy or Prescriber to the Payer. It is the response to an MTMServiceRequest. The Pharmacy or Prescriber either accepts the patient and service, or rejects the patient and service.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="specialized:FunctionResponse">
         <xsd:sequence>
@@ -181,14 +254,43 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
           <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
-          <xsd:element name="Patient" type="structures:PatientFull"/>
-          <xsd:element minOccurs="0" name="Pharmacist" type="structures:Pharmacist"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="structures:Pharmacy"/>
-          <xsd:element minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral"/>
-          <xsd:element minOccurs="0" name="Provider" type="structures:Provider"/>
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty">
+            <xsd:annotation>
+              <xsd:documentation>In long-term care settings, if the sender is a facility, Facility is required.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="Patient" type="structures:PatientFull">
+            <xsd:annotation>
+              <xsd:documentation>Designates the service information to be exchanged, which is the echo of what was sent on the request for clarity.&lt;/xs:documentation&gt;</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Pharmacist" type="structures:Pharmacist">
+            <xsd:annotation>
+              <xsd:documentation> If specific pharmacist information is exchanged, one loop may be the pharmacist which is the echo of what was sent on the request for clarity.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:Pharmacy">
+            <xsd:annotation>
+              <xsd:documentation>If sender is a pharmacy, Pharmacy is required.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Prescriber" type="structures:PrescriberGeneral">
+            <xsd:annotation>
+              <xsd:documentation> If sender is a prescriber (or other medical provider for the MTMService), Prescriber is required.&#13;
+</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Provider" type="structures:Provider">
+            <xsd:annotation>
+              <xsd:documentation>The patient’s provider for which this service applies, if applicable. The designated provider may be the primary care provider, the medical home provider, the facility provider or other provider. This information is provided as reference which is the echo of what was sent on the request for clarity.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="Service" type="specialized:ServiceType"/>
-          <xsd:element name="Response" type="specialized:MTMResponseType"/>
+          <xsd:element name="Response" type="specialized:MTMResponseType">
+            <xsd:annotation>
+              <xsd:documentation>Designates whether the service was accepted or denied.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -207,14 +309,25 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  ServiceType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ServiceType">
+    <xsd:annotation>
+      <xsd:documentation>Used in MTMServiceRequest, MTMServiceResponse</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="MTMPayerCaseIdentifier" type="xsd:string"/>
       <xsd:choice>
-        <xsd:element name="TypeofServiceFreeText" type="xsd:string"/>
+        <xsd:element name="TypeofServiceFreeText" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Use this if you can’t use the three TypeOfService fields which are part of a codification.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element minOccurs="0" name="TypeofService" type="datatypes:QualifiedCodeWithText"/>
       </xsd:choice>
       <xsd:choice>
-        <xsd:element name="TargetedTypeofServiceFreeText" type="xsd:string"/>
+        <xsd:element name="TargetedTypeofServiceFreeText" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Use this if you can’t use the three TargetedTypeOfService fields which are part of a codification.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element minOccurs="0" name="TargetedTypeofService" type="datatypes:QualifiedCodeWithText"/>
       </xsd:choice>
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>

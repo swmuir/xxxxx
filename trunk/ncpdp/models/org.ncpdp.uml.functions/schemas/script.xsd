@@ -35,7 +35,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ApprovedType">
     <xsd:sequence>
-      <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ApprovedCode">
+      <xsd:element maxOccurs="10" minOccurs="0" name="ReasonCode" type="ecl:ReasonCode">
         <xsd:annotation>
           <xsd:documentation>RES-020</xsd:documentation>
         </xsd:annotation>
@@ -57,7 +57,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ApprovedWithChangesType">
     <xsd:sequence>
-      <xsd:element maxOccurs="10" name="DenialReasonCode" type="ecl:ReasonCode">
+      <xsd:element maxOccurs="10" minOccurs="0" name="DenialReasonCode" type="ecl:ReasonCode">
         <xsd:annotation>
           <xsd:documentation>RES-020</xsd:documentation>
         </xsd:annotation>
@@ -96,6 +96,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  CancelRx  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CancelRx">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is used to notify the pharmacy that a previously sent prescription should be canceled and not filled.  </xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
@@ -126,6 +129,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  CancelRxResponse  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CancelRxResponse">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is used to notify the pharmacy that a previously sent prescription should be canceled and not filled.  </xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTResponse">
         <xsd:sequence>
@@ -192,6 +198,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  DeniedTransferredType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DeniedTransferredType">
+    <xsd:annotation>
+      <xsd:documentation>This element is only used in a denied CancelRxResponse where the prescription cannot be cancelled by the receiving pharmacy because the prescription has been transferred to another organization’s pharmacy. </xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ApprovedCode">
         <xsd:annotation>
@@ -284,6 +293,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  DrugAdminstration  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DrugAdminstration">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is used by prescribers/care facilities to communicate drug administration events to the patient’s pharmacy or other entity</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
@@ -297,7 +309,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
           <xsd:element name="Patient" type="structures:Patient"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="structures:MandatoryPharmacy"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:MandatoryPharmacy">
+            <xsd:annotation>
+              <xsd:documentation>When the recipient is a pharmacy, one loop is required for the pharmacy.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="Prescriber" type="structures:Prescriber"/>
           <xsd:element name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
@@ -315,8 +331,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="FixedLengthSuspension">
     <xsd:sequence>
-      <xsd:element name="SuspendDateTime" type="datatypes:UtcDateType"/>
-      <xsd:element name="ResumeDateTime" type="datatypes:UtcDateType"/>
+      <xsd:element name="SuspendDateTime" type="datatypes:UtcDateType">
+        <xsd:annotation>
+          <xsd:documentation>Value SD.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ResumeDateTime" type="datatypes:UtcDateType">
+        <xsd:annotation>
+          <xsd:documentation>Value RD.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -325,7 +349,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="IndefiniteSuspension">
     <xsd:sequence>
-      <xsd:element name="SuspendDateTime" type="datatypes:UtcDateType"/>
+      <xsd:element name="SuspendDateTime" type="datatypes:UtcDateType">
+        <xsd:annotation>
+          <xsd:documentation>Value SD.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="TimeZone" type="datatypes:TimeZone"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -333,6 +361,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  NewRx  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="NewRx">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is a request for a new prescription and is sent from the prescriber to the pharmacy.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
@@ -364,6 +395,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  RefillRequest  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RefillRequest">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is used by a pharmacy to request a refill of a prescriber (Refill Request). </xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
@@ -395,6 +429,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  RefillResponse  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RefillResponse">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is sent from the prescriber to the pharmacy and indicates whether the refill request has been accepted or denied.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTResponse">
         <xsd:sequence>
@@ -478,6 +515,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  Resupply  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Resupply">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is used to send a refill request from a facility to a pharmacy.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
@@ -495,7 +535,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element name="Prescriber" type="structures:Prescriber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element minOccurs="0" name="Observation" type="structures:Observation"/>
-          <xsd:element minOccurs="0" name="MedicationDispensed" type="structures:ResupplyMedication"/>
+          <xsd:element minOccurs="0" name="MedicationDispensed" type="structures:ResupplyMedication">
+            <xsd:annotation>
+              <xsd:documentation> One loop for the drug dispensed. Is not mandatory, but can be used for clarification.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="MedicationPrescribed" type="structures:ResupplyMedication"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="structures:ResupplyMedication"/>
           <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
@@ -508,6 +552,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  RxChangeRequest  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RxChangeRequest">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a "fillable" prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
@@ -539,6 +586,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  RxChangeResponse  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RxChangeResponse">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a "fillable" prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTResponse">
         <xsd:sequence>
@@ -555,7 +605,18 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element minOccurs="0" name="Observation" type="structures:Observation"/>
           <xsd:element minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensedAdministered" type="structures:Medication"/>
-          <xsd:element minOccurs="0" name="MedicationPrescribed" type="structures:PrescribedMedication"/>
+          <xsd:element minOccurs="0" name="MedicationPrescribed" type="structures:PrescribedMedication">
+            <xsd:annotation>
+              <xsd:documentation>Value P. 	&#13;
+At least one loop must contain 85 = Date Issued (Written Date)                            &#13;
+&#13;
+If ChangeResponseType/Approved (value A) or C (Approved with changes)), one loop required for the drug prescribed.&#13;
+&#13;
+If ChangeResponseType/Denied (value D), the medication information does not need to be sent, or if the medication &#13;
+&#13;
+information is sent it must contain the prescribed loop from the RxChangeRequest that is being denied.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="MedicationDispensed" type="structures:Medication"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -583,6 +644,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  RxFill  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RxFill">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is sent from the pharmacy to the prescriber to notify the prescriber of the dispensing status of a prescription.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
@@ -601,7 +665,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="DispensingRequestCode" type="ecl:DispensingRequestCode"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
-          <xsd:element minOccurs="0" name="MedicationDispensed" type="structures:RxFillDispensedMedication"/>
+          <xsd:element minOccurs="0" name="MedicationDispensed" type="structures:RxFillDispensedMedication">
+            <xsd:annotation>
+              <xsd:documentation>For RxFill - PartialFill, the quantity received is required by the prescriber. &#13;
+&#13;
+If Filled or PartialFill, the medication dispensed is required.&#13;
+&#13;
+If  NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#13;
+</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element minOccurs="0" name="MedicationPrescribed" type="structures:PrescribedMedication"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="MedicationRequested" type="structures:PrescribedMedication"/>
           <xsd:element minOccurs="0" name="Supervisor" type="structures:SupervisorOptional"/>
@@ -614,6 +687,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  RxHistoryRequest  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RxHistoryRequest">
+    <xsd:annotation>
+      <xsd:documentation>This transaction is sent from an entity to an entity to request the medication history of a patient.  </xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
@@ -627,7 +703,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="FillStatus" type="structures:FillStatus"/>
           <xsd:element name="Patient" type="structures:Patient"/>
-          <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
+          <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy">
+            <xsd:annotation>
+              <xsd:documentation>Required if requestor or recipient is a pharmacy or prescriber.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="Prescriber" type="structures:OptionalPresciber"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
@@ -644,6 +724,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  RxHistoryResponse  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RxHistoryResponse">
+    <xsd:annotation>
+      <xsd:documentation>This response is sent from an entity to an entity to describe the patient’s medication history.</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
@@ -653,13 +736,25 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:RxHistoryBenefitsCoordination"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
       <xsd:element name="Patient" type="structures:Patient"/>
-      <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
-      <xsd:element name="Prescriber" type="structures:HistoryPrescriber"/>
+      <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy">
+        <xsd:annotation>
+          <xsd:documentation>Required if requestor or recipient is a pharmacy or prescriber.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Prescriber" type="structures:HistoryPrescriber">
+        <xsd:annotation>
+          <xsd:documentation>Required if requestor or recipient is a pharmacy or prescriber.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="Supervisor" type="structures:Supervisor"/>
       <xsd:choice>
         <xsd:element maxOccurs="300" name="MedicationDispensed" type="structures:HistoryDispensedMedication"/>
-        <xsd:element maxOccurs="300" name="MedicationDispensedAdministered" type="structures:HistoryDispensedMedication"/>
+        <xsd:element maxOccurs="300" name="MedicationDispensedAdministered" type="structures:HistoryDispensedMedication">
+          <xsd:annotation>
+            <xsd:documentation>Value A.  Only used in RxHistoryResponse</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element maxOccurs="300" name="MedicationPrescribed" type="structures:HistoryPrescibedMedication"/>
       </xsd:choice>
       <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
@@ -672,9 +767,23 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <xsd:complexType abstract="true" name="SCRIPTRequest">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:Code"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3">
+        <xsd:annotation>
+          <xsd:documentation>If this field is submitted with 1 in the request, a Verify transaction is to be sent from the recipient at some time.&#13;
+1 = Return Receipt Requested&#13;
+all other values = no return receipt requested.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>Transaction key. In some trading partner agreements utilizing a mailbox functionality, this field may contain the receiver's identification number for the transaction being returned. On the response to each GetMessage request, the response may contain the mailbox's key to the response. The requester can then, in subsequent GetMessage requests, put the key in this field. This may help the Mailbox retain the position within their files of which mail entry to return to the requester.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="FollowUpRequest" type="datatypes:n1">
+        <xsd:annotation>
+          <xsd:documentation>Indicator to allow pharmacies to tell prescribers that this is a follow-up RefillRequest or RxChangeRequest transaction. The field is not sent on an original request.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral"/>
@@ -685,9 +794,29 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="structures:HistoryPrescriber"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Observation" type="structures:Observation"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="structures:Medication"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="structures:Medication"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationRequested" type="structures:Medication"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationDispensed" type="structures:Medication">
+        <xsd:annotation>
+          <xsd:documentation>Value D&#13;
+			</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="structures:Medication">
+        <xsd:annotation>
+          <xsd:documentation>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#13;
+	If NotFilled, the medicaiton (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#13;
+	</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationRequested" type="structures:Medication">
+        <xsd:annotation>
+          <xsd:documentation>Value R&#13;
+&#13;
+Value R.	If one drug is being requested for the change, one loop for the drug being requested should be sent.&#13;
+	OR&#13;
+If the pharmacy wishes to send the prescriber a choice of alternative drugs, additional loops may be sent as alternatives. The first alternative sent in the loop is the preferred.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Supervisor" type="structures:SupervisorOptional"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
     </xsd:sequence>

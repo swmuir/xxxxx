@@ -529,17 +529,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:sequence>
             <xsd:element name="CompoundIngredientItemDescription" type="datatypes:an..105M"/>
             <xsd:element minOccurs="0" name="ItemNumber" type="datatypes:ProductCode"/>
-            <xsd:element minOccurs="0" name="Strength" type="datatypes:an..70"/>
-            <xsd:element minOccurs="0" name="StrengthForm" type="datatypes:NCICode">
-              <xsd:annotation>
-                <xsd:documentation>NCPDP Drug StrengthForm Terminology - available at 
-http://www.cancer.gov/cancertopics/terminologyresources/page7
-See External Code List Introduction for information on NCI Thesaurus Code Lists.
-
-</xsd:documentation>
-              </xsd:annotation>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="StrengthCode" type="datatypes:NCICode"/>
+            <xsd:element minOccurs="0" name="Strength" type="datatypes:Strength"/>
             <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
               <xsd:annotation>
                 <xsd:documentation>NCPDP DEASchedule Terminology – available at&#13;
@@ -564,13 +554,13 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7&#13;
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  DateType  -->
+  <!--  DateType  <<choice>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DateType">
-    <xsd:sequence>
+    <xsd:choice>
       <xsd:element name="Date" type="datatypes:SimpleDateType"/>
       <xsd:element name="DateTime" type="datatypes:UtcDateType"/>
-    </xsd:sequence>
+    </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  DrugCoded  -->
@@ -583,7 +573,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7&#13;
 				</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="Strength" type="datatypes:an..70">
+      <xsd:element minOccurs="0" name="Strength" type="datatypes:Strength">
         <xsd:annotation>
           <xsd:documentation>Need to add annotation to strength code 
 Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
@@ -594,21 +584,6 @@ Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
       <xsd:element minOccurs="0" name="DrugDBCode" type="datatypes:DrugDBCode">
         <xsd:annotation>
           <xsd:documentation>If CompoundCoded = 2 (Compound), this field must not be sent.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element minOccurs="0" name="StrengthForm" type="datatypes:NCICode">
-        <xsd:annotation>
-          <xsd:documentation>NCPDP Drug StrengthForm Terminology - available at 
-http://www.cancer.gov/cancertopics/terminologyresources/page7
-See External Code List Introduction for information on NCI Thesaurus Code Lists.
-</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element minOccurs="0" name="StrengthUnitOfMeasure" type="datatypes:NCICode">
-        <xsd:annotation>
-          <xsd:documentation>NCPDP Drug StrengthUnitOfMeasure Terminology - available at 
-http://www.cancer.gov/cancertopics/terminologyresources/page7
-See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
@@ -637,12 +612,12 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
     </xsd:complexContent>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  DrugDBCodeWithText  -->
+  <!--  DrugProductCodeWithText  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="DrugDBCodeWithText">
+  <xsd:complexType name="DrugProductCodeWithText">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
-      <xsd:element minOccurs="0" name="Qualifier" type="ecl:DrugDBQualifiersCode"/>
+      <xsd:element minOccurs="0" name="Qualifier" type="ecl:ProductQualifiersCode"/>
       <xsd:element name="Text" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -663,6 +638,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
   <!--  Facilty  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Facilty">
+    <xsd:annotation>
+      <xsd:documentation>Value SK</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Identification" type="datatypes:ProviderID"/>
       <xsd:element minOccurs="0" name="FacilityName" type="datatypes:an..35"/>
@@ -676,8 +654,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
   <xsd:complexType name="FinalRouteOfAdministrationCode">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
-      <xsd:element minOccurs="0" name="Qualifier" type="ecl:TerminologyQualifierCode"/>
-      <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
+      <xsd:element minOccurs="0" name="Code" type="datatypes:SNOMEDCode"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -722,7 +699,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7
 See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="MeasurementUnitCode" type="ecl:Code">
+      <xsd:element name="MeasurementUnitCode" type="datatypes:NCICode">
         <xsd:annotation>
           <xsd:documentation>NCPDP MeasurementUnitCode Terminology - available at &#13;
 http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation>
@@ -969,6 +946,36 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       <xsd:element minOccurs="0" name="Reference" type="datatypes:IDType"/>
       <xsd:element minOccurs="0" name="SourceDescription" type="datatypes:an..35"/>
       <xsd:element name="SourceQualifier" type="ecl:SourceQualifierCode"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Strength  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Strength">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="StrengthValue" type="datatypes:an..70">
+        <xsd:annotation>
+          <xsd:documentation>Need to add annotation to strength code 
+Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
+
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="StrengthForm" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP Drug StrengthForm Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="StrengthUnitOfMeasure" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP Drug StrengthUnitOfMeasure Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
