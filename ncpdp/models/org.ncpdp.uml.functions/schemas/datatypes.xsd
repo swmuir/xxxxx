@@ -17,6 +17,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  ANDOR  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ANDOR">
+    <xsd:annotation>
+      <xsd:documentation>Used exclusively for SIG</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="AND|OR"/>
     </xsd:restriction>
@@ -25,6 +28,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  ANDORNOT  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ANDORNOT">
+    <xsd:annotation>
+      <xsd:documentation>Used exclusively for SIG</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="AND|OR|NOT"/>
     </xsd:restriction>
@@ -33,6 +39,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  ANDORTHEN  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ANDORTHEN">
+    <xsd:annotation>
+      <xsd:documentation>Used exclusively for SIG</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="AND|OR|THEN"/>
     </xsd:restriction>
@@ -41,6 +50,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  ANDORTO  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ANDORTO">
+    <xsd:annotation>
+      <xsd:documentation>Used exclusively for SIG</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="AND|OR|TO"/>
     </xsd:restriction>
@@ -49,6 +61,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  MailAddressType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="MailAddressType">
+    <xsd:annotation>
+      <xsd:documentation>Qualifier for the type of identifier for receiver.</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="(mailto:)?[^\.]{1,35}(\.[^@]{1,3})?(@[A-Za-z0-9]+\.[A-Za-z]{2,4})?"/>
     </xsd:restriction>
@@ -63,6 +78,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  TOOR  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="TOOR">
+    <xsd:annotation>
+      <xsd:documentation>Used exclusively for SIG</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="TO|OR"/>
     </xsd:restriction>
@@ -71,6 +89,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  TerminologyType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="TerminologyType">
+    <xsd:annotation>
+      <xsd:documentation>Used exclusively for SIG</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="1|2"/>
     </xsd:restriction>
@@ -93,6 +114,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="[ !-~]*"/>
     </xsd:restriction>
@@ -101,6 +125,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..10  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..10">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="10"/>
     </xsd:restriction>
@@ -109,6 +136,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..100  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..100">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="100"/>
     </xsd:restriction>
@@ -117,6 +147,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..105M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..105M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="105"/>
     </xsd:restriction>
@@ -125,6 +158,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..11  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..11">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="11"/>
     </xsd:restriction>
@@ -133,6 +169,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..11M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..11M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="11"/>
     </xsd:restriction>
@@ -141,6 +180,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..14  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..14">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="14"/>
     </xsd:restriction>
@@ -149,6 +191,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..140  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..140">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="140"/>
     </xsd:restriction>
@@ -157,6 +202,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..140M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..140M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="140"/>
     </xsd:restriction>
@@ -165,6 +213,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..15  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..15">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="15"/>
     </xsd:restriction>
@@ -173,6 +224,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..15M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..15M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="15"/>
     </xsd:restriction>
@@ -181,6 +235,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..17  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..17">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="17"/>
     </xsd:restriction>
@@ -189,6 +246,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..17M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..17M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="17"/>
     </xsd:restriction>
@@ -197,6 +257,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..19  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..19">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="19"/>
     </xsd:restriction>
@@ -205,6 +268,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..19M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..19M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="19"/>
     </xsd:restriction>
@@ -213,6 +279,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..2  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..2">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="2"/>
     </xsd:restriction>
@@ -221,6 +290,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..210  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..210">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="210"/>
     </xsd:restriction>
@@ -229,6 +301,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..255M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..255M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="255"/>
     </xsd:restriction>
@@ -237,6 +312,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..25M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..25M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="25"/>
     </xsd:restriction>
@@ -245,6 +323,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..3  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..3">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="3"/>
     </xsd:restriction>
@@ -253,6 +334,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..35  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..35">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="35"/>
     </xsd:restriction>
@@ -261,6 +345,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..35M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..35M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="35"/>
     </xsd:restriction>
@@ -269,6 +356,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..3M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..3M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="3"/>
     </xsd:restriction>
@@ -277,6 +367,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..4  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..4">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="4"/>
     </xsd:restriction>
@@ -285,6 +378,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..50  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..50">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="50"/>
     </xsd:restriction>
@@ -293,6 +389,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..50M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..50M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="50"/>
     </xsd:restriction>
@@ -301,6 +400,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..6  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..6">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="6"/>
     </xsd:restriction>
@@ -309,6 +411,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..70  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..70">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="70"/>
     </xsd:restriction>
@@ -317,6 +422,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..70M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..70M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="70"/>
     </xsd:restriction>
@@ -325,6 +433,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..8  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..8">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="3"/>
     </xsd:restriction>
@@ -333,6 +444,10 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..80  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..80">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type
+</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="80"/>
     </xsd:restriction>
@@ -341,6 +456,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..80M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..80M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="80"/>
     </xsd:restriction>
@@ -349,6 +467,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..9  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..9">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:maxLength value="9"/>
     </xsd:restriction>
@@ -357,6 +478,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  an..9M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="an..9M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:maxLength value="9"/>
     </xsd:restriction>
@@ -365,6 +489,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  anM  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="anM">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="([!-~]|[ ])*[!-~]([!-~]|[ ])*"/>
     </xsd:restriction>
@@ -373,6 +500,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:an">
       <xsd:pattern value="[0-9]*(\.[0-9]+)?"/>
     </xsd:restriction>
@@ -381,6 +511,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n..11M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n..11M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:nM">
       <xsd:maxLength value="11"/>
     </xsd:restriction>
@@ -389,6 +522,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n..15M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n..15M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:nM">
       <xsd:maxLength value="15"/>
     </xsd:restriction>
@@ -397,6 +533,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n..18  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n..18">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:n">
       <xsd:maxLength value="18"/>
     </xsd:restriction>
@@ -405,6 +544,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n..18M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n..18M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:nM">
       <xsd:maxLength value="18"/>
     </xsd:restriction>
@@ -413,6 +555,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n..2  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n..2">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:n">
       <xsd:maxLength value="2"/>
     </xsd:restriction>
@@ -421,6 +566,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n..2M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n..2M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:nM">
       <xsd:maxLength value="2"/>
     </xsd:restriction>
@@ -429,6 +577,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n..3  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n..3">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:n">
       <xsd:maxLength value="3"/>
     </xsd:restriction>
@@ -437,6 +588,10 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n..3M  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n..3M">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type
+</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:nM">
       <xsd:maxLength value="3"/>
     </xsd:restriction>
@@ -445,6 +600,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n..4  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n..4">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:n">
       <xsd:maxLength value="4"/>
     </xsd:restriction>
@@ -453,6 +611,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  n1  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n1">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:n">
       <xsd:maxLength value="1"/>
     </xsd:restriction>
@@ -461,6 +622,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  nM  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="nM">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="datatypes:anM">
       <xsd:pattern value="[0-9]+(\.[0-9]+)?"/>
     </xsd:restriction>
@@ -485,6 +649,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  CDCCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CDCCode">
+    <xsd:annotation>
+      <xsd:documentation>CDCCode constrains NCPDP Coded Types to Value Set Definitions as defined by CDC
+
+http://www.cdc.gov/phin/activities/standards/vocabulary</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Code" type="ecl:Code"/>
     </xsd:sequence>
@@ -493,6 +662,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  CoAgentCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CoAgentCode">
+    <xsd:annotation>
+      <xsd:documentation>DUE CoAgent ID Qualified Code</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="datatypes:QualifiedCode">
         <xsd:sequence>
@@ -523,17 +695,23 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  CompoundIngredient  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CompoundIngredient">
+    <xsd:annotation>
+      <xsd:documentation>Drug Composition Structure</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="CompoundIngredient">
         <xsd:complexType>
+          <xsd:annotation>
+            <xsd:documentation>Drug Composition Structure</xsd:documentation>
+          </xsd:annotation>
           <xsd:sequence>
             <xsd:element name="CompoundIngredientItemDescription" type="datatypes:an..105M"/>
             <xsd:element minOccurs="0" name="ItemNumber" type="datatypes:ProductCode"/>
             <xsd:element minOccurs="0" name="Strength" type="datatypes:Strength"/>
             <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
               <xsd:annotation>
-                <xsd:documentation>NCPDP DEASchedule Terminology – available at&#13;
-http://www.cancer.gov/cancertopics/terminologyresources/page7&#13;
+                <xsd:documentation>NCPDP DEASchedule Terminology – available at
+http://www.cancer.gov/cancertopics/terminologyresources/page7
 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -566,6 +744,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7&#13;
   <!--  DrugCoded  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DrugCoded">
+    <xsd:annotation>
+      <xsd:documentation>Coded Drug Structure used in Medication</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="ProductCode" type="datatypes:ProductCode">
         <xsd:annotation>
@@ -588,11 +769,11 @@ Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
       </xsd:element>
       <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
         <xsd:annotation>
-          <xsd:documentation>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. &#13;
-&#13;
-If CompoundCoded = 2 (Compound), this field must not be sent.&#13;
-            &#13;
-NCPDP DEASchedule Terminology – available at&#13;
+          <xsd:documentation>Required if the medication is categorized as a controlled substance by the Drug Enforcement Administration (DEA). The DEA Schedule would be populated by the system generating the message, and would utilize the Federal DEA Schedule classification code list, based on federal classification of the medication or the state reclassification of the medication. 
+
+If CompoundCoded = 2 (Compound), this field must not be sent.
+            
+NCPDP DEASchedule Terminology – available at
 http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -602,6 +783,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
   <!--  DrugDBCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DrugDBCode">
+    <xsd:annotation>
+      <xsd:documentation>Coded Drug Structure used in Medication</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="datatypes:QualifiedCode">
         <xsd:sequence>
@@ -615,6 +799,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
   <!--  DrugProductCodeWithText  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DrugProductCodeWithText">
+    <xsd:annotation>
+      <xsd:documentation>Drug Product structure used in Census Allergy</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
       <xsd:element minOccurs="0" name="Qualifier" type="ecl:ProductQualifiersCode"/>
@@ -625,6 +812,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
   <!--  DrugUseEvaluation  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DrugUseEvaluation">
+    <xsd:annotation>
+      <xsd:documentation>Drug Use Evaluation structure used in Medication</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="ServiceReasonCode" type="ecl:DUEReasonForServiceCode"/>
       <xsd:element minOccurs="0" name="ProfessionalServiceCode" type="ecl:DUEProfessionalServiceCode"/>
@@ -652,6 +842,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
   <!--  FinalRouteOfAdministrationCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="FinalRouteOfAdministrationCode">
+    <xsd:annotation>
+      <xsd:documentation>Route of Administration used in Medication</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
       <xsd:element minOccurs="0" name="Code" type="datatypes:SNOMEDCode"/>
@@ -661,6 +854,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
   <!--  HistorySource  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="HistorySource">
+    <xsd:annotation>
+      <xsd:documentation>Historical Reference used in Medication</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Source" type="datatypes:SourceQualifier"/>
       <xsd:element minOccurs="0" name="SourceReference" type="datatypes:an..35">
@@ -678,6 +874,9 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
   <!--  IDType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="IDType">
+    <xsd:annotation>
+      <xsd:documentation>Qualified ID Structure used to send ID and corresponding ID Authority</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="IDValue" type="datatypes:an..35M"/>
       <xsd:element name="IDQualifier" type="ecl:IDQualifierCode"/>
@@ -687,6 +886,9 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
   <!--  MeasurementType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MeasurementType">
+    <xsd:annotation>
+      <xsd:documentation>Measurement Structure used for Observation</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Dimension" type="ecl:MeasurementDimensionCode"/>
       <xsd:element name="Value" type="datatypes:n..18M"/>
@@ -701,7 +903,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </xsd:element>
       <xsd:element name="MeasurementUnitCode" type="datatypes:NCICode">
         <xsd:annotation>
-          <xsd:documentation>NCPDP MeasurementUnitCode Terminology - available at &#13;
+          <xsd:documentation>NCPDP MeasurementUnitCode Terminology - available at 
 http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -711,6 +913,13 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  NCICode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="NCICode">
+    <xsd:annotation>
+      <xsd:documentation>NCPCP Constrained Code to value sets defined by NCI
+
+See External Code List Introduction for information on NCI Thesaurus Code Lists.
+
+http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Code" type="ecl:Code"/>
     </xsd:sequence>
@@ -719,6 +928,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  NameType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="NameType">
+    <xsd:annotation>
+      <xsd:documentation>General Purpose structure to capture First, Middle, and Last Name</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="LastName" type="datatypes:an..35M"/>
       <xsd:element name="FirstName" type="datatypes:an..35M"/>
@@ -731,6 +943,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  NoteType  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="NoteType">
+    <xsd:annotation>
+      <xsd:documentation>Fill Status Note Structure</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
@@ -750,6 +965,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  PatientID  <<complexType, choice>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PatientID">
+    <xsd:annotation>
+      <xsd:documentation>Patient ID is explicit ID structure to improve comprehension and validtion of ID by using explicit tags for each ID type</xsd:documentation>
+    </xsd:annotation>
     <xsd:choice maxOccurs="2" minOccurs="0">
       <xsd:element name="NCPDPID" type="datatypes:an..35M"/>
       <xsd:element name="FileID" type="datatypes:an..35M"/>
@@ -783,6 +1001,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  PayerID  <<complexType, choice>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PayerID">
+    <xsd:annotation>
+      <xsd:documentation>Payer ID is explicit ID structure to improve comprehension and validtion of ID by using explicit tags for each ID type</xsd:documentation>
+    </xsd:annotation>
     <xsd:choice maxOccurs="1" minOccurs="0">
       <xsd:element name="NCPDPID" type="datatypes:an..35M"/>
       <xsd:element name="FileID" type="datatypes:an..35M"/>
@@ -816,6 +1037,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  PriorAuthorizationCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PriorAuthorizationCode">
+    <xsd:annotation>
+      <xsd:documentation>Used in Medication to signify Prior Authorization Status</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Value" type="datatypes:an..35M"/>
       <xsd:element name="Qualifier" type="ecl:PriorAuthorizationTypeCode"/>
@@ -825,6 +1049,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  ProblemNameCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ProblemNameCode">
+    <xsd:annotation>
+      <xsd:documentation>Used as part of Diagnosis</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Text" type="xsd:string"/>
       <xsd:element minOccurs="0" name="Qualifier" type="ecl:ProblemNameQualifierCode"/>
@@ -848,6 +1075,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  ProviderID  <<choice, complexType>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ProviderID">
+    <xsd:annotation>
+      <xsd:documentation>Provieder ID is explicit ID structure to improve comprehension and validtion of ID by using explicit tags for each ID type</xsd:documentation>
+    </xsd:annotation>
     <xsd:choice maxOccurs="10" minOccurs="1">
       <xsd:element name="NCPDPID" type="datatypes:an..35M"/>
       <xsd:element name="FileID" type="datatypes:an..35M"/>
@@ -882,6 +1112,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  QualifiedCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="QualifiedCode">
+    <xsd:annotation>
+      <xsd:documentation>General Purpose NCPDP Vocabulary Constraint supporting Code and Qualifier </xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Code" type="ecl:Code"/>
       <xsd:element name="Qualifier" type="ecl:Code"/>
@@ -891,6 +1124,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!--  QualifiedCodeWithText  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="QualifiedCodeWithText">
+    <xsd:annotation>
+      <xsd:documentation>General Purpose NCPDP Vocabulary Constraint supporting Code and Qualifier with optional Text</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
       <xsd:element name="Qualifier" type="ecl:Code"/>
@@ -914,9 +1150,25 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  RouteOfAdministrationCode  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="RouteOfAdministrationCode">
+    <xsd:annotation>
+      <xsd:documentation>Used exclusively for SIG</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="RouteofAdministrationText" type="datatypes:an..50"/>
+      <xsd:element minOccurs="0" name="RouteofAdministrationCode" type="datatypes:an..15"/>
+      <xsd:element name="RouteofAdministrationCodeQualifier" type="datatypes:TerminologyType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  SNOMEDAdverseEventCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SNOMEDAdverseEventCode">
+    <xsd:annotation>
+      <xsd:documentation>SNOMED Adverse Event Code Constraint for Allergies</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="datatypes:SNOMEDCode">
         <xsd:sequence>
@@ -930,6 +1182,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <!--  SNOMEDCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SNOMEDCode">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Code Type constrained to SNOMED Code System, Only Valid SNOMED Codes</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Text" type="xsd:string"/>
       <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
@@ -952,11 +1207,13 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <!--  Strength  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Strength">
+    <xsd:annotation>
+      <xsd:documentation>Drug Strength for Medication</xsd:documentation>
+    </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="StrengthValue" type="datatypes:an..70">
         <xsd:annotation>
-          <xsd:documentation>Need to add annotation to strength code 
-Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
+          <xsd:documentation>Use http://evs.nci.nih.gov/ftp1/NCPDP/DrugStrength.csv
 
 </xsd:documentation>
         </xsd:annotation>

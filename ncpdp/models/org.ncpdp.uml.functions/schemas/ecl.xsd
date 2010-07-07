@@ -107,8 +107,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="BooleanCode">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="Y"/>
-      <xsd:enumeration value="N"/>
+      <xsd:enumeration value="Y">
+        <xsd:annotation>
+          <xsd:documentation>Yes</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="N">
+        <xsd:annotation>
+          <xsd:documentation>No</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -252,24 +260,29 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:documentation>Code identifying the significance or severity level of a clinical event as contained in the originating database.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="2">
+      <xsd:enumeration value=" ">
         <xsd:annotation>
-          <xsd:documentation>Moderate – Code indicating that an event, transaction, etc. is of mid-level significance; requires thoughtful review before prescribing/dispensing the medication. Risk vs. benefit should be evaluated. 2 X X</xsd:documentation>
+          <xsd:documentation>Blank Value</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1">
         <xsd:annotation>
-          <xsd:documentation>Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent adverse drug event. 1 X X</xsd:documentation>
+          <xsd:documentation>Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent adverse drug event.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation>Moderate – Code indicating that an event, transaction, etc. is of mid-level significance; requires thoughtful review before prescribing/dispensing the medication. Risk vs. benefit should be evaluated. </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3">
         <xsd:annotation>
-          <xsd:documentation>Minor – Code indicating a non-life threatening, annoying, or now-well-documented effect which may or may not require a change in drug therapy. 3 X X</xsd:documentation>
+          <xsd:documentation>Minor – Code indicating a non-life threatening, annoying, or now-well-documented effect which may or may not require a change in drug therapy. </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="9">
         <xsd:annotation>
-          <xsd:documentation>Undetermined - value to describe a professional service with variable or unknown severity. 9 X X</xsd:documentation>
+          <xsd:documentation>Undetermined - value to describe a professional service with variable or unknown severity.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -435,6 +448,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:enumeration value="18">
         <xsd:annotation>
           <xsd:documentation>First DataBank SmartKey</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value=" ">
+        <xsd:annotation>
+          <xsd:documentation>Blank Value</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -1029,7 +1047,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="134">
         <xsd:annotation>
-          <xsd:documentation>Sending a Quantity Sufficient with Quantity of 0 is invalid for this pharmacy.</xsd:documentation>
+          <xsd:documentation>DRU dosage quantity qualifier is invalid.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="210">
@@ -1039,7 +1057,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="220">
         <xsd:annotation>
-          <xsd:documentation>Transaction is a duplicate</xsd:documentation>
+          <xsd:documentation>Message is a duplicate</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="500">
@@ -1088,6 +1106,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  DispensingRequestCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="DispensingRequestCode">
+    <xsd:annotation>
+      <xsd:documentation>Code conveying a pharmacy dispensing action associated with a CENSUS event.</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="LOA">
         <xsd:annotation>
@@ -1121,14 +1142,40 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="DrugAdminReasonCode">
     <xsd:annotation>
-      <xsd:documentation>Reference 8011 - Reason Code (REQ Segment)</xsd:documentation>
+      <xsd:documentation>Code identifying the reason for the message
+</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="01"/>
-      <xsd:enumeration value="02"/>
-      <xsd:enumeration value="03"/>
-      <xsd:enumeration value="04"/>
-      <xsd:enumeration value="05"/>
+      <xsd:enumeration value="01">
+        <xsd:annotation>
+          <xsd:documentation>Awaiting lab action (procedure or result) – Medication administration suspended in preparation for a lab procedure or awaiting lab results.			
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="02">
+        <xsd:annotation>
+          <xsd:documentation>Awaiting clinical procedure (non-lab) – Medication administration suspended in preparation for a clinical procedure not lab related.			
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="03">
+        <xsd:annotation>
+          <xsd:documentation>Other clinical reason – Medication administration suspended for other clinical reason not procedure or lab related. Suggest further details be provided in text field.			
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="04">
+        <xsd:annotation>
+          <xsd:documentation>Non-clinical reason – Medication administration suspended for a non-clinical reason. Suggest further details be provided in text field.			
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="05">
+        <xsd:annotation>
+          <xsd:documentation>Patient request – Medication administration suspended at the request of the patient or patient’s representative.			
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1478,13 +1525,13 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="C2">
         <xsd:annotation>
-          <xsd:documentation>Frequency Change (Any change to the frequency or hours of administration for the drug) - Change to the frequency or hours of administration for the medication (long term care settings).&#13;
+          <xsd:documentation>Frequency Change (Any change to the frequency or hours of administration for the drug) - Change to the frequency or hours of administration for the medication (long term care settings).
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="C3">
         <xsd:annotation>
-          <xsd:documentation>Other Change (All other changes) – A change to the medication not covered by other values listed (long term care settings).&#13;
+          <xsd:documentation>Other Change (All other changes) – A change to the medication not covered by other values listed (long term care settings).
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1723,6 +1770,10 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  OrderCaptureMethodCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="OrderCaptureMethodCode">
+    <xsd:annotation>
+      <xsd:documentation>Code conveying the method by which the order was defined by the prescriber and captured in the prescribing system.	
+</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="EP">
         <xsd:annotation>
@@ -2024,7 +2075,12 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Waiver - DATA 2000 Waiver ID. Used for prescriptions for opioid addiction treatment medications.  </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="ZZ"/>
+      <xsd:enumeration value="ZZ">
+        <xsd:annotation>
+          <xsd:documentation>Mutually defined			
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -2042,13 +2098,13 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="DX">
         <xsd:annotation>
-          <xsd:documentation>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification&#13;
+          <xsd:documentation>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification
 (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ABF">
         <xsd:annotation>
-          <xsd:documentation>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification&#13;
+          <xsd:documentation>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification
 (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2336,7 +2392,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="G">
         <xsd:annotation>
-          <xsd:documentation>Generic Substitution - A modification of the product prescribed to a generic equivalent.			&#13;
+          <xsd:documentation>Generic Substitution - A modification of the product prescribed to a generic equivalent.			
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2527,7 +2583,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="NU">
         <xsd:annotation>
-          <xsd:documentation>Nunavut			&#13;
+          <xsd:documentation>Nunavut			
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2568,13 +2624,13 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="AL">
         <xsd:annotation>
-          <xsd:documentation>Alabama&#13;
+          <xsd:documentation>Alabama
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="VA">
         <xsd:annotation>
-          <xsd:documentation>Virginia&#13;
+          <xsd:documentation>Virginia
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2595,7 +2651,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="ND">
         <xsd:annotation>
-          <xsd:documentation>North Dakota&#13;
+          <xsd:documentation>North Dakota
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2646,13 +2702,13 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="NC">
         <xsd:annotation>
-          <xsd:documentation>North Carolina&#13;
+          <xsd:documentation>North Carolina
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="SC">
         <xsd:annotation>
-          <xsd:documentation>South Carolina&#13;
+          <xsd:documentation>South Carolina
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2663,7 +2719,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="DE">
         <xsd:annotation>
-          <xsd:documentation>Delaware			&#13;
+          <xsd:documentation>Delaware			
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2682,7 +2738,12 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>New York   </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="BC"/>
+      <xsd:enumeration value="BC">
+        <xsd:annotation>
+          <xsd:documentation>British Columbia			
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="CT">
         <xsd:annotation>
           <xsd:documentation>Connecticut</xsd:documentation>
@@ -2720,7 +2781,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="MH">
         <xsd:annotation>
-          <xsd:documentation>Marshall Islands&#13;
+          <xsd:documentation>Marshall Islands
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2786,7 +2847,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="NE">
         <xsd:annotation>
-          <xsd:documentation>Nebraska&#13;
+          <xsd:documentation>Nebraska
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2802,19 +2863,19 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="IN">
         <xsd:annotation>
-          <xsd:documentation>Indiana&#13;
+          <xsd:documentation>Indiana
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="AR">
         <xsd:annotation>
-          <xsd:documentation>Arkansas&#13;
+          <xsd:documentation>Arkansas
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="WI">
         <xsd:annotation>
-          <xsd:documentation>Wisconsin&#13;
+          <xsd:documentation>Wisconsin
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2825,13 +2886,13 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="QC">
         <xsd:annotation>
-          <xsd:documentation>Quebec			&#13;
+          <xsd:documentation>Quebec			
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="VT">
         <xsd:annotation>
-          <xsd:documentation>Vermont&#13;
+          <xsd:documentation>Vermont
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2852,13 +2913,13 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="MT">
         <xsd:annotation>
-          <xsd:documentation>Montana&#13;
+          <xsd:documentation>Montana
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ID">
         <xsd:annotation>
-          <xsd:documentation>Idaho&#13;
+          <xsd:documentation>Idaho
 </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
