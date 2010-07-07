@@ -24,27 +24,110 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  BodyType  <<choice>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="BodyType">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Transactions</xsd:documentation>
+    </xsd:annotation>
     <xsd:choice>
-      <xsd:element name="Status" type="transport:Status"/>
-      <xsd:element name="Error" type="transport:Error"/>
-      <xsd:element name="Verify" type="transport:Verify"/>
-      <xsd:element name="GetMessage" type="transport:GetMessage"/>
-      <xsd:element name="PasswordChange" type="transport:PasswordChange"/>
-      <xsd:element name="CancelRx" type="SCRIPT:CancelRx"/>
-      <xsd:element name="CancelRxResponse" type="SCRIPT:CancelRxResponse"/>
-      <xsd:element name="Census" type="specialized:Census"/>
-      <xsd:element name="DrugAdminstration" type="SCRIPT:DrugAdminstration"/>
-      <xsd:element name="NewRx" type="SCRIPT:NewRx"/>
-      <xsd:element name="MTMServiceRequest" type="specialized:MTMServiceRequest"/>
-      <xsd:element name="MTMServiceResponse" type="specialized:MTMServiceResponse"/>
-      <xsd:element name="RefillRequest" type="SCRIPT:RefillRequest"/>
-      <xsd:element name="RefillResponse" type="SCRIPT:RefillResponse"/>
-      <xsd:element name="Resupply" type="SCRIPT:Resupply"/>
-      <xsd:element name="RxChangeRequest" type="SCRIPT:RxChangeRequest"/>
-      <xsd:element name="RxChangeResponse" type="SCRIPT:RxChangeResponse"/>
-      <xsd:element name="RxFill" type="SCRIPT:RxFill"/>
-      <xsd:element name="RxHistoryRequest" type="SCRIPT:RxHistoryRequest"/>
-      <xsd:element name="RxHistoryResponse" type="SCRIPT:RxHistoryResponse"/>
+      <xsd:element name="Status" type="transport:Status">
+        <xsd:annotation>
+          <xsd:documentation>This response is used to relay acceptance of a transaction back to the sender. A Status in response indicates acceptance and responsibility. A Status in response to a GetMessage indicates that no mail is waiting for pickup. A Status cannot be mailboxed and may not contain an error.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Error" type="transport:Error">
+        <xsd:annotation>
+          <xsd:documentation>This transaction response indicates an error has occurred indicating the request was terminated. An Error can be generated when there is a communication problem or when the transaction actually had an error.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Verify" type="transport:Verify">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is generated when the request transaction asks for return receipt.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="GetMessage" type="transport:GetMessage">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is used by the pharmacy or prescriber system to request mail from the Mailbox. It is used repeatedly until the response no more mail is returned from the Mailbox.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="PasswordChange" type="transport:PasswordChange">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is used to establish and initial password between systems, or to change an existing password to a new password.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="CancelRx" type="SCRIPT:CancelRx">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is used to notify the pharmacy that a previously sent prescription should be canceled and not filled.  </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="CancelRxResponse" type="SCRIPT:CancelRxResponse">
+        <xsd:annotation>
+          <xsd:documentation>This transaction sends to the prescriber system the results of a prescription cancellation request. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Census" type="specialized:Census">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is sent from the resident source system to parties that need to be aware of these census changes.    </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="DrugAdminstration" type="SCRIPT:DrugAdminstration">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is used by prescribers/care facilities to communicate drug administration events to the patient’s pharmacy or other entity</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="NewRx" type="SCRIPT:NewRx">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is a request for a new prescription and is sent from the prescriber to the pharmacy.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="MTMServiceRequest" type="specialized:MTMServiceRequest">
+        <xsd:annotation>
+          <xsd:documentation>This message is sent by the Payer to the Pharmacy or the Prescriber. The Payer is requesting the Pharmacy or Prescriber accept the patient and perform the service.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="MTMServiceResponse" type="specialized:MTMServiceResponse">
+        <xsd:annotation>
+          <xsd:documentation>This message is sent by the Pharmacy or Prescriber to the Payer. It is the response to an MTMServiceRequest. The Pharmacy or Prescriber either accepts the patient and service, or rejects the patient and service.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="RefillRequest" type="SCRIPT:RefillRequest">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is used by a pharmacy to request a refill of a prescriber (Refill Request). </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="RefillResponse" type="SCRIPT:RefillResponse">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is sent from the prescriber to the pharmacy and indicates whether the refill request has been accepted or denied.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Resupply" type="SCRIPT:Resupply">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is used to send a refill request from a facility to a pharmacy.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="RxChangeRequest" type="SCRIPT:RxChangeRequest">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a "fillable" prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="RxChangeResponse" type="SCRIPT:RxChangeResponse">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a "fillable" prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="RxFill" type="SCRIPT:RxFill">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is sent from the pharmacy to the prescriber to notify the prescriber of the dispensing status of a prescription.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="RxHistoryRequest" type="SCRIPT:RxHistoryRequest">
+        <xsd:annotation>
+          <xsd:documentation>This transaction is sent from an entity to an entity to request the medication history of a patient.  </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="RxHistoryResponse" type="SCRIPT:RxHistoryResponse">
+        <xsd:annotation>
+          <xsd:documentation>This response is sent from an entity to an entity to describe the patient’s medication history.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -57,14 +140,14 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:sequence>
       <xsd:element name="Code" type="ecl:TransactionErrorCode">
         <xsd:annotation>
-          <xsd:documentation>Codes used to relay successful or rejected communications. &#13;
-&#13;
+          <xsd:documentation>Codes used to relay successful or rejected communications. 
+
 Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:DescriptionCode">
         <xsd:annotation>
-          <xsd:documentation>Reject codes used by responder who takes responsibility for transaction.  &#13;
+          <xsd:documentation>Reject codes used by responder who takes responsibility for transaction.  
 Is not required in a Verify transaction. If used, Code must be 010 and DescriptionCode may not be used. Note field may be used.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -96,6 +179,9 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
           <xsd:simpleContent>
             <xsd:extension base="datatypes:MailAddressType">
               <xsd:attribute name="Qualifier">
+                <xsd:annotation>
+                  <xsd:documentation>Qualifier for the type of identifier for receiver.</xsd:documentation>
+                </xsd:annotation>
                 <xsd:simpleType>
                   <xsd:restriction base="xsd:string">
                     <xsd:pattern value="P|C|M|D|ZZZ"/>
@@ -107,6 +193,9 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
         </xsd:complexType>
       </xsd:element>
       <xsd:element name="From">
+        <xsd:annotation>
+          <xsd:documentation>This field contains the identification number of the sender. </xsd:documentation>
+        </xsd:annotation>
         <xsd:complexType>
           <xsd:simpleContent>
             <xsd:extension base="datatypes:MailAddressType">
@@ -149,10 +238,29 @@ Note: For Status, Error, Verify transactions – contains software identificatio
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="Mailbox" type="transport:MailboxType"/>
-      <xsd:element minOccurs="0" name="TestMessage" type="datatypes:n1"/>
-      <xsd:element minOccurs="0" name="RxReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="TertiaryIdentifier" type="datatypes:an..3"/>
-      <xsd:element minOccurs="0" name="PrescriberOrderNumber" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="TestMessage" type="datatypes:n1">
+        <xsd:annotation>
+          <xsd:documentation>Indicates whether the transaction is test or live. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="RxReferenceNumber" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>This is the prescription number assigned by the pharmacy system.&lt;</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="TertiaryIdentifier" type="datatypes:an..3">
+        <xsd:annotation>
+          <xsd:documentation>This reference field may be used as a tertiary identifier, based on trading partner agreements or need of the originating system.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="PrescriberOrderNumber" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>This is the reference number assigned by the prescribing system. 
+Note: Some vendors carry through life of prescription; others change per prescription order.
+
+In any transaction that a reference number assigned by the prescribing system is not applicable, this field is not used.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -160,10 +268,26 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="MailboxType">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="MailboxID" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="DeliveredID" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="AdditionalTraceNumber" type="datatypes:an..3"/>
-      <xsd:element minOccurs="0" name="AcknowledgementID" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="MailboxID" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>Trading Partner Defined </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DeliveredID" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>Initiator reference identifier	This field may be used as a trace number between trading partners.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="AdditionalTraceNumber" type="datatypes:an..3">
+        <xsd:annotation>
+          <xsd:documentation>This field may be used as a trace number between trading partners.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="AcknowledgementID" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>Responder control reference	 This field may be used as a trace number between trading partners.	For Resupply – In the LTC environment this is the prescription number assigned by the facility.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -213,8 +337,16 @@ Note: For Status, Error, Verify transactions – contains software identificatio
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="SecurityIdentificationType">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="SecondaryIdentification" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="TertiaryIdentification" type="datatypes:an..35"/>
+      <xsd:element minOccurs="0" name="SecondaryIdentification" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>For Sender - Password. This field is used for the sender's password to the recipient's system. It is recommended that passwords be used for security checking and to validate identification. For receiver - May be used as a secondary identification of the recipient. Or May be used to identify the switch.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="TertiaryIdentification" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>May be used as a tertiary identification of the recipient.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -242,7 +374,12 @@ Note: For Status, Error, Verify transactions – contains software identificatio
           <xsd:documentation>The text field that identifies the software developer’s product, as determined by the software developer.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="SenderSoftwareVersionRelease" type="datatypes:an..50M"/>
+      <xsd:element name="SenderSoftwareVersionRelease" type="datatypes:an..50M">
+        <xsd:annotation>
+          <xsd:documentation>The text field that identifies the version and release of the software product, as determined by the software developer.
+This is not to be used to block transactions.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -255,12 +392,12 @@ Note: For Status, Error, Verify transactions – contains software identificatio
     <xsd:sequence>
       <xsd:element name="Code">
         <xsd:annotation>
-          <xsd:documentation>Codes used to relay successful or rejected communications. &#13;
-&#13;
-Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. &#13;
-Description may be used.                                                                                                   &#13;
-&#13;
-Value 010 (Successful – accepted by ultimate receiver) is to let the sender know that the message has been received by organization guaranteeing delivery. This value may only be used in a direct connect. It is not to be used in a mailbox environment.&#13;
+          <xsd:documentation>Codes used to relay successful or rejected communications. 
+
+Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. 
+Description may be used.                                                                                                   
+
+Value 010 (Successful – accepted by ultimate receiver) is to let the sender know that the message has been received by organization guaranteeing delivery. This value may only be used in a direct connect. It is not to be used in a mailbox environment.
 					</xsd:documentation>
         </xsd:annotation>
         <xsd:simpleType>
@@ -271,7 +408,7 @@ Value 010 (Successful – accepted by ultimate receiver) is to let the sender kn
       </xsd:element>
       <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:DescriptionCode">
         <xsd:annotation>
-          <xsd:documentation>Reject codes used by responder who takes responsibility for transaction.  &#13;
+          <xsd:documentation>Reject codes used by responder who takes responsibility for transaction.  
 Is not required in a Verify transaction. If used, Code must be 010 and DescriptionCode may not be used. Note field may be used.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -293,10 +430,26 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="UsernameTokenType">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="Username" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="Password" type="datatypes:PasswordType"/>
-      <xsd:element minOccurs="0" name="Nonce" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="Created" type="datatypes:UtcDateType"/>
+      <xsd:element minOccurs="0" name="Username" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>SOAP</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Password" type="datatypes:PasswordType">
+        <xsd:annotation>
+          <xsd:documentation>SOAP</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Nonce" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>SOAP</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Created" type="datatypes:UtcDateType">
+        <xsd:annotation>
+          <xsd:documentation>SOAP</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -309,9 +462,9 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
     <xsd:sequence>
       <xsd:element minOccurs="0" name="VerifyStatus">
         <xsd:annotation>
-          <xsd:documentation>Codes used to relay successful or rejected communications. &#13;
-&#13;
-Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.&lt;/xs:documentation&gt;&#13;
+          <xsd:documentation>Codes used to relay successful or rejected communications. 
+
+Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.&lt;/xs:documentation&gt;
 								</xsd:documentation>
         </xsd:annotation>
         <xsd:complexType>
@@ -326,12 +479,12 @@ Is not required in a Verify transaction. If used, must be 010 and DescriptionCod
             <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
             <xsd:element minOccurs="0" name="PrescriptionDeliveryMethod">
               <xsd:annotation>
-                <xsd:documentation>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.&#13;
-&#13;
-Note: &#13;
-If Code 000 is sent, PrescriptionDeliveryMethod is not sent.&#13;
-If Code 010 is sent, PrescriptionDeliveryMethod may be included.&#13;
-When sending a NewRx to mailbox, the Code is 000 (no delivery). When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 010 will include the delivery method. If NewRx does not have ReturnReceipt set, a 010 will NOT be returned.&lt;/xs:documentation&gt;&#13;
+                <xsd:documentation>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.
+
+Note: 
+If Code 000 is sent, PrescriptionDeliveryMethod is not sent.
+If Code 010 is sent, PrescriptionDeliveryMethod may be included.
+When sending a NewRx to mailbox, the Code is 000 (no delivery). When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 010 will include the delivery method. If NewRx does not have ReturnReceipt set, a 010 will NOT be returned.&lt;/xs:documentation&gt;
 								</xsd:documentation>
               </xsd:annotation>
               <xsd:simpleType>
