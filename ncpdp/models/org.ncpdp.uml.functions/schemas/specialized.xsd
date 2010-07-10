@@ -8,16 +8,10 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/specialized" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:specialized="http://www.ncpdp.org/schema/specialized" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/specialized" version="201008" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:specialized="http://www.ncpdp.org/schema/specialized" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/structures" schemaLocation="structures.xsd"/>
-  <!-- ================================================== -->
-  <!-- =====  Element Declarations  -->
-  <!-- ================================================== -->
-  <xsd:element name="CensusMessage" type="specialized:Census"/>
-  <xsd:element name="MTMServiceRequest" type="specialized:MTMServiceRequest"/>
-  <xsd:element name="MTMServiceResponse" type="specialized:MTMServiceResponse"/>
   <!-- ================================================== -->
   <!-- =====  Complex Type Definitions  -->
   <!-- ================================================== -->
@@ -26,8 +20,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ApprovedType">
     <xsd:sequence>
-      <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ReasonCode"/>
-      <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
+      <xsd:element maxOccurs="10" minOccurs="0" name="ReasonCode" type="ecl:ReasonCode">
+        <xsd:annotation>
+          <xsd:documentation>Approved may contain a ReasonCode.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>Transaction Key. Used in conjunction with same field described above in the RequestReferenceNumber. The Mailbox may return the positional key of the specific piece of mail within their files.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -36,8 +38,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ApprovedWithChangesType">
     <xsd:sequence>
-      <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ReasonCode"/>
-      <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
+      <xsd:element maxOccurs="10" minOccurs="0" name="ReasonCode" type="ecl:ReasonCode">
+        <xsd:annotation>
+          <xsd:documentation>ApprovedWithChanges may be accompanied by a ReasonCode.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>Transaction Key. Used in conjunction with same field described above in the RequestReferenceNumber. The Mailbox may return the positional key of the specific piece of mail within their files.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -158,8 +168,16 @@ Designates type and description of census message – Admit, Discharge, Change. 
   <xsd:complexType name="DeniedType">
     <xsd:sequence>
       <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ReasonCode"/>
-      <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="DenialReason" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35">
+        <xsd:annotation>
+          <xsd:documentation>Transaction Key. Used in conjunction with same field described above in the RequestReferenceNumber. The Mailbox may return the positional key of the specific piece of mail within their files.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DenialReason" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>A DenialReason or DeniedNewRxToFollow response must be accompanied by the ReasonCode or DenialReason explanation, or both.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -377,22 +395,34 @@ Designates type and description of census message – Admit, Discharge, Change. 
       <xsd:documentation>Used in MTMServiceRequest, MTMServiceResponse</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="MTMPayerCaseIdentifier" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="MTMPayerCaseIdentifier" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subserviant to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:choice>
         <xsd:element name="TypeofServiceFreeText" type="xsd:string">
           <xsd:annotation>
-            <xsd:documentation>Use this if you can’t use the three TypeOfService fields which are part of a codification.</xsd:documentation>
+            <xsd:documentation>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text.</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
-        <xsd:element minOccurs="0" name="TypeofService" type="datatypes:QualifiedCodeWithText"/>
+        <xsd:element name="TypeofService" type="datatypes:QualifiedCodeWithText">
+          <xsd:annotation>
+            <xsd:documentation>Note: The codification for MTM services is underway. At this point, to exchange the Service, the industry will exchange free text (TypeOfServiceFreeText) until services are codified. TypeOfServiceFreeText may be used or (TypeOfServiceCodeQualifier, TypeOfServiceCode and TypeOfServiceCodeText) – but not both. Once codified, TypeOfServiceCodeText, TypeOfServiceCode, TypeOfServiceCodeQualifier will be used and TypeOfServiceFreeText will be sunsetted.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
       </xsd:choice>
-      <xsd:choice>
+      <xsd:choice minOccurs="0">
         <xsd:element name="TargetedTypeofServiceFreeText" type="xsd:string">
           <xsd:annotation>
-            <xsd:documentation>Use this if you can’t use the three TargetedTypeOfService fields which are part of a codification.</xsd:documentation>
+            <xsd:documentation>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
-        <xsd:element minOccurs="0" name="TargetedTypeofService" type="datatypes:QualifiedCodeWithText"/>
+        <xsd:element name="TargetedTypeofService" type="datatypes:QualifiedCodeWithText">
+          <xsd:annotation>
+            <xsd:documentation>Note: The TargetedTypeOfServiceCodeQualifier contains code lists from which a codified TargetedTypeOfServiceCode and TargetedTypeOfServiceCodeText are to be populated. However, if a code does not exist for the target, free text may be used in the TargetedTypeOfServiceFreeText. TargetedTypeOfServiceFreeText may be used or (TargetedTypeOfServiceCodeQualifier, TargetedTypeOfServiceCode and TargetedTypeOfServiceCodeText) – but not both.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
       </xsd:choice>
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>

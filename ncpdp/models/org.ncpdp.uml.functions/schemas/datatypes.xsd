@@ -8,7 +8,7 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/datatypes" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/datatypes" version="201008" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <!-- ================================================== -->
   <!-- =====  Simple Type Definitions  -->
@@ -705,7 +705,11 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</xsd:documentation>
             <xsd:documentation>Drug Composition Structure</xsd:documentation>
           </xsd:annotation>
           <xsd:sequence>
-            <xsd:element name="CompoundIngredientItemDescription" type="datatypes:an..105M"/>
+            <xsd:element name="CompoundIngredientItemDescription" type="datatypes:an..105M">
+              <xsd:annotation>
+                <xsd:documentation>CompoundIngredientItemDescription is the self-contained full drug name, strength, and form of the ingredient.</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element minOccurs="0" name="ItemNumber" type="datatypes:ProductCode"/>
             <xsd:element minOccurs="0" name="Strength" type="datatypes:Strength"/>
             <xsd:element minOccurs="0" name="DEASchedule" type="datatypes:NCICode">
@@ -784,7 +788,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="DrugDBCode">
     <xsd:annotation>
-      <xsd:documentation>Coded Drug Structure used in Medication</xsd:documentation>
+      <xsd:documentation>Coded Drug Structure used in Medication from alternative source databases</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="datatypes:QualifiedCode">
@@ -804,7 +808,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="Code" type="ecl:Code"/>
-      <xsd:element minOccurs="0" name="Qualifier" type="ecl:ProductQualifiersCode"/>
+      <xsd:element minOccurs="0" name="Qualifier" type="ecl:ProductQualifiersCodeExtended"/>
       <xsd:element name="Text" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -867,7 +871,22 @@ If SourceQualifier value is “PC” (Prescriber), this field is not sent. The P
 If SourceQualifier value is “PY” (Payer), if sent, this field must contain the pharmacy’s prescription number from the payer system from claims processing.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="FillNumber" type="datatypes:n..2"/>
+      <xsd:element minOccurs="0" name="FillNumber" type="datatypes:n..2">
+        <xsd:annotation>
+          <xsd:documentation>Defines &#13;
+the dispensing episode as an initial fill or an authorized refill.&#13;
+If SourceQualifier value is “P2” (Pharmacy), if sent, this field must contain &#13;
+the fill number from the pharmacy. &#13;
+If SourceQualifier value is “PC” (Prescriber), this field is not sent.&#13;
+If SourceQualifier value is “PY” (Payer), if sent, this field must contain the &#13;
+pharmacy’s fill number from the payer system from claims processing.&#13;
+	Values:&#13;
+	00 = initial fill&#13;
+	01 = first refill&#13;
+	02 = second refill, etc&#13;
+	Allowed values 00 thru 99</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -915,10 +934,8 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <xsd:complexType name="NCICode">
     <xsd:annotation>
       <xsd:documentation>NCPCP Constrained Code to value sets defined by NCI
-
-See External Code List Introduction for information on NCI Thesaurus Code Lists.
-
-http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation>
+          See External Code List Introduction for information on NCI Thesaurus Code Lists.
+          http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Code" type="ecl:Code"/>
@@ -1109,6 +1126,23 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
     </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  QualifiedAddress  <<complexType>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="QualifiedAddress">
+    <xsd:annotation>
+      <xsd:documentation>Qualifier for the type of identifier for receiver.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleContent>
+      <xsd:extension base="datatypes:MailAddressType">
+        <xsd:attribute name="Qualifier" type="ecl:AddressTypeQualifier">
+          <xsd:annotation>
+            <xsd:documentation>Qualifier for the type of identifier for receiver.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  QualifiedCode  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="QualifiedCode">
@@ -1198,7 +1232,11 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       <xsd:documentation>Qualifies the Source Description.  Similar in structure to a qualified code but instead of a code we have reference which is a id</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="Reference" type="datatypes:IDType"/>
+      <xsd:element minOccurs="0" name="Reference" type="datatypes:IDType">
+        <xsd:annotation>
+          <xsd:documentation>The identification for the prescriber, pharmacy, payer, et cetera, which is the medication source. If Qualifier is sent, Value must be sent and vice versa.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="SourceDescription" type="datatypes:an..35"/>
       <xsd:element name="SourceQualifier" type="ecl:SourceQualifierCode"/>
     </xsd:sequence>
