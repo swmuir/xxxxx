@@ -41,17 +41,17 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
         </ownedAttribute>
         <ownedAttribute xmi:id="_4gNr3zD1Ed-8rpqfOAePKg" name="FillNumber" type="_4I0fdTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4gNr4DD1Ed-8rpqfOAePKg" annotatedElement="_4gNr3zD1Ed-8rpqfOAePKg">
-            <body>Defines &#xD;
-the dispensing episode as an initial fill or an authorized refill.&#xD;
-If SourceQualifier value is “P2” (Pharmacy), if sent, this field must contain &#xD;
-the fill number from the pharmacy. &#xD;
-If SourceQualifier value is “PC” (Prescriber), this field is not sent.&#xD;
-If SourceQualifier value is “PY” (Payer), if sent, this field must contain the &#xD;
-pharmacy’s fill number from the payer system from claims processing.&#xD;
-	Values:&#xD;
-	00 = initial fill&#xD;
-	01 = first refill&#xD;
-	02 = second refill, etc&#xD;
+            <body>Defines 
+the dispensing episode as an initial fill or an authorized refill.
+If SourceQualifier value is “P2” (Pharmacy), if sent, this field must contain 
+the fill number from the pharmacy. 
+If SourceQualifier value is “PC” (Prescriber), this field is not sent.
+If SourceQualifier value is “PY” (Payer), if sent, this field must contain the 
+pharmacy’s fill number from the payer system from claims processing.
+	Values:
+	00 = initial fill
+	01 = first refill
+	02 = second refill, etc
 	Allowed values 00 thru 99</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4gXcwTD1Ed-8rpqfOAePKg" value="1"/>
@@ -9671,9 +9671,9 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
         </ownedComment>
         <ownedAttribute xmi:id="_4as5oTD1Ed-8rpqfOAePKg" name="VerifyStatus" type="_4as5pDD1Ed-8rpqfOAePKg" aggregation="composite" association="_4as5vzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4as5ojD1Ed-8rpqfOAePKg" annotatedElement="_4as5oTD1Ed-8rpqfOAePKg">
-            <body>Codes used to relay successful or rejected communications. &#xD;
-&#xD;
-Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.&#xD;
+            <body>Codes used to relay successful or rejected communications. 
+
+Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.
 								</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4as5vTD1Ed-8rpqfOAePKg" value="1"/>
@@ -9693,8 +9693,8 @@ Is not required in a Verify transaction. If used, must be 010 and DescriptionCod
           </ownedAttribute>
           <ownedAttribute xmi:id="_4as5szD1Ed-8rpqfOAePKg" name="PrescriptionDeliveryMethod">
             <ownedComment xmi:id="_4as5tDD1Ed-8rpqfOAePKg" annotatedElement="_4as5szD1Ed-8rpqfOAePKg">
-              <body>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.&#xD;
-&#xD;
+              <body>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.
+
 When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 010 will include the delivery method.								</body>
             </ownedComment>
             <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h25cFCxAEd-8mcmtGejV_Q?ecl/ecl/PrescriptionDeliveryMethod?"/>
@@ -9703,7 +9703,7 @@ When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 01
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:DataType" xmi:id="_4as5qDD1Ed-8rpqfOAePKg" name="anonymous_54" visibility="private">
             <ownedComment xmi:id="_ccmbwItlEd-urZQZ08VCKQ" annotatedElement="_4as5qDD1Ed-8rpqfOAePKg">
-              <body>Issue setting a default value with leading 0 as in &quot;010&quot;; RSM triming leading 0 to &quot;10&quot; which is not the same&#xD;
+              <body>Issue setting a default value with leading 0 as in 010 RSM triming leading 0 to 10 which is not the same
 Keeping anonymous type </body>
             </ownedComment>
             <generalization xmi:id="_4as5rDD1Ed-8rpqfOAePKg">
@@ -10033,14 +10033,14 @@ In any transaction that a reference number assigned by the prescribing system is
         </ownedAttribute>
         <ownedAttribute xmi:id="_zXpuIWRIEd-M5IWg2-DxLQ" name="RxChangeRequest" visibility="public" type="_TeiOAGQoEd-ODMSOo4sPFQ" aggregation="composite" association="_zXpuIGRIEd-M5IWg2-DxLQ">
           <ownedComment xmi:id="_kZm-4IlSEd-pZLs28ekBmw" annotatedElement="_zXpuIWRIEd-M5IWg2-DxLQ">
-            <body>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a &quot;fillable&quot; prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</body>
+            <body>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a fillable prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zXpuI2RIEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zXpuImRIEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_0MaL4WRIEd-M5IWg2-DxLQ" name="RxChangeResponse" visibility="public" type="_kz6UsGREEd-ODMSOo4sPFQ" aggregation="composite" association="_0MaL4GRIEd-M5IWg2-DxLQ">
           <ownedComment xmi:id="_mKaOIIlSEd-pZLs28ekBmw" annotatedElement="_0MaL4WRIEd-M5IWg2-DxLQ">
-            <body>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a &quot;fillable&quot; prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</body>
+            <body>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a fillable prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0MaL42RIEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0MaL4mRIEd-M5IWg2-DxLQ" value="1"/>
@@ -11294,7 +11294,7 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <details xmi:id="_VUY-QWWaEd-bmP0HuKmipA" key="Request"/>
         </eAnnotations>
         <ownedComment xmi:id="_HJ4KkIksEd-pZLs28ekBmw" annotatedElement="_TeiOAGQoEd-ODMSOo4sPFQ">
-          <body>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a &quot;fillable&quot; prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</body>
+          <body>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a fillable prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</body>
         </ownedComment>
         <generalization xmi:id="_TeiOAWQoEd-ODMSOo4sPFQ" general="_oustEGHEEd-Xe4OIcNINMg"/>
         <ownedAttribute xmi:id="_TeiOAmQoEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
@@ -12213,7 +12213,7 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <details xmi:id="_ye4ltWWeEd-bmP0HuKmipA" key="Response"/>
         </eAnnotations>
         <ownedComment xmi:id="_I1dioIksEd-pZLs28ekBmw" annotatedElement="_kz6UsGREEd-ODMSOo4sPFQ">
-          <body>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a &quot;fillable&quot; prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</body>
+          <body>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a fillable prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</body>
         </ownedComment>
         <generalization xmi:id="_kz6UsWREEd-ODMSOo4sPFQ" general="_KIEXUGNLEd-ODMSOo4sPFQ"/>
         <ownedAttribute xmi:id="_yJEGA2RGEd-M5IWg2-DxLQ" name="MessageRequestCode" visibility="public">
@@ -14114,8 +14114,17 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
       <packagedElement xmi:type="uml:Class" xmi:id="_Bv0UUIqaEd-pZLs28ekBmw" name="_Structures">
         <ownedAttribute xmi:id="_Bv0UUYqaEd-pZLs28ekBmw" name="PrescribedMedication" type="_MXJAoDD7Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_V59SYIqaEd-pZLs28ekBmw" name="Pharmacy" type="_4TZX1DD1Ed-8rpqfOAePKg"/>
-        <ownedAttribute xmi:id="_DQyE4IqnEd-pZLs28ekBmw" name="SIG" type="_4KnPUTD1Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_P3rT8IqnEd-pZLs28ekBmw" name="SIGROUTE" type="_4KdeOjD1Ed-8rpqfOAePKg"/>
+        <ownedAttribute xmi:id="_rnl8AIwlEd-UL9BapgczgQ" name="SIGSample" type="_PM2SUIwoEd-UL9BapgczgQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rnl8AYwlEd-UL9BapgczgQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rnl8AowlEd-UL9BapgczgQ"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PM2SUIwoEd-UL9BapgczgQ" name="SIG">
+        <ownedAttribute xmi:id="_ShMX8IwoEd-UL9BapgczgQ" name="StructuredSIG" type="_4KnPUTD1Ed-8rpqfOAePKg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ShMX8YwoEd-UL9BapgczgQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ShMX8owoEd-UL9BapgczgQ"/>
+        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_3yBJADD1Ed-8rpqfOAePKg">
@@ -15690,7 +15699,6 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <xsd:GlobalElement xmi:id="_Bv0UXoqaEd-pZLs28ekBmw" base_Property="_Bv0UUYqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_V59SYYqaEd-pZLs28ekBmw" base_Property="_V59SYIqaEd-pZLs28ekBmw"/>
   <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="201008" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
-  <xsd:GlobalElement xmi:id="_DQyE4YqnEd-pZLs28ekBmw" base_Property="_DQyE4IqnEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_P3rT8YqnEd-pZLs28ekBmw" base_Property="_P3rT8IqnEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0uuYkYrFEd-urZQZ08VCKQ" base_Comment="_0uuYkIrFEd-urZQZ08VCKQ"/>
   <Default:Documentation xmi:id="_7k0GoIrFEd-urZQZ08VCKQ" base_Comment="_7kqVoIrFEd-urZQZ08VCKQ"/>
@@ -15703,4 +15711,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <xsd:Attribute xmi:id="_1xyR1IumEd-jMZ0z1K165w" base_Property="_1xyR0IumEd-jMZ0z1K165w"/>
   <Default:Documentation xmi:id="_1xyR1YumEd-jMZ0z1K165w" base_Comment="_1xyR0YumEd-jMZ0z1K165w"/>
   <xsd:ComplexType xmi:id="_72HLwIumEd-jMZ0z1K165w" base_DataType="_v7xgsIumEd-jMZ0z1K165w"/>
+  <xsd:GlobalElement xmi:id="_rnvF8IwlEd-UL9BapgczgQ" base_Property="_rnl8AIwlEd-UL9BapgczgQ"/>
+  <xsd:ComplexType xmi:id="_w61P5IwoEd-UL9BapgczgQ" base_Class="_PM2SUIwoEd-UL9BapgczgQ"/>
+  <XSDGeneration:ComplexTypeGen xmi:id="_o_LygIwpEd-UL9BapgczgQ" base_Class="_PM2SUIwoEd-UL9BapgczgQ"/>
 </xmi:XMI>
