@@ -577,6 +577,7 @@
         <ownedComment xmi:id="_95QxATa8Ed-wQf5UFCJMDw" annotatedElement="_95QxADa8Ed-wQf5UFCJMDw">
           <body>Code identifying the patient’s place of residence.</body>
         </ownedComment>
+        <generalization xmi:id="_0HLc4It0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_95QxAja8Ed-wQf5UFCJMDw" name="1" classifier="_95QxADa8Ed-wQf5UFCJMDw">
           <ownedComment xmi:id="_-zaWgIYYEd-Vw-EcYlO-zw" annotatedElement="_95QxAja8Ed-wQf5UFCJMDw">
             <body>Home= Location, other than a hospital or other facility, where the patient receives drugs or services in a private residence.</body>
@@ -755,20 +756,20 @@
         </ownedLiteral>
         <ownedLiteral xmi:id="_t_nHECxQEd-8mcmtGejV_Q" name="LD" classifier="_idVxASxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_yUeOgCxQEd-8mcmtGejV_Q" annotatedElement="_t_nHECxQEd-8mcmtGejV_Q">
-            <body>&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 0pt; mso-layout-grid-align: none&quot;>&lt;SPAN style=&quot;FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial&quot;>SNOMED - &lt;U>S&lt;/U>ystematized Nomenclature of Medicine Clinical Terms&lt;SPAN style=&quot;POSITION: relative; TOP: -3pt; mso-text-raise: 3.0pt; mso-bidi-font-weight: bold&quot;>®&lt;/SPAN>&lt;SPAN style=&quot;mso-spacerun: yes&quot;> &lt;/SPAN>(SNOMED CT)&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; />&lt;o:p>&lt;/o:p>&lt;/SPAN>&lt;/P>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>SNOMED CT® terminology which is available from the &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>Health Terminology Standards Development Organisation (IHTSDO)&lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;> &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>&lt;A href=&quot;http://www.ihtsdo.org/snomed-ct/&quot;>&lt;U>&lt;FONT color=#0000ff>http://www.ihtsdo.org/snomed-ct/&lt;/FONT>&lt;/U>&lt;/A>&lt;/SPAN></body>
+            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms(SNOMED CT)SNOMED CT terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_bBE48DEQEd-8rpqfOAePKg" name="DX" classifier="_idVxASxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_bBE48TEQEd-8rpqfOAePKg" annotatedElement="_bBE48DEQEd-8rpqfOAePKg">
-            <body>&lt;span style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria.
-    Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;span style=&quot;mso-spacerun: yes&quot;> &lt;/span>&lt;/span></body>
+            <body>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria.
+    Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_bmodEDEQEd-8rpqfOAePKg" name="ABF" classifier="_idVxASxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_bmodETEQEd-8rpqfOAePKg" annotatedElement="_bmodEDEQEd-8rpqfOAePKg">
-            <body>&lt;span style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification
-    (ICD-9-CM)&lt;/span>&lt;span style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>is a statistical classification system that arranges diseases and injuries into groups according to established criteria.
-    The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.&lt;b>&lt;span style=&quot;mso-spacerun: yes&quot;> &lt;/span>&lt;/b>&lt;/span></body>
+            <body>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification
+    (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria.
+    The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -819,8 +820,8 @@
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_oCxxR2dhEd-EzKeHnOFaKw" name="T" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
-          <ownedComment xmi:id="_oCxxSGdhEd-EzKeHnOFaKw">
-            <body>Insignificant Change (All other changes)</body>
+          <ownedComment xmi:id="_oCxxSGdhEd-EzKeHnOFaKw" annotatedElement="_oCxxR2dhEd-EzKeHnOFaKw">
+            <body>Therapeutic Interchange/Substitution - A modification of the product prescribed to a preferred product choice.</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -1198,6 +1199,7 @@
         <ownedComment xmi:id="_iw3J8ixAEd-8mcmtGejV_Q">
           <body>Medication list contains all current medication orders as of the current date and time of the response, for the patient indicated. Current status is determined by the point of care responder. 'Current' is medication orders which have not been discontinued.</body>
         </ownedComment>
+        <generalization xmi:id="_7SudkIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_ixA68SxAEd-8mcmtGejV_Q" name="C" classifier="_iw3J8SxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_ixA68ixAEd-8mcmtGejV_Q">
             <body>Current Medication Orders - The contents are limited to medication orders that are current (within their Start and Stop dates, or on-or-after the Start date if open-ended).</body>
@@ -1333,6 +1335,7 @@
         <ownedComment xmi:id="_h533lCxAEd-8mcmtGejV_Q">
           <body>Sender indicates where the sender received the allergy information if known.</body>
         </ownedComment>
+        <generalization xmi:id="_FDFkYIt1Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_h6BokixAEd-8mcmtGejV_Q" name="P" classifier="_h533kyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_h6BokyxAEd-8mcmtGejV_Q">
             <body>Indicates information is provided by the patient or patient representative or personal health record (PHR)</body>
@@ -1404,6 +1407,7 @@
         <ownedComment xmi:id="_gtSIoSxAEd-8mcmtGejV_Q">
           <body>Abbreviation of state in which member resides.</body>
         </ownedComment>
+        <generalization xmi:id="_Gn93gIt1Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_4Mmg4FOfEd-wEdo_Dk3J9g" name="WA" classifier="_gtSIoCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_EJRtIIYHEd-Vw-EcYlO-zw" annotatedElement="_4Mmg4FOfEd-wEdo_Dk3J9g">
             <body>Washington</body>
@@ -2210,6 +2214,7 @@
         <ownedComment xmi:id="_ixwh0SxAEd-8mcmtGejV_Q">
           <body>Defines the time zone used by the sender.</body>
         </ownedComment>
+        <generalization xmi:id="_MCkfAIt1Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_ixwh1CxAEd-8mcmtGejV_Q" name="UT" classifier="_ixwh0CxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_ixwh1SxAEd-8mcmtGejV_Q">
             <body>Universal Time Coordinate</body>
@@ -2575,6 +2580,7 @@
         <ownedComment xmi:id="_68pG5C1QEd-8mcmtGejV_Q">
           <body>Values for Communication Codes</body>
         </ownedComment>
+        <generalization xmi:id="_c58WsItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_68y34i1QEd-8mcmtGejV_Q" name="BN" classifier="_68pG4y1QEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_68y34y1QEd-8mcmtGejV_Q">
             <body>Beeper</body>
@@ -3630,6 +3636,7 @@
         <ownedComment xmi:id="_fj0mMSxAEd-8mcmtGejV_Q">
           <body>Code indicating relationship of patient to cardholder.</body>
         </ownedComment>
+        <generalization xmi:id="_YvZMYIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_fj0mNCxAEd-8mcmtGejV_Q" name="0" classifier="_fj0mMCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_fj0mNSxAEd-8mcmtGejV_Q">
             <body>Not Specified</body>
@@ -5925,10 +5932,11 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h25cFCxAEd-8mcmtGejV_Q" name="PrescriptionDeliveryMethod&#x9;" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h25cFCxAEd-8mcmtGejV_Q" name="PrescriptionDeliveryMethod">
         <ownedComment xmi:id="_h25cFSxAEd-8mcmtGejV_Q">
           <body>The method through which the original electronically created transaction was delivered to its intended recipient..</body>
         </ownedComment>
+        <generalization xmi:id="_c_fvoIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_h3DNESxAEd-8mcmtGejV_Q" name="1" classifier="_h25cFCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_h3DNEixAEd-8mcmtGejV_Q">
             <body>Electronic Delivery - Prescription is delivered to its intended recipient via EDI/electronic communication methods (e.g. computer to computer - not via any faxing mechanism).</body>
@@ -6264,6 +6272,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_h3MXAixAEd-8mcmtGejV_Q">
           <body>The status of the prescription’s prior authorization as known by the sender.</body>
         </ownedComment>
+        <generalization xmi:id="_iYJ2YIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_h3WIASxAEd-8mcmtGejV_Q" name="A" classifier="_h3MXASxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_h3WIAixAEd-8mcmtGejV_Q">
             <body>Approved - The medication was approved by the payer</body>
@@ -6291,8 +6300,8 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_gSUD4yxAEd-8mcmtGejV_Q" name="PriorAuthorizationTypeCode">
-        <ownedComment xmi:id="_gSUD5CxAEd-8mcmtGejV_Q">
-          <body>Code clarifying the 'Prior Authorization Number Submitted' (462-EV) or benefit/plan exemption.</body>
+        <ownedComment xmi:id="_gSUD5CxAEd-8mcmtGejV_Q" annotatedElement="_gSUD4yxAEd-8mcmtGejV_Q">
+          <body>Code clarifying the Prior Authorization Number Submitted or benefit/plan exemption.</body>
         </ownedComment>
         <generalization xmi:id="_rsIygGmvEd-pG95HwNNanw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_mvISYIX9Ed-Vw-EcYlO-zw" name="94" classifier="_gSUD4yxAEd-8mcmtGejV_Q">
@@ -8461,6 +8470,51 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>Multum MMDC</body>
           </ownedComment>
         </ownedLiteral>
+        <ownedLiteral xmi:id="_gyT-MIqpEd-pZLs28ekBmw" name="FI" classifier="_h4rkwCxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_vKwDYIqpEd-pZLs28ekBmw" annotatedElement="_gyT-MIqpEd-pZLs28ekBmw">
+            <body>First DataBank Medication ID (FDB MedID)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_g3OTYIqpEd-pZLs28ekBmw" name="FL" classifier="_h4rkwCxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_xdPDYIqpEd-pZLs28ekBmw" annotatedElement="_g3OTYIqpEd-pZLs28ekBmw">
+            <body>First DataBank Ingredient List ID (HICL_SEQ_NO)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_g7sjsIqpEd-pZLs28ekBmw" name="FM" classifier="_h4rkwCxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_0lDv8IqpEd-pZLs28ekBmw" annotatedElement="_g7sjsIqpEd-pZLs28ekBmw">
+            <body>First DataBank Medication ID (FDB MedID)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_hAK0AIqpEd-pZLs28ekBmw" name="FN" classifier="_h4rkwCxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_2wrS8IqpEd-pZLs28ekBmw" annotatedElement="_hAK0AIqpEd-pZLs28ekBmw">
+            <body>First DataBank Medication Name ID (FDB Med Name ID) </body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_E0QaEIq4Ed-urZQZ08VCKQ" name="FD" classifier="_h4rkwCxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_XYLBMIq4Ed-urZQZ08VCKQ" annotatedElement="_E0QaEIq4Ed-urZQZ08VCKQ">
+            <body>First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID) </body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_JRGjwH7OEd-qFLXIW1YLFA" name="GPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_b0h0wIX3Ed-Vw-EcYlO-zw" annotatedElement="_JRGjwH7OEd-qFLXIW1YLFA">
+            <body>RxNorm Generic Package (GPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the generic drug delivery device.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_I4EYsH7OEd-qFLXIW1YLFA" name="SCD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_fo6FUIX3Ed-Vw-EcYlO-zw" annotatedElement="_I4EYsH7OEd-qFLXIW1YLFA">
+            <body>RxNorm Semantic Clinical Drug (SCD) – A code maintained and distributed by National Library of Medicine (NLM) representing the ingredient plus form and dose strength.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_KPsS8H7OEd-qFLXIW1YLFA" name="BPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_aBV_4IX3Ed-Vw-EcYlO-zw" annotatedElement="_KPsS8H7OEd-qFLXIW1YLFA">
+            <body>RxNorm Branded Package (BPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the branded drug delivery device.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_JMCdkH7OEd-qFLXIW1YLFA" name="SBD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_d6MgwIX3Ed-Vw-EcYlO-zw" annotatedElement="_JMCdkH7OEd-qFLXIW1YLFA">
+            <body>RxNorm Semantic Branded Drug (SBD) – A Code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, form and dose strength plus the branded name. </body>
+          </ownedComment>
+        </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_iuUzUCxAEd-8mcmtGejV_Q" name="ReferenceQualifierX12DE128" visibility="private">
         <ownedComment xmi:id="_iuUzUSxAEd-8mcmtGejV_Q">
@@ -8794,6 +8848,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_hx-f0SxAEd-8mcmtGejV_Q">
           <body>Identifies code set of clinical physical findings.</body>
         </ownedComment>
+        <generalization xmi:id="_R-qfcIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_hx-f1CxAEd-8mcmtGejV_Q" name="1" classifier="_hx-f0CxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_hx-f1SxAEd-8mcmtGejV_Q">
             <body>X-12 Data Element Measurement Dimension, coded (DE 738)</body>
@@ -9004,6 +9059,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_ifuWoSxAEd-8mcmtGejV_Q">
           <body>Qualifies the Measurement value.</body>
         </ownedComment>
+        <generalization xmi:id="_TX7YcIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_ifuWpCxAEd-8mcmtGejV_Q" name="HT" classifier="_ifuWoCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_ifuWpSxAEd-8mcmtGejV_Q">
             <body>Height</body>
@@ -9781,6 +9837,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_g91GESxAEd-8mcmtGejV_Q">
           <body>Definition of Field</body>
         </ownedComment>
+        <generalization xmi:id="_4xnoMItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_g91GFCxAEd-8mcmtGejV_Q" name="1" classifier="_g91GECxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_g91GFSxAEd-8mcmtGejV_Q">
             <body>Prescriber/Prescriber Supplied - The diagnosis was given or supplied by the prescriber.</body>
@@ -9944,6 +10001,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <body>Code conveying the method by which the order was defined by the prescriber and captured in the prescribing system.	
 </body>
         </ownedComment>
+        <generalization xmi:id="_XJ7DYIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_3kijUDEZEd-8rpqfOAePKg" name="EP" classifier="_k3rbkDEZEd-8rpqfOAePKg">
           <ownedComment xmi:id="_xRKFsIYIEd-Vw-EcYlO-zw" annotatedElement="_3kijUDEZEd-8rpqfOAePKg">
             <body>Entered by prescriber - The prescribing practitioner entered the order directly into the electronic prescribing system. Includes entry from a remote location (e.g., via a web interface).</body>
@@ -10809,6 +10867,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_e_d79CxAEd-8mcmtGejV_Q" annotatedElement="_e_d78yxAEd-8mcmtGejV_Q">
           <body>Code identifying the gender of the individual.</body>
         </ownedComment>
+        <generalization xmi:id="_ET-REIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_x_4mUFOnEd-wEdo_Dk3J9g" name="M" classifier="_e9FWUyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_x_4mUVOnEd-wEdo_Dk3J9g" annotatedElement="_x_4mUFOnEd-wEdo_Dk3J9g">
             <body>Male</body>
@@ -11009,6 +11068,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_ifIgxCxAEd-8mcmtGejV_Q">
           <body>Indicates the insurance type.</body>
         </ownedComment>
+        <generalization xmi:id="_aZCqwIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_ifRqsixAEd-8mcmtGejV_Q" name="P" classifier="_ifIgwyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_ifRqsyxAEd-8mcmtGejV_Q">
             <body>Primary</body>
@@ -12188,6 +12248,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_icJeNSxAEd-8mcmtGejV_Q">
           <body>Quantity qualifier. X12 DE 673</body>
         </ownedComment>
+        <generalization xmi:id="_uzk1QIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_ic5FEixAEd-8mcmtGejV_Q" name="38" classifier="_icJeNCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_ic5FEyxAEd-8mcmtGejV_Q">
             <body>Original Quantity</body>
@@ -12218,6 +12279,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_hAD6sSxAEd-8mcmtGejV_Q">
           <body>Reject Codes used by responder who takes responsibility for transaction</body>
         </ownedComment>
+        <generalization xmi:id="_va4iUItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_hApwkyxAEd-8mcmtGejV_Q" name="008" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_hApwlCxAEd-8mcmtGejV_Q">
             <body>Request timed out before response could be received.</body>
@@ -12225,7 +12287,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_hL-20ixAEd-8mcmtGejV_Q" name="134" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_hL-20yxAEd-8mcmtGejV_Q" annotatedElement="_hL-20ixAEd-8mcmtGejV_Q">
-            <body>DRU dosage quantity qualifier is invalid.</body>
+            <body>Sending a Quantity Sufficient with Quantity of 0 is invalid for this pharmacy.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_hTInsCxAEd-8mcmtGejV_Q" name="210" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
@@ -12235,7 +12297,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_hT4OlCxAEd-8mcmtGejV_Q" name="220" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_hT4OlSxAEd-8mcmtGejV_Q" annotatedElement="_hT4OlCxAEd-8mcmtGejV_Q">
-            <body>Message is a duplicate</body>
+            <body>Transaction is a duplicate</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_BaQVkIYcEd-Vw-EcYlO-zw" name="500" classifier="_hAD6sCxAEd-8mcmtGejV_Q">
@@ -13431,7 +13493,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <generalization xmi:id="_zWlOwDEREd-8rpqfOAePKg" general="_idVxASxAEd-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_rq1rIDEREd-8rpqfOAePKg" name="LD" classifier="_rq1rEDEREd-8rpqfOAePKg">
           <ownedComment xmi:id="_rq1rITEREd-8rpqfOAePKg" annotatedElement="_rq1rIDEREd-8rpqfOAePKg">
-            <body>&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 0pt; mso-layout-grid-align: none&quot;>&lt;SPAN style=&quot;FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial&quot;>SNOMED - &lt;U>S&lt;/U>ystematized Nomenclature of Medicine Clinical Terms&lt;SPAN style=&quot;POSITION: relative; TOP: -3pt; mso-text-raise: 3.0pt; mso-bidi-font-weight: bold&quot;>®&lt;/SPAN>&lt;SPAN style=&quot;mso-spacerun: yes&quot;> &lt;/SPAN>(SNOMED CT)&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; />&lt;o:p>&lt;/o:p>&lt;/SPAN>&lt;/P>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>SNOMED CT® terminology which is available from the &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>Health Terminology Standards Development Organisation (IHTSDO)&lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 9pt; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;> &lt;/SPAN>&lt;SPAN style=&quot;FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Arial','sans-serif'; mso-bidi-font-weight: bold; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;>&lt;A href=&quot;http://www.ihtsdo.org/snomed-ct/&quot;>&lt;U>&lt;FONT color=#0000ff>http://www.ihtsdo.org/snomed-ct/&lt;/FONT>&lt;/U>&lt;/A>&lt;/SPAN></body>
+            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms http://www.ihtsdo.org/snomed-ct</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_rq1rIjEREd-8rpqfOAePKg" name="DX" classifier="_rq1rEDEREd-8rpqfOAePKg">
@@ -13497,6 +13559,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_eehyFCxAEd-8mcmtGejV_Q" annotatedElement="_eehyEyxAEd-8mcmtGejV_Q">
           <body>Code indicating whether or not the prescription is a compound.</body>
         </ownedComment>
+        <generalization xmi:id="_hS1pkItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_m0UfEFOiEd-wEdo_Dk3J9g" name="0" classifier="_eehyEyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_v_4PsFOiEd-wEdo_Dk3J9g" annotatedElement="_m0UfEFOiEd-wEdo_Dk3J9g">
             <body>Not Specified This value is not allowed for the Telecommunication Standard</body>
@@ -13854,6 +13917,10 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_aVQpsE45Ed-G-pSkcIGh3w" name="ConsentCode">
+        <ownedComment xmi:id="_m3noMIqsEd-pZLs28ekBmw" annotatedElement="_aVQpsE45Ed-G-pSkcIGh3w">
+          <body>Patient Consent Indicator</body>
+        </ownedComment>
+        <generalization xmi:id="_kcJj4ItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_dw5qIE45Ed-G-pSkcIGh3w" name="Y" classifier="_aVQpsE45Ed-G-pSkcIGh3w">
           <ownedComment xmi:id="_BlZlsIYIEd-Vw-EcYlO-zw" annotatedElement="_dw5qIE45Ed-G-pSkcIGh3w">
             <body>Patient gave consent for prescriber to receive the medication history from any prescriber.</body>
@@ -14311,12 +14378,25 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_eqJzQyxAEd-8mcmtGejV_Q" name="PrimaryDiagnosisCodeQualifierCode">
-        <ownedComment xmi:id="_eqJzRCxAEd-8mcmtGejV_Q">
-          <body>Code qualifying the ‘Diagnosis Code’ (424-DO).</body>
+        <ownedComment xmi:id="_eqJzRCxAEd-8mcmtGejV_Q" annotatedElement="_eqJzQyxAEd-8mcmtGejV_Q">
+          <body>Code qualifying the Diagnosis Code</body>
         </ownedComment>
-        <ownedLiteral xmi:id="__NIBIIkEEd-pZLs28ekBmw" name="E" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="__S8VQIkEEd-pZLs28ekBmw" name="F" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="__YwCUIkEEd-pZLs28ekBmw" name="M" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
+        <generalization xmi:id="_go_l4It0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="__NIBIIkEEd-pZLs28ekBmw" name="E" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_OAl5sIqrEd-pZLs28ekBmw" annotatedElement="__NIBIIkEEd-pZLs28ekBmw">
+            <body>Micromedex/Medical Economics – a code list developed by this company</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="__S8VQIkEEd-pZLs28ekBmw" name="F" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_Q5hOoIqrEd-pZLs28ekBmw" annotatedElement="__S8VQIkEEd-pZLs28ekBmw">
+            <body>First DataBank – a code list developed by this company</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="__YwCUIkEEd-pZLs28ekBmw" name="M" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_UC-58IqrEd-pZLs28ekBmw" annotatedElement="__YwCUIkEEd-pZLs28ekBmw">
+            <body>Medi-Span Product Line - a code list developed by this company </body>
+          </ownedComment>
+        </ownedLiteral>
         <ownedLiteral xmi:id="__d95gIkEEd-pZLs28ekBmw" name="ABF" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_d4W_YIkFEd-pZLs28ekBmw" annotatedElement="__d95gIkEEd-pZLs28ekBmw">
             <body>International Classification of Diseases-10- Clinical Modifications (ICD-10-CM) Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.  </body>
@@ -14327,13 +14407,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="__s3RIIkEEd-pZLs28ekBmw" name="ICD9" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="__yh0QIkEEd-pZLs28ekBmw" name="ICD10" classifier="_eqJzQyxAEd-8mcmtGejV_Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_7aQ6UFLcEd-wEdo_Dk3J9g" name="SecondaryDiagnosisCodeQualifierCode">
-        <ownedComment xmi:id="_7aQ6UVLcEd-wEdo_Dk3J9g">
-          <body>Code qualifying the ‘Diagnosis Code’ (424-DO).</body>
+        <ownedComment xmi:id="_7aQ6UVLcEd-wEdo_Dk3J9g" annotatedElement="_7aQ6UFLcEd-wEdo_Dk3J9g">
+          <body>Code qualifying the Diagnosis Code</body>
         </ownedComment>
+        <generalization xmi:id="_47VIYIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_OBBaEFLdEd-wEdo_Dk3J9g" name="ABF" classifier="_7aQ6UFLcEd-wEdo_Dk3J9g">
           <ownedComment xmi:id="_Di4HYIX6Ed-Vw-EcYlO-zw" annotatedElement="_OBBaEFLdEd-wEdo_Dk3J9g">
             <body>International Classification of Diseases-10- Clinical Modifications (ICD-10-CM) Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.  </body>
@@ -14389,6 +14468,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_esFs8ixAEd-8mcmtGejV_Q">
           <body>Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed.</body>
         </ownedComment>
+        <generalization xmi:id="_KCalIIt1Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_esPd8CxAEd-8mcmtGejV_Q" name="0" classifier="_esFs8SxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_esPd8SxAEd-8mcmtGejV_Q">
             <body>No Product Selection Indicated - This is the field default value that is appropriately used for prescriptions for single source brand, co-branded/co-licensed, or generic products. For a multi-source branded product with available generic(s), DAW 0 is not appropriate, and may result in a reject.</body>
@@ -14447,7 +14527,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <generalization xmi:id="_3-4BwEyrEd-G-pSkcIGh3w" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_7a9uIEyrEd-G-pSkcIGh3w" name="LOA" classifier="_es_E0yxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_7a9uIUyrEd-G-pSkcIGh3w" annotatedElement="_7a9uIEyrEd-G-pSkcIGh3w">
-            <body>LOA value is Request for the pharmacy to dispense a supply of medications in user packaging for use during a Leave of Absence</body>
+            <body>Request for the pharmacy to dispense a supply of medications in user packaging for use during a Leave of Absence</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -14475,6 +14555,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_hq0u8ixAEd-8mcmtGejV_Q" annotatedElement="_hq0u8SxAEd-8mcmtGejV_Q">
           <body>Used for medications ordered by a prescriber but not requiring dispensing at this time, but may be required for administration and may be available for drug-to-drug interactions.</body>
         </ownedComment>
+        <generalization xmi:id="_7L_Y4ItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_hq-f8SxAEd-8mcmtGejV_Q" name="Y" classifier="_hq0u8SxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_hq-f8ixAEd-8mcmtGejV_Q" annotatedElement="_hq-f8SxAEd-8mcmtGejV_Q">
             <body>Yes - Used for medications ordered by a prescriber not requiring dispensing, but available for reference and drug-to-drug interaction checking.  </body>
@@ -14578,37 +14659,32 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_dx0jEGQlEd-ODMSOo4sPFQ" name="DrugAdminReasonCode">
         <ownedComment xmi:id="_e2RisIkREd-pZLs28ekBmw" annotatedElement="_dx0jEGQlEd-ODMSOo4sPFQ">
-          <body>Code identifying the reason for the message
-</body>
+          <body>Code identifying the reason for the message</body>
         </ownedComment>
+        <generalization xmi:id="_8viPQItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_kT8zUGQlEd-ODMSOo4sPFQ" name="01" classifier="_dx0jEGQlEd-ODMSOo4sPFQ">
           <ownedComment xmi:id="_7PoscIn3Ed-pZLs28ekBmw" annotatedElement="_kT8zUGQlEd-ODMSOo4sPFQ">
-            <body>Awaiting lab action (procedure or result) – Medication administration suspended in preparation for a lab procedure or awaiting lab results.			
-</body>
+            <body>Awaiting lab action (procedure or result) – Medication administration suspended in preparation for a lab procedure or awaiting lab results.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_mMDkcGQlEd-ODMSOo4sPFQ" name="02" classifier="_dx0jEGQlEd-ODMSOo4sPFQ">
           <ownedComment xmi:id="_-xis8In3Ed-pZLs28ekBmw" annotatedElement="_mMDkcGQlEd-ODMSOo4sPFQ">
-            <body>Awaiting clinical procedure (non-lab) – Medication administration suspended in preparation for a clinical procedure not lab related.			
-</body>
+            <body>Awaiting clinical procedure (non-lab) – Medication administration suspended in preparation for a clinical procedure not lab related.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_n9JuoGQlEd-ODMSOo4sPFQ" name="03" classifier="_dx0jEGQlEd-ODMSOo4sPFQ">
           <ownedComment xmi:id="___efsIn3Ed-pZLs28ekBmw" annotatedElement="_n9JuoGQlEd-ODMSOo4sPFQ">
-            <body>Other clinical reason – Medication administration suspended for other clinical reason not procedure or lab related. Suggest further details be provided in text field.			
-</body>
+            <body>Other clinical reason – Medication administration suspended for other clinical reason not procedure or lab related. Suggest further details be provided in text field.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_pQTYkGQlEd-ODMSOo4sPFQ" name="04" classifier="_dx0jEGQlEd-ODMSOo4sPFQ">
           <ownedComment xmi:id="_BcTqEIn4Ed-pZLs28ekBmw" annotatedElement="_pQTYkGQlEd-ODMSOo4sPFQ">
-            <body>Non-clinical reason – Medication administration suspended for a non-clinical reason. Suggest further details be provided in text field.			
-</body>
+            <body>Non-clinical reason – Medication administration suspended for a non-clinical reason. Suggest further details be provided in text field.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_qv90gGQlEd-ODMSOo4sPFQ" name="05" classifier="_dx0jEGQlEd-ODMSOo4sPFQ">
           <ownedComment xmi:id="_C_GSgIn4Ed-pZLs28ekBmw" annotatedElement="_qv90gGQlEd-ODMSOo4sPFQ">
-            <body>Patient request – Medication administration suspended at the request of the patient or patient’s representative.			
-</body>
+            <body>Patient request – Medication administration suspended at the request of the patient or patient’s representative.</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -14657,6 +14733,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_hsnetSxAEd-8mcmtGejV_Q">
           <body>Code identifying the coverage status of the prescribed drug.</body>
         </ownedComment>
+        <generalization xmi:id="_-SnyoItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_hswooixAEd-8mcmtGejV_Q" name="PR" classifier="_hsnetCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_hswooyxAEd-8mcmtGejV_Q">
             <body>Preferred - Preferred means available on a pharmaceutical formulary in a manner such that the product is given preference in dispensing decisions over competing products in a therapeutic class or therapeutic use.</body>
@@ -14792,9 +14869,10 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_htg2kSxAEd-8mcmtGejV_Q">
           <body>Code identifying the significance or severity level of a clinical event as contained in the originating database.</body>
         </ownedComment>
+        <generalization xmi:id="_oA4O4ItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_5K7X0In5Ed-pZLs28ekBmw" name=" " classifier="_htg2kCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="__1R6gIn6Ed-pZLs28ekBmw" annotatedElement="_5K7X0In5Ed-pZLs28ekBmw">
-            <body>Blank Value</body>
+            <body>Not Specified</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_Bwx-IlOmEd-wEdo_Dk3J9g" name="1" classifier="_eueSkixAEd-8mcmtGejV_Q">
@@ -14980,7 +15058,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_x_3C0In6Ed-pZLs28ekBmw" name=" " classifier="_htqAgSxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_1c2HEIn6Ed-pZLs28ekBmw" annotatedElement="_x_3C0In6Ed-pZLs28ekBmw">
-            <body>Blank Value</body>
+            <body>Unspecified</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -14988,6 +15066,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_htzxgyxAEd-8mcmtGejV_Q">
           <body>Code identifying intervention performed when a conflict has been detected.</body>
         </ownedComment>
+        <generalization xmi:id="_pS_XAItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_izOg0FOlEd-wEdo_Dk3J9g" name="SC" classifier="_htzxgixAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_izOg0VOlEd-wEdo_Dk3J9g">
             <body>Self-care consultation Code indicating activities performed by a pharmacist on behalf of a patient intended to allow the patient to function more effectively on his or her own behalf in health promotion and disease prevention, detection, or treatment.</body>
@@ -15118,6 +15197,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_ht87dSxAEd-8mcmtGejV_Q">
           <body>For further explanation, conflict, or clarification of services related to drug use evaluation.</body>
         </ownedComment>
+        <generalization xmi:id="_qNGO0ItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_nI1PIFOlEd-wEdo_Dk3J9g" name="PC" classifier="_ht87dCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_nI1PIVOlEd-wEdo_Dk3J9g">
             <body>Patient Question/Concern Code indicating that a request for information/concern was expressed by the patient, with respect to patient care.</body>
@@ -15413,6 +15493,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_huQdcSxAEd-8mcmtGejV_Q">
           <body>Action taken in response to a conflict.</body>
         </ownedComment>
+        <generalization xmi:id="_q-IDIItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_2By_wFOrEd-wEdo_Dk3J9g" name="4A" classifier="_huQdcCxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_2By_wVOrEd-wEdo_Dk3J9g">
             <body>Prescribed with acknowledgements - Physician is prescribing this medication with knowledge of the potential conflict.</body>
@@ -16766,8 +16847,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_g9hkECxAEd-8mcmtGejV_Q" name="ChangeofPrescriptionStatusCode">
         <ownedComment xmi:id="_g9hkESxAEd-8mcmtGejV_Q">
-          <body>Used in the CANRX message when the prescriber wishes to notify the pharmacy to no longer continue dispensing any open refills on an active prescription or to cancel a prescription that has not yet been dispensed.</body>
+          <body>Used in the Cancel Request message when the prescriber wishes to notify the pharmacy to no longer continue dispensing any open refills on an active prescription or to cancel a prescription that has not yet been dispensed.</body>
         </ownedComment>
+        <generalization xmi:id="_YxTGUItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_g9hkFCxAEd-8mcmtGejV_Q" name="C" classifier="_g9hkECxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_g9hkFSxAEd-8mcmtGejV_Q">
             <body>Cancel - Prescriber wishes to notify the pharmacy to cancel a prescription that has not yet been dispensed.</body>
@@ -16974,7 +17056,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_J51OcGdmEd-EzKeHnOFaKw" name="ApprovedCode">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_J51OcGdmEd-EzKeHnOFaKw" name="ApprovedCode" visibility="private">
         <ownedComment xmi:id="_J51OcWdmEd-EzKeHnOFaKw">
           <body>Message code, on an approved claim/service, communicating the need for an additional follow-up.</body>
         </ownedComment>
@@ -17139,10 +17221,11 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_eu1nEGdpEd-EzKeHnOFaKw" name="StatusCode" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_eu1nEGdpEd-EzKeHnOFaKw" name="StatusCode">
         <ownedComment xmi:id="_eu1nEWdpEd-EzKeHnOFaKw">
           <body>Codes used to relay successful or rejected communications.</body>
         </ownedComment>
+        <generalization xmi:id="_IkPW8It1Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_eu1nEmdpEd-EzKeHnOFaKw" name="000" classifier="_eu1nEGdpEd-EzKeHnOFaKw">
           <ownedComment xmi:id="_eu1nE2dpEd-EzKeHnOFaKw">
             <body>Transaction successful</body>
@@ -17175,7 +17258,8 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_5qYs0GhAEd-Pd7zqA0IwbQ" name="MIMETypeCode">
-        <ownedLiteral xmi:id="_9tNpEGhAEd-Pd7zqA0IwbQ" name="application/hl7-cda+xml" classifier="_5qYs0GhAEd-Pd7zqA0IwbQ"/>
+        <generalization xmi:id="_LRXhAIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_9tNpEGhAEd-Pd7zqA0IwbQ" name="application/hl7-sda+xml" classifier="_5qYs0GhAEd-Pd7zqA0IwbQ"/>
         <ownedLiteral xmi:id="_CH5EoGhBEd-Pd7zqA0IwbQ" name="application/x-ccr" classifier="_5qYs0GhAEd-Pd7zqA0IwbQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_21l0EGi7Ed-Pd7zqA0IwbQ" name="ProductQualifiersCode">
@@ -17208,28 +17292,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>UPC</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_I4EYsH7OEd-qFLXIW1YLFA" name="SCD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_fo6FUIX3Ed-Vw-EcYlO-zw" annotatedElement="_I4EYsH7OEd-qFLXIW1YLFA">
-            <body>RxNorm Semantic Clinical Drug (SCD) – A code maintained and distributed by National Library of Medicine (NLM) representing the ingredient plus form and dose strength.</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_JMCdkH7OEd-qFLXIW1YLFA" name="SBD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_d6MgwIX3Ed-Vw-EcYlO-zw" annotatedElement="_JMCdkH7OEd-qFLXIW1YLFA">
-            <body>RxNorm Semantic Branded Drug (SBD) – A Code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, form and dose strength plus the branded name. </body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_JRGjwH7OEd-qFLXIW1YLFA" name="GPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_b0h0wIX3Ed-Vw-EcYlO-zw" annotatedElement="_JRGjwH7OEd-qFLXIW1YLFA">
-            <body>RxNorm Generic Package (GPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the generic drug delivery device.</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_KPsS8H7OEd-qFLXIW1YLFA" name="BPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_aBV_4IX3Ed-Vw-EcYlO-zw" annotatedElement="_KPsS8H7OEd-qFLXIW1YLFA">
-            <body>RxNorm Branded Package (BPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the branded drug delivery device.</body>
-          </ownedComment>
-        </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_AfO38Gj1Ed-Pd7zqA0IwbQ" name="ReasonCode">
+        <generalization xmi:id="_wHxoEIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_Ct1dgGj1Ed-Pd7zqA0IwbQ" name="AA" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_L5ZvoIYJEd-Vw-EcYlO-zw" annotatedElement="_Ct1dgGj1Ed-Pd7zqA0IwbQ">
             <body>Patient unknown to the Prescriber</body>
@@ -17348,6 +17413,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_-xQ0kG8mEd-E06vcpeQalQ" name="IDQualifierCode">
+        <generalization xmi:id="_HJnBcIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_Db4woG8nEd-E06vcpeQalQ" name="0B" classifier="_-xQ0kG8mEd-E06vcpeQalQ">
           <ownedComment xmi:id="_CQHoUIkWEd-pZLs28ekBmw" annotatedElement="_Db4woG8nEd-E06vcpeQalQ">
             <body>State License Number</body>
@@ -17550,6 +17616,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_rM8-IH-SEd-eN4XJATQmiQ" name="BooleanCode">
+        <generalization xmi:id="_VG54MItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_5gU9IH-SEd-eN4XJATQmiQ" name="Y" classifier="_rM8-IH-SEd-eN4XJATQmiQ">
           <ownedComment xmi:id="_GS17MIn4Ed-pZLs28ekBmw" annotatedElement="_5gU9IH-SEd-eN4XJATQmiQ">
             <body>Yes</body>
@@ -17562,18 +17629,18 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_cQxVAIL7Ed-qIZqYwtZPyA" name="TransactionDomainVersionQualifierCode">
-        <ownedComment xmi:id="_cQxVAYL7Ed-qIZqYwtZPyA">
-          <body></body>
+        <ownedComment xmi:id="_cQxVAYL7Ed-qIZqYwtZPyA" annotatedElement="_cQxVAIL7Ed-qIZqYwtZPyA">
+          <body>Element defines which NCPDP business domain schema is being used.</body>
         </ownedComment>
         <generalization xmi:id="_cQxVAoL7Ed-qIZqYwtZPyA" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_cQxVA4L7Ed-qIZqYwtZPyA" name="SCRIPT" classifier="_cQxVAIL7Ed-qIZqYwtZPyA">
-          <ownedComment xmi:id="_cQxVBIL7Ed-qIZqYwtZPyA">
-            <body>Medical Economics Generic Formulation Code (GFC)</body>
+          <ownedComment xmi:id="_cQxVBIL7Ed-qIZqYwtZPyA" annotatedElement="_cQxVA4L7Ed-qIZqYwtZPyA">
+            <body>NCPDP SCRIPT schema</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_cQxVBYL7Ed-qIZqYwtZPyA" name="Specialized" classifier="_cQxVAIL7Ed-qIZqYwtZPyA">
-          <ownedComment xmi:id="_cQxVBoL7Ed-qIZqYwtZPyA">
-            <body>Medical Economics Generic Master (GM)</body>
+          <ownedComment xmi:id="_cQxVBoL7Ed-qIZqYwtZPyA" annotatedElement="_cQxVBYL7Ed-qIZqYwtZPyA">
+            <body>NCPDP Specialized schema</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -17600,6 +17667,85 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedLiteral xmi:id="_tDy05IVBEd-PfKcU8Giing" name="900" classifier="_tDy00IVBEd-PfKcU8Giing">
           <ownedComment xmi:id="_tDy05YVBEd-PfKcU8Giing">
             <body>Transaction rejected</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_al3gcIthEd-urZQZ08VCKQ" name="AddressTypeQualifier">
+        <generalization xmi:id="_Nw9I4It0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_hkTSMIthEd-urZQZ08VCKQ" name="P" classifier="_al3gcIthEd-urZQZ08VCKQ">
+          <ownedComment xmi:id="_p_R6cIthEd-urZQZ08VCKQ" annotatedElement="_hkTSMIthEd-urZQZ08VCKQ">
+            <body>Prescriber</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_hnlPsIthEd-urZQZ08VCKQ" name="C" classifier="_al3gcIthEd-urZQZ08VCKQ">
+          <ownedComment xmi:id="_nefYsIthEd-urZQZ08VCKQ" annotatedElement="_hnlPsIthEd-urZQZ08VCKQ">
+            <body>Clinic</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_hrv-AIthEd-urZQZ08VCKQ" name="M" classifier="_al3gcIthEd-urZQZ08VCKQ">
+          <ownedComment xmi:id="_pTLCYIthEd-urZQZ08VCKQ" annotatedElement="_hrv-AIthEd-urZQZ08VCKQ">
+            <body>Mailbox</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_hvxiYIthEd-urZQZ08VCKQ" name="D" classifier="_al3gcIthEd-urZQZ08VCKQ">
+          <ownedComment xmi:id="_oSzKgIthEd-urZQZ08VCKQ" annotatedElement="_hvxiYIthEd-urZQZ08VCKQ">
+            <body>Presciber</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_hzNQ4IthEd-urZQZ08VCKQ" name="ZZZ" classifier="_al3gcIthEd-urZQZ08VCKQ">
+          <ownedComment xmi:id="_rb0J4IthEd-urZQZ08VCKQ" annotatedElement="_hzNQ4IthEd-urZQZ08VCKQ">
+            <body>Mutually Defined</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_QviC8IutEd-jMZ0z1K165w" name="ProductQualifiersCodeExtended">
+        <ownedComment xmi:id="_QviC8YutEd-jMZ0z1K165w" annotatedElement="_QviC8IutEd-jMZ0z1K165w">
+          <body>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard including RX Norm</body>
+        </ownedComment>
+        <generalization xmi:id="_QviC8outEd-jMZ0z1K165w" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_QviC84utEd-jMZ0z1K165w" name="ND" classifier="_QviC8IutEd-jMZ0z1K165w">
+          <ownedComment xmi:id="_QviC9IutEd-jMZ0z1K165w">
+            <body>NDC</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_QviC9YutEd-jMZ0z1K165w" name="MF" classifier="_QviC8IutEd-jMZ0z1K165w">
+          <ownedComment xmi:id="_QviC9outEd-jMZ0z1K165w">
+            <body>MFG</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_QviC94utEd-jMZ0z1K165w" name="RT" classifier="_QviC8IutEd-jMZ0z1K165w">
+          <ownedComment xmi:id="_QviC-IutEd-jMZ0z1K165w">
+            <body>NDF-RT - National Drug File Reference Terminology  - Maintained by VA, distributed by NCI -  for classes of medications</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_QviC-YutEd-jMZ0z1K165w" name="UN" classifier="_QviC8IutEd-jMZ0z1K165w">
+          <ownedComment xmi:id="_QviC-outEd-jMZ0z1K165w" annotatedElement="_QviC-YutEd-jMZ0z1K165w">
+            <body>UNII - Unique Ingredient Identifier - Maintained by FDA and EPA, distributed by FDA Substance Registration System (SRS)			</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_QviC-4utEd-jMZ0z1K165w" name="UP" classifier="_QviC8IutEd-jMZ0z1K165w">
+          <ownedComment xmi:id="_QviC_IutEd-jMZ0z1K165w">
+            <body>UPC</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Vq1fUIutEd-jMZ0z1K165w" name="GPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_Vq1fUYutEd-jMZ0z1K165w" annotatedElement="_Vq1fUIutEd-jMZ0z1K165w">
+            <body>RxNorm Generic Package (GPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the generic drug delivery device.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Vq1fUoutEd-jMZ0z1K165w" name="BPK" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_Vq1fU4utEd-jMZ0z1K165w" annotatedElement="_Vq1fUoutEd-jMZ0z1K165w">
+            <body>RxNorm Branded Package (BPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the branded drug delivery device.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Vq1fVIutEd-jMZ0z1K165w" name="SBD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_Vq1fVYutEd-jMZ0z1K165w" annotatedElement="_Vq1fVIutEd-jMZ0z1K165w">
+            <body>RxNorm Semantic Branded Drug (SBD) – A Code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, form and dose strength plus the branded name. </body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Vq1fVoutEd-jMZ0z1K165w" name="SCD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_Vq1fV4utEd-jMZ0z1K165w" annotatedElement="_Vq1fVoutEd-jMZ0z1K165w">
+            <body>RxNorm Semantic Clinical Drug (SCD) – A code maintained and distributed by National Library of Medicine (NLM) representing the ingredient plus form and dose strength.</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -17662,7 +17808,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_688o5S1QEd-8mcmtGejV_Q" base_Comment="_688o5C1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_688o4i1QEd-8mcmtGejV_Q" base_Comment="_688o4S1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_68y35C1QEd-8mcmtGejV_Q" base_Comment="_68y34y1QEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_68y34S1QEd-8mcmtGejV_Q" valueSetId="3333" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_68pG4y1QEd-8mcmtGejV_Q" displayName="3333 Values for Communication Codes"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_68y34S1QEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_68pG4y1QEd-8mcmtGejV_Q" displayName="Code List Qualifier –Communication Number - PVD, PTT, COO Segment (X12 DE 365) "/>
   <Default:Documentation xmi:id="_68y34C1QEd-8mcmtGejV_Q" base_Comment="_68pG5C1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_68pG4i1QEd-8mcmtGejV_Q" base_Comment="_68pG4S1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_68f89S1QEd-8mcmtGejV_Q" base_Comment="_68f89C1QEd-8mcmtGejV_Q"/>
@@ -17682,7 +17828,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_67TqJS1QEd-8mcmtGejV_Q" base_Comment="_67TqJC1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_67TqIi1QEd-8mcmtGejV_Q" base_Comment="_67TqIS1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_67J5JC1QEd-8mcmtGejV_Q" base_Comment="_67J5Iy1QEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_67J5IS1QEd-8mcmtGejV_Q" valueSetId="2222" fieldFormat="text is null" standardsUsing="text is null" valueSetLimitations="" base_Enumeration="_67AIJC1QEd-8mcmtGejV_Q" displayName="2222 Provider Identification Code Values"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_67J5IS1QEd-8mcmtGejV_Q" valueSetId="2222" fieldFormat="text is null" standardsUsing="text is null" valueSetLimitations="" base_Enumeration="_67AIJC1QEd-8mcmtGejV_Q" displayName="Provider Identification Code Values"/>
   <Default:Documentation xmi:id="_67J5IC1QEd-8mcmtGejV_Q" base_Comment="_67AIJS1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_67AIIy1QEd-8mcmtGejV_Q" base_Comment="_67AIIi1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_67AIIC1QEd-8mcmtGejV_Q" base_Comment="_662-NC1QEd-8mcmtGejV_Q"/>
@@ -17692,7 +17838,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_66kDQy1QEd-8mcmtGejV_Q" base_Comment="_66kDQi1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_66kDQC1QEd-8mcmtGejV_Q" base_Comment="_66aSQy1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_66aSQS1QEd-8mcmtGejV_Q" base_Comment="_66aSQC1QEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_66QhQC1QEd-8mcmtGejV_Q" valueSetId="1111" fieldFormat="text is null" standardsUsing="text is null" valueSetLimitations="" base_Enumeration="_66HXUC1QEd-8mcmtGejV_Q" displayName="1111 Organizational Identification Code Values"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_66QhQC1QEd-8mcmtGejV_Q" valueSetId="1111" fieldFormat="text is null" standardsUsing="text is null" valueSetLimitations="" base_Enumeration="_66HXUC1QEd-8mcmtGejV_Q" displayName="Organizational Identification Code Values"/>
   <Default:Documentation xmi:id="_66HXUi1QEd-8mcmtGejV_Q" base_Comment="_66HXUS1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_6k7Oci0kEd-8mcmtGejV_Q" base_Comment="_6k7OcS0kEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_6kxdcy0kEd-8mcmtGejV_Q" base_Comment="_6kxdci0kEd-8mcmtGejV_Q"/>
@@ -17712,7 +17858,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_6jlKoy0kEd-8mcmtGejV_Q" base_Comment="_6jlKoi0kEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_6jlKoC0kEd-8mcmtGejV_Q" base_Comment="_6jbZpS0kEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_6jbZoy0kEd-8mcmtGejV_Q" base_Comment="_6jbZoi0kEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_6jbZoC0kEd-8mcmtGejV_Q" valueSetId="2222" fieldFormat="text is null" standardsUsing="text is null" valueSetLimitations="" base_Enumeration="_6jSPsS0kEd-8mcmtGejV_Q" displayName="2222 Provider Identification Code Values"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_6jbZoC0kEd-8mcmtGejV_Q" valueSetId="2222" fieldFormat="text is null" standardsUsing="text is null" valueSetLimitations="" base_Enumeration="_6jSPsS0kEd-8mcmtGejV_Q" displayName="Provider Identification Code Values"/>
   <Default:Documentation xmi:id="_6jSPsy0kEd-8mcmtGejV_Q" base_Comment="_6jSPsi0kEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_6jSPsC0kEd-8mcmtGejV_Q" base_Comment="_6jIetS0kEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_6jIesy0kEd-8mcmtGejV_Q" base_Comment="_6jIesi0kEd-8mcmtGejV_Q"/>
@@ -17722,7 +17868,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_6i1jwi0kEd-8mcmtGejV_Q" base_Comment="_6i1jwS0kEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_6iryxC0kEd-8mcmtGejV_Q" base_Comment="_6irywy0kEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_6irywS0kEd-8mcmtGejV_Q" base_Comment="_6irywC0kEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_6iio0y0kEd-8mcmtGejV_Q" valueSetId="1111" fieldFormat="text is null" standardsUsing="text is null" valueSetLimitations="" base_Enumeration="_6iio0C0kEd-8mcmtGejV_Q" displayName="1111 Organizational Identification Code Values"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_6iio0y0kEd-8mcmtGejV_Q" valueSetId="1111" fieldFormat="text is null" standardsUsing="text is null" valueSetLimitations="" base_Enumeration="_6iio0C0kEd-8mcmtGejV_Q" displayName="Organizational Identification Code Values"/>
   <Default:Documentation xmi:id="_6iio0i0kEd-8mcmtGejV_Q" base_Comment="_6iio0S0kEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_kCnAwSx3Ed-8mcmtGejV_Q" base_Comment="_kCnAsSx3Ed-8mcmtGejV_Q"/>
   <xsd:Restriction xmi:id="_1mgqYCx5Ed-8mcmtGejV_Q" base_Generalization="_0TN2gCx5Ed-8mcmtGejV_Q"/>
@@ -17737,24 +17883,24 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <xsd:Restriction xmi:id="_-Y7iECxUEd-8mcmtGejV_Q" base_Generalization="_9TVzACxUEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_yUeOgSxQEd-8mcmtGejV_Q" base_Comment="_yUeOgCxQEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ixwh1ixAEd-8mcmtGejV_Q" base_Comment="_ixwh1SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_ixwh0yxAEd-8mcmtGejV_Q" valueSetId="2029" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ixwh0CxAEd-8mcmtGejV_Q" displayName="2029 - Time Zone Identifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ixwh0yxAEd-8mcmtGejV_Q" valueSetId="2029" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ixwh0CxAEd-8mcmtGejV_Q" displayName="Time Zone Identifier"/>
   <Default:Documentation xmi:id="_ixwh0ixAEd-8mcmtGejV_Q" base_Comment="_ixwh0SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ixmw0yxAEd-8mcmtGejV_Q" base_Comment="_ixmw0ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ixmw0CxAEd-8mcmtGejV_Q" base_Comment="_ixdm5SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_ixdm4yxAEd-8mcmtGejV_Q" valueSetId="0035" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ixdm4CxAEd-8mcmtGejV_Q" displayName="0035 - Test Indicator"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ixdm4yxAEd-8mcmtGejV_Q" valueSetId="0035" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ixdm4CxAEd-8mcmtGejV_Q" displayName="Test Indicator"/>
   <Default:Documentation xmi:id="_ixdm4ixAEd-8mcmtGejV_Q" base_Comment="_ixdm4SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ixT15SxAEd-8mcmtGejV_Q" base_Comment="_ixT15CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ixT14ixAEd-8mcmtGejV_Q" base_Comment="_ixT14SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ixKE5CxAEd-8mcmtGejV_Q" base_Comment="_ixKE4yxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_ixKE4SxAEd-8mcmtGejV_Q" valueSetId="7895" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ixA69CxAEd-8mcmtGejV_Q" displayName="7895 - Source Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ixKE4SxAEd-8mcmtGejV_Q" valueSetId="7895" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ixA69CxAEd-8mcmtGejV_Q" displayName="Source Qualifier"/>
   <Default:Documentation xmi:id="_ixKE4CxAEd-8mcmtGejV_Q" base_Comment="_ixA69SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ixA68yxAEd-8mcmtGejV_Q" base_Comment="_ixA68ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_ixA68CxAEd-8mcmtGejV_Q" valueSetId="7701" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iw3J8SxAEd-8mcmtGejV_Q" displayName="7701 - Service Type, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ixA68CxAEd-8mcmtGejV_Q" valueSetId="7701" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iw3J8SxAEd-8mcmtGejV_Q" displayName="Service Type, coded"/>
   <Default:Documentation xmi:id="_iw3J8yxAEd-8mcmtGejV_Q" base_Comment="_iw3J8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iw3J8CxAEd-8mcmtGejV_Q" base_Comment="_iwtY9SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iwtY8yxAEd-8mcmtGejV_Q" base_Comment="_iwtY8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iwtY8CxAEd-8mcmtGejV_Q" base_Comment="_iwkPBSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_iwkPAyxAEd-8mcmtGejV_Q" valueSetId="2379" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iwkPACxAEd-8mcmtGejV_Q" displayName="2379 - Date/Time/Period Format Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_iwkPAyxAEd-8mcmtGejV_Q" valueSetId="2379" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iwkPACxAEd-8mcmtGejV_Q" displayName="Date/Time/Period Format Qualifier"/>
   <Default:Documentation xmi:id="_iwkPAixAEd-8mcmtGejV_Q" base_Comment="_iwkPASxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iwaeBSxAEd-8mcmtGejV_Q" base_Comment="_iwaeBCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iwaeAixAEd-8mcmtGejV_Q" base_Comment="_iwaeASxAEd-8mcmtGejV_Q"/>
@@ -17782,9 +17928,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_iuoVUCxAEd-8mcmtGejV_Q" base_Comment="_iuekVCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iuekUixAEd-8mcmtGejV_Q" base_Comment="_iuekUSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iuUzVixAEd-8mcmtGejV_Q" base_Comment="_iuUzVSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_iuUzUyxAEd-8mcmtGejV_Q" valueSetId="1153" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iuUzUCxAEd-8mcmtGejV_Q" displayName="1153 - Reference Qualifier (X12 DE 128)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_iuUzUyxAEd-8mcmtGejV_Q" valueSetId="1153" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iuUzUCxAEd-8mcmtGejV_Q" displayName="Reference Qualifier (X12 DE 128)"/>
   <Default:Documentation xmi:id="_iuUzUixAEd-8mcmtGejV_Q" base_Comment="_iuUzUSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_iuLpZCxAEd-8mcmtGejV_Q" valueSetId="6063" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iuLpYSxAEd-8mcmtGejV_Q" displayName="6063 - Quantity Qualifier (X12 DE 355)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_iuLpZCxAEd-8mcmtGejV_Q" valueSetId="6063" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iuLpYSxAEd-8mcmtGejV_Q" displayName="Quantity Qualifier (X12 DE 355)"/>
   <Default:Documentation xmi:id="_iuLpYyxAEd-8mcmtGejV_Q" base_Comment="_iuLpYixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iuLpYCxAEd-8mcmtGejV_Q" base_Comment="_iuB4ZCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iuB4YixAEd-8mcmtGejV_Q" base_Comment="_iuB4YSxAEd-8mcmtGejV_Q"/>
@@ -17942,24 +18088,24 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_ignugyxAEd-8mcmtGejV_Q" base_Comment="_ignugixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ignugCxAEd-8mcmtGejV_Q" base_Comment="_igd9hSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_igd9gyxAEd-8mcmtGejV_Q" base_Comment="_igd9gixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_igd9gCxAEd-8mcmtGejV_Q" valueSetId="4707" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_igUzkixAEd-8mcmtGejV_Q" displayName="4707 - Provider Specialty, coded (X12 DE 1222)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_igd9gCxAEd-8mcmtGejV_Q" valueSetId="4707" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_igUzkixAEd-8mcmtGejV_Q" displayName="Provider Specialty, coded (X12 DE 1222)"/>
   <Default:Documentation xmi:id="_igUzlCxAEd-8mcmtGejV_Q" base_Comment="_igUzkyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_igUzkSxAEd-8mcmtGejV_Q" valueSetId="4705" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_igLClCxAEd-8mcmtGejV_Q" displayName="4705 - Provider Coded (X12 DE 1221)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_igUzkSxAEd-8mcmtGejV_Q" valueSetId="4705" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_igLClCxAEd-8mcmtGejV_Q" displayName="Provider Coded (X12 DE 1221)"/>
   <Default:Documentation xmi:id="_igUzkCxAEd-8mcmtGejV_Q" base_Comment="_igLClSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_igLCkyxAEd-8mcmtGejV_Q" valueSetId="6411" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_igLCkCxAEd-8mcmtGejV_Q" displayName="6411 - Measurement Unit Qualifier (X12 DE 355)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_igLCkyxAEd-8mcmtGejV_Q" valueSetId="6411" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_igLCkCxAEd-8mcmtGejV_Q" displayName="Measurement Unit Qualifier (X12 DE 355)"/>
   <Default:Documentation xmi:id="_igLCkixAEd-8mcmtGejV_Q" base_Comment="_igLCkSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_igBRlSxAEd-8mcmtGejV_Q" base_Comment="_igBRlCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_igBRkixAEd-8mcmtGejV_Q" base_Comment="_igBRkSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_if4HoyxAEd-8mcmtGejV_Q" base_Comment="_if4HoixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_if4HoCxAEd-8mcmtGejV_Q" base_Comment="_ifuWpSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_ifuWoyxAEd-8mcmtGejV_Q" valueSetId="6311" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ifuWoCxAEd-8mcmtGejV_Q" displayName="6311 - Measurement Dimension, coded (Values when referencing X12 DE 738)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ifuWoyxAEd-8mcmtGejV_Q" valueSetId="6311" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ifuWoCxAEd-8mcmtGejV_Q" displayName="Measurement Dimension, coded (Values when referencing X12 DE 738)"/>
   <Default:Documentation xmi:id="_ifuWoixAEd-8mcmtGejV_Q" base_Comment="_ifuWoSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iflMtCxAEd-8mcmtGejV_Q" base_Comment="_iflMsyxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iflMsSxAEd-8mcmtGejV_Q" base_Comment="_iflMsCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ifbbsyxAEd-8mcmtGejV_Q" base_Comment="_ifbbsixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ifbbsCxAEd-8mcmtGejV_Q" base_Comment="_ifRqtixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ifRqtCxAEd-8mcmtGejV_Q" base_Comment="_ifRqsyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_ifRqsSxAEd-8mcmtGejV_Q" valueSetId="4703" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ifIgwyxAEd-8mcmtGejV_Q" displayName="4703 - Insurance Type, coded (X12 DE 1138)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ifRqsSxAEd-8mcmtGejV_Q" valueSetId="4703" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ifIgwyxAEd-8mcmtGejV_Q" displayName="Insurance Type, coded (X12 DE 1138)"/>
   <Default:Documentation xmi:id="_ifRqsCxAEd-8mcmtGejV_Q" base_Comment="_ifIgxCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ifIgwixAEd-8mcmtGejV_Q" base_Comment="_ifIgwSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_ie-vwyxAEd-8mcmtGejV_Q" base_Comment="_ie-vwixAEd-8mcmtGejV_Q"/>
@@ -17973,7 +18119,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_ieY54CxAEd-8mcmtGejV_Q" base_Comment="_iePI5SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iePI4yxAEd-8mcmtGejV_Q" base_Comment="_iePI4ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iePI4CxAEd-8mcmtGejV_Q" base_Comment="_ieFX5SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_ieFX4yxAEd-8mcmtGejV_Q" valueSetId="2005" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ieFX4CxAEd-8mcmtGejV_Q" displayName="2005 - Date/Time/Period Qualifier (X12 DE 432)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ieFX4yxAEd-8mcmtGejV_Q" valueSetId="2005" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ieFX4CxAEd-8mcmtGejV_Q" displayName="Date/Time/Period Qualifier (X12 DE 432)"/>
   <Default:Documentation xmi:id="_ieFX4ixAEd-8mcmtGejV_Q" base_Comment="_ieFX4SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_id8N9SxAEd-8mcmtGejV_Q" base_Comment="_id8N9CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_id8N8ixAEd-8mcmtGejV_Q" base_Comment="_id8N8SxAEd-8mcmtGejV_Q"/>
@@ -17982,14 +18128,14 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_idor8yxAEd-8mcmtGejV_Q" base_Comment="_idor8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_idor8CxAEd-8mcmtGejV_Q" base_Comment="_idfiBSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_idfiAyxAEd-8mcmtGejV_Q" base_Comment="_idfiAixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_idfiACxAEd-8mcmtGejV_Q" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_idVxASxAEd-8mcmtGejV_Q" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_idfiACxAEd-8mcmtGejV_Q" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_idVxASxAEd-8mcmtGejV_Q" displayName="Code List Responsibility Agency (X12 DE 235)"/>
   <Default:Documentation xmi:id="_idVxAyxAEd-8mcmtGejV_Q" base_Comment="_idVxAixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_idVxACxAEd-8mcmtGejV_Q" base_Comment="_idMnFSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_idMnEyxAEd-8mcmtGejV_Q" base_Comment="_idMnEixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_idMnECxAEd-8mcmtGejV_Q" base_Comment="_idC2FSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_idC2EyxAEd-8mcmtGejV_Q" base_Comment="_idC2EixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_idC2ECxAEd-8mcmtGejV_Q" base_Comment="_ic5FEyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_ic5FESxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_icJeNCxAEd-8mcmtGejV_Q" displayName="1131 - Code List Qualifier - Quantity Qualifier - DRU Segment (X12 DE 673)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ic5FESxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_icJeNCxAEd-8mcmtGejV_Q" displayName="Code List Qualifier - Quantity Qualifier - DRU Segment (X12 DE 673)"/>
   <Default:Documentation xmi:id="_ic5FECxAEd-8mcmtGejV_Q" base_Comment="_icJeNSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_icJeMyxAEd-8mcmtGejV_Q" base_Comment="_icJeMixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_icJeMCxAEd-8mcmtGejV_Q" base_Comment="_icAURCxAEd-8mcmtGejV_Q"/>
@@ -18023,7 +18169,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_iZnupSxAEd-8mcmtGejV_Q" base_Comment="_iZnupCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iZnuoixAEd-8mcmtGejV_Q" base_Comment="_iZnuoSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iZd9pSxAEd-8mcmtGejV_Q" base_Comment="_iZd9pCxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_iZd9oixAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iZUMpCxAEd-8mcmtGejV_Q" displayName="1131 - Code List Qualifier - used for 6063 - Quantity Qualifier (X12 DE 355)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_iZd9oixAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iZUMpCxAEd-8mcmtGejV_Q" displayName="Code List Qualifier - used for 6063 - Quantity Qualifier (X12 DE 355)"/>
   <Default:Documentation xmi:id="_iZd9oSxAEd-8mcmtGejV_Q" base_Comment="_iZd9oCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iZUMoyxAEd-8mcmtGejV_Q" base_Comment="_iZUMoixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iZUMoCxAEd-8mcmtGejV_Q" base_Comment="_iZLCtCxAEd-8mcmtGejV_Q"/>
@@ -18207,7 +18353,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_iJ0YFSxAEd-8mcmtGejV_Q" base_Comment="_iJ0YFCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iJ0YEixAEd-8mcmtGejV_Q" base_Comment="_iJ0YESxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iJrOJCxAEd-8mcmtGejV_Q" base_Comment="_iJrOIyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_iJrOISxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iJhdIyxAEd-8mcmtGejV_Q" displayName="1131 - Code List Qualifier - used for Drug Strength Qualifier, 6411 - Measurement Unit Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_iJrOISxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_iJhdIyxAEd-8mcmtGejV_Q" displayName="Code List Qualifier - used for Drug Strength Qualifier, 6411 - Measurement Unit Qualifier"/>
   <Default:Documentation xmi:id="_iJrOICxAEd-8mcmtGejV_Q" base_Comment="_iJhdJCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iJhdIixAEd-8mcmtGejV_Q" base_Comment="_iJhdISxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_iJXsJSxAEd-8mcmtGejV_Q" base_Comment="_iJXsJCxAEd-8mcmtGejV_Q"/>
@@ -18345,40 +18491,40 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_h9wSBCxAEd-8mcmtGejV_Q" base_Comment="_h9wSAyxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h9wSASxAEd-8mcmtGejV_Q" base_Comment="_h9wSACxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h9mhBCxAEd-8mcmtGejV_Q" base_Comment="_h9mhAyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h9mhASxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h9cwAyxAEd-8mcmtGejV_Q" displayName="1131 - Code List Qualifier - Drug Form - DRU Segment (X12 DE 1330)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h9mhASxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h9cwAyxAEd-8mcmtGejV_Q" displayName="Code List Qualifier - Drug Form - DRU Segment (X12 DE 1330)"/>
   <Default:Documentation xmi:id="_h9mhACxAEd-8mcmtGejV_Q" base_Comment="_h9cwBCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h9cwAixAEd-8mcmtGejV_Q" base_Comment="_h9cwASxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h9TmFCxAEd-8mcmtGejV_Q" base_Comment="_h9TmEyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h9TmESxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h9J1FCxAEd-8mcmtGejV_Q" displayName="1131 - Code List Qualifier - Diagnosis Code Qualifier (Secondary) - DRU Segment (X12 DE 235)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h9TmESxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h9J1FCxAEd-8mcmtGejV_Q" displayName="Code List Qualifier - Diagnosis Code Qualifier (Secondary) - DRU Segment (X12 DE 235)"/>
   <Default:Documentation xmi:id="_h9TmECxAEd-8mcmtGejV_Q" base_Comment="_h9J1FSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h9J1ECxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h9ArIixAEd-8mcmtGejV_Q" displayName="1131 - Code List Qualifier -Communication Number - PVD, PTT, COO Segment (X12 DE 365)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h9J1ECxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h9ArIixAEd-8mcmtGejV_Q" displayName="Code List Qualifier -Communication Number - PVD, PTT, COO Segment (X12 DE 365)"/>
   <Default:Documentation xmi:id="_h9ArJCxAEd-8mcmtGejV_Q" base_Comment="_h9ArIyxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h9ArISxAEd-8mcmtGejV_Q" base_Comment="_h9ArICxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h826IyxAEd-8mcmtGejV_Q" base_Comment="_h826IixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h826ICxAEd-8mcmtGejV_Q" base_Comment="_h8tJJSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h8tJIyxAEd-8mcmtGejV_Q" base_Comment="_h8tJIixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h8tJICxAEd-8mcmtGejV_Q" base_Comment="_h8j_NSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h8j_MyxAEd-8mcmtGejV_Q" valueSetId="4709" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h8j_MCxAEd-8mcmtGejV_Q" displayName="4709 - Agency Qualifier, coded (X12 DE 559)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h8j_MyxAEd-8mcmtGejV_Q" valueSetId="4709" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h8j_MCxAEd-8mcmtGejV_Q" displayName="Agency Qualifier, coded (X12 DE 559)"/>
   <Default:Documentation xmi:id="_h8j_MixAEd-8mcmtGejV_Q" base_Comment="_h8j_MSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h8aONCxAEd-8mcmtGejV_Q" base_Comment="_h8aOMyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h8aOMSxAEd-8mcmtGejV_Q" valueSetId="7931" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h8QdNCxAEd-8mcmtGejV_Q" displayName="7931 - Vehicle Unit of Measure Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h8aOMSxAEd-8mcmtGejV_Q" valueSetId="7931" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h8QdNCxAEd-8mcmtGejV_Q" displayName="Vehicle Unit of Measure Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h8aOMCxAEd-8mcmtGejV_Q" base_Comment="_h8QdNSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h8QdMyxAEd-8mcmtGejV_Q" base_Comment="_h8QdMixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h8QdMCxAEd-8mcmtGejV_Q" valueSetId="7927" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h8HTQSxAEd-8mcmtGejV_Q" displayName="7927 - Vehicle Name Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h8QdMCxAEd-8mcmtGejV_Q" valueSetId="7927" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h8HTQSxAEd-8mcmtGejV_Q" displayName="Vehicle Name Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h8HTQyxAEd-8mcmtGejV_Q" base_Comment="_h8HTQixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h8HTQCxAEd-8mcmtGejV_Q" base_Comment="_h79iRSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h79iQyxAEd-8mcmtGejV_Q" valueSetId="7962" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h79iQCxAEd-8mcmtGejV_Q" displayName="7962 -Variable Interval Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h79iQyxAEd-8mcmtGejV_Q" valueSetId="7962" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h79iQCxAEd-8mcmtGejV_Q" displayName="Variable Interval Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h79iQixAEd-8mcmtGejV_Q" base_Comment="_h79iQSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h70YVCxAEd-8mcmtGejV_Q" base_Comment="_h70YUyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h70YUSxAEd-8mcmtGejV_Q" valueSetId="7957" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h7qnVCxAEd-8mcmtGejV_Q" displayName="7957 -Variable Frequency Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h70YUSxAEd-8mcmtGejV_Q" valueSetId="7957" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h7qnVCxAEd-8mcmtGejV_Q" displayName="Variable Frequency Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h70YUCxAEd-8mcmtGejV_Q" base_Comment="_h7qnVSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h7qnUyxAEd-8mcmtGejV_Q" base_Comment="_h7qnUixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h7qnUCxAEd-8mcmtGejV_Q" valueSetId="7951" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h7g2USxAEd-8mcmtGejV_Q" displayName="7951 - Time Period Basis Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h7qnUCxAEd-8mcmtGejV_Q" valueSetId="7951" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h7g2USxAEd-8mcmtGejV_Q" displayName="Time Period Basis Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h7g2UyxAEd-8mcmtGejV_Q" base_Comment="_h7g2UixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h7g2UCxAEd-8mcmtGejV_Q" base_Comment="_h7XsZSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h7XsYyxAEd-8mcmtGejV_Q" base_Comment="_h7XsYixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h7XsYCxAEd-8mcmtGejV_Q" base_Comment="_h7N7ZSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h7N7YyxAEd-8mcmtGejV_Q" valueSetId="7988" fieldFormat="an1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h7N7YCxAEd-8mcmtGejV_Q" displayName="7988 -Stop Indicator - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h7N7YyxAEd-8mcmtGejV_Q" valueSetId="7988" fieldFormat="an1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h7N7YCxAEd-8mcmtGejV_Q" displayName="Stop Indicator - SIG Segment"/>
   <Default:Documentation xmi:id="_h7N7YixAEd-8mcmtGejV_Q" base_Comment="_h7N7YSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h7EKYyxAEd-8mcmtGejV_Q" base_Comment="_h7EKYixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h7EKYCxAEd-8mcmtGejV_Q" base_Comment="_h67AdSxAEd-8mcmtGejV_Q"/>
@@ -18390,79 +18536,79 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_h6eUgyxAEd-8mcmtGejV_Q" base_Comment="_h6eUgixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h6eUgCxAEd-8mcmtGejV_Q" base_Comment="_h6UjhSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h6UjgyxAEd-8mcmtGejV_Q" base_Comment="_h6UjgixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h6UjgCxAEd-8mcmtGejV_Q" valueSetId="9015-" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h6LZkyxAEd-8mcmtGejV_Q" displayName="9015- Status Type, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h6UjgCxAEd-8mcmtGejV_Q" valueSetId="9015-" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h6LZkyxAEd-8mcmtGejV_Q" displayName="Status Type, coded"/>
   <Default:Documentation xmi:id="_h6LZlSxAEd-8mcmtGejV_Q" base_Comment="_h6LZlCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h6LZkixAEd-8mcmtGejV_Q" base_Comment="_h6LZkSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h6BolCxAEd-8mcmtGejV_Q" base_Comment="_h6BokyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h6BokSxAEd-8mcmtGejV_Q" valueSetId="8000" fieldFormat="a1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h533kyxAEd-8mcmtGejV_Q" displayName="8000 - Source of Information"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h6BokSxAEd-8mcmtGejV_Q" valueSetId="8000" fieldFormat="a1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h533kyxAEd-8mcmtGejV_Q" displayName="Source of Information"/>
   <Default:Documentation xmi:id="_h6BokCxAEd-8mcmtGejV_Q" base_Comment="_h533lCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h533kixAEd-8mcmtGejV_Q" base_Comment="_h533kSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h5utpCxAEd-8mcmtGejV_Q" base_Comment="_h5utoyxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h5utoSxAEd-8mcmtGejV_Q" base_Comment="_h5utoCxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h5k8pCxAEd-8mcmtGejV_Q" valueSetId="7991" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h5k8oSxAEd-8mcmtGejV_Q" displayName="7991 - Source Code List"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h5k8pCxAEd-8mcmtGejV_Q" valueSetId="7991" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h5k8oSxAEd-8mcmtGejV_Q" displayName="Source Code List"/>
   <Default:Documentation xmi:id="_h5k8oyxAEd-8mcmtGejV_Q" base_Comment="_h5k8oixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h5k8oCxAEd-8mcmtGejV_Q" base_Comment="_h5bytSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h5bysyxAEd-8mcmtGejV_Q" valueSetId="7939" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h5bysCxAEd-8mcmtGejV_Q" displayName="7939 - Site of Administration Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h5bysyxAEd-8mcmtGejV_Q" valueSetId="7939" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h5bysCxAEd-8mcmtGejV_Q" displayName="Site of Administration Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h5bysixAEd-8mcmtGejV_Q" base_Comment="_h5bysSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h5SBsyxAEd-8mcmtGejV_Q" base_Comment="_h5SBsixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h5SBsCxAEd-8mcmtGejV_Q" base_Comment="_h5IQtixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h5IQtCxAEd-8mcmtGejV_Q" base_Comment="_h5IQsyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h5IQsSxAEd-8mcmtGejV_Q" valueSetId="7902" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h4_GxCxAEd-8mcmtGejV_Q" displayName="7902 -Sig Free Text String Indicator - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h5IQsSxAEd-8mcmtGejV_Q" valueSetId="7902" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h4_GxCxAEd-8mcmtGejV_Q" displayName="Sig Free Text String Indicator - SIG Segment"/>
   <Default:Documentation xmi:id="_h5IQsCxAEd-8mcmtGejV_Q" base_Comment="_h4_GxSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h4_GwyxAEd-8mcmtGejV_Q" base_Comment="_h4_GwixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h4_GwCxAEd-8mcmtGejV_Q" valueSetId="7935" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h41VwSxAEd-8mcmtGejV_Q" displayName="7935 - Route of Administration Code Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h4_GwCxAEd-8mcmtGejV_Q" valueSetId="7935" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h41VwSxAEd-8mcmtGejV_Q" displayName="Route of Administration Code Qualifier"/>
   <Default:Documentation xmi:id="_h41VwyxAEd-8mcmtGejV_Q" base_Comment="_h41VwixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h4rkwyxAEd-8mcmtGejV_Q" valueSetId="1153" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h4rkwCxAEd-8mcmtGejV_Q" displayName="1153 - Reference Qualifier- Generic Database, Prior Authorization - DRU Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h4rkwyxAEd-8mcmtGejV_Q" valueSetId="1153" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h4rkwCxAEd-8mcmtGejV_Q" displayName="Reference Qualifier- Generic Database, Prior Authorization - DRU Segment"/>
   <Default:Documentation xmi:id="_h4rkwixAEd-8mcmtGejV_Q" base_Comment="_h4rkwSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h4ia1SxAEd-8mcmtGejV_Q" base_Comment="_h4ia1CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h4ia0ixAEd-8mcmtGejV_Q" base_Comment="_h4ia0SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h4Yp0yxAEd-8mcmtGejV_Q" base_Comment="_h4Yp0ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h4Yp0CxAEd-8mcmtGejV_Q" base_Comment="_h4Pf5SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h4Pf4yxAEd-8mcmtGejV_Q" base_Comment="_h4Pf4ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h4Pf4CxAEd-8mcmtGejV_Q" valueSetId="8011" fieldFormat="x(2)" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h4Fu4yxAEd-8mcmtGejV_Q" displayName="8011 - Reason Code (REQ Segment)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h4Pf4CxAEd-8mcmtGejV_Q" valueSetId="8011" fieldFormat="x(2)" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h4Fu4yxAEd-8mcmtGejV_Q" displayName="Reason Code (REQ Segment)"/>
   <Default:Documentation xmi:id="_h4Fu5SxAEd-8mcmtGejV_Q" base_Comment="_h4Fu5CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h4Fu4ixAEd-8mcmtGejV_Q" base_Comment="_h4Fu4SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h3794yxAEd-8mcmtGejV_Q" valueSetId="7948" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h3794CxAEd-8mcmtGejV_Q" displayName="7948 - Rate Unit of Measure Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h3794yxAEd-8mcmtGejV_Q" valueSetId="7948" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h3794CxAEd-8mcmtGejV_Q" displayName="Rate Unit of Measure Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h3794ixAEd-8mcmtGejV_Q" base_Comment="_h3794SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h3yz9ixAEd-8mcmtGejV_Q" base_Comment="_h3yz9SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h3yz8yxAEd-8mcmtGejV_Q" valueSetId="7990" fieldFormat="an..10" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h3yz8CxAEd-8mcmtGejV_Q" displayName="7990 - Provider Specialty code (replacing 4707 - Provider Specialty, coded (X12 DE 1222)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h3yz8yxAEd-8mcmtGejV_Q" valueSetId="7990" fieldFormat="an..10" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h3yz8CxAEd-8mcmtGejV_Q" displayName="Provider Specialty code (replacing 4707 - Provider Specialty, coded (X12 DE 1222)"/>
   <Default:Documentation xmi:id="_h3yz8ixAEd-8mcmtGejV_Q" base_Comment="_h3yz8SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h3pC8yxAEd-8mcmtGejV_Q" base_Comment="_h3pC8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h3pC8CxAEd-8mcmtGejV_Q" base_Comment="_h3fR9SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h3fR8yxAEd-8mcmtGejV_Q" base_Comment="_h3fR8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h3fR8CxAEd-8mcmtGejV_Q" base_Comment="_h3WIBSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h3WIAyxAEd-8mcmtGejV_Q" base_Comment="_h3WIAixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h3WIACxAEd-8mcmtGejV_Q" valueSetId="7891-" fieldFormat="an1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h3MXASxAEd-8mcmtGejV_Q" displayName="7891- Prior Authorization Status"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h3WIACxAEd-8mcmtGejV_Q" valueSetId="7891-" fieldFormat="an1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h3MXASxAEd-8mcmtGejV_Q" displayName="Prior Authorization Status"/>
   <Default:Documentation xmi:id="_h3MXAyxAEd-8mcmtGejV_Q" base_Comment="_h3MXAixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h3MXACxAEd-8mcmtGejV_Q" base_Comment="_h3DNFSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h3DNEyxAEd-8mcmtGejV_Q" base_Comment="_h3DNEixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h3DNECxAEd-8mcmtGejV_Q" valueSetId="8002" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h25cFCxAEd-8mcmtGejV_Q" displayName="8002 - Prescription Delivery Method&#x9;"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h3DNECxAEd-8mcmtGejV_Q" valueSetId="8002" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h25cFCxAEd-8mcmtGejV_Q" displayName="Prescription Delivery Method&#x9;"/>
   <Default:Documentation xmi:id="_h25cFixAEd-8mcmtGejV_Q" base_Comment="_h25cFSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h25cEyxAEd-8mcmtGejV_Q" base_Comment="_h25cEixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h25cECxAEd-8mcmtGejV_Q" valueSetId="7994" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h2vrESxAEd-8mcmtGejV_Q" displayName="7994 - Potency Unit Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h25cECxAEd-8mcmtGejV_Q" valueSetId="7994" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h2vrESxAEd-8mcmtGejV_Q" displayName="Potency Unit Code"/>
   <Default:Documentation xmi:id="_h2vrEyxAEd-8mcmtGejV_Q" base_Comment="_h2vrEixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h2vrECxAEd-8mcmtGejV_Q" base_Comment="_h2mhJSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h2mhIyxAEd-8mcmtGejV_Q" base_Comment="_h2mhIixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h2mhICxAEd-8mcmtGejV_Q" valueSetId="7999" fieldFormat="a1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h2cwISxAEd-8mcmtGejV_Q" displayName="7999 - No Known Allergies"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h2mhICxAEd-8mcmtGejV_Q" valueSetId="7999" fieldFormat="a1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h2cwISxAEd-8mcmtGejV_Q" displayName="No Known Allergies"/>
   <Default:Documentation xmi:id="_h2cwIyxAEd-8mcmtGejV_Q" base_Comment="_h2cwIixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h2cwICxAEd-8mcmtGejV_Q" base_Comment="_h2S_JixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h2S_JCxAEd-8mcmtGejV_Q" valueSetId="7933" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h2S_ISxAEd-8mcmtGejV_Q" displayName="7933 - Multiple Vehicle Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h2S_JCxAEd-8mcmtGejV_Q" valueSetId="7933" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h2S_ISxAEd-8mcmtGejV_Q" displayName="Multiple Vehicle Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h2S_IyxAEd-8mcmtGejV_Q" base_Comment="_h2S_IixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h2S_ICxAEd-8mcmtGejV_Q" base_Comment="_h2J1NCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h2J1MixAEd-8mcmtGejV_Q" base_Comment="_h2J1MSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h2AENixAEd-8mcmtGejV_Q" base_Comment="_h2AENSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h2AEMyxAEd-8mcmtGejV_Q" valueSetId="7941" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h2AEMCxAEd-8mcmtGejV_Q" displayName="7941 - Multiple Site of Administration Timing Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h2AEMyxAEd-8mcmtGejV_Q" valueSetId="7941" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h2AEMCxAEd-8mcmtGejV_Q" displayName="Multiple Site of Administration Timing Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h2AEMixAEd-8mcmtGejV_Q" base_Comment="_h2AEMSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h126QyxAEd-8mcmtGejV_Q" base_Comment="_h126QixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h126QCxAEd-8mcmtGejV_Q" base_Comment="_h1tJRSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h1tJQyxAEd-8mcmtGejV_Q" base_Comment="_h1tJQixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h1tJQCxAEd-8mcmtGejV_Q" valueSetId="7899" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h1jYQSxAEd-8mcmtGejV_Q" displayName="7899 - Multiple Sig Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h1tJQCxAEd-8mcmtGejV_Q" valueSetId="7899" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h1jYQSxAEd-8mcmtGejV_Q" displayName="Multiple Sig Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h1jYQyxAEd-8mcmtGejV_Q" base_Comment="_h1jYQixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h1jYQCxAEd-8mcmtGejV_Q" base_Comment="_h1aOVixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h1aOVCxAEd-8mcmtGejV_Q" valueSetId="7937" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h1aOUSxAEd-8mcmtGejV_Q" displayName="7937 - Multiple Route of Administration Modifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h1aOVCxAEd-8mcmtGejV_Q" valueSetId="7937" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h1aOUSxAEd-8mcmtGejV_Q" displayName="Multiple Route of Administration Modifier"/>
   <Default:Documentation xmi:id="_h1aOUyxAEd-8mcmtGejV_Q" base_Comment="_h1aOUixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h1aOUCxAEd-8mcmtGejV_Q" base_Comment="_h1QdVSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h1QdUyxAEd-8mcmtGejV_Q" valueSetId="7945" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h1QdUCxAEd-8mcmtGejV_Q" displayName="7945 -Multiple Administration Timing Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h1QdUyxAEd-8mcmtGejV_Q" valueSetId="7945" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h1QdUCxAEd-8mcmtGejV_Q" displayName="Multiple Administration Timing Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_h1QdUixAEd-8mcmtGejV_Q" base_Comment="_h1QdUSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h1GsUyxAEd-8mcmtGejV_Q" base_Comment="_h1GsUixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_h1GsUCxAEd-8mcmtGejV_Q" base_Comment="_h09iZSxAEd-8mcmtGejV_Q"/>
@@ -18494,71 +18640,71 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_hy33sixAEd-8mcmtGejV_Q" base_Comment="_hy33sSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hyuGsyxAEd-8mcmtGejV_Q" base_Comment="_hyuGsixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hyuGsCxAEd-8mcmtGejV_Q" base_Comment="_hyk8xSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hyk8wyxAEd-8mcmtGejV_Q" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hyk8wCxAEd-8mcmtGejV_Q" displayName="4343 - Message Function, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hyk8wyxAEd-8mcmtGejV_Q" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hyk8wCxAEd-8mcmtGejV_Q" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="_hyk8wixAEd-8mcmtGejV_Q" base_Comment="_hyk8wSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hybLxixAEd-8mcmtGejV_Q" base_Comment="_hybLxSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hybLwyxAEd-8mcmtGejV_Q" valueSetId="7995" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hybLwCxAEd-8mcmtGejV_Q" displayName="7995 - Measurement Unit Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hybLwyxAEd-8mcmtGejV_Q" valueSetId="7995" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hybLwCxAEd-8mcmtGejV_Q" displayName="Measurement Unit Code"/>
   <Default:Documentation xmi:id="_hybLwixAEd-8mcmtGejV_Q" base_Comment="_hybLwSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hySB0yxAEd-8mcmtGejV_Q" base_Comment="_hySB0ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hySB0CxAEd-8mcmtGejV_Q" base_Comment="_hyIQ1SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hyIQ0yxAEd-8mcmtGejV_Q" base_Comment="_hyIQ0ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hyIQ0CxAEd-8mcmtGejV_Q" base_Comment="_hx-f1SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hx-f0yxAEd-8mcmtGejV_Q" valueSetId="7887-" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hx-f0CxAEd-8mcmtGejV_Q" displayName="7887- Measurement Data Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hx-f0yxAEd-8mcmtGejV_Q" valueSetId="7887-" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hx-f0CxAEd-8mcmtGejV_Q" displayName="Measurement Data Qualifier"/>
   <Default:Documentation xmi:id="_hx-f0ixAEd-8mcmtGejV_Q" base_Comment="_hx-f0SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hx1V5CxAEd-8mcmtGejV_Q" base_Comment="_hx1V4yxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hx1V4SxAEd-8mcmtGejV_Q" valueSetId="7973" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hxrk5CxAEd-8mcmtGejV_Q" displayName="7973 - Maximum Dose Restriction Variable Units Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hx1V4SxAEd-8mcmtGejV_Q" valueSetId="7973" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hxrk5CxAEd-8mcmtGejV_Q" displayName="Maximum Dose Restriction Variable Units Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hx1V4CxAEd-8mcmtGejV_Q" base_Comment="_hxrk5SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hxrk4yxAEd-8mcmtGejV_Q" base_Comment="_hxrk4ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hxrk4CxAEd-8mcmtGejV_Q" valueSetId="7975" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hxhz4SxAEd-8mcmtGejV_Q" displayName="7975 - Maximum Dose Restriction Variable Duration Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hxrk4CxAEd-8mcmtGejV_Q" valueSetId="7975" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hxhz4SxAEd-8mcmtGejV_Q" displayName="Maximum Dose Restriction Variable Duration Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hxhz4yxAEd-8mcmtGejV_Q" base_Comment="_hxhz4ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hxhz4CxAEd-8mcmtGejV_Q" base_Comment="_hxYp9ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hxYp9CxAEd-8mcmtGejV_Q" valueSetId="7969" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hxYp8SxAEd-8mcmtGejV_Q" displayName="7969 - Maximum Dose Restriction Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hxYp9CxAEd-8mcmtGejV_Q" valueSetId="7969" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hxYp8SxAEd-8mcmtGejV_Q" displayName="Maximum Dose Restriction Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hxYp8yxAEd-8mcmtGejV_Q" base_Comment="_hxYp8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hxYp8CxAEd-8mcmtGejV_Q" base_Comment="_hxO49SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hxO48yxAEd-8mcmtGejV_Q" valueSetId="7993" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hxO48CxAEd-8mcmtGejV_Q" displayName="7993 - Item Strength Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hxO48yxAEd-8mcmtGejV_Q" valueSetId="7993" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hxO48CxAEd-8mcmtGejV_Q" displayName="Item Strength Code"/>
   <Default:Documentation xmi:id="_hxO48ixAEd-8mcmtGejV_Q" base_Comment="_hxO48SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hxFvBCxAEd-8mcmtGejV_Q" base_Comment="_hxFvAyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hxFvASxAEd-8mcmtGejV_Q" valueSetId="7992" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hw7-BCxAEd-8mcmtGejV_Q" displayName="7992 - Item Form Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hxFvASxAEd-8mcmtGejV_Q" valueSetId="7992" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hw7-BCxAEd-8mcmtGejV_Q" displayName="Item Form Code"/>
   <Default:Documentation xmi:id="_hxFvACxAEd-8mcmtGejV_Q" base_Comment="_hw7-BSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hw7-AyxAEd-8mcmtGejV_Q" base_Comment="_hw7-AixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hw7-ACxAEd-8mcmtGejV_Q" valueSetId="7960" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hwyNASxAEd-8mcmtGejV_Q" displayName="7960 - Interval Units Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hw7-ACxAEd-8mcmtGejV_Q" valueSetId="7960" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hwyNASxAEd-8mcmtGejV_Q" displayName="Interval Units Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hwyNAyxAEd-8mcmtGejV_Q" base_Comment="_hwyNAixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hwyNACxAEd-8mcmtGejV_Q" base_Comment="_hwpDFSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hwpDEyxAEd-8mcmtGejV_Q" base_Comment="_hwpDEixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hwpDECxAEd-8mcmtGejV_Q" base_Comment="_hwfSFSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hwfSEyxAEd-8mcmtGejV_Q" base_Comment="_hwfSEixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hwfSECxAEd-8mcmtGejV_Q" valueSetId="9701" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hwVhESxAEd-8mcmtGejV_Q" displayName="9701 - Individual Relationship, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hwfSECxAEd-8mcmtGejV_Q" valueSetId="9701" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hwVhESxAEd-8mcmtGejV_Q" displayName="Individual Relationship, coded"/>
   <Default:Documentation xmi:id="_hwVhEyxAEd-8mcmtGejV_Q" base_Comment="_hwVhEixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hwVhECxAEd-8mcmtGejV_Q" base_Comment="_hwMXJSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hwMXIyxAEd-8mcmtGejV_Q" valueSetId="7987" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hwMXICxAEd-8mcmtGejV_Q" displayName="7987 -Indication Variable Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hwMXIyxAEd-8mcmtGejV_Q" valueSetId="7987" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hwMXICxAEd-8mcmtGejV_Q" displayName="Indication Variable Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hwMXIixAEd-8mcmtGejV_Q" base_Comment="_hwMXISxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hwCmJCxAEd-8mcmtGejV_Q" base_Comment="_hwCmIyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hwCmISxAEd-8mcmtGejV_Q" valueSetId="7985" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hv5cNCxAEd-8mcmtGejV_Q" displayName="7985 - Indication Value Unit of Measure Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hwCmISxAEd-8mcmtGejV_Q" valueSetId="7985" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hv5cNCxAEd-8mcmtGejV_Q" displayName="Indication Value Unit of Measure Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hwCmICxAEd-8mcmtGejV_Q" base_Comment="_hv5cNSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hv5cMyxAEd-8mcmtGejV_Q" base_Comment="_hv5cMixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hv5cMCxAEd-8mcmtGejV_Q" valueSetId="7980" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hvvrMSxAEd-8mcmtGejV_Q" displayName="7980 - Indication Text Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hv5cMCxAEd-8mcmtGejV_Q" valueSetId="7980" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hvvrMSxAEd-8mcmtGejV_Q" displayName="Indication Text Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hvvrMyxAEd-8mcmtGejV_Q" base_Comment="_hvvrMixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hvvrMCxAEd-8mcmtGejV_Q" base_Comment="_hvl6NSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hvl6MyxAEd-8mcmtGejV_Q" valueSetId="7977" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hvl6MCxAEd-8mcmtGejV_Q" displayName="7977 - Indication Precursor Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hvl6MyxAEd-8mcmtGejV_Q" valueSetId="7977" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hvl6MCxAEd-8mcmtGejV_Q" displayName="Indication Precursor Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hvl6MixAEd-8mcmtGejV_Q" base_Comment="_hvl6MSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hu2TVCxAEd-8mcmtGejV_Q" base_Comment="_hu2TUyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hu2TUSxAEd-8mcmtGejV_Q" valueSetId="7955" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hutJZCxAEd-8mcmtGejV_Q" displayName="7955 - Frequency Units Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hu2TUSxAEd-8mcmtGejV_Q" valueSetId="7955" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hutJZCxAEd-8mcmtGejV_Q" displayName="Frequency Units Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hu2TUCxAEd-8mcmtGejV_Q" base_Comment="_hutJZSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hutJYyxAEd-8mcmtGejV_Q" base_Comment="_hutJYixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hutJYCxAEd-8mcmtGejV_Q" valueSetId="8004" fieldFormat="an..70" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hujYYyxAEd-8mcmtGejV_Q" displayName="8004 - Final Compound Pharmaceutical Dosage Form&#x9;"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hutJYCxAEd-8mcmtGejV_Q" valueSetId="8004" fieldFormat="an..70" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hujYYyxAEd-8mcmtGejV_Q" displayName="Final Compound Pharmaceutical Dosage Form&#x9;"/>
   <Default:Documentation xmi:id="_hujYZSxAEd-8mcmtGejV_Q" base_Comment="_hujYZCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hujYYixAEd-8mcmtGejV_Q" base_Comment="_hujYYSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_huZnZCxAEd-8mcmtGejV_Q" valueSetId="7965" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_huZnYSxAEd-8mcmtGejV_Q" displayName="7965 - Duration Text Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_huZnZCxAEd-8mcmtGejV_Q" valueSetId="7965" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_huZnYSxAEd-8mcmtGejV_Q" displayName="Duration Text Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_huZnYyxAEd-8mcmtGejV_Q" base_Comment="_huZnYixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_huQdcyxAEd-8mcmtGejV_Q" valueSetId="7882" fieldFormat="an2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_huQdcCxAEd-8mcmtGejV_Q" displayName="7882 - DUE Result Of Service Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_huQdcyxAEd-8mcmtGejV_Q" valueSetId="7882" fieldFormat="an2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_huQdcCxAEd-8mcmtGejV_Q" displayName="DUE Result Of Service Code"/>
   <Default:Documentation xmi:id="_huQdcixAEd-8mcmtGejV_Q" base_Comment="_huQdcSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_huGscSxAEd-8mcmtGejV_Q" valueSetId="7880" fieldFormat="an2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ht87dCxAEd-8mcmtGejV_Q" displayName="7880 - DUE Reason For Service Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_huGscSxAEd-8mcmtGejV_Q" valueSetId="7880" fieldFormat="an2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_ht87dCxAEd-8mcmtGejV_Q" displayName="DUE Reason For Service Code"/>
   <Default:Documentation xmi:id="_huGscCxAEd-8mcmtGejV_Q" base_Comment="_ht87dSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_ht87cCxAEd-8mcmtGejV_Q" valueSetId="7881" fieldFormat="an2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_htzxgixAEd-8mcmtGejV_Q" displayName="7881 - DUE Professional Service Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ht87cCxAEd-8mcmtGejV_Q" valueSetId="7881" fieldFormat="an2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_htzxgixAEd-8mcmtGejV_Q" displayName="DUE Professional Service Code"/>
   <Default:Documentation xmi:id="_htzxhCxAEd-8mcmtGejV_Q" base_Comment="_htzxgyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_htqAhCxAEd-8mcmtGejV_Q" valueSetId="7884" fieldFormat="an2" standardsUsing="SCRIPT" valueSetLimitations="" base_Enumeration="_htqAgSxAEd-8mcmtGejV_Q" displayName="7884 - DUE Co-Agent ID Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_htqAhCxAEd-8mcmtGejV_Q" valueSetId="7884" fieldFormat="an2" standardsUsing="SCRIPT" valueSetLimitations="" base_Enumeration="_htqAgSxAEd-8mcmtGejV_Q" displayName="DUE Co-Agent ID Qualifier"/>
   <Default:Documentation xmi:id="_htqAgyxAEd-8mcmtGejV_Q" base_Comment="_htqAgixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_htg2kyxAEd-8mcmtGejV_Q" valueSetId="7997" fieldFormat="an..1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_htg2kCxAEd-8mcmtGejV_Q" displayName="7997 - DUE Clinical Significance Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_htg2kyxAEd-8mcmtGejV_Q" valueSetId="7997" fieldFormat="an..1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_htg2kCxAEd-8mcmtGejV_Q" displayName="DUE Clinical Significance Code"/>
   <Default:Documentation xmi:id="_htg2kixAEd-8mcmtGejV_Q" base_Comment="_htg2kSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_htXFkyxAEd-8mcmtGejV_Q" base_Comment="_htXFkixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_htXFkCxAEd-8mcmtGejV_Q" base_Comment="_htNUlSxAEd-8mcmtGejV_Q"/>
@@ -18568,52 +18714,52 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_htEKoCxAEd-8mcmtGejV_Q" base_Comment="_hs6ZpCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hs6ZoixAEd-8mcmtGejV_Q" base_Comment="_hs6ZoSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hswopCxAEd-8mcmtGejV_Q" base_Comment="_hswooyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hswooSxAEd-8mcmtGejV_Q" valueSetId="7885" fieldFormat="an2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hsnetCxAEd-8mcmtGejV_Q" displayName="7885 - Drug Coverage Status Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hswooSxAEd-8mcmtGejV_Q" valueSetId="7885" fieldFormat="an2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hsnetCxAEd-8mcmtGejV_Q" displayName="Drug Coverage Status Code"/>
   <Default:Documentation xmi:id="_hswooCxAEd-8mcmtGejV_Q" base_Comment="_hsnetSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hsnesyxAEd-8mcmtGejV_Q" base_Comment="_hsnesixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hsnesCxAEd-8mcmtGejV_Q" valueSetId="7917" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hsdtsSxAEd-8mcmtGejV_Q" displayName="7917 - Dosing Basis Unit of Measure Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hsnesCxAEd-8mcmtGejV_Q" valueSetId="7917" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hsdtsSxAEd-8mcmtGejV_Q" displayName="Dosing Basis Unit of Measure Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hsdtsyxAEd-8mcmtGejV_Q" base_Comment="_hsdtsixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hsdtsCxAEd-8mcmtGejV_Q" base_Comment="_hsUjxSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hsUjwyxAEd-8mcmtGejV_Q" valueSetId="7914" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hsUjwCxAEd-8mcmtGejV_Q" displayName="7914 - Dose Range Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hsUjwyxAEd-8mcmtGejV_Q" valueSetId="7914" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hsUjwCxAEd-8mcmtGejV_Q" displayName="Dose Range Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hsUjwixAEd-8mcmtGejV_Q" base_Comment="_hsUjwSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hsKyxCxAEd-8mcmtGejV_Q" base_Comment="_hsKywyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hsKywSxAEd-8mcmtGejV_Q" valueSetId="7912" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hsBBxCxAEd-8mcmtGejV_Q" displayName="7912 - Dose Form Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hsKywSxAEd-8mcmtGejV_Q" valueSetId="7912" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hsBBxCxAEd-8mcmtGejV_Q" displayName="Dose Form Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hsKywCxAEd-8mcmtGejV_Q" base_Comment="_hsBBxSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hsBBwyxAEd-8mcmtGejV_Q" base_Comment="_hsBBwixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hsBBwCxAEd-8mcmtGejV_Q" valueSetId="7908" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hr330SxAEd-8mcmtGejV_Q" displayName="7908 - Dose Delivery Method Modifier Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hsBBwCxAEd-8mcmtGejV_Q" valueSetId="7908" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hr330SxAEd-8mcmtGejV_Q" displayName="Dose Delivery Method Modifier Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hr330yxAEd-8mcmtGejV_Q" base_Comment="_hr330ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hr330CxAEd-8mcmtGejV_Q" base_Comment="_hruG1SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hruG0yxAEd-8mcmtGejV_Q" valueSetId="7905" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hruG0CxAEd-8mcmtGejV_Q" displayName="7905 - Dose Delivery Method Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hruG0yxAEd-8mcmtGejV_Q" valueSetId="7905" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hruG0CxAEd-8mcmtGejV_Q" displayName="Dose Delivery Method Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hruG0ixAEd-8mcmtGejV_Q" base_Comment="_hruG0SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hrkV1SxAEd-8mcmtGejV_Q" base_Comment="_hrkV1CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hrkV0ixAEd-8mcmtGejV_Q" base_Comment="_hrkV0SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hrbL4yxAEd-8mcmtGejV_Q" base_Comment="_hrbL4ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hrbL4CxAEd-8mcmtGejV_Q" base_Comment="_hrRa5SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hrRa4yxAEd-8mcmtGejV_Q" valueSetId="7903" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hrRa4CxAEd-8mcmtGejV_Q" displayName="7903 - Dose Composite Indicator - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hrRa4yxAEd-8mcmtGejV_Q" valueSetId="7903" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hrRa4CxAEd-8mcmtGejV_Q" displayName="Dose Composite Indicator - SIG Segment"/>
   <Default:Documentation xmi:id="_hrRa4ixAEd-8mcmtGejV_Q" base_Comment="_hrRa4SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hrIQ9CxAEd-8mcmtGejV_Q" base_Comment="_hrIQ8yxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hrIQ8SxAEd-8mcmtGejV_Q" valueSetId="7925" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hq-f9CxAEd-8mcmtGejV_Q" displayName="7925 - Dose Basis Range Modifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hrIQ8SxAEd-8mcmtGejV_Q" valueSetId="7925" fieldFormat="an..50" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hq-f9CxAEd-8mcmtGejV_Q" displayName="Dose Basis Range Modifier - SIG Segment"/>
   <Default:Documentation xmi:id="_hrIQ8CxAEd-8mcmtGejV_Q" base_Comment="_hq-f9SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hq-f8yxAEd-8mcmtGejV_Q" base_Comment="_hq-f8ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hq-f8CxAEd-8mcmtGejV_Q" valueSetId="7892" fieldFormat="an1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hq0u8SxAEd-8mcmtGejV_Q" displayName="7892 - Do Not Fill/Profile Flag"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hq-f8CxAEd-8mcmtGejV_Q" valueSetId="7892" fieldFormat="an1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hq0u8SxAEd-8mcmtGejV_Q" displayName="Do Not Fill/Profile Flag"/>
   <Default:Documentation xmi:id="_hq0u8yxAEd-8mcmtGejV_Q" base_Comment="_hq0u8ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hqrlAyxAEd-8mcmtGejV_Q" valueSetId="7996" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hqrlACxAEd-8mcmtGejV_Q" displayName="7996 - DEA Schedule"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hqrlAyxAEd-8mcmtGejV_Q" valueSetId="7996" fieldFormat="an..15" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hqrlACxAEd-8mcmtGejV_Q" displayName="DEA Schedule"/>
   <Default:Documentation xmi:id="_hqrlAixAEd-8mcmtGejV_Q" base_Comment="_hqrlASxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hqh0BCxAEd-8mcmtGejV_Q" base_Comment="_hqh0AyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hqh0ASxAEd-8mcmtGejV_Q" valueSetId="3229" fieldFormat="an..9" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hqYDAyxAEd-8mcmtGejV_Q" displayName="3229 - Country Sub-entity Identification"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hqh0ASxAEd-8mcmtGejV_Q" valueSetId="3229" fieldFormat="an..9" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hqYDAyxAEd-8mcmtGejV_Q" displayName="Country Sub-entity Identification"/>
   <Default:Documentation xmi:id="_hqh0ACxAEd-8mcmtGejV_Q" base_Comment="_hqYDBCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hqYDAixAEd-8mcmtGejV_Q" base_Comment="_hqYDASxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hqO5FSxAEd-8mcmtGejV_Q" base_Comment="_hqO5FCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hqO5EixAEd-8mcmtGejV_Q" base_Comment="_hqO5ESxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hqFIEyxAEd-8mcmtGejV_Q" base_Comment="_hqFIEixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hqFIECxAEd-8mcmtGejV_Q" base_Comment="_hp7-JSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hp7-IyxAEd-8mcmtGejV_Q" valueSetId="130-4711" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hp7-ICxAEd-8mcmtGejV_Q" displayName="130-4711 Condition/Response, coded - Patient Consent Indicator"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hp7-IyxAEd-8mcmtGejV_Q" valueSetId="130-4711" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hp7-ICxAEd-8mcmtGejV_Q" displayName="Condition/Response, coded - Patient Consent Indicator"/>
   <Default:Documentation xmi:id="_hp7-IixAEd-8mcmtGejV_Q" base_Comment="_hp7-ISxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hUB_kCxAEd-8mcmtGejV_Q" base_Comment="_hT4OlSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hTInsixAEd-8mcmtGejV_Q" base_Comment="_hTInsSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hL-21CxAEd-8mcmtGejV_Q" base_Comment="_hL-20yxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_hApwlSxAEd-8mcmtGejV_Q" base_Comment="_hApwlCxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hAD6syxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..4" standardsUsing="S" valueSetLimitations="change size to xs:string. EDI supported an..3, but XML has supported xs:string." base_Enumeration="_hAD6sCxAEd-8mcmtGejV_Q" displayName="Error transaction in element Code (what was 1131 – Code List Qualifier – Reject Code - STS Segment)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hAD6syxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="xs:string" standardsUsing="S" valueSetLimitations="change size to xs:string. EDI supported an..3, but XML has supported xs:string." base_Enumeration="_hAD6sCxAEd-8mcmtGejV_Q" displayName="Error transaction in element Code (what was 1131 – Code List Qualifier – Reject Code - STS Segment)"/>
   <Default:Documentation xmi:id="_hAD6sixAEd-8mcmtGejV_Q" base_Comment="_hAD6sSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g_6JsyxAEd-8mcmtGejV_Q" base_Comment="_g_6JsixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g_6JsCxAEd-8mcmtGejV_Q" base_Comment="_g_w_xSxAEd-8mcmtGejV_Q"/>
@@ -18631,36 +18777,36 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_g-3n4yxAEd-8mcmtGejV_Q" base_Comment="_g-3n4ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g-3n4CxAEd-8mcmtGejV_Q" base_Comment="_g-t25SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g-t24yxAEd-8mcmtGejV_Q" base_Comment="_g-t24ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g-t24CxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g-ks8SxAEd-8mcmtGejV_Q" displayName="1131 - Code List Qualifier - Response Code - RES Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g-t24CxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g-ks8SxAEd-8mcmtGejV_Q" displayName="Code List Qualifier - Response Code - RES Segment"/>
   <Default:Documentation xmi:id="_g-ks8yxAEd-8mcmtGejV_Q" base_Comment="_g-ks8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g-ks8CxAEd-8mcmtGejV_Q" base_Comment="_g-a79SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g-a78yxAEd-8mcmtGejV_Q" base_Comment="_g-a78ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g-a78CxAEd-8mcmtGejV_Q" base_Comment="_g-RK9CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g-RK8ixAEd-8mcmtGejV_Q" base_Comment="_g-RK8SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g-IBBixAEd-8mcmtGejV_Q" base_Comment="_g-IBBSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g-IBAyxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g-IBACxAEd-8mcmtGejV_Q" displayName="1131 - Code List Qualifier - Diagnosis Code Qualifier (Primary) - DRU Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g-IBAyxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g-IBACxAEd-8mcmtGejV_Q" displayName="Code List Qualifier - Diagnosis Code Qualifier (Primary) - DRU Segment"/>
   <Default:Documentation xmi:id="_g-IBAixAEd-8mcmtGejV_Q" base_Comment="_g-IBASxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g9-QAyxAEd-8mcmtGejV_Q" base_Comment="_g9-QAixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g9-QACxAEd-8mcmtGejV_Q" base_Comment="_g91GFSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g91GEyxAEd-8mcmtGejV_Q" valueSetId="6810" fieldFormat="an..1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g91GECxAEd-8mcmtGejV_Q" displayName="6810 - Clinical Information Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g91GEyxAEd-8mcmtGejV_Q" valueSetId="6810" fieldFormat="an..1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g91GECxAEd-8mcmtGejV_Q" displayName="Clinical Information Qualifier"/>
   <Default:Documentation xmi:id="_g91GEixAEd-8mcmtGejV_Q" base_Comment="_g91GESxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g9rVEyxAEd-8mcmtGejV_Q" base_Comment="_g9rVEixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g9rVECxAEd-8mcmtGejV_Q" base_Comment="_g9hkFSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g9hkEyxAEd-8mcmtGejV_Q" valueSetId="7893" fieldFormat="an1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g9hkECxAEd-8mcmtGejV_Q" displayName="7893 - Change of Prescription Status Flag"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g9hkEyxAEd-8mcmtGejV_Q" valueSetId="7893" fieldFormat="an1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g9hkECxAEd-8mcmtGejV_Q" displayName="Change of Prescription Status Flag"/>
   <Default:Documentation xmi:id="_g9hkEixAEd-8mcmtGejV_Q" base_Comment="_g9hkESxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g9YaJixAEd-8mcmtGejV_Q" base_Comment="_g9YaJSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g9YaIyxAEd-8mcmtGejV_Q" valueSetId="7923" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g9YaICxAEd-8mcmtGejV_Q" displayName="7923 - Calculated Dose Unit of Measure Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g9YaIyxAEd-8mcmtGejV_Q" valueSetId="7923" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g9YaICxAEd-8mcmtGejV_Q" displayName="Calculated Dose Unit of Measure Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_g9YaIixAEd-8mcmtGejV_Q" base_Comment="_g9YaISxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g87uMyxAEd-8mcmtGejV_Q" base_Comment="_g87uMixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g87uMCxAEd-8mcmtGejV_Q" base_Comment="_g8x9NSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g8x9MyxAEd-8mcmtGejV_Q" valueSetId="7919" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g8x9MCxAEd-8mcmtGejV_Q" displayName="7919 -Body Metric Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g8x9MyxAEd-8mcmtGejV_Q" valueSetId="7919" fieldFormat="n1" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g8x9MCxAEd-8mcmtGejV_Q" displayName="Body Metric Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_g8x9MixAEd-8mcmtGejV_Q" base_Comment="_g8x9MSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g8ozRSxAEd-8mcmtGejV_Q" base_Comment="_g8ozRCxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g8ozQixAEd-8mcmtGejV_Q" valueSetId="7943" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g8fCRCxAEd-8mcmtGejV_Q" displayName="7943 - Administration Timing Code Qualifier - SIG Segment"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g8ozQixAEd-8mcmtGejV_Q" valueSetId="7943" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="" base_Enumeration="_g8fCRCxAEd-8mcmtGejV_Q" displayName="Administration Timing Code Qualifier - SIG Segment"/>
   <Default:Documentation xmi:id="_g8ozQSxAEd-8mcmtGejV_Q" base_Comment="_g8ozQCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g8fCQyxAEd-8mcmtGejV_Q" base_Comment="_g8fCQixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g8fCQCxAEd-8mcmtGejV_Q" base_Comment="_g8VRRSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g8VRQyxAEd-8mcmtGejV_Q" valueSetId="588" fieldFormat="x(2)" standardsUsing="W" valueSetLimitations="" base_Enumeration="_g8VRQCxAEd-8mcmtGejV_Q" displayName="588 - Workers’ Compensation/Property And Casualty Indicator"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g8VRQyxAEd-8mcmtGejV_Q" valueSetId="588" fieldFormat="x(2)" standardsUsing="W" valueSetLimitations="" base_Enumeration="_g8VRQCxAEd-8mcmtGejV_Q" displayName="Workers’ Compensation/Property And Casualty Indicator"/>
   <Default:Documentation xmi:id="_g8VRQixAEd-8mcmtGejV_Q" base_Comment="_g8VRQSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g8MHVSxAEd-8mcmtGejV_Q" base_Comment="_g8MHVCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g8MHUixAEd-8mcmtGejV_Q" base_Comment="_g8MHUSxAEd-8mcmtGejV_Q"/>
@@ -18702,12 +18848,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_g5NEwixAEd-8mcmtGejV_Q" base_Comment="_g5NEwSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g5D60yxAEd-8mcmtGejV_Q" base_Comment="_g5D60ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g5D60CxAEd-8mcmtGejV_Q" base_Comment="_g46J1ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g46J1CxAEd-8mcmtGejV_Q" valueSetId="102-A2" fieldFormat="x(2)" standardsUsing="A,B,T,F,G,V,N,X" valueSetLimitations="" base_Enumeration="_g46J0SxAEd-8mcmtGejV_Q" displayName="102-A2 Version/Release Number"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g46J1CxAEd-8mcmtGejV_Q" valueSetId="102-A2" fieldFormat="x(2)" standardsUsing="A,B,T,F,G,V,N,X" valueSetLimitations="" base_Enumeration="_g46J0SxAEd-8mcmtGejV_Q" displayName="Version/Release Number"/>
   <Default:Documentation xmi:id="_g46J0yxAEd-8mcmtGejV_Q" base_Comment="_g46J0ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g46J0CxAEd-8mcmtGejV_Q" base_Comment="_g4wY1CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g4wY0ixAEd-8mcmtGejV_Q" base_Comment="_g4wY0SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g4nO5ixAEd-8mcmtGejV_Q" base_Comment="_g4nO5SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g4nO4yxAEd-8mcmtGejV_Q" valueSetId="600-28" fieldFormat="x(2)" standardsUsing="R,T,A,W" valueSetLimitations="" base_Enumeration="_g4nO4CxAEd-8mcmtGejV_Q" displayName="600-28 - Unit of Measure"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g4nO4yxAEd-8mcmtGejV_Q" valueSetId="600-28" fieldFormat="x(2)" standardsUsing="R,T,A,W" valueSetLimitations="" base_Enumeration="_g4nO4CxAEd-8mcmtGejV_Q" displayName="Unit of Measure"/>
   <Default:Documentation xmi:id="_g4nO4ixAEd-8mcmtGejV_Q" base_Comment="_g4nO4SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g4dd4yxAEd-8mcmtGejV_Q" base_Comment="_g4dd4ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g4dd4CxAEd-8mcmtGejV_Q" base_Comment="_g4Ts5CxAEd-8mcmtGejV_Q"/>
@@ -18715,16 +18861,16 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_g4Ki9SxAEd-8mcmtGejV_Q" base_Comment="_g4Ki9CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g4Ki8ixAEd-8mcmtGejV_Q" base_Comment="_g4Ki8SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g4Ax9CxAEd-8mcmtGejV_Q" base_Comment="_g4Ax8yxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g4Ax8SxAEd-8mcmtGejV_Q" valueSetId="635-SQ" fieldFormat="9(2)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_g33oAyxAEd-8mcmtGejV_Q" displayName="635-SQ Unique Record Identifier Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g4Ax8SxAEd-8mcmtGejV_Q" valueSetId="635-SQ" fieldFormat="9(2)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_g33oAyxAEd-8mcmtGejV_Q" displayName="Unique Record Identifier Qualifier"/>
   <Default:Documentation xmi:id="_g4Ax8CxAEd-8mcmtGejV_Q" base_Comment="_g33oBCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g33oAixAEd-8mcmtGejV_Q" base_Comment="_g33oASxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g3t3BixAEd-8mcmtGejV_Q" base_Comment="_g3t3BSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g3t3AyxAEd-8mcmtGejV_Q" base_Comment="_g3t3AixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g3t3ACxAEd-8mcmtGejV_Q" valueSetId="880-K6" fieldFormat="x(1)" standardsUsing="B" valueSetLimitations="" base_Enumeration="_g3kGASxAEd-8mcmtGejV_Q" displayName="880-K6 Transmission Type"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g3t3ACxAEd-8mcmtGejV_Q" valueSetId="880-K6" fieldFormat="x(1)" standardsUsing="B" valueSetLimitations="" base_Enumeration="_g3kGASxAEd-8mcmtGejV_Q" displayName="Transmission Type"/>
   <Default:Documentation xmi:id="_g3kGAyxAEd-8mcmtGejV_Q" base_Comment="_g3kGAixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g3kGACxAEd-8mcmtGejV_Q" base_Comment="_g3a8FSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g3a8EyxAEd-8mcmtGejV_Q" base_Comment="_g3a8EixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g3a8ECxAEd-8mcmtGejV_Q" valueSetId="986-KJ" fieldFormat="x(3)" standardsUsing="F" valueSetLimitations="" base_Enumeration="_g3RLEyxAEd-8mcmtGejV_Q" displayName="986-KJ - Transmission File Type"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g3a8ECxAEd-8mcmtGejV_Q" valueSetId="986-KJ" fieldFormat="x(3)" standardsUsing="F" valueSetLimitations="" base_Enumeration="_g3RLEyxAEd-8mcmtGejV_Q" displayName="Transmission File Type"/>
   <Default:Documentation xmi:id="_g3RLFSxAEd-8mcmtGejV_Q" base_Comment="_g3RLFCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g3RLEixAEd-8mcmtGejV_Q" base_Comment="_g3RLESxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g3HaESxAEd-8mcmtGejV_Q" base_Comment="_g3HaECxAEd-8mcmtGejV_Q"/>
@@ -18732,12 +18878,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_g2-QICxAEd-8mcmtGejV_Q" base_Comment="_g20fJSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g20fIyxAEd-8mcmtGejV_Q" base_Comment="_g20fIixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g20fICxAEd-8mcmtGejV_Q" base_Comment="_g2rVNSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g2rVMyxAEd-8mcmtGejV_Q" valueSetId="981-JV" fieldFormat="x(1)" standardsUsing="F,A" valueSetLimitations="" base_Enumeration="_g2rVMCxAEd-8mcmtGejV_Q" displayName="981-JV - Transmission Action"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g2rVMyxAEd-8mcmtGejV_Q" valueSetId="981-JV" fieldFormat="x(1)" standardsUsing="F,A" valueSetLimitations="" base_Enumeration="_g2rVMCxAEd-8mcmtGejV_Q" displayName="Transmission Action"/>
   <Default:Documentation xmi:id="_g2rVMixAEd-8mcmtGejV_Q" base_Comment="_g2rVMSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g2hkMyxAEd-8mcmtGejV_Q" base_Comment="_g2hkMixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g2hkMCxAEd-8mcmtGejV_Q" base_Comment="_g2XzNixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g2XzNCxAEd-8mcmtGejV_Q" base_Comment="_g2XzMyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g2XzMSxAEd-8mcmtGejV_Q" valueSetId="632-SM" fieldFormat="9(1)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_g2OpQyxAEd-8mcmtGejV_Q" displayName="632-SM Transfer Type"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g2XzMSxAEd-8mcmtGejV_Q" valueSetId="632-SM" fieldFormat="9(1)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_g2OpQyxAEd-8mcmtGejV_Q" displayName="Transfer Type"/>
   <Default:Documentation xmi:id="_g2XzMCxAEd-8mcmtGejV_Q" base_Comment="_g2OpRCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g2OpQixAEd-8mcmtGejV_Q" base_Comment="_g2OpQSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g2E4RCxAEd-8mcmtGejV_Q" base_Comment="_g2E4QyxAEd-8mcmtGejV_Q"/>
@@ -18745,7 +18891,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_g17HQyxAEd-8mcmtGejV_Q" base_Comment="_g17HQixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g17HQCxAEd-8mcmtGejV_Q" base_Comment="_g1x9VixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g1x9VCxAEd-8mcmtGejV_Q" base_Comment="_g1x9UyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g1x9USxAEd-8mcmtGejV_Q" valueSetId="631-SK" fieldFormat="x(1)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_g1oMUyxAEd-8mcmtGejV_Q" displayName="631-SK Transfer Flag"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g1x9USxAEd-8mcmtGejV_Q" valueSetId="631-SK" fieldFormat="x(1)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_g1oMUyxAEd-8mcmtGejV_Q" displayName="Transfer Flag"/>
   <Default:Documentation xmi:id="_g1x9UCxAEd-8mcmtGejV_Q" base_Comment="_g1oMVCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g1oMUixAEd-8mcmtGejV_Q" base_Comment="_g1oMUSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g1fCYyxAEd-8mcmtGejV_Q" base_Comment="_g1fCYixAEd-8mcmtGejV_Q"/>
@@ -18756,14 +18902,14 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_g1CWdSxAEd-8mcmtGejV_Q" base_Comment="_g1CWdCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g1CWcixAEd-8mcmtGejV_Q" base_Comment="_g1CWcSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g04ldCxAEd-8mcmtGejV_Q" base_Comment="_g04lcyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_g04lcSxAEd-8mcmtGejV_Q" valueSetId="112-AN" fieldFormat="x(1)" standardsUsing="T,N" valueSetLimitations="" base_Enumeration="_g0u0cyxAEd-8mcmtGejV_Q" displayName="112-AN Transaction Response Status"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_g04lcSxAEd-8mcmtGejV_Q" valueSetId="112-AN" fieldFormat="x(1)" standardsUsing="T,N" valueSetLimitations="" base_Enumeration="_g0u0cyxAEd-8mcmtGejV_Q" displayName="Transaction Response Status"/>
   <Default:Documentation xmi:id="_g04lcCxAEd-8mcmtGejV_Q" base_Comment="_g0u0dCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g0u0cixAEd-8mcmtGejV_Q" base_Comment="_g0u0cSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_g0lqgCxAEd-8mcmtGejV_Q" base_Comment="_gz2DpCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gz2DoixAEd-8mcmtGejV_Q" base_Comment="_gz2DoSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gzsSoyxAEd-8mcmtGejV_Q" base_Comment="_gzsSoixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gzsSoCxAEd-8mcmtGejV_Q" base_Comment="_gzihpixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gzihpCxAEd-8mcmtGejV_Q" valueSetId="109-A9" fieldFormat="x(1)" standardsUsing="T,N" valueSetLimitations="" base_Enumeration="_gzihoSxAEd-8mcmtGejV_Q" displayName="109-A9 Transaction Count"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gzihpCxAEd-8mcmtGejV_Q" valueSetId="109-A9" fieldFormat="x(1)" standardsUsing="T,N" valueSetLimitations="" base_Enumeration="_gzihoSxAEd-8mcmtGejV_Q" displayName="Transaction Count"/>
   <Default:Documentation xmi:id="_gzihoyxAEd-8mcmtGejV_Q" base_Comment="_gzihoixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gzihoCxAEd-8mcmtGejV_Q" base_Comment="_gzZXtCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gzZXsixAEd-8mcmtGejV_Q" base_Comment="_gzZXsSxAEd-8mcmtGejV_Q"/>
@@ -18783,33 +18929,33 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_gyNE4yxAEd-8mcmtGejV_Q" base_Comment="_gyNE4ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gyNE4CxAEd-8mcmtGejV_Q" base_Comment="_gyDT5SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gyDT4yxAEd-8mcmtGejV_Q" base_Comment="_gyDT4ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gyDT4CxAEd-8mcmtGejV_Q" valueSetId="103-A3" fieldFormat="x(2)" standardsUsing="T,N" valueSetLimitations="" base_Enumeration="_gx6J9CxAEd-8mcmtGejV_Q" displayName="103-A3 Transaction Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gyDT4CxAEd-8mcmtGejV_Q" valueSetId="103-A3" fieldFormat="x(2)" standardsUsing="T,N" valueSetLimitations="" base_Enumeration="_gx6J9CxAEd-8mcmtGejV_Q" displayName="Transaction Code"/>
   <Default:Documentation xmi:id="_gx6J9ixAEd-8mcmtGejV_Q" base_Comment="_gx6J9SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gx6J8yxAEd-8mcmtGejV_Q" base_Comment="_gx6J8ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gx6J8CxAEd-8mcmtGejV_Q" valueSetId="601-26" fieldFormat="x(1)" standardsUsing="R,A" valueSetLimitations="" base_Enumeration="_gxwY8SxAEd-8mcmtGejV_Q" displayName="601-26 - Therapeutic Class Code Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gx6J8CxAEd-8mcmtGejV_Q" valueSetId="601-26" fieldFormat="x(1)" standardsUsing="R,A" valueSetLimitations="" base_Enumeration="_gxwY8SxAEd-8mcmtGejV_Q" displayName="Therapeutic Class Code Qualifier"/>
   <Default:Documentation xmi:id="_gxwY8yxAEd-8mcmtGejV_Q" base_Comment="_gxwY8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gxwY8CxAEd-8mcmtGejV_Q" base_Comment="_gxmn9SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gxmn8yxAEd-8mcmtGejV_Q" valueSetId="629-SH" fieldFormat="x(2)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_gxmn8CxAEd-8mcmtGejV_Q" displayName="629-SH Telephone Number"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gxmn8yxAEd-8mcmtGejV_Q" valueSetId="629-SH" fieldFormat="x(2)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_gxmn8CxAEd-8mcmtGejV_Q" displayName="Telephone Number"/>
   <Default:Documentation xmi:id="_gxmn8ixAEd-8mcmtGejV_Q" base_Comment="_gxmn8SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gxdeBSxAEd-8mcmtGejV_Q" base_Comment="_gxdeBCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gxdeAixAEd-8mcmtGejV_Q" base_Comment="_gxdeASxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gxTtAyxAEd-8mcmtGejV_Q" base_Comment="_gxTtAixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gxTtACxAEd-8mcmtGejV_Q" base_Comment="_gxJ8BixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gxJ8BCxAEd-8mcmtGejV_Q" base_Comment="_gxJ8AyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gxJ8ASxAEd-8mcmtGejV_Q" valueSetId="557-AV" fieldFormat="x(1)" standardsUsing="T,A" valueSetLimitations="" base_Enumeration="_gxAyEyxAEd-8mcmtGejV_Q" displayName="557-AV Tax Exempt Indicator"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gxJ8ASxAEd-8mcmtGejV_Q" valueSetId="557-AV" fieldFormat="x(1)" standardsUsing="T,A" valueSetLimitations="" base_Enumeration="_gxAyEyxAEd-8mcmtGejV_Q" displayName="Tax Exempt Indicator"/>
   <Default:Documentation xmi:id="_gxJ8ACxAEd-8mcmtGejV_Q" base_Comment="_gxAyFCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gxAyEixAEd-8mcmtGejV_Q" base_Comment="_gxAyESxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gw3BFSxAEd-8mcmtGejV_Q" base_Comment="_gw3BFCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gw3BEixAEd-8mcmtGejV_Q" base_Comment="_gw3BESxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gwt3JCxAEd-8mcmtGejV_Q" base_Comment="_gwt3IyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gwt3ISxAEd-8mcmtGejV_Q" valueSetId="601-36" fieldFormat="x(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_gwkGIyxAEd-8mcmtGejV_Q" displayName="601-36 - Submit Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gwt3ISxAEd-8mcmtGejV_Q" valueSetId="601-36" fieldFormat="x(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_gwkGIyxAEd-8mcmtGejV_Q" displayName="Submit Code"/>
   <Default:Documentation xmi:id="_gwt3ICxAEd-8mcmtGejV_Q" base_Comment="_gwkGJCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gwkGIixAEd-8mcmtGejV_Q" base_Comment="_gwkGISxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gwaVJSxAEd-8mcmtGejV_Q" base_Comment="_gwaVJCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gwaVIixAEd-8mcmtGejV_Q" base_Comment="_gwaVISxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gwRLMyxAEd-8mcmtGejV_Q" base_Comment="_gwRLMixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gwRLMCxAEd-8mcmtGejV_Q" base_Comment="_gwHaNSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gwHaMyxAEd-8mcmtGejV_Q" valueSetId="888" fieldFormat="x(2)" standardsUsing="A" valueSetLimitations="" base_Enumeration="_gwHaMCxAEd-8mcmtGejV_Q" displayName="888 - Submission Number"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gwHaMyxAEd-8mcmtGejV_Q" valueSetId="888" fieldFormat="x(2)" standardsUsing="A" valueSetLimitations="" base_Enumeration="_gwHaMCxAEd-8mcmtGejV_Q" displayName="Submission Number"/>
   <Default:Documentation xmi:id="_gwHaMixAEd-8mcmtGejV_Q" base_Comment="_gwHaMSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gv9pNSxAEd-8mcmtGejV_Q" base_Comment="_gv9pNCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gv9pMixAEd-8mcmtGejV_Q" base_Comment="_gv9pMSxAEd-8mcmtGejV_Q"/>
@@ -18832,7 +18978,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_guebdSxAEd-8mcmtGejV_Q" base_Comment="_guebdCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_guebcixAEd-8mcmtGejV_Q" base_Comment="_guebcSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_guVRhSxAEd-8mcmtGejV_Q" base_Comment="_guVRhCxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_guVRgixAEd-8mcmtGejV_Q" valueSetId="420-DK" fieldFormat="9(2)" standardsUsing="T,P,A,Z,W" valueSetLimitations="" base_Enumeration="_guLghCxAEd-8mcmtGejV_Q" displayName="420-DK - Submission Clarification Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_guVRgixAEd-8mcmtGejV_Q" valueSetId="420-DK" fieldFormat="9(2)" standardsUsing="T,P,A,Z,W" valueSetLimitations="" base_Enumeration="_guLghCxAEd-8mcmtGejV_Q" displayName="Submission Clarification Code"/>
   <Default:Documentation xmi:id="_guVRgSxAEd-8mcmtGejV_Q" base_Comment="_guVRgCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_guLggyxAEd-8mcmtGejV_Q" base_Comment="_guLggixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_guLggCxAEd-8mcmtGejV_Q" base_Comment="_guBvhCxAEd-8mcmtGejV_Q"/>
@@ -18843,9 +18989,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_gtu0kixAEd-8mcmtGejV_Q" base_Comment="_gtu0kSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gtlDkyxAEd-8mcmtGejV_Q" base_Comment="_gtlDkixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gtlDkCxAEd-8mcmtGejV_Q" base_Comment="_gtb5pSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gtb5oyxAEd-8mcmtGejV_Q" valueSetId="974-JN" fieldFormat="x(1)" standardsUsing="F" valueSetLimitations="" base_Enumeration="_gtb5oCxAEd-8mcmtGejV_Q" displayName="974-JN - Step Order"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gtb5oyxAEd-8mcmtGejV_Q" valueSetId="974-JN" fieldFormat="x(1)" standardsUsing="F" valueSetLimitations="" base_Enumeration="_gtb5oCxAEd-8mcmtGejV_Q" displayName="Step Order"/>
   <Default:Documentation xmi:id="_gtb5oixAEd-8mcmtGejV_Q" base_Comment="_gtb5oSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gtSIoyxAEd-8mcmtGejV_Q" valueSetId="729" fieldFormat="x(2)" standardsUsing="M,R,A" valueSetLimitations="" base_Enumeration="_gtSIoCxAEd-8mcmtGejV_Q" displayName="729 - State"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gtSIoyxAEd-8mcmtGejV_Q" valueSetId="729" fieldFormat="x(2)" standardsUsing="M,R,A" valueSetLimitations="" base_Enumeration="_gtSIoCxAEd-8mcmtGejV_Q" displayName="State"/>
   <Default:Documentation xmi:id="_gtSIoixAEd-8mcmtGejV_Q" base_Comment="_gtSIoSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gtI-syxAEd-8mcmtGejV_Q" base_Comment="_gtI-sixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gtI-sCxAEd-8mcmtGejV_Q" base_Comment="_gs_NtSxAEd-8mcmtGejV_Q"/>
@@ -18853,41 +18999,41 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_gs_NsCxAEd-8mcmtGejV_Q" base_Comment="_gs1ctCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gs1csixAEd-8mcmtGejV_Q" base_Comment="_gs1csSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gssSxixAEd-8mcmtGejV_Q" base_Comment="_gssSxSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gssSwyxAEd-8mcmtGejV_Q" valueSetId="429-DT" fieldFormat="9(1)" standardsUsing="C,P,D,T,A" valueSetLimitations="" base_Enumeration="_gssSwCxAEd-8mcmtGejV_Q" displayName="429-DT -Special Packaging Indicator"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gssSwyxAEd-8mcmtGejV_Q" valueSetId="429-DT" fieldFormat="9(1)" standardsUsing="C,P,D,T,A" valueSetLimitations="" base_Enumeration="_gssSwCxAEd-8mcmtGejV_Q" displayName="Special Packaging Indicator"/>
   <Default:Documentation xmi:id="_gssSwixAEd-8mcmtGejV_Q" base_Comment="_gssSwSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gsihwyxAEd-8mcmtGejV_Q" base_Comment="_gsihwixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gsihwCxAEd-8mcmtGejV_Q" base_Comment="_gsYwxSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gsYwwyxAEd-8mcmtGejV_Q" base_Comment="_gsYwwixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gsYwwCxAEd-8mcmtGejV_Q" valueSetId="334-1C" fieldFormat="x(1)" standardsUsing="M,T,V" valueSetLimitations="" base_Enumeration="_gsPm0SxAEd-8mcmtGejV_Q" displayName="334-1C - Smoker/Non-Smoker Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gsYwwCxAEd-8mcmtGejV_Q" valueSetId="334-1C" fieldFormat="x(1)" standardsUsing="M,T,V" valueSetLimitations="" base_Enumeration="_gsPm0SxAEd-8mcmtGejV_Q" displayName="Smoker/Non-Smoker Code"/>
   <Default:Documentation xmi:id="_gsPm0yxAEd-8mcmtGejV_Q" base_Comment="_gsPm0ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gsPm0CxAEd-8mcmtGejV_Q" base_Comment="_gsF11ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gsF11CxAEd-8mcmtGejV_Q" valueSetId="586-YP" fieldFormat="x(2)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_gsF10SxAEd-8mcmtGejV_Q" displayName="586-YP - Service Provider State/Province Code Address"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gsF11CxAEd-8mcmtGejV_Q" valueSetId="586-YP" fieldFormat="x(2)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_gsF10SxAEd-8mcmtGejV_Q" displayName="Service Provider State/Province Code Address"/>
   <Default:Documentation xmi:id="_gsF10yxAEd-8mcmtGejV_Q" base_Comment="_gsF10ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gsF10CxAEd-8mcmtGejV_Q" base_Comment="_gr8r5CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gr8r4ixAEd-8mcmtGejV_Q" base_Comment="_gr8r4SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gry65ixAEd-8mcmtGejV_Q" base_Comment="_gry65SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gry64yxAEd-8mcmtGejV_Q" valueSetId="A20" fieldFormat="9(1)" standardsUsing="X" valueSetLimitations="" base_Enumeration="_gry64CxAEd-8mcmtGejV_Q" displayName="A20 - Service Provider Override Type"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gry64yxAEd-8mcmtGejV_Q" valueSetId="A20" fieldFormat="9(1)" standardsUsing="X" valueSetLimitations="" base_Enumeration="_gry64CxAEd-8mcmtGejV_Q" displayName="Service Provider Override Type"/>
   <Default:Documentation xmi:id="_gry64ixAEd-8mcmtGejV_Q" base_Comment="_gry64SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_grpJ5CxAEd-8mcmtGejV_Q" base_Comment="_grpJ4yxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_grpJ4SxAEd-8mcmtGejV_Q" valueSetId="202-B2" fieldFormat="x(2)" standardsUsing="T,A,R,V.Z.W,X" valueSetLimitations="" base_Enumeration="_grf_9CxAEd-8mcmtGejV_Q" displayName="202-B2 - Service Provider ID Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_grpJ4SxAEd-8mcmtGejV_Q" valueSetId="202-B2" fieldFormat="x(2)" standardsUsing="T,A,R,V.Z.W,X" valueSetLimitations="" base_Enumeration="_grf_9CxAEd-8mcmtGejV_Q" displayName="Service Provider ID Qualifier"/>
   <Default:Documentation xmi:id="_grpJ4CxAEd-8mcmtGejV_Q" base_Comment="_grf_9SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_grf_8yxAEd-8mcmtGejV_Q" base_Comment="_grf_8ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_grf_8CxAEd-8mcmtGejV_Q" valueSetId="680-ZB" fieldFormat="9(2)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_grWO8SxAEd-8mcmtGejV_Q" displayName="680-ZB - Seller ID Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_grf_8CxAEd-8mcmtGejV_Q" valueSetId="680-ZB" fieldFormat="9(2)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_grWO8SxAEd-8mcmtGejV_Q" displayName="Seller ID Qualifier"/>
   <Default:Documentation xmi:id="_grWO8yxAEd-8mcmtGejV_Q" base_Comment="_grWO8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_grWO8CxAEd-8mcmtGejV_Q" base_Comment="_grMd9SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_grMd8yxAEd-8mcmtGejV_Q" valueSetId="649-XW" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_grMd8CxAEd-8mcmtGejV_Q" displayName="649-XW Segment Qualifier 6"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_grMd8yxAEd-8mcmtGejV_Q" valueSetId="649-XW" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_grMd8CxAEd-8mcmtGejV_Q" displayName="Segment Qualifier 6"/>
   <Default:Documentation xmi:id="_grMd8ixAEd-8mcmtGejV_Q" base_Comment="_grMd8SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_grDUBixAEd-8mcmtGejV_Q" base_Comment="_grDUBSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_grDUAyxAEd-8mcmtGejV_Q" valueSetId="648-XV" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_grDUACxAEd-8mcmtGejV_Q" displayName="648-XV Segment Qualifier 5"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_grDUAyxAEd-8mcmtGejV_Q" valueSetId="648-XV" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_grDUACxAEd-8mcmtGejV_Q" displayName="Segment Qualifier 5"/>
   <Default:Documentation xmi:id="_grDUAixAEd-8mcmtGejV_Q" base_Comment="_grDUASxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gq5jBCxAEd-8mcmtGejV_Q" base_Comment="_gq5jAyxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gq5jASxAEd-8mcmtGejV_Q" valueSetId="647-XU" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_gqwZFCxAEd-8mcmtGejV_Q" displayName="647-XU Segment Qualifier 4"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gq5jASxAEd-8mcmtGejV_Q" valueSetId="647-XU" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_gqwZFCxAEd-8mcmtGejV_Q" displayName="Segment Qualifier 4"/>
   <Default:Documentation xmi:id="_gq5jACxAEd-8mcmtGejV_Q" base_Comment="_gqwZFSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gqwZEyxAEd-8mcmtGejV_Q" base_Comment="_gqwZEixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gqwZECxAEd-8mcmtGejV_Q" valueSetId="646-XT" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_gqmoESxAEd-8mcmtGejV_Q" displayName="646-XT Segment Qualifier 3"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gqwZECxAEd-8mcmtGejV_Q" valueSetId="646-XT" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_gqmoESxAEd-8mcmtGejV_Q" displayName="Segment Qualifier 3"/>
   <Default:Documentation xmi:id="_gqmoEyxAEd-8mcmtGejV_Q" base_Comment="_gqmoEixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gqmoECxAEd-8mcmtGejV_Q" base_Comment="_gqc3FixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gqc3FCxAEd-8mcmtGejV_Q" valueSetId="645-XS" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_gqc3ESxAEd-8mcmtGejV_Q" displayName="645-XS Segment Qualifier 2"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gqc3FCxAEd-8mcmtGejV_Q" valueSetId="645-XS" fieldFormat="X(2)" standardsUsing="R" valueSetLimitations="" base_Enumeration="_gqc3ESxAEd-8mcmtGejV_Q" displayName="Segment Qualifier 2"/>
   <Default:Documentation xmi:id="_gqc3EyxAEd-8mcmtGejV_Q" base_Comment="_gqc3EixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gqc3ECxAEd-8mcmtGejV_Q" base_Comment="_gqTtJCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gqTtIixAEd-8mcmtGejV_Q" base_Comment="_gqTtISxAEd-8mcmtGejV_Q"/>
@@ -19182,7 +19328,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_gSm-1CxAEd-8mcmtGejV_Q" base_Comment="_gSm-0yxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_gSm-0SxAEd-8mcmtGejV_Q" valueSetId="299" fieldFormat="9(2)" standardsUsing="A" valueSetLimitations="" base_Enumeration="_gSd05SxAEd-8mcmtGejV_Q" displayName="299 - Processor Defined Prior Authorization Reason Code"/>
   <Default:Documentation xmi:id="_gSm-0CxAEd-8mcmtGejV_Q" base_Comment="_gSd05ixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_gSd04SxAEd-8mcmtGejV_Q" valueSetId="461-EU" fieldFormat="9(2)" standardsUsing="T,A,Z,W" valueSetLimitations="" base_Enumeration="_gSUD4yxAEd-8mcmtGejV_Q" displayName="461-EU - Prior Authorization Type Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_gSd04SxAEd-8mcmtGejV_Q" valueSetId="461-EU" fieldFormat="9(2)" standardsUsing="T,A,Z,W" valueSetLimitations="" base_Enumeration="_gSUD4yxAEd-8mcmtGejV_Q" displayName="Prior Authorization Type Code"/>
   <Default:Documentation xmi:id="_gSd04CxAEd-8mcmtGejV_Q" base_Comment="_gSUD5CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gSUD4ixAEd-8mcmtGejV_Q" base_Comment="_gSUD4SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_gSKS5SxAEd-8mcmtGejV_Q" base_Comment="_gSKS5CxAEd-8mcmtGejV_Q"/>
@@ -19749,7 +19895,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_fkHhIixAEd-8mcmtGejV_Q" base_Comment="_fkHhISxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_fj-XMyxAEd-8mcmtGejV_Q" base_Comment="_fj-XMixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_fj-XMCxAEd-8mcmtGejV_Q" base_Comment="_fj0mNSxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_fj0mMyxAEd-8mcmtGejV_Q" valueSetId="306-C6" fieldFormat="9(1)" standardsUsing="T,A,V,Z,X" valueSetLimitations="" base_Enumeration="_fj0mMCxAEd-8mcmtGejV_Q" displayName="306-C6 - Patient Relationship Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_fj0mMyxAEd-8mcmtGejV_Q" valueSetId="306-C6" fieldFormat="9(1)" standardsUsing="T,A,V,Z,X" valueSetLimitations="" base_Enumeration="_fj0mMCxAEd-8mcmtGejV_Q" displayName="Patient Relationship Code"/>
   <Default:Documentation xmi:id="_fj0mMixAEd-8mcmtGejV_Q" base_Comment="_fj0mMSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_fjq1NSxAEd-8mcmtGejV_Q" base_Comment="_fjq1NCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_fjq1MixAEd-8mcmtGejV_Q" base_Comment="_fjq1MSxAEd-8mcmtGejV_Q"/>
@@ -20212,7 +20358,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_e_w25CxAEd-8mcmtGejV_Q" base_Comment="_e_w24yxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_e_w24SxAEd-8mcmtGejV_Q" valueSetId="687" fieldFormat="x(1)" standardsUsing="W" valueSetLimitations="" base_Enumeration="_e_nF5CxAEd-8mcmtGejV_Q" displayName="687 - Generic Available"/>
   <Default:Documentation xmi:id="_e_w24CxAEd-8mcmtGejV_Q" base_Comment="_e_nF5SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_e_nF4CxAEd-8mcmtGejV_Q" valueSetId="721-MD" fieldFormat="" standardsUsing="S" valueSetLimitations="" base_Enumeration="_e_d78yxAEd-8mcmtGejV_Q" displayName="721-MD Gender Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_e_nF4CxAEd-8mcmtGejV_Q" valueSetId="721-MD" fieldFormat="" standardsUsing="S" valueSetLimitations="" base_Enumeration="_e_d78yxAEd-8mcmtGejV_Q" displayName="Gender Code"/>
   <Default:Documentation xmi:id="_e_d79SxAEd-8mcmtGejV_Q" base_Comment="_e_d79CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_e_d78ixAEd-8mcmtGejV_Q" base_Comment="_e_d78SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_e_UK8yxAEd-8mcmtGejV_Q" base_Comment="_e_UK8ixAEd-8mcmtGejV_Q"/>
@@ -20455,7 +20601,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_esZO8ixAEd-8mcmtGejV_Q" base_Comment="_esZO8SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_esPd9SxAEd-8mcmtGejV_Q" base_Comment="_esPd9CxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_esPd8ixAEd-8mcmtGejV_Q" base_Comment="_esPd8SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_esFs9CxAEd-8mcmtGejV_Q" valueSetId="408-D8" fieldFormat="x(1)" standardsUsing="C, D, R, T,A,V,Z,W" valueSetLimitations="" base_Enumeration="_esFs8SxAEd-8mcmtGejV_Q" displayName="408-D8 Dispense As Written (DAW)/ Product Selection Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_esFs9CxAEd-8mcmtGejV_Q" valueSetId="408-D8" fieldFormat="x(1)" standardsUsing="C, D, R, T,A,V,Z,W" valueSetLimitations="" base_Enumeration="_esFs8SxAEd-8mcmtGejV_Q" displayName="Dispense As Written (DAW)/ Product Selection Code"/>
   <Default:Documentation xmi:id="_esFs8yxAEd-8mcmtGejV_Q" base_Comment="_esFs8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_esFs8CxAEd-8mcmtGejV_Q" base_Comment="_er8jBCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_er8jAixAEd-8mcmtGejV_Q" base_Comment="_er8jASxAEd-8mcmtGejV_Q"/>
@@ -20467,7 +20613,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_erf3EyxAEd-8mcmtGejV_Q" base_Comment="_erf3EixAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_erf3ECxAEd-8mcmtGejV_Q" valueSetId="606-NC" fieldFormat="x(1)" standardsUsing="V" valueSetLimitations="" base_Enumeration="_erWGESxAEd-8mcmtGejV_Q" displayName="606-NC - Discontinue Date Qualifier"/>
   <Default:Documentation xmi:id="_erWGEyxAEd-8mcmtGejV_Q" base_Comment="_erWGEixAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_eqTkQSxAEd-8mcmtGejV_Q" valueSetId="492-WE" fieldFormat="x(2)" standardsUsing="T, M, F,A,Z" valueSetLimitations="" base_Enumeration="_eqJzQyxAEd-8mcmtGejV_Q" displayName="492-WE - Diagnosis Code Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_eqTkQSxAEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="x(2)" standardsUsing="T, M, F,A,Z" valueSetLimitations="" base_Enumeration="_eqJzQyxAEd-8mcmtGejV_Q" displayName="Code List Qualifier – Diagnosis Code Qualifier (Primary) - DRU Segment"/>
   <Default:Documentation xmi:id="_eqTkQCxAEd-8mcmtGejV_Q" base_Comment="_eqJzRCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eqJzQixAEd-8mcmtGejV_Q" base_Comment="_eqJzQSxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eqApVSxAEd-8mcmtGejV_Q" base_Comment="_eqApVCxAEd-8mcmtGejV_Q"/>
@@ -20608,7 +20754,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_ee1UFixAEd-8mcmtGejV_Q" base_Comment="_ee1UFSxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_ee1UEyxAEd-8mcmtGejV_Q" valueSetId="451-EG" fieldFormat="9(1)" standardsUsing="T,Z,W" valueSetLimitations="" base_Enumeration="_ee1UECxAEd-8mcmtGejV_Q" displayName="451-EG - Compound Dispensing Unit Form Indicator"/>
   <Default:Documentation xmi:id="_ee1UEixAEd-8mcmtGejV_Q" base_Comment="_ee1UESxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_eerjESxAEd-8mcmtGejV_Q" valueSetId="406-D6" fieldFormat="9(1)" standardsUsing="C, D, P, T,A,R,V" valueSetLimitations="" base_Enumeration="_eehyEyxAEd-8mcmtGejV_Q" displayName="406-D6 - Compound Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_eerjESxAEd-8mcmtGejV_Q" valueSetId="406-D6" fieldFormat="9(1)" standardsUsing="C, D, P, T,A,R,V" valueSetLimitations="" base_Enumeration="_eehyEyxAEd-8mcmtGejV_Q" displayName="Compound Code"/>
   <Default:Documentation xmi:id="_eerjECxAEd-8mcmtGejV_Q" base_Comment="_eehyFCxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eehyEixAEd-8mcmtGejV_Q" base_Comment="_eehyESxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eeYoJSxAEd-8mcmtGejV_Q" base_Comment="_eeYoJCxAEd-8mcmtGejV_Q"/>
@@ -20841,7 +20987,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_eMzI4CxAEd-8mcmtGejV_Q" base_Comment="_eMpX5SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eMpX4yxAEd-8mcmtGejV_Q" base_Comment="_eMpX4ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eMpX4CxAEd-8mcmtGejV_Q" base_Comment="_eMgN9SxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_eMgN8yxAEd-8mcmtGejV_Q" valueSetId="548-6F" fieldFormat="x(3)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_eMgN8CxAEd-8mcmtGejV_Q" displayName="548-6F - Approved Message Code"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_eMgN8yxAEd-8mcmtGejV_Q" valueSetId="548-6F" fieldFormat="x(3)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_eMgN8CxAEd-8mcmtGejV_Q" displayName="Approved Message Code"/>
   <Default:Documentation xmi:id="_eMgN8ixAEd-8mcmtGejV_Q" base_Comment="_eMgN8SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eMWc8yxAEd-8mcmtGejV_Q" base_Comment="_eMWc8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eMWc8CxAEd-8mcmtGejV_Q" base_Comment="_eMNTBixAEd-8mcmtGejV_Q"/>
@@ -20926,32 +21072,32 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_eGP08ixAEd-8mcmtGejV_Q" base_Comment="_eGP08SxAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eGGD8yxAEd-8mcmtGejV_Q" base_Comment="_eGGD8ixAEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_eGGD8CxAEd-8mcmtGejV_Q" base_Comment="_eF8S8yxAEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_eF8S8SxAEd-8mcmtGejV_Q" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_eFfnBCxAEd-8mcmtGejV_Q" displayName="4343 - Message Function, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_eF8S8SxAEd-8mcmtGejV_Q" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_eFfnBCxAEd-8mcmtGejV_Q" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="_eF8S8CxAEd-8mcmtGejV_Q" base_Comment="_eFfnBSxAEd-8mcmtGejV_Q"/>
   <xsd:Schema xmi:id="_kA0cIDEFEd-8rpqfOAePKg" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" targetNamespace="http://www.ncpdp.org/schema/ECL" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <Default:Documentation xmi:id="_bBE48jEQEd-8rpqfOAePKg" base_Comment="_bBE48TEQEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_bmodEjEQEd-8rpqfOAePKg" base_Comment="_bmodETEQEd-8rpqfOAePKg"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_rq1rJjEREd-8rpqfOAePKg" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_rq1rEDEREd-8rpqfOAePKg" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_rq1rJjEREd-8rpqfOAePKg" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_rq1rEDEREd-8rpqfOAePKg" displayName="Code List Responsibility Agency (X12 DE 235)"/>
   <Default:Documentation xmi:id="_rq1rJzEREd-8rpqfOAePKg" base_Comment="_rq1rETEREd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_rq1rLzEREd-8rpqfOAePKg" base_Comment="_rq1rITEREd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_rq1rMDEREd-8rpqfOAePKg" base_Comment="_rq1rIzEREd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_rq1rMTEREd-8rpqfOAePKg" base_Comment="_rq1rJTEREd-8rpqfOAePKg"/>
   <xsd:Restriction xmi:id="_0T-EEDEREd-8rpqfOAePKg" base_Generalization="_zWlOwDEREd-8rpqfOAePKg"/>
-  <orgncpdpecl:ncpdpecl xmi:id="__g2OqjFFEd-8rpqfOAePKg" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="__g2OkDFFEd-8rpqfOAePKg" displayName="4343 - Message Function, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="__g2OqjFFEd-8rpqfOAePKg" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="__g2OkDFFEd-8rpqfOAePKg" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="__g2OqzFFEd-8rpqfOAePKg" base_Comment="__g2OkTFFEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="__g__kTFFEd-8rpqfOAePKg" base_Comment="__g2OnTFFEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="__g__kjFFEd-8rpqfOAePKg" base_Comment="__g2OnzFFEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="__g__kzFFEd-8rpqfOAePKg" base_Comment="__g2OoTFFEd-8rpqfOAePKg"/>
   <xsd:Restriction xmi:id="_EMNxgTFGEd-8rpqfOAePKg" base_Generalization="_DoTMIDFGEd-8rpqfOAePKg"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_95aiADa8Ed-wQf5UFCJMDw" valueSetId="" fieldFormat="9(2)" standardsUsing="T,V,A" valueSetLimitations="Used in Telecommunication Standard Version B.0 or greater but not in lower versions. Used in Post Adjudication Standard Version 2.0 or greater but not in lower version." base_Enumeration="_95QxADa8Ed-wQf5UFCJMDw" displayName="384 4X - Patient Residence"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_95aiADa8Ed-wQf5UFCJMDw" valueSetId="384 4X" fieldFormat="9(2)" standardsUsing="T,V,A" valueSetLimitations="Used in Telecommunication Standard Version B.0 or greater but not in lower versions. Used in Post Adjudication Standard Version 2.0 or greater but not in lower version." base_Enumeration="_95QxADa8Ed-wQf5UFCJMDw" displayName="Patient Residence"/>
   <Default:Documentation xmi:id="_95aiATa8Ed-wQf5UFCJMDw" base_Comment="_95QxATa8Ed-wQf5UFCJMDw"/>
   <xsd:Restriction xmi:id="_bP5KQEyqEd-G-pSkcIGh3w" base_Generalization="_a0LeoEyqEd-G-pSkcIGh3w"/>
   <Default:Documentation xmi:id="_7a9uIkyrEd-G-pSkcIGh3w" base_Comment="_7a9uIUyrEd-G-pSkcIGh3w"/>
   <xsd:Restriction xmi:id="_o9EIIE5bEd-lRt4mSex0Qg" base_Generalization="_ohMrgE5bEd-lRt4mSex0Qg"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_7aQ6alLcEd-wEdo_Dk3J9g" valueSetId="492-WE" fieldFormat="x(2)" standardsUsing="T, M, F,A,Z" valueSetLimitations="" base_Enumeration="_7aQ6UFLcEd-wEdo_Dk3J9g" displayName="492-WE - Diagnosis Code Qualifier"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_7aQ6alLcEd-wEdo_Dk3J9g" valueSetId="492-WE" fieldFormat="x(2)" standardsUsing="T, M, F,A,Z" valueSetLimitations="" base_Enumeration="_7aQ6UFLcEd-wEdo_Dk3J9g" displayName="Diagnosis Code Qualifier"/>
   <Default:Documentation xmi:id="_7aarUFLcEd-wEdo_Dk3J9g" base_Comment="_7aQ6UVLcEd-wEdo_Dk3J9g"/>
   <xsd:Restriction xmi:id="_PcZx8FLoEd-wEdo_Dk3J9g" base_Generalization="_M7U8UFLoEd-wEdo_Dk3J9g"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_h9dN91OOEd-wEdo_Dk3J9g" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h9dN4FOOEd-wEdo_Dk3J9g" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_h9dN91OOEd-wEdo_Dk3J9g" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_h9dN4FOOEd-wEdo_Dk3J9g" displayName="Code List Responsibility Agency (X12 DE 235)"/>
   <xsd:Restriction xmi:id="_h9dN-VOOEd-wEdo_Dk3J9g" base_Generalization="_h9dN4lOOEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_h9dN-lOOEd-wEdo_Dk3J9g" base_Comment="_h9dN5FOOEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_h9dN-1OOEd-wEdo_Dk3J9g" base_Comment="_h9dN5lOOEd-wEdo_Dk3J9g"/>
@@ -21149,20 +21295,20 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_9HUagFO3Ed-wEdo_Dk3J9g" base_Comment="_9HKpgFO3Ed-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_ASRTkFO4Ed-wEdo_Dk3J9g" base_Comment="_ASIJoFO4Ed-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_0cIWkFO4Ed-wEdo_Dk3J9g" base_Comment="_0b_MoFO4Ed-wEdo_Dk3J9g"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_hLAxmWdIEd-EzKeHnOFaKw" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hLAxkGdIEd-EzKeHnOFaKw" displayName="4343 - Message Function, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_hLAxmWdIEd-EzKeHnOFaKw" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_hLAxkGdIEd-EzKeHnOFaKw" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="_hLAxmmdIEd-EzKeHnOFaKw" base_Comment="_hLAxkWdIEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_hLAxnGdIEd-EzKeHnOFaKw" base_Comment="_hLAxlGdIEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_hLAxnWdIEd-EzKeHnOFaKw" base_Comment="_hLAxlmdIEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_hLAxnmdIEd-EzKeHnOFaKw" base_Comment="_hLAxmGdIEd-EzKeHnOFaKw"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_oCxxSWdhEd-EzKeHnOFaKw" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_oCxxQGdhEd-EzKeHnOFaKw" displayName="4343 - Message Function, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_oCxxSWdhEd-EzKeHnOFaKw" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_oCxxQGdhEd-EzKeHnOFaKw" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="_oCxxSmdhEd-EzKeHnOFaKw" base_Comment="_oCxxQWdhEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_oCxxTGdhEd-EzKeHnOFaKw" base_Comment="_oCxxRGdhEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_oCxxTWdhEd-EzKeHnOFaKw" base_Comment="_oCxxRmdhEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_oCxxTmdhEd-EzKeHnOFaKw" base_Comment="_oCxxSGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AK1WYGdiEd-EzKeHnOFaKw" base_Generalization="__sJPQGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AnmK4GdiEd-EzKeHnOFaKw" base_Generalization="__Ja8sGdhEd-EzKeHnOFaKw"/>
-  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_J51OkmdmEd-EzKeHnOFaKw" valueSetId="548-6F" fieldFormat="x(3)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_J51OcGdmEd-EzKeHnOFaKw" displayName="548-6F - Approved Message Code"/>
+  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="201008" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_J51OkmdmEd-EzKeHnOFaKw" valueSetId="548-6F" fieldFormat="x(3)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_J51OcGdmEd-EzKeHnOFaKw" displayName="Approved Message Code"/>
   <Default:Documentation xmi:id="_J51Ok2dmEd-EzKeHnOFaKw" base_Comment="_J51OcWdmEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_J51OlGdmEd-EzKeHnOFaKw" base_Comment="_J51Oc2dmEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_J51OlWdmEd-EzKeHnOFaKw" base_Comment="_J51OdWdmEd-EzKeHnOFaKw"/>
@@ -21197,7 +21343,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_gFfjEWdnEd-EzKeHnOFaKw" base_Comment="_gFfi_WdnEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_gFfjEmdnEd-EzKeHnOFaKw" base_Comment="_gFfi_2dnEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_gFfjE2dnEd-EzKeHnOFaKw" base_Comment="_gFfjAWdnEd-EzKeHnOFaKw"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_eu1nJmdpEd-EzKeHnOFaKw" valueSetId="9015-" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_eu1nEGdpEd-EzKeHnOFaKw" displayName="9015- Status Type, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_eu1nJmdpEd-EzKeHnOFaKw" valueSetId="9015-" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_eu1nEGdpEd-EzKeHnOFaKw" displayName="Status Type, coded"/>
   <Default:Documentation xmi:id="_eu1nJ2dpEd-EzKeHnOFaKw" base_Comment="_eu1nEWdpEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_eu1nKGdpEd-EzKeHnOFaKw" base_Comment="_eu1nE2dpEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_eu1nKWdpEd-EzKeHnOFaKw" base_Comment="_eu1nFWdpEd-EzKeHnOFaKw"/>
@@ -21205,7 +21351,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_eu1nK2dpEd-EzKeHnOFaKw" base_Comment="_eu1nGWdpEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_eu1nLGdpEd-EzKeHnOFaKw" base_Comment="_eu1nG2dpEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_eu1nLWdpEd-EzKeHnOFaKw" base_Comment="_eu1nHWdpEd-EzKeHnOFaKw"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_21l0J2i7Ed-Pd7zqA0IwbQ" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_21l0EGi7Ed-Pd7zqA0IwbQ" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_21l0J2i7Ed-Pd7zqA0IwbQ" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_21l0EGi7Ed-Pd7zqA0IwbQ" displayName="Code List Responsibility Agency (X12 DE 235)"/>
   <Default:Documentation xmi:id="_21l0KGi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0EWi7Ed-Pd7zqA0IwbQ"/>
   <xsd:Restriction xmi:id="_21l0KWi7Ed-Pd7zqA0IwbQ" base_Generalization="_21l0Emi7Ed-Pd7zqA0IwbQ"/>
   <Default:Documentation xmi:id="_21l0Kmi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0FGi7Ed-Pd7zqA0IwbQ"/>
@@ -21213,18 +21359,18 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_21l0LGi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0GGi7Ed-Pd7zqA0IwbQ"/>
   <Default:Documentation xmi:id="_21l0Lmi7Ed-Pd7zqA0IwbQ" base_Comment="_21l0HGi7Ed-Pd7zqA0IwbQ"/>
   <xsd:Restriction xmi:id="_ajPo4Wj0Ed-Pd7zqA0IwbQ" base_Generalization="_ajPo4Gj0Ed-Pd7zqA0IwbQ"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_goFcF2j7Ed-Pd7zqA0IwbQ" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_goFcAGj7Ed-Pd7zqA0IwbQ" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_goFcF2j7Ed-Pd7zqA0IwbQ" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_goFcAGj7Ed-Pd7zqA0IwbQ" displayName="Code List Responsibility Agency (X12 DE 235)"/>
   <Default:Documentation xmi:id="_goFcGGj7Ed-Pd7zqA0IwbQ" base_Comment="_goFcAWj7Ed-Pd7zqA0IwbQ"/>
   <xsd:Restriction xmi:id="_goFcGWj7Ed-Pd7zqA0IwbQ" base_Generalization="_goFcAmj7Ed-Pd7zqA0IwbQ"/>
   <xsd:Restriction xmi:id="_wwJ8cWmjEd-rC41nbGoKjA" base_Generalization="_wwJ8cGmjEd-rC41nbGoKjA"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_Qv02x2mnEd-rC41nbGoKjA" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_Qv02sGmnEd-rC41nbGoKjA" displayName="3055 - Code List Responsibility Agency (X12 DE 235)"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_Qv02x2mnEd-rC41nbGoKjA" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_Qv02sGmnEd-rC41nbGoKjA" displayName="Code List Responsibility Agency (X12 DE 235)"/>
   <Default:Documentation xmi:id="_Qv02yGmnEd-rC41nbGoKjA" base_Comment="_Qv02sWmnEd-rC41nbGoKjA"/>
   <xsd:Restriction xmi:id="_Qv02yWmnEd-rC41nbGoKjA" base_Generalization="_Qv02smmnEd-rC41nbGoKjA"/>
   <Default:Documentation xmi:id="_Qv020WmnEd-rC41nbGoKjA" base_Comment="_Qv02wmmnEd-rC41nbGoKjA"/>
   <Default:Documentation xmi:id="_Qv020mmnEd-rC41nbGoKjA" base_Comment="_Qv02xGmnEd-rC41nbGoKjA"/>
   <Default:Documentation xmi:id="_Qv0202mnEd-rC41nbGoKjA" base_Comment="_Qv02xmmnEd-rC41nbGoKjA"/>
   <xsd:Restriction xmi:id="_rsR8cGmvEd-pG95HwNNanw" base_Generalization="_rsIygGmvEd-pG95HwNNanw"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_WLzakHrnEd-so7mbE4Frzg" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_WLqQoHrnEd-so7mbE4Frzg" displayName="4343 - Message Function, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_WLzakHrnEd-so7mbE4Frzg" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_WLqQoHrnEd-so7mbE4Frzg" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="_WMG8kHrnEd-so7mbE4Frzg" base_Comment="_WLqQoXrnEd-so7mbE4Frzg"/>
   <Default:Documentation xmi:id="_WMG8kXrnEd-so7mbE4Frzg" base_Comment="_WLqQo3rnEd-so7mbE4Frzg"/>
   <Default:Documentation xmi:id="_WMG8knrnEd-so7mbE4Frzg" base_Comment="_WLqQpXrnEd-so7mbE4Frzg"/>
@@ -21239,12 +21385,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_WMG8m3rnEd-so7mbE4Frzg" base_Comment="_WLqQt3rnEd-so7mbE4Frzg"/>
   <Default:Documentation xmi:id="_WMG8nHrnEd-so7mbE4Frzg" base_Comment="_WLqQuXrnEd-so7mbE4Frzg"/>
   <xsd:Restriction xmi:id="_YP6GkX7oEd-qFLXIW1YLFA" base_Generalization="_YP6GkH7oEd-qFLXIW1YLFA"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_cQxVGoL7Ed-qIZqYwtZPyA" valueSetId="" fieldFormat="" standardsUsing="S" valueSetLimitations="" base_Enumeration="_cQxVAIL7Ed-qIZqYwtZPyA" displayName=""/>
+  <orgncpdpecl:ncpdpecl xmi:id="_cQxVGoL7Ed-qIZqYwtZPyA" valueSetId="" fieldFormat="xs:string" standardsUsing="S,Q" valueSetLimitations="" base_Enumeration="_cQxVAIL7Ed-qIZqYwtZPyA" displayName=""/>
   <Default:Documentation xmi:id="_cQxVG4L7Ed-qIZqYwtZPyA" base_Comment="_cQxVAYL7Ed-qIZqYwtZPyA"/>
   <xsd:Restriction xmi:id="_cQxVHIL7Ed-qIZqYwtZPyA" base_Generalization="_cQxVAoL7Ed-qIZqYwtZPyA"/>
   <Default:Documentation xmi:id="_cQxVHYL7Ed-qIZqYwtZPyA" base_Comment="_cQxVBIL7Ed-qIZqYwtZPyA"/>
   <Default:Documentation xmi:id="_cQxVHoL7Ed-qIZqYwtZPyA" base_Comment="_cQxVBoL7Ed-qIZqYwtZPyA"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_tD8l0IVBEd-PfKcU8Giing" valueSetId="9015-" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_tDy00IVBEd-PfKcU8Giing" displayName="9015- Status Type, coded"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_tD8l0IVBEd-PfKcU8Giing" valueSetId="9015-" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_tDy00IVBEd-PfKcU8Giing" displayName="Status Type, coded"/>
   <Default:Documentation xmi:id="_tD8l0YVBEd-PfKcU8Giing" base_Comment="_tDy00YVBEd-PfKcU8Giing"/>
   <Default:Documentation xmi:id="_tD8l2IVBEd-PfKcU8Giing" base_Comment="_tDy034VBEd-PfKcU8Giing"/>
   <Default:Documentation xmi:id="_tD8l2YVBEd-PfKcU8Giing" base_Comment="_tDy04YVBEd-PfKcU8Giing"/>
@@ -21258,16 +21404,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <orgncpdpecl:ncpdpecl xmi:id="_qpsg8IXxEd-Vw-EcYlO-zw" base_Enumeration="_3FUxkCxUEd-8mcmtGejV_Q" displayName="DrugCodeListResponsibilityAgencyX12DE235"/>
   <orgncpdpecl:ncpdpecl xmi:id="_toks4IXxEd-Vw-EcYlO-zw" valueSetId="1153" fieldFormat="an..3" standardsUsing="S" base_Enumeration="_-xQ0kG8mEd-E06vcpeQalQ" displayName="Defines the Reference number, field 1154. Used to define different qualifiers for numbers, values as appropriate for usage."/>
   <orgncpdpecl:ncpdpecl xmi:id="_xDCBkIXxEd-Vw-EcYlO-zw" base_Enumeration="_5qYs0GhAEd-Pd7zqA0IwbQ" displayName="MTMMIMETypes"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_z8GgcIXxEd-Vw-EcYlO-zw" valueSetId="8015" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="Field and values may be used in SCRIPT Standard Version 10.11 or greater but not in lower versions.&#x9;" base_Enumeration="_k3rbkDEZEd-8rpqfOAePKg" displayName="8015 - Order Capture Method"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_z8GgcIXxEd-Vw-EcYlO-zw" valueSetId="8015" fieldFormat="an..2" standardsUsing="S" valueSetLimitations="Field and values may be used in SCRIPT Standard Version 10.11 or greater but not in lower versions.&#x9;" base_Enumeration="_k3rbkDEZEd-8rpqfOAePKg" displayName="Order Capture Method"/>
   <orgncpdpecl:ncpdpecl xmi:id="_iwIHMIXyEd-Vw-EcYlO-zw" base_Enumeration="_Vbhk0C0iEd-8mcmtGejV_Q" displayName="ProviderIdQualifiera"/>
   <orgncpdpecl:ncpdpecl xmi:id="_oAJ2YIXyEd-Vw-EcYlO-zw" base_Enumeration="_AfO38Gj1Ed-Pd7zqA0IwbQ" displayName="ReasonCode"/>
   <orgncpdpecl:ncpdpecl xmi:id="_rt0a8IXyEd-Vw-EcYlO-zw" base_Enumeration="_EFjfwE5ZEd-lRt4mSex0Qg" displayName="Reject"/>
   <orgncpdpecl:ncpdpecl xmi:id="_u6a50IXyEd-Vw-EcYlO-zw" base_Enumeration="_kCnAsCx3Ed-8mcmtGejV_Q" displayName="SNOMEDCTPreferredTermsforAdverseEvents"/>
   <orgncpdpecl:ncpdpecl xmi:id="_yIf_YIXyEd-Vw-EcYlO-zw" base_Enumeration="_rM8-IH-SEd-eN4XJATQmiQ" displayName="Boolean Codes"/>
-  <Default:Documentation xmi:id="_aBV_4YX3Ed-Vw-EcYlO-zw" base_Comment="_aBV_4IX3Ed-Vw-EcYlO-zw"/>
-  <Default:Documentation xmi:id="_b0h0wYX3Ed-Vw-EcYlO-zw" base_Comment="_b0h0wIX3Ed-Vw-EcYlO-zw"/>
-  <Default:Documentation xmi:id="_d6MgwYX3Ed-Vw-EcYlO-zw" base_Comment="_d6MgwIX3Ed-Vw-EcYlO-zw"/>
-  <Default:Documentation xmi:id="_fo6FUYX3Ed-Vw-EcYlO-zw" base_Comment="_fo6FUIX3Ed-Vw-EcYlO-zw"/>
   <Default:Documentation xmi:id="_Di4HYYX6Ed-Vw-EcYlO-zw" base_Comment="_Di4HYIX6Ed-Vw-EcYlO-zw"/>
   <Default:Documentation xmi:id="_QGWPAYX6Ed-Vw-EcYlO-zw" base_Comment="_QGWPAIX6Ed-Vw-EcYlO-zw"/>
   <Default:Documentation xmi:id="_gkUEAYX_Ed-Vw-EcYlO-zw" base_Comment="_gkUEAIX_Ed-Vw-EcYlO-zw"/>
@@ -21469,4 +21611,71 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_CNonEYn9Ed-pZLs28ekBmw" base_Comment="_CNonEIn9Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_bh12QYn9Ed-pZLs28ekBmw" base_Comment="_bh12QIn9Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_4o7hMYn9Ed-pZLs28ekBmw" base_Comment="_4o7hMIn9Ed-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_vKwDYYqpEd-pZLs28ekBmw" base_Comment="_vKwDYIqpEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_xdPDYYqpEd-pZLs28ekBmw" base_Comment="_xdPDYIqpEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_0lDv8YqpEd-pZLs28ekBmw" base_Comment="_0lDv8IqpEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_2wrS8YqpEd-pZLs28ekBmw" base_Comment="_2wrS8IqpEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_OAl5sYqrEd-pZLs28ekBmw" base_Comment="_OAl5sIqrEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_Q5qYkIqrEd-pZLs28ekBmw" base_Comment="_Q5hOoIqrEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_UC-58YqrEd-pZLs28ekBmw" base_Comment="_UC-58IqrEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_m3noMYqsEd-pZLs28ekBmw" base_Comment="_m3noMIqsEd-pZLs28ekBmw"/>
+  <Default:Documentation xmi:id="_XdY4YIq4Ed-urZQZ08VCKQ" base_Comment="_XYLBMIq4Ed-urZQZ08VCKQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_csRMQIthEd-urZQZ08VCKQ" base_Enumeration="_al3gcIthEd-urZQZ08VCKQ" displayName="Address Type Qualifier"/>
+  <Default:Documentation xmi:id="_nefYsYthEd-urZQZ08VCKQ" base_Comment="_nefYsIthEd-urZQZ08VCKQ"/>
+  <Default:Documentation xmi:id="_oSzKgYthEd-urZQZ08VCKQ" base_Comment="_oSzKgIthEd-urZQZ08VCKQ"/>
+  <Default:Documentation xmi:id="_pTLCYYthEd-urZQZ08VCKQ" base_Comment="_pTLCYIthEd-urZQZ08VCKQ"/>
+  <Default:Documentation xmi:id="_p_R6cYthEd-urZQZ08VCKQ" base_Comment="_p_R6cIthEd-urZQZ08VCKQ"/>
+  <Default:Documentation xmi:id="_rb0J4YthEd-urZQZ08VCKQ" base_Comment="_rb0J4IthEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_VG54MYtzEd-urZQZ08VCKQ" base_Generalization="_VG54MItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_YxTGUYtzEd-urZQZ08VCKQ" base_Generalization="_YxTGUItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_c58WsYtzEd-urZQZ08VCKQ" base_Generalization="_c58WsItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_hS1pkYtzEd-urZQZ08VCKQ" base_Generalization="_hS1pkItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_kcJj4YtzEd-urZQZ08VCKQ" base_Generalization="_kcJj4ItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_oA4O4YtzEd-urZQZ08VCKQ" base_Generalization="_oA4O4ItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_pS_XAYtzEd-urZQZ08VCKQ" base_Generalization="_pS_XAItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_qNGO0YtzEd-urZQZ08VCKQ" base_Generalization="_qNGO0ItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_q-IDIYtzEd-urZQZ08VCKQ" base_Generalization="_q-IDIItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_va4iUYtzEd-urZQZ08VCKQ" base_Generalization="_va4iUItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_4xnoMYtzEd-urZQZ08VCKQ" base_Generalization="_4xnoMItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_7L_Y4YtzEd-urZQZ08VCKQ" base_Generalization="_7L_Y4ItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_8viPQYtzEd-urZQZ08VCKQ" base_Generalization="_8viPQItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_-SnyoYtzEd-urZQZ08VCKQ" base_Generalization="_-SnyoItzEd-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_ET-REYt0Ed-urZQZ08VCKQ" base_Generalization="_ET-REIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_HJnBcYt0Ed-urZQZ08VCKQ" base_Generalization="_HJnBcIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_LRXhAYt0Ed-urZQZ08VCKQ" base_Generalization="_LRXhAIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_Nw9I4Yt0Ed-urZQZ08VCKQ" base_Generalization="_Nw9I4It0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_R-qfcYt0Ed-urZQZ08VCKQ" base_Generalization="_R-qfcIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_TX7YcYt0Ed-urZQZ08VCKQ" base_Generalization="_TX7YcIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_XJ7DYYt0Ed-urZQZ08VCKQ" base_Generalization="_XJ7DYIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_YvZMYYt0Ed-urZQZ08VCKQ" base_Generalization="_YvZMYIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_aZCqwYt0Ed-urZQZ08VCKQ" base_Generalization="_aZCqwIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_c_fvoYt0Ed-urZQZ08VCKQ" base_Generalization="_c_fvoIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_go_l4Yt0Ed-urZQZ08VCKQ" base_Generalization="_go_l4It0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_iYJ2YYt0Ed-urZQZ08VCKQ" base_Generalization="_iYJ2YIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_uzk1QYt0Ed-urZQZ08VCKQ" base_Generalization="_uzk1QIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_wHxoEYt0Ed-urZQZ08VCKQ" base_Generalization="_wHxoEIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_0HLc4Yt0Ed-urZQZ08VCKQ" base_Generalization="_0HLc4It0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_47VIYYt0Ed-urZQZ08VCKQ" base_Generalization="_47VIYIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_7SudkYt0Ed-urZQZ08VCKQ" base_Generalization="_7SudkIt0Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_FDFkYYt1Ed-urZQZ08VCKQ" base_Generalization="_FDFkYIt1Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_Gn93gYt1Ed-urZQZ08VCKQ" base_Generalization="_Gn93gIt1Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_IkPW8Yt1Ed-urZQZ08VCKQ" base_Generalization="_IkPW8It1Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_KCalIYt1Ed-urZQZ08VCKQ" base_Generalization="_KCalIIt1Ed-urZQZ08VCKQ"/>
+  <xsd:Restriction xmi:id="_MCkfAYt1Ed-urZQZ08VCKQ" base_Generalization="_MCkfAIt1Ed-urZQZ08VCKQ"/>
+  <Default:Documentation xmi:id="_jDLO6IusEd-jMZ0z1K165w" base_Comment="_b0h0wIX3Ed-Vw-EcYlO-zw"/>
+  <Default:Documentation xmi:id="_jDLO6YusEd-jMZ0z1K165w" base_Comment="_fo6FUIX3Ed-Vw-EcYlO-zw"/>
+  <Default:Documentation xmi:id="_jDLO6ousEd-jMZ0z1K165w" base_Comment="_aBV_4IX3Ed-Vw-EcYlO-zw"/>
+  <Default:Documentation xmi:id="_jDLO64usEd-jMZ0z1K165w" base_Comment="_d6MgwIX3Ed-Vw-EcYlO-zw"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_Qvrz8IutEd-jMZ0z1K165w" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_QviC8IutEd-jMZ0z1K165w" displayName="Code List Responsibility Agency (X12 DE 235)"/>
+  <Default:Documentation xmi:id="_Qvrz8YutEd-jMZ0z1K165w" base_Comment="_QviC8YutEd-jMZ0z1K165w"/>
+  <xsd:Restriction xmi:id="_Qvrz8outEd-jMZ0z1K165w" base_Generalization="_QviC8outEd-jMZ0z1K165w"/>
+  <Default:Documentation xmi:id="_Qvrz84utEd-jMZ0z1K165w" base_Comment="_QviC9IutEd-jMZ0z1K165w"/>
+  <Default:Documentation xmi:id="_Qvrz9IutEd-jMZ0z1K165w" base_Comment="_QviC9outEd-jMZ0z1K165w"/>
+  <Default:Documentation xmi:id="_Qvrz9YutEd-jMZ0z1K165w" base_Comment="_QviC-IutEd-jMZ0z1K165w"/>
+  <Default:Documentation xmi:id="_Qvrz9outEd-jMZ0z1K165w" base_Comment="_QviC-outEd-jMZ0z1K165w"/>
+  <Default:Documentation xmi:id="_Qvrz94utEd-jMZ0z1K165w" base_Comment="_QviC_IutEd-jMZ0z1K165w"/>
+  <Default:Documentation xmi:id="_Vq1fWIutEd-jMZ0z1K165w" base_Comment="_Vq1fUYutEd-jMZ0z1K165w"/>
+  <Default:Documentation xmi:id="_Vq1fWYutEd-jMZ0z1K165w" base_Comment="_Vq1fU4utEd-jMZ0z1K165w"/>
+  <Default:Documentation xmi:id="_Vq1fWoutEd-jMZ0z1K165w" base_Comment="_Vq1fVYutEd-jMZ0z1K165w"/>
+  <Default:Documentation xmi:id="_Vq1fW4utEd-jMZ0z1K165w" base_Comment="_Vq1fV4utEd-jMZ0z1K165w"/>
 </xmi:XMI>

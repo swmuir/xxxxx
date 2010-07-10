@@ -807,7 +807,7 @@ var packageNames = new Array(max);]]></method>
                 <structure>
                     <property name="name">new</property>
                     <property name="displayName">name</property>
-                    <expression name="expression">dataSetRow["name"]</expression>
+                    <expression name="expression">if (dataSetRow["id"] != "" )  { dataSetRow["id"] + " : " + dataSetRow["name"] } else { dataSetRow["name"] }</expression>
                     <property name="dataType">string</property>
                 </structure>
                 <structure>
