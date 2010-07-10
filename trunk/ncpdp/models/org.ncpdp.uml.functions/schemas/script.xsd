@@ -8,25 +8,10 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" version="201008" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/structures" schemaLocation="structures.xsd"/>
-  <!-- ================================================== -->
-  <!-- =====  Element Declarations  -->
-  <!-- ================================================== -->
-  <xsd:element name="CancelRx" type="SCRIPT:CancelRx"/>
-  <xsd:element name="CancelRxResponse" type="SCRIPT:CancelRxResponse"/>
-  <xsd:element name="DrugAdminstration" type="SCRIPT:DrugAdminstration"/>
-  <xsd:element name="NewRx" type="SCRIPT:NewRx"/>
-  <xsd:element name="RefillRequest" type="SCRIPT:RefillRequest"/>
-  <xsd:element name="RefillResponse" type="SCRIPT:RefillResponse"/>
-  <xsd:element name="Resupply" type="SCRIPT:Resupply"/>
-  <xsd:element name="RxChangeRequest" type="SCRIPT:RxChangeRequest"/>
-  <xsd:element name="RxChangeResponse" type="SCRIPT:RxChangeResponse"/>
-  <xsd:element name="RxFill" type="SCRIPT:RxFill"/>
-  <xsd:element name="RxHistoryRequest" type="SCRIPT:RxHistoryRequest"/>
-  <xsd:element name="RxHistoryResponse" type="SCRIPT:RxHistoryResponse"/>
   <!-- ================================================== -->
   <!-- =====  Complex Type Definitions  -->
   <!-- ================================================== -->
@@ -43,8 +28,7 @@ Approved may contain a ReasonCode.</xsd:documentation>
       </xsd:element>
       <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35">
         <xsd:annotation>
-          <xsd:documentation>RES-030
-Transaction Key. Used in conjunction with same field described above in the RequestReferenceNumber. The Mailbox may return the positional key of the specific piece of mail within their files.</xsd:documentation>
+          <xsd:documentation>Transaction Key. Used in conjunction with same field described above in the RequestReferenceNumber. The Mailbox may return the positional key of the specific piece of mail within their files.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="Note" type="datatypes:an..70">
@@ -67,7 +51,7 @@ ApprovedWithChanges may be accompanied by a ReasonCode.</xsd:documentation>
       </xsd:element>
       <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35">
         <xsd:annotation>
-          <xsd:documentation>RES-030</xsd:documentation>
+          <xsd:documentation>Transaction Key. Used in conjunction with same field described above in the RequestReferenceNumber. The Mailbox may return the positional key of the specific piece of mail within their files.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="Note" type="datatypes:an..70">
@@ -81,9 +65,6 @@ ApprovedWithChanges may be accompanied by a ReasonCode.</xsd:documentation>
   <!--  BasicResponseType  <<choice>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="BasicResponseType">
-    <xsd:annotation>
-      <xsd:documentation>Used in REFRES</xsd:documentation>
-    </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:ResponseType">
         <xsd:choice>
@@ -298,7 +279,7 @@ ApprovedWithChanges may be accompanied by a ReasonCode.</xsd:documentation>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CancellRxResponseType">
     <xsd:annotation>
-      <xsd:documentation>Used in REFRES</xsd:documentation>
+      <xsd:documentation>Used in RefillResponse</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:ResponseType">
@@ -323,7 +304,7 @@ ApprovedWithChanges may be accompanied by a ReasonCode.</xsd:documentation>
       </xsd:element>
       <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35">
         <xsd:annotation>
-          <xsd:documentation>RES-030</xsd:documentation>
+          <xsd:documentation>Transaction Key. Used in conjunction with same field described above in the RequestReferenceNumber. The Mailbox may return the positional key of the specific piece of mail within their files.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="DenialReason" type="xsd:string">
@@ -342,7 +323,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
       <xsd:documentation>This element is only used in a denied CancelRxResponse where the prescription cannot be cancelled by the receiving pharmacy because the prescription has been transferred to another organization’s pharmacy. </xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ApprovedCode">
+      <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ReasonCode">
         <xsd:annotation>
           <xsd:documentation>RES-020
 A DenialReason or DeniedTransferredType or DeniedNewRxToFollow response must be accompanied by the ReasonCode or DenialReason explanation, or both.</xsd:documentation>
@@ -350,7 +331,7 @@ A DenialReason or DeniedTransferredType or DeniedNewRxToFollow response must be 
       </xsd:element>
       <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35">
         <xsd:annotation>
-          <xsd:documentation>RES-030</xsd:documentation>
+          <xsd:documentation>Transaction Key. Used in conjunction with same field described above in the RequestReferenceNumber. The Mailbox may return the positional key of the specific piece of mail within their files.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="DenialReason" type="xsd:string">
@@ -373,14 +354,14 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:DeniedTransferredType">
         <xsd:sequence>
-          <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ApprovedCode">
+          <xsd:element maxOccurs="10" name="ReasonCode" type="ecl:ReasonCode">
             <xsd:annotation>
               <xsd:documentation>RES-020</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
           <xsd:element minOccurs="0" name="ReferenceNumber" type="datatypes:an..35">
             <xsd:annotation>
-              <xsd:documentation>RES-030</xsd:documentation>
+              <xsd:documentation>Transaction Key. Used in conjunction with same field described above in the RequestReferenceNumber. The Mailbox may return the positional key of the specific piece of mail within their files.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
           <xsd:element minOccurs="0" name="DenialReason" type="xsd:string">
@@ -400,40 +381,29 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <xsd:complexType name="DrugAdministrationRequest">
     <xsd:sequence>
       <xsd:choice>
-        <xsd:annotation>
-          <xsd:documentation>REQ-010</xsd:documentation>
-        </xsd:annotation>
         <xsd:element name="IndefiniteSuspension" type="SCRIPT:IndefiniteSuspension">
           <xsd:annotation>
-            <xsd:documentation>REQ-010 value IS</xsd:documentation>
+            <xsd:documentation>value IS</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
         <xsd:element name="FixedLengthSuspension" type="SCRIPT:FixedLengthSuspension">
           <xsd:annotation>
-            <xsd:documentation>REQ-010 value FS</xsd:documentation>
+            <xsd:documentation>value FS</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
         <xsd:element name="ResumeAdministration" type="SCRIPT:ResumeAdministration">
           <xsd:annotation>
-            <xsd:documentation>REQ-010 value RA</xsd:documentation>
+            <xsd:documentation>value RA</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
         <xsd:element name="CancelSuspension" type="xsd:anySimpleType">
           <xsd:annotation>
-            <xsd:documentation>REQ-010 value CS</xsd:documentation>
+            <xsd:documentation>value CS</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
       </xsd:choice>
-      <xsd:element minOccurs="0" name="DrugAdminReasonCode" type="ecl:DrugAdminReasonCode">
-        <xsd:annotation>
-          <xsd:documentation>REQ-090</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element minOccurs="0" name="DrugAdminReasonText" type="datatypes:an..100">
-        <xsd:annotation>
-          <xsd:documentation>REQ-100</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
+      <xsd:element minOccurs="0" name="DrugAdminReasonCode" type="ecl:DrugAdminReasonCode"/>
+      <xsd:element minOccurs="0" name="DrugAdminReasonText" type="datatypes:an..100"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -898,7 +868,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RefillResponseType">
     <xsd:annotation>
-      <xsd:documentation>Used in REFRES</xsd:documentation>
+      <xsd:documentation>Used in RefillResponse</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:ResponseType">
@@ -916,7 +886,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="ResponseType">
     <xsd:annotation>
-      <xsd:documentation>Used in REFRES</xsd:documentation>
+      <xsd:documentation>Used in RefillResponse</xsd:documentation>
     </xsd:annotation>
     <xsd:choice>
       <xsd:element minOccurs="0" name="Approved" type="SCRIPT:ApprovedType">
@@ -1267,7 +1237,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RxChangeResponseType">
     <xsd:annotation>
-      <xsd:documentation>Used in REFRES</xsd:documentation>
+      <xsd:documentation>Used in RefillResponse</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:ResponseType">
@@ -1554,8 +1524,11 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
           </xsd:annotation>
         </xsd:element>
       </xsd:choice>
-      <xsd:element name="ExpirationDate" type="datatypes:DateType"/>
-      <xsd:element name="EffectiveDate" type="datatypes:DateType"/>
+      <xsd:element name="RequestedDates" type="datatypes:DateRange">
+        <xsd:annotation>
+          <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

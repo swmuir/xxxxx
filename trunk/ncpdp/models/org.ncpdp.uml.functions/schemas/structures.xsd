@@ -8,7 +8,7 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/structures" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/structures" version="201008" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <!-- ================================================== -->
@@ -80,7 +80,7 @@ Required No Known Allergies = “N” (No), meaning allergies are known and will
       </xsd:element>
       <xsd:element name="MIMEType" type="ecl:MIMETypeCode">
         <xsd:annotation>
-          <xsd:documentation>&lt;xs:documentation&gt;defines the content nature of the attachmentData.  Internet standard defined in RFC 2045, RFC 2046, RFC 2047, RFC 4288, RFC 4289 and RFC 2049.  
+          <xsd:documentation>defines the content nature of the attachmentData.  Internet standard defined in RFC 2045, RFC 2046, RFC 2047, RFC 4288, RFC 4289 and RFC 2049.  
 
 Currently recognized and enumerated MIME Types for purposes in NCPDP are:
 	application/hl7-sda+xml -- HL7v3 SDA (xml) – SDA is a superset to CDA	
@@ -917,7 +917,7 @@ The source of information is the ultimate source. </xsd:documentation>
           <xsd:documentation>On the mandatory transactions: One occurrence is the prescriber number. One occurrence may be used to identify the clinic. One occurrence may be used to identify a supervisor.
 At least one occurrence must contain “HPI” (NPI). Prescriber individual (not organizational) NPI Number is mandatory. This is mandatory for the Prescriber (PC), not the Supervisor (SU). 
 For all transactions except RxHistoryResponse, if the prescriber has an NPI, one occurrence must contain the value “HPI” (NPI). 
-For all transactions except RxHistoryResponse, if the prescriber has a DEA number, one occurrence must contain the value “DH” (DEA Number).&lt;/xs:documentation&gt;
+For all transactions except RxHistoryResponse, if the prescriber has a DEA number, one occurrence must contain the value “DH” (DEA Number).
 				</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -1639,14 +1639,9 @@ If not known, the value is not sent. On response transactions, the value from th
       <xsd:element minOccurs="0" name="Race" type="datatypes:CDCCode">
         <xsd:annotation>
           <xsd:documentation>Race - The biological descent of the entity. Centers for Disease Control (CDC) PHIN Vocabulary Access and Distribution System (VADS) PHVS_Race_CDC. 
-
 Code includes a check digit. 
-
 Background: http://www.cdc.gov/phin/activities/standards/vocabulary/doc/CDC%20Race%20&amp;%20Ethnicity%20Background%20and%20Purpose.pdf 
-
-Source code is 
-http://phinvads.cdc.gov/vads/ViewValueSet.action?id=66D34BBC-617F-DD11-B38D-00188B398520#--&gt;
-</xsd:documentation>
+Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=66D34BBC-617F-DD11-B38D-00188B398520#</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="Ethnicity" type="datatypes:CDCCode">
@@ -1657,7 +1652,7 @@ Code includes a check digit.
 
 Background: http://www.cdc.gov/phin/activities/standards/vocabulary/doc/CDC%20Race%20&amp;%20Ethnicity%20Background%20and%20Purpose.pdf 
 
-Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F-DD11-B38D-00188B398520#--&gt;
+Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F-DD11-B38D-00188B398520#
 </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -3522,7 +3517,7 @@ Value SU</xsd:documentation>
           <xsd:documentation>On the mandatory transactions: One occurrence is the prescriber number. One occurrence may be used to identify the clinic. One occurrence may be used to identify a supervisor.
 At least one occurrence must contain “HPI” (NPI). Prescriber individual (not organizational) NPI Number is mandatory. This is mandatory for the Prescriber (PC), not the Supervisor (SU). 
 For all transactions except RxHistoryResponse, if the prescriber has an NPI, one occurrence must contain the value “HPI” (NPI). 
-For all transactions except RxHistoryResponse, if the prescriber has a DEA number, one occurrence must contain the value “DH” (DEA Number).&lt;/xs:documentation&gt;
+For all transactions except RxHistoryResponse, if the prescriber has a DEA number, one occurrence must contain the value “DH” (DEA Number).
 				</xsd:documentation>
         </xsd:annotation>
       </xsd:element>

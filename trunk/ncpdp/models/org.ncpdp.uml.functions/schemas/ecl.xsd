@@ -8,96 +8,38 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/ecl" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/ecl" version="201008" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <!-- ================================================== -->
   <!-- =====  Simple Type Definitions  -->
   <!-- ================================================== -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  ApprovedCode  <<ncpdpecl>>  -->
+  <!--  AddressTypeQualifier  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:simpleType name="ApprovedCode">
-    <xsd:annotation>
-      <xsd:documentation>Message code, on an approved claim/service, communicating the need for an additional follow-up.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="AQ">
+  <xsd:simpleType name="AddressTypeQualifier">
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="P">
         <xsd:annotation>
-          <xsd:documentation>Not Specified</xsd:documentation>
+          <xsd:documentation>Prescriber</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="AA">
+      <xsd:enumeration value="C">
         <xsd:annotation>
-          <xsd:documentation>Generic Available-Message from Processor to the pharmacist that a generic equivalent product is available when a claim is submitted for a brand-name product.</xsd:documentation>
+          <xsd:documentation>Clinic</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="AB">
+      <xsd:enumeration value="M">
         <xsd:annotation>
-          <xsd:documentation>Non-Formulary Drug- Response code indicating that the prescribed drug is not included in the plan formulary.</xsd:documentation>
+          <xsd:documentation>Mailbox</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="AC">
+      <xsd:enumeration value="D">
         <xsd:annotation>
-          <xsd:documentation>Maintenance Drug -Medication used to control the symptoms of a chronic condition.</xsd:documentation>
+          <xsd:documentation>Presciber</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="AD">
+      <xsd:enumeration value="ZZZ">
         <xsd:annotation>
-          <xsd:documentation>Filled During Transition Benefit - The drug was paid because the Medicare Part D patient is in a transitional drug benefit period.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AE">
-        <xsd:annotation>
-          <xsd:documentation>Filled During Transition Benefit/Prior Authorization Required - The drug was paid because the Medicare Part D patient is in a transitional drug benefit period but would have rejected due to the need for a prior authorization</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AF">
-        <xsd:annotation>
-          <xsd:documentation>Filled During Transition Benefit/Non-Formulary - The drug was paid because the Medicare Part D patient is in a transitional drug benefit period. After the transition drug benefit period, this drug would be considered non-formulary and not payable.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AG">
-        <xsd:annotation>
-          <xsd:documentation>Filled During Transition Benefit/Other Rejection - The drug was paid because the Medicare Part D patient is in a transitional drug benefit period. After the transition drug benefit period, this drug will reject for plan limitations or other reason(s).</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AH">
-        <xsd:annotation>
-          <xsd:documentation>Emergency Fill Situation - This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AJ">
-        <xsd:annotation>
-          <xsd:documentation>Emergency Fill Situation/Prior Authorization Required -This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period but would have rejected due to the need for a prior authorization.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AK">
-        <xsd:annotation>
-          <xsd:documentation>Emergency Fill Situation/Non-Formulary - This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period but would have rejected as non-formulary or not covered.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AL">
-        <xsd:annotation>
-          <xsd:documentation>Emergency Fill Situation/Other Rejection - This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period but would have rejected for plan limitations or other reason(s).</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AM">
-        <xsd:annotation>
-          <xsd:documentation>Level of Care Change - This drug was paid because the patient has had a change in level of care</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AN">
-        <xsd:annotation>
-          <xsd:documentation>Level Of Care Change/Prior Authorization Required - This drug was paid because it was determined that the patient has had a change in level of care. Future fills of this drug under the same level of care will reject unless a prior auth is submitted and approved by the plan.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AO">
-        <xsd:annotation>
-          <xsd:documentation>Level Of Care Change/Non-Formulary This drug was paid because it was determined that the patient has had a change in level of care.   Future fills of this drug under the same level of care will reject because of plan limitations of other reason(s).</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="AP">
-        <xsd:annotation>
-          <xsd:documentation>Level of Care Change/Other Rejection - This drug was paid because it was determined that the patient has had a change in level of care. Future fills of this drug under the same level of care will reject as non-formulary or not covered.</xsd:documentation>
+          <xsd:documentation>Mutually Defined</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -106,7 +48,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  BooleanCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="BooleanCode">
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="Y">
         <xsd:annotation>
           <xsd:documentation>Yes</xsd:documentation>
@@ -124,9 +66,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ChangeofPrescriptionStatusCode">
     <xsd:annotation>
-      <xsd:documentation>Used in the CANRX message when the prescriber wishes to notify the pharmacy to no longer continue dispensing any open refills on an active prescription or to cancel a prescription that has not yet been dispensed.</xsd:documentation>
+      <xsd:documentation>Used in the Cancel Request message when the prescriber wishes to notify the pharmacy to no longer continue dispensing any open refills on an active prescription or to cancel a prescription that has not yet been dispensed.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="C">
         <xsd:annotation>
           <xsd:documentation>Cancel - Prescriber wishes to notify the pharmacy to cancel a prescription that has not yet been dispensed.</xsd:documentation>
@@ -152,7 +94,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Values for Communication Codes</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="BN">
         <xsd:annotation>
           <xsd:documentation>Beeper</xsd:documentation>
@@ -202,7 +144,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Code indicating whether or not the prescription is a compound.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="0">
         <xsd:annotation>
           <xsd:documentation>Not Specified This value is not allowed for the Telecommunication Standard</xsd:documentation>
@@ -224,7 +166,10 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  ConsentCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ConsentCode">
-    <xsd:restriction base="xsd:string">
+    <xsd:annotation>
+      <xsd:documentation>Patient Consent Indicator</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="Y">
         <xsd:annotation>
           <xsd:documentation>Patient gave consent for prescriber to receive the medication history from any prescriber.</xsd:documentation>
@@ -259,10 +204,10 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Code identifying the significance or severity level of a clinical event as contained in the originating database.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value=" ">
         <xsd:annotation>
-          <xsd:documentation>Blank Value</xsd:documentation>
+          <xsd:documentation>Not Specified</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="1">
@@ -452,7 +397,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value=" ">
         <xsd:annotation>
-          <xsd:documentation>Blank Value</xsd:documentation>
+          <xsd:documentation>Unspecified</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -464,7 +409,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Code identifying intervention performed when a conflict has been detected.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="SC">
         <xsd:annotation>
           <xsd:documentation>Self-care consultation Code indicating activities performed by a pharmacist on behalf of a patient intended to allow the patient to function more effectively on his or her own behalf in health promotion and disease prevention, detection, or treatment.</xsd:documentation>
@@ -599,7 +544,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>For further explanation, conflict, or clarification of services related to drug use evaluation.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="PC">
         <xsd:annotation>
           <xsd:documentation>Patient Question/Concern Code indicating that a request for information/concern was expressed by the patient, with respect to patient care.</xsd:documentation>
@@ -899,7 +844,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Action taken in response to a conflict.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="4A">
         <xsd:annotation>
           <xsd:documentation>Prescribed with acknowledgements - Physician is prescribing this medication with knowledge of the potential conflict.</xsd:documentation>
@@ -1039,7 +984,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Reject Codes used by responder who takes responsibility for transaction</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="008">
         <xsd:annotation>
           <xsd:documentation>Request timed out before response could be received.</xsd:documentation>
@@ -1047,7 +992,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="134">
         <xsd:annotation>
-          <xsd:documentation>DRU dosage quantity qualifier is invalid.</xsd:documentation>
+          <xsd:documentation>Sending a Quantity Sufficient with Quantity of 0 is invalid for this pharmacy.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="210">
@@ -1057,7 +1002,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="220">
         <xsd:annotation>
-          <xsd:documentation>Message is a duplicate</xsd:documentation>
+          <xsd:documentation>Transaction is a duplicate</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="500">
@@ -1089,7 +1034,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Definition of Field</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="1">
         <xsd:annotation>
           <xsd:documentation>Prescriber/Prescriber Supplied - The diagnosis was given or supplied by the prescriber.</xsd:documentation>
@@ -1112,7 +1057,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="LOA">
         <xsd:annotation>
-          <xsd:documentation>LOA value is Request for the pharmacy to dispense a supply of medications in user packaging for use during a Leave of Absence</xsd:documentation>
+          <xsd:documentation>Request for the pharmacy to dispense a supply of medications in user packaging for use during a Leave of Absence</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -1124,7 +1069,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Used for medications ordered by a prescriber but not requiring dispensing at this time, but may be required for administration and may be available for drug-to-drug interactions.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="Y">
         <xsd:annotation>
           <xsd:documentation>Yes - Used for medications ordered by a prescriber not requiring dispensing, but available for reference and drug-to-drug interaction checking.  </xsd:documentation>
@@ -1142,38 +1087,32 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="DrugAdminReasonCode">
     <xsd:annotation>
-      <xsd:documentation>Code identifying the reason for the message
-</xsd:documentation>
+      <xsd:documentation>Code identifying the reason for the message</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="01">
         <xsd:annotation>
-          <xsd:documentation>Awaiting lab action (procedure or result) – Medication administration suspended in preparation for a lab procedure or awaiting lab results.			
-</xsd:documentation>
+          <xsd:documentation>Awaiting lab action (procedure or result) – Medication administration suspended in preparation for a lab procedure or awaiting lab results.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="02">
         <xsd:annotation>
-          <xsd:documentation>Awaiting clinical procedure (non-lab) – Medication administration suspended in preparation for a clinical procedure not lab related.			
-</xsd:documentation>
+          <xsd:documentation>Awaiting clinical procedure (non-lab) – Medication administration suspended in preparation for a clinical procedure not lab related.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="03">
         <xsd:annotation>
-          <xsd:documentation>Other clinical reason – Medication administration suspended for other clinical reason not procedure or lab related. Suggest further details be provided in text field.			
-</xsd:documentation>
+          <xsd:documentation>Other clinical reason – Medication administration suspended for other clinical reason not procedure or lab related. Suggest further details be provided in text field.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="04">
         <xsd:annotation>
-          <xsd:documentation>Non-clinical reason – Medication administration suspended for a non-clinical reason. Suggest further details be provided in text field.			
-</xsd:documentation>
+          <xsd:documentation>Non-clinical reason – Medication administration suspended for a non-clinical reason. Suggest further details be provided in text field.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="05">
         <xsd:annotation>
-          <xsd:documentation>Patient request – Medication administration suspended at the request of the patient or patient’s representative.			
-</xsd:documentation>
+          <xsd:documentation>Patient request – Medication administration suspended at the request of the patient or patient’s representative.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -1185,7 +1124,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Code identifying the coverage status of the prescribed drug.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="PR">
         <xsd:annotation>
           <xsd:documentation>Preferred - Preferred means available on a pharmaceutical formulary in a manner such that the product is given preference in dispensing decisions over competing products in a therapeutic class or therapeutic use.</xsd:documentation>
@@ -1281,6 +1220,51 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Multum MMDC</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="FI">
+        <xsd:annotation>
+          <xsd:documentation>First DataBank Medication ID (FDB MedID)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FL">
+        <xsd:annotation>
+          <xsd:documentation>First DataBank Ingredient List ID (HICL_SEQ_NO)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FM">
+        <xsd:annotation>
+          <xsd:documentation>First DataBank Medication ID (FDB MedID)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FN">
+        <xsd:annotation>
+          <xsd:documentation>First DataBank Medication Name ID (FDB Med Name ID) </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FD">
+        <xsd:annotation>
+          <xsd:documentation>First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID) </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GPK">
+        <xsd:annotation>
+          <xsd:documentation>RxNorm Generic Package (GPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the generic drug delivery device.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SCD">
+        <xsd:annotation>
+          <xsd:documentation>RxNorm Semantic Clinical Drug (SCD) – A code maintained and distributed by National Library of Medicine (NLM) representing the ingredient plus form and dose strength.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BPK">
+        <xsd:annotation>
+          <xsd:documentation>RxNorm Branded Package (BPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the branded drug delivery device.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SBD">
+        <xsd:annotation>
+          <xsd:documentation>RxNorm Semantic Branded Drug (SBD) – A Code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, form and dose strength plus the branded name. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1350,7 +1334,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Code identifying the gender of the individual.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="M">
         <xsd:annotation>
           <xsd:documentation>Male</xsd:documentation>
@@ -1372,7 +1356,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  IDQualifierCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="IDQualifierCode">
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="0B">
         <xsd:annotation>
           <xsd:documentation>State License Number</xsd:documentation>
@@ -1541,8 +1525,8 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  MIMETypeCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="MIMETypeCode">
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="application/hl7-cda+xml"/>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="application/hl7-sda+xml"/>
       <xsd:enumeration value="application/x-ccr"/>
     </xsd:restriction>
   </xsd:simpleType>
@@ -1553,7 +1537,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Identifies code set of clinical physical findings.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="1">
         <xsd:annotation>
           <xsd:documentation>X-12 Data Element Measurement Dimension, coded (DE 738)</xsd:documentation>
@@ -1583,7 +1567,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Qualifies the Measurement value.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="HT">
         <xsd:annotation>
           <xsd:documentation>Height</xsd:documentation>
@@ -1774,7 +1758,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:documentation>Code conveying the method by which the order was defined by the prescriber and captured in the prescribing system.	
 </xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="EP">
         <xsd:annotation>
           <xsd:documentation>Entered by prescriber - The prescribing practitioner entered the order directly into the electronic prescribing system. Includes entry from a remote location (e.g., via a web interface).</xsd:documentation>
@@ -1814,7 +1798,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Code indicating relationship of patient to cardholder.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="0">
         <xsd:annotation>
           <xsd:documentation>Not Specified</xsd:documentation>
@@ -1849,7 +1833,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Indicates the insurance type.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="P">
         <xsd:annotation>
           <xsd:documentation>Primary</xsd:documentation>
@@ -1878,16 +1862,48 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PrescriptionDeliveryMethod  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="PrescriptionDeliveryMethod">
+    <xsd:annotation>
+      <xsd:documentation>The method through which the original electronically created transaction was delivered to its intended recipient..</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation>Electronic Delivery - Prescription is delivered to its intended recipient via EDI/electronic communication methods (e.g. computer to computer - not via any faxing mechanism).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation>Facsimile Delivery - Prescription is delivered to its intended recipient via a FAX communication (e.g. used as a back up method to an original electronic delivery attempt).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  PrimaryDiagnosisCodeQualifierCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="PrimaryDiagnosisCodeQualifierCode">
     <xsd:annotation>
-      <xsd:documentation>Code qualifying the ‘Diagnosis Code’ (424-DO).</xsd:documentation>
+      <xsd:documentation>Code qualifying the Diagnosis Code</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="E"/>
-      <xsd:enumeration value="F"/>
-      <xsd:enumeration value="M"/>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="E">
+        <xsd:annotation>
+          <xsd:documentation>Micromedex/Medical Economics – a code list developed by this company</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="F">
+        <xsd:annotation>
+          <xsd:documentation>First DataBank – a code list developed by this company</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="M">
+        <xsd:annotation>
+          <xsd:documentation>Medi-Span Product Line - a code list developed by this company </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="ABF">
         <xsd:annotation>
           <xsd:documentation>International Classification of Diseases-10- Clinical Modifications (ICD-10-CM) Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.  </xsd:documentation>
@@ -1898,8 +1914,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="ICD9"/>
-      <xsd:enumeration value="ICD10"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1909,7 +1923,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>The status of the prescription’s prior authorization as known by the sender.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="A">
         <xsd:annotation>
           <xsd:documentation>Approved - The medication was approved by the payer</xsd:documentation>
@@ -1942,7 +1956,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="PriorAuthorizationTypeCode">
     <xsd:annotation>
-      <xsd:documentation>Code clarifying the 'Prior Authorization Number Submitted' (462-EV) or benefit/plan exemption.</xsd:documentation>
+      <xsd:documentation>Code clarifying the Prior Authorization Number Submitted or benefit/plan exemption.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="94">
@@ -2143,14 +2157,39 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>UPC</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="SCD">
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ProductQualifiersCodeExtended  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ProductQualifiersCodeExtended">
+    <xsd:annotation>
+      <xsd:documentation>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard including RX Norm</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="ND">
         <xsd:annotation>
-          <xsd:documentation>RxNorm Semantic Clinical Drug (SCD) – A code maintained and distributed by National Library of Medicine (NLM) representing the ingredient plus form and dose strength.</xsd:documentation>
+          <xsd:documentation>NDC</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="SBD">
+      <xsd:enumeration value="MF">
         <xsd:annotation>
-          <xsd:documentation>RxNorm Semantic Branded Drug (SBD) – A Code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, form and dose strength plus the branded name. </xsd:documentation>
+          <xsd:documentation>MFG</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RT">
+        <xsd:annotation>
+          <xsd:documentation>NDF-RT - National Drug File Reference Terminology  - Maintained by VA, distributed by NCI -  for classes of medications</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UN">
+        <xsd:annotation>
+          <xsd:documentation>UNII - Unique Ingredient Identifier - Maintained by FDA and EPA, distributed by FDA Substance Registration System (SRS)			</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UP">
+        <xsd:annotation>
+          <xsd:documentation>UPC</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="GPK">
@@ -2163,6 +2202,16 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>RxNorm Branded Package (BPCK) – A code maintained and distributed by the National Library of Medicine (NLM) representing the branded drug delivery device.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="SBD">
+        <xsd:annotation>
+          <xsd:documentation>RxNorm Semantic Branded Drug (SBD) – A Code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, form and dose strength plus the branded name. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SCD">
+        <xsd:annotation>
+          <xsd:documentation>RxNorm Semantic Clinical Drug (SCD) – A code maintained and distributed by National Library of Medicine (NLM) representing the ingredient plus form and dose strength.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -2172,7 +2221,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Quantity qualifier. X12 DE 673</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="38">
         <xsd:annotation>
           <xsd:documentation>Original Quantity</xsd:documentation>
@@ -2204,7 +2253,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  ReasonCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ReasonCode">
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="AA">
         <xsd:annotation>
           <xsd:documentation>Patient unknown to the Prescriber</xsd:documentation>
@@ -2299,7 +2348,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Code identifying the patient’s place of residence.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="1">
         <xsd:annotation>
           <xsd:documentation>Home= Location, other than a hospital or other facility, where the patient receives drugs or services in a private residence.</xsd:documentation>
@@ -2403,7 +2452,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="T">
         <xsd:annotation>
-          <xsd:documentation>Insignificant Change (All other changes)</xsd:documentation>
+          <xsd:documentation>Therapeutic Interchange/Substitution - A modification of the product prescribed to a preferred product choice.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -2468,9 +2517,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="SecondaryDiagnosisCodeQualifierCode">
     <xsd:annotation>
-      <xsd:documentation>Code qualifying the ‘Diagnosis Code’ (424-DO).</xsd:documentation>
+      <xsd:documentation>Code qualifying the Diagnosis Code</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="ABF">
         <xsd:annotation>
           <xsd:documentation>International Classification of Diseases-10- Clinical Modifications (ICD-10-CM) Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.  </xsd:documentation>
@@ -2490,7 +2539,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Medication list contains all current medication orders as of the current date and time of the response, for the patient indicated. Current status is determined by the point of care responder. 'Current' is medication orders which have not been discontinued.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="C">
         <xsd:annotation>
           <xsd:documentation>Current Medication Orders - The contents are limited to medication orders that are current (within their Start and Stop dates, or on-or-after the Start date if open-ended).</xsd:documentation>
@@ -2530,7 +2579,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Sender indicates where the sender received the allergy information if known.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="P">
         <xsd:annotation>
           <xsd:documentation>Indicates information is provided by the patient or patient representative or personal health record (PHR)</xsd:documentation>
@@ -2550,7 +2599,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Abbreviation of state in which member resides.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="WA">
         <xsd:annotation>
           <xsd:documentation>Washington</xsd:documentation>
@@ -2931,13 +2980,53 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  StatusCode  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="StatusCode">
+    <xsd:annotation>
+      <xsd:documentation>Codes used to relay successful or rejected communications.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="000">
+        <xsd:annotation>
+          <xsd:documentation>Transaction successful</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="001">
+        <xsd:annotation>
+          <xsd:documentation>Transaction successful, message(s) waiting to be retrieved</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="002">
+        <xsd:annotation>
+          <xsd:documentation>No more messages</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="003">
+        <xsd:annotation>
+          <xsd:documentation>Transaction successful, no messages to be retrieved</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="005">
+        <xsd:annotation>
+          <xsd:documentation>Transaction successful, password soon to expire</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="010">
+        <xsd:annotation>
+          <xsd:documentation>Successful - accepted by ultimate receiver</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  SubstitutionCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="SubstitutionCode">
     <xsd:annotation>
       <xsd:documentation>Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="0">
         <xsd:annotation>
           <xsd:documentation>No Product Selection Indicated - This is the field default value that is appropriately used for prescriptions for single source brand, co-branded/co-licensed, or generic products. For a multi-source branded product with available generic(s), DAW 0 is not appropriate, and may result in a reject.</xsd:documentation>
@@ -2997,7 +3086,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:annotation>
       <xsd:documentation>Defines the time zone used by the sender.</xsd:documentation>
     </xsd:annotation>
-    <xsd:restriction base="xsd:string">
+    <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="UT">
         <xsd:annotation>
           <xsd:documentation>Universal Time Coordinate</xsd:documentation>
@@ -3009,15 +3098,18 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  TransactionDomainVersionQualifierCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="TransactionDomainVersionQualifierCode">
+    <xsd:annotation>
+      <xsd:documentation>Element defines which NCPDP business domain schema is being used.</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="SCRIPT">
         <xsd:annotation>
-          <xsd:documentation>Medical Economics Generic Formulation Code (GFC)</xsd:documentation>
+          <xsd:documentation>NCPDP SCRIPT schema</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="Specialized">
         <xsd:annotation>
-          <xsd:documentation>Medical Economics Generic Master (GM)</xsd:documentation>
+          <xsd:documentation>NCPDP Specialized schema</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>

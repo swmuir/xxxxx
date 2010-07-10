@@ -68,7 +68,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>This transaction is sent from the resident source system to parties that need to be aware of these census changes.    </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="DrugAdminstration" type="SCRIPT:DrugAdminstration">
+      <xsd:element name="DrugAdministration" type="SCRIPT:DrugAdminstration">
         <xsd:annotation>
           <xsd:documentation>This transaction is used by prescribers/care facilities to communicate drug administration events to the patient’s pharmacy or other entity</xsd:documentation>
         </xsd:annotation>
@@ -171,44 +171,15 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="HeaderType">
     <xsd:sequence>
-      <xsd:element name="To">
+      <xsd:element name="To" type="datatypes:QualifiedAddress">
         <xsd:annotation>
           <xsd:documentation>This field contains the identification number of the receiver. </xsd:documentation>
         </xsd:annotation>
-        <xsd:complexType>
-          <xsd:simpleContent>
-            <xsd:extension base="datatypes:MailAddressType">
-              <xsd:attribute name="Qualifier">
-                <xsd:annotation>
-                  <xsd:documentation>Qualifier for the type of identifier for receiver.</xsd:documentation>
-                </xsd:annotation>
-                <xsd:simpleType>
-                  <xsd:restriction base="xsd:string">
-                    <xsd:pattern value="P|C|M|D|ZZZ"/>
-                  </xsd:restriction>
-                </xsd:simpleType>
-              </xsd:attribute>
-            </xsd:extension>
-          </xsd:simpleContent>
-        </xsd:complexType>
       </xsd:element>
-      <xsd:element name="From">
+      <xsd:element name="From" type="datatypes:QualifiedAddress">
         <xsd:annotation>
           <xsd:documentation>This field contains the identification number of the sender. </xsd:documentation>
         </xsd:annotation>
-        <xsd:complexType>
-          <xsd:simpleContent>
-            <xsd:extension base="datatypes:MailAddressType">
-              <xsd:attribute name="Qualifier">
-                <xsd:simpleType>
-                  <xsd:restriction base="xsd:string">
-                    <xsd:pattern value="P|C|M|D|ZZZ"/>
-                  </xsd:restriction>
-                </xsd:simpleType>
-              </xsd:attribute>
-            </xsd:extension>
-          </xsd:simpleContent>
-        </xsd:complexType>
       </xsd:element>
       <xsd:element name="MessageID" type="datatypes:an..35M">
         <xsd:annotation>
@@ -233,7 +204,7 @@ On other transactions that do not have a paired follow up message (such as NewRx
       <xsd:element name="SenderSoftware" type="transport:SenderSoftwareType">
         <xsd:annotation>
           <xsd:documentation>Identifies the entity responsible that generated the transaction.
-Note: For Status, Error, Verify transactions – contains software identification of the entity creating the response.&lt;/xs:documentation&gt;
+Note: For Status, Error, Verify transactions – contains software identification of the entity creating the response.
 				</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -245,7 +216,7 @@ Note: For Status, Error, Verify transactions – contains software identificatio
       </xsd:element>
       <xsd:element minOccurs="0" name="RxReferenceNumber" type="datatypes:an..35">
         <xsd:annotation>
-          <xsd:documentation>This is the prescription number assigned by the pharmacy system.&lt;</xsd:documentation>
+          <xsd:documentation>This is the prescription number assigned by the pharmacy system.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="TertiaryIdentifier" type="datatypes:an..3">
@@ -390,7 +361,7 @@ This is not to be used to block transactions.</xsd:documentation>
       <xsd:documentation>This response is used to relay acceptance of a transaction back to the sender. A Status in response indicates acceptance and responsibility. A Status in response to a GetMessage indicates that no mail is waiting for pickup. A Status cannot be mailboxed and may not contain an error.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="Code">
+      <xsd:element name="Code" type="ecl:StatusCode">
         <xsd:annotation>
           <xsd:documentation>Codes used to relay successful or rejected communications. 
 
@@ -400,11 +371,6 @@ Description may be used.
 Value 010 (Successful – accepted by ultimate receiver) is to let the sender know that the message has been received by organization guaranteeing delivery. This value may only be used in a direct connect. It is not to be used in a mailbox environment.
 					</xsd:documentation>
         </xsd:annotation>
-        <xsd:simpleType>
-          <xsd:restriction base="xsd:string">
-            <xsd:pattern value="000|001|002|003|005|010"/>
-          </xsd:restriction>
-        </xsd:simpleType>
       </xsd:element>
       <xsd:element maxOccurs="10" minOccurs="0" name="DescriptionCode" type="ecl:DescriptionCode">
         <xsd:annotation>
@@ -413,15 +379,10 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
-      <xsd:element minOccurs="0" name="PrescriptionDeliveryMethod">
+      <xsd:element minOccurs="0" name="PrescriptionDeliveryMethod" type="ecl:PrescriptionDeliveryMethod">
         <xsd:annotation>
           <xsd:documentation>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.</xsd:documentation>
         </xsd:annotation>
-        <xsd:simpleType>
-          <xsd:restriction base="xsd:string">
-            <xsd:pattern value="1|2"/>
-          </xsd:restriction>
-        </xsd:simpleType>
       </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
@@ -462,36 +423,31 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
     <xsd:sequence>
       <xsd:element minOccurs="0" name="VerifyStatus">
         <xsd:annotation>
-          <xsd:documentation>Codes used to relay successful or rejected communications. 
-
-Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.&lt;/xs:documentation&gt;
+          <xsd:documentation>Codes used to relay successful or rejected communications. &#13;
+&#13;
+Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.&#13;
 								</xsd:documentation>
         </xsd:annotation>
         <xsd:complexType>
           <xsd:sequence>
             <xsd:element name="Code">
               <xsd:simpleType>
+                <xsd:annotation>
+                  <xsd:documentation>Issue setting a default value with leading 0 as in "010"; RSM triming leading 0 to "10" which is not the same&#13;
+Keeping anonymous type </xsd:documentation>
+                </xsd:annotation>
                 <xsd:restriction base="xsd:string">
                   <xsd:pattern value="010"/>
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
             <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
-            <xsd:element minOccurs="0" name="PrescriptionDeliveryMethod">
+            <xsd:element minOccurs="0" name="PrescriptionDeliveryMethod" type="ecl:PrescriptionDeliveryMethod">
               <xsd:annotation>
-                <xsd:documentation>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.
-
-Note: 
-If Code 000 is sent, PrescriptionDeliveryMethod is not sent.
-If Code 010 is sent, PrescriptionDeliveryMethod may be included.
-When sending a NewRx to mailbox, the Code is 000 (no delivery). When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 010 will include the delivery method. If NewRx does not have ReturnReceipt set, a 010 will NOT be returned.&lt;/xs:documentation&gt;
-								</xsd:documentation>
+                <xsd:documentation>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.&#13;
+&#13;
+When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 010 will include the delivery method.								</xsd:documentation>
               </xsd:annotation>
-              <xsd:simpleType>
-                <xsd:restriction base="xsd:string">
-                  <xsd:pattern value="1|2"/>
-                </xsd:restriction>
-              </xsd:simpleType>
             </xsd:element>
           </xsd:sequence>
         </xsd:complexType>
