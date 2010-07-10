@@ -105,12 +105,12 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:element>
       <xsd:element name="RxChangeRequest" type="SCRIPT:RxChangeRequest">
         <xsd:annotation>
-          <xsd:documentation>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a "fillable" prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</xsd:documentation>
+          <xsd:documentation>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a fillable prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="RxChangeResponse" type="SCRIPT:RxChangeResponse">
         <xsd:annotation>
-          <xsd:documentation>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a "fillable" prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</xsd:documentation>
+          <xsd:documentation>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a fillable prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="RxFill" type="SCRIPT:RxFill">
@@ -423,9 +423,9 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
     <xsd:sequence>
       <xsd:element minOccurs="0" name="VerifyStatus">
         <xsd:annotation>
-          <xsd:documentation>Codes used to relay successful or rejected communications. &#13;
-&#13;
-Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.&#13;
+          <xsd:documentation>Codes used to relay successful or rejected communications. 
+
+Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.
 								</xsd:documentation>
         </xsd:annotation>
         <xsd:complexType>
@@ -433,7 +433,7 @@ Is not required in a Verify transaction. If used, must be 010 and DescriptionCod
             <xsd:element name="Code">
               <xsd:simpleType>
                 <xsd:annotation>
-                  <xsd:documentation>Issue setting a default value with leading 0 as in "010"; RSM triming leading 0 to "10" which is not the same&#13;
+                  <xsd:documentation>Issue setting a default value with leading 0 as in 010 RSM triming leading 0 to 10 which is not the same
 Keeping anonymous type </xsd:documentation>
                 </xsd:annotation>
                 <xsd:restriction base="xsd:string">
@@ -444,8 +444,8 @@ Keeping anonymous type </xsd:documentation>
             <xsd:element minOccurs="0" name="Description" type="datatypes:an..70"/>
             <xsd:element minOccurs="0" name="PrescriptionDeliveryMethod" type="ecl:PrescriptionDeliveryMethod">
               <xsd:annotation>
-                <xsd:documentation>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.&#13;
-&#13;
+                <xsd:documentation>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.
+
 When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 010 will include the delivery method.								</xsd:documentation>
               </xsd:annotation>
             </xsd:element>

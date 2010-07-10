@@ -1034,7 +1034,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RxChangeRequest">
     <xsd:annotation>
-      <xsd:documentation>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a "fillable" prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</xsd:documentation>
+      <xsd:documentation>This transaction is sent from a pharmacy to a prescriber to request a change on a new prescription, for example, to request generic substitution. It may request a change on a fillable prescription. It may also be utilized to request a prescriber to review the drug requested, and obtain a Prior Authorization from the payer for the prescription.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
@@ -1148,7 +1148,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="RxChangeResponse">
     <xsd:annotation>
-      <xsd:documentation>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a "fillable" prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</xsd:documentation>
+      <xsd:documentation>This transaction is sent from the prescriber to the pharmacy in response to a request for a change of a new prescription or a fillable prescription. It may also be sent from the prescriber to the pharmacy in response to a request for a prior authorization on a prescription.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTResponse">

@@ -873,17 +873,17 @@ If SourceQualifier value is “PY” (Payer), if sent, this field must contain t
       </xsd:element>
       <xsd:element minOccurs="0" name="FillNumber" type="datatypes:n..2">
         <xsd:annotation>
-          <xsd:documentation>Defines &#13;
-the dispensing episode as an initial fill or an authorized refill.&#13;
-If SourceQualifier value is “P2” (Pharmacy), if sent, this field must contain &#13;
-the fill number from the pharmacy. &#13;
-If SourceQualifier value is “PC” (Prescriber), this field is not sent.&#13;
-If SourceQualifier value is “PY” (Payer), if sent, this field must contain the &#13;
-pharmacy’s fill number from the payer system from claims processing.&#13;
-	Values:&#13;
-	00 = initial fill&#13;
-	01 = first refill&#13;
-	02 = second refill, etc&#13;
+          <xsd:documentation>Defines 
+the dispensing episode as an initial fill or an authorized refill.
+If SourceQualifier value is “P2” (Pharmacy), if sent, this field must contain 
+the fill number from the pharmacy. 
+If SourceQualifier value is “PC” (Prescriber), this field is not sent.
+If SourceQualifier value is “PY” (Payer), if sent, this field must contain the 
+pharmacy’s fill number from the payer system from claims processing.
+	Values:
+	00 = initial fill
+	01 = first refill
+	02 = second refill, etc
 	Allowed values 00 thru 99</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
