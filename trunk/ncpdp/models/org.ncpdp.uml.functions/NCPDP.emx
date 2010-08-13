@@ -3376,6 +3376,20 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MYfEcDD7Ed-8rpqfOAePKg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MYVTjjD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_zvADoKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_zvADoabiEd-2262i8oXgXw" annotatedElement="_zvADoKbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zvADoqbiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zvADo6biEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4O7upzD1Ed-8rpqfOAePKg" name="Observation">
         <eAnnotations xmi:id="_6gIeUDdGEd-wQf5UFCJMDw" source="uml2.diagrams"/>
@@ -5319,6 +5333,20 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeXmTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeX2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_L_hdsKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_kxJkQKbiEd-2262i8oXgXw" annotatedElement="_L_hdsKbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yftn0abiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yftn0KbiEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_40hO-GTWEd-M5IWg2-DxLQ" memberEnd="_40XeNmTWEd-M5IWg2-DxLQ _40hO-WTWEd-M5IWg2-DxLQ">
         <ownedEnd xmi:id="_40hO-WTWEd-M5IWg2-DxLQ" type="_40Xd8GTWEd-M5IWg2-DxLQ" association="_40hO-GTWEd-M5IWg2-DxLQ">
@@ -5660,6 +5688,20 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCn2TXEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCoGTXEd-M5IWg2-DxLQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_1datQKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_1datQabiEd-2262i8oXgXw" annotatedElement="_1datQKbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1datQqbiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1datQ6biEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_r9QzOGTXEd-M5IWg2-DxLQ" memberEnd="_r9HCd2TXEd-M5IWg2-DxLQ _r9QzOWTXEd-M5IWg2-DxLQ">
@@ -6003,6 +6045,20 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2n2TcEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2oGTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_18aWYKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_18aWYabiEd-2262i8oXgXw" annotatedElement="_18aWYKbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_18aWYqbiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_18aWY6biEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_G-g2qWTcEd-M5IWg2-DxLQ" memberEnd="_G-g2m2TcEd-M5IWg2-DxLQ _G-g2qmTcEd-M5IWg2-DxLQ">
         <ownedEnd xmi:id="_G-g2qmTcEd-M5IWg2-DxLQ" type="_G-g2MGTcEd-M5IWg2-DxLQ" association="_G-g2qWTcEd-M5IWg2-DxLQ">
@@ -6344,6 +6400,20 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgj2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgkGTnEd-Y0upv2_lheQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3TbzsKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_3TbzsabiEd-2262i8oXgXw" annotatedElement="_3TbzsKbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3TbzsqbiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Tbzs6biEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_QQORIGTnEd-Y0upv2_lheQ" memberEnd="_QQEgJWTnEd-Y0upv2_lheQ _QQORIWTnEd-Y0upv2_lheQ">
@@ -6687,6 +6757,20 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSj2ToEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSkGToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_y4KiQKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_y4KiQabiEd-2262i8oXgXw" annotatedElement="_y4KiQKbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y4KiQqbiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y4KiQ6biEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_YxpDIGToEd-Y0upv2_lheQ" memberEnd="_YxfSJWToEd-Y0upv2_lheQ _YxpDIWToEd-Y0upv2_lheQ">
         <ownedEnd xmi:id="_YxpDIWToEd-Y0upv2_lheQ" type="_YxfSIGToEd-Y0upv2_lheQ" association="_YxpDIGToEd-Y0upv2_lheQ">
@@ -7029,6 +7113,20 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiT2TpEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiUGTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_4kpj8KbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_4kpj8abiEd-2262i8oXgXw" annotatedElement="_4kpj8KbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4kpj8qbiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4kpj86biEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_QuYiUWTpEd-Y0upv2_lheQ" memberEnd="_QuYh5WTpEd-Y0upv2_lheQ _QuYiUmTpEd-Y0upv2_lheQ">
         <ownedEnd xmi:id="_QuYiUmTpEd-Y0upv2_lheQ" type="_QuYh4GTpEd-Y0upv2_lheQ" association="_QuYiUWTpEd-Y0upv2_lheQ">
@@ -7370,6 +7468,20 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYb2TqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYcGTqEd-Y0upv2_lheQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0-bEIKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_0-bEIabiEd-2262i8oXgXw" annotatedElement="_0-bEIKbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0-bEIqbiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0-bEI6biEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_P_eYcWTqEd-Y0upv2_lheQ" memberEnd="_P_eYPmTqEd-Y0upv2_lheQ _P_eYcmTqEd-Y0upv2_lheQ">
@@ -8055,6 +8167,20 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSv2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSwGTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_3y4IwKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_3y4IwabiEd-2262i8oXgXw" annotatedElement="_3y4IwKbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3y4IwqbiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3y4Iw6biEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_MqbSyWTrEd-Y0upv2_lheQ" memberEnd="_MqbSf2TrEd-Y0upv2_lheQ _MqbSymTrEd-Y0upv2_lheQ">
         <ownedEnd xmi:id="_MqbSymTrEd-Y0upv2_lheQ" type="_MqbSUGTrEd-Y0upv2_lheQ" association="_MqbSyWTrEd-Y0upv2_lheQ">
@@ -8396,6 +8522,20 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxy72TrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxy8GTrEd-Y0upv2_lheQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0bZ2oKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+          <ownedComment xmi:id="_0bZ2oabiEd-2262i8oXgXw" annotatedElement="_0bZ2oKbiEd-2262i8oXgXw">
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
+&#xD;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0bZ2oqbiEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0bZ2o6biEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_kr68dGTrEd-Y0upv2_lheQ" memberEnd="_krxyr2TrEd-Y0upv2_lheQ _kr68dWTrEd-Y0upv2_lheQ">
@@ -15714,4 +15854,14 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <xsd:GlobalElement xmi:id="_rnvF8IwlEd-UL9BapgczgQ" base_Property="_rnl8AIwlEd-UL9BapgczgQ"/>
   <xsd:ComplexType xmi:id="_w61P5IwoEd-UL9BapgczgQ" base_Class="_PM2SUIwoEd-UL9BapgczgQ"/>
   <XSDGeneration:ComplexTypeGen xmi:id="_o_LygIwpEd-UL9BapgczgQ" base_Class="_PM2SUIwoEd-UL9BapgczgQ"/>
+  <Default:Documentation xmi:id="_kxTVQKbiEd-2262i8oXgXw" base_Comment="_kxJkQKbiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_y4KiRKbiEd-2262i8oXgXw" base_Comment="_y4KiQabiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_zvADpKbiEd-2262i8oXgXw" base_Comment="_zvADoabiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_0bZ2pKbiEd-2262i8oXgXw" base_Comment="_0bZ2oabiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_0-bEJKbiEd-2262i8oXgXw" base_Comment="_0-bEIabiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_1dkeQKbiEd-2262i8oXgXw" base_Comment="_1datQabiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_18aWZKbiEd-2262i8oXgXw" base_Comment="_18aWYabiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_3TbztKbiEd-2262i8oXgXw" base_Comment="_3TbzsabiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_3y4IxKbiEd-2262i8oXgXw" base_Comment="_3y4IwabiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_4kpj9KbiEd-2262i8oXgXw" base_Comment="_4kpj8abiEd-2262i8oXgXw"/>
 </xmi:XMI>
