@@ -17761,13 +17761,19 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_yduT4KbgEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed">
         <ownedComment xmi:id="_yduT4abgEd-2262i8oXgXw" annotatedElement="_yduT4KbgEd-2262i8oXgXw">
-          <body>Free text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value Ø or a non-specified value. &#xD;
+          <body>Restricted text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value Ø or a non-specified value. &#xD;
 &#xD;
 &#xD;
 </body>
         </ownedComment>
         <generalization xmi:id="_yduT4qbgEd-2262i8oXgXw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="_yduT46bgEd-2262i8oXgXw" name="BRAND MEDICALLY NECESSARY" classifier="_yduT4KbgEd-2262i8oXgXw"/>
+        <ownedAttribute xmi:id="_yxwrYKb6Ed-Nwtj6LSx65w" name="pattern">
+          <ownedComment xmi:id="_OlI2QKb8Ed-Nwtj6LSx65w" annotatedElement="_yxwrYKb6Ed-Nwtj6LSx65w">
+            <body>Case Insensetive BRAND MEDICALLY NECESSARY expression</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_yxwrYab6Ed-Nwtj6LSx65w" value="(B|b)(R|r)(A|a)(N|n)(D|d) (M|m)(E|e)(D|d)(I|i)(C|c)(A|a)(L|l)(L|l)(Y|y) (N|n)(E|e)(C|c)(E|e)(S|s)(S|s)(A|a)(R|r)(Y|y)"/>
+        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
@@ -21703,4 +21709,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <xsd:Restriction xmi:id="_yeBO0abgEd-2262i8oXgXw" base_Generalization="_yduT4qbgEd-2262i8oXgXw"/>
   <Default:Documentation xmi:id="_-jaHwKbqEd-2262i8oXgXw" base_Comment="_-jQWwKbqEd-2262i8oXgXw"/>
   <Default:Documentation xmi:id="_INXEkabrEd-2262i8oXgXw" base_Comment="_INXEkKbrEd-2262i8oXgXw"/>
+  <xsd:Facet xmi:id="_yyDmUKb6Ed-Nwtj6LSx65w" base_Property="_yxwrYKb6Ed-Nwtj6LSx65w"/>
+  <Default:Documentation xmi:id="_OlI2Qab8Ed-Nwtj6LSx65w" base_Comment="_OlI2QKb8Ed-Nwtj6LSx65w"/>
 </xmi:XMI>
