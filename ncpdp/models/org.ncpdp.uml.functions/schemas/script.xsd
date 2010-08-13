@@ -1049,7 +1049,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTRequest">
         <xsd:sequence>
-          <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:RxChangeCode">
+          <xsd:element name="MessageRequestCode" type="ecl:RxChangeCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1165,7 +1165,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
     <xsd:complexContent>
       <xsd:restriction base="SCRIPT:SCRIPTResponse">
         <xsd:sequence>
-          <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:RxChangeCode">
+          <xsd:element name="MessageRequestCode" type="ecl:RxChangeCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1640,7 +1640,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL&
 </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="SomeNewAttribute" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
