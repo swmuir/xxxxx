@@ -2019,6 +2019,16 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1xyR04umEd-jMZ0z1K165w"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_HAE5cKboEd-2262i8oXgXw" name="an..260">
+        <ownedComment xmi:id="_HAE5caboEd-2262i8oXgXw" annotatedElement="_HAE5cKboEd-2262i8oXgXw">
+          <body>NCPDP Length Constrained Type</body>
+        </ownedComment>
+        <generalization xmi:id="_HAE5cqboEd-2262i8oXgXw" general="_4CkGhjD1Ed-8rpqfOAePKg"/>
+        <ownedAttribute xmi:id="_HAE5c6boEd-2262i8oXgXw" name="maxLength">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_HAE5dKboEd-2262i8oXgXw" value="260"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_MbThMDD2Ed-8rpqfOAePKg" name="structures">
       <eAnnotations xmi:id="_MbThMTD2Ed-8rpqfOAePKg" source="uml2.diagrams"/>
@@ -10782,9 +10792,24 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NW2-UoRXEd-PfKcU8Giing"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ixg84KbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <ownedComment xmi:id="_xHfSAKbmEd-2262i8oXgXw" annotatedElement="_ixg84KbkEd-2262i8oXgXw">
+            <body>Allows the prescriber to indicate to the pharmacy that the pharmacy should never request refills for this specific prescription by any technique.&#xD;
+</body>
+          </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ixg84abkEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ixg84qbkEd-2262i8oXgXw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_R83-MKboEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
+          <ownedComment xmi:id="_5glZAKboEd-2262i8oXgXw" annotatedElement="_R83-MKboEd-2262i8oXgXw">
+            <body>Explanation of the reason for the change request.&#xD;
+&#xD;
+Used only in RXChange and adds additional information for RxChangeCode from ECL&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R83-MaboEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R83-MqboEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_kiZZ0GHGEd-Xe4OIcNINMg" memberEnd="_ki2FwGHGEd-Xe4OIcNINMg _ki2Fw2HGEd-Xe4OIcNINMg">
@@ -11134,6 +11159,10 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OcXzQablEd-2262i8oXgXw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OcXzQqblEd-2262i8oXgXw"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_k0K0UKboEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k0K0UaboEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k0K0UqboEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_qy3FkGQnEd-ODMSOo4sPFQ" name="NewRx">
         <eAnnotations xmi:id="_VUGDUmWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -11290,6 +11319,10 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mted8abkEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mted8KbkEd-2262i8oXgXw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ffhq4KboEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ffhq4aboEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ffhq4qboEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_AdHLgGQoEd-ODMSOo4sPFQ" name="RefillRequest">
@@ -11448,6 +11481,10 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fIKQkabkEd-2262i8oXgXw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fIKQkqbkEd-2262i8oXgXw"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_fDz_QKboEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fDz_QaboEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fDz_QqboEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_TeiOAGQoEd-ODMSOo4sPFQ" name="RxChangeRequest">
         <eAnnotations xmi:id="_VUY-QGWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -11604,6 +11641,10 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hEuq8abkEd-2262i8oXgXw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hEuq8qbkEd-2262i8oXgXw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mhqtYKbnEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PfYBAaboEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PfYBAKboEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_nufgMGQoEd-ODMSOo4sPFQ" name="RxFill">
@@ -11762,6 +11803,10 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hxb_8abkEd-2262i8oXgXw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hxb_8qbkEd-2262i8oXgXw"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_dqZ8UKboEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dqZ8UaboEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dqZ8UqboEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_mSBeAGQvEd-ODMSOo4sPFQ" name="RxHistoryRequest">
         <eAnnotations xmi:id="_VUY-QmWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -11910,6 +11955,10 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iVM0UabkEd-2262i8oXgXw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iVM0UqbkEd-2262i8oXgXw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_au830KboEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_au830aboEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_au830qboEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7NMQYGQvEd-ODMSOo4sPFQ" name="DrugAdminstration">
@@ -12060,6 +12109,10 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aP1PsabkEd-2262i8oXgXw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aP1PsqbkEd-2262i8oXgXw"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_j68tUKboEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j68tUaboEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j68tUqboEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Z0C9kGQzEd-ODMSOo4sPFQ" name="Resupply">
         <eAnnotations xmi:id="_VUP0UGWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -12208,6 +12261,10 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gRxkAabkEd-2262i8oXgXw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gRxkAqbkEd-2262i8oXgXw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_eaYnwKboEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eaYnwaboEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eaYnwqboEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_RMbCoGRCEd-ODMSOo4sPFQ" name="ResponseType">
@@ -15909,4 +15966,8 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <Default:Documentation xmi:id="_3TbztKbiEd-2262i8oXgXw" base_Comment="_3TbzsabiEd-2262i8oXgXw"/>
   <Default:Documentation xmi:id="_3y4IxKbiEd-2262i8oXgXw" base_Comment="_3y4IwabiEd-2262i8oXgXw"/>
   <Default:Documentation xmi:id="_4kpj9KbiEd-2262i8oXgXw" base_Comment="_4kpj8abiEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_xHfSAabmEd-2262i8oXgXw" base_Comment="_xHfSAKbmEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_HAE5daboEd-2262i8oXgXw" base_Comment="_HAE5caboEd-2262i8oXgXw"/>
+  <xsd:Facet xmi:id="_HAE5dqboEd-2262i8oXgXw" base_Property="_HAE5c6boEd-2262i8oXgXw"/>
+  <Default:Documentation xmi:id="_5glZAaboEd-2262i8oXgXw" base_Comment="_5glZAKboEd-2262i8oXgXw"/>
 </xmi:XMI>

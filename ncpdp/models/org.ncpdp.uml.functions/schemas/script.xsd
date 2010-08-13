@@ -182,6 +182,7 @@ ApprovedWithChanges may be accompanied by a ReasonCode.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeReasonText" type="datatypes:an..260"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -513,6 +514,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
             </xsd:annotation>
           </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeReasonText" type="datatypes:an..260"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -659,6 +661,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
             </xsd:annotation>
           </xsd:element>
           <xsd:element minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeReasonText" type="datatypes:an..260"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -774,6 +777,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
             </xsd:annotation>
           </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeReasonText" type="datatypes:an..260"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -1030,6 +1034,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
             </xsd:annotation>
           </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeReasonText" type="datatypes:an..260"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -1145,6 +1150,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
             </xsd:annotation>
           </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="ChangeReasonText" type="datatypes:an..260"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -1367,6 +1373,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
             </xsd:annotation>
           </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeReasonText" type="datatypes:an..260"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -1477,6 +1484,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
             </xsd:annotation>
           </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeReasonText" type="datatypes:an..260"/>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -1617,7 +1625,22 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
         </xsd:annotation>
       </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
-      <xsd:element minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Allows the prescriber to indicate to the pharmacy that the pharmacy should never request refills for this specific prescription by any technique.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ChangeReasonText" type="datatypes:an..260">
+        <xsd:annotation>
+          <xsd:documentation>Explanation of the reason for the change request.&#13;
+&#13;
+Used only in RXChange and adds additional information for RxChangeCode from ECL&#13;
+&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="SomeNewAttribute" type="xsd:string"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
