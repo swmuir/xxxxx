@@ -489,6 +489,17 @@ The source of information is the ultimate source. </xsd:documentation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
+          <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+            <xsd:annotation>
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -707,6 +718,17 @@ The source of information is the ultimate source. </xsd:documentation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
+          <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+            <xsd:annotation>
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -901,6 +923,17 @@ The source of information is the ultimate source. </xsd:documentation>
           <xsd:element minOccurs="0" name="HistorySource" type="datatypes:HistorySource">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+            <xsd:annotation>
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
@@ -1243,6 +1276,17 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Prescriber" type="structures:HistoryPrescriber"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
+      <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+        <xsd:annotation>
+          <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1435,6 +1479,17 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+            <xsd:annotation>
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
@@ -2011,6 +2066,17 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
+          <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+            <xsd:annotation>
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -2327,6 +2393,17 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
+          <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+            <xsd:annotation>
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -2521,6 +2598,17 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+            <xsd:annotation>
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
@@ -2719,6 +2807,17 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
+          <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+            <xsd:annotation>
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -2913,6 +3012,17 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <xsd:element maxOccurs="0" minOccurs="0" name="HistorySource" type="datatypes:HistorySource">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
+            <xsd:annotation>
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
+&#13;
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
+&#13;
+&#13;
+&#13;
+</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>

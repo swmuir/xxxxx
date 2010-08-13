@@ -2342,6 +2342,20 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ReasonForSubstitutionCodeUsed  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ReasonForSubstitutionCodeUsed">
+    <xsd:annotation>
+      <xsd:documentation>Free text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value Ø or a non-specified value. &#13;
+&#13;
+&#13;
+</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="BRAND MEDICALLY NECESSARY"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  ResidenceCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ResidenceCode">
