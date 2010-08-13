@@ -491,12 +491,12 @@ The source of information is the ultimate source. </xsd:documentation>
           </xsd:element>
           <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
             <xsd:annotation>
-              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
             </xsd:annotation>
           </xsd:element>
@@ -720,12 +720,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
           </xsd:element>
           <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
             <xsd:annotation>
-              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
             </xsd:annotation>
           </xsd:element>
@@ -927,12 +927,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
           </xsd:element>
           <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
             <xsd:annotation>
-              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
             </xsd:annotation>
           </xsd:element>
@@ -1278,12 +1278,12 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="HistorySource" type="datatypes:HistorySource"/>
       <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
         <xsd:annotation>
-          <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+          <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -1483,12 +1483,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
           </xsd:element>
           <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
             <xsd:annotation>
-              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
             </xsd:annotation>
           </xsd:element>
@@ -2068,12 +2068,12 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           </xsd:element>
           <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
             <xsd:annotation>
-              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
             </xsd:annotation>
           </xsd:element>
@@ -2395,12 +2395,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
           </xsd:element>
           <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
             <xsd:annotation>
-              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
             </xsd:annotation>
           </xsd:element>
@@ -2602,12 +2602,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
           </xsd:element>
           <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
             <xsd:annotation>
-              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
             </xsd:annotation>
           </xsd:element>
@@ -2809,12 +2809,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
           </xsd:element>
           <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
             <xsd:annotation>
-              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
             </xsd:annotation>
           </xsd:element>
@@ -3016,12 +3016,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
           </xsd:element>
           <xsd:element minOccurs="0" name="ReasonForSubsitutionCodeUsed" type="ecl:ReasonForSubstitutionCodeUsed">
             <xsd:annotation>
-              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. &#13;
-&#13;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs).&#13;
-&#13;
-&#13;
-&#13;
+              <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medically Necessary" (for all Medicaid programs). 
+ 
+ 
+ 
 </xsd:documentation>
             </xsd:annotation>
           </xsd:element>

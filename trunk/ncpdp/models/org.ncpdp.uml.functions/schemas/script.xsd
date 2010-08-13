@@ -1627,16 +1627,16 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="RequestedDates" type="datatypes:DateRange"/>
       <xsd:element minOccurs="0" name="ProhibitRefillRequest" type="xsd:boolean">
         <xsd:annotation>
-          <xsd:documentation>Allows the prescriber to indicate to the pharmacy that the pharmacy should never request refills for this specific prescription by any technique.&#13;
+          <xsd:documentation>Allows the prescriber to indicate to the pharmacy that the pharmacy should never request refills for this specific prescription by any technique. 
 </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="ChangeReasonText" type="datatypes:an..260">
         <xsd:annotation>
-          <xsd:documentation>Explanation of the reason for the change request.&#13;
-&#13;
-Used only in RXChange and adds additional information for RxChangeCode from ECL&#13;
-&#13;
+          <xsd:documentation>Explanation of the reason for the change request. 
+ 
+Used only in RXChange and adds additional information for RxChangeCode from ECL 
+ 
 </xsd:documentation>
         </xsd:annotation>
       </xsd:element>

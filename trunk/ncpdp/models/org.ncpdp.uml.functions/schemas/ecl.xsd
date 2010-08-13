@@ -2346,9 +2346,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="ReasonForSubstitutionCodeUsed">
     <xsd:annotation>
-      <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value Ø or a non-specified value. &#13;
-&#13;
-&#13;
+      <xsd:documentation>Restricted text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value Ø or a non-specified value.  
+ 
+ 
 </xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="ecl:Code">
