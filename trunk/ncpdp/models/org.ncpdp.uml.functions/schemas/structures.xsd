@@ -1120,7 +1120,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
         </xsd:annotation>
       </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugCoded" type="datatypes:DrugCoded"/>
-      <xsd:element name="Quantity" type="datatypes:Quantity">
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Quantity" type="datatypes:Quantity">
         <xsd:annotation>
           <xsd:documentation>For multi-ingredient compounds will contain final quantity.</xsd:documentation>
         </xsd:annotation>
@@ -2632,12 +2632,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Quantity" type="datatypes:Quantity">
+          <xsd:element minOccurs="0" name="Quantity" type="datatypes:Quantity">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Directions" type="datatypes:an..140M">
+          <xsd:element minOccurs="0" name="Directions" type="datatypes:an..140M">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>

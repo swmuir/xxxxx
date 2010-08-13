@@ -2031,7 +2031,67 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_MbThMDD2Ed-8rpqfOAePKg" name="structures">
-      <eAnnotations xmi:id="_MbThMTD2Ed-8rpqfOAePKg" source="uml2.diagrams"/>
+      <eAnnotations xmi:id="_MbThMTD2Ed-8rpqfOAePKg" source="uml2.diagrams">
+        <contents xmi:type="notation:Diagram" xmi:id="_gsGO4KbsEd-2262i8oXgXw" type="Class" name="ClassDiagram1">
+          <children xmi:id="_iNZpkKbsEd-2262i8oXgXw" element="_r9HCMGTXEd-M5IWg2-DxLQ">
+            <children xmi:id="_iNjakKbsEd-2262i8oXgXw" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_iNjakabsEd-2262i8oXgXw" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_iNskgKbsEd-2262i8oXgXw" type="Stereotype"/>
+            <children xmi:id="_iNskgabsEd-2262i8oXgXw" type="Name"/>
+            <children xmi:id="_iNskgqbsEd-2262i8oXgXw" type="Parent"/>
+            <children xmi:id="_iNskg6bsEd-2262i8oXgXw" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_iNskhKbsEd-2262i8oXgXw"/>
+            </children>
+            <children xmi:id="_iNskhabsEd-2262i8oXgXw" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_iNskhqbsEd-2262i8oXgXw"/>
+            </children>
+            <children xmi:id="_iNskh6bsEd-2262i8oXgXw" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_iNskiKbsEd-2262i8oXgXw"/>
+            </children>
+            <children xmi:id="_iNskiabsEd-2262i8oXgXw" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_iNskiqbsEd-2262i8oXgXw"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_iNZpkabsEd-2262i8oXgXw" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iNZpkqbsEd-2262i8oXgXw" x="951" y="11095"/>
+          </children>
+          <children xmi:id="_k-4SsKbsEd-2262i8oXgXw" element="_40Xd8GTWEd-M5IWg2-DxLQ">
+            <children xmi:id="_k-4Ss6bsEd-2262i8oXgXw" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_k-4StKbsEd-2262i8oXgXw" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_k-4StabsEd-2262i8oXgXw" type="Stereotype"/>
+            <children xmi:id="_k-4StqbsEd-2262i8oXgXw" type="Name"/>
+            <children xmi:id="_k-4St6bsEd-2262i8oXgXw" type="Parent"/>
+            <children xmi:id="_k-4SuKbsEd-2262i8oXgXw" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_k-4SuabsEd-2262i8oXgXw"/>
+            </children>
+            <children xmi:id="_k-4SuqbsEd-2262i8oXgXw" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_k-4Su6bsEd-2262i8oXgXw"/>
+            </children>
+            <children xmi:id="_k-4SvKbsEd-2262i8oXgXw" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_k-4SvabsEd-2262i8oXgXw"/>
+            </children>
+            <children xmi:id="_k-4SvqbsEd-2262i8oXgXw" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_k-4Sv6bsEd-2262i8oXgXw"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_k-4SsabsEd-2262i8oXgXw" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-4SsqbsEd-2262i8oXgXw" x="951" y="951"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_gsGO4absEd-2262i8oXgXw"/>
+          <element xsi:nil="true"/>
+          <edges xmi:id="_k_LNoKbsEd-2262i8oXgXw" element="_r9HCMWTXEd-M5IWg2-DxLQ" source="_iNZpkKbsEd-2262i8oXgXw" target="_k-4SsKbsEd-2262i8oXgXw">
+            <children xmi:id="_k_UXkKbsEd-2262i8oXgXw" type="NameLabel">
+              <children xmi:id="_k_UXkqbsEd-2262i8oXgXw" type="Stereotype"/>
+              <children xmi:id="_k_UXk6bsEd-2262i8oXgXw" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k_UXkabsEd-2262i8oXgXw" y="-530"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_k_LNoabsEd-2262i8oXgXw" fontName="MS Mincho" fontHeight="12" lineWidth="1" showStereotype="Text"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k_LNoqbsEd-2262i8oXgXw" points="[0, 0, 0, 1586]$[0, -1586, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mikTAKbsEd-2262i8oXgXw" id="(0.49996337,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mikTAabsEd-2262i8oXgXw" id="(0.49996337,1.0)"/>
+          </edges>
+        </contents>
+      </eAnnotations>
       <ownedComment xmi:id="_pxV6gIUeEd-PfKcU8Giing">
         <body>The NCPDP structures.xsd defines common and resuable domain structures typically composed of datatypes and 
 potentially other structures.</body>
@@ -5109,8 +5169,8 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
           <ownedComment xmi:id="_k8R8AIkvEd-pZLs28ekBmw" annotatedElement="_40Xd92TWEd-M5IWg2-DxLQ">
             <body>For multi-ingredient compounds will contain final quantity.</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40Xd-GTWEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40Xd-WTWEd-M5IWg2-DxLQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40Xd-GTWEd-M5IWg2-DxLQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40Xd-WTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_40Xd-mTWEd-M5IWg2-DxLQ" name="Directions" type="_4IXzgTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_lM6RoIkyEd-pZLs28ekBmw" annotatedElement="_40Xd-mTWEd-M5IWg2-DxLQ">
@@ -5454,14 +5514,14 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCOWTXEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCOmTXEd-M5IWg2-DxLQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCOmTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_r9HCO2TXEd-M5IWg2-DxLQ" name="Directions" type="_4IXzgTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_sOiVh4nbEd-pZLs28ekBmw" annotatedElement="_r9HCO2TXEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCPGTXEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCPWTXEd-M5IWg2-DxLQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCPWTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_r9HCPmTXEd-M5IWg2-DxLQ" name="DaysSupply" type="_4CkGgjD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_sOiVgYnbEd-pZLs28ekBmw" annotatedElement="_r9HCPmTXEd-M5IWg2-DxLQ">
@@ -11500,7 +11560,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL&
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_oCxxQGdhEd-EzKeHnOFaKw?ecl/ecl/RxChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TeiOA2QoEd-ODMSOo4sPFQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeiOBGQoEd-ODMSOo4sPFQ"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeiOBGQoEd-ODMSOo4sPFQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_TeiOBWQoEd-ODMSOo4sPFQ" name="ReturnReceipt" type="_4DAyeTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_TeiOBmQoEd-ODMSOo4sPFQ" annotatedElement="_TeiOBWQoEd-ODMSOo4sPFQ">
@@ -12464,7 +12524,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL&
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_oCxxQGdhEd-EzKeHnOFaKw?ecl/ecl/RxChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJEGBGRGEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJEGBWRGEd-M5IWg2-DxLQ"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJEGBWRGEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_kz6UsmREEd-ODMSOo4sPFQ" name="ReturnReceipt" type="_4DAyeTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_kz6Us2REEd-ODMSOo4sPFQ" annotatedElement="_kz6UsmREEd-ODMSOo4sPFQ">
