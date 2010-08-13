@@ -14428,6 +14428,14 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ShMX8owoEd-UL9BapgczgQ"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WpnDAKb8Ed-Nwtj6LSx65w" name="ECL">
+        <ownedAttribute xmi:id="_WpnDAab8Ed-Nwtj6LSx65w" name="ReasonForSubstitutionCodeUsed">
+          <ownedComment xmi:id="_WpnDAqb8Ed-Nwtj6LSx65w">
+            <body></body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_3yBJADD1Ed-8rpqfOAePKg">
       <eAnnotations xmi:id="_3yBJATD1Ed-8rpqfOAePKg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -16030,4 +16038,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <Default:Documentation xmi:id="_HAE5daboEd-2262i8oXgXw" base_Comment="_HAE5caboEd-2262i8oXgXw"/>
   <xsd:Facet xmi:id="_HAE5dqboEd-2262i8oXgXw" base_Property="_HAE5c6boEd-2262i8oXgXw"/>
   <Default:Documentation xmi:id="_5glZAaboEd-2262i8oXgXw" base_Comment="_5glZAKboEd-2262i8oXgXw"/>
+  <xsd:GlobalProperty xmi:id="_WpnDA6b8Ed-Nwtj6LSx65w" base_Class="_WpnDAKb8Ed-Nwtj6LSx65w"/>
+  <xsd:GlobalElement xmi:id="_WpnDBKb8Ed-Nwtj6LSx65w" base_Property="_WpnDAab8Ed-Nwtj6LSx65w"/>
+  <Default:Documentation xmi:id="_WpnDBab8Ed-Nwtj6LSx65w" base_Comment="_WpnDAqb8Ed-Nwtj6LSx65w"/>
 </xmi:XMI>
