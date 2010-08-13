@@ -1,0 +1,147 @@
+
+
+modeltype uml uses "http://www.eclipse.org/uml2/2.1.0/UML";
+
+/*
+
+	eclmerge maps a version of an External Code List to a version of the NCPDP script model and creates new version domain model
+
+	Parameters
+	
+	in domainmodel - NCPDP Domain Model Instance 
+	
+	in eclmodel - NCPDP External Code List
+	
+	out merged - New NCPDP Domain Model with corresponding code list
+
+*/
+
+
+transformation eclmerge(in domainmodel : uml,in eclmodel : uml, out merged : uml);
+
+main() {
+	
+	log('Start Main Merge');
+	
+	domainmodel.rootObjects()[Package]->cloneDomain();
+
+	log('Start Map Process');
+
+	merged.objectsOfType(Package)->map mapToExternalCodeList ();
+
+	log('Complete Merge');
+	
+}
+
+
+mapping uml::Package::cloneDomain() : uml::Package
+{
+	
+	init {
+		log('Start cloneDomain');
+		result := self.deepclone().oclAsType(Package);
+		log('end cloneDomain');
+	}	
+		
+	
+}
+
+
+mapping inout Package::mapToExternalCodeList () {
+  init {
+  	log('start Package::mapToExternalCodeList');
+  	self.ownedElement[Class]->map mapToExternalCodeList();
+  	log('end Package::mapToExternalCodeList');
+  }
+}
+
+mapping inout Class::mapToExternalCodeList () 
+{
+  init { 
+  		log('start Class::mapToExternalCodeList');
+  	self.ownedElement[Property]->map mapToExternalCodeList();
+  		log('start Class::mapToExternalCodeList');
+  }
+}
+
+mapping inout Property::mapToExternalCodeList () when { self.isECL() }
+{	
+	init {
+		log('start Property::mapToExternalCodeList');
+		/*self.type :=eclmodel.getE(self.type.qualifiedName); */	
+		var theNewEnum := eclmodel.rootObjects()[Package]->queryEnumerations(self.type.qualifiedName)->asSequence();
+		log('Property::mapToExternalCodeList' + theNewEnum->size().repr());
+		if (theNewEnum->size() > 0) then {
+			self.type := theNewEnum->at(1);		
+			log ('Set '+ self.qualifiedName + ' to '+ self.type.qualifiedName);
+		 } endif;
+		 log('start Property::mapToExternalCodeList');
+	}
+}
+
+query uml::Property::isECL()  : Boolean 
+{
+	log('uml::Property::isECL() '+ self.type.qualifiedName);
+	
+	if (self.type <> null and self.type.qualifiedName.substring(1,3) = 'ECL') then {
+	} endif;
+
+	return (self.type <> null and self.type.qualifiedName.substring(1,3) = 'ECL'); 
+}
+
+
+
+
+query uml::Model::queryEnumerations(target : String ) : uml::Enumeration 
+{
+	var theEnum : uml::Enumeration := null;
+
+	var results :=  self.ownedElement[Package]->queryEnumerations(target)->asSequence();
+
+	if (results->size() > 0) then {
+		theEnum := results->at(1);
+	} endif;
+
+	return theEnum;
+	
+}
+
+
+query uml::Package::queryEnumerations(target : String) : uml::Enumeration
+{
+	var theEnum : uml::Enumeration := null;
+
+	var properties := self.ownedElement[Enumeration]->asSequence(); 
+	
+	var pos : Integer := 1;
+	
+	var found : Boolean := false;
+	
+	while(pos <= properties->size() and found = false)
+	{
+		if (properties->at(pos).qualifiedName = target) then
+		{
+			found := true;
+			
+			theEnum := properties->at(pos);
+			
+		} endif;
+		
+	
+		pos := pos + 1;
+		
+	};
+	
+	return theEnum;
+	
+}
+
+
+/*
+* getECL will query ECL Version for based on fully qualified name
+* TODO : Replace with logic to use the xmi id versus name - names can be updated
+*
+*/
+
+
+
