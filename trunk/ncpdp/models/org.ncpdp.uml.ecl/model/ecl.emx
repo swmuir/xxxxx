@@ -17749,6 +17749,16 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_yduT4KbgEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed">
+        <ownedComment xmi:id="_yduT4abgEd-2262i8oXgXw" annotatedElement="_yduT4KbgEd-2262i8oXgXw">
+          <body>Free text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value Ø or a non-specified value. &#xD;
+&#xD;
+&#xD;
+</body>
+        </ownedComment>
+        <generalization xmi:id="_yduT4qbgEd-2262i8oXgXw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_yduT46bgEd-2262i8oXgXw" name="BRAND MEDICALLY NECESSARY" classifier="_yduT4KbgEd-2262i8oXgXw"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -21678,4 +21688,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_Vq1fWYutEd-jMZ0z1K165w" base_Comment="_Vq1fU4utEd-jMZ0z1K165w"/>
   <Default:Documentation xmi:id="_Vq1fWoutEd-jMZ0z1K165w" base_Comment="_Vq1fVYutEd-jMZ0z1K165w"/>
   <Default:Documentation xmi:id="_Vq1fW4utEd-jMZ0z1K165w" base_Comment="_Vq1fV4utEd-jMZ0z1K165w"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_yduT96bgEd-2262i8oXgXw" valueSetId="408-D8" fieldFormat="x(1)" standardsUsing="C, D, R, T,A,V,Z,W" valueSetLimitations="" base_Enumeration="_yduT4KbgEd-2262i8oXgXw" displayName="Dispense As Written (DAW)/ Product Selection Code"/>
+  <Default:Documentation xmi:id="_yeBO0KbgEd-2262i8oXgXw" base_Comment="_yduT4abgEd-2262i8oXgXw"/>
+  <xsd:Restriction xmi:id="_yeBO0abgEd-2262i8oXgXw" base_Generalization="_yduT4qbgEd-2262i8oXgXw"/>
 </xmi:XMI>
