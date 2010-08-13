@@ -10781,6 +10781,11 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NW2-UYRXEd-PfKcU8Giing" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NW2-UoRXEd-PfKcU8Giing"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_ixg84KbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ixg84abkEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ixg84qbkEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_kiZZ0GHGEd-Xe4OIcNINMg" memberEnd="_ki2FwGHGEd-Xe4OIcNINMg _ki2Fw2HGEd-Xe4OIcNINMg">
         <ownedEnd xmi:id="_ki2Fw2HGEd-Xe4OIcNINMg" name="sCRIPTRequest" visibility="private" type="_oustEGHEEd-Xe4OIcNINMg" association="_kiZZ0GHGEd-Xe4OIcNINMg">
@@ -11124,6 +11129,11 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oy9HEYRXEd-PfKcU8Giing"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oy9HEoRXEd-PfKcU8Giing"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_OcXzQKblEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OcXzQablEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OcXzQqblEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_qy3FkGQnEd-ODMSOo4sPFQ" name="NewRx">
         <eAnnotations xmi:id="_VUGDUmWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -11275,6 +11285,11 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0BKhYYRWEd-PfKcU8Giing"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0BKhYoRWEd-PfKcU8Giing"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ASWaAKbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mted8abkEd-2262i8oXgXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mted8KbkEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_AdHLgGQoEd-ODMSOo4sPFQ" name="RefillRequest">
@@ -11428,6 +11443,11 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yuweUYRWEd-PfKcU8Giing"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yuweUoRWEd-PfKcU8Giing"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_fIKQkKbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fIKQkabkEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fIKQkqbkEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_TeiOAGQoEd-ODMSOo4sPFQ" name="RxChangeRequest">
         <eAnnotations xmi:id="_VUY-QGWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -11579,6 +11599,11 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sbr9wYRWEd-PfKcU8Giing"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sbr9woRWEd-PfKcU8Giing"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hEuq8KbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hEuq8abkEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hEuq8qbkEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_nufgMGQoEd-ODMSOo4sPFQ" name="RxFill">
@@ -11732,6 +11757,11 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oQzRsYRWEd-PfKcU8Giing"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oQzRsoRWEd-PfKcU8Giing"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_hxb_8KbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hxb_8abkEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hxb_8qbkEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_mSBeAGQvEd-ODMSOo4sPFQ" name="RxHistoryRequest">
         <eAnnotations xmi:id="_VUY-QmWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -11875,6 +11905,11 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lDUCAYRWEd-PfKcU8Giing" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lDUCAIRWEd-PfKcU8Giing" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_iVM0UKbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iVM0UabkEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iVM0UqbkEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7NMQYGQvEd-ODMSOo4sPFQ" name="DrugAdminstration">
@@ -12020,6 +12055,11 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1l5DgYRWEd-PfKcU8Giing"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1l5DgoRWEd-PfKcU8Giing"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_aP1PsKbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aP1PsabkEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aP1PsqbkEd-2262i8oXgXw"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Z0C9kGQzEd-ODMSOo4sPFQ" name="Resupply">
         <eAnnotations xmi:id="_VUP0UGWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -12163,6 +12203,11 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wVuKYYRWEd-PfKcU8Giing"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wVuKYoRWEd-PfKcU8Giing"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_gRxkAKbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gRxkAabkEd-2262i8oXgXw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gRxkAqbkEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_RMbCoGRCEd-ODMSOo4sPFQ" name="ResponseType">
