@@ -102,7 +102,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType abstract="true" name="BaseBenefitsCoordination">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="PayerIdentification" type="datatypes:PayerID">
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PayerIdentification" type="datatypes:PayerID">
         <xsd:annotation>
           <xsd:documentation>For Census - for Private Pay, this will not be sent.</xsd:documentation>
         </xsd:annotation>
@@ -164,7 +164,7 @@ RxHistoryResponse: The response echoes back the “C” value in this field.</xs
     <xsd:complexContent>
       <xsd:restriction base="structures:BaseBenefitsCoordination">
         <xsd:sequence>
-          <xsd:element minOccurs="0" name="PayerIdentification" type="datatypes:PayerID">
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="PayerIdentification" type="datatypes:PayerID">
             <xsd:annotation>
               <xsd:documentation>See BaseBenefitsCoordination for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -3131,7 +3131,7 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
     <xsd:complexContent>
       <xsd:restriction base="structures:BaseBenefitsCoordination">
         <xsd:sequence>
-          <xsd:element minOccurs="0" name="PayerIdentification" type="datatypes:PayerID">
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="PayerIdentification" type="datatypes:PayerID">
             <xsd:annotation>
               <xsd:documentation>See BaseBenefitsCoordination for Definition and Usage</xsd:documentation>
             </xsd:annotation>

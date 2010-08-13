@@ -2038,7 +2038,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_RdeAI1JLEd-gUbUlN-XGdw" annotatedElement="_RdeAIlJLEd-gUbUlN-XGdw">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeAJFJLEd-gUbUlN-XGdw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeAJFJLEd-gUbUlN-XGdw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeAJVJLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_RdeAJlJLEd-gUbUlN-XGdw" name="PayerName" type="_4CkGgjD1Ed-8rpqfOAePKg">
@@ -3464,7 +3464,7 @@ Required No Known Allergies = “N” (No), meaning allergies are known and will
           <ownedComment xmi:id="_4PhkdjD1Ed-8rpqfOAePKg" annotatedElement="_4PhkdTD1Ed-8rpqfOAePKg">
             <body>For Census - for Private Pay, this will not be sent.</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Qa8UzD1Ed-8rpqfOAePKg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Qa8UzD1Ed-8rpqfOAePKg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Qa8VDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4Qa8VzD1Ed-8rpqfOAePKg" name="PayerName" type="_4CkGgjD1Ed-8rpqfOAePKg">
@@ -4952,7 +4952,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
           <ownedComment xmi:id="_O0lUMmTUEd-M5IWg2-DxLQ" annotatedElement="_O0lUMWTUEd-M5IWg2-DxLQ">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0lUM2TUEd-M5IWg2-DxLQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0lUM2TUEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0lUNGTUEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_O0lUN2TUEd-M5IWg2-DxLQ" name="PayerName" type="_4CkGgjD1Ed-8rpqfOAePKg">
