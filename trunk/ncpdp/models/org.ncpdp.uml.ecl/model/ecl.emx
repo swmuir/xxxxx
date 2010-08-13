@@ -17761,9 +17761,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_yduT4KbgEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed">
         <ownedComment xmi:id="_yduT4abgEd-2262i8oXgXw" annotatedElement="_yduT4KbgEd-2262i8oXgXw">
-          <body>Restricted text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value Ø or a non-specified value. &#xD;
-&#xD;
-&#xD;
+          <body>Restricted text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value Ø or a non-specified value.  
+ 
+ 
 </body>
         </ownedComment>
         <generalization xmi:id="_yduT4qbgEd-2262i8oXgXw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
