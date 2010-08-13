@@ -3448,12 +3448,12 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
         </ownedAttribute>
         <ownedAttribute xmi:id="_zvADoKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_zvADoabiEd-2262i8oXgXw" annotatedElement="_zvADoKbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -5405,12 +5405,12 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
         </ownedAttribute>
         <ownedAttribute xmi:id="_L_hdsKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_kxJkQKbiEd-2262i8oXgXw" annotatedElement="_L_hdsKbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -5761,12 +5761,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
         <ownedAttribute xmi:id="_1datQKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_1datQabiEd-2262i8oXgXw" annotatedElement="_1datQKbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -6117,12 +6117,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
         <ownedAttribute xmi:id="_18aWYKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_18aWYabiEd-2262i8oXgXw" annotatedElement="_18aWYKbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -6473,12 +6473,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
         <ownedAttribute xmi:id="_3TbzsKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_3TbzsabiEd-2262i8oXgXw" annotatedElement="_3TbzsKbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -6829,12 +6829,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
         <ownedAttribute xmi:id="_y4KiQKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_y4KiQabiEd-2262i8oXgXw" annotatedElement="_y4KiQKbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -7185,12 +7185,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
         <ownedAttribute xmi:id="_4kpj8KbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_4kpj8abiEd-2262i8oXgXw" annotatedElement="_4kpj8KbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -7541,12 +7541,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
         <ownedAttribute xmi:id="_0-bEIKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_0-bEIabiEd-2262i8oXgXw" annotatedElement="_0-bEIKbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -8239,12 +8239,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
         <ownedAttribute xmi:id="_3y4IwKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_3y4IwabiEd-2262i8oXgXw" annotatedElement="_3y4IwKbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -8595,12 +8595,12 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
         <ownedAttribute xmi:id="_0bZ2oKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_0bZ2oabiEd-2262i8oXgXw" annotatedElement="_0bZ2oKbiEd-2262i8oXgXw">
-            <body>Restricted text for submitter to define their clarification basis for Substitution code applied. &#xD;
-&#xD;
-If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs).&#xD;
-&#xD;
-&#xD;
-&#xD;
+            <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
+ 
+If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Medically Necessary&quot; (for all Medicaid programs). 
+ 
+ 
+ 
 </body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
@@ -10853,7 +10853,7 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
         </ownedAttribute>
         <ownedAttribute xmi:id="_ixg84KbkEd-2262i8oXgXw" name="ProhibitRefillRequest" visibility="public">
           <ownedComment xmi:id="_xHfSAKbmEd-2262i8oXgXw" annotatedElement="_ixg84KbkEd-2262i8oXgXw">
-            <body>Allows the prescriber to indicate to the pharmacy that the pharmacy should never request refills for this specific prescription by any technique.&#xD;
+            <body>Allows the prescriber to indicate to the pharmacy that the pharmacy should never request refills for this specific prescription by any technique. 
 </body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -10862,10 +10862,10 @@ If the pharmacy wishes to send the prescriber a choice of alternative drugs, add
         </ownedAttribute>
         <ownedAttribute xmi:id="_R83-MKboEd-2262i8oXgXw" name="ChangeReasonText" visibility="public" type="_HAE5cKboEd-2262i8oXgXw">
           <ownedComment xmi:id="_5glZAKboEd-2262i8oXgXw" annotatedElement="_R83-MKboEd-2262i8oXgXw">
-            <body>Explanation of the reason for the change request.&#xD;
-&#xD;
-Used only in RXChange and adds additional information for RxChangeCode from ECL&#xD;
-&#xD;
+            <body>Explanation of the reason for the change request. 
+ 
+Used only in RXChange and adds additional information for RxChangeCode from ECL 
+ 
 </body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R83-MaboEd-2262i8oXgXw" value="1"/>
