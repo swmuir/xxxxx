@@ -17769,7 +17769,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <generalization xmi:id="_yduT4qbgEd-2262i8oXgXw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedAttribute xmi:id="_yxwrYKb6Ed-Nwtj6LSx65w" name="pattern">
           <ownedComment xmi:id="_OlI2QKb8Ed-Nwtj6LSx65w" annotatedElement="_yxwrYKb6Ed-Nwtj6LSx65w">
-            <body>Case Insensetive BRAND MEDICALLY NECESSARY expression</body>
+            <body>Case Insensitive BRAND MEDICALLY NECESSARY expression</body>
           </ownedComment>
           <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_yxwrYab6Ed-Nwtj6LSx65w" value="(B|b)(R|r)(A|a)(N|n)(D|d) (M|m)(E|e)(D|d)(I|i)(C|c)(A|a)(L|l)(L|l)(Y|y) (N|n)(E|e)(C|c)(E|e)(S|s)(S|s)(A|a)(R|r)(Y|y)"/>
