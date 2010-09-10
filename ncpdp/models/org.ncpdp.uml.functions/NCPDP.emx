@@ -9006,7 +9006,7 @@ If recipient is a pharmacy, Pharmacy is required.</body>
           <details xmi:id="_-8B4MX-PEd-eN4XJATQmiQ" key="abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_ZfPhQEyEEd-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Js9I0FJZEd-gUbUlN-XGdw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JszX0FJZEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -9479,7 +9479,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <ownedComment xmi:id="_7J-loInREd-pZLs28ekBmw" annotatedElement="_vUdOMU4-Ed-G-pSkcIGh3w">
             <body>See SpecialzedResponse for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MEzJ8VJZEd-gUbUlN-XGdw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MEzJ8FJZEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -10731,7 +10731,7 @@ In any transaction that a reference number assigned by the prescribing system is
           <details xmi:id="_cYf6MGWaEd-bmP0HuKmipA" key="Abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_oustEWHEEd-Xe4OIcNINMg" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oustEmHEEd-Xe4OIcNINMg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustE2HEEd-Xe4OIcNINMg"/>
         </ownedAttribute>
@@ -10907,7 +10907,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <details xmi:id="_wqgeAWWeEd-bmP0HuKmipA" key="Abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_6Wj902REEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Wj91GREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Wj91WREEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
