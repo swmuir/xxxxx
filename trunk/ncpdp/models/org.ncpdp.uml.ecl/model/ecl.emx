@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:orgncpdpecl="http:///schemas/orgncpdpecl/_hc7EcMTHEd6aH9xZ64tGwg/15" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:xsd="http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA http:///schemas/orgncpdpecl/_hc7EcMTHEd6aH9xZ64tGwg/15 pathmap://ORG_NCPDP_UML/ECL.epx#_hc7EccTHEd6aH9xZ64tGwg?org.ncpdp.ecl/orgncpdpecl? http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3 pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:orgncpdpecl="http:///schemas/orgncpdpecl/_hc7EcMTHEd6aH9xZ64tGwg/15" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmlns:xsd="http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA http:///schemas/orgncpdpecl/_hc7EcMTHEd6aH9xZ64tGwg/15 pathmap://ORG_NCPDP_UML/ECL.epx#_hc7EccTHEd6aH9xZ64tGwg?org.ncpdp.ecl/orgncpdpecl? http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3 pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw">
   <uml:Model xmi:id="_cU8ZYZ44Ed6wn6lcMWl-9w" name="ecl">
     <eAnnotations xmi:id="_cU8ZYp44Ed6wn6lcMWl-9w" source="uml2.diagrams"/>
     <packageImport xmi:id="_cU8ZZZ44Ed6wn6lcMWl-9w">
@@ -12,7 +12,147 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzIoEtXEdqhPYJq3sEkGA"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_2tUBIGdjEd-EzKeHnOFaKw" name="ecl">
-      <eAnnotations xmi:id="_2tdyIGdjEd-EzKeHnOFaKw" source="uml2.diagrams"/>
+      <eAnnotations xmi:id="_2tdyIGdjEd-EzKeHnOFaKw" source="uml2.diagrams">
+        <contents xmi:type="notation:Diagram" xmi:id="_pw6tQL0EEd-ck90f_7B41Q" type="Class" name="ClassDiagram1">
+          <children xmi:id="_uSJcwL0EEd-ck90f_7B41Q" element="_hyk8wCxAEd-8mcmtGejV_Q">
+            <children xmi:id="_uSc-wL0EEd-ck90f_7B41Q" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_uSc-wb0EEd-ck90f_7B41Q" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_uSc-wr0EEd-ck90f_7B41Q" type="Stereotype"/>
+            <children xmi:id="_uSc-w70EEd-ck90f_7B41Q" type="Kind"/>
+            <children xmi:id="_uSc-xL0EEd-ck90f_7B41Q" type="Name"/>
+            <children xmi:id="_uSc-xb0EEd-ck90f_7B41Q" type="Parent"/>
+            <children xmi:id="_uSc-xr0EEd-ck90f_7B41Q" type="EnumerationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uSc-x70EEd-ck90f_7B41Q"/>
+            </children>
+            <children xmi:id="_uSc-yL0EEd-ck90f_7B41Q" visible="false" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uSc-yb0EEd-ck90f_7B41Q"/>
+            </children>
+            <children xmi:id="_uSc-yr0EEd-ck90f_7B41Q" visible="false" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uSc-y70EEd-ck90f_7B41Q"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_uSJcwb0EEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uSJcwr0EEd-ck90f_7B41Q" x="8559" y="5072"/>
+          </children>
+          <children xmi:id="_vMasoL0EEd-ck90f_7B41Q" element="_USTewCx5Ed-8mcmtGejV_Q">
+            <children xmi:id="_vMaso70EEd-ck90f_7B41Q" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_vMaspL0EEd-ck90f_7B41Q" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_vMaspb0EEd-ck90f_7B41Q" type="Stereotype"/>
+            <children xmi:id="_vMaspr0EEd-ck90f_7B41Q" type="Kind"/>
+            <children xmi:id="_vMasp70EEd-ck90f_7B41Q" type="Name"/>
+            <children xmi:id="_vMasqL0EEd-ck90f_7B41Q" type="Parent"/>
+            <children xmi:id="_vMasqb0EEd-ck90f_7B41Q" visible="false" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_vMasqr0EEd-ck90f_7B41Q"/>
+            </children>
+            <children xmi:id="_vMasq70EEd-ck90f_7B41Q" visible="false" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_vMasrL0EEd-ck90f_7B41Q"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_vMasob0EEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vMasor0EEd-ck90f_7B41Q" x="9827" y="2219"/>
+          </children>
+          <children xmi:id="_wkVh0L0EEd-ck90f_7B41Q" element="_oCxxQGdhEd-EzKeHnOFaKw">
+            <children xmi:id="_wkVh070EEd-ck90f_7B41Q" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_wkVh1L0EEd-ck90f_7B41Q" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_wkVh1b0EEd-ck90f_7B41Q" type="Stereotype"/>
+            <children xmi:id="_wkVh1r0EEd-ck90f_7B41Q" type="Kind"/>
+            <children xmi:id="_wkVh170EEd-ck90f_7B41Q" type="Name"/>
+            <children xmi:id="_wkVh2L0EEd-ck90f_7B41Q" type="Parent"/>
+            <children xmi:id="_wkVh2b0EEd-ck90f_7B41Q" type="EnumerationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wkVh2r0EEd-ck90f_7B41Q"/>
+            </children>
+            <children xmi:id="_wkVh270EEd-ck90f_7B41Q" visible="false" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wkVh3L0EEd-ck90f_7B41Q"/>
+            </children>
+            <children xmi:id="_wkVh3b0EEd-ck90f_7B41Q" visible="false" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wkVh3r0EEd-ck90f_7B41Q"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_wkVh0b0EEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wkVh0r0EEd-ck90f_7B41Q" x="8876" y="21239"/>
+          </children>
+          <children xmi:id="_ESWIEL0GEd-ck90f_7B41Q" element="_hLAxkGdIEd-EzKeHnOFaKw">
+            <children xmi:id="_ESWIE70GEd-ck90f_7B41Q" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_ESWIFL0GEd-ck90f_7B41Q" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_ESWIFb0GEd-ck90f_7B41Q" type="Stereotype"/>
+            <children xmi:id="_ESWIFr0GEd-ck90f_7B41Q" type="Kind"/>
+            <children xmi:id="_ESWIF70GEd-ck90f_7B41Q" type="Name"/>
+            <children xmi:id="_ESWIGL0GEd-ck90f_7B41Q" type="Parent"/>
+            <children xmi:id="_ESWIGb0GEd-ck90f_7B41Q" type="EnumerationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ESWIGr0GEd-ck90f_7B41Q"/>
+            </children>
+            <children xmi:id="_ESWIG70GEd-ck90f_7B41Q" visible="false" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ESWIHL0GEd-ck90f_7B41Q"/>
+            </children>
+            <children xmi:id="_ESWIHb0GEd-ck90f_7B41Q" visible="false" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ESWIHr0GEd-ck90f_7B41Q"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ESWIEb0GEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESWIEr0GEd-ck90f_7B41Q" x="13314" y="21239"/>
+          </children>
+          <children xmi:id="_sS9hUL0GEd-ck90f_7B41Q" element="_oCxxQGdhEd-EzKeHnOFaKw">
+            <children xmi:id="_sS9hU70GEd-ck90f_7B41Q" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_sS9hVL0GEd-ck90f_7B41Q" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_sS9hVb0GEd-ck90f_7B41Q" type="Stereotype"/>
+            <children xmi:id="_sS9hVr0GEd-ck90f_7B41Q" type="Kind"/>
+            <children xmi:id="_sS9hV70GEd-ck90f_7B41Q" type="Name"/>
+            <children xmi:id="_sS9hWL0GEd-ck90f_7B41Q" type="Parent"/>
+            <children xmi:id="_sS9hWb0GEd-ck90f_7B41Q" type="EnumerationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_sS9hWr0GEd-ck90f_7B41Q"/>
+            </children>
+            <children xmi:id="_sS9hW70GEd-ck90f_7B41Q" visible="false" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_sS9hXL0GEd-ck90f_7B41Q"/>
+            </children>
+            <children xmi:id="_sS9hXb0GEd-ck90f_7B41Q" visible="false" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_sS9hXr0GEd-ck90f_7B41Q"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_sS9hUb0GEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sS9hUr0GEd-ck90f_7B41Q" x="4121" y="21239"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_pw6tQb0EEd-ck90f_7B41Q"/>
+          <element xsi:nil="true"/>
+          <edges xmi:id="_vMtnkL0EEd-ck90f_7B41Q" element="_a0LeoEyqEd-G-pSkcIGh3w" source="_uSJcwL0EEd-ck90f_7B41Q" target="_vMasoL0EEd-ck90f_7B41Q">
+            <children xmi:id="_vMtnk70EEd-ck90f_7B41Q" type="NameLabel">
+              <children xmi:id="_vMtnlb0EEd-ck90f_7B41Q" type="Stereotype"/>
+              <children xmi:id="_vMtnlr0EEd-ck90f_7B41Q" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vMtnlL0EEd-ck90f_7B41Q" y="-186"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_vMtnkb0EEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" routing="Tree" lineWidth="1" showStereotype="Text"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vMtnkr0EEd-ck90f_7B41Q" points="[0, -7284, -130, 2338]$[169, -9107, 39, 515]"/>
+          </edges>
+          <edges xmi:id="_wkVh370EEd-ck90f_7B41Q" element="__sJPQGdhEd-EzKeHnOFaKw" source="_wkVh0L0EEd-ck90f_7B41Q" target="_uSJcwL0EEd-ck90f_7B41Q">
+            <children xmi:id="_wkVh4r0EEd-ck90f_7B41Q" type="NameLabel">
+              <children xmi:id="_wkVh5L0EEd-ck90f_7B41Q" type="Stereotype"/>
+              <children xmi:id="_wkVh5b0EEd-ck90f_7B41Q" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wkVh470EEd-ck90f_7B41Q" y="-186"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wkVh4L0EEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" routing="Tree" lineWidth="1" showStereotype="Text"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wkVh4b0EEd-ck90f_7B41Q" points="[0, -1573, 117, 8249]$[-78, -2538, 39, 7284]"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_T8tkoL0FEd-ck90f_7B41Q" id="(0.081421815,0.067681156)"/>
+          </edges>
+          <edges xmi:id="_ESWIH70GEd-ck90f_7B41Q" element="__Ja8sGdhEd-EzKeHnOFaKw" source="_ESWIEL0GEd-ck90f_7B41Q" target="_uSJcwL0EEd-ck90f_7B41Q">
+            <children xmi:id="_ESWIIr0GEd-ck90f_7B41Q" type="NameLabel">
+              <children xmi:id="_ESWIJL0GEd-ck90f_7B41Q" type="Stereotype"/>
+              <children xmi:id="_ESWIJb0GEd-ck90f_7B41Q" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ESWII70GEd-ck90f_7B41Q" y="-186"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ESWIIL0GEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" routing="Tree" lineWidth="1" showStereotype="Text"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ESWIIb0GEd-ck90f_7B41Q" points="[-2167, 1151, 4609, -2447]$[-3986, 2117, 2790, -1481]"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GWg_QL0GEd-ck90f_7B41Q" id="(0.9649799,0.09442851)"/>
+          </edges>
+          <edges xmi:id="_sS9hX70GEd-ck90f_7B41Q" element="__sJPQGdhEd-EzKeHnOFaKw" source="_sS9hUL0GEd-ck90f_7B41Q" target="_uSJcwL0EEd-ck90f_7B41Q">
+            <children xmi:id="_sS9hYr0GEd-ck90f_7B41Q" type="NameLabel">
+              <children xmi:id="_sS9hZL0GEd-ck90f_7B41Q" type="Stereotype"/>
+              <children xmi:id="_sS9hZb0GEd-ck90f_7B41Q" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sS9hY70GEd-ck90f_7B41Q" y="-186"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_sS9hYL0GEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" routing="Tree" lineWidth="1" showStereotype="Text"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sS9hYb0GEd-ck90f_7B41Q" points="[1202, -1573, -762, -8785]$[4754, 2877, 2790, -4335]"/>
+          </edges>
+        </contents>
+      </eAnnotations>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_EFjfwE5ZEd-lRt4mSex0Qg" name="RejectCode" visibility="private">
         <generalization xmi:id="_EFjfwU5ZEd-lRt4mSex0Qg">
           <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
@@ -807,7 +947,7 @@
         <ownedComment xmi:id="_oCxxQWdhEd-EzKeHnOFaKw">
           <body>Used in Prescription Change Request transactions, to request a change to the original new prescription.</body>
         </ownedComment>
-        <generalization xmi:id="__sJPQGdhEd-EzKeHnOFaKw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <generalization xmi:id="__sJPQGdhEd-EzKeHnOFaKw" general="_hyk8wCxAEd-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_oCxxQ2dhEd-EzKeHnOFaKw" name="G" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
           <ownedComment xmi:id="_oCxxRGdhEd-EzKeHnOFaKw" annotatedElement="_oCxxQ2dhEd-EzKeHnOFaKw">
             <body>Generic Substitution - A modification of the product prescribed to a generic equivalent.			
@@ -829,7 +969,7 @@
             <body>Drug Use Evaluation</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_60F9YKbqEd-2262i8oXgXw" name="C" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
+        <ownedLiteral xmi:id="_60F9YKbqEd-2262i8oXgXw" name="S" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
           <ownedComment xmi:id="_INXEkKbrEd-2262i8oXgXw" annotatedElement="_60F9YKbqEd-2262i8oXgXw">
             <body>Script Clarification</body>
           </ownedComment>
@@ -9692,6 +9832,16 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>Transfer Cancel - A previously communicated transfer is cancelled, either because of an erroneous entry or because of a revised decision to not transfer the patient.</body>
           </ownedComment>
         </ownedLiteral>
+        <ownedLiteral xmi:id="_aNQVoL0FEd-ck90f_7B41Q" name="S" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
+          <ownedComment xmi:id="_aNQVob0FEd-ck90f_7B41Q" annotatedElement="_aNQVoL0FEd-ck90f_7B41Q">
+            <body>Script Clarification</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_p__1oL0FEd-ck90f_7B41Q" name="D" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
+          <ownedComment xmi:id="_p__1ob0FEd-ck90f_7B41Q" annotatedElement="_p__1oL0FEd-ck90f_7B41Q">
+            <body>Drug Use Evaluation</body>
+          </ownedComment>
+        </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_eFfnBCxAEd-8mcmtGejV_Q" name="MessageFunctioncodedb" visibility="private">
         <ownedComment xmi:id="_eFfnBSxAEd-8mcmtGejV_Q">
@@ -11457,7 +11607,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedComment xmi:id="_hLAxkWdIEd-EzKeHnOFaKw">
           <body>Used in Prescription Change Request transactions, to request a change to the original new prescription.</body>
         </ownedComment>
-        <generalization xmi:id="__Ja8sGdhEd-EzKeHnOFaKw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <generalization xmi:id="__Ja8sGdhEd-EzKeHnOFaKw" general="_hyk8wCxAEd-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_hLAxk2dIEd-EzKeHnOFaKw" name="C1" classifier="_hLAxkGdIEd-EzKeHnOFaKw">
           <ownedComment xmi:id="_hLAxlGdIEd-EzKeHnOFaKw" annotatedElement="_hLAxk2dIEd-EzKeHnOFaKw">
             <body>Label change (Any changes to the Drug, form, strength, dosage, or route) – Change to an active order to the drug, form, strength, dosage, or route (long term care settings).</body>
@@ -21708,4 +21858,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_-jaHwKbqEd-2262i8oXgXw" base_Comment="_-jQWwKbqEd-2262i8oXgXw"/>
   <Default:Documentation xmi:id="_INXEkabrEd-2262i8oXgXw" base_Comment="_INXEkKbrEd-2262i8oXgXw"/>
   <Default:Documentation xmi:id="_QqSc0LRNEd-OvqUOofkjZQ" base_Comment="_QqIr0LRNEd-OvqUOofkjZQ"/>
+  <Default:Documentation xmi:id="_aNaGoL0FEd-ck90f_7B41Q" base_Comment="_aNQVob0FEd-ck90f_7B41Q"/>
+  <Default:Documentation xmi:id="_p__1or0FEd-ck90f_7B41Q" base_Comment="_p__1ob0FEd-ck90f_7B41Q"/>
 </xmi:XMI>
