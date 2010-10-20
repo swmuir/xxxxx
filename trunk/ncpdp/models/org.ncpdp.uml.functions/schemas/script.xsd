@@ -106,7 +106,7 @@ ApprovedWithChanges may be accompanied by a ReasonCode.</xsd:documentation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -212,7 +212,7 @@ ApprovedWithChanges may be accompanied by a ReasonCode.</xsd:documentation>
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -438,7 +438,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -580,7 +580,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -696,7 +696,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -807,7 +807,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -958,7 +958,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1069,7 +1069,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1180,7 +1180,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1292,7 +1292,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1408,7 +1408,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode">
+          <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1500,7 +1500,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
       <xsd:element maxOccurs="0" minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
+      <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode"/>
       <xsd:element minOccurs="0" name="Response" type="SCRIPT:BasicResponseType"/>
       <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:RxHistoryBenefitsCoordination"/>
       <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facilty"/>
@@ -1570,7 +1570,7 @@ all other values = no return receipt requested.</xsd:documentation>
           <xsd:documentation>Indicator to allow pharmacies to tell prescribers that this is a follow-up RefillRequest or RxChangeRequest transaction. The field is not sent on an original request.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DiagnosisGeneral" type="structures:DiagnosisGeneral">
         <xsd:annotation>
@@ -1650,7 +1650,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
       <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
       <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an..3"/>
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
-      <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeofPrescriptionStatusCode"/>
+      <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode"/>
       <xsd:element minOccurs="0" name="Response" type="SCRIPT:ResponseType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facilty">

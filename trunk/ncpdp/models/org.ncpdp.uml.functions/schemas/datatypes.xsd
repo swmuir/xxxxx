@@ -1202,9 +1202,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       <xsd:documentation>Used exclusively for SIG</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="RouteofAdministrationText" type="datatypes:an..50"/>
-      <xsd:element minOccurs="0" name="RouteofAdministrationCode" type="datatypes:an..15"/>
-      <xsd:element name="RouteofAdministrationCodeQualifier" type="datatypes:TerminologyType"/>
+      <xsd:element minOccurs="0" name="RouteOfAdministrationText" type="datatypes:an..50"/>
+      <xsd:element minOccurs="0" name="RouteOfAdministrationCode" type="datatypes:an..15"/>
+      <xsd:element name="RouteOfAdministrationCodeQualifier" type="datatypes:TerminologyType"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

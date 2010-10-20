@@ -401,24 +401,24 @@ Designates type and description of census message – Admit, Discharge, Change. 
         </xsd:annotation>
       </xsd:element>
       <xsd:choice>
-        <xsd:element name="TypeofServiceFreeText" type="xsd:string">
+        <xsd:element name="TypeOfServiceFreeText" type="xsd:string">
           <xsd:annotation>
             <xsd:documentation>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text.</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
-        <xsd:element name="TypeofService" type="datatypes:QualifiedCodeWithText">
+        <xsd:element name="TypeOfService" type="datatypes:QualifiedCodeWithText">
           <xsd:annotation>
             <xsd:documentation>Note: The codification for MTM services is underway. At this point, to exchange the Service, the industry will exchange free text (TypeOfServiceFreeText) until services are codified. TypeOfServiceFreeText may be used or (TypeOfServiceCodeQualifier, TypeOfServiceCode and TypeOfServiceCodeText) – but not both. Once codified, TypeOfServiceCodeText, TypeOfServiceCode, TypeOfServiceCodeQualifier will be used and TypeOfServiceFreeText will be sunsetted.</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
       </xsd:choice>
       <xsd:choice minOccurs="0">
-        <xsd:element name="TargetedTypeofServiceFreeText" type="xsd:string">
+        <xsd:element name="TargetedTypeOfServiceFreeText" type="xsd:string">
           <xsd:annotation>
             <xsd:documentation>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
-        <xsd:element name="TargetedTypeofService" type="datatypes:QualifiedCodeWithText">
+        <xsd:element name="TargetedTypeOfService" type="datatypes:QualifiedCodeWithText">
           <xsd:annotation>
             <xsd:documentation>Note: The TargetedTypeOfServiceCodeQualifier contains code lists from which a codified TargetedTypeOfServiceCode and TargetedTypeOfServiceCodeText are to be populated. However, if a code does not exist for the target, free text may be used in the TargetedTypeOfServiceFreeText. TargetedTypeOfServiceFreeText may be used or (TargetedTypeOfServiceCodeQualifier, TargetedTypeOfServiceCode and TargetedTypeOfServiceCodeText) – but not both.</xsd:documentation>
           </xsd:annotation>
@@ -426,8 +426,8 @@ Designates type and description of census message – Admit, Discharge, Change. 
       </xsd:choice>
       <xsd:element minOccurs="0" name="EffectiveDate" type="datatypes:DateType"/>
       <xsd:element minOccurs="0" name="ExpirationDate" type="datatypes:DateType"/>
-      <xsd:element minOccurs="0" name="TotalNumberofEncountersApproved" type="datatypes:n..4"/>
-      <xsd:element minOccurs="0" name="FrequencyofEncountersApproved" type="datatypes:QualifiedCodeWithText"/>
+      <xsd:element minOccurs="0" name="TotalNumberOfEncountersApproved" type="datatypes:n..4"/>
+      <xsd:element minOccurs="0" name="FrequencyOfEncountersApproved" type="datatypes:QualifiedCodeWithText"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
