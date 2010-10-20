@@ -1,0 +1,2000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_XGNRMBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBilling">
+  <packagedElement xmi:type="uml:Class" xmi:id="_XGNRMRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingTransactionHeaderSegment">
+    <ownedRule xmi:id="_XGNRMxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingTransactionHeaderSegmentdateOfService">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNRNBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingTransactionHeaderSegmentdateOfService Analysis Rule">
+        <language>Analysis</language>
+        <body>If the Date of Service (401-D1) contains the subsequent payer coverage date, the Submission Clarification Code (420-DK) is required with value of ?19? (Split Billing ? indicates the quantity dispensed is the remainder billed to a subsequent payer when Medicare Part A expires. Used only in long-term care settings) for individual unit of use medications. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XGNRMhDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_G91XQA6ZEd-RjqmAV7zMCg?telecom/TransactionHeaderSegment?"/>
+    </generalization>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XGNRNRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegment">
+    <ownedRule xmi:id="_XGNRNxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentcardholderFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNROBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentcardholderFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if the Patient is the Cardholder, and Date of Birth (304-C4) is not available. (Note: Cardholder ID (302-C2) is mandatory.)&#xA;&#xA;Not used when Cardholder ID (302-C2), Date of Birth (304-C4), and Person Code (303-C3) are present. &#xA;&#xA;It is a recommendation that Cardholder ID (302-C2) and Date of Birth (304-C4) are used.&#xA;&#xA;Required if necessary for state/federal/regulatory agency or Workers Compensation programs.&#xA;&#xA;Required if multiple people have the same Cardholder ID. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGNROxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentcardholderLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNRPBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentcardholderLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if the Patient is the Cardholder, and the Date of Birth (304-C4) is not available.&#xA;&#xA;Required if contractually obligated between trading partners.&#xA;&#xA;Not used when Cardholder ID (302-C2), Date of Birth (304-C4), and Person Code (303-C3) are present. &#xA;&#xA;It is a recommendation that Cardholder ID (302-C2) and Date of Birth (304-C4) are used.&#xA;&#xA;Required if necessary for state/federal/regulatory agency or Workers Compensation programs.&#xA;&#xA;Required if multiple people have the same Cardholder ID.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGNRPxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmenthomePlan.">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNRQBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmenthomePlan. Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver inquiry validation and/or determination for Blue Cross or Blue Shield, if a Patient has coverage under more than one plan, to distinguish each plan.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGNRQRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentplanId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNRQhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentplanId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for pharmacy claim processing and payment.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGNRRRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmenteligibilityClarificationCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNRRhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmenteligibilityClarificationCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver inquiry validation and/or determination, when eligibility is not maintained at the dependent level. Required in special situations as defined by the code to clarify the eligibility of an individual, which may extend coverage.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGNRSRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentgroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNRShDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentgroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if needed for pharmacy claim processing and payment.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGNRTRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentpersonCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNRThDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentpersonCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to uniquely identify the family members within the Cardholder ID.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGNRURDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentpatientRelationshipCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNRUhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentpatientRelationshipCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to uniquely identify the relationship of the Patient to the Cardholder ID.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCMBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentotherPayerBinNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCMRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentotherPayerBinNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCNBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentotherPayerProcessorControlNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCNRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentotherPayerProcessorControlNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCOBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentotherPayerCardholderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCORDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentotherPayerCardholderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCPBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentotherPayerGroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCPRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentotherPayerGroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCQBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentmedigapId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCQRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentmedigapId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required, if known, when patient has Medigap coverage.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCRBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentmedicaidIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCRRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentmedicaidIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required, if known, when patient has Medicaid coverage.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCSBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentproviderAcceptAssignmentIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCSRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentproviderAcceptAssignmentIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCTBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentcmsPartDDefinedQualifiedFacility">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCTRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentcmsPartDDefinedQualifiedFacility Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if specified in trading partner agreement.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCUBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentmedicaidId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCURDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentmedicaidId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGXCUhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentmedicaidAgencyNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXCUxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingInsuranceSegmentmedicaidAgencyNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XGNRNhDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuBgA9xEd-b2MdXdLPaUQ?telecom/InsuranceSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XGNRORDXEd-FYLhLhjdPsQ" name="cardholderFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGNROhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGNRPRDXEd-FYLhLhjdPsQ" name="cardholderLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGNRPhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGNRQxDXEd-FYLhLhjdPsQ" name="planId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGNRRBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGNRRxDXEd-FYLhLhjdPsQ" name="eligibilityClarificationCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGNRSBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGNRSxDXEd-FYLhLhjdPsQ" name="groupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGNRTBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGNRTxDXEd-FYLhLhjdPsQ" name="personCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGNRUBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGNRUxDXEd-FYLhLhjdPsQ" name="patientRelationshipCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGNRVBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGXCMhDXEd-FYLhLhjdPsQ" name="otherPayerBinNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGXCMxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGXCNhDXEd-FYLhLhjdPsQ" name="otherPayerProcessorControlNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGXCNxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGXCOhDXEd-FYLhLhjdPsQ" name="otherPayerCardholderId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGXCOxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGXCPhDXEd-FYLhLhjdPsQ" name="otherPayerGroupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGXCPxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGXCQhDXEd-FYLhLhjdPsQ" name="medigapId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGXCQxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGXCRhDXEd-FYLhLhjdPsQ" name="medicaidIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGXCRxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGXCShDXEd-FYLhLhjdPsQ" name="providerAcceptAssignmentIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGXCSxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGXCThDXEd-FYLhLhjdPsQ" name="cmsPartDDefinedQualifiedFacility" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGXCTxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGXCVBDXEd-FYLhLhjdPsQ" name="medicaidAgencyNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGgzMBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XGgzMRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegment">
+    <ownedRule xmi:id="_XGgzMxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGgzNBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Patient ID (332-CY) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGgzNxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGgzOBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs to validate dual eligibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGgzOxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentdateOfBirth">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGgzPBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentdateOfBirth Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGgzPxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientGenderCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGgzQBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientGenderCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGgzQxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGgzRBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required when the patient has a first name.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGgzRxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGgzSBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGgzSxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGgzTBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGgzTxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGgzUBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9IBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientState/ProvinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9IRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientState/ProvinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9JBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9JRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9KBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientPhoneNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9KRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientPhoneNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9LBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentplaceOfService">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9LRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentplaceOfService Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9MBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentemployerId.">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9MRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentemployerId. Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if ?required by law? as defined in the HIPAA final Privacy regulations section 164.501 definitions (45 CFR Parts 160 and 164 Standards for Privacy of Individually Identifiable Health Information; Final Rule -&#xA;Thursday, December 28, 2000, page 82803 and following, and Wednesday, August 14, 2002, page 53267 and following.)&#xA;&#xA;Required if needed for Workers Compensation billing.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9MhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentsmoker/Non-smokerCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9MxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentsmoker/Non-smokerCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if clinical determination is dependent upon patient?s smoking condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9NhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpregnancyIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9NxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpregnancyIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if pregnancy could result in different coverage, pricing, or patient financial responsibility. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9OhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientE-mailAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9OxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientE-mailAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9PhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientResidence">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9PxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPatientSegmentpatientResidence Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XGgzMhDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuCFg9xEd-b2MdXdLPaUQ?telecom/PatientSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XGgzNRDXEd-FYLhLhjdPsQ" name="patientIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGgzNhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGgzORDXEd-FYLhLhjdPsQ" name="patientId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGgzOhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGgzPRDXEd-FYLhLhjdPsQ" name="dateOfBirth" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGgzPhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGgzQRDXEd-FYLhLhjdPsQ" name="patientGenderCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGgzQhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGgzRRDXEd-FYLhLhjdPsQ" name="patientFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGgzRhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGgzSRDXEd-FYLhLhjdPsQ" name="patientLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGgzShDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGgzTRDXEd-FYLhLhjdPsQ" name="patientStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGgzThDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGgzURDXEd-FYLhLhjdPsQ" name="patientCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGgzUhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGp9IhDXEd-FYLhLhjdPsQ" name="patientState/ProvinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGp9IxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGp9JhDXEd-FYLhLhjdPsQ" name="patientZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGp9JxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGp9KhDXEd-FYLhLhjdPsQ" name="patientPhoneNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGp9KxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGp9LhDXEd-FYLhLhjdPsQ" name="placeOfService" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGp9LxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGp9NBDXEd-FYLhLhjdPsQ" name="smoker/Non-smokerCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGp9NRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGp9OBDXEd-FYLhLhjdPsQ" name="pregnancyIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGp9ORDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGp9PBDXEd-FYLhLhjdPsQ" name="patientE-mailAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGp9PRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGp9QBDXEd-FYLhLhjdPsQ" name="patientResidence" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGp9QRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XGp9QhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegment">
+    <ownedRule xmi:id="_XGp9RBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentprescription/serviceReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9RRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentprescription/serviceReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>See section ?Standard Conventions?, ?Character Set Designation Truncation?, ?Numeric?, ?Numeric Truncation?.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9RhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentproduct/serviceIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9RxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentproduct/serviceIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Mandatory.&#xA;If billing for a multi-ingredient prescription, Product/Service ID Qualifier (436-E1) is zero (Zero means ?00?).&#xA;&#xA;If the Product/Service ID Qualifier (436-E1) = ?06? (DUR/PPS), the Product/Service ID (407-D7) is zero. (Zero means ?0?.)  &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9SBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentproduct/serviceId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9SRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentproduct/serviceId Analysis Rule">
+        <language>Analysis</language>
+        <body>Mandatory.&#xA;If billing for a multi-ingredient prescription, Product/Service ID (407-D7) is zero. (Zero means ?0?.)&#xA;&#xA;If the Product/Service ID Qualifier (436-E1) = ?06? (DUR/PPS), the Product/Service ID (407-D7) is zero. (Zero means ?0?.)  Populate the DUR/PPS segment as appropriate.&#xA;&#xA;If the Product/Service ID Qualifier (436-E1) = ?07? (CPT-4), the Product Service ID (407-D7) is the actual CPT-4 value.&#xA;&#xA;If the Product/Service ID Qualifier (436-E1) = ?09? (HCPCS), the Product Service ID (407-D7) is the actual HCPCS value.&#xA;&#xA;If the Product/Service ID Qualifier (436-E1) = ?99? (Other), the Product Service ID (407-D7) is the business partner agreed value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGp9ShDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentassociatedPrescription/serviceReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGp9SxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentassociatedPrescription/serviceReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if the ?completion? transaction in a partial fill (Dispensing Status (343-HD) = ?C? (Completed)).&#xA;&#xA;See section ?Specific Segment Discussion?, ?Request Segments?, Claim Segment? for more information.&#xA;&#xA;Required if the Dispensing Status (343-HD) = ?P? (Partial Fill) and there are multiple occurrences of partial fills for this prescription.&#xA;&#xA;Service:&#xA;Required to associate the service to the product.&#xA;Contains the Prescription/Service Reference Number (402-D2) of the prescription or service that prompted the service.&#xA;&#xA;Required if Associated Prescription/Service Date (457-EP) is used. &#xA;&#xA;Required if needed to associate multiple prescriptions/services from the same sender to allow billing of the current prescription/service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuIRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentassociatedPrescription/serviceDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuIhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentassociatedPrescription/serviceDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if the ?completion? transaction in a partial fill (Dispensing Status (343-HD) = ?C? (Completed).&#xA;&#xA;Required if Associated Prescription/Service Reference Number (456-EN) is used.&#xA;&#xA;See section ?Specific Segment Discussion?, ?Request Segments?, Claim Segment? for more information.&#xA;&#xA;Required if needed to associate multiple prescriptions within the same sender.&#xA;&#xA;Required if the Dispensing Status (343-HD) = ?P? (Partial Fill) and there are multiple occurrences of partial fills for this prescription.&#xA;&#xA;Service:&#xA;Required to associate the service to the product.&#xA;Contains the service date of the prescription or service that prompted the service.&#xA;&#xA;Required if Associated Prescription/Service Reference Number (456-EN) is used. &#xA;&#xA;Required if needed to associate multiple prescriptions/services from the same sender to allow billing of the current prescription/service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuJRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentprocedureModifierCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuJhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentprocedureModifierCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Maximum count of 10.&#xA;&#xA;Required if Procedure Modifier Code (459-ER) is used.&#xA;&#xA;Service:&#xA;Maximum count of 10.&#xA;&#xA;Required if Procedure Modifier Code (459-ER) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuKRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentprocedureModifierCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuKhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentprocedureModifierCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required to define a further level of specificity if the Product/Service ID (407-D7) indicated a Procedure Code was submitted.&#xA;&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;&#xA;Occurs the number of times identified in Procedure Modifier Code Count (458-SE).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuLRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentquantityDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuLhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentquantityDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required.&#xA;&#xA;Service:&#xA;Required if value is greater than zero (0).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuMRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentfillNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuMhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentfillNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required.&#xA;&#xA;Service:&#xA;Required if necessary for plan benefit administration.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuNRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdaysSupply">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuNhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdaysSupply Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required.&#xA;&#xA;Service:&#xA;Required if necessary for plan benefit administration.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuORDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentcompoundCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuOhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentcompoundCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuPRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdispenseAsWritten(daw)/productSelectionCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuPhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdispenseAsWritten(daw)/productSelectionCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuQRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdatePrescriptionWritten">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuQhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdatePrescriptionWritten Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required.&#xA;&#xA;Service:&#xA;Required if necessary for plan benefit administration.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGzuRRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentnumberOfRefillsAuthorized">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGzuRhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentnumberOfRefillsAuthorized Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for plan benefit administration.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84EhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentprescriptionOriginCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XG84ExDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentprescriptionOriginCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if necessary for plan benefit administration.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84FhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentsubmissionClarificationCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XG84FxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentsubmissionClarificationCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Maximum count of 3.&#xA;&#xA;Required if Submission Clarification Code (420-DK) is used.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84GhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentsubmissionClarificationCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XG84GxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentsubmissionClarificationCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;&#xA;Required if clarification is known and values greater than zero (0).&#xA;&#xA;Occurs the number of times identified in Submission Clarification Code Count (354-NX).&#xA;&#xA;If the Date of Service (401-D1) contains the subsequent payer coverage date, the Submission Clarification Code (420-DK) is required with value of ?19? (Split Billing ? indicates the quantity dispensed is the remainder billed to a subsequent payer when Medicare Part A expires. Used only in long-term care settings) for individual unit of use medications.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84HhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentquantityPrescribed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XG84HxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentquantityPrescribed Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Not used.&#xA;&#xA;Service:&#xA;Required if the prescriber orders a specific number of iterations of a service.&#xA;&#xA;Not required if value is equal to 1.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84IhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentotherCoverageCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XG84IxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentotherCoverageCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed by receiver, to communicate a summation of other coverage information that has been collected from other payers.&#xA;&#xA;Required for Coordination of Benefits.&#xA;&#xA;See section ?Specific Segment Discussion?, ?Request Segments?, ?Claim Segment?, ?Other Coverage Code (308-C8).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84JhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentspecialPackagingIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XG84JxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentspecialPackagingIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84KhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentoriginallyPrescribedProduct/serviceIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XG84KxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentoriginallyPrescribedProduct/serviceIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Originally Prescribed Product/Service Code (445-EA) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84LhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentoriginallyPrescribedProduct/serviceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XG84LxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentoriginallyPrescribedProduct/serviceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if the receiver requests association to a therapeutic, or a preferred product substitution, or when a DUR alert has been resolved by changing medications, or an alternative service than what was originally prescribed.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84MhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentoriginallyPrescribedQuantity">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XG84MxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentoriginallyPrescribedQuantity Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if the receiver requests reporting for quantity changes due to a therapeutic substitution that has occurred or a preferred product/service substitution that has occurred, or when a DUR alert has been resolved by changing quantities.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XG84NhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentalternateId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHGpEBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentalternateId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHGpExDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentscheduledPrescriptionIdNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHGpFBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentscheduledPrescriptionIdNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHGpFxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentunitOfMeasure">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHGpGBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentunitOfMeasure Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHGpGxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentlevelOfService">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHGpHBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentlevelOfService Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHGpHxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentpriorAuthorizationTypeCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHGpIBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentpriorAuthorizationTypeCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHGpIxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentpriorAuthorizationNumberSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHGpJBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentpriorAuthorizationNumberSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHGpJxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentintermediaryAuthorizationTypeId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHGpKBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentintermediaryAuthorizationTypeId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required for overriding an authorized intermediary system edit when the pharmacy participates with an intermediary.&#xA;&#xA;Required if Intermediary Authorization ID (464-EX) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHGpKxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentintermediaryAuthorizationId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHGpLBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentintermediaryAuthorizationId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required for overriding an authorized intermediary system edit when the pharmacy participates with an intermediary.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHGpLxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdispensingStatus">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHGpMBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdispensingStatus Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required for the partial fill or the completion fill of a prescription.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHQaERDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentquantityIntendedToBeDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHQaEhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentquantityIntendedToBeDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required for the partial fill or the completion fill of a prescription.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHQaFRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdaysSupplyIntendedToBeDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHQaFhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdaysSupplyIntendedToBeDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required for the partial fill or completion fill of a prescription.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHQaGRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdelayReasonCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHQaGhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentdelayReasonCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service): &#xA;Required when needed to specify the reason that submission of the transaction has been delayed.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHQaHRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmenttransactionReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHQaHhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmenttransactionReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHQaIRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentpatientAssignmentIndicator(directMemberReimbursementIndicator)">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHQaIhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentpatientAssignmentIndicator(directMemberReimbursementIndicator) Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required when the claims adjudicator does not assume the patient assigned his/her benefits to the provider or when the claims adjudicator supports a patient determination of whether he/she wants to assign or retain his/her benefits.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHQaJRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentrouteOfAdministration">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHQaJhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentrouteOfAdministration Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if an override to the ?default? route of administration is specified for the product   For a multi-ingredient compound, it is the route of the complete compound mixture.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHQaKRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentcompoundType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHQaKhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentcompoundType Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if specified in trading partner agreements involving IV therapy delineate separate reimbursement structures for different therapy types.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHQaLRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentmedicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn)">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHQaLhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentmedicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn) Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHQaMRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentpharmacyServiceType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHQaMhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClaimSegmentpharmacyServiceType Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required when the submitter must clarify the type of services being performed as a condition for proper reimbursement by the payer.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XGp9QxDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_oMMoQA9XEd-b2MdXdLPaUQ?telecom/ClaimSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XGp9TBDXEd-FYLhLhjdPsQ" name="associatedPrescription/serviceReferenceNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuIBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGzuIxDXEd-FYLhLhjdPsQ" name="associatedPrescription/serviceDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuJBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGzuJxDXEd-FYLhLhjdPsQ" name="procedureModifierCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuKBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGzuKxDXEd-FYLhLhjdPsQ" name="procedureModifierCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuLBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGzuLxDXEd-FYLhLhjdPsQ" name="quantityDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuMBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGzuMxDXEd-FYLhLhjdPsQ" name="fillNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuNBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGzuNxDXEd-FYLhLhjdPsQ" name="daysSupply" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuOBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGzuOxDXEd-FYLhLhjdPsQ" name="compoundCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuPBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGzuPxDXEd-FYLhLhjdPsQ" name="dispenseAsWritten(daw)/productSelectionCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuQBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGzuQxDXEd-FYLhLhjdPsQ" name="datePrescriptionWritten" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGzuRBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84EBDXEd-FYLhLhjdPsQ" name="numberOfRefillsAuthorized" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84ERDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84FBDXEd-FYLhLhjdPsQ" name="prescriptionOriginCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84FRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84GBDXEd-FYLhLhjdPsQ" name="submissionClarificationCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84GRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84HBDXEd-FYLhLhjdPsQ" name="submissionClarificationCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84HRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84IBDXEd-FYLhLhjdPsQ" name="quantityPrescribed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84IRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84JBDXEd-FYLhLhjdPsQ" name="otherCoverageCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84JRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84KBDXEd-FYLhLhjdPsQ" name="specialPackagingIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84KRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84LBDXEd-FYLhLhjdPsQ" name="originallyPrescribedProduct/serviceIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84LRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84MBDXEd-FYLhLhjdPsQ" name="originallyPrescribedProduct/serviceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84MRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XG84NBDXEd-FYLhLhjdPsQ" name="originallyPrescribedQuantity" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG84NRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHGpERDXEd-FYLhLhjdPsQ" name="alternateId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHGpEhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHGpFRDXEd-FYLhLhjdPsQ" name="scheduledPrescriptionIdNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHGpFhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHGpGRDXEd-FYLhLhjdPsQ" name="unitOfMeasure" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHGpGhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHGpHRDXEd-FYLhLhjdPsQ" name="levelOfService" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHGpHhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHGpIRDXEd-FYLhLhjdPsQ" name="priorAuthorizationTypeCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHGpIhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHGpJRDXEd-FYLhLhjdPsQ" name="priorAuthorizationNumberSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHGpJhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHGpKRDXEd-FYLhLhjdPsQ" name="intermediaryAuthorizationTypeId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHGpKhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHGpLRDXEd-FYLhLhjdPsQ" name="intermediaryAuthorizationId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHGpLhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHGpMRDXEd-FYLhLhjdPsQ" name="dispensingStatus" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHQaEBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHQaExDXEd-FYLhLhjdPsQ" name="quantityIntendedToBeDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHQaFBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHQaFxDXEd-FYLhLhjdPsQ" name="daysSupplyIntendedToBeDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHQaGBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHQaGxDXEd-FYLhLhjdPsQ" name="delayReasonCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHQaHBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHQaHxDXEd-FYLhLhjdPsQ" name="transactionReferenceNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHQaIBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHQaIxDXEd-FYLhLhjdPsQ" name="patientAssignmentIndicator(directMemberReimbursementIndicator)" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHQaJBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHQaJxDXEd-FYLhLhjdPsQ" name="routeOfAdministration" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHQaKBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHQaKxDXEd-FYLhLhjdPsQ" name="compoundType" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHQaLBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHQaLxDXEd-FYLhLhjdPsQ" name="medicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn)" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHQaMBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHZkABDXEd-FYLhLhjdPsQ" name="pharmacyServiceType" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHZkARDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XHZkAhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegment">
+    <ownedRule xmi:id="_XHZkBBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentingredientCostSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHZkBRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentingredientCostSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required. &#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHZkCBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentdispensingFeeSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHZkCRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentdispensingFeeSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHZkDBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentprofessionalServiceFeeSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHZkDRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentprofessionalServiceFeeSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Not used.&#xA;&#xA;Service:&#xA;Required.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHZkEBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentpatientPaidAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHZkERDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentpatientPaidAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility. &#xA;&#xA;Not used in coordination of benefit claim to pass patient liability informationÿto a downstream payer. See section ?Standard Conventions?, ?Repetition and Multiple Occurrences?, Repeating Data Elements?, ?Request Segments?, ?Coordination of Benefits Other Payments Segment?.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHZkFBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentincentiveAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHZkFRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentincentiveAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHZkGBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentotherAmountClaimedSubmittedCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHZkGRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentotherAmountClaimedSubmittedCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Maximum count of 3.&#xA;&#xA;Required if Other Amount Claimed Submitted Qualifier (479-H8) is used. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVAhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentotherAmountClaimedSubmittedQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVAxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentotherAmountClaimedSubmittedQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Other Amount Claimed Submitted (480-H9) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVBhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentotherAmountClaimedSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVBxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentotherAmountClaimedSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVChDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentflatSalesTaxAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVCxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentflatSalesTaxAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVDhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentpercentageSalesTaxAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVDxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentpercentageSalesTaxAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVEhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentpercentageSalesTaxRateSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVExDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentpercentageSalesTaxRateSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if this field could result in different pricing.&#xA;&#xA;Required if Percentage Sales Tax Rate Submitted (483-HE) and Percentage Sales Tax Basis Submitted (484-JE) are used.&#xA;&#xA;Required if needed to calculate Percentage Sales Tax Amount Paid (559-AX).&#xA;&#xA;Service:&#xA;Required if needed to calculate Percentage Sales Tax Amount Paid (559-AX).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVFhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentpercentageSalesTaxBasisSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVFxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentpercentageSalesTaxBasisSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if Percentage Sales Tax Amount Submitted (482-GE) and Percentage Sales Tax Rate Submitted (483-HE) are used. &#xA;&#xA;Required if this field could result in different pricing.&#xA;&#xA;Required if needed to calculate Percentage Sales Tax Amount Paid (559-AX).&#xA;&#xA;Service:&#xA;Not used. Code list is not applicable.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVGhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentusualAndCustomaryCharge">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVGxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentusualAndCustomaryCharge Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed per trading partner agreement.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVHhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentgrossAmountDue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVHxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentgrossAmountDue Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required.&#xA;See Pricing Formula for fields used in calculation.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVIhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentbasisOfCostDetermination">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVIxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentbasisOfCostDetermination Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if needed for receiver claim/encounter adjudication.&#xA;&#xA;Service:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHjVJhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentmedicaidPaidAmount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHjVJxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPricingSegmentmedicaidPaidAmount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XHZkAxDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuCTQ9xEd-b2MdXdLPaUQ?telecom/PricingSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XHZkBhDXEd-FYLhLhjdPsQ" name="ingredientCostSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHZkBxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHZkChDXEd-FYLhLhjdPsQ" name="dispensingFeeSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHZkCxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHZkDhDXEd-FYLhLhjdPsQ" name="professionalServiceFeeSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHZkDxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHZkEhDXEd-FYLhLhjdPsQ" name="patientPaidAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHZkExDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHZkFhDXEd-FYLhLhjdPsQ" name="incentiveAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHZkFxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVABDXEd-FYLhLhjdPsQ" name="otherAmountClaimedSubmittedCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVARDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVBBDXEd-FYLhLhjdPsQ" name="otherAmountClaimedSubmittedQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVBRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVCBDXEd-FYLhLhjdPsQ" name="otherAmountClaimedSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVCRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVDBDXEd-FYLhLhjdPsQ" name="flatSalesTaxAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVDRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVEBDXEd-FYLhLhjdPsQ" name="percentageSalesTaxAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVERDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVFBDXEd-FYLhLhjdPsQ" name="percentageSalesTaxRateSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVFRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVGBDXEd-FYLhLhjdPsQ" name="percentageSalesTaxBasisSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVGRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVHBDXEd-FYLhLhjdPsQ" name="usualAndCustomaryCharge" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVHRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVIBDXEd-FYLhLhjdPsQ" name="grossAmountDue" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVIRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHjVJBDXEd-FYLhLhjdPsQ" name="basisOfCostDetermination" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHjVJRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHtGABDXEd-FYLhLhjdPsQ" name="medicaidPaidAmount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGARDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XHtGAhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegment">
+    <ownedRule xmi:id="_XHtGBBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGBRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver claim/encounter or prior authorization determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHtGCBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGCRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver claim/encounter or prior authorization determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHtGDBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGDRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver claim/encounter or prior authorization determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHtGEBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGERDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver claim/encounter or prior authorization determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHtGFBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGFRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver claim/encounter or prior authorization determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHtGGBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGGRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizedRepresentativeZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver claim/encounter or prior authorization determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHtGHBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentpriorAuthorizationNumber-assigned">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGHRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentpriorAuthorizationNumber-assigned Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if the Request Type (498-PA) = 2 (Reauthorization)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHtGIBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizationNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGIRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentauthorizationNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver claim/encounter determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHtGJBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentpriorAuthorizationSupportingDocumentation">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGJRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPriorAuthorizationSegmentpriorAuthorizationSupportingDocumentation Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver claim/encounter or prior authorization determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XHtGAxDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8y3ygA9xEd-b2MdXdLPaUQ?telecom/PriorAuthorizationSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XHtGBhDXEd-FYLhLhjdPsQ" name="authorizedRepresentativeFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGBxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHtGChDXEd-FYLhLhjdPsQ" name="authorizedRepresentativeLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGCxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHtGDhDXEd-FYLhLhjdPsQ" name="authorizedRepresentativeStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGDxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHtGEhDXEd-FYLhLhjdPsQ" name="authorizedRepresentativeCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGExDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHtGFhDXEd-FYLhLhjdPsQ" name="authorizedRepresentativeState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGFxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHtGGhDXEd-FYLhLhjdPsQ" name="authorizedRepresentativeZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGGxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHtGHhDXEd-FYLhLhjdPsQ" name="priorAuthorizationNumber-assigned" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGHxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHtGIhDXEd-FYLhLhjdPsQ" name="authorizationNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGIxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XHtGJhDXEd-FYLhLhjdPsQ" name="priorAuthorizationSupportingDocumentation" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGJxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XHtGKBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPharmacyProviderSegment">
+    <ownedRule xmi:id="_XHtGKhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPharmacyProviderSegmentproviderIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHtGKxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPharmacyProviderSegmentproviderIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Provider ID (444-E9) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XHtGLhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPharmacyProviderSegmentproviderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2P8BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPharmacyProviderSegmentproviderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if necessary to identify the individual responsible for dispensing of the prescription.  &#xA;&#xA;Service:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if necessary to determine if provider is credentialed to perform this service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XHtGKRDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zKthg9xEd-b2MdXdLPaUQ?telecom/PharmacyProviderSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XHtGLBDXEd-FYLhLhjdPsQ" name="providerIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHtGLRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2P8RDXEd-FYLhLhjdPsQ" name="providerId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2P8hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XH2P8xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegment">
+    <ownedRule xmi:id="_XH2P9RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2P9hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Prescriber ID (411-DB) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2P-RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2P-hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage or patient financial responsibility.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2P_RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2P_hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required when the Prescriber ID (411-DB) is not known. &#xA;&#xA;Required if needed for Prescriber ID (411-DB) validation/clarification.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2QARDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberPhoneNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2QAhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberPhoneNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if needed for Prior Authorization process.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2QBRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprimaryCareProviderIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2QBhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprimaryCareProviderIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Primary Care Provider ID (421-DL) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2QCRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprimaryCareProviderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2QChDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprimaryCareProviderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver claim/encounter or prior authorization request and billing determination, if known and available.&#xA;&#xA;Required if this field could result in different coverage or patient financial responsibility.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2QDRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprimaryCareProviderLastName.">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2QDhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprimaryCareProviderLastName. Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field is used as an alternative for Primary Care Provider ID (421-DL) when ID is not known.&#xA;&#xA;Required if needed for Primary Care Provider ID (421-DL) validation/clarification.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2QDxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2QEBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2QExDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2QFBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2QFxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2QGBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2QGxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2QHBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2QHxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIAA8BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingPrescriberSegmentprescriberZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XH2P9BDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zA8zQ9xEd-b2MdXdLPaUQ?telecom/PrescriberSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XH2P9xDXEd-FYLhLhjdPsQ" name="prescriberIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2P-BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2P-xDXEd-FYLhLhjdPsQ" name="prescriberId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2P_BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2P_xDXEd-FYLhLhjdPsQ" name="prescriberLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2QABDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2QAxDXEd-FYLhLhjdPsQ" name="prescriberPhoneNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2QBBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2QBxDXEd-FYLhLhjdPsQ" name="primaryCareProviderIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2QCBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2QCxDXEd-FYLhLhjdPsQ" name="primaryCareProviderId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2QDBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2QERDXEd-FYLhLhjdPsQ" name="prescriberFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2QEhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2QFRDXEd-FYLhLhjdPsQ" name="prescriberStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2QFhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2QGRDXEd-FYLhLhjdPsQ" name="prescriberCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2QGhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XH2QHRDXEd-FYLhLhjdPsQ" name="prescriberState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XH2QHhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIAA8RDXEd-FYLhLhjdPsQ" name="prescriberZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIAA8hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XIAA8xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegment">
+    <ownedRule xmi:id="_XIAA9RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentcoordinationOfBenefits/otherPaymentsCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIAA9hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentcoordinationOfBenefits/otherPaymentsCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Maximum count of 9.&#xA;&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIAA9xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerCoverageType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIAA-BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerCoverageType Analysis Rule">
+        <language>Analysis</language>
+        <body>Mandatory.&#xA;Occurs with Coordination of Benefits/Other Payments Count (337-4C).&#xA;Grouped with Other Payer ID Qualifier (339-6C), Other Payer ID (340-7C), Other Payer Date (443-E8), and either Other Payer Amount Paid Count (341-HB) and its grouping, or Other Payer Reject Count (471-5E) and its grouping.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIAA-RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIAA-hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Other Payer ID (340-7C) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIAA_RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIAA_hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if identification of the Other Payer is necessary for prior authorization billing adjudication.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIABARDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIABAhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if identification of the Other Payer Date is necessary for prior authorization billing adjudication.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIABBRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentinternalControlNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIABBhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentinternalControlNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required when used for payer-to-payer coordination of benefits to track the claim without regard to the ?Service Provider ID, Prescription Number, and Date of Service?.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIABCRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaidCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIABChDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaidCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Maximum count of 9.&#xA;&#xA;Required if Other Payer Amount Paid Qualifier (342-HC) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIABDRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaidQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIABDhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaidQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Other Payer Amount Paid (431-DV) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIABERDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaid">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIABEhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaid Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if other payer has approved payment for some/all of the billing. &#xA;&#xA;Zero (0) is a valid value.&#xA;&#xA;Not used for patient financial responsibility only billing.&#xA;&#xA;Not used for non-governmental agency programs if Other Payer-Patient Responsibility Amount (352-NQ) is submitted.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIABFRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerRejectCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIABFhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerRejectCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Maximum count of 5.&#xA;&#xA;Required if Other Payer Reject Code (472-6E) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJK4hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerRejectCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJK4xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayerRejectCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required when the other payer has denied the payment for the billing, designated with Other Coverage Code (308-C8) = 3 (Other Coverage Billed ? claim not covered). &#xA;&#xA;Note: This field must only contain the NCPDP Reject Code (511-FB) values.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJK5hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmountCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJK5xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmountCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Maximum count of 25.&#xA;&#xA;Required if Other Payer-Patient Responsibility Amount Qualifier (351-NP) is used.&#xA;&#xA;Note the occurrences are dependent upon the number of component parts returned from a previous payer.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJK6hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmountQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJK6xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmountQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Other Payer-Patient Responsibility Amount (352-NQ) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJK7hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJK7xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for patient financial responsibility only billing.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Not used for non-governmental agency programs if Other Payer Amount Paid (431-DV) is submitted.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJK8hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentbenefitStageCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJK8xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentbenefitStageCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Maximum count of 4.&#xA;&#xA;Required if Benefit Stage Amount (394-MW) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJK9hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentbenefitStageQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJK9xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentbenefitStageQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Benefit Stage Amount (394-MW) is used.&#xA;&#xA;Must only have one value per iteration - value must not be repeated.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJK-hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentbenefitStageAmount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJK-xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCoordinationofBenefitsOtherPaymentsSegmentbenefitStageAmount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if the previous payer has financial amounts that apply to Medicare Part D beneficiary benefit stages. This field is required when the plan is a participant in a Medicare Part D program that requires reporting of benefit stage specific financial amounts. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XIAA9BDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuB3w9xEd-b2MdXdLPaUQ?telecom/CoordinationofBenefitsOtherPaymentsSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XIAA-xDXEd-FYLhLhjdPsQ" name="otherPayerIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIAA_BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIAA_xDXEd-FYLhLhjdPsQ" name="otherPayerId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIABABDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIABAxDXEd-FYLhLhjdPsQ" name="otherPayerDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIABBBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIABBxDXEd-FYLhLhjdPsQ" name="internalControlNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIABCBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIABCxDXEd-FYLhLhjdPsQ" name="otherPayerAmountPaidCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIABDBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIABDxDXEd-FYLhLhjdPsQ" name="otherPayerAmountPaidQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIABEBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIABExDXEd-FYLhLhjdPsQ" name="otherPayerAmountPaid" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIABFBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJK4BDXEd-FYLhLhjdPsQ" name="otherPayerRejectCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJK4RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJK5BDXEd-FYLhLhjdPsQ" name="otherPayerRejectCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJK5RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJK6BDXEd-FYLhLhjdPsQ" name="otherPayer-patientResponsibilityAmountCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJK6RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJK7BDXEd-FYLhLhjdPsQ" name="otherPayer-patientResponsibilityAmountQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJK7RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJK8BDXEd-FYLhLhjdPsQ" name="otherPayer-patientResponsibilityAmount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJK8RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJK9BDXEd-FYLhLhjdPsQ" name="benefitStageCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJK9RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJK-BDXEd-FYLhLhjdPsQ" name="benefitStageQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJK-RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJK_BDXEd-FYLhLhjdPsQ" name="benefitStageAmount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJK_RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XIJK_hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegment">
+    <ownedRule xmi:id="_XIJLABDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJLARDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to process a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJLBBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJLBRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to process a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJLCBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJLCRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to process a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJLDBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIJLDRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to process a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIJLEBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS74BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to process a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS74xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerPhoneNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS75BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerPhoneNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to process a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS75xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerContactName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS76BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentemployerContactName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to process a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS76xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentcarrierId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS77BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentcarrierId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to process a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS77xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentclaim/referenceId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS78BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentclaim/referenceId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed to process a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS78xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentbillingEntityTypeIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS79BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentbillingEntityTypeIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS79xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS7-BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Pay To ID (119-TT) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS7-xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS7_BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS7_xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS8ABDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS8AxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS8BBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS8BxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS8CBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS8CxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS8DBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIS8DxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIS8EBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentpayToZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIcs4hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentgenericEquivalentProductIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIcs4xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentgenericEquivalentProductIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Generic Equivalent Product ID (126-UA) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIcs5hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentgenericEquivalentProductId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIcs5xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingWorkersCompensationSegmentgenericEquivalentProductId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XIJK_xDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8ykQyw9xEd-b2MdXdLPaUQ?telecom/WorkersCompensationSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XIJLAhDXEd-FYLhLhjdPsQ" name="employerName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJLAxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJLBhDXEd-FYLhLhjdPsQ" name="employerStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJLBxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJLChDXEd-FYLhLhjdPsQ" name="employerCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJLCxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIJLDhDXEd-FYLhLhjdPsQ" name="employerState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIJLDxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS74RDXEd-FYLhLhjdPsQ" name="employerZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS74hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS75RDXEd-FYLhLhjdPsQ" name="employerPhoneNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS75hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS76RDXEd-FYLhLhjdPsQ" name="employerContactName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS76hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS77RDXEd-FYLhLhjdPsQ" name="carrierId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS77hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS78RDXEd-FYLhLhjdPsQ" name="claim/referenceId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS78hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS79RDXEd-FYLhLhjdPsQ" name="billingEntityTypeIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS79hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS7-RDXEd-FYLhLhjdPsQ" name="payToQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS7-hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS7_RDXEd-FYLhLhjdPsQ" name="payToId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS7_hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS8ARDXEd-FYLhLhjdPsQ" name="payToName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS8AhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS8BRDXEd-FYLhLhjdPsQ" name="payToStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS8BhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS8CRDXEd-FYLhLhjdPsQ" name="payToCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS8ChDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIS8DRDXEd-FYLhLhjdPsQ" name="payToState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIS8DhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIcs4BDXEd-FYLhLhjdPsQ" name="payToZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIcs4RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIcs5BDXEd-FYLhLhjdPsQ" name="genericEquivalentProductIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIcs5RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIcs6BDXEd-FYLhLhjdPsQ" name="genericEquivalentProductId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIcs6RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XIcs6hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegment">
+    <ownedRule xmi:id="_XIcs7BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentdur/ppsCodeCounter">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIcs7RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentdur/ppsCodeCounter Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Maximum of 9 occurrences.&#xA;&#xA;Required if DUR/PPS Segment is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIcs8BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentreasonForServiceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIcs8RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentreasonForServiceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIcs9BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentprofessionalServiceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIcs9RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentprofessionalServiceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIcs-BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentresultOfServiceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIcs-RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentresultOfServiceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIcs_BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentdur/ppsLevelOfEffort">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIcs_RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentdur/ppsLevelOfEffort Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIctABDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentdurCo-agentIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIctARDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentdurCo-agentIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if DUR Co-Agent ID (476-H6) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIctBBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentdurCo-agentId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIctBRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingDUR/PPSSegmentdurCo-agentId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XIcs6xDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zA8mA9xEd-b2MdXdLPaUQ?telecom/DUR%2FPPSSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XIcs7hDXEd-FYLhLhjdPsQ" name="dur/ppsCodeCounter" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIcs7xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIcs8hDXEd-FYLhLhjdPsQ" name="reasonForServiceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIcs8xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIcs9hDXEd-FYLhLhjdPsQ" name="professionalServiceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIcs9xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIcs-hDXEd-FYLhLhjdPsQ" name="resultOfServiceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIcs-xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIcs_hDXEd-FYLhLhjdPsQ" name="dur/ppsLevelOfEffort" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIcs_xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIctAhDXEd-FYLhLhjdPsQ" name="durCo-agentIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIctAxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIctBhDXEd-FYLhLhjdPsQ" name="durCo-agentId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIctBxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XIctCBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegment">
+    <ownedRule xmi:id="_XIctChDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientComponentCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIctCxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientComponentCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Maximum count of 25 ingredients.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIctDBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientDrugCost">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIctDRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientDrugCost Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if needed when multiple products are reported for receiver claim/encounter or prior authorization determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIl20BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientBasisOfCostDetermination">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIl20RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientBasisOfCostDetermination Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required if needed when multiple products are reported for receiver claim/encounter or prior authorization determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIl21BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientModifierCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIl21RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientModifierCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):&#xA;Required when Compound Ingredient Modifier Code (363-2H) is sent.&#xA;&#xA;Maximum count of 10.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIl22BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientModifierCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIl22RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingCompoundSegmentcompoundIngredientModifierCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XIctCRDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8ykQqQ9xEd-b2MdXdLPaUQ?telecom/CompoundSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XIctDhDXEd-FYLhLhjdPsQ" name="compoundIngredientDrugCost" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIctDxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIl20hDXEd-FYLhLhjdPsQ" name="compoundIngredientBasisOfCostDetermination" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIl20xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIl21hDXEd-FYLhLhjdPsQ" name="compoundIngredientModifierCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIl21xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIl22hDXEd-FYLhLhjdPsQ" name="compoundIngredientModifierCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIl22xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XIl23BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegment">
+    <ownedRule xmi:id="_XIl23hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentdiagnosisCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIl23xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentdiagnosisCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Maximum count of 5.&#xA;&#xA;Required if Diagnosis Code Qualifier (492-WE) and Diagnosis Code (424-DO) are used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIl24hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentdiagnosisCodeQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIl24xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentdiagnosisCodeQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Diagnosis Code (424-DO) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIl25hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentdiagnosisCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIl25xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentdiagnosisCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;The value for this field is obtained from the prescriber or authorized representative.&#xA;&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome. &#xA;&#xA;Required if this field affects payment for professional pharmacy service.&#xA;&#xA;Required if this information can be used in place of prior authorization. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIl26hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentclinicalInformationCounter">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIl26xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentclinicalInformationCounter Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Maximum 5 occurrences supported.&#xA;&#xA;Grouped with Measurement fields (Measurement Date (494-ZE), Measurement Time (495-H1), Measurement Dimension (496-H2), Measurement Unit (497-H3), Measurement Value (499-H4).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIl27hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIl27xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn0hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementTime">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn0xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementTime Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Time is known or has impact on measurement.&#xA;&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome and is a requirement for payment or authorization.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn1hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementDimension">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn1xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementDimension Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Measurement Unit (497-H3) and Measurement Value (499-H4) are used.&#xA;&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome and is a requirement for payment or authorization.&#xA;&#xA;Required if necessary for patient?s weight and height when billing Medicare for a claim that includes a Certificate of Medical Necessity (CMN).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn2hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementUnit">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn2xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementUnit Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Measurement Dimension (496-H2) and Measurement Value (499-H4) are used.&#xA;&#xA;Required if necessary for patient?s weight and height when billing Medicare for a claim that includes a Certificate of Medical Necessity (CMN).&#xA;&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome and is a requirement for payment or authorization.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn3hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn3xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingClinicalSegmentmeasurementValue Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Measurement Dimension (496-H2) and Measurement Unit (497-H3) are used. &#xA;&#xA;Required if necessary for patient?s weight and height when billing Medicare for a claim that includes a Certificate of Medical Necessity (CMN).&#xA;&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XIl23RDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_ypHmMA9vEd-b2MdXdLPaUQ?telecom/ClinicalSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XIl24BDXEd-FYLhLhjdPsQ" name="diagnosisCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIl24RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIl25BDXEd-FYLhLhjdPsQ" name="diagnosisCodeQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIl25RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIl26BDXEd-FYLhLhjdPsQ" name="diagnosisCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIl26RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIl27BDXEd-FYLhLhjdPsQ" name="clinicalInformationCounter" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIl27RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn0BDXEd-FYLhLhjdPsQ" name="measurementDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn0RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn1BDXEd-FYLhLhjdPsQ" name="measurementTime" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn1RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn2BDXEd-FYLhLhjdPsQ" name="measurementDimension" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn2RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn3BDXEd-FYLhLhjdPsQ" name="measurementUnit" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn3RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn4BDXEd-FYLhLhjdPsQ" name="measurementValue" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn4RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XIvn4hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegment">
+    <ownedRule xmi:id="_XIvn5BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentrequestPeriodBeginDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn5RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentrequestPeriodBeginDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn6BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentrequestPeriodRecert/revisedDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn6RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentrequestPeriodRecert/revisedDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs. &#xA;&#xA;Required if the Request Status (373-2U) = ?2? (Revision) or ?3? (Recertification).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn7BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentrequestStatus">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn7RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentrequestStatus Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn8BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentlengthOfNeedQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn8RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentlengthOfNeedQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if Length of Need (370-2R) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn9BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentlengthOfNeed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn9RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentlengthOfNeed Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim):  &#xA;Required if the physician orders an item for a specified length of time.&#xA;&#xA;Service:  &#xA;Required if the physician orders an item for a specified length of time.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn-BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentprescriber/supplierDateSigned">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn-RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentprescriber/supplierDateSigned Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XIvn_BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentsupportingDocumentation">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIvn_RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentsupportingDocumentation Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if using Section C of Medicare?s CMN forms or required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y0RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionNumber/letterCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y0hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionNumber/letterCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Maximum count of 50.&#xA;&#xA;Required if needed to provide response to narratives.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y1RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionNumber/letter">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y1hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionNumber/letter Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a form.  &#xA;&#xA;Required if Question Number/Letter&#xA;Count (377-2Z) is greater than 0.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y2RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionPercentResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y2hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionPercentResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a form that requires a percent as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y3RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionDateResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y3hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionDateResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a form that requires a date as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y4RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionDollarAmountResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y4hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionDollarAmountResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a form that requires a dollar amount as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y5RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionNumericResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y5hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionNumericResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for&#xA;State/federal/regulatory agency programs to respond to questions included on a form that requires a numeric as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y6RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionAlphanumericResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y6hDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingAdditionalDocumentationSegmentquestionAlphanumericResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a form that requires an alphanumeric as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XIvn4xDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8y3y3w9xEd-b2MdXdLPaUQ?telecom/AdditionalDocumentationSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XIvn5hDXEd-FYLhLhjdPsQ" name="requestPeriodBeginDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn5xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn6hDXEd-FYLhLhjdPsQ" name="requestPeriodRecert/revisedDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn6xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn7hDXEd-FYLhLhjdPsQ" name="requestStatus" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn7xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn8hDXEd-FYLhLhjdPsQ" name="lengthOfNeedQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn8xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn9hDXEd-FYLhLhjdPsQ" name="lengthOfNeed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn9xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn-hDXEd-FYLhLhjdPsQ" name="prescriber/supplierDateSigned" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIvn-xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XIvn_hDXEd-FYLhLhjdPsQ" name="supportingDocumentation" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y0BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y0xDXEd-FYLhLhjdPsQ" name="questionNumber/letterCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y1BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y1xDXEd-FYLhLhjdPsQ" name="questionNumber/letter" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y2BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y2xDXEd-FYLhLhjdPsQ" name="questionPercentResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y3BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y3xDXEd-FYLhLhjdPsQ" name="questionDateResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y4BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y4xDXEd-FYLhLhjdPsQ" name="questionDollarAmountResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y5BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y5xDXEd-FYLhLhjdPsQ" name="questionNumericResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y6BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y6xDXEd-FYLhLhjdPsQ" name="questionAlphanumericResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y7BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XI5Y7RDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegment">
+    <ownedRule xmi:id="_XI5Y7xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y8BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityId Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if needed for receiver inquiry validation and/or determination.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y8xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y9BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityName Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y9xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y-BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y-xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5Y_BDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XI5Y_xDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI5ZABDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XJCiwhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XJCiwxDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingFacilitySegmentfacilityZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XI5Y7hDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8y3zNg9xEd-b2MdXdLPaUQ?telecom/FacilitySegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XI5Y8RDXEd-FYLhLhjdPsQ" name="facilityId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y8hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y9RDXEd-FYLhLhjdPsQ" name="facilityName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y9hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y-RDXEd-FYLhLhjdPsQ" name="facilityStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y-hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XI5Y_RDXEd-FYLhLhjdPsQ" name="facilityCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5Y_hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XJCiwBDXEd-FYLhLhjdPsQ" name="facilityState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XJCiwRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XJCixBDXEd-FYLhLhjdPsQ" name="facilityZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XJCixRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XJCixhDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingNarrativeSegment">
+    <ownedRule xmi:id="_XJCiyBDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingNarrativeSegmentnarrativeMessage">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XJCiyRDXEd-FYLhLhjdPsQ" name="PriorAuthorizationRequestAndBillingNarrativeSegmentnarrativeMessage Analysis Rule">
+        <language>Analysis</language>
+        <body>Prior Authorization Request And Billing (Claim/Service):&#xA;Required if necessary for state/federal/regulatory agency programs to provide additional information.&#xA;&#xA;Required if necessary only to support exception handling of pharmacy claims for Medicare Part B claim billing.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XJCixxDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zKtkA9xEd-b2MdXdLPaUQ?telecom/NarrativeSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XJCiyhDXEd-FYLhLhjdPsQ" name="narrativeMessage" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XJCiyxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:id="_FT_rcBXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_FT_rcRXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_FT_rchXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_FT_rcxXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_FUJccBXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_FUJccRXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Package>
