@@ -2167,6 +2167,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>UPC</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="NH">
+        <xsd:annotation>
+          <xsd:documentation>HRI – Health Related Item - Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -2220,6 +2225,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:enumeration value="SCD">
         <xsd:annotation>
           <xsd:documentation>RxNorm Semantic Clinical Drug (SCD) – A code maintained and distributed by National Library of Medicine (NLM) representing the ingredient plus form and dose strength.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NH">
+        <xsd:annotation>
+          <xsd:documentation>HRI – Health Related Item - Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>

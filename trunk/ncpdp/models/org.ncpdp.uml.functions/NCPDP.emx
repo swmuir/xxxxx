@@ -9,7 +9,7 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzIoEtXEdqhPYJq3sEkGA"/>
     </packageImport>
     <packageImport xmi:id="_eKKZgDD_Ed-8rpqfOAePKg">
-      <importedPackage xmi:type="uml:Model" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_cU8ZYZ44Ed6wn6lcMWl-9w"/>
+      <importedPackage xmi:type="uml:Model" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_cU8ZYZ44Ed6wn6lcMWl-9w?ecl?"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_94btoDD1Ed-8rpqfOAePKg" name="datatypes">
       <eAnnotations xmi:id="_95oAcDD1Ed-8rpqfOAePKg" source="uml2.diagrams"/>
@@ -67,7 +67,7 @@ pharmacy’s fill number from the payer system from claims processing.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gNrxjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4gNrxzD1Ed-8rpqfOAePKg" name="IDQualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_-xQ0kG8mEd-E06vcpeQalQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_-xQ0kG8mEd-E06vcpeQalQ?ecl/ecl/IDQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4gNr0DD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gNr0TD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -258,6 +258,7 @@ pharmacy’s fill number from the payer system from claims processing.
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4HLgtjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4HLgtzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_dNeGgNyPEd-_9uOIZZvC8Q" name="Data2000WaiverID" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4PrVYTD1Ed-8rpqfOAePKg" name="PayerID">
         <ownedComment xmi:id="_1Bn5kInMEd-pZLs28ekBmw" annotatedElement="_4PrVYTD1Ed-8rpqfOAePKg">
@@ -445,6 +446,7 @@ pharmacy’s fill number from the payer system from claims processing.
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Qa8UDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Qa8UTD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_2qxAQNyPEd-_9uOIZZvC8Q" name="Data2000WaiverID" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4XueJjD1Ed-8rpqfOAePKg" name="ProviderID">
         <ownedComment xmi:id="_hvXlwInMEd-pZLs28ekBmw" annotatedElement="_4XueJjD1Ed-8rpqfOAePKg">
@@ -737,7 +739,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <ownedComment xmi:id="_4Ja8ZjD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ht87dCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ht87dCxAEd-8mcmtGejV_Q?ecl/ecl/DUEReasonForServiceCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Ja8bTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Ja8bjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -745,7 +747,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <ownedComment xmi:id="_4Ja8cDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_htzxgixAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_htzxgixAEd-8mcmtGejV_Q?ecl/ecl/DUEProfessionalServiceCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4JkGVTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4JkGVjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -753,7 +755,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <ownedComment xmi:id="_4JkGWDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_huQdcCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_huQdcCxAEd-8mcmtGejV_Q?ecl/ecl/DUEResultOfServiceCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4JkGXzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4JkGYDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -768,7 +770,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <ownedComment xmi:id="_4Jt3bDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_htg2kCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_htg2kCxAEd-8mcmtGejV_Q?ecl/ecl/DUEClinicalSignificanceCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4J3BRjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4J3BRzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -827,7 +829,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7
           <ownedComment xmi:id="_4IE4rjD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_icJeNCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_icJeNCxAEd-8mcmtGejV_Q?ecl/ecl/QuantityCodeListQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4IOplDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4IOplTD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -855,7 +857,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FF2KTD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4FF2KjD1Ed-8rpqfOAePKg" name="State">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_gtSIoCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_gtSIoCxAEd-8mcmtGejV_Q?ecl/ecl/StateCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FPnAjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnAzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -883,7 +885,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_4JRLYzD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_gSUD4yxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_gSUD4yxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationTypeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4JRLajD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4JRLazD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -897,7 +899,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_4Jt3VDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Jt3WzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Jt3XDD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -905,7 +907,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_4Jt3XjD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_htqAgSxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_htqAgSxAEd-8mcmtGejV_Q?ecl/ecl/DUECoAgentIDQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Jt3ZTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Jt3ZjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -946,7 +948,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_4PE4czD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifuWoCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifuWoCxAEd-8mcmtGejV_Q?ecl/ecl/MeasurementDimensionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4PE4ejD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4PE4ezD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -968,7 +970,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_4PE4iTD1Ed-8rpqfOAePKg" annotatedElement="_4PE4iDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hx-f0CxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hx-f0CxAEd-8mcmtGejV_Q?ecl/ecl/MeasurementDataQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4PYadTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4PYadjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -1002,7 +1004,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4KKjRjD1Ed-8rpqfOAePKg" name="TimeZone">
         <ownedAttribute xmi:id="_4KKjSDD1Ed-8rpqfOAePKg" name="TimeZoneIdentifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ixwh0CxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ixwh0CxAEd-8mcmtGejV_Q?ecl/ecl/TimeZoneIdentifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4KKjTjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4KKjTzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1035,7 +1037,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnIzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4FPnJDD1Ed-8rpqfOAePKg" name="Qualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_68pG4y1QEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_68pG4y1QEd-8mcmtGejV_Q?ecl/ecl/CommunicationTypeQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FPnKjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnKzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1677,7 +1679,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dYZa1k5KEd-lRt4mSex0Qg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_dYZa0E5KEd-lRt4mSex0Qg" name="Code">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dYZa0k5KEd-lRt4mSex0Qg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dYZa005KEd-lRt4mSex0Qg"/>
         </ownedAttribute>
@@ -1694,7 +1696,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <ownedComment xmi:id="_cerm9jEyEd-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cerm9zEyEd-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cerm-DEyEd-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1702,7 +1704,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <ownedComment xmi:id="_cerm-jEyEd-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h4rkwCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h4rkwCxAEd-8mcmtGejV_Q?ecl/ecl/DrugDBQualifiersCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cerm-zEyEd-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cerm_DEyEd-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -1752,7 +1754,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <ownedComment xmi:id="_28aBKj2iEd-xgfp6zNZIHA">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ixA69CxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ixA69CxAEd-8mcmtGejV_Q?ecl/ecl/SourceQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_28aBKz2iEd-xgfp6zNZIHA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_28aBLD2iEd-xgfp6zNZIHA" value="1"/>
         </ownedAttribute>
@@ -1773,7 +1775,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <ownedComment xmi:id="_6DaLIFOXEd-wEdo_Dk3J9g" annotatedElement="_5lUzREyMEd-G-pSkcIGh3w">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5lUzRkyMEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5lUzR0yMEd-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
@@ -1781,7 +1783,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <ownedComment xmi:id="__-zLgFOXEd-wEdo_Dk3J9g" annotatedElement="_5lUzSEyMEd-G-pSkcIGh3w">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5lUzSkyMEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5lUzS0yMEd-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
@@ -1793,7 +1795,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
 http://www.cdc.gov/phin/activities/standards/vocabulary</body>
         </ownedComment>
         <ownedAttribute xmi:id="_JhSrVWQ0Ed-ODMSOo4sPFQ" name="Code">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JhSrVmQ0Ed-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JhSrV2Q0Ed-ODMSOo4sPFQ" value="1"/>
         </ownedAttribute>
@@ -1804,12 +1806,12 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
         </ownedComment>
         <generalization xmi:id="_vJ_JkGjXEd-Pd7zqA0IwbQ" general="_jd8ZMGjXEd-Pd7zqA0IwbQ"/>
         <ownedAttribute xmi:id="_slfdSWi7Ed-Pd7zqA0IwbQ" name="Code">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_slfdSmi7Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_slfdS2i7Ed-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_slfdRmi7Ed-Pd7zqA0IwbQ" name="Qualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_21l0EGi7Ed-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_21l0EGi7Ed-Pd7zqA0IwbQ?ecl/ecl/ProductQualifiersCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_slfdR2i7Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_slfdSGi7Ed-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
@@ -1821,7 +1823,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
         </ownedComment>
         <ownedAttribute xmi:id="_lcv8JWi_Ed-Pd7zqA0IwbQ" name="Code">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lcv8Jmi_Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lcv8J2i_Ed-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
@@ -1834,7 +1836,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           <ownedComment xmi:id="_jd8ZO2jXEd-Pd7zqA0IwbQ" annotatedElement="_jd8ZOmjXEd-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jd8ZPGjXEd-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jd8ZPWjXEd-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
@@ -1842,7 +1844,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           <ownedComment xmi:id="_jd8ZN2jXEd-Pd7zqA0IwbQ" annotatedElement="_jd8ZNmjXEd-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jd8ZOGjXEd-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jd8ZOWjXEd-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
@@ -1855,7 +1857,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           <ownedComment xmi:id="_8fJbw2j2Ed-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8fJbxGj2Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8fJbxWj2Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
@@ -1863,7 +1865,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           <ownedComment xmi:id="_8fJbx2j2Ed-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_QviC8IutEd-jMZ0z1K165w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_QviC8IutEd-jMZ0z1K165w?ecl/ecl/ProductQualifiersCodeExtended?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8fJbyGj2Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8fJbyWj2Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
@@ -1892,7 +1894,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           <ownedComment xmi:id="_DTud-GmnEd-rC41nbGoKjA" annotatedElement="_DTud92mnEd-rC41nbGoKjA">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_Qv02sGmnEd-rC41nbGoKjA"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_Qv02sGmnEd-rC41nbGoKjA?ecl/ecl/ProblemNameQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DTud-WmnEd-rC41nbGoKjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DTud-mmnEd-rC41nbGoKjA"/>
         </ownedAttribute>
@@ -1900,7 +1902,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           <ownedComment xmi:id="_DTud_GmnEd-rC41nbGoKjA" annotatedElement="_DTud-2mnEd-rC41nbGoKjA">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DTud_WmnEd-rC41nbGoKjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DTud_mmnEd-rC41nbGoKjA"/>
         </ownedAttribute>
@@ -1916,7 +1918,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zmmf1H7FEd-qFLXIW1YLFA" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_zmmf1X7FEd-qFLXIW1YLFA" name="Code">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_kCnAsCx3Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_kCnAsCx3Ed-8mcmtGejV_Q?ecl/ecl/SNOMEDCTAdverseEventCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zmmf1n7FEd-qFLXIW1YLFA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zmmf137FEd-qFLXIW1YLFA"/>
         </ownedAttribute>
@@ -2014,7 +2016,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <ownedComment xmi:id="_1xyR0YumEd-jMZ0z1K165w" annotatedElement="_1xyR0IumEd-jMZ0z1K165w">
             <body>Qualifier for the type of identifier for receiver.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_al3gcIthEd-urZQZ08VCKQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_al3gcIthEd-urZQZ08VCKQ?ecl/ecl/AddressTypeQualifier?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1xyR0oumEd-jMZ0z1K165w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1xyR04umEd-jMZ0z1K165w"/>
         </ownedAttribute>
@@ -2143,7 +2145,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_RdeAN1JLEd-gUbUlN-XGdw" annotatedElement="_RdeANlJLEd-gUbUlN-XGdw">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q?ecl/ecl/PayerResponsibilityCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeAOFJLEd-gUbUlN-XGdw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeAOVJLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -2151,7 +2153,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_RdeAO1JLEd-gUbUlN-XGdw" annotatedElement="_RdeAOlJLEd-gUbUlN-XGdw">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_fj0mMCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_fj0mMCxAEd-8mcmtGejV_Q?ecl/ecl/PatientRelationshipCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeAPFJLEd-gUbUlN-XGdw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeAPVJLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -2187,7 +2189,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_VyNEoonWEd-pZLs28ekBmw" annotatedElement="_RdeATFJLEd-gUbUlN-XGdw">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeATVJLEd-gUbUlN-XGdw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeATlJLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -2209,7 +2211,7 @@ potentially other structures.</body>
           <ownedComment xmi:id="_VypwkonWEd-pZLs28ekBmw" annotatedElement="_RdeAVVJLEd-gUbUlN-XGdw">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeAVlJLEd-gUbUlN-XGdw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeAV1JLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -2239,7 +2241,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
 	application/hl7-sda+xml -- HL7v3 SDA (xml) – SDA is a superset to CDA	
 	application/x-ccr - not yet registered with IANA</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_5qYs0GhAEd-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_5qYs0GhAEd-Pd7zqA0IwbQ?ecl/ecl/MIMETypeCode?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_d_xAwjZ4Ed-o64UeGGH_dQ" name="Pharmacist">
@@ -2282,7 +2284,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_4I-QdjD1Ed-8rpqfOAePKg" annotatedElement="_4I-QdTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_eqJzQyxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_eqJzQyxAEd-8mcmtGejV_Q?ecl/ecl/PrimaryDiagnosisCodeQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4I-QfTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4I-QfjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -2290,7 +2292,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_4I-QgDD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4I-QhzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4I-QiDD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -2300,7 +2302,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_4I-QkTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_7aQ6UFLcEd-wEdo_Dk3J9g"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_7aQ6UFLcEd-wEdo_Dk3J9g?ecl/ecl/SecondaryDiagnosisCodeQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4JHaZjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4JHaZzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -2308,7 +2310,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_4JHaaTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q"/>
+          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4JHacDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4JHacTD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -2358,7 +2360,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_4KTtODD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_eehyEyxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_eehyEyxAEd-8mcmtGejV_Q?ecl/ecl/CompoundCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4KTtPzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4KTtQDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -2373,7 +2375,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4I0fgjD1Ed-8rpqfOAePKg" name="Diagnosis">
         <ownedAttribute xmi:id="_4I0fgzD1Ed-8rpqfOAePKg" name="ClinicalInformationQualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g91GECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g91GECxAEd-8mcmtGejV_Q?ecl/ecl/DiagnosisClinicalInformationQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4I-QcTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4I-QcjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -3270,7 +3272,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_nbkVwYnbEd-pZLs28ekBmw" annotatedElement="_MXJAqjD7Ed-8rpqfOAePKg">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAqzD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJArDD7Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -3313,7 +3315,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_naO5BYnbEd-pZLs28ekBmw" annotatedElement="_MXJAszD7Ed-8rpqfOAePKg">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAtDD7Ed-8rpqfOAePKg" value="5"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJAtTD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3321,7 +3323,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_nbRa0YnbEd-pZLs28ekBmw" annotatedElement="_MXJAtjD7Ed-8rpqfOAePKg">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAtzD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJAuDD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3378,7 +3380,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_naO5AYnbEd-pZLs28ekBmw" annotatedElement="_MXJAuTD7Ed-8rpqfOAePKg">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAujD7Ed-8rpqfOAePKg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJAuzD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3421,7 +3423,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_na0u5YnbEd-pZLs28ekBmw" annotatedElement="_MXJAwjD7Ed-8rpqfOAePKg">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAwzD7Ed-8rpqfOAePKg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJAxDD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3456,7 +3458,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zvADoqbiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zvADo6biEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -3486,7 +3488,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_4iAbljD1Ed-8rpqfOAePKg" annotatedElement="_4iAblTD1Ed-8rpqfOAePKg">
             <body>If the sender sends “Y” (Yes), no other fields are sent in this element.  </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4iAbnTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4iAbnjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3495,7 +3497,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
             <body>Sender indicates where the sender received the allergy information if known. 
 The source of information is the ultimate source. The values are the patient or patient representative, or observed by the clinician or provider.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h533kyxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h533kyxAEd-8mcmtGejV_Q?ecl/ecl/SourceOfInformationCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4iJlezD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4iJlfDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3583,7 +3585,7 @@ Required No Known Allergies = “N” (No), meaning allergies are known and will
           <ownedComment xmi:id="_4QktVTD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q?ecl/ecl/PayerResponsibilityCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Qt3NjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Qt3NzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3591,7 +3593,7 @@ Required No Known Allergies = “N” (No), meaning allergies are known and will
           <ownedComment xmi:id="_4Qt3OTD1Ed-8rpqfOAePKg" annotatedElement="_4Qt3ODD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_fj0mMCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_fj0mMCxAEd-8mcmtGejV_Q?ecl/ecl/PatientRelationshipCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Qt3QDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Qt3QTD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3627,7 +3629,7 @@ Required No Known Allergies = “N” (No), meaning allergies are known and will
           <ownedComment xmi:id="_VK0HAIkyEd-pZLs28ekBmw" annotatedElement="_sXyTdk4XEd-G-pSkcIGh3w">
             <body>Note: If Patient Consent = N, it is expected the RxHistory transactions would not be sent.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sXyTd04XEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sXyTeE4XEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -3655,7 +3657,7 @@ RxHistoryRequest:  When this field contains a value of “C” in the Medication
 
 RxHistoryResponse: The response echoes back the “C” value in this field.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mWELIU4jEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mWELIE4jEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -3669,7 +3671,7 @@ RxHistoryResponse: The response echoes back the “C” value in this field.</bo
             <body>Sender indicates where the sender received the diagnosis information if known. 
 The source of information is the ultimate source. </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h533kyxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h533kyxAEd-8mcmtGejV_Q?ecl/ecl/SourceOfInformationCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4iwCfzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4iwCgDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -3874,7 +3876,7 @@ Value SU</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4RxAHjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4RxAITD1Ed-8rpqfOAePKg" name="Gender">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_e_d78yxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_e_d78yxAEd-8mcmtGejV_Q?ecl/ecl/GenderCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4RxAIzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4RxAJDD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -3909,17 +3911,17 @@ If not known, the value is not sent. On response transactions, the value from th
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4R6KCjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_CNIv0zdTEd-wQf5UFCJMDw" name="ResidenceCode">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_95QxADa8Ed-wQf5UFCJMDw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_95QxADa8Ed-wQf5UFCJMDw?ecl/ecl/ResidenceCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CNIv1DdTEd-wQf5UFCJMDw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CNIv1TdTEd-wQf5UFCJMDw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_CNIv0DdTEd-wQf5UFCJMDw" name="PregnancyIndicator">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CNIv0TdTEd-wQf5UFCJMDw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CNIv0jdTEd-wQf5UFCJMDw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_CNIv1jdTEd-wQf5UFCJMDw" name="Smoker">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CNIv1zdTEd-wQf5UFCJMDw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CNIv2DdTEd-wQf5UFCJMDw"/>
         </ownedAttribute>
@@ -4333,7 +4335,7 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <ownedComment xmi:id="_e9xWIYnzEd-pZLs28ekBmw" annotatedElement="_3mF1ak4LEd-G-pSkcIGh3w">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_e_d78yxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_e_d78yxAEd-8mcmtGejV_Q?ecl/ecl/GenderCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mF1a04LEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mF1bE4LEd-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
@@ -4376,7 +4378,7 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <ownedComment xmi:id="_e-EREYnzEd-pZLs28ekBmw" annotatedElement="_3mF1hU4LEd-G-pSkcIGh3w">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_95QxADa8Ed-wQf5UFCJMDw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_95QxADa8Ed-wQf5UFCJMDw?ecl/ecl/ResidenceCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mF1hk4LEd-G-pSkcIGh3w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mF1h04LEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -4384,7 +4386,7 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <ownedComment xmi:id="_e96gE4nzEd-pZLs28ekBmw" annotatedElement="_3mF1gk4LEd-G-pSkcIGh3w">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mF1g04LEd-G-pSkcIGh3w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mF1hE4LEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -4392,7 +4394,7 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <ownedComment xmi:id="_e-ERE4nzEd-pZLs28ekBmw" annotatedElement="_3mF1iE4LEd-G-pSkcIGh3w">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mF1iU4LEd-G-pSkcIGh3w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mF1ik4LEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -4932,7 +4934,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
           <ownedComment xmi:id="_5DI8g4nzEd-pZLs28ekBmw" annotatedElement="_TrqCy2TSEd-M5IWg2-DxLQ">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_e_d78yxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_e_d78yxAEd-8mcmtGejV_Q?ecl/ecl/GenderCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrqCzGTSEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrqCzWTSEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -4975,7 +4977,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
           <ownedComment xmi:id="_5Dceg4nzEd-pZLs28ekBmw" annotatedElement="_TrqC3WTSEd-M5IWg2-DxLQ">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_95QxADa8Ed-wQf5UFCJMDw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_95QxADa8Ed-wQf5UFCJMDw?ecl/ecl/ResidenceCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrqC3mTSEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrqC32TSEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5071,7 +5073,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
           <ownedComment xmi:id="_O0vFMGTUEd-M5IWg2-DxLQ" annotatedElement="_O0lUR2TUEd-M5IWg2-DxLQ">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_ifIgwyxAEd-8mcmtGejV_Q?ecl/ecl/PayerResponsibilityCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0vFMWTUEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFMmTUEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5079,7 +5081,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
           <ownedComment xmi:id="_O0vFNGTUEd-M5IWg2-DxLQ" annotatedElement="_O0vFM2TUEd-M5IWg2-DxLQ">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_fj0mMCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_fj0mMCxAEd-8mcmtGejV_Q?ecl/ecl/PatientRelationshipCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0vFNWTUEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFNmTUEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5115,7 +5117,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
           <ownedComment xmi:id="_aAqCEYnWEd-pZLs28ekBmw" annotatedElement="_O0vFRWTUEd-M5IWg2-DxLQ">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_aVQpsE45Ed-G-pSkcIGh3w?ecl/ecl/ConsentCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0vFRmTUEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFR2TUEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -5137,7 +5139,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
           <ownedComment xmi:id="_aBGuAYnWEd-pZLs28ekBmw" annotatedElement="_O0vFTmTUEd-M5IWg2-DxLQ">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_iw3J8SxAEd-8mcmtGejV_Q?ecl/ecl/ServiceTypeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0vFT2TUEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFUGTUEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5240,7 +5242,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
           <ownedComment xmi:id="_eexGAIkvEd-pZLs28ekBmw" annotatedElement="_40XeFWTWEd-M5IWg2-DxLQ">
             <body>Note: Value 0 = No Product Selection Indicated. This value should be used to designate that substitutions are allowed.  When a prescriber wishes to allow substitutes for a NewRx, this field should be 0 to reflect that substitutions can be allowed.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeFmTWEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeF2TWEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -5283,7 +5285,7 @@ When the ServiceReasonCode is sent from the pharmacist to the prescriber, the Se
           <ownedComment xmi:id="_bCOtsIkvEd-pZLs28ekBmw" annotatedElement="_40XeJ2TWEd-M5IWg2-DxLQ">
             <body>See Imp Guide for more information.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeKGTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeKWTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5291,7 +5293,7 @@ When the ServiceReasonCode is sent from the pharmacist to the prescriber, the Se
           <ownedComment xmi:id="_fIGLEInYEd-pZLs28ekBmw" annotatedElement="_40XeKmTWEd-M5IWg2-DxLQ">
             <body>The status of the prescription’s prior authorization as known by the sender.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeK2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeLGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5346,7 +5348,7 @@ When the ServiceReasonCode is sent from the pharmacist to the prescriber, the Se
             <body>Used for medications ordered by a prescriber but not requiring dispensing at this time, but may be required for administration and may be available for drug-to-drug interactions.
 If the prescriber knows the patient does not need the prescription filled right away, then they should send the pharmacy this indicator</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeQ2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeRGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5387,7 +5389,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <ownedComment xmi:id="_zHA8YIkvEd-pZLs28ekBmw" annotatedElement="_40XeVGTWEd-M5IWg2-DxLQ">
             <body>Code conveying the method by which the order was defined by the prescriber and captured in the prescribing system.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeVWTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeVmTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5413,7 +5415,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yftn0abiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yftn0KbiEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -5583,7 +5585,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_sP3yRYnbEd-pZLs28ekBmw" annotatedElement="_r9HCVmTXEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCV2TXEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCWGTXEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -5626,7 +5628,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_sOrfdYnbEd-pZLs28ekBmw" annotatedElement="_r9HCaGTXEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCaWTXEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCamTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5634,7 +5636,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_sPk3VYnbEd-pZLs28ekBmw" annotatedElement="_r9HCa2TXEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCbGTXEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCbWTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5691,7 +5693,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_sOrfcYnbEd-pZLs28ekBmw" annotatedElement="_r9HCg2TXEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HChGTXEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HChWTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5734,7 +5736,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_sPR8ZYnbEd-pZLs28ekBmw" annotatedElement="_r9HClWTXEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HClmTXEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCl2TXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5769,7 +5771,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1datQqbiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1datQ6biEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -5939,7 +5941,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_uGVkoYnbEd-pZLs28ekBmw" annotatedElement="_G-g2VmTcEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2V2TcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2WGTcEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -5982,7 +5984,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_uFAH5YnbEd-pZLs28ekBmw" annotatedElement="_G-g2aGTcEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2aWTcEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2amTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -5990,7 +5992,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_uGCpsYnbEd-pZLs28ekBmw" annotatedElement="_G-g2a2TcEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2bGTcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2bWTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -6047,7 +6049,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_uFAH4YnbEd-pZLs28ekBmw" annotatedElement="_G-g2g2TcEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2hGTcEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2hWTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -6090,7 +6092,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_uFl9xYnbEd-pZLs28ekBmw" annotatedElement="_G-g2lWTcEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2lmTcEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2l2TcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -6125,7 +6127,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_18aWYqbiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_18aWY6biEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -6295,7 +6297,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_kA0tNYnbEd-pZLs28ekBmw" annotatedElement="_QQEgRmTnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgR2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgSGTnEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -6338,7 +6340,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_j_oaYYnbEd-pZLs28ekBmw" annotatedElement="_QQEgWGTnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgWWTnEd-Y0upv2_lheQ" value="5"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgWmTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6346,7 +6348,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_kAhLNYnbEd-pZLs28ekBmw" annotatedElement="_QQEgW2TnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgXGTnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgXWTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6403,7 +6405,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_j_epY4nbEd-pZLs28ekBmw" annotatedElement="_QQEgc2TnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgdGTnEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgdWTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6446,7 +6448,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_kAOQQ4nbEd-pZLs28ekBmw" annotatedElement="_QQEghWTnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEghmTnEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgh2TnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6481,7 +6483,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3TbzsqbiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Tbzs6biEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -6651,7 +6653,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_lyEoYYnbEd-pZLs28ekBmw" annotatedElement="_YxfSRmToEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSR2ToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSSGToEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -6694,7 +6696,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_lwuklYnbEd-pZLs28ekBmw" annotatedElement="_YxfSWGToEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSWWToEd-Y0upv2_lheQ" value="5"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSWmToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6702,7 +6704,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_lxxGYYnbEd-pZLs28ekBmw" annotatedElement="_YxfSW2ToEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSXGToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSXWToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6759,7 +6761,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_lwukkYnbEd-pZLs28ekBmw" annotatedElement="_YxfSc2ToEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSdGToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSdWToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6802,7 +6804,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_lxVBhYnbEd-pZLs28ekBmw" annotatedElement="_YxfShWToEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfShmToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSh2ToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -6837,7 +6839,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y4KiQqbiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y4KiQ6biEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -7007,7 +7009,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_aenXJYnbEd-pZLs28ekBmw" annotatedElement="_QuYiBmTpEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiB2TpEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiCGTpEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -7050,7 +7052,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_adbEV4nbEd-pZLs28ekBmw" annotatedElement="_QuYiGGTpEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiGWTpEd-Y0upv2_lheQ" value="5"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiGmTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7058,7 +7060,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_aeUcNonbEd-pZLs28ekBmw" annotatedElement="_QuYiG2TpEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiHGTpEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiHWTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7115,7 +7117,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_adbEU4nbEd-pZLs28ekBmw" annotatedElement="_QuYiM2TpEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiNGTpEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiNWTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7158,7 +7160,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_aeBhRYnbEd-pZLs28ekBmw" annotatedElement="_QuYiRWTpEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiRmTpEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiR2TpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7193,7 +7195,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4kpj8qbiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4kpj86biEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -7363,7 +7365,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_qsod5YnbEd-pZLs28ekBmw" annotatedElement="_P_eYJmTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYJ2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYKGTqEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -7406,7 +7408,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_qrcLFYnbEd-pZLs28ekBmw" annotatedElement="_P_eYOGTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYOWTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYOmTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7414,7 +7416,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_qsVi9YnbEd-pZLs28ekBmw" annotatedElement="_P_eYO2TqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYPGTqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYPWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7471,7 +7473,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_qrcLEYnbEd-pZLs28ekBmw" annotatedElement="_P_eYU2TqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYVGTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYVWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7514,7 +7516,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_qsCoBInbEd-pZLs28ekBmw" annotatedElement="_P_eYZWTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYZmTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYZ2TqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7549,7 +7551,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0-bEIqbiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0-bEI6biEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -7719,7 +7721,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_wTv3ZYnbEd-pZLs28ekBmw" annotatedElement="_wROoRmTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoR2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoSGTqEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -7762,7 +7764,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_wSjklYnbEd-pZLs28ekBmw" annotatedElement="_wROoWGTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoWWTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoWmTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7770,7 +7772,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_wTc8d4nbEd-pZLs28ekBmw" annotatedElement="_wROoW2TqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoXGTqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoXWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7827,7 +7829,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_wSjkkYnbEd-pZLs28ekBmw" annotatedElement="_wROoc2TqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROodGTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROodWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -7870,7 +7872,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_wTKBhYnbEd-pZLs28ekBmw" annotatedElement="_wROohWTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROohmTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoh2TqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -8061,7 +8063,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_hjUI8YnbEd-pZLs28ekBmw" annotatedElement="_MqbSdmTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSd2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSeGTrEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -8104,7 +8106,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_hiH2IYnbEd-pZLs28ekBmw" annotatedElement="_MqbSiGTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSiWTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSimTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -8112,7 +8114,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_hjBOAYnbEd-pZLs28ekBmw" annotatedElement="_MqbSi2TrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSjGTrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSjWTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -8169,7 +8171,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_hh-FI4nbEd-pZLs28ekBmw" annotatedElement="_MqbSo2TrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSpGTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSpWTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -8212,7 +8214,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_hikiF4nbEd-pZLs28ekBmw" annotatedElement="_MqbStWTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbStmTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSt2TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -8247,7 +8249,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3y4IwqbiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3y4Iw6biEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -8417,7 +8419,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_pHAj5YnbEd-pZLs28ekBmw" annotatedElement="_krxypmTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyp2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyqGTrEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -8460,7 +8462,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_pF0RFYnbEd-pZLs28ekBmw" annotatedElement="_krxyuGTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hsnetCxAEd-8mcmtGejV_Q?ecl/ecl/DrugCoverageStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyuWTrEd-Y0upv2_lheQ" value="5"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyumTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -8468,7 +8470,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_pG2y4YnbEd-pZLs28ekBmw" annotatedElement="_krxyu2TrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h3MXASxAEd-8mcmtGejV_Q?ecl/ecl/PriorAuthorizationStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyvGTrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyvWTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -8525,7 +8527,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_pF0REYnbEd-pZLs28ekBmw" annotatedElement="_krxy02TrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hq0u8SxAEd-8mcmtGejV_Q?ecl/ecl/DoNotFillCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxy1GTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxy1WTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -8568,7 +8570,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_pGaG9YnbEd-pZLs28ekBmw" annotatedElement="_krxy5WTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_k3rbkDEZEd-8rpqfOAePKg?ecl/ecl/OrderCaptureMethodCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxy5mTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxy52TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
@@ -8603,7 +8605,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
  
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0bZ2oqbiEd-2262i8oXgXw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0bZ2o6biEd-2262i8oXgXw"/>
         </ownedAttribute>
@@ -8771,7 +8773,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_0uuYkIrFEd-urZQZ08VCKQ" annotatedElement="_4Szh8TD1Ed-8rpqfOAePKg">
             <body>Approved may contain a ReasonCode.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4S9S5TD1Ed-8rpqfOAePKg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4S9S5jD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -8795,7 +8797,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_7kqVoIrFEd-urZQZ08VCKQ" annotatedElement="_4TQN5zD1Ed-8rpqfOAePKg">
             <body>ApprovedWithChanges may be accompanied by a ReasonCode.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TQN6TD1Ed-8rpqfOAePKg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TQN6jD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -8819,7 +8821,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <details xmi:id="_-MDMwX-PEd-eN4XJATQmiQ" key="abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_JTt-0E46Ed-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JTt-0U46Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JTt-0k46Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -8954,7 +8956,7 @@ If recipient is a pharmacy, Pharmacy is required.</body>
           <ownedComment xmi:id="_W7eokInQEd-pZLs28ekBmw" annotatedElement="_eG3oME47Ed-G-pSkcIGh3w">
             <body>Only allowed in the Census message, when the AnticipatedReturn date (AR) and the ChangeRequestType is Hospital Leave of Absence (LG) or Therapeutic Leave of Absence (LT)</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w?ecl/ecl/DispensingRequestCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oAMoUU48Ed-G-pSkcIGh3w" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oAMoUE48Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -9006,7 +9008,7 @@ If recipient is a pharmacy, Pharmacy is required.</body>
           <details xmi:id="_-8B4MX-PEd-eN4XJATQmiQ" key="abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_ZfPhQEyEEd-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Js9I0FJZEd-gUbUlN-XGdw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JszX0FJZEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -9118,7 +9120,7 @@ If recipient is a pharmacy, Pharmacy is required.</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_0sR68D2JEd-xgfp6zNZIHA" name="DeniedType">
         <ownedAttribute xmi:id="_0sR68T2JEd-xgfp6zNZIHA" name="ReasonCode">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0sR68j2JEd-xgfp6zNZIHA" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0sR68z2JEd-xgfp6zNZIHA" value="1"/>
         </ownedAttribute>
@@ -9179,7 +9181,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <ownedComment xmi:id="_FBbd0InQEd-pZLs28ekBmw" annotatedElement="_fxed8U49Ed-G-pSkcIGh3w">
             <body>See SpecializedRequest for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fxed8k49Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxed8049Ed-G-pSkcIGh3w" value="1"/>
         </ownedAttribute>
@@ -9306,7 +9308,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <ownedComment xmi:id="_FBST4YnQEd-pZLs28ekBmw" annotatedElement="_fxeeLE49Ed-G-pSkcIGh3w">
             <body>See SpecializedRequest for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w?ecl/ecl/DispensingRequestCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fxeeLU49Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxeeLk49Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -9329,7 +9331,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <ownedComment xmi:id="_c6K_IYnREd-pZLs28ekBmw" annotatedElement="_NjMTIU4-Ed-G-pSkcIGh3w">
             <body>See SpecializedRequest for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTIk4-Ed-G-pSkcIGh3w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTI04-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -9456,7 +9458,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <ownedComment xmi:id="_c6BOIonREd-pZLs28ekBmw" annotatedElement="_NjMTXE4-Ed-G-pSkcIGh3w">
             <body>See SpecializedRequest for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w?ecl/ecl/DispensingRequestCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTXU4-Ed-G-pSkcIGh3w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTXk4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -9479,7 +9481,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <ownedComment xmi:id="_7J-loInREd-pZLs28ekBmw" annotatedElement="_vUdOMU4-Ed-G-pSkcIGh3w">
             <body>See SpecialzedResponse for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MEzJ8VJZEd-gUbUlN-XGdw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MEzJ8FJZEd-gUbUlN-XGdw"/>
         </ownedAttribute>
@@ -9702,7 +9704,7 @@ elements for each transaction.</body>
 
 Is not required in a Verify transaction. If used, must be 010 and DescriptionCodes may not be used. Description may be used.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_tDy00IVBEd-PfKcU8Giing"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_tDy00IVBEd-PfKcU8Giing?ecl/ecl/TransactionErrorCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIvTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIvjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -9711,7 +9713,7 @@ Is not required in a Verify transaction. If used, must be 010 and DescriptionCod
             <body>Reject codes used by responder who takes responsibility for transaction.  
 Is not required in a Verify transaction. If used, Code must be 010 and DescriptionCode may not be used. Note field may be used.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hAD6sCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hAD6sCxAEd-8mcmtGejV_Q?ecl/ecl/DescriptionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIwTD1Ed-8rpqfOAePKg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIwjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -9789,7 +9791,7 @@ Description may be used.
 Value 010 (Successful – accepted by ultimate receiver) is to let the sender know that the message has been received by organization guaranteeing delivery. This value may only be used in a direct connect. It is not to be used in a mailbox environment.
 					</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_eu1nEGdpEd-EzKeHnOFaKw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_eu1nEGdpEd-EzKeHnOFaKw?ecl/ecl/StatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4aZ-tjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4aZ-tzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -9798,7 +9800,7 @@ Value 010 (Successful – accepted by ultimate receiver) is to let the sender kn
             <body>Reject codes used by responder who takes responsibility for transaction.  
 Is not required in a Verify transaction. If used, Code must be 010 and DescriptionCode may not be used. Note field may be used.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hAD6sCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hAD6sCxAEd-8mcmtGejV_Q?ecl/ecl/DescriptionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4aZ-wzD1Ed-8rpqfOAePKg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4aZ-xDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -9810,7 +9812,7 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
           <ownedComment xmi:id="_4ajIozD1Ed-8rpqfOAePKg" annotatedElement="_4ajIojD1Ed-8rpqfOAePKg">
             <body>The method through which the original electronically created transaction was delivered to its intended recipient. The presence of this value will confirm to the original sender the delivery method ultimately employed to successfully deliver the transaction to its intended recipient; clarity in ultimate delivery method will assist with any troubleshooting or transaction tracing that may take place.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h25cFCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h25cFCxAEd-8mcmtGejV_Q?ecl/ecl/PrescriptionDeliveryMethod?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIqjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIqzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -9907,7 +9909,7 @@ Is not required in a Verify transaction. If used, must be 010 and DescriptionCod
 
 When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 010 will include the delivery method.								</body>
             </ownedComment>
-            <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h25cFCxAEd-8mcmtGejV_Q"/>
+            <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_h25cFCxAEd-8mcmtGejV_Q?ecl/ecl/PrescriptionDeliveryMethod?"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4as5uzD1Ed-8rpqfOAePKg" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4as5vDD1Ed-8rpqfOAePKg"/>
           </ownedAttribute>
@@ -10063,7 +10065,7 @@ In any transaction that a reference number assigned by the prescribing system is
           <ownedComment xmi:id="_27-XwX-XEd-eN4XJATQmiQ" annotatedElement="_27-XwH-XEd-eN4XJATQmiQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_cQxVAIL7Ed-qIZqYwtZPyA"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_cQxVAIL7Ed-qIZqYwtZPyA?ecl/ecl/TransactionDomainVersionQualifierCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_27-Xwn-XEd-eN4XJATQmiQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_27-Xw3-XEd-eN4XJATQmiQ" value="1"/>
         </ownedAttribute>
@@ -10731,7 +10733,7 @@ In any transaction that a reference number assigned by the prescribing system is
           <details xmi:id="_cYf6MGWaEd-bmP0HuKmipA" key="Abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_oustEWHEEd-Xe4OIcNINMg" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oustEmHEEd-Xe4OIcNINMg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustE2HEEd-Xe4OIcNINMg"/>
         </ownedAttribute>
@@ -10759,7 +10761,7 @@ all other values = no return receipt requested.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustH2HEEd-Xe4OIcNINMg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_37eNkGNWEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vJu1sWNXEd-ODMSOo4sPFQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vJu1sGNXEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -10907,7 +10909,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <details xmi:id="_wqgeAWWeEd-bmP0HuKmipA" key="Abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_6Wj902REEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Wj91GREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Wj91WREEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -10926,7 +10928,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EnFA02REEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_6Wj90GREEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Wj90WREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Wj90mREEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11004,7 +11006,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rn_Zo2NYEd-ODMSOo4sPFQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Rn_ZrGNYEd-ODMSOo4sPFQ" name="DrugAdminReasonCode">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_dx0jEGQlEd-ODMSOo4sPFQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_dx0jEGQlEd-ODMSOo4sPFQ?ecl/ecl/DrugAdminReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rn_ZrmNYEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rn_Zr2NYEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11083,7 +11085,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_KWg24Yn2Ed-pZLs28ekBmw" annotatedElement="_AteYMWQnEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AteYMmQnEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AteYM2QnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11112,7 +11114,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_KWEK8on2Ed-pZLs28ekBmw" annotatedElement="_AteYQGQnEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AteYQWQnEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AteYQmQnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11236,7 +11238,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_HS24pYn2Ed-pZLs28ekBmw" annotatedElement="_qy3FkmQnEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qy3Fk2QnEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qy3FlGQnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11265,7 +11267,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_HSaMson2Ed-pZLs28ekBmw" annotatedElement="_qy3FoWQnEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qy3FomQnEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qy3Fo2QnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11322,7 +11324,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_HSaMton2Ed-pZLs28ekBmw" annotatedElement="_qy3FtmQnEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w?ecl/ecl/DispensingRequestCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qy3Ft2QnEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qy3FuGQnEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11397,7 +11399,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_F5c1s4n2Ed-pZLs28ekBmw" annotatedElement="_AdHLgmQoEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AdHLg2QoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AdHLhGQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11426,7 +11428,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_F5AJwon2Ed-pZLs28ekBmw" annotatedElement="_AdHLkWQoEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AdHLkmQoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AdHLk2QoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11483,7 +11485,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_F5J6wYn2Ed-pZLs28ekBmw" annotatedElement="_AdHLpmQoEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w?ecl/ecl/DispensingRequestCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AdHLp2QoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AdHLqGQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11558,7 +11560,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_C89PZYn2Ed-pZLs28ekBmw" annotatedElement="_TeiOAmQoEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_oCxxQGdhEd-EzKeHnOFaKw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_oCxxQGdhEd-EzKeHnOFaKw?ecl/ecl/RxChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TeiOA2QoEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeiOBGQoEd-ODMSOo4sPFQ" value="1"/>
         </ownedAttribute>
@@ -11587,7 +11589,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_C8gjcon2Ed-pZLs28ekBmw" annotatedElement="_TeiOEWQoEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TeiOEmQoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeiOE2QoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11644,7 +11646,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_C8ptYYn2Ed-pZLs28ekBmw" annotatedElement="_TeiOJmQoEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w?ecl/ecl/DispensingRequestCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TeiOJ2QoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeiOKGQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11719,7 +11721,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_BLtUM4n2Ed-pZLs28ekBmw" annotatedElement="_nufgMmQoEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DzcqYWc3Ed-EzKeHnOFaKw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DzcqYGc3Ed-EzKeHnOFaKw"/>
         </ownedAttribute>
@@ -11748,7 +11750,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_BLG3Qon2Ed-pZLs28ekBmw" annotatedElement="_nufgQWQoEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nufgQmQoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nufgQ2QoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11805,7 +11807,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_BLQoQ4n2Ed-pZLs28ekBmw" annotatedElement="_nufgVmQoEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w?ecl/ecl/DispensingRequestCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nufgV2QoEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nufgWGQoEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11880,7 +11882,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_-OTu9Yn1Ed-pZLs28ekBmw" annotatedElement="_mSBeAmQvEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSBeA2QvEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeBGQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -11909,7 +11911,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_-OA0AIn1Ed-pZLs28ekBmw" annotatedElement="_mSBeEWQvEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSBeEmQvEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeE2QvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -12033,7 +12035,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_I0d1U4n2Ed-pZLs28ekBmw" annotatedElement="_7NMQYmQvEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NMQY2QvEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NMQZGQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -12062,7 +12064,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_I0BJYon2Ed-pZLs28ekBmw" annotatedElement="_7NMQcWQvEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NMQcmQvEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NMQc2QvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -12186,7 +12188,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_ELVHBIn2Ed-pZLs28ekBmw" annotatedElement="_Z0C9kmQzEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z0C9k2QzEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z0C9lGQzEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -12215,7 +12217,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_EK4bEon2Ed-pZLs28ekBmw" annotatedElement="_Z0C9oWQzEd-ODMSOo4sPFQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z0C9omQzEd-ODMSOo4sPFQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z0C9o2QzEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -12406,7 +12408,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_Tsypx4n2Ed-pZLs28ekBmw" annotatedElement="_r3LRMGRGEd-M5IWg2-DxLQ">
             <body>See SCRIPTResponse for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r3LRMWRGEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r3LRMmRGEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -12428,7 +12430,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_Tspf0on2Ed-pZLs28ekBmw" annotatedElement="_r3CHQGRGEd-M5IWg2-DxLQ">
             <body>See SCRIPTResponse for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r3CHQWRGEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r3CHQmRGEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -12522,7 +12524,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_SxL9I4n2Ed-pZLs28ekBmw" annotatedElement="_yJEGA2RGEd-M5IWg2-DxLQ">
             <body>See SCRIPTResponse for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_oCxxQGdhEd-EzKeHnOFaKw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_oCxxQGdhEd-EzKeHnOFaKw?ecl/ecl/RxChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJEGBGRGEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJEGBWRGEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -12544,7 +12546,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_SxCzMIn2Ed-pZLs28ekBmw" annotatedElement="_yJEGAGRGEd-M5IWg2-DxLQ">
             <body>See SCRIPTResponse for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJEGAWRGEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJEGAmRGEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -12638,7 +12640,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_bR1IhYn2Ed-pZLs28ekBmw" annotatedElement="_-8j4kWREEd-ODMSOo4sPFQ">
             <body>See SCRIPTResponse for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hLAxkGdIEd-EzKeHnOFaKw?ecl/ecl/LTCLevelOfChangeCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-8j4kmREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-8j4k2REEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -12660,7 +12662,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedComment xmi:id="_bRrXgon2Ed-pZLs28ekBmw" annotatedElement="_-8j4nGREEd-ODMSOo4sPFQ">
             <body>See SCRIPTResponse for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-8j4nWREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-8j4nmREEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
@@ -12769,7 +12771,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <body>This response is sent from an entity to an entity to describe the patient’s medication history.</body>
         </ownedComment>
         <ownedAttribute xmi:id="_bFIa4WRHEd-M5IWg2-DxLQ" name="MessageRequestCode" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa4mRHEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIa42RHEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -12788,7 +12790,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIa62RHEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_bFIa7GRHEd-M5IWg2-DxLQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa7WRHEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIa7mRHEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -12873,7 +12875,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
             <body>RES-020
 Approved may contain a ReasonCode.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9yNk2WUEd-bmP0HuKmipA" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9yNlGWUEd-bmP0HuKmipA"/>
         </ownedAttribute>
@@ -12898,7 +12900,7 @@ Approved may contain a ReasonCode.</body>
             <body>RES-020
 ApprovedWithChanges may be accompanied by a ReasonCode.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9yNtWWUEd-bmP0HuKmipA" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9yNtmWUEd-bmP0HuKmipA"/>
         </ownedAttribute>
@@ -12922,7 +12924,7 @@ ApprovedWithChanges may be accompanied by a ReasonCode.</body>
           <ownedComment xmi:id="_f9yNxWWUEd-bmP0HuKmipA">
             <body>RES-020</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9yNxmWUEd-bmP0HuKmipA" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9yNx2WUEd-bmP0HuKmipA" value="1"/>
         </ownedAttribute>
@@ -13077,7 +13079,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
             <body>RES-020
 A DenialReason or DeniedTransferredType or DeniedNewRxToFollow response must be accompanied by the ReasonCode or DenialReason explanation, or both.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JThsk3pjEd-WhYpqDne-kg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JThslHpjEd-WhYpqDne-kg" value="1"/>
         </ownedAttribute>
@@ -13117,7 +13119,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
           <ownedComment xmi:id="_ty7hgnpmEd-WhYpqDne-kg">
             <body>RES-020</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_AfO38Gj1Ed-Pd7zqA0IwbQ?ecl/ecl/ReasonCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ty7hg3pmEd-WhYpqDne-kg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ty7hhHpmEd-WhYpqDne-kg" value="1"/>
         </ownedAttribute>
@@ -14433,7 +14435,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
           <ownedComment xmi:id="_WpnDAqb8Ed-Nwtj6LSx65w">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_yduT4KbgEd-2262i8oXgXw?ecl/ecl/ReasonForSubstitutionCodeUsed?"/>
         </ownedAttribute>
       </packagedElement>
     </packagedElement>

@@ -1021,8 +1021,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
       <xsd:element name="SocialSecurity" type="datatypes:an..35M"/>
       <xsd:element name="NPI" type="datatypes:an..35M"/>
       <xsd:element name="PriorAuthorization" type="datatypes:an..35M"/>
-      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35M"/>
+      <xsd:element name="CertificateToPrescribe" type="datatypes:an..35M"/>
       <xsd:element name="MutuallyDefined" type="datatypes:an..35M"/>
+      <xsd:element name="Data2000WaiverID" type="datatypes:an..35M"/>
     </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1057,8 +1058,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
       <xsd:element name="SocialSecurity" type="datatypes:an..35M"/>
       <xsd:element name="NPI" type="datatypes:an..35M"/>
       <xsd:element name="PriorAuthorization" type="datatypes:an..35M"/>
-      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35M"/>
+      <xsd:element name="CertificateToPrescribe" type="datatypes:an..35M"/>
       <xsd:element name="MutuallyDefined" type="datatypes:an..35M"/>
+      <xsd:element name="Data2000WaiverID" type="datatypes:an..35M"/>
     </xsd:choice>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1131,7 +1133,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
       <xsd:element name="SocialSecurity" type="datatypes:an..35M"/>
       <xsd:element name="NPI" type="datatypes:an..35M"/>
       <xsd:element name="PriorAuthorization" type="datatypes:an..35M"/>
-      <xsd:element name="CertificatetoPrescribe" type="datatypes:an..35M"/>
+      <xsd:element name="CertificateToPrescribe" type="datatypes:an..35M"/>
       <xsd:element name="Data2000WaiverID" type="datatypes:an..35M"/>
       <xsd:element name="MutuallyDefined" type="datatypes:an..35M"/>
     </xsd:choice>
