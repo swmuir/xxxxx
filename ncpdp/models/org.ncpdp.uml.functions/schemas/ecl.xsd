@@ -62,9 +62,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  ChangeofPrescriptionStatusCode  <<ncpdpecl>>  -->
+  <!--  ChangeOfPrescriptionStatusCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:simpleType name="ChangeofPrescriptionStatusCode">
+  <xsd:simpleType name="ChangeOfPrescriptionStatusCode">
     <xsd:annotation>
       <xsd:documentation>Used in the Cancel Request message when the prescriber wishes to notify the pharmacy to no longer continue dispensing any open refills on an active prescription or to cancel a prescription that has not yet been dispensed.</xsd:documentation>
     </xsd:annotation>
@@ -2586,6 +2586,26 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SourceOfInformationCode  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="SourceOfInformationCode">
+    <xsd:annotation>
+      <xsd:documentation>Sender indicates where the sender received the allergy information if known.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:Code">
+      <xsd:enumeration value="P">
+        <xsd:annotation>
+          <xsd:documentation>Indicates information is provided by the patient or patient representative or personal health record (PHR)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="C">
+        <xsd:annotation>
+          <xsd:documentation>Indicates information is provided by a clinician or provider</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  SourceQualifierCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="SourceQualifierCode">
@@ -2606,26 +2626,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:enumeration value="PY">
         <xsd:annotation>
           <xsd:documentation>Payer - Entity that processes the data submitted by a provider of pharmacy services for the purpose of receiving eligibility and coverage determination and/or payment.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  SourceofInformationCode  <<ncpdpecl>>  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:simpleType name="SourceofInformationCode">
-    <xsd:annotation>
-      <xsd:documentation>Sender indicates where the sender received the allergy information if known.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:restriction base="ecl:Code">
-      <xsd:enumeration value="P">
-        <xsd:annotation>
-          <xsd:documentation>Indicates information is provided by the patient or patient representative or personal health record (PHR)</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="C">
-        <xsd:annotation>
-          <xsd:documentation>Indicates information is provided by a clinician or provider</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
