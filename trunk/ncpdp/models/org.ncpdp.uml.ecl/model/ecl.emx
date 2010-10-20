@@ -913,7 +913,7 @@
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gkfZAyxAEd-8mcmtGejV_Q" name="ResultofServiceCode" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gkfZAyxAEd-8mcmtGejV_Q" name="ResultOfServiceCode" visibility="private">
         <ownedComment xmi:id="_gkfZBCxAEd-8mcmtGejV_Q">
           <body>Action taken by a pharmacist or prescriber in response to a conflict or the result of a pharmacist's professional service.</body>
         </ownedComment>
@@ -1481,7 +1481,7 @@
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h533kyxAEd-8mcmtGejV_Q" name="SourceofInformationCode">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h533kyxAEd-8mcmtGejV_Q" name="SourceOfInformationCode">
         <ownedComment xmi:id="_h533lCxAEd-8mcmtGejV_Q">
           <body>Sender indicates where the sender received the allergy information if known.</body>
         </ownedComment>
@@ -2706,7 +2706,7 @@
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_g4nO4CxAEd-8mcmtGejV_Q" name="UnitofMeasure" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_g4nO4CxAEd-8mcmtGejV_Q" name="UnitOfMeasure" visibility="private">
         <ownedComment xmi:id="_g4nO4SxAEd-8mcmtGejV_Q">
           <body>NCPDP standard product billing codes.</body>
         </ownedComment>
@@ -2802,7 +2802,7 @@
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h8QdNCxAEd-8mcmtGejV_Q" name="VehicleUnitofMeasureCodeQualifierSIGSegment" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h8QdNCxAEd-8mcmtGejV_Q" name="VehicleUnitOfMeasureCodeQualifierSIGSegment" visibility="private">
         <ownedComment xmi:id="_h8QdNSxAEd-8mcmtGejV_Q">
           <body>Qualifier to identify the code system being used</body>
         </ownedComment>
@@ -4303,7 +4303,7 @@
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ftgtsCxAEd-8mcmtGejV_Q" name="PlaceofService" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ftgtsCxAEd-8mcmtGejV_Q" name="PlaceOfService" visibility="private">
         <ownedComment xmi:id="_ftgtsSxAEd-8mcmtGejV_Q">
           <body>Code identifying the place where a drug or service is dispensed or administered.</body>
         </ownedComment>
@@ -8075,7 +8075,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <body>Qualifies the Measurement value. See 1131 - Code List Qualifier - used for Drug Strength Qualifier, 6411 - Measurement Unit Qualifier, and 6063 - Quantity Qualifier (X12 DE 355).</body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h3794CxAEd-8mcmtGejV_Q" name="RateUnitofMeasureCodeQualifierSIGSegment" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_h3794CxAEd-8mcmtGejV_Q" name="RateUnitOfMeasureCodeQualifierSIGSegment" visibility="private">
         <ownedComment xmi:id="_h3794SxAEd-8mcmtGejV_Q">
           <body>Qualifier to identify the code system being used</body>
         </ownedComment>
@@ -10125,7 +10125,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_fXASMSxAEd-8mcmtGejV_Q" name="NumberofRefillsAuthorized" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_fXASMSxAEd-8mcmtGejV_Q" name="NumberOfRefillsAuthorized" visibility="private">
         <ownedComment xmi:id="_fXASMixAEd-8mcmtGejV_Q">
           <body>Number of refills authorized by the prescriber.</body>
         </ownedComment>
@@ -11159,7 +11159,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_hv5cNCxAEd-8mcmtGejV_Q" name="IndicationValueUnitofMeasureCodeQualifierSIGSegment" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_hv5cNCxAEd-8mcmtGejV_Q" name="IndicationValueUnitOfMeasureCodeQualifierSIGSegment" visibility="private">
         <ownedComment xmi:id="_hv5cNSxAEd-8mcmtGejV_Q">
           <body>Qualifier to identify the code system being used</body>
         </ownedComment>
@@ -11478,7 +11478,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_fE-uESxAEd-8mcmtGejV_Q" name="LengthofNeedQualifier" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_fE-uESxAEd-8mcmtGejV_Q" name="LengthOfNeedQualifier" visibility="private">
         <ownedComment xmi:id="_fE-uEixAEd-8mcmtGejV_Q">
           <body>Code qualifying the length of need.</body>
         </ownedComment>
@@ -11518,7 +11518,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_fFuU8CxAEd-8mcmtGejV_Q" name="LevelofService" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_fFuU8CxAEd-8mcmtGejV_Q" name="LevelOfService" visibility="private">
         <ownedComment xmi:id="_fFuU8SxAEd-8mcmtGejV_Q">
           <body>Coding indicating the type of service the provider rendered.</body>
         </ownedComment>
@@ -13856,7 +13856,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ehg0oCxAEd-8mcmtGejV_Q" name="CompoundIngredientBasisofCostDetermination" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ehg0oCxAEd-8mcmtGejV_Q" name="CompoundIngredientBasisOfCostDetermination" visibility="private">
         <ownedComment xmi:id="_ehg0oSxAEd-8mcmtGejV_Q">
           <body>Code indicating the method by which the drug cost of an ingredient used in a compound was calculated.</body>
         </ownedComment>
@@ -14807,7 +14807,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_hsdtsSxAEd-8mcmtGejV_Q" name="DosingBasisUnitofMeasureCodeQualifierSIGSegment" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_hsdtsSxAEd-8mcmtGejV_Q" name="DosingBasisUnitOfMeasureCodeQualifierSIGSegment" visibility="private">
         <ownedComment xmi:id="_hsdtsixAEd-8mcmtGejV_Q">
           <body>Qualifier to identify the code system being used</body>
         </ownedComment>
@@ -16960,7 +16960,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_g9YaICxAEd-8mcmtGejV_Q" name="CalculatedDoseUnitofMeasureCodeQualifierSIGSegment" visibility="private">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_g9YaICxAEd-8mcmtGejV_Q" name="CalculatedDoseUnitOfMeasureCodeQualifierSIGSegment" visibility="private">
         <ownedComment xmi:id="_g9YaISxAEd-8mcmtGejV_Q">
           <body>Qualifier to identify the code system being used</body>
         </ownedComment>
@@ -17005,7 +17005,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_g9hkECxAEd-8mcmtGejV_Q" name="ChangeofPrescriptionStatusCode">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_g9hkECxAEd-8mcmtGejV_Q" name="ChangeOfPrescriptionStatusCode">
         <ownedComment xmi:id="_g9hkESxAEd-8mcmtGejV_Q">
           <body>Used in the Cancel Request message when the prescriber wishes to notify the pharmacy to no longer continue dispensing any open refills on an active prescription or to cancel a prescription that has not yet been dispensed.</body>
         </ownedComment>
@@ -17450,6 +17450,11 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedLiteral xmi:id="_21l0FWi7Ed-Pd7zqA0IwbQ" name="UP" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_21l0Fmi7Ed-Pd7zqA0IwbQ">
             <body>UPC</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_l5qsgNyNEd-_9uOIZZvC8Q" name="NH" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_IKX8oNyOEd-_9uOIZZvC8Q" annotatedElement="_l5qsgNyNEd-_9uOIZZvC8Q">
+            <body>HRI – Health Related Item - Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position.</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -17906,6 +17911,11 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedLiteral xmi:id="_Vq1fVoutEd-jMZ0z1K165w" name="SCD" classifier="_21l0EGi7Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_Vq1fV4utEd-jMZ0z1K165w" annotatedElement="_Vq1fVoutEd-jMZ0z1K165w">
             <body>RxNorm Semantic Clinical Drug (SCD) – A code maintained and distributed by National Library of Medicine (NLM) representing the ingredient plus form and dose strength.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_niAt4NyOEd-_9uOIZZvC8Q" name="NH" classifier="_QviC8IutEd-jMZ0z1K165w">
+          <ownedComment xmi:id="_qBwGwNyOEd-_9uOIZZvC8Q" annotatedElement="_niAt4NyOEd-_9uOIZZvC8Q">
+            <body>HRI – Health Related Item - Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position.</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -21860,4 +21870,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_QqSc0LRNEd-OvqUOofkjZQ" base_Comment="_QqIr0LRNEd-OvqUOofkjZQ"/>
   <Default:Documentation xmi:id="_aNaGoL0FEd-ck90f_7B41Q" base_Comment="_aNQVob0FEd-ck90f_7B41Q"/>
   <Default:Documentation xmi:id="_p__1or0FEd-ck90f_7B41Q" base_Comment="_p__1ob0FEd-ck90f_7B41Q"/>
+  <Default:Documentation xmi:id="_IKhtoNyOEd-_9uOIZZvC8Q" base_Comment="_IKX8oNyOEd-_9uOIZZvC8Q"/>
+  <Default:Documentation xmi:id="_qBwGwdyOEd-_9uOIZZvC8Q" base_Comment="_qBwGwNyOEd-_9uOIZZvC8Q"/>
 </xmi:XMI>
