@@ -1,0 +1,1876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_XDhwqhDXEd-FYLhLhjdPsQ" name="ServiceRebill">
+  <packagedElement xmi:type="uml:Class" xmi:id="_XDhwqxDXEd-FYLhLhjdPsQ" name="ServiceRebillTransactionHeaderSegment">
+    <ownedRule xmi:id="_XDhwrRDXEd-FYLhLhjdPsQ" name="ServiceRebillTransactionHeaderSegmenttransactionCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDhwrhDXEd-FYLhLhjdPsQ" name="ServiceRebillTransactionHeaderSegmenttransactionCode Analysis Rule">
+        <language>Analysis</language>
+        <body>For Transaction Code of ?S3?, in the Claim Segment, the Prescription/Service Reference Number Qualifier (455-EM) is ?2? (Service Billing).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XDhwrBDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_G91XQA6ZEd-RjqmAV7zMCg?telecom/TransactionHeaderSegment?"/>
+    </generalization>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XDhwrxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegment">
+    <ownedRule xmi:id="_XDhwsRDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentcardholderFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDhwshDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentcardholderFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs when the cardholder has a first name.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDhwtRDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentcardholderLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDhwthDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentcardholderLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDhwuRDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmenthomePlan">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDhwuhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmenthomePlan Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed for receiver billing validation and/or determination for Blue Cross or Blue Shield, if a Patient has coverage under more than one plan, to distinguish each plan.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDhwvRDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentplanId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDhwvhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentplanId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDhwwRDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmenteligibilityClarificationCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDhwwhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmenteligibilityClarificationCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed for receiver inquiry validation and/or determination, when eligibility is not maintained at the dependent level. Required in special situations as defined by the code to clarify the eligibility of an individual, which may extend coverage.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDhwxRDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentgroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDhwxhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentgroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if needed for pharmacy claim processing and payment.&#xA;&#xA;Required if needed to match the reversal to the original billing transaction.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDhwyRDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentpersonCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDhwyhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentpersonCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to uniquely identify the family members within the Cardholder ID.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhohDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentpatientRelationshipCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhoxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentpatientRelationshipCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to uniquely identify the relationship of the Patient to the Cardholder ID.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhphDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentotherPayerBinNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhpxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentotherPayerBinNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhqhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentotherPayerProcessorControlNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhqxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentotherPayerProcessorControlNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhrhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentotherPayerCardholderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhrxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentotherPayerCardholderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhshDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentotherPayerGroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhsxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentotherPayerGroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhthDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentmedigapId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhtxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentmedigapId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required, if known, when patient has Medigap coverage.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhuhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentmedicaidIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhuxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentmedicaidIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required, if known, when patient has Medicaid coverage.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhvhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentproviderAcceptAssignmentIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhvxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentproviderAcceptAssignmentIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhwhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentcmsPartDDefinedQualifiedFacility">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhwxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentcmsPartDDefinedQualifiedFacility Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhxhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentmedicaidIdNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhxxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentmedicaidIdNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XDrhyhDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentmedicaidAgencyNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XDrhyxDXEd-FYLhLhjdPsQ" name="ServiceRebillInsuranceSegmentmedicaidAgencyNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XDhwsBDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuBgA9xEd-b2MdXdLPaUQ?telecom/InsuranceSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XDhwsxDXEd-FYLhLhjdPsQ" name="cardholderFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDhwtBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDhwtxDXEd-FYLhLhjdPsQ" name="cardholderLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDhwuBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDhwuxDXEd-FYLhLhjdPsQ" name="homePlan" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDhwvBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDhwvxDXEd-FYLhLhjdPsQ" name="planId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDhwwBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDhwwxDXEd-FYLhLhjdPsQ" name="eligibilityClarificationCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDhwxBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDhwxxDXEd-FYLhLhjdPsQ" name="groupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDhwyBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhoBDXEd-FYLhLhjdPsQ" name="personCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhoRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhpBDXEd-FYLhLhjdPsQ" name="patientRelationshipCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhpRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhqBDXEd-FYLhLhjdPsQ" name="otherPayerBinNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhqRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhrBDXEd-FYLhLhjdPsQ" name="otherPayerProcessorControlNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhrRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhsBDXEd-FYLhLhjdPsQ" name="otherPayerCardholderId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhsRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhtBDXEd-FYLhLhjdPsQ" name="otherPayerGroupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhtRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhuBDXEd-FYLhLhjdPsQ" name="medigapId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhuRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhvBDXEd-FYLhLhjdPsQ" name="medicaidIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhvRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhwBDXEd-FYLhLhjdPsQ" name="providerAcceptAssignmentIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhwRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhxBDXEd-FYLhLhjdPsQ" name="cmsPartDDefinedQualifiedFacility" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhxRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhyBDXEd-FYLhLhjdPsQ" name="medicaidIdNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhyRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XDrhzBDXEd-FYLhLhjdPsQ" name="medicaidAgencyNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDrhzRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XD0rkBDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegment">
+    <ownedRule xmi:id="_XD0rkhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0rkxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Patient ID (332-CY) is used. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD0rlhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0rlxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs to validate dual eligibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD0rmhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentdateOfBirth">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0rmxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentdateOfBirth Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD0rnhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientGenderCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0rnxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientGenderCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD0rohDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0roxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required when the patient has a first name.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD0rphDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0rpxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD0rqhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0rqxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD0rrhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0rrxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD0rshDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientState/ProvinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0rsxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientState/ProvinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD0rthDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD0rtxDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-ckRDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientPhoneNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-ckhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientPhoneNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Optional.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-clRDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentplaceOfService">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-clhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentplaceOfService Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-cmRDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentemployerId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cmhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentemployerId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if ?required by law? as defined in the HIPAA final Privacy regulations section 164.501 definitions (45 CFR Parts 160 and 164 Standards for Privacy of Individually Identifiable Health Information; Final Rule -&#xA;Thursday, December 28, 2000, page 82803 and following, and Wednesday, August 14, 2002, page 53267 and following.)&#xA;&#xA;Required if needed for Workers Compensation billing.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-cnRDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentsmoker/Non-smokerCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cnhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentsmoker/Non-smokerCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-coRDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpregnancyIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cohDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpregnancyIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill: &#xA;Required if pregnancy could result in different coverage, pricing, or patient financial responsibility.&#xA;&#xA;Required if ?required by law? as defined in the HIPAA final Privacy regulations section 164.501 definitions (45 CFR Parts 160 and 164 Standards for Privacy of Individually&#xA;Identifiable Health Information; Final Rule -&#xA;Thursday, December 28, 2000, page 82803 and following, and Wednesday, August 14, 2002, page 53267 and following.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-cpRDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientE-mailAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cphDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientE-mailAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;May be submitted for the receiver to relay patient health care communications via the Internet when provided by the patient.&#xA;&#xA;This field is informational only.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-cqRDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientResidence">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cqhDXEd-FYLhLhjdPsQ" name="ServiceRebillPatientSegmentpatientResidence Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XD0rkRDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuCFg9xEd-b2MdXdLPaUQ?telecom/PatientSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XD0rlBDXEd-FYLhLhjdPsQ" name="patientIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD0rlRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD0rmBDXEd-FYLhLhjdPsQ" name="patientId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD0rmRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD0rnBDXEd-FYLhLhjdPsQ" name="dateOfBirth" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD0rnRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD0roBDXEd-FYLhLhjdPsQ" name="patientGenderCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD0roRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD0rpBDXEd-FYLhLhjdPsQ" name="patientFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD0rpRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD0rqBDXEd-FYLhLhjdPsQ" name="patientLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD0rqRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD0rrBDXEd-FYLhLhjdPsQ" name="patientStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD0rrRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD0rsBDXEd-FYLhLhjdPsQ" name="patientCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD0rsRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD0rtBDXEd-FYLhLhjdPsQ" name="patientState/ProvinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD0rtRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD0ruBDXEd-FYLhLhjdPsQ" name="patientZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-ckBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD-ckxDXEd-FYLhLhjdPsQ" name="patientPhoneNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-clBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD-clxDXEd-FYLhLhjdPsQ" name="placeOfService" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-cmBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD-cmxDXEd-FYLhLhjdPsQ" name="employerId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-cnBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD-cnxDXEd-FYLhLhjdPsQ" name="smoker/Non-smokerCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-coBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD-coxDXEd-FYLhLhjdPsQ" name="pregnancyIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-cpBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD-cpxDXEd-FYLhLhjdPsQ" name="patientE-mailAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-cqBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD-cqxDXEd-FYLhLhjdPsQ" name="patientResidence" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-crBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XD-crRDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegment">
+    <ownedRule xmi:id="_XD-crxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprescription/serviceReferenceNumberQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-csBDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprescription/serviceReferenceNumberQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>For Transaction Code of ?S3?, in the Claim Segment, the Prescription/Service Reference Number Qualifier (455-EM) is ?2? (Service Billing).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-csRDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprescription/serviceReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cshDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprescription/serviceReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>See section ?Standard Conventions?, ?Character Set Designation Truncation?, ?Numeric?, ?Numeric Truncation?.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-csxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentproduct/serviceIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-ctBDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentproduct/serviceIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Mandatory.&#xA;If the Product/Service ID Qualifier (436-E1) = ?06? (DUR/PPS), the Product/Service ID (407-D7) is zero. (Zero means ?0?.)  &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-ctRDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentproduct/serviceId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cthDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentproduct/serviceId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;If the Product/Service ID Qualifier (436-E1) = ?06? (DUR/PPS), the Product/Service ID (407-D7) is zero. (Zero means ?0?.)  Populate the DUR/PPS segment as appropriate.&#xA;&#xA;If the Product/Service ID Qualifier (436-E1) = ?07? (CPT-4), the Product Service ID (407-D7) is the actual CPT-4 value.&#xA;&#xA;If the Product/Service ID Qualifier (436-E1) = ?09? (HCPCS), the Product Service ID (407-D7) is the actual HCPCS value.&#xA;&#xA;If the Product/Service ID Qualifier (436-E1) = ?99? (Other), the Product Service ID (407-D7) is the business partner agreed value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-ctxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentassociatedPrescription/serviceReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cuBDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentassociatedPrescription/serviceReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to associate multiple prescriptions/services from the same sender to allow billing of the current prescription/service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-cuxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentassociatedPrescription/serviceDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cvBDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentassociatedPrescription/serviceDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Associated Prescription/Service Reference Number (456-EN) is used.&#xA;&#xA;Required if needed to associate multiple prescriptions/services from the same sender to allow billing of the current prescription/service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XD-cvxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprocedureModifierCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XD-cwBDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprocedureModifierCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Maximum count of 10.&#xA;&#xA;Required if Procedure Modifier Code (459-ER) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINkhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprocedureModifierCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINkxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprocedureModifierCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;&#xA;Occurs the number of times identified in Procedure Modifier Code Count (458-SE). &#xA;&#xA;Required to define a further level of specificity if the Product/Service ID (407-D7) indicated a Procedure Code was submitted.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINlhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentquantityDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINlxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentquantityDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if value is greater than zero (0).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINmhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentfillNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINmxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentfillNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill: &#xA;Required if necessary for plan benefit administration. This field must match the Fill Number of the original billing.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINnhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdaysSupply">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINnxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdaysSupply Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for plan benefit administration.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINohDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentcompoundCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINoxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentcompoundCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINphDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdispenseAsWritten(daw)/productSelectionCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINpxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdispenseAsWritten(daw)/productSelectionCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINqhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdatePrescriptionWritten">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINqxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdatePrescriptionWritten Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for plan benefit administration.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINrhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentnumberOfRefillsAuthorized">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINrxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentnumberOfRefillsAuthorized Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for plan benefit administration.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINshDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprescriptionOriginCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINsxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentprescriptionOriginCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINthDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentsubmissionClarificationCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINtxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentsubmissionClarificationCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEINuhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentsubmissionClarificationCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEINuxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentsubmissionClarificationCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXghDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentquantityPrescribed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXgxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentquantityPrescribed Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if the prescriber orders a specific number of iterations of a service.&#xA;&#xA;Not required if value is equal to 1.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXhhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentotherCoverageCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXhxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentotherCoverageCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed by receiver to match the claim that is being reversed.&#xA;&#xA;Required if needed by receiver, to communicate a summation of other coverage information that has been collected from other payers.&#xA;&#xA;Required for Coordination of Benefits.&#xA;&#xA;See section ?Specific Segment Discussion?, ?Request Segments?, ?Claim Segment?, ?Other Coverage Code (308-C8).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXihDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentspecialPackagingIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXixDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentspecialPackagingIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXjhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentoriginallyPrescribedProduct/serviceIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXjxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentoriginallyPrescribedProduct/serviceIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Originally Prescribed Product/Service Code (445-EA) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXkhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentoriginallyPrescribedProduct/serviceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXkxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentoriginallyPrescribedProduct/serviceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if the receiver requests association to a therapeutic, or a preferred product substitution, or when a DUR alert has been resolved by changing medications, or an alternative service than what was originally prescribed.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXlhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentoriginallyPrescribedQuantity">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXlxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentoriginallyPrescribedQuantity Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if the receiver requests reporting for quantity changes due to a therapeutic substitution that has occurred or a preferred product/service substitution that has occurred, or when a DUR alert has been resolved by changing quantities.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXmhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentalternateId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXmxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentalternateId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXnhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentscheduledPrescriptionIdNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXnxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentscheduledPrescriptionIdNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXohDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentunitOfMeasure">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXoxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentunitOfMeasure Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXphDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentlevelOfService">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXpxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentlevelOfService Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XERXqhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentpriorAuthorizationTypeCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XERXqxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentpriorAuthorizationTypeCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEbIghDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentpriorAuthorizationNumberSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEbIgxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentpriorAuthorizationNumberSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEbIhhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentintermediaryAuthorizationTypeId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEbIhxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentintermediaryAuthorizationTypeId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required for overriding an authorized intermediary system edit when the pharmacy participates with an intermediary.&#xA;&#xA;Required if Intermediary Authorization ID (464-EX) is used.&#xA;&#xA;Not used for payer-to-payer transactions.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEbIihDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentintermediaryAuthorizationId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEbIixDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentintermediaryAuthorizationId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required for overriding an authorized intermediary system edit when the pharmacy participates with an intermediary.&#xA;&#xA;Not used for payer-to-payer transactions.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEbIjhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdispensingStatus">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEbIjxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdispensingStatus Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEbIkhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentquantityIntendedToBeDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEbIkxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentquantityIntendedToBeDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEbIlhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdaysSupplyIntendedToBeDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEbIlxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdaysSupplyIntendedToBeDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEbImhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdelayReasonCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEbImxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentdelayReasonCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required when needed to specify the reason that submission of the transaction has been delayed.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEbInhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmenttransactionReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEbInxDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmenttransactionReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEkScRDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentpatientAssignmentIndicator(directMemberReimbursementIndicator)">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEkSchDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentpatientAssignmentIndicator(directMemberReimbursementIndicator) Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required when the claims adjudicator does not assume the patient assigned his/her benefits to the provider or when the claims adjudicator supports a patient determination of whether he/she wants to assign or retain his/her benefits.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEkSdRDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentrouteOfAdministration">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEkSdhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentrouteOfAdministration Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEkSeRDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentcompoundType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEkSehDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentcompoundType Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEkSfRDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentmedicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn)">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEkSfhDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentmedicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn) Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEkSgRDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentpharmacyServiceType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEkSghDXEd-FYLhLhjdPsQ" name="ServiceRebillClaimSegmentpharmacyServiceType Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required when the submitter must clarify the type of services being performed as a condition for proper reimbursement by the payer.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XD-crhDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_oMMoQA9XEd-b2MdXdLPaUQ?telecom/ClaimSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XD-cuRDXEd-FYLhLhjdPsQ" name="associatedPrescription/serviceReferenceNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-cuhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XD-cvRDXEd-FYLhLhjdPsQ" name="associatedPrescription/serviceDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XD-cvhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINkBDXEd-FYLhLhjdPsQ" name="procedureModifierCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINkRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINlBDXEd-FYLhLhjdPsQ" name="procedureModifierCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINlRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINmBDXEd-FYLhLhjdPsQ" name="quantityDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINmRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINnBDXEd-FYLhLhjdPsQ" name="fillNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINnRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINoBDXEd-FYLhLhjdPsQ" name="daysSupply" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINoRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINpBDXEd-FYLhLhjdPsQ" name="compoundCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINpRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINqBDXEd-FYLhLhjdPsQ" name="dispenseAsWritten(daw)/productSelectionCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINqRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINrBDXEd-FYLhLhjdPsQ" name="datePrescriptionWritten" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINrRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINsBDXEd-FYLhLhjdPsQ" name="numberOfRefillsAuthorized" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINsRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINtBDXEd-FYLhLhjdPsQ" name="prescriptionOriginCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINtRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEINuBDXEd-FYLhLhjdPsQ" name="submissionClarificationCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEINuRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXgBDXEd-FYLhLhjdPsQ" name="submissionClarificationCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXgRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXhBDXEd-FYLhLhjdPsQ" name="quantityPrescribed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXhRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXiBDXEd-FYLhLhjdPsQ" name="otherCoverageCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXiRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXjBDXEd-FYLhLhjdPsQ" name="specialPackagingIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXjRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXkBDXEd-FYLhLhjdPsQ" name="originallyPrescribedProduct/serviceIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXkRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXlBDXEd-FYLhLhjdPsQ" name="originallyPrescribedProduct/serviceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXlRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXmBDXEd-FYLhLhjdPsQ" name="originallyPrescribedQuantity" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXmRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXnBDXEd-FYLhLhjdPsQ" name="alternateId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXnRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXoBDXEd-FYLhLhjdPsQ" name="scheduledPrescriptionIdNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXoRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXpBDXEd-FYLhLhjdPsQ" name="unitOfMeasure" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXpRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XERXqBDXEd-FYLhLhjdPsQ" name="levelOfService" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XERXqRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEbIgBDXEd-FYLhLhjdPsQ" name="priorAuthorizationTypeCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEbIgRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEbIhBDXEd-FYLhLhjdPsQ" name="priorAuthorizationNumberSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEbIhRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEbIiBDXEd-FYLhLhjdPsQ" name="intermediaryAuthorizationTypeId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEbIiRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEbIjBDXEd-FYLhLhjdPsQ" name="intermediaryAuthorizationId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEbIjRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEbIkBDXEd-FYLhLhjdPsQ" name="dispensingStatus" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEbIkRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEbIlBDXEd-FYLhLhjdPsQ" name="quantityIntendedToBeDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEbIlRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEbImBDXEd-FYLhLhjdPsQ" name="daysSupplyIntendedToBeDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEbImRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEbInBDXEd-FYLhLhjdPsQ" name="delayReasonCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEbInRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEbIoBDXEd-FYLhLhjdPsQ" name="transactionReferenceNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEkScBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEkScxDXEd-FYLhLhjdPsQ" name="patientAssignmentIndicator(directMemberReimbursementIndicator)" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEkSdBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEkSdxDXEd-FYLhLhjdPsQ" name="routeOfAdministration" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEkSeBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEkSexDXEd-FYLhLhjdPsQ" name="compoundType" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEkSfBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEkSfxDXEd-FYLhLhjdPsQ" name="medicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn)" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEkSgBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEkSgxDXEd-FYLhLhjdPsQ" name="pharmacyServiceType" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEkShBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XEkShRDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegment">
+    <ownedRule xmi:id="_XEkShxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentingredientCostSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEkSiBDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentingredientCostSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEkSixDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentdispensingFeeSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEkSjBDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentdispensingFeeSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEkSjxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentprofessionalServiceFeeSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEkSkBDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentprofessionalServiceFeeSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEkSkxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentpatientPaidAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEkSlBDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentpatientPaidAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility. &#xA;&#xA;Not used in coordination of benefit claim to pass patient liability informationÿto a downstream payer. See section ?Standard Conventions?, ?Repetition and Multiple Occurrences?, Repeating Data Elements?, ?Request Segments?, ?Coordination of Benefits Other Payments Segment?.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDchDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentincentiveAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDcxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentincentiveAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDdhDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentotherAmountClaimedSubmittedCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDdxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentotherAmountClaimedSubmittedCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Maximum count of 3.&#xA;&#xA;Required if Other Amount Claimed Submitted Qualifier (479-H8) is used. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDehDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentotherAmountClaimedSubmittedQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDexDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentotherAmountClaimedSubmittedQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Other Amount Claimed Submitted (480-H9) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDfhDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentotherAmountClaimedSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDfxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentotherAmountClaimedSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDghDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentflatSalesTaxAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDgxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentflatSalesTaxAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDhhDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentpercentageSalesTaxAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDhxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentpercentageSalesTaxAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDihDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentpercentageSalesTaxRateSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDixDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentpercentageSalesTaxRateSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to calculate Percentage Sales Tax Amount Paid (559-AX).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDjhDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentpercentageSalesTaxBasisSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDjxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentpercentageSalesTaxBasisSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used. Code list is not applicable.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDkhDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentusualAndCustomaryCharge">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDkxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentusualAndCustomaryCharge Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed per trading partner agreement.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDlhDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentgrossAmountDue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDlxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentgrossAmountDue Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required.&#xA;See Pricing Formula for fields used in calculation.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XEuDmhDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentbasisOfCostDetermination">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XEuDmxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentbasisOfCostDetermination Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XE30chDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentmedicaidPaidAmount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XE30cxDXEd-FYLhLhjdPsQ" name="ServiceRebillPricingSegmentmedicaidPaidAmount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XEkShhDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuCTQ9xEd-b2MdXdLPaUQ?telecom/PricingSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XEkSiRDXEd-FYLhLhjdPsQ" name="ingredientCostSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEkSihDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEkSjRDXEd-FYLhLhjdPsQ" name="dispensingFeeSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEkSjhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEkSkRDXEd-FYLhLhjdPsQ" name="professionalServiceFeeSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEkSkhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDcBDXEd-FYLhLhjdPsQ" name="patientPaidAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDcRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDdBDXEd-FYLhLhjdPsQ" name="incentiveAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDdRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDeBDXEd-FYLhLhjdPsQ" name="otherAmountClaimedSubmittedCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDeRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDfBDXEd-FYLhLhjdPsQ" name="otherAmountClaimedSubmittedQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDfRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDgBDXEd-FYLhLhjdPsQ" name="otherAmountClaimedSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDgRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDhBDXEd-FYLhLhjdPsQ" name="flatSalesTaxAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDhRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDiBDXEd-FYLhLhjdPsQ" name="percentageSalesTaxAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDiRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDjBDXEd-FYLhLhjdPsQ" name="percentageSalesTaxRateSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDjRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDkBDXEd-FYLhLhjdPsQ" name="percentageSalesTaxBasisSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDkRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDlBDXEd-FYLhLhjdPsQ" name="usualAndCustomaryCharge" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDlRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XEuDmBDXEd-FYLhLhjdPsQ" name="grossAmountDue" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XEuDmRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XE30cBDXEd-FYLhLhjdPsQ" name="basisOfCostDetermination" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XE30cRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XE30dBDXEd-FYLhLhjdPsQ" name="medicaidPaidAmount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XE30dRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XE30dhDXEd-FYLhLhjdPsQ" name="ServiceRebillPharmacyProviderSegment">
+    <ownedRule xmi:id="_XE30eBDXEd-FYLhLhjdPsQ" name="ServiceRebillPharmacyProviderSegmentproviderIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XE30eRDXEd-FYLhLhjdPsQ" name="ServiceRebillPharmacyProviderSegmentproviderIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Provider ID (444-E9) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XE30fBDXEd-FYLhLhjdPsQ" name="ServiceRebillPharmacyProviderSegmentproviderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XE30fRDXEd-FYLhLhjdPsQ" name="ServiceRebillPharmacyProviderSegmentproviderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if necessary to determine if provider is credentialed to perform this service.&#xA;&#xA;Required if needed for reconciliation of encounter-reported data or encounter reporting.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XE30dxDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zKthg9xEd-b2MdXdLPaUQ?telecom/PharmacyProviderSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XE30ehDXEd-FYLhLhjdPsQ" name="providerIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XE30exDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XE30fhDXEd-FYLhLhjdPsQ" name="providerId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XE30fxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XE30gBDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegment">
+    <ownedRule xmi:id="_XE30ghDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XE30gxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Prescriber ID (411-DB) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XE30hhDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XE30hxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage or patient financial responsibility.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XE30ihDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XE30ixDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required when the Prescriber ID (411-DB) is not known. &#xA;&#xA;Required if needed for Prescriber ID (411-DB) validation/clarification.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XE30jhDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberPhoneNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XE30jxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberPhoneNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if needed for Prior Authorization process.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XE30khDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprimaryCareProviderIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XE30kxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprimaryCareProviderIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Primary Care Provider ID (421-DL) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XE30lhDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprimaryCareProviderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XE30lxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprimaryCareProviderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed for receiver service billing determination, if known and available.&#xA;&#xA;Required if this field could result in different coverage or patient financial responsibility.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFA-YhDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprimaryCareProviderLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFA-YxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprimaryCareProviderLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field is used as an alternative for Primary Care Provider ID (421-DL) when ID is not known.&#xA;&#xA;Required if needed for Primary Care Provider ID (421-DL) validation/clarification.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFA-ZhDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFA-ZxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFA-ahDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFA-axDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFA-bhDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFA-bxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFA-chDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFA-cxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFA-dhDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFA-dxDXEd-FYLhLhjdPsQ" name="ServiceRebillPrescriberSegmentprescriberZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XE30gRDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zA8zQ9xEd-b2MdXdLPaUQ?telecom/PrescriberSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XE30hBDXEd-FYLhLhjdPsQ" name="prescriberIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XE30hRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XE30iBDXEd-FYLhLhjdPsQ" name="prescriberId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XE30iRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XE30jBDXEd-FYLhLhjdPsQ" name="prescriberLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XE30jRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XE30kBDXEd-FYLhLhjdPsQ" name="prescriberPhoneNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XE30kRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XE30lBDXEd-FYLhLhjdPsQ" name="primaryCareProviderIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XE30lRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFA-YBDXEd-FYLhLhjdPsQ" name="primaryCareProviderId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFA-YRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFA-ZBDXEd-FYLhLhjdPsQ" name="primaryCareProviderLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFA-ZRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFA-aBDXEd-FYLhLhjdPsQ" name="prescriberFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFA-aRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFA-bBDXEd-FYLhLhjdPsQ" name="prescriberStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFA-bRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFA-cBDXEd-FYLhLhjdPsQ" name="prescriberCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFA-cRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFA-dBDXEd-FYLhLhjdPsQ" name="prescriberState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFA-dRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFA-eBDXEd-FYLhLhjdPsQ" name="prescriberZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFA-eRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XFA-ehDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegment">
+    <ownedRule xmi:id="_XFA-fBDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentcoordinationOfBenefits/otherPaymentsCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFA-fRDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentcoordinationOfBenefits/otherPaymentsCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Maximum count of 9.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvYBDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerCoverageType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvYRDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerCoverageType Analysis Rule">
+        <language>Analysis</language>
+        <body>Mandatory.&#xA;Occurs with Coordination of Benefits/Other Payments Count (337-4C).&#xA;&#xA;Grouped with Other Payer ID Qualifier (339-6C), Other Payer ID (340-7C), Other Payer Date (443-E8), and either Other Payer Amount Paid Count (341-HB) and its grouping, or Other Payer Reject Count (471-5E) and its grouping.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvYhDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvYxDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Other Payer ID (340-7C) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvZhDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvZxDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if identification of the Other Payer is necessary for service billing adjudication.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvahDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvaxDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if identification of the Other Payer Date is necessary for service billing adjudication.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvbhDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentinternalControlNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvbxDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentinternalControlNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required when used for payer-to-payer coordination of benefits to track the claim without regard to the ?Service Provider ID, Prescription Number, and Date of Service?.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvchDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaidCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvcxDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaidCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Maximum count of 9.&#xA;&#xA;Required if Other Payer Amount Paid Qualifier (342-HC) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvdhDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaidQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvdxDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaidQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Other Payer Amount Paid (431-DV) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvehDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaid">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvexDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerAmountPaid Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if other payer has approved payment for some/all of the billing. &#xA;&#xA;Zero (0) is a valid value.&#xA;&#xA;Not used for patient financial responsibility only billing.&#xA;&#xA;Not used for non-governmental agency programs if Other Payer-Patient Responsibility Amount (352-NQ) is submitted.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvfhDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerRejectCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvfxDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerRejectCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Maximum count of 5.&#xA;&#xA;Required if Other Payer Reject Code (472-6E) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvghDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerRejectCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvgxDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayerRejectCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required when the other payer has denied the payment for the billing, designated with Other Coverage Code (308-C8) = 3 (Other Coverage Billed ? claim not covered). &#xA;&#xA;Note: This field must only contain the NCPDP Reject Code (511-FB) values.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvhhDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmountCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvhxDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmountCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Maximum count of 25.&#xA;&#xA;Required if Other Payer-Patient Responsibility Amount Qualifier (351-NP) is used.&#xA;&#xA;Note the occurrences are dependent upon the number of component parts returned from a previous payer.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFKvihDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmountQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKvixDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmountQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Other Payer-Patient Responsibility Amount (352-NQ) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUgYRDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUgYhDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentotherPayer-patientResponsibilityAmount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;&#xA;Required if necessary for patient financial responsibility only billing.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Not used for non-governmental agency programs if Other Payer Amount Paid (431-DV) is submitted.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUgZRDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentbenefitStageCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUgZhDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentbenefitStageCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUgaRDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentbenefitStageQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUgahDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentbenefitStageQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUgbRDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentbenefitStageAmount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUgbhDXEd-FYLhLhjdPsQ" name="ServiceRebillCoordinationofBenefitsOtherPaymentsSegmentbenefitStageAmount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XFA-exDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuB3w9xEd-b2MdXdLPaUQ?telecom/CoordinationofBenefitsOtherPaymentsSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XFKvZBDXEd-FYLhLhjdPsQ" name="otherPayerIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKvZRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKvaBDXEd-FYLhLhjdPsQ" name="otherPayerId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKvaRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKvbBDXEd-FYLhLhjdPsQ" name="otherPayerDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKvbRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKvcBDXEd-FYLhLhjdPsQ" name="internalControlNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKvcRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKvdBDXEd-FYLhLhjdPsQ" name="otherPayerAmountPaidCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKvdRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKveBDXEd-FYLhLhjdPsQ" name="otherPayerAmountPaidQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKveRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKvfBDXEd-FYLhLhjdPsQ" name="otherPayerAmountPaid" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKvfRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKvgBDXEd-FYLhLhjdPsQ" name="otherPayerRejectCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKvgRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKvhBDXEd-FYLhLhjdPsQ" name="otherPayerRejectCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKvhRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKviBDXEd-FYLhLhjdPsQ" name="otherPayer-patientResponsibilityAmountCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFKviRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFKvjBDXEd-FYLhLhjdPsQ" name="otherPayer-patientResponsibilityAmountQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgYBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUgYxDXEd-FYLhLhjdPsQ" name="otherPayer-patientResponsibilityAmount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgZBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUgZxDXEd-FYLhLhjdPsQ" name="benefitStageCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgaBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUgaxDXEd-FYLhLhjdPsQ" name="benefitStageQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgbBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUgbxDXEd-FYLhLhjdPsQ" name="benefitStageAmount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgcBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XFUgcRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegment">
+    <ownedRule xmi:id="_XFUgcxDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUgdBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to process a service billing for a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUgdxDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUgeBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to process a service billing for a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUgexDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUgfBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to process a service billing for a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUgfxDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUggBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to process a service billing for a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUggxDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUghBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to process a service billing for a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUghxDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerPhoneNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUgiBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerPhoneNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to process a service billing for a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFUgixDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerContactName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFUgjBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentemployerContactName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to process a service billing for a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqUBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentcarrierId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqURDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentcarrierId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to process a service billing for a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqVBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentclaim/referenceId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqVRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentclaim/referenceId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if needed to process a service billing for a work related injury or condition.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqWBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentbillingEntityTypeIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqWRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentbillingEntityTypeIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqXBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqXRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Pay To ID (119-TT) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqYBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqYRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqZBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqZRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqaBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqaRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqbBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqbRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqcBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqcRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqdBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqdRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentpayToZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if transaction is submitted by a provider or agent, but paid to another party.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqeBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentgenericEquivalentProductIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqeRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentgenericEquivalentProductIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Generic Equivalent Product ID (126-UA) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFdqfBDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentgenericEquivalentProductId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFdqfRDXEd-FYLhLhjdPsQ" name="ServiceRebillWorkersCompensationSegmentgenericEquivalentProductId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XFUgchDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8ykQyw9xEd-b2MdXdLPaUQ?telecom/WorkersCompensationSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XFUgdRDXEd-FYLhLhjdPsQ" name="employerName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgdhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUgeRDXEd-FYLhLhjdPsQ" name="employerStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgehDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUgfRDXEd-FYLhLhjdPsQ" name="employerCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgfhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUggRDXEd-FYLhLhjdPsQ" name="employerState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgghDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUghRDXEd-FYLhLhjdPsQ" name="employerZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUghhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUgiRDXEd-FYLhLhjdPsQ" name="employerPhoneNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgihDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFUgjRDXEd-FYLhLhjdPsQ" name="employerContactName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFUgjhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqUhDXEd-FYLhLhjdPsQ" name="carrierId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqUxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqVhDXEd-FYLhLhjdPsQ" name="claim/referenceId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqVxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqWhDXEd-FYLhLhjdPsQ" name="billingEntityTypeIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqWxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqXhDXEd-FYLhLhjdPsQ" name="payToQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqXxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqYhDXEd-FYLhLhjdPsQ" name="payToId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqYxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqZhDXEd-FYLhLhjdPsQ" name="payToName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqZxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqahDXEd-FYLhLhjdPsQ" name="payToStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqaxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqbhDXEd-FYLhLhjdPsQ" name="payToCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqbxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqchDXEd-FYLhLhjdPsQ" name="payToState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqcxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqdhDXEd-FYLhLhjdPsQ" name="payToZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqdxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFdqehDXEd-FYLhLhjdPsQ" name="genericEquivalentProductIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFdqexDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFnbUBDXEd-FYLhLhjdPsQ" name="genericEquivalentProductId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFnbURDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XFnbUhDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegment">
+    <ownedRule xmi:id="_XFnbVBDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentdur/ppsCodeCounter">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFnbVRDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentdur/ppsCodeCounter Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Maximum 9 occurrences. &#xA;&#xA;Required if DUR/PPS Segment is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFnbWBDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentreasonForServiceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFnbWRDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentreasonForServiceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFnbXBDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentprofessionalServiceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFnbXRDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentprofessionalServiceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFnbYBDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentresultOfServiceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFnbYRDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentresultOfServiceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFnbZBDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentdur/ppsLevelOfEffort">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFnbZRDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentdur/ppsLevelOfEffort Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFnbaBDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentdurCo-agentIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFnbaRDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentdurCo-agentIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if DUR Co-Agent ID (476-H6) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFnbbBDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentdurCo-agentId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFnbbRDXEd-FYLhLhjdPsQ" name="ServiceRebillDUR/PPSSegmentdurCo-agentId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if this field could result in different drug utilization review outcome.&#xA;&#xA;Required if this field affects payment for or documentation of professional pharmacy service.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XFnbUxDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zA8mA9xEd-b2MdXdLPaUQ?telecom/DUR%2FPPSSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XFnbVhDXEd-FYLhLhjdPsQ" name="dur/ppsCodeCounter" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFnbVxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFnbWhDXEd-FYLhLhjdPsQ" name="reasonForServiceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFnbWxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFnbXhDXEd-FYLhLhjdPsQ" name="professionalServiceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFnbXxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFnbYhDXEd-FYLhLhjdPsQ" name="resultOfServiceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFnbYxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFnbZhDXEd-FYLhLhjdPsQ" name="dur/ppsLevelOfEffort" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFnbZxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFnbahDXEd-FYLhLhjdPsQ" name="durCo-agentIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFnbaxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFnbbhDXEd-FYLhLhjdPsQ" name="durCo-agentId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFnbbxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XFnbcBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegment">
+    <ownedRule xmi:id="_XFnbchDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentdiagnosisCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlQBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentdiagnosisCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Maximum count of 5.&#xA;&#xA;Required if Diagnosis Code Qualifier (492-WE) and Diagnosis Code (424-DO) are used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFwlQxDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentdiagnosisCodeQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlRBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentdiagnosisCodeQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Diagnosis Code (424-DO) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFwlRxDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentdiagnosisCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlSBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentdiagnosisCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;The value for this field is obtained from the prescriber or authorized representative.&#xA;&#xA;Required if this field could result in different coverage, pricing, patient financial responsibility, and/or drug utilization review outcome. &#xA;&#xA;Required if this field affects payment for professional pharmacy service.&#xA;&#xA;Required if this information can be used in place of prior authorization. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFwlSxDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentclinicalInformationCounter">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlTBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentclinicalInformationCounter Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Maximum 5 occurrences supported.&#xA;Grouped with Measurement fields (Measurement Date (494-ZE), Measurement Time (495-H1), Measurement Dimension (496-H2), Measurement Unit (497-H3), Measurement Value (499-H4).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFwlTxDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlUBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFwlUxDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementTime">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlVBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementTime Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Time is known or has impact on measurement.&#xA;&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFwlVxDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementDimension">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlWBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementDimension Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Measurement Unit (497-H3) and Measurement Value (499-H4) are used.&#xA;&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome.&#xA;&#xA;Required if necessary for patient?s weight and height when billing Medicare for a claim that includes a Certificate of Medical Necessity (CMN).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFwlWxDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementUnit">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlXBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementUnit Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Measurement Dimension (496-H2) and Measurement Value (499-H4) are used.&#xA;&#xA;Required if necessary for patient?s weight and height when billing Medicare for a claim that includes a Certificate of Medical Necessity (CMN).&#xA;&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XFwlXxDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlYBDXEd-FYLhLhjdPsQ" name="ServiceRebillClinicalSegmentmeasurementValue Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Measurement Dimension (496-H2) and Measurement Unit (497-H3) are used. &#xA;&#xA;Required if necessary for patient?s weight and height when billing Medicare for a claim that includes a Certificate of Medical Necessity (CMN).&#xA;&#xA;Required if necessary when this field could result in different coverage and/or drug utilization review outcome.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XFnbcRDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_ypHmMA9vEd-b2MdXdLPaUQ?telecom/ClinicalSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XFwlQRDXEd-FYLhLhjdPsQ" name="diagnosisCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFwlQhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFwlRRDXEd-FYLhLhjdPsQ" name="diagnosisCodeQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFwlRhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFwlSRDXEd-FYLhLhjdPsQ" name="diagnosisCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFwlShDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFwlTRDXEd-FYLhLhjdPsQ" name="clinicalInformationCounter" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFwlThDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFwlURDXEd-FYLhLhjdPsQ" name="measurementDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFwlUhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFwlVRDXEd-FYLhLhjdPsQ" name="measurementTime" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFwlVhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFwlWRDXEd-FYLhLhjdPsQ" name="measurementDimension" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFwlWhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFwlXRDXEd-FYLhLhjdPsQ" name="measurementUnit" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFwlXhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XFwlYRDXEd-FYLhLhjdPsQ" name="measurementValue" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFwlYhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XFwlYxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegment">
+    <ownedRule xmi:id="_XFwlZRDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentrequestPeriodBeginDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFwlZhDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentrequestPeriodBeginDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WQhDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentrequestPeriodRecert/revisedDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WQxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentrequestPeriodRecert/revisedDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if the Request Status (373-2U) = ?2? (Revision) or ?3? (Recertification).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WRhDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentrequestStatus">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WRxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentrequestStatus Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WShDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentlengthOfNeedQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WSxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentlengthOfNeedQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if Length of Need (370-2R) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WThDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentlengthOfNeed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WTxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentlengthOfNeed Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WUhDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentprescriber/supplierDateSigned">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WUxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentprescriber/supplierDateSigned Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WVhDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentsupportingDocumentation">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WVxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentsupportingDocumentation Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs (using Section C of Medicare?s CMN forms).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WWhDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionNumber/letterCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WWxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionNumber/letterCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Maximum count of 50.&#xA;&#xA;Required if needed to provide response to narratives.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WXhDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionNumber/letter">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WXxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionNumber/letter Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form.  &#xA;&#xA;Required if Question Number/Letter&#xA;Count (377-2Z) is greater than 0.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WYhDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionPercentResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WYxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionPercentResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form that requires a percent as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WZhDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionDateResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF6WZxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionDateResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form that requires a date as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XF6WahDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionDollarAmountResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHQBDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionDollarAmountResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form that requires a dollar amount as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGEHQxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionNumericResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHRBDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionNumericResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for&#xA;State/federal/regulatory agency programs to respond to questions included on a Medicare form that requires a numeric as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGEHRxDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionAlphanumericResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHSBDXEd-FYLhLhjdPsQ" name="ServiceRebillAdditionalDocumentationSegmentquestionAlphanumericResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form that requires an alphanumeric as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XFwlZBDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8y3y3w9xEd-b2MdXdLPaUQ?telecom/AdditionalDocumentationSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XF6WQBDXEd-FYLhLhjdPsQ" name="requestPeriodBeginDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WQRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WRBDXEd-FYLhLhjdPsQ" name="requestPeriodRecert/revisedDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WRRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WSBDXEd-FYLhLhjdPsQ" name="requestStatus" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WSRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WTBDXEd-FYLhLhjdPsQ" name="lengthOfNeedQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WTRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WUBDXEd-FYLhLhjdPsQ" name="lengthOfNeed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WURDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WVBDXEd-FYLhLhjdPsQ" name="prescriber/supplierDateSigned" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WVRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WWBDXEd-FYLhLhjdPsQ" name="supportingDocumentation" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WWRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WXBDXEd-FYLhLhjdPsQ" name="questionNumber/letterCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WXRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WYBDXEd-FYLhLhjdPsQ" name="questionNumber/letter" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WYRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WZBDXEd-FYLhLhjdPsQ" name="questionPercentResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WZRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XF6WaBDXEd-FYLhLhjdPsQ" name="questionDateResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XF6WaRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGEHQRDXEd-FYLhLhjdPsQ" name="questionDollarAmountResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHQhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGEHRRDXEd-FYLhLhjdPsQ" name="questionNumericResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHRhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGEHSRDXEd-FYLhLhjdPsQ" name="questionAlphanumericResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHShDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XGEHSxDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegment">
+    <ownedRule xmi:id="_XGEHTRDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHThDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityId Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if ?required by law? as defined in the HIPAA final Privacy regulations section 164.501 definitions (45 CFR Parts 160 and 164 Standards for Privacy of Individually&#xA;Identifiable Health Information; Final Rule -&#xA;Thursday, December 28, 2000, page 82803 and following, and Wednesday, August 14, 2002, page 53267 and following.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGEHURDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHUhDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityName Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGEHVRDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHVhDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGEHWRDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHWhDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGEHXRDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHXhDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XGEHYRDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHYhDXEd-FYLhLhjdPsQ" name="ServiceRebillFacilitySegmentfacilityZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XGEHTBDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8y3zNg9xEd-b2MdXdLPaUQ?telecom/FacilitySegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XGEHTxDXEd-FYLhLhjdPsQ" name="facilityId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHUBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGEHUxDXEd-FYLhLhjdPsQ" name="facilityName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHVBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGEHVxDXEd-FYLhLhjdPsQ" name="facilityStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHWBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGEHWxDXEd-FYLhLhjdPsQ" name="facilityCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHXBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGEHXxDXEd-FYLhLhjdPsQ" name="facilityState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHYBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XGEHYxDXEd-FYLhLhjdPsQ" name="facilityZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHZBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XGEHZRDXEd-FYLhLhjdPsQ" name="ServiceRebillNarrativeSegment">
+    <ownedRule xmi:id="_XGEHZxDXEd-FYLhLhjdPsQ" name="ServiceRebillNarrativeSegmentnarrativeMessage">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGEHaBDXEd-FYLhLhjdPsQ" name="ServiceRebillNarrativeSegmentnarrativeMessage Analysis Rule">
+        <language>Analysis</language>
+        <body>Service Rebill:&#xA;Required if necessary only to support exception handling of pharmacy claims for Medicare Part B claim billing.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XGEHZhDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zKtkA9xEd-b2MdXdLPaUQ?telecom/NarrativeSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XGEHaRDXEd-FYLhLhjdPsQ" name="narrativeMessage" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEHahDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:id="_KGqJMBXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_KGqJMRXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_KGqJMhXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_KGqJMxXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_KGz6MBXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_KGz6MRXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Package>
