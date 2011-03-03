@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_XOQZ-BDXEd-FYLhLhjdPsQ" name="InformationReportingReversal">
+  <packagedElement xmi:type="uml:Class" xmi:id="_XOQZ-RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalTransactionHeaderSegmentClaim">
+    <generalization xmi:id="_XOQZ-hDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_G91XQA6ZEd-RjqmAV7zMCg?telecom/TransactionHeaderSegment?"/>
+    </generalization>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XOQZ-xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaim">
+    <ownedRule xmi:id="_XOQZ_RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimcardholderFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOQZ_hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimcardholderFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOQaARDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimcardholderLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOQaAhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimcardholderLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOQaBRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimhomePlan">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOQaBhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimhomePlan Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOQaCRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimplanId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOQaChDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimplanId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOQaDRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimeligibilityClarificationCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOQaDhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimeligibilityClarificationCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOQaERDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimgroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOQaEhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimgroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Required if needed to match the reversal to the original information reporting transaction.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOQaFRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimpersonCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOQaFhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimpersonCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOQaGRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimpatientRelationshipCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaK8BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimpatientRelationshipCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaK8xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimotherPayerBinNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaK9BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimotherPayerBinNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Required for Medicare Part D payer-to-payer facilitation when necessary to match the information reporting reversal transaction to the original information reporting transaction.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaK9xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimotherPayerProcessorControlNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaK-BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimotherPayerProcessorControlNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Required for Medicare Part D payer-to-payer facilitation when necessary to match the information reporting reversal transaction to the original information reporting transaction.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaK-xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimotherPayerCardholderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaK_BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimotherPayerCardholderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Required for Medicare Part D payer-to-payer facilitation when necessary to match the information reporting reversal transaction to the original information reporting transaction.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaK_xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimotherPayerGroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaLABDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimotherPayerGroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Required for Medicare Part D payer-to-payer facilitation when necessary to match the information reporting reversal transaction to the original information reporting transaction.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaLAxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimmedigapId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaLBBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimmedigapId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaLBxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimmedicaidIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaLCBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimmedicaidIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaLCxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimproviderAcceptAssignmentIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaLDBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimproviderAcceptAssignmentIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaLDxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimcmsPartDDefinedQualifiedFacility">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaLEBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimcmsPartDDefinedQualifiedFacility Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaLExDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimmedicaidIdNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaLFBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimmedicaidIdNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOaLFxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimmedicaidAgencyNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaLGBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentClaimmedicaidAgencyNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XOQZ_BDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuBgA9xEd-b2MdXdLPaUQ?telecom/InsuranceSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XOQZ_xDXEd-FYLhLhjdPsQ" name="cardholderFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOQaABDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOQaAxDXEd-FYLhLhjdPsQ" name="cardholderLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOQaBBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOQaBxDXEd-FYLhLhjdPsQ" name="homePlan" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOQaCBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOQaCxDXEd-FYLhLhjdPsQ" name="planId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOQaDBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOQaDxDXEd-FYLhLhjdPsQ" name="eligibilityClarificationCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOQaEBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOQaExDXEd-FYLhLhjdPsQ" name="groupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOQaFBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOQaFxDXEd-FYLhLhjdPsQ" name="personCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOQaGBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaK8RDXEd-FYLhLhjdPsQ" name="patientRelationshipCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaK8hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaK9RDXEd-FYLhLhjdPsQ" name="otherPayerBinNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaK9hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaK-RDXEd-FYLhLhjdPsQ" name="otherPayerProcessorControlNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaK-hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaK_RDXEd-FYLhLhjdPsQ" name="otherPayerCardholderId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaK_hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaLARDXEd-FYLhLhjdPsQ" name="otherPayerGroupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaLAhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaLBRDXEd-FYLhLhjdPsQ" name="medigapId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaLBhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaLCRDXEd-FYLhLhjdPsQ" name="medicaidIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaLChDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaLDRDXEd-FYLhLhjdPsQ" name="providerAcceptAssignmentIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaLDhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaLERDXEd-FYLhLhjdPsQ" name="cmsPartDDefinedQualifiedFacility" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaLEhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaLFRDXEd-FYLhLhjdPsQ" name="medicaidIdNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaLFhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOaLGRDXEd-FYLhLhjdPsQ" name="medicaidAgencyNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOaLGhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XOaLGxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaim">
+    <ownedRule xmi:id="_XOaLHRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimprescription/serviceReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU4BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimprescription/serviceReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>See section ?Standard Conventions?, ?Character Set Designation Truncation?, ?Numeric?, ?Numeric Truncation?.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjU4RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimproduct/serviceIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU4hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimproduct/serviceIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Mandatory.&#xA;Must contain the Product/Service ID Qualifier (436-E1) value from original Information Reporting.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjU4xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimproduct/serviceId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU5BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimproduct/serviceId Analysis Rule">
+        <language>Analysis</language>
+        <body>Mandatory.&#xA;Must contain the Product/Service ID (407-D7) value from original Information Reporting.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjU5RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimassociatedPrescription/serviceReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU5hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimassociatedPrescription/serviceReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjU6RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimassociatedPrescription/serviceDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU6hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimassociatedPrescription/serviceDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjU7RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimprocedureModifierCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU7hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimprocedureModifierCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjU8RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimprocedureModifierCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU8hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimprocedureModifierCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjU9RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimquantityDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU9hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimquantityDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjU-RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimfillNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU-hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimfillNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Required if needed for reversals when multiple fills of the same Prescription/Service Reference Number occur on the same day.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjU_RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdaysSupply">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjU_hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdaysSupply Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjVARDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimcompoundCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjVAhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimcompoundCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjVBRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdispenseAsWritten(daw)/productSelectionCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjVBhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdispenseAsWritten(daw)/productSelectionCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjVCRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdatePrescriptionWritten">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjVChDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdatePrescriptionWritten Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOjVDRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimnumberOfRefillsAuthorized">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOjVDhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimnumberOfRefillsAuthorized Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtF4RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimprescriptionOriginCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtF4hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimprescriptionOriginCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtF5RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimsubmissionClarificationCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtF5hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimsubmissionClarificationCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtF6RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimsubmissionClarificationCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtF6hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimsubmissionClarificationCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtF7RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimquantityPrescribed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtF7hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimquantityPrescribed Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtF8RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimotherCoverageCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtF8hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimotherCoverageCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtF9RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimspecialPackagingIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtF9hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimspecialPackagingIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtF-RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimoriginallyPrescribedProduct/serviceIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtF-hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimoriginallyPrescribedProduct/serviceIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtF_RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimoriginallyPrescribedProduct/serviceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtF_hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimoriginallyPrescribedProduct/serviceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtGARDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimoriginallyPrescribedQuantity">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtGAhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimoriginallyPrescribedQuantity Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XOtGBRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimalternateId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO224BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimalternateId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO224xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimscheduledPrescriptionIdNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO225BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimscheduledPrescriptionIdNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO225xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimunitOfMeasure">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO226BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimunitOfMeasure Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO226xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimlevelOfService">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO227BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimlevelOfService Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO227xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimpriorAuthorizationTypeCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO228BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimpriorAuthorizationTypeCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO228xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimpriorAuthorizationNumberSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO229BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimpriorAuthorizationNumberSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO229xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimintermediaryAuthorizationTypeId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO22-BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimintermediaryAuthorizationTypeId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO22-xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimintermediaryAuthorizationId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO22_BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimintermediaryAuthorizationId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO22_xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdispensingStatus">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO23ABDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdispensingStatus Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO23AxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimquantityIntendedToBeDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO23BBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimquantityIntendedToBeDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO23BxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdaysSupplyIntendedToBeDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO23CBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdaysSupplyIntendedToBeDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XO23CxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdelayReasonCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO23DBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimdelayReasonCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA0BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimtransactionReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA0RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimtransactionReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Required for Medicare Part D payer-to-payer facilitation to match the transaction response to the transaction.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA1BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimpatientAssignmentIndicator(directMemberReimbursementIndicator)">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA1RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimpatientAssignmentIndicator(directMemberReimbursementIndicator) Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA2BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimrouteOfAdministration">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA2RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimrouteOfAdministration Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA3BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimcompoundType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA3RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimcompoundType Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA4BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimmedicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn)">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA4RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimmedicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn) Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA5BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimpharmacyServiceType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA5RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentClaimpharmacyServiceType Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Claim/Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XOaLHBDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_oMMoQA9XEd-b2MdXdLPaUQ?telecom/ClaimSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XOjU5xDXEd-FYLhLhjdPsQ" name="associatedPrescription/serviceReferenceNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjU6BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjU6xDXEd-FYLhLhjdPsQ" name="associatedPrescription/serviceDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjU7BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjU7xDXEd-FYLhLhjdPsQ" name="procedureModifierCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjU8BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjU8xDXEd-FYLhLhjdPsQ" name="procedureModifierCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjU9BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjU9xDXEd-FYLhLhjdPsQ" name="quantityDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjU-BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjU-xDXEd-FYLhLhjdPsQ" name="fillNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjU_BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjU_xDXEd-FYLhLhjdPsQ" name="daysSupply" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjVABDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjVAxDXEd-FYLhLhjdPsQ" name="compoundCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjVBBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjVBxDXEd-FYLhLhjdPsQ" name="dispenseAsWritten(daw)/productSelectionCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjVCBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjVCxDXEd-FYLhLhjdPsQ" name="datePrescriptionWritten" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOjVDBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOjVDxDXEd-FYLhLhjdPsQ" name="numberOfRefillsAuthorized" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtF4BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOtF4xDXEd-FYLhLhjdPsQ" name="prescriptionOriginCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtF5BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOtF5xDXEd-FYLhLhjdPsQ" name="submissionClarificationCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtF6BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOtF6xDXEd-FYLhLhjdPsQ" name="submissionClarificationCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtF7BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOtF7xDXEd-FYLhLhjdPsQ" name="quantityPrescribed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtF8BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOtF8xDXEd-FYLhLhjdPsQ" name="otherCoverageCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtF9BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOtF9xDXEd-FYLhLhjdPsQ" name="specialPackagingIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtF-BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOtF-xDXEd-FYLhLhjdPsQ" name="originallyPrescribedProduct/serviceIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtF_BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOtF_xDXEd-FYLhLhjdPsQ" name="originallyPrescribedProduct/serviceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtGABDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOtGAxDXEd-FYLhLhjdPsQ" name="originallyPrescribedQuantity" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XOtGBBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO224RDXEd-FYLhLhjdPsQ" name="alternateId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO224hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO225RDXEd-FYLhLhjdPsQ" name="scheduledPrescriptionIdNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO225hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO226RDXEd-FYLhLhjdPsQ" name="unitOfMeasure" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO226hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO227RDXEd-FYLhLhjdPsQ" name="levelOfService" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO227hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO228RDXEd-FYLhLhjdPsQ" name="priorAuthorizationTypeCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO228hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO229RDXEd-FYLhLhjdPsQ" name="priorAuthorizationNumberSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO229hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO22-RDXEd-FYLhLhjdPsQ" name="intermediaryAuthorizationTypeId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO22-hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO22_RDXEd-FYLhLhjdPsQ" name="intermediaryAuthorizationId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO22_hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO23ARDXEd-FYLhLhjdPsQ" name="dispensingStatus" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO23AhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO23BRDXEd-FYLhLhjdPsQ" name="quantityIntendedToBeDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO23BhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO23CRDXEd-FYLhLhjdPsQ" name="daysSupplyIntendedToBeDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO23ChDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XO23DRDXEd-FYLhLhjdPsQ" name="delayReasonCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO23DhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA0hDXEd-FYLhLhjdPsQ" name="transactionReferenceNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA0xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA1hDXEd-FYLhLhjdPsQ" name="patientAssignmentIndicator(directMemberReimbursementIndicator)" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA1xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA2hDXEd-FYLhLhjdPsQ" name="routeOfAdministration" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA2xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA3hDXEd-FYLhLhjdPsQ" name="compoundType" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA3xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA4hDXEd-FYLhLhjdPsQ" name="medicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn)" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA4xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA5hDXEd-FYLhLhjdPsQ" name="pharmacyServiceType" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA5xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XPAA6BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalTransactionHeaderSegmentService">
+    <generalization xmi:id="_XPAA6RDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_G91XQA6ZEd-RjqmAV7zMCg?telecom/TransactionHeaderSegment?"/>
+    </generalization>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XPAA6hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentService">
+    <ownedRule xmi:id="_XPAA7BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicecardholderFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA7RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicecardholderFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA8BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicecardholderLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA8RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicecardholderLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA9BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicehomePlan">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA9RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicehomePlan Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA-BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceplanId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA-RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceplanId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPAA_BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceeligibilityClarificationCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAA_RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceeligibilityClarificationCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPABABDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicegroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx0BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicegroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Required if needed to match the reversal to the original reporting transaction.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx0xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicepersonCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx1BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicepersonCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx1xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicepatientRelationshipCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx2BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicepatientRelationshipCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx2xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceotherPayerBinNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx3BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceotherPayerBinNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.    &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx3xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceotherPayerProcessorControlNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx4BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceotherPayerProcessorControlNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.    &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx4xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceotherPayerCardholderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx5BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceotherPayerCardholderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx5xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceotherPayerGroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx6BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceotherPayerGroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx6xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicemedigapId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx7BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicemedigapId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx7xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicemedicaidIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx8BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicemedicaidIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx8xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceproviderAcceptAssignmentIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx9BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServiceproviderAcceptAssignmentIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPJx9xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicecmsPartDDefinedQualifiedFacility">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJx-BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicecmsPartDDefinedQualifiedFacility Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPS7whDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicemedicaidIdNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS7wxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicemedicaidIdNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPS7xhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicemedicaidAgencyNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS7xxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalInsuranceSegmentServicemedicaidAgencyNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XPAA6xDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuBgA9xEd-b2MdXdLPaUQ?telecom/InsuranceSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XPAA7hDXEd-FYLhLhjdPsQ" name="cardholderFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA7xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA8hDXEd-FYLhLhjdPsQ" name="cardholderLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA8xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA9hDXEd-FYLhLhjdPsQ" name="homePlan" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA9xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA-hDXEd-FYLhLhjdPsQ" name="planId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA-xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPAA_hDXEd-FYLhLhjdPsQ" name="eligibilityClarificationCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPAA_xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx0RDXEd-FYLhLhjdPsQ" name="groupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx0hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx1RDXEd-FYLhLhjdPsQ" name="personCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx1hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx2RDXEd-FYLhLhjdPsQ" name="patientRelationshipCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx2hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx3RDXEd-FYLhLhjdPsQ" name="otherPayerBinNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx3hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx4RDXEd-FYLhLhjdPsQ" name="otherPayerProcessorControlNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx4hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx5RDXEd-FYLhLhjdPsQ" name="otherPayerCardholderId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx5hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx6RDXEd-FYLhLhjdPsQ" name="otherPayerGroupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx6hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx7RDXEd-FYLhLhjdPsQ" name="medigapId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx7hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx8RDXEd-FYLhLhjdPsQ" name="medicaidIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx8hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPJx9RDXEd-FYLhLhjdPsQ" name="providerAcceptAssignmentIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPJx9hDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPS7wBDXEd-FYLhLhjdPsQ" name="cmsPartDDefinedQualifiedFacility" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPS7wRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPS7xBDXEd-FYLhLhjdPsQ" name="medicaidIdNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPS7xRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPS7yBDXEd-FYLhLhjdPsQ" name="medicaidAgencyNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPS7yRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XPS7yhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentService">
+    <ownedRule xmi:id="_XPS7zBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceprescription/serviceReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS7zRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceprescription/serviceReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>See section ?Standard Conventions?, ?Character Set Designation Truncation?, ?Numeric?, ?Numeric Truncation?.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPS7zhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceproduct/serviceIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS7zxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceproduct/serviceIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Mandatory.&#xA;Must contain the Product/Service ID Qualifier (436-E1) value from original Information Reporting.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPS70BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceproduct/serviceId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS70RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceproduct/serviceId Analysis Rule">
+        <language>Analysis</language>
+        <body>Mandatory.&#xA;Must contain the Product/Service ID (407-D7) value from original Information Reporting.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPS70hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceassociatedPrescription/serviceReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS70xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceassociatedPrescription/serviceReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPS71hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceassociatedPrescription/serviceDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS71xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceassociatedPrescription/serviceDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPS72hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceprocedureModifierCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS72xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceprocedureModifierCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPS73hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceprocedureModifierCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS73xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceprocedureModifierCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPS74hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicequantityDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPS74xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicequantityDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcswBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicefillNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcswRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicefillNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Required if needed for reversals when multiple fills of the same Prescription/Service Reference Number occur on the same day.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcsxBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedaysSupply">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcsxRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedaysSupply Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcsyBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicecompoundCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcsyRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicecompoundCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcszBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedispenseAsWritten(daw)/productSelectionCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcszRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedispenseAsWritten(daw)/productSelectionCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcs0BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedatePrescriptionWritten">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcs0RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedatePrescriptionWritten Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcs1BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicenumberOfRefillsAuthorized">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcs1RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicenumberOfRefillsAuthorized Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcs2BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceprescriptionOriginCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcs2RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceprescriptionOriginCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcs3BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicesubmissionClarificationCodeCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcs3RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicesubmissionClarificationCodeCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcs4BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicesubmissionClarificationCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcs4RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicesubmissionClarificationCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcs5BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicequantityPrescribed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcs5RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicequantityPrescribed Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcs6BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceotherCoverageCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcs6RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceotherCoverageCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPcs7BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicespecialPackagingIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPcs7RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicespecialPackagingIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmdwBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceoriginallyPrescribedProduct/serviceIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmdwRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceoriginallyPrescribedProduct/serviceIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmdxBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceoriginallyPrescribedProduct/serviceCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmdxRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceoriginallyPrescribedProduct/serviceCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmdyBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceoriginallyPrescribedQuantity">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmdyRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceoriginallyPrescribedQuantity Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmdzBDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicealternateId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmdzRDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicealternateId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmd0BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicescheduledPrescriptionIdNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmd0RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicescheduledPrescriptionIdNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmd1BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceunitOfMeasure">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmd1RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceunitOfMeasure Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmd2BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicelevelOfService">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmd2RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicelevelOfService Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmd3BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicepriorAuthorizationTypeCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmd3RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicepriorAuthorizationTypeCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmd4BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicepriorAuthorizationNumberSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmd4RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicepriorAuthorizationNumberSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmd5BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceintermediaryAuthorizationTypeId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmd5RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceintermediaryAuthorizationTypeId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmd6BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceintermediaryAuthorizationId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmd6RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServiceintermediaryAuthorizationId Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPmd7BDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedispensingStatus">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmd7RDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedispensingStatus Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPvnshDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicequantityIntendedToBeDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPvnsxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicequantityIntendedToBeDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPvnthDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedaysSupplyIntendedToBeDispensed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPvntxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedaysSupplyIntendedToBeDispensed Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPvnuhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedelayReasonCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPvnuxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicedelayReasonCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPvnvhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicetransactionReferenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPvnvxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicetransactionReferenceNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPvnwhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicepatientAssignmentIndicator(directMemberReimbursementIndicator)">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPvnwxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicepatientAssignmentIndicator(directMemberReimbursementIndicator) Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPvnxhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicerouteOfAdministration">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPvnxxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicerouteOfAdministration Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPvnyhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicecompoundType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPvnyxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicecompoundType Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPvnzhDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicemedicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn)">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPvnzxDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicemedicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn) Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XPvn0hDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicepharmacyServiceType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPvn0xDXEd-FYLhLhjdPsQ" name="InformationReportingReversalClaimSegmentServicepharmacyServiceType Analysis Rule">
+        <language>Analysis</language>
+        <body>Information Reporting Reversal (Service):&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XPS7yxDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_oMMoQA9XEd-b2MdXdLPaUQ?telecom/ClaimSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_XPS71BDXEd-FYLhLhjdPsQ" name="associatedPrescription/serviceReferenceNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPS71RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPS72BDXEd-FYLhLhjdPsQ" name="associatedPrescription/serviceDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPS72RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPS73BDXEd-FYLhLhjdPsQ" name="procedureModifierCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPS73RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPS74BDXEd-FYLhLhjdPsQ" name="procedureModifierCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPS74RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPS75BDXEd-FYLhLhjdPsQ" name="quantityDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPS75RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcswhDXEd-FYLhLhjdPsQ" name="fillNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcswxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcsxhDXEd-FYLhLhjdPsQ" name="daysSupply" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcsxxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcsyhDXEd-FYLhLhjdPsQ" name="compoundCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcsyxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcszhDXEd-FYLhLhjdPsQ" name="dispenseAsWritten(daw)/productSelectionCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcszxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcs0hDXEd-FYLhLhjdPsQ" name="datePrescriptionWritten" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcs0xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcs1hDXEd-FYLhLhjdPsQ" name="numberOfRefillsAuthorized" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcs1xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcs2hDXEd-FYLhLhjdPsQ" name="prescriptionOriginCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcs2xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcs3hDXEd-FYLhLhjdPsQ" name="submissionClarificationCodeCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcs3xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcs4hDXEd-FYLhLhjdPsQ" name="submissionClarificationCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcs4xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcs5hDXEd-FYLhLhjdPsQ" name="quantityPrescribed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcs5xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcs6hDXEd-FYLhLhjdPsQ" name="otherCoverageCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcs6xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPcs7hDXEd-FYLhLhjdPsQ" name="specialPackagingIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPcs7xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmdwhDXEd-FYLhLhjdPsQ" name="originallyPrescribedProduct/serviceIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmdwxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmdxhDXEd-FYLhLhjdPsQ" name="originallyPrescribedProduct/serviceCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmdxxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmdyhDXEd-FYLhLhjdPsQ" name="originallyPrescribedQuantity" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmdyxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmdzhDXEd-FYLhLhjdPsQ" name="alternateId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmdzxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmd0hDXEd-FYLhLhjdPsQ" name="scheduledPrescriptionIdNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmd0xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmd1hDXEd-FYLhLhjdPsQ" name="unitOfMeasure" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmd1xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmd2hDXEd-FYLhLhjdPsQ" name="levelOfService" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmd2xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmd3hDXEd-FYLhLhjdPsQ" name="priorAuthorizationTypeCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmd3xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmd4hDXEd-FYLhLhjdPsQ" name="priorAuthorizationNumberSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmd4xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmd5hDXEd-FYLhLhjdPsQ" name="intermediaryAuthorizationTypeId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmd5xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPmd6hDXEd-FYLhLhjdPsQ" name="intermediaryAuthorizationId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPmd6xDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvnsBDXEd-FYLhLhjdPsQ" name="dispensingStatus" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvnsRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvntBDXEd-FYLhLhjdPsQ" name="quantityIntendedToBeDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvntRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvnuBDXEd-FYLhLhjdPsQ" name="daysSupplyIntendedToBeDispensed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvnuRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvnvBDXEd-FYLhLhjdPsQ" name="delayReasonCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvnvRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvnwBDXEd-FYLhLhjdPsQ" name="transactionReferenceNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvnwRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvnxBDXEd-FYLhLhjdPsQ" name="patientAssignmentIndicator(directMemberReimbursementIndicator)" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvnxRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvnyBDXEd-FYLhLhjdPsQ" name="routeOfAdministration" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvnyRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvnzBDXEd-FYLhLhjdPsQ" name="compoundType" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvnzRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvn0BDXEd-FYLhLhjdPsQ" name="medicaidSubrogationInternalControlNumber/transactionControlNumber(icn/tcn)" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvn0RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XPvn1BDXEd-FYLhLhjdPsQ" name="pharmacyServiceType" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPvn1RDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:id="_9QkAgBXGEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_9QkAgRXGEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_9QkAghXGEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_9QkAgxXGEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_9QkAhBXGEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_9QkAhRXGEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Package>
