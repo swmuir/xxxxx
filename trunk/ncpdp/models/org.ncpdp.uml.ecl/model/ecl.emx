@@ -17933,6 +17933,84 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_0vvIkD-YEeCpNaLG-Ljb2Q" name="SplitScriptIndicator">
+        <ownedComment xmi:id="_tDdugD-aEeCpNaLG-Ljb2Q" annotatedElement="_0vvIkD-YEeCpNaLG-Ljb2Q">
+          <body>&lt;p>&#xD;
+    Indicator of split prescription&#xD;
+&lt;/p></body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_0vvIkj-YEeCpNaLG-Ljb2Q" name="BridgeSupply" classifier="_0vvIkD-YEeCpNaLG-Ljb2Q">
+          <ownedComment xmi:id="_0vvIkz-YEeCpNaLG-Ljb2Q" annotatedElement="_0vvIkj-YEeCpNaLG-Ljb2Q">
+            <body>&lt;p>&#xD;
+    Prescription was written with a retail bridge supply and a mail prescription&#xD;
+&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_-QUYUEQJEeC7BZCLURhbHQ" name="ClinicalInfoRequestType">
+        <ownedComment xmi:id="_-QUYUUQJEeC7BZCLURhbHQ" annotatedElement="_-QUYUEQJEeC7BZCLURhbHQ">
+          <body>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>Used in the Clinical Info Request message to&amp;nbsp;indicate what type of patient &lt;u>centric&lt;/u> clinical&#xD;
+    information is being requested.&lt;/font>&#xD;
+&lt;/p></body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_-QUYUkQJEeC7BZCLURhbHQ" name="All" classifier="_-QUYUEQJEeC7BZCLURhbHQ">
+          <ownedComment xmi:id="_-QUYU0QJEeC7BZCLURhbHQ" annotatedElement="_-QUYUkQJEeC7BZCLURhbHQ">
+            <body>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>Request for all clinical information available to be shared for a Patient.&lt;/font>&#xD;
+&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_T_CukEQKEeC7BZCLURhbHQ" name="Allergies" classifier="_-QUYUEQJEeC7BZCLURhbHQ">
+          <ownedComment xmi:id="_Z_WEIEQKEeC7BZCLURhbHQ" annotatedElement="_T_CukEQKEeC7BZCLURhbHQ">
+            <body>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>Request for a Patient's Allergies&lt;/font>&#xD;
+&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_VWg30EQKEeC7BZCLURhbHQ" name="Conditions" classifier="_-QUYUEQJEeC7BZCLURhbHQ">
+          <ownedComment xmi:id="_bcLOgEQKEeC7BZCLURhbHQ" annotatedElement="_VWg30EQKEeC7BZCLURhbHQ">
+            <body>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>Request for a Patient's Conditions&lt;/font>&#xD;
+&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_XGavMEQKEeC7BZCLURhbHQ" name="Medical History" classifier="_-QUYUEQJEeC7BZCLURhbHQ">
+          <ownedComment xmi:id="_c3q8IEQKEeC7BZCLURhbHQ" annotatedElement="_XGavMEQKEeC7BZCLURhbHQ">
+            <body>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>Request for a Patient's Medical History&lt;/font>&#xD;
+&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_YNof0EQTEeC7BZCLURhbHQ" name="NoKnownType">
+        <ownedComment xmi:id="_oymG8EQTEeC7BZCLURhbHQ" annotatedElement="_YNof0EQTEeC7BZCLURhbHQ">
+          <body>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>Used in the Clinical Info Response to indicate a patient has No Known information&lt;/font>&#xD;
+&lt;/p></body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_kBkn8EQTEeC7BZCLURhbHQ" name="Allergies" classifier="_YNof0EQTEeC7BZCLURhbHQ">
+          <ownedComment xmi:id="_qcsRQEQTEeC7BZCLURhbHQ" annotatedElement="_kBkn8EQTEeC7BZCLURhbHQ">
+            <body>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>The healthcare provider has knowledge that the patient has No Known Allergies.&lt;/font>&#xD;
+&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_lLxxQEQTEeC7BZCLURhbHQ" name="Conditions" classifier="_YNof0EQTEeC7BZCLURhbHQ">
+          <ownedComment xmi:id="_sK9J4EQTEeC7BZCLURhbHQ" annotatedElement="_lLxxQEQTEeC7BZCLURhbHQ">
+            <body>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>The healthcare provider has knowledge that the patient has No Known Conditions&lt;/font>&#xD;
+&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_modxsEQTEeC7BZCLURhbHQ" name="Medical History" classifier="_YNof0EQTEeC7BZCLURhbHQ">
+          <ownedComment xmi:id="_vhiEIEQTEeC7BZCLURhbHQ" annotatedElement="_modxsEQTEeC7BZCLURhbHQ">
+            <body>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>The healthcare provider has knowledge that the patient has No Known Medical History.&lt;/font>&#xD;
+&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -21872,4 +21950,18 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_p__1or0FEd-ck90f_7B41Q" base_Comment="_p__1ob0FEd-ck90f_7B41Q"/>
   <Default:Documentation xmi:id="_IKhtoNyOEd-_9uOIZZvC8Q" base_Comment="_IKX8oNyOEd-_9uOIZZvC8Q"/>
   <Default:Documentation xmi:id="_qBwGwdyOEd-_9uOIZZvC8Q" base_Comment="_qBwGwNyOEd-_9uOIZZvC8Q"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_0vvIqj-YEeCpNaLG-Ljb2Q" valueSetId="655-S6" fieldFormat="9(2)" standardsUsing="N" valueSetLimitations="" base_Enumeration="_0vvIkD-YEeCpNaLG-Ljb2Q" displayName="655-S6 - Accumulator Month"/>
+  <Default:Documentation xmi:id="_0wCDgT-YEeCpNaLG-Ljb2Q" base_Comment="_0vvIkz-YEeCpNaLG-Ljb2Q"/>
+  <Default:Documentation xmi:id="_tDm4cD-aEeCpNaLG-Ljb2Q" base_Comment="_tDdugD-aEeCpNaLG-Ljb2Q"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_-QUYakQJEeC7BZCLURhbHQ" valueSetId="655-S6" fieldFormat="" standardsUsing="" valueSetLimitations="" base_Enumeration="_-QUYUEQJEeC7BZCLURhbHQ" displayName=""/>
+  <Default:Documentation xmi:id="_-QUYa0QJEeC7BZCLURhbHQ" base_Comment="_-QUYUUQJEeC7BZCLURhbHQ"/>
+  <Default:Documentation xmi:id="_-QUYbEQJEeC7BZCLURhbHQ" base_Comment="_-QUYU0QJEeC7BZCLURhbHQ"/>
+  <Default:Documentation xmi:id="_Z_WEIUQKEeC7BZCLURhbHQ" base_Comment="_Z_WEIEQKEeC7BZCLURhbHQ"/>
+  <Default:Documentation xmi:id="_bcLOgUQKEeC7BZCLURhbHQ" base_Comment="_bcLOgEQKEeC7BZCLURhbHQ"/>
+  <Default:Documentation xmi:id="_c30tIEQKEeC7BZCLURhbHQ" base_Comment="_c3q8IEQKEeC7BZCLURhbHQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_aYz98EQTEeC7BZCLURhbHQ" base_Enumeration="_YNof0EQTEeC7BZCLURhbHQ" displayName="NoKnownType"/>
+  <Default:Documentation xmi:id="_oymG8UQTEeC7BZCLURhbHQ" base_Comment="_oymG8EQTEeC7BZCLURhbHQ"/>
+  <Default:Documentation xmi:id="_qcsRQUQTEeC7BZCLURhbHQ" base_Comment="_qcsRQEQTEeC7BZCLURhbHQ"/>
+  <Default:Documentation xmi:id="_sLG64EQTEeC7BZCLURhbHQ" base_Comment="_sK9J4EQTEeC7BZCLURhbHQ"/>
+  <Default:Documentation xmi:id="_vhiEIUQTEeC7BZCLURhbHQ" base_Comment="_vhiEIEQTEeC7BZCLURhbHQ"/>
 </xmi:XMI>
