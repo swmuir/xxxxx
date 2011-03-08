@@ -14045,7 +14045,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <generalization xmi:id="_kcJj4ItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_dw5qIE45Ed-G-pSkcIGh3w" name="Y" classifier="_aVQpsE45Ed-G-pSkcIGh3w">
           <ownedComment xmi:id="_BlZlsIYIEd-Vw-EcYlO-zw" annotatedElement="_dw5qIE45Ed-G-pSkcIGh3w">
-            <body>Patient gave consent for prescriber to receive the medication history from any prescriber.</body>
+            <body>&lt;p>Patient gave consent for the information to be disclosed.&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_iaUsUE45Ed-G-pSkcIGh3w" name="N" classifier="_aVQpsE45Ed-G-pSkcIGh3w">
@@ -14060,7 +14060,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_lWPD0E45Ed-G-pSkcIGh3w" name="X" classifier="_aVQpsE45Ed-G-pSkcIGh3w">
           <ownedComment xmi:id="_AFbnwIYIEd-Vw-EcYlO-zw" annotatedElement="_lWPD0E45Ed-G-pSkcIGh3w">
-            <body>Parental/Guardian consent on behalf of a minor for prescriber to receive the medication history from any prescriber.</body>
+            <body>&lt;p>Parental/Guardian gave consent for the information to be disclosed.&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_mquKgE45Ed-G-pSkcIGh3w" name="Z" classifier="_aVQpsE45Ed-G-pSkcIGh3w">
@@ -17424,17 +17424,17 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <generalization xmi:id="_wHxoEIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_Ct1dgGj1Ed-Pd7zqA0IwbQ" name="AA" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_L5ZvoIYJEd-Vw-EcYlO-zw" annotatedElement="_Ct1dgGj1Ed-Pd7zqA0IwbQ">
-            <body>Patient unknown to the Prescriber</body>
+            <body>&lt;p>Patient unknown to the Provider&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_D64fcGj1Ed-Pd7zqA0IwbQ" name="AB" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_PfUtcIYJEd-Vw-EcYlO-zw" annotatedElement="_D64fcGj1Ed-Pd7zqA0IwbQ">
-            <body>Patient never under Prescriber care</body>
+            <body>&lt;p>Patient never under  Provider care&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_E43xsGj1Ed-Pd7zqA0IwbQ" name="AC" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_QuczAIYJEd-Vw-EcYlO-zw" annotatedElement="_E43xsGj1Ed-Pd7zqA0IwbQ">
-            <body>Patient no longer under Prescriber care</body>
+            <body>&lt;p>Patient no longer under  Provider care&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_E9MRAGj1Ed-Pd7zqA0IwbQ" name="AD" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
@@ -17449,7 +17449,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_FAdncGj1Ed-Pd7zqA0IwbQ" name="AF" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_VAVe8IYJEd-Vw-EcYlO-zw" annotatedElement="_FAdncGj1Ed-Pd7zqA0IwbQ">
-            <body>Patient should contact Prescriber first</body>
+            <body>&lt;p>Patient should contact Provider first&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_FBzrQGj1Ed-Pd7zqA0IwbQ" name="AG" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
@@ -17505,6 +17505,66 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedLiteral xmi:id="_oW65IIYJEd-Vw-EcYlO-zw" name="AR" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_psAcwIYJEd-Vw-EcYlO-zw" annotatedElement="_oW65IIYJEd-Vw-EcYlO-zw">
             <body>Unable to cancel prescription; prescription was transferred to another pharmacy.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_dcLysEjREeCQH7WfiOI4dQ" name="BB" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_n9MTUEjREeCQH7WfiOI4dQ" annotatedElement="_dcLysEjREeCQH7WfiOI4dQ">
+            <body>&lt;p>No Information Available&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_gMVmIEjREeCQH7WfiOI4dQ" name="BC" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_prRlwEjREeCQH7WfiOI4dQ" annotatedElement="_gMVmIEjREeCQH7WfiOI4dQ">
+            <body>&lt;p>Not Authorized to Release&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_hsULIEjREeCQH7WfiOI4dQ" name="BD" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_6VncIEjREeCQH7WfiOI4dQ">
+            <body>&lt;p>Unable to Send Response in Format Requested&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_O7PoAEmxEeCekMwdcouCxg" name="AS" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_O7PoAUmxEeCekMwdcouCxg" annotatedElement="_O7PoAEmxEeCekMwdcouCxg">
+            <body>&lt;p>Qualified provider unavailable to provide this service.&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_SzwKoEmxEeCekMwdcouCxg" name="AT" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_SzwKoUmxEeCekMwdcouCxg" annotatedElement="_SzwKoEmxEeCekMwdcouCxg">
+            <body>&lt;p>Not accepting new patients.&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_TVatQEmxEeCekMwdcouCxg" name="AU" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_TVatQUmxEeCekMwdcouCxg" annotatedElement="_TVatQEmxEeCekMwdcouCxg">
+            <body>&lt;p>Unable to accommodate service based parameters.&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WE7ngEmxEeCekMwdcouCxg" name="AV" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_WE7ngUmxEeCekMwdcouCxg" annotatedElement="_WE7ngEmxEeCekMwdcouCxg">
+            <body>&lt;p>These parameters do not meet the patient's needs.&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_WbwMEEmxEeCekMwdcouCxg" name="AW" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_WbwMEUmxEeCekMwdcouCxg" annotatedElement="_WbwMEEmxEeCekMwdcouCxg">
+            <body>&lt;p>Based on assessment, patient needs are outside of contractual agreement&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_XA4SYEmxEeCekMwdcouCxg" name="AX" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_XA4SYUmxEeCekMwdcouCxg" annotatedElement="_XA4SYEmxEeCekMwdcouCxg">
+            <body>&lt;p>Patient condition no longer applicable&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Yo9DcEmxEeCekMwdcouCxg" name="AY" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_Yo9DcUmxEeCekMwdcouCxg" annotatedElement="_Yo9DcEmxEeCekMwdcouCxg">
+            <body>&lt;p>Patient not available for service&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Y__qcEmxEeCekMwdcouCxg" name="AZ" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_Y__qcUmxEeCekMwdcouCxg" annotatedElement="_Y__qcEmxEeCekMwdcouCxg">
+            <body>&lt;p>Patient declined service&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_ZVbH4EmxEeCekMwdcouCxg" name="BA" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_ZVbH4UmxEeCekMwdcouCxg" annotatedElement="_ZVbH4EmxEeCekMwdcouCxg">
+            <body>&lt;p>Qualified provider unavailable to provide this service.&lt;/p>&lt;p>&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -21926,4 +21986,16 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_qcsRQUQTEeC7BZCLURhbHQ" base_Comment="_qcsRQEQTEeC7BZCLURhbHQ"/>
   <Default:Documentation xmi:id="_sLG64EQTEeC7BZCLURhbHQ" base_Comment="_sK9J4EQTEeC7BZCLURhbHQ"/>
   <Default:Documentation xmi:id="_vhiEIUQTEeC7BZCLURhbHQ" base_Comment="_vhiEIEQTEeC7BZCLURhbHQ"/>
+  <Default:Documentation xmi:id="_n9PWoEjREeCQH7WfiOI4dQ" base_Comment="_n9MTUEjREeCQH7WfiOI4dQ"/>
+  <Default:Documentation xmi:id="_prUpEEjREeCQH7WfiOI4dQ" base_Comment="_prRlwEjREeCQH7WfiOI4dQ"/>
+  <xsd:Documentation xmi:id="_6VrGgEjREeCQH7WfiOI4dQ" base_Comment="_6VncIEjREeCQH7WfiOI4dQ"/>
+  <Default:Documentation xmi:id="_O7Q2IEmxEeCekMwdcouCxg" base_Comment="_O7PoAUmxEeCekMwdcouCxg"/>
+  <Default:Documentation xmi:id="_Szx_0EmxEeCekMwdcouCxg" base_Comment="_SzwKoUmxEeCekMwdcouCxg"/>
+  <Default:Documentation xmi:id="_TVbUUEmxEeCekMwdcouCxg" base_Comment="_TVatQUmxEeCekMwdcouCxg"/>
+  <Default:Documentation xmi:id="_WE8OkEmxEeCekMwdcouCxg" base_Comment="_WE7ngUmxEeCekMwdcouCxg"/>
+  <Default:Documentation xmi:id="_WbwMEkmxEeCekMwdcouCxg" base_Comment="_WbwMEUmxEeCekMwdcouCxg"/>
+  <Default:Documentation xmi:id="_XA9x8EmxEeCekMwdcouCxg" base_Comment="_XA4SYUmxEeCekMwdcouCxg"/>
+  <Default:Documentation xmi:id="_Yo9qgEmxEeCekMwdcouCxg" base_Comment="_Yo9DcUmxEeCekMwdcouCxg"/>
+  <Default:Documentation xmi:id="_ZAARgEmxEeCekMwdcouCxg" base_Comment="_Y__qcUmxEeCekMwdcouCxg"/>
+  <Default:Documentation xmi:id="_ZVbu8EmxEeCekMwdcouCxg" base_Comment="_ZVbH4UmxEeCekMwdcouCxg"/>
 </xmi:XMI>
