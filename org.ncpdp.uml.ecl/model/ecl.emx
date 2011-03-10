@@ -17507,21 +17507,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>Unable to cancel prescription; prescription was transferred to another pharmacy.</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_dcLysEjREeCQH7WfiOI4dQ" name="BB" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_n9MTUEjREeCQH7WfiOI4dQ" annotatedElement="_dcLysEjREeCQH7WfiOI4dQ">
-            <body>&lt;p>No Information Available&lt;/p></body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_gMVmIEjREeCQH7WfiOI4dQ" name="BC" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_prRlwEjREeCQH7WfiOI4dQ" annotatedElement="_gMVmIEjREeCQH7WfiOI4dQ">
-            <body>&lt;p>Not Authorized to Release&lt;/p></body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_hsULIEjREeCQH7WfiOI4dQ" name="BD" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_6VncIEjREeCQH7WfiOI4dQ">
-            <body>&lt;p>Unable to Send Response in Format Requested&lt;/p></body>
-          </ownedComment>
-        </ownedLiteral>
         <ownedLiteral xmi:id="_O7PoAEmxEeCekMwdcouCxg" name="AS" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_O7PoAUmxEeCekMwdcouCxg" annotatedElement="_O7PoAEmxEeCekMwdcouCxg">
             <body>&lt;p>Qualified provider unavailable to provide this service.&lt;/p></body>
@@ -17565,6 +17550,21 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedLiteral xmi:id="_ZVbH4EmxEeCekMwdcouCxg" name="BA" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_ZVbH4UmxEeCekMwdcouCxg" annotatedElement="_ZVbH4EmxEeCekMwdcouCxg">
             <body>&lt;p>Qualified provider unavailable to provide this service.&lt;/p>&lt;p>&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_dcLysEjREeCQH7WfiOI4dQ" name="BB" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_n9MTUEjREeCQH7WfiOI4dQ" annotatedElement="_dcLysEjREeCQH7WfiOI4dQ">
+            <body>&lt;p>No Information Available&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_gMVmIEjREeCQH7WfiOI4dQ" name="BC" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_prRlwEjREeCQH7WfiOI4dQ" annotatedElement="_gMVmIEjREeCQH7WfiOI4dQ">
+            <body>&lt;p>Not Authorized to Release&lt;/p></body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_hsULIEjREeCQH7WfiOI4dQ" name="BD" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_6VncIEjREeCQH7WfiOI4dQ">
+            <body>&lt;p>Unable to Send Response in Format Requested&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
