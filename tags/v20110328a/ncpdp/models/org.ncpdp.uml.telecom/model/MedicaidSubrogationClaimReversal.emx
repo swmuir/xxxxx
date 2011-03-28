@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_W93NkhDXEd-FYLhLhjdPsQ" name="MedicaidSubrogationClaimReversal">
+  <packagedElement xmi:type="uml:Class" xmi:id="_W93NkxDXEd-FYLhLhjdPsQ" name="MedicaidSubrogationClaimReversalInsuranceSegment">
+    <ownedRule xmi:id="_W93NlRDXEd-FYLhLhjdPsQ" name="MedicaidSubrogationClaimReversalInsuranceSegmentgroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W93NlhDXEd-FYLhLhjdPsQ" name="MedicaidSubrogationClaimReversalInsuranceSegmentgroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Medicaid Subrogation ? Claim Reversal: Required if needed to match reversal to original Medicaid Subrogation billing transaction.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W93NlxDXEd-FYLhLhjdPsQ" name="MedicaidSubrogationClaimReversalInsuranceSegmentmedicaidIdNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W93NmBDXEd-FYLhLhjdPsQ" name="MedicaidSubrogationClaimReversalInsuranceSegmentmedicaidIdNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Medicaid Subrogation - Claim Reversal:&#xA;Required to identify the member as uniquely known to Medicaid.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W93NmRDXEd-FYLhLhjdPsQ" name="MedicaidSubrogationClaimReversalInsuranceSegmentmedicaidAgencyNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W93NmhDXEd-FYLhLhjdPsQ" name="MedicaidSubrogationClaimReversalInsuranceSegmentmedicaidAgencyNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Medicaid Subrogation - Claim Reversal:&#xA;Required to identify the Medicaid agency. &#xA;See Medicaid Subrogation Implementation Guide.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_W93NlBDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuBgA9xEd-b2MdXdLPaUQ?telecom/InsuranceSegment?"/>
+    </generalization>
+  </packagedElement>
+  <profileApplication xmi:id="_CRPFERXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_CRPFEhXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_CRPFExXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_CRPFFBXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_CRPFFRXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_CRPFFhXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Package>
