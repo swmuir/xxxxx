@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_W5_aIhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefits">
+  <packagedElement xmi:type="uml:Class" xmi:id="_W5_aIxDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegment">
+    <ownedRule xmi:id="_W5_aJRDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentingredientCostSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W5_aJhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentingredientCostSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W5_aKRDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentdispensingFeeSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W5_aKhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentdispensingFeeSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W5_aLRDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentprofessionalServiceFeeSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W5_aLhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentprofessionalServiceFeeSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Not used. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W5_aMRDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentpatientPaidAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W5_aMhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentpatientPaidAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W5_aNRDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentincentiveAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W5_aNhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentincentiveAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W5_aORDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentotherAmountClaimedSubmittedCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W5_aOhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentotherAmountClaimedSubmittedCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Maximum count of 3. &#xA;&#xA;Required if Other Amount Claimed Submitted Qualifier (479-H8) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W5_aPRDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentotherAmountClaimedSubmittedQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W5_aPhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentotherAmountClaimedSubmittedQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if Other Amount Claimed Submitted (480-H9) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W5_aQRDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentotherAmountClaimedSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W5_aQhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentotherAmountClaimedSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W6JLIhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentflatSalesTaxAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6JLIxDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentflatSalesTaxAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W6JLJhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentpercentageSalesTaxAmountSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6JLJxDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentpercentageSalesTaxAmountSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if its value has an effect on the Gross Amount Due (430-DU) calculation. &#xA;&#xA;Zero (0) is a valid value.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W6JLKhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentpercentageSalesTaxRateSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6JLKxDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentpercentageSalesTaxRateSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if Percentage Sales Tax Amount Submitted (482-GE) and Percentage Sales Tax Basis Submitted (484-JE) are used.&#xA;&#xA;Required if this field could result in different pricing.&#xA;&#xA;Required if needed to calculate Percentage Sales Tax Amount Paid (559-AX).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W6JLLhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentpercentageSalesTaxBasisSubmitted">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6JLLxDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentpercentageSalesTaxBasisSubmitted Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if Percentage Sales Tax Amount Submitted (482-GE) and Percentage Sales Tax Rate Submitted (483-HE) are used. &#xA;&#xA;Required if this field could result in different pricing.&#xA;&#xA;Required if needed to calculate Percentage Sales Tax Amount Paid (559-AX).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W6JLMhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentusualAndCustomaryCharge">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6JLMxDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentusualAndCustomaryCharge Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if needed per trading partner agreement.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W6JLNhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentgrossAmountDue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6JLNxDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentgrossAmountDue Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required.&#xA;See Pricing Formula in Implementation Guide for fields used in calculation.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W6JLOhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentbasisOfCostDetermination">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6JLOxDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentbasisOfCostDetermination Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Required if needed for receiver claim/encounter adjudication.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W6JLPhDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentmedicaidPaidAmount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6JLPxDXEd-FYLhLhjdPsQ" name="PredeterminationOfBenefitsPricingSegmentmedicaidPaidAmount Analysis Rule">
+        <language>Analysis</language>
+        <body>Predetermination Of Benefits:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_W5_aJBDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuCTQ9xEd-b2MdXdLPaUQ?telecom/PricingSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_W5_aJxDXEd-FYLhLhjdPsQ" name="ingredientCostSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W5_aKBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W5_aKxDXEd-FYLhLhjdPsQ" name="dispensingFeeSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W5_aLBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W5_aLxDXEd-FYLhLhjdPsQ" name="professionalServiceFeeSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W5_aMBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W5_aMxDXEd-FYLhLhjdPsQ" name="patientPaidAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W5_aNBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W5_aNxDXEd-FYLhLhjdPsQ" name="incentiveAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W5_aOBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W5_aOxDXEd-FYLhLhjdPsQ" name="otherAmountClaimedSubmittedCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W5_aPBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W5_aPxDXEd-FYLhLhjdPsQ" name="otherAmountClaimedSubmittedQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W5_aQBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W6JLIBDXEd-FYLhLhjdPsQ" name="otherAmountClaimedSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6JLIRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W6JLJBDXEd-FYLhLhjdPsQ" name="flatSalesTaxAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6JLJRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W6JLKBDXEd-FYLhLhjdPsQ" name="percentageSalesTaxAmountSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6JLKRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W6JLLBDXEd-FYLhLhjdPsQ" name="percentageSalesTaxRateSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6JLLRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W6JLMBDXEd-FYLhLhjdPsQ" name="percentageSalesTaxBasisSubmitted" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6JLMRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W6JLNBDXEd-FYLhLhjdPsQ" name="usualAndCustomaryCharge" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6JLNRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W6JLOBDXEd-FYLhLhjdPsQ" name="grossAmountDue" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6JLORDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W6JLPBDXEd-FYLhLhjdPsQ" name="basisOfCostDetermination" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6JLPRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W6JLQBDXEd-FYLhLhjdPsQ" name="medicaidPaidAmount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6JLQRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:id="_Dk1a8RXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_Dk1a8hXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_Dk1a8xXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_Dk1a9BXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_Dk1a9RXHEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_Dk1a9hXHEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Package>
