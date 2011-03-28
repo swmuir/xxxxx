@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_W2ahsBDXEd-FYLhLhjdPsQ" name="EligibilityVerification">
+  <packagedElement xmi:type="uml:Class" xmi:id="_W2ahsRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationTransactionHeaderSegment">
+    <generalization xmi:id="_W2ahshDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_G91XQA6ZEd-RjqmAV7zMCg?telecom/TransactionHeaderSegment?"/>
+    </generalization>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_W2ahsxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegment">
+    <ownedRule xmi:id="_W2ahtRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentcardholderFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2kSsBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentcardholderFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed for receiver inquiry validation and/or determination.&#xA;&#xA;Required if the Patient is the Cardholder, and Date of Birth (304-C4) is not available. (Note: Cardholder ID (302-C2) is mandatory.)&#xA;&#xA;Required if necessary for state/federal/regulatory agency or Workers Compensation programs.&#xA;&#xA;Required if multiple people have the same Cardholder ID.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2kSsxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentcardholderLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2kStBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentcardholderLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed for inquiry validation and/or determination.&#xA;&#xA;Required if the Patient is the Cardholder, and Date of Birth (304-C4) is not available. (Note: Cardholder ID is mandatory.)&#xA;Required if necessary for state/federal/regulatory agency or Workers Compensation programs.&#xA;&#xA;Required if multiple people have the same Cardholder ID.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2kStxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmenthomePlan">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2kSuBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmenthomePlan Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed for receiver inquiry validation and/or determination for Blue Cross or Blue Shield, if a Patient has coverage under more than one plan, to distinguish each plan.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2kSuxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentplanId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2kSvBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentplanId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2kSvxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmenteligibilityClarificationCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2kSwBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmenteligibilityClarificationCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed for receiver inquiry validation and/or determination, when eligibility is not maintained at the dependent level. Required in special situations as defined by the code to clarify the eligibility of an individual, which may extend coverage.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2kSwxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentgroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2kSxBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentgroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed for receiver inquiry validation and/or determination.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2kSxxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentpersonCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2kSyBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentpersonCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed to uniquely identify the family members within the Cardholder ID.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2kSyxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentpatientRelationshipCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2kSzBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentpatientRelationshipCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed to uniquely identify the relationship of the Patient to the Cardholder ID.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcohDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentotherPayerBinNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tcoxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentotherPayerBinNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcphDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentotherPayerProcessorControlNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tcpxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentotherPayerProcessorControlNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcqhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentotherPayerCardholderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tcqxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentotherPayerCardholderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcrhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentotherPayerGroupId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tcrxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentotherPayerGroupId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcshDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentmedigapId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tcsxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentmedigapId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcthDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentmedicaidIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tctxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentmedicaidIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcuhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentproviderAcceptAssignmentIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tcuxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentproviderAcceptAssignmentIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcvhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentcmsPartDDefinedQualifiedFacility">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tcvxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentcmsPartDDefinedQualifiedFacility Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used. &#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcwhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentmedicaidIdNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tcwxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentmedicaidIdNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W2tcxhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentmedicaidAgencyNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tcxxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationInsuranceSegmentmedicaidAgencyNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_W2ahtBDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuBgA9xEd-b2MdXdLPaUQ?telecom/InsuranceSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_W2kSsRDXEd-FYLhLhjdPsQ" name="cardholderFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2kSshDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2kStRDXEd-FYLhLhjdPsQ" name="cardholderLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2kSthDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2kSuRDXEd-FYLhLhjdPsQ" name="homePlan" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2kSuhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2kSvRDXEd-FYLhLhjdPsQ" name="planId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2kSvhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2kSwRDXEd-FYLhLhjdPsQ" name="eligibilityClarificationCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2kSwhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2kSxRDXEd-FYLhLhjdPsQ" name="groupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2kSxhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2kSyRDXEd-FYLhLhjdPsQ" name="personCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2kSyhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcoBDXEd-FYLhLhjdPsQ" name="patientRelationshipCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcoRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcpBDXEd-FYLhLhjdPsQ" name="otherPayerBinNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcpRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcqBDXEd-FYLhLhjdPsQ" name="otherPayerProcessorControlNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcqRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcrBDXEd-FYLhLhjdPsQ" name="otherPayerCardholderId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcrRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcsBDXEd-FYLhLhjdPsQ" name="otherPayerGroupId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcsRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tctBDXEd-FYLhLhjdPsQ" name="medigapId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tctRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcuBDXEd-FYLhLhjdPsQ" name="medicaidIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcuRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcvBDXEd-FYLhLhjdPsQ" name="providerAcceptAssignmentIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcvRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcwBDXEd-FYLhLhjdPsQ" name="cmsPartDDefinedQualifiedFacility" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcwRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcxBDXEd-FYLhLhjdPsQ" name="medicaidIdNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcxRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W2tcyBDXEd-FYLhLhjdPsQ" name="medicaidAgencyNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2tcyRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_W2tcyhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegment">
+    <ownedRule xmi:id="_W2tczBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W2tczRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NoRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NohDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NpRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentdateOfBirth">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NphDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentdateOfBirth Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed for receiver inquiry validation and/or determination.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NqRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientGenderCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NqhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientGenderCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed for receiver inquiry validation and/or determination.&#xA;&#xA;Required if additional verification of the submitted eligibility information is needed.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NrRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NrhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if the Patient is not the Cardholder and Date of Birth (304-C4) is not available.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if additional verification of the submitted eligibility information is needed.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NsRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NshDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if the Patient is not the Cardholder and Date of Birth (304-C4) is not available. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if additional verification of the submitted eligibility information is needed.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NtRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NthDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NuRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NuhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NvRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientState/ProvinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NvhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientState/ProvinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NwRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NwhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NxRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientPhoneNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NxhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientPhoneNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NyRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentplaceOfService">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NyhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentplaceOfService Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W23NzRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentemployerId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W23NzhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentemployerId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-oRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentsmoker/Non-smokerCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-ohDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentsmoker/Non-smokerCode Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-pRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpregnancyIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-phDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpregnancyIndicator Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-qRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientE-mailAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-qhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientE-mailAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-rRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientResidence">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-rhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPatientSegmentpatientResidence Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if this field could result in different coverage, pricing, or patient financial responsibility.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_W2tcyxDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8yuCFg9xEd-b2MdXdLPaUQ?telecom/PatientSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_W2tczhDXEd-FYLhLhjdPsQ" name="patientIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NoBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NoxDXEd-FYLhLhjdPsQ" name="patientId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NpBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NpxDXEd-FYLhLhjdPsQ" name="dateOfBirth" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NqBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NqxDXEd-FYLhLhjdPsQ" name="patientGenderCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NrBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NrxDXEd-FYLhLhjdPsQ" name="patientFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NsBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NsxDXEd-FYLhLhjdPsQ" name="patientLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NtBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NtxDXEd-FYLhLhjdPsQ" name="patientStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NuBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NuxDXEd-FYLhLhjdPsQ" name="patientCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NvBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NvxDXEd-FYLhLhjdPsQ" name="patientState/ProvinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NwBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NwxDXEd-FYLhLhjdPsQ" name="patientZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NxBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NxxDXEd-FYLhLhjdPsQ" name="patientPhoneNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NyBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NyxDXEd-FYLhLhjdPsQ" name="placeOfService" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W23NzBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W23NzxDXEd-FYLhLhjdPsQ" name="employerId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-oBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3A-oxDXEd-FYLhLhjdPsQ" name="smoker/Non-smokerCode" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-pBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3A-pxDXEd-FYLhLhjdPsQ" name="pregnancyIndicator" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-qBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3A-qxDXEd-FYLhLhjdPsQ" name="patientE-mailAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-rBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3A-rxDXEd-FYLhLhjdPsQ" name="patientResidence" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-sBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_W3A-sRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPharmacyProviderSegment">
+    <ownedRule xmi:id="_W3A-sxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPharmacyProviderSegmentproviderIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-tBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPharmacyProviderSegmentproviderIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if Provider ID (444-E9) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-txDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPharmacyProviderSegmentproviderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-uBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPharmacyProviderSegmentproviderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if pharmacy provider needed for receiver inquiry validation and/or determination.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_W3A-shDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zKthg9xEd-b2MdXdLPaUQ?telecom/PharmacyProviderSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_W3A-tRDXEd-FYLhLhjdPsQ" name="providerIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-thDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3A-uRDXEd-FYLhLhjdPsQ" name="providerId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-uhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_W3A-uxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegment">
+    <ownedRule xmi:id="_W3A-vRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-vhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if Prescriber ID (411-DB) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-wRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-whDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if this field could result in different coverage or patient financial responsibility.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-xRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-xhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required when the Prescriber ID (411-DB) is not known. &#xA;&#xA;Required if needed for Prescriber ID (411-DB) validation/clarification.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-yRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberPhoneNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-yhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberPhoneNumber Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-zRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprimaryCareProviderIdQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-zhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprimaryCareProviderIdQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if Primary Care Provider ID (421-DL) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3A-0RDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprimaryCareProviderId">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3A-0hDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprimaryCareProviderId Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed for receiver eligibility determination, if known and available.&#xA;&#xA;Required if this field could result in different coverage or patient financial responsibility.&#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3KIkhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprimaryCareProviderLastName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3KIkxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprimaryCareProviderLastName Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if this field is used as an alternative for Primary Care Provider ID (421-DL) when ID is not known.&#xA;&#xA;Required if needed for Primary Care Provider ID (421-DL) validation/clarification.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3KIlhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberFirstName">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3KIlxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberFirstName Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if needed to assist in identifying the prescriber. &#xA;&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3KImhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberStreetAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3KImxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberStreetAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3KInhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberCityAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3KInxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberCityAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3KIohDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberState/provinceAddress">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3KIoxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberState/provinceAddress Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3KIphDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberZip/postalZone">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3KIpxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationPrescriberSegmentprescriberZip/postalZone Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Not used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_W3A-vBDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8zA8zQ9xEd-b2MdXdLPaUQ?telecom/PrescriberSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_W3A-vxDXEd-FYLhLhjdPsQ" name="prescriberIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-wBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3A-wxDXEd-FYLhLhjdPsQ" name="prescriberId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-xBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3A-xxDXEd-FYLhLhjdPsQ" name="prescriberLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-yBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3A-yxDXEd-FYLhLhjdPsQ" name="prescriberPhoneNumber" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-zBDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3A-zxDXEd-FYLhLhjdPsQ" name="primaryCareProviderIdQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3A-0BDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3KIkBDXEd-FYLhLhjdPsQ" name="primaryCareProviderId" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KIkRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3KIlBDXEd-FYLhLhjdPsQ" name="primaryCareProviderLastName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KIlRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3KImBDXEd-FYLhLhjdPsQ" name="prescriberFirstName" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KImRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3KInBDXEd-FYLhLhjdPsQ" name="prescriberStreetAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KInRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3KIoBDXEd-FYLhLhjdPsQ" name="prescriberCityAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KIoRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3KIpBDXEd-FYLhLhjdPsQ" name="prescriberState/provinceAddress" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KIpRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3KIqBDXEd-FYLhLhjdPsQ" name="prescriberZip/postalZone" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KIqRDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_W3KIqhDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegment">
+    <ownedRule xmi:id="_W3KIrBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentrequestPeriodBeginDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3KIrRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentrequestPeriodBeginDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3KIsBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentrequestPeriodRecert/revisedDate">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3KIsRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentrequestPeriodRecert/revisedDate Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;&#xA;Required if the Request Status (373-2U) = ?2? (Revision) or ?3? (Recertification).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3KItBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentrequestStatus">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3KItRDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentrequestStatus Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3KIuBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentlengthOfNeedQualifier">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5kBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentlengthOfNeedQualifier Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if Length of Need (370-2R) is used.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5kxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentlengthOfNeed">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5lBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentlengthOfNeed Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5lxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentprescriber/supplierDateSigned">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5mBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentprescriber/supplierDateSigned Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5mxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentsupportingDocumentation">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5nBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentsupportingDocumentation Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs (using Section C of Medicare?s CMN forms).&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5nxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionNumber/letterCount">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5oBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionNumber/letterCount Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Maximum count of 50.&#xA;&#xA;Required if needed to provide response to narratives.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5oxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionNumber/letter">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5pBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionNumber/letter Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form.  &#xA;&#xA;Required if Question Number/Letter&#xA;Count (377-2Z) is greater than 0.&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5pxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionPercentResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5qBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionPercentResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form that requires a percent as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5qxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionDateResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5rBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionDateResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form that requires a date as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5rxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionDollarAmountResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5sBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionDollarAmountResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form that requires a dollar amount as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5sxDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionNumericResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5tBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionNumericResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for&#xA;State/federal/regulatory agency programs to respond to questions included on a Medicare form that requires a numeric as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W3T5txDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionAlphanumericResponse">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3T5uBDXEd-FYLhLhjdPsQ" name="EligibilityVerificationAdditionalDocumentationSegmentquestionAlphanumericResponse Analysis Rule">
+        <language>Analysis</language>
+        <body>Eligibility Verification:&#xA;Required if necessary for state/federal/regulatory agency programs to respond to questions included on a Medicare form that requires an alphanumeric as the response. (At least one response is required per question.)&#xA;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_W3KIqxDXEd-FYLhLhjdPsQ">
+      <general xmi:type="uml:Class" href="telecom.emx#_8y3y3w9xEd-b2MdXdLPaUQ?telecom/AdditionalDocumentationSegment?"/>
+    </generalization>
+    <ownedAttribute xmi:id="_W3KIrhDXEd-FYLhLhjdPsQ" name="requestPeriodBeginDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KIrxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3KIshDXEd-FYLhLhjdPsQ" name="requestPeriodRecert/revisedDate" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KIsxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3KIthDXEd-FYLhLhjdPsQ" name="requestStatus" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3KItxDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5kRDXEd-FYLhLhjdPsQ" name="lengthOfNeedQualifier" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5khDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5lRDXEd-FYLhLhjdPsQ" name="lengthOfNeed" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5lhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5mRDXEd-FYLhLhjdPsQ" name="prescriber/supplierDateSigned" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5mhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5nRDXEd-FYLhLhjdPsQ" name="supportingDocumentation" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5nhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5oRDXEd-FYLhLhjdPsQ" name="questionNumber/letterCount" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5ohDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5pRDXEd-FYLhLhjdPsQ" name="questionNumber/letter" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5phDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5qRDXEd-FYLhLhjdPsQ" name="questionPercentResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5qhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5rRDXEd-FYLhLhjdPsQ" name="questionDateResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5rhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5sRDXEd-FYLhLhjdPsQ" name="questionDollarAmountResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5shDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5tRDXEd-FYLhLhjdPsQ" name="questionNumericResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5thDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3T5uRDXEd-FYLhLhjdPsQ" name="questionAlphanumericResponse" visibility="private">
+      <type xmi:type="uml:Class" href="telecom.emx#_mWXuIA6eEd-RjqmAV7zMCg?telecom/Field?"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3T5uhDXEd-FYLhLhjdPsQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:id="_5qMWwBXGEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_5qMWwRXGEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_5qMWwhXGEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_5qMWwxXGEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_5qMWxBXGEd-9efMcr1p1KA">
+    <eAnnotations xmi:id="_5qMWxRXGEd-9efMcr1p1KA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Package>
