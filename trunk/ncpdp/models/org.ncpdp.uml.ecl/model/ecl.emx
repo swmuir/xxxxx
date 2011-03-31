@@ -14045,7 +14045,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <generalization xmi:id="_kcJj4ItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_dw5qIE45Ed-G-pSkcIGh3w" name="Y" classifier="_aVQpsE45Ed-G-pSkcIGh3w">
           <ownedComment xmi:id="_BlZlsIYIEd-Vw-EcYlO-zw" annotatedElement="_dw5qIE45Ed-G-pSkcIGh3w">
-            <body>&lt;p>Patient gave consent for the information to be disclosed.&lt;/p></body>
+            <body>Patient gave consent for the information to be disclosed.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_iaUsUE45Ed-G-pSkcIGh3w" name="N" classifier="_aVQpsE45Ed-G-pSkcIGh3w">
@@ -14060,7 +14060,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_lWPD0E45Ed-G-pSkcIGh3w" name="X" classifier="_aVQpsE45Ed-G-pSkcIGh3w">
           <ownedComment xmi:id="_AFbnwIYIEd-Vw-EcYlO-zw" annotatedElement="_lWPD0E45Ed-G-pSkcIGh3w">
-            <body>&lt;p>Parental/Guardian gave consent for the information to be disclosed.&lt;/p></body>
+            <body>Parental/Guardian gave consent for the information to be disclosed.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_mquKgE45Ed-G-pSkcIGh3w" name="Z" classifier="_aVQpsE45Ed-G-pSkcIGh3w">
@@ -17424,17 +17424,17 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <generalization xmi:id="_wHxoEIt0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_Ct1dgGj1Ed-Pd7zqA0IwbQ" name="AA" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_L5ZvoIYJEd-Vw-EcYlO-zw" annotatedElement="_Ct1dgGj1Ed-Pd7zqA0IwbQ">
-            <body>&lt;p>Patient unknown to the Provider&lt;/p></body>
+            <body>Patient unknown to the Provider</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_D64fcGj1Ed-Pd7zqA0IwbQ" name="AB" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_PfUtcIYJEd-Vw-EcYlO-zw" annotatedElement="_D64fcGj1Ed-Pd7zqA0IwbQ">
-            <body>&lt;p>Patient never under  Provider care&lt;/p></body>
+            <body>Patient never under  Provider care</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_E43xsGj1Ed-Pd7zqA0IwbQ" name="AC" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_QuczAIYJEd-Vw-EcYlO-zw" annotatedElement="_E43xsGj1Ed-Pd7zqA0IwbQ">
-            <body>&lt;p>Patient no longer under  Provider care&lt;/p></body>
+            <body>Patient no longer under  Provider care</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_E9MRAGj1Ed-Pd7zqA0IwbQ" name="AD" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
@@ -17449,7 +17449,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_FAdncGj1Ed-Pd7zqA0IwbQ" name="AF" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_VAVe8IYJEd-Vw-EcYlO-zw" annotatedElement="_FAdncGj1Ed-Pd7zqA0IwbQ">
-            <body>&lt;p>Patient should contact Provider first&lt;/p></body>
+            <body>Patient should contact Provider first</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_FBzrQGj1Ed-Pd7zqA0IwbQ" name="AG" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
@@ -17509,62 +17509,62 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_O7PoAEmxEeCekMwdcouCxg" name="AS" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_O7PoAUmxEeCekMwdcouCxg" annotatedElement="_O7PoAEmxEeCekMwdcouCxg">
-            <body>&lt;p>Qualified provider unavailable to provide this service.&lt;/p></body>
+            <body>Qualified provider unavailable to provide this service.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_SzwKoEmxEeCekMwdcouCxg" name="AT" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_SzwKoUmxEeCekMwdcouCxg" annotatedElement="_SzwKoEmxEeCekMwdcouCxg">
-            <body>&lt;p>Not accepting new patients.&lt;/p></body>
+            <body>Not accepting new patients.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_TVatQEmxEeCekMwdcouCxg" name="AU" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_TVatQUmxEeCekMwdcouCxg" annotatedElement="_TVatQEmxEeCekMwdcouCxg">
-            <body>&lt;p>Unable to accommodate service based parameters.&lt;/p></body>
+            <body>Unable to accommodate service based parameters.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_WE7ngEmxEeCekMwdcouCxg" name="AV" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_WE7ngUmxEeCekMwdcouCxg" annotatedElement="_WE7ngEmxEeCekMwdcouCxg">
-            <body>&lt;p>These parameters do not meet the patient's needs.&lt;/p></body>
+            <body>These parameters do not meet the patient's needs.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_WbwMEEmxEeCekMwdcouCxg" name="AW" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_WbwMEUmxEeCekMwdcouCxg" annotatedElement="_WbwMEEmxEeCekMwdcouCxg">
-            <body>&lt;p>Based on assessment, patient needs are outside of contractual agreement&lt;/p></body>
+            <body>Based on assessment, patient needs are outside of contractual agreement</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_XA4SYEmxEeCekMwdcouCxg" name="AX" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_XA4SYUmxEeCekMwdcouCxg" annotatedElement="_XA4SYEmxEeCekMwdcouCxg">
-            <body>&lt;p>Patient condition no longer applicable&lt;/p></body>
+            <body>Patient condition no longer applicable</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_Yo9DcEmxEeCekMwdcouCxg" name="AY" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_Yo9DcUmxEeCekMwdcouCxg" annotatedElement="_Yo9DcEmxEeCekMwdcouCxg">
-            <body>&lt;p>Patient not available for service&lt;/p></body>
+            <body>Patient not available for service</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_Y__qcEmxEeCekMwdcouCxg" name="AZ" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_Y__qcUmxEeCekMwdcouCxg" annotatedElement="_Y__qcEmxEeCekMwdcouCxg">
-            <body>&lt;p>Patient declined service&lt;/p></body>
+            <body>Patient declined service</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_ZVbH4EmxEeCekMwdcouCxg" name="BA" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_ZVbH4UmxEeCekMwdcouCxg" annotatedElement="_ZVbH4EmxEeCekMwdcouCxg">
-            <body>&lt;p>Qualified provider unavailable to provide this service.&lt;/p>&lt;p>&lt;/p></body>
+            <body>Qualified provider unavailable to provide this service.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_dcLysEjREeCQH7WfiOI4dQ" name="BB" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_n9MTUEjREeCQH7WfiOI4dQ" annotatedElement="_dcLysEjREeCQH7WfiOI4dQ">
-            <body>&lt;p>No Information Available&lt;/p></body>
+            <body>No Information Available</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_gMVmIEjREeCQH7WfiOI4dQ" name="BC" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_prRlwEjREeCQH7WfiOI4dQ" annotatedElement="_gMVmIEjREeCQH7WfiOI4dQ">
-            <body>&lt;p>Not Authorized to Release&lt;/p></body>
+            <body>Not Authorized to Release</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_hsULIEjREeCQH7WfiOI4dQ" name="BD" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
-          <ownedComment xmi:id="_6VncIEjREeCQH7WfiOI4dQ">
-            <body>&lt;p>Unable to Send Response in Format Requested&lt;/p></body>
+        <ownedLiteral xmi:id="_6kqEcEuUEeCOKta2JlF6ZQ" name="BD" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_CmfM4EuVEeCOKta2JlF6ZQ" annotatedElement="_6kqEcEuUEeCOKta2JlF6ZQ">
+            <body>Unable to send Response in Format Requested.</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -17943,10 +17943,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_yduT4KbgEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed">
         <ownedComment xmi:id="_yduT4abgEd-2262i8oXgXw" annotatedElement="_yduT4KbgEd-2262i8oXgXw">
-          <body>Restricted text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value 0 or a non-specified value.  &#xD;
- &#xD;
- &#xD;
-</body>
+          <body>Restricted text for submitter to define their clarification basis for Substitution code applied. This field is not allowed to be used with Substitution value 0 or a non-specified value.</body>
         </ownedComment>
         <generalization xmi:id="_yduT4qbgEd-2262i8oXgXw" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_DFs2cLRNEd-OvqUOofkjZQ" name="BRAND MEDICALLY NECESSARY" classifier="_yduT4KbgEd-2262i8oXgXw">
@@ -17957,79 +17954,56 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_0vvIkD-YEeCpNaLG-Ljb2Q" name="SplitScriptIndicator">
         <ownedComment xmi:id="_tDdugD-aEeCpNaLG-Ljb2Q" annotatedElement="_0vvIkD-YEeCpNaLG-Ljb2Q">
-          <body>&lt;p>&#xD;
-    Indicator of split prescription&#xD;
-&lt;/p></body>
+          <body>Indicator of split prescription</body>
         </ownedComment>
         <ownedLiteral xmi:id="_0vvIkj-YEeCpNaLG-Ljb2Q" name="BridgeSupply" classifier="_0vvIkD-YEeCpNaLG-Ljb2Q">
           <ownedComment xmi:id="_0vvIkz-YEeCpNaLG-Ljb2Q" annotatedElement="_0vvIkj-YEeCpNaLG-Ljb2Q">
-            <body>&lt;p>&#xD;
-    Prescription was written with a retail bridge supply and a mail prescription&#xD;
-&lt;/p></body>
+            <body>Prescription was written with a retail bridge supply and a mail prescription</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_-QUYUEQJEeC7BZCLURhbHQ" name="ClinicalInfoRequestType">
         <ownedComment xmi:id="_-QUYUUQJEeC7BZCLURhbHQ" annotatedElement="_-QUYUEQJEeC7BZCLURhbHQ">
-          <body>&lt;p>&#xD;
-    &lt;font size=&quot;2&quot;>Used in the Clinical Info Request message to&amp;nbsp;indicate what type of patient &lt;u>centric&lt;/u> clinical&#xD;
-    information is being requested.&lt;/font>&#xD;
-&lt;/p></body>
+          <body>Used in the Clinical Info Request message to indicate what type of patient centric clinical information is being requested.</body>
         </ownedComment>
         <ownedLiteral xmi:id="_-QUYUkQJEeC7BZCLURhbHQ" name="All" classifier="_-QUYUEQJEeC7BZCLURhbHQ">
           <ownedComment xmi:id="_-QUYU0QJEeC7BZCLURhbHQ" annotatedElement="_-QUYUkQJEeC7BZCLURhbHQ">
-            <body>&lt;p>&#xD;
-    &lt;font size=&quot;2&quot;>Request for all clinical information available to be shared for a Patient.&lt;/font>&#xD;
-&lt;/p></body>
+            <body>Request for all clinical information available to be shared for a Patient.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_T_CukEQKEeC7BZCLURhbHQ" name="Allergies" classifier="_-QUYUEQJEeC7BZCLURhbHQ">
           <ownedComment xmi:id="_Z_WEIEQKEeC7BZCLURhbHQ" annotatedElement="_T_CukEQKEeC7BZCLURhbHQ">
-            <body>&lt;p>&#xD;
-    &lt;font size=&quot;2&quot;>Request for a Patient's Allergies&lt;/font>&#xD;
-&lt;/p></body>
+            <body>Request for a Patient's Allergies</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_VWg30EQKEeC7BZCLURhbHQ" name="Conditions" classifier="_-QUYUEQJEeC7BZCLURhbHQ">
           <ownedComment xmi:id="_bcLOgEQKEeC7BZCLURhbHQ" annotatedElement="_VWg30EQKEeC7BZCLURhbHQ">
-            <body>&lt;p>&#xD;
-    &lt;font size=&quot;2&quot;>Request for a Patient's Conditions&lt;/font>&#xD;
-&lt;/p></body>
+            <body>Request for a Patient's Conditions.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_XGavMEQKEeC7BZCLURhbHQ" name="Medical History" classifier="_-QUYUEQJEeC7BZCLURhbHQ">
           <ownedComment xmi:id="_c3q8IEQKEeC7BZCLURhbHQ" annotatedElement="_XGavMEQKEeC7BZCLURhbHQ">
-            <body>&lt;p>&#xD;
-    &lt;font size=&quot;2&quot;>Request for a Patient's Medical History&lt;/font>&#xD;
-&lt;/p></body>
+            <body>Request for a Patient's Medical History.</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_YNof0EQTEeC7BZCLURhbHQ" name="NoKnownType">
         <ownedComment xmi:id="_oymG8EQTEeC7BZCLURhbHQ" annotatedElement="_YNof0EQTEeC7BZCLURhbHQ">
-          <body>&lt;p>&#xD;
-    &lt;font size=&quot;2&quot;>Used in the Clinical Info Response to indicate a patient has No Known information&lt;/font>&#xD;
-&lt;/p></body>
+          <body>Used in the Clinical Info Response to indicate a patient has No Known information.</body>
         </ownedComment>
         <ownedLiteral xmi:id="_kBkn8EQTEeC7BZCLURhbHQ" name="Allergies" classifier="_YNof0EQTEeC7BZCLURhbHQ">
           <ownedComment xmi:id="_qcsRQEQTEeC7BZCLURhbHQ" annotatedElement="_kBkn8EQTEeC7BZCLURhbHQ">
-            <body>&lt;p>&#xD;
-    &lt;font size=&quot;2&quot;>The healthcare provider has knowledge that the patient has No Known Allergies.&lt;/font>&#xD;
-&lt;/p></body>
+            <body>The healthcare provider has knowledge that the patient has No Known Allergies.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_lLxxQEQTEeC7BZCLURhbHQ" name="Conditions" classifier="_YNof0EQTEeC7BZCLURhbHQ">
           <ownedComment xmi:id="_sK9J4EQTEeC7BZCLURhbHQ" annotatedElement="_lLxxQEQTEeC7BZCLURhbHQ">
-            <body>&lt;p>&#xD;
-    &lt;font size=&quot;2&quot;>The healthcare provider has knowledge that the patient has No Known Conditions&lt;/font>&#xD;
-&lt;/p></body>
+            <body>The healthcare provider has knowledge that the patient has No Known Conditions.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_modxsEQTEeC7BZCLURhbHQ" name="Medical History" classifier="_YNof0EQTEeC7BZCLURhbHQ">
           <ownedComment xmi:id="_vhiEIEQTEeC7BZCLURhbHQ" annotatedElement="_modxsEQTEeC7BZCLURhbHQ">
-            <body>&lt;p>&#xD;
-    &lt;font size=&quot;2&quot;>The healthcare provider has knowledge that the patient has No Known Medical History.&lt;/font>&#xD;
-&lt;/p></body>
+            <body>The healthcare provider has knowledge that the patient has No Known Medical History.</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -21988,7 +21962,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_vhiEIUQTEeC7BZCLURhbHQ" base_Comment="_vhiEIEQTEeC7BZCLURhbHQ"/>
   <Default:Documentation xmi:id="_n9PWoEjREeCQH7WfiOI4dQ" base_Comment="_n9MTUEjREeCQH7WfiOI4dQ"/>
   <Default:Documentation xmi:id="_prUpEEjREeCQH7WfiOI4dQ" base_Comment="_prRlwEjREeCQH7WfiOI4dQ"/>
-  <xsd:Documentation xmi:id="_6VrGgEjREeCQH7WfiOI4dQ" base_Comment="_6VncIEjREeCQH7WfiOI4dQ"/>
   <Default:Documentation xmi:id="_O7Q2IEmxEeCekMwdcouCxg" base_Comment="_O7PoAUmxEeCekMwdcouCxg"/>
   <Default:Documentation xmi:id="_Szx_0EmxEeCekMwdcouCxg" base_Comment="_SzwKoUmxEeCekMwdcouCxg"/>
   <Default:Documentation xmi:id="_TVbUUEmxEeCekMwdcouCxg" base_Comment="_TVatQUmxEeCekMwdcouCxg"/>
@@ -21998,4 +21971,5 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_Yo9qgEmxEeCekMwdcouCxg" base_Comment="_Yo9DcUmxEeCekMwdcouCxg"/>
   <Default:Documentation xmi:id="_ZAARgEmxEeCekMwdcouCxg" base_Comment="_Y__qcUmxEeCekMwdcouCxg"/>
   <Default:Documentation xmi:id="_ZVbu8EmxEeCekMwdcouCxg" base_Comment="_ZVbH4UmxEeCekMwdcouCxg"/>
+  <Default:Documentation xmi:id="_Cmi3QEuVEeCOKta2JlF6ZQ" base_Comment="_CmfM4EuVEeCOKta2JlF6ZQ"/>
 </xmi:XMI>
