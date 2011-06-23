@@ -2327,7 +2327,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType">
+          <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -2534,7 +2534,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="SoldDate" type="datatypes:DateType">
+          <xsd:element maxOccurs="0" minOccurs="0" name="SoldDate" type="datatypes:DateType">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -3330,7 +3330,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
       <xsd:element name="RepeatingSIG">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element name="SigSequencePositionNumber" type="datatypes:n..2"/>
+            <xsd:element name="SigSequencePositionNumber" type="datatypes:n..2M"/>
             <xsd:element minOccurs="0" name="MultipleSigModifier" type="datatypes:ANDORTHEN"/>
           </xsd:sequence>
         </xsd:complexType>
