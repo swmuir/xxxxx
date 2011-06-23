@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+	<extension point="org.eclipse.ui.actionSets">
+		<actionSet label="NCPDP Action Set" visible="true"
+			id="org.ncpdp.qvt.ecl.actionSet">
+			<menu label="NCPDP" id="ncpdpMenu">
+				<separator name="ncpdpGroup">
+				</separator>
+			</menu>
+			<action label="&amp;External Code List Merge" icon="icons/sample.gif"
+				class="org.ncpdp.qvt.ecl.action.ECLAction" tooltip="Merge ECL"
+				menubarPath="ncpdpMenu/ncpdpGroup" toolbarPath="ncpdpGroup"
+				id="org.ncpdp.qvt.ecl.action.ECLAction">
+			</action>
+		</actionSet>
+	</extension>
+ <extension
+       point="org.eclipse.ui.preferencePages">
+    <page
+          class="org.ncpdp.qvt.ecl.preferences.NCPDPPreferencePage"
+          id="org.ncpdp.qvt.ecl.preferences.NCPDPPreferencePage"
+          name="NCPDP Preferences">
+    </page>
+ </extension>
+ <extension
+       point="org.eclipse.core.runtime.preferences">
+    <initializer
+          class="org.ncpdp.qvt.ecl.preferences.NCPDPPreferenceInitializer">
+    </initializer>
+ </extension>
+
+</plugin>
