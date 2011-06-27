@@ -3092,7 +3092,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OVRpjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_4KwZITD1Ed-8rpqfOAePKg" name="anonymous_23" visibility="private">
-          <ownedAttribute xmi:id="_4KwZIjD1Ed-8rpqfOAePKg" name="SigSequencePositionNumber" type="_4I0fdTD1Ed-8rpqfOAePKg">
+          <ownedAttribute xmi:id="_4KwZIjD1Ed-8rpqfOAePKg" name="SigSequencePositionNumber" type="_4l4O8DD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_4KwZIzD1Ed-8rpqfOAePKg" annotatedElement="_4KwZIjD1Ed-8rpqfOAePKg">
               <body></body>
             </ownedComment>
@@ -8097,7 +8097,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_qsod4YnbEd-pZLs28ekBmw" annotatedElement="_P_eYSmTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYS2TqEd-Y0upv2_lheQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYS2TqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYTGTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_P_eYTWTqEd-Y0upv2_lheQ" name="AdditionalRefillsAuthorized" type="_4I0fdTD1Ed-8rpqfOAePKg">
@@ -9175,7 +9175,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_pHAj4YnbEd-pZLs28ekBmw" annotatedElement="_krxyymTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyy2TrEd-Y0upv2_lheQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyy2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyzGTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_krxyzWTrEd-Y0upv2_lheQ" name="AdditionalRefillsAuthorized" type="_4I0fdTD1Ed-8rpqfOAePKg">
