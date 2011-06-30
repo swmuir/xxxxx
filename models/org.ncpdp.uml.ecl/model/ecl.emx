@@ -11622,6 +11622,10 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <generalization xmi:id="_USTewSx5Ed-8mcmtGejV_Q">
           <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
         </generalization>
+        <ownedAttribute xmi:id="_LrlwEKKQEeCqJod5Pb_Hog" name="pattern">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_LrlwEaKQEeCqJod5Pb_Hog" value="([!-~]|[ ])*[!-~]([!-~]|[ ])*"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_h9ArIixAEd-8mcmtGejV_Q" name="CodeListQualifierCommunicationNumberPVDPTTCOOSegmentX12DE365" visibility="private">
         <ownedComment xmi:id="_h9ArIyxAEd-8mcmtGejV_Q">
@@ -21453,7 +21457,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_oCxxTmdhEd-EzKeHnOFaKw" base_Comment="_oCxxSGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AK1WYGdiEd-EzKeHnOFaKw" base_Generalization="__sJPQGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AnmK4GdiEd-EzKeHnOFaKw" base_Generalization="__Ja8sGdhEd-EzKeHnOFaKw"/>
-  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="2010122" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="2010123" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <orgncpdpecl:ncpdpecl xmi:id="_J51OkmdmEd-EzKeHnOFaKw" valueSetId="548-6F" fieldFormat="x(3)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_J51OcGdmEd-EzKeHnOFaKw" displayName="Approved Message Code"/>
   <Default:Documentation xmi:id="_J51Ok2dmEd-EzKeHnOFaKw" base_Comment="_J51OcWdmEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_J51OlGdmEd-EzKeHnOFaKw" base_Comment="_J51Oc2dmEd-EzKeHnOFaKw"/>
@@ -21834,4 +21838,5 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_p__1or0FEd-ck90f_7B41Q" base_Comment="_p__1ob0FEd-ck90f_7B41Q"/>
   <Default:Documentation xmi:id="_IKhtoNyOEd-_9uOIZZvC8Q" base_Comment="_IKX8oNyOEd-_9uOIZZvC8Q"/>
   <Default:Documentation xmi:id="_qBwGwdyOEd-_9uOIZZvC8Q" base_Comment="_qBwGwNyOEd-_9uOIZZvC8Q"/>
+  <xsd:Facet xmi:id="_LsUI0KKQEeCqJod5Pb_Hog" base_Property="_LrlwEKKQEeCqJod5Pb_Hog"/>
 </xmi:XMI>

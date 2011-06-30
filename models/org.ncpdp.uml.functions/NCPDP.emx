@@ -2032,22 +2032,16 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7EGgwJ2qEeCQKeMFJCViPQ" name="MandatoryAddressType">
-        <generalization xmi:id="_7EGgwZ2qEeCQKeMFJCViPQ">
-          <general xmi:type="uml:Class" href="platform:/resource/ballot-3-11/org.ncpdp.uml.functions/NCPDP.emx#_4FF2IDD1Ed-8rpqfOAePKg?org.ncpdp.uml.functions/datatypes/AddressType?"/>
-        </generalization>
         <generalization xmi:id="_guXmUJ2uEeCQKeMFJCViPQ" general="_4FF2IDD1Ed-8rpqfOAePKg"/>
-        <ownedAttribute xmi:id="_7EGgwp2qEeCQKeMFJCViPQ" name="AddressLine1">
-          <type xmi:type="uml:DataType" href="platform:/resource/ballot-3-11/org.ncpdp.uml.functions/NCPDP.emx#_4CkGczD1Ed-8rpqfOAePKg?org.ncpdp.uml.functions/datatypes/an..35M?"/>
+        <ownedAttribute xmi:id="_7EGgwp2qEeCQKeMFJCViPQ" name="AddressLine1" type="_4CkGczD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7EGgw52qEeCQKeMFJCViPQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7EGgxJ2qEeCQKeMFJCViPQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7EGgxZ2qEeCQKeMFJCViPQ" name="AddressLine2">
-          <type xmi:type="uml:DataType" href="platform:/resource/ballot-3-11/org.ncpdp.uml.functions/NCPDP.emx#_4CkGczD1Ed-8rpqfOAePKg?org.ncpdp.uml.functions/datatypes/an..35M?"/>
+        <ownedAttribute xmi:id="_7EGgxZ2qEeCQKeMFJCViPQ" name="AddressLine2" type="_4CkGczD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7EGgxp2qEeCQKeMFJCViPQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7EGgx52qEeCQKeMFJCViPQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7EGgyJ2qEeCQKeMFJCViPQ" name="City">
-          <type xmi:type="uml:DataType" href="platform:/resource/ballot-3-11/org.ncpdp.uml.functions/NCPDP.emx#_4CkGczD1Ed-8rpqfOAePKg?org.ncpdp.uml.functions/datatypes/an..35M?"/>
+        <ownedAttribute xmi:id="_7EGgyJ2qEeCQKeMFJCViPQ" name="City" type="_4CkGczD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7EGgyZ2qEeCQKeMFJCViPQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7EGgyp2qEeCQKeMFJCViPQ" value="1"/>
         </ownedAttribute>
@@ -2056,13 +2050,11 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7EGgzJ2qEeCQKeMFJCViPQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7EGgzZ2qEeCQKeMFJCViPQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7EGgzp2qEeCQKeMFJCViPQ" name="ZipCode">
-          <type xmi:type="uml:DataType" href="platform:/resource/ballot-3-11/org.ncpdp.uml.functions/NCPDP.emx#_4FPnBTD1Ed-8rpqfOAePKg?org.ncpdp.uml.functions/datatypes/ZipCodeType?"/>
+        <ownedAttribute xmi:id="_7EGgzp2qEeCQKeMFJCViPQ" name="ZipCode" type="_4FPnBTD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7EGgz52qEeCQKeMFJCViPQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7EGg0J2qEeCQKeMFJCViPQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7EGg0Z2qEeCQKeMFJCViPQ" name="PlaceLocationQualifier">
-          <type xmi:type="uml:DataType" href="platform:/resource/ballot-3-11/org.ncpdp.uml.functions/NCPDP.emx#_4DAyeTD1Ed-8rpqfOAePKg?org.ncpdp.uml.functions/datatypes/an..3?"/>
+        <ownedAttribute xmi:id="_7EGg0Z2qEeCQKeMFJCViPQ" name="PlaceLocationQualifier" type="_4DAyeTD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7EGg0p2qEeCQKeMFJCViPQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7EGg052qEeCQKeMFJCViPQ"/>
         </ownedAttribute>
@@ -9676,9 +9668,43 @@ Designates type and description of census message – Admit, Discharge, Change. 
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_-THAEothEd-urZQZ08VCKQ" type="Parent"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_-THAE4thEd-urZQZ08VCKQ" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_-THAFYthEd-urZQZ08VCKQ" visible="false" type="OperationCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-THADIthEd-urZQZ08VCKQ" x="6657" y="6023"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-THADIthEd-urZQZ08VCKQ" x="2219" y="2536"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_Dl37cKK3EeCqJod5Pb_Hog" element="_7EGgwJ2qEeCQKeMFJCViPQ" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_DmaG8KK3EeCqJod5Pb_Hog" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_DmaG8aK3EeCqJod5Pb_Hog" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_DmaG8qK3EeCqJod5Pb_Hog" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_DmauAKK3EeCqJod5Pb_Hog" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_DmauAaK3EeCqJod5Pb_Hog" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_DmbVEKK3EeCqJod5Pb_Hog" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_Dmb8IKK3EeCqJod5Pb_Hog" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_Dmb8IaK3EeCqJod5Pb_Hog" visible="false" type="SignalCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_DmcjMKK3EeCqJod5Pb_Hog" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dl37caK3EeCqJod5Pb_Hog" x="7990" y="8731"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_FT9N4KK3EeCqJod5Pb_Hog" element="_4FF2IDD1Ed-8rpqfOAePKg" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_FT908KK3EeCqJod5Pb_Hog" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_FT908aK3EeCqJod5Pb_Hog" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_FT908qK3EeCqJod5Pb_Hog" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_FT9086K3EeCqJod5Pb_Hog" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_FT-cAKK3EeCqJod5Pb_Hog" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_FT-cAaK3EeCqJod5Pb_Hog" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_FT-cAqK3EeCqJod5Pb_Hog" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_FT_DEKK3EeCqJod5Pb_Hog" visible="false" type="SignalCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_FT_DEaK3EeCqJod5Pb_Hog" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FT9N4aK3EeCqJod5Pb_Hog" x="317" y="6023"/>
           </children>
           <element xsi:nil="true"/>
+          <edges xmi:type="umlnotation:UMLConnector" xmi:id="_FUbH8KK3EeCqJod5Pb_Hog" element="_guXmUJ2uEeCQKeMFJCViPQ" source="_Dl37cKK3EeCqJod5Pb_Hog" target="_FT9N4KK3EeCqJod5Pb_Hog" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+            <children xmi:type="notation:DecorationNode" xmi:id="_FUcWEKK3EeCqJod5Pb_Hog" type="NameLabel">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_FUcWEqK3EeCqJod5Pb_Hog" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_FUcWE6K3EeCqJod5Pb_Hog" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FUcWEaK3EeCqJod5Pb_Hog" y="-186"/>
+            </children>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FUbH8aK3EeCqJod5Pb_Hog" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+          </edges>
         </contents>
       </eAnnotations>
       <ownedComment xmi:id="_Xn-r8IUfEd-PfKcU8Giing">
@@ -15233,14 +15259,14 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <xsd:Facet xmi:id="_4mU69jD1Ed-8rpqfOAePKg" base_Property="_4mU69DD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU6-zD1Ed-8rpqfOAePKg" base_Property="_4mU6-TD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4meEwzD1Ed-8rpqfOAePKg" base_Property="_4meEwTD1Ed-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
+  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2010123" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" id="" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2010122" lang="" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" id="" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2010123" lang="" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2010123" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2010123" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -15320,7 +15346,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2010123" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAmHEEd-Xe4OIcNINMg" base_Comment="_oustHWHEEd-Xe4OIcNINMg"/>
@@ -16445,6 +16471,5 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <xsd:GlobalProperty xmi:id="_WpnDA6b8Ed-Nwtj6LSx65w" base_Class="_WpnDAKb8Ed-Nwtj6LSx65w"/>
   <xsd:GlobalElement xmi:id="_WpnDBKb8Ed-Nwtj6LSx65w" base_Property="_WpnDAab8Ed-Nwtj6LSx65w"/>
   <Default:Documentation xmi:id="_WpnDBab8Ed-Nwtj6LSx65w" base_Comment="_WpnDAqb8Ed-Nwtj6LSx65w"/>
-  <xsd:Restriction xmi:id="_7EI9AJ2qEeCQKeMFJCViPQ" base_Generalization="_7EGgwZ2qEeCQKeMFJCViPQ"/>
   <xsd:Restriction xmi:id="_wu640J2uEeCQKeMFJCViPQ" base_Generalization="_guXmUJ2uEeCQKeMFJCViPQ"/>
 </xmi:XMI>
