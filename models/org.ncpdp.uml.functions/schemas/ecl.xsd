@@ -207,11 +207,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:documentation>Code identifying the significance or severity level of a clinical event as contained in the originating database.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="ecl:Code">
-      <xsd:enumeration value=" ">
-        <xsd:annotation>
-          <xsd:documentation>Not Specified</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
       <xsd:enumeration value="1">
         <xsd:annotation>
           <xsd:documentation>Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent adverse drug event.</xsd:documentation>
@@ -395,11 +390,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:enumeration value="18">
         <xsd:annotation>
           <xsd:documentation>First DataBank SmartKey</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value=" ">
-        <xsd:annotation>
-          <xsd:documentation>Unspecified</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
