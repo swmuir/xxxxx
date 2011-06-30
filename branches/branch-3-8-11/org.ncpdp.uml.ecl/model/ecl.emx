@@ -11622,6 +11622,10 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <generalization xmi:id="_USTewSx5Ed-8mcmtGejV_Q">
           <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
         </generalization>
+        <ownedAttribute xmi:id="_UiLA4KMtEeC3IL1f2V46Xg" name="pattern">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_UiLA4aMtEeC3IL1f2V46Xg" value="([!-~]|[ ])*[!-~]([!-~]|[ ])*"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_h9ArIixAEd-8mcmtGejV_Q" name="CodeListQualifierCommunicationNumberPVDPTTCOOSegmentX12DE365" visibility="private">
         <ownedComment xmi:id="_h9ArIyxAEd-8mcmtGejV_Q">
@@ -14992,11 +14996,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <body>Code identifying the significance or severity level of a clinical event as contained in the originating database.</body>
         </ownedComment>
         <generalization xmi:id="_oA4O4ItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="_5K7X0In5Ed-pZLs28ekBmw" name=" " classifier="_htg2kCxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="__1R6gIn6Ed-pZLs28ekBmw" annotatedElement="_5K7X0In5Ed-pZLs28ekBmw">
-            <body>Not Specified</body>
-          </ownedComment>
-        </ownedLiteral>
         <ownedLiteral xmi:id="_Bwx-IlOmEd-wEdo_Dk3J9g" name="1" classifier="_eueSkixAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_Bwx-I1OmEd-wEdo_Dk3J9g" annotatedElement="_Bwx-IlOmEd-wEdo_Dk3J9g">
             <body>Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent adverse drug event.</body>
@@ -15176,11 +15175,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedLiteral xmi:id="_iYUbylOnEd-wEdo_Dk3J9g" name="18" classifier="_htqAgSxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_iYUby1OnEd-wEdo_Dk3J9g">
             <body>First DataBank SmartKey</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_x_3C0In6Ed-pZLs28ekBmw" name=" " classifier="_htqAgSxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_1c2HEIn6Ed-pZLs28ekBmw" annotatedElement="_x_3C0In6Ed-pZLs28ekBmw">
-            <body>Unspecified</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -21565,7 +21559,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_oCxxTmdhEd-EzKeHnOFaKw" base_Comment="_oCxxSGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AK1WYGdiEd-EzKeHnOFaKw" base_Generalization="__sJPQGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AnmK4GdiEd-EzKeHnOFaKw" base_Generalization="__Ja8sGdhEd-EzKeHnOFaKw"/>
-  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="2010121" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="2011xxMarchBallot" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <orgncpdpecl:ncpdpecl xmi:id="_J51OkmdmEd-EzKeHnOFaKw" valueSetId="548-6F" fieldFormat="x(3)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_J51OcGdmEd-EzKeHnOFaKw" displayName="Approved Message Code"/>
   <Default:Documentation xmi:id="_J51Ok2dmEd-EzKeHnOFaKw" base_Comment="_J51OcWdmEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_J51OlGdmEd-EzKeHnOFaKw" base_Comment="_J51Oc2dmEd-EzKeHnOFaKw"/>
@@ -21863,8 +21857,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_C_GSgYn4Ed-pZLs28ekBmw" base_Comment="_C_GSgIn4Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_Fbaj8Yn4Ed-pZLs28ekBmw" base_Comment="_Fbaj8In4Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_GS17MYn4Ed-pZLs28ekBmw" base_Comment="_GS17MIn4Ed-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_1c_RAIn6Ed-pZLs28ekBmw" base_Comment="_1c2HEIn6Ed-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="__1R6gYn6Ed-pZLs28ekBmw" base_Comment="__1R6gIn6Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_3uAb8Yn7Ed-pZLs28ekBmw" base_Comment="_3uAb8In7Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_CNonEYn9Ed-pZLs28ekBmw" base_Comment="_CNonEIn9Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_bh12QYn9Ed-pZLs28ekBmw" base_Comment="_bh12QIn9Ed-pZLs28ekBmw"/>
@@ -21972,4 +21964,5 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_ZAARgEmxEeCekMwdcouCxg" base_Comment="_Y__qcUmxEeCekMwdcouCxg"/>
   <Default:Documentation xmi:id="_ZVbu8EmxEeCekMwdcouCxg" base_Comment="_ZVbH4UmxEeCekMwdcouCxg"/>
   <Default:Documentation xmi:id="_Cmi3QEuVEeCOKta2JlF6ZQ" base_Comment="_CmfM4EuVEeCOKta2JlF6ZQ"/>
+  <xsd:Facet xmi:id="_UiLn8KMtEeC3IL1f2V46Xg" base_Property="_UiLA4KMtEeC3IL1f2V46Xg"/>
 </xmi:XMI>
