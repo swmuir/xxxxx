@@ -15261,12 +15261,12 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <xsd:Facet xmi:id="_4meEwzD1Ed-8rpqfOAePKg" base_Property="_4meEwTD1Ed-8rpqfOAePKg"/>
   <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2010123" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" id="" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2010123" lang="" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" id="" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2010122" lang="" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2010123" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2010123" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -15346,7 +15346,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2010123" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAmHEEd-Xe4OIcNINMg" base_Comment="_oustHWHEEd-Xe4OIcNINMg"/>
