@@ -2830,7 +2830,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4MZX9TD1Ed-8rpqfOAePKg" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4MZX9jD1Ed-8rpqfOAePKg"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_4MZX9zD1Ed-8rpqfOAePKg" name="MultipleAdministrationTimingModifier" type="_4MjI4TD1Ed-8rpqfOAePKg">
+          <ownedAttribute xmi:id="_4MZX9zD1Ed-8rpqfOAePKg" name="MultipleSiteOfAdministrationModifier" type="_4MjI4TD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_4MZX-DD1Ed-8rpqfOAePKg">
               <body></body>
             </ownedComment>
@@ -3280,7 +3280,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <ownedComment xmi:id="_nbkVwYnbEd-pZLs28ekBmw" annotatedElement="_MXJAqjD7Ed-8rpqfOAePKg">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_PQccwMh1EeCJu9aALRXKxg?ecl/ecl/SubstitutionCodeRestricted?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAqzD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJArDD7Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
@@ -5949,7 +5949,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_uGVkoYnbEd-pZLs28ekBmw" annotatedElement="_G-g2VmTcEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_PQccwMh1EeCJu9aALRXKxg?ecl/ecl/SubstitutionCodeRestricted?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2V2TcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2WGTcEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -6305,7 +6305,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_kA0tNYnbEd-pZLs28ekBmw" annotatedElement="_QQEgRmTnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_PQccwMh1EeCJu9aALRXKxg?ecl/ecl/SubstitutionCodeRestricted?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgR2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgSGTnEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -6661,7 +6661,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_lyEoYYnbEd-pZLs28ekBmw" annotatedElement="_YxfSRmToEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_PQccwMh1EeCJu9aALRXKxg?ecl/ecl/SubstitutionCodeRestricted?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSR2ToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSSGToEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -15259,14 +15259,14 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <xsd:Facet xmi:id="_4mU69jD1Ed-8rpqfOAePKg" base_Property="_4mU69DD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU6-zD1Ed-8rpqfOAePKg" base_Property="_4mU6-TD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4meEwzD1Ed-8rpqfOAePKg" base_Property="_4meEwTD1Ed-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2010123" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
+  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" id="" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2010122" lang="" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" id="" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2011AugustBallot" lang="" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -15346,7 +15346,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2010122" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAmHEEd-Xe4OIcNINMg" base_Comment="_oustHWHEEd-Xe4OIcNINMg"/>
@@ -16438,7 +16438,7 @@ A DenialReason or DeniedNewRxToFollow response must be accompanied by the Reason
   <xsd:GlobalProperty xmi:id="_Bv0UXYqaEd-pZLs28ekBmw" base_Class="_Bv0UUIqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_Bv0UXoqaEd-pZLs28ekBmw" base_Property="_Bv0UUYqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_V59SYYqaEd-pZLs28ekBmw" base_Property="_V59SYIqaEd-pZLs28ekBmw"/>
-  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="2010122" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
+  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
   <xsd:GlobalElement xmi:id="_P3rT8YqnEd-pZLs28ekBmw" base_Property="_P3rT8IqnEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0uuYkYrFEd-urZQZ08VCKQ" base_Comment="_0uuYkIrFEd-urZQZ08VCKQ"/>
   <Default:Documentation xmi:id="_7k0GoIrFEd-urZQZ08VCKQ" base_Comment="_7kqVoIrFEd-urZQZ08VCKQ"/>

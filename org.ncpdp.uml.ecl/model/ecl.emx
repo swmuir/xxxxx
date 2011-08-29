@@ -78,6 +78,32 @@
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_sS9hXb0GEd-ck90f_7B41Q" visible="false" type="OperationCompartment"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sS9hUr0GEd-ck90f_7B41Q" x="4121" y="21239"/>
           </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_L_UDMMh1EeCJu9aALRXKxg" element="_esFs8SxAEd-8mcmtGejV_Q" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_L_ebQMh1EeCJu9aALRXKxg" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_L_ebQch1EeCJu9aALRXKxg" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_L_ebQsh1EeCJu9aALRXKxg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_L_fCUMh1EeCJu9aALRXKxg" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_L_fCUch1EeCJu9aALRXKxg" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_L_fpYMh1EeCJu9aALRXKxg" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_L_fpYch1EeCJu9aALRXKxg" type="EnumerationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_L_gQcMh1EeCJu9aALRXKxg" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_L_g3gMh1EeCJu9aALRXKxg" visible="false" type="OperationCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L_UDMch1EeCJu9aALRXKxg" x="22833" y="8784"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_WdJ7EMh1EeCJu9aALRXKxg" element="_PQccwMh1EeCJu9aALRXKxg" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_WdMXUMh1EeCJu9aALRXKxg" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_WdMXUch1EeCJu9aALRXKxg" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_WdM-YMh1EeCJu9aALRXKxg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_WdNlcMh1EeCJu9aALRXKxg" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_WdNlcch1EeCJu9aALRXKxg" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_WdOMgMh1EeCJu9aALRXKxg" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_WdOMgch1EeCJu9aALRXKxg" type="EnumerationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_WdOzkMh1EeCJu9aALRXKxg" visible="false" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_WdPaoMh1EeCJu9aALRXKxg" visible="false" type="OperationCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WdJ7Ech1EeCJu9aALRXKxg" x="24712" y="4974"/>
+          </children>
           <element xsi:nil="true"/>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_vMtnkL0EEd-ck90f_7B41Q" element="_a0LeoEyqEd-G-pSkcIGh3w" source="_uSJcwL0EEd-ck90f_7B41Q" target="_vMasoL0EEd-ck90f_7B41Q" fontName="MS Mincho" fontHeight="12" routing="Tree" lineColor="8421504" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_vMtnk70EEd-ck90f_7B41Q" type="NameLabel">
@@ -112,6 +138,23 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sS9hY70GEd-ck90f_7B41Q" y="-186"/>
             </children>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sS9hYb0GEd-ck90f_7B41Q" points="[1202, -1573, -762, -8785]$[4754, 2877, 2790, -4335]"/>
+          </edges>
+          <edges xmi:type="umlnotation:UMLConnector" xmi:id="_L_sdsMh1EeCJu9aALRXKxg" element="_KCalIIt1Ed-urZQZ08VCKQ" source="_L_UDMMh1EeCJu9aALRXKxg" target="_vMasoL0EEd-ck90f_7B41Q" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+            <children xmi:type="notation:DecorationNode" xmi:id="_L_tEwMh1EeCJu9aALRXKxg" type="NameLabel">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_L_tr0Mh1EeCJu9aALRXKxg" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_L_tr0ch1EeCJu9aALRXKxg" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L_tEwch1EeCJu9aALRXKxg" y="-186"/>
+            </children>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L_sdsch1EeCJu9aALRXKxg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+          </edges>
+          <edges xmi:type="umlnotation:UMLConnector" xmi:id="_WdQowMh1EeCJu9aALRXKxg" element="_PQdD0ch1EeCJu9aALRXKxg" source="_WdJ7EMh1EeCJu9aALRXKxg" target="_L_UDMMh1EeCJu9aALRXKxg" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+            <children xmi:type="notation:DecorationNode" xmi:id="_WdRP0Mh1EeCJu9aALRXKxg" type="NameLabel">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_WdR24ch1EeCJu9aALRXKxg" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_WdSd8Mh1EeCJu9aALRXKxg" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WdR24Mh1EeCJu9aALRXKxg" y="-186"/>
+            </children>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WdQowch1EeCJu9aALRXKxg" points="[-2419, -478, 13537, 2674]$[-7978, -478, 7978, 2674]$[-7978, -3068, 7978, 84]$[-14608, -3068, 1348, 84]"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YFHXYMh1EeCJu9aALRXKxg" id="(0.4375,0.02472373103577449)"/>
           </edges>
         </contents>
       </eAnnotations>
@@ -17889,6 +17932,22 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_PQccwMh1EeCJu9aALRXKxg" name="SubstitutionCodeRestricted">
+        <ownedComment xmi:id="_PQdD0Mh1EeCJu9aALRXKxg">
+          <body>Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed.</body>
+        </ownedComment>
+        <generalization xmi:id="_PQdD0ch1EeCJu9aALRXKxg" general="_esFs8SxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_PQdD0sh1EeCJu9aALRXKxg" name="0" classifier="_PQccwMh1EeCJu9aALRXKxg">
+          <ownedComment xmi:id="_PQdD08h1EeCJu9aALRXKxg">
+            <body>No Product Selection Indicated - This is the field default value that is appropriately used for prescriptions for single source brand, co-branded/co-licensed, or generic products. For a multi-source branded product with available generic(s), DAW 0 is not appropriate, and may result in a reject.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_PQdD1Mh1EeCJu9aALRXKxg" name="1" classifier="_PQccwMh1EeCJu9aALRXKxg">
+          <ownedComment xmi:id="_PQdD1ch1EeCJu9aALRXKxg">
+            <body>Substitution Not Allowed by Prescriber - This value is used when the prescriber indicates, in a manner specified by prevailing law, that the product is Medically Necessary to be Dispensed As Written. DAW 1 is based on prescriber instruction and not product classification. </body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -21827,4 +21886,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_IKhtoNyOEd-_9uOIZZvC8Q" base_Comment="_IKX8oNyOEd-_9uOIZZvC8Q"/>
   <Default:Documentation xmi:id="_qBwGwdyOEd-_9uOIZZvC8Q" base_Comment="_qBwGwNyOEd-_9uOIZZvC8Q"/>
   <xsd:Facet xmi:id="_LsUI0KKQEeCqJod5Pb_Hog" base_Property="_LrlwEKKQEeCqJod5Pb_Hog"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_PQguMMh1EeCJu9aALRXKxg" valueSetId="408-D8" fieldFormat="x(1)" standardsUsing="C, D, R, T,A,V,Z,W" valueSetLimitations="" base_Enumeration="_PQccwMh1EeCJu9aALRXKxg" displayName="Dispense As Written (DAW)/ Product Selection Code"/>
+  <Default:Documentation xmi:id="_PQjKcMh1EeCJu9aALRXKxg" base_Comment="_PQdD0Mh1EeCJu9aALRXKxg"/>
+  <xsd:Restriction xmi:id="_PQjKcch1EeCJu9aALRXKxg" base_Generalization="_PQdD0ch1EeCJu9aALRXKxg"/>
+  <Default:Documentation xmi:id="_PQjKcsh1EeCJu9aALRXKxg" base_Comment="_PQdD08h1EeCJu9aALRXKxg"/>
+  <Default:Documentation xmi:id="_PQjKc8h1EeCJu9aALRXKxg" base_Comment="_PQdD1ch1EeCJu9aALRXKxg"/>
 </xmi:XMI>

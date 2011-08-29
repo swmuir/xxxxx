@@ -3120,6 +3120,26 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SubstitutionCodeRestricted  <<ncpdpecl>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="SubstitutionCodeRestricted">
+    <xsd:annotation>
+      <xsd:documentation>Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="ecl:SubstitutionCode">
+      <xsd:enumeration value="0">
+        <xsd:annotation>
+          <xsd:documentation>No Product Selection Indicated - This is the field default value that is appropriately used for prescriptions for single source brand, co-branded/co-licensed, or generic products. For a multi-source branded product with available generic(s), DAW 0 is not appropriate, and may result in a reject.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation>Substitution Not Allowed by Prescriber - This value is used when the prescriber indicates, in a manner specified by prevailing law, that the product is Medically Necessary to be Dispensed As Written. DAW 1 is based on prescriber instruction and not product classification. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  TimeZoneIdentifierCode  <<ncpdpecl>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="TimeZoneIdentifierCode">
