@@ -8,7 +8,7 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/structures" version="2010123" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/structures" version="2011AugustBallot" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <!-- ================================================== -->
@@ -800,7 +800,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Substitutions" type="ecl:SubstitutionCode">
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCodeRestricted">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1356,7 +1356,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Substitutions" type="ecl:SubstitutionCode">
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCodeRestricted">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1941,7 +1941,7 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Substitutions" type="ecl:SubstitutionCode">
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCodeRestricted">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -2889,7 +2889,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Substitutions" type="ecl:SubstitutionCode">
+          <xsd:element name="Substitutions" type="ecl:SubstitutionCodeRestricted">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -3426,7 +3426,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
             <xsd:element minOccurs="0" name="SiteOfAdministrationText" type="datatypes:an..50"/>
             <xsd:element minOccurs="0" name="SiteOfAdministrationCodeQualifier" type="datatypes:TerminologyType"/>
             <xsd:element minOccurs="0" name="SiteOfAdministrationCode" type="datatypes:an..15"/>
-            <xsd:element minOccurs="0" name="MultipleAdministrationTimingModifier" type="datatypes:ANDORNOT"/>
+            <xsd:element minOccurs="0" name="MultipleSiteOfAdministrationModifier" type="datatypes:ANDORNOT"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
