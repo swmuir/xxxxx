@@ -1375,7 +1375,7 @@
         <generalization xmi:id="_0TN2gCx5Ed-8mcmtGejV_Q" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_6GDCsCx3Ed-8mcmtGejV_Q" name="420134006" classifier="_kCnAsCx3Ed-8mcmtGejV_Q">
           <ownedComment xmi:id="_Ma9vIIYKEd-Vw-EcYlO-zw" annotatedElement="_6GDCsCx3Ed-8mcmtGejV_Q">
-            <body>Ppropensity to adverse reactions </body>
+            <body>&lt;p>Propensity to adverse reactions&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_8yTNkCx3Ed-8mcmtGejV_Q" name="418038007" classifier="_kCnAsCx3Ed-8mcmtGejV_Q">
@@ -9685,8 +9685,8 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_hzUjoSxAEd-8mcmtGejV_Q" name="DC" classifier="_hyk8wCxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_hzUjoixAEd-8mcmtGejV_Q">
-            <body>Discharge Cancel - A previously communicated discharge is cancelled, either because of erroneous entry or because of a revised decision to not discharge, or end the visit of, the patient.</body>
+          <ownedComment xmi:id="_hzUjoixAEd-8mcmtGejV_Q" annotatedElement="_hzUjoSxAEd-8mcmtGejV_Q">
+            <body>&lt;p>Discharge Cancel - A previously communicated discharge is canceled, either because of erroneous entry or because of a revised decision to not discharge, or end the visit of, the patient.&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_hzUjpCxAEd-8mcmtGejV_Q" name="D1" classifier="_hyk8wCxAEd-8mcmtGejV_Q">
@@ -9790,8 +9790,8 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_h1GsUSxAEd-8mcmtGejV_Q" name="TC" classifier="_hyk8wCxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_h1GsUixAEd-8mcmtGejV_Q">
-            <body>Transfer Cancel - A previously communicated transfer is cancelled, either because of an erroneous entry or because of a revised decision to not transfer the patient.</body>
+          <ownedComment xmi:id="_h1GsUixAEd-8mcmtGejV_Q" annotatedElement="_h1GsUSxAEd-8mcmtGejV_Q">
+            <body>&lt;p>Transfer Cancel - A previously communicated transfer is canceled, either because of an erroneous entry or because of a revised decision to not transfer the patient.&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_aNQVoL0FEd-ck90f_7B41Q" name="S" classifier="_oCxxQGdhEd-EzKeHnOFaKw">
@@ -15189,8 +15189,8 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_izOg0lOlEd-wEdo_Dk3J9g" name="ZZ" classifier="_htzxgixAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_izOg01OlEd-wEdo_Dk3J9g">
-            <body>Other Acknowledgement. When ZZ is used, the textual DUE Acknowledgment Reason must be used to provide additional detail.</body>
+          <ownedComment xmi:id="_izOg01OlEd-wEdo_Dk3J9g" annotatedElement="_izOg0lOlEd-wEdo_Dk3J9g">
+            <body>&lt;p>Other Acknowledgment. When ZZ is used, the textual DUE Acknowledgment Reason must be used to provide additional detail.&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_izXqwFOlEd-wEdo_Dk3J9g" name="R0" classifier="_htzxgixAEd-8mcmtGejV_Q">
@@ -15611,8 +15611,8 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedComment>
         <generalization xmi:id="_q-IDIItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
         <ownedLiteral xmi:id="_2By_wFOrEd-wEdo_Dk3J9g" name="4A" classifier="_huQdcCxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_2By_wVOrEd-wEdo_Dk3J9g">
-            <body>Prescribed with acknowledgements - Physician is prescribing this medication with knowledge of the potential conflict.</body>
+          <ownedComment xmi:id="_2By_wVOrEd-wEdo_Dk3J9g" annotatedElement="_2By_wFOrEd-wEdo_Dk3J9g">
+            <body>&lt;p>Prescribed with acknowledgments - Physician is prescribing this medication with knowledge of the potential conflict.&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_2By_wlOrEd-wEdo_Dk3J9g" name="3C" classifier="_huQdcCxAEd-8mcmtGejV_Q">
@@ -17810,7 +17810,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_hvxiYIthEd-urZQZ08VCKQ" name="D" classifier="_al3gcIthEd-urZQZ08VCKQ">
           <ownedComment xmi:id="_oSzKgIthEd-urZQZ08VCKQ" annotatedElement="_hvxiYIthEd-urZQZ08VCKQ">
-            <body>Presciber</body>
+            <body>&lt;p>Prescriber&lt;/p></body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_hzNQ4IthEd-urZQZ08VCKQ" name="ZZZ" classifier="_al3gcIthEd-urZQZ08VCKQ">
