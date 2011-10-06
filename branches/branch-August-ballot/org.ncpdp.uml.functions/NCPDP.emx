@@ -3430,7 +3430,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4MZX9TD1Ed-8rpqfOAePKg" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4MZX9jD1Ed-8rpqfOAePKg"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_4MZX9zD1Ed-8rpqfOAePKg" name="MultipleAdministrationTimingModifier" type="_4MjI4TD1Ed-8rpqfOAePKg">
+          <ownedAttribute xmi:id="_4MZX9zD1Ed-8rpqfOAePKg" name="MultipleSiteOfAdministrationModifier" type="_4MjI4TD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_4MZX-DD1Ed-8rpqfOAePKg">
               <body></body>
             </ownedComment>
@@ -6573,7 +6573,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_uGVkoYnbEd-pZLs28ekBmw" annotatedElement="_G-g2VmTcEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_Tp8-kO_QEeC1YI2Z3iJATw?ecl/ecl/SubstitutionCodeRestricted?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2V2TcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2WGTcEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
@@ -6937,7 +6937,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_kA0tNYnbEd-pZLs28ekBmw" annotatedElement="_QQEgRmTnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_Tp8-kO_QEeC1YI2Z3iJATw?ecl/ecl/SubstitutionCodeRestricted?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgR2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgSGTnEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
@@ -7301,7 +7301,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_lyEoYYnbEd-pZLs28ekBmw" annotatedElement="_YxfSRmToEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_esFs8SxAEd-8mcmtGejV_Q?ecl/ecl/SubstitutionCode?"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_Tp8-kO_QEeC1YI2Z3iJATw?ecl/ecl/SubstitutionCodeRestricted?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSR2ToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSSGToEd-Y0upv2_lheQ" value="1"/>
         </ownedAttribute>
