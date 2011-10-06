@@ -74,7 +74,7 @@ pharmacy’s fill number from the payer system from claims processing.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4GSI1TD1Ed-8rpqfOAePKg" name="PatientID">
         <ownedComment xmi:id="_2BQKkInMEd-pZLs28ekBmw" annotatedElement="_4GSI1TD1Ed-8rpqfOAePKg">
-          <body>Patient ID is explicit ID structure to improve comprehension and validtion of ID by using explicit tags for each ID type</body>
+          <body>Patient ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <ownedAttribute xmi:id="_4GSI1zD1Ed-8rpqfOAePKg" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4GSI2DD1Ed-8rpqfOAePKg">
@@ -262,7 +262,7 @@ pharmacy’s fill number from the payer system from claims processing.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4PrVYTD1Ed-8rpqfOAePKg" name="PayerID">
         <ownedComment xmi:id="_1Bn5kInMEd-pZLs28ekBmw" annotatedElement="_4PrVYTD1Ed-8rpqfOAePKg">
-          <body>Payer ID is explicit ID structure to improve comprehension and validtion of ID by using explicit tags for each ID type</body>
+          <body>Payer ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <ownedAttribute xmi:id="_4PrVYzD1Ed-8rpqfOAePKg" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4PrVZDD1Ed-8rpqfOAePKg">
@@ -450,7 +450,7 @@ pharmacy’s fill number from the payer system from claims processing.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4XueJjD1Ed-8rpqfOAePKg" name="ProviderID">
         <ownedComment xmi:id="_hvXlwInMEd-pZLs28ekBmw" annotatedElement="_4XueJjD1Ed-8rpqfOAePKg">
-          <body>Provieder ID is explicit ID structure to improve comprehension and validtion of ID by using explicit tags for each ID type</body>
+          <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <ownedAttribute xmi:id="_4XueKDD1Ed-8rpqfOAePKg" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4XueKTD1Ed-8rpqfOAePKg">
@@ -684,7 +684,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4IE4kjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4ZNr4TD1Ed-8rpqfOAePKg" name="Facilty">
+      <packagedElement xmi:type="uml:Class" xmi:id="_4ZNr4TD1Ed-8rpqfOAePKg" name="Facility">
         <ownedComment xmi:id="_4ZNr4jD1Ed-8rpqfOAePKg" annotatedElement="_4ZNr4TD1Ed-8rpqfOAePKg">
           <body>Value SK</body>
         </ownedComment>
@@ -1818,9 +1818,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_lcv8IGi_Ed-Pd7zqA0IwbQ" name="NCICode">
         <ownedComment xmi:id="_lcv8IWi_Ed-Pd7zqA0IwbQ" annotatedElement="_lcv8IGi_Ed-Pd7zqA0IwbQ">
-          <body>NCPCP Constrained Code to value sets defined by NCI
-          See External Code List Introduction for information on NCI Thesaurus Code Lists.
-          http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
+          <body>NCPDP Constrained Code to value sets defined by NCI. See External Code List Introduction for information on NCI Thesaurus Code Lists. http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
         </ownedComment>
         <ownedAttribute xmi:id="_lcv8JWi_Ed-Pd7zqA0IwbQ" name="Code">
           <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
@@ -4022,7 +4020,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAzDD7Ed-8rpqfOAePKg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJAzTD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_RZJ30GTWEd-M5IWg2-DxLQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_RZJ30GTWEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_nahz84nbEd-pZLs28ekBmw" annotatedElement="_RZJ30GTWEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -4058,7 +4056,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MYfEcDD7Ed-8rpqfOAePKg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MYVTjjD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_zvADoKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_zvADoKbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_zvADoabiEd-2262i8oXgXw" annotatedElement="_zvADoKbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -5314,7 +5312,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
       <packagedElement xmi:type="uml:Association" xmi:id="_8KlQIGTPEd-M5IWg2-DxLQ" memberEnd="_8KlQIWTPEd-M5IWg2-DxLQ _8KlQAmTPEd-M5IWg2-DxLQ">
         <ownedEnd xmi:id="_8KlQIWTPEd-M5IWg2-DxLQ" type="_8KlQAGTPEd-M5IWg2-DxLQ" association="_8KlQIGTPEd-M5IWg2-DxLQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_9eK-0GTPEd-M5IWg2-DxLQ" name="MandatoryPresciber">
+      <packagedElement xmi:type="uml:Class" xmi:id="_9eK-0GTPEd-M5IWg2-DxLQ" name="MandatoryPrescriber">
         <ownedComment xmi:id="_9eK-0WTPEd-M5IWg2-DxLQ" annotatedElement="_9eK-0GTPEd-M5IWg2-DxLQ">
           <body>Value PC</body>
         </ownedComment>
@@ -5372,7 +5370,7 @@ For all transactions except RxHistoryResponse, if the prescriber has a DEA numbe
       <packagedElement xmi:type="uml:Association" xmi:id="_9eUv0GTPEd-M5IWg2-DxLQ" memberEnd="_9eUv0WTPEd-M5IWg2-DxLQ _9eK-0mTPEd-M5IWg2-DxLQ">
         <ownedEnd xmi:id="_9eUv0WTPEd-M5IWg2-DxLQ" type="_9eK-0GTPEd-M5IWg2-DxLQ" association="_9eUv0GTPEd-M5IWg2-DxLQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_93D_8GTPEd-M5IWg2-DxLQ" name="OptionalPresciber">
+      <packagedElement xmi:type="uml:Class" xmi:id="_93D_8GTPEd-M5IWg2-DxLQ" name="OptionalPrescriber">
         <ownedComment xmi:id="_93D_8WTPEd-M5IWg2-DxLQ" annotatedElement="_93D_8GTPEd-M5IWg2-DxLQ">
           <body>Value PC</body>
         </ownedComment>
@@ -5999,7 +5997,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeT2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeUGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_40XeUWTWEd-M5IWg2-DxLQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_40XeUWTWEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeUmTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeU2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -6023,7 +6021,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeXmTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeX2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_L_hdsKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_L_hdsKbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_kxJkQKbiEd-2262i8oXgXw" annotatedElement="_L_hdsKbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -6351,7 +6349,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCkGTXEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCkWTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_r9HCkmTXEd-M5IWg2-DxLQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_r9HCkmTXEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_sO_Bc4nbEd-pZLs28ekBmw" annotatedElement="_r9HCkmTXEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -6387,7 +6385,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCn2TXEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCoGTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_1datQKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_1datQKbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_1datQabiEd-2262i8oXgXw" annotatedElement="_1datQKbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -6715,7 +6713,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2kGTcEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2kWTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_G-g2kmTcEd-M5IWg2-DxLQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_G-g2kmTcEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_uFTC04nbEd-pZLs28ekBmw" annotatedElement="_G-g2kmTcEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -6751,7 +6749,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2n2TcEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2oGTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_18aWYKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_18aWYKbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_18aWYabiEd-2262i8oXgXw" annotatedElement="_18aWYKbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -6846,7 +6844,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-qnc2TcEd-M5IWg2-DxLQ" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_QQEgIGTnEd-Y0upv2_lheQ" name="HistoryPrescibedMedication">
+      <packagedElement xmi:type="uml:Class" xmi:id="_QQEgIGTnEd-Y0upv2_lheQ" name="HistoryPrescribedMedication">
         <eAnnotations xmi:id="_QMSLsonbEd-pZLs28ekBmw" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_QMSLs4nbEd-pZLs28ekBmw" key="Medication"/>
         </eAnnotations>
@@ -7079,7 +7077,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEggGTnEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEggWTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QQEggmTnEd-Y0upv2_lheQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_QQEggmTnEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_j_7VUYnbEd-pZLs28ekBmw" annotatedElement="_QQEggmTnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -7115,7 +7113,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgj2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgkGTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_3TbzsKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_3TbzsKbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_3TbzsabiEd-2262i8oXgXw" annotatedElement="_3TbzsKbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -7210,7 +7208,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQYCT2TnEd-Y0upv2_lheQ" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_YxfSIGToEd-Y0upv2_lheQ" name="NewRxPrescibedMedication">
+      <packagedElement xmi:type="uml:Class" xmi:id="_YxfSIGToEd-Y0upv2_lheQ" name="NewRxPrescribedMedication">
         <eAnnotations xmi:id="_WKXxsIYgEd-Vw-EcYlO-zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_WKXxsYYgEd-Vw-EcYlO-zw" key="Medication"/>
         </eAnnotations>
@@ -7443,7 +7441,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSgGToEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSgWToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_YxfSgmToEd-Y0upv2_lheQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_YxfSgmToEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_lxBfg4nbEd-pZLs28ekBmw" annotatedElement="_YxfSgmToEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -7479,7 +7477,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSj2ToEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSkGToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_y4KiQKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_y4KiQKbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_y4KiQabiEd-2262i8oXgXw" annotatedElement="_y4KiQKbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -7807,7 +7805,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiQGTpEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiQWTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QuYiQmTpEd-Y0upv2_lheQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_QuYiQmTpEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_adumU4nbEd-pZLs28ekBmw" annotatedElement="_QuYiQmTpEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -7843,7 +7841,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiT2TpEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiUGTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4kpj8KbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_4kpj8KbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_4kpj8abiEd-2262i8oXgXw" annotatedElement="_4kpj8KbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -8171,7 +8169,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYYGTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYYWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_P_eYYmTqEd-Y0upv2_lheQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_P_eYYmTqEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_qrvGA4nbEd-pZLs28ekBmw" annotatedElement="_P_eYYmTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -8207,7 +8205,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYb2TqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYcGTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_0-bEIKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_0-bEIKbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_0-bEIabiEd-2262i8oXgXw" annotatedElement="_0-bEIKbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -8535,7 +8533,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROogGTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROogWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_wROogmTqEd-Y0upv2_lheQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_wROogmTqEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_wS3Gk4nbEd-pZLs28ekBmw" annotatedElement="_wROogmTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -8885,7 +8883,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSsGTrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSsWTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_MqbSsmTrEd-Y0upv2_lheQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_MqbSsmTrEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_hiRnJYnbEd-pZLs28ekBmw" annotatedElement="_MqbSsmTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -8921,7 +8919,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSv2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSwGTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_3y4IwKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_3y4IwKbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_3y4IwabiEd-2262i8oXgXw" annotatedElement="_3y4IwKbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -9249,7 +9247,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxy4GTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxy4WTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_krxy4mTrEd-Y0upv2_lheQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_krxy4mTrEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_pGHMA4nbEd-pZLs28ekBmw" annotatedElement="_krxy4mTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -9285,7 +9283,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxy72TrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxy8GTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_0bZ2oKbiEd-2262i8oXgXw" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_0bZ2oKbiEd-2262i8oXgXw" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_0bZ2oabiEd-2262i8oXgXw" annotatedElement="_0bZ2oKbiEd-2262i8oXgXw">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -9631,7 +9629,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SsE_EjGEeCQH7WfiOI4dQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SsE_UjGEeCQH7WfiOI4dQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_6SsE_kjGEeCQH7WfiOI4dQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_6SsE_kjGEeCQH7WfiOI4dQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SsE_0jGEeCQH7WfiOI4dQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SsFAEjGEeCQH7WfiOI4dQ"/>
         </ownedAttribute>
@@ -9655,7 +9653,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SsFDEjGEeCQH7WfiOI4dQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SsFDUjGEeCQH7WfiOI4dQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_6SsFDkjGEeCQH7WfiOI4dQ" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_6SsFDkjGEeCQH7WfiOI4dQ" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_6SsFD0jGEeCQH7WfiOI4dQ" annotatedElement="_6SsFDkjGEeCQH7WfiOI4dQ">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -9942,7 +9940,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8NqFvkplEeCvCLsSrrA8LQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8NqFv0plEeCvCLsSrrA8LQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_8NqFwEplEeCvCLsSrrA8LQ" name="HistoryPresciberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_8NqFwEplEeCvCLsSrrA8LQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4JRLYTD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8NqFwUplEeCvCLsSrrA8LQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8NqFwkplEeCvCLsSrrA8LQ"/>
         </ownedAttribute>
@@ -9966,7 +9964,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8NqFzkplEeCvCLsSrrA8LQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8NqFz0plEeCvCLsSrrA8LQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_8NqF0EplEeCvCLsSrrA8LQ" name="ReasonForSubsitutionCodeUsed" visibility="public">
+        <ownedAttribute xmi:id="_8NqF0EplEeCvCLsSrrA8LQ" name="ReasonForSubstitutionCodeUsed" visibility="public">
           <ownedComment xmi:id="_8NqF0UplEeCvCLsSrrA8LQ" annotatedElement="_8NqF0EplEeCvCLsSrrA8LQ">
             <body>Restricted text for submitter to define their clarification basis for Substitution code applied.  
  
@@ -10992,7 +10990,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         <generalization xmi:id="_uHbqgEAqEeCpNaLG-Ljb2Q" general="_AGZKcEArEeCpNaLG-Ljb2Q"/>
         <ownedAttribute xmi:id="_Dj-CME5EEd-G-pSkcIGh3w" name="MTMPayerCaseIdentifier" visibility="public">
           <ownedComment xmi:id="_0egV0IrGEd-urZQZ08VCKQ" annotatedElement="_Dj-CME5EEd-G-pSkcIGh3w">
-            <body>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subserviant to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</body>
+            <body>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subservient to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j_VRAVLIEd-wEdo_Dk3J9g" value="1"/>
@@ -11137,7 +11135,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3k0lIUQTEeC7BZCLURhbHQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3k0lIEQTEeC7BZCLURhbHQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_KrIkIEQTEeC7BZCLURhbHQ" name="MesssageToFollowMessageIdentifier" visibility="public" type="_4CkGgjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_KrIkIEQTEeC7BZCLURhbHQ" name="MessageToFollowMessageIdentifier" visibility="public" type="_4CkGgjD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4I4UcUQTEeC7BZCLURhbHQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4I4UcEQTEeC7BZCLURhbHQ"/>
         </ownedAttribute>
@@ -12340,7 +12338,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
         <generalization xmi:id="_GgeR8EArEeCpNaLG-Ljb2Q" general="_AGZKcEArEeCpNaLG-Ljb2Q"/>
         <ownedAttribute xmi:id="_oi2AkkAqEeCpNaLG-Ljb2Q" name="MTMPayerCaseIdentifier" visibility="public">
           <ownedComment xmi:id="_oi2Ak0AqEeCpNaLG-Ljb2Q" annotatedElement="_oi2AkkAqEeCpNaLG-Ljb2Q">
-            <body>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subserviant to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</body>
+            <body>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subservient to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oi2AlEAqEeCpNaLG-Ljb2Q" value="1"/>
@@ -12472,7 +12470,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
         </ownedComment>
         <ownedAttribute xmi:id="_AGZKckArEeCpNaLG-Ljb2Q" name="MTMPayerCaseIdentifier" visibility="public">
           <ownedComment xmi:id="_AGZKc0ArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKckArEeCpNaLG-Ljb2Q">
-            <body>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subserviant to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</body>
+            <body>Unique identifier assigned by the payer to this case. MTMPayerCaseIdentifier is subservient to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AGZKdEArEeCpNaLG-Ljb2Q" value="1"/>
@@ -12813,7 +12811,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-RX8vkQTEeC7BZCLURhbHQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-RX8v0QTEeC7BZCLURhbHQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_-RX8wEQTEeC7BZCLURhbHQ" name="MesssageToFollowMessageIdentifier" visibility="public" type="_4CkGgjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_-RX8wEQTEeC7BZCLURhbHQ" name="MessageToFollowMessageIdentifier" visibility="public" type="_4CkGgjD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-RX8wUQTEeC7BZCLURhbHQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-RX8wkQTEeC7BZCLURhbHQ"/>
         </ownedAttribute>
@@ -12852,7 +12850,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NoG2LkQUEeC7BZCLURhbHQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NoG2L0QUEeC7BZCLURhbHQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_NoG2MEQUEeC7BZCLURhbHQ" name="MesssageToFollowMessageIdentifier" visibility="public" type="_4CkGgjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_NoG2MEQUEeC7BZCLURhbHQ" name="MessageToFollowMessageIdentifier" visibility="public" type="_4CkGgjD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NoG2MUQUEeC7BZCLURhbHQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NoG2MkQUEeC7BZCLURhbHQ"/>
         </ownedAttribute>
@@ -14702,7 +14700,7 @@ When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 01
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:DataType" xmi:id="_4as5qDD1Ed-8rpqfOAePKg" name="anonymous_54" visibility="private">
             <ownedComment xmi:id="_ccmbwItlEd-urZQZ08VCKQ" annotatedElement="_4as5qDD1Ed-8rpqfOAePKg">
-              <body>Issue setting a default value with leading 0 as in 010 RSM triming leading 0 to 10 which is not the same
+              <body>Issue setting a default value with leading 0 as in 010 RSM trimming leading 0 to 10 which is not the same&#xD;
 Keeping anonymous type </body>
             </ownedComment>
             <generalization xmi:id="_4as5rDD1Ed-8rpqfOAePKg">
@@ -16585,8 +16583,8 @@ all other values = no return receipt requested.</body>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QoFLAWHHEd-Xe4OIcNINMg" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite" association="_QoFLAGHHEd-Xe4OIcNINMg">
           <ownedComment xmi:id="_X1bYgIlFEd-pZLs28ekBmw" annotatedElement="_QoFLAWHHEd-Xe4OIcNINMg">
-            <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.
-	If NotFilled, the medicaiton (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.
+            <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
+	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
 	</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QoFLA2HHEd-Xe4OIcNINMg" value="*"/>
@@ -16754,8 +16752,8 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         </ownedAttribute>
         <ownedAttribute xmi:id="_PZuCpn7gEd-qFLXIW1YLFA" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite">
           <ownedComment xmi:id="_eU_0AIn1Ed-pZLs28ekBmw" annotatedElement="_PZuCpn7gEd-qFLXIW1YLFA">
-            <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.
-	If NotFilled, the medicaiton (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.
+            <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
+	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
 	</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PZuCp37gEd-qFLXIW1YLFA" value="*"/>
@@ -17624,7 +17622,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_au830qboEd-2262i8oXgXw"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_7NMQYGQvEd-ODMSOo4sPFQ" name="DrugAdminstration">
+      <packagedElement xmi:type="uml:Class" xmi:id="_7NMQYGQvEd-ODMSOo4sPFQ" name="DrugAdministration">
         <eAnnotations xmi:id="_IvIt8mWaEd-bmP0HuKmipA" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_VUGDUWWaEd-bmP0HuKmipA" key="Request"/>
         </eAnnotations>
@@ -18461,8 +18459,8 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           </ownedAttribute>
           <ownedAttribute xmi:id="_bFIa_mRHEd-M5IWg2-DxLQ" name="MedicationPrescribed" visibility="public" type="_QQEgIGTnEd-Y0upv2_lheQ" aggregation="composite">
             <ownedComment xmi:id="_yNHN8In1Ed-pZLs28ekBmw" annotatedElement="_bFIa_mRHEd-M5IWg2-DxLQ">
-              <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.
-	If NotFilled, the medicaiton (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.
+              <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
+	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
 	</body>
             </ownedComment>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa_2RHEd-M5IWg2-DxLQ" value="300"/>
@@ -18643,7 +18641,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JThskHpjEd-WhYpqDne-kg" name="DeniedTransferredType">
         <ownedComment xmi:id="_MSe0YIkyEd-pZLs28ekBmw" annotatedElement="_JThskHpjEd-WhYpqDne-kg">
-          <body>This element is only used in a denied CancelRxResponse where the prescription cannot be cancelled by the receiving pharmacy because the prescription has been transferred to another organization’s pharmacy. </body>
+          <body>This element is only used in a denied CancelRxResponse where the prescription cannot be canceled by the receiving pharmacy because the prescription has been transferred to another organization’s pharmacy. </body>
         </ownedComment>
         <ownedAttribute xmi:id="_JThskXpjEd-WhYpqDne-kg" name="ReasonCode">
           <ownedComment xmi:id="_JThsknpjEd-WhYpqDne-kg" annotatedElement="_JThskXpjEd-WhYpqDne-kg">
@@ -18670,7 +18668,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         </ownedAttribute>
         <ownedAttribute xmi:id="_JThsnXpjEd-WhYpqDne-kg" name="Pharmacy" visibility="public" type="_FWHFYFJOEd-gUbUlN-XGdw" aggregation="composite" association="_JThsoHpjEd-WhYpqDne-kg">
           <ownedComment xmi:id="_9Kr5UIn2Ed-pZLs28ekBmw" annotatedElement="_JThsnXpjEd-WhYpqDne-kg">
-            <body>This element is only used in a denied CancelRxResponse where the prescription cannot be cancelled by the receiving pharmacy because the prescription has been transferred to another organization’s pharmacy. One loop required for the transferred to pharmacy, with as much information about the transferred to pharmacy as known.</body>
+            <body>This element is only used in a denied CancelRxResponse where the prescription cannot be canceled by the receiving pharmacy because the prescription has been transferred to another organization’s pharmacy. One loop required for the transferred to pharmacy, with as much information about the transferred to pharmacy as known.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JThsnnpjEd-WhYpqDne-kg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JThsn3pjEd-WhYpqDne-kg"/>
@@ -22062,14 +22060,14 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_4mU69jD1Ed-8rpqfOAePKg" base_Property="_4mU69DD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU6-zD1Ed-8rpqfOAePKg" base_Property="_4mU6-TD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4meEwzD1Ed-8rpqfOAePKg" base_Property="_4meEwTD1Ed-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2011xx-May-Ballot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
+  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2011xx-May-Ballot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2011xx-May-Ballot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2011xx-May-Ballot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -22149,7 +22147,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2011xx-May-Ballot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAmHEEd-Xe4OIcNINMg" base_Comment="_oustHWHEEd-Xe4OIcNINMg"/>
@@ -23213,7 +23211,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:GlobalProperty xmi:id="_Bv0UXYqaEd-pZLs28ekBmw" base_Class="_Bv0UUIqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_Bv0UXoqaEd-pZLs28ekBmw" base_Property="_Bv0UUYqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_V59SYYqaEd-pZLs28ekBmw" base_Property="_V59SYIqaEd-pZLs28ekBmw"/>
-  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="2011xx-May-Ballot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
+  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="2011091" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
   <xsd:GlobalElement xmi:id="_P3rT8YqnEd-pZLs28ekBmw" base_Property="_P3rT8IqnEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0uuYkYrFEd-urZQZ08VCKQ" base_Comment="_0uuYkIrFEd-urZQZ08VCKQ"/>
   <Default:Documentation xmi:id="_7k0GoIrFEd-urZQZ08VCKQ" base_Comment="_7kqVoIrFEd-urZQZ08VCKQ"/>
