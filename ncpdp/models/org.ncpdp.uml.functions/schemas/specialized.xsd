@@ -5,7 +5,7 @@ The work may not be changed or altered. The work may not be sold, used or exploi
 NCPDP recognizes the confidentiality of certain information exchanged electronically through the use of its standards. Users should be familiar with the federal, state, and local laws, regulations and codes requiring confidentiality of this information and should utilize the standards accordingly.
 
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/specialized" version="2010121" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:specialized="http://www.ncpdp.org/schema/specialized" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/specialized" version="2011091" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:specialized="http://www.ncpdp.org/schema/specialized" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/structures" schemaLocation="structures.xsd"/>
@@ -29,7 +29,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:element>
       <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
       <xsd:element minOccurs="0" name="AdditionalMessageIndicator" type="xsd:boolean"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MesssageToFollowMessageIdentifier" type="datatypes:an..35"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="MessageToFollowMessageIdentifier" type="datatypes:an..35"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="NoKnown" type="ecl:NoKnownType"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -70,7 +70,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           </xsd:element>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="AdditionalMessageIndicator" type="xsd:boolean"/>
-          <xsd:element maxOccurs="0" minOccurs="0" name="MesssageToFollowMessageIdentifier" type="datatypes:an..35"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="MessageToFollowMessageIdentifier" type="datatypes:an..35"/>
           <xsd:element maxOccurs="0" minOccurs="0" name="NoKnown" type="ecl:NoKnownType"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -128,7 +128,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Facility" type="datatypes:Facilty">
+          <xsd:element name="Facility" type="datatypes:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -226,7 +226,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
           </xsd:element>
           <xsd:element minOccurs="0" name="Note" type="datatypes:an..70"/>
           <xsd:element name="AdditionalMessageIndicator" type="xsd:boolean"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MesssageToFollowMessageIdentifier" type="datatypes:an..35"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="MessageToFollowMessageIdentifier" type="datatypes:an..35"/>
           <xsd:element maxOccurs="unbounded" minOccurs="0" name="NoKnown" type="ecl:NoKnownType"/>
         </xsd:sequence>
       </xsd:restriction>
@@ -282,7 +282,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty">
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -302,7 +302,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Prescriber" type="structures:MandatoryPresciber">
+          <xsd:element name="Prescriber" type="structures:MandatoryPrescriber">
             <xsd:annotation>
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -391,7 +391,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty">
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -411,7 +411,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Prescriber" type="structures:MandatoryPresciber">
+          <xsd:element name="Prescriber" type="structures:MandatoryPrescriber">
             <xsd:annotation>
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -502,7 +502,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
     <xsd:sequence>
       <xsd:element minOccurs="0" name="MTMPayerCaseIdentifier" type="xsd:string">
         <xsd:annotation>
-          <xsd:documentation>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subserviant to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</xsd:documentation>
+          <xsd:documentation>Unique identifier assigned by the payer to this case. MTMPayerCaseIdentifier is subservient to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:choice>
@@ -621,7 +621,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty">
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -712,7 +712,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
         <xsd:sequence>
           <xsd:element minOccurs="0" name="MTMPayerCaseIdentifier" type="xsd:string">
             <xsd:annotation>
-              <xsd:documentation>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subserviant to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</xsd:documentation>
+              <xsd:documentation>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subservient to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
           <xsd:choice>
@@ -819,7 +819,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty">
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -928,7 +928,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facilty">
+          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1019,7 +1019,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
         <xsd:sequence>
           <xsd:element minOccurs="0" name="MTMPayerCaseIdentifier" type="xsd:string">
             <xsd:annotation>
-              <xsd:documentation>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subserviant to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</xsd:documentation>
+              <xsd:documentation>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subservient to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
           <xsd:choice>
@@ -1116,7 +1116,7 @@ Note: The Allergy element is not to be used to replace or add to the transfer of
           <xsd:documentation>Element may be used only in the long-term care setting, where there are established processes supporting the sharing of diagnosis information between a resident’s facility and pharmacy. Note: The medication information enables communication of prescription-specific diagnosis information only—appropriate for use in new prescription messaging, but insufficient to support management of a resident’s full drug regimen. The intent is to convey the diagnosis that the prescribed medication is for.  There is also a need to convey diagnosis information in the Census event.  The difference here is that there is no related drug.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facilty">
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facility">
         <xsd:annotation>
           <xsd:documentation>One loop mandatory for the skilled nursing facility.
 Given that a new long term care resident may not yet have an assigned physician, it is more appropriate to require the facility information, and physician if that information is available.
@@ -1197,7 +1197,7 @@ all other values = no return receipt requested.</xsd:documentation>
       </xsd:element>
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an..35"/>
       <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facilty">
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facility">
         <xsd:annotation>
           <xsd:documentation>One loop mandatory for the skilled nursing facility.
 Given that a new long term care resident may not yet have an assigned physician, it is more appropriate to require the facility information, and physician if that information is available.
