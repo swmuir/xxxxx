@@ -960,7 +960,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="NCICode">
     <xsd:annotation>
-      <xsd:documentation>NCPDP Constrained Code to value sets defined by NCI&lt;br&gt;See External Code List Introduction for information on NCI Thesaurus Code Lists.&lt;br&gt;http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation>
+      <xsd:documentation>NCPDP Constrained Code to value sets defined by NCI. See External Code List Introduction for information on NCI Thesaurus Code Lists. http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Code" type="ecl:Code"/>

@@ -1,0 +1,18 @@
+Base: v2010123/org.ncpdp.uml.ecl/model/ecl.emx
+
+Left Changes: org.ncpdp.uml.ecl/ecl.emx
+
+Unresolved |     Model View
+Unresolved |         Modify <<schema>>ecl<Package>.schema.version : EString from "2010123" to "2010124"
+Unresolved |         Changes related to <<ePackage, schema>>ecl<Model>
+Unresolved |             Changes related to <<schema>>ecl<Package>
+Unresolved |                 Add [reference] DC<Enumeration Literal> to <<documentation>>"Discharge Cancel - A..."<Comment>.annotatedElement : Element
+Unresolved |                 Add [reference] TC<Enumeration Literal> to <<documentation>>"Transfer Cancel - A ..."<Comment>.annotatedElement : Element
+Unresolved |                 Add [reference] ZZ<Enumeration Literal> to <<documentation>>"Other Acknowledgemen..."<Comment>.annotatedElement : Element
+Unresolved |                 Add [reference] 4A<Enumeration Literal> to <<documentation>>"Prescribed with ackn..."<Comment>.annotatedElement : Element
+Unresolved |                 Modify <<documentation>>"Ppropensity to adver..."<Comment>.body : String from "Ppropensity to adverse reac..." to "Propensity to adverse react..."
+Unresolved |                 Modify <<documentation>>"Discharge Cancel - A..."<Comment>.body : String from "Discharge Cancel - A previo..." to "Discharge Cancel - A previo..."
+Unresolved |                 Modify <<documentation>>"Transfer Cancel - A ..."<Comment>.body : String from "Transfer Cancel - A previou..." to "Transfer Cancel - A previou..."
+Unresolved |                 Modify <<documentation>>"Other Acknowledgemen..."<Comment>.body : String from "Other Acknowledgement. When..." to "Other Acknowledgment. When ..."
+Unresolved |                 Modify <<documentation>>"Prescribed with ackn..."<Comment>.body : String from "Prescribed with acknowledge..." to "Prescribed with acknowledgm..."
+Unresolved |                 Modify <<documentation>>"Presciber"<Comment>.body : String from "Presciber" to "Prescriber"
