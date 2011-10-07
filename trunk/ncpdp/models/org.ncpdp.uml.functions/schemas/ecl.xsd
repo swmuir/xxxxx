@@ -5,7 +5,7 @@ The work may not be changed or altered. The work may not be sold, used or exploi
 NCPDP recognizes the confidentiality of certain information exchanged electronically through the use of its standards. Users should be familiar with the federal, state, and local laws, regulations and codes requiring confidentiality of this information and should utilize the standards accordingly.
 
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/ecl" version="2010121" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/ecl" version="2011091" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <!-- ================================================== -->
   <!-- =====  Simple Type Definitions  -->
   <!-- ================================================== -->
@@ -31,7 +31,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="D">
         <xsd:annotation>
-          <xsd:documentation>Presciber</xsd:documentation>
+          <xsd:documentation>Prescriber</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ZZZ">
@@ -112,7 +112,9 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!--  Code  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="Code">
-    <xsd:restriction base="xsd:string"/>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="([!-~]|[ ])*[!-~]([!-~]|[ ])*"/>
+    </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  CommunicationTypeQualifierCode  <<ncpdpecl>>  -->
@@ -232,11 +234,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:documentation>Code identifying the significance or severity level of a clinical event as contained in the originating database.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="ecl:Code">
-      <xsd:enumeration value=" ">
-        <xsd:annotation>
-          <xsd:documentation>Not Specified</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
       <xsd:enumeration value="1">
         <xsd:annotation>
           <xsd:documentation>Major - Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent adverse drug event.</xsd:documentation>
@@ -422,11 +419,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>First DataBank SmartKey</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value=" ">
-        <xsd:annotation>
-          <xsd:documentation>Unspecified</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -444,7 +436,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="ZZ">
         <xsd:annotation>
-          <xsd:documentation>Other Acknowledgement. When ZZ is used, the textual DUE Acknowledgment Reason must be used to provide additional detail.</xsd:documentation>
+          <xsd:documentation>Other Acknowledgment. When ZZ is used, the textual DUE Acknowledgment Reason must be used to provide additional detail.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="R0">
@@ -874,7 +866,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="4A">
         <xsd:annotation>
-          <xsd:documentation>Prescribed with acknowledgements - Physician is prescribing this medication with knowledge of the potential conflict.</xsd:documentation>
+          <xsd:documentation>Prescribed with acknowledgments - Physician is prescribing this medication with knowledge of the potential conflict.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3C">
@@ -1107,6 +1099,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>H =  Hold - Indicates the prescriber’s authorization for the pharmacy to fill a prescription, but the prescriber recommends that the pharmacy wait for the patient to request it before filling it.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="E"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1667,7 +1660,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="DC">
         <xsd:annotation>
-          <xsd:documentation>Discharge Cancel - A previously communicated discharge is cancelled, either because of erroneous entry or because of a revised decision to not discharge, or end the visit of, the patient.</xsd:documentation>
+          <xsd:documentation>Discharge Cancel - A previously communicated discharge is canceled, either because of erroneous entry or because of a revised decision to not discharge, or end the visit of, the patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="D1">
@@ -1772,7 +1765,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="TC">
         <xsd:annotation>
-          <xsd:documentation>Transfer Cancel - A previously communicated transfer is cancelled, either because of an erroneous entry or because of a revised decision to not transfer the patient.</xsd:documentation>
+          <xsd:documentation>Transfer Cancel - A previously communicated transfer is canceled, either because of an erroneous entry or because of a revised decision to not transfer the patient.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="S">
@@ -2624,7 +2617,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:restriction base="ecl:Code">
       <xsd:enumeration value="420134006">
         <xsd:annotation>
-          <xsd:documentation>Ppropensity to adverse reactions </xsd:documentation>
+          <xsd:documentation>Propensity to adverse reactions</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="418038007">
