@@ -14692,7 +14692,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>H =  Hold - Indicates the prescriber’s authorization for the pharmacy to fill a prescription, but the prescriber recommends that the pharmacy wait for the patient to request it before filling it.</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_l6sQkIcNEeCSeb1qY34exA" name="E" classifier="_hq0u8SxAEd-8mcmtGejV_Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_etbwwCxAEd-8mcmtGejV_Q" name="DosageFormIDCode" visibility="private">
         <ownedComment xmi:id="_etbwwSxAEd-8mcmtGejV_Q">
@@ -21560,7 +21559,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_oCxxTmdhEd-EzKeHnOFaKw" base_Comment="_oCxxSGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AK1WYGdiEd-EzKeHnOFaKw" base_Generalization="__sJPQGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AnmK4GdiEd-EzKeHnOFaKw" base_Generalization="__Ja8sGdhEd-EzKeHnOFaKw"/>
-  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="2011091" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="2011072" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <orgncpdpecl:ncpdpecl xmi:id="_J51OkmdmEd-EzKeHnOFaKw" valueSetId="548-6F" fieldFormat="x(3)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_J51OcGdmEd-EzKeHnOFaKw" displayName="Approved Message Code"/>
   <Default:Documentation xmi:id="_J51Ok2dmEd-EzKeHnOFaKw" base_Comment="_J51OcWdmEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_J51OlGdmEd-EzKeHnOFaKw" base_Comment="_J51Oc2dmEd-EzKeHnOFaKw"/>
