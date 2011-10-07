@@ -16584,8 +16584,7 @@ all other values = no return receipt requested.</body>
         <ownedAttribute xmi:id="_QoFLAWHHEd-Xe4OIcNINMg" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite" association="_QoFLAGHHEd-Xe4OIcNINMg">
           <ownedComment xmi:id="_X1bYgIlFEd-pZLs28ekBmw" annotatedElement="_QoFLAWHHEd-Xe4OIcNINMg">
             <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
-	</body>
+	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QoFLA2HHEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QoFLAmHHEd-Xe4OIcNINMg"/>
@@ -16753,8 +16752,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         <ownedAttribute xmi:id="_PZuCpn7gEd-qFLXIW1YLFA" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite">
           <ownedComment xmi:id="_eU_0AIn1Ed-pZLs28ekBmw" annotatedElement="_PZuCpn7gEd-qFLXIW1YLFA">
             <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
-	</body>
+	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PZuCp37gEd-qFLXIW1YLFA" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PZuCqH7gEd-qFLXIW1YLFA"/>
@@ -18460,8 +18458,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedAttribute xmi:id="_bFIa_mRHEd-M5IWg2-DxLQ" name="MedicationPrescribed" visibility="public" type="_QQEgIGTnEd-Y0upv2_lheQ" aggregation="composite">
             <ownedComment xmi:id="_yNHN8In1Ed-pZLs28ekBmw" annotatedElement="_bFIa_mRHEd-M5IWg2-DxLQ">
               <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
-	</body>
+	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
             </ownedComment>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa_2RHEd-M5IWg2-DxLQ" value="300"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIbAGRHEd-M5IWg2-DxLQ" value="1"/>
