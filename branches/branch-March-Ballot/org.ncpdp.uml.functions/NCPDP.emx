@@ -3758,7 +3758,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
               <body></body>
             </ownedComment>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4OMHtTD1Ed-8rpqfOAePKg" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OMHtjD1Ed-8rpqfOAePKg"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OMHtjD1Ed-8rpqfOAePKg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_4OMHtzD1Ed-8rpqfOAePKg" name="IndicationVariableModifier" type="_4NI-xjD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_4OMHuDD1Ed-8rpqfOAePKg">
@@ -14701,7 +14701,7 @@ When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 01
           <nestedClassifier xmi:type="uml:DataType" xmi:id="_4as5qDD1Ed-8rpqfOAePKg" name="anonymous_54" visibility="private">
             <ownedComment xmi:id="_ccmbwItlEd-urZQZ08VCKQ" annotatedElement="_4as5qDD1Ed-8rpqfOAePKg">
               <body>Issue setting a default value with leading 0 as in 010 RSM trimming leading 0 to 10 which is not the same&#xD;
-Keeping anonymous type </body>
+Keeping anonymous type</body>
             </ownedComment>
             <generalization xmi:id="_4as5rDD1Ed-8rpqfOAePKg">
               <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
@@ -16584,8 +16584,7 @@ all other values = no return receipt requested.</body>
         <ownedAttribute xmi:id="_QoFLAWHHEd-Xe4OIcNINMg" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite" association="_QoFLAGHHEd-Xe4OIcNINMg">
           <ownedComment xmi:id="_X1bYgIlFEd-pZLs28ekBmw" annotatedElement="_QoFLAWHHEd-Xe4OIcNINMg">
             <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
-	</body>
+If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QoFLA2HHEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QoFLAmHHEd-Xe4OIcNINMg"/>
@@ -16753,8 +16752,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         <ownedAttribute xmi:id="_PZuCpn7gEd-qFLXIW1YLFA" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite">
           <ownedComment xmi:id="_eU_0AIn1Ed-pZLs28ekBmw" annotatedElement="_PZuCpn7gEd-qFLXIW1YLFA">
             <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
-	</body>
+If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PZuCp37gEd-qFLXIW1YLFA" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PZuCqH7gEd-qFLXIW1YLFA"/>
@@ -18460,8 +18458,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <ownedAttribute xmi:id="_bFIa_mRHEd-M5IWg2-DxLQ" name="MedicationPrescribed" visibility="public" type="_QQEgIGTnEd-Y0upv2_lheQ" aggregation="composite">
             <ownedComment xmi:id="_yNHN8In1Ed-pZLs28ekBmw" annotatedElement="_bFIa_mRHEd-M5IWg2-DxLQ">
               <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.&#xD;
-	</body>
+If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
             </ownedComment>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa_2RHEd-M5IWg2-DxLQ" value="300"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIbAGRHEd-M5IWg2-DxLQ" value="1"/>
@@ -22060,14 +22057,14 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_4mU69jD1Ed-8rpqfOAePKg" base_Property="_4mU69DD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU6-zD1Ed-8rpqfOAePKg" base_Property="_4mU6-TD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4meEwzD1Ed-8rpqfOAePKg" base_Property="_4meEwTD1Ed-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
+  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2011072" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2011072" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2011072" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2011072" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -22147,7 +22144,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2011091" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2011072" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAmHEEd-Xe4OIcNINMg" base_Comment="_oustHWHEEd-Xe4OIcNINMg"/>
@@ -23211,7 +23208,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:GlobalProperty xmi:id="_Bv0UXYqaEd-pZLs28ekBmw" base_Class="_Bv0UUIqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_Bv0UXoqaEd-pZLs28ekBmw" base_Property="_Bv0UUYqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_V59SYYqaEd-pZLs28ekBmw" base_Property="_V59SYIqaEd-pZLs28ekBmw"/>
-  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="2011091" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
+  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="2011072" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
   <xsd:GlobalElement xmi:id="_P3rT8YqnEd-pZLs28ekBmw" base_Property="_P3rT8IqnEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0uuYkYrFEd-urZQZ08VCKQ" base_Comment="_0uuYkIrFEd-urZQZ08VCKQ"/>
   <Default:Documentation xmi:id="_7k0GoIrFEd-urZQZ08VCKQ" base_Comment="_7kqVoIrFEd-urZQZ08VCKQ"/>
