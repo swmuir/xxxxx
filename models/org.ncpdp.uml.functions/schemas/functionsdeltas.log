@@ -1,0 +1,421 @@
+Base: v2010123/org.ncpdp.uml.functions/NCPDP.emx
+
+Left Changes: org.ncpdp.uml.functions/NCPDP.emx
+
+Unresolved |     Modify change
+Unresolved |         Modify <<documentation>>"Unique identifier as..."<Comment>.body : String from "Unique identifier assigned ..." to "Unique identifier assigned ..."
+Unresolved |         Modify <<documentation>>"Designated Pharmacis..."<Comment>.body : String from "Designated Pharmacisy for t..." to "Designated Pharmacist for t..."
+Unresolved |         Modify <<documentation>>"Designated Pharmacis..."<Comment>.body : String from "Designated Pharmacisy for t..." to "Designated Pharmacist for t..."
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify MandatoryPresciber<Class>.name : String from "MandatoryPresciber" to "MandatoryPrescriber"
+Unresolved |         Modify OptionalPresciber<Class>.name : String from "OptionalPresciber" to "OptionalPrescriber"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify <<Medication>>HistoryPrescibedMedication<Class>.name : String from "HistoryPrescibedMedication" to "HistoryPrescribedMedication"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify <<Medication>>NewRxPrescibedMedication<Class>.name : String from "NewRxPrescibedMedication" to "NewRxPrescribedMedication"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify HistoryPresciberOrderNumber<Property>.name : String from "HistoryPresciberOrderNumber" to "HistoryPrescriberOrderNumber"
+Unresolved |         Modify ReasonForSubsitutionCodeUsed<Property>.name : String from "ReasonForSubsitutionCodeUsed" to "ReasonForSubstitutionCodeUsed"
+Unresolved |         Modify <<documentation>>"Patient ID is explic..."<Comment>.body : String from "Patient ID is explicit ID s..." to "Patient ID is explicit ID s..."
+Unresolved |         Modify <<documentation>>"Payer ID is explicit..."<Comment>.body : String from "Payer ID is explicit ID str..." to "Payer ID is explicit ID str..."
+Unresolved |         Modify <<documentation>>"Provieder ID is expl..."<Comment>.body : String from "Provieder ID is explicit ID..." to "Provider ID is explicit ID ..."
+Unresolved |         Modify Facilty<Class>.name : String from "Facilty" to "Facility"
+Unresolved |         Modify <<documentation>>"NCPCP Constrained Co..."<Comment>.body : String from "NCPCP Constrained Code to v..." to "NCPDP Constrained Code to v..."
+Unresolved |         Modify <<documentation>>"Issue setting a defa..."<Comment>.body : String from "Issue setting a default val..." to "Issue setting a default val..."
+Unresolved |         Modify <<documentation>>"Value P.  At least o..."<Comment>.body : String from "Value P.  At least one loop..." to "Value P. At least one loop ..."
+Unresolved |         Modify <<documentation>>"Value P.  At least o..."<Comment>.body : String from "Value P.  At least one loop..." to "Value P. At least one loop ..."
+Unresolved |         Modify <<Request>>DrugAdminstration<Class>.name : String from "DrugAdminstration" to "DrugAdministration"
+Unresolved |         Modify <<documentation>>"Value P.  At least o..."<Comment>.body : String from "Value P.  At least one loop..." to "Value P. At least one loop ..."
+Unresolved |         Modify <<documentation>>"This element is only..."<Comment>.body : String from "This element is only used i..." to "This element is only used i..."
+Unresolved |         Modify <<documentation>>"This element is only..."<Comment>.body : String from "This element is only used i..." to "This element is only used i..."
+Unresolved |     Add change
+Unresolved |         Add [reference] ReasonCode<Enumeration> to ReasonCode<Property>.type : Type
+Unresolved |         Add [reference] ReasonCode<Enumeration> to ReasonCode<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] DispensingRequestCode<Enumeration> to DispensingRequestCode<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ReasonCode<Enumeration> to ReasonCode<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] DispensingRequestCode<Enumeration> to DispensingRequestCode<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] DispensingRequestCode<Enumeration> to DispensingRequestCode<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to <<globalElement>>ReasonForSubstitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] PayerResponsibilityCode<Enumeration> to PayerResponsibilityCode<Property>.type : Type
+Unresolved |         Add [reference] PatientRelationshipCode<Enumeration> to PatientRelationship<Property>.type : Type
+Unresolved |         Add [reference] ConsentCode<Enumeration> to Consent<Property>.type : Type
+Unresolved |         Add [reference] ServiceTypeCode<Enumeration> to ServiceTypeCoded<Property>.type : Type
+Unresolved |         Add [reference] MIMETypeCode<Enumeration> to MIMEType<Property>.type : Type
+Unresolved |         Add [reference] PrimaryDiagnosisCodeQualifierCode<Enumeration> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Value<Property>.type : Type
+Unresolved |         Add [reference] SecondaryDiagnosisCodeQualifierCode<Enumeration> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Value<Property>.type : Type
+Unresolved |         Add [reference] CompoundCode<Enumeration> to CompoundCoded<Property>.type : Type
+Unresolved |         Add [reference] DiagnosisClinicalInformationQualifierCode<Enumeration> to ClinicalInformationQualifier<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] BooleanCode<Enumeration> to NoKnownAllergies<Property>.type : Type
+Unresolved |         Add [reference] SourceOfInformationCode<Enumeration> to SourceOfInformation<Property>.type : Type
+Unresolved |         Add [reference] PayerResponsibilityCode<Enumeration> to PayerResponsibilityCode<Property>.type : Type
+Unresolved |         Add [reference] PatientRelationshipCode<Enumeration> to PatientRelationship<Property>.type : Type
+Unresolved |         Add [reference] ConsentCode<Enumeration> to Consent<Property>.type : Type
+Unresolved |         Add [reference] ServiceTypeCode<Enumeration> to ServiceTypeCoded<Property>.type : Type
+Unresolved |         Add [reference] SourceOfInformationCode<Enumeration> to SourceOfInformation<Property>.type : Type
+Unresolved |         Add [reference] GenderCode<Enumeration> to Gender<Property>.type : Type
+Unresolved |         Add [reference] ResidenceCode<Enumeration> to ResidenceCode<Property>.type : Type
+Unresolved |         Add [reference] BooleanCode<Enumeration> to PregnancyIndicator<Property>.type : Type
+Unresolved |         Add [reference] BooleanCode<Enumeration> to Smoker<Property>.type : Type
+Unresolved |         Add [reference] GenderCode<Enumeration> to Gender<Property>.type : Type
+Unresolved |         Add [reference] ResidenceCode<Enumeration> to ResidenceCode<Property>.type : Type
+Unresolved |         Add [reference] BooleanCode<Enumeration> to PregnancyIndicator<Property>.type : Type
+Unresolved |         Add [reference] BooleanCode<Enumeration> to Smoker<Property>.type : Type
+Unresolved |         Add [reference] GenderCode<Enumeration> to Gender<Property>.type : Type
+Unresolved |         Add [reference] ResidenceCode<Enumeration> to ResidenceCode<Property>.type : Type
+Unresolved |         Add [reference] PayerResponsibilityCode<Enumeration> to PayerResponsibilityCode<Property>.type : Type
+Unresolved |         Add [reference] PatientRelationshipCode<Enumeration> to PatientRelationship<Property>.type : Type
+Unresolved |         Add [reference] ConsentCode<Enumeration> to Consent<Property>.type : Type
+Unresolved |         Add [reference] ServiceTypeCode<Enumeration> to ServiceTypeCoded<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] SubstitutionCode<Enumeration> to Substitutions<Property>.type : Type
+Unresolved |         Add [reference] DrugCoverageStatusCode<Enumeration> to DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationStatusCode<Enumeration> to PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Add [reference] DoNotFillCode<Enumeration> to DoNotFill<Property>.type : Type
+Unresolved |         Add [reference] OrderCaptureMethodCode<Enumeration> to OrderCaptureMethod<Property>.type : Type
+Unresolved |         Add [reference] ReasonForSubstitutionCodeUsed<Enumeration> to ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Add [reference] IDQualifierCode<Enumeration> to IDQualifier<Property>.type : Type
+Unresolved |         Add [reference] DUEReasonForServiceCode<Enumeration> to ServiceReasonCode<Property>.type : Type
+Unresolved |         Add [reference] DUEProfessionalServiceCode<Enumeration> to ProfessionalServiceCode<Property>.type : Type
+Unresolved |         Add [reference] DUEResultOfServiceCode<Enumeration> to ServiceResultCode<Property>.type : Type
+Unresolved |         Add [reference] DUEClinicalSignificanceCode<Enumeration> to ClinicalSignificanceCode<Property>.type : Type
+Unresolved |         Add [reference] QuantityCodeListQualifierCode<Enumeration> to CodeListQualifier<Property>.type : Type
+Unresolved |         Add [reference] StateCode<Enumeration> to State<Property>.type : Type
+Unresolved |         Add [reference] PriorAuthorizationTypeCode<Enumeration> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] DUECoAgentIDQualifierCode<Enumeration> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] MeasurementDimensionCode<Enumeration> to Dimension<Property>.type : Type
+Unresolved |         Add [reference] MeasurementDataQualifierCode<Enumeration> to MeasurementDataQualifier<Property>.type : Type
+Unresolved |         Add [reference] TimeZoneIdentifierCode<Enumeration> to TimeZoneIdentifier<Property>.type : Type
+Unresolved |         Add [reference] CommunicationTypeQualifierCode<Enumeration> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] DrugDBQualifiersCode<Enumeration> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] SourceQualifierCode<Enumeration> to SourceQualifier<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] ProductQualifiersCode<Enumeration> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] ProductQualifiersCodeExtended<Enumeration> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] ProblemNameQualifierCode<Enumeration> to Qualifier<Property>.type : Type
+Unresolved |         Add [reference] Code<Data Type> to Code<Property>.type : Type
+Unresolved |         Add [reference] SNOMEDCTAdverseEventCode<Enumeration> to Code<Property>.type : Type
+Unresolved |         Add [reference] AddressTypeQualifier<Enumeration> to <<attribute>>Qualifier<Property>.type : Type
+Unresolved |         Add [reference] StateCode<Enumeration> to State<Property>.type : Type
+Unresolved |         Add [reference] TransactionErrorCode<Enumeration> to Code<Property>.type : Type
+Unresolved |         Add [reference] DescriptionCode<Enumeration> to DescriptionCode<Property>.type : Type
+Unresolved |         Add [reference] StatusCode<Enumeration> to Code<Property>.type : Type
+Unresolved |         Add [reference] DescriptionCode<Enumeration> to DescriptionCode<Property>.type : Type
+Unresolved |         Add [reference] PrescriptionDeliveryMethod<Enumeration> to PrescriptionDeliveryMethod<Property>.type : Type
+Unresolved |         Add [reference] PrescriptionDeliveryMethod<Enumeration> to PrescriptionDeliveryMethod<Property>.type : Type
+Unresolved |         Add [reference] TransactionDomainVersionQualifierCode<Enumeration> to <<attribute>>TransactionDomain<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] DrugAdminReasonCode<Enumeration> to DrugAdminReasonCode<Property>.type : Type
+Unresolved |         Add [reference] LTCLevelOfChangeCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] LTCLevelOfChangeCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] DispensingRequestCode<Enumeration> to DispensingRequestCode<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] DispensingRequestCode<Enumeration> to DispensingRequestCode<Property>.type : Type
+Unresolved |         Add [reference] RxChangeCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] DispensingRequestCode<Enumeration> to DispensingRequestCode<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] DispensingRequestCode<Enumeration> to DispensingRequestCode<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] RxChangeCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] LTCLevelOfChangeCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] MessageFunctionCode<Enumeration> to MessageRequestCode<Property>.type : Type
+Unresolved |         Add [reference] ChangeOfPrescriptionStatusCode<Enumeration> to ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Add [reference] ReasonCode<Enumeration> to ReasonCode<Property>.type : Type
+Unresolved |         Add [reference] ReasonCode<Enumeration> to DenialReasonCode<Property>.type : Type
+Unresolved |         Add [reference] ReasonCode<Enumeration> to DenialReasonCode<Property>.type : Type
+Unresolved |         Add [reference] ReasonCode<Enumeration> to ReasonCode<Property>.type : Type
+Unresolved |         Add [reference] ReasonCode<Enumeration> to ReasonCode<Property>.type : Type
+Unresolved |     Delete change
+Unresolved |         Delete [reference] ReasonCode<Enumeration> from ReasonCode<Property>.type : Type
+Unresolved |         Delete [reference] ReasonCode<Enumeration> from ReasonCode<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] DispensingRequestCode<Enumeration> from DispensingRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ReasonCode<Enumeration> from ReasonCode<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] DispensingRequestCode<Enumeration> from DispensingRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] DispensingRequestCode<Enumeration> from DispensingRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from <<globalElement>>ReasonForSubstitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] PayerResponsibilityCode<Enumeration> from PayerResponsibilityCode<Property>.type : Type
+Unresolved |         Delete [reference] PatientRelationshipCode<Enumeration> from PatientRelationship<Property>.type : Type
+Unresolved |         Delete [reference] ConsentCode<Enumeration> from Consent<Property>.type : Type
+Unresolved |         Delete [reference] ServiceTypeCode<Enumeration> from ServiceTypeCoded<Property>.type : Type
+Unresolved |         Delete [reference] MIMETypeCode<Enumeration> from MIMEType<Property>.type : Type
+Unresolved |         Delete [reference] PrimaryDiagnosisCodeQualifierCode<Enumeration> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Value<Property>.type : Type
+Unresolved |         Delete [reference] SecondaryDiagnosisCodeQualifierCode<Enumeration> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Value<Property>.type : Type
+Unresolved |         Delete [reference] CompoundCode<Enumeration> from CompoundCoded<Property>.type : Type
+Unresolved |         Delete [reference] DiagnosisClinicalInformationQualifierCode<Enumeration> from ClinicalInformationQualifier<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] BooleanCode<Enumeration> from NoKnownAllergies<Property>.type : Type
+Unresolved |         Delete [reference] SourceOfInformationCode<Enumeration> from SourceOfInformation<Property>.type : Type
+Unresolved |         Delete [reference] PayerResponsibilityCode<Enumeration> from PayerResponsibilityCode<Property>.type : Type
+Unresolved |         Delete [reference] PatientRelationshipCode<Enumeration> from PatientRelationship<Property>.type : Type
+Unresolved |         Delete [reference] ConsentCode<Enumeration> from Consent<Property>.type : Type
+Unresolved |         Delete [reference] ServiceTypeCode<Enumeration> from ServiceTypeCoded<Property>.type : Type
+Unresolved |         Delete [reference] SourceOfInformationCode<Enumeration> from SourceOfInformation<Property>.type : Type
+Unresolved |         Delete [reference] GenderCode<Enumeration> from Gender<Property>.type : Type
+Unresolved |         Delete [reference] ResidenceCode<Enumeration> from ResidenceCode<Property>.type : Type
+Unresolved |         Delete [reference] BooleanCode<Enumeration> from PregnancyIndicator<Property>.type : Type
+Unresolved |         Delete [reference] BooleanCode<Enumeration> from Smoker<Property>.type : Type
+Unresolved |         Delete [reference] GenderCode<Enumeration> from Gender<Property>.type : Type
+Unresolved |         Delete [reference] ResidenceCode<Enumeration> from ResidenceCode<Property>.type : Type
+Unresolved |         Delete [reference] BooleanCode<Enumeration> from PregnancyIndicator<Property>.type : Type
+Unresolved |         Delete [reference] BooleanCode<Enumeration> from Smoker<Property>.type : Type
+Unresolved |         Delete [reference] GenderCode<Enumeration> from Gender<Property>.type : Type
+Unresolved |         Delete [reference] ResidenceCode<Enumeration> from ResidenceCode<Property>.type : Type
+Unresolved |         Delete [reference] PayerResponsibilityCode<Enumeration> from PayerResponsibilityCode<Property>.type : Type
+Unresolved |         Delete [reference] PatientRelationshipCode<Enumeration> from PatientRelationship<Property>.type : Type
+Unresolved |         Delete [reference] ConsentCode<Enumeration> from Consent<Property>.type : Type
+Unresolved |         Delete [reference] ServiceTypeCode<Enumeration> from ServiceTypeCoded<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] SubstitutionCode<Enumeration> from Substitutions<Property>.type : Type
+Unresolved |         Delete [reference] DrugCoverageStatusCode<Enumeration> from DrugCoverageStatusCode<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationStatusCode<Enumeration> from PriorAuthorizationStatus<Property>.type : Type
+Unresolved |         Delete [reference] DoNotFillCode<Enumeration> from DoNotFill<Property>.type : Type
+Unresolved |         Delete [reference] OrderCaptureMethodCode<Enumeration> from OrderCaptureMethod<Property>.type : Type
+Unresolved |         Delete [reference] ReasonForSubstitutionCodeUsed<Enumeration> from ReasonForSubsitutionCodeUsed<Property>.type : Type
+Unresolved |         Delete [reference] IDQualifierCode<Enumeration> from IDQualifier<Property>.type : Type
+Unresolved |         Delete [reference] DUEReasonForServiceCode<Enumeration> from ServiceReasonCode<Property>.type : Type
+Unresolved |         Delete [reference] DUEProfessionalServiceCode<Enumeration> from ProfessionalServiceCode<Property>.type : Type
+Unresolved |         Delete [reference] DUEResultOfServiceCode<Enumeration> from ServiceResultCode<Property>.type : Type
+Unresolved |         Delete [reference] DUEClinicalSignificanceCode<Enumeration> from ClinicalSignificanceCode<Property>.type : Type
+Unresolved |         Delete [reference] QuantityCodeListQualifierCode<Enumeration> from CodeListQualifier<Property>.type : Type
+Unresolved |         Delete [reference] StateCode<Enumeration> from State<Property>.type : Type
+Unresolved |         Delete [reference] PriorAuthorizationTypeCode<Enumeration> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] DUECoAgentIDQualifierCode<Enumeration> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] MeasurementDimensionCode<Enumeration> from Dimension<Property>.type : Type
+Unresolved |         Delete [reference] MeasurementDataQualifierCode<Enumeration> from MeasurementDataQualifier<Property>.type : Type
+Unresolved |         Delete [reference] TimeZoneIdentifierCode<Enumeration> from TimeZoneIdentifier<Property>.type : Type
+Unresolved |         Delete [reference] CommunicationTypeQualifierCode<Enumeration> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] DrugDBQualifiersCode<Enumeration> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] SourceQualifierCode<Enumeration> from SourceQualifier<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] ProductQualifiersCode<Enumeration> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] ProductQualifiersCodeExtended<Enumeration> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] ProblemNameQualifierCode<Enumeration> from Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] Code<Data Type> from Code<Property>.type : Type
+Unresolved |         Delete [reference] SNOMEDCTAdverseEventCode<Enumeration> from Code<Property>.type : Type
+Unresolved |         Delete [reference] AddressTypeQualifier<Enumeration> from <<attribute>>Qualifier<Property>.type : Type
+Unresolved |         Delete [reference] StateCode<Enumeration> from State<Property>.type : Type
+Unresolved |         Delete [reference] TransactionErrorCode<Enumeration> from Code<Property>.type : Type
+Unresolved |         Delete [reference] DescriptionCode<Enumeration> from DescriptionCode<Property>.type : Type
+Unresolved |         Delete [reference] StatusCode<Enumeration> from Code<Property>.type : Type
+Unresolved |         Delete [reference] DescriptionCode<Enumeration> from DescriptionCode<Property>.type : Type
+Unresolved |         Delete [reference] PrescriptionDeliveryMethod<Enumeration> from PrescriptionDeliveryMethod<Property>.type : Type
+Unresolved |         Delete [reference] PrescriptionDeliveryMethod<Enumeration> from PrescriptionDeliveryMethod<Property>.type : Type
+Unresolved |         Delete [reference] TransactionDomainVersionQualifierCode<Enumeration> from <<attribute>>TransactionDomain<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] DrugAdminReasonCode<Enumeration> from DrugAdminReasonCode<Property>.type : Type
+Unresolved |         Delete [reference] LTCLevelOfChangeCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] LTCLevelOfChangeCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] DispensingRequestCode<Enumeration> from DispensingRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] DispensingRequestCode<Enumeration> from DispensingRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] RxChangeCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] DispensingRequestCode<Enumeration> from DispensingRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] DispensingRequestCode<Enumeration> from DispensingRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] RxChangeCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] LTCLevelOfChangeCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] MessageFunctionCode<Enumeration> from MessageRequestCode<Property>.type : Type
+Unresolved |         Delete [reference] ChangeOfPrescriptionStatusCode<Enumeration> from ChangeOfPrescriptionStatusFlag<Property>.type : Type
+Unresolved |         Delete [reference] ReasonCode<Enumeration> from ReasonCode<Property>.type : Type
+Unresolved |         Delete [reference] ReasonCode<Enumeration> from DenialReasonCode<Property>.type : Type
+Unresolved |         Delete [reference] ReasonCode<Enumeration> from DenialReasonCode<Property>.type : Type
+Unresolved |         Delete [reference] ReasonCode<Enumeration> from ReasonCode<Property>.type : Type
+Unresolved |         Delete [reference] ReasonCode<Enumeration> from ReasonCode<Property>.type : Type
