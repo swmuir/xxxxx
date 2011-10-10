@@ -455,8 +455,7 @@ Is not required in a Verify transaction. If used, must be 010 and DescriptionCod
             <xsd:element name="Code">
               <xsd:simpleType>
                 <xsd:annotation>
-                  <xsd:documentation>Issue setting a default value with leading 0 as in 010 RSM trimming leading 0 to 10 which is not the same&#13;
-Keeping anonymous type </xsd:documentation>
+                  <xsd:documentation>Issue setting a default value with leading 0 as in 010 RSM trimming leading 0 to 10 which is not the same. Keeping anonymous type </xsd:documentation>
                 </xsd:annotation>
                 <xsd:restriction base="xsd:string">
                   <xsd:pattern value="010"/>

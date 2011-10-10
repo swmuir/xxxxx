@@ -1666,8 +1666,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
         </xsd:element>
         <xsd:element maxOccurs="300" name="MedicationPrescribed" type="structures:HistoryPrescribedMedication">
           <xsd:annotation>
-            <xsd:documentation>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#13;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</xsd:documentation>
+            <xsd:documentation>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification. If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
       </xsd:choice>
@@ -1735,8 +1734,7 @@ all other values = no return receipt requested.</xsd:documentation>
       </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="structures:Medication">
         <xsd:annotation>
-          <xsd:documentation>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#13;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</xsd:documentation>
+          <xsd:documentation>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification. If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationRequested" type="structures:Medication">
@@ -1817,8 +1815,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
       </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="MedicationPrescribed" type="structures:Medication">
         <xsd:annotation>
-          <xsd:documentation>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#13;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</xsd:documentation>
+          <xsd:documentation>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification. If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
     </xsd:sequence>
