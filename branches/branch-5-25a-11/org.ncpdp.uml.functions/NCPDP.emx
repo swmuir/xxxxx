@@ -14700,8 +14700,7 @@ When the mail is picked up, if the NewRx has ReturnReceipt set, a Verify with 01
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:DataType" xmi:id="_4as5qDD1Ed-8rpqfOAePKg" name="anonymous_54" visibility="private">
             <ownedComment xmi:id="_ccmbwItlEd-urZQZ08VCKQ" annotatedElement="_4as5qDD1Ed-8rpqfOAePKg">
-              <body>Issue setting a default value with leading 0 as in 010 RSM trimming leading 0 to 10 which is not the same&#xD;
-Keeping anonymous type </body>
+              <body>Issue setting a default value with leading 0 as in 010 RSM trimming leading 0 to 10 which is not the same. Keeping anonymous type </body>
             </ownedComment>
             <generalization xmi:id="_4as5rDD1Ed-8rpqfOAePKg">
               <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
@@ -16583,8 +16582,7 @@ all other values = no return receipt requested.</body>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QoFLAWHHEd-Xe4OIcNINMg" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite" association="_QoFLAGHHEd-Xe4OIcNINMg">
           <ownedComment xmi:id="_X1bYgIlFEd-pZLs28ekBmw" annotatedElement="_QoFLAWHHEd-Xe4OIcNINMg">
-            <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
+            <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification. If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QoFLA2HHEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QoFLAmHHEd-Xe4OIcNINMg"/>
@@ -16751,8 +16749,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         </ownedAttribute>
         <ownedAttribute xmi:id="_PZuCpn7gEd-qFLXIW1YLFA" name="MedicationPrescribed" visibility="public" type="_40Xd8GTWEd-M5IWg2-DxLQ" aggregation="composite">
           <ownedComment xmi:id="_eU_0AIn1Ed-pZLs28ekBmw" annotatedElement="_PZuCpn7gEd-qFLXIW1YLFA">
-            <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
+            <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification. If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PZuCp37gEd-qFLXIW1YLFA" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PZuCqH7gEd-qFLXIW1YLFA"/>
@@ -18457,8 +18454,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           </ownedAttribute>
           <ownedAttribute xmi:id="_bFIa_mRHEd-M5IWg2-DxLQ" name="MedicationPrescribed" visibility="public" type="_QQEgIGTnEd-Y0upv2_lheQ" aggregation="composite">
             <ownedComment xmi:id="_yNHN8In1Ed-pZLs28ekBmw" annotatedElement="_bFIa_mRHEd-M5IWg2-DxLQ">
-              <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification.&#xD;
-	If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
+              <body>Value P.  At least one loop must contain 85 = Date Issued (Written Date). 	If  Filled or PartialFill, the medication prescribed may be sent as clarification. If NotFilled, the medication (dispensed) or (prescribed) is required, depending upon what the pharmacy has knowledge of.</body>
             </ownedComment>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIa_2RHEd-M5IWg2-DxLQ" value="300"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIbAGRHEd-M5IWg2-DxLQ" value="1"/>
