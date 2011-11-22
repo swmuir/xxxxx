@@ -14508,18 +14508,18 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <body>Code qualifying the Diagnosis Code</body>
         </ownedComment>
         <generalization xmi:id="_go_l4It0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="__NIBIIkEEd-pZLs28ekBmw" name="E" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_OAl5sIqrEd-pZLs28ekBmw" annotatedElement="__NIBIIkEEd-pZLs28ekBmw">
+        <ownedLiteral xmi:id="_4qMYIBEvEeGdS8kEviK9tA" name="E" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_4qMYIREvEeGdS8kEviK9tA" annotatedElement="_4qMYIBEvEeGdS8kEviK9tA">
             <body>Micromedex/Medical Economics – a code list developed by this company</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="__S8VQIkEEd-pZLs28ekBmw" name="F" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_Q5hOoIqrEd-pZLs28ekBmw" annotatedElement="__S8VQIkEEd-pZLs28ekBmw">
+        <ownedLiteral xmi:id="_4qM_MBEvEeGdS8kEviK9tA" name="F" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_4qM_MREvEeGdS8kEviK9tA" annotatedElement="_4qM_MBEvEeGdS8kEviK9tA">
             <body>First DataBank – a code list developed by this company</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="__YwCUIkEEd-pZLs28ekBmw" name="M" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_UC-58IqrEd-pZLs28ekBmw" annotatedElement="__YwCUIkEEd-pZLs28ekBmw">
+        <ownedLiteral xmi:id="_4qNmQBEvEeGdS8kEviK9tA" name="M" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_4qNmQREvEeGdS8kEviK9tA" annotatedElement="_4qNmQBEvEeGdS8kEviK9tA">
             <body>Medi-Span Product Line - a code list developed by this company </body>
           </ownedComment>
         </ownedLiteral>
@@ -21882,9 +21882,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_xdPDYYqpEd-pZLs28ekBmw" base_Comment="_xdPDYIqpEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0lDv8YqpEd-pZLs28ekBmw" base_Comment="_0lDv8IqpEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_2wrS8YqpEd-pZLs28ekBmw" base_Comment="_2wrS8IqpEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_OAl5sYqrEd-pZLs28ekBmw" base_Comment="_OAl5sIqrEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_Q5qYkIqrEd-pZLs28ekBmw" base_Comment="_Q5hOoIqrEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_UC-58YqrEd-pZLs28ekBmw" base_Comment="_UC-58IqrEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_m3noMYqsEd-pZLs28ekBmw" base_Comment="_m3noMIqsEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_XdY4YIq4Ed-urZQZ08VCKQ" base_Comment="_XYLBMIq4Ed-urZQZ08VCKQ"/>
   <orgncpdpecl:ncpdpecl xmi:id="_csRMQIthEd-urZQZ08VCKQ" base_Enumeration="_al3gcIthEd-urZQZ08VCKQ" displayName="Address Type Qualifier"/>
@@ -21987,4 +21984,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <xsd:Restriction xmi:id="_TqQgku_QEeC1YI2Z3iJATw" base_Generalization="_Tp8-ku_QEeC1YI2Z3iJATw"/>
   <Default:Documentation xmi:id="_TqQgk-_QEeC1YI2Z3iJATw" base_Comment="_Tp8-lO_QEeC1YI2Z3iJATw"/>
   <Default:Documentation xmi:id="_TqQglO_QEeC1YI2Z3iJATw" base_Comment="_Tp8-lu_QEeC1YI2Z3iJATw"/>
+  <Default:Documentation xmi:id="_4qONUBEvEeGdS8kEviK9tA" base_Comment="_4qMYIREvEeGdS8kEviK9tA"/>
+  <Default:Documentation xmi:id="_4qO0YBEvEeGdS8kEviK9tA" base_Comment="_4qM_MREvEeGdS8kEviK9tA"/>
+  <Default:Documentation xmi:id="_4qO0YREvEeGdS8kEviK9tA" base_Comment="_4qNmQREvEeGdS8kEviK9tA"/>
 </xmi:XMI>
