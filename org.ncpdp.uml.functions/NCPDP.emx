@@ -578,18 +578,6 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FF2CzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_4CkGhjD1Ed-8rpqfOAePKg" name="an">
-        <ownedComment xmi:id="_74wiwInHEd-pZLs28ekBmw" annotatedElement="_4CkGhjD1Ed-8rpqfOAePKg">
-          <body>NCPDP Length Constrained Type</body>
-        </ownedComment>
-        <generalization xmi:id="_4CkGijD1Ed-8rpqfOAePKg">
-          <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-        </generalization>
-        <ownedAttribute xmi:id="_4CkGhzD1Ed-8rpqfOAePKg" name="pattern">
-          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4CkGiDD1Ed-8rpqfOAePKg" value="[ !-~]*"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_4E8sGzD1Ed-8rpqfOAePKg" name="an1..10">
         <ownedComment xmi:id="_74wiwonHEd-pZLs28ekBmw" annotatedElement="_4E8sGzD1Ed-8rpqfOAePKg">
           <body>NCPDP Length Constrained Type</body>
@@ -871,7 +859,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_4NI-yDD1Ed-8rpqfOAePKg" value="AND|OR|TO"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_4CkGdzD1Ed-8rpqfOAePKg" name="anM">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_4CkGdzD1Ed-8rpqfOAePKg" name="an">
         <ownedComment xmi:id="_76Zhg4nHEd-pZLs28ekBmw" annotatedElement="_4CkGdzD1Ed-8rpqfOAePKg">
           <body>NCPDP Length Constrained Type</body>
         </ownedComment>
@@ -893,16 +881,6 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
         <ownedAttribute xmi:id="_4CRLiTD1Ed-8rpqfOAePKg" name="pattern">
           <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_4CRLijD1Ed-8rpqfOAePKg" value="(mailto:)?[^\.]{1,35}(\.[^@]{1,3})?(@[A-Za-z0-9]+\.[A-Za-z]{2,4})?"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_4DJ8ZDD1Ed-8rpqfOAePKg" name="n">
-        <ownedComment xmi:id="_76ZhhYnHEd-pZLs28ekBmw" annotatedElement="_4DJ8ZDD1Ed-8rpqfOAePKg">
-          <body>NCPDP Length Constrained Type</body>
-        </ownedComment>
-        <generalization xmi:id="_4DJ8aDD1Ed-8rpqfOAePKg" general="_4CkGhjD1Ed-8rpqfOAePKg"/>
-        <ownedAttribute xmi:id="_4DJ8ZTD1Ed-8rpqfOAePKg" name="pattern">
-          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4DJ8ZjD1Ed-8rpqfOAePKg" value="[0-9]*(\.[0-9]+)?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_4IE4oTD1Ed-8rpqfOAePKg" name="n1..11">
@@ -975,7 +953,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_4DJ8YjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_4IE4pTD1Ed-8rpqfOAePKg" name="nM">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_4IE4pTD1Ed-8rpqfOAePKg" name="n">
         <ownedComment xmi:id="_76_XY4nHEd-pZLs28ekBmw" annotatedElement="_4IE4pTD1Ed-8rpqfOAePKg">
           <body>NCPDP Length Constrained Type</body>
         </ownedComment>
@@ -1040,8 +1018,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
         <ownedComment xmi:id="_XBRBkFOYEd-wEdo_Dk3J9g" annotatedElement="_4ciEoDEAEd-8rpqfOAePKg">
           <body>NCPDP Code Type constrained to SNOMED Code System, Only Valid SNOMED Codes</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_dYZa1E5KEd-lRt4mSex0Qg" name="Text">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <ownedAttribute xmi:id="_dYZa1E5KEd-lRt4mSex0Qg" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dYZa1U5KEd-lRt4mSex0Qg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dYZa1k5KEd-lRt4mSex0Qg" value="1"/>
         </ownedAttribute>
@@ -1083,11 +1060,10 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
         <ownedComment xmi:id="_hxepIInNEd-pZLs28ekBmw" annotatedElement="_zeNPADE4Ed-8rpqfOAePKg">
           <body>Route of Administration used in Medication</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_03lbOGj7Ed-Pd7zqA0IwbQ" name="Text">
+        <ownedAttribute xmi:id="_03lbOGj7Ed-Pd7zqA0IwbQ" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_03lbOWj7Ed-Pd7zqA0IwbQ" annotatedElement="_03lbOGj7Ed-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_03lbOmj7Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03lbO2j7Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
@@ -1130,11 +1106,10 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
         <ownedComment xmi:id="_kWxfkFOXEd-wEdo_Dk3J9g" annotatedElement="_5lUzQEyMEd-G-pSkcIGh3w">
           <body>General Purpose NCPDP Vocabulary Constraint supporting Code and Qualifier with optional Text</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_5lUzQUyMEd-G-pSkcIGh3w" name="Text">
+        <ownedAttribute xmi:id="_5lUzQUyMEd-G-pSkcIGh3w" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_pWGgUFOXEd-wEdo_Dk3J9g" annotatedElement="_5lUzQUyMEd-G-pSkcIGh3w">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5lUzQkyMEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5lUzQ0yMEd-G-pSkcIGh3w"/>
         </ownedAttribute>
@@ -1234,11 +1209,10 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8fJbyGj2Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8fJbyWj2Ed-Pd7zqA0IwbQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_KINScGj3Ed-Pd7zqA0IwbQ" name="Text">
+        <ownedAttribute xmi:id="_KINScGj3Ed-Pd7zqA0IwbQ" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_KINScWj3Ed-Pd7zqA0IwbQ" annotatedElement="_KINScGj3Ed-Pd7zqA0IwbQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KINScmj3Ed-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KINSc2j3Ed-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
@@ -1247,11 +1221,10 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
         <ownedComment xmi:id="_DTud8WmnEd-rC41nbGoKjA" annotatedElement="_DTud8GmnEd-rC41nbGoKjA">
           <body>Used as part of Diagnosis</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_DTud82mnEd-rC41nbGoKjA" name="Text">
+        <ownedAttribute xmi:id="_DTud82mnEd-rC41nbGoKjA" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_DTud9GmnEd-rC41nbGoKjA" annotatedElement="_DTud82mnEd-rC41nbGoKjA">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DTud9WmnEd-rC41nbGoKjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DTud9mmnEd-rC41nbGoKjA" value="1"/>
         </ownedAttribute>
@@ -1277,8 +1250,7 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
           <body>SNOMED Adverse Event Code Constraint for Allergies</body>
         </ownedComment>
         <generalization xmi:id="_9NHuIH7FEd-qFLXIW1YLFA" general="_4ciEoDEAEd-8rpqfOAePKg"/>
-        <ownedAttribute xmi:id="_zmmf0n7FEd-qFLXIW1YLFA" name="Text">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <ownedAttribute xmi:id="_zmmf0n7FEd-qFLXIW1YLFA" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zmmf037FEd-qFLXIW1YLFA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zmmf1H7FEd-qFLXIW1YLFA" value="1"/>
         </ownedAttribute>
@@ -1417,7 +1389,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3Bob05WEeCWPfQnuInBcA" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_SHyQEBBwEeGdS8kEviK9tA" name="HighlLevelID">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SHyQEBBwEeGdS8kEviK9tA" name="SuperSetID" isAbstract="true">
         <ownedComment xmi:id="_SHyQERBwEeGdS8kEviK9tA" annotatedElement="_SHyQEBBwEeGdS8kEviK9tA">
           <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
@@ -4007,6 +3979,19 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_SVRrUkskEeCcn7LjuHErgg" visible="false" type="StructureCompartment"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SVQdMUskEeCcn7LjuHErgg" x="13314" y="3487"/>
           </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_mwxJUBvAEeGVv5PUg-_Z4A" element="_TrqCwGTSEd-M5IWg2-DxLQ" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_mxNOMBvAEeGVv5PUg-_Z4A" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_mxNOMRvAEeGVv5PUg-_Z4A" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_mxNOMhvAEeGVv5PUg-_Z4A" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_mxNOMxvAEeGVv5PUg-_Z4A" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_mxNONBvAEeGVv5PUg-_Z4A" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_mxNONRvAEeGVv5PUg-_Z4A" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_mxNONhvAEeGVv5PUg-_Z4A" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_mxNONxvAEeGVv5PUg-_Z4A" visible="false" type="SignalCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_mxNOOBvAEeGVv5PUg-_Z4A" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mwxJURvAEeGVv5PUg-_Z4A" x="5609" y="12647"/>
+          </children>
           <element xsi:nil="true"/>
         </contents>
       </eAnnotations>
@@ -4132,11 +4117,10 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Y2QB5DZ7Ed-o64UeGGH_dQ" name="Attachment">
-        <ownedAttribute xmi:id="_Y2QB5TZ7Ed-o64UeGGH_dQ" name="AttachmentSource">
+        <ownedAttribute xmi:id="_Y2QB5TZ7Ed-o64UeGGH_dQ" name="AttachmentSource" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_Y2QB5jZ7Ed-o64UeGGH_dQ" annotatedElement="_Y2QB5TZ7Ed-o64UeGGH_dQ">
             <body>The Source of the Info</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y2QB5zZ7Ed-o64UeGGH_dQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y2QB6DZ7Ed-o64UeGGH_dQ" value="1"/>
         </ownedAttribute>
@@ -6832,34 +6816,14 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrqC5GTSEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrqC5WTSEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_TrqC5mTSEd-M5IWg2-DxLQ" name="Race" visibility="public" aggregation="composite" association="_TrzzxmTSEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_5DcegYnzEd-pZLs28ekBmw" annotatedElement="_TrqC5mTSEd-M5IWg2-DxLQ">
-            <body>See PatientFull for Definition and Usage</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrqC52TSEd-M5IWg2-DxLQ"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrqC6GTSEd-M5IWg2-DxLQ"/>
+        <ownedAttribute xmi:id="_sQ9wkBvCEeGVv5PUg-_Z4A" name="Race" visibility="public" type="_JhSrUGQ0Ed-ODMSOo4sPFQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w60QkRvCEeGVv5PUg-_Z4A"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w60QkBvCEeGVv5PUg-_Z4A"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_TrqC6WTSEd-M5IWg2-DxLQ" name="Ethnicity" visibility="public" aggregation="composite" association="_TrzzymTSEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_5DI8gYnzEd-pZLs28ekBmw" annotatedElement="_TrqC6WTSEd-M5IWg2-DxLQ">
-            <body>See PatientFull for Definition and Usage</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrqC6mTSEd-M5IWg2-DxLQ"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrqC62TSEd-M5IWg2-DxLQ"/>
+        <ownedAttribute xmi:id="_shL94BvCEeGVv5PUg-_Z4A" name="Ethnicity" visibility="public" type="_JhSrUGQ0Ed-ODMSOo4sPFQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xbZ1IRvCEeGVv5PUg-_Z4A"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xbZ1IBvCEeGVv5PUg-_Z4A"/>
         </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_TrzzxmTSEd-M5IWg2-DxLQ" memberEnd="_TrqC5mTSEd-M5IWg2-DxLQ _Trzzx2TSEd-M5IWg2-DxLQ">
-        <ownedEnd xmi:id="_Trzzx2TSEd-M5IWg2-DxLQ" name="" visibility="private" type="_TrqCwGTSEd-M5IWg2-DxLQ" association="_TrzzxmTSEd-M5IWg2-DxLQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrzzyGTSEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrzzyWTSEd-M5IWg2-DxLQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_TrzzymTSEd-M5IWg2-DxLQ" memberEnd="_TrqC6WTSEd-M5IWg2-DxLQ _Trzzy2TSEd-M5IWg2-DxLQ">
-        <ownedEnd xmi:id="_Trzzy2TSEd-M5IWg2-DxLQ" name="" visibility="private" type="_TrqCwGTSEd-M5IWg2-DxLQ" association="_TrzzymTSEd-M5IWg2-DxLQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrzzzGTSEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrzzzWTSEd-M5IWg2-DxLQ" value="1"/>
-        </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_TrzzzmTSEd-M5IWg2-DxLQ" memberEnd="_Trzzz2TSEd-M5IWg2-DxLQ _TrqC12TSEd-M5IWg2-DxLQ">
         <ownedEnd xmi:id="_Trzzz2TSEd-M5IWg2-DxLQ" type="_TrqCwGTSEd-M5IWg2-DxLQ" association="_TrzzzmTSEd-M5IWg2-DxLQ"/>
@@ -10536,13 +10500,13 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         <ownedAttribute xmi:id="_yhsysEsoEeCcn7LjuHErgg" name="CCR" visibility="public" type="_XG0vUD9eEeCPntMluLBWnQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_VRjPwD9eEeCPntMluLBWnQ" name="CDATemplates">
-        <ownedAttribute xmi:id="_Zj4AkD9eEeCPntMluLBWnQ" name="TemplateID" visibility="public" type="_4CkGhjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_Zj4AkD9eEeCPntMluLBWnQ" name="TemplateID" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R6bCsEshEeCcn7LjuHErgg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R6YmcEshEeCcn7LjuHErgg" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_XG0vUD9eEeCPntMluLBWnQ" name="CCRVersion">
-        <ownedAttribute xmi:id="_fttsoD9eEeCPntMluLBWnQ" name="Version" visibility="public" type="_4CkGhjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_fttsoD9eEeCPntMluLBWnQ" name="Version" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UD87AUshEeCcn7LjuHErgg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UD87AEshEeCcn7LjuHErgg" value="1"/>
         </ownedAttribute>
@@ -11181,7 +11145,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Cns30EsnEeCcn7LjuHErgg" name="CCRVersions">
-        <ownedAttribute xmi:id="_Cns30UsnEeCcn7LjuHErgg" name="Version" visibility="public" type="_4CkGhjD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_Cns30UsnEeCcn7LjuHErgg" name="Version" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cns30ksnEeCcn7LjuHErgg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cns300snEeCcn7LjuHErgg" value="1"/>
         </ownedAttribute>
@@ -12141,11 +12105,10 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <body>Used in MTMServiceRequest, MTMServiceResponse</body>
         </ownedComment>
         <generalization xmi:id="_uHbqgEAqEeCpNaLG-Ljb2Q" general="_AGZKcEArEeCpNaLG-Ljb2Q"/>
-        <ownedAttribute xmi:id="_Dj-CME5EEd-G-pSkcIGh3w" name="MTMPayerCaseIdentifier" visibility="public">
+        <ownedAttribute xmi:id="_Dj-CME5EEd-G-pSkcIGh3w" name="MTMPayerCaseIdentifier" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_0egV0IrGEd-urZQZ08VCKQ" annotatedElement="_Dj-CME5EEd-G-pSkcIGh3w">
             <body>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subservient to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j_VRAVLIEd-wEdo_Dk3J9g" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j_VRAFLIEd-wEdo_Dk3J9g"/>
         </ownedAttribute>
@@ -12196,28 +12159,25 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         </ownedAttribute>
         <ownedAttribute xmi:id="_tnnmMUAjEeCpNaLG-Ljb2Q" name="_ReasonForMTMService" type="_tnecQEAjEeCpNaLG-Ljb2Q" aggregation="composite" association="_tnnmMkAjEeCpNaLG-Ljb2Q">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0MSNEUAjEeCpNaLG-Ljb2Q" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0MSNEEAjEeCpNaLG-Ljb2Q" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0MSNEEAjEeCpNaLG-Ljb2Q"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_jasCsUAkEeCpNaLG-Ljb2Q" name="_MTMAction" type="_jaiRsEAkEeCpNaLG-Ljb2Q" aggregation="composite" association="_jasCskAkEeCpNaLG-Ljb2Q">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TgrAkUAlEeCpNaLG-Ljb2Q"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TgrAkEAlEeCpNaLG-Ljb2Q"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_3HdpUPUQEeCjrf2sONHHtg" name="TypeOfServiceGroupSetting" visibility="public">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <ownedAttribute xmi:id="_3HdpUPUQEeCjrf2sONHHtg" name="TypeOfServiceGroupSetting" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AyF7kPUREeCjrf2sONHHtg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AyFUgPUREeCjrf2sONHHtg"/>
-          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_LjS0UPUREeCjrf2sONHHtg">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_LjS0UPUREeCjrf2sONHHtg" type="_4CkGdzD1Ed-8rpqfOAePKg">
             <language></language>
             <body>Y</body>
           </defaultValue>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_yyJlEFLIEd-wEdo_Dk3J9g" name="TypeOfServiceChoice">
-          <ownedAttribute xmi:id="_7LVdkFLIEd-wEdo_Dk3J9g" name="TypeOfServiceFreeText" visibility="public">
+          <ownedAttribute xmi:id="_7LVdkFLIEd-wEdo_Dk3J9g" name="TypeOfServiceFreeText" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_m9lh4IkuEd-pZLs28ekBmw" annotatedElement="_7LVdkFLIEd-wEdo_Dk3J9g">
               <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text.</body>
             </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_d_BZ4zZ4Ed-o64UeGGH_dQ" name="TypeOfService" type="_5lUzQEyMEd-G-pSkcIGh3w" aggregation="composite" association="_d_LK4DZ4Ed-o64UeGGH_dQ">
             <ownedComment xmi:id="_RrWwYEoiEd-G-pSkcIGh3w" annotatedElement="_d_BZ4zZ4Ed-o64UeGGH_dQ">
@@ -12228,11 +12188,10 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_BPXckVLJEd-wEdo_Dk3J9g" name="TargetedTypeOfServiceChoice">
-          <ownedAttribute xmi:id="_BPXcllLJEd-wEdo_Dk3J9g" name="TargetedTypeOfServiceFreeText" visibility="public">
+          <ownedAttribute xmi:id="_BPXcllLJEd-wEdo_Dk3J9g" name="TargetedTypeOfServiceFreeText" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_inFbsIkuEd-pZLs28ekBmw" annotatedElement="_BPXcllLJEd-wEdo_Dk3J9g">
               <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text</body>
             </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_eaOS8E5EEd-G-pSkcIGh3w" name="TargetedTypeOfService" type="_5lUzQEyMEd-G-pSkcIGh3w" aggregation="composite">
             <ownedComment xmi:id="_eaOS8U5EEd-G-pSkcIGh3w" annotatedElement="_eaOS8E5EEd-G-pSkcIGh3w">
@@ -12246,27 +12205,21 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_Rsh0UEAjEeCpNaLG-Ljb2Q" annotatedElement="_TDNv4EAiEeCpNaLG-Ljb2Q">
             <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text. Note: The codification for MTM services is underway. At this point, to exchange the Result, the industry will exchange free text (ResultOfActionFreeText) until actions are codified. ResultOfActionFreeText may be used or (ResultOfActionQualifier, ResultOfActionText and ResultOfActionCode); but not both. Once codified, ResultOfActionText, ResultOfActionCode, ResultOfActionQualifier will be used and ResultOfActionFreeText will be sunsetted.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_aOecsEAiEeCpNaLG-Ljb2Q" name="ResultOfActionFreeText">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_aOecsEAiEeCpNaLG-Ljb2Q" name="ResultOfActionFreeText" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
           <ownedAttribute xmi:id="_eIEkcEAiEeCpNaLG-Ljb2Q" name="ResultOfAction" type="_5lUzQEyMEd-G-pSkcIGh3w"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_tnecQEAjEeCpNaLG-Ljb2Q" name="ReasonForMTMServiceChoice">
           <ownedComment xmi:id="_ReZcQEAkEeCpNaLG-Ljb2Q" annotatedElement="_tnecQEAjEeCpNaLG-Ljb2Q">
             <body> Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text. Note: The codification for MTM services is underway. At this point, to exchange the Reason, the industry will exchange free text (ReasonForMTMServiceFreeText) until actions are codified. ReasonForMTMServiceFreeText may be used or (ReasonForMTMServiceQualifier, ReasonForMTMServiceText and ReasonForMTMServiceCode) but not both. Once codified, ReasonForMTMServiceText, ReasonForMTMServiceCode, ReasonForMTMServiceQualifier will be used and ReasonForMTMServiceFreeText will be sunsetted.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_GB3HgEAkEeCpNaLG-Ljb2Q" name="ReasonForMTMServiceFreeText">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_GB3HgEAkEeCpNaLG-Ljb2Q" name="ReasonForMTMServiceFreeText" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
           <ownedAttribute xmi:id="_GB3HgUAkEeCpNaLG-Ljb2Q" name="ReasonForMTMService" type="_5lUzQEyMEd-G-pSkcIGh3w"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_jaiRsEAkEeCpNaLG-Ljb2Q" name="MTMActionChoice">
           <ownedComment xmi:id="_xG4F4EAkEeCpNaLG-Ljb2Q" annotatedElement="_jaiRsEAkEeCpNaLG-Ljb2Q">
             <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text. Note: The codification for MTM services is underway. At this point, to exchange the Action, the industry will exchange free text (MTMActionFreeText) until actions are codified. MTMActionFreeText may be used or (MTMActionQualifier, MTMActionText and MTMActionCode); but not both. Once codified, MTMActionText, MTMActionCode, MTMActionQualifier will be used and MTMActionFreeText will be sunsetted.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_pmdocEAkEeCpNaLG-Ljb2Q" name="MTMActionFreeText">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_pmdocEAkEeCpNaLG-Ljb2Q" name="MTMActionFreeText" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
           <ownedAttribute xmi:id="_pmdocUAkEeCpNaLG-Ljb2Q" name="MTMAction" type="_5lUzQEyMEd-G-pSkcIGh3w"/>
         </nestedClassifier>
       </packagedElement>
@@ -12696,11 +12649,10 @@ If recipient is a pharmacy, Pharmacy is required.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0sR69j2JEd-xgfp6zNZIHA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0sR69z2JEd-xgfp6zNZIHA"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_0sR6-D2JEd-xgfp6zNZIHA" name="DenialReason">
+        <ownedAttribute xmi:id="_0sR6-D2JEd-xgfp6zNZIHA" name="DenialReason" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_0sR6-T2JEd-xgfp6zNZIHA" annotatedElement="_0sR6-D2JEd-xgfp6zNZIHA">
             <body>A DenialReason or DeniedNewRxToFollow response must be accompanied by the ReasonCode or DenialReason explanation, or both.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0sR6-j2JEd-xgfp6zNZIHA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0sR6-z2JEd-xgfp6zNZIHA"/>
         </ownedAttribute>
@@ -13029,7 +12981,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
             <body>See SpecializedRequest for Definition and Usage</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjMTT04-Ed-G-pSkcIGh3w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTUE4-Ed-G-pSkcIGh3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjMTUE4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NjMTUU4-Ed-G-pSkcIGh3w" name="AnticipatedReturnDate" type="_4HVRuDD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_NjMTUk4-Ed-G-pSkcIGh3w" annotatedElement="_NjMTUU4-Ed-G-pSkcIGh3w">
@@ -13181,7 +13133,7 @@ Designates type and description of census message – Admit, Discharge, Change. 
             <body>See SpecialzedResponse for Definition and Usage</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vUdOVE4-Ed-G-pSkcIGh3w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOVU4-Ed-G-pSkcIGh3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOVU4-Ed-G-pSkcIGh3w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ukzGMWhFEd-Pd7zqA0IwbQ" name="Response" visibility="public" type="_2u72EGhFEd-Pd7zqA0IwbQ" aggregation="composite" association="_ukzGMGhFEd-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_MuSkoIlIEd-pZLs28ekBmw" annotatedElement="_ukzGMWhFEd-Pd7zqA0IwbQ">
@@ -13499,11 +13451,10 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <body>Used in MTMServiceRequest, MTMServiceResponse</body>
         </ownedComment>
         <generalization xmi:id="_GgeR8EArEeCpNaLG-Ljb2Q" general="_AGZKcEArEeCpNaLG-Ljb2Q"/>
-        <ownedAttribute xmi:id="_oi2AkkAqEeCpNaLG-Ljb2Q" name="MTMPayerCaseIdentifier" visibility="public">
+        <ownedAttribute xmi:id="_oi2AkkAqEeCpNaLG-Ljb2Q" name="MTMPayerCaseIdentifier" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_oi2Ak0AqEeCpNaLG-Ljb2Q" annotatedElement="_oi2AkkAqEeCpNaLG-Ljb2Q">
             <body>Unique identifier assigned by the payer to this case. MTMPayerCaseidentifier is subservient to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oi2AlEAqEeCpNaLG-Ljb2Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oi2AlUAqEeCpNaLG-Ljb2Q"/>
         </ownedAttribute>
@@ -13555,11 +13506,10 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oi2AtEAqEeCpNaLG-Ljb2Q" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_oi2AtUAqEeCpNaLG-Ljb2Q" name="TypeOfServiceChoice">
-          <ownedAttribute xmi:id="_oi2AtkAqEeCpNaLG-Ljb2Q" name="TypeOfServiceFreeText" visibility="public">
+          <ownedAttribute xmi:id="_oi2AtkAqEeCpNaLG-Ljb2Q" name="TypeOfServiceFreeText" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_oi2At0AqEeCpNaLG-Ljb2Q" annotatedElement="_oi2AtkAqEeCpNaLG-Ljb2Q">
               <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text.</body>
             </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_oi2AuEAqEeCpNaLG-Ljb2Q" name="TypeOfService" type="_5lUzQEyMEd-G-pSkcIGh3w" aggregation="composite" association="_oi_xkkAqEeCpNaLG-Ljb2Q">
             <ownedComment xmi:id="_oi2AuUAqEeCpNaLG-Ljb2Q" annotatedElement="_oi2AuEAqEeCpNaLG-Ljb2Q">
@@ -13570,11 +13520,10 @@ Designates type and description of census message – Admit, Discharge, Change. 
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_oi2AvEAqEeCpNaLG-Ljb2Q" name="TargetedTypeOfServiceChoice">
-          <ownedAttribute xmi:id="_oi2AvUAqEeCpNaLG-Ljb2Q" name="TargetedTypeOfServiceFreeText" visibility="public">
+          <ownedAttribute xmi:id="_oi2AvUAqEeCpNaLG-Ljb2Q" name="TargetedTypeOfServiceFreeText" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_oi2AvkAqEeCpNaLG-Ljb2Q" annotatedElement="_oi2AvUAqEeCpNaLG-Ljb2Q">
               <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text</body>
             </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_oi2Av0AqEeCpNaLG-Ljb2Q" name="TargetedTypeOfService" type="_5lUzQEyMEd-G-pSkcIGh3w" aggregation="composite">
             <ownedComment xmi:id="_oi2AwEAqEeCpNaLG-Ljb2Q" annotatedElement="_oi2Av0AqEeCpNaLG-Ljb2Q">
@@ -13588,27 +13537,21 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <ownedComment xmi:id="_oi2AxEAqEeCpNaLG-Ljb2Q" annotatedElement="_oi2Aw0AqEeCpNaLG-Ljb2Q">
             <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text. Note: The codification for MTM services is underway. At this point, to exchange the Result, the industry will exchange free text (ResultOfActionFreeText) until actions are codified. ResultOfActionFreeText may be used or (ResultOfActionQualifier, ResultOfActionText and ResultOfActionCode); but not both. Once codified, ResultOfActionText, ResultOfActionCode, ResultOfActionQualifier will be used and ResultOfActionFreeText will be sunsetted.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_oi2AxUAqEeCpNaLG-Ljb2Q" name="ResultOfActionFreeText">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_oi2AxUAqEeCpNaLG-Ljb2Q" name="ResultOfActionFreeText" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
           <ownedAttribute xmi:id="_oi2AxkAqEeCpNaLG-Ljb2Q" name="ResultOfAction" type="_5lUzQEyMEd-G-pSkcIGh3w"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_oi2Ax0AqEeCpNaLG-Ljb2Q" name="ReasonForMTMServiceChoice">
           <ownedComment xmi:id="_oi2AyEAqEeCpNaLG-Ljb2Q" annotatedElement="_oi2Ax0AqEeCpNaLG-Ljb2Q">
             <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text. Note: The codification for MTM services is underway. At this point, to exchange the Reason, the industry will exchange free text (ReasonForMTMServiceFreeText) until actions are codified. ReasonForMTMServiceFreeText may be used or (ReasonForMTMServiceQualifier, ReasonForMTMServiceText and ReasonForMTMServiceCode) but not both. Once codified, ReasonForMTMServiceText, ReasonForMTMServiceCode, ReasonForMTMServiceQualifier will be used and ReasonForMTMServiceFreeText will be sunsetted.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_oi2AyUAqEeCpNaLG-Ljb2Q" name="ReasonForMTMServiceFreeText">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_oi2AyUAqEeCpNaLG-Ljb2Q" name="ReasonForMTMServiceFreeText" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
           <ownedAttribute xmi:id="_oi2AykAqEeCpNaLG-Ljb2Q" name="ReasonForMTMService" type="_5lUzQEyMEd-G-pSkcIGh3w"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_oi2Ay0AqEeCpNaLG-Ljb2Q" name="MTMActionChoice">
           <ownedComment xmi:id="_oi2AzEAqEeCpNaLG-Ljb2Q" annotatedElement="_oi2Ay0AqEeCpNaLG-Ljb2Q">
             <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text. Note: The codification for MTM services is underway. At this point, to exchange the Action, the industry will exchange free text (MTMActionFreeText) until actions are codified. MTMActionFreeText may be used or (MTMActionQualifier, MTMActionText and MTMActionCode); but not both. Once codified, MTMActionText, MTMActionCode, MTMActionQualifier will be used and MTMActionFreeText will be sunsetted.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_oi2AzUAqEeCpNaLG-Ljb2Q" name="MTMActionFreeText">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_oi2AzUAqEeCpNaLG-Ljb2Q" name="MTMActionFreeText" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
           <ownedAttribute xmi:id="_oi2AzkAqEeCpNaLG-Ljb2Q" name="MTMAction" type="_5lUzQEyMEd-G-pSkcIGh3w"/>
         </nestedClassifier>
       </packagedElement>
@@ -13631,11 +13574,10 @@ Designates type and description of census message – Admit, Discharge, Change. 
         <ownedComment xmi:id="_AGZKcUArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKcEArEeCpNaLG-Ljb2Q">
           <body>Used in MTMServiceRequest, MTMServiceResponse</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_AGZKckArEeCpNaLG-Ljb2Q" name="MTMPayerCaseIdentifier" visibility="public">
+        <ownedAttribute xmi:id="_AGZKckArEeCpNaLG-Ljb2Q" name="MTMPayerCaseIdentifier" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_AGZKc0ArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKckArEeCpNaLG-Ljb2Q">
             <body>Unique identifier assigned by the payer to this case. MTMPayerCaseIdentifier is subservient to the patient identifier. (A patient may have multiple cases, distinguished by multiple case identifiers.)</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AGZKdEArEeCpNaLG-Ljb2Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AGZKdUArEeCpNaLG-Ljb2Q"/>
         </ownedAttribute>
@@ -13692,22 +13634,19 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AGZKk0ArEeCpNaLG-Ljb2Q" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AGZKlEArEeCpNaLG-Ljb2Q"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_DeMtYBSKEeGdS8kEviK9tA" name="TypeOfServiceGroupSetting" visibility="public">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <ownedAttribute xmi:id="_DeMtYBSKEeGdS8kEviK9tA" name="TypeOfServiceGroupSetting" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DeQXwBSKEeGdS8kEviK9tA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DeQXwRSKEeGdS8kEviK9tA"/>
-          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_DeQXwhSKEeGdS8kEviK9tA">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_DeQXwhSKEeGdS8kEviK9tA" type="_4CkGdzD1Ed-8rpqfOAePKg">
             <language></language>
             <body>Y</body>
           </defaultValue>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_AGZKlUArEeCpNaLG-Ljb2Q" name="TypeOfServiceChoice">
-          <ownedAttribute xmi:id="_AGZKlkArEeCpNaLG-Ljb2Q" name="TypeOfServiceFreeText" visibility="public">
+          <ownedAttribute xmi:id="_AGZKlkArEeCpNaLG-Ljb2Q" name="TypeOfServiceFreeText" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_AGZKl0ArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKlkArEeCpNaLG-Ljb2Q">
               <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text.</body>
             </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_AGZKmEArEeCpNaLG-Ljb2Q" name="TypeOfService" type="_5lUzQEyMEd-G-pSkcIGh3w" aggregation="composite" association="_AGZKvUArEeCpNaLG-Ljb2Q">
             <ownedComment xmi:id="_AGZKmUArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKmEArEeCpNaLG-Ljb2Q">
@@ -13718,11 +13657,10 @@ Designates type and description of census message – Admit, Discharge, Change. 
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_AGZKnEArEeCpNaLG-Ljb2Q" name="TargetedTypeOfServiceChoice">
-          <ownedAttribute xmi:id="_AGZKnUArEeCpNaLG-Ljb2Q" name="TargetedTypeOfServiceFreeText" visibility="public">
+          <ownedAttribute xmi:id="_AGZKnUArEeCpNaLG-Ljb2Q" name="TargetedTypeOfServiceFreeText" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
             <ownedComment xmi:id="_AGZKnkArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKnUArEeCpNaLG-Ljb2Q">
               <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text</body>
             </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_AGZKn0ArEeCpNaLG-Ljb2Q" name="TargetedTypeOfService" type="_5lUzQEyMEd-G-pSkcIGh3w" aggregation="composite">
             <ownedComment xmi:id="_AGZKoEArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKn0ArEeCpNaLG-Ljb2Q">
@@ -13736,27 +13674,21 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <ownedComment xmi:id="_AGZKpEArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKo0ArEeCpNaLG-Ljb2Q">
             <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text. Note: The codification for MTM services is underway. At this point, to exchange the Result, the industry will exchange free text (ResultOfActionFreeText) until actions are codified. ResultOfActionFreeText may be used or (ResultOfActionQualifier, ResultOfActionText and ResultOfActionCode); but not both. Once codified, ResultOfActionText, ResultOfActionCode, ResultOfActionQualifier will be used and ResultOfActionFreeText will be sunsetted.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_AGZKpUArEeCpNaLG-Ljb2Q" name="ResultOfActionFreeText">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_AGZKpUArEeCpNaLG-Ljb2Q" name="ResultOfActionFreeText" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
           <ownedAttribute xmi:id="_AGZKpkArEeCpNaLG-Ljb2Q" name="ResultOfAction" type="_5lUzQEyMEd-G-pSkcIGh3w"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_AGZKp0ArEeCpNaLG-Ljb2Q" name="ReasonForMTMServiceChoice">
           <ownedComment xmi:id="_AGZKqEArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKp0ArEeCpNaLG-Ljb2Q">
             <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text. Note: The codification for MTM services is underway. At this point, to exchange the Reason, the industry will exchange free text (ReasonForMTMServiceFreeText) until actions are codified. ReasonForMTMServiceFreeText may be used or (ReasonForMTMServiceQualifier, ReasonForMTMServiceText and ReasonForMTMServiceCode) but not both. Once codified, ReasonForMTMServiceText, ReasonForMTMServiceCode, ReasonForMTMServiceQualifier will be used and ReasonForMTMServiceFreeText will be sunsetted.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_AGZKqUArEeCpNaLG-Ljb2Q" name="ReasonForMTMServiceFreeText">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_AGZKqUArEeCpNaLG-Ljb2Q" name="ReasonForMTMServiceFreeText" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
           <ownedAttribute xmi:id="_AGZKqkArEeCpNaLG-Ljb2Q" name="ReasonForMTMService" type="_5lUzQEyMEd-G-pSkcIGh3w"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_AGZKq0ArEeCpNaLG-Ljb2Q" name="MTMActionChoice">
           <ownedComment xmi:id="_AGZKrEArEeCpNaLG-Ljb2Q" annotatedElement="_AGZKq0ArEeCpNaLG-Ljb2Q">
             <body>Can send FreeText or Code/Qualifier/Text - but not both. If a code list exists, the Code/Qualifier/Text are used, where Text must be from the Code Source, not free text. Note: The codification for MTM services is underway. At this point, to exchange the Action, the industry will exchange free text (ResultActionFreeText) until actions are codified. MTMActionFreeText may be used or (MTMActionQualifier, MTMActionText and MTMActionCode) but not both. Once codified, MTMActionText, MTMActionCode, MTMActionQualifier will be used and MTMActionFreeText will be sunsetted.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_AGZKrUArEeCpNaLG-Ljb2Q" name="MTMActionFreeText">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_AGZKrUArEeCpNaLG-Ljb2Q" name="MTMActionFreeText" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
           <ownedAttribute xmi:id="_AGZKrkArEeCpNaLG-Ljb2Q" name="MTMAction" type="_5lUzQEyMEd-G-pSkcIGh3w"/>
         </nestedClassifier>
       </packagedElement>
@@ -15675,8 +15607,7 @@ Is not required in a Verify transaction. If used, Code must be 010 and Descripti
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIwTD1Ed-8rpqfOAePKg" value="10"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIwjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4ajIwzD1Ed-8rpqfOAePKg" name="Description">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <ownedAttribute xmi:id="_4ajIwzD1Ed-8rpqfOAePKg" name="Description" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ajIxTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ajIxjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -16002,19 +15933,17 @@ In any transaction that a reference number assigned by the prescribing system is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4llT-jD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4llT-zD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_kfDwgH-XEd-eN4XJATQmiQ" name="DatatypesVersion">
+        <ownedAttribute xmi:id="_kfDwgH-XEd-eN4XJATQmiQ" name="DatatypesVersion" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_kfDwgX-XEd-eN4XJATQmiQ" annotatedElement="_kfDwgH-XEd-eN4XJATQmiQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kfDwgn-XEd-eN4XJATQmiQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kfDwg3-XEd-eN4XJATQmiQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_2xPucH-XEd-eN4XJATQmiQ" name="TransportVersion">
+        <ownedAttribute xmi:id="_2xPucH-XEd-eN4XJATQmiQ" name="TransportVersion" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_2xPucX-XEd-eN4XJATQmiQ" annotatedElement="_2xPucH-XEd-eN4XJATQmiQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2xPucn-XEd-eN4XJATQmiQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2xPuc3-XEd-eN4XJATQmiQ" value="1"/>
         </ownedAttribute>
@@ -16026,27 +15955,24 @@ In any transaction that a reference number assigned by the prescribing system is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_27-Xwn-XEd-eN4XJATQmiQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_27-Xw3-XEd-eN4XJATQmiQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_3C1NsH-XEd-eN4XJATQmiQ" name="TransactionVersion">
+        <ownedAttribute xmi:id="_3C1NsH-XEd-eN4XJATQmiQ" name="TransactionVersion" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_3C1NsX-XEd-eN4XJATQmiQ" annotatedElement="_3C1NsH-XEd-eN4XJATQmiQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3C1Nsn-XEd-eN4XJATQmiQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3C1Ns3-XEd-eN4XJATQmiQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_3HdPAH-XEd-eN4XJATQmiQ" name="StructuresVersion" isReadOnly="true">
+        <ownedAttribute xmi:id="_3HdPAH-XEd-eN4XJATQmiQ" name="StructuresVersion" type="_4CkGdzD1Ed-8rpqfOAePKg" isReadOnly="true">
           <ownedComment xmi:id="_3HdPAX-XEd-eN4XJATQmiQ" annotatedElement="_3HdPAH-XEd-eN4XJATQmiQ">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3HdPAn-XEd-eN4XJATQmiQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3HdPA3-XEd-eN4XJATQmiQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_T-4XUIL7Ed-qIZqYwtZPyA" name="ECLVersion">
+        <ownedAttribute xmi:id="_T-4XUIL7Ed-qIZqYwtZPyA" name="ECLVersion" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_T-4XUYL7Ed-qIZqYwtZPyA" annotatedElement="_T-4XUIL7Ed-qIZqYwtZPyA">
             <body></body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T-4XUoL7Ed-qIZqYwtZPyA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T-4XU4L7Ed-qIZqYwtZPyA" value="1"/>
         </ownedAttribute>
@@ -16371,12 +16297,8 @@ In any transaction that a reference number assigned by the prescribing system is
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ZO5ZsIUPEd-PfKcU8Giing" name="Release">
-        <ownedAttribute xmi:id="_eMbqsIUPEd-PfKcU8Giing" name="Name">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_5oPfkIUPEd-PfKcU8Giing" name="version">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:id="_eMbqsIUPEd-PfKcU8Giing" name="Name" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
+        <ownedAttribute xmi:id="_5oPfkIUPEd-PfKcU8Giing" name="version" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_wU3cAEQHEeC7BZCLURhbHQ" memberEnd="_wVBNAEQHEeC7BZCLURhbHQ _wVUH8kQHEeC7BZCLURhbHQ">
         <ownedEnd xmi:id="_wVUH8kQHEeC7BZCLURhbHQ" name="" visibility="private" type="_HG9zQDdYEd-wQf5UFCJMDw" association="_wU3cAEQHEeC7BZCLURhbHQ">
@@ -19674,11 +19596,10 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9yNymWUEd-bmP0HuKmipA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9yNy2WUEd-bmP0HuKmipA"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_f9yNzGWUEd-bmP0HuKmipA" name="DenialReason">
+        <ownedAttribute xmi:id="_f9yNzGWUEd-bmP0HuKmipA" name="DenialReason" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_f9yNzWWUEd-bmP0HuKmipA" annotatedElement="_f9yNzGWUEd-bmP0HuKmipA">
             <body>A DenialReason or DeniedNewRxToFollow response must be accompanied by the ReasonCode or DenialReason explanation, or both.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9yNzmWUEd-bmP0HuKmipA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9yNz2WUEd-bmP0HuKmipA"/>
         </ownedAttribute>
@@ -19827,11 +19748,10 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JThsl3pjEd-WhYpqDne-kg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JThsmHpjEd-WhYpqDne-kg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_JThsmXpjEd-WhYpqDne-kg" name="DenialReason">
+        <ownedAttribute xmi:id="_JThsmXpjEd-WhYpqDne-kg" name="DenialReason" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_JThsmnpjEd-WhYpqDne-kg" annotatedElement="_JThsmXpjEd-WhYpqDne-kg">
             <body>A DenialReason or DeniedNewRxToFollow response must be accompanied by the ReasonCode or DenialReason explanation, or both.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JThsm3pjEd-WhYpqDne-kg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JThsnHpjEd-WhYpqDne-kg"/>
         </ownedAttribute>
@@ -19863,11 +19783,10 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ty7hh3pmEd-WhYpqDne-kg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ty7hiHpmEd-WhYpqDne-kg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_ty7hiXpmEd-WhYpqDne-kg" name="DenialReason">
+        <ownedAttribute xmi:id="_ty7hiXpmEd-WhYpqDne-kg" name="DenialReason" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_ty7hinpmEd-WhYpqDne-kg" annotatedElement="_ty7hiXpmEd-WhYpqDne-kg">
             <body>A DenialReason or DeniedNewRxToFollow response must be accompanied by the ReasonCode or DenialReason explanation, or both.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ty7hi3pmEd-WhYpqDne-kg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ty7hjHpmEd-WhYpqDne-kg"/>
         </ownedAttribute>
@@ -22864,7 +22783,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_4CkGdjD1Ed-8rpqfOAePKg" base_Property="_4CkGdDD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4CkGejD1Ed-8rpqfOAePKg" base_Property="_4CkGeDD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4CkGgTD1Ed-8rpqfOAePKg" base_Comment="_4CkGgDD1Ed-8rpqfOAePKg"/>
-  <xsd:Facet xmi:id="_4CkGiTD1Ed-8rpqfOAePKg" base_Property="_4CkGhzD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4CtQYDD1Ed-8rpqfOAePKg" base_Comment="_4CkGjzD1Ed-8rpqfOAePKg"/>
   <xsd:Attribute xmi:id="_4CtQcTD1Ed-8rpqfOAePKg" base_Property="_4CtQbzD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4CtQhTD1Ed-8rpqfOAePKg" base_Comment="_4CtQhDD1Ed-8rpqfOAePKg"/>
@@ -22881,7 +22799,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_4DJ8VjD1Ed-8rpqfOAePKg" base_Comment="_4DJ8VTD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4DJ8XzD1Ed-8rpqfOAePKg" base_Comment="_4DJ8XjD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4DJ8YzD1Ed-8rpqfOAePKg" base_Property="_4DJ8YTD1Ed-8rpqfOAePKg"/>
-  <xsd:Facet xmi:id="_4DJ8ZzD1Ed-8rpqfOAePKg" base_Property="_4DJ8ZTD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4DJ8bjD1Ed-8rpqfOAePKg" base_Comment="_4DJ8bTD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4DTtUDD1Ed-8rpqfOAePKg" base_Comment="_4DJ8cjD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4DTtVTD1Ed-8rpqfOAePKg" base_Comment="_4DTtVDD1Ed-8rpqfOAePKg"/>
@@ -23519,7 +23436,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_v7_rQYnGEd-pZLs28ekBmw" base_Comment="_v7_rQInGEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_6HoY0YnGEd-pZLs28ekBmw" base_Comment="_6HoY0InGEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_t0unUYnHEd-pZLs28ekBmw" base_Comment="_t0unUInHEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_74wiwYnHEd-pZLs28ekBmw" base_Comment="_74wiwInHEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_74wiw4nHEd-pZLs28ekBmw" base_Comment="_74wiwonHEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_746TwInHEd-pZLs28ekBmw" base_Comment="_74wixInHEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_746TwonHEd-pZLs28ekBmw" base_Comment="_746TwYnHEd-pZLs28ekBmw"/>
@@ -23543,7 +23459,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_76PwgonHEd-pZLs28ekBmw" base_Comment="_76PwgYnHEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_76ZhgonHEd-pZLs28ekBmw" base_Comment="_76ZhgYnHEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_76ZhhInHEd-pZLs28ekBmw" base_Comment="_76Zhg4nHEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_76ircInHEd-pZLs28ekBmw" base_Comment="_76ZhhYnHEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_76irconHEd-pZLs28ekBmw" base_Comment="_76ircYnHEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_76irdInHEd-pZLs28ekBmw" base_Comment="_76irc4nHEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_76sccInHEd-pZLs28ekBmw" base_Comment="_76irdYnHEd-pZLs28ekBmw"/>
@@ -24022,12 +23937,10 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_5C_ykYnzEd-pZLs28ekBmw" base_Comment="_5C_ykInzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5C_yk4nzEd-pZLs28ekBmw" base_Comment="_5C_ykonzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DI8gInzEd-pZLs28ekBmw" base_Comment="_5C_ylInzEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_5DI8gonzEd-pZLs28ekBmw" base_Comment="_5DI8gYnzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DI8hInzEd-pZLs28ekBmw" base_Comment="_5DI8g4nzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DStgInzEd-pZLs28ekBmw" base_Comment="_5DI8hYnzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DStgonzEd-pZLs28ekBmw" base_Comment="_5DStgYnzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DcegInzEd-pZLs28ekBmw" base_Comment="_5DStg4nzEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_5DcegonzEd-pZLs28ekBmw" base_Comment="_5DcegYnzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DcehInzEd-pZLs28ekBmw" base_Comment="_5Dceg4nzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DlocInzEd-pZLs28ekBmw" base_Comment="_5DcehYnzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_M1lzUYn0Ed-pZLs28ekBmw" base_Comment="_M1lzUIn0Ed-pZLs28ekBmw"/>
