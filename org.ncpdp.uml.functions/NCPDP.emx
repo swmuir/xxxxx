@@ -775,7 +775,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
         <generalization xmi:id="_fKyNgPWvEeCJcq1GOnDDbQ" general="_4CkGdzD1Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_4mU65TD1Ed-8rpqfOAePKg" name="maxLength">
           <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4mU65jD1Ed-8rpqfOAePKg" value="3"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4mU65jD1Ed-8rpqfOAePKg" value="8"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_4dr8RTD1Ed-8rpqfOAePKg" name="an1..80">
@@ -1585,7 +1585,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_9K80UBBwEeGdS8kEviK9tA" name="PatientID">
         <ownedComment xmi:id="_9K80URBwEeGdS8kEviK9tA" annotatedElement="_9K80UBBwEeGdS8kEviK9tA">
-          <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
+          <body>PatientID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <generalization xmi:id="_f5fP8BBxEeGdS8kEviK9tA" general="_SHyQEBBwEeGdS8kEviK9tA"/>
         <ownedAttribute xmi:id="_9K80UhBwEeGdS8kEviK9tA" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
@@ -1975,7 +1975,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_MHGDkBSPEeGdS8kEviK9tA" name="PharmacyID">
         <ownedComment xmi:id="_MHGDkRSPEeGdS8kEviK9tA" annotatedElement="_MHGDkBSPEeGdS8kEviK9tA">
-          <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
+          <body>PharmacyID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <generalization xmi:id="_MHGDkhSPEeGdS8kEviK9tA" general="_SHyQEBBwEeGdS8kEviK9tA"/>
         <ownedAttribute xmi:id="_MHGDkxSPEeGdS8kEviK9tA" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
@@ -2170,7 +2170,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_KyRwQBSQEeGdS8kEviK9tA" name="PharmacistID">
         <ownedComment xmi:id="_KyRwQRSQEeGdS8kEviK9tA" annotatedElement="_KyRwQBSQEeGdS8kEviK9tA">
-          <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
+          <body>PharmacistID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <generalization xmi:id="_KyRwQhSQEeGdS8kEviK9tA" general="_SHyQEBBwEeGdS8kEviK9tA"/>
         <ownedAttribute xmi:id="_KyRwQxSQEeGdS8kEviK9tA" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
@@ -2365,7 +2365,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7GTKIBSQEeGdS8kEviK9tA" name="PayerID">
         <ownedComment xmi:id="_7GTKIRSQEeGdS8kEviK9tA" annotatedElement="_7GTKIBSQEeGdS8kEviK9tA">
-          <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
+          <body>PayerID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <generalization xmi:id="_7GTKIhSQEeGdS8kEviK9tA" general="_SHyQEBBwEeGdS8kEviK9tA"/>
         <ownedAttribute xmi:id="_7GTKIxSQEeGdS8kEviK9tA" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
@@ -2560,7 +2560,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JMso0BSsEeGdS8kEviK9tA" name="FacilityID">
         <ownedComment xmi:id="_JMso0RSsEeGdS8kEviK9tA" annotatedElement="_JMso0BSsEeGdS8kEviK9tA">
-          <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
+          <body>FacilityID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <generalization xmi:id="_JMso0hSsEeGdS8kEviK9tA" general="_SHyQEBBwEeGdS8kEviK9tA"/>
         <ownedAttribute xmi:id="_JMso0xSsEeGdS8kEviK9tA" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
@@ -2755,7 +2755,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_6GMuUBSsEeGdS8kEviK9tA" name="PriorAuthorizationID">
         <ownedComment xmi:id="_6GMuURSsEeGdS8kEviK9tA" annotatedElement="_6GMuUBSsEeGdS8kEviK9tA">
-          <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
+          <body>PriorAuthorizationID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <generalization xmi:id="_6GMuUhSsEeGdS8kEviK9tA" general="_SHyQEBBwEeGdS8kEviK9tA"/>
         <ownedAttribute xmi:id="_6GMuUxSsEeGdS8kEviK9tA" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
@@ -2950,7 +2950,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_wXNEABStEeGdS8kEviK9tA" name="HistorySourceID">
         <ownedComment xmi:id="_wXNEARStEeGdS8kEviK9tA" annotatedElement="_wXNEABStEeGdS8kEviK9tA">
-          <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
+          <body>HistorySourceID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <generalization xmi:id="_wXNEAhStEeGdS8kEviK9tA" general="_SHyQEBBwEeGdS8kEviK9tA"/>
         <ownedAttribute xmi:id="_wXNEAxStEeGdS8kEviK9tA" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
@@ -3145,7 +3145,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_CQgoQBnaEeGdS8kEviK9tA" name="SupervisorID">
         <ownedComment xmi:id="_CQtckBnaEeGdS8kEviK9tA" annotatedElement="_CQgoQBnaEeGdS8kEviK9tA">
-          <body>Provider ID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
+          <body>SupervisorID is explicit ID structure to improve comprehension and validation of ID by using explicit tags for each ID type</body>
         </ownedComment>
         <generalization xmi:id="_CQtckRnaEeGdS8kEviK9tA" general="_SHyQEBBwEeGdS8kEviK9tA"/>
         <ownedAttribute xmi:id="_CQuDoBnaEeGdS8kEviK9tA" name="NCPDPID" type="_4CkGczD1Ed-8rpqfOAePKg">
@@ -6648,8 +6648,7 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
         </ownedComment>
         <ownedAttribute xmi:id="_2lEygBnyEeG-t_q9lpZZKw" name="Identification" visibility="public" type="_CQgoQBnaEeGdS8kEviK9tA">
           <ownedComment xmi:id="_ojH0cBrTEeG8ba2CG6GyMg" annotatedElement="_2lEygBnyEeG-t_q9lpZZKw">
-            <body>On the mandatory transactions: One occurrence is the prescriber number. One occurrence may be used to identify the clinic. One occurrence may be used to identify a supervisor. At least one occurrence must contain “HPI” (NPI). Prescriber individual (not organizational) NPI Number is mandatory. This is mandatory for the Prescriber (PC), not the Supervisor (SU). For all transactions except RxHistoryResponse, if the prescriber has an NPI, one occurrence must contain the value “HPI” (NPI). For all transactions except RxHistoryResponse, if the prescriber has a DEA number, one occurrence must contain the value “DH” (DEA Number).&#xD;
-</body>
+            <body>On the mandatory transactions: One occurrence is the prescriber number. One occurrence may be used to identify the clinic. One occurrence may be used to identify a supervisor. At least one occurrence must contain “HPI” (NPI). Prescriber individual (not organizational) NPI Number is mandatory. This is mandatory for the Prescriber (PC), not the Supervisor (SU). For all transactions except RxHistoryResponse, if the prescriber has an NPI, one occurrence must contain the value “HPI” (NPI). For all transactions except RxHistoryResponse, if the prescriber has a DEA number, one occurrence must contain the value “DH” (DEA Number).</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4zqxABnyEeG-t_q9lpZZKw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4zqJ8BnyEeG-t_q9lpZZKw"/>
@@ -23030,14 +23029,14 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_4mU68TD1Ed-8rpqfOAePKg" base_Property="_4mU67zD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU69jD1Ed-8rpqfOAePKg" base_Property="_4mU69DD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU6-zD1Ed-8rpqfOAePKg" base_Property="_4mU6-TD1Ed-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="NCPDPv2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
+  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="NCPDPv2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="NCPDPv2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="NCPDPv2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -23111,7 +23110,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="NCPDPv2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAmHEEd-Xe4OIcNINMg" base_Comment="_oustHWHEEd-Xe4OIcNINMg"/>
@@ -24130,7 +24129,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:GlobalProperty xmi:id="_Bv0UXYqaEd-pZLs28ekBmw" base_Class="_Bv0UUIqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_Bv0UXoqaEd-pZLs28ekBmw" base_Property="_Bv0UUYqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_V59SYYqaEd-pZLs28ekBmw" base_Property="_V59SYIqaEd-pZLs28ekBmw"/>
-  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="NCPDPv2011AugustBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
+  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
   <xsd:GlobalElement xmi:id="_P3rT8YqnEd-pZLs28ekBmw" base_Property="_P3rT8IqnEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0uuYkYrFEd-urZQZ08VCKQ" base_Comment="_0uuYkIrFEd-urZQZ08VCKQ"/>
   <Default:Documentation xmi:id="_7k0GoIrFEd-urZQZ08VCKQ" base_Comment="_7kqVoIrFEd-urZQZ08VCKQ"/>
