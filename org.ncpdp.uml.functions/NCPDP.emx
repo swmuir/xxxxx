@@ -5312,7 +5312,7 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXJAzDD7Ed-8rpqfOAePKg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXJAzTD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_RZJ30GTWEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_RZJ30GTWEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_nahz84nbEd-pZLs28ekBmw" annotatedElement="_RZJ30GTWEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -7173,7 +7173,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeT2TWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeUGTWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_40XeUWTWEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_40XeUWTWEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeUmTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeU2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -7519,7 +7519,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCkGTXEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCkWTXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_r9HCkmTXEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_r9HCkmTXEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_sO_Bc4nbEd-pZLs28ekBmw" annotatedElement="_r9HCkmTXEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -7877,7 +7877,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2kGTcEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2kWTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_G-g2kmTcEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_G-g2kmTcEd-M5IWg2-DxLQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_uFTC04nbEd-pZLs28ekBmw" annotatedElement="_G-g2kmTcEd-M5IWg2-DxLQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -8235,7 +8235,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEggGTnEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEggWTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QQEggmTnEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_QQEggmTnEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_j_7VUYnbEd-pZLs28ekBmw" annotatedElement="_QQEggmTnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -8593,7 +8593,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSgGToEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSgWToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_YxfSgmToEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_YxfSgmToEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_lxBfg4nbEd-pZLs28ekBmw" annotatedElement="_YxfSgmToEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -8951,7 +8951,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiQGTpEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiQWTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QuYiQmTpEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_QuYiQmTpEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_adumU4nbEd-pZLs28ekBmw" annotatedElement="_QuYiQmTpEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -9309,7 +9309,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYYGTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYYWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_P_eYYmTqEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_P_eYYmTqEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_qrvGA4nbEd-pZLs28ekBmw" annotatedElement="_P_eYYmTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -9667,7 +9667,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROogGTqEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROogWTqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_wROogmTqEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_wROogmTqEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_wS3Gk4nbEd-pZLs28ekBmw" annotatedElement="_wROogmTqEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -10011,7 +10011,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSsGTrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSsWTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_MqbSsmTrEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_MqbSsmTrEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_hiRnJYnbEd-pZLs28ekBmw" annotatedElement="_MqbSsmTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -10369,7 +10369,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxy4GTrEd-Y0upv2_lheQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxy4WTrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_krxy4mTrEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_krxy4mTrEd-Y0upv2_lheQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_pGHMA4nbEd-pZLs28ekBmw" annotatedElement="_krxy4mTrEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
@@ -10745,7 +10745,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SsE_EjGEeCQH7WfiOI4dQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SsE_UjGEeCQH7WfiOI4dQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_6SsE_kjGEeCQH7WfiOI4dQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_6SsE_kjGEeCQH7WfiOI4dQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SsE_0jGEeCQH7WfiOI4dQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SsFAEjGEeCQH7WfiOI4dQ"/>
         </ownedAttribute>
@@ -11056,7 +11056,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8NqFvkplEeCvCLsSrrA8LQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8NqFv0plEeCvCLsSrrA8LQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_8NqFwEplEeCvCLsSrrA8LQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_6GMuUBSsEeGdS8kEviK9tA">
+        <ownedAttribute xmi:id="_8NqFwEplEeCvCLsSrrA8LQ" name="HistoryPrescriberOrderNumber" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8NqFwUplEeCvCLsSrrA8LQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8NqFwkplEeCvCLsSrrA8LQ"/>
         </ownedAttribute>
