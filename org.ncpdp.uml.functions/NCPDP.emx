@@ -9893,7 +9893,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_FCPgcBrUEeG8ba2CG6GyMg" annotatedElement="_78mvgBoAEeGyqN_Y18L17g">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ACcjgRoBEeGyqN_Y18L17g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ACcjgRoBEeGyqN_Y18L17g" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ACcjgBoBEeGyqN_Y18L17g"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_MqbSgmTrEd-Y0upv2_lheQ" name="Note" type="_4JRLdjD1Ed-8rpqfOAePKg">
