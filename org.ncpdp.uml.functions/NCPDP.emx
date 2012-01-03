@@ -365,7 +365,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4IOplDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4IOplTD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4IOpmzD1Ed-8rpqfOAePKg" name="QuanityUnitOfMeasure" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
+        <ownedAttribute xmi:id="_4IOpmzD1Ed-8rpqfOAePKg" name="QuantityUnitOfMeasure" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
           <ownedComment xmi:id="_4IOpnDD1Ed-8rpqfOAePKg" annotatedElement="_4IOpmzD1Ed-8rpqfOAePKg">
             <body>NCPDP Drug QuantityUnitOfMeasure Terminology - available at 
 http://www.cancer.gov/cancertopics/terminologyresources/page7
@@ -8239,7 +8239,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_j_7VUYnbEd-pZLs28ekBmw" annotatedElement="_QQEggmTnEd-Y0upv2_lheQ">
             <body>See Medication for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgg2TnEd-Y0upv2_lheQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgg2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEghGTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QQEghWTnEd-Y0upv2_lheQ" name="OrderCaptureMethod">
