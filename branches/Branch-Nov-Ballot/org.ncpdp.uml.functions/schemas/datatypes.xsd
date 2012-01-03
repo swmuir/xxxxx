@@ -1215,7 +1215,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
     <xsd:sequence>
       <xsd:element name="Value" type="datatypes:n1..11"/>
       <xsd:element name="CodeListQualifier" type="ecl:QuantityCodeListQualifierCode"/>
-      <xsd:element name="QuanityUnitOfMeasure" type="datatypes:NCICode">
+      <xsd:element name="QuantityUnitOfMeasure" type="datatypes:NCICode">
         <xsd:annotation>
           <xsd:documentation>NCPDP Drug QuantityUnitOfMeasure Terminology - available at 
 http://www.cancer.gov/cancertopics/terminologyresources/page7

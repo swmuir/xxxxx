@@ -955,7 +955,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="HistoryPrescriberOrderNumber" type="datatypes:an1..35">
+          <xsd:element minOccurs="0" name="HistoryPrescriberOrderNumber" type="datatypes:an1..35">
             <xsd:annotation>
               <xsd:documentation>See Medication for Definition and Usage</xsd:documentation>
             </xsd:annotation>
