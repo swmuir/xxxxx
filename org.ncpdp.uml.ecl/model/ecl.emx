@@ -14508,18 +14508,18 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <body>Code qualifying the Diagnosis Code</body>
         </ownedComment>
         <generalization xmi:id="_go_l4It0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="__NIBIIkEEd-pZLs28ekBmw" name="E" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_OAl5sIqrEd-pZLs28ekBmw" annotatedElement="__NIBIIkEEd-pZLs28ekBmw">
+        <ownedLiteral xmi:id="_4qMYIBEvEeGdS8kEviK9tA" name="E" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_4qMYIREvEeGdS8kEviK9tA" annotatedElement="_4qMYIBEvEeGdS8kEviK9tA">
             <body>Micromedex/Medical Economics – a code list developed by this company</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="__S8VQIkEEd-pZLs28ekBmw" name="F" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_Q5hOoIqrEd-pZLs28ekBmw" annotatedElement="__S8VQIkEEd-pZLs28ekBmw">
+        <ownedLiteral xmi:id="_4qM_MBEvEeGdS8kEviK9tA" name="F" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_4qM_MREvEeGdS8kEviK9tA" annotatedElement="_4qM_MBEvEeGdS8kEviK9tA">
             <body>First DataBank – a code list developed by this company</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="__YwCUIkEEd-pZLs28ekBmw" name="M" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_UC-58IqrEd-pZLs28ekBmw" annotatedElement="__YwCUIkEEd-pZLs28ekBmw">
+        <ownedLiteral xmi:id="_4qNmQBEvEeGdS8kEviK9tA" name="M" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_4qNmQREvEeGdS8kEviK9tA" annotatedElement="_4qNmQBEvEeGdS8kEviK9tA">
             <body>Medi-Span Product Line - a code list developed by this company </body>
           </ownedComment>
         </ownedLiteral>
@@ -18002,6 +18002,22 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Tp8-kO_QEeC1YI2Z3iJATw" name="SubstitutionCodeRestricted">
+        <ownedComment xmi:id="_Tp8-ke_QEeC1YI2Z3iJATw">
+          <body>Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed.</body>
+        </ownedComment>
+        <generalization xmi:id="_Tp8-ku_QEeC1YI2Z3iJATw" general="_esFs8SxAEd-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_Tp8-k-_QEeC1YI2Z3iJATw" name="0" classifier="_Tp8-kO_QEeC1YI2Z3iJATw">
+          <ownedComment xmi:id="_Tp8-lO_QEeC1YI2Z3iJATw">
+            <body>No Product Selection Indicated - This is the field default value that is appropriately used for prescriptions for single source brand, co-branded/co-licensed, or generic products. For a multi-source branded product with available generic(s), DAW 0 is not appropriate, and may result in a reject.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Tp8-le_QEeC1YI2Z3iJATw" name="1" classifier="_Tp8-kO_QEeC1YI2Z3iJATw">
+          <ownedComment xmi:id="_Tp8-lu_QEeC1YI2Z3iJATw">
+            <body>Substitution Not Allowed by Prescriber - This value is used when the prescriber indicates, in a manner specified by prevailing law, that the product is Medically Necessary to be Dispensed As Written. DAW 1 is based on prescriber instruction and not product classification. </body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -21327,7 +21343,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_eGGD8CxAEd-8mcmtGejV_Q" base_Comment="_eF8S8yxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_eF8S8SxAEd-8mcmtGejV_Q" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_eFfnBCxAEd-8mcmtGejV_Q" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="_eF8S8CxAEd-8mcmtGejV_Q" base_Comment="_eFfnBSxAEd-8mcmtGejV_Q"/>
-  <xsd:Schema xmi:id="_kA0cIDEFEd-8rpqfOAePKg" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" version="2011091" targetNamespace="http://www.ncpdp.org/schema/ECL" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <xsd:Schema xmi:id="_kA0cIDEFEd-8rpqfOAePKg" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/ECL" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <Default:Documentation xmi:id="_bBE48jEQEd-8rpqfOAePKg" base_Comment="_bBE48TEQEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_bmodEjEQEd-8rpqfOAePKg" base_Comment="_bmodETEQEd-8rpqfOAePKg"/>
   <orgncpdpecl:ncpdpecl xmi:id="_rq1rJjEREd-8rpqfOAePKg" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_rq1rEDEREd-8rpqfOAePKg" displayName="Code List Responsibility Agency (X12 DE 235)"/>
@@ -21560,7 +21576,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_oCxxTmdhEd-EzKeHnOFaKw" base_Comment="_oCxxSGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AK1WYGdiEd-EzKeHnOFaKw" base_Generalization="__sJPQGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AnmK4GdiEd-EzKeHnOFaKw" base_Generalization="__Ja8sGdhEd-EzKeHnOFaKw"/>
-  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="2011091" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <orgncpdpecl:ncpdpecl xmi:id="_J51OkmdmEd-EzKeHnOFaKw" valueSetId="548-6F" fieldFormat="x(3)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_J51OcGdmEd-EzKeHnOFaKw" displayName="Approved Message Code"/>
   <Default:Documentation xmi:id="_J51Ok2dmEd-EzKeHnOFaKw" base_Comment="_J51OcWdmEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_J51OlGdmEd-EzKeHnOFaKw" base_Comment="_J51Oc2dmEd-EzKeHnOFaKw"/>
@@ -21866,9 +21882,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_xdPDYYqpEd-pZLs28ekBmw" base_Comment="_xdPDYIqpEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0lDv8YqpEd-pZLs28ekBmw" base_Comment="_0lDv8IqpEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_2wrS8YqpEd-pZLs28ekBmw" base_Comment="_2wrS8IqpEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_OAl5sYqrEd-pZLs28ekBmw" base_Comment="_OAl5sIqrEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_Q5qYkIqrEd-pZLs28ekBmw" base_Comment="_Q5hOoIqrEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_UC-58YqrEd-pZLs28ekBmw" base_Comment="_UC-58IqrEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_m3noMYqsEd-pZLs28ekBmw" base_Comment="_m3noMIqsEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_XdY4YIq4Ed-urZQZ08VCKQ" base_Comment="_XYLBMIq4Ed-urZQZ08VCKQ"/>
   <orgncpdpecl:ncpdpecl xmi:id="_csRMQIthEd-urZQZ08VCKQ" base_Enumeration="_al3gcIthEd-urZQZ08VCKQ" displayName="Address Type Qualifier"/>
@@ -21966,4 +21979,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_ZVbu8EmxEeCekMwdcouCxg" base_Comment="_ZVbH4UmxEeCekMwdcouCxg"/>
   <Default:Documentation xmi:id="_Cmi3QEuVEeCOKta2JlF6ZQ" base_Comment="_CmfM4EuVEeCOKta2JlF6ZQ"/>
   <xsd:Facet xmi:id="_UEzGYKNDEeCGV-CVq2MXKQ" base_Property="_UEtm0KNDEeCGV-CVq2MXKQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_TqQgkO_QEeC1YI2Z3iJATw" valueSetId="408-D8" fieldFormat="x(1)" standardsUsing="C, D, R, T,A,V,Z,W" valueSetLimitations="" base_Enumeration="_Tp8-kO_QEeC1YI2Z3iJATw" displayName="Dispense As Written (DAW)/ Product Selection Code"/>
+  <Default:Documentation xmi:id="_TqQgke_QEeC1YI2Z3iJATw" base_Comment="_Tp8-ke_QEeC1YI2Z3iJATw"/>
+  <xsd:Restriction xmi:id="_TqQgku_QEeC1YI2Z3iJATw" base_Generalization="_Tp8-ku_QEeC1YI2Z3iJATw"/>
+  <Default:Documentation xmi:id="_TqQgk-_QEeC1YI2Z3iJATw" base_Comment="_Tp8-lO_QEeC1YI2Z3iJATw"/>
+  <Default:Documentation xmi:id="_TqQglO_QEeC1YI2Z3iJATw" base_Comment="_Tp8-lu_QEeC1YI2Z3iJATw"/>
+  <Default:Documentation xmi:id="_4qONUBEvEeGdS8kEviK9tA" base_Comment="_4qMYIREvEeGdS8kEviK9tA"/>
+  <Default:Documentation xmi:id="_4qO0YBEvEeGdS8kEviK9tA" base_Comment="_4qM_MREvEeGdS8kEviK9tA"/>
+  <Default:Documentation xmi:id="_4qO0YREvEeGdS8kEviK9tA" base_Comment="_4qNmQREvEeGdS8kEviK9tA"/>
 </xmi:XMI>
