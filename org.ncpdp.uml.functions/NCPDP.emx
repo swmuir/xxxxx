@@ -19666,6 +19666,9 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zQ_ae2hDEd-Pd7zqA0IwbQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_zQ_afGhDEd-Pd7zqA0IwbQ" name="ApprovedWithChanges" visibility="public" type="_f9yNkGWUEd-bmP0HuKmipA" aggregation="composite" association="_zQ_af2hDEd-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_zckrgG0rEeGhJo0rNzUrZw" annotatedElement="_zQ_afGhDEd-Pd7zqA0IwbQ">
+            <body>Approved with changes cannot be utilized for a prior authorization RxChange.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zQ_afWhDEd-Pd7zqA0IwbQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zQ_afmhDEd-Pd7zqA0IwbQ" value="1"/>
         </ownedAttribute>
@@ -24780,4 +24783,5 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_FCVAABrUEeG8ba2CG6GyMg" base_Comment="_FCPgcBrUEeG8ba2CG6GyMg"/>
   <Default:Documentation xmi:id="_MEuEsBrUEeG8ba2CG6GyMg" base_Comment="_MErBYBrUEeG8ba2CG6GyMg"/>
   <Default:Documentation xmi:id="_jUTJsBrUEeG8ba2CG6GyMg" base_Comment="_jUQGYBrUEeG8ba2CG6GyMg"/>
+  <Default:Documentation xmi:id="_zdpCgG0rEeGhJo0rNzUrZw" base_Comment="_zckrgG0rEeGhJo0rNzUrZw"/>
 </xmi:XMI>
