@@ -115,6 +115,50 @@
           </edges>
         </contents>
       </eAnnotations>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_I_2wwX3VEeGozIODH_vY1Q" name="AdministrationIndicatorCodes">
+        <ownedComment xmi:id="_I_5NAX3VEeGozIODH_vY1Q">
+          <body>Used for Sig</body>
+        </ownedComment>
+        <generalization xmi:id="_I_7CMX3VEeGozIODH_vY1Q" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_I_2wwn3VEeGozIODH_vY1Q" name="MANUFACTURERSINSTRUCTIONS">
+          <ownedComment xmi:id="_I_2ww33VEeGozIODH_vY1Q">
+            <body>Manufacturer's Instructions</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_I_x4QH3VEeGozIODH_vY1Q" name="InstructionIndicatorCodes">
+        <ownedComment xmi:id="_I_0UgX3VEeGozIODH_vY1Q">
+          <body>Used for Sig</body>
+        </ownedComment>
+        <generalization xmi:id="_I_2wwH3VEeGozIODH_vY1Q" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_I_x4QX3VEeGozIODH_vY1Q" name="MEDICALENCOUNTER">
+          <ownedComment xmi:id="_I_x4Qn3VEeGozIODH_vY1Q">
+            <body>Medical Encounter</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_I_lD8X3VEeGozIODH_vY1Q" name="SigCodes">
+        <ownedComment xmi:id="_I_ouUX3VEeGozIODH_vY1Q">
+          <body>Used for Sig (previously was value 1 (SNOMED)</body>
+        </ownedComment>
+        <generalization xmi:id="_I_rKkX3VEeGozIODH_vY1Q" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_I_lrAH3VEeGozIODH_vY1Q" name="SNOMED">
+          <ownedComment xmi:id="_I_lrAX3VEeGozIODH_vY1Q">
+            <body>SNOMED Systematized Nomenclature of Medicine--Clinical Terms (SNOMED) is available at http://www.ihtsdo.org/snomed-ct/.</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_I_rxoH3VEeGozIODH_vY1Q" name="SigDoseFormCodes">
+        <ownedComment xmi:id="_I_vcAX3VEeGozIODH_vY1Q">
+          <body>Used for Sig (previously was value 2 (FMT)</body>
+        </ownedComment>
+        <generalization xmi:id="_I_xRMX3VEeGozIODH_vY1Q" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_I_rxoX3VEeGozIODH_vY1Q" name="FMTDOSEFORM">
+          <ownedComment xmi:id="_I_sYsH3VEeGozIODH_vY1Q">
+            <body>DoseForm uses value 2 FMT Term from NCI for Dose Form Code. http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/page4 (click on NCPDP Terminologies) or  http://evs.nci.nih.gov/ (higher level).</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_EFjfwE5ZEd-lRt4mSex0Qg" name="RejectCode" visibility="private">
         <generalization xmi:id="_EFjfwU5ZEd-lRt4mSex0Qg">
           <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
@@ -22005,4 +22049,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_ZJtKoEx8EeGUFOEB94CEXg" base_Comment="_ZI-x4Ex8EeGUFOEB94CEXg"/>
   <Default:Documentation xmi:id="_c7GYoEx8EeGUFOEB94CEXg" base_Comment="_c6_q8Ex8EeGUFOEB94CEXg"/>
   <Default:Documentation xmi:id="_pxajwEx8EeGUFOEB94CEXg" base_Comment="_pxT2EEx8EeGUFOEB94CEXg"/>
+  <Default:Documentation xmi:id="_I_ouUH3VEeGozIODH_vY1Q" base_Comment="_I_lrAX3VEeGozIODH_vY1Q"/>
+  <Default:Documentation xmi:id="_I_rKkH3VEeGozIODH_vY1Q" base_Comment="_I_ouUX3VEeGozIODH_vY1Q"/>
+  <Default:Documentation xmi:id="_I_vcAH3VEeGozIODH_vY1Q" base_Comment="_I_sYsH3VEeGozIODH_vY1Q"/>
+  <Default:Documentation xmi:id="_I_xRMH3VEeGozIODH_vY1Q" base_Comment="_I_vcAX3VEeGozIODH_vY1Q"/>
+  <Default:Documentation xmi:id="_I_0UgH3VEeGozIODH_vY1Q" base_Comment="_I_x4Qn3VEeGozIODH_vY1Q"/>
+  <Default:Documentation xmi:id="_I_2JsH3VEeGozIODH_vY1Q" base_Comment="_I_0UgX3VEeGozIODH_vY1Q"/>
+  <Default:Documentation xmi:id="_I_5NAH3VEeGozIODH_vY1Q" base_Comment="_I_2ww33VEeGozIODH_vY1Q"/>
+  <Default:Documentation xmi:id="_I_7CMH3VEeGozIODH_vY1Q" base_Comment="_I_5NAX3VEeGozIODH_vY1Q"/>
 </xmi:XMI>
