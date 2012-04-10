@@ -1,5 +1,5 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:SCRIPT="http://www.ncpdp.org/schema/SCRIPT" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:samples="http://www.ncpdp.org/schema/samples" xmlns:specialized="http://www.ncpdp.org/schema/specialized" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:transport="http://www.ncpdp.org/schema/Transport" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes">
-<xsl:output version="1.0" encoding="UTF-8" indent="no" omit-xml-declaration="yes"/>
+<xsl:output method="text"/>
 	<xsl:template match="/">        
 		<xsl:apply-templates select="/structures:Sig/structures:Instruction | /structures:Sig/structures:MultipleInstructionModifier"/>
 		<xsl:apply-templates select="/structures:Sig/structures:IndicationForUse"/>
@@ -193,9 +193,6 @@
 		<xsl:text>, </xsl:text>
 		<xsl:value-of select="."/>
 		<xsl:text> </xsl:text>
-	</xsl:template>
-	<xsl:template match="text()|@*">
-		<xsl:apply-templates mode="#current"/>
 	</xsl:template>
 	<xsl:template match="*|/" mode="#all">
 		<xsl:apply-templates mode="#current"/>
