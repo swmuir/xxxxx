@@ -140,12 +140,20 @@
 
 For instance, ZipCode structure and validation is not impacted if it used as part of a pharmacy address or a patient's address</body>
       </ownedComment>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_JB0fon3VEeGozIODH_vY1Q" name="BodyMetricQualifier">
+        <generalization xmi:id="_JB1twH3VEeGozIODH_vY1Q">
+          <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_JB0fo33VEeGozIODH_vY1Q" name="pattern">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_JB1GsH3VEeGozIODH_vY1Q" value="1|2"/>
+        </ownedAttribute>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JAGoZH3VEeGozIODH_vY1Q" name="DoseFormCode">
         <ownedComment xmi:id="_JAHPcH3VEeGozIODH_vY1Q">
           <body>NCPDP Vocabulary Constraint supporting Code and Qualifier with Required Text.   If code not available from source, must use Code = 10003008, Text of “Unspecified” and Dose Clarifying Free Text. See section “Use of Clarifying Free Text Elements”. See imp guide for more information.</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_JAJrsX3VEeGozIODH_vY1Q" name="Text">
-          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <ownedAttribute xmi:id="_JAJrsX3VEeGozIODH_vY1Q" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAKSwH3VEeGozIODH_vY1Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JAKSwX3VEeGozIODH_vY1Q" value="1"/>
         </ownedAttribute>
@@ -160,32 +168,11 @@ For instance, ZipCode structure and validation is not impacted if it used as par
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JAK5033VEeGozIODH_vY1Q" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_I__6sH3VEeGozIODH_vY1Q" name="QualifiedCodeAndText">
-        <ownedComment xmi:id="_I__6sX3VEeGozIODH_vY1Q">
-          <body>General Purpose NCPDP Vocabulary Constraint supporting Code and Qualifier with Required Text</body>
-        </ownedComment>
-        <ownedAttribute xmi:id="_JABv4H3VEeGozIODH_vY1Q" name="Text">
-          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JABv4X3VEeGozIODH_vY1Q" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JABv4n3VEeGozIODH_vY1Q" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_JACW8H3VEeGozIODH_vY1Q" name="Qualifier">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JACW8X3VEeGozIODH_vY1Q" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JACW8n3VEeGozIODH_vY1Q" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_JACW833VEeGozIODH_vY1Q" name="Code">
-          <type xmi:type="uml:DataType" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_USTewCx5Ed-8mcmtGejV_Q?ecl/ecl/Code?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAC-AH3VEeGozIODH_vY1Q" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JAC-AX3VEeGozIODH_vY1Q" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JAC-An3VEeGozIODH_vY1Q" name="SigCode">
         <ownedComment xmi:id="_JAC-A33VEeGozIODH_vY1Q">
           <body>NCPDP Vocabulary Constraint supporting Code and Qualifier with Required Text.  If code not available from source, must use Code = C38046, Text of “Unspecified” and appropriate Clarifying Free Text. See section “Use of Clarifying Free Text Elements”. See imp guide for more information.</body>
         </ownedComment>
-        <ownedAttribute xmi:id="_JAFaQX3VEeGozIODH_vY1Q" name="Text">
-          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <ownedAttribute xmi:id="_JAFaQX3VEeGozIODH_vY1Q" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAGBUH3VEeGozIODH_vY1Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JAGBUX3VEeGozIODH_vY1Q" value="1"/>
         </ownedAttribute>
@@ -4292,15 +4279,6 @@ take, apply, swish, swallow, inject, insert, chew, use, give, sprinkle, mix, dis
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JB1txH3VEeGozIODH_vY1Q" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JB1txX3VEeGozIODH_vY1Q"/>
           </ownedAttribute>
-          <nestedClassifier xmi:type="uml:DataType" xmi:id="_JB0fon3VEeGozIODH_vY1Q" name="anonymous_2" visibility="private">
-            <generalization xmi:id="_JB1twH3VEeGozIODH_vY1Q">
-              <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-            </generalization>
-            <ownedAttribute xmi:id="_JB0fo33VEeGozIODH_vY1Q" name="pattern">
-              <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
-              <defaultValue xmi:type="uml:LiteralString" xmi:id="_JB1GsH3VEeGozIODH_vY1Q" value="1|2"/>
-            </ownedAttribute>
-          </nestedClassifier>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_JB2U0n3VEeGozIODH_vY1Q" name="_Sequence3" visibility="private">
           <ownedAttribute xmi:id="_JB274H3VEeGozIODH_vY1Q" name="CalculatedDoseNumeric" type="_4IE4pTD1Ed-8rpqfOAePKg">
@@ -4615,14 +4593,7 @@ If the structured Sig exists, the SigText must be generated directly from Struct
           <ownedComment xmi:id="_JAPyUX3VEeGozIODH_vY1Q">
             <body>Structured Sig is the prefered but if for some reason you can not send the structured Sig, use the SigText.</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_JAS1oX3VEeGozIODH_vY1Q" name="CodeSystem" type="_JAVR4X3VEeGozIODH_vY1Q" aggregation="composite" association="_JAYVM33VEeGozIODH_vY1Q">
-            <ownedComment xmi:id="_JATcsH3VEeGozIODH_vY1Q">
-              <body>CodeSystem designates the Code System Version being used for all codes within the Sig
-While multiple Code System Version is technically feasible requiring systems to support multiple Code System Versions within a Structured Sig is unnecessarily burdensome for Systems/Implementers</body>
-            </ownedComment>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAYVMX3VEeGozIODH_vY1Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JAYVMn3VEeGozIODH_vY1Q" value="1"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:id="_wa_OAIMdEeGGcdSHDmxT9w" name="CodeSystem" visibility="public" type="_8HMy8IMcEeGGcdSHDmxT9w"/>
           <ownedAttribute xmi:id="_JAY8QH3VEeGozIODH_vY1Q" name="Instruction" type="_JAb_kX3VEeGozIODH_vY1Q" aggregation="composite" association="_JCgcI33VEeGozIODH_vY1Q">
             <ownedComment xmi:id="_JAY8QX3VEeGozIODH_vY1Q">
               <body>Instruction is the focal point of the Structured Sig - An Instruction is defined as Dose Administration with one to many associated Timing and/or Durations</body>
@@ -4649,17 +4620,17 @@ While multiple Code System Version is technically feasible requiring systems to 
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JClUoH3VEeGozIODH_vY1Q" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JClUoX3VEeGozIODH_vY1Q"/>
           </ownedAttribute>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_JAVR4X3VEeGozIODH_vY1Q" name="anonymous_1" visibility="private">
-            <ownedAttribute xmi:id="_JAVR4n3VEeGozIODH_vY1Q" name="SNOMEDVersion" type="_4CkGdzD1Ed-8rpqfOAePKg">
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAVR433VEeGozIODH_vY1Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JAV48H3VEeGozIODH_vY1Q" value="1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_8HMy8IMcEeGGcdSHDmxT9w" name="_CodeSystem">
+            <ownedAttribute xmi:id="_DzMOQIMdEeGGcdSHDmxT9w" name="SNOMEDVersion" type="_4CkGdzD1Ed-8rpqfOAePKg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DzMOQYMdEeGGcdSHDmxT9w" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DzMOQoMdEeGGcdSHDmxT9w" value="1"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_JAV48X3VEeGozIODH_vY1Q" name="FMTVersion" type="_4CkGdzD1Ed-8rpqfOAePKg">
-              <ownedComment xmi:id="_JAV48n3VEeGozIODH_vY1Q">
+            <ownedAttribute xmi:id="_DzNcYIMdEeGGcdSHDmxT9w" name="FMTVersion" type="_4CkGdzD1Ed-8rpqfOAePKg">
+              <ownedComment xmi:id="_DzNcYYMdEeGGcdSHDmxT9w">
                 <body>If using structured Sig but no needing to send any of the elements that use dose form, send a valid FMT version using by the application for other sigs.</body>
               </ownedComment>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAXuIX3VEeGozIODH_vY1Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JAYVMH3VEeGozIODH_vY1Q" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DzNcYoMdEeGGcdSHDmxT9w" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DzNcY4MdEeGGcdSHDmxT9w" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_JCgcJX3VEeGozIODH_vY1Q" name="_Sequence1" visibility="private">
@@ -5239,13 +5210,6 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXlsozD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXlsojD7Ed-8rpqfOAePKg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_MXlsqDD7Ed-8rpqfOAePKg" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_MXlspzD7Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_nbbL0YnbEd-pZLs28ekBmw" annotatedElement="_MXlsqDD7Ed-8rpqfOAePKg">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXlsqjD7Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXlsqTD7Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_8AHuoH36EeGozIODH_vY1Q" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="__iqg8H39EeGD14ZtdTOtxQ" annotatedElement="_8AHuoH36EeGozIODH_vY1Q">
@@ -6020,12 +5984,6 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
         <ownedEnd xmi:id="_MXlsnTD7Ed-8rpqfOAePKg" type="_MXJAoDD7Ed-8rpqfOAePKg" association="_MXlsmTD7Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXlsnzD7Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXlsnjD7Ed-8rpqfOAePKg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_MXlspzD7Ed-8rpqfOAePKg" memberEnd="_MXlsqDD7Ed-8rpqfOAePKg _MXlsqzD7Ed-8rpqfOAePKg">
-        <ownedEnd xmi:id="_MXlsqzD7Ed-8rpqfOAePKg" type="_MXJAoDD7Ed-8rpqfOAePKg" association="_MXlspzD7Ed-8rpqfOAePKg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXlsrTD7Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXlsrDD7Ed-8rpqfOAePKg" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_MXSxrjD7Ed-8rpqfOAePKg" memberEnd="_MXSxrzD7Ed-8rpqfOAePKg _MXSxsjD7Ed-8rpqfOAePKg">
@@ -7046,13 +7004,6 @@ When the ServiceReasonCode is sent from the pharmacist to the prescriber, the Se
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeLmTWEd-M5IWg2-DxLQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeL2TWEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_40XeMGTWEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_40hPIGTWEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_7Sr8UIk6Ed-pZLs28ekBmw" annotatedElement="_40XeMGTWEd-M5IWg2-DxLQ">
-            <body>Defines the route of administration.</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40XeMWTWEd-M5IWg2-DxLQ" value="*"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40XeMmTWEd-M5IWg2-DxLQ"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_0fnnEH35EeGozIODH_vY1Q" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_iKBzAH39EeGD14ZtdTOtxQ" annotatedElement="_0fnnEH35EeGozIODH_vY1Q">
             <body>The Structured SIG element is used to codify the SIG information. See Imp Guide for more information.</body>
@@ -7215,12 +7166,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40hPH2TWEd-M5IWg2-DxLQ" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_40hPIGTWEd-M5IWg2-DxLQ" memberEnd="_40XeMGTWEd-M5IWg2-DxLQ _40hPIWTWEd-M5IWg2-DxLQ">
-        <ownedEnd xmi:id="_40hPIWTWEd-M5IWg2-DxLQ" type="_40Xd8GTWEd-M5IWg2-DxLQ" association="_40hPIGTWEd-M5IWg2-DxLQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40hPImTWEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40hPI2TWEd-M5IWg2-DxLQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_40hPKGTWEd-M5IWg2-DxLQ" memberEnd="_40XeLWTWEd-M5IWg2-DxLQ _40hPKWTWEd-M5IWg2-DxLQ">
         <ownedEnd xmi:id="_40hPKWTWEd-M5IWg2-DxLQ" type="_40Xd8GTWEd-M5IWg2-DxLQ" association="_40hPKGTWEd-M5IWg2-DxLQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40hPKmTWEd-M5IWg2-DxLQ" value="1"/>
@@ -7380,13 +7325,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCb2TXEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCcGTXEd-M5IWg2-DxLQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_r9HCcWTXEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_r9QzYGTXEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_sPuoVYnbEd-pZLs28ekBmw" annotatedElement="_r9HCcWTXEd-M5IWg2-DxLQ">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9HCcmTXEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9HCc2TXEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_gjnEQH38EeGl9fA-qeQJpQ" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_DGRKkH3-EeGD14ZtdTOtxQ" annotatedElement="_gjnEQH38EeGl9fA-qeQJpQ">
@@ -7560,12 +7498,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9QzX2TXEd-M5IWg2-DxLQ" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_r9QzYGTXEd-M5IWg2-DxLQ" memberEnd="_r9HCcWTXEd-M5IWg2-DxLQ _r9QzYWTXEd-M5IWg2-DxLQ">
-        <ownedEnd xmi:id="_r9QzYWTXEd-M5IWg2-DxLQ" type="_r9HCMGTXEd-M5IWg2-DxLQ" association="_r9QzYGTXEd-M5IWg2-DxLQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9QzYmTXEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r9QzY2TXEd-M5IWg2-DxLQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_r9QzaGTXEd-M5IWg2-DxLQ" memberEnd="_r9HCbmTXEd-M5IWg2-DxLQ _r9QzaWTXEd-M5IWg2-DxLQ">
         <ownedEnd xmi:id="_r9QzaWTXEd-M5IWg2-DxLQ" type="_r9HCMGTXEd-M5IWg2-DxLQ" association="_r9QzaGTXEd-M5IWg2-DxLQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r9QzamTXEd-M5IWg2-DxLQ" value="1"/>
@@ -7726,13 +7658,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2b2TcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2cGTcEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_G-g2cWTcEd-M5IWg2-DxLQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_G-qnQGTcEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_uGMasYnbEd-pZLs28ekBmw" annotatedElement="_G-g2cWTcEd-M5IWg2-DxLQ">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-g2cmTcEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-g2c2TcEd-M5IWg2-DxLQ"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_o3K14H38EeGl9fA-qeQJpQ" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_FQ52IH3-EeGD14ZtdTOtxQ" annotatedElement="_o3K14H38EeGl9fA-qeQJpQ">
             <body>See Medication for Definition and Usage.</body>
@@ -7885,12 +7810,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         <ownedEnd xmi:id="_G-qnPWTcEd-M5IWg2-DxLQ" type="_G-g2MGTcEd-M5IWg2-DxLQ" association="_G-qnPGTcEd-M5IWg2-DxLQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-qnPmTcEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-qnP2TcEd-M5IWg2-DxLQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_G-qnQGTcEd-M5IWg2-DxLQ" memberEnd="_G-g2cWTcEd-M5IWg2-DxLQ _G-qnQWTcEd-M5IWg2-DxLQ">
-        <ownedEnd xmi:id="_G-qnQWTcEd-M5IWg2-DxLQ" type="_G-g2MGTcEd-M5IWg2-DxLQ" association="_G-qnQGTcEd-M5IWg2-DxLQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-qnQmTcEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-qnQ2TcEd-M5IWg2-DxLQ" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_G-qnTGTcEd-M5IWg2-DxLQ" memberEnd="_G-g2NWTcEd-M5IWg2-DxLQ _G-qnTWTcEd-M5IWg2-DxLQ">
@@ -8071,13 +7990,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgX2TnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgYGTnEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QQEgYWTnEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_QQORMGTnEd-Y0upv2_lheQ">
-          <ownedComment xmi:id="_kAq8NYnbEd-pZLs28ekBmw" annotatedElement="_QQEgYWTnEd-Y0upv2_lheQ">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQEgYmTnEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQEgY2TnEd-Y0upv2_lheQ"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_S70q0H36EeGozIODH_vY1Q" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_D69hcH3_EeGD14ZtdTOtxQ" annotatedElement="_S70q0H36EeGozIODH_vY1Q">
             <body>See Medication for Definition and Usage.</body>
@@ -8230,12 +8142,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         <ownedEnd xmi:id="_QQORLWTnEd-Y0upv2_lheQ" type="_QQEgIGTnEd-Y0upv2_lheQ" association="_QQORLGTnEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQORLmTnEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQORL2TnEd-Y0upv2_lheQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_QQORMGTnEd-Y0upv2_lheQ" memberEnd="_QQEgYWTnEd-Y0upv2_lheQ _QQORMWTnEd-Y0upv2_lheQ">
-        <ownedEnd xmi:id="_QQORMWTnEd-Y0upv2_lheQ" type="_QQEgIGTnEd-Y0upv2_lheQ" association="_QQORMGTnEd-Y0upv2_lheQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQORMmTnEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQORM2TnEd-Y0upv2_lheQ" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_QQYCIGTnEd-Y0upv2_lheQ" memberEnd="_QQEgKGTnEd-Y0upv2_lheQ _QQYCIWTnEd-Y0upv2_lheQ">
@@ -8416,13 +8322,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSX2ToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSYGToEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_YxfSYWToEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_YxpDMGToEd-Y0upv2_lheQ">
-          <ownedComment xmi:id="_lx63YYnbEd-pZLs28ekBmw" annotatedElement="_YxfSYWToEd-Y0upv2_lheQ">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxfSYmToEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxfSY2ToEd-Y0upv2_lheQ"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_tNSsIH39EeGD14ZtdTOtxQ" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_tNSsIX39EeGD14ZtdTOtxQ" annotatedElement="_tNSsIH39EeGD14ZtdTOtxQ">
             <body>See Medication for Definition and Usage.</body>
@@ -8575,12 +8474,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         <ownedEnd xmi:id="_YxpDLWToEd-Y0upv2_lheQ" type="_YxfSIGToEd-Y0upv2_lheQ" association="_YxpDLGToEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxpDLmToEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxpDL2ToEd-Y0upv2_lheQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_YxpDMGToEd-Y0upv2_lheQ" memberEnd="_YxfSYWToEd-Y0upv2_lheQ _YxpDMWToEd-Y0upv2_lheQ">
-        <ownedEnd xmi:id="_YxpDMWToEd-Y0upv2_lheQ" type="_YxfSIGToEd-Y0upv2_lheQ" association="_YxpDMGToEd-Y0upv2_lheQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxpDMmToEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxpDM2ToEd-Y0upv2_lheQ" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_YxpDPGToEd-Y0upv2_lheQ" memberEnd="_YxfSKGToEd-Y0upv2_lheQ _YxpDPWToEd-Y0upv2_lheQ">
@@ -8761,13 +8654,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiH2TpEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiIGTpEd-Y0upv2_lheQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QuYiIWTpEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_QuiTHGTpEd-Y0upv2_lheQ">
-          <ownedComment xmi:id="_aeeNNYnbEd-pZLs28ekBmw" annotatedElement="_QuYiIWTpEd-Y0upv2_lheQ">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuYiImTpEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuYiI2TpEd-Y0upv2_lheQ"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_8vH0kH34EeGozIODH_vY1Q" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oh8UIH35EeGozIODH_vY1Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oh7tEH35EeGozIODH_vY1Q" value="1"/>
@@ -8943,12 +8829,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuiTF2TpEd-Y0upv2_lheQ" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_QuiTHGTpEd-Y0upv2_lheQ" memberEnd="_QuYiIWTpEd-Y0upv2_lheQ _QuiTHWTpEd-Y0upv2_lheQ">
-        <ownedEnd xmi:id="_QuiTHWTpEd-Y0upv2_lheQ" type="_QuYh4GTpEd-Y0upv2_lheQ" association="_QuiTHGTpEd-Y0upv2_lheQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuiTHmTpEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QuiTH2TpEd-Y0upv2_lheQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_QuiTJGTpEd-Y0upv2_lheQ" memberEnd="_QuYiJ2TpEd-Y0upv2_lheQ _QuiTJWTpEd-Y0upv2_lheQ">
         <ownedEnd xmi:id="_QuiTJWTpEd-Y0upv2_lheQ" type="_QuYh4GTpEd-Y0upv2_lheQ" association="_QuiTJGTpEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuiTJmTpEd-Y0upv2_lheQ" value="1"/>
@@ -9102,13 +8982,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYP2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYQGTqEd-Y0upv2_lheQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_P_eYQWTqEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_P_x6AGTqEd-Y0upv2_lheQ">
-          <ownedComment xmi:id="_qses5YnbEd-pZLs28ekBmw" annotatedElement="_P_eYQWTqEd-Y0upv2_lheQ">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_eYQmTqEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_eYQ2TqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Y2-vwH38EeGl9fA-qeQJpQ" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_CaH2QH3-EeGD14ZtdTOtxQ" annotatedElement="_Y2-vwH38EeGl9fA-qeQJpQ">
@@ -9294,12 +9167,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_oJQ2TqEd-Y0upv2_lheQ" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_P_x6AGTqEd-Y0upv2_lheQ" memberEnd="_P_eYQWTqEd-Y0upv2_lheQ _P_x6AWTqEd-Y0upv2_lheQ">
-        <ownedEnd xmi:id="_P_x6AWTqEd-Y0upv2_lheQ" type="_P_eYAGTqEd-Y0upv2_lheQ" association="_P_x6AGTqEd-Y0upv2_lheQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_x6AmTqEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_x6A2TqEd-Y0upv2_lheQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_wROoIGTqEd-Y0upv2_lheQ" name="RxFillDispensedMedication">
         <eAnnotations xmi:id="_Vr85YInbEd-pZLs28ekBmw" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_Vr85YYnbEd-pZLs28ekBmw" key="Medication"/>
@@ -9447,13 +9314,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoX2TqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoYGTqEd-Y0upv2_lheQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_wROoYWTqEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_wRXyQGTqEd-Y0upv2_lheQ">
-          <ownedComment xmi:id="_wTmtdYnbEd-pZLs28ekBmw" annotatedElement="_wROoYWTqEd-Y0upv2_lheQ">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wROoYmTqEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wROoY2TqEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_xYJ_gH38EeGl9fA-qeQJpQ" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_HbNKgH3-EeGD14ZtdTOtxQ" annotatedElement="_xYJ_gH38EeGl9fA-qeQJpQ">
@@ -9611,12 +9471,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         <ownedEnd xmi:id="_wRXyPWTqEd-Y0upv2_lheQ" type="_wROoIGTqEd-Y0upv2_lheQ" association="_wRXyPGTqEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wRXyPmTqEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wRXyP2TqEd-Y0upv2_lheQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_wRXyQGTqEd-Y0upv2_lheQ" memberEnd="_wROoYWTqEd-Y0upv2_lheQ _wRXyQWTqEd-Y0upv2_lheQ">
-        <ownedEnd xmi:id="_wRXyQWTqEd-Y0upv2_lheQ" type="_wROoIGTqEd-Y0upv2_lheQ" association="_wRXyQGTqEd-Y0upv2_lheQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wRXyQmTqEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wRXyQ2TqEd-Y0upv2_lheQ" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_wRXyVGTqEd-Y0upv2_lheQ" memberEnd="_wROoKGTqEd-Y0upv2_lheQ _wRXyVWTqEd-Y0upv2_lheQ">
@@ -9778,13 +9632,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSj2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSkGTrEd-Y0upv2_lheQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_MqbSkWTrEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_MqkcVGTrEd-Y0upv2_lheQ">
-          <ownedComment xmi:id="_hjKX8YnbEd-pZLs28ekBmw" annotatedElement="_MqbSkWTrEd-Y0upv2_lheQ">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqbSkmTrEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqbSk2TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_OB68oH36EeGozIODH_vY1Q" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OB68oX36EeGozIODH_vY1Q" value="1"/>
@@ -9955,12 +9802,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqkcU2TrEd-Y0upv2_lheQ" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_MqkcVGTrEd-Y0upv2_lheQ" memberEnd="_MqbSkWTrEd-Y0upv2_lheQ _MqkcVWTrEd-Y0upv2_lheQ">
-        <ownedEnd xmi:id="_MqkcVWTrEd-Y0upv2_lheQ" type="_MqbSUGTrEd-Y0upv2_lheQ" association="_MqkcVGTrEd-Y0upv2_lheQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqkcVmTrEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqkcV2TrEd-Y0upv2_lheQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_MqkcaGTrEd-Y0upv2_lheQ" memberEnd="_MqbSWGTrEd-Y0upv2_lheQ _MqkcaWTrEd-Y0upv2_lheQ">
         <ownedEnd xmi:id="_MqkcaWTrEd-Y0upv2_lheQ" type="_MqbSUGTrEd-Y0upv2_lheQ" association="_MqkcaGTrEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqkcamTrEd-Y0upv2_lheQ" value="1"/>
@@ -10120,13 +9961,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxyv2TrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxywGTrEd-Y0upv2_lheQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_krxywWTrEd-Y0upv2_lheQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_kr68nGTrEd-Y0upv2_lheQ">
-          <ownedComment xmi:id="_pG2y54nbEd-pZLs28ekBmw" annotatedElement="_krxywWTrEd-Y0upv2_lheQ">
-            <body>See Medication for Definition and Usage</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krxywmTrEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krxyw2TrEd-Y0upv2_lheQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_G6nGQH37EeGozIODH_vY1Q" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_BVRHAH3-EeGD14ZtdTOtxQ" annotatedElement="_G6nGQH37EeGozIODH_vY1Q">
@@ -10298,12 +10132,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
         <ownedEnd xmi:id="_kr68mWTrEd-Y0upv2_lheQ" type="_krxygGTrEd-Y0upv2_lheQ" association="_kr68mGTrEd-Y0upv2_lheQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kr68mmTrEd-Y0upv2_lheQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kr68m2TrEd-Y0upv2_lheQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_kr68nGTrEd-Y0upv2_lheQ" memberEnd="_krxywWTrEd-Y0upv2_lheQ _kr68nWTrEd-Y0upv2_lheQ">
-        <ownedEnd xmi:id="_kr68nWTrEd-Y0upv2_lheQ" type="_krxygGTrEd-Y0upv2_lheQ" association="_kr68nGTrEd-Y0upv2_lheQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kr68nmTrEd-Y0upv2_lheQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kr68n2TrEd-Y0upv2_lheQ" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_kr68sGTrEd-Y0upv2_lheQ" memberEnd="_krxyiGTrEd-Y0upv2_lheQ _kr68sWTrEd-Y0upv2_lheQ">
@@ -10480,13 +10308,6 @@ When the ServiceReasonCode is sent from the pharmacist to the prescriber, the Se
         <ownedAttribute xmi:id="_6SreMkjGEeCQH7WfiOI4dQ" name="OtherCompoundInformation" type="_4KTtNjD1Ed-8rpqfOAePKg" aggregation="composite" association="_6TRTwEjGEeCQH7WfiOI4dQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SreM0jGEeCQH7WfiOI4dQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SreNEjGEeCQH7WfiOI4dQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_6SreNUjGEeCQH7WfiOI4dQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_6TQssEjGEeCQH7WfiOI4dQ">
-          <ownedComment xmi:id="_6SreNkjGEeCQH7WfiOI4dQ" annotatedElement="_6SreNUjGEeCQH7WfiOI4dQ">
-            <body>Defines the route of administration.</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SreN0jGEeCQH7WfiOI4dQ"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SreOEjGEeCQH7WfiOI4dQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_m82JIH36EeGozIODH_vY1Q" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_oFnAoH39EeGD14ZtdTOtxQ" annotatedElement="_m82JIH36EeGozIODH_vY1Q">
@@ -10778,13 +10599,6 @@ When the ServiceReasonCode is sent from the pharmacist to the prescriber, the Se
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8NqFk0plEeCvCLsSrrA8LQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8NqFlEplEeCvCLsSrrA8LQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_8NqFlUplEeCvCLsSrrA8LQ" name="RouteOfAdministration " type="_zeNPADE4Ed-8rpqfOAePKg" aggregation="composite" association="_8OUzoEplEeCvCLsSrrA8LQ">
-          <ownedComment xmi:id="_8NqFlkplEeCvCLsSrrA8LQ" annotatedElement="_8NqFlUplEeCvCLsSrrA8LQ">
-            <body>Defines the route of administration.</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8NqFl0plEeCvCLsSrrA8LQ" value="*"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8NqFmEplEeCvCLsSrrA8LQ"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_ysMsMH36EeGozIODH_vY1Q" name="Sig" visibility="public" type="_JAMH8H3VEeGozIODH_vY1Q">
           <ownedComment xmi:id="_9TWwwH39EeGD14ZtdTOtxQ" annotatedElement="_ysMsMH36EeGozIODH_vY1Q">
             <body>See Medication for Definition and Usage.</body>
@@ -10989,9 +10803,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_JCjfcn3VEeGozIODH_vY1Q" memberEnd="_JCjfc33VEeGozIODH_vY1Q _JCi4aH3VEeGozIODH_vY1Q">
         <ownedEnd xmi:id="_JCjfc33VEeGozIODH_vY1Q" type="_JAPyUH3VEeGozIODH_vY1Q" association="_JCjfcn3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JAYVM33VEeGozIODH_vY1Q" memberEnd="_JAYVNH3VEeGozIODH_vY1Q _JAS1oX3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JAYVNH3VEeGozIODH_vY1Q" type="_JAPyUH3VEeGozIODH_vY1Q" association="_JAYVM33VEeGozIODH_vY1Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_JChqR33VEeGozIODH_vY1Q" memberEnd="_JChqSH3VEeGozIODH_vY1Q _JChqRH3VEeGozIODH_vY1Q">
         <ownedEnd xmi:id="_JChqSH3VEeGozIODH_vY1Q" type="_JAPyUH3VEeGozIODH_vY1Q" association="_JChqR33VEeGozIODH_vY1Q"/>
@@ -22608,12 +22419,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6TNCU0jGEeCQH7WfiOI4dQ" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_6TQssEjGEeCQH7WfiOI4dQ" memberEnd="_6SreNUjGEeCQH7WfiOI4dQ _6TQssUjGEeCQH7WfiOI4dQ">
-      <ownedEnd xmi:id="_6TQssUjGEeCQH7WfiOI4dQ" type="_6Srd4EjGEeCQH7WfiOI4dQ" association="_6TQssEjGEeCQH7WfiOI4dQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6TQsskjGEeCQH7WfiOI4dQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6TQss0jGEeCQH7WfiOI4dQ" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_6TSh4EjGEeCQH7WfiOI4dQ" memberEnd="_6SsFC0jGEeCQH7WfiOI4dQ _6TSh4UjGEeCQH7WfiOI4dQ">
       <ownedEnd xmi:id="_6TSh4UjGEeCQH7WfiOI4dQ" type="_6Srd4EjGEeCQH7WfiOI4dQ" association="_6TSh4EjGEeCQH7WfiOI4dQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6TSh4kjGEeCQH7WfiOI4dQ" value="1"/>
@@ -22696,12 +22501,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
       <ownedEnd xmi:id="_8OSXYUplEeCvCLsSrrA8LQ" type="_8NqFQEplEeCvCLsSrrA8LQ" association="_8OSXYEplEeCvCLsSrrA8LQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8OSXYkplEeCvCLsSrrA8LQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8OSXY0plEeCvCLsSrrA8LQ" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_8OUzoEplEeCvCLsSrrA8LQ" memberEnd="_8NqFlUplEeCvCLsSrrA8LQ _8OUzoUplEeCvCLsSrrA8LQ">
-      <ownedEnd xmi:id="_8OUzoUplEeCvCLsSrrA8LQ" type="_8NqFQEplEeCvCLsSrrA8LQ" association="_8OUzoEplEeCvCLsSrrA8LQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8OUzokplEeCvCLsSrrA8LQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8OUzo0plEeCvCLsSrrA8LQ" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_8OXP4EplEeCvCLsSrrA8LQ" memberEnd="_8NqFzUplEeCvCLsSrrA8LQ _8OXP4UplEeCvCLsSrrA8LQ">
@@ -22958,14 +22757,14 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_4mU68TD1Ed-8rpqfOAePKg" base_Property="_4mU67zD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU69jD1Ed-8rpqfOAePKg" base_Property="_4mU69DD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU6-zD1Ed-8rpqfOAePKg" base_Property="_4mU6-TD1Ed-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
+  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -23038,7 +22837,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAmHEEd-Xe4OIcNINMg" base_Comment="_oustHWHEEd-Xe4OIcNINMg"/>
@@ -23289,7 +23088,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_f_FBMYk6Ed-pZLs28ekBmw" base_Comment="_f_FBMIk6Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_iKjaQIk6Ed-pZLs28ekBmw" base_Comment="_iKZpQIk6Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_mBw8YYk6Ed-pZLs28ekBmw" base_Comment="_mBw8YIk6Ed-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_7Sr8UYk6Ed-pZLs28ekBmw" base_Comment="_7Sr8UIk6Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_6UT9oIk8Ed-pZLs28ekBmw" base_Comment="_6UKMoIk8Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_9Aa-kYk8Ed-pZLs28ekBmw" base_Comment="_9Aa-kIk8Ed-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="__XXn0Yk8Ed-pZLs28ekBmw" base_Comment="__XXn0Ik8Ed-pZLs28ekBmw"/>
@@ -23495,7 +23293,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_aeeNMInbEd-pZLs28ekBmw" base_Comment="_aeUcNonbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_aeeNMonbEd-pZLs28ekBmw" base_Comment="_aeeNMYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_aeeNNInbEd-pZLs28ekBmw" base_Comment="_aeeNM4nbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_aenXIInbEd-pZLs28ekBmw" base_Comment="_aeeNNYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_aenXIonbEd-pZLs28ekBmw" base_Comment="_aenXIYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_aexIIInbEd-pZLs28ekBmw" base_Comment="_aenXJYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_aexIIonbEd-pZLs28ekBmw" base_Comment="_aexIIYnbEd-pZLs28ekBmw"/>
@@ -23529,7 +23326,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_hjBOAonbEd-pZLs28ekBmw" base_Comment="_hjBOAYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_hjBOBInbEd-pZLs28ekBmw" base_Comment="_hjBOA4nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_hjKX8InbEd-pZLs28ekBmw" base_Comment="_hjBOBYnbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_hjKX8onbEd-pZLs28ekBmw" base_Comment="_hjKX8YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_hjKX9InbEd-pZLs28ekBmw" base_Comment="_hjKX84nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_hjUI8onbEd-pZLs28ekBmw" base_Comment="_hjUI8YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_hjUI9InbEd-pZLs28ekBmw" base_Comment="_hjUI84nbEd-pZLs28ekBmw"/>
@@ -23563,7 +23359,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_kAq8MInbEd-pZLs28ekBmw" base_Comment="_kAhLNYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_kAq8MonbEd-pZLs28ekBmw" base_Comment="_kAq8MYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_kAq8NInbEd-pZLs28ekBmw" base_Comment="_kAq8M4nbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_kA0tMInbEd-pZLs28ekBmw" base_Comment="_kAq8NYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_kA0tMonbEd-pZLs28ekBmw" base_Comment="_kA0tMYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_kA93IInbEd-pZLs28ekBmw" base_Comment="_kA0tNYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_kA93IonbEd-pZLs28ekBmw" base_Comment="_kA93IYnbEd-pZLs28ekBmw"/>
@@ -23597,7 +23392,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_lxxGYonbEd-pZLs28ekBmw" base_Comment="_lxxGYYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_lxxGZInbEd-pZLs28ekBmw" base_Comment="_lxxGY4nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_lx63YInbEd-pZLs28ekBmw" base_Comment="_lxxGZYnbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_lx63YonbEd-pZLs28ekBmw" base_Comment="_lx63YYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_lx63ZInbEd-pZLs28ekBmw" base_Comment="_lx63Y4nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_lyEoYonbEd-pZLs28ekBmw" base_Comment="_lyEoYYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_lyEoZInbEd-pZLs28ekBmw" base_Comment="_lyEoY4nbEd-pZLs28ekBmw"/>
@@ -23631,7 +23425,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_nbRa0onbEd-pZLs28ekBmw" base_Comment="_nbRa0YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_nbRa1InbEd-pZLs28ekBmw" base_Comment="_nbRa04nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_nbbL0InbEd-pZLs28ekBmw" base_Comment="_nbRa1YnbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_nbbL0onbEd-pZLs28ekBmw" base_Comment="_nbbL0YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_nbbL1InbEd-pZLs28ekBmw" base_Comment="_nbbL04nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_nbkVwonbEd-pZLs28ekBmw" base_Comment="_nbkVwYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_nbkVxInbEd-pZLs28ekBmw" base_Comment="_nbkVw4nbEd-pZLs28ekBmw"/>
@@ -23664,7 +23457,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_pG2y4onbEd-pZLs28ekBmw" base_Comment="_pG2y4YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_pG2y5InbEd-pZLs28ekBmw" base_Comment="_pG2y44nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_pG2y5onbEd-pZLs28ekBmw" base_Comment="_pG2y5YnbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_pHAj4InbEd-pZLs28ekBmw" base_Comment="_pG2y54nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_pHAj4onbEd-pZLs28ekBmw" base_Comment="_pHAj4YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_pHJt0InbEd-pZLs28ekBmw" base_Comment="_pHAj5YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_pHJt0onbEd-pZLs28ekBmw" base_Comment="_pHJt0YnbEd-pZLs28ekBmw"/>
@@ -23698,7 +23490,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_qses4InbEd-pZLs28ekBmw" base_Comment="_qsVi9YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_qses4onbEd-pZLs28ekBmw" base_Comment="_qses4YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_qses5InbEd-pZLs28ekBmw" base_Comment="_qses44nbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_qsod4InbEd-pZLs28ekBmw" base_Comment="_qses5YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_qsod4onbEd-pZLs28ekBmw" base_Comment="_qsod4YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_qsyO4InbEd-pZLs28ekBmw" base_Comment="_qsod5YnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_qsyO4onbEd-pZLs28ekBmw" base_Comment="_qsyO4YnbEd-pZLs28ekBmw"/>
@@ -23731,7 +23522,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_sPuoUInbEd-pZLs28ekBmw" base_Comment="_sPk3VYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_sPuoUonbEd-pZLs28ekBmw" base_Comment="_sPuoUYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_sPuoVInbEd-pZLs28ekBmw" base_Comment="_sPuoU4nbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_sP3yQInbEd-pZLs28ekBmw" base_Comment="_sPuoVYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_sP3yQonbEd-pZLs28ekBmw" base_Comment="_sP3yQYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_sQBjQInbEd-pZLs28ekBmw" base_Comment="_sP3yRYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_sQBjQonbEd-pZLs28ekBmw" base_Comment="_sQBjQYnbEd-pZLs28ekBmw"/>
@@ -23765,7 +23555,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_uGCpsonbEd-pZLs28ekBmw" base_Comment="_uGCpsYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_uGCptInbEd-pZLs28ekBmw" base_Comment="_uGCps4nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_uGMasInbEd-pZLs28ekBmw" base_Comment="_uGCptYnbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_uGMasonbEd-pZLs28ekBmw" base_Comment="_uGMasYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_uGMatInbEd-pZLs28ekBmw" base_Comment="_uGMas4nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_uGVkoonbEd-pZLs28ekBmw" base_Comment="_uGVkoYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_uGVkpInbEd-pZLs28ekBmw" base_Comment="_uGVko4nbEd-pZLs28ekBmw"/>
@@ -23799,7 +23588,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_wTmtcInbEd-pZLs28ekBmw" base_Comment="_wTc8d4nbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_wTmtconbEd-pZLs28ekBmw" base_Comment="_wTmtcYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_wTmtdInbEd-pZLs28ekBmw" base_Comment="_wTmtc4nbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_wTv3YInbEd-pZLs28ekBmw" base_Comment="_wTmtdYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_wTv3YonbEd-pZLs28ekBmw" base_Comment="_wTv3YYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_wT5oYInbEd-pZLs28ekBmw" base_Comment="_wTv3ZYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_wT5oYonbEd-pZLs28ekBmw" base_Comment="_wT5oYYnbEd-pZLs28ekBmw"/>
@@ -24035,7 +23823,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:GlobalProperty xmi:id="_Bv0UXYqaEd-pZLs28ekBmw" base_Class="_Bv0UUIqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_Bv0UXoqaEd-pZLs28ekBmw" base_Property="_Bv0UUYqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_V59SYYqaEd-pZLs28ekBmw" base_Property="_V59SYIqaEd-pZLs28ekBmw"/>
-  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
+  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
   <xsd:GlobalElement xmi:id="_P3rT8YqnEd-pZLs28ekBmw" base_Property="_P3rT8IqnEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0uuYkYrFEd-urZQZ08VCKQ" base_Comment="_0uuYkIrFEd-urZQZ08VCKQ"/>
   <Default:Documentation xmi:id="_7k0GoIrFEd-urZQZ08VCKQ" base_Comment="_7kqVoIrFEd-urZQZ08VCKQ"/>
@@ -24252,7 +24040,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_6TWzU0jGEeCQH7WfiOI4dQ" base_Comment="_6SreJ0jGEeCQH7WfiOI4dQ"/>
   <Default:Documentation xmi:id="_6TWzVEjGEeCQH7WfiOI4dQ" base_Comment="_6SreK0jGEeCQH7WfiOI4dQ"/>
   <Default:Documentation xmi:id="_6TWzVUjGEeCQH7WfiOI4dQ" base_Comment="_6SreL0jGEeCQH7WfiOI4dQ"/>
-  <Default:Documentation xmi:id="_6TWzVkjGEeCQH7WfiOI4dQ" base_Comment="_6SreNkjGEeCQH7WfiOI4dQ"/>
   <Default:Documentation xmi:id="_6TXaYEjGEeCQH7WfiOI4dQ" base_Comment="_6SrePkjGEeCQH7WfiOI4dQ"/>
   <Default:Documentation xmi:id="_6TXaYUjGEeCQH7WfiOI4dQ" base_Comment="_6SreQkjGEeCQH7WfiOI4dQ"/>
   <Default:Documentation xmi:id="_6TXaYkjGEeCQH7WfiOI4dQ" base_Comment="_6SreRkjGEeCQH7WfiOI4dQ"/>
@@ -24283,7 +24070,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_8ObhU0plEeCvCLsSrrA8LQ" base_Comment="_8NqFh0plEeCvCLsSrrA8LQ"/>
   <Default:Documentation xmi:id="_8ObhVEplEeCvCLsSrrA8LQ" base_Comment="_8NqFi0plEeCvCLsSrrA8LQ"/>
   <Default:Documentation xmi:id="_8ObhVUplEeCvCLsSrrA8LQ" base_Comment="_8NqFj0plEeCvCLsSrrA8LQ"/>
-  <Default:Documentation xmi:id="_8ObhVkplEeCvCLsSrrA8LQ" base_Comment="_8NqFlkplEeCvCLsSrrA8LQ"/>
   <Default:Documentation xmi:id="_8OcIYEplEeCvCLsSrrA8LQ" base_Comment="_8NqFnkplEeCvCLsSrrA8LQ"/>
   <Default:Documentation xmi:id="_8OcIYUplEeCvCLsSrrA8LQ" base_Comment="_8NqFokplEeCvCLsSrrA8LQ"/>
   <Default:Documentation xmi:id="_8OcIYkplEeCvCLsSrrA8LQ" base_Comment="_8NqFpkplEeCvCLsSrrA8LQ"/>
@@ -24685,15 +24471,12 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_zdpCgG0rEeGhJo0rNzUrZw" base_Comment="_zckrgG0rEeGhJo0rNzUrZw"/>
   <Default:Documentation xmi:id="_I_-FgH3VEeGozIODH_vY1Q" base_Comment="_I_7pQX3VEeGozIODH_vY1Q"/>
   <xsd:Facet xmi:id="_I__ToH3VEeGozIODH_vY1Q" base_Property="_I_-skH3VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JABI0H3VEeGozIODH_vY1Q" base_Comment="_I__6sX3VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JAFaQH3VEeGozIODH_vY1Q" base_Comment="_JAC-A33VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JAJrsH3VEeGozIODH_vY1Q" base_Comment="_JAHPcH3VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JAPLQH3VEeGozIODH_vY1Q" base_Comment="_JAMH8n3VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JASOkH3VEeGozIODH_vY1Q" base_Comment="_JAPyUX3VEeGozIODH_vY1Q"/>
   <xsd:Group xmi:id="_JASOkX3VEeGozIODH_vY1Q" base_Class="_JAPyUH3VEeGozIODH_vY1Q"/>
   <xsd:Sequence xmi:id="_JAS1oH3VEeGozIODH_vY1Q" base_Class="_JAPyUH3VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JAVR4H3VEeGozIODH_vY1Q" base_Comment="_JATcsH3VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JAXuIH3VEeGozIODH_vY1Q" base_Comment="_JAV48n3VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JAb_kH3VEeGozIODH_vY1Q" base_Comment="_JAY8QX3VEeGozIODH_vY1Q"/>
   <xsd:Group xmi:id="_JAcmoH3VEeGozIODH_vY1Q" base_Class="_JAb_kn3VEeGozIODH_vY1Q"/>
   <xsd:Sequence xmi:id="_JAcmoX3VEeGozIODH_vY1Q" base_Class="_JAb_kn3VEeGozIODH_vY1Q"/>
@@ -24796,4 +24579,5 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_FQ_8wH3-EeGD14ZtdTOtxQ" base_Comment="_FQ52IH3-EeGD14ZtdTOtxQ"/>
   <Default:Documentation xmi:id="_HbPmwH3-EeGD14ZtdTOtxQ" base_Comment="_HbNKgH3-EeGD14ZtdTOtxQ"/>
   <Default:Documentation xmi:id="_D7DoEH3_EeGD14ZtdTOtxQ" base_Comment="_D69hcH3_EeGD14ZtdTOtxQ"/>
+  <Default:Documentation xmi:id="_DzP4oIMdEeGGcdSHDmxT9w" base_Comment="_DzNcYYMdEeGGcdSHDmxT9w"/>
 </xmi:XMI>
