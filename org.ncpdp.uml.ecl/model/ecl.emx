@@ -21358,7 +21358,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_eGGD8CxAEd-8mcmtGejV_Q" base_Comment="_eF8S8yxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_eF8S8SxAEd-8mcmtGejV_Q" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_eFfnBCxAEd-8mcmtGejV_Q" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="_eF8S8CxAEd-8mcmtGejV_Q" base_Comment="_eFfnBSxAEd-8mcmtGejV_Q"/>
-  <xsd:Schema xmi:id="_kA0cIDEFEd-8rpqfOAePKg" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/ECL" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <xsd:Schema xmi:id="_kA0cIDEFEd-8rpqfOAePKg" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" version="2012031" targetNamespace="http://www.ncpdp.org/schema/ECL" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <Default:Documentation xmi:id="_bBE48jEQEd-8rpqfOAePKg" base_Comment="_bBE48TEQEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_bmodEjEQEd-8rpqfOAePKg" base_Comment="_bmodETEQEd-8rpqfOAePKg"/>
   <orgncpdpecl:ncpdpecl xmi:id="_rq1rJjEREd-8rpqfOAePKg" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_rq1rEDEREd-8rpqfOAePKg" displayName="Code List Responsibility Agency (X12 DE 235)"/>

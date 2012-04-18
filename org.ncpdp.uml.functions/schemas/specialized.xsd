@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!--
-Copyright (c) 2007, 2008, 2009, 2010, 2011 NCPDP. All rights reserved. This work is owned by National Council for Prescription Drug Programs, Inc., 924Ø E. Raintree Drive, Scottsdale, AZ 8526Ø, (48Ø) 477-1ØØØ, ncpdp@ncpdp.org, and protected by the copyright laws of the United States. 17 U.S.C. §1Ø1, et. seq. Permission is given to Council members to copy and use the work or any part thereof in connection with the business purposes of the Council members.   
+Copyright (c) 2007, 2008, 2009, 2010, 2011, 2012 NCPDP. All rights reserved. This work is owned by National Council for Prescription Drug Programs, Inc., 924Ø E. Raintree Drive, Scottsdale, AZ 8526Ø, (48Ø) 477-1ØØØ, ncpdp@ncpdp.org, and protected by the copyright laws of the United States. 17 U.S.C. §1Ø1, et. seq. Permission is given to Council members to copy and use the work or any part thereof in connection with the business purposes of the Council members.   
 
 
 The work may not be changed or altered. The work may not be sold, used or exploited for commercial purposes. This permission may be revoked by National Council for Prescription Drug Programs, Inc., at any time. The National Council for Prescription Drugs Programs, Inc. is not responsible for any errors or damage as a result of the use of the work.
@@ -7,7 +7,7 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/specialized" version="NCPDPv2011NovemberBallot" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:specialized="http://www.ncpdp.org/schema/specialized" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/specialized" version="2012031" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:specialized="http://www.ncpdp.org/schema/specialized" xmlns:structures="http://www.ncpdp.org/schema/structures" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/datatypes" schemaLocation="datatypes.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <xsd:import namespace="http://www.ncpdp.org/schema/structures" schemaLocation="structures.xsd"/>
@@ -83,9 +83,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Census">
     <xsd:annotation>
-      <xsd:documentation>This transaction is sent from the resident source system to parties that need to be aware of these census changes.  
-
-Designates type and description of census message – Admit, Discharge, Change. Used when a ReturnReceipt is requested.</xsd:documentation>
+      <xsd:documentation>This transaction is sent from the resident source system to parties that need to be aware of these census changes.  &#13;
+&#13;
+Designates type and description of census message – Admit, Discharge, Change. Used when a ReturnReceipt is requested.&#13;
+&#13;
+When values D3 (Discharge – Return Anticipated), D4 (Discharge Other), LT (Therapeutic Leave of Absence) and LG (Hospital Leave of Absence) are used, Anticipated Patient Return Date/Time is used. When populated, indicates the date and time of the resident’s anticipated return to the facility.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:restriction base="specialized:SpecializedRequest">
@@ -1085,7 +1087,11 @@ Designates type and description of census message – Admit, Discharge, Change. 
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType abstract="true" name="SpecializedRequest">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
+      <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode">
+        <xsd:annotation>
+          <xsd:documentation>For Long Term Care (LTC) Medication Change Process (Prescriber initiated CHANGE Request,) the NEWRX and the CANCEL will use this field to indicate the level of the change.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReturnReceipt" type="datatypes:an1..3">
         <xsd:annotation>
           <xsd:documentation>If this field is submitted with 1 in the request, a Verify transaction is to be sent from the recipient at some time.
@@ -1173,7 +1179,7 @@ If recipient is a pharmacy, Pharmacy is required.</xsd:documentation>
       </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="DispensingRequestCode" type="ecl:DispensingRequestCode">
         <xsd:annotation>
-          <xsd:documentation>Only allowed in the Census message, when the AnticipatedReturn date (AR) and the ChangeRequestType is Hospital Leave of Absence (LG) or Therapeutic Leave of Absence (LT)</xsd:documentation>
+          <xsd:documentation>Code conveying a pharmacy dispensing action associated with a CENSUS event. Only allowed in the CENSUS message, when the Anticipated Patient Return date is sent and is Hospital Leave of Absence (LG) or Therapeutic Leave of Absence (LT).</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="Consent" type="ecl:ConsentCode"/>
@@ -1191,7 +1197,11 @@ If recipient is a pharmacy, Pharmacy is required.</xsd:documentation>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType abstract="true" name="SpecializedResponse">
     <xsd:sequence>
-      <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode"/>
+      <xsd:element minOccurs="0" name="MessageRequestCode" type="ecl:MessageFunctionCode">
+        <xsd:annotation>
+          <xsd:documentation>For Long Term Care (LTC) Medication Change Process (Prescriber initiated CHANGE Request,) the NEWRX and the CANCEL will use this field to indicate the level of the change.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="ReturnReceipt" type="datatypes:an1..3">
         <xsd:annotation>
           <xsd:documentation>If this field is submitted with 1 in the request, a Verify transaction is to be sent from the recipient at some time.
