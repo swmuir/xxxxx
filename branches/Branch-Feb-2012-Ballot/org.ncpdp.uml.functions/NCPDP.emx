@@ -307,8 +307,8 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4J3BRzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4J3BSDD1Ed-8rpqfOAePKg" name="AcknowledgementReason" type="_4J3BSzD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_4J3BSTD1Ed-8rpqfOAePKg">
-            <body></body>
+          <ownedComment xmi:id="_4J3BSTD1Ed-8rpqfOAePKg" annotatedElement="_4J3BSDD1Ed-8rpqfOAePKg">
+            <body>Mandatory if DUE Professional Service Code = “ZZ” (Other) to provide further explanation.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4J3BUDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4J3BUTD1Ed-8rpqfOAePKg"/>
@@ -6473,7 +6473,9 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
         </ownedAttribute>
         <ownedAttribute xmi:id="_7GxptWTPEd-M5IWg2-DxLQ" name="PrescriberAgent" type="_4E8sKjD1Ed-8rpqfOAePKg" aggregation="composite" association="_7G7aomTPEd-M5IWg2-DxLQ">
           <ownedComment xmi:id="_7GxptmTPEd-M5IWg2-DxLQ" annotatedElement="_7GxptWTPEd-M5IWg2-DxLQ">
-            <body>To identify the Designated Agent - use for transmitter/submitter name.  If a supervising prescriber name or id is required, use the supervisor element. This composite is to be used for the “PC” prescriber only.</body>
+            <body>To identify the Designated Agent - use for transmitter/submitter name.  If a supervising prescriber name or id is required, use the supervisor element. This composite is to be used for the “PC” prescriber only.&#xD;
+&#xD;
+Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is mandatory if the sender of the message is not the actual prescriber referenced.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Gxpt2TPEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7GxpuGTPEd-M5IWg2-DxLQ"/>
@@ -12289,6 +12291,9 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <details xmi:id="_-MDMwX-PEd-eN4XJATQmiQ" key="abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_JTt-0E46Ed-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
+          <ownedComment xmi:id="_DDs34Ij4EeGNMvTpK_CjlQ" annotatedElement="_JTt-0E46Ed-G-pSkcIGh3w">
+            <body>For Long Term Care (LTC) Medication Change Process (Prescriber initiated CHANGE Request,) the NEWRX and the CANCEL will use this field to indicate the level of the change.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JTt-0U46Ed-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JTt-0k46Ed-G-pSkcIGh3w"/>
@@ -12422,7 +12427,7 @@ If recipient is a pharmacy, Pharmacy is required.</body>
         </ownedAttribute>
         <ownedAttribute xmi:id="_eG3oME47Ed-G-pSkcIGh3w" name="DispensingRequestCode" visibility="public">
           <ownedComment xmi:id="_W7eokInQEd-pZLs28ekBmw" annotatedElement="_eG3oME47Ed-G-pSkcIGh3w">
-            <body>Only allowed in the Census message, when the AnticipatedReturn date (AR) and the ChangeRequestType is Hospital Leave of Absence (LG) or Therapeutic Leave of Absence (LT)</body>
+            <body>Code conveying a pharmacy dispensing action associated with a CENSUS event. Only allowed in the CENSUS message, when the Anticipated Patient Return date is sent and is Hospital Leave of Absence (LG) or Therapeutic Leave of Absence (LT).</body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_w4iRMEyrEd-G-pSkcIGh3w?ecl/ecl/DispensingRequestCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oAMoUU48Ed-G-pSkcIGh3w" value="*"/>
@@ -12497,6 +12502,9 @@ If recipient is a pharmacy, Pharmacy is required.</body>
           <details xmi:id="_-8B4MX-PEd-eN4XJATQmiQ" key="abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_ZfPhQEyEEd-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
+          <ownedComment xmi:id="_FHTHUIj4EeGNMvTpK_CjlQ" annotatedElement="_ZfPhQEyEEd-G-pSkcIGh3w">
+            <body>For Long Term Care (LTC) Medication Change Process (Prescriber initiated CHANGE Request,) the NEWRX and the CANCEL will use this field to indicate the level of the change.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Js9I0FJZEd-gUbUlN-XGdw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JszX0FJZEd-gUbUlN-XGdw"/>
@@ -12691,9 +12699,11 @@ If recipient is a pharmacy, Pharmacy is required.</body>
           <details xmi:id="_kJZLYUQMEeC7BZCLURhbHQ" key="Request"/>
         </eAnnotations>
         <ownedComment xmi:id="_6Ew5AIksEd-pZLs28ekBmw" annotatedElement="_fxed8E49Ed-G-pSkcIGh3w">
-          <body>This transaction is sent from the resident source system to parties that need to be aware of these census changes.  
-
-Designates type and description of census message – Admit, Discharge, Change. Used when a ReturnReceipt is requested.</body>
+          <body>This transaction is sent from the resident source system to parties that need to be aware of these census changes.  &#xD;
+&#xD;
+Designates type and description of census message – Admit, Discharge, Change. Used when a ReturnReceipt is requested.&#xD;
+&#xD;
+When values D3 (Discharge – Return Anticipated), D4 (Discharge Other), LT (Therapeutic Leave of Absence) and LG (Hospital Leave of Absence) are used, Anticipated Patient Return Date/Time is used. When populated, indicates the date and time of the resident’s anticipated return to the facility.</body>
         </ownedComment>
         <generalization xmi:id="_kbf9EE49Ed-G-pSkcIGh3w" general="_e1AxgDD4Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_fxed8U49Ed-G-pSkcIGh3w" name="MessageRequestCode" visibility="public">
@@ -16071,7 +16081,9 @@ In any transaction that a reference number assigned by the prescribing system is
         </ownedAttribute>
         <ownedAttribute xmi:id="_nilvMWHYEd-Xe4OIcNINMg" name="Census" visibility="public" type="_fxed8E49Ed-G-pSkcIGh3w" aggregation="composite" association="_nilvMGHYEd-Xe4OIcNINMg">
           <ownedComment xmi:id="_8BB8IIlSEd-pZLs28ekBmw" annotatedElement="_nilvMWHYEd-Xe4OIcNINMg">
-            <body>This transaction is sent from the resident source system to parties that need to be aware of these census changes.    </body>
+            <body>This transaction is sent from the resident source system to parties that need to be aware of these census changes.&#xD;
+&#xD;
+For a Change Transaction, the patient demographic and coverage information sent should be all information known, not just the changed information.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nilvM2HYEd-Xe4OIcNINMg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nilvMmHYEd-Xe4OIcNINMg" value="1"/>
@@ -17589,6 +17601,9 @@ In any transaction that a reference number assigned by the prescribing system is
           <details xmi:id="_cYf6MGWaEd-bmP0HuKmipA" key="Abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_oustEWHEEd-Xe4OIcNINMg" name="MessageRequestCode" visibility="public">
+          <ownedComment xmi:id="_94kPwIj3EeGNMvTpK_CjlQ" annotatedElement="_oustEWHEEd-Xe4OIcNINMg">
+            <body>For Long Term Care (LTC) Medication Change Process (Prescriber initiated CHANGE Request,) the NEWRX and the CANCEL will use this field to indicate the level of the change.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oustEmHEEd-Xe4OIcNINMg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustE2HEEd-Xe4OIcNINMg"/>
@@ -17611,12 +17626,15 @@ all other values = no return receipt requested.</body>
         </ownedAttribute>
         <ownedAttribute xmi:id="_oustHGHEEd-Xe4OIcNINMg" name="FollowUpRequest" type="_4DJ8YDD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_oustHWHEEd-Xe4OIcNINMg" annotatedElement="_oustHGHEEd-Xe4OIcNINMg">
-            <body>Indicator to allow pharmacies to tell prescribers that this is a follow-up RefillRequest or RxChangeRequest transaction. The field is not sent on an original request.</body>
+            <body>Indicator to allow pharmacies to tell prescribers that this is a follow-up Refill Request or Change Request transaction (when the prescriber has not responded to the first Refill Request or first Change Request transaction in a reasonable amount of time). The field is not sent on an original request.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oustHmHEEd-Xe4OIcNINMg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oustH2HEEd-Xe4OIcNINMg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_37eNkGNWEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
+          <ownedComment xmi:id="_PTWEkIj4EeGNMvTpK_CjlQ" annotatedElement="_37eNkGNWEd-ODMSOo4sPFQ">
+            <body>Used when the prescriber wishes to notify the pharmacy to no longer continue dispensing any open refills on an active prescription or to cancel a prescription that has not yet been dispensed.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vJu1sWNXEd-ODMSOo4sPFQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vJu1sGNXEd-ODMSOo4sPFQ"/>
@@ -17763,6 +17781,9 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <details xmi:id="_wqgeAWWeEd-bmP0HuKmipA" key="Abstract"/>
         </eAnnotations>
         <ownedAttribute xmi:id="_6Wj902REEd-ODMSOo4sPFQ" name="MessageRequestCode" visibility="public">
+          <ownedComment xmi:id="_A-8x4Ij4EeGNMvTpK_CjlQ" annotatedElement="_6Wj902REEd-ODMSOo4sPFQ">
+            <body>For Long Term Care (LTC) Medication Change Process (Prescriber initiated CHANGE Request,) the NEWRX and the CANCEL will use this field to indicate the level of the change.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_hyk8wCxAEd-8mcmtGejV_Q?ecl/ecl/MessageFunctionCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Wj91GREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Wj91WREEd-ODMSOo4sPFQ"/>
@@ -17782,6 +17803,9 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EnFA02REEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_6Wj90GREEd-ODMSOo4sPFQ" name="ChangeOfPrescriptionStatusFlag" visibility="public">
+          <ownedComment xmi:id="_M5ssoIj4EeGNMvTpK_CjlQ" annotatedElement="_6Wj90GREEd-ODMSOo4sPFQ">
+            <body>Used when the prescriber wishes to notify the pharmacy to no longer continue dispensing any open refills on an active prescription or to cancel a prescription that has not yet been dispensed.</body>
+          </ownedComment>
           <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_g9hkECxAEd-8mcmtGejV_Q?ecl/ecl/ChangeOfPrescriptionStatusCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Wj90WREEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Wj90mREEd-ODMSOo4sPFQ"/>
@@ -19709,6 +19733,9 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BGCx-3pcEd-WhYpqDne-kg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_BGCx_HpcEd-WhYpqDne-kg" name="ApprovedWithChanges" visibility="public" type="_f9yNkGWUEd-bmP0HuKmipA" aggregation="composite" association="_BGCx_3pcEd-WhYpqDne-kg">
+          <ownedComment xmi:id="_dy0bUIj3EeGNMvTpK_CjlQ" annotatedElement="_BGCx_HpcEd-WhYpqDne-kg">
+            <body>Approved with changes cannot be utilized for a Cancel Response.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BGCx_XpcEd-WhYpqDne-kg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BGCx_npcEd-WhYpqDne-kg"/>
         </ownedAttribute>
@@ -23032,14 +23059,14 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_4mU68TD1Ed-8rpqfOAePKg" base_Property="_4mU67zD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU69jD1Ed-8rpqfOAePKg" base_Property="_4mU69DD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU6-zD1Ed-8rpqfOAePKg" base_Property="_4mU6-TD1Ed-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
+  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="2012031" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="2012031" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="2012031" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="2012031" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -23113,7 +23140,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="2012031" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAmHEEd-Xe4OIcNINMg" base_Comment="_oustHWHEEd-Xe4OIcNINMg"/>
@@ -24132,7 +24159,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:GlobalProperty xmi:id="_Bv0UXYqaEd-pZLs28ekBmw" base_Class="_Bv0UUIqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_Bv0UXoqaEd-pZLs28ekBmw" base_Property="_Bv0UUYqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_V59SYYqaEd-pZLs28ekBmw" base_Property="_V59SYIqaEd-pZLs28ekBmw"/>
-  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="NCPDPv2011NovemberBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
+  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="2012031" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
   <xsd:GlobalElement xmi:id="_P3rT8YqnEd-pZLs28ekBmw" base_Property="_P3rT8IqnEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0uuYkYrFEd-urZQZ08VCKQ" base_Comment="_0uuYkIrFEd-urZQZ08VCKQ"/>
   <Default:Documentation xmi:id="_7k0GoIrFEd-urZQZ08VCKQ" base_Comment="_7kqVoIrFEd-urZQZ08VCKQ"/>
@@ -24784,4 +24811,12 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_MEuEsBrUEeG8ba2CG6GyMg" base_Comment="_MErBYBrUEeG8ba2CG6GyMg"/>
   <Default:Documentation xmi:id="_jUTJsBrUEeG8ba2CG6GyMg" base_Comment="_jUQGYBrUEeG8ba2CG6GyMg"/>
   <Default:Documentation xmi:id="_zdpCgG0rEeGhJo0rNzUrZw" base_Comment="_zckrgG0rEeGhJo0rNzUrZw"/>
+  <Default:Documentation xmi:id="_d0Ip8Ij3EeGNMvTpK_CjlQ" base_Comment="_dy0bUIj3EeGNMvTpK_CjlQ"/>
+  <Default:Documentation xmi:id="_94q9cIj3EeGNMvTpK_CjlQ" base_Comment="_94kPwIj3EeGNMvTpK_CjlQ"/>
+  <Default:Documentation xmi:id="_A_BqYIj4EeGNMvTpK_CjlQ" base_Comment="_A-8x4Ij4EeGNMvTpK_CjlQ"/>
+  <Default:Documentation xmi:id="_DDy-gIj4EeGNMvTpK_CjlQ" base_Comment="_DDs34Ij4EeGNMvTpK_CjlQ"/>
+  <Default:Documentation xmi:id="_FHZN8Ij4EeGNMvTpK_CjlQ" base_Comment="_FHTHUIj4EeGNMvTpK_CjlQ"/>
+  <Default:Documentation xmi:id="_M5xlIIj4EeGNMvTpK_CjlQ" base_Comment="_M5ssoIj4EeGNMvTpK_CjlQ"/>
+  <Default:Documentation xmi:id="_PTcyQIj4EeGNMvTpK_CjlQ" base_Comment="_PTWEkIj4EeGNMvTpK_CjlQ"/>
+  <xsd:Schema xmi:id="_DZaXQIj6EeGNMvTpK_CjlQ" base_Package="_3oeygDD1Ed-8rpqfOAePKg" version="2012031"/>
 </xmi:XMI>
