@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:orgncpdpecl="http:///schemas/orgncpdpecl/_hc7EcMTHEd6aH9xZ64tGwg/15" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmlns:xsd="http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA http:///schemas/orgncpdpecl/_hc7EcMTHEd6aH9xZ64tGwg/15 pathmap://ORG_NCPDP_UML/ECL.epx#_hc7EccTHEd6aH9xZ64tGwg?org.ncpdp.ecl/orgncpdpecl? http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3 pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:orgncpdpecl="http:///schemas/orgncpdpecl/_hc7EcMTHEd6aH9xZ64tGwg/15" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmlns:xsd="http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA http:///schemas/orgncpdpecl/_hc7EcMTHEd6aH9xZ64tGwg/15 file:/C:/Users/tcheng/.eclipse/ibm.software.delivery.platform_8.0.0_302669428/plugins/ECL.epx#_hc7EccTHEd6aH9xZ64tGwg?org.ncpdp.ecl/orgncpdpecl? http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3 pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw">
   <uml:Model xmi:id="_cU8ZYZ44Ed6wn6lcMWl-9w" name="ecl">
     <eAnnotations xmi:id="_cU8ZYp44Ed6wn6lcMWl-9w" source="uml2.diagrams"/>
     <packageImport xmi:id="_cU8ZZZ44Ed6wn6lcMWl-9w">
@@ -14567,21 +14567,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <body>Code qualifying the Diagnosis Code</body>
         </ownedComment>
         <generalization xmi:id="_go_l4It0Ed-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="_4qMYIBEvEeGdS8kEviK9tA" name="E" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_4qMYIREvEeGdS8kEviK9tA" annotatedElement="_4qMYIBEvEeGdS8kEviK9tA">
-            <body>Micromedex/Medical Economics – a code list developed by this company</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_4qM_MBEvEeGdS8kEviK9tA" name="F" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_4qM_MREvEeGdS8kEviK9tA" annotatedElement="_4qM_MBEvEeGdS8kEviK9tA">
-            <body>First DataBank – a code list developed by this company</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_4qNmQBEvEeGdS8kEviK9tA" name="M" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_4qNmQREvEeGdS8kEviK9tA" annotatedElement="_4qNmQBEvEeGdS8kEviK9tA">
-            <body>Medi-Span Product Line - a code list developed by this company </body>
-          </ownedComment>
-        </ownedLiteral>
         <ownedLiteral xmi:id="__d95gIkEEd-pZLs28ekBmw" name="ABF" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_d4W_YIkFEd-pZLs28ekBmw" annotatedElement="__d95gIkEEd-pZLs28ekBmw">
             <body>International Classification of Diseases-10- Clinical Modifications (ICD-10-CM) Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.  </body>
@@ -14590,6 +14575,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedLiteral xmi:id="__jB_sIkEEd-pZLs28ekBmw" name="DX" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_aiX7AIkFEd-pZLs28ekBmw" annotatedElement="__jB_sIkEEd-pZLs28ekBmw">
             <body>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_oo81UJ_KEeGied0FMeK3NA" name="LD" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_yqZsIJ_KEeGied0FMeK3NA" annotatedElement="_oo81UJ_KEeGied0FMeK3NA">
+            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT)&#xD;
+SNOMED CT® terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct/</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -14606,6 +14597,12 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedLiteral xmi:id="_SEczQFLdEd-wEdo_Dk3J9g" name="DX" classifier="_7aQ6UFLcEd-wEdo_Dk3J9g">
           <ownedComment xmi:id="_QGWPAIX6Ed-Vw-EcYlO-zw" annotatedElement="_SEczQFLdEd-wEdo_Dk3J9g">
             <body>International Classification of Diseases-9- Clinical Modifications-Diagnosis (ICD-9-CM-Diagnosis) Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_5vNLoJ_KEeGied0FMeK3NA" name="LD" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
+          <ownedComment xmi:id="_5vNLoZ_KEeGied0FMeK3NA" annotatedElement="_5vNLoJ_KEeGied0FMeK3NA">
+            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT)&#xD;
+SNOMED CT® terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct/</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -15160,11 +15157,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedLiteral xmi:id="_iYUbrFOnEd-wEdo_Dk3J9g" name="11" classifier="_htqAgSxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_iYUbrVOnEd-wEdo_Dk3J9g">
             <body>National Pharmaceutical Product Interface Code (NAPPI)</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_iYUbrlOnEd-wEdo_Dk3J9g" name="22" classifier="_htqAgSxAEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_iYUbr1OnEd-wEdo_Dk3J9g">
-            <body>Medi-Span Product Line Diagnosis Code</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_iYUbsFOnEd-wEdo_Dk3J9g" name="28" classifier="_htqAgSxAEd-8mcmtGejV_Q">
@@ -17621,6 +17613,11 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>Unable to send Response in Format Requested.</body>
           </ownedComment>
         </ownedLiteral>
+        <ownedLiteral xmi:id="_YNlc0J_PEeGied0FMeK3NA" name="BE" classifier="_AfO38Gj1Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_claYsJ_PEeGied0FMeK3NA" annotatedElement="_YNlc0J_PEeGied0FMeK3NA">
+            <body>Medication denied at patient request</body>
+          </ownedComment>
+        </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_goFcAGj7Ed-Pd7zqA0IwbQ" name="TerminologyQualifierCode" visibility="private">
         <ownedComment xmi:id="_goFcAWj7Ed-Pd7zqA0IwbQ" annotatedElement="_goFcAGj7Ed-Pd7zqA0IwbQ">
@@ -17635,9 +17632,10 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <body>Terminologies contains the current collection of identified Terminologies or Vocabularies used to qualify coded values with the NCPDP standard</body>
         </ownedComment>
         <generalization xmi:id="_Qv02smmnEd-rC41nbGoKjA" general="_USTewCx5Ed-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="_Qv02wWmnEd-rC41nbGoKjA" name="LD" classifier="_Qv02sGmnEd-rC41nbGoKjA">
-          <ownedComment xmi:id="_Qv02wmmnEd-rC41nbGoKjA" annotatedElement="_Qv02wWmnEd-rC41nbGoKjA">
-            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)</body>
+        <ownedLiteral xmi:id="_Qv02xWmnEd-rC41nbGoKjA" name="ABF" classifier="_Qv02sGmnEd-rC41nbGoKjA">
+          <ownedComment xmi:id="_Qv02xmmnEd-rC41nbGoKjA" annotatedElement="_Qv02xWmnEd-rC41nbGoKjA">
+            <body>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification
+(ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:id="_Qv02w2mnEd-rC41nbGoKjA" name="DX" classifier="_Qv02sGmnEd-rC41nbGoKjA">
@@ -17646,10 +17644,10 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
 (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:id="_Qv02xWmnEd-rC41nbGoKjA" name="ABF" classifier="_Qv02sGmnEd-rC41nbGoKjA">
-          <ownedComment xmi:id="_Qv02xmmnEd-rC41nbGoKjA" annotatedElement="_Qv02xWmnEd-rC41nbGoKjA">
-            <body>International Classification of Diseases-1Ø- Clinical Modifications (ICD-1Ø-CM) Code indicating that the following information is a diagnosis as defined by ICD-1Ø-CM. As of January 1, 1999, the ICD-1Ø is used to code and classify mortality data from death certificates. The International Classification of Diseases, 1Øth Revision, Clinical Modification
-(ICD-9-CM)is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.</body>
+        <ownedLiteral xmi:id="_Qv02wWmnEd-rC41nbGoKjA" name="LD" classifier="_Qv02sGmnEd-rC41nbGoKjA">
+          <ownedComment xmi:id="_Qv02wmmnEd-rC41nbGoKjA" annotatedElement="_Qv02wWmnEd-rC41nbGoKjA">
+            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT)&#xD;
+SNOMED CT® terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct/</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -18098,9 +18096,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
     </profileApplication>
     <profileApplication xmi:id="_78qeMMS9Ed6aH9xZ64tGwg">
       <eAnnotations xmi:id="_78qeMcS9Ed6aH9xZ64tGwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="pathmap://ORG_NCPDP_UML/ECL.epx#_hc7EccTHEd6aH9xZ64tGwg?org.ncpdp.ecl/orgncpdpecl?"/>
+        <references xmi:type="ecore:EPackage" href="file:/C:/Users/tcheng/.eclipse/ibm.software.delivery.platform_8.0.0_302669428/plugins/ECL.epx#_hc7EccTHEd6aH9xZ64tGwg?org.ncpdp.ecl/orgncpdpecl?"/>
       </eAnnotations>
-      <appliedProfile href="pathmap://ORG_NCPDP_UML/ECL.epx#_xY-HsIKrEd6X5K246ekMig?org.ncpdp.ecl?"/>
+      <appliedProfile href="file:/C:/Users/tcheng/.eclipse/ibm.software.delivery.platform_8.0.0_302669428/plugins/ECL.epx#_xY-HsIKrEd6X5K246ekMig?org.ncpdp.ecl?"/>
     </profileApplication>
     <profileApplication xmi:id="_oBWP4BHYEd-AKYVvbvSUVA">
       <eAnnotations xmi:id="_oBWP4RHYEd-AKYVvbvSUVA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -21545,7 +21543,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_iYUb2VOnEd-wEdo_Dk3J9g" base_Comment="_iYUbqVOnEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_iYUb2lOnEd-wEdo_Dk3J9g" base_Comment="_iYUbq1OnEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_iYUb21OnEd-wEdo_Dk3J9g" base_Comment="_iYUbrVOnEd-wEdo_Dk3J9g"/>
-  <Default:Documentation xmi:id="_iYUb3FOnEd-wEdo_Dk3J9g" base_Comment="_iYUbr1OnEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_iYUb3VOnEd-wEdo_Dk3J9g" base_Comment="_iYUbsVOnEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_iYUb3lOnEd-wEdo_Dk3J9g" base_Comment="_iYUbs1OnEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_iYUb31OnEd-wEdo_Dk3J9g" base_Comment="_iYUbtVOnEd-wEdo_Dk3J9g"/>
@@ -22043,9 +22040,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <xsd:Restriction xmi:id="_TqQgku_QEeC1YI2Z3iJATw" base_Generalization="_Tp8-ku_QEeC1YI2Z3iJATw"/>
   <Default:Documentation xmi:id="_TqQgk-_QEeC1YI2Z3iJATw" base_Comment="_Tp8-lO_QEeC1YI2Z3iJATw"/>
   <Default:Documentation xmi:id="_TqQglO_QEeC1YI2Z3iJATw" base_Comment="_Tp8-lu_QEeC1YI2Z3iJATw"/>
-  <Default:Documentation xmi:id="_4qONUBEvEeGdS8kEviK9tA" base_Comment="_4qMYIREvEeGdS8kEviK9tA"/>
-  <Default:Documentation xmi:id="_4qO0YBEvEeGdS8kEviK9tA" base_Comment="_4qM_MREvEeGdS8kEviK9tA"/>
-  <Default:Documentation xmi:id="_4qO0YREvEeGdS8kEviK9tA" base_Comment="_4qNmQREvEeGdS8kEviK9tA"/>
   <Default:Documentation xmi:id="_ZJtKoEx8EeGUFOEB94CEXg" base_Comment="_ZI-x4Ex8EeGUFOEB94CEXg"/>
   <Default:Documentation xmi:id="_c7GYoEx8EeGUFOEB94CEXg" base_Comment="_c6_q8Ex8EeGUFOEB94CEXg"/>
   <Default:Documentation xmi:id="_pxajwEx8EeGUFOEB94CEXg" base_Comment="_pxT2EEx8EeGUFOEB94CEXg"/>
@@ -22057,4 +22051,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_I_2JsH3VEeGozIODH_vY1Q" base_Comment="_I_0UgX3VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_I_5NAH3VEeGozIODH_vY1Q" base_Comment="_I_2ww33VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_I_7CMH3VEeGozIODH_vY1Q" base_Comment="_I_5NAX3VEeGozIODH_vY1Q"/>
+  <Default:Documentation xmi:id="_yqcvcJ_KEeGied0FMeK3NA" base_Comment="_yqZsIJ_KEeGied0FMeK3NA"/>
+  <Default:Documentation xmi:id="_5vPn4J_KEeGied0FMeK3NA" base_Comment="_5vNLoZ_KEeGied0FMeK3NA"/>
+  <Default:Documentation xmi:id="_clfRMJ_PEeGied0FMeK3NA" base_Comment="_claYsJ_PEeGied0FMeK3NA"/>
 </xmi:XMI>
