@@ -384,10 +384,11 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4OfCoTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OfCojD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4OfCozD1Ed-8rpqfOAePKg" name="ItemNumber" type="_slfdQGi7Ed-Pd7zqA0IwbQ">
+        <ownedAttribute xmi:id="_4OfCozD1Ed-8rpqfOAePKg" name="ItemNumber">
           <ownedComment xmi:id="_4OfCpDD1Ed-8rpqfOAePKg" annotatedElement="_4OfCozD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_QviC8IutEd-jMZ0z1K165w?ecl/ecl/ProductQualifiersCodeExtended?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4OoMgzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OoMhDD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
