@@ -437,6 +437,17 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  n1..10  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="n1..10">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="datatypes:n">
+      <xsd:maxLength value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  n1..11  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="n1..11">
@@ -502,6 +513,17 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:maxLength value="4"/>
     </xsd:restriction>
   </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  n1..8  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="n1..8">
+    <xsd:annotation>
+      <xsd:documentation>NCPDP Length Constrained Type</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="datatypes:n">
+      <xsd:maxLength value="8"/>
+    </xsd:restriction>
+  </xsd:simpleType>
   <!-- ================================================== -->
   <!-- =====  Complex Type Definitions  -->
   <!-- ================================================== -->
@@ -551,7 +573,13 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</xsd:documentation>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CommunicationNumbersType">
     <xsd:sequence>
-      <xsd:element maxOccurs="unbounded" name="Communication" type="datatypes:CommunicationType"/>
+      <xsd:element name="PrimaryTelephone" type="datatypes:PhoneType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Beeper" type="datatypes:PhoneType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ElectronicMail" type="datatypes:MailAddressType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Fax" type="datatypes:PhoneType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="HomeTelephone" type="datatypes:PhoneType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="WorkTelephone" type="datatypes:PhoneType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="OtherTelephone" type="datatypes:PhoneType"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1114,6 +1142,16 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PhoneType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PhoneType">
+    <xsd:sequence>
+      <xsd:element name="Number" type="datatypes:n1..10"/>
+      <xsd:element minOccurs="0" name="Extension" type="datatypes:n1..8"/>
+      <xsd:element minOccurs="0" name="SupportsSMS" type="ecl:BooleanCode"/>
+    </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  PriorAuthorizationID  -->

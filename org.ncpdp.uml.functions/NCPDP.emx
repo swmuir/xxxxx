@@ -294,9 +294,9 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ZNr8TD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ZNr8jD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4ZNr9TD1Ed-8rpqfOAePKg" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_4ZNr-TD1Ed-8rpqfOAePKg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ZNr9zD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ZNr-DD1Ed-8rpqfOAePKg"/>
+        <ownedAttribute xmi:id="_vPXN8KplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V9OKkKqBEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V9NjgKqBEeGs5dPxXb8s1w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4OfClzD1Ed-8rpqfOAePKg" name="CompoundIngredient">
@@ -589,15 +589,6 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_4KKjUzD1Ed-8rpqfOAePKg" value="[\+\-]?[0-9][0-9]?[0-9]?[0-9]?"/>
           </ownedAttribute>
         </nestedClassifier>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4FPnFzD1Ed-8rpqfOAePKg" name="CommunicationNumbersType">
-        <ownedAttribute xmi:id="_4FPnGDD1Ed-8rpqfOAePKg" name="Communication" type="_4FPnGzD1Ed-8rpqfOAePKg" aggregation="composite" association="_4FPnLjD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_4FPnGTD1Ed-8rpqfOAePKg">
-            <body></body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FPnLDD1Ed-8rpqfOAePKg" value="*"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnLTD1Ed-8rpqfOAePKg" value="1"/>
-        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4FPnGzD1Ed-8rpqfOAePKg" name="CommunicationType">
         <ownedAttribute xmi:id="_4FPnHDD1Ed-8rpqfOAePKg" name="Number" type="_4dr8RTD1Ed-8rpqfOAePKg">
@@ -1072,9 +1063,6 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dYZa005KEd-lRt4mSex0Qg"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_4FPnLjD1Ed-8rpqfOAePKg" memberEnd="_4FPnLzD1Ed-8rpqfOAePKg _4FPnGDD1Ed-8rpqfOAePKg">
-        <ownedEnd xmi:id="_4FPnLzD1Ed-8rpqfOAePKg" type="_4FPnFzD1Ed-8rpqfOAePKg" association="_4FPnLjD1Ed-8rpqfOAePKg"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_cerm8DEyEd-8rpqfOAePKg" name="DrugDBCode">
         <ownedComment xmi:id="_v0eCwonNEd-pZLs28ekBmw" annotatedElement="_cerm8DEyEd-8rpqfOAePKg">
           <body>Coded Drug Structure used in Medication from alternative source databases</body>
@@ -1322,9 +1310,6 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4ZNr8zD1Ed-8rpqfOAePKg" memberEnd="_4ZNr9DD1Ed-8rpqfOAePKg _4ZNr7zD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4ZNr9DD1Ed-8rpqfOAePKg" type="_4ZNr4TD1Ed-8rpqfOAePKg" association="_4ZNr8zD1Ed-8rpqfOAePKg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_4ZNr-TD1Ed-8rpqfOAePKg" memberEnd="_4ZNr-jD1Ed-8rpqfOAePKg _4ZNr9TD1Ed-8rpqfOAePKg">
-        <ownedEnd xmi:id="_4ZNr-jD1Ed-8rpqfOAePKg" type="_4ZNr4TD1Ed-8rpqfOAePKg" association="_4ZNr-TD1Ed-8rpqfOAePKg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4gNr2DD1Ed-8rpqfOAePKg" memberEnd="_4gNr2TD1Ed-8rpqfOAePKg _4gEh0TD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4gNr2TD1Ed-8rpqfOAePKg" type="_4gEh0DD1Ed-8rpqfOAePKg" association="_4gNr2DD1Ed-8rpqfOAePKg"/>
@@ -3412,6 +3397,65 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_2z_cQKnREeGs5dPxXb8s1w" value="40"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WK-noKpeEeGs5dPxXb8s1w" name="CommunicationNumbersType">
+        <ownedAttribute xmi:id="_bJqIIKpeEeGs5dPxXb8s1w" name="PrimaryTelephone" visibility="public" type="_GzmYgKpfEeGs5dPxXb8s1w"/>
+        <ownedAttribute xmi:id="_eYxvgKpeEeGs5dPxXb8s1w" name="Beeper" visibility="public" type="_GzmYgKpfEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x445IKpeEeGs5dPxXb8s1w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x44SEKpeEeGs5dPxXb8s1w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_gpf08KpeEeGs5dPxXb8s1w" name="ElectronicMail" visibility="public" type="_4CRLiDD1Ed-8rpqfOAePKg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ycVkcapeEeGs5dPxXb8s1w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ycVkcKpeEeGs5dPxXb8s1w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_il7FYKpeEeGs5dPxXb8s1w" name="Fax" visibility="public" type="_GzmYgKpfEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0S-V8KpeEeGs5dPxXb8s1w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0S9u4KpeEeGs5dPxXb8s1w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_kpYK4KpeEeGs5dPxXb8s1w" name="HomeTelephone" visibility="public" type="_GzmYgKpfEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_09n1cKpeEeGs5dPxXb8s1w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_09nOYKpeEeGs5dPxXb8s1w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mdPVMKpeEeGs5dPxXb8s1w" name="WorkTelephone" visibility="public" type="_GzmYgKpfEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Uut4apeEeGs5dPxXb8s1w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Uut4KpeEeGs5dPxXb8s1w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_qj62sKpeEeGs5dPxXb8s1w" name="OtherTelephone" visibility="public" type="_GzmYgKpfEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19syYapeEeGs5dPxXb8s1w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19syYKpeEeGs5dPxXb8s1w"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GzmYgKpfEeGs5dPxXb8s1w" name="PhoneType">
+        <ownedAttribute xmi:id="_IXYfcKpfEeGs5dPxXb8s1w" name="Number" visibility="public" type="_V0Y3IKpfEeGs5dPxXb8s1w"/>
+        <ownedAttribute xmi:id="_KBURsKpfEeGs5dPxXb8s1w" name="Extension" visibility="public" type="_geqBcKpfEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cDEKcapgEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cDEKcKpgEeGs5dPxXb8s1w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MTlPQKpfEeGs5dPxXb8s1w" name="SupportsSMS" visibility="public">
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cefiMapgEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cefiMKpgEeGs5dPxXb8s1w"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_V0Y3IKpfEeGs5dPxXb8s1w" name="n1..10">
+        <ownedComment xmi:id="_V0Y3IapfEeGs5dPxXb8s1w" annotatedElement="_V0Y3IKpfEeGs5dPxXb8s1w">
+          <body>NCPDP Length Constrained Type</body>
+        </ownedComment>
+        <generalization xmi:id="_V0Y3IqpfEeGs5dPxXb8s1w" general="_4IE4pTD1Ed-8rpqfOAePKg"/>
+        <ownedAttribute xmi:id="_V0Y3I6pfEeGs5dPxXb8s1w" name="maxLength">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_YlXJ8KpfEeGs5dPxXb8s1w" value="10"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_geqBcKpfEeGs5dPxXb8s1w" name="n1..8">
+        <ownedComment xmi:id="_geqBcapfEeGs5dPxXb8s1w" annotatedElement="_geqBcKpfEeGs5dPxXb8s1w">
+          <body>NCPDP Length Constrained Type</body>
+        </ownedComment>
+        <generalization xmi:id="_geqBcqpfEeGs5dPxXb8s1w" general="_4IE4pTD1Ed-8rpqfOAePKg"/>
+        <ownedAttribute xmi:id="_geqBc6pfEeGs5dPxXb8s1w" name="maxLength">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_jtvMkKpfEeGs5dPxXb8s1w" value="8"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_MbThMDD2Ed-8rpqfOAePKg" name="structures">
       <eAnnotations xmi:id="_MbThMTD2Ed-8rpqfOAePKg" source="uml2.diagrams">
@@ -4592,8 +4636,8 @@ Skip Dose.</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JAMH8H3VEeGozIODH_vY1Q" name="Sig">
         <ownedAttribute xmi:id="_JAMH8X3VEeGozIODH_vY1Q" name="SigText" type="_HnQ2QKUeEeGltt3gcPB0-Q">
-          <ownedComment xmi:id="_JAMH8n3VEeGozIODH_vY1Q">
-            <body>SigText contains either 1) completely free text with no corresponding structured content OR 2) This is a generated structured English version of the codified sig content that follows the sig grammar in the XML. The SigText should have no more and no less then what is in the structured Sig content. &#xD;
+          <ownedComment xmi:id="_JAMH8n3VEeGozIODH_vY1Q" annotatedElement="_JAMH8X3VEeGozIODH_vY1Q">
+            <body>SigText contains either 1) completely free text with no corresponding structured content OR 2) This is a generated structured English version of the codified sig content that follows the sig grammar in the XML. The SigText should have no more and no less then what is in the structured Sig content.&#xD;
 If you can not directly generate the SigText from the Structured Sig, do not send the structured Sig.&#xD;
 If the structured Sig exists, the SigText must be generated directly from Structured Sig. If this is not possible for whatever reason, do not send the structured Sig.</body>
           </ownedComment>
@@ -4766,9 +4810,6 @@ If the structured Sig exists, the SigText must be generated directly from Struct
           </ownedAttribute>
         </nestedClassifier>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_hzYXYDEJEd-8rpqfOAePKg" memberEnd="_hzYXYTEJEd-8rpqfOAePKg _hzYXYzEJEd-8rpqfOAePKg">
-        <ownedEnd xmi:id="_hzYXYTEJEd-8rpqfOAePKg" type="_4PhkdDD1Ed-8rpqfOAePKg" association="_hzYXYDEJEd-8rpqfOAePKg"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_jUryEDEJEd-8rpqfOAePKg" memberEnd="_jUryETEJEd-8rpqfOAePKg _jUryEzEJEd-8rpqfOAePKg">
         <ownedEnd xmi:id="_jUryETEJEd-8rpqfOAePKg" type="_4PhkdDD1Ed-8rpqfOAePKg" association="_jUryEDEJEd-8rpqfOAePKg"/>
       </packagedElement>
@@ -4846,12 +4887,12 @@ If the structured Sig exists, the SigText must be generated directly from Struct
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeAR1JLEd-gUbUlN-XGdw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeASFJLEd-gUbUlN-XGdw"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_RdeASVJLEd-gUbUlN-XGdw" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_RdnxIFJLEd-gUbUlN-XGdw">
-          <ownedComment xmi:id="_VyNEoInWEd-pZLs28ekBmw" annotatedElement="_RdeASVJLEd-gUbUlN-XGdw">
+        <ownedAttribute xmi:id="_HyJnQKpmEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_fKLM4KqCEeGs5dPxXb8s1w" annotatedElement="_HyJnQKpmEeGs5dPxXb8s1w">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeASlJLEd-gUbUlN-XGdw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdeAS1JLEd-gUbUlN-XGdw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aERTwapmEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aERTwKpmEeGs5dPxXb8s1w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_RdeATFJLEd-gUbUlN-XGdw" name="Consent">
           <ownedComment xmi:id="_VyNEoonWEd-pZLs28ekBmw" annotatedElement="_RdeATFJLEd-gUbUlN-XGdw">
@@ -4942,9 +4983,9 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_6xzjZ4Ed-o64UeGGH_dQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d_6xzzZ4Ed-o64UeGGH_dQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_d_6x0jZ4Ed-o64UeGGH_dQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_d_6x1jZ4Ed-o64UeGGH_dQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_6x1DZ4Ed-o64UeGGH_dQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d_6x1TZ4Ed-o64UeGGH_dQ"/>
+        <ownedAttribute xmi:id="_vWnXYKpjEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x6PKsKpjEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x6OjoKpjEeGs5dPxXb8s1w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4I-QdDD1Ed-8rpqfOAePKg" name="PrimaryDiagnosis">
@@ -5511,12 +5552,12 @@ Required No Known Allergies = “N” (No), meaning allergies are known and will
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jUryFDEJEd-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jUryFTEJEd-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_hzYXYzEJEd-8rpqfOAePKg" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_hzYXYDEJEd-8rpqfOAePKg">
-          <ownedComment xmi:id="_-UA74InVEd-pZLs28ekBmw" annotatedElement="_hzYXYzEJEd-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_IUnlsKpnEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_kuZqcKqCEeGs5dPxXb8s1w" annotatedElement="_IUnlsKpnEeGs5dPxXb8s1w">
             <body>For RxChangeRequest: The payer-based telephone number exchanged between the pharmacy and the prescriber is the prior authorization telephone number at the payer that the pharmacy may have knowledge of (rather than the payer’s phone number for member questions or billing questions etc at the payer).</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hzYXZDEJEd-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hzYXZTEJEd-8rpqfOAePKg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J6vO8apnEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J6vO8KpnEeGs5dPxXb8s1w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_sXyTdk4XEd-G-pSkcIGh3w" name="Consent">
           <ownedComment xmi:id="_VK0HAIkyEd-pZLs28ekBmw" annotatedElement="_sXyTdk4XEd-G-pSkcIGh3w">
@@ -5644,12 +5685,10 @@ The source of information is the ultimate source. </body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4T2DuDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4T2DuTD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4T2DvDD1Ed-8rpqfOAePKg" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_4T2DwDD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_IcWHsInfEd-pZLs28ekBmw" annotatedElement="_4T2DvDD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_-v9YkKpmEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_WYb1AKqDEeGs5dPxXb8s1w" annotatedElement="_-v9YkKpmEeGs5dPxXb8s1w">
             <body>See HistoryPrescriber for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4T2DvjD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4T2DvzD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4T2DyTD1Ed-8rpqfOAePKg" name="Supervisor">
@@ -5692,12 +5731,10 @@ Value SU</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4UJlsTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4UJlsjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4UJltTD1Ed-8rpqfOAePKg" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_4UJluTD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_3GQW4InkEd-pZLs28ekBmw" annotatedElement="_4UJltTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_o2UoQKplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_g_vK4KqDEeGs5dPxXb8s1w" annotatedElement="_o2UoQKplEeGs5dPxXb8s1w">
             <body>See OptionalSupervisor for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4UJltzD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4UJluDD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4TZX1DD1Ed-8rpqfOAePKg" name="Pharmacy">
@@ -5738,12 +5775,12 @@ Value SU</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TjI1TD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TjI1jD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4TjI2TD1Ed-8rpqfOAePKg" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_4TjI3TD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_golCMonfEd-pZLs28ekBmw" annotatedElement="_4TjI2TD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_BA3gsKpmEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_P1oPUKqDEeGs5dPxXb8s1w" annotatedElement="_BA3gsKpmEeGs5dPxXb8s1w">
             <body>See OptionalPharmacy for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TjI2zD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TjI3DD1Ed-8rpqfOAePKg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CvOf8apmEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CvOf8KpmEeGs5dPxXb8s1w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4RxAEjD1Ed-8rpqfOAePKg" name="PatientFull">
@@ -5779,9 +5816,9 @@ Note 2: If patient is homeless, the text “HOMELESS” should be put in the Str
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4RxALTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4RxALjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4RxAMTD1Ed-8rpqfOAePKg" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_4RxANTD1Ed-8rpqfOAePKg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4RxAMzD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4RxANDD1Ed-8rpqfOAePKg"/>
+        <ownedAttribute xmi:id="_qNSlwKpmEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r2n7EKpmEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r2nUAKpmEeGs5dPxXb8s1w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4R6KATD1Ed-8rpqfOAePKg" name="PatientLocation" type="_4HebpjD1Ed-8rpqfOAePKg" aggregation="composite" association="_4R6KBTD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4R6KAzD1Ed-8rpqfOAePKg" value="1"/>
@@ -5848,26 +5885,17 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
       <packagedElement xmi:type="uml:Association" xmi:id="_4RxALzD1Ed-8rpqfOAePKg" memberEnd="_4RxAMDD1Ed-8rpqfOAePKg _4RxAKzD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4RxAMDD1Ed-8rpqfOAePKg" type="_4RxAEjD1Ed-8rpqfOAePKg" association="_4RxALzD1Ed-8rpqfOAePKg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_4RxANTD1Ed-8rpqfOAePKg" memberEnd="_4R6KADD1Ed-8rpqfOAePKg _4RxAMTD1Ed-8rpqfOAePKg">
-        <ownedEnd xmi:id="_4R6KADD1Ed-8rpqfOAePKg" type="_4RxAEjD1Ed-8rpqfOAePKg" association="_4RxANTD1Ed-8rpqfOAePKg"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4TjI1zD1Ed-8rpqfOAePKg" memberEnd="_4TjI2DD1Ed-8rpqfOAePKg _4TjI0jD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4TjI2DD1Ed-8rpqfOAePKg" type="_4TZX1DD1Ed-8rpqfOAePKg" association="_4TjI1zD1Ed-8rpqfOAePKg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4TjIzDD1Ed-8rpqfOAePKg" memberEnd="_4TjIzTD1Ed-8rpqfOAePKg _4TjIyDD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4TjIzTD1Ed-8rpqfOAePKg" type="_4TZX1DD1Ed-8rpqfOAePKg" association="_4TjIzDD1Ed-8rpqfOAePKg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_4TjI3TD1Ed-8rpqfOAePKg" memberEnd="_4TjI3jD1Ed-8rpqfOAePKg _4TjI2TD1Ed-8rpqfOAePKg">
-        <ownedEnd xmi:id="_4TjI3jD1Ed-8rpqfOAePKg" type="_4TZX1DD1Ed-8rpqfOAePKg" association="_4TjI3TD1Ed-8rpqfOAePKg"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4T_0wTD1Ed-8rpqfOAePKg" memberEnd="_4T_0wjD1Ed-8rpqfOAePKg _4T_0vDD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4T_0wjD1Ed-8rpqfOAePKg" type="_4T2DyTD1Ed-8rpqfOAePKg" association="_4T_0wTD1Ed-8rpqfOAePKg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4UJlszD1Ed-8rpqfOAePKg" memberEnd="_4UJltDD1Ed-8rpqfOAePKg _4T_0yDD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4UJltDD1Ed-8rpqfOAePKg" type="_4T2DyTD1Ed-8rpqfOAePKg" association="_4UJlszD1Ed-8rpqfOAePKg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_4UJluTD1Ed-8rpqfOAePKg" memberEnd="_4UJlujD1Ed-8rpqfOAePKg _4UJltTD1Ed-8rpqfOAePKg">
-        <ownedEnd xmi:id="_4UJlujD1Ed-8rpqfOAePKg" type="_4T2DyTD1Ed-8rpqfOAePKg" association="_4UJluTD1Ed-8rpqfOAePKg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4T2DszD1Ed-8rpqfOAePKg" memberEnd="_4T2DtDD1Ed-8rpqfOAePKg _4Ts52DD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4T2DtDD1Ed-8rpqfOAePKg" type="_4TjI5jD1Ed-8rpqfOAePKg" association="_4T2DszD1Ed-8rpqfOAePKg"/>
@@ -5877,9 +5905,6 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4Ts51jD1Ed-8rpqfOAePKg" memberEnd="_4Ts51zD1Ed-8rpqfOAePKg _4Ts50TD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4Ts51zD1Ed-8rpqfOAePKg" type="_4TjI5jD1Ed-8rpqfOAePKg" association="_4Ts51jD1Ed-8rpqfOAePKg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_4T2DwDD1Ed-8rpqfOAePKg" memberEnd="_4T2DwTD1Ed-8rpqfOAePKg _4T2DvDD1Ed-8rpqfOAePKg">
-        <ownedEnd xmi:id="_4T2DwTD1Ed-8rpqfOAePKg" type="_4TjI5jD1Ed-8rpqfOAePKg" association="_4T2DwDD1Ed-8rpqfOAePKg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4i5MVTD1Ed-8rpqfOAePKg" memberEnd="_4i5MVjD1Ed-8rpqfOAePKg _4iwCgTD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4i5MVjD1Ed-8rpqfOAePKg" type="_4iwCejD1Ed-8rpqfOAePKg" association="_4i5MVTD1Ed-8rpqfOAePKg"/>
@@ -6055,9 +6080,6 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
       <packagedElement xmi:type="uml:Association" xmi:id="_d_6xxjZ4Ed-o64UeGGH_dQ" memberEnd="_d_6xxzZ4Ed-o64UeGGH_dQ _d_6xwjZ4Ed-o64UeGGH_dQ">
         <ownedEnd xmi:id="_d_6xxzZ4Ed-o64UeGGH_dQ" type="_d_xAwjZ4Ed-o64UeGGH_dQ" association="_d_6xxjZ4Ed-o64UeGGH_dQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_d_6x1jZ4Ed-o64UeGGH_dQ" memberEnd="_d_6x1zZ4Ed-o64UeGGH_dQ _d_6x0jZ4Ed-o64UeGGH_dQ">
-        <ownedEnd xmi:id="_d_6x1zZ4Ed-o64UeGGH_dQ" type="_d_xAwjZ4Ed-o64UeGGH_dQ" association="_d_6x1jZ4Ed-o64UeGGH_dQ"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_ypJdgDdSEd-wQf5UFCJMDw" memberEnd="_ypJdgTdSEd-wQf5UFCJMDw _ypJdhDdSEd-wQf5UFCJMDw">
         <ownedEnd xmi:id="_ypJdhDdSEd-wQf5UFCJMDw" name="" visibility="private" type="_4RxAEjD1Ed-8rpqfOAePKg" association="_ypJdgDdSEd-wQf5UFCJMDw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ypJdhjdSEd-wQf5UFCJMDw" value="1"/>
@@ -6094,10 +6116,7 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eRjEk0yCEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eRjEkkyCEd-G-pSkcIGh3w"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_fhH2EUyCEd-G-pSkcIGh3w" name="CommunicationNumbers" visibility="public" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_fhH2EEyCEd-G-pSkcIGh3w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fhH2E0yCEd-G-pSkcIGh3w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fhH2EkyCEd-G-pSkcIGh3w" value="1"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:id="_iNlZsKplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_eRjEkEyCEd-G-pSkcIGh3w" memberEnd="_eRjEkUyCEd-G-pSkcIGh3w _eRjElEyCEd-G-pSkcIGh3w">
         <ownedEnd xmi:id="_eRjElEyCEd-G-pSkcIGh3w" name="" visibility="private" type="_2pq7cEyBEd-G-pSkcIGh3w" association="_eRjEkEyCEd-G-pSkcIGh3w">
@@ -6109,12 +6128,6 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
         <ownedEnd xmi:id="_e3jUpEyCEd-G-pSkcIGh3w" name="" visibility="private" type="_2pq7cEyBEd-G-pSkcIGh3w" association="_e3jUoEyCEd-G-pSkcIGh3w">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e3jUpkyCEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e3jUpUyCEd-G-pSkcIGh3w" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_fhH2EEyCEd-G-pSkcIGh3w" memberEnd="_fhH2EUyCEd-G-pSkcIGh3w _fhH2FEyCEd-G-pSkcIGh3w">
-        <ownedEnd xmi:id="_fhH2FEyCEd-G-pSkcIGh3w" name="" visibility="private" type="_2pq7cEyBEd-G-pSkcIGh3w" association="_fhH2EEyCEd-G-pSkcIGh3w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fhH2FkyCEd-G-pSkcIGh3w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fhH2FUyCEd-G-pSkcIGh3w" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_3mF1YE4LEd-G-pSkcIGh3w" name="Patient">
@@ -6158,12 +6171,12 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mF1cU4LEd-G-pSkcIGh3w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mF1ck4LEd-G-pSkcIGh3w"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_3mF1c04LEd-G-pSkcIGh3w" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_3mPmZk4LEd-G-pSkcIGh3w">
-          <ownedComment xmi:id="_e9nlIInzEd-pZLs28ekBmw" annotatedElement="_3mF1c04LEd-G-pSkcIGh3w">
+        <ownedAttribute xmi:id="_IpQD0KplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_HspWAKqDEeGs5dPxXb8s1w" annotatedElement="_IpQD0KplEeGs5dPxXb8s1w">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mF1dE4LEd-G-pSkcIGh3w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mF1dU4LEd-G-pSkcIGh3w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k2enMapoEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k2enMKpoEeGs5dPxXb8s1w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3mF1dk4LEd-G-pSkcIGh3w" name="PatientLocation" type="_4HebpjD1Ed-8rpqfOAePKg" aggregation="composite" association="_3mPmZE4LEd-G-pSkcIGh3w">
           <ownedComment xmi:id="_e96gEYnzEd-pZLs28ekBmw" annotatedElement="_3mF1dk4LEd-G-pSkcIGh3w">
@@ -6277,12 +6290,10 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FWHFcVJOEd-gUbUlN-XGdw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FWHFclJOEd-gUbUlN-XGdw"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_FWHFc1JOEd-gUbUlN-XGdw" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_FWHFelJOEd-gUbUlN-XGdw">
-          <ownedComment xmi:id="_ekHQEonfEd-pZLs28ekBmw" annotatedElement="_FWHFc1JOEd-gUbUlN-XGdw">
+        <ownedAttribute xmi:id="_wAZz4KpmEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_7X-fYKqCEeGs5dPxXb8s1w" annotatedElement="_wAZz4KpmEeGs5dPxXb8s1w">
             <body>See OptionalPharmacy for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FWHFdFJOEd-gUbUlN-XGdw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FWHFdVJOEd-gUbUlN-XGdw" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_FG5gMGTPEd-M5IWg2-DxLQ" name="OptionalPharmacy">
@@ -6318,9 +6329,9 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FG5gQWTPEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FG5gQmTPEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_FG5gQ2TPEd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_FG5gSGTPEd-M5IWg2-DxLQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FG5gRGTPEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FG5gRWTPEd-M5IWg2-DxLQ"/>
+        <ownedAttribute xmi:id="_7JtgEKplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HCUlcKppEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HCT-YKppEeGs5dPxXb8s1w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_YZUMEGTPEd-M5IWg2-DxLQ" name="MandatoryAddressPharmacy">
@@ -6358,12 +6369,10 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YZUMImTPEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YZUMI2TPEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_YZUMJGTPEd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_YZUMK2TPEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_kbBZEonfEd-pZLs28ekBmw" annotatedElement="_YZUMJGTPEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_d6JZIKpmEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_yk9xoKqCEeGs5dPxXb8s1w" annotatedElement="_d6JZIKpmEeGs5dPxXb8s1w">
             <body>See OptionalPharmacy for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YZUMJWTPEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YZUMJmTPEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7GxpoGTPEd-M5IWg2-DxLQ" name="HistoryPrescriber">
@@ -6407,15 +6416,15 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
         </ownedAttribute>
         <ownedAttribute xmi:id="_7GxptWTPEd-M5IWg2-DxLQ" name="PrescriberAgent" type="_4E8sKjD1Ed-8rpqfOAePKg" aggregation="composite" association="_7G7aomTPEd-M5IWg2-DxLQ">
           <ownedComment xmi:id="_7GxptmTPEd-M5IWg2-DxLQ" annotatedElement="_7GxptWTPEd-M5IWg2-DxLQ">
-            <body>To identify the Designated Agent - use for transmitter/submitter name.  If a supervising prescriber name or id is required, use the supervisor element. This composite is to be used for the “PC” prescriber only.&#xD;
+            <body>To identify the Designated Agent - use for transmitter/submitter name.  If a supervising prescriber name or id is required, use the supervisor element. This composite is to be used for the “PC” prescriber only. &#xD;
 Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is mandatory if the sender of the message is not the actual prescriber referenced.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Gxpt2TPEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7GxpuGTPEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7GxpuWTPEd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_7GxpvmTPEd-M5IWg2-DxLQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7GxpumTPEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Gxpu2TPEd-M5IWg2-DxLQ"/>
+        <ownedAttribute xmi:id="_lZPn8KpmEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oR-IkKpmEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oR9hgKpmEeGs5dPxXb8s1w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_8KlQAGTPEd-M5IWg2-DxLQ" name="Prescriber">
@@ -6463,12 +6472,10 @@ Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8KlQF2TPEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8KlQGGTPEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_8KlQGWTPEd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_8KlQHmTPEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_Gp55sInfEd-pZLs28ekBmw" annotatedElement="_8KlQGWTPEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_6HZSAKpmEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_T57LMKqDEeGs5dPxXb8s1w" annotatedElement="_6HZSAKpmEeGs5dPxXb8s1w">
             <body>See HistoryPrescriber for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8KlQGmTPEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8KlQG2TPEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_9eK-0GTPEd-M5IWg2-DxLQ" name="MandatoryPrescriber">
@@ -6516,12 +6523,10 @@ Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9eK-52TPEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9eK-6GTPEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_9eK-6WTPEd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_9eK-7mTPEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_Cvt8EInfEd-pZLs28ekBmw" annotatedElement="_9eK-6WTPEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_RAL5kKplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="__6BuQKqCEeGs5dPxXb8s1w" annotatedElement="_RAL5kKplEeGs5dPxXb8s1w">
             <body>See HistoryPrescriber for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9eK-6mTPEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9eK-62TPEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_93D_8GTPEd-M5IWg2-DxLQ" name="OptionalPrescriber">
@@ -6569,12 +6574,12 @@ Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_93EAB2TPEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_93EACGTPEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_93EACWTPEd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_93EADmTPEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_EjzI0InfEd-pZLs28ekBmw" annotatedElement="_93EACWTPEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_AIyUEKpkEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_E3xaoKqDEeGs5dPxXb8s1w" annotatedElement="_AIyUEKpkEeGs5dPxXb8s1w">
             <body>See HistoryPrescriber for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_93EACmTPEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_93EAC2TPEd-M5IWg2-DxLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CKlzwKpkEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CKlMsKpkEeGs5dPxXb8s1w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_XNYSgGTREd-M5IWg2-DxLQ" name="SupervisorOptional">
@@ -6613,10 +6618,7 @@ Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XNYSk2TREd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XNYSlGTREd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_XNYSlWTREd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_XNiDgmTREd-M5IWg2-DxLQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XNYSlmTREd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XNYSl2TREd-M5IWg2-DxLQ" value="1"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:id="_bRnGEKplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_XpsbEGTREd-M5IWg2-DxLQ" name="SupervisorMandatoryAddress">
         <ownedComment xmi:id="_XpsbEWTREd-M5IWg2-DxLQ" annotatedElement="_XpsbEGTREd-M5IWg2-DxLQ">
@@ -6656,12 +6658,10 @@ Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XpsbI2TREd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XpsbJGTREd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_XpsbJWTREd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_XpsbLGTREd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_4LsU8InkEd-pZLs28ekBmw" annotatedElement="_XpsbJWTREd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_EBlDMKpnEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_kBMwwKqDEeGs5dPxXb8s1w" annotatedElement="_EBlDMKpnEeGs5dPxXb8s1w">
             <body>See OptionalSupervisor for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XpsbJmTREd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XpsbJ2TREd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_TrqCwGTSEd-M5IWg2-DxLQ" name="PatientMandatoryAddress">
@@ -6705,12 +6705,12 @@ Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrqC0mTSEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrqC02TSEd-M5IWg2-DxLQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_TrqC1GTSEd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_Trzz0mTSEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_5C_ykonzEd-pZLs28ekBmw" annotatedElement="_TrqC1GTSEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_3UILEKpkEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_MWoY4KqDEeGs5dPxXb8s1w" annotatedElement="_3UILEKpkEeGs5dPxXb8s1w">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrqC1WTSEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrqC1mTSEd-M5IWg2-DxLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_othKMKpoEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_otgjIKpoEeGs5dPxXb8s1w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_TrqC12TSEd-M5IWg2-DxLQ" name="PatientLocation" type="_4HebpjD1Ed-8rpqfOAePKg" aggregation="composite" association="_TrzzzmTSEd-M5IWg2-DxLQ">
           <ownedComment xmi:id="_5DStgYnzEd-pZLs28ekBmw" annotatedElement="_TrqC12TSEd-M5IWg2-DxLQ">
@@ -6836,12 +6836,12 @@ Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0vFQGTUEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFQWTUEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_O0vFQmTUEd-M5IWg2-DxLQ" name="CommunicationNumbers" type="_4FPnFzD1Ed-8rpqfOAePKg" aggregation="composite" association="_O0vFW2TUEd-M5IWg2-DxLQ">
-          <ownedComment xmi:id="_aAg4IonWEd-pZLs28ekBmw" annotatedElement="_O0vFQmTUEd-M5IWg2-DxLQ">
+        <ownedAttribute xmi:id="_BCaOQKplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_dxV8QKqDEeGs5dPxXb8s1w" annotatedElement="_BCaOQKplEeGs5dPxXb8s1w">
             <body>See BaseBenefitsCoordination for Definition and Usage</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0vFQ2TUEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0vFRGTUEd-M5IWg2-DxLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EJkzgaplEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EJkzgKplEeGs5dPxXb8s1w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_O0vFRWTUEd-M5IWg2-DxLQ" name="Consent">
           <ownedComment xmi:id="_aAqCEYnWEd-pZLs28ekBmw" annotatedElement="_O0vFRWTUEd-M5IWg2-DxLQ">
@@ -12554,10 +12554,8 @@ If recipient is a pharmacy, Pharmacy is required.</body>
           <details xmi:id="_kJZLYUQMEeC7BZCLURhbHQ" key="Request"/>
         </eAnnotations>
         <ownedComment xmi:id="_6Ew5AIksEd-pZLs28ekBmw" annotatedElement="_fxed8E49Ed-G-pSkcIGh3w">
-          <body>This transaction is sent from the resident source system to parties that need to be aware of these census changes.  &#xD;
-&#xD;
+          <body>This transaction is sent from the resident source system to parties that need to be aware of these census changes.&#xD;
 Designates type and description of census message – Admit, Discharge, Change. Used when a ReturnReceipt is requested.&#xD;
-&#xD;
 For a Change Transaction, the patient demographic and coverage information sent should be all information known, not just the changed information</body>
         </ownedComment>
         <generalization xmi:id="_kbf9EE49Ed-G-pSkcIGh3w" general="_e1AxgDD4Ed-8rpqfOAePKg"/>
@@ -16210,9 +16208,6 @@ In any transaction that a reference number assigned by the prescribing system is
     <packagedElement xmi:type="uml:Association" xmi:id="_3mPmYE4LEd-G-pSkcIGh3w" memberEnd="_3mPmYU4LEd-G-pSkcIGh3w _3mF1bU4LEd-G-pSkcIGh3w">
       <ownedEnd xmi:id="_3mPmYU4LEd-G-pSkcIGh3w" type="_3mF1YE4LEd-G-pSkcIGh3w" association="_3mPmYE4LEd-G-pSkcIGh3w"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_3mPmZk4LEd-G-pSkcIGh3w" memberEnd="_3mPmZ04LEd-G-pSkcIGh3w _3mF1c04LEd-G-pSkcIGh3w">
-      <ownedEnd xmi:id="_3mPmZ04LEd-G-pSkcIGh3w" type="_3mF1YE4LEd-G-pSkcIGh3w" association="_3mPmZk4LEd-G-pSkcIGh3w"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_3mPmcE4LEd-G-pSkcIGh3w" memberEnd="_3mPmcU4LEd-G-pSkcIGh3w _3mF1cE4LEd-G-pSkcIGh3w">
       <ownedEnd xmi:id="_3mPmcU4LEd-G-pSkcIGh3w" type="_3mF1YE4LEd-G-pSkcIGh3w" association="_3mPmcE4LEd-G-pSkcIGh3w"/>
     </packagedElement>
@@ -16375,9 +16370,6 @@ In any transaction that a reference number assigned by the prescribing system is
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vUdOdU4-Ed-G-pSkcIGh3w" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_RdnxIFJLEd-gUbUlN-XGdw" memberEnd="_RdnxIVJLEd-gUbUlN-XGdw _RdeASVJLEd-gUbUlN-XGdw">
-      <ownedEnd xmi:id="_RdnxIVJLEd-gUbUlN-XGdw" type="_RdeAIFJLEd-gUbUlN-XGdw" association="_RdnxIFJLEd-gUbUlN-XGdw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_RdnxIlJLEd-gUbUlN-XGdw" memberEnd="_RdnxI1JLEd-gUbUlN-XGdw _RdeALlJLEd-gUbUlN-XGdw">
       <ownedEnd xmi:id="_RdnxI1JLEd-gUbUlN-XGdw" type="_RdeAIFJLEd-gUbUlN-XGdw" association="_RdnxIlJLEd-gUbUlN-XGdw"/>
     </packagedElement>
@@ -16392,9 +16384,6 @@ In any transaction that a reference number assigned by the prescribing system is
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_FWHFeFJOEd-gUbUlN-XGdw" memberEnd="_FWHFeVJOEd-gUbUlN-XGdw _FWHFaVJOEd-gUbUlN-XGdw">
       <ownedEnd xmi:id="_FWHFeVJOEd-gUbUlN-XGdw" type="_FWHFYFJOEd-gUbUlN-XGdw" association="_FWHFeFJOEd-gUbUlN-XGdw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_FWHFelJOEd-gUbUlN-XGdw" memberEnd="_FWHFe1JOEd-gUbUlN-XGdw _FWHFc1JOEd-gUbUlN-XGdw">
-      <ownedEnd xmi:id="_FWHFe1JOEd-gUbUlN-XGdw" type="_FWHFYFJOEd-gUbUlN-XGdw" association="_FWHFelJOEd-gUbUlN-XGdw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_FWQPUFJOEd-gUbUlN-XGdw" memberEnd="_FWQPUVJOEd-gUbUlN-XGdw _FWHFb1JOEd-gUbUlN-XGdw">
       <ownedEnd xmi:id="_FWQPUVJOEd-gUbUlN-XGdw" type="_FWHFYFJOEd-gUbUlN-XGdw" association="_FWQPUFJOEd-gUbUlN-XGdw"/>
@@ -21399,9 +21388,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z0C99mQzEd-ODMSOo4sPFQ" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_FG5gSGTPEd-M5IWg2-DxLQ" memberEnd="_FG5gSWTPEd-M5IWg2-DxLQ _FG5gQ2TPEd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_FG5gSWTPEd-M5IWg2-DxLQ" type="_FG5gMGTPEd-M5IWg2-DxLQ" association="_FG5gSGTPEd-M5IWg2-DxLQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_FG5gSmTPEd-M5IWg2-DxLQ" memberEnd="_FG5gS2TPEd-M5IWg2-DxLQ _FG5gOWTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_FG5gS2TPEd-M5IWg2-DxLQ" type="_FG5gMGTPEd-M5IWg2-DxLQ" association="_FG5gSmTPEd-M5IWg2-DxLQ"/>
     </packagedElement>
@@ -21411,17 +21397,11 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
     <packagedElement xmi:type="uml:Association" xmi:id="_YZUMJ2TPEd-M5IWg2-DxLQ" memberEnd="_YZUMKGTPEd-M5IWg2-DxLQ _YZUMGmTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_YZUMKGTPEd-M5IWg2-DxLQ" type="_YZUMEGTPEd-M5IWg2-DxLQ" association="_YZUMJ2TPEd-M5IWg2-DxLQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_YZUMK2TPEd-M5IWg2-DxLQ" memberEnd="_YZUMLGTPEd-M5IWg2-DxLQ _YZUMJGTPEd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_YZUMLGTPEd-M5IWg2-DxLQ" type="_YZUMEGTPEd-M5IWg2-DxLQ" association="_YZUMK2TPEd-M5IWg2-DxLQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_YZdWAGTPEd-M5IWg2-DxLQ" memberEnd="_YZdWAWTPEd-M5IWg2-DxLQ _YZUMIGTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_YZdWAWTPEd-M5IWg2-DxLQ" type="_YZUMEGTPEd-M5IWg2-DxLQ" association="_YZdWAGTPEd-M5IWg2-DxLQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_7GxpvGTPEd-M5IWg2-DxLQ" memberEnd="_7GxpvWTPEd-M5IWg2-DxLQ _7GxpsWTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_7GxpvWTPEd-M5IWg2-DxLQ" type="_7GxpoGTPEd-M5IWg2-DxLQ" association="_7GxpvGTPEd-M5IWg2-DxLQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_7GxpvmTPEd-M5IWg2-DxLQ" memberEnd="_7Gxpv2TPEd-M5IWg2-DxLQ _7GxpuWTPEd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_7Gxpv2TPEd-M5IWg2-DxLQ" type="_7GxpoGTPEd-M5IWg2-DxLQ" association="_7GxpvmTPEd-M5IWg2-DxLQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_7G7aoGTPEd-M5IWg2-DxLQ" memberEnd="_7G7aoWTPEd-M5IWg2-DxLQ _7GxprWTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_7G7aoWTPEd-M5IWg2-DxLQ" type="_7GxpoGTPEd-M5IWg2-DxLQ" association="_7G7aoGTPEd-M5IWg2-DxLQ"/>
@@ -21432,9 +21412,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
     <packagedElement xmi:type="uml:Association" xmi:id="_8KlQHGTPEd-M5IWg2-DxLQ" memberEnd="_8KlQHWTPEd-M5IWg2-DxLQ _8KlQEWTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_8KlQHWTPEd-M5IWg2-DxLQ" type="_8KlQAGTPEd-M5IWg2-DxLQ" association="_8KlQHGTPEd-M5IWg2-DxLQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_8KlQHmTPEd-M5IWg2-DxLQ" memberEnd="_8KlQH2TPEd-M5IWg2-DxLQ _8KlQGWTPEd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_8KlQH2TPEd-M5IWg2-DxLQ" type="_8KlQAGTPEd-M5IWg2-DxLQ" association="_8KlQHmTPEd-M5IWg2-DxLQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_8KlQImTPEd-M5IWg2-DxLQ" memberEnd="_8KlQI2TPEd-M5IWg2-DxLQ _8KlQDWTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_8KlQI2TPEd-M5IWg2-DxLQ" type="_8KlQAGTPEd-M5IWg2-DxLQ" association="_8KlQImTPEd-M5IWg2-DxLQ"/>
     </packagedElement>
@@ -21444,9 +21421,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
     <packagedElement xmi:type="uml:Association" xmi:id="_9eK-7GTPEd-M5IWg2-DxLQ" memberEnd="_9eK-7WTPEd-M5IWg2-DxLQ _9eK-4WTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_9eK-7WTPEd-M5IWg2-DxLQ" type="_9eK-0GTPEd-M5IWg2-DxLQ" association="_9eK-7GTPEd-M5IWg2-DxLQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_9eK-7mTPEd-M5IWg2-DxLQ" memberEnd="_9eK-72TPEd-M5IWg2-DxLQ _9eK-6WTPEd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_9eK-72TPEd-M5IWg2-DxLQ" type="_9eK-0GTPEd-M5IWg2-DxLQ" association="_9eK-7mTPEd-M5IWg2-DxLQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_9eUv0mTPEd-M5IWg2-DxLQ" memberEnd="_9eUv02TPEd-M5IWg2-DxLQ _9eK-3WTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_9eUv02TPEd-M5IWg2-DxLQ" type="_9eK-0GTPEd-M5IWg2-DxLQ" association="_9eUv0mTPEd-M5IWg2-DxLQ"/>
     </packagedElement>
@@ -21455,9 +21429,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_93EADGTPEd-M5IWg2-DxLQ" memberEnd="_93EADWTPEd-M5IWg2-DxLQ _93EAAWTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_93EADWTPEd-M5IWg2-DxLQ" type="_93D_8GTPEd-M5IWg2-DxLQ" association="_93EADGTPEd-M5IWg2-DxLQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_93EADmTPEd-M5IWg2-DxLQ" memberEnd="_93EAD2TPEd-M5IWg2-DxLQ _93EACWTPEd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_93EAD2TPEd-M5IWg2-DxLQ" type="_93D_8GTPEd-M5IWg2-DxLQ" association="_93EADmTPEd-M5IWg2-DxLQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_93NJ4mTPEd-M5IWg2-DxLQ" memberEnd="_93NJ42TPEd-M5IWg2-DxLQ _93D__WTPEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_93NJ42TPEd-M5IWg2-DxLQ" type="_93D_8GTPEd-M5IWg2-DxLQ" association="_93NJ4mTPEd-M5IWg2-DxLQ"/>
@@ -21471,17 +21442,11 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
     <packagedElement xmi:type="uml:Association" xmi:id="_XNiDgGTREd-M5IWg2-DxLQ" memberEnd="_XNiDgWTREd-M5IWg2-DxLQ _XNYSkWTREd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_XNiDgWTREd-M5IWg2-DxLQ" type="_XNYSgGTREd-M5IWg2-DxLQ" association="_XNiDgGTREd-M5IWg2-DxLQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_XNiDgmTREd-M5IWg2-DxLQ" memberEnd="_XNiDg2TREd-M5IWg2-DxLQ _XNYSlWTREd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_XNiDg2TREd-M5IWg2-DxLQ" type="_XNYSgGTREd-M5IWg2-DxLQ" association="_XNiDgmTREd-M5IWg2-DxLQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_XpsbKGTREd-M5IWg2-DxLQ" memberEnd="_XpsbKWTREd-M5IWg2-DxLQ _XpsbGWTREd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_XpsbKWTREd-M5IWg2-DxLQ" type="_XpsbEGTREd-M5IWg2-DxLQ" association="_XpsbKGTREd-M5IWg2-DxLQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_XpsbKmTREd-M5IWg2-DxLQ" memberEnd="_XpsbK2TREd-M5IWg2-DxLQ _XpsbIWTREd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_XpsbK2TREd-M5IWg2-DxLQ" type="_XpsbEGTREd-M5IWg2-DxLQ" association="_XpsbKmTREd-M5IWg2-DxLQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_XpsbLGTREd-M5IWg2-DxLQ" memberEnd="_XpsbLWTREd-M5IWg2-DxLQ _XpsbJWTREd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_XpsbLWTREd-M5IWg2-DxLQ" type="_XpsbEGTREd-M5IWg2-DxLQ" association="_XpsbLGTREd-M5IWg2-DxLQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_TrzzwGTSEd-M5IWg2-DxLQ" memberEnd="_TrzzwWTSEd-M5IWg2-DxLQ _TrqCx2TSEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_TrzzwWTSEd-M5IWg2-DxLQ" type="_TrqCwGTSEd-M5IWg2-DxLQ" association="_TrzzwGTSEd-M5IWg2-DxLQ"/>
@@ -21491,9 +21456,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_TrzzxGTSEd-M5IWg2-DxLQ" memberEnd="_TrzzxWTSEd-M5IWg2-DxLQ _TrqCzmTSEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_TrzzxWTSEd-M5IWg2-DxLQ" type="_TrqCwGTSEd-M5IWg2-DxLQ" association="_TrzzxGTSEd-M5IWg2-DxLQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Trzz0mTSEd-M5IWg2-DxLQ" memberEnd="_Trzz02TSEd-M5IWg2-DxLQ _TrqC1GTSEd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_Trzz02TSEd-M5IWg2-DxLQ" type="_TrqCwGTSEd-M5IWg2-DxLQ" association="_Trzz0mTSEd-M5IWg2-DxLQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_O0vFUWTUEd-M5IWg2-DxLQ" memberEnd="_O0vFUmTUEd-M5IWg2-DxLQ _O0lUP2TUEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_O0vFUmTUEd-M5IWg2-DxLQ" type="_O0lUMGTUEd-M5IWg2-DxLQ" association="_O0vFUWTUEd-M5IWg2-DxLQ"/>
@@ -21506,9 +21468,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_O0vFWWTUEd-M5IWg2-DxLQ" memberEnd="_O0vFWmTUEd-M5IWg2-DxLQ _O0vFP2TUEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_O0vFWmTUEd-M5IWg2-DxLQ" type="_O0lUMGTUEd-M5IWg2-DxLQ" association="_O0vFWWTUEd-M5IWg2-DxLQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_O0vFW2TUEd-M5IWg2-DxLQ" memberEnd="_O0vFXGTUEd-M5IWg2-DxLQ _O0vFQmTUEd-M5IWg2-DxLQ">
-      <ownedEnd xmi:id="_O0vFXGTUEd-M5IWg2-DxLQ" type="_O0lUMGTUEd-M5IWg2-DxLQ" association="_O0vFW2TUEd-M5IWg2-DxLQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_40hO8GTWEd-M5IWg2-DxLQ" memberEnd="_40XeA2TWEd-M5IWg2-DxLQ _40hO8WTWEd-M5IWg2-DxLQ">
       <ownedEnd xmi:id="_40hO8WTWEd-M5IWg2-DxLQ" type="_40Xd8GTWEd-M5IWg2-DxLQ" association="_40hO8GTWEd-M5IWg2-DxLQ">
@@ -22668,7 +22627,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_4E8sHjD1Ed-8rpqfOAePKg" id="" base_Property="_4E8sHDD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4FF2ADD1Ed-8rpqfOAePKg" base_Comment="_4E8sLzD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4FPnCDD1Ed-8rpqfOAePKg" base_Property="_4FPnBjD1Ed-8rpqfOAePKg"/>
-  <Default:Documentation xmi:id="_4FPnGjD1Ed-8rpqfOAePKg" base_Comment="_4FPnGTD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4HoMpjD1Ed-8rpqfOAePKg" base_Property="_4HoMpDD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4HoMszD1Ed-8rpqfOAePKg" base_Comment="_4HoMsjD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4Hx9pDD1Ed-8rpqfOAePKg" base_Property="_4Hx9ojD1Ed-8rpqfOAePKg"/>
@@ -23272,17 +23230,14 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_7J-loYnREd-pZLs28ekBmw" base_Comment="_7J-loInREd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_7KbRkInREd-pZLs28ekBmw" base_Comment="_7KSHoInREd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_imLi4YnVEd-pZLs28ekBmw" base_Comment="_imLi4InVEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_-UA74YnVEd-pZLs28ekBmw" base_Comment="_-UA74InVEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_GlTcoYnWEd-pZLs28ekBmw" base_Comment="_GlTcoInWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_IMbLcYnWEd-pZLs28ekBmw" base_Comment="_IMbLcInWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_STSGsYnWEd-pZLs28ekBmw" base_Comment="_STSGsInWEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_VyNEoYnWEd-pZLs28ekBmw" base_Comment="_VyNEoInWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_VyNEo4nWEd-pZLs28ekBmw" base_Comment="_VyNEoonWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_Vyf_kYnWEd-pZLs28ekBmw" base_Comment="_Vyf_kInWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_VypwkYnWEd-pZLs28ekBmw" base_Comment="_VypwkInWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_Vypwk4nWEd-pZLs28ekBmw" base_Comment="_VypwkonWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_aAg4IYnWEd-pZLs28ekBmw" base_Comment="_aAg4IInWEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_aAqCEInWEd-pZLs28ekBmw" base_Comment="_aAg4IonWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_aAqCEonWEd-pZLs28ekBmw" base_Comment="_aAqCEYnWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_aA9kEYnWEd-pZLs28ekBmw" base_Comment="_aA9kEInWEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_aBGuAInWEd-pZLs28ekBmw" base_Comment="_aA9kEonWEd-pZLs28ekBmw"/>
@@ -23619,32 +23574,22 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_wT5oYInbEd-pZLs28ekBmw" base_Comment="_wTv3ZYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_wT5oYonbEd-pZLs28ekBmw" base_Comment="_wT5oYYnbEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_wUDZYInbEd-pZLs28ekBmw" base_Comment="_wT5oY4nbEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_Cvt8EYnfEd-pZLs28ekBmw" base_Comment="_Cvt8EInfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_Cv3tEYnfEd-pZLs28ekBmw" base_Comment="_Cv3tEInfEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_EjzI0YnfEd-pZLs28ekBmw" base_Comment="_EjzI0InfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_Ej850YnfEd-pZLs28ekBmw" base_Comment="_Ej850InfEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_Gp55sYnfEd-pZLs28ekBmw" base_Comment="_Gp55sInfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_GqDqsYnfEd-pZLs28ekBmw" base_Comment="_GqDqsInfEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_IcWHsYnfEd-pZLs28ekBmw" base_Comment="_IcWHsInfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_Icf4sYnfEd-pZLs28ekBmw" base_Comment="_Icf4sInfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_ekHQEYnfEd-pZLs28ekBmw" base_Comment="_ekHQEInfEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_ekHQE4nfEd-pZLs28ekBmw" base_Comment="_ekHQEonfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_ekQaAYnfEd-pZLs28ekBmw" base_Comment="_ekQaAInfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_golCMYnfEd-pZLs28ekBmw" base_Comment="_golCMInfEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_golCM4nfEd-pZLs28ekBmw" base_Comment="_golCMonfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_gouzMInfEd-pZLs28ekBmw" base_Comment="_golCNInfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_kbBZEYnfEd-pZLs28ekBmw" base_Comment="_kbBZEInfEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_kbBZE4nfEd-pZLs28ekBmw" base_Comment="_kbBZEonfEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_kbLKEYnfEd-pZLs28ekBmw" base_Comment="_kbLKEInfEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_3GQW4YnkEd-pZLs28ekBmw" base_Comment="_3GQW4InkEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_4LsU8YnkEd-pZLs28ekBmw" base_Comment="_4LsU8InkEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_4L1e4YnkEd-pZLs28ekBmw" base_Comment="_4L1e4InkEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_xzsIsYnyEd-pZLs28ekBmw" base_Comment="_xzsIsInyEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_7Vl8wYnyEd-pZLs28ekBmw" base_Comment="_7Vl8wInyEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_STJdoYnzEd-pZLs28ekBmw" base_Comment="_STJdoInzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_WTl0QYnzEd-pZLs28ekBmw" base_Comment="_WTl0QInzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_d7KCkYnzEd-pZLs28ekBmw" base_Comment="_d7KCkInzEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_e9nlIYnzEd-pZLs28ekBmw" base_Comment="_e9nlIInzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_e9nlI4nzEd-pZLs28ekBmw" base_Comment="_e9nlIonzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_e9xWIInzEd-pZLs28ekBmw" base_Comment="_e9nlJInzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_e9xWIonzEd-pZLs28ekBmw" base_Comment="_e9xWIYnzEd-pZLs28ekBmw"/>
@@ -23655,7 +23600,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_e-EREonzEd-pZLs28ekBmw" base_Comment="_e-EREYnzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_e-ERFInzEd-pZLs28ekBmw" base_Comment="_e-ERE4nzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5C_ykYnzEd-pZLs28ekBmw" base_Comment="_5C_ykInzEd-pZLs28ekBmw"/>
-  <Default:Documentation xmi:id="_5C_yk4nzEd-pZLs28ekBmw" base_Comment="_5C_ykonzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DI8gInzEd-pZLs28ekBmw" base_Comment="_5C_ylInzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DI8hInzEd-pZLs28ekBmw" base_Comment="_5DI8g4nzEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_5DStgInzEd-pZLs28ekBmw" base_Comment="_5DI8hYnzEd-pZLs28ekBmw"/>
@@ -24621,4 +24565,22 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_sdNOoKnREeGs5dPxXb8s1w" base_Property="_4mU64DD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_xTTa4KnREeGs5dPxXb8s1w" base_Comment="_xTSz0anREeGs5dPxXb8s1w"/>
   <xsd:Facet xmi:id="_xTTa4anREeGs5dPxXb8s1w" base_Property="_xTSz06nREeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_V0aFQKpfEeGs5dPxXb8s1w" base_Comment="_V0Y3IapfEeGs5dPxXb8s1w"/>
+  <xsd:Facet xmi:id="_V0aFQapfEeGs5dPxXb8s1w" base_Property="_V0Y3I6pfEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_geqogKpfEeGs5dPxXb8s1w" base_Comment="_geqBcapfEeGs5dPxXb8s1w"/>
+  <xsd:Facet xmi:id="_geqogapfEeGs5dPxXb8s1w" base_Property="_geqBc6pfEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_fKQscKqCEeGs5dPxXb8s1w" base_Comment="_fKLM4KqCEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_kuctwKqCEeGs5dPxXb8s1w" base_Comment="_kuZqcKqCEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_ylA08KqCEeGs5dPxXb8s1w" base_Comment="_yk9xoKqCEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_7YCJwKqCEeGs5dPxXb8s1w" base_Comment="_7X-fYKqCEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="__6ExkKqCEeGs5dPxXb8s1w" base_Comment="__6BuQKqCEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_E30d8KqDEeGs5dPxXb8s1w" base_Comment="_E3xaoKqDEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_HstAYKqDEeGs5dPxXb8s1w" base_Comment="_HspWAKqDEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_MWrcMKqDEeGs5dPxXb8s1w" base_Comment="_MWoY4KqDEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_P1r5sKqDEeGs5dPxXb8s1w" base_Comment="_P1oPUKqDEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_T5-OgKqDEeGs5dPxXb8s1w" base_Comment="_T57LMKqDEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_WYdqMKqDEeGs5dPxXb8s1w" base_Comment="_WYb1AKqDEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_dxXxcKqDEeGs5dPxXb8s1w" base_Comment="_dxV8QKqDEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_g_y1QKqDEeGs5dPxXb8s1w" base_Comment="_g_vK4KqDEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_kBQbIKqDEeGs5dPxXb8s1w" base_Comment="_kBMwwKqDEeGs5dPxXb8s1w"/>
 </xmi:XMI>
