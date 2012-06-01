@@ -694,6 +694,20 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Facility  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Facility">
+    <xsd:annotation>
+      <xsd:documentation>Value SK</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Identification" type="datatypes:FacilityID"/>
+      <xsd:element minOccurs="0" name="FacilityName" type="datatypes:an1..70"/>
+      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
+      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  FillStatus  <<choice>>  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="FillStatus">
@@ -1148,7 +1162,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
       <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
       <xsd:element minOccurs="0" name="PrescriberAgent" type="datatypes:NameType">
         <xsd:annotation>
-          <xsd:documentation>To identify the Designated Agent - use for transmitter/submitter name.  If a supervising prescriber name or id is required, use the supervisor element. This composite is to be used for the “PC” prescriber only.&#13;
+          <xsd:documentation>To identify the Designated Agent - use for transmitter/submitter name.  If a supervising prescriber name or id is required, use the supervisor element. This composite is to be used for the “PC” prescriber only. &#13;
 Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is mandatory if the sender of the message is not the actual prescriber referenced.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -3970,7 +3984,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain "Brand Medicall
     <xsd:sequence>
       <xsd:element name="SigText" type="datatypes:an1..1000">
         <xsd:annotation>
-          <xsd:documentation>SigText contains either 1) completely free text with no corresponding structured content OR 2) This is a generated structured English version of the codified sig content that follows the sig grammar in the XML. The SigText should have no more and no less then what is in the structured Sig content. &#13;
+          <xsd:documentation>SigText contains either 1) completely free text with no corresponding structured content OR 2) This is a generated structured English version of the codified sig content that follows the sig grammar in the XML. The SigText should have no more and no less then what is in the structured Sig content.&#13;
 If you can not directly generate the SigText from the Structured Sig, do not send the structured Sig.&#13;
 If the structured Sig exists, the SigText must be generated directly from Structured Sig. If this is not possible for whatever reason, do not send the structured Sig.</xsd:documentation>
         </xsd:annotation>

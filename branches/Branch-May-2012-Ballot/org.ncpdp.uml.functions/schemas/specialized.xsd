@@ -84,10 +84,8 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Census">
     <xsd:annotation>
-      <xsd:documentation>This transaction is sent from the resident source system to parties that need to be aware of these census changes.  &#13;
-&#13;
+      <xsd:documentation>This transaction is sent from the resident source system to parties that need to be aware of these census changes.&#13;
 Designates type and description of census message – Admit, Discharge, Change. Used when a ReturnReceipt is requested.&#13;
-&#13;
 For a Change Transaction, the patient demographic and coverage information sent should be all information known, not just the changed information</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
@@ -133,7 +131,7 @@ For a Change Transaction, the patient demographic and coverage information sent 
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Facility" type="datatypes:Facility">
+          <xsd:element name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -287,7 +285,7 @@ For a Change Transaction, the patient demographic and coverage information sent 
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -396,7 +394,7 @@ For a Change Transaction, the patient demographic and coverage information sent 
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -627,7 +625,7 @@ For a Change Transaction, the patient demographic and coverage information sent 
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -825,7 +823,7 @@ For a Change Transaction, the patient demographic and coverage information sent 
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecializedRequest for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -934,7 +932,7 @@ For a Change Transaction, the patient demographic and coverage information sent 
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SpecialzedResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1127,7 +1125,7 @@ Note: The Allergy element is not to be used to replace or add to the transfer of
           <xsd:documentation>Element may be used only in the long-term care setting, where there are established processes supporting the sharing of diagnosis information between a resident’s facility and pharmacy. Note: The medication information enables communication of prescription-specific diagnosis information only—appropriate for use in new prescription messaging, but insufficient to support management of a resident’s full drug regimen. The intent is to convey the diagnosis that the prescribed medication is for.  There is also a need to convey diagnosis information in the Census event.  The difference here is that there is no related drug.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facility">
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="structures:Facility">
         <xsd:annotation>
           <xsd:documentation>One loop mandatory for the skilled nursing facility.
 Given that a new long term care resident may not yet have an assigned physician, it is more appropriate to require the facility information, and physician if that information is available.
@@ -1212,7 +1210,7 @@ all other values = no return receipt requested.</xsd:documentation>
       </xsd:element>
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an1..35"/>
       <xsd:element minOccurs="0" name="FollowUpRequest" type="datatypes:n1..1"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facility">
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="structures:Facility">
         <xsd:annotation>
           <xsd:documentation>One loop mandatory for the skilled nursing facility.
 Given that a new long term care resident may not yet have an assigned physician, it is more appropriate to require the facility information, and physician if that information is available.

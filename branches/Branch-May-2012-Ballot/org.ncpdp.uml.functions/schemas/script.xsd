@@ -93,7 +93,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -199,7 +199,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -386,7 +386,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -559,7 +559,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -673,7 +673,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+      <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
         <xsd:annotation>
           <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
         </xsd:annotation>
@@ -773,7 +773,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+      <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
         <xsd:annotation>
           <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
         </xsd:annotation>
@@ -850,7 +850,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -961,7 +961,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1112,7 +1112,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1223,7 +1223,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1334,7 +1334,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTResponse for Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1450,7 +1450,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1566,7 +1566,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facility">
+          <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="structures:Facility">
             <xsd:annotation>
               <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
             </xsd:annotation>
@@ -1646,7 +1646,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element maxOccurs="0" minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode"/>
       <xsd:element minOccurs="0" name="Response" type="SCRIPT:BasicResponseType"/>
       <xsd:element maxOccurs="3" name="BenefitsCoordination" type="structures:RxHistoryBenefitsCoordination"/>
-      <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="datatypes:Facility"/>
+      <xsd:element maxOccurs="0" minOccurs="0" name="Facility" type="structures:Facility"/>
       <xsd:element name="Patient" type="structures:Patient"/>
       <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy">
         <xsd:annotation>
@@ -1726,7 +1726,7 @@ all other values = no return receipt requested.</xsd:documentation>
           <xsd:documentation>Element may be used only in the long-term care setting, where there are established processes supporting the sharing of diagnosis information between a resident’s facility and pharmacy. Note: The medication information enables communication of prescription-specific diagnosis information only—appropriate for use in new prescription messaging, but insufficient to support management of a resident’s full drug regimen. The intent is to convey the diagnosis that the prescribed medication is for.  There is also a need to convey diagnosis information in the Census event.  The difference here is that there is no related drug.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facility">
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="structures:Facility">
         <xsd:annotation>
           <xsd:documentation>Value SK</xsd:documentation>
         </xsd:annotation>
@@ -1804,7 +1804,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
       <xsd:element minOccurs="0" name="ChangeOfPrescriptionStatusFlag" type="ecl:ChangeOfPrescriptionStatusCode"/>
       <xsd:element minOccurs="0" name="Response" type="SCRIPT:ResponseType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="0" name="BenefitsCoordination" type="structures:BaseBenefitsCoordination"/>
-      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="datatypes:Facility">
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Facility" type="structures:Facility">
         <xsd:annotation>
           <xsd:documentation>Value SK</xsd:documentation>
         </xsd:annotation>

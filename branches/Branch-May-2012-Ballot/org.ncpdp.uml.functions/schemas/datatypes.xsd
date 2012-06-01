@@ -583,15 +583,6 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</xsd:documentation>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  CommunicationType  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="CommunicationType">
-    <xsd:sequence>
-      <xsd:element name="Number" type="datatypes:an1..80"/>
-      <xsd:element name="Qualifier" type="ecl:CommunicationTypeQualifierCode"/>
-    </xsd:sequence>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  CompoundIngredient  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="CompoundIngredient">
@@ -743,20 +734,6 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </xsd:documentatio
           <xsd:documentation>Mandatory if DUE Professional Service Code = “ZZ” (Other) to provide further explanation.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-    </xsd:sequence>
-  </xsd:complexType>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  Facility  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <xsd:complexType name="Facility">
-    <xsd:annotation>
-      <xsd:documentation>Value SK</xsd:documentation>
-    </xsd:annotation>
-    <xsd:sequence>
-      <xsd:element name="Identification" type="datatypes:FacilityID"/>
-      <xsd:element minOccurs="0" name="FacilityName" type="datatypes:an1..70"/>
-      <xsd:element minOccurs="0" name="Address" type="datatypes:AddressType"/>
-      <xsd:element minOccurs="0" name="CommunicationNumbers" type="datatypes:CommunicationNumbersType"/>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
