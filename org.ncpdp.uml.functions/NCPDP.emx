@@ -281,24 +281,6 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4IE4kjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4ZNr4TD1Ed-8rpqfOAePKg" name="Facility">
-        <ownedComment xmi:id="_4ZNr4jD1Ed-8rpqfOAePKg" annotatedElement="_4ZNr4TD1Ed-8rpqfOAePKg">
-          <body>Value SK</body>
-        </ownedComment>
-        <ownedAttribute xmi:id="_YMtF4BnyEeG-t_q9lpZZKw" name="Identification" visibility="public" type="_JMso0BSsEeGdS8kEviK9tA"/>
-        <ownedAttribute xmi:id="_4ZNr6zD1Ed-8rpqfOAePKg" name="FacilityName" type="_4Hx9oTD1Ed-8rpqfOAePKg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ZNr7TD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ZNr7jD1Ed-8rpqfOAePKg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_4ZNr7zD1Ed-8rpqfOAePKg" name="Address" type="_4FF2IDD1Ed-8rpqfOAePKg" aggregation="composite" association="_4ZNr8zD1Ed-8rpqfOAePKg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ZNr8TD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ZNr8jD1Ed-8rpqfOAePKg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_vPXN8KplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V9OKkKqBEeGs5dPxXb8s1w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V9NjgKqBEeGs5dPxXb8s1w"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4OfClzD1Ed-8rpqfOAePKg" name="CompoundIngredient">
         <ownedComment xmi:id="_xXHhQInNEd-pZLs28ekBmw" annotatedElement="_4OfClzD1Ed-8rpqfOAePKg">
           <body>Drug Composition Structure</body>
@@ -589,17 +571,6 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</body>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_4KKjUzD1Ed-8rpqfOAePKg" value="[\+\-]?[0-9][0-9]?[0-9]?[0-9]?"/>
           </ownedAttribute>
         </nestedClassifier>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4FPnGzD1Ed-8rpqfOAePKg" name="CommunicationType">
-        <ownedAttribute xmi:id="_4FPnHDD1Ed-8rpqfOAePKg" name="Number" type="_4dr8RTD1Ed-8rpqfOAePKg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FPnIjD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnIzD1Ed-8rpqfOAePKg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_4FPnJDD1Ed-8rpqfOAePKg" name="Qualifier">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_68pG4y1QEd-8mcmtGejV_Q?ecl/ecl/CommunicationTypeQualifierCode?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FPnKjD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnKzD1Ed-8rpqfOAePKg" value="1"/>
-        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4E8sKjD1Ed-8rpqfOAePKg" name="NameType">
         <ownedComment xmi:id="_PMqqIInNEd-pZLs28ekBmw" annotatedElement="_4E8sKjD1Ed-8rpqfOAePKg">
@@ -1307,9 +1278,6 @@ http://www.cdc.gov/phin/activities/standards/vocabulary</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4O7uijD1Ed-8rpqfOAePKg" memberEnd="_4O7uizD1Ed-8rpqfOAePKg _4O7uhjD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4O7uizD1Ed-8rpqfOAePKg" type="_4OfClzD1Ed-8rpqfOAePKg" association="_4O7uijD1Ed-8rpqfOAePKg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_4ZNr8zD1Ed-8rpqfOAePKg" memberEnd="_4ZNr9DD1Ed-8rpqfOAePKg _4ZNr7zD1Ed-8rpqfOAePKg">
-        <ownedEnd xmi:id="_4ZNr9DD1Ed-8rpqfOAePKg" type="_4ZNr4TD1Ed-8rpqfOAePKg" association="_4ZNr8zD1Ed-8rpqfOAePKg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4gNr2DD1Ed-8rpqfOAePKg" memberEnd="_4gNr2TD1Ed-8rpqfOAePKg _4gEh0TD1Ed-8rpqfOAePKg">
         <ownedEnd xmi:id="_4gNr2TD1Ed-8rpqfOAePKg" type="_4gEh0DD1Ed-8rpqfOAePKg" association="_4gNr2DD1Ed-8rpqfOAePKg"/>
@@ -4116,6 +4084,24 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
       <ownedComment xmi:id="_pxV6gIUeEd-PfKcU8Giing">
         <body>The NCPDP structures.xsd defines common and reusable domain structures typically composed of datatypes and potentially other structures.</body>
       </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4ZNr4TD1Ed-8rpqfOAePKg" name="Facility">
+        <ownedComment xmi:id="_4ZNr4jD1Ed-8rpqfOAePKg" annotatedElement="_4ZNr4TD1Ed-8rpqfOAePKg">
+          <body>Value SK</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_YMtF4BnyEeG-t_q9lpZZKw" name="Identification" visibility="public" type="_JMso0BSsEeGdS8kEviK9tA"/>
+        <ownedAttribute xmi:id="_4ZNr6zD1Ed-8rpqfOAePKg" name="FacilityName" type="_4Hx9oTD1Ed-8rpqfOAePKg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ZNr7TD1Ed-8rpqfOAePKg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ZNr7jD1Ed-8rpqfOAePKg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_4ZNr7zD1Ed-8rpqfOAePKg" name="Address" type="_4FF2IDD1Ed-8rpqfOAePKg" aggregation="composite" association="_4ZNr8zD1Ed-8rpqfOAePKg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ZNr8TD1Ed-8rpqfOAePKg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ZNr8jD1Ed-8rpqfOAePKg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_vPXN8KplEeGs5dPxXb8s1w" name="CommunicationNumbers" visibility="public" type="_WK-noKpeEeGs5dPxXb8s1w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V9OKkKqBEeGs5dPxXb8s1w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V9NjgKqBEeGs5dPxXb8s1w"/>
+        </ownedAttribute>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JAlJgX3VEeGozIODH_vY1Q" name="AdministrationTiming">
         <ownedAttribute xmi:id="_JAnlyH3VEeGozIODH_vY1Q" name="_sequence1" type="_JAlJgn3VEeGozIODH_vY1Q" aggregation="composite" association="_JAoM0n3VEeGozIODH_vY1Q">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAoM0H3VEeGozIODH_vY1Q" value="1"/>
@@ -11005,6 +10991,9 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_JAqpE33VEeGozIODH_vY1Q" memberEnd="_JAqpFH3VEeGozIODH_vY1Q _JAoM1H3VEeGozIODH_vY1Q">
         <ownedEnd xmi:id="_JAqpFH3VEeGozIODH_vY1Q" type="_JAlJgX3VEeGozIODH_vY1Q" association="_JAqpE33VEeGozIODH_vY1Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4ZNr8zD1Ed-8rpqfOAePKg" memberEnd="_4ZNr9DD1Ed-8rpqfOAePKg _4ZNr7zD1Ed-8rpqfOAePKg">
+        <ownedEnd xmi:id="_4ZNr9DD1Ed-8rpqfOAePKg" type="_4ZNr4TD1Ed-8rpqfOAePKg" association="_4ZNr8zD1Ed-8rpqfOAePKg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_pQD0cDFCEd-8rpqfOAePKg" name="specialized">
