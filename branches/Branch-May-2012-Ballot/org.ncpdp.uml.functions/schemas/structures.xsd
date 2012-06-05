@@ -2446,12 +2446,12 @@ Source code is http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F
               <xsd:documentation>See PatientFull for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="PregnancyIndicator" type="xsd:boolean">
+          <xsd:element maxOccurs="0" minOccurs="0" name="PregnancyIndicator" type="ecl:BooleanCode">
             <xsd:annotation>
               <xsd:documentation>See PatientFull for Definition and Usage</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element maxOccurs="0" minOccurs="0" name="Smoker" type="xsd:boolean">
+          <xsd:element maxOccurs="0" minOccurs="0" name="Smoker" type="ecl:BooleanCode">
             <xsd:annotation>
               <xsd:documentation>See PatientFull for Definition and Usage</xsd:documentation>
             </xsd:annotation>
