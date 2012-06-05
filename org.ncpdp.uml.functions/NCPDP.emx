@@ -6724,7 +6724,7 @@ Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is
           <ownedComment xmi:id="_5DStg4nzEd-pZLs28ekBmw" annotatedElement="_TrqC4GTSEd-M5IWg2-DxLQ">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrqC4WTSEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrqC4mTSEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
@@ -6732,7 +6732,7 @@ Note: For NewRx, RefillResponse, CancelRx or RxChangeResponse  – this field is
           <ownedComment xmi:id="_5DcehYnzEd-pZLs28ekBmw" annotatedElement="_TrqC42TSEd-M5IWg2-DxLQ">
             <body>See PatientFull for Definition and Usage</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_rM8-IH-SEd-eN4XJATQmiQ?ecl/ecl/BooleanCode?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrqC5GTSEd-M5IWg2-DxLQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrqC5WTSEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
