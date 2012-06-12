@@ -4,20 +4,20 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Approach</title>
 	<body>
-		<p>Working with specifications generated from formal UML models provides the
-			opportunity to work with the data from the perspective of the
-			underlying model and electronic format and to explore many design
-			issues thoroughly. Taking this as an initial step ensures that the
-			data set developers and standards community can reach consensus prior
-			to the larger commitment of time that would be required to bring the
-			full data set into standard format.</p>
-		<p>This project supports reusability and ease of data collection
-			through a standard data representation harmonized with work developed
-			through Health Information Technology Expert Panel (HITEP), balloted
-			through Health Level Seven (HL7) and/or recognized by the Health
-			Information Technology Standards Panel (HITSP).</p>
-		<p>This implementation guide (IG) specifies a standard for electronic
-			submission of NCRs in a Clinical Document Architecture (CDA), Release
-			2 format.</p>
+		<p>In the development of this specification, the team reviewed
+the Consolidated CDA Implementation Guide and the CMS Medicare Part D MTM
+Program Standardized Format. The conformance requirements included here were
+generated from the Model-Driven Health Tools (MDHT)—developed as an open source
+tool under the auspices of the Veterans Administration, IBM, and the ONC.</p>
+		<p>All major template
+changes are summarized in the <xref href="#A_Changes">Change Appendix</xref>. A full
+mapping of changes is anticipated to occur after ballot. </p>
+		<p>Participants in the MTM Project recognize the critical need
+for an intrinsic tie between the human-readable conformance requirements, the
+computable expression of those requirements, the production of validation test
+suites and application interfaces to facilitate adoption. </p>
+		<p>The consolidation of templates developed from model-based
+tools satisfies the full range of requirements for clinical information use and
+reuse through templated CDA.</p>
 	</body>
 </topic>
