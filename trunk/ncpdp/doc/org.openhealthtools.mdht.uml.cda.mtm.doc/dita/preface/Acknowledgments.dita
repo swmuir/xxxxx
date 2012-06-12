@@ -8,7 +8,7 @@
 through the joint efforts of the National Council for Prescription Drug
 Programs, Health Level Seven (HL7), and the Pharmacy e-HIT Collaborative.</p>
 		<p>This project builds upon the Clinical
-Document Architecture (CDA) Consolidation Project within the ONC’s Standards
+Document Architecture (CDA) Consolidation Project within the ONCâ€™s Standards
 and Interoperability (S&amp;I) Framework, which has been developed to provide a
 set of harmonized CDA templates for the US Realm. </p>
 		<p>The co-editors appreciate the support
@@ -17,7 +17,7 @@ and sponsorship of the HL7 Pharmacy Work Group, Structured Documents Work Group
 volunteers, staff and contractors participating in this development.</p>
 		<p>The conformance requirements included
 here for review were generated from the Model-Driven Health Tools
-(MDHT)—developed as on open source tool under the auspices of the Veterans
+(MDHT) developed as on open source tool under the auspices of the Veterans
 Administration, IBM, and the ONC. </p>
 		<p>This material contains content from
 SNOMED CT (<xref href="http://www.ihtsdo.org/snomed-ct/">http://www.ihtsdo.org/snomed-ct/</xref>). SNOMED CT
