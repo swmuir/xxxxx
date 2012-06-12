@@ -4,7 +4,7 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Audience</title>
 	<body>
-		<p>The audience for this document includes software developers and
-			implementers who wish to develop...</p>
+		<p>The audience for this implementation guide includes architects, developers, providers and users of healthcare information technology (HIT) systems in the US Realm that exchange patient clinical data related to MTM services. In addition, the output described in this implementation guide is intended for the patient.</p>
+		<p>Business analysts and policy managers can also benefit from a basic understanding of the use of Clinical Document Architecture (CDA) templates across multiple implementation use cases.</p>
 	</body>
 </topic>

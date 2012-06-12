@@ -4,7 +4,8 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Scope</title>
 	<body>
-		<p>TODO: scope of this implementation guide.
-		</p>
+		<p>The MTM Encounter supporting documentation templates are designed to provide a vehicle for reporting the results from the Medication Review (e.g. Comprehensive, (CMR) or Targeted (TMR) Medication Reviews) and/or Medication Therapy Management Services, including Clinical Documentation, Medication Therapy Outcomes and also to provide the patient-specific personal Medication Action Plan and Medication List.</p>
+		<p>This guide contains a subset of the CDA templates developed for Stage 1 Meaningful Use  and  for Health Story compliance to the section level that are required for implementation of MTM documents.</p>
+		<p>Additional optional CDA elements, not included here, can be included and the result will be compliant with the documents in this standard.</p>
 	</body>
 </topic>

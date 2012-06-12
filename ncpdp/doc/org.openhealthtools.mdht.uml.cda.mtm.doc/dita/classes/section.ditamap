@@ -2,5 +2,6 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Section Templates">
 <topicref href="MTMMedicationSection.dita" type="topic" />
+<topicref href="MedicationActionPlan.dita" type="topic" />
 <topicref href="OtherInformationSection.dita" type="topic" />
 </map>
