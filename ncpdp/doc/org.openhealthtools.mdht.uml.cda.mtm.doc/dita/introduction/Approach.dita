@@ -7,7 +7,7 @@
 		<p>In the development of this specification, the team reviewed
 the Consolidated CDA Implementation Guide and the CMS Medicare Part D MTM
 Program Standardized Format. The conformance requirements included here were
-generated from the Model-Driven Health Tools (MDHT)—developed as an open source
+generated from the Model-Driven Health Tools (MDHT) developed as an open source
 tool under the auspices of the Veterans Administration, IBM, and the ONC.</p>
 		<p>All major template
 changes are summarized in the <xref href="#A_Changes">Change Appendix</xref>. A full
