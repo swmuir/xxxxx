@@ -5,7 +5,7 @@
 		<booklibrary>Implementation Guide for CDA Release 2</booklibrary>
 		<mainbooktitle>MEDICATION THERAPY MANAGEMENT PROGRAM</mainbooktitle>
 		<booktitlealt>MEDICARE PART D</booktitlealt>
-		<booktitlealt><image href="images/CDAToolsLogo.png"/></booktitlealt>
+		<booktitlealt><image href="images/NCPDPLogo.jpg"/><image href="images/HL7Logo.png"/></booktitlealt>
 		<booktitlealt></booktitlealt>
 		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>
 	</booktitle>
