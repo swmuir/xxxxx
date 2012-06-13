@@ -18492,17 +18492,17 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         </ownedAttribute>
         <ownedAttribute xmi:id="_mSBeI2QvEd-ODMSOo4sPFQ" name="Pharmacy" type="_FG5gMGTPEd-M5IWg2-DxLQ" aggregation="composite" association="_mSLPGGQvEd-ODMSOo4sPFQ">
           <ownedComment xmi:id="_iuYpoIlGEd-pZLs28ekBmw" annotatedElement="_mSBeI2QvEd-ODMSOo4sPFQ">
-            <body>See SCRIPTRequest of Definition and Usage</body>
+            <body>Segment is required if requestor or recipient is a pharmacy</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSBeJGQvEd-ODMSOo4sPFQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeJWQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_mSBeJmQvEd-ODMSOo4sPFQ" name="Prescriber" type="_93D_8GTPEd-M5IWg2-DxLQ" aggregation="composite" association="_mSBeQ2QvEd-ODMSOo4sPFQ">
           <ownedComment xmi:id="_-Omp4In1Ed-pZLs28ekBmw" annotatedElement="_mSBeJmQvEd-ODMSOo4sPFQ">
-            <body>See SCRIPTRequest of Definition and Usage</body>
+            <body>Segment is required if requestor or recipient is a prescriber</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSBeJ2QvEd-ODMSOo4sPFQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeKGQvEd-ODMSOo4sPFQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSBeKGQvEd-ODMSOo4sPFQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_mSBeKWQvEd-ODMSOo4sPFQ" name="DrugAdministrationRequest" type="_Rn_ZoGNYEd-ODMSOo4sPFQ" aggregation="composite">
           <ownedComment xmi:id="_-OA0BIn1Ed-pZLs28ekBmw" annotatedElement="_mSBeKWQvEd-ODMSOo4sPFQ">
@@ -19352,17 +19352,17 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         </ownedAttribute>
         <ownedAttribute xmi:id="_bFIbBGRHEd-M5IWg2-DxLQ" name="Pharmacy" type="_FG5gMGTPEd-M5IWg2-DxLQ" aggregation="composite">
           <ownedComment xmi:id="_nWxxEIlGEd-pZLs28ekBmw" annotatedElement="_bFIbBGRHEd-M5IWg2-DxLQ">
-            <body>Value P2.</body>
+            <body>Value P2. Segment is required if requestor or recipient is a pharmacy.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIbBWRHEd-M5IWg2-DxLQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIbBmRHEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_bFIbB2RHEd-M5IWg2-DxLQ" name="Prescriber" type="_7GxpoGTPEd-M5IWg2-DxLQ" aggregation="composite">
           <ownedComment xmi:id="_qHpWMIlGEd-pZLs28ekBmw" annotatedElement="_bFIbB2RHEd-M5IWg2-DxLQ">
-            <body>Value PC</body>
+            <body>Value PC. Segment is required if requestor or recipient is a prescriber.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIbCGRHEd-M5IWg2-DxLQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIbCWRHEd-M5IWg2-DxLQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFIbCWRHEd-M5IWg2-DxLQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_bFIbCmRHEd-M5IWg2-DxLQ" name="Observation" visibility="public" type="_4O7upzD1Ed-8rpqfOAePKg" aggregation="composite">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFIbC2RHEd-M5IWg2-DxLQ"/>

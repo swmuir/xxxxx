@@ -2747,52 +2747,6 @@
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_68pG4y1QEd-8mcmtGejV_Q" name="CommunicationTypeQualifierCode">
-        <ownedComment xmi:id="_68pG5C1QEd-8mcmtGejV_Q">
-          <body>Values for Communication Codes</body>
-        </ownedComment>
-        <generalization xmi:id="_c58WsItzEd-urZQZ08VCKQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
-        <ownedLiteral xmi:id="_68y34i1QEd-8mcmtGejV_Q" name="BN" classifier="_68pG4y1QEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_68y34y1QEd-8mcmtGejV_Q">
-            <body>Beeper</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_688o4C1QEd-8mcmtGejV_Q" name="CP" classifier="_68pG4y1QEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_688o4S1QEd-8mcmtGejV_Q">
-            <body>Cellular</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_688o4y1QEd-8mcmtGejV_Q" name="EM" classifier="_68pG4y1QEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_688o5C1QEd-8mcmtGejV_Q">
-            <body>Electronic Mail</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_69Fy0C1QEd-8mcmtGejV_Q" name="FX" classifier="_68pG4y1QEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_69Fy0S1QEd-8mcmtGejV_Q">
-            <body>Fax</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_69Fy0y1QEd-8mcmtGejV_Q" name="HP" classifier="_68pG4y1QEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_69Fy1C1QEd-8mcmtGejV_Q">
-            <body>Home</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_69Pj0S1QEd-8mcmtGejV_Q" name="NP" classifier="_68pG4y1QEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_69Pj0i1QEd-8mcmtGejV_Q">
-            <body>Night</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_69Pj1C1QEd-8mcmtGejV_Q" name="TE" classifier="_68pG4y1QEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_69Pj1S1QEd-8mcmtGejV_Q">
-            <body>Telephone</body>
-          </ownedComment>
-        </ownedLiteral>
-        <ownedLiteral xmi:id="_69YtwS1QEd-8mcmtGejV_Q" name="WP" classifier="_68pG4y1QEd-8mcmtGejV_Q">
-          <ownedComment xmi:id="_69Ytwi1QEd-8mcmtGejV_Q">
-            <body>Work</body>
-          </ownedComment>
-        </ownedLiteral>
-      </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_h7qnVCxAEd-8mcmtGejV_Q" name="VariableFrequencyModifierSIGSegment" visibility="private">
         <ownedComment xmi:id="_h7qnVSxAEd-8mcmtGejV_Q">
           <body>Used to express when there is more than one FREQUENCY as to whether the frequencies are all required to be used (AND) or if any of the frequencies can be used (OR).</body>
@@ -14579,8 +14533,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </ownedLiteral>
         <ownedLiteral xmi:id="_oo81UJ_KEeGied0FMeK3NA" name="LD" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_yqZsIJ_KEeGied0FMeK3NA" annotatedElement="_oo81UJ_KEeGied0FMeK3NA">
-            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT)&#xD;
-SNOMED CT® terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct/</body>
+            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT). SNOMED CT® terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct/</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -14601,8 +14554,7 @@ SNOMED CT® terminology which is available from the Health Terminology Standards
         </ownedLiteral>
         <ownedLiteral xmi:id="_5vNLoJ_KEeGied0FMeK3NA" name="LD" classifier="_eqJzQyxAEd-8mcmtGejV_Q">
           <ownedComment xmi:id="_5vNLoZ_KEeGied0FMeK3NA" annotatedElement="_5vNLoJ_KEeGied0FMeK3NA">
-            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT)&#xD;
-SNOMED CT® terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct/</body>
+            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT). SNOMED CT® terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct/</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -17646,8 +17598,7 @@ SNOMED CT® terminology which is available from the Health Terminology Standards
         </ownedLiteral>
         <ownedLiteral xmi:id="_Qv02wWmnEd-rC41nbGoKjA" name="LD" classifier="_Qv02sGmnEd-rC41nbGoKjA">
           <ownedComment xmi:id="_Qv02wmmnEd-rC41nbGoKjA" annotatedElement="_Qv02wWmnEd-rC41nbGoKjA">
-            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT)&#xD;
-SNOMED CT® terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct/</body>
+            <body>SNOMED - Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT). SNOMED CT® terminology which is available from the Health Terminology Standards Development Organisation (IHTSDO) http://www.ihtsdo.org/snomed-ct/</body>
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
@@ -18126,16 +18077,6 @@ SNOMED CT® terminology which is available from the Health Terminology Standards
     </profileApplication>
   </uml:Model>
   <Ecore:EPackage xmi:id="_p1bcoBHYEd-AKYVvbvSUVA" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" packageName="ecl" nsPrefix="ecl" nsURI="http://www.ncpdp.org/uml/ecl" basePackage="org.ncpdp.uml" prefix="ExternalCodeList"/>
-  <Default:Documentation xmi:id="_69Ytwy1QEd-8mcmtGejV_Q" base_Comment="_69Ytwi1QEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_69YtwC1QEd-8mcmtGejV_Q" base_Comment="_69Pj1S1QEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_69Pj0y1QEd-8mcmtGejV_Q" base_Comment="_69Pj0i1QEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_69Pj0C1QEd-8mcmtGejV_Q" base_Comment="_69Fy1C1QEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_69Fy0i1QEd-8mcmtGejV_Q" base_Comment="_69Fy0S1QEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_688o5S1QEd-8mcmtGejV_Q" base_Comment="_688o5C1QEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_688o4i1QEd-8mcmtGejV_Q" base_Comment="_688o4S1QEd-8mcmtGejV_Q"/>
-  <Default:Documentation xmi:id="_68y35C1QEd-8mcmtGejV_Q" base_Comment="_68y34y1QEd-8mcmtGejV_Q"/>
-  <orgncpdpecl:ncpdpecl xmi:id="_68y34S1QEd-8mcmtGejV_Q" valueSetId="1131" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_68pG4y1QEd-8mcmtGejV_Q" displayName="Code List Qualifier –Communication Number - PVD, PTT, COO Segment (X12 DE 365) "/>
-  <Default:Documentation xmi:id="_68y34C1QEd-8mcmtGejV_Q" base_Comment="_68pG5C1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_68pG4i1QEd-8mcmtGejV_Q" base_Comment="_68pG4S1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_68f89S1QEd-8mcmtGejV_Q" base_Comment="_68f89C1QEd-8mcmtGejV_Q"/>
   <Default:Documentation xmi:id="_68f88i1QEd-8mcmtGejV_Q" base_Comment="_68f88S1QEd-8mcmtGejV_Q"/>
@@ -21948,7 +21889,6 @@ SNOMED CT® terminology which is available from the Health Terminology Standards
   <Default:Documentation xmi:id="_rb0J4YthEd-urZQZ08VCKQ" base_Comment="_rb0J4IthEd-urZQZ08VCKQ"/>
   <xsd:Restriction xmi:id="_VG54MYtzEd-urZQZ08VCKQ" base_Generalization="_VG54MItzEd-urZQZ08VCKQ"/>
   <xsd:Restriction xmi:id="_YxTGUYtzEd-urZQZ08VCKQ" base_Generalization="_YxTGUItzEd-urZQZ08VCKQ"/>
-  <xsd:Restriction xmi:id="_c58WsYtzEd-urZQZ08VCKQ" base_Generalization="_c58WsItzEd-urZQZ08VCKQ"/>
   <xsd:Restriction xmi:id="_hS1pkYtzEd-urZQZ08VCKQ" base_Generalization="_hS1pkItzEd-urZQZ08VCKQ"/>
   <xsd:Restriction xmi:id="_kcJj4YtzEd-urZQZ08VCKQ" base_Generalization="_kcJj4ItzEd-urZQZ08VCKQ"/>
   <xsd:Restriction xmi:id="_oA4O4YtzEd-urZQZ08VCKQ" base_Generalization="_oA4O4ItzEd-urZQZ08VCKQ"/>
