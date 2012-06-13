@@ -1583,12 +1583,12 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           </xsd:element>
           <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy">
             <xsd:annotation>
-              <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
+              <xsd:documentation>Segment is required if requestor or recipient is a pharmacy</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="Prescriber" type="structures:OptionalPrescriber">
+          <xsd:element minOccurs="0" name="Prescriber" type="structures:OptionalPrescriber">
             <xsd:annotation>
-              <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>
+              <xsd:documentation>Segment is required if requestor or recipient is a prescriber</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
           <xsd:element maxOccurs="0" minOccurs="0" name="DrugAdministrationRequest" type="SCRIPT:DrugAdministrationRequest">
@@ -1650,12 +1650,12 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element name="Patient" type="structures:Patient"/>
       <xsd:element minOccurs="0" name="Pharmacy" type="structures:OptionalPharmacy">
         <xsd:annotation>
-          <xsd:documentation>Value P2.</xsd:documentation>
+          <xsd:documentation>Value P2. Segment is required if requestor or recipient is a pharmacy.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="Prescriber" type="structures:HistoryPrescriber">
+      <xsd:element minOccurs="0" name="Prescriber" type="structures:HistoryPrescriber">
         <xsd:annotation>
-          <xsd:documentation>Value PC</xsd:documentation>
+          <xsd:documentation>Value PC. Segment is required if requestor or recipient is a prescriber.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element maxOccurs="0" minOccurs="0" name="Observation" type="structures:Observation"/>
