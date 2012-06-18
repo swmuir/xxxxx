@@ -30,45 +30,41 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationActionPlanObservationImpl extends PlanOfCareActivityObservationImpl implements MedicationActionPlanObservation
-{
-  /**
+public class MedicationActionPlanObservationImpl extends PlanOfCareActivityObservationImpl implements MedicationActionPlanObservation {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected MedicationActionPlanObservationImpl()
-  {
+	protected MedicationActionPlanObservationImpl() {
     super();
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  protected EClass eStaticClass()
-  {
+	@Override
+	protected EClass eStaticClass() {
     return MtmPackage.Literals.MEDICATION_ACTION_PLAN_OBSERVATION;
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlanObservationText(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActionPlanObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return MedicationActionPlanObservationOperations.validateMedicationActionPlanObservationText(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public MedicationActionPlanObservation init() {
+	public MedicationActionPlanObservation init() {
     	CDAUtil.init(this);
     	return this;
   }

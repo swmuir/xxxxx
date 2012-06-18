@@ -86,7 +86,7 @@ See MAP 6</li></ul></li>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC">
   <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
-  <id root="1901751821" extension="MDHT"/>
+  <id root="420591431" extension="MDHT"/>
   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <text>Text Value</text>
   <effectiveTime>
@@ -97,44 +97,20 @@ See MAP 6</li></ul></li>
     <act classCode="ACT" moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
       <templateId root="111.222.333.444.666"/>
-      <id root="671757551" extension="MDHT"/>
+      <id root="1956603178" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <entryRelationship>
-        <observation classCode="OBS" moodCode="GOL">
-          <templateId root="2.16.840.1.113883.10.20.1.25"/>
-          <id root="1340286868" extension="MDHT"/>
-          <code code="1670351215"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
-          </effectiveTime>
-        </observation>
-      </entryRelationship>
-      <entryRelationship>
-        <observation classCode="OBS">
-          <templateId root="2.16.840.1.113883.10.20.1.25"/>
-          <id root="1809691686" extension="MDHT"/>
-          <code code="828025696"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
-          </effectiveTime>
-        </observation>
-      </entryRelationship>
     </act>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS">
       <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="798493015" extension="MDHT"/>
-      <code code="1478162511"/>
+      <id root="1522648372" extension="MDHT"/>
+      <code code="1651267967"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>

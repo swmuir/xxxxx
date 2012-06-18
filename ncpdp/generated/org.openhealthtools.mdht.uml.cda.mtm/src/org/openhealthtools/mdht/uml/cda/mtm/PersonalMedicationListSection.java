@@ -15,19 +15,18 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Personal Medication List</b></em>'.
+ * A representation of the model object '<em><b>Personal Medication List Section</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getPersonalMedicationList()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.333' constraints.validation.error='PersonalMedicationListTemplateId PersonalMedicationListMedication'"
+ * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getPersonalMedicationListSection()
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.333' constraints.validation.error='PersonalMedicationListSectionTemplateId PersonalMedicationListSectionMedication'"
  * @generated
  */
-public interface PersonalMedicationList extends MedicationsSection
-{
-  /**
+public interface PersonalMedicationListSection extends MedicationsSection {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(mtm::MedicationActivity))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -36,11 +35,11 @@ public interface PersonalMedicationList extends MedicationsSection
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(mtm::MedicationActivity))'"
    * @generated
    */
-  boolean validatePersonalMedicationListMedication(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePersonalMedicationListSectionMedication(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(mtm::MedicationActivity)).oclAsType(mtm::MedicationActivity)
    * <!-- end-model-doc -->
@@ -48,12 +47,12 @@ public interface PersonalMedicationList extends MedicationsSection
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(mtm::MedicationActivity)).oclAsType(mtm::MedicationActivity)'"
    * @generated
    */
-  EList<MedicationActivity> getmtmMedications();
+	EList<MedicationActivity> getmtmMedications();
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public PersonalMedicationList init();
-} // PersonalMedicationList
+	public PersonalMedicationListSection init();
+} // PersonalMedicationListSection

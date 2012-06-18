@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Clinical Statement Templates">
+<topicref href="Instructions.dita" type="topic" />
 <topicref href="MedicationActionPlanActivity.dita" type="topic" />
 <topicref href="MedicationActionPlanEncounter.dita" type="topic" />
 <topicref href="MedicationActionPlanGoal.dita" type="topic" />
 <topicref href="MedicationActionPlanObservation.dita" type="topic" />
 <topicref href="MedicationActivity.dita" type="topic" />
+<topicref href="Reminder.dita" type="topic" />
 </map>

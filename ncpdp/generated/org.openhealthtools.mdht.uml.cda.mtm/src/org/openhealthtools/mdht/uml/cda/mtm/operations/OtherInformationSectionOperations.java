@@ -41,42 +41,41 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *
  * @generated
  */
-public class OtherInformationSectionOperations extends SectionOperations
-{
-  /**
+public class OtherInformationSectionOperations extends SectionOperations {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected OtherInformationSectionOperations() {
+	protected OtherInformationSectionOperations() {
     super();
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateOtherInformationSectionTemplateId(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Information Section Template Id</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateOtherInformationSectionTemplateId(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_OTHER_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.444')";
+	protected static final String VALIDATE_OTHER_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.444')";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateOtherInformationSectionTemplateId(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Information Section Template Id</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateOtherInformationSectionTemplateId(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_OTHER_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_OTHER_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.444')
    * @param otherInformationSection The receiving '<em><b>Other Information Section</b></em>' model object.
@@ -85,9 +84,8 @@ public class OtherInformationSectionOperations extends SectionOperations
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateOtherInformationSectionTemplateId(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validateOtherInformationSectionTemplateId(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_OTHER_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -119,31 +117,31 @@ public class OtherInformationSectionOperations extends SectionOperations
     return true;
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateOtherInformationSectionText(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Information Section Text</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateOtherInformationSectionText(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_OTHER_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
+	protected static final String VALIDATE_OTHER_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateOtherInformationSectionText(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Information Section Text</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateOtherInformationSectionText(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_OTHER_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_OTHER_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * not self.text.oclIsUndefined()
    * @param otherInformationSection The receiving '<em><b>Other Information Section</b></em>' model object.
@@ -152,9 +150,8 @@ public class OtherInformationSectionOperations extends SectionOperations
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateOtherInformationSectionText(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validateOtherInformationSectionText(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_OTHER_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -186,31 +183,31 @@ public class OtherInformationSectionOperations extends SectionOperations
     return true;
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateOtherInformationSectionTitle(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Information Section Title</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateOtherInformationSectionTitle(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_OTHER_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
+	protected static final String VALIDATE_OTHER_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateOtherInformationSectionTitle(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Information Section Title</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateOtherInformationSectionTitle(OtherInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_OTHER_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_OTHER_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
    * @param otherInformationSection The receiving '<em><b>Other Information Section</b></em>' model object.
@@ -219,9 +216,8 @@ public class OtherInformationSectionOperations extends SectionOperations
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateOtherInformationSectionTitle(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validateOtherInformationSectionTitle(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_OTHER_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

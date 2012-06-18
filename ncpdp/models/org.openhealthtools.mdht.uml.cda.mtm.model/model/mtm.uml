@@ -39,24 +39,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AX20cKmsEeGfEcsleERUhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AX20camsEeGfEcsleERUhA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_NrKWsLSmEeG0-4dzGPBnrw" name="author" type="_OuZVULSmEeG0-4dzGPBnrw" association="_NrK9wLSmEeG0-4dzGPBnrw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NrKWsbSmEeG0-4dzGPBnrw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NrKWsrSmEeG0-4dzGPBnrw" value="1"/>
-      </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_OuZVULSmEeG0-4dzGPBnrw" name="Author">
-        <generalization xmi:id="_OuZ8YLSmEeG0-4dzGPBnrw">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_r6htwLSlEeG0-4dzGPBnrw"/>
-        </generalization>
-        <ownedAttribute xmi:id="_PXsJ8LSmEeG0-4dzGPBnrw" name="typeCode" visibility="private">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T1ZrYLSmEeG0-4dzGPBnrw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T1aScLSmEeG0-4dzGPBnrw" value="1"/>
-          <defaultValue xmi:type="uml:InstanceValue" xmi:id="_PXsJ87SmEeG0-4dzGPBnrw" name="AUT">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
-            <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BjUDcEd6xYZuu1VKCVw"/>
-          </defaultValue>
-        </ownedAttribute>
-      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_XYcdsEawEeGFfbgNCOW4yA" memberEnd="_XX2n0EawEeGFfbgNCOW4yA _XYcdsUawEeGFfbgNCOW4yA">
       <ownedComment xmi:id="_NPJZwLe_EeG0Dux7Xv_CnQ">
@@ -249,16 +231,6 @@ Information about medication-related devices should be included in the field for
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_K0sGMLlDEeGY-68JiW9xqw" value="SPRT"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_8HjgULe2EeGy6IHu0WFTyQ" name="Reminder">
-          <generalization xmi:id="_8HjgUbe2EeGy6IHu0WFTyQ">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
-          </generalization>
-          <ownedAttribute xmi:id="_9PHlULe2EeGy6IHu0WFTyQ" name="text" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__G4YMLe2EeGy6IHu0WFTyQ" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__G4YMbe2EeGy6IHu0WFTyQ" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Z9EakLlDEeGY-68JiW9xqw" name="InstructionEntryRelationship">
         <ownedComment xmi:id="_5l0xALlDEeGY-68JiW9xqw">
@@ -275,16 +247,6 @@ Information about medication-related devices should be included in the field for
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_20pp4LlDEeGY-68JiW9xqw" value="SUBJ"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_AO4iELe3EeGy6IHu0WFTyQ" name="Instructions">
-          <generalization xmi:id="_AO4iEbe3EeGy6IHu0WFTyQ">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
-          </generalization>
-          <ownedAttribute xmi:id="_A_Yx8Le3EeGy6IHu0WFTyQ" name="text" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DTHIELe3EeGy6IHu0WFTyQ" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DTHIEbe3EeGy6IHu0WFTyQ" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_lr6VYLlFEeGY-68JiW9xqw" name="GoalsEntryRelationship">
         <ownedComment xmi:id="_7vStALlFEeGY-68JiW9xqw">
@@ -486,12 +448,6 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JkFBgamuEeGfEcsleERUhA" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_NrK9wLSmEeG0-4dzGPBnrw" memberEnd="_NrKWsLSmEeG0-4dzGPBnrw _NrLk0LSmEeG0-4dzGPBnrw">
-      <ownedComment xmi:id="_iWYokLSmEeG0-4dzGPBnrw">
-        <body>The author designates the primary provider developing the Medication Therapy Management Plan</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_NrLk0LSmEeG0-4dzGPBnrw" type="_0naHsUavEeGFfbgNCOW4yA" association="_NrK9wLSmEeG0-4dzGPBnrw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_pQo5MLb8EeGErMgL9zVrTA" name="MedicationActionPlanGoal">
       <generalization xmi:id="_pQpgQLb8EeGErMgL9zVrTA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NcLjhSVEeGGzu7fmW9pXw"/>
@@ -564,6 +520,29 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
       </ownedComment>
       <ownedEnd xmi:id="_R9ZnwLljEeGSOIIUThrvRA" type="_0AARgKmsEeGfEcsleERUhA" association="_R9ZAsbljEeGSOIIUThrvRA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8HjgULe2EeGy6IHu0WFTyQ" name="Reminder">
+      <ownedComment xmi:id="_A4sEYLl1EeG9KtLyBDnukg">
+        <body>Documents a reminder for the medication activity</body>
+      </ownedComment>
+      <generalization xmi:id="_8HjgUbe2EeGy6IHu0WFTyQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_9PHlULe2EeGy6IHu0WFTyQ" name="text" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__G4YMLe2EeGy6IHu0WFTyQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__G4YMbe2EeGy6IHu0WFTyQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AO4iELe3EeGy6IHu0WFTyQ" name="Instructions">
+      <generalization xmi:id="_AO4iEbe3EeGy6IHu0WFTyQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_A_Yx8Le3EeGy6IHu0WFTyQ" name="text" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DTHIELe3EeGy6IHu0WFTyQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DTHIEbe3EeGy6IHu0WFTyQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
     <profileApplication xmi:id="_0j1PQUavEeGFfbgNCOW4yA">
       <eAnnotations xmi:id="_0j1PQkavEeGFfbgNCOW4yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -618,10 +597,6 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_KDL_YKmuEeGfEcsleERUhA" base_Property="_8tJLUKmtEeGfEcsleERUhA"/>
-  <CDA:AssociationValidation xmi:id="_NrML4LSmEeG0-4dzGPBnrw" base_Association="_NrK9wLSmEeG0-4dzGPBnrw">
-    <ruleId>CONF:5444</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_SNNlkLSmEeG0-4dzGPBnrw" base_Property="_PXsJ8LSmEeG0-4dzGPBnrw"/>
   <CDA:ValueSetConstraint xmi:id="_qs7RAbb8EeGErMgL9zVrTA" base_Property="_qs7RALb8EeGErMgL9zVrTA">
     <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_rCM2gG1HEeGCevFpokwODw"/>
     <ruleId>CONF:8582</ruleId>
@@ -638,19 +613,11 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
   <CDA:AssociationValidation xmi:id="_0tR-sLiIEeGb35xSoPyoyg" base_Association="_juC2YriIEeGb35xSoPyoyg"/>
   <CDA:PropertyValidation xmi:id="_-G8QALh4EeGwl5mfCFeAaA" base_Property="_7rtjsLh4EeGwl5mfCFeAaA"/>
   <CDA:PropertyValidation xmi:id="_HG5NkLh5EeGwl5mfCFeAaA" base_Property="_7rtjsrh4EeGwl5mfCFeAaA"/>
-  <CDA:TextValue xmi:id="_9PHlU7e2EeGy6IHu0WFTyQ" severity="WARNING" base_Property="_9PHlULe2EeGy6IHu0WFTyQ">
-    <ruleId>CONF:7395</ruleId>
-  </CDA:TextValue>
-  <CDA:PropertyValidation xmi:id="_-Nmm0Le2EeGy6IHu0WFTyQ" base_Property="_9PHlULe2EeGy6IHu0WFTyQ"/>
   <CDA:AssociationValidation xmi:id="_AGZXgLlDEeGY-68JiW9xqw" base_Association="_4fGO8rlCEeGY-68JiW9xqw"/>
   <CDA:AssociationValidation xmi:id="_BO_-ULlDEeGY-68JiW9xqw" severity="INFO" base_Association="_yY3QgrlCEeGY-68JiW9xqw"/>
   <CDA:AssociationValidation xmi:id="_Bx9hcLlDEeGY-68JiW9xqw" severity="INFO" base_Association="_gNHRwrlCEeGY-68JiW9xqw"/>
   <CDA:PropertyValidation xmi:id="_JejZsLlDEeGY-68JiW9xqw" base_Property="_IvFroLlDEeGY-68JiW9xqw"/>
   <CDA:PropertyValidation xmi:id="_RzwKELlDEeGY-68JiW9xqw" base_Property="_RETDELlDEeGY-68JiW9xqw"/>
-  <CDA:TextValue xmi:id="_A_Yx87e3EeGy6IHu0WFTyQ" severity="WARNING" base_Property="_A_Yx8Le3EeGy6IHu0WFTyQ">
-    <ruleId>CONF:7395</ruleId>
-  </CDA:TextValue>
-  <CDA:PropertyValidation xmi:id="_Dk0jILe3EeGy6IHu0WFTyQ" base_Property="_A_Yx8Le3EeGy6IHu0WFTyQ"/>
   <CDA:AssociationValidation xmi:id="_hyL8sLlDEeGY-68JiW9xqw" base_Association="_WIeHkrlDEeGY-68JiW9xqw"/>
   <CDA:AssociationValidation xmi:id="_uhBm0LlDEeGY-68JiW9xqw" base_Association="_tZUX4rlDEeGY-68JiW9xqw"/>
   <CDA:PropertyValidation xmi:id="_2Ec8ALlDEeGY-68JiW9xqw" base_Property="_1SwZULlDEeGY-68JiW9xqw"/>
@@ -658,4 +625,14 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
   <CDA:AssociationValidation xmi:id="_pR7UoLlXEeGY-68JiW9xqw" base_Association="_n_8NgrlFEeGY-68JiW9xqw"/>
   <CDA:AssociationValidation xmi:id="_XN7tQLljEeGSOIIUThrvRA" severity="INFO" base_Association="_R9ZAsbljEeGSOIIUThrvRA"/>
   <CDA:PropertyValidation xmi:id="_ufoYgLlrEeGSOIIUThrvRA" base_Property="_s5L_ILlrEeGSOIIUThrvRA"/>
+  <CDA:TextValue xmi:id="_9PHlU7e2EeGy6IHu0WFTyQ" severity="WARNING" base_Property="_9PHlULe2EeGy6IHu0WFTyQ">
+    <ruleId>CONF:7395</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_-Nmm0Le2EeGy6IHu0WFTyQ" base_Property="_9PHlULe2EeGy6IHu0WFTyQ"/>
+  <CDA:CDATemplate xmi:id="_E2U-oLl1EeG9KtLyBDnukg" base_Class="_8HjgULe2EeGy6IHu0WFTyQ" templateId="111.222.333.444.222.1" assigningAuthorityName="MDHT"/>
+  <CDA:TextValue xmi:id="_A_Yx87e3EeGy6IHu0WFTyQ" severity="WARNING" base_Property="_A_Yx8Le3EeGy6IHu0WFTyQ">
+    <ruleId>CONF:7395</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_Dk0jILe3EeGy6IHu0WFTyQ" base_Property="_A_Yx8Le3EeGy6IHu0WFTyQ"/>
+  <CDA:CDATemplate xmi:id="_QMlFMLl1EeG9KtLyBDnukg" base_Class="_AO4iELe3EeGy6IHu0WFTyQ" templateId="111.222.333.444.222.2"/>
 </xmi:XMI>

@@ -30,66 +30,60 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationActionPlanGoalImpl extends PlanOfCareActivityObservationImpl implements MedicationActionPlanGoal
-{
-  /**
+public class MedicationActionPlanGoalImpl extends PlanOfCareActivityObservationImpl implements MedicationActionPlanGoal {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected MedicationActionPlanGoalImpl()
-  {
+	protected MedicationActionPlanGoalImpl() {
     super();
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  protected EClass eStaticClass()
-  {
+	@Override
+	protected EClass eStaticClass() {
     return MtmPackage.Literals.MEDICATION_ACTION_PLAN_GOAL;
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlanGoalMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActionPlanGoalMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return MedicationActionPlanGoalOperations.validateMedicationActionPlanGoalMoodCode(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlanGoalText(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActionPlanGoalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return MedicationActionPlanGoalOperations.validateMedicationActionPlanGoalText(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@Override
+	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return MedicationActionPlanGoalOperations.validatePlanOfCareActivityObservationMoodCode(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public MedicationActionPlanGoal init() {
+	public MedicationActionPlanGoal init() {
     	CDAUtil.init(this);
     	return this;
   }

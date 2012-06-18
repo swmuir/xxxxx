@@ -13,8 +13,8 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClassifier;
 
 import org.eclipse.ocl.ParserException;
@@ -44,53 +44,52 @@ import org.openhealthtools.mdht.uml.cda.mtm.util.MtmValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#validateMedicationActionPlanEncounterEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#validateMedicationActionPlanEncounterText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#validateMedicationActionPlanEncounterCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#validateMedicationActionPlanEncounterCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#validateMedicationActionPlanEncounterCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#validateMedicationActionPlanEncounterMedicationActionPlanActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Medication Action Plan Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#validateMedicationActionPlanEncounterMedicationActionPlanObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Medication Action Plan Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#getMedicationActionPlanActivities() <em>Get Medication Action Plan Activities</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#getMedicationActionPlanObservations() <em>Get Medication Action Plan Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounter#getMedicationActionPlanObservation() <em>Get Medication Action Plan Observation</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityEncounterOperations
-{
-  /**
+public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityEncounterOperations {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected MedicationActionPlanEncounterOperations() {
+	protected MedicationActionPlanEncounterOperations() {
     super();
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateMedicationActionPlanEncounterEffectiveTime(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Effective Time</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterEffectiveTime(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
+	protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateMedicationActionPlanEncounterEffectiveTime(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Effective Time</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterEffectiveTime(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
@@ -99,9 +98,8 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateMedicationActionPlanEncounterEffectiveTime(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validateMedicationActionPlanEncounterEffectiveTime(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -133,31 +131,31 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
     return true;
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateMedicationActionPlanEncounterText(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Text</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterText(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
+	protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateMedicationActionPlanEncounterText(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Text</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterText(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
@@ -166,9 +164,8 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateMedicationActionPlanEncounterText(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validateMedicationActionPlanEncounterText(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -200,114 +197,35 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
     return true;
   }
 
-  /**
-   * The cached OCL expression body for the '{@link #validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
-   * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(MtmPackage.Literals.MEDICATION_ACTION_PLAN_ENCOUNTER);
-      try
-      {
-        VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActionPlanEncounter))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.WARNING,
-             MtmValidator.DIAGNOSTIC_SOURCE,
-             MtmValidator.MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P,
-             MtmPlugin.INSTANCE.getString("MedicationActionPlanEncounterCodeP"),
-             new Object [] { medicationActionPlanEncounter }));
-      }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounterCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounterCodeP", passToken);
-        }
-        passToken.add(medicationActionPlanEncounter);
-      }
-       
-      return false;
-    }
-    return true;
-  }
-
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateMedicationActionPlanEncounterCode(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Code</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterCode(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and "+
+	protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
 "value.codeSystem = '2.16.840.1.113883.6.96')";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateMedicationActionPlanEncounterCode(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterCode(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and 
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
    * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
    * value.codeSystem = '2.16.840.1.113883.6.96')
    * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
@@ -316,15 +234,8 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateMedicationActionPlanEncounterCode(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanEncounterCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationActionPlanEncounter)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
+	
+	public static  boolean validateMedicationActionPlanEncounterCode(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -356,31 +267,97 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
     return true;
   }
 
-  /**
+	/**
+   * The cached OCL expression body for the '{@link #validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+   * The cached OCL invariant for the '{@link #validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	
+	protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+   * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+	
+	public static  boolean validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+    if (VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(MtmPackage.Literals.MEDICATION_ACTION_PLAN_ENCOUNTER);
+      try
+      {
+        VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActionPlanEncounter))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             MtmValidator.DIAGNOSTIC_SOURCE,
+             MtmValidator.MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P,
+             MtmPlugin.INSTANCE.getString("MedicationActionPlanEncounterCodeP"),
+             new Object [] { medicationActionPlanEncounter }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+	/**
    * The cached OCL expression body for the '{@link #validateMedicationActionPlanEncounterMedicationActionPlanActivity(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Medication Action Plan Activity</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterMedicationActionPlanActivity(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(mtm::MedicationActionPlanActivity))";
+	protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(mtm::MedicationActionPlanActivity))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateMedicationActionPlanEncounterMedicationActionPlanActivity(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Medication Action Plan Activity</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterMedicationActionPlanActivity(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(mtm::MedicationActionPlanActivity))
    * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
@@ -389,9 +366,8 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateMedicationActionPlanEncounterMedicationActionPlanActivity(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validateMedicationActionPlanEncounterMedicationActionPlanActivity(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -423,42 +399,41 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
     return true;
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateMedicationActionPlanEncounterMedicationActionPlanObservation(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Medication Action Plan Observation</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterMedicationActionPlanObservation(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(mtm::MedicationActionPlanObservation))";
+	protected static final String VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(mtm::MedicationActionPlanObservation))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateMedicationActionPlanEncounterMedicationActionPlanObservation(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Encounter Medication Action Plan Observation</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanEncounterMedicationActionPlanObservation(MedicationActionPlanEncounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(mtm::MedicationActionPlanObservation))
+   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(mtm::MedicationActionPlanObservation))
    * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateMedicationActionPlanEncounterMedicationActionPlanObservation(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validateMedicationActionPlanEncounterMedicationActionPlanObservation(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -490,39 +465,37 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
     return true;
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #getMedicationActionPlanActivities(MedicationActionPlanEncounter) <em>Get Medication Action Plan Activities</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #getMedicationActionPlanActivities(MedicationActionPlanEncounter)
    * @generated
    * @ordered
    */
-  protected static final String GET_MEDICATION_ACTION_PLAN_ACTIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::MedicationActionPlanActivity)).oclAsType(mtm::MedicationActionPlanActivity)";
+	protected static final String GET_MEDICATION_ACTION_PLAN_ACTIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::MedicationActionPlanActivity)).oclAsType(mtm::MedicationActionPlanActivity)";
 
-  /**
+	/**
    * The cached OCL query for the '{@link #getMedicationActionPlanActivities(MedicationActionPlanEncounter) <em>Get Medication Action Plan Activities</em>}' query operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #getMedicationActionPlanActivities(MedicationActionPlanEncounter)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_MEDICATION_ACTION_PLAN_ACTIVITIES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_MEDICATION_ACTION_PLAN_ACTIVITIES__EOCL_QRY;
 
-
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::MedicationActionPlanActivity)).oclAsType(mtm::MedicationActionPlanActivity)
    * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  EList<MedicationActionPlanActivity> getMedicationActionPlanActivities(MedicationActionPlanEncounter medicationActionPlanEncounter)
-  {
+	
+	public static  EList<MedicationActionPlanActivity> getMedicationActionPlanActivities(MedicationActionPlanEncounter medicationActionPlanEncounter) {
     if (GET_MEDICATION_ACTION_PLAN_ACTIVITIES__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -542,56 +515,52 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
     return new BasicEList.UnmodifiableEList<MedicationActionPlanActivity>(result.size(), result.toArray());
   }
 
-  /**
-   * The cached OCL expression body for the '{@link #getMedicationActionPlanObservations(MedicationActionPlanEncounter) <em>Get Medication Action Plan Observations</em>}' operation.
+	/**
+   * The cached OCL expression body for the '{@link #getMedicationActionPlanObservation(MedicationActionPlanEncounter) <em>Get Medication Action Plan Observation</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getMedicationActionPlanObservations(MedicationActionPlanEncounter)
+	 * <!-- end-user-doc -->
+   * @see #getMedicationActionPlanObservation(MedicationActionPlanEncounter)
    * @generated
    * @ordered
    */
-  protected static final String GET_MEDICATION_ACTION_PLAN_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation)).oclAsType(mtm::MedicationActionPlanObservation)";
+	protected static final String GET_MEDICATION_ACTION_PLAN_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->first().oclAsType(mtm::MedicationActionPlanObservation)";
 
-  /**
-   * The cached OCL query for the '{@link #getMedicationActionPlanObservations(MedicationActionPlanEncounter) <em>Get Medication Action Plan Observations</em>}' query operation.
+	/**
+   * The cached OCL query for the '{@link #getMedicationActionPlanObservation(MedicationActionPlanEncounter) <em>Get Medication Action Plan Observation</em>}' query operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getMedicationActionPlanObservations(MedicationActionPlanEncounter)
+	 * <!-- end-user-doc -->
+   * @see #getMedicationActionPlanObservation(MedicationActionPlanEncounter)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_MEDICATION_ACTION_PLAN_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_MEDICATION_ACTION_PLAN_OBSERVATION__EOCL_QRY;
 
-
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation)).oclAsType(mtm::MedicationActionPlanObservation)
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->first().oclAsType(mtm::MedicationActionPlanObservation)
    * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  EList<MedicationActionPlanObservation> getMedicationActionPlanObservations(MedicationActionPlanEncounter medicationActionPlanEncounter)
-  {
-    if (GET_MEDICATION_ACTION_PLAN_OBSERVATIONS__EOCL_QRY == null)
+	
+	public static  MedicationActionPlanObservation getMedicationActionPlanObservation(MedicationActionPlanEncounter medicationActionPlanEncounter) {
+    if (GET_MEDICATION_ACTION_PLAN_OBSERVATION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(MtmPackage.Literals.MEDICATION_ACTION_PLAN_ENCOUNTER, MtmPackage.Literals.MEDICATION_ACTION_PLAN_ENCOUNTER.getEAllOperations().get(62));
       try
       {
-        GET_MEDICATION_ACTION_PLAN_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTION_PLAN_OBSERVATIONS__EOCL_EXP);
+        GET_MEDICATION_ACTION_PLAN_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTION_PLAN_OBSERVATION__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_ACTION_PLAN_OBSERVATIONS__EOCL_QRY);
-    @SuppressWarnings("unchecked")
-    Collection<MedicationActionPlanObservation> result = (Collection<MedicationActionPlanObservation>) query.evaluate(medicationActionPlanEncounter);
-    return new BasicEList.UnmodifiableEList<MedicationActionPlanObservation>(result.size(), result.toArray());
+    OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_ACTION_PLAN_OBSERVATION__EOCL_QRY);
+    return (MedicationActionPlanObservation) query.evaluate(medicationActionPlanEncounter);
   }
 
 } // MedicationActionPlanEncounterOperations
