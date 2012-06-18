@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Package: mtm">
+<topicref href="Instructions.dita" type="topic" />
 <topicref href="MedicationActionPlanActivity.dita" type="topic" />
 <topicref href="MedicationActionPlanEncounter.dita" type="topic" />
 <topicref href="MedicationActionPlanGoal.dita" type="topic" />
@@ -10,4 +11,5 @@
 <topicref href="MedicationTherapyManagementProgram.dita" type="topic" />
 <topicref href="OtherInformationSection.dita" type="topic" />
 <topicref href="PersonalMedicationListSection.dita" type="topic" />
+<topicref href="Reminder.dita" type="topic" />
 </map>

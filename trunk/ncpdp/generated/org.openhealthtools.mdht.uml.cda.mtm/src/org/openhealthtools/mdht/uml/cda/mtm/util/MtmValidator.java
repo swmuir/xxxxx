@@ -28,428 +28,563 @@ import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage
  * @generated
  */
-public class MtmValidator extends EObjectValidator
-{
-  /**
+public class MtmValidator extends EObjectValidator {
+	/**
    * The cached model package
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final MtmValidator INSTANCE = new MtmValidator();
+	public static final MtmValidator INSTANCE = new MtmValidator();
 
-  /**
+	/**
    * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see org.eclipse.emf.common.util.Diagnostic#getSource()
    * @see org.eclipse.emf.common.util.Diagnostic#getCode()
    * @generated
    */
-  public static final String DIAGNOSTIC_SOURCE = "org.openhealthtools.mdht.uml.cda.mtm";
+	public static final String DIAGNOSTIC_SOURCE = "org.openhealthtools.mdht.uml.cda.mtm";
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Therapy Management Program Allergies Section' of 'Medication Therapy Management Program'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__MEDICATION_THERAPY_MANAGEMENT_PROGRAM_ALLERGIES_SECTION = 1;
+	public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__MEDICATION_THERAPY_MANAGEMENT_PROGRAM_ALLERGIES_SECTION = 1;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Therapy Management Program Medications Section' of 'Medication Therapy Management Program'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Therapy Management Program Personal Medication List Section' of 'Medication Therapy Management Program'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__MEDICATION_THERAPY_MANAGEMENT_PROGRAM_MEDICATIONS_SECTION = 2;
+	public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__MEDICATION_THERAPY_MANAGEMENT_PROGRAM_PERSONAL_MEDICATION_LIST_SECTION = 2;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Therapy Management Program Other Information Section' of 'Medication Therapy Management Program'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__MEDICATION_THERAPY_MANAGEMENT_PROGRAM_OTHER_INFORMATION_SECTION = 3;
+	public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__MEDICATION_THERAPY_MANAGEMENT_PROGRAM_OTHER_INFORMATION_SECTION = 3;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Therapy Management Program Medication Action Plan' of 'Medication Therapy Management Program'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__MEDICATION_THERAPY_MANAGEMENT_PROGRAM_MEDICATION_ACTION_PLAN = 4;
+	public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__MEDICATION_THERAPY_MANAGEMENT_PROGRAM_MEDICATION_ACTION_PLAN = 4;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Therapy Management Program Author' of 'Medication Therapy Management Program'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__MEDICATION_THERAPY_MANAGEMENT_PROGRAM_AUTHOR = 5;
-
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Template Id' of 'Medication Therapy Management Program'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 6;
+	public static final int MEDICATION_THERAPY_MANAGEMENT_PROGRAM__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 5;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Personal Medication List Medication' of 'Personal Medication List'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Personal Medication List Section Medication' of 'Personal Medication List Section'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PERSONAL_MEDICATION_LIST__PERSONAL_MEDICATION_LIST_MEDICATION = 7;
+	public static final int PERSONAL_MEDICATION_LIST_SECTION__PERSONAL_MEDICATION_LIST_SECTION_MEDICATION = 6;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Entries Optional Template Id' of 'Personal Medication List'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Entries Optional Template Id' of 'Personal Medication List Section'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PERSONAL_MEDICATION_LIST__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 8;
+	public static final int PERSONAL_MEDICATION_LIST_SECTION__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 7;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Template Id' of 'Medication Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_TEMPLATE_ID = 9;
+	public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_TEMPLATE_ID = 8;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Text' of 'Medication Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_TEXT = 10;
+	public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_TEXT = 9;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Indication' of 'Medication Activity'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_INDICATION = 11;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Instructions' of 'Medication Activity'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_INSTRUCTIONS = 12;
-
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Presciber' of 'Medication Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_PRESCIBER = 13;
+	public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_PRESCIBER = 10;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Goals' of 'Medication Activity'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Indication Entry Relationship' of 'Medication Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_GOALS = 14;
+	public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_INDICATION_ENTRY_RELATIONSHIP = 11;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Reminders' of 'Medication Activity'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Stop Reason Entry Relationship' of 'Medication Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_REMINDERS = 15;
+	public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_STOP_REASON_ENTRY_RELATIONSHIP = 12;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Stop Reason' of 'Medication Activity'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Reminder Entry Relationship' of 'Medication Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_STOP_REASON = 16;
+	public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_REMINDER_ENTRY_RELATIONSHIP = 13;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Goal Mood Code' of 'Medication Action Plan Goal'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Instructions Entry Relationship' of 'Medication Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_GOAL__MEDICATION_ACTION_PLAN_GOAL_MOOD_CODE = 17;
+	public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_INSTRUCTIONS_ENTRY_RELATIONSHIP = 14;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Goal Text' of 'Medication Action Plan Goal'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Medication Activity Goals Entry Relationship' of 'Medication Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_GOAL__MEDICATION_ACTION_PLAN_GOAL_TEXT = 18;
+	public static final int MEDICATION_ACTIVITY__MTM_MEDICATION_ACTIVITY_GOALS_ENTRY_RELATIONSHIP = 15;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Plan Of Care Activity Observation Mood Code' of 'Medication Action Plan Goal'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Prescriber Assigned Presciber Person Name' of 'Medication Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_GOAL__PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE = 19;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRESCRIBER_ASSIGNED_PRESCIBER_PERSON_NAME = 16;
 
-  /**
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Prescriber Assigned Presciber Assigned Person' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRESCRIBER_ASSIGNED_PRESCIBER_ASSIGNED_PERSON = 17;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Prescriber Template Id' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRESCRIBER_TEMPLATE_ID = 18;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Prescriber Type Code' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRESCRIBER_TYPE_CODE = 19;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Prescriber Assigned Author' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRESCRIBER_ASSIGNED_AUTHOR = 20;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Indication Entry Relationship Type Code' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INDICATION_ENTRY_RELATIONSHIP_TYPE_CODE = 21;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Indication Entry Relationship Indication' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INDICATION_ENTRY_RELATIONSHIP_INDICATION = 22;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Stop Reason Entry Relationship Stop Reason Class Code' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_STOP_REASON_ENTRY_RELATIONSHIP_STOP_REASON_CLASS_CODE = 23;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Stop Reason Entry Relationship Stop Reason Negation Ind' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_STOP_REASON_ENTRY_RELATIONSHIP_STOP_REASON_NEGATION_IND = 24;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Stop Reason Entry Relationship Type Code' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_STOP_REASON_ENTRY_RELATIONSHIP_TYPE_CODE = 25;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Reminder Entry Relationship Type Code' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REMINDER_ENTRY_RELATIONSHIP_TYPE_CODE = 26;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Reminder Entry Relationship Reminder' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REMINDER_ENTRY_RELATIONSHIP_REMINDER = 27;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Instruction Entry Relationship Type Code' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTION_ENTRY_RELATIONSHIP_TYPE_CODE = 28;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Instruction Entry Relationship Instructions' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTION_ENTRY_RELATIONSHIP_INSTRUCTIONS = 29;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Goals Entry Relationship Medication Action Plan Goal' of 'Medication Activity'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_GOALS_ENTRY_RELATIONSHIP_MEDICATION_ACTION_PLAN_GOAL = 30;
+
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Other Information Section Template Id' of 'Other Information Section'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int OTHER_INFORMATION_SECTION__OTHER_INFORMATION_SECTION_TEMPLATE_ID = 20;
+	public static final int OTHER_INFORMATION_SECTION__OTHER_INFORMATION_SECTION_TEMPLATE_ID = 31;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Other Information Section Text' of 'Other Information Section'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int OTHER_INFORMATION_SECTION__OTHER_INFORMATION_SECTION_TEXT = 21;
+	public static final int OTHER_INFORMATION_SECTION__OTHER_INFORMATION_SECTION_TEXT = 32;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Other Information Section Title' of 'Other Information Section'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int OTHER_INFORMATION_SECTION__OTHER_INFORMATION_SECTION_TITLE = 22;
+	public static final int OTHER_INFORMATION_SECTION__OTHER_INFORMATION_SECTION_TITLE = 33;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Medication Action Plan Encounter' of 'Medication Action Plan'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Section Title' of 'Medication Action Plan Section'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN__MEDICATION_ACTION_PLAN_MEDICATION_ACTION_PLAN_ENCOUNTER = 23;
+	public static final int MEDICATION_ACTION_PLAN_SECTION__MEDICATION_ACTION_PLAN_SECTION_TITLE = 34;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Plan Of Care Section Template Id' of 'Medication Action Plan'.
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Section Medication Action Plan Encounter' of 'Medication Action Plan Section'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN__PLAN_OF_CARE_SECTION_TEMPLATE_ID = 24;
+	public static final int MEDICATION_ACTION_PLAN_SECTION__MEDICATION_ACTION_PLAN_SECTION_MEDICATION_ACTION_PLAN_ENCOUNTER = 35;
 
-  /**
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Plan Of Care Section Template Id' of 'Medication Action Plan Section'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTION_PLAN_SECTION__PLAN_OF_CARE_SECTION_TEMPLATE_ID = 36;
+
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Encounter Effective Time' of 'Medication Action Plan Encounter'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_EFFECTIVE_TIME = 25;
+	public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_EFFECTIVE_TIME = 37;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Encounter Text' of 'Medication Action Plan Encounter'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_TEXT = 26;
+	public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_TEXT = 38;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Encounter Code P' of 'Medication Action Plan Encounter'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P = 27;
-
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Encounter Code' of 'Medication Action Plan Encounter'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_CODE = 28;
+	public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_CODE = 39;
 
-  /**
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Encounter Code P' of 'Medication Action Plan Encounter'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_CODE_P = 40;
+
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Encounter Medication Action Plan Activity' of 'Medication Action Plan Encounter'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_ACTIVITY = 29;
+	public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_ACTIVITY = 41;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Encounter Medication Action Plan Observation' of 'Medication Action Plan Encounter'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_OBSERVATION = 30;
+	public static final int MEDICATION_ACTION_PLAN_ENCOUNTER__MEDICATION_ACTION_PLAN_ENCOUNTER_MEDICATION_ACTION_PLAN_OBSERVATION = 42;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Activity Text' of 'Medication Action Plan Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ACTIVITY__MEDICATION_ACTION_PLAN_ACTIVITY_TEXT = 31;
+	public static final int MEDICATION_ACTION_PLAN_ACTIVITY__MEDICATION_ACTION_PLAN_ACTIVITY_TEXT = 43;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Activity Code P' of 'Medication Action Plan Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ACTIVITY__MEDICATION_ACTION_PLAN_ACTIVITY_CODE_P = 32;
+	public static final int MEDICATION_ACTION_PLAN_ACTIVITY__MEDICATION_ACTION_PLAN_ACTIVITY_CODE_P = 44;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Activity Code' of 'Medication Action Plan Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ACTIVITY__MEDICATION_ACTION_PLAN_ACTIVITY_CODE = 33;
+	public static final int MEDICATION_ACTION_PLAN_ACTIVITY__MEDICATION_ACTION_PLAN_ACTIVITY_CODE = 45;
 
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Activity Medication Action Plan Goal' of 'Medication Action Plan Activity'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int MEDICATION_ACTION_PLAN_ACTIVITY__MEDICATION_ACTION_PLAN_ACTIVITY_MEDICATION_ACTION_PLAN_GOAL = 34;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Activity Medication Action Plan Observation' of 'Medication Action Plan Activity'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int MEDICATION_ACTION_PLAN_ACTIVITY__MEDICATION_ACTION_PLAN_ACTIVITY_MEDICATION_ACTION_PLAN_OBSERVATION = 35;
-
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Plan Of Care Activity Act Template Id' of 'Medication Action Plan Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ACTIVITY__PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID = 36;
+	public static final int MEDICATION_ACTION_PLAN_ACTIVITY__PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID = 46;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Plan Of Care Activity Act Mood Code' of 'Medication Action Plan Activity'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_ACTIVITY__PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE = 37;
+	public static final int MEDICATION_ACTION_PLAN_ACTIVITY__PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE = 47;
 
-  /**
+	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Observation Text' of 'Medication Action Plan Observation'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTION_PLAN_OBSERVATION__MEDICATION_ACTION_PLAN_OBSERVATION_TEXT = 48;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Goal Mood Code' of 'Medication Action Plan Goal'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTION_PLAN_GOAL__MEDICATION_ACTION_PLAN_GOAL_MOOD_CODE = 49;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Action Plan Goal Text' of 'Medication Action Plan Goal'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTION_PLAN_GOAL__MEDICATION_ACTION_PLAN_GOAL_TEXT = 50;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Plan Of Care Activity Observation Mood Code' of 'Medication Action Plan Goal'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static final int MEDICATION_ACTION_PLAN_GOAL__PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE = 51;
+
+	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reminder Text' of 'Reminder'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MEDICATION_ACTION_PLAN_OBSERVATION__MEDICATION_ACTION_PLAN_OBSERVATION_TEXT = 38;
+  public static final int REMINDER__REMINDER_TEXT = 52;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Template Id' of 'Reminder'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int REMINDER__INSTRUCTIONS_TEMPLATE_ID = 53;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mtm Instructions Text' of 'Instructions'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int INSTRUCTIONS__MTM_INSTRUCTIONS_TEXT = 54;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Template Id' of 'Instructions'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int INSTRUCTIONS__INSTRUCTIONS_TEMPLATE_ID = 55;
 
   /**
    * A constant with a fixed name that can be used as the base value for additional hand written constants.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 38;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 55;
 
-  /**
+	/**
    * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
+	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
-  /**
+	/**
    * The cached base package validator.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected CDAValidator cdaValidator;
+	protected CDAValidator cdaValidator;
 
-  /**
+	/**
    * The cached base package validator.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected ConsolValidator consolValidator;
+	protected ConsolValidator consolValidator;
 
-  /**
+	/**
    * Creates an instance of the switch.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public MtmValidator()
-  {
+	public MtmValidator() {
     super();
     cdaValidator = CDAValidator.INSTANCE;
     consolValidator = ConsolValidator.INSTANCE;
   }
 
-  /**
+	/**
    * Returns the package of this validator switch.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  protected EPackage getEPackage()
-  {
+	@Override
+	protected EPackage getEPackage() {
     return MtmPackage.eINSTANCE;
   }
 
-  /**
+	/**
    * Calls <code>validateXXX</code> for the corresponding classifier of the model.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@Override
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
     switch (classifierID)
     {
       case MtmPackage.MEDICATION_THERAPY_MANAGEMENT_PROGRAM:
         return validateMedicationTherapyManagementProgram((MedicationTherapyManagementProgram)value, diagnostics, context);
-      case MtmPackage.PERSONAL_MEDICATION_LIST:
-        return validatePersonalMedicationList((PersonalMedicationList)value, diagnostics, context);
+      case MtmPackage.PERSONAL_MEDICATION_LIST_SECTION:
+        return validatePersonalMedicationListSection((PersonalMedicationListSection)value, diagnostics, context);
       case MtmPackage.MEDICATION_ACTIVITY:
         return validateMedicationActivity((MedicationActivity)value, diagnostics, context);
-      case MtmPackage.MEDICATION_ACTION_PLAN_GOAL:
-        return validateMedicationActionPlanGoal((MedicationActionPlanGoal)value, diagnostics, context);
       case MtmPackage.OTHER_INFORMATION_SECTION:
         return validateOtherInformationSection((OtherInformationSection)value, diagnostics, context);
-      case MtmPackage.MEDICATION_ACTION_PLAN:
-        return validateMedicationActionPlan((MedicationActionPlan)value, diagnostics, context);
+      case MtmPackage.MEDICATION_ACTION_PLAN_SECTION:
+        return validateMedicationActionPlanSection((MedicationActionPlanSection)value, diagnostics, context);
       case MtmPackage.MEDICATION_ACTION_PLAN_ENCOUNTER:
         return validateMedicationActionPlanEncounter((MedicationActionPlanEncounter)value, diagnostics, context);
       case MtmPackage.MEDICATION_ACTION_PLAN_ACTIVITY:
         return validateMedicationActionPlanActivity((MedicationActionPlanActivity)value, diagnostics, context);
       case MtmPackage.MEDICATION_ACTION_PLAN_OBSERVATION:
         return validateMedicationActionPlanObservation((MedicationActionPlanObservation)value, diagnostics, context);
+      case MtmPackage.MEDICATION_ACTION_PLAN_GOAL:
+        return validateMedicationActionPlanGoal((MedicationActionPlanGoal)value, diagnostics, context);
+      case MtmPackage.REMINDER:
+        return validateReminder((Reminder)value, diagnostics, context);
+      case MtmPackage.INSTRUCTIONS:
+        return validateInstructions((Instructions)value, diagnostics, context);
       default:
         return true;
     }
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationTherapyManagementProgram(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationTherapyManagementProgram(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context) {
     if (!validate_NoCircularContainment(medicationTherapyManagementProgram, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(medicationTherapyManagementProgram, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationTherapyManagementProgram, diagnostics, context);
@@ -592,137 +727,116 @@ public class MtmValidator extends EObjectValidator
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(medicationTherapyManagementProgram, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(medicationTherapyManagementProgram, diagnostics, context);
     if (result || diagnostics != null) result &= validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramAllergiesSection(medicationTherapyManagementProgram, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramMedicationsSection(medicationTherapyManagementProgram, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramPersonalMedicationListSection(medicationTherapyManagementProgram, diagnostics, context);
     if (result || diagnostics != null) result &= validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramOtherInformationSection(medicationTherapyManagementProgram, diagnostics, context);
     if (result || diagnostics != null) result &= validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramMedicationActionPlan(medicationTherapyManagementProgram, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramAuthor(medicationTherapyManagementProgram, diagnostics, context);
     return result;
   }
 
-  /**
+	/**
    * Validates the validateMedicationTherapyManagementProgramAllergiesSection constraint of '<em>Medication Therapy Management Program</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramAllergiesSection(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramAllergiesSection(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationTherapyManagementProgram.validateMedicationTherapyManagementProgramAllergiesSection(diagnostics, context);
   }
 
-  /**
-   * Validates the validateMedicationTherapyManagementProgramMedicationsSection constraint of '<em>Medication Therapy Management Program</em>'.
+	/**
+   * Validates the validateMedicationTherapyManagementProgramPersonalMedicationListSection constraint of '<em>Medication Therapy Management Program</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramMedicationsSection(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationTherapyManagementProgram.validateMedicationTherapyManagementProgramMedicationsSection(diagnostics, context);
+	public boolean validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramPersonalMedicationListSection(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationTherapyManagementProgram.validateMedicationTherapyManagementProgramPersonalMedicationListSection(diagnostics, context);
   }
 
-  /**
+	/**
    * Validates the validateMedicationTherapyManagementProgramOtherInformationSection constraint of '<em>Medication Therapy Management Program</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramOtherInformationSection(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramOtherInformationSection(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationTherapyManagementProgram.validateMedicationTherapyManagementProgramOtherInformationSection(diagnostics, context);
   }
 
-  /**
+	/**
    * Validates the validateMedicationTherapyManagementProgramMedicationActionPlan constraint of '<em>Medication Therapy Management Program</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramMedicationActionPlan(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramMedicationActionPlan(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationTherapyManagementProgram.validateMedicationTherapyManagementProgramMedicationActionPlan(diagnostics, context);
   }
 
-  /**
-   * Validates the validateMedicationTherapyManagementProgramAuthor constraint of '<em>Medication Therapy Management Program</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationTherapyManagementProgram_validateMedicationTherapyManagementProgramAuthor(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationTherapyManagementProgram.validateMedicationTherapyManagementProgramAuthor(diagnostics, context);
-  }
-
-  /**
+	/**
    * Validates the validateGeneralHeaderConstraintsTemplateId constraint of '<em>Medication Therapy Management Program</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationTherapyManagementProgram_validateGeneralHeaderConstraintsTemplateId(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationTherapyManagementProgram_validateGeneralHeaderConstraintsTemplateId(MedicationTherapyManagementProgram medicationTherapyManagementProgram, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationTherapyManagementProgram.validateGeneralHeaderConstraintsTemplateId(diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePersonalMedicationList(PersonalMedicationList personalMedicationList, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(personalMedicationList, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= validatePersonalMedicationList_validateMedicationsSectionEntriesOptionalTemplateId(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSection_validateMedicationsSectionEntriesOptionalCode(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSectionEntriesOptional_validateMedicationsSectionEntriesOptionalTitle(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSectionEntriesOptional_validateMedicationsSectionEntriesOptionalText(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSectionEntriesOptional_validateMedicationsSectionEntriesOptionalMedicationActivity(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSection_validateMedicationsSectionTitle(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSection_validateMedicationsSectionText(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSection_validateMedicationsSectionMedication(personalMedicationList, diagnostics, context);
-    if (result || diagnostics != null) result &= validatePersonalMedicationList_validatePersonalMedicationListMedication(personalMedicationList, diagnostics, context);
+	public boolean validatePersonalMedicationListSection(PersonalMedicationListSection personalMedicationListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    if (!validate_NoCircularContainment(personalMedicationListSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePersonalMedicationListSection_validateMedicationsSectionEntriesOptionalTemplateId(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSection_validateMedicationsSectionEntriesOptionalCode(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSectionEntriesOptional_validateMedicationsSectionEntriesOptionalTitle(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSectionEntriesOptional_validateMedicationsSectionEntriesOptionalText(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSectionEntriesOptional_validateMedicationsSectionEntriesOptionalMedicationActivity(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSection_validateMedicationsSectionTitle(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSection_validateMedicationsSectionText(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateMedicationsSection_validateMedicationsSectionMedication(personalMedicationListSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePersonalMedicationListSection_validatePersonalMedicationListSectionMedication(personalMedicationListSection, diagnostics, context);
     return result;
   }
 
-  /**
-   * Validates the validatePersonalMedicationListMedication constraint of '<em>Personal Medication List</em>'.
+	/**
+   * Validates the validatePersonalMedicationListSectionMedication constraint of '<em>Personal Medication List Section</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePersonalMedicationList_validatePersonalMedicationListMedication(PersonalMedicationList personalMedicationList, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return personalMedicationList.validatePersonalMedicationListMedication(diagnostics, context);
+	public boolean validatePersonalMedicationListSection_validatePersonalMedicationListSectionMedication(PersonalMedicationListSection personalMedicationListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return personalMedicationListSection.validatePersonalMedicationListSectionMedication(diagnostics, context);
   }
 
-  /**
-   * Validates the validateMedicationsSectionEntriesOptionalTemplateId constraint of '<em>Personal Medication List</em>'.
+	/**
+   * Validates the validateMedicationsSectionEntriesOptionalTemplateId constraint of '<em>Personal Medication List Section</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePersonalMedicationList_validateMedicationsSectionEntriesOptionalTemplateId(PersonalMedicationList personalMedicationList, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return personalMedicationList.validateMedicationsSectionEntriesOptionalTemplateId(diagnostics, context);
+	public boolean validatePersonalMedicationListSection_validateMedicationsSectionEntriesOptionalTemplateId(PersonalMedicationListSection personalMedicationListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return personalMedicationListSection.validateMedicationsSectionEntriesOptionalTemplateId(diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActivity(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActivity(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
     if (!validate_NoCircularContainment(medicationActivity, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(medicationActivity, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActivity, diagnostics, context);
@@ -767,110 +881,571 @@ public class MtmValidator extends EObjectValidator
     if (result || diagnostics != null) result &= consolValidator.validateMedicationActivity_validateMedicationActivityConsumable(medicationActivity, diagnostics, context);
     if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityTemplateId(medicationActivity, diagnostics, context);
     if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityText(medicationActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityIndication(medicationActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityInstructions(medicationActivity, diagnostics, context);
     if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityPresciber(medicationActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityGoals(medicationActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityReminders(medicationActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityStopReason(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityIndicationEntryRelationship(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityStopReasonEntryRelationship(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityReminderEntryRelationship(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityInstructionsEntryRelationship(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMtmMedicationActivityGoalsEntryRelationship(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityPrescriberAssignedPresciberPersonName(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityPrescriberAssignedPresciberAssignedPerson(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityPrescriberTemplateId(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityPrescriberTypeCode(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityPrescriberAssignedAuthor(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityIndicationEntryRelationshipTypeCode(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityIndicationEntryRelationshipIndication(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityStopReasonEntryRelationshipStopReasonClassCode(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityStopReasonEntryRelationshipStopReasonNegationInd(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityStopReasonEntryRelationshipTypeCode(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityReminderEntryRelationshipTypeCode(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityReminderEntryRelationshipReminder(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityInstructionEntryRelationshipTypeCode(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityInstructionEntryRelationshipInstructions(medicationActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActivity_validateMedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal(medicationActivity, diagnostics, context);
     return result;
   }
 
-  /**
+	/**
    * Validates the validateMtmMedicationActivityTemplateId constraint of '<em>Medication Activity</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActivity_validateMtmMedicationActivityTemplateId(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActivity_validateMtmMedicationActivityTemplateId(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationActivity.validateMtmMedicationActivityTemplateId(diagnostics, context);
   }
 
-  /**
+	/**
    * Validates the validateMtmMedicationActivityText constraint of '<em>Medication Activity</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActivity_validateMtmMedicationActivityText(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActivity_validateMtmMedicationActivityText(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationActivity.validateMtmMedicationActivityText(diagnostics, context);
   }
 
-  /**
-   * Validates the validateMtmMedicationActivityIndication constraint of '<em>Medication Activity</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActivity_validateMtmMedicationActivityIndication(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActivity.validateMtmMedicationActivityIndication(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMtmMedicationActivityInstructions constraint of '<em>Medication Activity</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActivity_validateMtmMedicationActivityInstructions(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActivity.validateMtmMedicationActivityInstructions(diagnostics, context);
-  }
-
-  /**
+	/**
    * Validates the validateMtmMedicationActivityPresciber constraint of '<em>Medication Activity</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActivity_validateMtmMedicationActivityPresciber(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActivity_validateMtmMedicationActivityPresciber(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationActivity.validateMtmMedicationActivityPresciber(diagnostics, context);
   }
 
-  /**
-   * Validates the validateMtmMedicationActivityGoals constraint of '<em>Medication Activity</em>'.
+	/**
+   * Validates the validateMtmMedicationActivityIndicationEntryRelationship constraint of '<em>Medication Activity</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActivity_validateMtmMedicationActivityGoals(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActivity.validateMtmMedicationActivityGoals(diagnostics, context);
+	public boolean validateMedicationActivity_validateMtmMedicationActivityIndicationEntryRelationship(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMtmMedicationActivityIndicationEntryRelationship(diagnostics, context);
   }
 
-  /**
-   * Validates the validateMtmMedicationActivityReminders constraint of '<em>Medication Activity</em>'.
+	/**
+   * Validates the validateMtmMedicationActivityStopReasonEntryRelationship constraint of '<em>Medication Activity</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActivity_validateMtmMedicationActivityReminders(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActivity.validateMtmMedicationActivityReminders(diagnostics, context);
+	public boolean validateMedicationActivity_validateMtmMedicationActivityStopReasonEntryRelationship(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMtmMedicationActivityStopReasonEntryRelationship(diagnostics, context);
   }
 
-  /**
-   * Validates the validateMtmMedicationActivityStopReason constraint of '<em>Medication Activity</em>'.
+	/**
+   * Validates the validateMtmMedicationActivityReminderEntryRelationship constraint of '<em>Medication Activity</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActivity_validateMtmMedicationActivityStopReason(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActivity.validateMtmMedicationActivityStopReason(diagnostics, context);
+	public boolean validateMedicationActivity_validateMtmMedicationActivityReminderEntryRelationship(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMtmMedicationActivityReminderEntryRelationship(diagnostics, context);
   }
 
-  /**
+	/**
+   * Validates the validateMtmMedicationActivityInstructionsEntryRelationship constraint of '<em>Medication Activity</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlanGoal(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActivity_validateMtmMedicationActivityInstructionsEntryRelationship(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMtmMedicationActivityInstructionsEntryRelationship(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMtmMedicationActivityGoalsEntryRelationship constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMtmMedicationActivityGoalsEntryRelationship(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMtmMedicationActivityGoalsEntryRelationship(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityPrescriberAssignedPresciberPersonName constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityPrescriberAssignedPresciberPersonName(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityPrescriberAssignedPresciberPersonName(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityPrescriberAssignedPresciberAssignedPerson constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityPrescriberAssignedPresciberAssignedPerson(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityPrescriberAssignedPresciberAssignedPerson(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityPrescriberTemplateId constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityPrescriberTemplateId(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityPrescriberTemplateId(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityPrescriberTypeCode constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityPrescriberTypeCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityPrescriberTypeCode(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityPrescriberAssignedAuthor constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityPrescriberAssignedAuthor(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityPrescriberAssignedAuthor(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityIndicationEntryRelationshipTypeCode constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityIndicationEntryRelationshipTypeCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityIndicationEntryRelationshipTypeCode(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityIndicationEntryRelationshipIndication constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityIndicationEntryRelationshipIndication(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityIndicationEntryRelationshipIndication(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityStopReasonEntryRelationshipStopReasonClassCode constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityStopReasonEntryRelationshipStopReasonClassCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityStopReasonEntryRelationshipStopReasonClassCode(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityStopReasonEntryRelationshipStopReasonNegationInd constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityStopReasonEntryRelationshipStopReasonNegationInd(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityStopReasonEntryRelationshipStopReasonNegationInd(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityStopReasonEntryRelationshipTypeCode constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityStopReasonEntryRelationshipTypeCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityStopReasonEntryRelationshipTypeCode(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityReminderEntryRelationshipTypeCode constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityReminderEntryRelationshipTypeCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityReminderEntryRelationshipTypeCode(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityReminderEntryRelationshipReminder constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityReminderEntryRelationshipReminder(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityReminderEntryRelationshipReminder(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityInstructionEntryRelationshipTypeCode constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityInstructionEntryRelationshipTypeCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityInstructionEntryRelationshipTypeCode(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityInstructionEntryRelationshipInstructions constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityInstructionEntryRelationshipInstructions(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityInstructionEntryRelationshipInstructions(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal constraint of '<em>Medication Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivity_validateMedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActivity.validateMedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal(diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateOtherInformationSection(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    if (!validate_NoCircularContainment(otherInformationSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateOtherInformationSection_validateOtherInformationSectionTemplateId(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateOtherInformationSection_validateOtherInformationSectionText(otherInformationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateOtherInformationSection_validateOtherInformationSectionTitle(otherInformationSection, diagnostics, context);
+    return result;
+  }
+
+	/**
+   * Validates the validateOtherInformationSectionTemplateId constraint of '<em>Other Information Section</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateOtherInformationSection_validateOtherInformationSectionTemplateId(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return otherInformationSection.validateOtherInformationSectionTemplateId(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateOtherInformationSectionText constraint of '<em>Other Information Section</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateOtherInformationSection_validateOtherInformationSectionText(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return otherInformationSection.validateOtherInformationSectionText(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateOtherInformationSectionTitle constraint of '<em>Other Information Section</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateOtherInformationSection_validateOtherInformationSectionTitle(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return otherInformationSection.validateOtherInformationSectionTitle(diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanSection(MedicationActionPlanSection medicationActionPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    if (!validate_NoCircularContainment(medicationActionPlanSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanSection_validatePlanOfCareSectionTemplateId(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionCode(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionText(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityAct(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityEncounter(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityObservation(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityProcedure(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySupply(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanSection_validateMedicationActionPlanSectionTitle(medicationActionPlanSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanSection_validateMedicationActionPlanSectionMedicationActionPlanEncounter(medicationActionPlanSection, diagnostics, context);
+    return result;
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanSectionTitle constraint of '<em>Medication Action Plan Section</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanSection_validateMedicationActionPlanSectionTitle(MedicationActionPlanSection medicationActionPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanSection.validateMedicationActionPlanSectionTitle(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanSectionMedicationActionPlanEncounter constraint of '<em>Medication Action Plan Section</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanSection_validateMedicationActionPlanSectionMedicationActionPlanEncounter(MedicationActionPlanSection medicationActionPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanSection.validateMedicationActionPlanSectionMedicationActionPlanEncounter(diagnostics, context);
+  }
+
+	/**
+   * Validates the validatePlanOfCareSectionTemplateId constraint of '<em>Medication Action Plan Section</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanSection_validatePlanOfCareSectionTemplateId(MedicationActionPlanSection medicationActionPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanSection.validatePlanOfCareSectionTemplateId(diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanEncounter(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    if (!validate_NoCircularContainment(medicationActionPlanEncounter, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityEncounter_validatePlanOfCareActivityEncounterTemplateId(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityEncounter_validatePlanOfCareActivityEncounterClassCode(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityEncounter_validatePlanOfCareActivityEncounterMoodCode(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityEncounter_validatePlanOfCareActivityEncounterId(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterEffectiveTime(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterText(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterCode(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterCodeP(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterMedicationActionPlanActivity(medicationActionPlanEncounter, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterMedicationActionPlanObservation(medicationActionPlanEncounter, diagnostics, context);
+    return result;
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanEncounterEffectiveTime constraint of '<em>Medication Action Plan Encounter</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterEffectiveTime(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterEffectiveTime(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanEncounterText constraint of '<em>Medication Action Plan Encounter</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterText(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterText(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanEncounterCode constraint of '<em>Medication Action Plan Encounter</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterCode(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterCode(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanEncounterCodeP constraint of '<em>Medication Action Plan Encounter</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterCodeP(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanEncounterMedicationActionPlanActivity constraint of '<em>Medication Action Plan Encounter</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterMedicationActionPlanActivity(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterMedicationActionPlanActivity(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanEncounterMedicationActionPlanObservation constraint of '<em>Medication Action Plan Encounter</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterMedicationActionPlanObservation(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterMedicationActionPlanObservation(diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanActivity(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    if (!validate_NoCircularContainment(medicationActionPlanActivity, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validatePlanOfCareActivityActTemplateId(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityAct_validatePlanOfCareActivityActClassCode(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validatePlanOfCareActivityActMoodCode(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityAct_validatePlanOfCareActivityActId(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validateMedicationActionPlanActivityText(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validateMedicationActionPlanActivityCodeP(medicationActionPlanActivity, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validateMedicationActionPlanActivityCode(medicationActionPlanActivity, diagnostics, context);
+    return result;
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanActivityText constraint of '<em>Medication Action Plan Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanActivity_validateMedicationActionPlanActivityText(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanActivity.validateMedicationActionPlanActivityText(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanActivityCodeP constraint of '<em>Medication Action Plan Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanActivity_validateMedicationActionPlanActivityCodeP(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanActivity.validateMedicationActionPlanActivityCodeP(diagnostics, context);
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanActivityCode constraint of '<em>Medication Action Plan Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanActivity_validateMedicationActionPlanActivityCode(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanActivity.validateMedicationActionPlanActivityCode(diagnostics, context);
+  }
+
+	/**
+   * Validates the validatePlanOfCareActivityActTemplateId constraint of '<em>Medication Action Plan Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanActivity_validatePlanOfCareActivityActTemplateId(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanActivity.validatePlanOfCareActivityActTemplateId(diagnostics, context);
+  }
+
+	/**
+   * Validates the validatePlanOfCareActivityActMoodCode constraint of '<em>Medication Action Plan Activity</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanActivity_validatePlanOfCareActivityActMoodCode(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanActivity.validatePlanOfCareActivityActMoodCode(diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanObservation(MedicationActionPlanObservation medicationActionPlanObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    if (!validate_NoCircularContainment(medicationActionPlanObservation, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityObservation_validatePlanOfCareActivityObservationTemplateId(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityObservation_validatePlanOfCareActivityObservationClassCode(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityObservation_validatePlanOfCareActivityObservationMoodCode(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityObservation_validatePlanOfCareActivityObservationId(medicationActionPlanObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMedicationActionPlanObservation_validateMedicationActionPlanObservationText(medicationActionPlanObservation, diagnostics, context);
+    return result;
+  }
+
+	/**
+   * Validates the validateMedicationActionPlanObservationText constraint of '<em>Medication Action Plan Observation</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanObservation_validateMedicationActionPlanObservationText(MedicationActionPlanObservation medicationActionPlanObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return medicationActionPlanObservation.validateMedicationActionPlanObservationText(diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActionPlanGoal(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context) {
     if (!validate_NoCircularContainment(medicationActionPlanGoal, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(medicationActionPlanGoal, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActionPlanGoal, diagnostics, context);
@@ -888,93 +1463,83 @@ public class MtmValidator extends EObjectValidator
     return result;
   }
 
-  /**
+	/**
    * Validates the validateMedicationActionPlanGoalMoodCode constraint of '<em>Medication Action Plan Goal</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlanGoal_validateMedicationActionPlanGoalMoodCode(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActionPlanGoal_validateMedicationActionPlanGoalMoodCode(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationActionPlanGoal.validateMedicationActionPlanGoalMoodCode(diagnostics, context);
   }
 
-  /**
+	/**
    * Validates the validateMedicationActionPlanGoalText constraint of '<em>Medication Action Plan Goal</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlanGoal_validateMedicationActionPlanGoalText(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActionPlanGoal_validateMedicationActionPlanGoalText(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationActionPlanGoal.validateMedicationActionPlanGoalText(diagnostics, context);
   }
 
-  /**
+	/**
    * Validates the validatePlanOfCareActivityObservationMoodCode constraint of '<em>Medication Action Plan Goal</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlanGoal_validatePlanOfCareActivityObservationMoodCode(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMedicationActionPlanGoal_validatePlanOfCareActivityObservationMoodCode(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return medicationActionPlanGoal.validatePlanOfCareActivityObservationMoodCode(diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateOtherInformationSection(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReminder(Reminder reminder, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (!validate_NoCircularContainment(otherInformationSection, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateOtherInformationSection_validateOtherInformationSectionTemplateId(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateOtherInformationSection_validateOtherInformationSectionText(otherInformationSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateOtherInformationSection_validateOtherInformationSectionTitle(otherInformationSection, diagnostics, context);
+    if (!validate_NoCircularContainment(reminder, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsTextReference(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsTextReferenceValue(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReminder_validateInstructionsTemplateId(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsClassCode(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsMoodCode(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsCode(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsText(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsStatusCode(reminder, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReminder_validateReminderText(reminder, diagnostics, context);
     return result;
   }
 
   /**
-   * Validates the validateOtherInformationSectionTemplateId constraint of '<em>Other Information Section</em>'.
+   * Validates the validateReminderText constraint of '<em>Reminder</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateOtherInformationSection_validateOtherInformationSectionTemplateId(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReminder_validateReminderText(Reminder reminder, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return otherInformationSection.validateOtherInformationSectionTemplateId(diagnostics, context);
+    return reminder.validateReminderText(diagnostics, context);
   }
 
   /**
-   * Validates the validateOtherInformationSectionText constraint of '<em>Other Information Section</em>'.
+   * Validates the validateInstructionsTemplateId constraint of '<em>Reminder</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateOtherInformationSection_validateOtherInformationSectionText(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReminder_validateInstructionsTemplateId(Reminder reminder, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return otherInformationSection.validateOtherInformationSectionText(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateOtherInformationSectionTitle constraint of '<em>Other Information Section</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateOtherInformationSection_validateOtherInformationSectionTitle(OtherInformationSection otherInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return otherInformationSection.validateOtherInformationSectionTitle(diagnostics, context);
+    return reminder.validateInstructionsTemplateId(diagnostics, context);
   }
 
   /**
@@ -982,294 +1547,58 @@ public class MtmValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlan(MedicationActionPlan medicationActionPlan, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateInstructions(Instructions instructions, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (!validate_NoCircularContainment(medicationActionPlan, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlan_validatePlanOfCareSectionTemplateId(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionCode(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionText(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityAct(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityEncounter(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityObservation(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityProcedure(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySupply(medicationActionPlan, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlan_validateMedicationActionPlanMedicationActionPlanEncounter(medicationActionPlan, diagnostics, context);
+    if (!validate_NoCircularContainment(instructions, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsTextReference(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsTextReferenceValue(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInstructions_validateInstructionsTemplateId(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsClassCode(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsMoodCode(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsCode(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsText(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateInstructions_validateInstructionsStatusCode(instructions, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInstructions_validateMtmInstructionsText(instructions, diagnostics, context);
     return result;
   }
 
   /**
-   * Validates the validateMedicationActionPlanMedicationActionPlanEncounter constraint of '<em>Medication Action Plan</em>'.
+   * Validates the validateMtmInstructionsText constraint of '<em>Instructions</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlan_validateMedicationActionPlanMedicationActionPlanEncounter(MedicationActionPlan medicationActionPlan, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateInstructions_validateMtmInstructionsText(Instructions instructions, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return medicationActionPlan.validateMedicationActionPlanMedicationActionPlanEncounter(diagnostics, context);
+    return instructions.validateMtmInstructionsText(diagnostics, context);
   }
 
   /**
-   * Validates the validatePlanOfCareSectionTemplateId constraint of '<em>Medication Action Plan</em>'.
+   * Validates the validateInstructionsTemplateId constraint of '<em>Instructions</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicationActionPlan_validatePlanOfCareSectionTemplateId(MedicationActionPlan medicationActionPlan, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateInstructions_validateInstructionsTemplateId(Instructions instructions, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return medicationActionPlan.validatePlanOfCareSectionTemplateId(diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanEncounter(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(medicationActionPlanEncounter, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityEncounter_validatePlanOfCareActivityEncounterTemplateId(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityEncounter_validatePlanOfCareActivityEncounterClassCode(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityEncounter_validatePlanOfCareActivityEncounterMoodCode(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityEncounter_validatePlanOfCareActivityEncounterId(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterEffectiveTime(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterText(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterCodeP(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterCode(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterMedicationActionPlanActivity(medicationActionPlanEncounter, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterMedicationActionPlanObservation(medicationActionPlanEncounter, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanEncounterEffectiveTime constraint of '<em>Medication Action Plan Encounter</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterEffectiveTime(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterEffectiveTime(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanEncounterText constraint of '<em>Medication Action Plan Encounter</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterText(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterText(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanEncounterCodeP constraint of '<em>Medication Action Plan Encounter</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterCodeP(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterCodeP(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanEncounterCode constraint of '<em>Medication Action Plan Encounter</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterCode(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanEncounterMedicationActionPlanActivity constraint of '<em>Medication Action Plan Encounter</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterMedicationActionPlanActivity(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterMedicationActionPlanActivity(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanEncounterMedicationActionPlanObservation constraint of '<em>Medication Action Plan Encounter</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanEncounter_validateMedicationActionPlanEncounterMedicationActionPlanObservation(MedicationActionPlanEncounter medicationActionPlanEncounter, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanEncounter.validateMedicationActionPlanEncounterMedicationActionPlanObservation(diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanActivity(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(medicationActionPlanActivity, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validatePlanOfCareActivityActTemplateId(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityAct_validatePlanOfCareActivityActClassCode(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validatePlanOfCareActivityActMoodCode(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityAct_validatePlanOfCareActivityActId(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validateMedicationActionPlanActivityText(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validateMedicationActionPlanActivityCodeP(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validateMedicationActionPlanActivityCode(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validateMedicationActionPlanActivityMedicationActionPlanGoal(medicationActionPlanActivity, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanActivity_validateMedicationActionPlanActivityMedicationActionPlanObservation(medicationActionPlanActivity, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanActivityText constraint of '<em>Medication Action Plan Activity</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanActivity_validateMedicationActionPlanActivityText(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanActivity.validateMedicationActionPlanActivityText(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanActivityCodeP constraint of '<em>Medication Action Plan Activity</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanActivity_validateMedicationActionPlanActivityCodeP(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanActivity.validateMedicationActionPlanActivityCodeP(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanActivityCode constraint of '<em>Medication Action Plan Activity</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanActivity_validateMedicationActionPlanActivityCode(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanActivity.validateMedicationActionPlanActivityCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanActivityMedicationActionPlanGoal constraint of '<em>Medication Action Plan Activity</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanActivity_validateMedicationActionPlanActivityMedicationActionPlanGoal(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanActivity.validateMedicationActionPlanActivityMedicationActionPlanGoal(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanActivityMedicationActionPlanObservation constraint of '<em>Medication Action Plan Activity</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanActivity_validateMedicationActionPlanActivityMedicationActionPlanObservation(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanActivity.validateMedicationActionPlanActivityMedicationActionPlanObservation(diagnostics, context);
-  }
-
-  /**
-   * Validates the validatePlanOfCareActivityActTemplateId constraint of '<em>Medication Action Plan Activity</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanActivity_validatePlanOfCareActivityActTemplateId(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanActivity.validatePlanOfCareActivityActTemplateId(diagnostics, context);
-  }
-
-  /**
-   * Validates the validatePlanOfCareActivityActMoodCode constraint of '<em>Medication Action Plan Activity</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanActivity_validatePlanOfCareActivityActMoodCode(MedicationActionPlanActivity medicationActionPlanActivity, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanActivity.validatePlanOfCareActivityActMoodCode(diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanObservation(MedicationActionPlanObservation medicationActionPlanObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(medicationActionPlanObservation, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityObservation_validatePlanOfCareActivityObservationTemplateId(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityObservation_validatePlanOfCareActivityObservationClassCode(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityObservation_validatePlanOfCareActivityObservationMoodCode(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareActivityObservation_validatePlanOfCareActivityObservationId(medicationActionPlanObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMedicationActionPlanObservation_validateMedicationActionPlanObservationText(medicationActionPlanObservation, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * Validates the validateMedicationActionPlanObservationText constraint of '<em>Medication Action Plan Observation</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicationActionPlanObservation_validateMedicationActionPlanObservationText(MedicationActionPlanObservation medicationActionPlanObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return medicationActionPlanObservation.validateMedicationActionPlanObservationText(diagnostics, context);
+    return instructions.validateInstructionsTemplateId(diagnostics, context);
   }
 
   /**
    * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  public ResourceLocator getResourceLocator()
-  {
+	@Override
+	public ResourceLocator getResourceLocator() {
     return MtmPlugin.INSTANCE;
   }
 

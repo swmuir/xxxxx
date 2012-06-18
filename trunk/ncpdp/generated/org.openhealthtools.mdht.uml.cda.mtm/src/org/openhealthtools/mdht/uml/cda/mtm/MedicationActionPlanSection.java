@@ -15,19 +15,31 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSection;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Medication Action Plan</b></em>'.
+ * A representation of the model object '<em><b>Medication Action Plan Section</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getMedicationActionPlan()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.555' constraints.validation.error='MedicationActionPlanTemplateId MedicationActionPlanMedicationActionPlanEncounter'"
+ * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getMedicationActionPlanSection()
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.555' constraints.validation.error='MedicationActionPlanSectionTemplateId MedicationActionPlanSectionTitle MedicationActionPlanSectionMedicationActionPlanEncounter'"
  * @generated
  */
-public interface MedicationActionPlan extends PlanOfCareSection
-{
-  /**
+public interface MedicationActionPlanSection extends PlanOfCareSection {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
+   * @generated
+   */
+	boolean validateMedicationActionPlanSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(mtm::MedicationActionPlanEncounter))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -36,11 +48,11 @@ public interface MedicationActionPlan extends PlanOfCareSection
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(mtm::MedicationActionPlanEncounter))'"
    * @generated
    */
-  boolean validateMedicationActionPlanMedicationActionPlanEncounter(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActionPlanSectionMedicationActionPlanEncounter(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(mtm::MedicationActionPlanEncounter)).oclAsType(mtm::MedicationActionPlanEncounter)
    * <!-- end-model-doc -->
@@ -48,12 +60,12 @@ public interface MedicationActionPlan extends PlanOfCareSection
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(mtm::MedicationActionPlanEncounter)).oclAsType(mtm::MedicationActionPlanEncounter)'"
    * @generated
    */
-  EList<MedicationActionPlanEncounter> getMedicationActionPlanEncounters();
+	EList<MedicationActionPlanEncounter> getMedicationActionPlanEncounters();
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public MedicationActionPlan init();
-} // MedicationActionPlan
+	public MedicationActionPlanSection init();
+} // MedicationActionPlanSection

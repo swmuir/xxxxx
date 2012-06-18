@@ -30,65 +30,59 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class OtherInformationSectionImpl extends SectionImpl implements OtherInformationSection
-{
-  /**
+public class OtherInformationSectionImpl extends SectionImpl implements OtherInformationSection {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected OtherInformationSectionImpl()
-  {
+	protected OtherInformationSectionImpl() {
     super();
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  protected EClass eStaticClass()
-  {
+	@Override
+	protected EClass eStaticClass() {
     return MtmPackage.Literals.OTHER_INFORMATION_SECTION;
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateOtherInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateOtherInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return OtherInformationSectionOperations.validateOtherInformationSectionTemplateId(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateOtherInformationSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateOtherInformationSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return OtherInformationSectionOperations.validateOtherInformationSectionText(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateOtherInformationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateOtherInformationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return OtherInformationSectionOperations.validateOtherInformationSectionTitle(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public OtherInformationSection init() {
+	public OtherInformationSection init() {
     	CDAUtil.init(this);
     	return this;
   }

@@ -9,15 +9,9 @@ package org.openhealthtools.mdht.uml.cda.mtm.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.consol.CommentActivity;
-import org.openhealthtools.mdht.uml.cda.consol.Indication;
-
-import org.openhealthtools.mdht.uml.cda.mtm.MedicationActionPlanGoal;
 import org.openhealthtools.mdht.uml.cda.mtm.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.mtm.MtmPackage;
 
@@ -34,165 +28,239 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationActivityImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.MedicationActivityImpl implements MedicationActivity
-{
-  /**
+public class MedicationActivityImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.MedicationActivityImpl implements MedicationActivity {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected MedicationActivityImpl()
-  {
+	protected MedicationActivityImpl() {
     super();
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  protected EClass eStaticClass()
-  {
+	@Override
+	protected EClass eStaticClass() {
     return MtmPackage.Literals.MEDICATION_ACTIVITY;
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMtmMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMtmMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return MedicationActivityOperations.validateMtmMedicationActivityTemplateId(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMtmMedicationActivityText(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMtmMedicationActivityText(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return MedicationActivityOperations.validateMtmMedicationActivityText(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMtmMedicationActivityIndication(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicationActivityOperations.validateMtmMedicationActivityIndication(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMtmMedicationActivityInstructions(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicationActivityOperations.validateMtmMedicationActivityInstructions(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMtmMedicationActivityPresciber(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateMtmMedicationActivityPresciber(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return MedicationActivityOperations.validateMtmMedicationActivityPresciber(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMtmMedicationActivityGoals(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicationActivityOperations.validateMtmMedicationActivityGoals(this, diagnostics, context);
+	public boolean validateMtmMedicationActivityIndicationEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMtmMedicationActivityIndicationEntryRelationship(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMtmMedicationActivityReminders(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicationActivityOperations.validateMtmMedicationActivityReminders(this, diagnostics, context);
+	public boolean validateMtmMedicationActivityStopReasonEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMtmMedicationActivityStopReasonEntryRelationship(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMtmMedicationActivityStopReason(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicationActivityOperations.validateMtmMedicationActivityStopReason(this, diagnostics, context);
+	public boolean validateMtmMedicationActivityReminderEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMtmMedicationActivityReminderEntryRelationship(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Indication> getmtmIndications()
-  {
-    return MedicationActivityOperations.getmtmIndications(this);
+	public boolean validateMtmMedicationActivityInstructionsEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMtmMedicationActivityInstructionsEntryRelationship(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public void getmtmInstructions()
-  {
-    MedicationActivityOperations.getmtmInstructions(this);
+	public boolean validateMtmMedicationActivityGoalsEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMtmMedicationActivityGoalsEntryRelationship(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public EList<MedicationActionPlanGoal> getGoalss()
-  {
-    return MedicationActivityOperations.getGoalss(this);
+	public boolean validateMedicationActivityPrescriberAssignedPresciberPersonName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityPrescriberAssignedPresciberPersonName(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public void getReminders()
-  {
-    MedicationActivityOperations.getReminders(this);
+	public boolean validateMedicationActivityPrescriberAssignedPresciberAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityPrescriberAssignedPresciberAssignedPerson(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public Act getStopReason()
-  {
-    return MedicationActivityOperations.getStopReason(this);
+	public boolean validateMedicationActivityPrescriberTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityPrescriberTemplateId(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public MedicationActivity init() {
+	public boolean validateMedicationActivityPrescriberTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityPrescriberTypeCode(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityPrescriberAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityPrescriberAssignedAuthor(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityIndicationEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityIndicationEntryRelationshipTypeCode(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityIndicationEntryRelationshipIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityIndicationEntryRelationshipIndication(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityStopReasonEntryRelationshipStopReasonClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityStopReasonEntryRelationshipStopReasonClassCode(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityStopReasonEntryRelationshipStopReasonNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityStopReasonEntryRelationshipStopReasonNegationInd(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityStopReasonEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityStopReasonEntryRelationshipTypeCode(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityReminderEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityReminderEntryRelationshipTypeCode(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityReminderEntryRelationshipReminder(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityReminderEntryRelationshipReminder(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityInstructionEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityInstructionEntryRelationshipTypeCode(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityInstructionEntryRelationshipInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityInstructionEntryRelationshipInstructions(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationActivityOperations.validateMedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public MedicationActivity init() {
     	CDAUtil.init(this);
     	return this;
   }

@@ -9,11 +9,6 @@ package org.openhealthtools.mdht.uml.cda.mtm;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
-
-import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.consol.CommentActivity;
-import org.openhealthtools.mdht.uml.cda.consol.Indication;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,20 +17,22 @@ import org.openhealthtools.mdht.uml.cda.consol.Indication;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getMedicationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.222' constraints.validation.error='mtmMedicationActivityTemplateId mtmMedicationActivityIndication mtmMedicationActivityInstructions mtmMedicationActivityPresciber mtmMedicationActivityReminders' constraints.validation.warning='mtmMedicationActivityGoals' constraints.validation.info='mtmMedicationActivityText mtmMedicationActivityStopReason'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.222' constraints.validation.error='mtmMedicationActivityTemplateId mtmMedicationActivityPresciber mtmMedicationActivityIndicationEntryRelationship mtmMedicationActivityInstructionsEntryRelationship MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal' constraints.validation.warning='mtmMedicationActivityGoalsEntryRelationship MedicationActivityPrescriberAssignedPresciberPersonName' constraints.validation.query='MedicationActivityPrescriberAssignedPresciberPersonName MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal' constraints.validation.info='mtmMedicationActivityText mtmMedicationActivityStopReasonEntryRelationship mtmMedicationActivityReminderEntryRelationship'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityPrescriber templateId.root='null' constraints.validation.error='PrescriberTemplateId PrescriberTypeCode PrescriberAssignedAuthor' typeCode='AUT'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityPrescriberAssignedPresciber constraints.validation.error='AssignedPresciberAssignedPerson'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityPrescriberAssignedPresciberPerson constraints.validation.warning='PersonName'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityReminder constraints.validation.error='ReminderText'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityInstruction constraints.validation.error='InstructionText'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityStopReason constraints.validation.error='StopReasonClassCode StopReasonMoodCode StopReasonNegationInd StopReasonText' classCode='ACT' moodCode='EVN' negationInd='true'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityIndicationEntryRelationship constraints.validation.error='IndicationEntryRelationshipTypeCode IndicationEntryRelationshipIndication' typeCode='RSON'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityStopReasonEntryRelationship constraints.validation.error='StopReasonEntryRelationshipTypeCode' typeCode='RSON'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityStopReasonEntryRelationshipStopReason constraints.validation.error='StopReasonClassCode StopReasonNegationInd' classCode='ACT' moodCode='EVN' negationInd='true'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityReminderEntryRelationship constraints.validation.error='ReminderEntryRelationshipTypeCode ReminderEntryRelationshipReminder' typeCode='SPRT'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityInstructionEntryRelationship constraints.validation.error='InstructionEntryRelationshipTypeCode InstructionEntryRelationshipInstructions' typeCode='SUBJ'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityGoalsEntryRelationship constraints.validation.error='GoalsEntryRelationshipMedicationActionPlanGoal'"
  * @generated
  */
-public interface MedicationActivity extends org.openhealthtools.mdht.uml.cda.consol.MedicationActivity
-{
-  /**
+public interface MedicationActivity extends org.openhealthtools.mdht.uml.cda.consol.MedicationActivity {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.222')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -44,11 +41,11 @@ public interface MedicationActivity extends org.openhealthtools.mdht.uml.cda.con
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'111.222.333.444.222\')'"
    * @generated
    */
-  boolean validateMtmMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMtmMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -57,37 +54,11 @@ public interface MedicationActivity extends org.openhealthtools.mdht.uml.cda.con
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())'"
    * @generated
    */
-  boolean validateMtmMedicationActivityText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMtmMedicationActivityText(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::Indication) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::Indication) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
-   * @generated
-   */
-  boolean validateMtmMedicationActivityIndication(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(mtm::MedicationActivity::Instruction) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(mtm::MedicationActivity::Instruction) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
-   * @generated
-   */
-  boolean validateMtmMedicationActivityInstructions(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -96,110 +67,272 @@ public interface MedicationActivity extends org.openhealthtools.mdht.uml.cda.con
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))'"
    * @generated
    */
-  boolean validateMtmMedicationActivityPresciber(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMtmMedicationActivityPresciber(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(mtm::MedicationActionPlanGoal))
+   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(mtm::MedicationActionPlanGoal))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
    * @generated
    */
-  boolean validateMtmMedicationActivityGoals(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMtmMedicationActivityIndicationEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(mtm::MedicationActivity::Reminder) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)
+   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(mtm::MedicationActivity::Reminder) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
    * @generated
    */
-  boolean validateMtmMedicationActivityReminders(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMtmMedicationActivityStopReasonEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
+   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
    * @generated
    */
-  boolean validateMtmMedicationActivityStopReason(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMtmMedicationActivityReminderEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication)).oclAsType(consol::Indication)
+   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication)).oclAsType(consol::Indication)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
    * @generated
    */
-  EList<Indication> getmtmIndications();
+	boolean validateMtmMedicationActivityInstructionsEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::MedicationActivity::Instruction))->asSequence()->first().oclAsType(mtm::MedicationActivity::Instruction)
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::MedicationActivity::Instruction))->asSequence()->first().oclAsType(mtm::MedicationActivity::Instruction)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
    * @generated
    */
-  void getmtmInstructions();
+	boolean validateMtmMedicationActivityGoalsEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanGoal)).oclAsType(mtm::MedicationActionPlanGoal)
+   * self.author->excluding(null).assignedAuthor->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() = 1))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanGoal)).oclAsType(mtm::MedicationActionPlanGoal)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() = 1))'"
    * @generated
    */
-  EList<MedicationActionPlanGoal> getGoalss();
+	boolean validateMedicationActivityPrescriberAssignedPresciberPersonName(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::MedicationActivity::Reminder))->asSequence()->first().oclAsType(mtm::MedicationActivity::Reminder)
+   * self.author->excluding(null).assignedAuthor->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model kind="operation"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::MedicationActivity::Reminder))->asSequence()->first().oclAsType(mtm::MedicationActivity::Reminder)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))'"
    * @generated
    */
-  void getReminders();
+	boolean validateMedicationActivityPrescriberAssignedPresciberAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act))->asSequence()->first().oclAsType(cda::Act)
+   * self.author->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = 'null'))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act))->asSequence()->first().oclAsType(cda::Act)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = \'null\'))'"
    * @generated
    */
-  Act getStopReason();
+	boolean validateMedicationActivityPrescriberTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.author->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ParticipationType::AUT)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null)->reject(isDefined(\'typeCode\') and typeCode=vocab::ParticipationType::AUT)'"
    * @generated
    */
-  public MedicationActivity init();
+	boolean validateMedicationActivityPrescriberTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.author->excluding(null)->reject(assignedAuthor->one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined() and assignedAuthor.oclIsKindOf(cda::AssignedAuthor)))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null)->reject(assignedAuthor->one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined() and assignedAuthor.oclIsKindOf(cda::AssignedAuthor)))'"
+   * @generated
+   */
+	boolean validateMedicationActivityPrescriberAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null)->reject(isDefined('typeCode'))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(isDefined(\'typeCode\'))'"
+   * @generated
+   */
+	boolean validateMedicationActivityIndicationEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication)))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication)))'"
+   * @generated
+   */
+	boolean validateMedicationActivityIndicationEntryRelationshipIndication(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null).act->excluding(null)->reject(isDefined('classCode'))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).act->excluding(null)->reject(isDefined(\'classCode\'))'"
+   * @generated
+   */
+	boolean validateMedicationActivityStopReasonEntryRelationshipStopReasonClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null).act->excluding(null)->reject(negationInd=true)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).act->excluding(null)->reject(negationInd=true)'"
+   * @generated
+   */
+	boolean validateMedicationActivityStopReasonEntryRelationshipStopReasonNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null)->reject(isDefined('typeCode'))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(isDefined(\'typeCode\'))'"
+   * @generated
+   */
+	boolean validateMedicationActivityStopReasonEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::SPRT)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::SPRT)'"
+   * @generated
+   */
+	boolean validateMedicationActivityReminderEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::Reminder)))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::Reminder)))'"
+   * @generated
+   */
+	boolean validateMedicationActivityReminderEntryRelationshipReminder(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null)->reject(isDefined('typeCode'))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(isDefined(\'typeCode\'))'"
+   * @generated
+   */
+	boolean validateMedicationActivityInstructionEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::Instructions)))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::Instructions)))'"
+   * @generated
+   */
+	boolean validateMedicationActivityInstructionEntryRelationshipInstructions(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanGoal)))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanGoal)))'"
+   * @generated
+   */
+	boolean validateMedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public MedicationActivity init();
 } // MedicationActivity

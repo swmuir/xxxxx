@@ -47,7 +47,7 @@ PML-10:</p>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="111.222.333.444.444"/>
-  <id root="1989720813" extension="MDHT"/>
+  <id root="1587736204" extension="MDHT"/>
   <title>TEXT FOR TITLE</title>
   <text/>
 </section>]]></codeblock>

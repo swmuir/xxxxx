@@ -41,42 +41,41 @@ import org.openhealthtools.mdht.uml.cda.mtm.util.MtmValidator;
  *
  * @generated
  */
-public class MedicationActionPlanGoalOperations extends PlanOfCareActivityObservationOperations
-{
-  /**
+public class MedicationActionPlanGoalOperations extends PlanOfCareActivityObservationOperations {
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  protected MedicationActionPlanGoalOperations() {
+	protected MedicationActionPlanGoalOperations() {
     super();
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateMedicationActionPlanGoalMoodCode(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Goal Mood Code</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanGoalMoodCode(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_MEDICATION_ACTION_PLAN_GOAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::GOL";
+	protected static final String VALIDATE_MEDICATION_ACTION_PLAN_GOAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::GOL";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateMedicationActionPlanGoalMoodCode(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Goal Mood Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanGoalMoodCode(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_GOAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_GOAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.moodCode=vocab::x_ActMoodDocumentObservation::GOL
    * @param medicationActionPlanGoal The receiving '<em><b>Medication Action Plan Goal</b></em>' model object.
@@ -85,9 +84,8 @@ public class MedicationActionPlanGoalOperations extends PlanOfCareActivityObserv
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateMedicationActionPlanGoalMoodCode(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validateMedicationActionPlanGoalMoodCode(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTION_PLAN_GOAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -119,31 +117,31 @@ public class MedicationActionPlanGoalOperations extends PlanOfCareActivityObserv
     return true;
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateMedicationActionPlanGoalText(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Goal Text</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanGoalText(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_MEDICATION_ACTION_PLAN_GOAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
+	protected static final String VALIDATE_MEDICATION_ACTION_PLAN_GOAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateMedicationActionPlanGoalText(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Action Plan Goal Text</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateMedicationActionPlanGoalText(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_GOAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_MEDICATION_ACTION_PLAN_GOAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param medicationActionPlanGoal The receiving '<em><b>Medication Action Plan Goal</b></em>' model object.
@@ -152,9 +150,8 @@ public class MedicationActionPlanGoalOperations extends PlanOfCareActivityObserv
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validateMedicationActionPlanGoalText(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validateMedicationActionPlanGoalText(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTION_PLAN_GOAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -186,31 +183,31 @@ public class MedicationActionPlanGoalOperations extends PlanOfCareActivityObserv
     return true;
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validatePlanOfCareActivityObservationMoodCode(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Mood Code</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validatePlanOfCareActivityObservationMoodCode(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation)";
+	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation)";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validatePlanOfCareActivityObservationMoodCode(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Mood Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validatePlanOfCareActivityObservationMoodCode(MedicationActionPlanGoal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Constraint VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	
+	protected static Constraint VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation)
    * @param medicationActionPlanGoal The receiving '<em><b>Medication Action Plan Goal</b></em>' model object.
@@ -219,9 +216,8 @@ public class MedicationActionPlanGoalOperations extends PlanOfCareActivityObserv
    * <!-- end-model-doc -->
    * @generated
    */
-  
-  public static  boolean validatePlanOfCareActivityObservationMoodCode(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	
+	public static  boolean validatePlanOfCareActivityObservationMoodCode(MedicationActionPlanGoal medicationActionPlanGoal, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

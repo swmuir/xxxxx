@@ -16,104 +16,121 @@ import org.eclipse.emf.ecore.EFactory;
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage
  * @generated
  */
-public interface MtmFactory extends EFactory
-{
-  /**
+public interface MtmFactory extends EFactory {
+	/**
    * The singleton instance of the factory.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  MtmFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mtm.impl.MtmFactoryImpl.init();
+	MtmFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mtm.impl.MtmFactoryImpl.init();
 
-  /**
+	/**
    * Returns a new object of class '<em>Medication Therapy Management Program</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @return a new object of class '<em>Medication Therapy Management Program</em>'.
    * @generated
    */
-  MedicationTherapyManagementProgram createMedicationTherapyManagementProgram();
+	MedicationTherapyManagementProgram createMedicationTherapyManagementProgram();
 
-  /**
-   * Returns a new object of class '<em>Personal Medication List</em>'.
+	/**
+   * Returns a new object of class '<em>Personal Medication List Section</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Personal Medication List</em>'.
+	 * <!-- end-user-doc -->
+   * @return a new object of class '<em>Personal Medication List Section</em>'.
    * @generated
    */
-  PersonalMedicationList createPersonalMedicationList();
+	PersonalMedicationListSection createPersonalMedicationListSection();
 
-  /**
+	/**
    * Returns a new object of class '<em>Medication Activity</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @return a new object of class '<em>Medication Activity</em>'.
    * @generated
    */
-  MedicationActivity createMedicationActivity();
+	MedicationActivity createMedicationActivity();
 
-  /**
-   * Returns a new object of class '<em>Medication Action Plan Goal</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Medication Action Plan Goal</em>'.
-   * @generated
-   */
-  MedicationActionPlanGoal createMedicationActionPlanGoal();
-
-  /**
+	/**
    * Returns a new object of class '<em>Other Information Section</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @return a new object of class '<em>Other Information Section</em>'.
    * @generated
    */
-  OtherInformationSection createOtherInformationSection();
+	OtherInformationSection createOtherInformationSection();
 
-  /**
-   * Returns a new object of class '<em>Medication Action Plan</em>'.
+	/**
+   * Returns a new object of class '<em>Medication Action Plan Section</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Medication Action Plan</em>'.
+	 * <!-- end-user-doc -->
+   * @return a new object of class '<em>Medication Action Plan Section</em>'.
    * @generated
    */
-  MedicationActionPlan createMedicationActionPlan();
+	MedicationActionPlanSection createMedicationActionPlanSection();
 
-  /**
+	/**
    * Returns a new object of class '<em>Medication Action Plan Encounter</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @return a new object of class '<em>Medication Action Plan Encounter</em>'.
    * @generated
    */
-  MedicationActionPlanEncounter createMedicationActionPlanEncounter();
+	MedicationActionPlanEncounter createMedicationActionPlanEncounter();
 
-  /**
+	/**
    * Returns a new object of class '<em>Medication Action Plan Activity</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @return a new object of class '<em>Medication Action Plan Activity</em>'.
    * @generated
    */
-  MedicationActionPlanActivity createMedicationActionPlanActivity();
+	MedicationActionPlanActivity createMedicationActionPlanActivity();
 
-  /**
+	/**
    * Returns a new object of class '<em>Medication Action Plan Observation</em>'.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @return a new object of class '<em>Medication Action Plan Observation</em>'.
    * @generated
    */
-  MedicationActionPlanObservation createMedicationActionPlanObservation();
+	MedicationActionPlanObservation createMedicationActionPlanObservation();
+
+	/**
+   * Returns a new object of class '<em>Medication Action Plan Goal</em>'.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @return a new object of class '<em>Medication Action Plan Goal</em>'.
+   * @generated
+   */
+	MedicationActionPlanGoal createMedicationActionPlanGoal();
+
+	/**
+   * Returns a new object of class '<em>Reminder</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Reminder</em>'.
+   * @generated
+   */
+  Reminder createReminder();
+
+  /**
+   * Returns a new object of class '<em>Instructions</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Instructions</em>'.
+   * @generated
+   */
+  Instructions createInstructions();
 
   /**
    * Returns the package supported by this factory.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @return the package supported by this factory.
    * @generated
    */
-  MtmPackage getMtmPackage();
+	MtmPackage getMtmPackage();
 
 } //MtmFactory

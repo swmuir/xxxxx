@@ -69,8 +69,8 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS">
   <templateId root="2.16.840.1.113883.10.20.1.25"/>
-  <id root="664149098" extension="MDHT"/>
-  <code code="648072967"/>
+  <id root="828155460" extension="MDHT"/>
+  <code code="898336837"/>
   <text>Text Value</text>
   <effectiveTime>
     <low value="2012"/>
