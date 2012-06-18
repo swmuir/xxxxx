@@ -25,104 +25,182 @@ import org.openhealthtools.mdht.uml.cda.mtm.*;
 public class MtmFactoryImpl extends EFactoryImpl implements MtmFactory
 {
   /**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static MtmFactory init()
   {
-		try {
-			MtmFactory theMtmFactory = (MtmFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/mtm"); 
-			if (theMtmFactory != null) {
-				return theMtmFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new MtmFactoryImpl();
-	}
+    try
+    {
+      MtmFactory theMtmFactory = (MtmFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/mtm"); 
+      if (theMtmFactory != null)
+      {
+        return theMtmFactory;
+      }
+    }
+    catch (Exception exception)
+    {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new MtmFactoryImpl();
+  }
 
   /**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public MtmFactoryImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public EObject create(EClass eClass)
   {
-		switch (eClass.getClassifierID()) {
-			case MtmPackage.MTM: return createMTM();
-			case MtmPackage.MTM_MEDICATION_SECTION: return createMTMMedicationSection();
-			case MtmPackage.MTM_MEDICATION_ACTIVITY: return createMTMMedicationActivity();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID())
+    {
+      case MtmPackage.MEDICATION_THERAPY_MANAGEMENT_PROGRAM: return createMedicationTherapyManagementProgram();
+      case MtmPackage.PERSONAL_MEDICATION_LIST: return createPersonalMedicationList();
+      case MtmPackage.MEDICATION_ACTIVITY: return createMedicationActivity();
+      case MtmPackage.MEDICATION_ACTION_PLAN_GOAL: return createMedicationActionPlanGoal();
+      case MtmPackage.OTHER_INFORMATION_SECTION: return createOtherInformationSection();
+      case MtmPackage.MEDICATION_ACTION_PLAN: return createMedicationActionPlan();
+      case MtmPackage.MEDICATION_ACTION_PLAN_ENCOUNTER: return createMedicationActionPlanEncounter();
+      case MtmPackage.MEDICATION_ACTION_PLAN_ACTIVITY: return createMedicationActionPlanActivity();
+      case MtmPackage.MEDICATION_ACTION_PLAN_OBSERVATION: return createMedicationActionPlanObservation();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public MTM createMTM()
+   * @generated
+   */
+  public MedicationTherapyManagementProgram createMedicationTherapyManagementProgram()
   {
-		MTMImpl mtm = new MTMImpl();
-		return mtm;
-	}
+    MedicationTherapyManagementProgramImpl medicationTherapyManagementProgram = new MedicationTherapyManagementProgramImpl();
+    return medicationTherapyManagementProgram;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MTMMedicationSection createMTMMedicationSection() {
-		MTMMedicationSectionImpl mtmMedicationSection = new MTMMedicationSectionImpl();
-		return mtmMedicationSection;
-	}
-
-		/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MTMMedicationActivity createMTMMedicationActivity() {
-		MTMMedicationActivityImpl mtmMedicationActivity = new MTMMedicationActivityImpl();
-		return mtmMedicationActivity;
-	}
-
-		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
+  public PersonalMedicationList createPersonalMedicationList()
+  {
+    PersonalMedicationListImpl personalMedicationList = new PersonalMedicationListImpl();
+    return personalMedicationList;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public MedicationActivity createMedicationActivity()
+  {
+    MedicationActivityImpl medicationActivity = new MedicationActivityImpl();
+    return medicationActivity;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public MedicationActionPlanGoal createMedicationActionPlanGoal()
+  {
+    MedicationActionPlanGoalImpl medicationActionPlanGoal = new MedicationActionPlanGoalImpl();
+    return medicationActionPlanGoal;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public OtherInformationSection createOtherInformationSection()
+  {
+    OtherInformationSectionImpl otherInformationSection = new OtherInformationSectionImpl();
+    return otherInformationSection;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public MedicationActionPlan createMedicationActionPlan()
+  {
+    MedicationActionPlanImpl medicationActionPlan = new MedicationActionPlanImpl();
+    return medicationActionPlan;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public MedicationActionPlanEncounter createMedicationActionPlanEncounter()
+  {
+    MedicationActionPlanEncounterImpl medicationActionPlanEncounter = new MedicationActionPlanEncounterImpl();
+    return medicationActionPlanEncounter;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public MedicationActionPlanActivity createMedicationActionPlanActivity()
+  {
+    MedicationActionPlanActivityImpl medicationActionPlanActivity = new MedicationActionPlanActivityImpl();
+    return medicationActionPlanActivity;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public MedicationActionPlanObservation createMedicationActionPlanObservation()
+  {
+    MedicationActionPlanObservationImpl medicationActionPlanObservation = new MedicationActionPlanObservationImpl();
+    return medicationActionPlanObservation;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public MtmPackage getMtmPackage()
   {
-		return (MtmPackage)getEPackage();
-	}
+    return (MtmPackage)getEPackage();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * @deprecated
+   * @generated
+   */
   @Deprecated
   public static MtmPackage getPackage()
   {
-		return MtmPackage.eINSTANCE;
-	}
+    return MtmPackage.eINSTANCE;
+  }
 
 } //MtmFactoryImpl

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.mtm/src"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.mtm/src"
     modelPluginID="org.openhealthtools.mdht.uml.cda.mtm" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
     dynamicTemplates="true" modelName="mtm_Ecore" modelPluginClass="MtmPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
-    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.genmodel#//consol ../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
-    pluralizedGetters="true" invariantPrefix="validate">
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" pluralizedGetters="true"
+    invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
     <details key="UNION_PROPERTIES" value="PROCESS"/>
@@ -25,51 +24,4 @@
     <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
   </genAnnotations>
   <foreignModel>mtm_Ecore.uml</foreignModel>
-  <genPackages xsi:type="genmodel:GenPackage" prefix="Mtm" basePackage="org.openhealthtools.mdht.uml.cda"
-      disposableProviderFactory="true" ecorePackage="mtm.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.mtm.operations">
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mtm.ecore#//MTM">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTM/MTMAllergiesSection">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTM/MTMAllergiesSection/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTM/MTMAllergiesSection/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTM/MTMMedicationsSection">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTM/MTMMedicationsSection/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTM/MTMMedicationsSection/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTM/getAllergiesSection"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTM/getMedicationsSection"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mtm.ecore#//MTMMedicationSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationSection/MTMMedicationSectionMedication">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationSection/MTMMedicationSectionMedication/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationSection/MTMMedicationSectionMedication/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationSection/getmtmMedications"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mtm.ecore#//MTMMedicationActivity">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityIndication">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityIndication/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityIndication/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityInstructions">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityInstructions/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityInstructions/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityAuthor">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityAuthor/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityAuthor/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityComment">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityComment/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mtm.ecore#//MTMMedicationActivity/MTMMedicationActivityComment/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationActivity/getmtmIndications"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationActivity/getmtmInstructions"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mtm.ecore#//MTMMedicationActivity/getComment"/>
-    </genClasses>
-  </genPackages>
 </genmodel:GenModel>

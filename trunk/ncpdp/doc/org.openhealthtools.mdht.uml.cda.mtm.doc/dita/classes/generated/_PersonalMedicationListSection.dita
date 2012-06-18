@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Personal Medication List Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>111.222.333.444.333</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="111.222.333.444.333"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Personal Medication List (PML) is a reconciled list of all the medications in use (i.e., active medications) by the beneficiary at the time of a CMR. Information for this section may be pre-populated by the Part D plan and must be completed and updated with information provided by the beneficiary and/or caregiver during the consultation. Part D plans must also collect and report the purpose and instructions for the beneficiary's use of his/her medications. The use of over-the-counter medications is important for drug utilization review and should be captured during the interactive CMR and reported in the PML by the Part D plan.
+
+The PML is intended to help beneficiaries understand their medications and how they relate to their treatment plans; to engage beneficiaries in the management of their drug therapy; and to improve both communication about medications and tracking of all medications, including self-prescribed medicines, with their healthcare providers. The PML assists the beneficiary with managing his/her medications by allowing the beneficiary to add new medications and their start dates, redacting discontinued products, and indicating the stop dates and reasons for stopping.
+The PML is not considered marketing material and should not include any marketing messages, marketing disclaimers, or other sales information.
+
+The PML is not a wallet card. Some MTM programs may also provide supplemental wallet cards, such as the one prepared by AHRQ: http://www.ahrq.gov/consumer/safemeds/walletform.pdf.
+
+Order of medications: MTM programs may select the sort order for the medications to be listed, such as alphabetically, by purpose, by prescriber, or by product type (e.g., prescription, OTC, vitamin, herbal supplement).</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:7572, CONF:7573)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>111.222.333.444.222</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSectionEntriesOptional.html">Consol Medications Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10160-0" </tt><i>History of medication use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7569)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "Medications" (CONF:7793)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7571)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:7572, CONF:7573)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>111.222.333.444.222</tt>)</li></ol></li>
+<li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
+<li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Personal Medication List Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>111.222.333.444.333</tt>]</p>
+</body>
+</topic>
