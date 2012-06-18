@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Activity - conformance rules</title>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>111.222.333.444.222</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>SubstanceAdministration</category></metadata>
+<resourceid id="111.222.333.444.222"/>
+</prolog>
+<body>
+<section id="description">
+<p>PML-7</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> <p><i>Presciber of the medication is recorded here</i></p><ol><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt></li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> <ol><li> This assignedAuthor <b>SHALL</b> contain zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHOULD</b> contain exactly one [1..1] <tt><b>name</b></tt><p><i>Enter the name of the authorized practitioner who ordered the medication for the beneficiary. This field may also include other prescriber data, such as designation of practitioner type (e.g., MD, PA, or NP), telephone number, address, site, etc., such as J. Johnson-Smith, NP. For non-prescribed OTCs, enter "self" or leave this field blank.</i></p></li></ol> </li></ol> </li></ol>
+</li>
+<li>Contains zero or more [0..*] <tt><b>effectiveTime</b></tt>
+<ul><li>Date I started using it: The medication start date may be entered by the Part D plan if known or reasonably estimated, or entered based upon beneficiary-reported data; or the field may be left blank for the beneficiary to complete. The last prescription fill date should not be entered in this field.
+
+
+Date I stopped using it: This field allows the beneficiary to record the date he/she stops using the medication. Remove the italics type that states Leave blank for beneficiary to enter stop date .  Leave this field blank for the beneficiary to enter the stop date. Discuss with the beneficiary that when a medication is no longer being taken, he or she should write the date that the medication was stopped and the reason why the medication was stopped.
+
+Start Date : May be estimated by Plan or entered based upon beneficiary-reported data, or leave blank for beneficiary to enter start date
+
+Stop Date:  Leave blank for beneficiary to enter stop date</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7501)
+<ul><li>Enter the medication's generic drug name (and brand name if applicable), strength, and dosage form for medications currently being used by the beneficiary, including starter supplies (e.g., samples), prescription medications, over-the-counter (OTC) drugs, herbal products, vitamins, and minerals.
+
+For brand drugs and branded generics, list both generic and brand names, such as "Generic Name (Brand Name)". An example is Furosemide (Lasix). For generic drugs, list the medication name as "Generic Name" (e.g., Furosemide). This would ensure a consistent format of: "Generic Name (Brand Name if applicable)".
+
+Information about medication-related devices should be included in the field for the applicable medication(s) where appropriate</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document the medications instructions or Sig</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt> <ol><li> This act <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Instructions.html">Consol Instructions</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt></li></ol> <ol>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document the reason for taking the medication</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RSON" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Indication.html">Consol Indication</xref><ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Indication.html">Consol Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document the reason for stopping the medication</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RSON" </tt></li><li> This entryRelationship Contains zero or one [0..1] <tt><b>act</b></tt> <ol><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This act Contains exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This act <b>SHALL</b> contain zero or one [0..1] <tt><b>@negationInd</b>="true" </tt></li><li> This act Contains zero or one [0..1] <tt><b>text</b></tt><p><i>This field allows the beneficiary to record the reason he/she stops using the medication.</i></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document any reminders associated with the medication</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SPRT" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt> <ol><li> This act <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Instructions.html">Consol Instructions</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt></li></ol> <ol>
+<li>Contains exactly one [1..1] <xref href="../Reminder.dita">Reminder</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document the goals for using the medication</i></p><ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationActionPlanGoal.dita">Medication Action Plan Goal</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActionPlanGoal.dita">Medication Action Plan Goal</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7496)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:7497)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7500)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:7506)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7501)
+<ul><li>Enter the medication's generic drug name (and brand name if applicable), strength, and dosage form for medications currently being used by the beneficiary, including starter supplies (e.g., samples), prescription medications, over-the-counter (OTC) drugs, herbal products, vitamins, and minerals.
+
+For brand drugs and branded generics, list both generic and brand names, such as "Generic Name (Brand Name)". An example is Furosemide (Lasix). For generic drugs, list the medication name as "Generic Name" (e.g., Furosemide). This would ensure a consistent format of: "Generic Name (Brand Name if applicable)".
+
+Information about medication-related devices should be included in the field for the applicable medication(s) where appropriate</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7507)
+</li>
+<li>Contains zero or more [0..*] <tt><b>effectiveTime</b></tt>
+<ul><li>Date I started using it: The medication start date may be entered by the Part D plan if known or reasonably estimated, or entered based upon beneficiary-reported data; or the field may be left blank for the beneficiary to complete. The last prescription fill date should not be entered in this field.
+
+
+Date I stopped using it: This field allows the beneficiary to record the date he/she stops using the medication. Remove the italics type that states Leave blank for beneficiary to enter stop date .  Leave this field blank for the beneficiary to enter the stop date. Discuss with the beneficiary that when a medication is no longer being taken, he or she should write the date that the medication was stopped and the reason why the medication was stopped.
+
+Start Date : May be estimated by Plan or entered based upon beneficiary-reported data, or leave blank for beneficiary to enter start date
+
+Stop Date:  Leave blank for beneficiary to enter stop date</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:7555)
+<ul><li><p>In "INT" (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of "3" means that the substance can be administered up to 3 times</p>
+
+<p> In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a substance administration event means that the current administration is the 3rd in a series </p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>routeCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationRouteFDAValueSet.dita">Medication Route FDA Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.7</tt><b> STATIC</b> 1 (CONF:7514)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.9</tt><b> STATIC</b> 2 (CONF:7515)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:7516)
+<ul><li>Pre-coordinated consumable: If the consumable code is a precoordinated unit dose (e.g. metoprolol 25mg tablet) then doseQuantity is a unitless number that indicates the number of products given per administration (e.g. 2, meaning 2 x metoprolol 25mg tablet) 
+Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e.g. is simply metoprolol), then doseQuantity must represent a physical quantity with @unit, e.g. 25 and mg, specifying the amount of product given per administration</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>rateQuantity</b></tt> (CONF:7517)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>maxDoseQuantity</b></tt> (CONF:7518)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>administrationUnitCode</b></tt>, where the @code <b>MAY</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationProductForm.dita">Medication Product Form</xref> 2.16.840.1.113883.3.88.12.3221.8.11</tt><b> STATIC</b> 1 (CONF:7519)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:7522)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7541)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:7545)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSupplyOrder.dita">Medication Supply Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.17</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7548)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:7538)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7554)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationDispense.dita">Medication Dispense</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.18</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>precondition</b></tt> (CONF:7546)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PreconditionForSubstanceAdministration.dita">Precondition For Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:7523)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DrugVehicle.dita">Drug Vehicle</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:7520) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt>, where its type is <xref href="../MedicationInformation.dita">Medication Information</xref> (CONF:7521)<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationInformation.dita">Medication Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.23</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> <p><i>Presciber of the medication is recorded here</i></p><ol><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt></li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> <ol><li> This assignedAuthor <b>SHALL</b> contain zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHOULD</b> contain exactly one [1..1] <tt><b>name</b></tt><p><i>Enter the name of the authorized practitioner who ordered the medication for the beneficiary. This field may also include other prescriber data, such as designation of practitioner type (e.g., MD, PA, or NP), telephone number, address, site, etc., such as J. Johnson-Smith, NP. For non-prescribed OTCs, enter "self" or leave this field blank.</i></p></li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document the medications instructions or Sig</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt> <ol><li> This act <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Instructions.html">Consol Instructions</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt></li></ol> <ol>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document the reason for taking the medication</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RSON" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Indication.html">Consol Indication</xref><ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Indication.html">Consol Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document the reason for stopping the medication</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RSON" </tt></li><li> This entryRelationship Contains zero or one [0..1] <tt><b>act</b></tt> <ol><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This act Contains exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This act <b>SHALL</b> contain zero or one [0..1] <tt><b>@negationInd</b>="true" </tt></li><li> This act Contains zero or one [0..1] <tt><b>text</b></tt><p><i>This field allows the beneficiary to record the reason he/she stops using the medication.</i></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document any reminders associated with the medication</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SPRT" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt> <ol><li> This act <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Instructions.html">Consol Instructions</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt></li></ol> <ol>
+<li>Contains exactly one [1..1] <xref href="../Reminder.dita">Reminder</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> <p><i>Use this entry relationship definition to document the goals for using the medication</i></p><ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationActionPlanGoal.dita">Medication Action Plan Goal</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActionPlanGoal.dita">Medication Action Plan Goal</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li></ol>
+</li>
+<li>Medication Activity <b>SHOULD</b> include doseQuantity OR rateQuantity</li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7502)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7503)</li>
+<li><b>SHALL</b> contain exactly one [1..1] effectiveTime such that it <b>SHALL</b> contain exactly one [1..1] @xsi:type = "IVL_TS" (CONF:7508, CONF:9104)</li>
+<li>effectiveTime with @xsi:type="IVL_TS" <b>SHALL</b> contain exactly one [1..1] low</li>
+<li>effectiveTime with @xsi:type="IVL_TS" <b>SHALL</b> contain exactly one [1..1] high</li>
+<li><b>SHOULD</b> contain zero or one [0..1] effectiveTime such that it <b>SHALL</b> contain exactly one [1..1] @xsi:type = "PIVL_TS" or "EIVL_TS" (CONF:7513, CONF:9105)</li>
+<li>effectiveTime with @xsi:type = "PIVL_TS" or "EIVL_TS" <b>SHALL</b> contain exactly one [1..1] @operator="A" and (CONF:9106)</li>
+<li>doseQuantity, if present, <b>SHOULD</b> contain zero or one [0..1] @unit, which <b>SHALL</b> be selected from ValueSet UCUM Units of Measure (case sensitive) 2.16.840.1.113883.1.11.12839 DYNAMIC (CONF:7526)</li>
+<li>participant with target entry Drug Vehicle <b>SHALL</b> contain exactly one [1..1] @typeCode="CSM" (CodeSystem: HL7ParticipationType 2.16.840.1.113883.5.90) (CONF:7524)</li>
+<li>entryRelationship with target entry Instructions <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:7542)</li>
+<li>Precondition for Substance Administration <b>SHALL</b> contain exactly one [1..1] @typeCode="PRCN" (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002) (CONF:7550)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mtm::MedicationActivity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::substanceadministration[cda:templateId/@root = 111.222.333.444.222]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:7496</entry><entry> SBADM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentSubstanceMood</entry><entry>CONF:7497</entry><entry> EVN</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>Delivery Method ( code )</entry><entry>code</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7506</entry><entry> </entry></row> 
+<row><entry>Dose ( doseQuantity )</entry><entry>doseQuantity</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_PQ</entry><entry>CONF:7516</entry><entry> </entry></row> 
+<row><entry>Dose Restriction ( maxDoseQuantity )</entry><entry>maxDoseQuantity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>RTO_PQ_PQ</entry><entry>CONF:7518</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>SXCM_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:7500</entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>Product Form ( administrationUnitCode )</entry><entry>administrationUnitCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7519</entry><entry> </entry></row> 
+<row><entry>rateQuantity</entry><entry>rateQuantity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_PQ</entry><entry>CONF:7517</entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_INT</entry><entry>CONF:7555</entry><entry> </entry></row> 
+<row><entry>Route ( routeCode )</entry><entry>routeCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> null</entry></row> 
+<row><entry>Site ( approachSiteCode )</entry><entry>approachSiteCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> null</entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7507</entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 111.222.333.444.222</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ED</entry><entry>CONF:7501</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>drugVehicle</entry><entry>drugVehicle</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>DrugVehicle</entry><entry>CONF:7523</entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>Fulfillment Instructions ( medicationDispense )</entry><entry>medicationDispense</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationDispense</entry><entry>CONF:7554</entry><entry> </entry></row> 
+<row><entry>goalsEntryRelationship</entry><entry>goalsEntryRelationship</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>GoalsEntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>indication</entry><entry>indication</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Indication</entry><entry>CONF:7538</entry><entry> </entry></row> 
+<row><entry>indicationEntryRelationship</entry><entry>indicationEntryRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IndicationEntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>instructionsEntryRelationship</entry><entry>instructionsEntryRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InstructionEntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>Medication Information ( consumable )</entry><entry>consumable</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Consumable</entry><entry>CONF:7520</entry><entry> </entry></row> 
+<row><entry>Order Information ( medicationSupplyOrder )</entry><entry>medicationSupplyOrder</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationSupplyOrder</entry><entry>CONF:7545</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>Patient Instructions ( instructions )</entry><entry>instructions</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Instructions</entry><entry>CONF:7541</entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Performer2</entry><entry>CONF:7522</entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PreconditionForSubstanceAdministration</entry><entry>CONF:7546</entry><entry> </entry></row> 
+<row><entry>presciber</entry><entry>presciber</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Prescriber</entry><entry></entry><entry> </entry></row> 
+<row><entry>Reaction ( reactionObservation )</entry><entry>reactionObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ReactionObservation</entry><entry>CONF:7548</entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>reminderEntryRelationship</entry><entry>reminderEntryRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ReminderEntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>stopReasonEntryRelationship</entry><entry>stopReasonEntryRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>StopReasonEntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SBADM">
+  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+  <templateId root="111.222.333.444.222"/>
+  <id root="1040202542" extension="MDHT"/>
+  <code code="1371575692"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime value="20120618"/>
+  <repeatNumber value="1"/>
+  <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <doseQuantity/>
+  <rateQuantity/>
+  <maxDoseQuantity/>
+  <consumable/>
+  <author typeCode="AUT">
+    <templateId root="null"/>
+    <time/>
+    <assignedAuthor>
+      <id root="170504910" extension="MDHT"/>
+      <assignedPerson/>
+    </assignedAuthor>
+  </author>
+  <entryRelationship>
+    <observation>
+      <id root="195305068" extension="MDHT"/>
+      <code code="1665191605"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1951913052"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act>
+      <code code="2031166946"/>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <act>
+      <code code="463980221"/>
+      <text>Text Value</text>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <act>
+      <code code="2081662804"/>
+      <text>Text Value</text>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="1834114788" extension="MDHT"/>
+      <code code="1384753496"/>
+      <text>Text Value</text>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="GOL">
+      <templateId root="2.16.840.1.113883.10.20.1.25"/>
+      <id root="1488551001" extension="MDHT"/>
+      <code code="1019659820"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <repeatNumber value="1"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act/>
+  </entryRelationship>
+</substanceadministration>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Activity</ph></p>
+<p id="shortdesc">[SubstanceAdministration: templateId <tt>111.222.333.444.222</tt>]</p>
+</body>
+</topic>

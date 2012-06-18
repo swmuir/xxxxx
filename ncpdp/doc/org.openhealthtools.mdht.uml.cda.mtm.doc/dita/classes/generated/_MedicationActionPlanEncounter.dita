@@ -9,20 +9,29 @@
 </prolog>
 <body>
 <section id="description">
+<p>This provides the context (type of encounter, date, place, condition, participants, etc.) of the patient - provider interaction, i.e., medication review, that yielded the medication action plan or the review of the patient's reported follow-up to the action plan.
+
+(What we talked about)
+
+MAP 6</p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityEncounter.html">Consol Plan Of Care Activity Encounter</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.40</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>
-<ol>
+<ul><li>WHAT WE TALKED ABOUT
+
+Enter a description of the topic that was discussed with the beneficiary, including the medication or care issue to be resolved or the behavior to be encouraged. The Part D plan or MTM provider has the discretion to choose how to make reference to the medication or care issue, such as to list the medication first in the box or add emphasis to that specific text. In some cases, it may be appropriate to tell the beneficiary that the MTM provider will follow up with the physician or other practitioner or to include goals of therapy.
+
+See MAP 6</li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>
+<ul><li>WHAT I NEED TO DO</li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../MedicationActionPlanActivity.dita">Medication Action Plan Activity</xref> (templateId: <tt>111.222.333.444.666</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ul><li>This captueres the patient reported outcome from original encounter</li></ul><ol>
+<ul><li>WHAT I DID AND WHEN I DID IT</li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../MedicationActionPlanObservation.dita">Medication Action Plan Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
@@ -33,23 +42,27 @@
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8567)
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
-</li>
+<ul><li>WHAT WE TALKED ABOUT
+
+Enter a description of the topic that was discussed with the beneficiary, including the medication or care issue to be resolved or the behavior to be encouraged. The Part D plan or MTM provider has the discretion to choose how to make reference to the medication or care issue, such as to list the medication first in the box or add emphasis to that specific text. In some cases, it may be appropriate to tell the beneficiary that the MTM provider will follow up with the physician or other practitioner or to include goals of therapy.
+
+See MAP 6</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../MedicationActionPlanActivity.dita">Medication Action Plan Activity</xref> (templateId: <tt>111.222.333.444.666</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationActionPlanActivity.dita">Medication Action Plan Activity</xref> (templateId: <tt>111.222.333.444.666</tt>)</li></ol><ul><li>WHAT I NEED TO DO</li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../MedicationActionPlanObservation.dita">Medication Action Plan Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol><ul><li>This captueres the patient reported outcome from original encounter</li></ul></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationActionPlanObservation.dita">Medication Action Plan Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol><ul><li>WHAT I DID AND WHEN I DID IT</li></ul></li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mtm::MedicationActionPlanEncounter</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::encounter[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.40]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:8564</entry><entry>HL7ActClass 2.16.840.1.113883.5.6 ACCM</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentEncounterMood</entry><entry>CONF:8565</entry><entry> APT</entry></row> 
 <row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 null</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 null</entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:8567</entry><entry> </entry></row> 
 <row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
@@ -60,7 +73,7 @@
 <row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
 <row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
 <row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>medicationActionPlanActivity</entry><entry>medicationActionPlanActivity</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationActionPlanActivity</entry><entry></entry><entry> </entry></row> 
+<row><entry>medicationActionPlanActivity</entry><entry>medicationActionPlanActivity</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationActionPlanActivity</entry><entry></entry><entry> </entry></row> 
 <row><entry>medicationActionPlanObservation</entry><entry>medicationActionPlanObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationActionPlanObservation</entry><entry></entry><entry> </entry></row> 
 <row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
 <row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
@@ -73,7 +86,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC">
   <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
-  <id root="213595305" extension="MDHT"/>
+  <id root="1901751821" extension="MDHT"/>
   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <text>Text Value</text>
   <effectiveTime>
@@ -84,20 +97,44 @@
     <act classCode="ACT" moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
       <templateId root="111.222.333.444.666"/>
-      <id root="1466299265" extension="MDHT"/>
+      <id root="671757551" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="GOL">
+          <templateId root="2.16.840.1.113883.10.20.1.25"/>
+          <id root="1340286868" extension="MDHT"/>
+          <code code="1670351215"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.1.25"/>
+          <id root="1809691686" extension="MDHT"/>
+          <code code="828025696"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
     </act>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS">
       <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="1832126497" extension="MDHT"/>
-      <code code="204552123"/>
+      <id root="798493015" extension="MDHT"/>
+      <code code="1478162511"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>

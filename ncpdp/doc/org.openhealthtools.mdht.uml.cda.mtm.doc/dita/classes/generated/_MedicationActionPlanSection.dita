@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Action Plan Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>111.222.333.444.555</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="111.222.333.444.555"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Medication Action Plan provides the patient with documentation of the steps that they need to follow to maximize the benefits of their medication therapy. These are steps discussed during the medication review or follow-up encounter and are designed to help the patient understand and remember the needed activities, e.g., frequency and or timing of blood sugar checks or recognition of and response to a threatening change in the level. The action plan is prioritized by the provider based on the patient's concerns, the therapeutic need, and the patient's ability to understand and complete the recommended activities. It also provides a means for the patient to record their actions and thereby serves as a basis for ongoing interaction with both the MTM provider and other involved practitioners.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareSection.html">Consol Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActionPlanEncounter.dita">Medication Action Plan Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.40</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareSection.html">Consol Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="18776-5" </tt><i>Treatment plan</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7724)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7725)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:7726.CONF:8804)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:8808, CONF:8807)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityObservation.dita">Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:8809, CONF:8810)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityProcedure.dita">Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.41</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:8811, CONF:8812)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySubstanceAdministration.dita">Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:8813, CONF:8814)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySupply.dita">Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.43</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActionPlanEncounter.dita">Medication Action Plan Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.40</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Action Plan Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>111.222.333.444.555</tt>]</p>
+</body>
+</topic>
