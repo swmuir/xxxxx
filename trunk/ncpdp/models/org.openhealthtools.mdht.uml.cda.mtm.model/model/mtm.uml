@@ -447,6 +447,14 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JkFBgKmuEeGfEcsleERUhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JkFBgamuEeGfEcsleERUhA" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_TcS_oL-uEeG99sJ7U3dsFg" name="effectiveTime" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_euXw0L-uEeG99sJ7U3dsFg">
+          <body>Capture the date the that the patient reports the activity was completed</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YCsjAL-uEeG99sJ7U3dsFg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YCtKEL-uEeG99sJ7U3dsFg" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_pQo5MLb8EeGErMgL9zVrTA" name="MedicationActionPlanGoal">
       <generalization xmi:id="_pQpgQLb8EeGErMgL9zVrTA">
@@ -635,4 +643,5 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_Dk0jILe3EeGy6IHu0WFTyQ" base_Property="_A_Yx8Le3EeGy6IHu0WFTyQ"/>
   <CDA:CDATemplate xmi:id="_QMlFMLl1EeG9KtLyBDnukg" base_Class="_AO4iELe3EeGy6IHu0WFTyQ" templateId="111.222.333.444.222.2"/>
+  <CDA:PropertyValidation xmi:id="_WfN-EL-uEeG99sJ7U3dsFg" severity="INFO" base_Property="_TcS_oL-uEeG99sJ7U3dsFg"/>
 </xmi:XMI>
