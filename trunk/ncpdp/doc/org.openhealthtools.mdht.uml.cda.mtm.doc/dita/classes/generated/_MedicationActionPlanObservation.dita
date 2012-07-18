@@ -8,17 +8,19 @@
 <resourceid id="2.16.840.1.113883.10.20.1.25"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>(What I did and when I did it)
-
-MAP 6</p>
+<p><lines><i>This defines the issues that were discussed between the MTM provider and the patient/caregiver</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityObservation.html">Consol Plan Of Care Activity Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
-<ul><li>WHAT I  DID AND WHEN I DID IT
+<ul><li><p><lines><i>WHAT I  DID AND WHEN I DID IT
 
-This field is for the beneficiary to use after the CMR is complete. Discuss with the beneficiary that the box is for his/her use and to write in this box as appropriate. For example, the MTM provider may educate the beneficiary to take the medication with a meal to increase absorption (e.g., calcium carbonate) and then the beneficiary can note when they started doing this and the effects if any.</li></ul></li>
+This field is for the beneficiary to use after the CMR is complete. Discuss with the beneficiary that the box is for his/her use and to write in this box as appropriate. For example, the MTM provider may educate the beneficiary to take the medication with a meal to increase absorption (e.g., calcium carbonate) and then the beneficiary can note when they started doing this and the effects if any.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>Capture the date the that the patient reports the activity was completed</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityObservation.html">Consol Plan Of Care Activity Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li>
@@ -31,9 +33,11 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
 <li>Contains exactly one [1..1] <tt><b>code</b></tt> with data type CD
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
-<ul><li>WHAT I  DID AND WHEN I DID IT
+<ul><li><p><lines><i>WHAT I  DID AND WHEN I DID IT
 
-This field is for the beneficiary to use after the CMR is complete. Discuss with the beneficiary that the box is for his/her use and to write in this box as appropriate. For example, the MTM provider may educate the beneficiary to take the medication with a meal to increase absorption (e.g., calcium carbonate) and then the beneficiary can note when they started doing this and the effects if any.</li></ul></li>
+This field is for the beneficiary to use after the CMR is complete. Discuss with the beneficiary that the box is for his/her use and to write in this box as appropriate. For example, the MTM provider may educate the beneficiary to take the medication with a meal to increase absorption (e.g., calcium carbonate) and then the beneficiary can note when they started doing this and the effects if any.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>Capture the date the that the patient reports the activity was completed</i></lines></p></li></ul></li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mtm::MedicationActionPlanObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.1.25]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:8581</entry><entry>HL7ActClass 2.16.840.1.113883.5.6 ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:8582</entry><entry> DEF</entry></row> 
@@ -41,7 +45,7 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
 <row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
 <row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:8584</entry><entry> </entry></row> 
 <row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
 <row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
@@ -69,8 +73,8 @@ This field is for the beneficiary to use after the CMR is complete. Discuss with
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS">
   <templateId root="2.16.840.1.113883.10.20.1.25"/>
-  <id root="828155460" extension="MDHT"/>
-  <code code="898336837"/>
+  <id root="MDHT" extension="1737215327"/>
+  <code code="2130974772"/>
   <text>Text Value</text>
   <effectiveTime>
     <low value="2012"/>

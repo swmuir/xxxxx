@@ -8,8 +8,10 @@
 <resourceid id="111.222.333.444.555"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>The Medication Action Plan provides the patient with documentation of the steps that they need to follow to maximize the benefits of their medication therapy. These are steps discussed during the medication review or follow-up encounter and are designed to help the patient understand and remember the needed activities, e.g., frequency and or timing of blood sugar checks or recognition of and response to a threatening change in the level. The action plan is prioritized by the provider based on the patient's concerns, the therapeutic need, and the patient's ability to understand and complete the recommended activities. It also provides a means for the patient to record their actions and thereby serves as a basis for ongoing interaction with both the MTM provider and other involved practitioners.</p>
+<p><lines><i>The Medication Action Plan provides the patient with documentation of the steps that they need to follow to maximize the benefits of their medication therapy. These are steps discussed during the medication review or follow-up encounter and are designed to help the patient understand and remember the needed activities, e.g., frequency and or timing of blood sugar checks or recognition of and response to a threatening change in the level. The action plan is prioritized by the provider based on the patient's concerns, the therapeutic need, and the patient's ability to understand and complete the recommended activities. It also provides a means for the patient to record their actions and thereby serves as a basis for ongoing interaction with both the MTM provider and other involved practitioners.</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareSection.html">Consol Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li>
@@ -76,14 +78,14 @@
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
   <templateId root="111.222.333.444.555"/>
-  <id root="934223891" extension="MDHT"/>
+  <id root="MDHT" extension="536511903"/>
   <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
     <encounter classCode="ENC">
       <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
-      <id root="1016650731" extension="MDHT"/>
+      <id root="MDHT" extension="290392607"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -94,7 +96,7 @@
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
           <templateId root="111.222.333.444.666"/>
-          <id root="330091109" extension="MDHT"/>
+          <id root="MDHT" extension="58896223"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <effectiveTime>
@@ -106,8 +108,8 @@
       <entryRelationship>
         <observation classCode="OBS">
           <templateId root="2.16.840.1.113883.10.20.1.25"/>
-          <id root="174263595" extension="MDHT"/>
-          <code code="2076845165"/>
+          <id root="MDHT" extension="884950573"/>
+          <code code="1482227533"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>

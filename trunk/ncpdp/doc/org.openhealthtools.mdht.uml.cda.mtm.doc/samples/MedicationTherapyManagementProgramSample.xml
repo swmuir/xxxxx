@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <realmCode code="US"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="111.222.333.444.111"/>
+  <effectiveTime value="20130130"/>
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
+  <recordTarget>
+    <patientRole>
+      <addr><streetAddressLine>999 Straight Road</streetAddressLine><city>Washington</city><state>DC</state><postalCode>80008</postalCode></addr>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <assignedAuthor>
+      <telecom value="1-800-222-3333">
+        <useablePeriod value="9am" operator="P"/>
+        <useablePeriod value="5pm" operator="P"/>
+      </telecom>
+      <assignedPerson>
+        <name><family>DOE</family><given>JANE</given><suffix>PharmD</suffix></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+          <templateId root="111.222.333.444.555"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <entry>
+            <encounter classCode="ENC">
+              <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>High Cholesterol</text>
+              <effectiveTime value="20130114"/>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Monitor diet; eat fewer high cholesterol foods (see dietary handout for healthier options).</text>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Get your cholesterol checked.</text>
+                </act>
+              </entryRelationship>
+            </encounter>
+          </entry>
+          <entry>
+            <encounter classCode="ENC">
+              <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>High Blood Pressure</text>
+              <effectiveTime value="20130114"/>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Check blood pressure at least 3 times a week and record on log.</text>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Maintain blood pressure less than 130/80 mmHg.</text>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Monitor salt in my diet and increase daily exercise.</text>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Make an appointment with physician to have blood pressure rechecked and share log.</text>
+                </act>
+              </entryRelationship>
+            </encounter>
+          </entry>
+          <entry>
+            <encounter classCode="ENC">
+              <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Diabetes</text>
+              <effectiveTime value="20130114"/>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Continue to check blood sugar once a day.</text>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Maintain fasting blood sugar less than 120 and greater than 70.</text>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Make an appointment to see the podiatrist within one month.</text>
+                </act>
+              </entryRelationship>
+            </encounter>
+          </entry>
+          <entry>
+            <encounter classCode="ENC">
+              <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>How to use your Metered Dose Inhaler - Albuterol</text>
+              <effectiveTime value="20130114"/>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Refer to the attached handout on proper inhaler technique.</text>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Always use spacer with inhaler.</text>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+                  <templateId root="111.222.333.444.666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Keep this medication with me at all times 'rescue inhaler'</text>
+                </act>
+              </entryRelationship>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+          <text>Penicillin - hives and difficulty swallowing</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+          <templateId root="111.222.333.444.333"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>MedicationsMedications</title>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <templateId root="111.222.333.444.222"/>
+              <text>Simvastatin 20 mg tablet</text>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="200901"/>
+              </effectiveTime>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <author typeCode="AUT">
+                <assignedAuthor>
+                  <assignedPerson>
+                    <name><family>Anne</family><given>Joe</given><prefix>Dr.</prefix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>High Cholesterol</text>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="GOL">
+                  <templateId root="2.16.840.1.113883.10.20.1.25"/>
+                  <text>LDL (Low Density Lipoproteins) &lt; 100 mg/dL</text>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="GOL">
+                  <templateId root="2.16.840.1.113883.10.20.1.25"/>
+                  <text>HDL (High Density Lipoproteins) > 40 mg/dL</text>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Take one tablet by mouth every night</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              <entryRelationship typeCode="RSON" negationInd="true">
+                <act>
+                  <text>why i stopped</text>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <templateId root="111.222.333.444.222"/>
+              <text>Simvastatin 20 mg tablet</text>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="201006"/>
+              </effectiveTime>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <author typeCode="AUT">
+                <assignedAuthor>
+                  <assignedPerson>
+                    <name><family>Anne</family><given>Joe</given><prefix>Dr.</prefix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Type 2 Diabetes</text>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Take one tablet (5mg) by mouth once daily</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <templateId root="111.222.333.444.222"/>
+              <text>Acetaminophen 325 mg tablet</text>
+              <effectiveTime xsi:type="IVL_TS" nullFlavor="UNK"/>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <author typeCode="AUT">
+                <assignedAuthor>
+                  <assignedPerson>
+                    <name><family>Anne</family><given>Joe</given><prefix>Dr.</prefix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Type 2 Diabetes</text>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Take one tablet (5mg) by mouth once daily</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              <entryRelationship typeCode="SPRT">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Taking more than 3000mg of Acetaminophen a day can increase your chance of liver toxicity.</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              <entryRelationship typeCode="SPRT">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Do not drink alcohol with this medication, it can increase your risk of liver problems.</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <templateId root="111.222.333.444.222"/>
+              <text>Acetaminophen 325 mg tablet</text>
+              <effectiveTime xsi:type="IVL_TS" nullFlavor="UNK"/>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <author typeCode="AUT">
+                <assignedAuthor>
+                  <assignedPerson>
+                    <name><family>Anne</family><given>Joe</given><prefix>Dr.</prefix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Type 2 Diabetes</text>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Take one tablet (5mg) by mouth once daily</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              <entryRelationship typeCode="SPRT">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Taking more than 3000mg of Acetaminophen a day can increase your chance of liver toxicity.</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              <entryRelationship typeCode="SPRT">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Do not drink alcohol with this medication, it can increase your risk of liver problems.</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <templateId root="111.222.333.444.222"/>
+              <text>Albuterol Sulfate Inhalation Solution (Ventolin HFA)</text>
+              <effectiveTime xsi:type="IVL_TS" nullFlavor="UNK"/>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <author typeCode="AUT">
+                <assignedAuthor>
+                  <assignedPerson>
+                    <name><family>Anne</family><given>Joe</given><prefix>Dr.</prefix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Breathing</text>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Use 2 puffs every 6 hours as needed for shortness of breath</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              <entryRelationship typeCode="SPRT">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Refer to leaflet on proper technique.</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              <entryRelationship typeCode="SPRT">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Keep with you at all times rescue inhaler.</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

@@ -4,27 +4,9 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Overview</title>
 	<body>
-		<p>This guide has been
-developed to support the
-documentation and communication needs of the expanding Medication Therapy
-Management (MTM) services arena and the CMS Medicare Part D reporting and
-patient information requirements for MTM. 
-It is to be used for the exchange of medication related information
-including assessment results, recommendations for modifications to medication
-regimens, recommendations for other services (e.g., dietary or laboratory) and
-the results of interventions between/among providers, payers, pharmacy benefit
-managers (PBMs) and patients.</p>
-		<p>The
-MTM CDA Guide is based on the Consolidated CDA library of templates, which
-incorporate and harmonize previous efforts from Health Level Seven (HL7),
-Integrating the Healthcare Enterprise (IHE), and Health Information Technology
-Standards Panel (HITSP). For additional information regarding the use,
-structure and contents of the Consolidated CDA Guide go to <xref   format="html"    href="http://www.hl7.org/Special/committees/structure/index.cfm">
->http://www.hl7.org/Special/committees/structure/index.cfm</xref>
->.</p>
-		<p>This
-guide defines templates within this library that are used for the documentation
-of MTM services, specifically:</p>
+		<p>This guide has been developed to support the documentation and communication needs of the expanding Medication Therapy Management (MTM) services arena and the CMS Medicare Part D reporting and patient information requirements for MTM.  It is to be used for the exchange of medication related information including assessment results, recommendations for modifications to medication regimens, recommendations for other services (e.g., dietary or laboratory) and the results of interventions between/among providers, payers, pharmacy benefit managers (PBMs) and patients.</p>
+		<p>The MTM CDA Guide is based on the Consolidated CDA library of templates, which incorporate and harmonize previous efforts from Health Level Seven (HL7), Integrating the Healthcare Enterprise (IHE), and Health Information Technology Standards Panel (HITSP). For additional information regarding the use, structure and contents of the Consolidated CDA Guide go to <xref format="html" href="http://www.hl7.org/Special/committees/structure/index.cfm">http://www.hl7.org/Special/committees/structure/index.cfm</xref>.</p>
+		<p>This guide defines templates within this library that are used for the documentation of MTM services, specifically:</p>
 		<p>Medication Action Plan</p>
 		<p>Medication List</p>
 		<p>Comprehensive Medication Review (CMR)</p>
