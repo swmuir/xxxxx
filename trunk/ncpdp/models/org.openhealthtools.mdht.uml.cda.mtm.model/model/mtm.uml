@@ -15,7 +15,9 @@
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_0naHsUavEeGFfbgNCOW4yA" name="MedicationTherapyManagementProgram">
       <ownedComment xmi:id="_GDVfILSlEeG0-4dzGPBnrw">
-        <body>The Medicare Part D Medication Therapy Management (MTM) Program Standardized Format (Format) is a written summary of a comprehensive medication review (CMR). A CMR is an interactive, person-to-person or telehealth medication review and consultation of a beneficiary's medications (including prescriptions, over-the-counter (OTC) medications, herbal therapies, and dietary supplements) by a pharmacist or qualified provider that is intended to aid in assessing medication therapy and optimizing patient outcomes.</body>
+        <body>Medication Therapy Management Services (MTM) refers to a distinct service or group of services provided to assess and improve medication use with the goal of optimizing the patient&amp;apos;s therapeutic outcome by improving medication use.  Key components of these services are the comprehensive medication review (CMR) and condition or drug specific targeted medication reviews (TMRs). CMR is an interactive, person-to-person or telehealth medication review and consultation of a beneficiary's medications (including prescriptions, over-the-counter (OTC) medications, herbal therapies, and dietary supplements) by a pharmacist or qualified provider that is intended to aid in assessing medication therapy and optimizing patient outcomes.     &#xD;
+&#xD;
+This CDA implementation addresses the communication of this review and the activities the patient must complete for compliance and enhanced outcomes. These services also include services such as medication reconciliation on admission and/or discharge from a facility, assistance in planning medication schedules when several drugs must be coordinated, counseling regarding dietary requirements or restrictions to ensure the therapeutic effect of the medication and recommendations for alternative therapies. This CDA is designed to meet the requirements of the Medicare Part D Medication Therapy management (MTM) Program Standard Format. See: &lt;xref href=&quot;www.ncpdp.orghttp://www.cms.gov/Medicare/Prescription-Drug-Coverage/PrescriptionDrugCovContra/MTM.html&quot;>www.ncpdp.orghttp://www.cms.gov/Medicare/Prescription-Drug-Coverage/PrescriptionDrugCovContra/MTM.html&lt;/xref> for the detailed requirements.</body>
       </ownedComment>
       <generalization xmi:id="_15elkEwrEeGrDvEN9YqHUQ">
         <ownedComment xmi:id="_4x_ZELe-EeG0Dux7Xv_CnQ">
@@ -54,7 +56,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_yhegQEwxEeGrDvEN9YqHUQ" name="MedicationActivity">
       <ownedComment xmi:id="_By5V8LSrEeG0-4dzGPBnrw">
-        <body>PML-7</body>
+        <body>MTM medication activity describes the medications taken or intended to be taken including the delivery when started or scheduled to start, when to discontinue (if applicable), method, the sig, frequency, route, site, dose, amount, patient instructions, etc.</body>
       </ownedComment>
       <generalization xmi:id="_yhfHUEwxEeGrDvEN9YqHUQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
@@ -344,8 +346,6 @@ PML-10:</body>
       <ownedComment xmi:id="_-LpicLSqEeG0-4dzGPBnrw">
         <body>The medication action plan activity describes the specific action that the patient is to take or has taken.&#xD;
 &#xD;
-(What I need to do)&#xD;
-&#xD;
 MAP 6</body>
       </ownedComment>
       <generalization xmi:id="_dcD1YKmqEeGfEcsleERUhA">
@@ -380,10 +380,7 @@ See MAP 6</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_0AARgKmsEeGfEcsleERUhA" name="MedicationActionPlanEncounter">
       <ownedComment xmi:id="_V756ULSlEeG0-4dzGPBnrw">
-        <body>This provides the context (type of encounter, date, place, condition, participants, etc.) of the patient - provider interaction, i.e., medication review, that yielded the medication action plan or the review of the patient's reported follow-up to the action plan.&#xD;
-&#xD;
-(What we talked about)&#xD;
-&#xD;
+        <body>This provides the context (type of encounter, date, place, condition, participants, etc.) of the patient – provider interaction, i.e., medication review, that yielded the medication action plan or the review of the patient's reported follow-up to the action plan. &#xD;
 MAP 6</body>
       </ownedComment>
       <generalization xmi:id="_0AA4kKmsEeGfEcsleERUhA">
@@ -430,9 +427,7 @@ See MAP 6</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_63TrEKmtEeGfEcsleERUhA" name="MedicationActionPlanObservation">
       <ownedComment xmi:id="_yQCkgLlqEeGSOIIUThrvRA">
-        <body>(What I did and when I did it)&#xD;
-&#xD;
-MAP 6</body>
+        <body>This defines the issues that were discussed between the MTM provider and the patient/caregiver</body>
       </ownedComment>
       <generalization xmi:id="_63TrEamtEeGfEcsleERUhA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NcLjhSVEeGGzu7fmW9pXw"/>
