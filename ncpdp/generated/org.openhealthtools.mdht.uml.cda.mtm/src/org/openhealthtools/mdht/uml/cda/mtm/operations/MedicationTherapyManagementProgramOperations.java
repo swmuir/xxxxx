@@ -338,7 +338,7 @@ public class MedicationTherapyManagementProgramOperations extends GeneralHeaderC
    * @generated
    * @ordered
    */
-	protected static final String GET_ALLERGIES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)";
+	protected static final String GET_ALLERGIES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)";
 
 	/**
    * The cached OCL query for the '{@link #getAllergiesSection(MedicationTherapyManagementProgram) <em>Get Allergies Section</em>}' query operation.
@@ -354,7 +354,7 @@ public class MedicationTherapyManagementProgramOperations extends GeneralHeaderC
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)
    * @param medicationTherapyManagementProgram The receiving '<em><b>Medication Therapy Management Program</b></em>' model object.
    * <!-- end-model-doc -->
    * @generated
@@ -386,7 +386,7 @@ public class MedicationTherapyManagementProgramOperations extends GeneralHeaderC
    * @generated
    * @ordered
    */
-	protected static final String GET_PERSONAL_MEDICATION_LIST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->first().oclAsType(mtm::PersonalMedicationListSection)";
+	protected static final String GET_PERSONAL_MEDICATION_LIST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->any(true).oclAsType(mtm::PersonalMedicationListSection)";
 
 	/**
    * The cached OCL query for the '{@link #getPersonalMedicationListSection(MedicationTherapyManagementProgram) <em>Get Personal Medication List Section</em>}' query operation.
@@ -402,7 +402,7 @@ public class MedicationTherapyManagementProgramOperations extends GeneralHeaderC
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->first().oclAsType(mtm::PersonalMedicationListSection)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->any(true).oclAsType(mtm::PersonalMedicationListSection)
    * @param medicationTherapyManagementProgram The receiving '<em><b>Medication Therapy Management Program</b></em>' model object.
    * <!-- end-model-doc -->
    * @generated
@@ -434,7 +434,7 @@ public class MedicationTherapyManagementProgramOperations extends GeneralHeaderC
    * @generated
    * @ordered
    */
-	protected static final String GET_OTHER_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->first().oclAsType(mtm::OtherInformationSection)";
+	protected static final String GET_OTHER_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->any(true).oclAsType(mtm::OtherInformationSection)";
 
 	/**
    * The cached OCL query for the '{@link #getOtherInformationSection(MedicationTherapyManagementProgram) <em>Get Other Information Section</em>}' query operation.
@@ -450,7 +450,7 @@ public class MedicationTherapyManagementProgramOperations extends GeneralHeaderC
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->first().oclAsType(mtm::OtherInformationSection)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->any(true).oclAsType(mtm::OtherInformationSection)
    * @param medicationTherapyManagementProgram The receiving '<em><b>Medication Therapy Management Program</b></em>' model object.
    * <!-- end-model-doc -->
    * @generated
@@ -482,7 +482,7 @@ public class MedicationTherapyManagementProgramOperations extends GeneralHeaderC
    * @generated
    * @ordered
    */
-	protected static final String GET_MEDICATION_ACTION_PLAN__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->first().oclAsType(mtm::MedicationActionPlanSection)";
+	protected static final String GET_MEDICATION_ACTION_PLAN__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanSection)";
 
 	/**
    * The cached OCL query for the '{@link #getMedicationActionPlan(MedicationTherapyManagementProgram) <em>Get Medication Action Plan</em>}' query operation.
@@ -498,7 +498,7 @@ public class MedicationTherapyManagementProgramOperations extends GeneralHeaderC
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->first().oclAsType(mtm::MedicationActionPlanSection)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanSection)
    * @param medicationTherapyManagementProgram The receiving '<em><b>Medication Therapy Management Program</b></em>' model object.
    * <!-- end-model-doc -->
    * @generated

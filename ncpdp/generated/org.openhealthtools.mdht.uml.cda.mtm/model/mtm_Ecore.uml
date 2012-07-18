@@ -15,34 +15,36 @@
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_0naHsUavEeGFfbgNCOW4yA" name="MedicationTherapyManagementProgram">
       <ownedComment xmi:id="_GDVfILSlEeG0-4dzGPBnrw">
-        <body>The Medicare Part D Medication Therapy Management (MTM) Program Standardized Format (Format) is a written summary of a comprehensive medication review (CMR). A CMR is an interactive, person-to-person or telehealth medication review and consultation of a beneficiary's medications (including prescriptions, over-the-counter (OTC) medications, herbal therapies, and dietary supplements) by a pharmacist or qualified provider that is intended to aid in assessing medication therapy and optimizing patient outcomes.</body>
+        <body>Medication Therapy Management Services (MTM) refers to a distinct service or group of services provided to assess and improve medication use with the goal of optimizing the patient&amp;apos;s therapeutic outcome by improving medication use.  Key components of these services are the comprehensive medication review (CMR) and condition or drug specific targeted medication reviews (TMRs). CMR is an interactive, person-to-person or telehealth medication review and consultation of a beneficiary's medications (including prescriptions, over-the-counter (OTC) medications, herbal therapies, and dietary supplements) by a pharmacist or qualified provider that is intended to aid in assessing medication therapy and optimizing patient outcomes.     &#xD;
+&#xD;
+This CDA implementation addresses the communication of this review and the activities the patient must complete for compliance and enhanced outcomes. These services also include services such as medication reconciliation on admission and/or discharge from a facility, assistance in planning medication schedules when several drugs must be coordinated, counseling regarding dietary requirements or restrictions to ensure the therapeutic effect of the medication and recommendations for alternative therapies. This CDA is designed to meet the requirements of the Medicare Part D Medication Therapy management (MTM) Program Standard Format. See: &lt;xref href=&quot;www.ncpdp.orghttp://www.cms.gov/Medicare/Prescription-Drug-Coverage/PrescriptionDrugCovContra/MTM.html&quot;>www.ncpdp.orghttp://www.cms.gov/Medicare/Prescription-Drug-Coverage/PrescriptionDrugCovContra/MTM.html&lt;/xref> for the detailed requirements.</body>
       </ownedComment>
-      <ownedRule xmi:id="_RrrgcLl1EeG9KtLyBDnukg" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rrrgcbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BIyMMNDqEeGDO5enlLFiYg" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BIyMMdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.111')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rrt8sLl1EeG9KtLyBDnukg" name="MedicationTherapyManagementProgramAllergiesSection" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rrt8sbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BI0ocNDqEeGDO5enlLFiYg" name="MedicationTherapyManagementProgramAllergiesSection" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BI0ocdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RrwY8Ll1EeG9KtLyBDnukg" name="MedicationTherapyManagementProgramPersonalMedicationListSection" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RrwY8bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BI2do9DqEeGDO5enlLFiYg" name="MedicationTherapyManagementProgramPersonalMedicationListSection" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BI3EsNDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RsZ5MLl1EeG9KtLyBDnukg" name="MedicationTherapyManagementProgramOtherInformationSection" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsZ5Mbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJgk8NDqEeGDO5enlLFiYg" name="MedicationTherapyManagementProgramOtherInformationSection" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJgk8dDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RsxsoLl1EeG9KtLyBDnukg" name="MedicationTherapyManagementProgramMedicationActionPlan" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rsxsobl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJ4_cNDqEeGDO5enlLFiYg" name="MedicationTherapyManagementProgramMedicationActionPlan" constrainedElement="_0naHsUavEeGFfbgNCOW4yA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJ4_cdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))</body>
         </specification>
@@ -53,190 +55,190 @@
         </ownedComment>
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml#_2DNRcBSVEeGGzu7fmW9pXw"/>
       </generalization>
-      <ownedOperation xmi:id="_Rrvx4Ll1EeG9KtLyBDnukg" name="getAllergiesSection" isQuery="true" bodyCondition="_Rrvx47l1EeG9KtLyBDnukg">
-        <ownedRule xmi:id="_Rrvx47l1EeG9KtLyBDnukg" name="body" constrainedElement="_Rrvx4Ll1EeG9KtLyBDnukg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rrvx5Ll1EeG9KtLyBDnukg">
+      <ownedOperation xmi:id="_BI12kNDqEeGDO5enlLFiYg" name="getAllergiesSection" isQuery="true" bodyCondition="_BI2dodDqEeGDO5enlLFiYg">
+        <ownedRule xmi:id="_BI2dodDqEeGDO5enlLFiYg" name="body" constrainedElement="_BI12kNDqEeGDO5enlLFiYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BI2dotDqEeGDO5enlLFiYg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_Rrvx4bl1EeG9KtLyBDnukg" direction="return">
+        <ownedParameter xmi:id="_BI12kdDqEeGDO5enlLFiYg" direction="return">
           <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml#_bGzYgBVdEeGQCvUGzi1kDQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rrvx4rl1EeG9KtLyBDnukg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BI2doNDqEeGDO5enlLFiYg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_RrxnELl1EeG9KtLyBDnukg" name="getPersonalMedicationListSection" isQuery="true" bodyCondition="_RrxnE7l1EeG9KtLyBDnukg">
-        <ownedRule xmi:id="_RrxnE7l1EeG9KtLyBDnukg" name="body" constrainedElement="_RrxnELl1EeG9KtLyBDnukg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_RrxnFLl1EeG9KtLyBDnukg">
+      <ownedOperation xmi:id="_BI3rwNDqEeGDO5enlLFiYg" name="getPersonalMedicationListSection" isQuery="true" bodyCondition="_BI4S0NDqEeGDO5enlLFiYg">
+        <ownedRule xmi:id="_BI4S0NDqEeGDO5enlLFiYg" name="body" constrainedElement="_BI3rwNDqEeGDO5enlLFiYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BI4S0dDqEeGDO5enlLFiYg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->first().oclAsType(mtm::PersonalMedicationListSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->any(true).oclAsType(mtm::PersonalMedicationListSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_RrxnEbl1EeG9KtLyBDnukg" type="_AyXL8EwyEeGrDvEN9YqHUQ" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RrxnErl1EeG9KtLyBDnukg" value="1"/>
+        <ownedParameter xmi:id="_BI3rwdDqEeGDO5enlLFiYg" type="_AyXL8EwyEeGrDvEN9YqHUQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BI3rwtDqEeGDO5enlLFiYg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_RsbHULl1EeG9KtLyBDnukg" name="getOtherInformationSection" isQuery="true" bodyCondition="_RsbuYbl1EeG9KtLyBDnukg">
-        <ownedRule xmi:id="_RsbuYbl1EeG9KtLyBDnukg" name="body" constrainedElement="_RsbHULl1EeG9KtLyBDnukg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsbuYrl1EeG9KtLyBDnukg">
+      <ownedOperation xmi:id="_BJhzENDqEeGDO5enlLFiYg" name="getOtherInformationSection" isQuery="true" bodyCondition="_BJiaItDqEeGDO5enlLFiYg">
+        <ownedRule xmi:id="_BJiaItDqEeGDO5enlLFiYg" name="body" constrainedElement="_BJhzENDqEeGDO5enlLFiYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJiaI9DqEeGDO5enlLFiYg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->first().oclAsType(mtm::OtherInformationSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->any(true).oclAsType(mtm::OtherInformationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_RsbHUbl1EeG9KtLyBDnukg" type="_8lBioExOEeG1J9FcQHBzxA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RsbuYLl1EeG9KtLyBDnukg" value="1"/>
+        <ownedParameter xmi:id="_BJiaINDqEeGDO5enlLFiYg" type="_8lBioExOEeG1J9FcQHBzxA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BJiaIdDqEeGDO5enlLFiYg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_Rsy6wLl1EeG9KtLyBDnukg" name="getMedicationActionPlan" isQuery="true" bodyCondition="_Rsy6w7l1EeG9KtLyBDnukg">
-        <ownedRule xmi:id="_Rsy6w7l1EeG9KtLyBDnukg" name="body" constrainedElement="_Rsy6wLl1EeG9KtLyBDnukg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rsy6xLl1EeG9KtLyBDnukg">
+      <ownedOperation xmi:id="_BJ6NkNDqEeGDO5enlLFiYg" name="getMedicationActionPlan" isQuery="true" bodyCondition="_BJ6Nk9DqEeGDO5enlLFiYg">
+        <ownedRule xmi:id="_BJ6Nk9DqEeGDO5enlLFiYg" name="body" constrainedElement="_BJ6NkNDqEeGDO5enlLFiYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJ6NlNDqEeGDO5enlLFiYg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->first().oclAsType(mtm::MedicationActionPlanSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_Rsy6wbl1EeG9KtLyBDnukg" type="_YxKzkKmqEeGfEcsleERUhA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rsy6wrl1EeG9KtLyBDnukg" value="1"/>
+        <ownedParameter xmi:id="_BJ6NkdDqEeGDO5enlLFiYg" type="_YxKzkKmqEeGfEcsleERUhA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BJ6NktDqEeGDO5enlLFiYg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_yhegQEwxEeGrDvEN9YqHUQ" name="MedicationActivity">
       <ownedComment xmi:id="_By5V8LSrEeG0-4dzGPBnrw">
-        <body>PML-7</body>
+        <body>MTM medication activity describes the medications taken or intended to be taken including the delivery when started or scheduled to start, when to discontinue (if applicable), method, the sig, frequency, route, site, dose, amount, patient instructions, etc.</body>
       </ownedComment>
-      <ownedRule xmi:id="_RryOILl1EeG9KtLyBDnukg" name="mtmMedicationActivityTemplateId" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rry1MLl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BI454NDqEeGDO5enlLFiYg" name="mtmMedicationActivityTemplateId" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BI454dDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.222')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rr1RcLl1EeG9KtLyBDnukg" name="mtmMedicationActivityText" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rr1Rcbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BI79MNDqEeGDO5enlLFiYg" name="mtmMedicationActivityText" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BI79MdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RsRWUbl1EeG9KtLyBDnukg" name="mtmMedicationActivityPresciber" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsR9YLl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJZQMNDqEeGDO5enlLFiYg" name="mtmMedicationActivityPresciber" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJZQMdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtTRELl1EeG9KtLyBDnukg" name="mtmMedicationActivityIndicationEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtTREbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKbK8NDqEeGDO5enlLFiYg" name="mtmMedicationActivityIndicationEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKbK8dDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtWUYLl1EeG9KtLyBDnukg" name="mtmMedicationActivityStopReasonEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtWUYbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKeOQNDqEeGDO5enlLFiYg" name="mtmMedicationActivityStopReasonEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKeOQdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtYJkLl1EeG9KtLyBDnukg" name="mtmMedicationActivityReminderEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtYJkbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKgDcNDqEeGDO5enlLFiYg" name="mtmMedicationActivityReminderEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKgDcdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtbM4Ll1EeG9KtLyBDnukg" name="mtmMedicationActivityInstructionsEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtbM4bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKifsNDqEeGDO5enlLFiYg" name="mtmMedicationActivityInstructionsEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKifsdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtdpILl1EeG9KtLyBDnukg" name="mtmMedicationActivityGoalsEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtdpIbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKk78NDqEeGDO5enlLFiYg" name="mtmMedicationActivityGoalsEntryRelationship" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKk78dDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtxLILl1EeG9KtLyBDnukg" name="MedicationActivityPrescriberAssignedPresciberPersonName" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtxLIbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BK4d8NDqEeGDO5enlLFiYg" name="MedicationActivityPrescriberAssignedPresciberPersonName" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK4d8dDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.author->excluding(null).assignedAuthor->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() = 1))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtxyMLl1EeG9KtLyBDnukg" name="MedicationActivityPrescriberAssignedPresciberAssignedPerson" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtxyMbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BK4d8tDqEeGDO5enlLFiYg" name="MedicationActivityPrescriberAssignedPresciberAssignedPerson" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK4d89DqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.author->excluding(null).assignedAuthor->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtyZQLl1EeG9KtLyBDnukg" name="MedicationActivityPrescriberTemplateId" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtyZQbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BK5FANDqEeGDO5enlLFiYg" name="MedicationActivityPrescriberTemplateId" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK5FAdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.author->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = 'null'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtyZQrl1EeG9KtLyBDnukg" name="MedicationActivityPrescriberTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtyZQ7l1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BK5sENDqEeGDO5enlLFiYg" name="MedicationActivityPrescriberTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK5sEdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.author->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ParticipationType::AUT)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtzAULl1EeG9KtLyBDnukg" name="MedicationActivityPrescriberAssignedAuthor" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtzAUbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BK6TINDqEeGDO5enlLFiYg" name="MedicationActivityPrescriberAssignedAuthor" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK6TIdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.author->excluding(null)->reject(assignedAuthor->one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined() and assignedAuthor.oclIsKindOf(cda::AssignedAuthor)))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt01gLl1EeG9KtLyBDnukg" name="MedicationActivityIndicationEntryRelationshipTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt1ckLl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BK8IUNDqEeGDO5enlLFiYg" name="MedicationActivityIndicationEntryRelationshipTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK8IUdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null)->reject(isDefined('typeCode'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt1ckbl1EeG9KtLyBDnukg" name="MedicationActivityIndicationEntryRelationshipIndication" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt1ckrl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BK8vYNDqEeGDO5enlLFiYg" name="MedicationActivityIndicationEntryRelationshipIndication" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK8vYdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication)))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt340Ll1EeG9KtLyBDnukg" name="MedicationActivityStopReasonEntryRelationshipStopReasonClassCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt340bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BK_LoNDqEeGDO5enlLFiYg" name="MedicationActivityStopReasonEntryRelationshipStopReasonClassCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK_LodDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null).act->excluding(null)->reject(isDefined('classCode'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt4f4Ll1EeG9KtLyBDnukg" name="MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt4f4bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BK_ysNDqEeGDO5enlLFiYg" name="MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK_ysdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null).act->excluding(null)->reject(negationInd=true)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt5G8Ll1EeG9KtLyBDnukg" name="MedicationActivityStopReasonEntryRelationshipTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt5G8bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BLAZwNDqEeGDO5enlLFiYg" name="MedicationActivityStopReasonEntryRelationshipTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BLAZwdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null)->reject(isDefined('typeCode'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt68ILl1EeG9KtLyBDnukg" name="MedicationActivityReminderEntryRelationshipTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt68Ibl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BLCO8NDqEeGDO5enlLFiYg" name="MedicationActivityReminderEntryRelationshipTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BLCO8dDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::SPRT)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt68Irl1EeG9KtLyBDnukg" name="MedicationActivityReminderEntryRelationshipReminder" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt68I7l1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BLC2ANDqEeGDO5enlLFiYg" name="MedicationActivityReminderEntryRelationshipReminder" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BLC2AdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::Reminder)))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt8xULl1EeG9KtLyBDnukg" name="MedicationActivityInstructionEntryRelationshipTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt9YYLl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BLEEINDqEeGDO5enlLFiYg" name="MedicationActivityInstructionEntryRelationshipTypeCode" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BLEEIdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null)->reject(isDefined('typeCode'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt9YYbl1EeG9KtLyBDnukg" name="MedicationActivityInstructionEntryRelationshipInstructions" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt9YYrl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BLErMNDqEeGDO5enlLFiYg" name="MedicationActivityInstructionEntryRelationshipInstructions" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BLErMdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::Instructions)))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rt_NkLl1EeG9KtLyBDnukg" name="MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rt_Nkbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BLGgYNDqEeGDO5enlLFiYg" name="MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal" constrainedElement="_yhegQEwxEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BLGgYdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanGoal)))</body>
         </specification>
@@ -256,14 +258,14 @@ The PML is not a wallet card. Some MTM programs may also provide supplemental wa
 &#xD;
 Order of medications: MTM programs may select the sort order for the medications to be listed, such as alphabetically, by purpose, by prescriber, or by product type (e.g., prescription, OTC, vitamin, herbal supplement).</body>
       </ownedComment>
-      <ownedRule xmi:id="_RsNr8Ll1EeG9KtLyBDnukg" name="MedicationsSectionEntriesOptionalTemplateId" constrainedElement="_AyXL8EwyEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsNr8bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJUXsdDqEeGDO5enlLFiYg" name="MedicationsSectionEntriesOptionalTemplateId" constrainedElement="_AyXL8EwyEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJUXstDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.333')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RsPhILl1EeG9KtLyBDnukg" name="PersonalMedicationListSectionMedication" constrainedElement="_AyXL8EwyEeGrDvEN9YqHUQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsPhIbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJWz8NDqEeGDO5enlLFiYg" name="PersonalMedicationListSectionMedication" constrainedElement="_AyXL8EwyEeGrDvEN9YqHUQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJWz8dDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(mtm::MedicationActivity))</body>
         </specification>
@@ -271,15 +273,15 @@ Order of medications: MTM programs may select the sort order for the medications
       <generalization xmi:id="_AyXzAEwyEeGrDvEN9YqHUQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml#_2NIpgBSVEeGGzu7fmW9pXw"/>
       </generalization>
-      <ownedOperation xmi:id="_RsQvQLl1EeG9KtLyBDnukg" name="getmtmMedications" isQuery="true" bodyCondition="_RsQvQ7l1EeG9KtLyBDnukg">
-        <ownedRule xmi:id="_RsQvQ7l1EeG9KtLyBDnukg" name="body" constrainedElement="_RsQvQLl1EeG9KtLyBDnukg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsRWULl1EeG9KtLyBDnukg">
+      <ownedOperation xmi:id="_BJYCENDqEeGDO5enlLFiYg" name="getmtmMedications" isQuery="true" bodyCondition="_BJYCE9DqEeGDO5enlLFiYg">
+        <ownedRule xmi:id="_BJYCE9DqEeGDO5enlLFiYg" name="body" constrainedElement="_BJYCENDqEeGDO5enlLFiYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJYpINDqEeGDO5enlLFiYg">
             <language>OCL</language>
             <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(mtm::MedicationActivity)).oclAsType(mtm::MedicationActivity)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_RsQvQbl1EeG9KtLyBDnukg" type="_yhegQEwxEeGrDvEN9YqHUQ" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RsQvQrl1EeG9KtLyBDnukg" value="*"/>
+        <ownedParameter xmi:id="_BJYCEdDqEeGDO5enlLFiYg" type="_yhegQEwxEeGrDvEN9YqHUQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BJYCEtDqEeGDO5enlLFiYg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
@@ -289,20 +291,20 @@ Order of medications: MTM programs may select the sort order for the medications
 &#xD;
 PML-10:</body>
       </ownedComment>
-      <ownedRule xmi:id="_RsTLgLl1EeG9KtLyBDnukg" name="OtherInformationSectionTemplateId" constrainedElement="_8lBioExOEeG1J9FcQHBzxA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsTykLl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJaeUNDqEeGDO5enlLFiYg" name="OtherInformationSectionTemplateId" constrainedElement="_8lBioExOEeG1J9FcQHBzxA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJaeUdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.444')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RsVnwLl1EeG9KtLyBDnukg" name="OtherInformationSectionText" constrainedElement="_8lBioExOEeG1J9FcQHBzxA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsVnwbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJcTgNDqEeGDO5enlLFiYg" name="OtherInformationSectionText" constrainedElement="_8lBioExOEeG1J9FcQHBzxA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJc6kNDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>not self.text.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RsYEALl1EeG9KtLyBDnukg" name="OtherInformationSectionTitle" constrainedElement="_8lBioExOEeG1J9FcQHBzxA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsYEAbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJevwNDqEeGDO5enlLFiYg" name="OtherInformationSectionTitle" constrainedElement="_8lBioExOEeG1J9FcQHBzxA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJevwdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())</body>
         </specification>
@@ -315,20 +317,20 @@ PML-10:</body>
       <ownedComment xmi:id="_-0ww4LSqEeG0-4dzGPBnrw">
         <body>The Medication Action Plan provides the patient with documentation of the steps that they need to follow to maximize the benefits of their medication therapy. These are steps discussed during the medication review or follow-up encounter and are designed to help the patient understand and remember the needed activities, e.g., frequency and or timing of blood sugar checks or recognition of and response to a threatening change in the level. The action plan is prioritized by the provider based on the patient's concerns, the therapeutic need, and the patient's ability to understand and complete the recommended activities. It also provides a means for the patient to record their actions and thereby serves as a basis for ongoing interaction with both the MTM provider and other involved practitioners.</body>
       </ownedComment>
-      <ownedRule xmi:id="_RscVcLl1EeG9KtLyBDnukg" name="PlanOfCareSectionTemplateId" constrainedElement="_YxKzkKmqEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RscVcbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJjBMdDqEeGDO5enlLFiYg" name="PlanOfCareSectionTemplateId" constrainedElement="_YxKzkKmqEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJjBMtDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.555')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RseKoLl1EeG9KtLyBDnukg" name="MedicationActionPlanSectionTitle" constrainedElement="_YxKzkKmqEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsexsLl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJldcNDqEeGDO5enlLFiYg" name="MedicationActionPlanSectionTitle" constrainedElement="_YxKzkKmqEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJldcdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtA9MLl1EeG9KtLyBDnukg" name="MedicationActionPlanSectionMedicationActionPlanEncounter" constrainedElement="_YxKzkKmqEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtA9Mbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKHo8NDqEeGDO5enlLFiYg" name="MedicationActionPlanSectionMedicationActionPlanEncounter" constrainedElement="_YxKzkKmqEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKHo8dDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(mtm::MedicationActionPlanEncounter))</body>
         </specification>
@@ -336,15 +338,15 @@ PML-10:</body>
       <generalization xmi:id="_YxLaoKmqEeGfEcsleERUhA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml#_2NP-QxSVEeGGzu7fmW9pXw"/>
       </generalization>
-      <ownedOperation xmi:id="_RtCLULl1EeG9KtLyBDnukg" name="getMedicationActionPlanEncounters" isQuery="true" bodyCondition="_RtCyYLl1EeG9KtLyBDnukg">
-        <ownedRule xmi:id="_RtCyYLl1EeG9KtLyBDnukg" name="body" constrainedElement="_RtCLULl1EeG9KtLyBDnukg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtCyYbl1EeG9KtLyBDnukg">
+      <ownedOperation xmi:id="_BKI3ENDqEeGDO5enlLFiYg" name="getMedicationActionPlanEncounters" isQuery="true" bodyCondition="_BKI3E9DqEeGDO5enlLFiYg">
+        <ownedRule xmi:id="_BKI3E9DqEeGDO5enlLFiYg" name="body" constrainedElement="_BKI3ENDqEeGDO5enlLFiYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKI3FNDqEeGDO5enlLFiYg">
             <language>OCL</language>
             <body>self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(mtm::MedicationActionPlanEncounter)).oclAsType(mtm::MedicationActionPlanEncounter)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_RtCLUbl1EeG9KtLyBDnukg" type="_0AARgKmsEeGfEcsleERUhA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RtCLUrl1EeG9KtLyBDnukg" value="*"/>
+        <ownedParameter xmi:id="_BKI3EdDqEeGDO5enlLFiYg" type="_0AARgKmsEeGfEcsleERUhA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BKI3EtDqEeGDO5enlLFiYg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
@@ -352,36 +354,34 @@ PML-10:</body>
       <ownedComment xmi:id="_-LpicLSqEeG0-4dzGPBnrw">
         <body>The medication action plan activity describes the specific action that the patient is to take or has taken.&#xD;
 &#xD;
-(What I need to do)&#xD;
-&#xD;
 MAP 6</body>
       </ownedComment>
-      <ownedRule xmi:id="_Rsgm4Ll1EeG9KtLyBDnukg" name="PlanOfCareActivityActTemplateId" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rsgm4bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJnSoNDqEeGDO5enlLFiYg" name="PlanOfCareActivityActTemplateId" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJnSodDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.666')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RskRQLl1EeG9KtLyBDnukg" name="PlanOfCareActivityActMoodCode" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RskRQbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJq9ANDqEeGDO5enlLFiYg" name="PlanOfCareActivityActMoodCode" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJq9AdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RsoisLl1EeG9KtLyBDnukg" name="MedicationActionPlanActivityText" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rsoisbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJvOcNDqEeGDO5enlLFiYg" name="MedicationActionPlanActivityText" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJvOcdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RsvQYLl1EeG9KtLyBDnukg" name="MedicationActionPlanActivityCodeP" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsvQYbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJ18INDqEeGDO5enlLFiYg" name="MedicationActionPlanActivityCodeP" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJ18IdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RsrmALl1EeG9KtLyBDnukg" name="MedicationActionPlanActivityCode" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RsrmAbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJyRwNDqEeGDO5enlLFiYg" name="MedicationActionPlanActivityCode" constrainedElement="_dcDOUKmqEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJyRwdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
@@ -392,44 +392,41 @@ MAP 6</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_0AARgKmsEeGfEcsleERUhA" name="MedicationActionPlanEncounter">
       <ownedComment xmi:id="_V756ULSlEeG0-4dzGPBnrw">
-        <body>This provides the context (type of encounter, date, place, condition, participants, etc.) of the patient - provider interaction, i.e., medication review, that yielded the medication action plan or the review of the patient's reported follow-up to the action plan.&#xD;
-&#xD;
-(What we talked about)&#xD;
-&#xD;
+        <body>This provides the context (type of encounter, date, place, condition, participants, etc.) of the patient – provider interaction, i.e., medication review, that yielded the medication action plan or the review of the patient's reported follow-up to the action plan. &#xD;
 MAP 6</body>
       </ownedComment>
-      <ownedRule xmi:id="_Rs0I4Ll1EeG9KtLyBDnukg" name="MedicationActionPlanEncounterEffectiveTime" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rs0I4bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJ60oNDqEeGDO5enlLFiYg" name="MedicationActionPlanEncounterEffectiveTime" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJ60odDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rs1-ELl1EeG9KtLyBDnukg" name="MedicationActionPlanEncounterText" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rs1-Ebl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJ9Q4NDqEeGDO5enlLFiYg" name="MedicationActionPlanEncounterText" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJ9Q4dDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rs5BYLl1EeG9KtLyBDnukg" name="MedicationActionPlanEncounterCode" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rs5BYbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BJ_tINDqEeGDO5enlLFiYg" name="MedicationActionPlanEncounterCode" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BJ_tIdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rs8EsLl1EeG9KtLyBDnukg" name="MedicationActionPlanEncounterCodeP" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rs8Esbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKDXgNDqEeGDO5enlLFiYg" name="MedicationActionPlanEncounterCodeP" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKDXgdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rs-g8Ll1EeG9KtLyBDnukg" name="MedicationActionPlanEncounterMedicationActionPlanActivity" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rs-g8bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKFzwNDqEeGDO5enlLFiYg" name="MedicationActionPlanEncounterMedicationActionPlanActivity" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKFzwdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(mtm::MedicationActionPlanActivity))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rtgscbl1EeG9KtLyBDnukg" name="MedicationActionPlanEncounterMedicationActionPlanObservation" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rtgscrl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKn_QNDqEeGDO5enlLFiYg" name="MedicationActionPlanEncounterMedicationActionPlanObservation" constrainedElement="_0AARgKmsEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKn_QdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(mtm::MedicationActionPlanObservation))</body>
         </specification>
@@ -437,39 +434,43 @@ MAP 6</body>
       <generalization xmi:id="_0AA4kKmsEeGfEcsleERUhA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml#_2NWFBBSVEeGGzu7fmW9pXw"/>
       </generalization>
-      <ownedOperation xmi:id="_Rs_vELl1EeG9KtLyBDnukg" name="getMedicationActionPlanActivities" isQuery="true" bodyCondition="_RtAWILl1EeG9KtLyBDnukg">
-        <ownedRule xmi:id="_RtAWILl1EeG9KtLyBDnukg" name="body" constrainedElement="_Rs_vELl1EeG9KtLyBDnukg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtAWIbl1EeG9KtLyBDnukg">
+      <ownedOperation xmi:id="_BKHB4NDqEeGDO5enlLFiYg" name="getMedicationActionPlanActivities" isQuery="true" bodyCondition="_BKHB49DqEeGDO5enlLFiYg">
+        <ownedRule xmi:id="_BKHB49DqEeGDO5enlLFiYg" name="body" constrainedElement="_BKHB4NDqEeGDO5enlLFiYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKHB5NDqEeGDO5enlLFiYg">
             <language>OCL</language>
             <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(mtm::MedicationActionPlanActivity)).oclAsType(mtm::MedicationActionPlanActivity)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_Rs_vEbl1EeG9KtLyBDnukg" type="_dcDOUKmqEeGfEcsleERUhA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rs_vErl1EeG9KtLyBDnukg" value="*"/>
+        <ownedParameter xmi:id="_BKHB4dDqEeGDO5enlLFiYg" type="_dcDOUKmqEeGfEcsleERUhA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BKHB4tDqEeGDO5enlLFiYg" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_RtihoLl1EeG9KtLyBDnukg" name="getMedicationActionPlanObservation" isQuery="true" bodyCondition="_Rtiho7l1EeG9KtLyBDnukg">
-        <ownedRule xmi:id="_Rtiho7l1EeG9KtLyBDnukg" name="body" constrainedElement="_RtihoLl1EeG9KtLyBDnukg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtihpLl1EeG9KtLyBDnukg">
+      <ownedOperation xmi:id="_BKpNYNDqEeGDO5enlLFiYg" name="getMedicationActionPlanObservation" isQuery="true" bodyCondition="_BKpNY9DqEeGDO5enlLFiYg">
+        <ownedRule xmi:id="_BKpNY9DqEeGDO5enlLFiYg" name="body" constrainedElement="_BKpNYNDqEeGDO5enlLFiYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKpNZNDqEeGDO5enlLFiYg">
             <language>OCL</language>
-            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->first().oclAsType(mtm::MedicationActionPlanObservation)</body>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_Rtihobl1EeG9KtLyBDnukg" type="_63TrEKmtEeGfEcsleERUhA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rtihorl1EeG9KtLyBDnukg" value="1"/>
+        <ownedParameter xmi:id="_BKpNYdDqEeGDO5enlLFiYg" type="_63TrEKmtEeGfEcsleERUhA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BKpNYtDqEeGDO5enlLFiYg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_63TrEKmtEeGfEcsleERUhA" name="MedicationActionPlanObservation">
       <ownedComment xmi:id="_yQCkgLlqEeGSOIIUThrvRA">
-        <body>(What I did and when I did it)&#xD;
-&#xD;
-MAP 6</body>
+        <body>This defines the issues that were discussed between the MTM provider and the patient/caregiver</body>
       </ownedComment>
-      <ownedRule xmi:id="_RtDZcLl1EeG9KtLyBDnukg" name="MedicationActionPlanObservationText" constrainedElement="_63TrEKmtEeGfEcsleERUhA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtDZcbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKKFMNDqEeGDO5enlLFiYg" name="MedicationActionPlanObservationText" constrainedElement="_63TrEKmtEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKKFMdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_BKL6YNDqEeGDO5enlLFiYg" name="MedicationActionPlanObservationEffectiveTime" constrainedElement="_63TrEKmtEeGfEcsleERUhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKL6YdDqEeGDO5enlLFiYg">
+          <language>OCL</language>
+          <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_63TrEamtEeGfEcsleERUhA">
@@ -477,20 +478,20 @@ MAP 6</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_pQo5MLb8EeGErMgL9zVrTA" name="MedicationActionPlanGoal">
-      <ownedRule xmi:id="_RtHD0Ll1EeG9KtLyBDnukg" name="PlanOfCareActivityObservationMoodCode" constrainedElement="_pQo5MLb8EeGErMgL9zVrTA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtHD0bl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKO9sNDqEeGDO5enlLFiYg" name="PlanOfCareActivityObservationMoodCode" constrainedElement="_pQo5MLb8EeGErMgL9zVrTA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKO9sdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtKuMLl1EeG9KtLyBDnukg" name="MedicationActionPlanGoalMoodCode" constrainedElement="_pQo5MLb8EeGErMgL9zVrTA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtKuMbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKTPINDqEeGDO5enlLFiYg" name="MedicationActionPlanGoalMoodCode" constrainedElement="_pQo5MLb8EeGErMgL9zVrTA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKTPIdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_ActMoodDocumentObservation::GOL</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtO_oLl1EeG9KtLyBDnukg" name="MedicationActionPlanGoalText" constrainedElement="_pQo5MLb8EeGErMgL9zVrTA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtO_obl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKXgkNDqEeGDO5enlLFiYg" name="MedicationActionPlanGoalText" constrainedElement="_pQo5MLb8EeGErMgL9zVrTA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKXgkdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
@@ -503,14 +504,14 @@ MAP 6</body>
       <ownedComment xmi:id="_A4sEYLl1EeG9KtLyBDnukg">
         <body>Documents a reminder for the medication activity</body>
       </ownedComment>
-      <ownedRule xmi:id="_RtjIsbl1EeG9KtLyBDnukg" name="InstructionsTemplateId" constrainedElement="_8HjgULe2EeGy6IHu0WFTyQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtjIsrl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKqbgNDqEeGDO5enlLFiYg" name="InstructionsTemplateId" constrainedElement="_8HjgULe2EeGy6IHu0WFTyQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKqbgdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.222.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Rtlk8Ll1EeG9KtLyBDnukg" name="ReminderText" constrainedElement="_8HjgULe2EeGy6IHu0WFTyQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtmMALl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKs3wNDqEeGDO5enlLFiYg" name="ReminderText" constrainedElement="_8HjgULe2EeGy6IHu0WFTyQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKs3wdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
@@ -520,14 +521,14 @@ MAP 6</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_AO4iELe3EeGy6IHu0WFTyQ" name="Instructions">
-      <ownedRule xmi:id="_RtooQLl1EeG9KtLyBDnukg" name="InstructionsTemplateId" constrainedElement="_AO4iELe3EeGy6IHu0WFTyQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RtooQbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKv7ENDqEeGDO5enlLFiYg" name="InstructionsTemplateId" constrainedElement="_AO4iELe3EeGy6IHu0WFTyQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKv7EdDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '111.222.333.444.222.2')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_RtrrkLl1EeG9KtLyBDnukg" name="mtmInstructionsText" constrainedElement="_AO4iELe3EeGy6IHu0WFTyQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rtrrkbl1EeG9KtLyBDnukg">
+      <ownedRule xmi:id="_BKyXUNDqEeGDO5enlLFiYg" name="mtmInstructionsText" constrainedElement="_AO4iELe3EeGy6IHu0WFTyQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKy-YNDqEeGDO5enlLFiYg">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
@@ -548,8 +549,8 @@ MAP 6</body>
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-    <profileApplication xmi:id="_Rrmn8Ll1EeG9KtLyBDnukg">
-      <eAnnotations xmi:id="_Rrmn8bl1EeG9KtLyBDnukg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_BIssoNDqEeGDO5enlLFiYg">
+      <eAnnotations xmi:id="_BItTsNDqEeGDO5enlLFiYg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
@@ -566,53 +567,53 @@ MAP 6</body>
   <CDA:CDATemplate xmi:id="_IiD1wKmsEeGfEcsleERUhA" base_Class="_dcDOUKmqEeGfEcsleERUhA" templateId="111.222.333.444.666"/>
   <CDA:CDATemplate xmi:id="_E2U-oLl1EeG9KtLyBDnukg" base_Class="_8HjgULe2EeGy6IHu0WFTyQ" templateId="111.222.333.444.222.1" assigningAuthorityName="MDHT"/>
   <CDA:CDATemplate xmi:id="_QMlFMLl1EeG9KtLyBDnukg" base_Class="_AO4iELe3EeGy6IHu0WFTyQ" templateId="111.222.333.444.222.2"/>
-  <Ecore:EPackage xmi:id="_RrqSULl1EeG9KtLyBDnukg" base_Package="_0j1PQEavEeGFfbgNCOW4yA" packageName="mtm" nsPrefix="mtm" nsURI="http://www.openhealthtools.org/mdht/uml/cda/mtm" basePackage="org.openhealthtools.mdht.uml.cda" prefix="mtm"/>
-  <CDA:ConformsTo xmi:id="_Rrq5YLl1EeG9KtLyBDnukg" base_Generalization="_15elkEwrEeGrDvEN9YqHUQ"/>
-  <Ecore:EClass xmi:id="_RrsHgLl1EeG9KtLyBDnukg" base_Class="_0naHsUavEeGFfbgNCOW4yA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.111' constraints.validation.error='MedicationTherapyManagementProgramTemplateId MedicationTherapyManagementProgramAllergiesSection MedicationTherapyManagementProgramPersonalMedicationListSection MedicationTherapyManagementProgramMedicationActionPlan' constraints.validation.info='MedicationTherapyManagementProgramOtherInformationSection'</annotation>
+  <Ecore:EPackage xmi:id="_BIw-ENDqEeGDO5enlLFiYg" base_Package="_0j1PQEavEeGFfbgNCOW4yA" packageName="mtm" nsPrefix="mtm" nsURI="http://www.openhealthtools.org/mdht/uml/cda/mtm" basePackage="org.openhealthtools.mdht.uml.cda" prefix="mtm"/>
+  <CDA:ConformsTo xmi:id="_BIxlINDqEeGDO5enlLFiYg" base_Generalization="_15elkEwrEeGrDvEN9YqHUQ"/>
+  <Ecore:EClass xmi:id="_BIyzQNDqEeGDO5enlLFiYg" base_Class="_0naHsUavEeGFfbgNCOW4yA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationTherapyManagementProgramTemplateId MedicationTherapyManagementProgramAllergiesSection MedicationTherapyManagementProgramPersonalMedicationListSection MedicationTherapyManagementProgramMedicationActionPlan' templateId.root='111.222.333.444.111' constraints.validation.info='MedicationTherapyManagementProgramOtherInformationSection'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_RrzcQLl1EeG9KtLyBDnukg" base_Class="_yhegQEwxEeGrDvEN9YqHUQ">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.222' constraints.validation.error='mtmMedicationActivityTemplateId mtmMedicationActivityPresciber mtmMedicationActivityIndicationEntryRelationship mtmMedicationActivityInstructionsEntryRelationship MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal' constraints.validation.warning='mtmMedicationActivityGoalsEntryRelationship MedicationActivityPrescriberAssignedPresciberPersonName' constraints.validation.query='MedicationActivityPrescriberAssignedPresciberPersonName MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal' constraints.validation.info='mtmMedicationActivityText mtmMedicationActivityStopReasonEntryRelationship mtmMedicationActivityReminderEntryRelationship'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityPrescriber templateId.root='null' constraints.validation.error='PrescriberTemplateId PrescriberTypeCode PrescriberAssignedAuthor' typeCode='AUT'</annotation>
+  <Ecore:EClass xmi:id="_BI5g8NDqEeGDO5enlLFiYg" base_Class="_yhegQEwxEeGrDvEN9YqHUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mtmMedicationActivityTemplateId mtmMedicationActivityPresciber mtmMedicationActivityIndicationEntryRelationship mtmMedicationActivityInstructionsEntryRelationship MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal' templateId.root='111.222.333.444.222' constraints.validation.info='mtmMedicationActivityText mtmMedicationActivityStopReasonEntryRelationship mtmMedicationActivityReminderEntryRelationship' constraints.validation.warning='mtmMedicationActivityGoalsEntryRelationship MedicationActivityPrescriberAssignedPresciberPersonName' constraints.validation.query='MedicationActivityPrescriberAssignedPresciberPersonName MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityPrescriber constraints.validation.error='PrescriberTemplateId PrescriberTypeCode PrescriberAssignedAuthor' templateId.root='null' typeCode='AUT'</annotation>
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityPrescriberAssignedPresciber constraints.validation.error='AssignedPresciberAssignedPerson'</annotation>
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityPrescriberAssignedPresciberPerson constraints.validation.warning='PersonName'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityIndicationEntryRelationship constraints.validation.error='IndicationEntryRelationshipTypeCode IndicationEntryRelationshipIndication' typeCode='RSON'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityStopReasonEntryRelationship constraints.validation.error='StopReasonEntryRelationshipTypeCode' typeCode='RSON'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityStopReasonEntryRelationshipStopReason constraints.validation.error='StopReasonClassCode StopReasonNegationInd' classCode='ACT' moodCode='EVN' negationInd='true'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityReminderEntryRelationship constraints.validation.error='ReminderEntryRelationshipTypeCode ReminderEntryRelationshipReminder' typeCode='SPRT'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityInstructionEntryRelationship constraints.validation.error='InstructionEntryRelationshipTypeCode InstructionEntryRelationshipInstructions' typeCode='SUBJ'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityIndicationEntryRelationship typeCode='RSON' constraints.validation.error='IndicationEntryRelationshipTypeCode IndicationEntryRelationshipIndication'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityStopReasonEntryRelationship typeCode='RSON' constraints.validation.error='StopReasonEntryRelationshipTypeCode'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityStopReasonEntryRelationshipStopReason classCode='ACT' constraints.validation.error='StopReasonClassCode StopReasonNegationInd' moodCode='EVN' negationInd='true'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityReminderEntryRelationship typeCode='SPRT' constraints.validation.error='ReminderEntryRelationshipTypeCode ReminderEntryRelationshipReminder'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityInstructionEntryRelationship typeCode='SUBJ' constraints.validation.error='InstructionEntryRelationshipTypeCode InstructionEntryRelationshipInstructions'</annotation>
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityGoalsEntryRelationship constraints.validation.error='GoalsEntryRelationshipMedicationActionPlanGoal'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_RsNE4Ll1EeG9KtLyBDnukg" base_Generalization="_AyXzAEwyEeGrDvEN9YqHUQ"/>
-  <Ecore:EClass xmi:id="_RsOTALl1EeG9KtLyBDnukg" base_Class="_AyXL8EwyEeGrDvEN9YqHUQ">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.333' constraints.validation.error='PersonalMedicationListSectionTemplateId PersonalMedicationListSectionMedication'</annotation>
+  <CDA:ConformsTo xmi:id="_BJTwoNDqEeGDO5enlLFiYg" base_Generalization="_AyXzAEwyEeGrDvEN9YqHUQ"/>
+  <Ecore:EClass xmi:id="_BJVl0NDqEeGDO5enlLFiYg" base_Class="_AyXL8EwyEeGrDvEN9YqHUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PersonalMedicationListSectionTemplateId PersonalMedicationListSectionMedication' templateId.root='111.222.333.444.333'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_RsUZoLl1EeG9KtLyBDnukg" base_Class="_8lBioExOEeG1J9FcQHBzxA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.444' constraints.validation.error='OtherInformationSectionTemplateId OtherInformationSectionText OtherInformationSectionTitle'</annotation>
+  <Ecore:EClass xmi:id="_BJbFYNDqEeGDO5enlLFiYg" base_Class="_8lBioExOEeG1J9FcQHBzxA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='OtherInformationSectionTemplateId OtherInformationSectionText OtherInformationSectionTitle' templateId.root='111.222.333.444.444'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_RsbuY7l1EeG9KtLyBDnukg" base_Generalization="_YxLaoKmqEeGfEcsleERUhA"/>
-  <Ecore:EClass xmi:id="_Rsc8gLl1EeG9KtLyBDnukg" base_Class="_YxKzkKmqEeGfEcsleERUhA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.555' constraints.validation.error='MedicationActionPlanSectionTemplateId MedicationActionPlanSectionTitle MedicationActionPlanSectionMedicationActionPlanEncounter'</annotation>
+  <CDA:ConformsTo xmi:id="_BJjBMNDqEeGDO5enlLFiYg" base_Generalization="_YxLaoKmqEeGfEcsleERUhA"/>
+  <Ecore:EClass xmi:id="_BJkPUNDqEeGDO5enlLFiYg" base_Class="_YxKzkKmqEeGfEcsleERUhA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActionPlanSectionTemplateId MedicationActionPlanSectionTitle MedicationActionPlanSectionMedicationActionPlanEncounter' templateId.root='111.222.333.444.555'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_Rsf_0Ll1EeG9KtLyBDnukg" base_Generalization="_dcD1YKmqEeGfEcsleERUhA"/>
-  <Ecore:EClass xmi:id="_RshN8Ll1EeG9KtLyBDnukg" base_Class="_dcDOUKmqEeGfEcsleERUhA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.dependOn.MedicationActionPlanActivityCode='MedicationActionPlanActivityCodeP' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='111.222.333.444.666' constraints.validation.error='MedicationActionPlanActivityTemplateId PlanOfCareActivityActMoodCode MedicationActionPlanActivityText MedicationActionPlanActivityCode' code.codeSystemName='SNOMEDCT' constraints.validation.warning='MedicationActionPlanActivityCodeP' moodCode='INT'</annotation>
+  <CDA:ConformsTo xmi:id="_BJmrkNDqEeGDO5enlLFiYg" base_Generalization="_dcD1YKmqEeGfEcsleERUhA"/>
+  <Ecore:EClass xmi:id="_BJn5sNDqEeGDO5enlLFiYg" base_Class="_dcDOUKmqEeGfEcsleERUhA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActionPlanActivityTemplateId PlanOfCareActivityActMoodCode MedicationActionPlanActivityText MedicationActionPlanActivityCode' templateId.root='111.222.333.444.666' moodCode='INT' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='MedicationActionPlanActivityCodeP' constraints.validation.dependOn.MedicationActionPlanActivityCode='MedicationActionPlanActivityCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Rs1XALl1EeG9KtLyBDnukg" base_Class="_0AARgKmsEeGfEcsleERUhA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='MedicationActionPlanEncounterEffectiveTime MedicationActionPlanEncounterText MedicationActionPlanEncounterCode MedicationActionPlanEncounterMedicationActionPlanActivity' code.codeSystemName='SNOMEDCT' constraints.validation.warning='MedicationActionPlanEncounterCodeP' constraints.validation.info='MedicationActionPlanEncounterMedicationActionPlanObservation'</annotation>
+  <Ecore:EClass xmi:id="_BJ8CwNDqEeGDO5enlLFiYg" base_Class="_0AARgKmsEeGfEcsleERUhA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActionPlanEncounterEffectiveTime MedicationActionPlanEncounterText MedicationActionPlanEncounterCode MedicationActionPlanEncounterMedicationActionPlanActivity' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='MedicationActionPlanEncounterCodeP' constraints.validation.info='MedicationActionPlanEncounterMedicationActionPlanObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_RtEnkLl1EeG9KtLyBDnukg" base_Class="_63TrEKmtEeGfEcsleERUhA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActionPlanObservationText'</annotation>
+  <Ecore:EClass xmi:id="_BKLTUNDqEeGDO5enlLFiYg" base_Class="_63TrEKmtEeGfEcsleERUhA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActionPlanObservationText' constraints.validation.info='MedicationActionPlanObservationEffectiveTime'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_RtF1sLl1EeG9KtLyBDnukg" base_Class="_pQo5MLb8EeGErMgL9zVrTA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityObservationMoodCode MedicationActionPlanGoalMoodCode MedicationActionPlanGoalText' moodCode='GOL'</annotation>
+  <Ecore:EClass xmi:id="_BKNvkNDqEeGDO5enlLFiYg" base_Class="_pQo5MLb8EeGErMgL9zVrTA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='GOL' constraints.validation.error='PlanOfCareActivityObservationMoodCode MedicationActionPlanGoalMoodCode MedicationActionPlanGoalText'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_RtjIsLl1EeG9KtLyBDnukg" base_Generalization="_8HjgUbe2EeGy6IHu0WFTyQ"/>
-  <Ecore:EClass xmi:id="_RtkW0Ll1EeG9KtLyBDnukg" base_Class="_8HjgULe2EeGy6IHu0WFTyQ">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.222.1' constraints.validation.error='ReminderTemplateId ReminderText'</annotation>
+  <CDA:ConformsTo xmi:id="_BKp0cNDqEeGDO5enlLFiYg" base_Generalization="_8HjgUbe2EeGy6IHu0WFTyQ"/>
+  <Ecore:EClass xmi:id="_BKrCkNDqEeGDO5enlLFiYg" base_Class="_8HjgULe2EeGy6IHu0WFTyQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReminderTemplateId ReminderText' templateId.root='111.222.333.444.222.1'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_RtoBMLl1EeG9KtLyBDnukg" base_Generalization="_AO4iEbe3EeGy6IHu0WFTyQ"/>
-  <Ecore:EClass xmi:id="_Rtp2YLl1EeG9KtLyBDnukg" base_Class="_AO4iELe3EeGy6IHu0WFTyQ">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.222.2' constraints.validation.error='mtmInstructionsTemplateId mtmInstructionsText'</annotation>
+  <CDA:ConformsTo xmi:id="_BKvUANDqEeGDO5enlLFiYg" base_Generalization="_AO4iEbe3EeGy6IHu0WFTyQ"/>
+  <Ecore:EClass xmi:id="_BKwiINDqEeGDO5enlLFiYg" base_Class="_AO4iELe3EeGy6IHu0WFTyQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mtmInstructionsTemplateId mtmInstructionsText' templateId.root='111.222.333.444.222.2'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

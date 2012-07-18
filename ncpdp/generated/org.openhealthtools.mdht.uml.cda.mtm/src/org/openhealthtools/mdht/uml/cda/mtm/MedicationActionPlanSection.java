@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getMedicationActionPlanSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.555' constraints.validation.error='MedicationActionPlanSectionTemplateId MedicationActionPlanSectionTitle MedicationActionPlanSectionMedicationActionPlanEncounter'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActionPlanSectionTemplateId MedicationActionPlanSectionTitle MedicationActionPlanSectionMedicationActionPlanEncounter' templateId.root='111.222.333.444.555'"
  * @generated
  */
 public interface MedicationActionPlanSection extends PlanOfCareSection {

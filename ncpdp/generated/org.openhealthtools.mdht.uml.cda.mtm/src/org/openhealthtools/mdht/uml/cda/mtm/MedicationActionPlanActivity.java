@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getMedicationActionPlanActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.dependOn.MedicationActionPlanActivityCode='MedicationActionPlanActivityCodeP' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='111.222.333.444.666' constraints.validation.error='MedicationActionPlanActivityTemplateId PlanOfCareActivityActMoodCode MedicationActionPlanActivityText MedicationActionPlanActivityCode' code.codeSystemName='SNOMEDCT' constraints.validation.warning='MedicationActionPlanActivityCodeP' moodCode='INT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActionPlanActivityTemplateId PlanOfCareActivityActMoodCode MedicationActionPlanActivityText MedicationActionPlanActivityCode' templateId.root='111.222.333.444.666' moodCode='INT' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='MedicationActionPlanActivityCodeP' constraints.validation.dependOn.MedicationActionPlanActivityCode='MedicationActionPlanActivityCodeP'"
  * @generated
  */
 public interface MedicationActionPlanActivity extends PlanOfCareActivityAct {

@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.consol.Instructions;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getReminder()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.222.1' constraints.validation.error='ReminderTemplateId ReminderText'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReminderTemplateId ReminderText' templateId.root='111.222.333.444.222.1'"
  * @generated
  */
 public interface Reminder extends Instructions

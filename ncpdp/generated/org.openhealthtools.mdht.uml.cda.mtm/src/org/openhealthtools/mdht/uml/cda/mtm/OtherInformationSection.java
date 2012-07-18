@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getOtherInformationSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.444' constraints.validation.error='OtherInformationSectionTemplateId OtherInformationSectionText OtherInformationSectionTitle'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='OtherInformationSectionTemplateId OtherInformationSectionText OtherInformationSectionTitle' templateId.root='111.222.333.444.444'"
  * @generated
  */
 public interface OtherInformationSection extends Section {
