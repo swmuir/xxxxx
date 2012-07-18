@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getMedicationActionPlanGoal()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityObservationMoodCode MedicationActionPlanGoalMoodCode MedicationActionPlanGoalText' moodCode='GOL'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='GOL' constraints.validation.error='PlanOfCareActivityObservationMoodCode MedicationActionPlanGoalMoodCode MedicationActionPlanGoalText'"
  * @generated
  */
 public interface MedicationActionPlanGoal extends PlanOfCareActivityObservation {

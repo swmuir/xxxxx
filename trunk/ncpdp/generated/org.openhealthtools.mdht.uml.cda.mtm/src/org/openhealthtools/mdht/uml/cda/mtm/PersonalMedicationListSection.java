@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getPersonalMedicationListSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.333' constraints.validation.error='PersonalMedicationListSectionTemplateId PersonalMedicationListSectionMedication'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PersonalMedicationListSectionTemplateId PersonalMedicationListSectionMedication' templateId.root='111.222.333.444.333'"
  * @generated
  */
 public interface PersonalMedicationListSection extends MedicationsSection {

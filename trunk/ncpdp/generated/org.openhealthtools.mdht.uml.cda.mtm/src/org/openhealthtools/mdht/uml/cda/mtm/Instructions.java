@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.222.2' constraints.validation.error='mtmInstructionsTemplateId mtmInstructionsText'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mtmInstructionsTemplateId mtmInstructionsText' templateId.root='111.222.333.444.222.2'"
  * @generated
  */
 public interface Instructions extends org.openhealthtools.mdht.uml.cda.consol.Instructions

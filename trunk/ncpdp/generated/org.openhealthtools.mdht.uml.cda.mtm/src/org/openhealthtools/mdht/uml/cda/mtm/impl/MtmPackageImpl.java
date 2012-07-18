@@ -809,6 +809,15 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+    op = addEOperation(medicationActionPlanObservationEClass, ecorePackage.getEBoolean(), "validateMedicationActionPlanObservationEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
     initEClass(medicationActionPlanGoalEClass, MedicationActionPlanGoal.class, "MedicationActionPlanGoal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     op = addEOperation(medicationActionPlanGoalEClass, ecorePackage.getEBoolean(), "validateMedicationActionPlanGoalMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -892,8 +901,8 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       "templateId.root", "111.222.333.444.111",
        "constraints.validation.error", "MedicationTherapyManagementProgramTemplateId MedicationTherapyManagementProgramAllergiesSection MedicationTherapyManagementProgramPersonalMedicationListSection MedicationTherapyManagementProgramMedicationActionPlan",
+       "templateId.root", "111.222.333.444.111",
        "constraints.validation.info", "MedicationTherapyManagementProgramOtherInformationSection"
        });																											
     addAnnotation
@@ -901,43 +910,43 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       "templateId.root", "111.222.333.444.333",
-       "constraints.validation.error", "PersonalMedicationListSectionTemplateId PersonalMedicationListSectionMedication"
+       "constraints.validation.error", "PersonalMedicationListSectionTemplateId PersonalMedicationListSectionMedication",
+       "templateId.root", "111.222.333.444.333"
        });									
     addAnnotation
       (medicationActivityEClass, 
        source, 
        new String[] 
        {
-       "templateId.root", "111.222.333.444.222",
        "constraints.validation.error", "mtmMedicationActivityTemplateId mtmMedicationActivityPresciber mtmMedicationActivityIndicationEntryRelationship mtmMedicationActivityInstructionsEntryRelationship MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal",
+       "templateId.root", "111.222.333.444.222",
+       "constraints.validation.info", "mtmMedicationActivityText mtmMedicationActivityStopReasonEntryRelationship mtmMedicationActivityReminderEntryRelationship",
        "constraints.validation.warning", "mtmMedicationActivityGoalsEntryRelationship MedicationActivityPrescriberAssignedPresciberPersonName",
-       "constraints.validation.query", "MedicationActivityPrescriberAssignedPresciberPersonName MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal",
-       "constraints.validation.info", "mtmMedicationActivityText mtmMedicationActivityStopReasonEntryRelationship mtmMedicationActivityReminderEntryRelationship"
+       "constraints.validation.query", "MedicationActivityPrescriberAssignedPresciberPersonName MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal"
        });																																																																																																							
     addAnnotation
       (otherInformationSectionEClass, 
        source, 
        new String[] 
        {
-       "templateId.root", "111.222.333.444.444",
-       "constraints.validation.error", "OtherInformationSectionTemplateId OtherInformationSectionText OtherInformationSectionTitle"
+       "constraints.validation.error", "OtherInformationSectionTemplateId OtherInformationSectionText OtherInformationSectionTitle",
+       "templateId.root", "111.222.333.444.444"
        });														
     addAnnotation
       (medicationActionPlanSectionEClass, 
        source, 
        new String[] 
        {
-       "templateId.root", "111.222.333.444.555",
-       "constraints.validation.error", "MedicationActionPlanSectionTemplateId MedicationActionPlanSectionTitle MedicationActionPlanSectionMedicationActionPlanEncounter"
+       "constraints.validation.error", "MedicationActionPlanSectionTemplateId MedicationActionPlanSectionTitle MedicationActionPlanSectionMedicationActionPlanEncounter",
+       "templateId.root", "111.222.333.444.555"
        });													
     addAnnotation
       (medicationActionPlanEncounterEClass, 
        source, 
        new String[] 
        {
-       "code.codeSystem", "2.16.840.1.113883.6.96",
        "constraints.validation.error", "MedicationActionPlanEncounterEffectiveTime MedicationActionPlanEncounterText MedicationActionPlanEncounterCode MedicationActionPlanEncounterMedicationActionPlanActivity",
+       "code.codeSystem", "2.16.840.1.113883.6.96",
        "code.codeSystemName", "SNOMEDCT",
        "constraints.validation.warning", "MedicationActionPlanEncounterCodeP",
        "constraints.validation.info", "MedicationActionPlanEncounterMedicationActionPlanObservation"
@@ -947,44 +956,45 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       "constraints.validation.dependOn.MedicationActionPlanActivityCode", "MedicationActionPlanActivityCodeP",
-       "code.codeSystem", "2.16.840.1.113883.6.96",
-       "templateId.root", "111.222.333.444.666",
        "constraints.validation.error", "MedicationActionPlanActivityTemplateId PlanOfCareActivityActMoodCode MedicationActionPlanActivityText MedicationActionPlanActivityCode",
+       "templateId.root", "111.222.333.444.666",
+       "moodCode", "INT",
+       "code.codeSystem", "2.16.840.1.113883.6.96",
        "code.codeSystemName", "SNOMEDCT",
        "constraints.validation.warning", "MedicationActionPlanActivityCodeP",
-       "moodCode", "INT"
+       "constraints.validation.dependOn.MedicationActionPlanActivityCode", "MedicationActionPlanActivityCodeP"
        });															
     addAnnotation
       (medicationActionPlanObservationEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "MedicationActionPlanObservationText"
-       });						
+       "constraints.validation.error", "MedicationActionPlanObservationText",
+       "constraints.validation.info", "MedicationActionPlanObservationEffectiveTime"
+       });										
     addAnnotation
       (medicationActionPlanGoalEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "PlanOfCareActivityObservationMoodCode MedicationActionPlanGoalMoodCode MedicationActionPlanGoalText",
-       "moodCode", "GOL"
+       "moodCode", "GOL",
+       "constraints.validation.error", "PlanOfCareActivityObservationMoodCode MedicationActionPlanGoalMoodCode MedicationActionPlanGoalText"
        });											
     addAnnotation
       (reminderEClass, 
        source, 
        new String[] 
        {
-       "templateId.root", "111.222.333.444.222.1",
-       "constraints.validation.error", "ReminderTemplateId ReminderText"
+       "constraints.validation.error", "ReminderTemplateId ReminderText",
+       "templateId.root", "111.222.333.444.222.1"
        });							
     addAnnotation
       (instructionsEClass, 
        source, 
        new String[] 
        {
-       "templateId.root", "111.222.333.444.222.2",
-       "constraints.validation.error", "mtmInstructionsTemplateId mtmInstructionsText"
+       "constraints.validation.error", "mtmInstructionsTemplateId mtmInstructionsText",
+       "templateId.root", "111.222.333.444.222.2"
        });					
   }
 
@@ -1019,7 +1029,7 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       });																				
+       });																								
     addAnnotation
       (medicationActionPlanGoalEClass, 
        source, 
@@ -1053,10 +1063,10 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       "templateId.root", "null",
        "constraints.validation.error", "PrescriberTemplateId PrescriberTypeCode PrescriberAssignedAuthor",
+       "templateId.root", "null",
        "typeCode", "AUT"
-       });																																																																																																																																																																																																			
+       });																																																																																																																																																																																																							
   }
 
 	/**
@@ -1073,7 +1083,7 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        new String[] 
        {
        "constraints.validation.error", "AssignedPresciberAssignedPerson"
-       });																																																																																																																																																																																																		
+       });																																																																																																																																																																																																						
   }
 
 	/**
@@ -1090,7 +1100,7 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        new String[] 
        {
        "constraints.validation.warning", "PersonName"
-       });																																																																																																																																																																																																	
+       });																																																																																																																																																																																																					
   }
 
 	/**
@@ -1106,9 +1116,9 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       "constraints.validation.error", "IndicationEntryRelationshipTypeCode IndicationEntryRelationshipIndication",
-       "typeCode", "RSON"
-       });																																																																																																																																																																																																
+       "typeCode", "RSON",
+       "constraints.validation.error", "IndicationEntryRelationshipTypeCode IndicationEntryRelationshipIndication"
+       });																																																																																																																																																																																																				
   }
 
 	/**
@@ -1124,9 +1134,9 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       "constraints.validation.error", "StopReasonEntryRelationshipTypeCode",
-       "typeCode", "RSON"
-       });																																																																																																																																																																																															
+       "typeCode", "RSON",
+       "constraints.validation.error", "StopReasonEntryRelationshipTypeCode"
+       });																																																																																																																																																																																																			
   }
 
 	/**
@@ -1142,11 +1152,11 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       "constraints.validation.error", "StopReasonClassCode StopReasonNegationInd",
        "classCode", "ACT",
+       "constraints.validation.error", "StopReasonClassCode StopReasonNegationInd",
        "moodCode", "EVN",
        "negationInd", "true"
-       });																																																																																																																																																																																														
+       });																																																																																																																																																																																																		
   }
 
 	/**
@@ -1162,9 +1172,9 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       "constraints.validation.error", "ReminderEntryRelationshipTypeCode ReminderEntryRelationshipReminder",
-       "typeCode", "SPRT"
-       });																																																																																																																																																																																													
+       "typeCode", "SPRT",
+       "constraints.validation.error", "ReminderEntryRelationshipTypeCode ReminderEntryRelationshipReminder"
+       });																																																																																																																																																																																																	
   }
 
 	/**
@@ -1180,9 +1190,9 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        source, 
        new String[] 
        {
-       "constraints.validation.error", "InstructionEntryRelationshipTypeCode InstructionEntryRelationshipInstructions",
-       "typeCode", "SUBJ"
-       });																																																																																																																																																																																												
+       "typeCode", "SUBJ",
+       "constraints.validation.error", "InstructionEntryRelationshipTypeCode InstructionEntryRelationshipInstructions"
+       });																																																																																																																																																																																																
   }
 
 	/**
@@ -1199,7 +1209,7 @@ public class MtmPackageImpl extends EPackageImpl implements MtmPackage {
        new String[] 
        {
        "constraints.validation.error", "GoalsEntryRelationshipMedicationActionPlanGoal"
-       });																																																																																																																																																																																											
+       });																																																																																																																																																																																															
   }
 
 } //MtmPackageImpl

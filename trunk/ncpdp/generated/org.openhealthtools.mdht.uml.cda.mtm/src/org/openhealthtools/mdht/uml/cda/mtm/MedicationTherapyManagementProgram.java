@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getMedicationTherapyManagementProgram()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='111.222.333.444.111' constraints.validation.error='MedicationTherapyManagementProgramTemplateId MedicationTherapyManagementProgramAllergiesSection MedicationTherapyManagementProgramPersonalMedicationListSection MedicationTherapyManagementProgramMedicationActionPlan' constraints.validation.info='MedicationTherapyManagementProgramOtherInformationSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationTherapyManagementProgramTemplateId MedicationTherapyManagementProgramAllergiesSection MedicationTherapyManagementProgramPersonalMedicationListSection MedicationTherapyManagementProgramMedicationActionPlan' templateId.root='111.222.333.444.111' constraints.validation.info='MedicationTherapyManagementProgramOtherInformationSection'"
  * @generated
  */
 public interface MedicationTherapyManagementProgram extends GeneralHeaderConstraints {
@@ -80,10 +80,10 @@ public interface MedicationTherapyManagementProgram extends GeneralHeaderConstra
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)
    * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)'"
    * @generated
    */
 	AllergiesSectionEntriesOptional getAllergiesSection();
@@ -92,10 +92,10 @@ public interface MedicationTherapyManagementProgram extends GeneralHeaderConstra
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->first().oclAsType(mtm::PersonalMedicationListSection)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->any(true).oclAsType(mtm::PersonalMedicationListSection)
    * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->first().oclAsType(mtm::PersonalMedicationListSection)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->any(true).oclAsType(mtm::PersonalMedicationListSection)'"
    * @generated
    */
 	PersonalMedicationListSection getPersonalMedicationListSection();
@@ -104,10 +104,10 @@ public interface MedicationTherapyManagementProgram extends GeneralHeaderConstra
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->first().oclAsType(mtm::OtherInformationSection)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->any(true).oclAsType(mtm::OtherInformationSection)
    * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->first().oclAsType(mtm::OtherInformationSection)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->any(true).oclAsType(mtm::OtherInformationSection)'"
    * @generated
    */
 	OtherInformationSection getOtherInformationSection();
@@ -116,10 +116,10 @@ public interface MedicationTherapyManagementProgram extends GeneralHeaderConstra
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->first().oclAsType(mtm::MedicationActionPlanSection)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanSection)
    * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->first().oclAsType(mtm::MedicationActionPlanSection)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanSection)'"
    * @generated
    */
 	MedicationActionPlanSection getMedicationActionPlan();

@@ -61,6 +61,16 @@ public class MedicationActionPlanObservationImpl extends PlanOfCareActivityObser
 
 	/**
    * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMedicationActionPlanObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicationActionPlanObservationOperations.validateMedicationActionPlanObservationEffectiveTime(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
    */

@@ -6,8 +6,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationTherapyManagementProgram"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="111.222.333.444.111"/>
       <details key="constraints.validation.error" value="MedicationTherapyManagementProgramTemplateId MedicationTherapyManagementProgramAllergiesSection MedicationTherapyManagementProgramPersonalMedicationListSection MedicationTherapyManagementProgramMedicationActionPlan"/>
+      <details key="templateId.root" value="111.222.333.444.111"/>
       <details key="constraints.validation.info" value="MedicationTherapyManagementProgramOtherInformationSection"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -128,43 +128,43 @@
     </eOperations>
     <eOperations name="getAllergiesSection" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//AllergiesSectionEntriesOptional">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPersonalMedicationListSection" ordered="false" lowerBound="1"
         eType="#//PersonalMedicationListSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->first().oclAsType(mtm::PersonalMedicationListSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->any(true).oclAsType(mtm::PersonalMedicationListSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->first().oclAsType(mtm::PersonalMedicationListSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::PersonalMedicationListSection))->asSequence()->any(true).oclAsType(mtm::PersonalMedicationListSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getOtherInformationSection" ordered="false" lowerBound="1"
         eType="#//OtherInformationSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->first().oclAsType(mtm::OtherInformationSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->any(true).oclAsType(mtm::OtherInformationSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->first().oclAsType(mtm::OtherInformationSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::OtherInformationSection))->asSequence()->any(true).oclAsType(mtm::OtherInformationSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getMedicationActionPlan" ordered="false" lowerBound="1" eType="#//MedicationActionPlanSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->first().oclAsType(mtm::MedicationActionPlanSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->first().oclAsType(mtm::MedicationActionPlanSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mtm::MedicationActionPlanSection))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PersonalMedicationListSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="111.222.333.444.333"/>
       <details key="constraints.validation.error" value="PersonalMedicationListSectionTemplateId PersonalMedicationListSectionMedication"/>
+      <details key="templateId.root" value="111.222.333.444.333"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="MedicationsSectionEntriesOptionalTemplateId"
@@ -226,15 +226,15 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationActivity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="111.222.333.444.222"/>
       <details key="constraints.validation.error" value="mtmMedicationActivityTemplateId mtmMedicationActivityPresciber mtmMedicationActivityIndicationEntryRelationship mtmMedicationActivityInstructionsEntryRelationship MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal"/>
+      <details key="templateId.root" value="111.222.333.444.222"/>
+      <details key="constraints.validation.info" value="mtmMedicationActivityText mtmMedicationActivityStopReasonEntryRelationship mtmMedicationActivityReminderEntryRelationship"/>
       <details key="constraints.validation.warning" value="mtmMedicationActivityGoalsEntryRelationship MedicationActivityPrescriberAssignedPresciberPersonName"/>
       <details key="constraints.validation.query" value="MedicationActivityPrescriberAssignedPresciberPersonName MedicationActivityPrescriberAssignedPresciberAssignedPerson MedicationActivityPrescriberTemplateId MedicationActivityPrescriberTypeCode MedicationActivityPrescriberAssignedAuthor MedicationActivityIndicationEntryRelationshipTypeCode MedicationActivityIndicationEntryRelationshipIndication MedicationActivityStopReasonEntryRelationshipStopReasonClassCode MedicationActivityStopReasonEntryRelationshipStopReasonNegationInd MedicationActivityStopReasonEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipTypeCode MedicationActivityReminderEntryRelationshipReminder MedicationActivityInstructionEntryRelationshipTypeCode MedicationActivityInstructionEntryRelationshipInstructions MedicationActivityGoalsEntryRelationshipMedicationActionPlanGoal"/>
-      <details key="constraints.validation.info" value="mtmMedicationActivityText mtmMedicationActivityStopReasonEntryRelationship mtmMedicationActivityReminderEntryRelationship"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityPrescriber">
-      <details key="templateId.root" value="null"/>
       <details key="constraints.validation.error" value="PrescriberTemplateId PrescriberTypeCode PrescriberAssignedAuthor"/>
+      <details key="templateId.root" value="null"/>
       <details key="typeCode" value="AUT"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityPrescriberAssignedPresciber">
@@ -244,26 +244,26 @@
       <details key="constraints.validation.warning" value="PersonName"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityIndicationEntryRelationship">
-      <details key="constraints.validation.error" value="IndicationEntryRelationshipTypeCode IndicationEntryRelationshipIndication"/>
       <details key="typeCode" value="RSON"/>
+      <details key="constraints.validation.error" value="IndicationEntryRelationshipTypeCode IndicationEntryRelationshipIndication"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityStopReasonEntryRelationship">
-      <details key="constraints.validation.error" value="StopReasonEntryRelationshipTypeCode"/>
       <details key="typeCode" value="RSON"/>
+      <details key="constraints.validation.error" value="StopReasonEntryRelationshipTypeCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityStopReasonEntryRelationshipStopReason">
-      <details key="constraints.validation.error" value="StopReasonClassCode StopReasonNegationInd"/>
       <details key="classCode" value="ACT"/>
+      <details key="constraints.validation.error" value="StopReasonClassCode StopReasonNegationInd"/>
       <details key="moodCode" value="EVN"/>
       <details key="negationInd" value="true"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityReminderEntryRelationship">
-      <details key="constraints.validation.error" value="ReminderEntryRelationshipTypeCode ReminderEntryRelationshipReminder"/>
       <details key="typeCode" value="SPRT"/>
+      <details key="constraints.validation.error" value="ReminderEntryRelationshipTypeCode ReminderEntryRelationshipReminder"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityInstructionEntryRelationship">
-      <details key="constraints.validation.error" value="InstructionEntryRelationshipTypeCode InstructionEntryRelationshipInstructions"/>
       <details key="typeCode" value="SUBJ"/>
+      <details key="constraints.validation.error" value="InstructionEntryRelationshipTypeCode InstructionEntryRelationshipInstructions"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/mtmMedicationActivityGoalsEntryRelationship">
       <details key="constraints.validation.error" value="GoalsEntryRelationshipMedicationActionPlanGoal"/>
@@ -782,8 +782,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OtherInformationSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="111.222.333.444.444"/>
       <details key="constraints.validation.error" value="OtherInformationSectionTemplateId OtherInformationSectionText OtherInformationSectionTitle"/>
+      <details key="templateId.root" value="111.222.333.444.444"/>
     </eAnnotations>
     <eOperations name="OtherInformationSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -854,8 +854,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActionPlanSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PlanOfCareSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="111.222.333.444.555"/>
       <details key="constraints.validation.error" value="MedicationActionPlanSectionTemplateId MedicationActionPlanSectionTitle MedicationActionPlanSectionMedicationActionPlanEncounter"/>
+      <details key="templateId.root" value="111.222.333.444.555"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="PlanOfCareSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -938,8 +938,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActionPlanEncounter" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PlanOfCareActivityEncounter">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="constraints.validation.error" value="MedicationActionPlanEncounterEffectiveTime MedicationActionPlanEncounterText MedicationActionPlanEncounterCode MedicationActionPlanEncounterMedicationActionPlanActivity"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.warning" value="MedicationActionPlanEncounterCodeP"/>
       <details key="constraints.validation.info" value="MedicationActionPlanEncounterMedicationActionPlanObservation"/>
@@ -1090,23 +1090,23 @@
     <eOperations name="getMedicationActionPlanObservation" ordered="false" lowerBound="1"
         eType="#//MedicationActionPlanObservation">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->first().oclAsType(mtm::MedicationActionPlanObservation)"/>
+        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanObservation)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->first().oclAsType(mtm::MedicationActionPlanObservation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanObservation)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActionPlanActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PlanOfCareActivityAct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.dependOn.MedicationActionPlanActivityCode"
-          value="MedicationActionPlanActivityCodeP"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
-      <details key="templateId.root" value="111.222.333.444.666"/>
       <details key="constraints.validation.error" value="MedicationActionPlanActivityTemplateId PlanOfCareActivityActMoodCode MedicationActionPlanActivityText MedicationActionPlanActivityCode"/>
+      <details key="templateId.root" value="111.222.333.444.666"/>
+      <details key="moodCode" value="INT"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.warning" value="MedicationActionPlanActivityCodeP"/>
-      <details key="moodCode" value="INT"/>
+      <details key="constraints.validation.dependOn.MedicationActionPlanActivityCode"
+          value="MedicationActionPlanActivityCodeP"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="PlanOfCareActivityActTemplateId"
@@ -1227,6 +1227,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActionPlanObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PlanOfCareActivityObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationActionPlanObservationText"/>
+      <details key="constraints.validation.info" value="MedicationActionPlanObservationEffectiveTime"/>
     </eAnnotations>
     <eOperations name="MedicationActionPlanObservationText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -1250,11 +1251,33 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="MedicationActionPlanObservationEffectiveTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActionPlanGoal" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PlanOfCareActivityObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="PlanOfCareActivityObservationMoodCode MedicationActionPlanGoalMoodCode MedicationActionPlanGoalText"/>
       <details key="moodCode" value="GOL"/>
+      <details key="constraints.validation.error" value="PlanOfCareActivityObservationMoodCode MedicationActionPlanGoalMoodCode MedicationActionPlanGoalText"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="PlanOfCareActivityObservationMoodCode"
@@ -1329,8 +1352,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Reminder" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//Instructions">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="111.222.333.444.222.1"/>
       <details key="constraints.validation.error" value="ReminderTemplateId ReminderText"/>
+      <details key="templateId.root" value="111.222.333.444.222.1"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="InstructionsTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -1382,8 +1405,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Instructions" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//Instructions">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="111.222.333.444.222.2"/>
       <details key="constraints.validation.error" value="mtmInstructionsTemplateId mtmInstructionsText"/>
+      <details key="templateId.root" value="111.222.333.444.222.2"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="InstructionsTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">

@@ -523,7 +523,7 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
    * @generated
    * @ordered
    */
-	protected static final String GET_MEDICATION_ACTION_PLAN_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->first().oclAsType(mtm::MedicationActionPlanObservation)";
+	protected static final String GET_MEDICATION_ACTION_PLAN_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanObservation)";
 
 	/**
    * The cached OCL query for the '{@link #getMedicationActionPlanObservation(MedicationActionPlanEncounter) <em>Get Medication Action Plan Observation</em>}' query operation.
@@ -539,7 +539,7 @@ public class MedicationActionPlanEncounterOperations extends PlanOfCareActivityE
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->first().oclAsType(mtm::MedicationActionPlanObservation)
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanObservation)
    * @param medicationActionPlanEncounter The receiving '<em><b>Medication Action Plan Encounter</b></em>' model object.
    * <!-- end-model-doc -->
    * @generated

@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityEncounter;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mtm.MtmPackage#getMedicationActionPlanEncounter()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='MedicationActionPlanEncounterEffectiveTime MedicationActionPlanEncounterText MedicationActionPlanEncounterCode MedicationActionPlanEncounterMedicationActionPlanActivity' code.codeSystemName='SNOMEDCT' constraints.validation.warning='MedicationActionPlanEncounterCodeP' constraints.validation.info='MedicationActionPlanEncounterMedicationActionPlanObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActionPlanEncounterEffectiveTime MedicationActionPlanEncounterText MedicationActionPlanEncounterCode MedicationActionPlanEncounterMedicationActionPlanActivity' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='MedicationActionPlanEncounterCodeP' constraints.validation.info='MedicationActionPlanEncounterMedicationActionPlanObservation'"
  * @generated
  */
 public interface MedicationActionPlanEncounter extends PlanOfCareActivityEncounter {
@@ -120,10 +120,10 @@ public interface MedicationActionPlanEncounter extends PlanOfCareActivityEncount
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->first().oclAsType(mtm::MedicationActionPlanObservation)
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanObservation)
    * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->first().oclAsType(mtm::MedicationActionPlanObservation)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mtm::MedicationActionPlanObservation))->asSequence()->any(true).oclAsType(mtm::MedicationActionPlanObservation)'"
    * @generated
    */
 	MedicationActionPlanObservation getMedicationActionPlanObservation();
