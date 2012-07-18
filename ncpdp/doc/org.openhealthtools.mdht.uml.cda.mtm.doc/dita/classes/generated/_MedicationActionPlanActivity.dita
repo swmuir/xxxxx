@@ -8,23 +8,23 @@
 <resourceid id="111.222.333.444.666"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>The medication action plan activity describes the specific action that the patient is to take or has taken.
+<p><lines><i>The medication action plan activity describes the specific action that the patient is to take or has taken.
 
-(What I need to do)
-
-MAP 6</p>
+MAP 6</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityAct.html">Consol Plan Of Care Activity Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="INT" </tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> Plan of Care moodCode (Act/Encounter/Procedure) 2.16.840.1.113883.11.20.9.23</tt><b> STATIC</b> (CONF:8539)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
-<ul><li>WHAT I NEED TO DO
+<ul><li><p><lines><i>WHAT I NEED TO DO
 
 Enter recommendations on what the beneficiary should be doing (e.g., Check your blood pressure every morning. Record your blood pressure reading in your log book.). In some cases, it may be appropriate to tell the beneficiary to take no action pending outcome of the MTM provider's follow up with the physician or other practitioner.
 
-See MAP 6</li></ul></li>
+See MAP 6</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
 </li>
 </ol>
@@ -39,11 +39,11 @@ See MAP 6</li></ul></li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
-<ul><li>WHAT I NEED TO DO
+<ul><li><p><lines><i>WHAT I NEED TO DO
 
 Enter recommendations on what the beneficiary should be doing (e.g., Check your blood pressure every morning. Record your blood pressure reading in your log book.). In some cases, it may be appropriate to tell the beneficiary to take no action pending outcome of the MTM provider's follow up with the physician or other practitioner.
 
-See MAP 6</li></ul></li>
+See MAP 6</i></lines></p></li></ul></li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mtm::MedicationActionPlanActivity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 111.222.333.444.666]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry></entry><entry> ACCM</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:8539</entry><entry> APT</entry></row> 
@@ -73,7 +73,7 @@ See MAP 6</li></ul></li>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="INT">
   <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
   <templateId root="111.222.333.444.666"/>
-  <id root="1996994605" extension="MDHT"/>
+  <id root="MDHT" extension="1055947189"/>
   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <text>Text Value</text>
   <effectiveTime>

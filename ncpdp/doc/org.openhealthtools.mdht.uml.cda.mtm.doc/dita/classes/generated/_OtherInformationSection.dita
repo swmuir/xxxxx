@@ -8,14 +8,16 @@
 <resourceid id="111.222.333.444.444"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>The section is used to convey information that might support the patient's compliance with the action plan and medication list, but not explicitly included, e.g., condition lists, primary provider information, primary pharmacy information and emergency contact information.
+<p><lines><i>The section is used to convey information that might support the patient's compliance with the action plan and medication list, but not explicitly included, e.g., condition lists, primary provider information, primary pharmacy information and emergency contact information.
 
-PML-10:</p>
+PML-10:</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
-<ul><li>This field may be personalized for the beneficiary, such as including a list of the beneficiary's medical conditions, primary care provider, primary pharmacy provider, or emergency contact information.</li></ul></li>
+<ul><li><p><lines><i>This field may be personalized for the beneficiary, such as including a list of the beneficiary's medical conditions, primary care provider, primary pharmacy provider, or emergency contact information.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
 </li>
 </ol>
@@ -23,7 +25,7 @@ PML-10:</p>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
-<ul><li>This field may be personalized for the beneficiary, such as including a list of the beneficiary's medical conditions, primary care provider, primary pharmacy provider, or emergency contact information.</li></ul></li>
+<ul><li><p><lines><i>This field may be personalized for the beneficiary, such as including a list of the beneficiary's medical conditions, primary care provider, primary pharmacy provider, or emergency contact information.</i></lines></p></li></ul></li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mtm::OtherInformationSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 111.222.333.444.444]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
@@ -47,7 +49,7 @@ PML-10:</p>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="111.222.333.444.444"/>
-  <id root="1587736204" extension="MDHT"/>
+  <id root="MDHT" extension="1522382057"/>
   <title>TEXT FOR TITLE</title>
   <text/>
 </section>]]></codeblock>

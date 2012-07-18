@@ -8,6 +8,8 @@
 <resourceid id="2.16.840.1.113883.10.20.1.25"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
@@ -64,8 +66,8 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="GOL">
   <templateId root="2.16.840.1.113883.10.20.1.25"/>
-  <id root="1179510622" extension="MDHT"/>
-  <code code="717739269"/>
+  <id root="MDHT" extension="1106270322"/>
+  <code code="451237588"/>
   <text>Text Value</text>
   <effectiveTime>
     <low value="2012"/>

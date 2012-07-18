@@ -8,15 +8,17 @@
 <resourceid id="111.222.333.444.333"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>The Personal Medication List (PML) is a reconciled list of all the medications in use (i.e., active medications) by the beneficiary at the time of a CMR. Information for this section may be pre-populated by the Part D plan and must be completed and updated with information provided by the beneficiary and/or caregiver during the consultation. Part D plans must also collect and report the purpose and instructions for the beneficiary's use of his/her medications. The use of over-the-counter medications is important for drug utilization review and should be captured during the interactive CMR and reported in the PML by the Part D plan.
+<p><lines><i>The Personal Medication List (PML) is a reconciled list of all the medications in use (i.e., active medications) by the beneficiary at the time of a CMR. Information for this section may be pre-populated by the Part D plan and must be completed and updated with information provided by the beneficiary and/or caregiver during the consultation. Part D plans must also collect and report the purpose and instructions for the beneficiary's use of his/her medications. The use of over-the-counter medications is important for drug utilization review and should be captured during the interactive CMR and reported in the PML by the Part D plan.
 
 The PML is intended to help beneficiaries understand their medications and how they relate to their treatment plans; to engage beneficiaries in the management of their drug therapy; and to improve both communication about medications and tracking of all medications, including self-prescribed medicines, with their healthcare providers. The PML assists the beneficiary with managing his/her medications by allowing the beneficiary to add new medications and their start dates, redacting discontinued products, and indicating the stop dates and reasons for stopping.
 The PML is not considered marketing material and should not include any marketing messages, marketing disclaimers, or other sales information.
 
 The PML is not a wallet card. Some MTM programs may also provide supplemental wallet cards, such as the one prepared by AHRQ: http://www.ahrq.gov/consumer/safemeds/walletform.pdf.
 
-Order of medications: MTM programs may select the sort order for the medications to be listed, such as alphabetically, by purpose, by prescriber, or by product type (e.g., prescription, OTC, vitamin, herbal supplement).</p>
+Order of medications: MTM programs may select the sort order for the medications to be listed, such as alphabetically, by purpose, by prescriber, or by product type (e.g., prescription, OTC, vitamin, herbal supplement).</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
@@ -29,7 +31,7 @@ Order of medications: MTM programs may select the sort order for the medications
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10160-0" </tt><i>History of medication use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7569)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "Medications" (CONF:7793)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHALL</b> equal "Medications" (CONF:7793)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7571)
 </li>
@@ -65,7 +67,7 @@ Order of medications: MTM programs may select the sort order for the medications
   <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
   <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
   <templateId root="111.222.333.444.333"/>
-  <id root="518263269" extension="MDHT"/>
+  <id root="MDHT" extension="1662475502"/>
   <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
   <title>MedicationsMedications</title>
   <text/>
@@ -73,9 +75,9 @@ Order of medications: MTM programs may select the sort order for the medications
     <substanceAdministration classCode="SBADM">
       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
       <templateId root="111.222.333.444.222"/>
-      <id root="76409498" extension="MDHT"/>
+      <id root="MDHT" extension="1177189832"/>
       <text>Text Value</text>
-      <effectiveTime value="20120618"/>
+      <effectiveTime value="20120718"/>
       <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <consumable/>

@@ -8,8 +8,10 @@
 <resourceid id="111.222.333.444.222.1"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>Documents a reminder for the medication activity</p>
+<p><lines><i>Documents a reminder for the medication activity</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Instructions.html">Consol Instructions</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li>
@@ -59,7 +61,7 @@
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="INT">
   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
   <templateId root="111.222.333.444.222.1"/>
-  <id root="237127363" extension="MDHT"/>
+  <id root="MDHT" extension="764438099"/>
   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <text>Text Value</text>
   <statusCode code="completed"/>
