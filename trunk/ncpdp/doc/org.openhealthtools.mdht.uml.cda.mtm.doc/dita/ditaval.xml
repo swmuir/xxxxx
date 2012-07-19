@@ -2,4 +2,6 @@
 <val>
 	<prop att="audience" val="standards" action="include" />
 	<prop att="audience" val="developer" action="exclude" />
+	<prop att="audience" val="hl7dstu" action="include" />
+	<prop att="audience" val="hl7license" action="include" />
 </val>
