@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Draft Standard Use Notice</title>
+	<body>
+		<p>Publication of this draft standard for trial use and comment has been approved by Health Level Seven International (HL7). This draft standard is not an accredited American National Standard.  The comment period for use of this draft standard shall end 12 months from the date of publication. Suggestions for revision should be submitted at <xref format="html">http://www.hl7.org/dstucomments/index.cfm</xref>.</p>
+		<p>Following this 12 month evaluation period, this draft standard, revised as necessary, will be submitted to a normative ballot in preparation for approval by ANSI as an American National Standard. Implementations of this draft standard shall be viable throughout the normative ballot process and for up to six months after publication of the relevant normative standard.</p>
+	</body>
+</topic>
