@@ -65,8 +65,10 @@
 		</bookrights>
 	</bookmeta>
 	<frontmatter>
-	<notices>
-	<topicref href="notices/Notices.dita" navtitle="Notices" type="topic"/>
+	<draftintro audience="hl7dstu" href="notices/Hl7DSTUNotice.dita"
+              navtitle="Draft Standard Use Notice"/>
+	<notices audience="hl7license" >
+	<topicref href="notices/HL7License.dita" navtitle="HL7 License" type="topic"/>
 	</notices>
 		<preface>
 			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
