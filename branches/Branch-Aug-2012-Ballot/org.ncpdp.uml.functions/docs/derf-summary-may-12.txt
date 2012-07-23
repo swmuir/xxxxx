@@ -1,0 +1,47 @@
+for this version:
+
+Changes for DERFs:
+#1030 - deleted E, F, M values from PrimaryDiagnosisCodeQual
+	Added LD & annotation
+	added LD in SecondaryDiagCodeQual
+	removed value 22 from DUECoAgentIDQualCode
+#1063 - Added in ecl: ReasonCode value: BE
+#1064 - Changed order of Name/ClinicName in Supervisor, SupervisorOptional, SupervisorMandatoryAddress
+#1067 - Modified Datatypes: MailAddressType to an1..80 (got rid of pattern: (mailto:)?[^\.]{1,35}(\.[^@]{1,3})?(@[A-Za-z0-9]+\.[A-Za-z]{2,4})?
+
+Other changes:
+1. Request from Lynne: change ItemNumber under CompoundIngredient to use ProductQualifiersCodeExtended NOT ProductCode anymore
+
+Here is what I have for the DERFs:
+
+DERF 001028 – Approved  - MC Ballot –MC000004—Audit V2.0, Form. And Ben. V4.0, Rebates V06.00, Med. Subrogation V4.0, Medical Rebates V02.00, Post Adj. V4.0, Rx Transfer V3.0, PA Transfer V2.0, Retiree Drug Subsidy V2.0, SCRIPT, XML/Specialized, Telecom VE.0, Uniform V2.0
+DERF 001030/ECL 000097 – Approved—ECL Publication – FYI – This also has a rule that was added to SCRIPT for use of Diagnosis Code. It doesn’t need to be a ballot item, but will be in the appendix of changes to SCRIPT and F&B.
+TC Done
+DERF 001045/ECL 000106 – withdrawn by submitter
+DERF 001048 – Pended
+DERF 001049 – Approved – Sig—Ballot XML and Specialized –WG100007—does this also impact SCRIPT or is that DERF 1066? This DERF is Sig only – WG10 ballot. Does not affect XML or Specialized or SCRIPT. This is just Structured and Codified Sig Imp Guide.
+DERF 001051/ECL 000107 – Approved – ECL Publication
+DERF 001052 – Approved – Telecom—Ballot WG010054, Telecommunication VE.0
+DERF 001053/ECL 000108 – withdrawn by submitter
+DERF 001054/ECL 0000109 – Approved—ECL Publication
+DERF 001055/Emergency ECL 000110 – Approved—ECL and Emergency Publications
+DERF 001056/Emergency ECL 000111 – Approved—ECL and Emergency Publications – I will need xx, yy, zz to publish Version D Editorial document soon
+DERF 001057/Emergency ECL 000112 – Approved– ECL Publication—NOT AN EMERGENCY – THIS WAS NEVER AN EMERGENCY.
+DERF 001058/ECL 000113 – Approved – removed Emergency Status– ECL Publication
+DERF 001059/ECL 000114 – Approved – removed Emergency Status– ECL Publication
+DERF 001060/ECL 000115 – Approved– ECL Publication
+DERF 001061/Emergency ECL 000116 – Approved-- ECL and Emergency Publications
+DERF 001062 – Approved – BUS—BUS Publication
+DERF 001063/ECL 000117 – Approved—ECL Publication – FYI this affects schema so will be listed in appendix of changes in SCRIPT and Specialized
+TC DONE
+DERF 001064 – Approved  - SCRIPT—WG110051—SCRIPT and Specialized – affects schema so both affected
+TC DONE
+DERF 001065 – withdrawn by submitter
+DERF 001066 – Approved - SCRIPT—WG110051—SCRIPT and XML/Specialized(????) – No just SCRIPT only
+***TC to ask TG what exactly they want ***
+DERF 001067 – Approved - SCRIPT—WG110051—SCRIPT and Specialized – affects schema so both affected
+TC DONE
+Thanks,
+Kittye
+
+
