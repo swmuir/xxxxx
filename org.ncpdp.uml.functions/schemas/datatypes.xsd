@@ -533,7 +533,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <xsd:complexType name="AddressType">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="AddressLine1" type="datatypes:an1..40"/>
-      <xsd:element minOccurs="0" name="AddressLine2" type="datatypes:an1..40"/>
+      <xsd:element minOccurs="0" name="AddressLine2" type="datatypes:an1..40">
+        <xsd:annotation>
+          <xsd:documentation>Use only when a second address line is needed and AddressLine1 has been used</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element minOccurs="0" name="City" type="datatypes:an1..35"/>
       <xsd:element minOccurs="0" name="State" type="ecl:StateCode"/>
       <xsd:element minOccurs="0" name="ZipCode" type="datatypes:ZipCodeType"/>
@@ -873,7 +877,11 @@ pharmacy’s fill number from the payer system from claims processing.
       <xsd:restriction base="datatypes:AddressType">
         <xsd:sequence>
           <xsd:element name="AddressLine1" type="datatypes:an1..40"/>
-          <xsd:element minOccurs="0" name="AddressLine2" type="datatypes:an1..40"/>
+          <xsd:element minOccurs="0" name="AddressLine2" type="datatypes:an1..40">
+            <xsd:annotation>
+              <xsd:documentation>Use only when a second address line is needed and AddressLine1 has been used</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="City" type="datatypes:an1..35"/>
           <xsd:element name="State" type="ecl:StateCode"/>
           <xsd:element name="ZipCode" type="datatypes:ZipCodeType"/>
