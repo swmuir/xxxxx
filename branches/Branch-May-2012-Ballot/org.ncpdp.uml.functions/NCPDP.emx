@@ -423,6 +423,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FF2IzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4FF2JDD1Ed-8rpqfOAePKg" name="AddressLine2" type="_xTSz0KnREeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_qEUOEOrfEeGBZOAQiWVuwg" annotatedElement="_4FF2JDD1Ed-8rpqfOAePKg">
+            <body>Use only when a second address line is needed and AddressLine1 has been used</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FF2JTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FF2JjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -1369,6 +1372,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3BoY05WEeCWPfQnuInBcA" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Y3BoZE5WEeCWPfQnuInBcA" name="AddressLine2" type="_xTSz0KnREeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_pAW2sOrfEeGBZOAQiWVuwg" annotatedElement="_Y3BoZE5WEeCWPfQnuInBcA">
+            <body>Use only when a second address line is needed and AddressLine1 has been used</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y3BoZU5WEeCWPfQnuInBcA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3BoZk5WEeCWPfQnuInBcA"/>
         </ownedAttribute>
@@ -24572,4 +24578,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_dxXxcKqDEeGs5dPxXb8s1w" base_Comment="_dxV8QKqDEeGs5dPxXb8s1w"/>
   <Default:Documentation xmi:id="_g_y1QKqDEeGs5dPxXb8s1w" base_Comment="_g_vK4KqDEeGs5dPxXb8s1w"/>
   <Default:Documentation xmi:id="_kBQbIKqDEeGs5dPxXb8s1w" base_Comment="_kBMwwKqDEeGs5dPxXb8s1w"/>
+  <Default:Documentation xmi:id="_pAbvMOrfEeGBZOAQiWVuwg" base_Comment="_pAW2sOrfEeGBZOAQiWVuwg"/>
+  <Default:Documentation xmi:id="_qEYfgOrfEeGBZOAQiWVuwg" base_Comment="_qEUOEOrfEeGBZOAQiWVuwg"/>
 </xmi:XMI>
