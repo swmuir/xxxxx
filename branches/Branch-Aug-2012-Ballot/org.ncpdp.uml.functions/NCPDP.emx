@@ -450,7 +450,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4IE4nTD1Ed-8rpqfOAePKg" name="Quantity">
-        <ownedAttribute xmi:id="_4IE4njD1Ed-8rpqfOAePKg" name="Value" type="_4IE4oTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4IE4njD1Ed-8rpqfOAePKg" name="Value" type="_MQa4sOupEeG2l9eTYdS5ng">
           <ownedComment xmi:id="_4IE4nzD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
@@ -481,6 +481,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FF2IzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4FF2JDD1Ed-8rpqfOAePKg" name="AddressLine2" type="_xTSz0KnREeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_pGmEsOunEeG2l9eTYdS5ng" annotatedElement="_4FF2JDD1Ed-8rpqfOAePKg">
+            <body>Use only when a second address line is needed and AddressLine1 has been used</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FF2JTD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FF2JjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
@@ -508,13 +511,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Jt3WzD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Jt3XDD1Ed-8rpqfOAePKg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_4Jt3XTD1Ed-8rpqfOAePKg" name="Diagnosis" type="_S2jzINp6EeGSupcTtyViRw">
-          <ownedComment xmi:id="_4Jt3XjD1Ed-8rpqfOAePKg">
-            <body></body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Jt3ZTD1Ed-8rpqfOAePKg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Jt3ZjD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4Xa8JTD1Ed-8rpqfOAePKg" name="NoteType">
@@ -1424,6 +1420,9 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3BoY05WEeCWPfQnuInBcA" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Y3BoZE5WEeCWPfQnuInBcA" name="AddressLine2" type="_xTSz0KnREeGs5dPxXb8s1w">
+          <ownedComment xmi:id="_l_JLkOunEeG2l9eTYdS5ng" annotatedElement="_Y3BoZE5WEeCWPfQnuInBcA">
+            <body>Use only when a second address line is needed and AddressLine1 has been used</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y3BoZU5WEeCWPfQnuInBcA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3BoZk5WEeCWPfQnuInBcA"/>
         </ownedAttribute>
@@ -3550,6 +3549,16 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kPxRoNvuEeGSupcTtyViRw"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_MQa4sOupEeG2l9eTYdS5ng" name="n1..14">
+        <ownedComment xmi:id="_MQa4seupEeG2l9eTYdS5ng" annotatedElement="_MQa4sOupEeG2l9eTYdS5ng">
+          <body>NCPDP Length Constrained Type</body>
+        </ownedComment>
+        <generalization xmi:id="_MQa4suupEeG2l9eTYdS5ng" general="_4IE4pTD1Ed-8rpqfOAePKg"/>
+        <ownedAttribute xmi:id="_MQa4s-upEeG2l9eTYdS5ng" name="maxLength">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_VNvZAOupEeG2l9eTYdS5ng" value="14"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_MbThMDD2Ed-8rpqfOAePKg" name="structures">
       <eAnnotations xmi:id="_MbThMTD2Ed-8rpqfOAePKg" source="uml2.diagrams">
@@ -5219,10 +5228,16 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4I-QcjD1Ed-8rpqfOAePKg" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_wfj4UNp6EeGSupcTtyViRw" name="Primary" visibility="public" type="_S2jzINp6EeGSupcTtyViRw" aggregation="composite" association="_wfe_0Np6EeGSupcTtyViRw">
+          <ownedComment xmi:id="_UFqLQPC6EeG0eP4dwvcO0Q" annotatedElement="_wfj4UNp6EeGSupcTtyViRw">
+            <body>The prescriber supplied or pharmacy inferred code for the diagnosis.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wfltgdp6EeGSupcTtyViRw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wfltgNp6EeGSupcTtyViRw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3NDrENp6EeGSupcTtyViRw" name="Secondary" visibility="public" type="_S2jzINp6EeGSupcTtyViRw" aggregation="composite" association="_3NBO0Np6EeGSupcTtyViRw">
+          <ownedComment xmi:id="_ZFW_cPC6EeG0eP4dwvcO0Q" annotatedElement="_3NDrENp6EeGSupcTtyViRw">
+            <body>The prescriber supplied or pharmacy inferred code for the secondary diagnosis.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3NE5MNp6EeGSupcTtyViRw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3NESINp6EeGSupcTtyViRw"/>
         </ownedAttribute>
@@ -22779,7 +22794,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_4JkGWTD1Ed-8rpqfOAePKg" base_Comment="_4JkGWDD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4Jt3UDD1Ed-8rpqfOAePKg" base_Comment="_4JkGYjD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4Jt3VTD1Ed-8rpqfOAePKg" base_Comment="_4Jt3VDD1Ed-8rpqfOAePKg"/>
-  <Default:Documentation xmi:id="_4Jt3XzD1Ed-8rpqfOAePKg" base_Comment="_4Jt3XjD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4J3BQDD1Ed-8rpqfOAePKg" base_Comment="_4Jt3bDD1Ed-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_4J3BSjD1Ed-8rpqfOAePKg" base_Comment="_4J3BSTD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4J3BTjD1Ed-8rpqfOAePKg" base_Property="_4J3BTDD1Ed-8rpqfOAePKg"/>
@@ -22875,14 +22889,14 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_4mU68TD1Ed-8rpqfOAePKg" base_Property="_4mU67zD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU69jD1Ed-8rpqfOAePKg" base_Property="_4mU69DD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU6-zD1Ed-8rpqfOAePKg" base_Property="_4mU6-TD1Ed-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
+  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -22954,7 +22968,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <xsd:Group xmi:id="_RoJKrWNYEd-ODMSOo4sPFQ" base_Class="_Rn_ZtGNYEd-ODMSOo4sPFQ"/>
@@ -23920,7 +23934,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:GlobalProperty xmi:id="_Bv0UXYqaEd-pZLs28ekBmw" base_Class="_Bv0UUIqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_Bv0UXoqaEd-pZLs28ekBmw" base_Property="_Bv0UUYqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_V59SYYqaEd-pZLs28ekBmw" base_Property="_V59SYIqaEd-pZLs28ekBmw"/>
-  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="NCPDPv2012MayBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
+  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
   <xsd:GlobalElement xmi:id="_P3rT8YqnEd-pZLs28ekBmw" base_Property="_P3rT8IqnEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0uuYkYrFEd-urZQZ08VCKQ" base_Comment="_0uuYkIrFEd-urZQZ08VCKQ"/>
   <Default:Documentation xmi:id="_7k0GoIrFEd-urZQZ08VCKQ" base_Comment="_7kqVoIrFEd-urZQZ08VCKQ"/>
@@ -24720,4 +24734,10 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_fFmS0tvuEeGSupcTtyViRw" base_Comment="_fFlEt9vuEeGSupcTtyViRw"/>
   <xsd:Restriction xmi:id="_-MaH4NvwEeGSupcTtyViRw" base_Generalization="_8wlDENvwEeGSupcTtyViRw"/>
   <xsd:Restriction xmi:id="_AwpmQNvxEeGSupcTtyViRw" base_Generalization="_AfAcoNvxEeGSupcTtyViRw"/>
+  <Default:Documentation xmi:id="_mC97oOunEeG2l9eTYdS5ng" base_Comment="_l_JLkOunEeG2l9eTYdS5ng"/>
+  <Default:Documentation xmi:id="_pGqWIOunEeG2l9eTYdS5ng" base_Comment="_pGmEsOunEeG2l9eTYdS5ng"/>
+  <Default:Documentation xmi:id="_MQct4OupEeG2l9eTYdS5ng" base_Comment="_MQa4seupEeG2l9eTYdS5ng"/>
+  <xsd:Facet xmi:id="_MQct4eupEeG2l9eTYdS5ng" base_Property="_MQa4s-upEeG2l9eTYdS5ng"/>
+  <Default:Documentation xmi:id="_UFxgAPC6EeG0eP4dwvcO0Q" base_Comment="_UFqLQPC6EeG0eP4dwvcO0Q"/>
+  <Default:Documentation xmi:id="_ZFap0PC6EeG0eP4dwvcO0Q" base_Comment="_ZFW_cPC6EeG0eP4dwvcO0Q"/>
 </xmi:XMI>
