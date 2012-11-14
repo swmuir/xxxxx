@@ -1,0 +1,3 @@
+DERF 1069 - Pended NO change to zip code
+DERF 1068 - In Datatype change coagentcode to have description
+Quantity - In Datatypes  - Quantity-value change from n1..11 to n1..14
