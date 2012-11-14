@@ -640,8 +640,24 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
-      <xsd:element name="Quantity" type="datatypes:Quantity"/>
+      <xsd:element name="Quantity" type="datatypes:CompoundQuantity"/>
       <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CompoundQuantity  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CompoundQuantity">
+    <xsd:sequence>
+      <xsd:element name="Value" type="datatypes:n1..14"/>
+      <xsd:element name="CodeListQualifier" type="ecl:QuantityCodeListQualifierCode"/>
+      <xsd:element name="QuantityUnitOfMeasure" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP Drug QuantityUnitOfMeasure Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1346,7 +1362,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Quantity">
     <xsd:sequence>
-      <xsd:element name="Value" type="datatypes:n1..14"/>
+      <xsd:element name="Value" type="datatypes:n1..11"/>
       <xsd:element name="CodeListQualifier" type="ecl:QuantityCodeListQualifierCode"/>
       <xsd:element name="QuantityUnitOfMeasure" type="datatypes:NCICode">
         <xsd:annotation>
