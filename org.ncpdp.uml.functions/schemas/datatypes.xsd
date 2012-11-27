@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!--
-Copyright (c) 2007, 2008, 2009, 2010, 2011, 2012 NCPDP. All rights reserved. This work is owned by National Council for Prescription Drug Programs, Inc., 924Ø E. Raintree Drive, Scottsdale, AZ 8526Ø, (48Ø) 477-1ØØØ, ncpdp@ncpdp.org, and protected by the copyright laws of the United States. 17 U.S.C. §1Ø1, et. seq. Permission is given to Council members to copy and use the work or any part thereof in connection with the business purposes of the Council members.   
+Copyright (c) 2007, 2008, 2009, 2010, 2011, 2012, 2013 NCPDP. All rights reserved. This work is owned by National Council for Prescription Drug Programs, Inc., 924Ø E. Raintree Drive, Scottsdale, AZ 8526Ø, (48Ø) 477-1ØØØ, ncpdp@ncpdp.org, and protected by the copyright laws of the United States. 17 U.S.C. §1Ø1, et. seq. Permission is given to Council members to copy and use the work or any part thereof in connection with the business purposes of the Council members.   
 
 
 The work may not be changed or altered. The work may not be sold, used or exploited for commercial purposes. This permission may be revoked by National Council for Prescription Drug Programs, Inc., at any time. The National Council for Prescription Drugs Programs, Inc. is not responsible for any errors or damage as a result of the use of the work.
@@ -8,7 +8,7 @@ NCPDP recognizes the confidentiality of certain information exchanged electronic
 NOTICE: In addition, this NCPDP Standard contains certain data fields and elements that may be completed by users with the proprietary information of third parties. The use and distribution of third parties' proprietary information without such third parties' consent, or the execution of a license or other agreement with such third party, could subject the user to numerous legal claims. All users are encouraged to contact such third parties to determine whether such information is proprietary and if necessary, to consult with legal counsel to make arrangements for the use and distribution of such proprietary information.
 
 
---><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/datatypes" version="NCPDPv2012AugustBallot" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+--><xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ncpdp.org/schema/datatypes" version="NCPDPv2012NovBallot" xmlns:datatypes="http://www.ncpdp.org/schema/datatypes" xmlns:ecl="http://www.ncpdp.org/schema/ecl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:import namespace="http://www.ncpdp.org/schema/ecl" schemaLocation="ecl.xsd"/>
   <!-- ================================================== -->
   <!-- =====  Simple Type Definitions  -->
@@ -550,8 +550,21 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="City" type="datatypes:an1..35"/>
-      <xsd:element minOccurs="0" name="State" type="ecl:StateCode"/>
-      <xsd:element minOccurs="0" name="ZipCode" type="datatypes:ZipCodeType"/>
+      <xsd:element minOccurs="0" name="StateProvince" type="datatypes:an">
+        <xsd:annotation>
+          <xsd:documentation>State must be mailable in the country (e.g. when exchanging US States, the two digit alpha code is to be used, in Canada the “two space two” Province code is to be used). (ISO-3166-2 link from http://www.iso.org/iso/country_codes or http://en.wikipedia.org/wiki/ISO_3166-2)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="PostalCode" type="datatypes:an">
+        <xsd:annotation>
+          <xsd:documentation>PostalCode must be mailable in the country (e.g. for US, the PostalCode length is 5 or 9, when used for Canadian Postal Code – This left justified field contains the three-digit forward sortation area (FSA) followed by a space, then followed by a Local Delivery Unit.  (Format A0A 0A0, where A is a letter and 0 is a digit, with a space separating the third and fourth characters.)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="CountryCode" type="datatypes:an1..2">
+        <xsd:annotation>
+          <xsd:documentation>Required if country is not “US” is placed in CountryCode when it is in an optional address type. See Reference for country code: ISO-3166-1 http://www.iso.org/iso/country_codes.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -640,8 +653,24 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
-      <xsd:element name="Quantity" type="datatypes:Quantity"/>
+      <xsd:element name="Quantity" type="datatypes:CompoundQuantity"/>
       <xsd:element maxOccurs="5" minOccurs="0" name="DrugUseEvaluation" type="datatypes:DrugUseEvaluation"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CompoundQuantity  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CompoundQuantity">
+    <xsd:sequence>
+      <xsd:element name="Value" type="datatypes:n1..14"/>
+      <xsd:element name="CodeListQualifier" type="ecl:QuantityCodeListQualifierCode"/>
+      <xsd:element name="QuantityUnitOfMeasure" type="datatypes:NCICode">
+        <xsd:annotation>
+          <xsd:documentation>NCPDP Drug QuantityUnitOfMeasure Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -923,8 +952,21 @@ pharmacy’s fill number from the payer system from claims processing.
             </xsd:annotation>
           </xsd:element>
           <xsd:element name="City" type="datatypes:an1..35"/>
-          <xsd:element name="State" type="ecl:StateCode"/>
-          <xsd:element name="ZipCode" type="datatypes:ZipCodeType"/>
+          <xsd:element name="StateProvince" type="datatypes:an">
+            <xsd:annotation>
+              <xsd:documentation>State must be mailable in the country (e.g. when exchanging US States, the two digit alpha code is to be used, in Canada the “two space two” Province code is to be used). (ISO-3166-2 link from http://www.iso.org/iso/country_codes or http://en.wikipedia.org/wiki/ISO_3166-2)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="PostalCode" type="datatypes:an">
+            <xsd:annotation>
+              <xsd:documentation>PostalCode must be mailable in the country (e.g. for US, the PostalCode length is 5 or 9, when used for Canadian Postal Code – This left justified field contains the three-digit forward sortation area (FSA) followed by a space, then followed by a Local Delivery Unit.  (Format A0A 0A0, where A is a letter and 0 is a digit, with a space separating the third and fourth characters.)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="CountryCode" type="datatypes:an1..2">
+            <xsd:annotation>
+              <xsd:documentation>Required if country is not “US” is placed in CountryCode when it is in an optional address type. See Reference for country code: ISO-3166-1 http://www.iso.org/iso/country_codes.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
         </xsd:sequence>
       </xsd:restriction>
     </xsd:complexContent>
@@ -1346,7 +1388,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7</xsd:documentation
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="Quantity">
     <xsd:sequence>
-      <xsd:element name="Value" type="datatypes:n1..14"/>
+      <xsd:element name="Value" type="datatypes:n1..11"/>
       <xsd:element name="CodeListQualifier" type="ecl:QuantityCodeListQualifierCode"/>
       <xsd:element name="QuantityUnitOfMeasure" type="datatypes:NCICode">
         <xsd:annotation>

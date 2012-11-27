@@ -21341,7 +21341,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_eGGD8CxAEd-8mcmtGejV_Q" base_Comment="_eF8S8yxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_eF8S8SxAEd-8mcmtGejV_Q" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_eFfnBCxAEd-8mcmtGejV_Q" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="_eF8S8CxAEd-8mcmtGejV_Q" base_Comment="_eFfnBSxAEd-8mcmtGejV_Q"/>
-  <xsd:Schema xmi:id="_kA0cIDEFEd-8rpqfOAePKg" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/ECL" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <xsd:Schema xmi:id="_kA0cIDEFEd-8rpqfOAePKg" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" version="NCPDPv2012NovBallot" targetNamespace="http://www.ncpdp.org/schema/ECL" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <Default:Documentation xmi:id="_bBE48jEQEd-8rpqfOAePKg" base_Comment="_bBE48TEQEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_bmodEjEQEd-8rpqfOAePKg" base_Comment="_bmodETEQEd-8rpqfOAePKg"/>
   <orgncpdpecl:ncpdpecl xmi:id="_rq1rJjEREd-8rpqfOAePKg" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_rq1rEDEREd-8rpqfOAePKg" displayName="Code List Responsibility Agency (X12 DE 235)"/>
@@ -21573,7 +21573,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_oCxxTmdhEd-EzKeHnOFaKw" base_Comment="_oCxxSGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AK1WYGdiEd-EzKeHnOFaKw" base_Generalization="__sJPQGdhEd-EzKeHnOFaKw"/>
   <xsd:Restriction xmi:id="_AnmK4GdiEd-EzKeHnOFaKw" base_Generalization="__Ja8sGdhEd-EzKeHnOFaKw"/>
-  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <xsd:Schema xmi:id="_6Dc2gGdjEd-EzKeHnOFaKw" base_Package="_2tUBIGdjEd-EzKeHnOFaKw" version="NCPDPv2012NovBallot" targetNamespace="http://www.ncpdp.org/schema/ecl" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <orgncpdpecl:ncpdpecl xmi:id="_J51OkmdmEd-EzKeHnOFaKw" valueSetId="548-6F" fieldFormat="x(3)" standardsUsing="T" valueSetLimitations="" base_Enumeration="_J51OcGdmEd-EzKeHnOFaKw" displayName="Approved Message Code"/>
   <Default:Documentation xmi:id="_J51Ok2dmEd-EzKeHnOFaKw" base_Comment="_J51OcWdmEd-EzKeHnOFaKw"/>
   <Default:Documentation xmi:id="_J51OlGdmEd-EzKeHnOFaKw" base_Comment="_J51Oc2dmEd-EzKeHnOFaKw"/>
