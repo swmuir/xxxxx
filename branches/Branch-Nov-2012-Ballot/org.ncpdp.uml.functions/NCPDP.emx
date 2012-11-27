@@ -174,6 +174,45 @@
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_ACHsUNvxEeGSupcTtyViRw" visible="false" type="StructureCompartment"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ACFQEdvxEeGSupcTtyViRw" x="12726" y="5476"/>
           </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_fTcYsC3LEeK0d9oqp0ETBA" element="_4OfClzD1Ed-8rpqfOAePKg" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_fTxv4C3LEeK0d9oqp0ETBA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_fTxv4S3LEeK0d9oqp0ETBA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_fTyW8C3LEeK0d9oqp0ETBA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_fTy-AC3LEeK0d9oqp0ETBA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_fTy-AS3LEeK0d9oqp0ETBA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_fTzlEC3LEeK0d9oqp0ETBA" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_fT0zMC3LEeK0d9oqp0ETBA" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_fT0zMS3LEeK0d9oqp0ETBA" visible="false" type="SignalCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_fT2BUC3LEeK0d9oqp0ETBA" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTcYsS3LEeK0d9oqp0ETBA" x="6720" y="8069"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_iXPg4C3LEeK0d9oqp0ETBA" element="_4IE4nTD1Ed-8rpqfOAePKg" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_iXQH8C3LEeK0d9oqp0ETBA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_iXQH8S3LEeK0d9oqp0ETBA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_iXQH8i3LEeK0d9oqp0ETBA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_iXQH8y3LEeK0d9oqp0ETBA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_iXQH9C3LEeK0d9oqp0ETBA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_iXta8C3LEeK0d9oqp0ETBA" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_iXta8S3LEeK0d9oqp0ETBA" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_iXuCAC3LEeK0d9oqp0ETBA" visible="false" type="SignalCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_iXuCAS3LEeK0d9oqp0ETBA" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iXPg4S3LEeK0d9oqp0ETBA" x="14075" y="13308"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_pEgqIC3LEeK0d9oqp0ETBA" element="_OE9lYC3JEeK0d9oqp0ETBA" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_pEh4QC3LEeK0d9oqp0ETBA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_pEh4QS3LEeK0d9oqp0ETBA" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_pEh4Qi3LEeK0d9oqp0ETBA" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_pEifUC3LEeK0d9oqp0ETBA" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_pEjGYC3LEeK0d9oqp0ETBA" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_pEjtcC3LEeK0d9oqp0ETBA" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_pEjtcS3LEeK0d9oqp0ETBA" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_pEkUgC3LEeK0d9oqp0ETBA" visible="false" type="SignalCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_pEkUgS3LEeK0d9oqp0ETBA" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pEgqIS3LEeK0d9oqp0ETBA" x="2853" y="14582"/>
+          </children>
           <element xsi:nil="true"/>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_8wzskNvwEeGSupcTtyViRw" element="_8wlDENvwEeGSupcTtyViRw" source="_7KG0gNvwEeGSupcTtyViRw" target="_5q4dcNvwEeGSupcTtyViRw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_8w0ToNvwEeGSupcTtyViRw" type="NameLabel">
@@ -190,6 +229,47 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AfEHAdvxEeGSupcTtyViRw" y="-186"/>
             </children>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AfDf8dvxEeGSupcTtyViRw" points="[-71, -43, 217, 128]$[-213, -129, 75, 42]"/>
+          </edges>
+          <edges xmi:type="umlnotation:UMLConnector" xmi:id="_iXv3MC3LEeK0d9oqp0ETBA" element="_4O7uhDD1Ed-8rpqfOAePKg" source="_pEgqIC3LEeK0d9oqp0ETBA" target="_fTcYsC3LEeK0d9oqp0ETBA" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+            <children xmi:type="notation:DecorationNode" xmi:id="_iXxFUC3LEeK0d9oqp0ETBA" type="NameLabel">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_iXxFUi3LEeK0d9oqp0ETBA" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_iXxsYC3LEeK0d9oqp0ETBA" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iXxFUS3LEeK0d9oqp0ETBA" y="-186"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_iXxsYS3LEeK0d9oqp0ETBA" type="ToMultiplicityLabel" element="_4Ox9ljD1Ed-8rpqfOAePKg">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_iXyTcC3LEeK0d9oqp0ETBA" type="ToMultiplicity"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_iXxsYi3LEeK0d9oqp0ETBA" y="396"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_iXyTcS3LEeK0d9oqp0ETBA" type="ToRoleLabel" element="_4Ox9ljD1Ed-8rpqfOAePKg">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_iXyTcy3LEeK0d9oqp0ETBA" type="ToRole"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_iXyTci3LEeK0d9oqp0ETBA" y="-397"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_iXy6gC3LEeK0d9oqp0ETBA" type="FromMultiplicityLabel" element="_4O7uhTD1Ed-8rpqfOAePKg">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_iXy6gi3LEeK0d9oqp0ETBA" type="FromMultiplicity"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_iXy6gS3LEeK0d9oqp0ETBA" y="396"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_iXy6gy3LEeK0d9oqp0ETBA" type="FromRoleLabel" element="_4O7uhTD1Ed-8rpqfOAePKg">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_iXzhkC3LEeK0d9oqp0ETBA" type="FromRole"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_iXy6hC3LEeK0d9oqp0ETBA" y="-397"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_iXzhkS3LEeK0d9oqp0ETBA" type="ToQualifierLabel" element="_4Ox9ljD1Ed-8rpqfOAePKg">
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_iX0IoC3LEeK0d9oqp0ETBA" type="QualifierCompartment"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_iXzhki3LEeK0d9oqp0ETBA" y="-186"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_iX0IoS3LEeK0d9oqp0ETBA" type="FromQualifierLabel" element="_4O7uhTD1Ed-8rpqfOAePKg">
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_iX0Ioy3LEeK0d9oqp0ETBA" type="QualifierCompartment"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_iX0Ioi3LEeK0d9oqp0ETBA" y="-186"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_iX0IpC3LEeK0d9oqp0ETBA" type="ToConstraintLabel" element="_4Ox9ljD1Ed-8rpqfOAePKg">
+              <children xmi:type="notation:ListCompartment" xmi:id="_iX0vsC3LEeK0d9oqp0ETBA" type="ToConstraintCompartment"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_iX0IpS3LEeK0d9oqp0ETBA" y="1058"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_iX0vsS3LEeK0d9oqp0ETBA" type="FromConstraintLabel" element="_4O7uhTD1Ed-8rpqfOAePKg">
+              <children xmi:type="notation:ListCompartment" xmi:id="_iX0vsy3LEeK0d9oqp0ETBA" type="FromConstraintCompartment"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_iX0vsi3LEeK0d9oqp0ETBA" y="1058"/>
+            </children>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iXv3MS3LEeK0d9oqp0ETBA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rIlasC3LEeK0d9oqp0ETBA" id="(0.5143408360128617,0.18962585034013604)"/>
           </edges>
         </contents>
       </eAnnotations>
@@ -350,7 +430,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7 </body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Ox9kjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Ox9kzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4Ox9ljD1Ed-8rpqfOAePKg" name="Quantity" type="_4IE4nTD1Ed-8rpqfOAePKg" aggregation="composite" association="_4O7uhDD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4Ox9ljD1Ed-8rpqfOAePKg" name="Quantity" type="_OE9lYC3JEeK0d9oqp0ETBA" aggregation="composite" association="_4O7uhDD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4Ox9lzD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
@@ -450,7 +530,7 @@ http://www.cancer.gov/cancertopics/terminologyresources/page7
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4IE4nTD1Ed-8rpqfOAePKg" name="Quantity">
-        <ownedAttribute xmi:id="_4IE4njD1Ed-8rpqfOAePKg" name="Value" type="_MQa4sOupEeG2l9eTYdS5ng">
+        <ownedAttribute xmi:id="_4IE4njD1Ed-8rpqfOAePKg" name="Value" type="_4IE4oTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_4IE4nzD1Ed-8rpqfOAePKg">
             <body></body>
           </ownedComment>
@@ -491,14 +571,26 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FF2KDD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FF2KTD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4FF2KjD1Ed-8rpqfOAePKg" name="State">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_gtSIoCxAEd-8mcmtGejV_Q?ecl/ecl/StateCode?"/>
+        <ownedAttribute xmi:id="_4FF2KjD1Ed-8rpqfOAePKg" name="StateProvince" type="_4CkGdzD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_mEaqoDiqEeKWncPBc_xQCw" annotatedElement="_4FF2KjD1Ed-8rpqfOAePKg">
+            <body>State must be mailable in the country (e.g. when exchanging US States, the two digit alpha code is to be used, in Canada the “two space two” Province code is to be used). (ISO-3166-2 link from http://www.iso.org/iso/country_codes or http://en.wikipedia.org/wiki/ISO_3166-2)</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FPnAjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnAzD1Ed-8rpqfOAePKg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4FPnBDD1Ed-8rpqfOAePKg" name="ZipCode" type="_4FPnBTD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_4FPnBDD1Ed-8rpqfOAePKg" name="PostalCode" type="_4CkGdzD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_362gsDiqEeKWncPBc_xQCw" annotatedElement="_4FPnBDD1Ed-8rpqfOAePKg">
+            <body>PostalCode must be mailable in the country (e.g. for US, the PostalCode length is 5 or 9, when used for Canadian Postal Code – This left justified field contains the three-digit forward sortation area (FSA) followed by a space, then followed by a Local Delivery Unit.  (Format A0A 0A0, where A is a letter and 0 is a digit, with a space separating the third and fourth characters.)</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4FPnCjD1Ed-8rpqfOAePKg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FPnCzD1Ed-8rpqfOAePKg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_A209MDirEeKWncPBc_xQCw" name="CountryCode" visibility="public" type="_4mU61TD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_LEbZoDirEeKWncPBc_xQCw" annotatedElement="_A209MDirEeKWncPBc_xQCw">
+            <body>Required if country is not “US” is placed in CountryCode when it is in an optional address type. See Reference for country code: ISO-3166-1 http://www.iso.org/iso/country_codes.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_53FucDirEeKWncPBc_xQCw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_53FHYDirEeKWncPBc_xQCw"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4Jt3UTD1Ed-8rpqfOAePKg" name="CoAgentCode">
@@ -1430,14 +1522,26 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y3BoaE5WEeCWPfQnuInBcA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3BoaU5WEeCWPfQnuInBcA" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_Y3Boak5WEeCWPfQnuInBcA" name="State">
-          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_gtSIoCxAEd-8mcmtGejV_Q?ecl/ecl/StateCode?"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y3Boa05WEeCWPfQnuInBcA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3BobE5WEeCWPfQnuInBcA" value="1"/>
+        <ownedAttribute xmi:id="_hxkDcDisEeKWncPBc_xQCw" name="StateProvince" type="_4CkGdzD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_hxkDcTisEeKWncPBc_xQCw" annotatedElement="_hxkDcDisEeKWncPBc_xQCw">
+            <body>State must be mailable in the country (e.g. when exchanging US States, the two digit alpha code is to be used, in Canada the “two space two” Province code is to be used). (ISO-3166-2 link from http://www.iso.org/iso/country_codes or http://en.wikipedia.org/wiki/ISO_3166-2)</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hxkDcjisEeKWncPBc_xQCw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hxkDczisEeKWncPBc_xQCw" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_Y3BobU5WEeCWPfQnuInBcA" name="ZipCode" type="_4FPnBTD1Ed-8rpqfOAePKg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y3Bobk5WEeCWPfQnuInBcA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3Bob05WEeCWPfQnuInBcA" value="1"/>
+        <ownedAttribute xmi:id="_hxlRkDisEeKWncPBc_xQCw" name="PostalCode" type="_4CkGdzD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_hxlRkTisEeKWncPBc_xQCw" annotatedElement="_hxlRkDisEeKWncPBc_xQCw">
+            <body>PostalCode must be mailable in the country (e.g. for US, the PostalCode length is 5 or 9, when used for Canadian Postal Code – This left justified field contains the three-digit forward sortation area (FSA) followed by a space, then followed by a Local Delivery Unit.  (Format A0A 0A0, where A is a letter and 0 is a digit, with a space separating the third and fourth characters.)</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hxlRkjisEeKWncPBc_xQCw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hxlRkzisEeKWncPBc_xQCw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hxl4oDisEeKWncPBc_xQCw" name="CountryCode" visibility="public" type="_4mU61TD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_hxl4oTisEeKWncPBc_xQCw" annotatedElement="_hxl4oDisEeKWncPBc_xQCw">
+            <body>Required if country is not “US” is placed in CountryCode when it is in an optional address type. See Reference for country code: ISO-3166-1 http://www.iso.org/iso/country_codes.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hxl4ojisEeKWncPBc_xQCw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hxl4ozisEeKWncPBc_xQCw" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_SHyQEBBwEeGdS8kEviK9tA" name="SuperSetID" isAbstract="true">
@@ -3557,6 +3661,32 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <ownedAttribute xmi:id="_MQa4s-upEeG2l9eTYdS5ng" name="maxLength">
           <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
           <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_VNvZAOupEeG2l9eTYdS5ng" value="14"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OE9lYC3JEeK0d9oqp0ETBA" name="CompoundQuantity">
+        <ownedAttribute xmi:id="_OE9lYS3JEeK0d9oqp0ETBA" name="Value" type="_MQa4sOupEeG2l9eTYdS5ng">
+          <ownedComment xmi:id="_OE9lYi3JEeK0d9oqp0ETBA">
+            <body></body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OE9lYy3JEeK0d9oqp0ETBA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OE9lZC3JEeK0d9oqp0ETBA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OE9lZS3JEeK0d9oqp0ETBA" name="CodeListQualifier">
+          <ownedComment xmi:id="_OE9lZi3JEeK0d9oqp0ETBA">
+            <body></body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_icJeNCxAEd-8mcmtGejV_Q?ecl/ecl/QuantityCodeListQualifierCode?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OE9lZy3JEeK0d9oqp0ETBA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OE9laC3JEeK0d9oqp0ETBA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OE9laS3JEeK0d9oqp0ETBA" name="QuantityUnitOfMeasure" type="_lcv8IGi_Ed-Pd7zqA0IwbQ">
+          <ownedComment xmi:id="_OE9lai3JEeK0d9oqp0ETBA" annotatedElement="_OE9laS3JEeK0d9oqp0ETBA">
+            <body>NCPDP Drug QuantityUnitOfMeasure Terminology - available at 
+http://www.cancer.gov/cancertopics/terminologyresources/page7
+See External Code List Introduction for information on NCI Thesaurus Code Lists.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OE9lay3JEeK0d9oqp0ETBA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OE9lbC3JEeK0d9oqp0ETBA" value="1"/>
         </ownedAttribute>
       </packagedElement>
     </packagedElement>
@@ -22889,14 +23019,14 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_4mU68TD1Ed-8rpqfOAePKg" base_Property="_4mU67zD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU69jD1Ed-8rpqfOAePKg" base_Property="_4mU69DD1Ed-8rpqfOAePKg"/>
   <xsd:Facet xmi:id="_4mU6-zD1Ed-8rpqfOAePKg" base_Property="_4mU6-TD1Ed-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
+  <xsd:Schema xmi:id="_CCEVIDD5Ed-8rpqfOAePKg" base_Package="_MbThMDD2Ed-8rpqfOAePKg" version="NCPDPv2012NovBallot" targetNamespace="http://www.ncpdp.org/schema/structures" targetNamespacePrefix="structures" schemaLocation="structures.xsd"/>
   <xsd:Import xmi:id="_hsyO4DEDEd-8rpqfOAePKg" base_PackageImport="_eKKZgDD_Ed-8rpqfOAePKg" schemaLocation="ecl.xsd" namespacePrefix="http://www.ncpdp.org/schema/ECL"/>
-  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
+  <xsd:Schema xmi:id="_JncKEDEEEd-8rpqfOAePKg" base_Package="_94btoDD1Ed-8rpqfOAePKg" version="NCPDPv2012NovBallot" targetNamespace="http://www.ncpdp.org/schema/datatypes" targetNamespacePrefix="datatypes" schemaLocation="datatypes.xsd"/>
   <Default:Documentation xmi:id="_RHawZDEJEd-8rpqfOAePKg" base_Comment="_RHawYTEJEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_jEyEd-8rpqfOAePKg" base_Comment="_cerm9jEyEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_cerm_zEyEd-8rpqfOAePKg" base_Comment="_cerm-jEyEd-8rpqfOAePKg"/>
-  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
-  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
+  <xsd:Schema xmi:id="_1OR58DFCEd-8rpqfOAePKg" base_Package="_pQD0cDFCEd-8rpqfOAePKg" version="NCPDPv2012NovBallot" targetNamespace="http://www.ncpdp.org/schema/specialized" targetNamespacePrefix="specialized" schemaLocation="specialized.xsd"/>
+  <xsd:Schema xmi:id="_NCQCIDLHEd-bEKc33za1yQ" id="201008" base_Package="_UNg3YDH1Ed-Q-_A4nnWLwg" version="NCPDPv2012NovBallot" targetNamespace="http://www.ncpdp.org/schema/Transport" targetNamespacePrefix="transport" schemaLocation="transport.xsd"/>
   <xsd:GlobalProperty xmi:id="_YYZBsDLMEd-bEKc33za1yQ" base_Class="_YYPQsDLMEd-bEKc33za1yQ"/>
   <xsd:GlobalElement xmi:id="_YYiL3DLMEd-bEKc33za1yQ" base_Property="_YYPRCjLMEd-bEKc33za1yQ"/>
   <Default:Documentation xmi:id="_YYiL3TLMEd-bEKc33za1yQ" base_Comment="_YYPRCzLMEd-bEKc33za1yQ"/>
@@ -22968,7 +23098,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_6DaLIVOXEd-wEdo_Dk3J9g" base_Comment="_6DaLIFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="__-zLgVOXEd-wEdo_Dk3J9g" base_Comment="__-zLgFOXEd-wEdo_Dk3J9g"/>
   <Default:Documentation xmi:id="_XBaykFOYEd-wEdo_Dk3J9g" base_Comment="_XBRBkFOYEd-wEdo_Dk3J9g"/>
-  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
+  <xsd:Schema xmi:id="_XvAsEGG0Ed-Xe4OIcNINMg" id="" base_Package="_PP3VgGG0Ed-Xe4OIcNINMg" version="NCPDPv2012NovBallot" targetNamespace="http://www.ncpdp.org/schema/SCRIPT" targetNamespacePrefix="SCRIPT" schemaLocation="script.xsd"/>
   <Default:Documentation xmi:id="_ovJZAGHEEd-Xe4OIcNINMg" base_Comment="_oustFWHEEd-Xe4OIcNINMg"/>
   <Default:Documentation xmi:id="_ovJZAWHEEd-Xe4OIcNINMg" base_Comment="_oustGWHEEd-Xe4OIcNINMg"/>
   <xsd:Group xmi:id="_RoJKrWNYEd-ODMSOo4sPFQ" base_Class="_Rn_ZtGNYEd-ODMSOo4sPFQ"/>
@@ -23934,7 +24064,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:GlobalProperty xmi:id="_Bv0UXYqaEd-pZLs28ekBmw" base_Class="_Bv0UUIqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_Bv0UXoqaEd-pZLs28ekBmw" base_Property="_Bv0UUYqaEd-pZLs28ekBmw"/>
   <xsd:GlobalElement xmi:id="_V59SYYqaEd-pZLs28ekBmw" base_Property="_V59SYIqaEd-pZLs28ekBmw"/>
-  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="NCPDPv2012AugustBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
+  <xsd:Schema xmi:id="_25J3UIqaEd-pZLs28ekBmw" base_Package="_jvDPYIqZEd-pZLs28ekBmw" version="NCPDPv2012NovBallot" targetNamespace="http://www.ncpdp.org/schema/samples" targetNamespacePrefix="samples" schemaLocation="samples.xsd"/>
   <xsd:GlobalElement xmi:id="_P3rT8YqnEd-pZLs28ekBmw" base_Property="_P3rT8IqnEd-pZLs28ekBmw"/>
   <Default:Documentation xmi:id="_0uuYkYrFEd-urZQZ08VCKQ" base_Comment="_0uuYkIrFEd-urZQZ08VCKQ"/>
   <Default:Documentation xmi:id="_7k0GoIrFEd-urZQZ08VCKQ" base_Comment="_7kqVoIrFEd-urZQZ08VCKQ"/>
@@ -24740,4 +24870,14 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Facet xmi:id="_MQct4eupEeG2l9eTYdS5ng" base_Property="_MQa4s-upEeG2l9eTYdS5ng"/>
   <Default:Documentation xmi:id="_UFxgAPC6EeG0eP4dwvcO0Q" base_Comment="_UFqLQPC6EeG0eP4dwvcO0Q"/>
   <Default:Documentation xmi:id="_ZFap0PC6EeG0eP4dwvcO0Q" base_Comment="_ZFW_cPC6EeG0eP4dwvcO0Q"/>
+  <Default:Documentation xmi:id="_OFM18C3JEeK0d9oqp0ETBA" base_Comment="_OE9lYi3JEeK0d9oqp0ETBA"/>
+  <Default:Documentation xmi:id="_OFOEEC3JEeK0d9oqp0ETBA" base_Comment="_OE9lZi3JEeK0d9oqp0ETBA"/>
+  <Default:Documentation xmi:id="_OFOrIC3JEeK0d9oqp0ETBA" base_Comment="_OE9lai3JEeK0d9oqp0ETBA"/>
+  <Default:Documentation xmi:id="_mEh_YDiqEeKWncPBc_xQCw" base_Comment="_mEaqoDiqEeKWncPBc_xQCw"/>
+  <Default:Documentation xmi:id="_36488DiqEeKWncPBc_xQCw" base_Comment="_362gsDiqEeKWncPBc_xQCw"/>
+  <Default:Documentation xmi:id="_LEgSIDirEeKWncPBc_xQCw" base_Comment="_LEbZoDirEeKWncPBc_xQCw"/>
+  <Default:Documentation xmi:id="_hxnGwDisEeKWncPBc_xQCw" base_Comment="_hxkDcTisEeKWncPBc_xQCw"/>
+  <Default:Documentation xmi:id="_hxnt0DisEeKWncPBc_xQCw" base_Comment="_hxlRkTisEeKWncPBc_xQCw"/>
+  <Default:Documentation xmi:id="_hxnt0TisEeKWncPBc_xQCw" base_Comment="_hxl4oTisEeKWncPBc_xQCw"/>
+  <xsd:Schema xmi:id="_3qBIADitEeKWncPBc_xQCw" base_Package="_3oeygDD1Ed-8rpqfOAePKg" version="NCPDPv2012NovBallot"/>
 </xmi:XMI>
