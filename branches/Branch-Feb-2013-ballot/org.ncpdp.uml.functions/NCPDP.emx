@@ -288,8 +288,8 @@ For instance, ZipCode structure and validation is not impacted if it used as par
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JAGoZH3VEeGozIODH_vY1Q" name="DoseFormCode">
-        <ownedComment xmi:id="_JAHPcH3VEeGozIODH_vY1Q">
-          <body>NCPDP Vocabulary Constraint supporting Code and Qualifier with Required Text.   If code not available from source, must use Code = 10003008, Text of “Unspecified” and Dose Clarifying Free Text. See section “Use of Clarifying Free Text Elements”. See imp guide for more information.</body>
+        <ownedComment xmi:id="_JAHPcH3VEeGozIODH_vY1Q" annotatedElement="_JAGoZH3VEeGozIODH_vY1Q">
+          <body>NCPDP Vocabulary Constraint supporting Code and Qualifier with Required Text.  If code not available from source, must use Code = C38046, Text of “Unspecified” and appropriate Clarifying Free Text. See section “Use of Clarifying Free Text Elements”. See imp guide for more information.</body>
         </ownedComment>
         <ownedAttribute xmi:id="_JAJrsX3VEeGozIODH_vY1Q" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAKSwH3VEeGozIODH_vY1Q" value="1"/>
@@ -307,8 +307,8 @@ For instance, ZipCode structure and validation is not impacted if it used as par
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JAC-An3VEeGozIODH_vY1Q" name="SigCode">
-        <ownedComment xmi:id="_JAC-A33VEeGozIODH_vY1Q">
-          <body>NCPDP Vocabulary Constraint supporting Code and Qualifier with Required Text.  If code not available from source, must use Code = C38046, Text of “Unspecified” and appropriate Clarifying Free Text. See section “Use of Clarifying Free Text Elements”. See imp guide for more information.</body>
+        <ownedComment xmi:id="_JAC-A33VEeGozIODH_vY1Q" annotatedElement="_JAC-An3VEeGozIODH_vY1Q">
+          <body>NCPDP Vocabulary Constraint supporting Code and Qualifier with Required Text.   If code not available from source, must use Code = 10003008, Text of “Unspecified” and Dose Clarifying Free Text. See section “Use of Clarifying Free Text Elements”. See imp guide for more information.</body>
         </ownedComment>
         <ownedAttribute xmi:id="_JAFaQX3VEeGozIODH_vY1Q" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAGBUH3VEeGozIODH_vY1Q" value="1"/>
@@ -4490,107 +4490,101 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JBbeEH3VEeGozIODH_vY1Q" name="DoseAdministration">
-        <ownedAttribute xmi:id="_JCJ22H3VEeGozIODH_vY1Q" name="_sequence1" type="_JBbeEX3VEeGozIODH_vY1Q" aggregation="composite" association="_JCKd4X3VEeGozIODH_vY1Q">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCJ22X3VEeGozIODH_vY1Q" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCKd4H3VEeGozIODH_vY1Q" value="1"/>
+        <ownedComment xmi:id="_f_OKkFtzEeK0c6zoEYO6GA" annotatedElement="_JBbeEH3VEeGozIODH_vY1Q">
+          <body>Specified - remaining fields populated. When DoseAdministration is present, it SHALL contain One Delivery Method, One Dose, One Form, and One Route. As appropriate, elements may repeat for multiple instructions or ranges etc.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_cfmMkFt0EeK3QuZ2Sf5-Qw" name="_sequence1" type="_cfpP4Ft0EeK3QuZ2Sf5-Qw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfmMkVt0EeK3QuZ2Sf5-Qw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfmMklt0EeK3QuZ2Sf5-Qw" value="1"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_JBbeEX3VEeGozIODH_vY1Q" name="_Sequence1" visibility="private">
-          <ownedComment xmi:id="_JBbeEn3VEeGozIODH_vY1Q">
-            <body>Specified - remaining fields populated. When DoseAdministration is present, it SHALL contain One Delivery Method, One Dose, One Form, and One Route. As appropriate, elements may repeat for multiple instructions or ranges etc.</body>
+        <ownedAttribute xmi:id="_cfmzoFt0EeK3QuZ2Sf5-Qw" name="_choice1" type="_cfpP6Vt0EeK3QuZ2Sf5-Qw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfmzoVt0EeK3QuZ2Sf5-Qw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfmzolt0EeK3QuZ2Sf5-Qw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_cfnasFt0EeK3QuZ2Sf5-Qw" name="DoseForm" type="_JAGoZH3VEeGozIODH_vY1Q" aggregation="composite">
+          <ownedComment xmi:id="_cfnasVt0EeK3QuZ2Sf5-Qw">
+            <body>DoseForm uses value FMTDOSEFORM Term from NCI for Dose Form Code. Examples such as tablet, suspension, drop, cream, ointment, capsule,</body>
           </ownedComment>
-          <ownedAttribute xmi:id="_JBkoA33VEeGozIODH_vY1Q" name="_sequence1" type="_JBd6Un3VEeGozIODH_vY1Q" aggregation="composite" association="_JBlPEH3VEeGozIODH_vY1Q">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JBkoBH3VEeGozIODH_vY1Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JBkoBX3VEeGozIODH_vY1Q" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_JB-3uH3VEeGozIODH_vY1Q" name="_choice1" type="_JBlPEn3VEeGozIODH_vY1Q" aggregation="composite" association="_JB_ewn3VEeGozIODH_vY1Q">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JB_ewH3VEeGozIODH_vY1Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JB_ewX3VEeGozIODH_vY1Q" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_JB_exH3VEeGozIODH_vY1Q" name="DoseForm" type="_JAGoZH3VEeGozIODH_vY1Q" aggregation="composite" association="_JCBT8n3VEeGozIODH_vY1Q">
-            <ownedComment xmi:id="_JB_exX3VEeGozIODH_vY1Q">
-              <body>DoseForm uses value FMTDOSEFORM Term from NCI for Dose Form Code. Examples such as tablet, suspension, drop, cream, ointment, capsule,</body>
-            </ownedComment>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCBT8H3VEeGozIODH_vY1Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCBT8X3VEeGozIODH_vY1Q" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_JCBT9H3VEeGozIODH_vY1Q" name="Vehicle" type="_JCDJIX3VEeGozIODH_vY1Q" aggregation="composite" association="_JCIBoX3VEeGozIODH_vY1Q">
-            <ownedComment xmi:id="_JCBT9X3VEeGozIODH_vY1Q">
-              <body>If the vehicle has a product or ingredient code, the appropriate product code element is used.
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfnaslt0EeK3QuZ2Sf5-Qw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfnas1t0EeK3QuZ2Sf5-Qw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_cfnatFt0EeK3QuZ2Sf5-Qw" name="Vehicle" type="_JCDJIX3VEeGozIODH_vY1Q" aggregation="composite">
+          <ownedComment xmi:id="_cfnatVt0EeK3QuZ2Sf5-Qw">
+            <body>If the vehicle has a product or ingredient code, the appropriate product code element is used.
 
 The DoseDeliveryMethodModifier provides information as to how the medication is to be delivered via the vehicle, i.e. mixed in, sprinkled on, etc.</body>
-            </ownedComment>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCHamH3VEeGozIODH_vY1Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCIBoH3VEeGozIODH_vY1Q"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_JCIBo33VEeGozIODH_vY1Q" name="RouteOfAdministration" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite" association="_JCIBpn3VEeGozIODH_vY1Q">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCIBpH3VEeGozIODH_vY1Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCIBpX3VEeGozIODH_vY1Q" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_JCIosH3VEeGozIODH_vY1Q" name="RouteOfAdministrationClarifyingFreeText" type="_4iTWezD1Ed-8rpqfOAePKg">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCIosX3VEeGozIODH_vY1Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCIosn3VEeGozIODH_vY1Q"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_JCJ2033VEeGozIODH_vY1Q" name="_sequence2" type="_JCIos33VEeGozIODH_vY1Q" aggregation="composite" association="_JCJ21n3VEeGozIODH_vY1Q">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCJ21H3VEeGozIODH_vY1Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCJ21X3VEeGozIODH_vY1Q"/>
-          </ownedAttribute>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_JBd6Un3VEeGozIODH_vY1Q" name="_Sequence1" visibility="private">
-            <ownedAttribute xmi:id="_JBehYX3VEeGozIODH_vY1Q" name="DoseDeliveryMethod" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite" association="_JBhksH3VEeGozIODH_vY1Q">
-              <ownedComment xmi:id="_JBehYn3VEeGozIODH_vY1Q">
-                <body>Examples: 
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfnatlt0EeK3QuZ2Sf5-Qw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfnat1t0EeK3QuZ2Sf5-Qw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_cfoBwFt0EeK3QuZ2Sf5-Qw" name="RouteOfAdministration" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfoBwVt0EeK3QuZ2Sf5-Qw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfoBwlt0EeK3QuZ2Sf5-Qw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_cfoBw1t0EeK3QuZ2Sf5-Qw" name="RouteOfAdministrationClarifyingFreeText" type="_4iTWezD1Ed-8rpqfOAePKg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfoBxFt0EeK3QuZ2Sf5-Qw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfoBxVt0EeK3QuZ2Sf5-Qw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_cfoo0Ft0EeK3QuZ2Sf5-Qw" name="_sequence2" type="_cfqeAFt0EeK3QuZ2Sf5-Qw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfoo0Vt0EeK3QuZ2Sf5-Qw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfoo0lt0EeK3QuZ2Sf5-Qw"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cfpP4Ft0EeK3QuZ2Sf5-Qw" name="_Sequence1" visibility="private">
+          <ownedAttribute xmi:id="_cfpP4Vt0EeK3QuZ2Sf5-Qw" name="DoseDeliveryMethod" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite" association="_cfthUFt0EeK3QuZ2Sf5-Qw">
+            <ownedComment xmi:id="_cfpP4lt0EeK3QuZ2Sf5-Qw">
+              <body>Examples: 
 take, apply, swish, swallow, inject, insert, chew, use, give, sprinkle, mix, dissolve…</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfpP41t0EeK3QuZ2Sf5-Qw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfpP5Ft0EeK3QuZ2Sf5-Qw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cfpP5Vt0EeK3QuZ2Sf5-Qw" name="DoseDeliveryMethodModifier" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite" association="_cfv9kFt0EeK3QuZ2Sf5-Qw">
+            <ownedComment xmi:id="_cfpP5lt0EeK3QuZ2Sf5-Qw">
+              <body>Supports the use of modifiers such as sparingly, frequently, repeatedly, gently, lightly.	 When needed to construct with Vehicle, examples include: with, in, on. The Dose Delivery Method Modifier provides information as to how the medication is to be delivered via the vehicle, i.e. mixed in, sprinkled on, etc.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfpP51t0EeK3QuZ2Sf5-Qw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfpP6Ft0EeK3QuZ2Sf5-Qw"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cfpP6Vt0EeK3QuZ2Sf5-Qw" name="_Choice1" visibility="private">
+          <ownedAttribute xmi:id="_cfpP6lt0EeK3QuZ2Sf5-Qw" name="Dosage" type="_JBl2In3VEeGozIODH_vY1Q" aggregation="composite" association="_cfxywFt0EeK3QuZ2Sf5-Qw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfpP61t0EeK3QuZ2Sf5-Qw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfpP7Ft0EeK3QuZ2Sf5-Qw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cfpP7Vt0EeK3QuZ2Sf5-Qw" name="DoseCalculation" type="_JBtK4X3VEeGozIODH_vY1Q" aggregation="composite" association="_cfzn8Ft0EeK3QuZ2Sf5-Qw">
+            <ownedComment xmi:id="_cfpP7lt0EeK3QuZ2Sf5-Qw">
+              <body>This field may often be used in conjunction with the Rate fields within the Timing Segment and/or the Vehicle Segment. Primary use will be in non-retail settings, i.e. hospital, acute care, long term care, home care.  An example using a dose calculation: Cyclophosphamide:  600mg/meter squared in 250ml Normal Saline over 1-2 hours.  Repeat every 2 weeks.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfpP71t0EeK3QuZ2Sf5-Qw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfpP8Ft0EeK3QuZ2Sf5-Qw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cfpP8Vt0EeK3QuZ2Sf5-Qw" name="_sequence1" type="_cfpP9Ft0EeK3QuZ2Sf5-Qw" aggregation="composite" association="_cfxLsFt0EeK3QuZ2Sf5-Qw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfpP8lt0EeK3QuZ2Sf5-Qw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfpP81t0EeK3QuZ2Sf5-Qw" value="1"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cfpP9Ft0EeK3QuZ2Sf5-Qw" name="_Sequence1" visibility="private">
+            <ownedAttribute xmi:id="_cfpP9Vt0EeK3QuZ2Sf5-Qw" name="DoseAmount" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite" association="_cfzA4Ft0EeK3QuZ2Sf5-Qw">
+              <ownedComment xmi:id="_cfpP9lt0EeK3QuZ2Sf5-Qw">
+                <body>Examples such as thin ribbon, pea sized amount, enough to cover, enough to fill, liberal amount, small amount</body>
               </ownedComment>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JBg9oX3VEeGozIODH_vY1Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JBg9on3VEeGozIODH_vY1Q" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfpP91t0EeK3QuZ2Sf5-Qw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfpP-Ft0EeK3QuZ2Sf5-Qw" value="1"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_JBhksn3VEeGozIODH_vY1Q" name="DoseDeliveryMethodModifier" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite" association="_JBkoAX3VEeGozIODH_vY1Q">
-              <ownedComment xmi:id="_JBhks33VEeGozIODH_vY1Q">
-                <body>Supports the use of modifiers such as sparingly, frequently, repeatedly, gently, lightly.	 When needed to construct with Vehicle, examples include: with, in, on. The Dose Delivery Method Modifier provides information as to how the medication is to be delivered via the vehicle, i.e. mixed in, sprinkled on, etc.</body>
-              </ownedComment>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JBkA8X3VEeGozIODH_vY1Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JBkoAH3VEeGozIODH_vY1Q"/>
+            <ownedAttribute xmi:id="_cfpP-Vt0EeK3QuZ2Sf5-Qw" name="DoseClarifyingFreeText" type="_4iTWezD1Ed-8rpqfOAePKg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfpP-lt0EeK3QuZ2Sf5-Qw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfpP-1t0EeK3QuZ2Sf5-Qw"/>
             </ownedAttribute>
           </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_JBlPEn3VEeGozIODH_vY1Q" name="_Choice1" visibility="private">
-            <ownedAttribute xmi:id="_JBl2IX3VEeGozIODH_vY1Q" name="Dosage" type="_JBl2In3VEeGozIODH_vY1Q" aggregation="composite" association="_JBrVsH3VEeGozIODH_vY1Q">
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JBquon3VEeGozIODH_vY1Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JBquo33VEeGozIODH_vY1Q" value="1"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_JBrVsn3VEeGozIODH_vY1Q" name="DoseCalculation" type="_JBtK4X3VEeGozIODH_vY1Q" aggregation="composite" association="_JB7NVX3VEeGozIODH_vY1Q">
-              <ownedComment xmi:id="_JBrVs33VEeGozIODH_vY1Q">
-                <body>This field may often be used in conjunction with the Rate fields within the Timing Segment and/or the Vehicle Segment. Primary use will be in non-retail settings, i.e. hospital, acute care, long term care, home care.  An example using a dose calculation: Cyclophosphamide:  600mg/meter squared in 250ml Normal Saline over 1-2 hours.  Repeat every 2 weeks.</body>
-              </ownedComment>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JB7NU33VEeGozIODH_vY1Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JB7NVH3VEeGozIODH_vY1Q" value="1"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_JB-3s33VEeGozIODH_vY1Q" name="_sequence1" type="_JB70YH3VEeGozIODH_vY1Q" aggregation="composite" association="_JB-3tn3VEeGozIODH_vY1Q">
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JB-3tH3VEeGozIODH_vY1Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JB-3tX3VEeGozIODH_vY1Q" value="1"/>
-            </ownedAttribute>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_JB70YH3VEeGozIODH_vY1Q" name="_Sequence1" visibility="private">
-              <ownedAttribute xmi:id="_JB8bcX3VEeGozIODH_vY1Q" name="DoseAmount" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite" association="_JB-Qo33VEeGozIODH_vY1Q">
-                <ownedComment xmi:id="_JB8bcn3VEeGozIODH_vY1Q">
-                  <body>Examples such as thin ribbon, pea sized amount, enough to cover, enough to fill, liberal amount, small amount</body>
-                </ownedComment>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JB-QoX3VEeGozIODH_vY1Q" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JB-Qon3VEeGozIODH_vY1Q" value="1"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_JB-3sH3VEeGozIODH_vY1Q" name="DoseClarifyingFreeText" type="_4iTWezD1Ed-8rpqfOAePKg">
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JB-3sX3VEeGozIODH_vY1Q" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JB-3sn3VEeGozIODH_vY1Q"/>
-              </ownedAttribute>
-            </nestedClassifier>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_JCIos33VEeGozIODH_vY1Q" name="_Sequence2" visibility="private">
-            <ownedAttribute xmi:id="_JCJPwX3VEeGozIODH_vY1Q" name="SiteOfAdministration" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite" association="_JCJPxH3VEeGozIODH_vY1Q">
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCJPwn3VEeGozIODH_vY1Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCJPw33VEeGozIODH_vY1Q" value="1"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_JCJ20H3VEeGozIODH_vY1Q" name="SiteOfAdministrationClarifyingFreeText" type="_4iTWezD1Ed-8rpqfOAePKg">
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCJ20X3VEeGozIODH_vY1Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCJ20n3VEeGozIODH_vY1Q"/>
-            </ownedAttribute>
-          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cfqeAFt0EeK3QuZ2Sf5-Qw" name="_Sequence2" visibility="private">
+          <ownedAttribute xmi:id="_cfqeAVt0EeK3QuZ2Sf5-Qw" name="SiteOfAdministration" type="_JAC-An3VEeGozIODH_vY1Q" aggregation="composite" association="_cf02EFt0EeK3QuZ2Sf5-Qw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfqeAlt0EeK3QuZ2Sf5-Qw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfqeA1t0EeK3QuZ2Sf5-Qw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cfqeBFt0EeK3QuZ2Sf5-Qw" name="SiteOfAdministrationClarifyingFreeText" type="_4iTWezD1Ed-8rpqfOAePKg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfqeBVt0EeK3QuZ2Sf5-Qw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfqeBlt0EeK3QuZ2Sf5-Qw"/>
+          </ownedAttribute>
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JBtK4X3VEeGozIODH_vY1Q" name="DoseCalculation">
@@ -4990,8 +4984,8 @@ If the structured Sig exists, the SigText must be generated directly from Struct
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DzMOQoMdEeGGcdSHDmxT9w" value="1"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_DzNcYIMdEeGGcdSHDmxT9w" name="FMTVersion" type="_4CkGdzD1Ed-8rpqfOAePKg">
-              <ownedComment xmi:id="_DzNcYYMdEeGGcdSHDmxT9w">
-                <body>If using structured Sig but no needing to send any of the elements that use dose form, send a valid FMT version using by the application for other sigs.</body>
+              <ownedComment xmi:id="_DzNcYYMdEeGGcdSHDmxT9w" annotatedElement="_DzNcYIMdEeGGcdSHDmxT9w">
+                <body>&lt;p>If using structured Sig but not needing to send any of the elements that use dose form, send a valid FMT version using by the application for other sigs.&lt;/p></body>
               </ownedComment>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DzNcYoMdEeGGcdSHDmxT9w" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DzNcY4MdEeGGcdSHDmxT9w" value="1"/>
@@ -11209,48 +11203,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
       <packagedElement xmi:type="uml:Association" xmi:id="_JB2U0H3VEeGozIODH_vY1Q" memberEnd="_JB2U0X3VEeGozIODH_vY1Q _JB1txn3VEeGozIODH_vY1Q">
         <ownedEnd xmi:id="_JB2U0X3VEeGozIODH_vY1Q" type="_JBtK4X3VEeGozIODH_vY1Q" association="_JB2U0H3VEeGozIODH_vY1Q"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JB_ewn3VEeGozIODH_vY1Q" memberEnd="_JB_ew33VEeGozIODH_vY1Q _JB-3uH3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JB_ew33VEeGozIODH_vY1Q" type="_JBbeEX3VEeGozIODH_vY1Q" association="_JB_ewn3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JB-3tn3VEeGozIODH_vY1Q" memberEnd="_JB-3t33VEeGozIODH_vY1Q _JB-3s33VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JB-3t33VEeGozIODH_vY1Q" type="_JBlPEn3VEeGozIODH_vY1Q" association="_JB-3tn3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JBhksH3VEeGozIODH_vY1Q" memberEnd="_JBhksX3VEeGozIODH_vY1Q _JBehYX3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JBhksX3VEeGozIODH_vY1Q" type="_JBd6Un3VEeGozIODH_vY1Q" association="_JBhksH3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JCBT8n3VEeGozIODH_vY1Q" memberEnd="_JCBT833VEeGozIODH_vY1Q _JB_exH3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JCBT833VEeGozIODH_vY1Q" type="_JBbeEX3VEeGozIODH_vY1Q" association="_JCBT8n3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JCIBpn3VEeGozIODH_vY1Q" memberEnd="_JCIBp33VEeGozIODH_vY1Q _JCIBo33VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JCIBp33VEeGozIODH_vY1Q" type="_JBbeEX3VEeGozIODH_vY1Q" association="_JCIBpn3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JBrVsH3VEeGozIODH_vY1Q" memberEnd="_JBrVsX3VEeGozIODH_vY1Q _JBl2IX3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JBrVsX3VEeGozIODH_vY1Q" type="_JBlPEn3VEeGozIODH_vY1Q" association="_JBrVsH3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JB-Qo33VEeGozIODH_vY1Q" memberEnd="_JB-QpH3VEeGozIODH_vY1Q _JB8bcX3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JB-QpH3VEeGozIODH_vY1Q" type="_JB70YH3VEeGozIODH_vY1Q" association="_JB-Qo33VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JCJ21n3VEeGozIODH_vY1Q" memberEnd="_JCJ2133VEeGozIODH_vY1Q _JCJ2033VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JCJ2133VEeGozIODH_vY1Q" type="_JBbeEX3VEeGozIODH_vY1Q" association="_JCJ21n3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JCKd4X3VEeGozIODH_vY1Q" memberEnd="_JCKd4n3VEeGozIODH_vY1Q _JCJ22H3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JCKd4n3VEeGozIODH_vY1Q" type="_JBbeEH3VEeGozIODH_vY1Q" association="_JCKd4X3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JBkoAX3VEeGozIODH_vY1Q" memberEnd="_JBkoAn3VEeGozIODH_vY1Q _JBhksn3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JBkoAn3VEeGozIODH_vY1Q" type="_JBd6Un3VEeGozIODH_vY1Q" association="_JBkoAX3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JCIBoX3VEeGozIODH_vY1Q" memberEnd="_JCIBon3VEeGozIODH_vY1Q _JCBT9H3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JCIBon3VEeGozIODH_vY1Q" type="_JBbeEX3VEeGozIODH_vY1Q" association="_JCIBoX3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JCJPxH3VEeGozIODH_vY1Q" memberEnd="_JCJPxX3VEeGozIODH_vY1Q _JCJPwX3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JCJPxX3VEeGozIODH_vY1Q" type="_JCIos33VEeGozIODH_vY1Q" association="_JCJPxH3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JB7NVX3VEeGozIODH_vY1Q" memberEnd="_JB7NVn3VEeGozIODH_vY1Q _JBrVsn3VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JB7NVn3VEeGozIODH_vY1Q" type="_JBlPEn3VEeGozIODH_vY1Q" association="_JB7NVX3VEeGozIODH_vY1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JBlPEH3VEeGozIODH_vY1Q" memberEnd="_JBlPEX3VEeGozIODH_vY1Q _JBkoA33VEeGozIODH_vY1Q">
-        <ownedEnd xmi:id="_JBlPEX3VEeGozIODH_vY1Q" type="_JBbeEX3VEeGozIODH_vY1Q" association="_JBlPEH3VEeGozIODH_vY1Q"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_JBquoH3VEeGozIODH_vY1Q" memberEnd="_JBquoX3VEeGozIODH_vY1Q _JBqHk33VEeGozIODH_vY1Q">
         <ownedEnd xmi:id="_JBquoX3VEeGozIODH_vY1Q" type="_JBl2In3VEeGozIODH_vY1Q" association="_JBquoH3VEeGozIODH_vY1Q"/>
       </packagedElement>
@@ -11283,6 +11235,15 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3NHVcNp6EeGSupcTtyViRw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3NGuYNp6EeGSupcTtyViRw" value="1"/>
         </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cfxLsFt0EeK3QuZ2Sf5-Qw" memberEnd="_cfxLsVt0EeK3QuZ2Sf5-Qw _cfpP8Vt0EeK3QuZ2Sf5-Qw">
+        <ownedEnd xmi:id="_cfxLsVt0EeK3QuZ2Sf5-Qw" type="_cfpP6Vt0EeK3QuZ2Sf5-Qw" association="_cfxLsFt0EeK3QuZ2Sf5-Qw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cfxywFt0EeK3QuZ2Sf5-Qw" memberEnd="_cfxywVt0EeK3QuZ2Sf5-Qw _cfpP6lt0EeK3QuZ2Sf5-Qw">
+        <ownedEnd xmi:id="_cfxywVt0EeK3QuZ2Sf5-Qw" type="_cfpP6Vt0EeK3QuZ2Sf5-Qw" association="_cfxywFt0EeK3QuZ2Sf5-Qw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cfzn8Ft0EeK3QuZ2Sf5-Qw" memberEnd="_cfzn8Vt0EeK3QuZ2Sf5-Qw _cfpP7Vt0EeK3QuZ2Sf5-Qw">
+        <ownedEnd xmi:id="_cfzn8Vt0EeK3QuZ2Sf5-Qw" type="_cfpP6Vt0EeK3QuZ2Sf5-Qw" association="_cfzn8Ft0EeK3QuZ2Sf5-Qw"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_pQD0cDFCEd-8rpqfOAePKg" name="specialized">
@@ -22845,6 +22806,18 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__HtUM0poEeCvCLsSrrA8LQ" value="1"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cfthUFt0EeK3QuZ2Sf5-Qw" memberEnd="_cfthUVt0EeK3QuZ2Sf5-Qw _cfpP4Vt0EeK3QuZ2Sf5-Qw">
+      <ownedEnd xmi:id="_cfthUVt0EeK3QuZ2Sf5-Qw" type="_cfpP4Ft0EeK3QuZ2Sf5-Qw" association="_cfthUFt0EeK3QuZ2Sf5-Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cfv9kFt0EeK3QuZ2Sf5-Qw" memberEnd="_cfv9kVt0EeK3QuZ2Sf5-Qw _cfpP5Vt0EeK3QuZ2Sf5-Qw">
+      <ownedEnd xmi:id="_cfv9kVt0EeK3QuZ2Sf5-Qw" type="_cfpP4Ft0EeK3QuZ2Sf5-Qw" association="_cfv9kFt0EeK3QuZ2Sf5-Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cfzA4Ft0EeK3QuZ2Sf5-Qw" memberEnd="_cfzA4Vt0EeK3QuZ2Sf5-Qw _cfpP9Vt0EeK3QuZ2Sf5-Qw">
+      <ownedEnd xmi:id="_cfzA4Vt0EeK3QuZ2Sf5-Qw" type="_cfpP9Ft0EeK3QuZ2Sf5-Qw" association="_cfzA4Ft0EeK3QuZ2Sf5-Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cf02EFt0EeK3QuZ2Sf5-Qw" memberEnd="_cf02EVt0EeK3QuZ2Sf5-Qw _cfqeAVt0EeK3QuZ2Sf5-Qw">
+      <ownedEnd xmi:id="_cf02EVt0EeK3QuZ2Sf5-Qw" type="_cfqeAFt0EeK3QuZ2Sf5-Qw" association="_cf02EFt0EeK3QuZ2Sf5-Qw"/>
+    </packagedElement>
     <profileApplication xmi:id="_3yBJADD1Ed-8rpqfOAePKg">
       <eAnnotations xmi:id="_3yBJATD1Ed-8rpqfOAePKg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg"/>
@@ -24753,19 +24726,9 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_JBaP8H3VEeGozIODH_vY1Q" base_Comment="_JBYawn3VEeGozIODH_vY1Q"/>
   <xsd:Group xmi:id="_JBa3AH3VEeGozIODH_vY1Q" base_Class="_JBaP833VEeGozIODH_vY1Q"/>
   <xsd:Sequence xmi:id="_JBa3AX3VEeGozIODH_vY1Q" base_Class="_JBaP833VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JBdTQH3VEeGozIODH_vY1Q" base_Comment="_JBbeEn3VEeGozIODH_vY1Q"/>
-  <xsd:Group xmi:id="_JBd6UH3VEeGozIODH_vY1Q" base_Class="_JBbeEX3VEeGozIODH_vY1Q"/>
-  <xsd:Sequence xmi:id="_JBd6UX3VEeGozIODH_vY1Q" base_Class="_JBbeEX3VEeGozIODH_vY1Q"/>
-  <xsd:Group xmi:id="_JBd6U33VEeGozIODH_vY1Q" base_Class="_JBd6Un3VEeGozIODH_vY1Q"/>
-  <xsd:Sequence xmi:id="_JBehYH3VEeGozIODH_vY1Q" base_Class="_JBd6Un3VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JBg9oH3VEeGozIODH_vY1Q" base_Comment="_JBehYn3VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JBkA8H3VEeGozIODH_vY1Q" base_Comment="_JBhks33VEeGozIODH_vY1Q"/>
-  <xsd:Group xmi:id="_JBlPE33VEeGozIODH_vY1Q" base_Class="_JBlPEn3VEeGozIODH_vY1Q"/>
-  <xsd:Choice xmi:id="_JBl2IH3VEeGozIODH_vY1Q" base_Class="_JBlPEn3VEeGozIODH_vY1Q"/>
   <xsd:Group xmi:id="_JBnEQH3VEeGozIODH_vY1Q" base_Class="_JBmdMH3VEeGozIODH_vY1Q"/>
   <xsd:Sequence xmi:id="_JBnEQX3VEeGozIODH_vY1Q" base_Class="_JBmdMH3VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JBpggH3VEeGozIODH_vY1Q" base_Comment="_JBnrUH3VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JBtK4H3VEeGozIODH_vY1Q" base_Comment="_JBrVs33VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JBuZAH3VEeGozIODH_vY1Q" base_Comment="_JBtK4n3VEeGozIODH_vY1Q"/>
   <xsd:Group xmi:id="_JBvAE33VEeGozIODH_vY1Q" base_Class="_JBvAEn3VEeGozIODH_vY1Q"/>
   <xsd:Sequence xmi:id="_JBvnIH3VEeGozIODH_vY1Q" base_Class="_JBvAEn3VEeGozIODH_vY1Q"/>
@@ -24777,17 +24740,9 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <xsd:Sequence xmi:id="_JB2U1H3VEeGozIODH_vY1Q" base_Class="_JB2U0n3VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JB4KAH3VEeGozIODH_vY1Q" base_Comment="_JB274X3VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JB5_MH3VEeGozIODH_vY1Q" base_Comment="_JB4xEH3VEeGozIODH_vY1Q"/>
-  <xsd:Group xmi:id="_JB70YX3VEeGozIODH_vY1Q" base_Class="_JB70YH3VEeGozIODH_vY1Q"/>
-  <xsd:Sequence xmi:id="_JB8bcH3VEeGozIODH_vY1Q" base_Class="_JB70YH3VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JB-QoH3VEeGozIODH_vY1Q" base_Comment="_JB8bcn3VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JCAs4H3VEeGozIODH_vY1Q" base_Comment="_JB_exX3VEeGozIODH_vY1Q"/>
-  <Default:Documentation xmi:id="_JCDJIH3VEeGozIODH_vY1Q" base_Comment="_JCBT9X3VEeGozIODH_vY1Q"/>
   <xsd:Group xmi:id="_JCDwNH3VEeGozIODH_vY1Q" base_Class="_JCDwM33VEeGozIODH_vY1Q"/>
   <xsd:Sequence xmi:id="_JCEXQH3VEeGozIODH_vY1Q" base_Class="_JCDwM33VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JCGzgH3VEeGozIODH_vY1Q" base_Comment="_JCE-VH3VEeGozIODH_vY1Q"/>
-  <xsd:Group xmi:id="_JCIotH3VEeGozIODH_vY1Q" base_Class="_JCIos33VEeGozIODH_vY1Q"/>
-  <xsd:Sequence xmi:id="_JCJPwH3VEeGozIODH_vY1Q" base_Class="_JCIos33VEeGozIODH_vY1Q"/>
-  <xsd:Choice xmi:id="_JCKd433VEeGozIODH_vY1Q" base_Class="_JBbeEH3VEeGozIODH_vY1Q"/>
   <Default:Documentation xmi:id="_JCMTEH3VEeGozIODH_vY1Q" base_Comment="_JCLE8n3VEeGozIODH_vY1Q"/>
   <xsd:Group xmi:id="_JCM6I33VEeGozIODH_vY1Q" base_Class="_JCM6In3VEeGozIODH_vY1Q"/>
   <xsd:Sequence xmi:id="_JCNhMH3VEeGozIODH_vY1Q" base_Class="_JCM6In3VEeGozIODH_vY1Q"/>
@@ -24880,4 +24835,19 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_hxnt0DisEeKWncPBc_xQCw" base_Comment="_hxlRkTisEeKWncPBc_xQCw"/>
   <Default:Documentation xmi:id="_hxnt0TisEeKWncPBc_xQCw" base_Comment="_hxl4oTisEeKWncPBc_xQCw"/>
   <xsd:Schema xmi:id="_3qBIADitEeKWncPBc_xQCw" base_Package="_3oeygDD1Ed-8rpqfOAePKg" version="NCPDPv2012NovBallot"/>
+  <Default:Documentation xmi:id="_f_TDEFtzEeK0c6zoEYO6GA" base_Comment="_f_OKkFtzEeK0c6zoEYO6GA"/>
+  <Default:Documentation xmi:id="_cf02Elt0EeK3QuZ2Sf5-Qw" base_Comment="_cfnasVt0EeK3QuZ2Sf5-Qw"/>
+  <Default:Documentation xmi:id="_cf02E1t0EeK3QuZ2Sf5-Qw" base_Comment="_cfnatVt0EeK3QuZ2Sf5-Qw"/>
+  <xsd:Group xmi:id="_cf1dIFt0EeK3QuZ2Sf5-Qw" base_Class="_cfpP4Ft0EeK3QuZ2Sf5-Qw"/>
+  <xsd:Sequence xmi:id="_cf1dIVt0EeK3QuZ2Sf5-Qw" base_Class="_cfpP4Ft0EeK3QuZ2Sf5-Qw"/>
+  <Default:Documentation xmi:id="_cf1dIlt0EeK3QuZ2Sf5-Qw" base_Comment="_cfpP4lt0EeK3QuZ2Sf5-Qw"/>
+  <Default:Documentation xmi:id="_cf1dI1t0EeK3QuZ2Sf5-Qw" base_Comment="_cfpP5lt0EeK3QuZ2Sf5-Qw"/>
+  <xsd:Group xmi:id="_cf1dJFt0EeK3QuZ2Sf5-Qw" base_Class="_cfpP6Vt0EeK3QuZ2Sf5-Qw"/>
+  <xsd:Choice xmi:id="_cf1dJVt0EeK3QuZ2Sf5-Qw" base_Class="_cfpP6Vt0EeK3QuZ2Sf5-Qw"/>
+  <Default:Documentation xmi:id="_cf1dJlt0EeK3QuZ2Sf5-Qw" base_Comment="_cfpP7lt0EeK3QuZ2Sf5-Qw"/>
+  <xsd:Group xmi:id="_cf1dJ1t0EeK3QuZ2Sf5-Qw" base_Class="_cfpP9Ft0EeK3QuZ2Sf5-Qw"/>
+  <xsd:Sequence xmi:id="_cf1dKFt0EeK3QuZ2Sf5-Qw" base_Class="_cfpP9Ft0EeK3QuZ2Sf5-Qw"/>
+  <Default:Documentation xmi:id="_cf1dKVt0EeK3QuZ2Sf5-Qw" base_Comment="_cfpP9lt0EeK3QuZ2Sf5-Qw"/>
+  <xsd:Group xmi:id="_cf1dKlt0EeK3QuZ2Sf5-Qw" base_Class="_cfqeAFt0EeK3QuZ2Sf5-Qw"/>
+  <xsd:Sequence xmi:id="_cf1dK1t0EeK3QuZ2Sf5-Qw" base_Class="_cfqeAFt0EeK3QuZ2Sf5-Qw"/>
 </xmi:XMI>
