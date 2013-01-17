@@ -1,11 +1,11 @@
- Schema Name		Schema Version #	Changed since 2012MayBallot
+ Schema Name		Schema Version #	Changed since v2013011
 
- datatypes.xsd		2012AugustBallot		Yes
- ecl.xsd		2012AugustBallot		No 
- script.xsd		2012AugustBallot		No
- specialized.xsd	2012AugustBallot		Yes
- structures.xsd		2012AugustBallot		Yes	
- transport.xsd		2012AugustBallot		No
+ datatypes.xsd		v2013012			Yes
+ ecl.xsd		v2013012			No 
+ script.xsd		v2013012			No
+ specialized.xsd	v2013012			Yes
+ structures.xsd		v2013012			Yes	
+ transport.xsd		v2013012			No
 
 Examples
 
@@ -14,4 +14,4 @@ Examples
  sig2txt.xslt - An XML Transformation tool used to aid the transformation of SIG structure (in a NewRX XML message)
 		into formatted text which can then be used to verify against the SigText content. This xslt was tested using XMLSpy v.2012 rel.2
 
- Disclaimer: This sig2txt.xslt only works with SIG Structure comformant to 2012MayBallot NCPDP Schema version.
+ Disclaimer: This sig2txt.xslt only works with SIG Structure comformant to v2013011 NCPDP Schema version.
