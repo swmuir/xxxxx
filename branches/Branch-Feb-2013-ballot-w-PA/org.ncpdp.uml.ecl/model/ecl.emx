@@ -18026,6 +18026,300 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
           </ownedComment>
         </ownedLiteral>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJCtQGArEeK8wb8ioyxjpQ" name="AdditionalFreeTextIndicatorTypeCode">
+        <ownedLiteral xmi:id="_HJCtQWArEeK8wb8ioyxjpQ" name="M" classifier="_HJCtQGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJCtQmArEeK8wb8ioyxjpQ" annotatedElement="_HJCtQWArEeK8wb8ioyxjpQ">
+            <body>Not Urgent</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJCtQ2ArEeK8wb8ioyxjpQ" name="O" classifier="_HJCtQGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJCtRGArEeK8wb8ioyxjpQ" annotatedElement="_HJCtQ2ArEeK8wb8ioyxjpQ">
+            <body>Urgent</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJCtRWArEeK8wb8ioyxjpQ" name="NA" classifier="_HJCtQGArEeK8wb8ioyxjpQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJIM0GArEeK8wb8ioyxjpQ" name="ComparisonOperatorCode">
+        <generalization xmi:id="_HJIM0WArEeK8wb8ioyxjpQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_HJIM0mArEeK8wb8ioyxjpQ" name="EQ" classifier="_HJIM0GArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJIM1GArEeK8wb8ioyxjpQ" name="GT" classifier="_HJIM0GArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJIM1mArEeK8wb8ioyxjpQ" name="LT" classifier="_HJIM0GArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJIM12ArEeK8wb8ioyxjpQ" name="GE" classifier="_HJIM0GArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJIM2GArEeK8wb8ioyxjpQ" name="LE" classifier="_HJIM0GArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJIM2WArEeK8wb8ioyxjpQ" name="NE" classifier="_HJIM0GArEeK8wb8ioyxjpQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJKCAGArEeK8wb8ioyxjpQ" name="ComparisonOperatorCodeRestricted">
+        <generalization xmi:id="_HJKCAWArEeK8wb8ioyxjpQ" general="_USTewCx5Ed-8mcmtGejV_Q"/>
+        <ownedLiteral xmi:id="_HJKCAmArEeK8wb8ioyxjpQ" name="GT" classifier="_HJKCAGArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJKCBGArEeK8wb8ioyxjpQ" name="LT" classifier="_HJKCAGArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJKCBWArEeK8wb8ioyxjpQ" name="GE" classifier="_HJKCAGArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJKCBmArEeK8wb8ioyxjpQ" name="LE" classifier="_HJKCAGArEeK8wb8ioyxjpQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJLQIGArEeK8wb8ioyxjpQ" name="PACancelReasonCode">
+        <ownedComment xmi:id="__4Gq0GEdEeKJtbj_PyeDCg" annotatedElement="_HJLQIGArEeK8wb8ioyxjpQ">
+          <body>Code indicating the reason for the prior authorization cancellation.</body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_HJLQIWArEeK8wb8ioyxjpQ" name="1" classifier="_HJLQIGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJLQImArEeK8wb8ioyxjpQ" annotatedElement="_HJLQIWArEeK8wb8ioyxjpQ">
+            <body>Change to a different medication</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJLQI2ArEeK8wb8ioyxjpQ" name="2" classifier="_HJLQIGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJLQJGArEeK8wb8ioyxjpQ" annotatedElement="_HJLQI2ArEeK8wb8ioyxjpQ">
+            <body>Prescriber no longer responsible for patient's care</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJLQJWArEeK8wb8ioyxjpQ" name="99" classifier="_HJLQIGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJLQJmArEeK8wb8ioyxjpQ" annotatedElement="_HJLQJWArEeK8wb8ioyxjpQ">
+            <body>Other</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJNFUGArEeK8wb8ioyxjpQ" name="PAClosedReasonCode">
+        <ownedComment xmi:id="_L7oHEGEeEeKJtbj_PyeDCg" annotatedElement="_HJNFUGArEeK8wb8ioyxjpQ">
+          <body>Code indicating the reason for the prior authorization closure.</body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_HJNFUWArEeK8wb8ioyxjpQ" name="1" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJNFUmArEeK8wb8ioyxjpQ" annotatedElement="_HJNFUWArEeK8wb8ioyxjpQ">
+            <body>Prior Authorization not required for patient/medication</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJNFU2ArEeK8wb8ioyxjpQ" name="2" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJNFVGArEeK8wb8ioyxjpQ" annotatedElement="_HJNFU2ArEeK8wb8ioyxjpQ">
+            <body>Cannot find matching patient</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJNFVWArEeK8wb8ioyxjpQ" name="3" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJNFVmArEeK8wb8ioyxjpQ" annotatedElement="_HJNFVWArEeK8wb8ioyxjpQ">
+            <body>Patient not eligible (does not have coverage with the payer) </body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJNFV2ArEeK8wb8ioyxjpQ" name="4" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJNFWGArEeK8wb8ioyxjpQ" annotatedElement="_HJNFV2ArEeK8wb8ioyxjpQ">
+            <body>Prior Authorization duplicate/approved</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJNFWWArEeK8wb8ioyxjpQ" name="5" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJNFWmArEeK8wb8ioyxjpQ" annotatedElement="_HJNFWWArEeK8wb8ioyxjpQ">
+            <body> Prior Authorization duplicate/in process</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJNFW2ArEeK8wb8ioyxjpQ" name="6" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJNFXGArEeK8wb8ioyxjpQ" annotatedElement="_HJNFW2ArEeK8wb8ioyxjpQ">
+            <body>Closed by health plan/payer/processor/PBM</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJNFXWArEeK8wb8ioyxjpQ" name="7" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJNFXmArEeK8wb8ioyxjpQ" annotatedElement="_HJNFXWArEeK8wb8ioyxjpQ">
+            <body>Closed by Provider</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJNFX2ArEeK8wb8ioyxjpQ" name="8" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJNFYGArEeK8wb8ioyxjpQ" annotatedElement="_HJNFX2ArEeK8wb8ioyxjpQ">
+            <body>Closed by Member</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJNFYWArEeK8wb8ioyxjpQ" name="99" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJNFYmArEeK8wb8ioyxjpQ" annotatedElement="_HJNFYWArEeK8wb8ioyxjpQ">
+            <body>Other</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJOTcGArEeK8wb8ioyxjpQ" name="PAClosedReasonCodeRestricted">
+        <ownedComment xmi:id="_Njqb4GEeEeKJtbj_PyeDCg" annotatedElement="_HJOTcGArEeK8wb8ioyxjpQ">
+          <body>Code indicating the reason for the prior authorization closure.</body>
+        </ownedComment>
+        <generalization xmi:id="_HJOTcWArEeK8wb8ioyxjpQ" general="_HJNFUGArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJOTfGArEeK8wb8ioyxjpQ" name="99" classifier="_HJOTcGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJOTfWArEeK8wb8ioyxjpQ" annotatedElement="_HJOTfGArEeK8wb8ioyxjpQ">
+            <body>Other</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_cd3UMGSpEeKo_psxKmuzVw" name="1" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_cd3UMWSpEeKo_psxKmuzVw" annotatedElement="_cd3UMGSpEeKo_psxKmuzVw">
+            <body>Prior Authorization not required for patient/medication</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_cd5JYGSpEeKo_psxKmuzVw" name="2" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_cd5JYWSpEeKo_psxKmuzVw" annotatedElement="_cd5JYGSpEeKo_psxKmuzVw">
+            <body>Cannot find matching patient</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_cd5wcGSpEeKo_psxKmuzVw" name="3" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_cd5wcWSpEeKo_psxKmuzVw" annotatedElement="_cd5wcGSpEeKo_psxKmuzVw">
+            <body>Patient not eligible (does not have coverage with the payer) </body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_cd5wcmSpEeKo_psxKmuzVw" name="4" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_cd5wc2SpEeKo_psxKmuzVw" annotatedElement="_cd5wcmSpEeKo_psxKmuzVw">
+            <body>Prior Authorization duplicate/approved</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_cd6XgGSpEeKo_psxKmuzVw" name="5" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_cd6XgWSpEeKo_psxKmuzVw" annotatedElement="_cd6XgGSpEeKo_psxKmuzVw">
+            <body> Prior Authorization duplicate/in process</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJPhkGArEeK8wb8ioyxjpQ" name="PACodedReferenceCode">
+        <ownedLiteral xmi:id="_HJPhkWArEeK8wb8ioyxjpQ" name="LOINC" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_qaws4GSpEeKo_psxKmuzVw" annotatedElement="_HJPhkWArEeK8wb8ioyxjpQ">
+            <body>LOINC</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIoGArEeK8wb8ioyxjpQ" name="LD" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_pXGQcGSpEeKo_psxKmuzVw" annotatedElement="_HJQIoGArEeK8wb8ioyxjpQ">
+            <body>SNOMED</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIoWArEeK8wb8ioyxjpQ" name="CPT4" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_it2rkGSpEeKo_psxKmuzVw" annotatedElement="_HJQIoWArEeK8wb8ioyxjpQ">
+            <body>CPT-4</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIomArEeK8wb8ioyxjpQ" name="CPT5" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_j9264GSpEeKo_psxKmuzVw" annotatedElement="_HJQIomArEeK8wb8ioyxjpQ">
+            <body>CPT-5</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIo2ArEeK8wb8ioyxjpQ" name="ABX" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_hmQKUGSpEeKo_psxKmuzVw" annotatedElement="_HJQIo2ArEeK8wb8ioyxjpQ">
+            <body>ICD-1Ø-CM</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIpGArEeK8wb8ioyxjpQ" name="DX" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_mmUx8GSpEeKo_psxKmuzVw" annotatedElement="_HJQIpGArEeK8wb8ioyxjpQ">
+            <body>ICD-9-CM-Diagnosis</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIpWArEeK8wb8ioyxjpQ" name="UCUM" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_uHzmYGSpEeKo_psxKmuzVw" annotatedElement="_HJQIpWArEeK8wb8ioyxjpQ">
+            <body>Unified Code for Units of Measure </body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIpmArEeK8wb8ioyxjpQ" name="UNII" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_vZ3EIGSpEeKo_psxKmuzVw" annotatedElement="_HJQIpmArEeK8wb8ioyxjpQ">
+            <body>UNII</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIp2ArEeK8wb8ioyxjpQ" name="RXNORM" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_s0b6AGSpEeKo_psxKmuzVw" annotatedElement="_HJQIp2ArEeK8wb8ioyxjpQ">
+            <body>RxNorm Code</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIqGArEeK8wb8ioyxjpQ" name="HL7OID" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_n9upwGSpEeKo_psxKmuzVw" annotatedElement="_HJQIqGArEeK8wb8ioyxjpQ">
+            <body>HL7 Object Identifier</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIqWArEeK8wb8ioyxjpQ" name="CVX " classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_lUYB4GSpEeKo_psxKmuzVw" annotatedElement="_HJQIqWArEeK8wb8ioyxjpQ">
+            <body>Vaccines</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJQIqmArEeK8wb8ioyxjpQ" name="NDC" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_riGIYGSpEeKo_psxKmuzVw" annotatedElement="_HJQIqmArEeK8wb8ioyxjpQ">
+            <body>National Drug Code</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJRWwGArEeK8wb8ioyxjpQ" name="PADeniedForCancelReasonCode">
+        <ownedLiteral xmi:id="_HJRW0WArEeK8wb8ioyxjpQ" name="99" classifier="_HJRWwGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJRW0mArEeK8wb8ioyxjpQ" annotatedElement="_HJRW0WArEeK8wb8ioyxjpQ">
+            <body>Other</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BlB0EGSqEeKo_psxKmuzVw" name="1" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_BlCbIGSqEeKo_psxKmuzVw" annotatedElement="_BlB0EGSqEeKo_psxKmuzVw">
+            <body>Prior Authorization not required for patient/medication</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BlDCMGSqEeKo_psxKmuzVw" name="2" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_BlDCMWSqEeKo_psxKmuzVw" annotatedElement="_BlDCMGSqEeKo_psxKmuzVw">
+            <body>Cannot find matching patient</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BlDCMmSqEeKo_psxKmuzVw" name="3" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_BlDCM2SqEeKo_psxKmuzVw" annotatedElement="_BlDCMmSqEeKo_psxKmuzVw">
+            <body>Patient not eligible (does not have coverage with the payer) </body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BlDpQGSqEeKo_psxKmuzVw" name="4" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_BlDpQWSqEeKo_psxKmuzVw" annotatedElement="_BlDpQGSqEeKo_psxKmuzVw">
+            <body>Prior Authorization duplicate/approved</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BlEQUGSqEeKo_psxKmuzVw" name="5" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_BlEQUWSqEeKo_psxKmuzVw" annotatedElement="_BlEQUGSqEeKo_psxKmuzVw">
+            <body> Prior Authorization duplicate/in process</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BlE3YGSqEeKo_psxKmuzVw" name="6" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_BlE3YWSqEeKo_psxKmuzVw" annotatedElement="_BlE3YGSqEeKo_psxKmuzVw">
+            <body>Closed by health plan/payer/processor/PBM</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BlFecGSqEeKo_psxKmuzVw" name="7" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_BlFecWSqEeKo_psxKmuzVw" annotatedElement="_BlFecGSqEeKo_psxKmuzVw">
+            <body>Closed by Provider</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BlGFgGSqEeKo_psxKmuzVw" name="8" classifier="_HJNFUGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_BlGFgWSqEeKo_psxKmuzVw" annotatedElement="_BlGFgGSqEeKo_psxKmuzVw">
+            <body>Closed by Member</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJSk4GArEeK8wb8ioyxjpQ" name="PAModelIndicatorTypeCode" visibility="private">
+        <ownedLiteral xmi:id="_HJSk4WArEeK8wb8ioyxjpQ" name="Solicited" classifier="_HJSk4GArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJSk4mArEeK8wb8ioyxjpQ" annotatedElement="_HJSk4WArEeK8wb8ioyxjpQ">
+            <body>Not Urgent</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJSk42ArEeK8wb8ioyxjpQ" name="Unsolicited" classifier="_HJSk4GArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJSk5GArEeK8wb8ioyxjpQ" annotatedElement="_HJSk42ArEeK8wb8ioyxjpQ">
+            <body>Urgent</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJUaEGArEeK8wb8ioyxjpQ" name="PAOtherReasonCode">
+        <ownedComment xmi:id="_KgMY8GEgEeKJtbj_PyeDCg" annotatedElement="_HJUaEGArEeK8wb8ioyxjpQ">
+          <body>Code indicating the reason for prior authorization open.</body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_HJUaEWArEeK8wb8ioyxjpQ" name="DEFERRED" classifier="_HJUaEGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_EyNhwGSqEeKo_psxKmuzVw" annotatedElement="_HJUaEWArEeK8wb8ioyxjpQ">
+            <body>The prior authorization is deferred.</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJVBIGArEeK8wb8ioyxjpQ" name="PAResponseTypeCode" visibility="private">
+        <ownedLiteral xmi:id="_HJVBIWArEeK8wb8ioyxjpQ" name="A" classifier="_HJVBIGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJVBImArEeK8wb8ioyxjpQ" annotatedElement="_HJVBIWArEeK8wb8ioyxjpQ">
+            <body>Not Urgent</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJVoMGArEeK8wb8ioyxjpQ" name="N" classifier="_HJVBIGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJVoMWArEeK8wb8ioyxjpQ" annotatedElement="_HJVoMGArEeK8wb8ioyxjpQ">
+            <body>Urgent</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJW2UGArEeK8wb8ioyxjpQ" name="QuestionsTypeCode" visibility="private">
+        <ownedLiteral xmi:id="_HJW2UWArEeK8wb8ioyxjpQ" name="TF" classifier="_HJW2UGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJW2UmArEeK8wb8ioyxjpQ" annotatedElement="_HJW2UWArEeK8wb8ioyxjpQ">
+            <body>Not Urgent</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJW2U2ArEeK8wb8ioyxjpQ" name="CO" classifier="_HJW2UGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_HJW2VGArEeK8wb8ioyxjpQ" annotatedElement="_HJW2U2ArEeK8wb8ioyxjpQ">
+            <body>Urgent</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_HJW2VWArEeK8wb8ioyxjpQ" name="CA" classifier="_HJW2UGArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJW2VmArEeK8wb8ioyxjpQ" name="NU" classifier="_HJW2UGArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJW2V2ArEeK8wb8ioyxjpQ" name="FT" classifier="_HJW2UGArEeK8wb8ioyxjpQ"/>
+        <ownedLiteral xmi:id="_HJW2WGArEeK8wb8ioyxjpQ" name="DT" classifier="_HJW2UGArEeK8wb8ioyxjpQ"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_cU8ZZp44Ed6wn6lcMWl-9w">
       <eAnnotations xmi:id="_cU8ZZ544Ed6wn6lcMWl-9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -21341,7 +21635,7 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_eGGD8CxAEd-8mcmtGejV_Q" base_Comment="_eF8S8yxAEd-8mcmtGejV_Q"/>
   <orgncpdpecl:ncpdpecl xmi:id="_eF8S8SxAEd-8mcmtGejV_Q" valueSetId="4343" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_eFfnBCxAEd-8mcmtGejV_Q" displayName="Message Function, coded"/>
   <Default:Documentation xmi:id="_eF8S8CxAEd-8mcmtGejV_Q" base_Comment="_eFfnBSxAEd-8mcmtGejV_Q"/>
-  <xsd:Schema xmi:id="_kA0cIDEFEd-8rpqfOAePKg" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" version="NCPDPv2012NovBallot" targetNamespace="http://www.ncpdp.org/schema/ECL" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
+  <xsd:Schema xmi:id="_kA0cIDEFEd-8rpqfOAePKg" base_Package="_cU8ZYZ44Ed6wn6lcMWl-9w" version="NCPDPv2013FebBallot" targetNamespace="http://www.ncpdp.org/schema/ECL" targetNamespacePrefix="ecl" schemaLocation="ecl.xsd"/>
   <Default:Documentation xmi:id="_bBE48jEQEd-8rpqfOAePKg" base_Comment="_bBE48TEQEd-8rpqfOAePKg"/>
   <Default:Documentation xmi:id="_bmodEjEQEd-8rpqfOAePKg" base_Comment="_bmodETEQEd-8rpqfOAePKg"/>
   <orgncpdpecl:ncpdpecl xmi:id="_rq1rJjEREd-8rpqfOAePKg" valueSetId="3055" fieldFormat="an..3" standardsUsing="S" valueSetLimitations="" base_Enumeration="_rq1rEDEREd-8rpqfOAePKg" displayName="Code List Responsibility Agency (X12 DE 235)"/>
@@ -21994,4 +22288,75 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_yqcvcJ_KEeGied0FMeK3NA" base_Comment="_yqZsIJ_KEeGied0FMeK3NA"/>
   <Default:Documentation xmi:id="_5vPn4J_KEeGied0FMeK3NA" base_Comment="_5vNLoZ_KEeGied0FMeK3NA"/>
   <Default:Documentation xmi:id="_clfRMJ_PEeGied0FMeK3NA" base_Comment="_claYsJ_PEeGied0FMeK3NA"/>
+  <Default:Documentation xmi:id="_HJZSkGArEeK8wb8ioyxjpQ" base_Comment="_HJCtQmArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZSkWArEeK8wb8ioyxjpQ" base_Comment="_HJCtRGArEeK8wb8ioyxjpQ"/>
+  <xsd:Restriction xmi:id="_HJZSkmArEeK8wb8ioyxjpQ" base_Generalization="_HJIM0WArEeK8wb8ioyxjpQ"/>
+  <xsd:Restriction xmi:id="_HJZSlWArEeK8wb8ioyxjpQ" base_Generalization="_HJKCAWArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5oGArEeK8wb8ioyxjpQ" base_Comment="_HJLQImArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5oWArEeK8wb8ioyxjpQ" base_Comment="_HJLQJGArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5omArEeK8wb8ioyxjpQ" base_Comment="_HJLQJmArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5o2ArEeK8wb8ioyxjpQ" base_Comment="_HJNFUmArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5pGArEeK8wb8ioyxjpQ" base_Comment="_HJNFVGArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5pWArEeK8wb8ioyxjpQ" base_Comment="_HJNFVmArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5pmArEeK8wb8ioyxjpQ" base_Comment="_HJNFWGArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5p2ArEeK8wb8ioyxjpQ" base_Comment="_HJNFWmArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5qGArEeK8wb8ioyxjpQ" base_Comment="_HJNFXGArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJZ5qWArEeK8wb8ioyxjpQ" base_Comment="_HJNFXmArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJagsGArEeK8wb8ioyxjpQ" base_Comment="_HJNFYGArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJagsWArEeK8wb8ioyxjpQ" base_Comment="_HJNFYmArEeK8wb8ioyxjpQ"/>
+  <xsd:Restriction xmi:id="_HJagsmArEeK8wb8ioyxjpQ" base_Generalization="_HJOTcWArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJaguGArEeK8wb8ioyxjpQ" base_Comment="_HJOTfWArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJbHyWArEeK8wb8ioyxjpQ" base_Comment="_HJRW0mArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJbu0GArEeK8wb8ioyxjpQ" base_Comment="_HJSk4mArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJbu0WArEeK8wb8ioyxjpQ" base_Comment="_HJSk5GArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJbu0mArEeK8wb8ioyxjpQ" base_Comment="_HJVBImArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJbu02ArEeK8wb8ioyxjpQ" base_Comment="_HJVoMWArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJbu1GArEeK8wb8ioyxjpQ" base_Comment="_HJW2UmArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="_HJbu1WArEeK8wb8ioyxjpQ" base_Comment="_HJW2VGArEeK8wb8ioyxjpQ"/>
+  <Default:Documentation xmi:id="__4K8QGEdEeKJtbj_PyeDCg" base_Comment="__4Gq0GEdEeKJtbj_PyeDCg"/>
+  <Default:Documentation xmi:id="_L7sYgGEeEeKJtbj_PyeDCg" base_Comment="_L7oHEGEeEeKJtbj_PyeDCg"/>
+  <Default:Documentation xmi:id="_Njs4IGEeEeKJtbj_PyeDCg" base_Comment="_Njqb4GEeEeKJtbj_PyeDCg"/>
+  <Default:Documentation xmi:id="_KgQqYGEgEeKJtbj_PyeDCg" base_Comment="_KgMY8GEgEeKJtbj_PyeDCg"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_PdYZwGEiEeKJtbj_PyeDCg" base_Enumeration="_I_2wwX3VEeGozIODH_vY1Q"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_RcWA0GEiEeKJtbj_PyeDCg" base_Enumeration="_HJCtQGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ULhj4GEiEeKJtbj_PyeDCg" base_Enumeration="_HJIM0GArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ULiyAGEiEeKJtbj_PyeDCg" base_Enumeration="_HJKCAGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_Wqrt8GEiEeKJtbj_PyeDCg" base_Enumeration="_I_x4QH3VEeGozIODH_vY1Q"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_abRDoGEiEeKJtbj_PyeDCg" base_Enumeration="_HJLQIGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_abSRwGEiEeKJtbj_PyeDCg" base_Enumeration="_HJNFUGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_abS40GEiEeKJtbj_PyeDCg" base_Enumeration="_HJOTcGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_abUG8GEiEeKJtbj_PyeDCg" base_Enumeration="_HJPhkGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_abUuAGEiEeKJtbj_PyeDCg" base_Enumeration="_HJRWwGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_abV8IGEiEeKJtbj_PyeDCg" base_Enumeration="_HJSk4GArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_abWjMGEiEeKJtbj_PyeDCg" base_Enumeration="_HJUaEGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_abXxUGEiEeKJtbj_PyeDCg" base_Enumeration="_HJVBIGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_cgSPYGEiEeKJtbj_PyeDCg" base_Enumeration="_HJW2UGArEeK8wb8ioyxjpQ"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ktJjIGEiEeKJtbj_PyeDCg" base_Enumeration="_I_lD8X3VEeGozIODH_vY1Q"/>
+  <orgncpdpecl:ncpdpecl xmi:id="_ktKxQGEiEeKJtbj_PyeDCg" base_Enumeration="_I_rxoH3VEeGozIODH_vY1Q"/>
+  <Default:Documentation xmi:id="_cd7loGSpEeKo_psxKmuzVw" base_Comment="_cd3UMWSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_cd7loWSpEeKo_psxKmuzVw" base_Comment="_cd5JYWSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_cd7lomSpEeKo_psxKmuzVw" base_Comment="_cd5wcWSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_cd7lo2SpEeKo_psxKmuzVw" base_Comment="_cd5wc2SpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_cd7lpGSpEeKo_psxKmuzVw" base_Comment="_cd6XgWSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_hmVC0GSpEeKo_psxKmuzVw" base_Comment="_hmQKUGSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_it6V8GSpEeKo_psxKmuzVw" base_Comment="_it2rkGSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_j97zYGSpEeKo_psxKmuzVw" base_Comment="_j9264GSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_lUcTUGSpEeKo_psxKmuzVw" base_Comment="_lUYB4GSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_mmZqcGSpEeKo_psxKmuzVw" base_Comment="_mmUx8GSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_n9xGAGSpEeKo_psxKmuzVw" base_Comment="_n9upwGSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_pXKh4GSpEeKo_psxKmuzVw" base_Comment="_pXGQcGSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_qazwMGSpEeKo_psxKmuzVw" base_Comment="_qaws4GSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_riJLsGSpEeKo_psxKmuzVw" base_Comment="_riGIYGSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_s0gLcGSpEeKo_psxKmuzVw" base_Comment="_s0b6AGSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_uH2psGSpEeKo_psxKmuzVw" base_Comment="_uHzmYGSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_vZ7VkGSpEeKo_psxKmuzVw" base_Comment="_vZ3EIGSpEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_BlGskGSqEeKo_psxKmuzVw" base_Comment="_BlCbIGSqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_BlGskWSqEeKo_psxKmuzVw" base_Comment="_BlDCMWSqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_BlGskmSqEeKo_psxKmuzVw" base_Comment="_BlDCM2SqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_BlGsk2SqEeKo_psxKmuzVw" base_Comment="_BlDpQWSqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_BlHToGSqEeKo_psxKmuzVw" base_Comment="_BlEQUWSqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_BlHToWSqEeKo_psxKmuzVw" base_Comment="_BlE3YWSqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_BlHTomSqEeKo_psxKmuzVw" base_Comment="_BlFecWSqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_BlHTo2SqEeKo_psxKmuzVw" base_Comment="_BlGFgWSqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_EyP-AGSqEeKo_psxKmuzVw" base_Comment="_EyNhwGSqEeKo_psxKmuzVw"/>
 </xmi:XMI>
