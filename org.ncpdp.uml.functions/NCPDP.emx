@@ -288,7 +288,7 @@ For instance, ZipCode structure and validation is not impacted if it used as par
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T22eJkYqEeG_OtsHShZk8w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_T22eJ0YqEeG_OtsHShZk8w" name="DrugUseEvaluation" type="_4Ja8ZDD1Ed-8rpqfOAePKg" aggregation="composite" association="_T23EXEYqEeG_OtsHShZk8w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T23EMEYqEeG_OtsHShZk8w" value="5"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T23EMEYqEeG_OtsHShZk8w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T23EMUYqEeG_OtsHShZk8w"/>
         </ownedAttribute>
       </packagedElement>
@@ -306,7 +306,7 @@ For instance, ZipCode structure and validation is not impacted if it used as par
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T24TPEYqEeG_OtsHShZk8w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_T24TPUYqEeG_OtsHShZk8w" name="DrugUseEvaluation" type="_4Ja8ZDD1Ed-8rpqfOAePKg" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T24TPkYqEeG_OtsHShZk8w" value="5"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T24TPkYqEeG_OtsHShZk8w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T24TP0YqEeG_OtsHShZk8w"/>
         </ownedAttribute>
       </packagedElement>
@@ -7595,7 +7595,7 @@ For NewRx or Resupply in long term care setting, only value supported - 203 = CC
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pn2640YvEeG_OtsHShZk8w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Pn9BgEYvEeG_OtsHShZk8w" name="LotNumber" type="_T23ES0YqEeG_OtsHShZk8w" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pn9BgUYvEeG_OtsHShZk8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pn9BgUYvEeG_OtsHShZk8w" value="9"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pn9BgkYvEeG_OtsHShZk8w"/>
         </ownedAttribute>
       </packagedElement>
@@ -11480,8 +11480,8 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_3SiTGUYqEeG_OtsHShZk8w" annotatedElement="_3SiTGEYqEeG_OtsHShZk8w">
             <body>Value LD.</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3SiTGkYqEeG_OtsHShZk8w"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3SiTG0YqEeG_OtsHShZk8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3SiTGkYqEeG_OtsHShZk8w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3SiTG0YqEeG_OtsHShZk8w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3SiSskYqEeG_OtsHShZk8w" name="ExpirationDate" type="_4HVRtjD1Ed-8rpqfOAePKg" aggregation="composite">
           <ownedComment xmi:id="_3SiSs0YqEeG_OtsHShZk8w">
@@ -11696,7 +11696,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6jv7w1fxEeGo7JEwRRBePQ" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3SiSwkYqEeG_OtsHShZk8w" name="LotNumber" type="_T23ES0YqEeG_OtsHShZk8w" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3SiSw0YqEeG_OtsHShZk8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3SiSw0YqEeG_OtsHShZk8w" value="9"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3SiSxEYqEeG_OtsHShZk8w"/>
         </ownedAttribute>
       </packagedElement>
@@ -11745,8 +11745,8 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <ownedComment xmi:id="_3SnLQkYqEeG_OtsHShZk8w" annotatedElement="_3SnLQUYqEeG_OtsHShZk8w">
             <body>Value LD.</body>
           </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3SnLQ0YqEeG_OtsHShZk8w"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3SnLREYqEeG_OtsHShZk8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3SnLQ0YqEeG_OtsHShZk8w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3SnLREYqEeG_OtsHShZk8w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3SmkMUYqEeG_OtsHShZk8w" name="ExpirationDate" type="_4HVRtjD1Ed-8rpqfOAePKg" aggregation="composite">
           <ownedComment xmi:id="_3SmkMkYqEeG_OtsHShZk8w">
@@ -11964,7 +11964,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3SmkHEYqEeG_OtsHShZk8w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3SmkQUYqEeG_OtsHShZk8w" name="LotNumber" type="_T23ES0YqEeG_OtsHShZk8w" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3SmkQkYqEeG_OtsHShZk8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3SmkQkYqEeG_OtsHShZk8w" value="9"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3SmkQ0YqEeG_OtsHShZk8w"/>
         </ownedAttribute>
       </packagedElement>
@@ -13359,13 +13359,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T23EwkYqEeG_OtsHShZk8w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T23Ew0YqEeG_OtsHShZk8w" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_T23ExEYqEeG_OtsHShZk8w" name="CFRxCount" type="_4mU60DD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_T23ExUYqEeG_OtsHShZk8w">
-            <body>count of the number of prescriptions in the order</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T23ExkYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T23Ex0YqEeG_OtsHShZk8w" value="1"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_T23EyEYqEeG_OtsHShZk8w" name="TotalNumberVials" type="_4Qt3RTD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_T23EyUYqEeG_OtsHShZk8w">
             <body>number of vials for the prescription</body>
@@ -13438,7 +13431,7 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T23E8kYqEeG_OtsHShZk8w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T23E80YqEeG_OtsHShZk8w" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_T23E9EYqEeG_OtsHShZk8w" name="Text" type="_4CkGdzD1Ed-8rpqfOAePKg">
+        <ownedAttribute xmi:id="_T23E9EYqEeG_OtsHShZk8w" name="MonographText" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T23E9UYqEeG_OtsHShZk8w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T23E9kYqEeG_OtsHShZk8w" value="1"/>
         </ownedAttribute>
@@ -13514,14 +13507,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T24SjUYqEeG_OtsHShZk8w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_T24SkkYqEeG_OtsHShZk8w" name="RxRefillMessage" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
-        <ownedAttribute xmi:id="_T24Sk0YqEeG_OtsHShZk8w" name="RxMessageToPatient" type="_4CkGdzD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_T24SlEYqEeG_OtsHShZk8w" annotatedElement="_T24Sk0YqEeG_OtsHShZk8w">
-            <body>Patient Specific message to print with label text.</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T24SlUYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T24SlkYqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T24Sl0YqEeG_OtsHShZk8w" name="RxInternalMessage" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_T24SmEYqEeG_OtsHShZk8w" name="CFWarningLabel" type="_T23rgEYqEeG_OtsHShZk8w" aggregation="composite" association="_T24SzEYqEeG_OtsHShZk8w">
           <ownedComment xmi:id="_T24SmUYqEeG_OtsHShZk8w">
             <body>Warning Label information for prescription label.</body>
@@ -13651,14 +13636,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T23r-0YqEeG_OtsHShZk8w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_T23sAEYqEeG_OtsHShZk8w" name="RxRefillMessage" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
-        <ownedAttribute xmi:id="_T23sAUYqEeG_OtsHShZk8w" name="RxMessageToPatient" type="_4CkGdzD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_T23sAkYqEeG_OtsHShZk8w" annotatedElement="_T23sAUYqEeG_OtsHShZk8w">
-            <body>Patient Specific message to print with label text.</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T23sA0YqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T23sBEYqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T23sBUYqEeG_OtsHShZk8w" name="RxInternalMessage" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_T23sBkYqEeG_OtsHShZk8w" name="CFWarningLabel" type="_T23rgEYqEeG_OtsHShZk8w" aggregation="composite" association="_T24ScEYqEeG_OtsHShZk8w">
           <ownedComment xmi:id="_T23sB0YqEeG_OtsHShZk8w">
             <body>Warning Label information for prescription label.</body>
@@ -13785,14 +13762,6 @@ If Substitutions = 1, ReasonForSubstitutionCodeUsed must contain &quot;Brand Med
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25ghkYqEeG_OtsHShZk8w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_T25gi0YqEeG_OtsHShZk8w" name="RxRefillMessage" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
-        <ownedAttribute xmi:id="_T25gjEYqEeG_OtsHShZk8w" name="RxMessageToPatient" type="_4CkGdzD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_T25gjUYqEeG_OtsHShZk8w" annotatedElement="_T25gjEYqEeG_OtsHShZk8w">
-            <body>Patient Specific message to print with label text.</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25gjkYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25gj0YqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T25gkEYqEeG_OtsHShZk8w" name="RxInternalMessage" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_T25gkUYqEeG_OtsHShZk8w" name="CFWarningLabel" type="_T23rgEYqEeG_OtsHShZk8w" aggregation="composite" association="_T25gxUYqEeG_OtsHShZk8w">
           <ownedComment xmi:id="_T25gkkYqEeG_OtsHShZk8w">
             <body>Warning Label information for prescription label.</body>
@@ -13987,10 +13956,6 @@ all other values = no return receipt requested.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T24TC0YqEeG_OtsHShZk8w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T24TDEYqEeG_OtsHShZk8w"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_T24TDUYqEeG_OtsHShZk8w" name="NeededNoLaterThanDate" visibility="public" type="_4CtQYTD1Ed-8rpqfOAePKg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T24TDkYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T24TD0YqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_T24TEEYqEeG_OtsHShZk8w" name="MandatoryPharmacy" visibility="public" type="_FWHFYFJOEd-gUbUlN-XGdw" aggregation="composite">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T24TEUYqEeG_OtsHShZk8w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T24TEkYqEeG_OtsHShZk8w" value="1"/>
@@ -14039,6 +14004,10 @@ all other values = no return receipt requested.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T23rTkYqEeG_OtsHShZk8w"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_rW7tMEYzEeG_OtsHShZk8w" name="MandatoryPharmacy" visibility="public" type="_FWHFYFJOEd-gUbUlN-XGdw"/>
+        <ownedAttribute xmi:id="_e2FDEFnEEeKckKeu6T56yQ" name="CFResponse" visibility="public" type="_T24TLEYqEeG_OtsHShZk8w" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e2FDEVnEEeKckKeu6T56yQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e2FDElnEEeKckKeu6T56yQ"/>
+        </ownedAttribute>
         <ownedAttribute xmi:id="_VVFX0GkrEeGW-ICuIMDVYg" name="Pharmacist" visibility="public" type="_d_xAwjZ4Ed-o64UeGGH_dQ" aggregation="composite">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VVFX0WkrEeGW-ICuIMDVYg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VVFX0mkrEeGW-ICuIMDVYg"/>
@@ -14170,56 +14139,6 @@ all other values = no return receipt requested.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T23rw0YqEeG_OtsHShZk8w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T23rxEYqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_T25gzUYqEeG_OtsHShZk8w" name="CFRxOrderResponse">
-        <ownedAttribute xmi:id="_T25gzkYqEeG_OtsHShZk8w" name="ReturnReceipt" type="_4DAyeTD1Ed-8rpqfOAePKg">
-          <ownedComment xmi:id="_T25gz0YqEeG_OtsHShZk8w">
-            <body>If this field is submitted with 1 in the request, a Verify transaction is to be sent from the recipient at some time.
-1 = Return Receipt Requested
-all other values = no return receipt requested.</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g0EYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g0UYqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_Vm5IUEYzEeG_OtsHShZk8w" name="MandatoryPharmacy" visibility="public" type="_FWHFYFJOEd-gUbUlN-XGdw"/>
-        <ownedAttribute xmi:id="_CHUicGkrEeGW-ICuIMDVYg" name="Pharmacist" visibility="public" type="_d_xAwjZ4Ed-o64UeGGH_dQ" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CHUicWkrEeGW-ICuIMDVYg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CHUicmkrEeGW-ICuIMDVYg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T25g1UYqEeG_OtsHShZk8w" name="Facilty" visibility="public" type="_4ZNr4TD1Ed-8rpqfOAePKg" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g1kYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g10YqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T25g2EYqEeG_OtsHShZk8w" name="Patient" visibility="public" type="_3SqOcEYqEeG_OtsHShZk8w"/>
-        <ownedAttribute xmi:id="_T25g2UYqEeG_OtsHShZk8w" name="Prescriber" visibility="public" type="_4TjI5jD1Ed-8rpqfOAePKg"/>
-        <ownedAttribute xmi:id="_T25g2kYqEeG_OtsHShZk8w" name="SupervisingPrescriber" visibility="public" type="_XNYSgGTREd-M5IWg2-DxLQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g20YqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g3EYqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T25g3UYqEeG_OtsHShZk8w" name="CFOrder" visibility="public" type="_T23E_EYqEeG_OtsHShZk8w" aggregation="composite" association="_T25g7kYqEeG_OtsHShZk8w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g3kYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g30YqEeG_OtsHShZk8w" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T25g4EYqEeG_OtsHShZk8w" name="ShippingInstructions" visibility="public" type="_T23raUYqEeG_OtsHShZk8w" aggregation="composite" association="_T25g9kYqEeG_OtsHShZk8w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g4UYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g4kYqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T25g40YqEeG_OtsHShZk8w" name="ShipToEntity" visibility="public" type="_T23rxUYqEeG_OtsHShZk8w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g5EYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g5UYqEeG_OtsHShZk8w"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T25g5kYqEeG_OtsHShZk8w" name="Medication" visibility="public" type="_3ShrkEYqEeG_OtsHShZk8w"/>
-        <ownedAttribute xmi:id="_T25g50YqEeG_OtsHShZk8w" name="CFRxLabel" visibility="public" type="_T25gckYqEeG_OtsHShZk8w" aggregation="composite" association="_T25g-kYqEeG_OtsHShZk8w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g6EYqEeG_OtsHShZk8w" value="99"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g6UYqEeG_OtsHShZk8w" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_T25g6kYqEeG_OtsHShZk8w" name="BenefitsCoordination" type="_4PhkdDD1Ed-8rpqfOAePKg" aggregation="composite">
-          <ownedComment xmi:id="_T25g60YqEeG_OtsHShZk8w">
-            <body>Indicates coverage’s known to the sending system.</body>
-          </ownedComment>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g7EYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g7UYqEeG_OtsHShZk8w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_d-3o6TZ4Ed-o64UeGGH_dQ" name="ServiceType">
@@ -16257,24 +16176,6 @@ Designates type and description of census message – Admit, Discharge, Change. 
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dnG0DkQVEeC7BZCLURhbHQ"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_T25g9kYqEeG_OtsHShZk8w" memberEnd="_T25g4EYqEeG_OtsHShZk8w _T25g90YqEeG_OtsHShZk8w">
-        <ownedEnd xmi:id="_T25g90YqEeG_OtsHShZk8w" name="" visibility="private" type="_T25gzUYqEeG_OtsHShZk8w" association="_T25g9kYqEeG_OtsHShZk8w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g-EYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g-UYqEeG_OtsHShZk8w" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_T25g-kYqEeG_OtsHShZk8w" memberEnd="_T25g50YqEeG_OtsHShZk8w _T25g-0YqEeG_OtsHShZk8w">
-        <ownedEnd xmi:id="_T25g-0YqEeG_OtsHShZk8w" name="" visibility="private" type="_T25gzUYqEeG_OtsHShZk8w" association="_T25g-kYqEeG_OtsHShZk8w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g_EYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g_UYqEeG_OtsHShZk8w" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_T25g7kYqEeG_OtsHShZk8w" memberEnd="_T25g3UYqEeG_OtsHShZk8w _T25g70YqEeG_OtsHShZk8w">
-        <ownedEnd xmi:id="_T25g70YqEeG_OtsHShZk8w" name="" visibility="private" type="_T25gzUYqEeG_OtsHShZk8w" association="_T25g7kYqEeG_OtsHShZk8w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T25g8EYqEeG_OtsHShZk8w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T25g8UYqEeG_OtsHShZk8w" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_T24S5EYqEeG_OtsHShZk8w" memberEnd="_T23rvkYqEeG_OtsHShZk8w _T24S5UYqEeG_OtsHShZk8w">
         <ownedEnd xmi:id="_T24S5UYqEeG_OtsHShZk8w" name="" visibility="private" type="_T23rpEYqEeG_OtsHShZk8w" association="_T24S5EYqEeG_OtsHShZk8w">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T24S5kYqEeG_OtsHShZk8w" value="1"/>
@@ -16899,19 +16800,6 @@ Designates type and description of census message – Admit, Discharge, Change. 
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_tbbv8VgYEeGSZqLuYuC65w" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_tbcXAFgYEeGSZqLuYuC65w" visible="false" type="StructureCompartment"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tbYsoVgYEeGSZqLuYuC65w" x="9827" y="15850"/>
-          </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_uc7pMFgYEeGSZqLuYuC65w" element="_T25gzUYqEeG_OtsHShZk8w" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
-            <children xmi:type="notation:DecorationNode" xmi:id="_uc83UFgYEeGSZqLuYuC65w" type="ImageCompartment">
-              <layoutConstraint xmi:type="notation:Size" xmi:id="_uc83UVgYEeGSZqLuYuC65w" width="1320" height="1320"/>
-            </children>
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_uc83UlgYEeGSZqLuYuC65w" type="Stereotype"/>
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_uc9eYFgYEeGSZqLuYuC65w" type="Name"/>
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_uc9eYVgYEeGSZqLuYuC65w" type="Parent"/>
-            <children xmi:type="notation:SemanticListCompartment" xmi:id="_uc-FcFgYEeGSZqLuYuC65w" type="AttributeCompartment"/>
-            <children xmi:type="notation:SemanticListCompartment" xmi:id="_uc-sgFgYEeGSZqLuYuC65w" type="OperationCompartment"/>
-            <children xmi:type="notation:SemanticListCompartment" xmi:id="_uc-sgVgYEeGSZqLuYuC65w" visible="false" type="SignalCompartment"/>
-            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_uc_TkFgYEeGSZqLuYuC65w" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uc7pMVgYEeGSZqLuYuC65w" x="19654" y="15850"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_9TDv8FgYEeGSZqLuYuC65w" element="_T23rjUYqEeG_OtsHShZk8w" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
             <children xmi:type="notation:DecorationNode" xmi:id="_9TE-EFgYEeGSZqLuYuC65w" type="ImageCompartment">
@@ -18131,48 +18019,6 @@ Designates type and description of census message – Admit, Discharge, Change. 
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BbeW0FgZEeGSZqLuYuC65w" id="(0.16009483430468963,0.961038961038961)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BbeW0VgZEeGSZqLuYuC65w" id="(0.49999999999999906,0.0)"/>
           </edges>
-          <edges xmi:type="umlnotation:UMLConnector" xmi:id="_vagEsFgYEeGSZqLuYuC65w" element="_vZ3ykFgYEeGSZqLuYuC65w" source="_oYJdEEQHEeC7BZCLURhbHQ" target="_uc7pMFgYEeGSZqLuYuC65w" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
-            <children xmi:type="notation:DecorationNode" xmi:id="_vagEslgYEeGSZqLuYuC65w" type="NameLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_vagrwFgYEeGSZqLuYuC65w" type="Stereotype"/>
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_vagrwVgYEeGSZqLuYuC65w" type="Name"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vagEs1gYEeGSZqLuYuC65w" y="-186"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_vagrwlgYEeGSZqLuYuC65w" type="ToMultiplicityLabel" element="_vZ-gQFgYEeGSZqLuYuC65w">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_vagrxFgYEeGSZqLuYuC65w" type="ToMultiplicity"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_vagrw1gYEeGSZqLuYuC65w" y="396"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_vahS0FgYEeGSZqLuYuC65w" type="ToRoleLabel" element="_vZ-gQFgYEeGSZqLuYuC65w">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_vahS0lgYEeGSZqLuYuC65w" type="ToRole"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_vahS0VgYEeGSZqLuYuC65w" y="-397"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_vahS01gYEeGSZqLuYuC65w" type="FromMultiplicityLabel" element="_vZ614FgYEeGSZqLuYuC65w">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_vahS1VgYEeGSZqLuYuC65w" type="FromMultiplicity"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_vahS1FgYEeGSZqLuYuC65w" y="396"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_vah54FgYEeGSZqLuYuC65w" type="FromRoleLabel" element="_vZ614FgYEeGSZqLuYuC65w">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_vah54lgYEeGSZqLuYuC65w" type="FromRole"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_vah54VgYEeGSZqLuYuC65w" y="-397"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_vah541gYEeGSZqLuYuC65w" type="ToQualifierLabel" element="_vZ-gQFgYEeGSZqLuYuC65w">
-              <children xmi:type="notation:SemanticListCompartment" xmi:id="_vah55VgYEeGSZqLuYuC65w" type="QualifierCompartment"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_vah55FgYEeGSZqLuYuC65w" y="-186"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_vaig8FgYEeGSZqLuYuC65w" type="FromQualifierLabel" element="_vZ614FgYEeGSZqLuYuC65w">
-              <children xmi:type="notation:SemanticListCompartment" xmi:id="_vaig8lgYEeGSZqLuYuC65w" type="QualifierCompartment"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_vaig8VgYEeGSZqLuYuC65w" y="-186"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_vaig81gYEeGSZqLuYuC65w" type="ToConstraintLabel" element="_vZ-gQFgYEeGSZqLuYuC65w">
-              <children xmi:type="notation:ListCompartment" xmi:id="_vaig9VgYEeGSZqLuYuC65w" type="ToConstraintCompartment"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_vaig9FgYEeGSZqLuYuC65w" y="1058"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_vajIAFgYEeGSZqLuYuC65w" type="FromConstraintLabel" element="_vZ614FgYEeGSZqLuYuC65w">
-              <children xmi:type="notation:ListCompartment" xmi:id="_vajIAlgYEeGSZqLuYuC65w" type="FromConstraintCompartment"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_vajIAVgYEeGSZqLuYuC65w" y="1058"/>
-            </children>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vagEsVgYEeGSZqLuYuC65w" points="[10, 101, 99137, -8422]$[10, 1793, 99137, -6730]$[-99088, 1793, 39, -6730]$[-99088, 8523, 39, 0]"/>
-            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bbe94FgZEeGSZqLuYuC65w" id="(0.12009521550555706,0.961038961038961)"/>
-            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bbfk8FgZEeGSZqLuYuC65w" id="(0.5000000000000004,-3.7198147311776207E-16)"/>
-          </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_0NU6gFgYEeGSZqLuYuC65w" element="_0M-VMFgYEeGSZqLuYuC65w" source="_oYJdEEQHEeC7BZCLURhbHQ" target="_tbYsoFgYEeGSZqLuYuC65w" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_0NWIoFgYEeGSZqLuYuC65w" type="NameLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_0NWIolgYEeGSZqLuYuC65w" type="Stereotype"/>
@@ -18986,10 +18832,6 @@ In any transaction that a reference number assigned by the prescribing system is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jOBgwVgYEeGSZqLuYuC65w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jOBgwFgYEeGSZqLuYuC65w" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_vZ614FgYEeGSZqLuYuC65w" name="CFRxOrderResponse" visibility="public" type="_T25gzUYqEeG_OtsHShZk8w" aggregation="composite" association="_vZ3ykFgYEeGSZqLuYuC65w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vZ8EAFgYEeGSZqLuYuC65w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vZ7c8FgYEeGSZqLuYuC65w" value="1"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_0NBYgFgYEeGSZqLuYuC65w" name="CFRxOrderCancel" visibility="public" type="_T23rSkYqEeG_OtsHShZk8w" aggregation="composite" association="_0M-VMFgYEeGSZqLuYuC65w">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0NDNsFgYEeGSZqLuYuC65w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0NCmoFgYEeGSZqLuYuC65w" value="1"/>
@@ -19147,12 +18989,6 @@ In any transaction that a reference number assigned by the prescribing system is
         <ownedEnd xmi:id="_jODV8FgYEeGSZqLuYuC65w" name="" visibility="private" type="_HG9zQDdYEd-wQf5UFCJMDw" association="_jN92YFgYEeGSZqLuYuC65w">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jOD9AVgYEeGSZqLuYuC65w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jOD9AFgYEeGSZqLuYuC65w" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_vZ3ykFgYEeGSZqLuYuC65w" memberEnd="_vZ614FgYEeGSZqLuYuC65w _vZ-gQFgYEeGSZqLuYuC65w">
-        <ownedEnd xmi:id="_vZ-gQFgYEeGSZqLuYuC65w" name="" visibility="private" type="_HG9zQDdYEd-wQf5UFCJMDw" association="_vZ3ykFgYEeGSZqLuYuC65w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vZ_uYVgYEeGSZqLuYuC65w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vZ_uYFgYEeGSZqLuYuC65w" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_0M-VMFgYEeGSZqLuYuC65w" memberEnd="_0NBYgFgYEeGSZqLuYuC65w _0NFp8FgYEeGSZqLuYuC65w">
@@ -27201,7 +27037,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_T21200YqEeG_OtsHShZk8w" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_T2121EYqEeG_OtsHShZk8w" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_T2121UYqEeG_OtsHShZk8w" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T2121kYqEeG_OtsHShZk8w" x="10212" y="3598"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T2121kYqEeG_OtsHShZk8w" x="5072" y="4438"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_T21210YqEeG_OtsHShZk8w" element="_T24TLEYqEeG_OtsHShZk8w" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
             <children xmi:type="notation:DecorationNode" xmi:id="_T2122EYqEeG_OtsHShZk8w" type="ImageCompartment">
@@ -27214,7 +27050,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_T2123kYqEeG_OtsHShZk8w" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_T21230YqEeG_OtsHShZk8w" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_T2124EYqEeG_OtsHShZk8w" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T2124UYqEeG_OtsHShZk8w" x="17118" y="1268"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T2124UYqEeG_OtsHShZk8w" x="12997" y="951"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_T2127UYqEeG_OtsHShZk8w" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
             <children xmi:type="notation:DecorationNode" xmi:id="_T2127kYqEeG_OtsHShZk8w" type="ImageCompartment">
@@ -29435,7 +29271,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_T4FMMEYqEeG_OtsHShZk8w" base_Comment="_T23EtkYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4FMMUYqEeG_OtsHShZk8w" base_Comment="_T23EukYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4FMMkYqEeG_OtsHShZk8w" base_Comment="_T23EwUYqEeG_OtsHShZk8w"/>
-  <Default:Documentation xmi:id="_T4FMM0YqEeG_OtsHShZk8w" base_Comment="_T23ExUYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4FMNEYqEeG_OtsHShZk8w" base_Comment="_T23EyUYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4FMNUYqEeG_OtsHShZk8w" base_Comment="_T23EzUYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4FMNkYqEeG_OtsHShZk8w" base_Comment="_T23E0kYqEeG_OtsHShZk8w"/>
@@ -29458,7 +29293,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_T4Hoc0YqEeG_OtsHShZk8w" base_Comment="_T23r6EYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4HodkYqEeG_OtsHShZk8w" base_Comment="_T23r9UYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4Hod0YqEeG_OtsHShZk8w" base_Comment="_T23r-UYqEeG_OtsHShZk8w"/>
-  <Default:Documentation xmi:id="_T4IPgUYqEeG_OtsHShZk8w" base_Comment="_T23sAkYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4IPgkYqEeG_OtsHShZk8w" base_Comment="_T23sB0YqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4IPg0YqEeG_OtsHShZk8w" base_Comment="_T23sC0YqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4IPhEYqEeG_OtsHShZk8w" base_Comment="_T23sD0YqEeG_OtsHShZk8w"/>
@@ -29475,7 +29309,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_T4I2lkYqEeG_OtsHShZk8w" base_Comment="_T24SgEYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4I2l0YqEeG_OtsHShZk8w" base_Comment="_T24ShEYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4I2mEYqEeG_OtsHShZk8w" base_Comment="_T24Si0YqEeG_OtsHShZk8w"/>
-  <Default:Documentation xmi:id="_T4JdoUYqEeG_OtsHShZk8w" base_Comment="_T24SlEYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4JdokYqEeG_OtsHShZk8w" base_Comment="_T24SmUYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4Jdo0YqEeG_OtsHShZk8w" base_Comment="_T24SnUYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4JdpEYqEeG_OtsHShZk8w" base_Comment="_T24SoUYqEeG_OtsHShZk8w"/>
@@ -29497,7 +29330,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_T4PkQUYqEeG_OtsHShZk8w" base_Comment="_T25geEYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4PkQkYqEeG_OtsHShZk8w" base_Comment="_T25gfEYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4PkQ0YqEeG_OtsHShZk8w" base_Comment="_T25ghEYqEeG_OtsHShZk8w"/>
-  <Default:Documentation xmi:id="_T4PkRUYqEeG_OtsHShZk8w" base_Comment="_T25gjUYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4PkRkYqEeG_OtsHShZk8w" base_Comment="_T25gkkYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4PkR0YqEeG_OtsHShZk8w" base_Comment="_T25glkYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4PkSEYqEeG_OtsHShZk8w" base_Comment="_T25gmkYqEeG_OtsHShZk8w"/>
@@ -29510,8 +29342,6 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
   <Default:Documentation xmi:id="_T4QLVkYqEeG_OtsHShZk8w" base_Comment="_T25gtkYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4QLV0YqEeG_OtsHShZk8w" base_Comment="_T25gukYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_T4QLWEYqEeG_OtsHShZk8w" base_Comment="_T25gvkYqEeG_OtsHShZk8w"/>
-  <Default:Documentation xmi:id="_T4QyYEYqEeG_OtsHShZk8w" base_Comment="_T25gz0YqEeG_OtsHShZk8w"/>
-  <Default:Documentation xmi:id="_T4QyYUYqEeG_OtsHShZk8w" base_Comment="_T25g60YqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_piLhIEYqEeG_OtsHShZk8w" base_Comment="_piEzcUYqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_piLhIUYqEeG_OtsHShZk8w" base_Comment="_piEzc0YqEeG_OtsHShZk8w"/>
   <Default:Documentation xmi:id="_piLhIkYqEeG_OtsHShZk8w" base_Comment="_piEzd0YqEeG_OtsHShZk8w"/>
