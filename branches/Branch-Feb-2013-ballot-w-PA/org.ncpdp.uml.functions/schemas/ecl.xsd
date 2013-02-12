@@ -1885,7 +1885,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="99">
         <xsd:annotation>
-          <xsd:documentation>Others</xsd:documentation>
+          <xsd:documentation>Other</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -1900,27 +1900,27 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="1">
         <xsd:annotation>
-          <xsd:documentation>PA not required for patient/drug</xsd:documentation>
+          <xsd:documentation>Prior Authorization not required for patient/medication</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="2">
         <xsd:annotation>
-          <xsd:documentation>Can’t find matching patient</xsd:documentation>
+          <xsd:documentation>Cannot find matching patient</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3">
         <xsd:annotation>
-          <xsd:documentation>Patient not eligible (don’t have coverage with the PBM/payer) </xsd:documentation>
+          <xsd:documentation>Patient not eligible (does not have coverage with the payer) </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="4">
         <xsd:annotation>
-          <xsd:documentation>PA duplicate/approved</xsd:documentation>
+          <xsd:documentation>Prior Authorization duplicate/approved</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="5">
         <xsd:annotation>
-          <xsd:documentation>PA duplicate/in process</xsd:documentation>
+          <xsd:documentation> Prior Authorization duplicate/in process</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="6">
@@ -1940,7 +1940,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:enumeration>
       <xsd:enumeration value="99">
         <xsd:annotation>
-          <xsd:documentation>Others</xsd:documentation>
+          <xsd:documentation>Other</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -1953,34 +1953,34 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:documentation>Code indicating the reason for the prior authorization closure.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="ecl:PAClosedReasonCode">
+      <xsd:enumeration value="99">
+        <xsd:annotation>
+          <xsd:documentation>Other</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="1">
         <xsd:annotation>
-          <xsd:documentation>PA not required for patient/drug</xsd:documentation>
+          <xsd:documentation>Prior Authorization not required for patient/medication</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="2">
         <xsd:annotation>
-          <xsd:documentation>Can’t find matching patient</xsd:documentation>
+          <xsd:documentation>Cannot find matching patient</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3">
         <xsd:annotation>
-          <xsd:documentation>Patient not eligible (don’t have coverage with the PBM/payer) </xsd:documentation>
+          <xsd:documentation>Patient not eligible (does not have coverage with the payer) </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="4">
         <xsd:annotation>
-          <xsd:documentation>PA duplicate/approved</xsd:documentation>
+          <xsd:documentation>Prior Authorization duplicate/approved</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="5">
         <xsd:annotation>
-          <xsd:documentation>PA duplicate/in process</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="99">
-        <xsd:annotation>
-          <xsd:documentation>Others</xsd:documentation>
+          <xsd:documentation> Prior Authorization duplicate/in process</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -1990,18 +1990,76 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="PACodedReferenceCode">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="LOINC"/>
-      <xsd:enumeration value="LD"/>
-      <xsd:enumeration value="CPT4"/>
-      <xsd:enumeration value="CPT5"/>
-      <xsd:enumeration value="ABX"/>
-      <xsd:enumeration value="DX"/>
-      <xsd:enumeration value="UCUM"/>
-      <xsd:enumeration value="UNII"/>
-      <xsd:enumeration value="RXNORM"/>
-      <xsd:enumeration value="HL7OID"/>
-      <xsd:enumeration value="CVX "/>
-      <xsd:enumeration value="NDC"/>
+      <xsd:enumeration value="LOINC">
+        <xsd:annotation>
+          <xsd:documentation>LOINC</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="LD">
+        <xsd:annotation>
+          <xsd:documentation>SNOMED</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CPT4">
+        <xsd:annotation>
+          <xsd:documentation>CPT-4</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CPT5">
+        <xsd:annotation>
+          <xsd:documentation>CPT-5</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ABX">
+        <xsd:annotation>
+          <xsd:documentation>ICD-1Ø-CM</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DX">
+        <xsd:annotation>
+          <xsd:documentation>ICD-9-CM-Diagnosis</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UCUM">
+        <xsd:annotation>
+          <xsd:documentation>Unified Code for Units of Measure </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNII">
+        <xsd:annotation>
+          <xsd:documentation>UNII</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RXNORM">
+        <xsd:annotation>
+          <xsd:documentation>RxNorm Code</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HL7OID">
+        <xsd:annotation>
+          <xsd:documentation>HL7 Object Identifier</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CVX ">
+        <xsd:annotation>
+          <xsd:documentation>Vaccines</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NDC">
+        <xsd:annotation>
+          <xsd:documentation>National Drug Code</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HCPCS">
+        <xsd:annotation>
+          <xsd:documentation>Healthcare Financing Administration (HCFA) Common Procedure Coding System</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ZZ">
+        <xsd:annotation>
+          <xsd:documentation>mutually agreed</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -2009,29 +2067,34 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:simpleType name="PADeniedForCancelReasonCode">
     <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="99">
+        <xsd:annotation>
+          <xsd:documentation>Other</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="1">
         <xsd:annotation>
-          <xsd:documentation>PA not required for patient/drug</xsd:documentation>
+          <xsd:documentation>Prior Authorization not required for patient/medication</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="2">
         <xsd:annotation>
-          <xsd:documentation>Can’t find matching patient</xsd:documentation>
+          <xsd:documentation>Cannot find matching patient</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="3">
         <xsd:annotation>
-          <xsd:documentation>Patient not eligible (don’t have coverage with the PBM/payer) </xsd:documentation>
+          <xsd:documentation>Patient not eligible (does not have coverage with the payer) </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="4">
         <xsd:annotation>
-          <xsd:documentation>PA duplicate/approved</xsd:documentation>
+          <xsd:documentation>Prior Authorization duplicate/approved</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="5">
         <xsd:annotation>
-          <xsd:documentation>PA duplicate/in process</xsd:documentation>
+          <xsd:documentation> Prior Authorization duplicate/in process</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="6">
@@ -2049,11 +2112,6 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Closed by Member</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="99">
-        <xsd:annotation>
-          <xsd:documentation>Others</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -2064,7 +2122,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:documentation>Code indicating the reason for prior authorization open.</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="DEFERRED"/>
+      <xsd:enumeration value="DEFERRED">
+        <xsd:annotation>
+          <xsd:documentation>The prior authorization is deferred.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

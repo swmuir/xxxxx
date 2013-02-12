@@ -18222,6 +18222,16 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
             <body>National Drug Code</body>
           </ownedComment>
         </ownedLiteral>
+        <ownedLiteral xmi:id="_1y7-kGsWEeKb69bmEzfmYQ" name="HCPCS" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_97I0wGsWEeKb69bmEzfmYQ" annotatedElement="_1y7-kGsWEeKb69bmEzfmYQ">
+            <body>Healthcare Financing Administration (HCFA) Common Procedure Coding System</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BcdmcGsXEeKb69bmEzfmYQ" name="ZZ" classifier="_HJPhkGArEeK8wb8ioyxjpQ">
+          <ownedComment xmi:id="_EehCMGsXEeKb69bmEzfmYQ" annotatedElement="_BcdmcGsXEeKb69bmEzfmYQ">
+            <body>mutually agreed</body>
+          </ownedComment>
+        </ownedLiteral>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJRWwGArEeK8wb8ioyxjpQ" name="PADeniedForCancelReasonCode">
         <ownedLiteral xmi:id="_HJRW0WArEeK8wb8ioyxjpQ" name="99" classifier="_HJRWwGArEeK8wb8ioyxjpQ">
@@ -22359,4 +22369,6 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
   <Default:Documentation xmi:id="_BlHTomSqEeKo_psxKmuzVw" base_Comment="_BlFecWSqEeKo_psxKmuzVw"/>
   <Default:Documentation xmi:id="_BlHTo2SqEeKo_psxKmuzVw" base_Comment="_BlGFgWSqEeKo_psxKmuzVw"/>
   <Default:Documentation xmi:id="_EyP-AGSqEeKo_psxKmuzVw" base_Comment="_EyNhwGSqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_97QwkGsWEeKb69bmEzfmYQ" base_Comment="_97I0wGsWEeKb69bmEzfmYQ"/>
+  <Default:Documentation xmi:id="_EelToGsXEeKb69bmEzfmYQ" base_Comment="_EehCMGsXEeKb69bmEzfmYQ"/>
 </xmi:XMI>

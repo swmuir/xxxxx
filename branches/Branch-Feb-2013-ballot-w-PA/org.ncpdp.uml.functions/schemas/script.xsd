@@ -849,6 +849,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <xsd:complexType name="PACancelResponse">
     <xsd:sequence>
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an1..35"/>
+      <xsd:element name="PAReferenceID" type="datatypes:an1..35"/>
       <xsd:element name="Response" type="pa-structures:PACancelResponseStructure"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -861,6 +862,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element minOccurs="0" name="RequestReferenceNumber" type="datatypes:an1..35"/>
+      <xsd:element name="PAReferenceID" type="datatypes:an1..35"/>
       <xsd:element maxOccurs="3" minOccurs="0" name="BenefitsCoordination" type="structures:PABenefitsCoordination">
         <xsd:annotation>
           <xsd:documentation>See SCRIPTRequest of Definition and Usage</xsd:documentation>

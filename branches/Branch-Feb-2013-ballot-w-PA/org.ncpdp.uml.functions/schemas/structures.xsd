@@ -127,17 +127,33 @@ Currently recognized and enumerated MIME Types for purposes in NCPDP are:
   <!--  AttachmentWithControlNumber  -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="AttachmentWithControlNumber">
-    <xsd:complexContent>
-      <xsd:extension base="structures:Attachment">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="AttachmentControlNumber" type="datatypes:an">
-            <xsd:annotation>
-              <xsd:documentation>Indicates the control number of the attachment.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="AttachmentControlNumber" type="datatypes:an">
+        <xsd:annotation>
+          <xsd:documentation>Indicates the control number of the attachment.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="AttachmentSource" type="datatypes:an">
+        <xsd:annotation>
+          <xsd:documentation>The Source of the Info</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="AttachmentData" type="xsd:base64Binary">
+        <xsd:annotation>
+          <xsd:documentation>all attached information is Base64 encoded</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:group minOccurs="0" ref="structures:ClinicalInformation"/>
+      <xsd:element name="MIMEType" type="ecl:MIMETypeCode">
+        <xsd:annotation>
+          <xsd:documentation>defines the content nature of the attachmentData.  Internet standard defined in RFC 2045, RFC 2046, RFC 2047, RFC 4288, RFC 4289 and RFC 2049.  
+
+Currently recognized and enumerated MIME Types for purposes in NCPDP are:
+	application/hl7-sda+xml -- HL7v3 SDA (xml) – SDA is a superset to CDA	
+	application/x-ccr - not yet registered with IANA</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
   </xsd:complexType>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  Attachments  -->
