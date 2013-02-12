@@ -106,10 +106,10 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       </xsd:element>
       <xsd:element minOccurs="0" name="AppealCaseID" type="datatypes:an1..35">
         <xsd:annotation>
-          <xsd:documentation>ID assigned by the payer to identify the specific appeal request.</xsd:documentation>
+          <xsd:documentation>ID assigned by the payer to identify the specific appeal request. If a &lt;AppealCaseID&gt; is assigned, it is to be exchanged on all subsequent appeal transactions.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="DeadLineForReply" type="datatypes:DateType">
+      <xsd:element minOccurs="0" name="DeadlineForReply" type="datatypes:DateType">
         <xsd:annotation>
           <xsd:documentation>The timeframe for the provider to provide requested information. This element is related to the case and contains the expiration date that the prescriber is to take the next step. It is not the expiration date of the questions.</xsd:documentation>
         </xsd:annotation>
@@ -152,7 +152,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
         <xsd:sequence>
           <xsd:element name="AppealCaseID" type="datatypes:an1..35">
             <xsd:annotation>
-              <xsd:documentation>ID assigned by the payer to identify the specific appeal request.</xsd:documentation>
+              <xsd:documentation>ID assigned by the payer to identify the specific appeal request. If a &lt;AppealCaseID&gt; is assigned, it is to be exchanged on all subsequent appeal transactions.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
@@ -284,7 +284,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PACodedReference">
     <xsd:sequence>
-      <xsd:element name="CodeSystemVersion" type="datatypes:an">
+      <xsd:element minOccurs="0" name="CodeSystemVersion" type="datatypes:an">
         <xsd:annotation>
           <xsd:documentation>The version of the code system used.</xsd:documentation>
         </xsd:annotation>
@@ -425,7 +425,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
         <xsd:sequence>
           <xsd:element name="AppealCaseID" type="datatypes:an1..35">
             <xsd:annotation>
-              <xsd:documentation>ID assigned by the payer to identify the specific appeal request.</xsd:documentation>
+              <xsd:documentation>ID assigned by the payer to identify the specific appeal request. If a &lt;AppealCaseID&gt; is assigned, it is to be exchanged on all subsequent appeal transactions.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
@@ -534,7 +534,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>ID assigned by the payer to identify the specific case. </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="DeadLineForReply" type="datatypes:DateType">
+      <xsd:element name="DeadlineForReply" type="datatypes:DateType">
         <xsd:annotation>
           <xsd:documentation>The timeframe for the provider to provide requested information. This element is related to the case and contains the expiration date that the prescriber is to take the next step. It is not the expiration date of the questions.</xsd:documentation>
         </xsd:annotation>
@@ -574,7 +574,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
         <xsd:sequence>
           <xsd:element name="AppealCaseID" type="datatypes:an1..35">
             <xsd:annotation>
-              <xsd:documentation>ID assigned by the payer to identify the specific appeal request.</xsd:documentation>
+              <xsd:documentation>ID assigned by the payer to identify the specific appeal request. If a &lt;AppealCaseID&gt; is assigned, it is to be exchanged on all subsequent appeal transactions.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
@@ -596,7 +596,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>Sequence number to indicate the order answer choices should be displayed to the prescriber.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element minOccurs="0" name="QuestionSetGroupID" type="datatypes:an1..255">
+      <xsd:element minOccurs="0" name="QuestionSetGroupID" type="datatypes:an1..35">
         <xsd:annotation>
           <xsd:documentation>Indicates that all questions with this ID are related.</xsd:documentation>
         </xsd:annotation>
@@ -659,7 +659,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
     <xsd:sequence>
       <xsd:element name="Header" type="pa-structures:PAQuestionSetHeader"/>
       <xsd:element maxOccurs="unbounded" name="Question" type="pa-structures:PAQuestionDetailForResponseType"/>
-      <xsd:element name="DeadLineForReply" type="datatypes:DateType">
+      <xsd:element name="DeadlineForReply" type="datatypes:DateType">
         <xsd:annotation>
           <xsd:documentation>The timeframe for the provider to provide requested information. This element is related to the case and contains the expiration date that the prescriber is to take the next step. It is not the expiration date of the questions.</xsd:documentation>
         </xsd:annotation>
@@ -809,7 +809,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
       <xsd:element minOccurs="0" name="AuthorizationPeriod" type="structures:DateGroupWithEffectiveExpiredDate"/>
       <xsd:element minOccurs="0" name="AppealCaseID" type="datatypes:an1..35">
         <xsd:annotation>
-          <xsd:documentation>ID assigned by the payer to identify the specific appeal request.</xsd:documentation>
+          <xsd:documentation>ID assigned by the payer to identify the specific appeal request. If a &lt;AppealCaseID&gt; is assigned, it is to be exchanged on all subsequent appeal transactions.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element minOccurs="0" name="PANote" type="datatypes:an1..2000">
@@ -845,7 +845,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PAResponseChoiceType">
     <xsd:choice>
-      <xsd:element name="Approved" type="pa-structures:PAApprovedDetail"/>
+      <xsd:element name="Approved" type="pa-structures:PAApprovedDetail">
+        <xsd:annotation>
+          <xsd:documentation>Either &lt;AuthorizationDetail&gt; or &lt;AuthorizationPeriod&gt; must be sent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="Denied" type="pa-structures:PADeniedType"/>
       <xsd:element name="Open" type="pa-structures:PAOpenTypeResponse"/>
       <xsd:element name="Closed" type="pa-structures:PAReasonClosedCodeType"/>
@@ -856,7 +860,11 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <xsd:complexType name="PAResponseChoiceTypeForAppeal">
     <xsd:choice>
-      <xsd:element name="Approved" type="pa-structures:PAApprovedDetailForAppeal"/>
+      <xsd:element name="Approved" type="pa-structures:PAApprovedDetailForAppeal">
+        <xsd:annotation>
+          <xsd:documentation>Either &lt;AuthorizationDetail&gt; or &lt;AuthorizationPeriod&gt; must be sent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="Denied" type="pa-structures:PADeniedTypeForAppeal"/>
       <xsd:element name="Open" type="pa-structures:PAOpenTypeResponseForAppeal"/>
       <xsd:element name="Closed" type="pa-structures:PAReasonClosedCodeTypeForAppeal"/>
@@ -945,7 +953,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>ID assigned by the payer to identify the specific case. </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="DeadLineForReply" type="datatypes:DateType">
+      <xsd:element name="DeadlineForReply" type="datatypes:DateType">
         <xsd:annotation>
           <xsd:documentation>The timeframe for the provider to provide requested information. This element is related to the case and contains the expiration date that the prescriber is to take the next step. It is not the expiration date of the questions.</xsd:documentation>
         </xsd:annotation>
@@ -963,7 +971,7 @@ NOTICE: In addition, this NCPDP Standard contains certain data fields and elemen
           <xsd:documentation>ID assigned by the payer to identify the specific case. </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element maxOccurs="0" minOccurs="0" name="DeadLineForReply" type="datatypes:DateType">
+      <xsd:element maxOccurs="0" minOccurs="0" name="DeadlineForReply" type="datatypes:DateType">
         <xsd:annotation>
           <xsd:documentation>The timeframe for the provider to provide requested information. This element is related to the case and contains the expiration date that the prescriber is to take the next step. It is not the expiration date of the questions.</xsd:documentation>
         </xsd:annotation>

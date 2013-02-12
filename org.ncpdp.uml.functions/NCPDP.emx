@@ -4424,13 +4424,41 @@ See External Code List Introduction for information on NCI Thesaurus Code Lists.
         <body>The NCPDP structures.xsd defines common and reusable domain structures typically composed of datatypes and potentially other structures.</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_xJXfVWAsEeK8wb8ioyxjpQ" name="AttachmentWithControlNumber">
-        <generalization xmi:id="_xJXfVmAsEeK8wb8ioyxjpQ" general="_Y2QB5DZ7Ed-o64UeGGH_dQ"/>
         <ownedAttribute xmi:id="_xJXfV2AsEeK8wb8ioyxjpQ" name="AttachmentControlNumber" visibility="public" type="_4CkGdzD1Ed-8rpqfOAePKg">
           <ownedComment xmi:id="_ECSowGEdEeKJtbj_PyeDCg" annotatedElement="_xJXfV2AsEeK8wb8ioyxjpQ">
             <body>Indicates the control number of the attachment.</body>
           </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJXfWGAsEeK8wb8ioyxjpQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xJXfWWAsEeK8wb8ioyxjpQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_PmyvcGsdEeKb69bmEzfmYQ" name="AttachmentSource" type="_4CkGdzD1Ed-8rpqfOAePKg">
+          <ownedComment xmi:id="_PmyvcWsdEeKb69bmEzfmYQ" annotatedElement="_PmyvcGsdEeKb69bmEzfmYQ">
+            <body>The Source of the Info</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PmyvcmsdEeKb69bmEzfmYQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pmyvc2sdEeKb69bmEzfmYQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_PmzWgGsdEeKb69bmEzfmYQ" name="AttachmentData">
+          <ownedComment xmi:id="_PmzWgWsdEeKb69bmEzfmYQ" annotatedElement="_PmzWgGsdEeKb69bmEzfmYQ">
+            <body>all attached information is Base64 encoded</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzIu0tXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PmzWgmsdEeKb69bmEzfmYQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PmzWg2sdEeKb69bmEzfmYQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Pmz9kGsdEeKb69bmEzfmYQ" name="ClinicalInformation" visibility="public" type="_53FesD9dEeCPntMluLBWnQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TgpV4GsdEeKb69bmEzfmYQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tgou0GsdEeKb69bmEzfmYQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Pm0koGsdEeKb69bmEzfmYQ" name="MIMEType" visibility="public">
+          <ownedComment xmi:id="_Pm0koWsdEeKb69bmEzfmYQ" annotatedElement="_Pm0koGsdEeKb69bmEzfmYQ">
+            <body>defines the content nature of the attachmentData.  Internet standard defined in RFC 2045, RFC 2046, RFC 2047, RFC 4288, RFC 4289 and RFC 2049.  
+
+Currently recognized and enumerated MIME Types for purposes in NCPDP are:
+	application/hl7-sda+xml -- HL7v3 SDA (xml) – SDA is a superset to CDA	
+	application/x-ccr - not yet registered with IANA</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="platform:/resource/org.ncpdp.uml.ecl/model/ecl.emx#_5qYs0GhAEd-Pd7zqA0IwbQ?ecl/ecl/MIMETypeCode?"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xJW5DGAsEeK8wb8ioyxjpQ" name="DateGroupWithEffectiveExpiredDate">
@@ -22183,6 +22211,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1yfmRmAsEeK8wb8ioyxjpQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1yfmR2AsEeK8wb8ioyxjpQ"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_p_RNIGsfEeKb69bmEzfmYQ" name="PAReferenceID" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_1yfmSGAsEeK8wb8ioyxjpQ" name="BenefitsCoordination" type="_cNCFoGBFEeK8wb8ioyxjpQ" aggregation="composite" association="_1yp-UGAsEeK8wb8ioyxjpQ">
           <ownedComment xmi:id="_1yfmSWAsEeK8wb8ioyxjpQ" annotatedElement="_1yfmSGAsEeK8wb8ioyxjpQ">
             <body>See SCRIPTRequest of Definition and Usage</body>
@@ -22292,6 +22321,7 @@ Used only in RXChange and adds additional information for RxChangeCode from ECL
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1ylF1WAsEeK8wb8ioyxjpQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ylF1mAsEeK8wb8ioyxjpQ"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_Z5LXQGu3EeKb69bmEzfmYQ" name="PAReferenceID" visibility="public" type="_4CkGczD1Ed-8rpqfOAePKg"/>
         <ownedAttribute xmi:id="_1ylF12AsEeK8wb8ioyxjpQ" name="Response" visibility="public" type="_xJW5KGAsEeK8wb8ioyxjpQ" aggregation="composite">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1ylF2GAsEeK8wb8ioyxjpQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ylF2WAsEeK8wb8ioyxjpQ" value="1"/>
@@ -26721,6 +26751,8 @@ elements for each transaction.</body>
           <ownedComment xmi:id="_fGxtUGEeEeKJtbj_PyeDCg" annotatedElement="_xJW4tWAsEeK8wb8ioyxjpQ">
             <body>The version of the code system used.</body>
           </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9TiMwGsXEeKb69bmEzfmYQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ThlsGsXEeKb69bmEzfmYQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_xJW4tmAsEeK8wb8ioyxjpQ" name="Qualifier" visibility="public">
           <ownedComment xmi:id="_Y7iBIGEgEeKJtbj_PyeDCg" annotatedElement="_xJW4tmAsEeK8wb8ioyxjpQ">
@@ -29488,4 +29520,7 @@ elements for each transaction.</body>
   <Default:Documentation xmi:id="_voJtIGGbEeKXWqWJJZkrNg" base_Comment="_voGp0WGbEeKXWqWJJZkrNg"/>
   <Default:Documentation xmi:id="_2nqSIGSqEeKo_psxKmuzVw" base_Comment="_2nmnwGSqEeKo_psxKmuzVw"/>
   <Default:Documentation xmi:id="_8twtsGSqEeKo_psxKmuzVw" base_Comment="_8tu4gGSqEeKo_psxKmuzVw"/>
+  <Default:Documentation xmi:id="_Pm1ywGsdEeKb69bmEzfmYQ" base_Comment="_PmyvcWsdEeKb69bmEzfmYQ"/>
+  <Default:Documentation xmi:id="_Pm1ywWsdEeKb69bmEzfmYQ" base_Comment="_PmzWgWsdEeKb69bmEzfmYQ"/>
+  <Default:Documentation xmi:id="_Pm1ywmsdEeKb69bmEzfmYQ" base_Comment="_Pm0koWsdEeKb69bmEzfmYQ"/>
 </xmi:XMI>
